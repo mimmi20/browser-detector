@@ -1,14 +1,17 @@
 {
   "dexp ursus 9ev 3g": {
-    "codename": "Ursus 9EV 3G",
+    "deviceName": "Ursus 9EV 3G",
     "marketingName": "Ursus 9EV 3G",
     "manufacturer": "Dexp",
     "brand": "Dexp",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

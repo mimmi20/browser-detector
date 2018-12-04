@@ -1,26 +1,32 @@
 {
   "general changhong device": {
-    "codename": "general Changhong Device",
+    "deviceName": "general Changhong Device",
     "marketingName": "general Changhong Device",
     "manufacturer": "Changhong",
     "brand": "Changhong",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "changhong t02": {
-    "codename": "T02",
+    "deviceName": "T02",
     "marketingName": "T02",
     "manufacturer": "Changhong",
     "brand": "Changhong",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

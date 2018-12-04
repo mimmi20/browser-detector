@@ -1,14 +1,17 @@
 {
   "wexler book t7008": {
-    "codename": "Book T7008",
+    "deviceName": "Book T7008",
     "marketingName": "Book T7008",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

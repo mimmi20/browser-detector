@@ -1,62 +1,77 @@
 {
   "general kingsun device": {
-    "codename": "general Kingsun Device",
+    "deviceName": "general Kingsun Device",
     "marketingName": "general Kingsun Device",
     "manufacturer": "Kingsun",
     "brand": "Kingsun",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kingsun f1": {
-    "codename": "F1",
+    "deviceName": "F1",
     "marketingName": "F1",
     "manufacturer": "Kingsun",
     "brand": "Kingsun",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kingsun s5q": {
-    "codename": "S5Q",
+    "deviceName": "S5Q",
     "marketingName": "S5Q",
     "manufacturer": "Kingsun",
     "brand": "Kingsun",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kingsun s6": {
-    "codename": "S6",
+    "deviceName": "S6",
     "marketingName": "S6",
     "manufacturer": "Kingsun",
     "brand": "Kingsun",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kingsun s8": {
-    "codename": "S8",
+    "deviceName": "S8",
     "marketingName": "S8",
     "manufacturer": "Kingsun",
     "brand": "Kingsun",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

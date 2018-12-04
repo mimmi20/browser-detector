@@ -1,26 +1,32 @@
 {
   "brondi surfing tab b 9.7 3g": {
-    "codename": "Surfing Tab B 9.7 3G",
+    "deviceName": "Surfing Tab B 9.7 3G",
     "marketingName": "Surfing Tab B 9.7 3G",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "brondi surfing tab c 3g": {
-    "codename": "Surfing Tab C 3G",
+    "deviceName": "Surfing Tab C 3G",
     "marketingName": "Surfing Tab C 3G",
     "manufacturer": "Brondi",
     "brand": "Brondi",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

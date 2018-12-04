@@ -1,26 +1,32 @@
 {
   "general lifeware device": {
-    "codename": "general Lifeware Device",
+    "deviceName": "general Lifeware Device",
     "marketingName": "general Lifeware Device",
     "manufacturer": "Lifeware",
     "brand": "Lifeware",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lifeware ft-4008": {
-    "codename": "FT-4008",
+    "deviceName": "FT-4008",
     "marketingName": "Fabtab Quadro 8",
     "manufacturer": "Lifeware",
     "brand": "Lifeware",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 720,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 720,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

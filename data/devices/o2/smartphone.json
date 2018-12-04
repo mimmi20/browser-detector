@@ -1,14 +1,17 @@
 {
   "o2 xda_diamond_2": {
-    "codename": "Xda Diamond 2",
+    "deviceName": "Xda Diamond 2",
     "marketingName": "Xda Diamond 2",
     "manufacturer": "Htc",
     "brand": "O2",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

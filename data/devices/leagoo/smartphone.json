@@ -1,146 +1,182 @@
 {
   "general leagoo device": {
-    "codename": "general LEAGOO Device",
+    "deviceName": "general LEAGOO Device",
     "marketingName": "general LEAGOO Device",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo elite 4": {
-    "codename": "Elite 4",
+    "deviceName": "Elite 4",
     "marketingName": "Elite 4",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo elite 5": {
-    "codename": "Elite 5",
+    "deviceName": "Elite 5",
     "marketingName": "Elite 5",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo kiicaa mix": {
-    "codename": "KIICAA Mix",
+    "deviceName": "KIICAA Mix",
     "marketingName": "KIICAA Mix",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo kiicaa power": {
-    "codename": "KIICAA Power",
+    "deviceName": "KIICAA Power",
     "marketingName": "KIICAA Power",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo lead 1": {
-    "codename": "Lead 1",
+    "deviceName": "Lead 1",
     "marketingName": "Lead 1",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo lead 2": {
-    "codename": "Lead 2",
+    "deviceName": "Lead 2",
     "marketingName": "Lead 2",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo m8": {
-    "codename": "M8",
+    "deviceName": "M8",
     "marketingName": "M8",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo m8 pro": {
-    "codename": "M8 Pro",
+    "deviceName": "M8 Pro",
     "marketingName": "M8 Pro",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo s8 pro": {
-    "codename": "S8 Pro",
+    "deviceName": "S8 Pro",
     "marketingName": "S8 Pro",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo shark 1": {
-    "codename": "Shark 1",
+    "deviceName": "Shark 1",
     "marketingName": "Shark 1",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "leagoo t1 plus": {
-    "codename": "T1 Plus",
+    "deviceName": "T1 Plus",
     "marketingName": "T1 Plus",
     "manufacturer": "Leagoo",
     "brand": "Leagoo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

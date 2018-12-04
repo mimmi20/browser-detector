@@ -1,62 +1,77 @@
 {
   "general senseit device": {
-    "codename": "general SENSEIT Device",
+    "deviceName": "general SENSEIT Device",
     "marketingName": "general SENSEIT Device",
     "manufacturer": "Senseit",
     "brand": "Senseit",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "senseit a109": {
-    "codename": "A109",
+    "deviceName": "A109",
     "marketingName": "A109",
     "manufacturer": "Senseit",
     "brand": "Senseit",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "senseit e500": {
-    "codename": "E500",
+    "deviceName": "E500",
     "marketingName": "E500",
     "manufacturer": "Senseit",
     "brand": "Senseit",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "senseit l301": {
-    "codename": "L301",
+    "deviceName": "L301",
     "marketingName": "L301",
     "manufacturer": "Senseit",
     "brand": "Senseit",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "senseit r390": {
-    "codename": "R390",
+    "deviceName": "R390",
     "marketingName": "R390",
     "manufacturer": "Senseit",
     "brand": "Senseit",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

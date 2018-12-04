@@ -1,26 +1,32 @@
 {
   "mecer 800p71d": {
-    "codename": "800P71D",
+    "deviceName": "800P71D",
     "marketingName": "800P71D",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mecer a1013r": {
-    "codename": "A1013R",
+    "deviceName": "A1013R",
     "marketingName": "Xpress Smartlife 10",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

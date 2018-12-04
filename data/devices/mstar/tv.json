@@ -1,14 +1,17 @@
 {
   "mstar t42": {
-    "codename": "T42",
+    "deviceName": "T42",
     "marketingName": "T42",
     "manufacturer": "MSTAR",
     "brand": "MSTAR",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

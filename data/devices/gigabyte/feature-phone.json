@@ -1,14 +1,17 @@
 {
   "gigabyte ms800": {
-    "codename": "MS800",
+    "deviceName": "MS800",
     "marketingName": "MS800",
     "manufacturer": "Gigabyte",
     "brand": "Gigabyte",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   }
 }

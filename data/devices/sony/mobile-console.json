@@ -1,26 +1,32 @@
 {
   "sony playstation portable": {
-    "codename": "PlayStation Portable",
+    "deviceName": "PlayStation Portable",
     "marketingName": "PlayStation Portable",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "java",
     "type": "mobile-console",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 272,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 272,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "sony playstation vita": {
-    "codename": "PlayStation Vita",
+    "deviceName": "PlayStation Vita",
     "marketingName": "PlayStation Vita",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "java",
     "type": "mobile-console",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 960,
-    "resolutionHeight": 544,
-    "dualOrientation": true
+    "display": {
+      "width": 960,
+      "height": 544,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "java"
   }
 }

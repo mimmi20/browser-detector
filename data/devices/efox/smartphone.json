@@ -1,26 +1,32 @@
 {
   "general efox device": {
-    "codename": "general eFOX Device",
+    "deviceName": "general eFOX Device",
     "marketingName": "general eFOX Device",
     "manufacturer": "Efox",
     "brand": "Efox",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "efox smart e5": {
-    "codename": "SMART E5",
+    "deviceName": "SMART E5",
     "marketingName": "SMART E5",
     "manufacturer": "Efox",
     "brand": "Efox",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

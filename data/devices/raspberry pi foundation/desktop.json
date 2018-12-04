@@ -1,14 +1,17 @@
 {
   "raspberry pi": {
-    "codename": "Raspberry Pi",
+    "deviceName": "Raspberry Pi",
     "marketingName": "Raspberry Pi",
     "manufacturer": "Raspberry Pi Foundation",
     "brand": "Raspberry Pi Foundation",
-    "platform": "debian",
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "debian"
   }
 }

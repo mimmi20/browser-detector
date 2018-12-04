@@ -1,14 +1,17 @@
 {
   "wortmann terra pad 1002": {
-    "codename": "TERRA PAD 1002",
+    "deviceName": "TERRA PAD 1002",
     "marketingName": "TERRA PAD 1002",
     "manufacturer": "Wortmann",
     "brand": "Wortmann",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

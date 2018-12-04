@@ -1,26 +1,32 @@
 {
   "general nuvision device": {
-    "codename": "general NuVision Device",
+    "deviceName": "general NuVision Device",
     "marketingName": "general NuVision Device",
     "manufacturer": "NuVision",
     "brand": "NuVision",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nuvision tm785m3": {
-    "codename": "TM785M3",
+    "deviceName": "TM785M3",
     "marketingName": "TM785M3",
     "manufacturer": "NuVision",
     "brand": "NuVision",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

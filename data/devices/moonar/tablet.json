@@ -1,26 +1,32 @@
 {
   "general moonar device": {
-    "codename": "general Moonar Device",
+    "deviceName": "general Moonar Device",
     "marketingName": "general Moonar Device",
     "manufacturer": "Moonar",
     "brand": "Moonar",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "moonar k1001l1b": {
-    "codename": "K1001L1B",
+    "deviceName": "K1001L1B",
     "marketingName": "K1001L1B",
     "manufacturer": "Moonar",
     "brand": "Moonar",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,50 +1,62 @@
 {
   "evertek e7020hd": {
-    "codename": "E7020HD",
+    "deviceName": "E7020HD",
     "marketingName": "EverPad",
     "manufacturer": "Evertek",
     "brand": "Evertek",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "evertek e7050hd": {
-    "codename": "E7050HD",
+    "deviceName": "E7050HD",
     "marketingName": "EverPad",
     "manufacturer": "Evertek",
     "brand": "Evertek",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "evertek e8050hg": {
-    "codename": "E8050HG",
+    "deviceName": "E8050HG",
     "marketingName": "EverPad",
     "manufacturer": "Evertek",
     "brand": "Evertek",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "evertek e8051hd": {
-    "codename": "E8051HD",
+    "deviceName": "E8051HD",
     "marketingName": "E8051HD",
     "manufacturer": "Evertek",
     "brand": "Evertek",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

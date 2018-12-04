@@ -1,14 +1,17 @@
 {
   "mtt tablet": {
-    "codename": "Tablet",
+    "deviceName": "Tablet",
     "marketingName": "Tablet",
     "manufacturer": "MTT",
     "brand": "MTT",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

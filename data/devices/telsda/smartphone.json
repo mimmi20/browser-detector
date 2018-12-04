@@ -1,26 +1,32 @@
 {
   "general telsda device": {
-    "codename": "general Telsda Device",
+    "deviceName": "general Telsda Device",
     "marketingName": "general Telsda Device",
     "manufacturer": "Telsda",
     "brand": "Telsda",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "telsda t9666-1": {
-    "codename": "T9666-1",
+    "deviceName": "T9666-1",
     "marketingName": "T9666-1",
     "manufacturer": "Telsda",
     "brand": "Telsda",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

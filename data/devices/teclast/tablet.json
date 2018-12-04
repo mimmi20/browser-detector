@@ -1,38 +1,47 @@
 {
   "general teclast device": {
-    "codename": "general Teclast Device",
+    "deviceName": "general Teclast Device",
     "marketingName": "general Teclast Device",
     "manufacturer": "Teclast",
     "brand": "Teclast",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "teclast d4c5": {
-    "codename": "D4C5",
+    "deviceName": "D4C5",
     "marketingName": "P80h",
     "manufacturer": "Teclast",
     "brand": "Teclast",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "teclast k9c6": {
-    "codename": "K9C6",
+    "deviceName": "K9C6",
     "marketingName": "X98 Pro",
     "manufacturer": "Teclast",
     "brand": "Teclast",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

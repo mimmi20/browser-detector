@@ -1,74 +1,92 @@
 {
   "general myria device": {
-    "codename": "general Myria Device",
+    "deviceName": "general Myria Device",
     "marketingName": "general Myria Device",
     "manufacturer": "Myria",
     "brand": "Myria",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myria 502m": {
-    "codename": "502M",
+    "deviceName": "502M",
     "marketingName": "502M",
     "manufacturer": "Myria",
     "brand": "Myria",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myria my9053": {
-    "codename": "MY9053",
+    "deviceName": "MY9053",
     "marketingName": "Wide 2",
     "manufacturer": "Myria",
     "brand": "Myria",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myria my9054": {
-    "codename": "MY9054",
+    "deviceName": "MY9054",
     "marketingName": "Wide 4G",
     "manufacturer": "Myria",
     "brand": "Myria",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myria my9063": {
-    "codename": "MY9063",
+    "deviceName": "MY9063",
     "marketingName": "Grand 4G",
     "manufacturer": "Myria",
     "brand": "Myria",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "myria quad": {
-    "codename": "Quad",
+    "deviceName": "Quad",
     "marketingName": "Quad",
     "manufacturer": "Myria",
     "brand": "Myria",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,134 +1,167 @@
 {
   "pantech adr910l": {
-    "codename": "ADR910L",
+    "deviceName": "ADR910L",
     "marketingName": "Marauder",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech im-a830l": {
-    "codename": "IM-A830L",
+    "deviceName": "IM-A830L",
     "marketingName": "Vega Racer 2",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": false
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "pantech im-a840s": {
-    "codename": "IM-A840S",
+    "deviceName": "IM-A840S",
     "marketingName": "Vega S5",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech im-a850k": {
-    "codename": "IM-A850K",
+    "deviceName": "IM-A850K",
     "marketingName": "Vega R3",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech im-a850l": {
-    "codename": "IM-A850L",
+    "deviceName": "IM-A850L",
     "marketingName": "Vega R3",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech im-a900k": {
-    "codename": "IM-A900K",
+    "deviceName": "IM-A900K",
     "marketingName": "Vega Secret Up",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech im-t100k": {
-    "codename": "IM-T100K",
+    "deviceName": "IM-T100K",
     "marketingName": "Sky Vega 5",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech p8000": {
-    "codename": "P8000",
+    "deviceName": "P8000",
     "marketingName": "Crossover",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech p8010": {
-    "codename": "P8010",
+    "deviceName": "P8010",
     "marketingName": "Flex",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech p9060": {
-    "codename": "P9060",
+    "deviceName": "P9060",
     "marketingName": "Pocket",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 600,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 600,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pantech p9070": {
-    "codename": "P9070",
+    "deviceName": "P9070",
     "marketingName": "Burst",
     "manufacturer": "Pantech",
     "brand": "Pantech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,50 +1,62 @@
 {
   "general intenso device": {
-    "codename": "general Intenso Device",
+    "deviceName": "general Intenso Device",
     "marketingName": "general Intenso Device",
     "manufacturer": "Intenso",
     "brand": "Intenso",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "intenso inm8002kp": {
-    "codename": "INM8002KP",
+    "deviceName": "INM8002KP",
     "marketingName": "TAB 824",
     "manufacturer": "Intenso",
     "brand": "Intenso",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "intenso tab 1024": {
-    "codename": "Tab 1024",
+    "deviceName": "Tab 1024",
     "marketingName": "Tab 1024",
     "manufacturer": "Intenso",
     "brand": "Intenso",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "intenso tab 803": {
-    "codename": "Tab 803",
+    "deviceName": "Tab 803",
     "marketingName": "Tab 803",
     "manufacturer": "Intenso",
     "brand": "Intenso",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

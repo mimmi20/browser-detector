@@ -1,26 +1,32 @@
 {
   "general ouya device": {
-    "codename": "general Ouya Device",
+    "deviceName": "general Ouya Device",
     "marketingName": "general Ouya Device",
     "manufacturer": "Ouya",
     "brand": "Ouya",
-    "platform": "android",
     "type": "tv-console",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "ouya ouya": {
-    "codename": "Ouya",
+    "deviceName": "Ouya",
     "marketingName": "Ouya",
     "manufacturer": "Ouya",
     "brand": "Ouya",
-    "platform": "android",
     "type": "tv-console",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

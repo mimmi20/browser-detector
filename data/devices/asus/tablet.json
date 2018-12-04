@@ -1,446 +1,557 @@
 {
   "general asus device": {
-    "codename": "general Asus Device",
+    "deviceName": "general Asus Device",
     "marketingName": "general Asus Device",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus eee pad tf201": {
-    "codename": "Eee Pad TF201",
+    "deviceName": "Eee Pad TF201",
     "marketingName": "Transformer Prime",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k007": {
-    "codename": "K007",
+    "deviceName": "K007",
     "marketingName": "K007",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k00c": {
-    "codename": "K00C",
+    "deviceName": "K00C",
     "marketingName": "Transformer Pad TF701T",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k00e": {
-    "codename": "K00E",
+    "deviceName": "K00E",
     "marketingName": "FonePad 7",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k00f": {
-    "codename": "K00F",
+    "deviceName": "K00F",
     "marketingName": "Memo Pad 10 ME102A",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k00l": {
-    "codename": "K00L",
+    "deviceName": "K00L",
     "marketingName": "Memo Pad 8 ME180A",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "asus k00u": {
-    "codename": "K00U",
+    "deviceName": "K00U",
     "marketingName": "Memo Pad HD 7",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "asus k00z": {
-    "codename": "K00Z",
+    "deviceName": "K00Z",
     "marketingName": "Fonepad 7 Dual SIM ME175CG",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k010": {
-    "codename": "K010",
+    "deviceName": "K010",
     "marketingName": "Transformer Pad TF103C",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k011": {
-    "codename": "K011",
+    "deviceName": "K011",
     "marketingName": "Memo Pad 8 ME181C",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k012": {
-    "codename": "K012",
+    "deviceName": "K012",
     "marketingName": "K012",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k013": {
-    "codename": "K013",
+    "deviceName": "K013",
     "marketingName": "Memo Pad 7 ME176C",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k017": {
-    "codename": "K017",
+    "deviceName": "K017",
     "marketingName": "Memo Pad 7",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k01a": {
-    "codename": "K01A",
+    "deviceName": "K01A",
     "marketingName": "Memo Pad 7",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k01b": {
-    "codename": "K01B",
+    "deviceName": "K01B",
     "marketingName": "K01B",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus k01e": {
-    "codename": "K01E",
+    "deviceName": "K01E",
     "marketingName": "Memo Pad ME103K",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus me172v": {
-    "codename": "ME172V",
+    "deviceName": "ME172V",
     "marketingName": "Memo Pad ME172V",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus me173x": {
-    "codename": "ME173X",
+    "deviceName": "ME173X",
     "marketingName": "Memo Pad HD7",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus me301t": {
-    "codename": "ME301T",
+    "deviceName": "ME301T",
     "marketingName": "Memo Pad Smart 10",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus me302c": {
-    "codename": "ME302C",
+    "deviceName": "ME302C",
     "marketingName": "Memo Pad FHD 10",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus me302kl": {
-    "codename": "ME302KL",
+    "deviceName": "ME302KL",
     "marketingName": "Memo Pad FHD 10",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus me371mg": {
-    "codename": "ME371MG",
+    "deviceName": "ME371MG",
     "marketingName": "Fonepad ME371MG",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus p00a": {
-    "codename": "P00A",
+    "deviceName": "P00A",
     "marketingName": "Zenpad 8.0 Z380M",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "asus p00c": {
-    "codename": "P00C",
+    "deviceName": "P00C",
     "marketingName": "ZenPad 10",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus p00l": {
-    "codename": "P00L",
+    "deviceName": "P00L",
     "marketingName": "ZenPad 10 Z301M",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "asus p022": {
-    "codename": "P022",
+    "deviceName": "P022",
     "marketingName": "Zenpad 8.0 Z380C",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus p023": {
-    "codename": "P023",
+    "deviceName": "P023",
     "marketingName": "ZenPad 10",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus p027": {
-    "codename": "P027",
+    "deviceName": "P027",
     "marketingName": "ZenPad 3S 10 Z500M",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus p1801-t": {
-    "codename": "P1801-T",
+    "deviceName": "P1801-T",
     "marketingName": "Tablet AiO",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus sl101": {
-    "codename": "SL101",
+    "deviceName": "SL101",
     "marketingName": "Eee Pad SL101 Slider",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus tf101": {
-    "codename": "TF101",
+    "deviceName": "TF101",
     "marketingName": "Eee Pad Transformer TF101",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus tf300t": {
-    "codename": "TF300T",
+    "deviceName": "TF300T",
     "marketingName": "Transformer Pad TF300T",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus tf300tg": {
-    "codename": "TF300TG",
+    "deviceName": "TF300TG",
     "marketingName": "Transformer Pad TF300TG",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus tf300tl": {
-    "codename": "TF300TL",
+    "deviceName": "TF300TL",
     "marketingName": "Transformer Pad TF300TL",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus tf700t": {
-    "codename": "TF700T",
+    "deviceName": "TF700T",
     "marketingName": "Transformer Pad TF700T",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "asus tx201la": {
-    "codename": "TX201LA",
+    "deviceName": "TX201LA",
     "marketingName": "Transformer Book Trio",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

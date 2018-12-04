@@ -1,3338 +1,4172 @@
 {
   "general sony device": {
-    "codename": "general Sony Device",
+    "deviceName": "general Sony Device",
     "marketingName": "general Sony Device",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sony 502so": {
-    "codename": "502SO",
+    "deviceName": "502SO",
     "marketingName": "Xperia X Performance",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c1504": {
-    "codename": "C1504",
+    "deviceName": "C1504",
     "marketingName": "Xperia E",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c1505": {
-    "codename": "C1505",
+    "deviceName": "C1505",
     "marketingName": "Xperia E",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c1604": {
-    "codename": "C1604",
+    "deviceName": "C1604",
     "marketingName": "Xperia E dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c1605": {
-    "codename": "C1605",
+    "deviceName": "C1605",
     "marketingName": "Xperia E dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c1904": {
-    "codename": "C1904",
+    "deviceName": "C1904",
     "marketingName": "Xperia M",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c1905": {
-    "codename": "C1905",
+    "deviceName": "C1905",
     "marketingName": "Xperia M",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c2004": {
-    "codename": "C2004",
+    "deviceName": "C2004",
     "marketingName": "Xperia M Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c2005": {
-    "codename": "C2005",
+    "deviceName": "C2005",
     "marketingName": "Xperia M Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c2104": {
-    "codename": "C2104",
+    "deviceName": "C2104",
     "marketingName": "Xperia L",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c2105": {
-    "codename": "C2105",
+    "deviceName": "C2105",
     "marketingName": "Xperia L",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c2305": {
-    "codename": "C2305",
+    "deviceName": "C2305",
     "marketingName": "Xperia C HSPA+",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c5302": {
-    "codename": "C5302",
+    "deviceName": "C5302",
     "marketingName": "Xperia SP HSPA",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c5303": {
-    "codename": "C5303",
+    "deviceName": "C5303",
     "marketingName": "Xperia SP LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c5306": {
-    "codename": "C5306",
+    "deviceName": "C5306",
     "marketingName": "Xperia SP LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c5502": {
-    "codename": "C5502",
+    "deviceName": "C5502",
     "marketingName": "Xperia ZR HSPA+",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c5503": {
-    "codename": "C5503",
+    "deviceName": "C5503",
     "marketingName": "Xperia ZR LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6502": {
-    "codename": "C6502",
+    "deviceName": "C6502",
     "marketingName": "Xperia ZL HSPA+",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6503": {
-    "codename": "C6503",
+    "deviceName": "C6503",
     "marketingName": "Xperia ZL LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6506": {
-    "codename": "C6506",
+    "deviceName": "C6506",
     "marketingName": "Xperia ZL LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6602": {
-    "codename": "C6602",
+    "deviceName": "C6602",
     "marketingName": "Xperia Z",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6603": {
-    "codename": "C6603",
+    "deviceName": "C6603",
     "marketingName": "Xperia Z",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6606": {
-    "codename": "C6606",
+    "deviceName": "C6606",
     "marketingName": "Xperia Z LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6616": {
-    "codename": "C6616",
+    "deviceName": "C6616",
     "marketingName": "Xperia Z",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6802": {
-    "codename": "C6802",
+    "deviceName": "C6802",
     "marketingName": "Xperia Z Ultra HSPA+",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6806": {
-    "codename": "C6806",
+    "deviceName": "C6806",
     "marketingName": "Xperia Z Ultra LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6833": {
-    "codename": "C6833",
+    "deviceName": "C6833",
     "marketingName": "Xperia Z Ultra LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6843": {
-    "codename": "C6843",
+    "deviceName": "C6843",
     "marketingName": "Xperia Z Ultra LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6902": {
-    "codename": "C6902",
+    "deviceName": "C6902",
     "marketingName": "Xperia Z1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6903": {
-    "codename": "C6903",
+    "deviceName": "C6903",
     "marketingName": "Xperia Z1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6906": {
-    "codename": "C6906",
+    "deviceName": "C6906",
     "marketingName": "Xperia Z1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6916": {
-    "codename": "C6916",
+    "deviceName": "C6916",
     "marketingName": "Xperia Z1s",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony c6943": {
-    "codename": "C6943",
+    "deviceName": "C6943",
     "marketingName": "Xperia Z1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2004": {
-    "codename": "D2004",
+    "deviceName": "D2004",
     "marketingName": "Xperia E1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2005": {
-    "codename": "D2005",
+    "deviceName": "D2005",
     "marketingName": "Xperia E1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2104": {
-    "codename": "D2104",
+    "deviceName": "D2104",
     "marketingName": "Xperia E1 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2105": {
-    "codename": "D2105",
+    "deviceName": "D2105",
     "marketingName": "Xperia E1 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2114": {
-    "codename": "D2114",
+    "deviceName": "D2114",
     "marketingName": "Xperia E1 TV Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2202": {
-    "codename": "D2202",
+    "deviceName": "D2202",
     "marketingName": "Xperia E3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2203": {
-    "codename": "D2203",
+    "deviceName": "D2203",
     "marketingName": "Xperia E3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2206": {
-    "codename": "D2206",
+    "deviceName": "D2206",
     "marketingName": "Xperia E3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2212": {
-    "codename": "D2212",
+    "deviceName": "D2212",
     "marketingName": "Xperia E3 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2243": {
-    "codename": "D2243",
+    "deviceName": "D2243",
     "marketingName": "Xperia E3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2302": {
-    "codename": "D2302",
+    "deviceName": "D2302",
     "marketingName": "Xperia M2 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2303": {
-    "codename": "D2303",
+    "deviceName": "D2303",
     "marketingName": "Xperia M2",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2305": {
-    "codename": "D2305",
+    "deviceName": "D2305",
     "marketingName": "Xperia M2",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2306": {
-    "codename": "D2306",
+    "deviceName": "D2306",
     "marketingName": "Xperia M2",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2403": {
-    "codename": "D2403",
+    "deviceName": "D2403",
     "marketingName": "Xperia M2 Aqua",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sony d2406": {
-    "codename": "D2406",
+    "deviceName": "D2406",
     "marketingName": "Xperia M2 Aqua",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sony d2502": {
-    "codename": "D2502",
+    "deviceName": "D2502",
     "marketingName": "Xperia C3 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d2533": {
-    "codename": "D2533",
+    "deviceName": "D2533",
     "marketingName": "Xperia C3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5102": {
-    "codename": "D5102",
+    "deviceName": "D5102",
     "marketingName": "Xperia T3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5103": {
-    "codename": "D5103",
+    "deviceName": "D5103",
     "marketingName": "Xperia T3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5106": {
-    "codename": "D5106",
+    "deviceName": "D5106",
     "marketingName": "Xperia T3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5303": {
-    "codename": "D5303",
+    "deviceName": "D5303",
     "marketingName": "Xperia T2 Ultra LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5306": {
-    "codename": "D5306",
+    "deviceName": "D5306",
     "marketingName": "Xperia T2 Ultra LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5322": {
-    "codename": "D5322",
+    "deviceName": "D5322",
     "marketingName": "Xperia T2 Ultra Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5503": {
-    "codename": "D5503",
+    "deviceName": "D5503",
     "marketingName": "Xperia Z1 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5803": {
-    "codename": "D5803",
+    "deviceName": "D5803",
     "marketingName": "Xperia Z3 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d5833": {
-    "codename": "D5833",
+    "deviceName": "D5833",
     "marketingName": "Xperia Z3 Compact (Asia)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d6502": {
-    "codename": "D6502",
+    "deviceName": "D6502",
     "marketingName": "Xperia Z2 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d6503": {
-    "codename": "D6503",
+    "deviceName": "D6503",
     "marketingName": "Xperia Z2 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d6543": {
-    "codename": "D6543",
+    "deviceName": "D6543",
     "marketingName": "Xperia Z2 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d6603": {
-    "codename": "D6603",
+    "deviceName": "D6603",
     "marketingName": "Xperia Z3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d6616": {
-    "codename": "D6616",
+    "deviceName": "D6616",
     "marketingName": "Xperia Z3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d6633": {
-    "codename": "D6633",
+    "deviceName": "D6633",
     "marketingName": "Xperia Z3 Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d6643": {
-    "codename": "D6643",
+    "deviceName": "D6643",
     "marketingName": "Xperia Z3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony d6653": {
-    "codename": "D6653",
+    "deviceName": "D6653",
     "marketingName": "Xperia Z3",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2003": {
-    "codename": "E2003",
+    "deviceName": "E2003",
     "marketingName": "Xperia E4G",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2006": {
-    "codename": "E2006",
+    "deviceName": "E2006",
     "marketingName": "Xperia E4G",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2033": {
-    "codename": "E2033",
+    "deviceName": "E2033",
     "marketingName": "Xperia E4g Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2043": {
-    "codename": "E2043",
+    "deviceName": "E2043",
     "marketingName": "Xperia E4g Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2053": {
-    "codename": "E2053",
+    "deviceName": "E2053",
     "marketingName": "Xperia E4G",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2104": {
-    "codename": "E2104",
+    "deviceName": "E2104",
     "marketingName": "Xperia E4",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2105": {
-    "codename": "E2105",
+    "deviceName": "E2105",
     "marketingName": "Xperia E4",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2115": {
-    "codename": "E2115",
+    "deviceName": "E2115",
     "marketingName": "Xperia E4 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2303": {
-    "codename": "E2303",
+    "deviceName": "E2303",
     "marketingName": "Xperia M4 Aqua",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2306": {
-    "codename": "E2306",
+    "deviceName": "E2306",
     "marketingName": "Xperia M4 Aqua",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2312": {
-    "codename": "E2312",
+    "deviceName": "E2312",
     "marketingName": "Xperia M4 Aqua Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2333": {
-    "codename": "E2333",
+    "deviceName": "E2333",
     "marketingName": "Xperia M4 Aqua Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2353": {
-    "codename": "E2353",
+    "deviceName": "E2353",
     "marketingName": "Xperia M4 Aqua",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e2363": {
-    "codename": "E2363",
+    "deviceName": "E2363",
     "marketingName": "Xperia M4 Aqua Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5303": {
-    "codename": "E5303",
+    "deviceName": "E5303",
     "marketingName": "Xperia C4",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5306": {
-    "codename": "E5306",
+    "deviceName": "E5306",
     "marketingName": "Xperia C4",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5333": {
-    "codename": "E5333",
+    "deviceName": "E5333",
     "marketingName": "Xperia C4 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5343": {
-    "codename": "E5343",
+    "deviceName": "E5343",
     "marketingName": "Xperia C4 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5353": {
-    "codename": "E5353",
+    "deviceName": "E5353",
     "marketingName": "Xperia C4",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5363": {
-    "codename": "E5363",
+    "deviceName": "E5363",
     "marketingName": "Xperia C4 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5506": {
-    "codename": "E5506",
+    "deviceName": "E5506",
     "marketingName": "Xperia C5 Ultra",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5533": {
-    "codename": "E5533",
+    "deviceName": "E5533",
     "marketingName": "Xperia C5 Ultra Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5563": {
-    "codename": "E5563",
+    "deviceName": "E5563",
     "marketingName": "Xperia C5 Ultra Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5603": {
-    "codename": "E5603",
+    "deviceName": "E5603",
     "marketingName": "Xperia M5",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5606": {
-    "codename": "E5606",
+    "deviceName": "E5606",
     "marketingName": "Xperia M5",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5633": {
-    "codename": "E5633",
+    "deviceName": "E5633",
     "marketingName": "Xperia M5 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5653": {
-    "codename": "E5653",
+    "deviceName": "E5653",
     "marketingName": "Xperia M5",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5663": {
-    "codename": "E5663",
+    "deviceName": "E5663",
     "marketingName": "Xperia M5 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5803": {
-    "codename": "E5803",
+    "deviceName": "E5803",
     "marketingName": "Xperia Z5 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e5823": {
-    "codename": "E5823",
+    "deviceName": "E5823",
     "marketingName": "Xperia Z5 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6533": {
-    "codename": "E6533",
+    "deviceName": "E6533",
     "marketingName": "Xperia Z3+ dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6553": {
-    "codename": "E6553",
+    "deviceName": "E6553",
     "marketingName": "Xperia Z3+",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6603": {
-    "codename": "E6603",
+    "deviceName": "E6603",
     "marketingName": "Xperia Z5 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6633": {
-    "codename": "E6633",
+    "deviceName": "E6633",
     "marketingName": "Xperia Z5 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6653": {
-    "codename": "E6653",
+    "deviceName": "E6653",
     "marketingName": "Xperia Z5 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6683": {
-    "codename": "E6683",
+    "deviceName": "E6683",
     "marketingName": "Xperia Z5 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6833": {
-    "codename": "E6833",
+    "deviceName": "E6833",
     "marketingName": "Xperia Z5 Premium Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2160,
-    "resolutionHeight": 3840,
-    "dualOrientation": true
+    "display": {
+      "width": 2160,
+      "height": 3840,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6853": {
-    "codename": "E6853",
+    "deviceName": "E6853",
     "marketingName": "Xperia Z5 Premium",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2160,
-    "resolutionHeight": 3840,
-    "dualOrientation": true
+    "display": {
+      "width": 2160,
+      "height": 3840,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony e6883": {
-    "codename": "E6883",
+    "deviceName": "E6883",
     "marketingName": "Xperia Z5 Premium Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2160,
-    "resolutionHeight": 3840,
-    "dualOrientation": true
+    "display": {
+      "width": 2160,
+      "height": 3840,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3111": {
-    "codename": "F3111",
+    "deviceName": "F3111",
     "marketingName": "Xperia XA (Europe)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3112": {
-    "codename": "F3112",
+    "deviceName": "F3112",
     "marketingName": "Xperia XA Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3113": {
-    "codename": "F3113",
+    "deviceName": "F3113",
     "marketingName": "Xperia XA (USA)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3115": {
-    "codename": "F3115",
+    "deviceName": "F3115",
     "marketingName": "Xperia XA (Global, Asia)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3116": {
-    "codename": "F3116",
+    "deviceName": "F3116",
     "marketingName": "Xperia XA Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3211": {
-    "codename": "F3211",
+    "deviceName": "F3211",
     "marketingName": "Xperia XA Ultra (Europe)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3212": {
-    "codename": "F3212",
+    "deviceName": "F3212",
     "marketingName": "Xperia XA Ultra Dual SIM (Europe)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3213": {
-    "codename": "F3213",
+    "deviceName": "F3213",
     "marketingName": "Xperia XA Ultra (USA)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3215": {
-    "codename": "F3215",
+    "deviceName": "F3215",
     "marketingName": "Xperia XA Ultra (Asia & Global)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3216": {
-    "codename": "F3216",
+    "deviceName": "F3216",
     "marketingName": "Xperia XA Ultra Dual SIM (Asia & Global)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f3311": {
-    "codename": "F3311",
+    "deviceName": "F3311",
     "marketingName": "Xperia E5",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f5121": {
-    "codename": "F5121",
+    "deviceName": "F5121",
     "marketingName": "Xperia X",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f5122": {
-    "codename": "F5122",
+    "deviceName": "F5122",
     "marketingName": "Xperia X Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f5321": {
-    "codename": "F5321",
+    "deviceName": "F5321",
     "marketingName": "Xperia X Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f8131": {
-    "codename": "F8131",
+    "deviceName": "F8131",
     "marketingName": "Xperia X Performance",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f8132": {
-    "codename": "F8132",
+    "deviceName": "F8132",
     "marketingName": "Xperia X Performance Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f8331": {
-    "codename": "F8331",
+    "deviceName": "F8331",
     "marketingName": "Xperia XZ",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f8332": {
-    "codename": "F8332",
+    "deviceName": "F8332",
     "marketingName": "Xperia XZ Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f8341": {
-    "codename": "F8341",
+    "deviceName": "F8341",
     "marketingName": "Xperia XZ1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony f8342": {
-    "codename": "F8342",
+    "deviceName": "F8342",
     "marketingName": "Xperia XZ1 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3112": {
-    "codename": "G3112",
+    "deviceName": "G3112",
     "marketingName": "Xperia XA1 (Europe, Dual SIM)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3116": {
-    "codename": "G3116",
+    "deviceName": "G3116",
     "marketingName": "Xperia XA1 (Asia, Dual SIM)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3121": {
-    "codename": "G3121",
+    "deviceName": "G3121",
     "marketingName": "Xperia XA1 (Europe)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3123": {
-    "codename": "G3123",
+    "deviceName": "G3123",
     "marketingName": "Xperia XA1 (USA)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3125": {
-    "codename": "G3125",
+    "deviceName": "G3125",
     "marketingName": "Xperia XA1 (Asia)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3221": {
-    "codename": "G3221",
+    "deviceName": "G3221",
     "marketingName": "Xperia XA1 Ultra",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3311": {
-    "codename": "G3311",
+    "deviceName": "G3311",
     "marketingName": "Xperia L1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3312": {
-    "codename": "G3312",
+    "deviceName": "G3312",
     "marketingName": "Xperia L1 (Europe, Middle East, Africa)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3313": {
-    "codename": "G3313",
+    "deviceName": "G3313",
     "marketingName": "Xperia L1 (USA)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3416": {
-    "codename": "G3416",
+    "deviceName": "G3416",
     "marketingName": "Xperia XA1 Plus",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g3421": {
-    "codename": "G3421",
+    "deviceName": "G3421",
     "marketingName": "Xperia XA1 Plus",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g8141": {
-    "codename": "G8141",
+    "deviceName": "G8141",
     "marketingName": "Xperia XZ Premium",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2160,
-    "resolutionHeight": 3840,
-    "dualOrientation": true
+    "display": {
+      "width": 2160,
+      "height": 3840,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g8142": {
-    "codename": "G8142",
+    "deviceName": "G8142",
     "marketingName": "Xperia XZ Premium Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2160,
-    "resolutionHeight": 3840,
-    "dualOrientation": true
+    "display": {
+      "width": 2160,
+      "height": 3840,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g8231": {
-    "codename": "G8231",
+    "deviceName": "G8231",
     "marketingName": "Xperia XZs",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g8232": {
-    "codename": "G8232",
+    "deviceName": "G8232",
     "marketingName": "Xperia XZs Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g8341": {
-    "codename": "G8341",
+    "deviceName": "G8341",
     "marketingName": "Xperia XZ1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g8342": {
-    "codename": "G8342",
+    "deviceName": "G8342",
     "marketingName": "Xperia XZ1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony g8441": {
-    "codename": "G8441",
+    "deviceName": "G8441",
     "marketingName": "Xperia XZ1 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h3113": {
-    "codename": "H3113",
+    "deviceName": "H3113",
     "marketingName": "Xperia XA2",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h3213": {
-    "codename": "H3213",
+    "deviceName": "H3213",
     "marketingName": "Xperia XA2 Ultra",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h3311": {
-    "codename": "H3311",
+    "deviceName": "H3311",
     "marketingName": "Xperia L2",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h4113": {
-    "codename": "H4113",
+    "deviceName": "H4113",
     "marketingName": "Xperia XA2 Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h4311": {
-    "codename": "H4311",
+    "deviceName": "H4311",
     "marketingName": "Xperia L2 Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h8166": {
-    "codename": "H8166",
+    "deviceName": "H8166",
     "marketingName": "Xperia XZ2 Premium Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2160,
-    "resolutionHeight": 3840,
-    "dualOrientation": true
+    "display": {
+      "width": 2160,
+      "height": 3840,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h8216": {
-    "codename": "H8216",
+    "deviceName": "H8216",
     "marketingName": "Xperia XZ2",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h8266": {
-    "codename": "H8266",
+    "deviceName": "H8266",
     "marketingName": "H8266",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h8314": {
-    "codename": "H8314",
+    "deviceName": "H8314",
     "marketingName": "Xperia XZ2 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h8324": {
-    "codename": "H8324",
+    "deviceName": "H8324",
     "marketingName": "H8324",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony h9436": {
-    "codename": "H9436",
+    "deviceName": "H9436",
     "marketingName": "Xperia XZ3 Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony l36h": {
-    "codename": "L36h",
+    "deviceName": "L36h",
     "marketingName": "Xperia Z",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony l39h": {
-    "codename": "L39h",
+    "deviceName": "L39h",
     "marketingName": "Xperia Z1",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony l39u": {
-    "codename": "L39u",
+    "deviceName": "L39u",
     "marketingName": "Xperia Z1 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony l50t": {
-    "codename": "L50t",
+    "deviceName": "L50t",
     "marketingName": "Xperia Z2 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony l50u": {
-    "codename": "L50u",
+    "deviceName": "L50u",
     "marketingName": "Xperia Z2 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt22i": {
-    "codename": "LT22i",
+    "deviceName": "LT22i",
     "marketingName": "Xperia P",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt25i": {
-    "codename": "LT25i",
+    "deviceName": "LT25i",
     "marketingName": "Xperia V",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt26ii": {
-    "codename": "LT26ii",
+    "deviceName": "LT26ii",
     "marketingName": "Xperia SL",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt26iv": {
-    "codename": "LT26iv",
+    "deviceName": "LT26iv",
     "marketingName": "Xperia Arc HD",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt26w": {
-    "codename": "LT26w",
+    "deviceName": "LT26w",
     "marketingName": "Xperia Acro S",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt29i": {
-    "codename": "LT29i",
+    "deviceName": "LT29i",
     "marketingName": "Xperia Hayabusa",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt30a": {
-    "codename": "LT30a",
+    "deviceName": "LT30a",
     "marketingName": "Xperia T LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt30at": {
-    "codename": "LT30at",
+    "deviceName": "LT30at",
     "marketingName": "Xperia TL (AT&T)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony lt30p": {
-    "codename": "LT30p",
+    "deviceName": "LT30p",
     "marketingName": "Xperia T",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony mt11a": {
-    "codename": "MT11a",
+    "deviceName": "MT11a",
     "marketingName": "Xperia Neo V",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony mt11i": {
-    "codename": "MT11i",
+    "deviceName": "MT11i",
     "marketingName": "Xperia Neo V",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony s39h": {
-    "codename": "S39h",
+    "deviceName": "S39h",
     "marketingName": "Xperia C HSPA+",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-01f": {
-    "codename": "SO-01F",
+    "deviceName": "SO-01F",
     "marketingName": "Xperia Z1 LTE (NTT DoCoMo)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-01g": {
-    "codename": "SO-01G",
+    "deviceName": "SO-01G",
     "marketingName": "Xperia Z3 (NTT DoCoMo)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-02d": {
-    "codename": "SO-02D",
+    "deviceName": "SO-02D",
     "marketingName": "Xperia NX",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-02f": {
-    "codename": "SO-02F",
+    "deviceName": "SO-02F",
     "marketingName": "Xperia Z1F (NTT DoCoMo)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-02g": {
-    "codename": "SO-02G",
+    "deviceName": "SO-02G",
     "marketingName": "Xperia Z3 Compact (NTT DoCoMo)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-03c": {
-    "codename": "SO-03C",
+    "deviceName": "SO-03C",
     "marketingName": "Xperia ray",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-03d": {
-    "codename": "SO-03D",
+    "deviceName": "SO-03D",
     "marketingName": "Xperia acro (NTT DoCoMo)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-03f": {
-    "codename": "SO-03F",
+    "deviceName": "SO-03F",
     "marketingName": "Xperia Z2 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-03h": {
-    "codename": "SO-03H",
+    "deviceName": "SO-03H",
     "marketingName": "Xperia Z5 Premium",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2160,
-    "resolutionHeight": 3840,
-    "dualOrientation": true
+    "display": {
+      "width": 2160,
+      "height": 3840,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-04d": {
-    "codename": "SO-04D",
+    "deviceName": "SO-04D",
     "marketingName": "Xperia GX (NTT DoCoMo)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-04e": {
-    "codename": "SO-04E",
+    "deviceName": "SO-04E",
     "marketingName": "Xperia A (NTT DoCoMo)",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony so-05d": {
-    "codename": "SO-05D",
+    "deviceName": "SO-05D",
     "marketingName": "Xperia SX",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sol22": {
-    "codename": "SOL22",
+    "deviceName": "SOL22",
     "marketingName": "Xperia UL",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sov32": {
-    "codename": "SOV32",
+    "deviceName": "SOV32",
     "marketingName": "Xperia Z5 WiMax 2+",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sov33": {
-    "codename": "SOV33",
+    "deviceName": "SOV33",
     "marketingName": "Xperia X Performance",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st21a": {
-    "codename": "ST21a",
+    "deviceName": "ST21a",
     "marketingName": "Xperia Tipo",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st21a2": {
-    "codename": "ST21a2",
+    "deviceName": "ST21a2",
     "marketingName": "Xperia Tipo Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st21i": {
-    "codename": "ST21i",
+    "deviceName": "ST21i",
     "marketingName": "Xperia Tipo",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st21i2": {
-    "codename": "ST21i2",
+    "deviceName": "ST21i2",
     "marketingName": "Xperia Tipo Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st21iv": {
-    "codename": "ST21iv",
+    "deviceName": "ST21iv",
     "marketingName": "Xperia Tipo",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st23a": {
-    "codename": "ST23a",
+    "deviceName": "ST23a",
     "marketingName": "Xperia miro",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st23i": {
-    "codename": "ST23i",
+    "deviceName": "ST23i",
     "marketingName": "Xperia miro",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st26a": {
-    "codename": "ST26a",
+    "deviceName": "ST26a",
     "marketingName": "Xperia J",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony st26i": {
-    "codename": "ST26i",
+    "deviceName": "ST26i",
     "marketingName": "Xperia J",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony xl39h": {
-    "codename": "XL39h",
+    "deviceName": "XL39h",
     "marketingName": "Xperia Z Ultra HSPA+",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony xm50h": {
-    "codename": "XM50h",
+    "deviceName": "XM50h",
     "marketingName": "Xperia T2 Ultra Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony xm50t": {
-    "codename": "XM50t",
+    "deviceName": "XM50t",
     "marketingName": "Xperia T2 Ultra LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony xperia m2": {
-    "codename": "Xperia M2",
+    "deviceName": "Xperia M2",
     "marketingName": "Xperia M2",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony xperia s": {
-    "codename": "Xperia S",
+    "deviceName": "Xperia S",
     "marketingName": "Xperia S",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony xperia v": {
-    "codename": "Xperia V",
+    "deviceName": "Xperia V",
     "marketingName": "Xperia V",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson e10a": {
-    "codename": "E10a",
+    "deviceName": "E10a",
     "marketingName": "Xperia X10 Mini",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson e10i": {
-    "codename": "E10i",
+    "deviceName": "E10i",
     "marketingName": "Xperia X10 Mini",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson e10iv": {
-    "codename": "E10iv",
+    "deviceName": "E10iv",
     "marketingName": "Xperia X10 Mini",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson e15a": {
-    "codename": "E15a",
+    "deviceName": "E15a",
     "marketingName": "Xperia X8",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson e15av": {
-    "codename": "E15av",
+    "deviceName": "E15av",
     "marketingName": "Xperia X8",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson e15i": {
-    "codename": "E15i",
+    "deviceName": "E15i",
     "marketingName": "Xperia X8",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson e15iv": {
-    "codename": "E15iv",
+    "deviceName": "E15iv",
     "marketingName": "Xperia X8",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt15": {
-    "codename": "LT15",
+    "deviceName": "LT15",
     "marketingName": "Xperia Arc",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt15a": {
-    "codename": "LT15a",
+    "deviceName": "LT15a",
     "marketingName": "Xperia Arc",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt15i": {
-    "codename": "LT15i",
+    "deviceName": "LT15i",
     "marketingName": "Xperia Arc",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt15iv": {
-    "codename": "LT15iv",
+    "deviceName": "LT15iv",
     "marketingName": "Xperia Arc",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt18": {
-    "codename": "LT18",
+    "deviceName": "LT18",
     "marketingName": "Xperia Arc S",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt18a": {
-    "codename": "LT18a",
+    "deviceName": "LT18a",
     "marketingName": "Xperia Arc S",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt18i": {
-    "codename": "LT18i",
+    "deviceName": "LT18i",
     "marketingName": "Xperia Arc S",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt18iv": {
-    "codename": "LT18iv",
+    "deviceName": "LT18iv",
     "marketingName": "Xperia Arc S",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt26i": {
-    "codename": "LT26i",
+    "deviceName": "LT26i",
     "marketingName": "Xperia Arc HD",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt28at": {
-    "codename": "LT28at",
+    "deviceName": "LT28at",
     "marketingName": "Xperia ion LTE",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt28h": {
-    "codename": "LT28h",
+    "deviceName": "LT28h",
     "marketingName": "Xperia Ion",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson lt28i": {
-    "codename": "LT28i",
+    "deviceName": "LT28i",
     "marketingName": "Xperia ion LTE",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson m1i": {
-    "codename": "M1i",
+    "deviceName": "M1i",
     "marketingName": "M1i",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 240,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sonyericsson mk16a": {
-    "codename": "MK16a",
+    "deviceName": "MK16a",
     "marketingName": "Xperia Pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson mk16i": {
-    "codename": "MK16i",
+    "deviceName": "MK16i",
     "marketingName": "Xperia Pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson mt15a": {
-    "codename": "MT15a",
+    "deviceName": "MT15a",
     "marketingName": "Xperia Neo",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson mt15i": {
-    "codename": "MT15i",
+    "deviceName": "MT15i",
     "marketingName": "Xperia Neo",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson mt15iv": {
-    "codename": "MT15iv",
+    "deviceName": "MT15iv",
     "marketingName": "Xperia Neo",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson mt25i": {
-    "codename": "MT25i",
+    "deviceName": "MT25i",
     "marketingName": "Xperia Neo L",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson mt27i": {
-    "codename": "MT27i",
+    "deviceName": "MT27i",
     "marketingName": "Xperia Sola",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson r800a": {
-    "codename": "R800a",
+    "deviceName": "R800a",
     "marketingName": "Xperia Play",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson r800at": {
-    "codename": "R800at",
+    "deviceName": "R800at",
     "marketingName": "Xperia Play",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson r800i": {
-    "codename": "R800i",
+    "deviceName": "R800i",
     "marketingName": "Xperia Play",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson r800iv": {
-    "codename": "R800iv",
+    "deviceName": "R800iv",
     "marketingName": "Xperia Play",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson r800x": {
-    "codename": "R800x",
+    "deviceName": "R800x",
     "marketingName": "Xperia Play",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson r88i": {
-    "codename": "R88i",
+    "deviceName": "R88i",
     "marketingName": "Xperia Play",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson sk17a": {
-    "codename": "SK17a",
+    "deviceName": "SK17a",
     "marketingName": "Xperia Mini Pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson sk17i": {
-    "codename": "SK17i",
+    "deviceName": "SK17i",
     "marketingName": "Xperia Mini Pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson sk17iv": {
-    "codename": "SK17iv",
+    "deviceName": "SK17iv",
     "marketingName": "Xperia Mini Pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson so-01b": {
-    "codename": "SO-01B",
+    "deviceName": "SO-01B",
     "marketingName": "Xperia X10",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson so-01c": {
-    "codename": "SO-01C",
+    "deviceName": "SO-01C",
     "marketingName": "Xperia Arc",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson so-01d": {
-    "codename": "SO-01D",
+    "deviceName": "SO-01D",
     "marketingName": "Xperia Play",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson so-01e": {
-    "codename": "SO-01E",
+    "deviceName": "SO-01E",
     "marketingName": "Xperia AX (NTT DoCoMo)",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson so-02c": {
-    "codename": "SO-02C",
+    "deviceName": "SO-02C",
     "marketingName": "Xperia acro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson so-02e": {
-    "codename": "SO-02E",
+    "deviceName": "SO-02E",
     "marketingName": "Xperia Z (NTT DoCoMo)",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st15a": {
-    "codename": "ST15a",
+    "deviceName": "ST15a",
     "marketingName": "Xperia Mini",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st15i": {
-    "codename": "ST15i",
+    "deviceName": "ST15i",
     "marketingName": "Xperia Mini",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st17a": {
-    "codename": "ST17a",
+    "deviceName": "ST17a",
     "marketingName": "Xperia Active",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st17i": {
-    "codename": "ST17i",
+    "deviceName": "ST17i",
     "marketingName": "Xperia Active",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st18a": {
-    "codename": "ST18a",
+    "deviceName": "ST18a",
     "marketingName": "Xperia ray",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st18i": {
-    "codename": "ST18i",
+    "deviceName": "ST18i",
     "marketingName": "Xperia ray",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st18iv": {
-    "codename": "ST18iv",
+    "deviceName": "ST18iv",
     "marketingName": "Xperia ray",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st25a": {
-    "codename": "ST25a",
+    "deviceName": "ST25a",
     "marketingName": "Xperia U",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st25i": {
-    "codename": "ST25i",
+    "deviceName": "ST25i",
     "marketingName": "Xperia U",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st25iv": {
-    "codename": "ST25iv",
+    "deviceName": "ST25iv",
     "marketingName": "Xperia U",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st27a": {
-    "codename": "ST27a",
+    "deviceName": "ST27a",
     "marketingName": "Xperia Go",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson st27i": {
-    "codename": "ST27i",
+    "deviceName": "ST27i",
     "marketingName": "Xperia Go",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson u1i": {
-    "codename": "U1i",
+    "deviceName": "U1i",
     "marketingName": "Satio",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "sonyericsson u1iv": {
-    "codename": "U1iv",
+    "deviceName": "U1iv",
     "marketingName": "Satio",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "sonyericsson u20a": {
-    "codename": "U20a",
+    "deviceName": "U20a",
     "marketingName": "Xperia X10 Mini pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sonyericsson u20i": {
-    "codename": "U20i",
+    "deviceName": "U20i",
     "marketingName": "Xperia X10 Mini pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sonyericsson u20iv": {
-    "codename": "U20iv",
+    "deviceName": "U20iv",
     "marketingName": "Xperia X10 Mini pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sonyericsson u5i": {
-    "codename": "U5i",
+    "deviceName": "U5i",
     "marketingName": "Vivaz",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "sonyericsson u8i": {
-    "codename": "U8i",
+    "deviceName": "U8i",
     "marketingName": "Vivaz Pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "sonyericsson wt19a": {
-    "codename": "WT19a",
+    "deviceName": "WT19a",
     "marketingName": "Live with Walkman",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson wt19i": {
-    "codename": "WT19i",
+    "deviceName": "WT19i",
     "marketingName": "Live with Walkman",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson wt19iv": {
-    "codename": "WT19iv",
+    "deviceName": "WT19iv",
     "marketingName": "Live with Walkman",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson x10": {
-    "codename": "X10",
+    "deviceName": "X10",
     "marketingName": "Xperia X10",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson x10a": {
-    "codename": "X10a",
+    "deviceName": "X10a",
     "marketingName": "Xperia X10",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson x10i": {
-    "codename": "X10i",
+    "deviceName": "X10i",
     "marketingName": "Xperia X10",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson x10iv": {
-    "codename": "X10iv",
+    "deviceName": "X10iv",
     "marketingName": "Xperia X10",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson x1a": {
-    "codename": "X1a",
+    "deviceName": "X1a",
     "marketingName": "Xperia X1",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sonyericsson x1i": {
-    "codename": "X1i",
+    "deviceName": "X1i",
     "marketingName": "Xperia X1",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sonyericsson x2": {
-    "codename": "X2",
+    "deviceName": "X2",
     "marketingName": "X2",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "sonyericsson xperia arc s": {
-    "codename": "Xperia Arc S",
+    "deviceName": "Xperia Arc S",
     "marketingName": "Xperia Arc S",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson xperia mini pro": {
-    "codename": "Xperia Mini Pro",
+    "deviceName": "Xperia Mini Pro",
     "marketingName": "Xperia Mini Pro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sonyericsson xperia neo v": {
-    "codename": "Xperia Neo V",
+    "deviceName": "Xperia Neo V",
     "marketingName": "Xperia Neo V",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

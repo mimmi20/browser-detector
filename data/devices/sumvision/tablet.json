@@ -1,38 +1,47 @@
 {
   "general sumvision device": {
-    "codename": "general Sumvision Device",
+    "deviceName": "general Sumvision Device",
     "marketingName": "general Sumvision Device",
     "manufacturer": "Sumvision",
     "brand": "Sumvision",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sumvision cyclone voyager": {
-    "codename": "Cyclone Voyager",
+    "deviceName": "Cyclone Voyager",
     "marketingName": "Cyclone Voyager",
     "manufacturer": "Sumvision",
     "brand": "Sumvision",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sumvision cyclone voyager 2": {
-    "codename": "Cyclone Voyager 2",
+    "deviceName": "Cyclone Voyager 2",
     "marketingName": "Cyclone Voyager 2",
     "manufacturer": "Sumvision",
     "brand": "Sumvision",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

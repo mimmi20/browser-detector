@@ -1,26 +1,32 @@
 {
   "turbo-x hive iv 3g": {
-    "codename": "Hive IV 3G",
+    "deviceName": "Hive IV 3G",
     "marketingName": "Hive IV 3G",
     "manufacturer": "Turbo-X",
     "brand": "Turbo-X",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "turbo-x hive v 3g": {
-    "codename": "Hive V 3G",
+    "deviceName": "Hive V 3G",
     "marketingName": "Hive V 3G",
     "manufacturer": "Turbo-X",
     "brand": "Turbo-X",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

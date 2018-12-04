@@ -1,134 +1,167 @@
 {
   "general iconbit device": {
-    "codename": "general iconBIT Device",
+    "deviceName": "general iconBIT Device",
     "marketingName": "general iconBIT Device",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-0701s": {
-    "codename": "NT-0701S",
+    "deviceName": "NT-0701S",
     "marketingName": "NetTAB Sky Net",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-0704s": {
-    "codename": "NT-0704S",
+    "deviceName": "NT-0704S",
     "marketingName": "NetTab Sky LE",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-0805c": {
-    "codename": "NT-0805C",
+    "deviceName": "NT-0805C",
     "marketingName": "NetTAB SKAT MX",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-0902s": {
-    "codename": "NT-0902S",
+    "deviceName": "NT-0902S",
     "marketingName": "NetTAB Space Quad RX",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-0909t": {
-    "codename": "NT-0909T",
+    "deviceName": "NT-0909T",
     "marketingName": "NetTab Thor IZ",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-1001t": {
-    "codename": "NT-1001T",
+    "deviceName": "NT-1001T",
     "marketingName": "THOR LE",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-1002t": {
-    "codename": "NT-1002T",
+    "deviceName": "NT-1002T",
     "marketingName": "THOR LE NT-1002T",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-1009t": {
-    "codename": "NT-1009T",
+    "deviceName": "NT-1009T",
     "marketingName": "NetTAB THOR QUAD II",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-1011t": {
-    "codename": "NT-1011T",
+    "deviceName": "NT-1011T",
     "marketingName": "NetTab Thor LE",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iconbit nt-3905t": {
-    "codename": "NT-3905T",
+    "deviceName": "NT-3905T",
     "marketingName": "NetTAB Thor ZX 3G",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

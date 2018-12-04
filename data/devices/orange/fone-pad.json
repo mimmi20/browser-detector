@@ -1,14 +1,17 @@
 {
   "orange sego": {
-    "codename": "Sego",
+    "deviceName": "Sego",
     "marketingName": "Sego",
     "manufacturer": "Orange",
     "brand": "Orange",
-    "platform": null,
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

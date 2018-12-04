@@ -1,74 +1,92 @@
 {
   "general kddi device": {
-    "codename": "general KDDI Device",
+    "deviceName": "general KDDI Device",
     "marketingName": "general KDDI Device",
     "manufacturer": "Kddi",
     "brand": "Kddi",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "kddi ca3h": {
-    "codename": "CA3H",
+    "deviceName": "CA3H",
     "marketingName": "CA005",
     "manufacturer": "Kddi",
     "brand": "Kddi",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "kddi kc31": {
-    "codename": "KC31",
+    "deviceName": "KC31",
     "marketingName": "W11K",
     "manufacturer": "Kyocera",
     "brand": "Kddi",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "kddi kc4a": {
-    "codename": "KC4A",
+    "deviceName": "KC4A",
     "marketingName": "KC4A",
     "manufacturer": "Kddi",
     "brand": "Kddi",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "kddi sn3v": {
-    "codename": "SN3V",
+    "deviceName": "SN3V",
     "marketingName": "URBANO AFFARE",
     "manufacturer": "Kddi",
     "brand": "Kddi",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "kddi ts3w": {
-    "codename": "TS3W",
+    "deviceName": "TS3W",
     "marketingName": "X-RAY",
     "manufacturer": "Kddi",
     "brand": "Kddi",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

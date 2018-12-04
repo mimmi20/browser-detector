@@ -1,26 +1,32 @@
 {
   "general yifang device": {
-    "codename": "general Yifang Device",
+    "deviceName": "general Yifang Device",
     "marketingName": "general Yifang Device",
     "manufacturer": "Yifang",
     "brand": "Yifang",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "yifang ebm8000nd 211": {
-    "codename": "EBM8000ND 211",
+    "deviceName": "EBM8000ND 211",
     "marketingName": "EBM8000ND 211",
     "manufacturer": "Yifang",
     "brand": "Yifang",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

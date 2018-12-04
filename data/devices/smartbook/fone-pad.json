@@ -1,14 +1,17 @@
 {
   "smartbook s10q-3g": {
-    "codename": "S10Q-3G",
+    "deviceName": "S10Q-3G",
     "marketingName": "S10Q-3G",
     "manufacturer": "Smartbook",
     "brand": "Smartbook",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

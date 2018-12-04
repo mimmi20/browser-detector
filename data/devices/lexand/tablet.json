@@ -1,38 +1,47 @@
 {
   "general lexand device": {
-    "codename": "general Lexand Device",
+    "deviceName": "general Lexand Device",
     "marketingName": "general Lexand Device",
     "manufacturer": "Lexand",
     "brand": "Lexand",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lexand a1002": {
-    "codename": "A1002",
+    "deviceName": "A1002",
     "marketingName": "A1002",
     "manufacturer": "Lexand",
     "brand": "Lexand",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lexand a811": {
-    "codename": "A811",
+    "deviceName": "A811",
     "marketingName": "A811",
     "manufacturer": "Lexand",
     "brand": "Lexand",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

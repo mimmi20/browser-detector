@@ -1,38 +1,47 @@
 {
   "general accent device": {
-    "codename": "general Accent Device",
+    "deviceName": "general Accent Device",
     "marketingName": "general Accent Device",
     "manufacturer": "Accent",
     "brand": "Accent",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "accent eagle7": {
-    "codename": "Eagle7 3G",
+    "deviceName": "Eagle7 3G",
     "marketingName": "Eagle7 3G",
     "manufacturer": "Accent",
     "brand": "Accent",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "accent touareg8": {
-    "codename": "Touareg8 3G",
+    "deviceName": "Touareg8 3G",
     "marketingName": "Touareg8 3G",
     "manufacturer": "Accent",
     "brand": "Accent",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,326 +1,407 @@
 {
   "general coby device": {
-    "codename": "general Coby Device",
+    "deviceName": "general Coby Device",
     "marketingName": "general Coby Device",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid1024": {
-    "codename": "MID1024",
+    "deviceName": "MID1024",
     "marketingName": "Kyros MID1024",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid1045": {
-    "codename": "MID1045",
+    "deviceName": "MID1045",
     "marketingName": "Kyros MID1045",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid1048": {
-    "codename": "MID1048",
+    "deviceName": "MID1048",
     "marketingName": "Kyros MID1048",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid1060": {
-    "codename": "MID1060",
+    "deviceName": "MID1060",
     "marketingName": "Kyros MID1060",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid1125": {
-    "codename": "MID1125",
+    "deviceName": "MID1125",
     "marketingName": "Kyros MID1125",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid1126": {
-    "codename": "MID1126",
+    "deviceName": "MID1126",
     "marketingName": "Kyros MID1126",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7012": {
-    "codename": "MID7012",
+    "deviceName": "MID7012",
     "marketingName": "Kyros MID7012",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7015": {
-    "codename": "MID7015",
+    "deviceName": "MID7015",
     "marketingName": "Kyros MID7015",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7016": {
-    "codename": "MID7016",
+    "deviceName": "MID7016",
     "marketingName": "Kyros MID7016",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7022": {
-    "codename": "MID7022",
+    "deviceName": "MID7022",
     "marketingName": "Kyros MID7022",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7032": {
-    "codename": "MID7032",
+    "deviceName": "MID7032",
     "marketingName": "Kyros MID7032",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 400,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7035": {
-    "codename": "MID7035",
+    "deviceName": "MID7035",
     "marketingName": "Kyros MID7035",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7036": {
-    "codename": "MID7036",
+    "deviceName": "MID7036",
     "marketingName": "Kyros MID7036",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7042": {
-    "codename": "MID7042",
+    "deviceName": "MID7042",
     "marketingName": "Kyros MID7042",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7048": {
-    "codename": "MID7048",
+    "deviceName": "MID7048",
     "marketingName": "Kyros MID7048",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7052": {
-    "codename": "MID7052",
+    "deviceName": "MID7052",
     "marketingName": "Kyros MID7052",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid7065": {
-    "codename": "MID7065",
+    "deviceName": "MID7065",
     "marketingName": "Kyros MID7065",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid8024": {
-    "codename": "MID8024",
+    "deviceName": "MID8024",
     "marketingName": "Kyros MID8024",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid8042": {
-    "codename": "MID8042",
+    "deviceName": "MID8042",
     "marketingName": "Kyros MID8042",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid8048": {
-    "codename": "MID8048",
+    "deviceName": "MID8048",
     "marketingName": "Kyros MID8048",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid8125": {
-    "codename": "MID8125",
+    "deviceName": "MID8125",
     "marketingName": "Kyros MID8125",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid8127": {
-    "codename": "MID8127",
+    "deviceName": "MID8127",
     "marketingName": "Kyros MID8127",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid8128": {
-    "codename": "MID8128",
+    "deviceName": "MID8128",
     "marketingName": "Kyros MID8128",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid9724": {
-    "codename": "MID9724",
+    "deviceName": "MID9724",
     "marketingName": "Kyros MID9724",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid9740": {
-    "codename": "MID9740",
+    "deviceName": "MID9740",
     "marketingName": "Kyros MID9740",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coby mid9742": {
-    "codename": "MID9742",
+    "deviceName": "MID9742",
     "marketingName": "Kyros MID9742",
     "manufacturer": "Coby",
     "brand": "Coby",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

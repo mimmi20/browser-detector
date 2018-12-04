@@ -1,38 +1,47 @@
 {
   "general nvidia device": {
-    "codename": "general NVIDIA Device",
+    "deviceName": "general NVIDIA Device",
     "marketingName": "general NVIDIA Device",
     "manufacturer": "NVIDIA",
     "brand": "NVIDIA",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nvidia shield tablet": {
-    "codename": "Shield",
+    "deviceName": "Shield",
     "marketingName": "Shield",
     "manufacturer": "NVIDIA",
     "brand": "NVIDIA",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nvidia shield tablet k1": {
-    "codename": "Shield K1",
+    "deviceName": "Shield K1",
     "marketingName": "Shield K1",
     "manufacturer": "NVIDIA",
     "brand": "NVIDIA",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general lemon device": {
-    "codename": "general Lemon Device",
+    "deviceName": "general Lemon Device",
     "marketingName": "general Lemon Device",
     "manufacturer": "Lemon",
     "brand": "Lemon",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "lemon b556": {
-    "codename": "B556",
+    "deviceName": "B556",
     "marketingName": "B556",
     "manufacturer": "Lemon",
     "brand": "Lemon",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

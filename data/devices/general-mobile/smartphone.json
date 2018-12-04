@@ -1,98 +1,122 @@
 {
   "general general-mobile device": {
-    "codename": "general General Mobile Device",
+    "deviceName": "general General Mobile Device",
     "marketingName": "general General Mobile Device",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "general-mobile 4g dual": {
-    "codename": "4G Dual",
+    "deviceName": "4G Dual",
     "marketingName": "4G Dual",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "general-mobile discovery": {
-    "codename": "Discovery",
+    "deviceName": "Discovery",
     "marketingName": "Discovery",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "general-mobile discovery elite": {
-    "codename": "Discovery Elite",
+    "deviceName": "Discovery Elite",
     "marketingName": "Discovery Elite",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "general-mobile discovery ii": {
-    "codename": "Discovery II",
+    "deviceName": "Discovery II",
     "marketingName": "Discovery II",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "general-mobile gm 5 plus": {
-    "codename": "GM 5 Plus",
+    "deviceName": "GM 5 Plus",
     "marketingName": "GM 5 Plus",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "general-mobile gm 5 plus d": {
-    "codename": "GM 5 Plus D",
+    "deviceName": "GM 5 Plus D",
     "marketingName": "GM 5 Plus D",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "general-mobile gm 8": {
-    "codename": "GM 8",
+    "deviceName": "GM 8",
     "marketingName": "GM 8",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

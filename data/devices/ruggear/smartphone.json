@@ -1,38 +1,47 @@
 {
   "general ruggear device": {
-    "codename": "general RugGear Device",
+    "deviceName": "general RugGear Device",
     "marketingName": "general RugGear Device",
     "manufacturer": "RugGear",
     "brand": "RugGear",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ruggear rg500": {
-    "codename": "RG500",
+    "deviceName": "RG500",
     "marketingName": "RG500",
     "manufacturer": "RugGear",
     "brand": "RugGear",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ruggear rg700": {
-    "codename": "RG700",
+    "deviceName": "RG700",
     "marketingName": "RG700",
     "manufacturer": "RugGear",
     "brand": "RugGear",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,14 +1,17 @@
 {
   "sony a5000": {
-    "codename": "A5000",
+    "deviceName": "A5000",
     "marketingName": "Alpha A5000",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "digital-camera",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,50 +1,62 @@
 {
   "general turbo-x device": {
-    "codename": "general Turbo-X Device",
+    "deviceName": "general Turbo-X Device",
     "marketingName": "general Turbo-X Device",
     "manufacturer": "Turbo-X",
     "brand": "Turbo-X",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "turbo-x coral ii": {
-    "codename": "Coral II",
+    "deviceName": "Coral II",
     "marketingName": "Coral II",
     "manufacturer": "Turbo-X",
     "brand": "Turbo-X",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "turbo-x ice": {
-    "codename": "Ice",
+    "deviceName": "Ice",
     "marketingName": "Ice",
     "manufacturer": "Turbo-X",
     "brand": "Turbo-X",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "turbo-x tablet spice iii": {
-    "codename": "Tablet Spice III",
+    "deviceName": "Tablet Spice III",
     "marketingName": "Tablet Spice III",
     "manufacturer": "Turbo-X",
     "brand": "Turbo-X",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

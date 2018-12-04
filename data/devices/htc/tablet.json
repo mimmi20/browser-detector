@@ -1,26 +1,32 @@
 {
   "htc flyer": {
-    "codename": "Flyer",
+    "deviceName": "Flyer",
     "marketingName": "Flyer",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc p510e": {
-    "codename": "P510e",
+    "deviceName": "P510e",
     "marketingName": "Flyer",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

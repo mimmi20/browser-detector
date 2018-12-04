@@ -1,50 +1,62 @@
 {
   "general yuandao device": {
-    "codename": "general YUANDAO Device",
+    "deviceName": "general YUANDAO Device",
     "marketingName": "general YUANDAO Device",
     "manufacturer": "Yuandao",
     "brand": "Yuandao",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "yuandao n101 dual core2 v11": {
-    "codename": "N101 Dual Core 2 V11",
+    "deviceName": "N101 Dual Core 2 V11",
     "marketingName": "Window N101",
     "manufacturer": "Yuandao",
     "brand": "Yuandao",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "yuandao n90 dual core2": {
-    "codename": "N90 Dual Core 2",
+    "deviceName": "N90 Dual Core 2",
     "marketingName": "N90 Dual Core 2",
     "manufacturer": "Yuandao",
     "brand": "Yuandao",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "yuandao n90fhdrk": {
-    "codename": "N90FHDRK",
+    "deviceName": "N90FHDRK",
     "marketingName": "Vido N90FHD",
     "manufacturer": "Yuandao",
     "brand": "Yuandao",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

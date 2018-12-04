@@ -1,134 +1,167 @@
 {
   "general freetel device": {
-    "codename": "general Freetel Device",
+    "deviceName": "general Freetel Device",
     "marketingName": "general Freetel Device",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ft141b": {
-    "codename": "FT141B",
+    "deviceName": "FT141B",
     "marketingName": "nico",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ft142": {
-    "codename": "FT142",
+    "deviceName": "FT142",
     "marketingName": "priori 2 SP",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ft142a": {
-    "codename": "FT142A",
+    "deviceName": "FT142A",
     "marketingName": "priori 2 SP",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ft142d": {
-    "codename": "FT142D",
+    "deviceName": "FT142D",
     "marketingName": "XM",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ftj152a": {
-    "codename": "FTJ152A",
+    "deviceName": "FTJ152A",
     "marketingName": "priori 3",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ftj152b": {
-    "codename": "FTJ152B",
+    "deviceName": "FTJ152B",
     "marketingName": "priori 3s",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ftj152c": {
-    "codename": "FTJ152C",
+    "deviceName": "FTJ152C",
     "marketingName": "Samurai Miyabi",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ftj152d": {
-    "codename": "FTJ152D",
+    "deviceName": "FTJ152D",
     "marketingName": "Samurai Kiwami",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ftj161b": {
-    "codename": "FTJ161B",
+    "deviceName": "FTJ161B",
     "marketingName": "Samurai Rei",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "freetel ftj162d": {
-    "codename": "FTJ162D",
+    "deviceName": "FTJ162D",
     "marketingName": "priori 4",
     "manufacturer": "Freetel",
     "brand": "Freetel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

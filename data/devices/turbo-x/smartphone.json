@@ -1,26 +1,32 @@
 {
   "turbo-x pi": {
-    "codename": "PI",
+    "deviceName": "PI",
     "marketingName": "PI",
     "manufacturer": "Turbo-X",
     "brand": "Turbo-X",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "turbo-x pi 4g": {
-    "codename": "PI 4G",
+    "deviceName": "PI 4G",
     "marketingName": "PI 4G",
     "manufacturer": "Turbo-X",
     "brand": "Turbo-X",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

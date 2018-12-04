@@ -1,542 +1,677 @@
 {
   "general 3q device": {
-    "codename": "general 3Q Device",
+    "deviceName": "general 3Q Device",
     "marketingName": "general 3Q Device",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q ac0731b": {
-    "codename": "AC0731B",
+    "deviceName": "AC0731B",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q ac0732c": {
-    "codename": "AC0732C",
+    "deviceName": "AC0732C",
     "marketingName": "Qoo! Lite",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q ac1024c": {
-    "codename": "AC1024C",
+    "deviceName": "AC1024C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q ac7803c": {
-    "codename": "AC7803C",
+    "deviceName": "AC7803C",
     "marketingName": "Qoo! Lite",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q bc9710am": {
-    "codename": "BC9710AM",
+    "deviceName": "BC9710AM",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q el72b": {
-    "codename": "EL72B",
+    "deviceName": "EL72B",
     "marketingName": "Qoo! Q-Book",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q er71b": {
-    "codename": "ER71B",
+    "deviceName": "ER71B",
     "marketingName": "ER71B",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0720c": {
-    "codename": "LC0720C",
+    "deviceName": "LC0720C",
     "marketingName": "Qoo! Q-pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0723b": {
-    "codename": "LC0723B",
+    "deviceName": "LC0723B",
     "marketingName": "Qoo! P-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0725b": {
-    "codename": "LC0725B",
+    "deviceName": "LC0725B",
     "marketingName": "Qoo! P-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0804b": {
-    "codename": "LC0804B",
+    "deviceName": "LC0804B",
     "marketingName": "Qoo! P-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0808b": {
-    "codename": "LC0808B",
+    "deviceName": "LC0808B",
     "marketingName": "Qoo! P-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0809b": {
-    "codename": "LC0809B",
+    "deviceName": "LC0809B",
     "marketingName": "Qoo! P-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0810c": {
-    "codename": "LC0810C",
+    "deviceName": "LC0810C",
     "marketingName": "Qoo! P-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0816c": {
-    "codename": "LC0816C",
+    "deviceName": "LC0816C",
     "marketingName": "Qoo! P-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc0901d": {
-    "codename": "LC0901D",
+    "deviceName": "LC0901D",
     "marketingName": "Qoo! P-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q lc1016c": {
-    "codename": "LC1016C",
+    "deviceName": "LC1016C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q mt0739d": {
-    "codename": "MT0739D",
+    "deviceName": "MT0739D",
     "marketingName": "Qoo! Q-pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q mt0812e": {
-    "codename": "MT0812E",
+    "deviceName": "MT0812E",
     "marketingName": "Qoo! Meta",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q oc1020a": {
-    "codename": "OC1020A",
+    "deviceName": "OC1020A",
     "marketingName": "OC1020A",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q qs0716d": {
-    "codename": "QS0716D",
+    "deviceName": "QS0716D",
     "marketingName": "Qoo! Q-pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0710b": {
-    "codename": "RC0710B",
+    "deviceName": "RC0710B",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0719h": {
-    "codename": "RC0719H",
+    "deviceName": "RC0719H",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0721b": {
-    "codename": "RC0721B",
+    "deviceName": "RC0721B",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0722c": {
-    "codename": "RC0722C",
+    "deviceName": "RC0722C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0726b": {
-    "codename": "RC0726B",
+    "deviceName": "RC0726B",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0734h": {
-    "codename": "RC0734H",
+    "deviceName": "RC0734H",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0743h": {
-    "codename": "RC0743H",
+    "deviceName": "RC0743H",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0813c": {
-    "codename": "RC0813C",
+    "deviceName": "RC0813C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc0817c": {
-    "codename": "RC0817C",
+    "deviceName": "RC0817C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc1019g": {
-    "codename": "RC1019G",
+    "deviceName": "RC1019G",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc1025f": {
-    "codename": "RC1025F",
+    "deviceName": "RC1025F",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc1301c": {
-    "codename": "RC1301C",
+    "deviceName": "RC1301C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc7802f": {
-    "codename": "RC7802F",
+    "deviceName": "RC7802F",
     "marketingName": "Qoo! Meta",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc9711b": {
-    "codename": "RC9711B",
+    "deviceName": "RC9711B",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc9712c": {
-    "codename": "RC9712C",
+    "deviceName": "RC9712C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc9716b": {
-    "codename": "RC9716B",
+    "deviceName": "RC9716B",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc9724c": {
-    "codename": "RC9724C",
+    "deviceName": "RC9724C",
     "marketingName": "Qoo! Q-pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc9726c": {
-    "codename": "RC9726C",
+    "deviceName": "RC9726C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc9730c": {
-    "codename": "RC9730C",
+    "deviceName": "RC9730C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q rc9731c": {
-    "codename": "RC9731C",
+    "deviceName": "RC9731C",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q ts0807b": {
-    "codename": "TS0807B",
+    "deviceName": "TS0807B",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q ts1013b": {
-    "codename": "TS1013B",
+    "deviceName": "TS1013B",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "3q vm1017a": {
-    "codename": "VM1017A",
+    "deviceName": "VM1017A",
     "marketingName": "Qoo! Q-Pad",
     "manufacturer": "TriQ",
     "brand": "TriQ",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

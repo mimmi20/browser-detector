@@ -1,62 +1,77 @@
 {
   "general landvo device": {
-    "codename": "general Landvo Device",
+    "deviceName": "general Landvo Device",
     "marketingName": "general Landvo Device",
     "manufacturer": "Landvo",
     "brand": "Landvo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "landvo l900": {
-    "codename": "L900",
+    "deviceName": "L900",
     "marketingName": "L900",
     "manufacturer": "Landvo",
     "brand": "Landvo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "landvo xm100": {
-    "codename": "XM100",
+    "deviceName": "XM100",
     "marketingName": "XM100",
     "manufacturer": "Landvo",
     "brand": "Landvo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "landvo xm100s": {
-    "codename": "XM100S",
+    "deviceName": "XM100S",
     "marketingName": "XM100S",
     "manufacturer": "Landvo",
     "brand": "Landvo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "landvo xm300 pro": {
-    "codename": "XM300 Pro",
+    "deviceName": "XM300 Pro",
     "marketingName": "XM300 Pro",
     "manufacturer": "Landvo",
     "brand": "Landvo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

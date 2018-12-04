@@ -1,38 +1,47 @@
 {
   "general fujitsu device": {
-    "codename": "general Fujitsu Device",
+    "deviceName": "general Fujitsu Device",
     "marketingName": "general Fujitsu Device",
     "manufacturer": "Fujitsu",
     "brand": "Fujitsu",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fujitsu fartm933kz": {
-    "codename": "FARTM933KZ",
+    "deviceName": "FARTM933KZ",
     "marketingName": "FARTM933KZ",
     "manufacturer": "Fujitsu",
     "brand": "Fujitsu",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fujitsu m532": {
-    "codename": "M532",
+    "deviceName": "M532",
     "marketingName": "Stylistic",
     "manufacturer": "Fujitsu",
     "brand": "Fujitsu",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

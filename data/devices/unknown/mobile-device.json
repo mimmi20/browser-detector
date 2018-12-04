@@ -1,14 +1,17 @@
 {
   "general mobile device": {
-    "codename": "general Mobile Device",
+    "deviceName": "general Mobile Device",
     "marketingName": "general Mobile Device",
     "manufacturer": "Unknown",
     "brand": "Unknown",
-    "platform": null,
     "type": "mobile-device",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

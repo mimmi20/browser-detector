@@ -1,110 +1,137 @@
 {
   "general modecom device": {
-    "codename": "general MODECOM Device",
+    "deviceName": "general MODECOM Device",
     "marketingName": "general MODECOM Device",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "modecom freetab": {
-    "codename": "FreeTAB",
+    "deviceName": "FreeTAB",
     "marketingName": "FreeTAB",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "modecom freetab 1001": {
-    "codename": "FreeTAB 1001",
+    "deviceName": "FreeTAB 1001",
     "marketingName": "FreeTAB 1001",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "modecom freetab 7001 hd ic": {
-    "codename": "FreeTAB 7001 HD IC",
+    "deviceName": "FreeTAB 7001 HD IC",
     "marketingName": "FreeTAB 7001 HD IC",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "modecom freetab 7800 ips ic": {
-    "codename": "FreeTAB 7800 IPS IC",
+    "deviceName": "FreeTAB 7800 IPS IC",
     "marketingName": "FreeTAB 7800 IPS IC",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "modecom freetab 9000 ips ic": {
-    "codename": "FreeTAB 9000 IPS IC",
+    "deviceName": "FreeTAB 9000 IPS IC",
     "marketingName": "FreeTAB 9000 IPS IC",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "modecom freetab 9702 hd x4": {
-    "codename": "FreeTAB 9702 HD X4",
+    "deviceName": "FreeTAB 9702 HD X4",
     "marketingName": "FreeTAB 9702 HD X4",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "modecom freetab 9702 ips x2": {
-    "codename": "FreeTAB 9702 IPS X2",
+    "deviceName": "FreeTAB 9702 IPS X2",
     "marketingName": "FreeTAB 9702 IPS X2",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "modecom freeway tab 7.0": {
-    "codename": "FreeWAY Tab 7.0",
+    "deviceName": "FreeWAY Tab 7.0",
     "marketingName": "FreeWAY Tab 7.0",
     "manufacturer": "Modecom",
     "brand": "Modecom",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "google cromecast": {
-    "codename": "Cromecast",
+    "deviceName": "Cromecast",
     "marketingName": "Cromecast",
     "manufacturer": "Google",
     "brand": "Google",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "google nexus player": {
-    "codename": "Nexus Player",
+    "deviceName": "Nexus Player",
     "marketingName": "Nexus Player",
     "manufacturer": "Asus",
     "brand": "Google",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

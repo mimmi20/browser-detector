@@ -1,38 +1,47 @@
 {
   "general jlinksz device": {
-    "codename": "general Jlinksz Device",
+    "deviceName": "general Jlinksz Device",
     "marketingName": "general Jlinksz Device",
     "manufacturer": "Jlinksz",
     "brand": "Jlinksz",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jlinksz k960": {
-    "codename": "K960",
+    "deviceName": "K960",
     "marketingName": "K960",
     "manufacturer": "Jlinksz",
     "brand": "Jlinksz",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jlinksz zh960": {
-    "codename": "ZH960",
+    "deviceName": "ZH960",
     "marketingName": "ZH960",
     "manufacturer": "Jlinksz",
     "brand": "Jlinksz",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

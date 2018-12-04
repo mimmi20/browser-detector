@@ -1,26 +1,32 @@
 {
   "general concorde device": {
-    "codename": "general ConCorde Device",
+    "deviceName": "general ConCorde Device",
     "marketingName": "general ConCorde Device",
     "manufacturer": "ConCorde",
     "brand": "ConCorde",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "concorde smartphone 4300": {
-    "codename": "SmartPhone 4300",
+    "deviceName": "SmartPhone 4300",
     "marketingName": "SmartPhone 4300",
     "manufacturer": "ConCorde",
     "brand": "ConCorde",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

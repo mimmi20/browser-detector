@@ -1,62 +1,77 @@
 {
   "general datang device": {
-    "codename": "general Datang Device",
+    "deviceName": "general Datang Device",
     "marketingName": "general Datang Device",
     "manufacturer": "Datang",
     "brand": "Datang",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "datang s11": {
-    "codename": "S11",
+    "deviceName": "S11",
     "marketingName": "S11",
     "manufacturer": "Datang",
     "brand": "Datang",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "datang s18": {
-    "codename": "S18",
+    "deviceName": "S18",
     "marketingName": "S18",
     "manufacturer": "Datang",
     "brand": "Datang",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "datang s18i": {
-    "codename": "S18i",
+    "deviceName": "S18i",
     "marketingName": "S18i",
     "manufacturer": "Datang",
     "brand": "Datang",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "datang s62l": {
-    "codename": "S62L",
+    "deviceName": "S62L",
     "marketingName": "S62L",
     "manufacturer": "Datang",
     "brand": "Datang",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

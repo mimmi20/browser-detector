@@ -1,38 +1,47 @@
 {
   "general lg tv": {
-    "codename": "general LG TV",
+    "deviceName": "general LG TV",
     "marketingName": "general LG TV",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "lg 32lh590u": {
-    "codename": "32LH590U",
+    "deviceName": "32LH590U",
     "marketingName": "32LH590U",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": 1366,
-    "resolutionHeight": 768,
-    "dualOrientation": false
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "lg 47lm9600-na": {
-    "codename": "47LM9600-NA",
+    "deviceName": "47LM9600-NA",
     "marketingName": "47LM9600-NA",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

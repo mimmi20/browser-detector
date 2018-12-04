@@ -1,14 +1,17 @@
 {
   "cherry-mobile fusion bolt": {
-    "codename": "Fusion Bolt",
+    "deviceName": "Fusion Bolt",
     "marketingName": "Fusion Bolt",
     "manufacturer": "Cherry Mobile",
     "brand": "Cherry Mobile",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

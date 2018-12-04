@@ -1,74 +1,92 @@
 {
   "general zuum device": {
-    "codename": "general Zuum Device",
+    "deviceName": "general Zuum Device",
     "marketingName": "general Zuum Device",
     "manufacturer": "Zuum",
     "brand": "Zuum",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zuum blaze": {
-    "codename": "Blaze",
+    "deviceName": "Blaze",
     "marketingName": "Blaze",
     "manufacturer": "Zuum",
     "brand": "Zuum",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zuum covet": {
-    "codename": "Covet",
+    "deviceName": "Covet",
     "marketingName": "Covet",
     "manufacturer": "Zuum",
     "brand": "Zuum",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zuum magno": {
-    "codename": "Magno",
+    "deviceName": "Magno",
     "marketingName": "Magno",
     "manufacturer": "Zuum",
     "brand": "Zuum",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zuum stedi": {
-    "codename": "Stedi",
+    "deviceName": "Stedi",
     "marketingName": "Stedi",
     "manufacturer": "Zuum",
     "brand": "Zuum",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zuum zen i": {
-    "codename": "Zen I",
+    "deviceName": "Zen I",
     "marketingName": "Zen I",
     "manufacturer": "Zuum",
     "brand": "Zuum",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

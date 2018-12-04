@@ -1,26 +1,32 @@
 {
   "general faktorzwei device": {
-    "codename": "general Faktor Zwei Device",
+    "deviceName": "general Faktor Zwei Device",
     "marketingName": "general Faktor Zwei Device",
     "manufacturer": "FaktorZwei",
     "brand": "FaktorZwei",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "faktorzwei 812223": {
-    "codename": "812223",
+    "deviceName": "812223",
     "marketingName": "FX2 PAD10",
     "manufacturer": "FaktorZwei",
     "brand": "FaktorZwei",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

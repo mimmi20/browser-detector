@@ -1,26 +1,32 @@
 {
   "hi-level hlv-t702": {
-    "codename": "HLV-T702",
+    "deviceName": "HLV-T702",
     "marketingName": "HLV-T702",
     "manufacturer": "Hi-Level",
     "brand": "Hi-Level",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hi-level hlv-t704": {
-    "codename": "HLV-T704",
+    "deviceName": "HLV-T704",
     "marketingName": "HLV-T704",
     "manufacturer": "Hi-Level",
     "brand": "Hi-Level",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

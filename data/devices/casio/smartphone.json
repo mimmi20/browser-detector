@@ -1,50 +1,62 @@
 {
   "general casio device": {
-    "codename": "general CASIO Device",
+    "deviceName": "general CASIO Device",
     "marketingName": "general CASIO Device",
     "manufacturer": "Casio",
     "brand": "Casio",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "casio c771": {
-    "codename": "C771",
+    "deviceName": "C771",
     "marketingName": "GzOne Commando",
     "manufacturer": "Casio",
     "brand": "Casio",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "casio c811": {
-    "codename": "C811",
+    "deviceName": "C811",
     "marketingName": "GzOne Commando",
     "manufacturer": "Casio",
     "brand": "Casio",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "casio gzone cal21": {
-    "codename": "CAL21",
+    "deviceName": "CAL21",
     "marketingName": "GzOne Type-L",
     "manufacturer": "Casio",
     "brand": "Casio",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

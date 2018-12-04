@@ -1,26 +1,32 @@
 {
   "olivetti op110": {
-    "codename": "OP110",
+    "deviceName": "OP110",
     "marketingName": "OP110",
     "manufacturer": "Olivetti",
     "brand": "Olivetti",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "olivetti op111": {
-    "codename": "OP111",
+    "deviceName": "OP111",
     "marketingName": "Olipad 3",
     "manufacturer": "Olivetti",
     "brand": "Olivetti",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

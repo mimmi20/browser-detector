@@ -1,14 +1,17 @@
 {
   "wolder mismart wink": {
-    "codename": "miSmart Wink",
+    "deviceName": "miSmart Wink",
     "marketingName": "miSmart Wink",
     "manufacturer": "Wolder Electronics",
     "brand": "Wolder Electronics",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

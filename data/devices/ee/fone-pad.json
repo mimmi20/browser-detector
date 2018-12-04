@@ -1,26 +1,32 @@
 {
   "general ee device": {
-    "codename": "general EE Device",
+    "deviceName": "general EE Device",
     "marketingName": "general EE Device",
     "manufacturer": "EE",
     "brand": "EE",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ee harrier tab": {
-    "codename": "Harrier Tab",
+    "deviceName": "Harrier Tab",
     "marketingName": "Harrier Tab",
     "manufacturer": "EE",
     "brand": "EE",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

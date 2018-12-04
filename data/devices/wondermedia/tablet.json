@@ -1,38 +1,47 @@
 {
   "general wondermedia device": {
-    "codename": "general WonderMedia Device",
+    "deviceName": "general WonderMedia Device",
     "marketingName": "general WonderMedia Device",
     "manufacturer": "WonderMedia",
     "brand": "WonderMedia",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wondermedia prizm wm8650": {
-    "codename": "WM8650",
+    "deviceName": "WM8650",
     "marketingName": "Prizm",
     "manufacturer": "WonderMedia",
     "brand": "WonderMedia",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wondermedia prizm wm8850": {
-    "codename": "WM8850",
+    "deviceName": "WM8850",
     "marketingName": "Prizm",
     "manufacturer": "WonderMedia",
     "brand": "WonderMedia",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

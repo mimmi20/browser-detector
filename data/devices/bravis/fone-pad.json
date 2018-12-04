@@ -1,50 +1,62 @@
 {
   "bravis nb105": {
-    "codename": "NB105",
+    "deviceName": "NB105",
     "marketingName": "NB105",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bravis nb74": {
-    "codename": "NB74",
+    "deviceName": "NB74",
     "marketingName": "NB74",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bravis nb751": {
-    "codename": "NB751",
+    "deviceName": "NB751",
     "marketingName": "NB751",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bravis np 725 ips 3g": {
-    "codename": "NP 725 IPS 3G",
+    "deviceName": "NP 725 IPS 3G",
     "marketingName": "NP 725 IPS 3G",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

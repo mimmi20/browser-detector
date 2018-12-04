@@ -1,26 +1,32 @@
 {
   "general cello device": {
-    "codename": "general Cello Device",
+    "deviceName": "general Cello Device",
     "marketingName": "general Cello Device",
     "manufacturer": "Cello",
     "brand": "Cello",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "cello t1144": {
-    "codename": "T1144",
+    "deviceName": "T1144",
     "marketingName": "T1144",
     "manufacturer": "Cello",
     "brand": "Cello",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

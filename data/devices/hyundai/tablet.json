@@ -1,38 +1,47 @@
 {
   "general hyundai device": {
-    "codename": "general Hyundai Device",
+    "deviceName": "general Hyundai Device",
     "marketingName": "general Hyundai Device",
     "manufacturer": "Hyundai",
     "brand": "Hyundai",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hyundai t10": {
-    "codename": "T10",
+    "deviceName": "T10",
     "marketingName": "T10",
     "manufacturer": "Hyundai",
     "brand": "Hyundai",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hyundai t7s": {
-    "codename": "T7S",
+    "deviceName": "T7S",
     "marketingName": "T7S",
     "manufacturer": "Hyundai",
     "brand": "Hyundai",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

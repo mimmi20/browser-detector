@@ -1,38 +1,47 @@
 {
   "htc p512": {
-    "codename": "P512",
+    "deviceName": "P512",
     "marketingName": "Flyer",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc p715a": {
-    "codename": "P715A",
+    "deviceName": "P715A",
     "marketingName": "Jetstream",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pg09410": {
-    "codename": "PG09410",
+    "deviceName": "PG09410",
     "marketingName": "Jetstream",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

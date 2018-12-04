@@ -1,14 +1,17 @@
 {
   "vonino sirius qs": {
-    "codename": "Sirius QS",
+    "deviceName": "Sirius QS",
     "marketingName": "Sirius QS",
     "manufacturer": "Vonino",
     "brand": "Vonino",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

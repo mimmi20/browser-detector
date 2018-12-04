@@ -1,26 +1,32 @@
 {
   "general cnm device": {
-    "codename": "general CnM Device",
+    "deviceName": "general CnM Device",
     "marketingName": "general CnM Device",
     "manufacturer": "CnM",
     "brand": "CnM",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "cnm touchpad 9.7": {
-    "codename": "Touchpad 9.7",
+    "deviceName": "Touchpad 9.7",
     "marketingName": "Touchpad 9.7",
     "manufacturer": "CnM",
     "brand": "CnM",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

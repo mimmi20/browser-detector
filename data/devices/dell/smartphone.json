@@ -1,50 +1,62 @@
 {
   "dell aero": {
-    "codename": "Aero",
+    "deviceName": "Aero",
     "marketingName": "Aero",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 360,
-    "resolutionHeight": 640,
-    "dualOrientation": true
+    "display": {
+      "width": 360,
+      "height": 640,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell venue": {
-    "codename": "Venue",
+    "deviceName": "Venue",
     "marketingName": "Venue",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dell venue pro": {
-    "codename": "Venue Pro",
+    "deviceName": "Venue Pro",
     "marketingName": "Venue Pro",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "dell xcd35": {
-    "codename": "XCD35",
+    "deviceName": "XCD35",
     "marketingName": "XCD35",
     "manufacturer": "Dell",
     "brand": "Dell",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

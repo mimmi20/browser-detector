@@ -1,62 +1,77 @@
 {
   "general videocon device": {
-    "codename": "general Videocon Device",
+    "deviceName": "general Videocon Device",
     "marketingName": "general Videocon Device",
     "manufacturer": "Videocon",
     "brand": "Videocon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "videocon a10": {
-    "codename": "A10",
+    "deviceName": "A10",
     "marketingName": "A10",
     "manufacturer": "Videocon",
     "brand": "Videocon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "videocon a15": {
-    "codename": "A15",
+    "deviceName": "A15",
     "marketingName": "A15",
     "manufacturer": "Videocon",
     "brand": "Videocon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "videocon a27i": {
-    "codename": "A27i",
+    "deviceName": "A27i",
     "marketingName": "A27i",
     "manufacturer": "Videocon",
     "brand": "Videocon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "videocon vt75c": {
-    "codename": "VT75C",
+    "deviceName": "VT75C",
     "marketingName": "VT75C",
     "manufacturer": "Videocon",
     "brand": "Videocon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general nextway device": {
-    "codename": "general Nextway Device",
+    "deviceName": "general Nextway Device",
     "marketingName": "general Nextway Device",
     "manufacturer": "Nextway",
     "brand": "Nextway",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nextway f10x": {
-    "codename": "F10X",
+    "deviceName": "F10X",
     "marketingName": "F10X",
     "manufacturer": "Nextway",
     "brand": "Nextway",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general ctroniq device": {
-    "codename": "general Ctroniq Device",
+    "deviceName": "general Ctroniq Device",
     "marketingName": "general Ctroniq Device",
     "manufacturer": "Ctroniq",
     "brand": "Ctroniq",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ctroniq c55": {
-    "codename": "C55",
+    "deviceName": "C55",
     "marketingName": "C55",
     "manufacturer": "Ctroniq",
     "brand": "Ctroniq",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 854,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

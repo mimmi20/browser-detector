@@ -1,14 +1,17 @@
 {
   "mls iq1010": {
-    "codename": "iQ1010",
+    "deviceName": "iQ1010",
     "marketingName": "iQTab 10 3G",
     "manufacturer": "MLS",
     "brand": "MLS",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general amlogic device": {
-    "codename": "general Amlogic Device",
+    "deviceName": "general Amlogic Device",
     "marketingName": "general Amlogic Device",
     "manufacturer": "Amlogic",
     "brand": "Amlogic",
-    "platform": "android",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "amlogic m8": {
-    "codename": "M8",
+    "deviceName": "M8",
     "marketingName": "M8",
     "manufacturer": "Amlogic",
     "brand": "Amlogic",
-    "platform": "android",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

@@ -1,14 +1,17 @@
 {
   "odys neo 6 lte": {
-    "codename": "Neo 6 LTE",
+    "deviceName": "Neo 6 LTE",
     "marketingName": "Neo 6 LTE",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

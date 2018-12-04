@@ -1,50 +1,62 @@
 {
   "general koobee device": {
-    "codename": "general Koobee Device",
+    "deviceName": "general Koobee Device",
     "marketingName": "general Koobee Device",
     "manufacturer": "Koobee",
     "brand": "Koobee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "koobee m2": {
-    "codename": "M2",
+    "deviceName": "M2",
     "marketingName": "Muse M2",
     "manufacturer": "Koobee",
     "brand": "Koobee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "koobee m3": {
-    "codename": "M3",
+    "deviceName": "M3",
     "marketingName": "M3",
     "manufacturer": "Koobee",
     "brand": "Koobee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "koobee t550": {
-    "codename": "T550",
+    "deviceName": "T550",
     "marketingName": "T550",
     "manufacturer": "Koobee",
     "brand": "Koobee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

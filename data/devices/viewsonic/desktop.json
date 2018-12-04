@@ -1,14 +1,17 @@
 {
   "viewsonic vsd220": {
-    "codename": "VSD220",
+    "deviceName": "VSD220",
     "marketingName": "VSD220",
     "manufacturer": "ViewSonic",
     "brand": "ViewSonic",
-    "platform": "android",
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": false
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

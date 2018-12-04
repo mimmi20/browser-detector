@@ -1,14 +1,17 @@
 {
   "amazon sd4930ur": {
-    "codename": "SD4930UR",
+    "deviceName": "SD4930UR",
     "marketingName": "Fire Phone",
     "manufacturer": "Amazon",
     "brand": "Amazon",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

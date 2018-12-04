@@ -1,74 +1,92 @@
 {
   "general uhappy device": {
-    "codename": "general UHAPPY Device",
+    "deviceName": "general UHAPPY Device",
     "marketingName": "general UHAPPY Device",
     "manufacturer": "UHAPPY",
     "brand": "UHAPPY",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uhappy up320": {
-    "codename": "UP320",
+    "deviceName": "UP320",
     "marketingName": "UP320",
     "manufacturer": "UHAPPY",
     "brand": "UHAPPY",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uhappy up350": {
-    "codename": "UP350",
+    "deviceName": "UP350",
     "marketingName": "UP350",
     "manufacturer": "UHAPPY",
     "brand": "UHAPPY",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uhappy up520": {
-    "codename": "UP520",
+    "deviceName": "UP520",
     "marketingName": "UP520",
     "manufacturer": "UHAPPY",
     "brand": "UHAPPY",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uhappy up580": {
-    "codename": "UP580",
+    "deviceName": "UP580",
     "marketingName": "UP580",
     "manufacturer": "UHAPPY",
     "brand": "UHAPPY",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "uhappy up720": {
-    "codename": "UP720",
+    "deviceName": "UP720",
     "marketingName": "UP720",
     "manufacturer": "UHAPPY",
     "brand": "UHAPPY",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

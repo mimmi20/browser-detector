@@ -1,38 +1,47 @@
 {
   "general pptv device": {
-    "codename": "general PPTV Device",
+    "deviceName": "general PPTV Device",
     "marketingName": "general PPTV Device",
     "manufacturer": "PPTV",
     "brand": "PPTV",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pptv king 7": {
-    "codename": "King 7",
+    "deviceName": "King 7",
     "marketingName": "King 7",
     "manufacturer": "PPTV",
     "brand": "PPTV",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pptv king 7s": {
-    "codename": "King 7S",
+    "deviceName": "King 7S",
     "marketingName": "King 7S",
     "manufacturer": "PPTV",
     "brand": "PPTV",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

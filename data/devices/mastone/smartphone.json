@@ -1,26 +1,32 @@
 {
   "general mastone device": {
-    "codename": "general Mastone Device",
+    "deviceName": "general Mastone Device",
     "marketingName": "general Mastone Device",
     "manufacturer": "Mastone",
     "brand": "Mastone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mastone g9": {
-    "codename": "G9",
+    "deviceName": "G9",
     "marketingName": "G9",
     "manufacturer": "Mastone",
     "brand": "Mastone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

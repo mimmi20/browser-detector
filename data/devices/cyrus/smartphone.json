@@ -1,86 +1,107 @@
 {
   "general cyrus device": {
-    "codename": "general Cyrus Device",
+    "deviceName": "general Cyrus Device",
     "marketingName": "general Cyrus Device",
     "manufacturer": "Cyrus",
     "brand": "Cyrus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cyrus cs22": {
-    "codename": "CS22",
+    "deviceName": "CS22",
     "marketingName": "CS22",
     "manufacturer": "Cyrus",
     "brand": "Cyrus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cyrus cs24": {
-    "codename": "CS24",
+    "deviceName": "CS24",
     "marketingName": "CS24",
     "manufacturer": "Cyrus",
     "brand": "Cyrus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cyrus cs25": {
-    "codename": "CS25",
+    "deviceName": "CS25",
     "marketingName": "CS25",
     "manufacturer": "Cyrus",
     "brand": "Cyrus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cyrus cs28": {
-    "codename": "CS28",
+    "deviceName": "CS28",
     "marketingName": "CS28",
     "manufacturer": "Cyrus",
     "brand": "Cyrus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cyrus cs30": {
-    "codename": "CS30",
+    "deviceName": "CS30",
     "marketingName": "CS30",
     "manufacturer": "Cyrus",
     "brand": "Cyrus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "cyrus cs40": {
-    "codename": "CS40",
+    "deviceName": "CS40",
     "marketingName": "CS40",
     "manufacturer": "Cyrus",
     "brand": "Cyrus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

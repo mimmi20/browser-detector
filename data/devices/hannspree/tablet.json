@@ -1,74 +1,92 @@
 {
   "general hannspree device": {
-    "codename": "general HANNspree Device",
+    "deviceName": "general HANNspree Device",
     "marketingName": "general HANNspree Device",
     "manufacturer": "Hannspree",
     "brand": "Hannspree",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hannspree hsg1279": {
-    "codename": "HSG1279",
+    "deviceName": "HSG1279",
     "marketingName": "HSG1279",
     "manufacturer": "Hannspree",
     "brand": "Hannspree",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hannspree hsg1303": {
-    "codename": "HSG1303",
+    "deviceName": "HSG1303",
     "marketingName": "HSG1303",
     "manufacturer": "Hannspree",
     "brand": "Hannspree",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hannspree hsg1316": {
-    "codename": "HSG1316",
+    "deviceName": "HSG1316",
     "marketingName": "HSG1316",
     "manufacturer": "Hannspree",
     "brand": "Hannspree",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hannspree hsg1329": {
-    "codename": "HSG1329",
+    "deviceName": "HSG1329",
     "marketingName": "HSG1329",
     "manufacturer": "Hannspree",
     "brand": "Hannspree",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "hannspree sn10t1": {
-    "codename": "SN10T1",
+    "deviceName": "SN10T1",
     "marketingName": "HANNSpad",
     "manufacturer": "Hannspree",
     "brand": "Hannspree",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

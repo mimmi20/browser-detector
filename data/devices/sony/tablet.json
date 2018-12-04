@@ -1,134 +1,167 @@
 {
   "sony prst1": {
-    "codename": "PRS-T1",
+    "deviceName": "PRS-T1",
     "marketingName": "Reader Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 600,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 600,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgp312": {
-    "codename": "SGP312",
+    "deviceName": "SGP312",
     "marketingName": "Xperia Tablet Z Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgp412": {
-    "codename": "SGP412",
+    "deviceName": "SGP412",
     "marketingName": "Xperia Z Ultra WiFi",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgp511": {
-    "codename": "SGP511",
+    "deviceName": "SGP511",
     "marketingName": "Xperia Z2 Tablet Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgp512": {
-    "codename": "SGP512",
+    "deviceName": "SGP512",
     "marketingName": "Xperia Z2 Tablet Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgp611": {
-    "codename": "SGP611",
+    "deviceName": "SGP611",
     "marketingName": "Xperia Z3 Tablet Compact Wi-Fi",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgp712": {
-    "codename": "SGP712",
+    "deviceName": "SGP712",
     "marketingName": "Xperia Z4 Tablet WiFi",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgpt12": {
-    "codename": "SGPT12",
+    "deviceName": "SGPT12",
     "marketingName": "Xperia Tablet S",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgpt13": {
-    "codename": "SGPT13",
+    "deviceName": "SGPT13",
     "marketingName": "Xperia Tablet S",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony sgpt211": {
-    "codename": "SGPT211",
+    "deviceName": "SGPT211",
     "marketingName": "Tablet P",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sony tablet s": {
-    "codename": "Tablet S",
+    "deviceName": "Tablet S",
     "marketingName": "Tablet S",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

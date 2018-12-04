@@ -1,62 +1,77 @@
 {
   "samsung yp-g1": {
-    "codename": "YP-G1",
+    "deviceName": "YP-G1",
     "marketingName": "Galaxy Player 4.0",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "samsung yp-g70": {
-    "codename": "YP-G70",
+    "deviceName": "YP-G70",
     "marketingName": "Galaxy Player 5",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "samsung yp-gb1": {
-    "codename": "YP-GB1",
+    "deviceName": "YP-GB1",
     "marketingName": "Galaxy Player",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "samsung yp-gb70": {
-    "codename": "YP-GB70",
+    "deviceName": "YP-GB70",
     "marketingName": "Galaxy Player 70 Plus",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "samsung yp-gs1": {
-    "codename": "YP-GS1",
+    "deviceName": "YP-GS1",
     "marketingName": "Galaxy Player 3.6",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "acer da220hql": {
-    "codename": "DA220HQL",
+    "deviceName": "DA220HQL",
     "marketingName": "DA220HQL",
     "manufacturer": "Acer",
     "brand": "Acer",
-    "platform": "android",
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1032,
-    "dualOrientation": false
+    "display": {
+      "width": 1920,
+      "height": 1032,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "acer pc": {
-    "codename": "PC",
+    "deviceName": "PC",
     "marketingName": "PC",
     "manufacturer": "Acer",
     "brand": "Acer",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

@@ -1,38 +1,47 @@
 {
   "wexler zen 4.5": {
-    "codename": "Zen 4.5",
+    "deviceName": "Zen 4.5",
     "marketingName": "Zen 4.5",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wexler zen 4.7": {
-    "codename": "Zen 4.7",
+    "deviceName": "Zen 4.7",
     "marketingName": "Zen 4.7",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wexler zen 5": {
-    "codename": "Zen 5",
+    "deviceName": "Zen 5",
     "marketingName": "Zen 5",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general honlin device": {
-    "codename": "general Honlin Device",
+    "deviceName": "general Honlin Device",
     "marketingName": "general Honlin Device",
     "manufacturer": "Honlin",
     "brand": "Honlin",
-    "platform": "android",
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "honlin pc1088": {
-    "codename": "PC1088",
+    "deviceName": "PC1088",
     "marketingName": "PC1088",
     "manufacturer": "Honlin",
     "brand": "Honlin",
-    "platform": "android",
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

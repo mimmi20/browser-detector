@@ -1,26 +1,32 @@
 {
   "general land-rover device": {
-    "codename": "general Land Rover Device",
+    "deviceName": "general Land Rover Device",
     "marketingName": "general Land Rover Device",
     "manufacturer": "Land Rover",
     "brand": "Land Rover",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "land-rover explore": {
-    "codename": "Explore",
+    "deviceName": "Explore",
     "marketingName": "Explore",
     "manufacturer": "Land Rover",
     "brand": "Land Rover",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

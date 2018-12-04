@@ -1,14 +1,17 @@
 {
   "odys xelio phonetab 3": {
-    "codename": "Xelio PhoneTab 3",
+    "deviceName": "Xelio PhoneTab 3",
     "marketingName": "Xelio PhoneTab 3",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "platform": "android",
     "type": "phablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "fujitsu f-02f": {
-    "codename": "F-02F",
+    "deviceName": "F-02F",
     "marketingName": "Arrows Tab",
     "manufacturer": "Fujitsu",
     "brand": "Fujitsu",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fujitsu f-05e": {
-    "codename": "F-05E",
+    "deviceName": "F-05E",
     "marketingName": "Arrows Tab",
     "manufacturer": "Fujitsu",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

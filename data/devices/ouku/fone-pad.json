@@ -1,26 +1,32 @@
 {
   "general ouku device": {
-    "codename": "general Ouku Device",
+    "deviceName": "general Ouku Device",
     "marketingName": "general Ouku Device",
     "manufacturer": "Ouku",
     "brand": "Ouku",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ouku f888": {
-    "codename": "F888",
+    "deviceName": "F888",
     "marketingName": "F888",
     "manufacturer": "Ouku",
     "brand": "Ouku",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

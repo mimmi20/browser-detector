@@ -1,74 +1,92 @@
 {
   "general wileyfox device": {
-    "codename": "general Wileyfox Device",
+    "deviceName": "general Wileyfox Device",
     "marketingName": "general Wileyfox Device",
     "manufacturer": "Wileyfox",
     "brand": "Wileyfox",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wileyfox spark +": {
-    "codename": "Spark +",
+    "deviceName": "Spark +",
     "marketingName": "Spark +",
     "manufacturer": "Wileyfox",
     "brand": "Wileyfox",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wileyfox storm": {
-    "codename": "Storm",
+    "deviceName": "Storm",
     "marketingName": "Storm",
     "manufacturer": "Wileyfox",
     "brand": "Wileyfox",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wileyfox swift": {
-    "codename": "Swift",
+    "deviceName": "Swift",
     "marketingName": "Swift",
     "manufacturer": "Wileyfox",
     "brand": "Wileyfox",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wileyfox swift 2": {
-    "codename": "Swift 2",
+    "deviceName": "Swift 2",
     "marketingName": "Swift 2",
     "manufacturer": "Wileyfox",
     "brand": "Wileyfox",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "wileyfox swift 2 plus": {
-    "codename": "Swift 2 Plus",
+    "deviceName": "Swift 2 Plus",
     "marketingName": "Swift 2 Plus",
     "manufacturer": "Wileyfox",
     "brand": "Wileyfox",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

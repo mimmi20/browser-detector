@@ -1,26 +1,32 @@
 {
   "general gorila device": {
-    "codename": "general Gorila Device",
+    "deviceName": "general Gorila Device",
     "marketingName": "general Gorila Device",
     "manufacturer": "Gorila",
     "brand": "Gorila",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gorila grv11": {
-    "codename": "GRV11",
+    "deviceName": "GRV11",
     "marketingName": "2",
     "manufacturer": "Gorila",
     "brand": "Gorila",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

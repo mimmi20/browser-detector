@@ -1,14 +1,17 @@
 {
   "toshiba pc": {
-    "codename": "PC",
+    "deviceName": "PC",
     "marketingName": "PC",
     "manufacturer": "Toshiba",
     "brand": "Toshiba",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

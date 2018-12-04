@@ -1,62 +1,77 @@
 {
   "tesla gravity 9.7 shd": {
-    "codename": "Gravity 9.7 SHD",
+    "deviceName": "Gravity 9.7 SHD",
     "marketingName": "Gravity 9.7 SHD",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla impulse 7.85 3g": {
-    "codename": "Impulse 7.85 3G",
+    "deviceName": "Impulse 7.85 3G",
     "marketingName": "Impulse 7.85 3G",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla l7.1 3g": {
-    "codename": "L7.1 3G",
+    "deviceName": "L7.1 3G",
     "marketingName": "L7.1 3G",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla tablet l7 3g": {
-    "codename": "L7 3G",
+    "deviceName": "L7 3G",
     "marketingName": "L7 3G",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla ttl7": {
-    "codename": "TTL7",
+    "deviceName": "TTL7",
     "marketingName": "TTL7",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "iberry auxus ax02": {
-    "codename": "Auxus AX02",
+    "deviceName": "Auxus AX02",
     "marketingName": "Auxus AX02",
     "manufacturer": "iBerry",
     "brand": "iBerry",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iberry auxus corex4 3g": {
-    "codename": "Auxus CoreX4 3G",
+    "deviceName": "Auxus CoreX4 3G",
     "marketingName": "Auxus CoreX4 3G",
     "manufacturer": "iBerry",
     "brand": "iBerry",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

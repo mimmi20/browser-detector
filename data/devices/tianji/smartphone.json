@@ -1,26 +1,32 @@
 {
   "general tianji device": {
-    "codename": "general Tianji Device",
+    "deviceName": "general Tianji Device",
     "marketingName": "general Tianji Device",
     "manufacturer": "Tianji",
     "brand": "Tianji",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tianji q880": {
-    "codename": "Q880",
+    "deviceName": "Q880",
     "marketingName": "Q880",
     "manufacturer": "Tianji",
     "brand": "Tianji",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

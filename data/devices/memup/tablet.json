@@ -1,158 +1,197 @@
 {
   "general memup device": {
-    "codename": "general Memup Device",
+    "deviceName": "general Memup Device",
     "marketingName": "general Memup Device",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup slidepad": {
-    "codename": "SlidePad",
+    "deviceName": "SlidePad",
     "marketingName": "SlidePad",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 400,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 400,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup slidepad 104": {
-    "codename": "SlidePad 104",
+    "deviceName": "SlidePad 104",
     "marketingName": "SlidePad 104",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup slidepad 108": {
-    "codename": "SlidePad 108",
+    "deviceName": "SlidePad 108",
     "marketingName": "SlidePad 108",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup slidepad 704ce": {
-    "codename": "SP704CE",
+    "deviceName": "SP704CE",
     "marketingName": "SlidePad 704CE",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup slidepad elite 9708": {
-    "codename": "SlidePad Elite 9708",
+    "deviceName": "SlidePad Elite 9708",
     "marketingName": "SlidePad Elite 9708",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup slidepad kids": {
-    "codename": "SlidePad Kids",
+    "deviceName": "SlidePad Kids",
     "marketingName": "SlidePad Kids",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup sp704c": {
-    "codename": "SP704C",
+    "deviceName": "SP704C",
     "marketingName": "SlidePad 704C",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup sp816p": {
-    "codename": "SP816P",
+    "deviceName": "SP816P",
     "marketingName": "SlidePad 816P",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup spng708": {
-    "codename": "SPNG708",
+    "deviceName": "SPNG708",
     "marketingName": "SlidePad NG 708",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup spng808": {
-    "codename": "SPNG808",
+    "deviceName": "SPNG808",
     "marketingName": "SlidePad NG 808",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup spng9708": {
-    "codename": "SPNG9708",
+    "deviceName": "SPNG9708",
     "marketingName": "SlidePad NG 9708",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "memup spng9716dc": {
-    "codename": "SPNG9716DC",
+    "deviceName": "SPNG9716DC",
     "marketingName": "SlidePad NG 9716DC",
     "manufacturer": "Memup",
     "brand": "Memup",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,242 +1,302 @@
 {
   "general bq device": {
-    "codename": "general BQ Device",
+    "deviceName": "general BQ Device",
     "marketingName": "general BQ Device",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris": {
-    "codename": "Aquaris",
+    "deviceName": "Aquaris",
     "marketingName": "Aquaris",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris 4": {
-    "codename": "Aquaris 4",
+    "deviceName": "Aquaris 4",
     "marketingName": "Aquaris 4",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris 5": {
-    "codename": "Aquaris 5",
+    "deviceName": "Aquaris 5",
     "marketingName": "Aquaris 5",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris 5 hd": {
-    "codename": "Aquaris 5 HD",
+    "deviceName": "Aquaris 5 HD",
     "marketingName": "Aquaris 5 HD",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris 5.7": {
-    "codename": "Aquaris 5.7",
+    "deviceName": "Aquaris 5.7",
     "marketingName": "Aquaris 5.7",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris e4": {
-    "codename": "Aquaris E4",
+    "deviceName": "Aquaris E4",
     "marketingName": "Aquaris E4",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris e5": {
-    "codename": "Aquaris E5",
+    "deviceName": "Aquaris E5",
     "marketingName": "Aquaris E5",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris e5 hd": {
-    "codename": "Aquaris E5 HD",
+    "deviceName": "Aquaris E5 HD",
     "marketingName": "Aquaris E5 HD",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris e6": {
-    "codename": "Aquaris E6",
+    "deviceName": "Aquaris E6",
     "marketingName": "Aquaris E6",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris m4.5": {
-    "codename": "Aquaris M4.5",
+    "deviceName": "Aquaris M4.5",
     "marketingName": "Aquaris M4.5",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris m5": {
-    "codename": "Aquaris M5",
+    "deviceName": "Aquaris M5",
     "marketingName": "Aquaris M5",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris u plus": {
-    "codename": "Aquaris U Plus",
+    "deviceName": "Aquaris U Plus",
     "marketingName": "Aquaris U Plus",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris v plus": {
-    "codename": "Aquaris V Plus",
+    "deviceName": "Aquaris V Plus",
     "marketingName": "Aquaris V Plus",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris x": {
-    "codename": "Aquaris X",
+    "deviceName": "Aquaris X",
     "marketingName": "Aquaris X",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris x pro": {
-    "codename": "Aquaris X Pro",
+    "deviceName": "Aquaris X Pro",
     "marketingName": "Aquaris X Pro",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris x5": {
-    "codename": "Aquaris X5",
+    "deviceName": "Aquaris X5",
     "marketingName": "Aquaris X5",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq aquaris x5 plus": {
-    "codename": "Aquaris X5 Plus",
+    "deviceName": "Aquaris X5 Plus",
     "marketingName": "Aquaris X5 Plus",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq bqs-4005": {
-    "codename": "BQS-4005",
+    "deviceName": "BQS-4005",
     "marketingName": "Seoul",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bq bqs-4007": {
-    "codename": "BQS-4007",
+    "deviceName": "BQS-4007",
     "marketingName": "Valencia",
     "manufacturer": "Bq",
     "brand": "Bq",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

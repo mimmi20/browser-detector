@@ -1,38 +1,47 @@
 {
   "nintendo 3ds": {
-    "codename": "3DS",
+    "deviceName": "3DS",
     "marketingName": "3DS",
     "manufacturer": "Nintendo",
     "brand": "Nintendo",
-    "platform": null,
     "type": "mobile-console",
-    "pointingMethod": null,
-    "resolutionWidth": 320,
-    "resolutionHeight": 200,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 200,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "nintendo ds": {
-    "codename": "DS",
+    "deviceName": "DS",
     "marketingName": "DS",
     "manufacturer": "Nintendo",
     "brand": "Nintendo",
-    "platform": null,
     "type": "mobile-console",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 256,
-    "resolutionHeight": 192,
-    "dualOrientation": false
+    "display": {
+      "width": 256,
+      "height": 192,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "nintendo dsi": {
-    "codename": "DSi",
+    "deviceName": "DSi",
     "marketingName": "DSi",
     "manufacturer": "Nintendo",
     "brand": "Nintendo",
-    "platform": null,
     "type": "mobile-console",
-    "pointingMethod": null,
-    "resolutionWidth": 256,
-    "resolutionHeight": 192,
-    "dualOrientation": false
+    "display": {
+      "width": 256,
+      "height": 192,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

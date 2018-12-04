@@ -1,98 +1,122 @@
 {
   "general woxter device": {
-    "codename": "general Woxter Device",
+    "deviceName": "general Woxter Device",
     "marketingName": "general Woxter Device",
     "manufacturer": "Woxter",
     "brand": "Woxter",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "woxter nimbus 80 qb": {
-    "codename": "Nimbus 80 QB",
+    "deviceName": "Nimbus 80 QB",
     "marketingName": "Nimbus 80 QB",
     "manufacturer": "Woxter",
     "brand": "Woxter",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "woxter nimbus 97q": {
-    "codename": "Nimbus 97Q",
+    "deviceName": "Nimbus 97Q",
     "marketingName": "Nimbus 97Q",
     "manufacturer": "Woxter",
     "brand": "Woxter",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "woxter qx 103": {
-    "codename": "QX 103",
+    "deviceName": "QX 103",
     "marketingName": "QX 103",
     "manufacturer": "Woxter",
     "brand": "Woxter",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "woxter qx 70": {
-    "codename": "QX 70",
+    "deviceName": "QX 70",
     "marketingName": "QX 70",
     "manufacturer": "Woxter",
     "brand": "Woxter",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "woxter tablet pc 76 cxi": {
-    "codename": "Tablet PC 76 CXI",
+    "deviceName": "Tablet PC 76 CXI",
     "marketingName": "Tablet PC 76 CXI",
     "manufacturer": "Woxter",
     "brand": "Woxter",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "woxter tablet pc 90 bl": {
-    "codename": "Tablet PC 90 BL",
+    "deviceName": "Tablet PC 90 BL",
     "marketingName": "Tablet PC 90 BL",
     "manufacturer": "Woxter",
     "brand": "Woxter",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "woxter tablet pc 97 ips": {
-    "codename": "Tablet PC 97 IPS",
+    "deviceName": "Tablet PC 97 IPS",
     "marketingName": "Tablet PC 97 IPS",
     "manufacturer": "Woxter",
     "brand": "Woxter",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

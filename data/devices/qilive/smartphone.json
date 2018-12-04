@@ -1,62 +1,77 @@
 {
   "general qilive device": {
-    "codename": "general Qilive Device",
+    "deviceName": "general Qilive Device",
     "marketingName": "general Qilive Device",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qilive 40": {
-    "codename": "40",
+    "deviceName": "40",
     "marketingName": "40",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qilive 45": {
-    "codename": "45",
+    "deviceName": "45",
     "marketingName": "Titanium 45",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qilive 50": {
-    "codename": "50",
+    "deviceName": "50",
     "marketingName": "50",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qilive 53": {
-    "codename": "5.3",
+    "deviceName": "5.3",
     "marketingName": "Q 4122",
     "manufacturer": "Qilive",
     "brand": "Qilive",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

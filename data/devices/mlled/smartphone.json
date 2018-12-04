@@ -1,98 +1,122 @@
 {
   "general mlled device": {
-    "codename": "general MLLED Device",
+    "deviceName": "general MLLED Device",
     "marketingName": "general MLLED Device",
     "manufacturer": "MLLED",
     "brand": "MLLED",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mlled m1b": {
-    "codename": "M1B",
+    "deviceName": "M1B",
     "marketingName": "M1B",
     "manufacturer": "MLLED",
     "brand": "MLLED",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mlled m2+": {
-    "codename": "M2+",
+    "deviceName": "M2+",
     "marketingName": "M2+",
     "manufacturer": "MLLED",
     "brand": "MLLED",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mlled m3 mini": {
-    "codename": "M3 Mini",
+    "deviceName": "M3 Mini",
     "marketingName": "M3 Mini",
     "manufacturer": "MLLED",
     "brand": "MLLED",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mlled m7s": {
-    "codename": "M7S",
+    "deviceName": "M7S",
     "marketingName": "M7S",
     "manufacturer": "MLLED",
     "brand": "MLLED",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mlled m8": {
-    "codename": "M8",
+    "deviceName": "M8",
     "marketingName": "M8",
     "manufacturer": "MLLED",
     "brand": "MLLED",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mlled m8s": {
-    "codename": "M8S",
+    "deviceName": "M8S",
     "marketingName": "M8S",
     "manufacturer": "MLLED",
     "brand": "MLLED",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mlled x3s": {
-    "codename": "X3S",
+    "deviceName": "X3S",
     "marketingName": "X3S",
     "manufacturer": "MLLED",
     "brand": "MLLED",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

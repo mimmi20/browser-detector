@@ -1,26 +1,32 @@
 {
   "general idea device": {
-    "codename": "general Idea Device",
+    "deviceName": "general Idea Device",
     "marketingName": "general Idea Device",
     "manufacturer": "Idea",
     "brand": "Idea",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "idea i4901": {
-    "codename": "i4901",
+    "deviceName": "i4901",
     "marketingName": "Idea Fab 3G",
     "manufacturer": "Idea",
     "brand": "Idea",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,194 +1,242 @@
 {
   "general mobistel device": {
-    "codename": "general Mobistel Device",
+    "deviceName": "general Mobistel Device",
     "marketingName": "general Mobistel Device",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus e1": {
-    "codename": "Cynus E1",
+    "deviceName": "Cynus E1",
     "marketingName": "Cynus E1",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus e5": {
-    "codename": "Cynus E5",
+    "deviceName": "Cynus E5",
     "marketingName": "Cynus E5",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus e7": {
-    "codename": "Cynus E7",
+    "deviceName": "Cynus E7",
     "marketingName": "Cynus E7",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus f10": {
-    "codename": "Cynus F10",
+    "deviceName": "Cynus F10",
     "marketingName": "Cynus F10",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus f3": {
-    "codename": "Cynus F3",
+    "deviceName": "Cynus F3",
     "marketingName": "Cynus F3",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus f5": {
-    "codename": "Cynus F5",
+    "deviceName": "Cynus F5",
     "marketingName": "Cynus F5",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus f6": {
-    "codename": "Cynus F6",
+    "deviceName": "Cynus F6",
     "marketingName": "Cynus F6",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus f8": {
-    "codename": "Cynus F8",
+    "deviceName": "Cynus F8",
     "marketingName": "Cynus F8",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus f9": {
-    "codename": "Cynus F9",
+    "deviceName": "Cynus F9",
     "marketingName": "Cynus F9",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus t1": {
-    "codename": "Cynus T1",
+    "deviceName": "Cynus T1",
     "marketingName": "Cynus T1",
     "manufacturer": "Mobistel",
     "brand": "Elson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus t2": {
-    "codename": "Cynus T2",
+    "deviceName": "Cynus T2",
     "marketingName": "Cynus T2",
     "manufacturer": "Mobistel",
     "brand": "Elson",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus t5": {
-    "codename": "Cynus T5",
+    "deviceName": "Cynus T5",
     "marketingName": "Cynus T5",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus t6": {
-    "codename": "Cynus T6",
+    "deviceName": "Cynus T6",
     "marketingName": "Cynus T6",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel cynus t8": {
-    "codename": "Cynus T8",
+    "deviceName": "Cynus T8",
     "marketingName": "Cynus T8",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mobistel mt-7521s": {
-    "codename": "MT-7521S",
+    "deviceName": "MT-7521S",
     "marketingName": "Cynus F4",
     "manufacturer": "Mobistel",
     "brand": "Mobistel",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

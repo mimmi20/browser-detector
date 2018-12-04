@@ -1,38 +1,47 @@
 {
   "general tesco device": {
-    "codename": "general Tesco Device",
+    "deviceName": "general Tesco Device",
     "marketingName": "general Tesco Device",
     "manufacturer": "Tesco",
     "brand": "Tesco",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesco hudl 2": {
-    "codename": "Hudl 2",
+    "deviceName": "Hudl 2",
     "marketingName": "Hudl 2",
     "manufacturer": "Tesco",
     "brand": "Tesco",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesco hudl ht7s3": {
-    "codename": "Hudl HT7S3",
+    "deviceName": "Hudl HT7S3",
     "marketingName": "Hudl HT7S3",
     "manufacturer": "Tesco",
     "brand": "Tesco",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 900,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 900,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,98 +1,122 @@
 {
   "general bird device": {
-    "codename": "general Bird Device",
+    "deviceName": "general Bird Device",
     "marketingName": "general Bird Device",
     "manufacturer": "Bird",
     "brand": "Bird",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bird e700": {
-    "codename": "E700",
+    "deviceName": "E700",
     "marketingName": "E700",
     "manufacturer": "Bird",
     "brand": "Bird",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bird i600": {
-    "codename": "I600",
+    "deviceName": "I600",
     "marketingName": "I600",
     "manufacturer": "Bird",
     "brand": "Bird",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bird i7": {
-    "codename": "I7",
+    "deviceName": "I7",
     "marketingName": "I7",
     "manufacturer": "Bird",
     "brand": "Bird",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bird t900": {
-    "codename": "T900",
+    "deviceName": "T900",
     "marketingName": "T900",
     "manufacturer": "Bird",
     "brand": "Bird",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bird t9108": {
-    "codename": "T9108",
+    "deviceName": "T9108",
     "marketingName": "T9108",
     "manufacturer": "Bird",
     "brand": "Bird",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bird v8": {
-    "codename": "V8",
+    "deviceName": "V8",
     "marketingName": "V8",
     "manufacturer": "Bird",
     "brand": "Bird",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bird w5": {
-    "codename": "W5",
+    "deviceName": "W5",
     "marketingName": "W5",
     "manufacturer": "Bird",
     "brand": "Bird",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,62 +1,77 @@
 {
   "general pentagram device": {
-    "codename": "general Pentagram Device",
+    "deviceName": "general Pentagram Device",
     "marketingName": "general Pentagram Device",
     "manufacturer": "Pentagram",
     "brand": "Pentagram",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pentagram p5335": {
-    "codename": "P5335",
+    "deviceName": "P5335",
     "marketingName": "Eon Prix",
     "manufacturer": "Pentagram",
     "brand": "Pentagram",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pentagram quadra 7 ultraslim": {
-    "codename": "Quadra 7 UltraSlim",
+    "deviceName": "Quadra 7 UltraSlim",
     "marketingName": "Quadra 7 UltraSlim",
     "manufacturer": "Pentagram",
     "brand": "Pentagram",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pentagram tab 7.6": {
-    "codename": "Tab 7.6",
+    "deviceName": "Tab 7.6",
     "marketingName": "Tab 7.6",
     "manufacturer": "Pentagram",
     "brand": "Pentagram",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pentagram tab 8.5": {
-    "codename": "Tab 8.5",
+    "deviceName": "Tab 8.5",
     "marketingName": "Tab 8.5",
     "manufacturer": "Pentagram",
     "brand": "Pentagram",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "general nec device": {
-    "codename": "general NEC Device",
+    "deviceName": "general NEC Device",
     "marketingName": "general NEC Device",
     "manufacturer": "Nec",
     "brand": "Nec",
-    "platform": null,
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "nec n705i": {
-    "codename": "N705i",
+    "deviceName": "N705i",
     "marketingName": "N705i",
     "manufacturer": "Nec",
     "brand": "Nec",
-    "platform": "linux smartphone os (maemo)",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 427,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 427,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux smartphone os (maemo)"
   },
   "nec n905i": {
-    "codename": "N905i",
+    "deviceName": "N905i",
     "marketingName": "N905i",
     "manufacturer": "Nec",
     "brand": "Nec",
-    "platform": "linux smartphone os (maemo)",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux smartphone os (maemo)"
   }
 }

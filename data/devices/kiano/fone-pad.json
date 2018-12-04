@@ -1,86 +1,107 @@
 {
   "kiano cavion base 10 3g quad": {
-    "codename": "Cavion Base 10 3G Quad",
+    "deviceName": "Cavion Base 10 3G Quad",
     "marketingName": "Cavion Base 10 3G Quad",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano core 10.1 dual 3g": {
-    "codename": "Core 10.1 Dual 3G",
+    "deviceName": "Core 10.1 Dual 3G",
     "marketingName": "Core 10.1 Dual 3G",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano elegance 10.1 3g": {
-    "codename": "Elegance 10.1 3G",
+    "deviceName": "Elegance 10.1 3G",
     "marketingName": "Elegance 10.1 3G",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano elegance 8 3g": {
-    "codename": "Elegance 8 3G",
+    "deviceName": "Elegance 8 3G",
     "marketingName": "Elegance 8 3G",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano intelect 10 3g": {
-    "codename": "Intelect 10 3G",
+    "deviceName": "Intelect 10 3G",
     "marketingName": "Intelect 10 3G",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano intelect 7 3g": {
-    "codename": "Intelect 7 3G",
+    "deviceName": "Intelect 7 3G",
     "marketingName": "Intelect 7 3G",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kiano slim tab 8 3g": {
-    "codename": "Slim Tab 8 3G",
+    "deviceName": "Slim Tab 8 3G",
     "marketingName": "Slim Tab 8 3G",
     "manufacturer": "Kiano",
     "brand": "Kiano",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

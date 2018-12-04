@@ -1,74 +1,92 @@
 {
   "general ytone device": {
-    "codename": "general Ytone Device",
+    "deviceName": "general Ytone Device",
     "marketingName": "general Ytone Device",
     "manufacturer": "Ytone",
     "brand": "Ytone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ytone l919": {
-    "codename": "L919",
+    "deviceName": "L919",
     "marketingName": "L919",
     "manufacturer": "Ytone",
     "brand": "Ytone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ytone l985s": {
-    "codename": "L985S",
+    "deviceName": "L985S",
     "marketingName": "L985S",
     "manufacturer": "Ytone",
     "brand": "Ytone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ytone l988": {
-    "codename": "L988",
+    "deviceName": "L988",
     "marketingName": "L988",
     "manufacturer": "Ytone",
     "brand": "Ytone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ytone l999": {
-    "codename": "L999",
+    "deviceName": "L999",
     "marketingName": "L999",
     "manufacturer": "Ytone",
     "brand": "Ytone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ytone m7x": {
-    "codename": "M7X",
+    "deviceName": "M7X",
     "marketingName": "M7X",
     "manufacturer": "Ytone",
     "brand": "Ytone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

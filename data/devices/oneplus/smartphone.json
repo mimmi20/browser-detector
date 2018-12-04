@@ -1,182 +1,227 @@
 {
   "general oneplus device": {
-    "codename": "general OnePlus Device",
+    "deviceName": "general OnePlus Device",
     "marketingName": "general OnePlus Device",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus 3": {
-    "codename": "3",
+    "deviceName": "3",
     "marketingName": "3",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a0001": {
-    "codename": "A0001",
+    "deviceName": "A0001",
     "marketingName": "One A0001",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a2001": {
-    "codename": "A2001",
+    "deviceName": "A2001",
     "marketingName": "2",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a2003": {
-    "codename": "A2003",
+    "deviceName": "A2003",
     "marketingName": "2",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a2005": {
-    "codename": "A2005",
+    "deviceName": "A2005",
     "marketingName": "2",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a3000": {
-    "codename": "A3000",
+    "deviceName": "A3000",
     "marketingName": "3",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a3003": {
-    "codename": "A3003",
+    "deviceName": "A3003",
     "marketingName": "3 (2016)",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a3010": {
-    "codename": "A3010",
+    "deviceName": "A3010",
     "marketingName": "3T",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a5000": {
-    "codename": "A5000",
+    "deviceName": "A5000",
     "marketingName": "5",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a5010": {
-    "codename": "A5010",
+    "deviceName": "A5010",
     "marketingName": "5T",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a6000": {
-    "codename": "A6000",
+    "deviceName": "A6000",
     "marketingName": "6",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2280,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus a6003": {
-    "codename": "A6003",
+    "deviceName": "A6003",
     "marketingName": "6",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2280,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus e1001": {
-    "codename": "E1001",
+    "deviceName": "E1001",
     "marketingName": "X",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "oneplus e1003": {
-    "codename": "E1003",
+    "deviceName": "E1003",
     "marketingName": "X",
     "manufacturer": "Oneplus",
     "brand": "Oneplus",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

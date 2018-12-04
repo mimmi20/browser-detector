@@ -1,38 +1,47 @@
 {
   "fly ds123": {
-    "codename": "DS123",
+    "deviceName": "DS123",
     "marketingName": "DS123",
     "manufacturer": "Fly",
     "brand": "Fly",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "fly e141tv": {
-    "codename": "E141 TV",
+    "deviceName": "E141 TV",
     "marketingName": "E141 TV",
     "manufacturer": "Fly",
     "brand": "Fly",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "fly e158": {
-    "codename": "E158",
+    "deviceName": "E158",
     "marketingName": "E158",
     "manufacturer": "Fly",
     "brand": "Fly",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": false
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

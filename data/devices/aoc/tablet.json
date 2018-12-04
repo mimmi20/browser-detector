@@ -1,26 +1,32 @@
 {
   "aoc mg97dr": {
-    "codename": "MG97DR",
+    "deviceName": "MG97DR",
     "marketingName": "MG97DR",
     "manufacturer": "Aoc",
     "brand": "Aoc",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "aoc u702": {
-    "codename": "U702",
+    "deviceName": "U702",
     "marketingName": "U702",
     "manufacturer": "Aoc",
     "brand": "Aoc",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

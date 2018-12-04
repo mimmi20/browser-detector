@@ -1,938 +1,1172 @@
 {
   "general xiaomitech device": {
-    "codename": "general Xiaomi Device",
+    "deviceName": "general Xiaomi Device",
     "marketingName": "general Xiaomi Device",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech 2013022": {
-    "codename": "2013022",
+    "deviceName": "2013022",
     "marketingName": "Hongmi",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech 2013023": {
-    "codename": "2013023",
+    "deviceName": "2013023",
     "marketingName": "Hongmi",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech 2014501": {
-    "codename": "2014501",
+    "deviceName": "2014501",
     "marketingName": "Hongmi 4G",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm 1": {
-    "codename": "HM 1",
+    "deviceName": "HM 1",
     "marketingName": "Redmi 1",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm 1s": {
-    "codename": "HM 1S",
+    "deviceName": "HM 1S",
     "marketingName": "Redmi 1S",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm 1sc": {
-    "codename": "HM 1SC",
+    "deviceName": "HM 1SC",
     "marketingName": "HM 1SC",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm 1sw": {
-    "codename": "HM 1SW",
+    "deviceName": "HM 1SW",
     "marketingName": "Redmi 1S WCDMA",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm note 1lte": {
-    "codename": "HM NOTE 1LTE",
+    "deviceName": "HM NOTE 1LTE",
     "marketingName": "Redmi Note 4G",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm note 1lte td": {
-    "codename": "HM NOTE 1LTE TD",
+    "deviceName": "HM NOTE 1LTE TD",
     "marketingName": "Redmi Note 4G",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm note 1s": {
-    "codename": "HM NOTE 1S",
+    "deviceName": "HM NOTE 1S",
     "marketingName": "HM NOTE 1S",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm note 1td": {
-    "codename": "HM NOTE 1TD",
+    "deviceName": "HM NOTE 1TD",
     "marketingName": "Hongmi Note 1TD",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hm note 1w": {
-    "codename": "HM NOTE 1W",
+    "deviceName": "HM NOTE 1W",
     "marketingName": "Redmi Note",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hongmi 1s": {
-    "codename": "Hongmi 1s",
+    "deviceName": "Hongmi 1s",
     "marketingName": "Hongmi 1s",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech hongmi 2 3g": {
-    "codename": "Hongmi 2 3G",
+    "deviceName": "Hongmi 2 3G",
     "marketingName": "Hongmi 2 3G",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "xiaomitech hongmi 2 4g": {
-    "codename": "Hongmi 2 4G",
+    "deviceName": "Hongmi 2 4G",
     "marketingName": "Hongmi 2 4G",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "xiaomitech hongmi 2 4g dual sim": {
-    "codename": "Hongmi 2 4G Dual SIM",
+    "deviceName": "Hongmi 2 4G Dual SIM",
     "marketingName": "Hongmi 2 4G Dual SIM",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "xiaomitech mdt2": {
-    "codename": "MDT2",
+    "deviceName": "MDT2",
     "marketingName": "Mi 5X",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 1": {
-    "codename": "Mi 1",
+    "deviceName": "Mi 1",
     "marketingName": "Mi 1",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 1 c1": {
-    "codename": "Mi 1 C1",
+    "deviceName": "Mi 1 C1",
     "marketingName": "Mi 1 C1",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 1 plus": {
-    "codename": "Mi 1 Plus",
+    "deviceName": "Mi 1 Plus",
     "marketingName": "Mi 1 Plus",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 1s": {
-    "codename": "Mi 1s",
+    "deviceName": "Mi 1s",
     "marketingName": "Mi 1s",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 2": {
-    "codename": "MI 2",
+    "deviceName": "MI 2",
     "marketingName": "MI 2",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 2a": {
-    "codename": "MI 2A",
+    "deviceName": "MI 2A",
     "marketingName": "MI 2A",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 2s": {
-    "codename": "MI 2S",
+    "deviceName": "MI 2S",
     "marketingName": "MI 2S",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 2sc": {
-    "codename": "MI 2SC",
+    "deviceName": "MI 2SC",
     "marketingName": "MI 2SC",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 3": {
-    "codename": "Mi 3",
+    "deviceName": "Mi 3",
     "marketingName": "Mi 3",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 3w": {
-    "codename": "MI 3W",
+    "deviceName": "MI 3W",
     "marketingName": "MI 3W",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 4 lte": {
-    "codename": "Mi 4 LTE",
+    "deviceName": "Mi 4 LTE",
     "marketingName": "Mi 4 LTE",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "xiaomitech mi 4c": {
-    "codename": "MI 4C",
+    "deviceName": "MI 4C",
     "marketingName": "MI 4C",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 4i": {
-    "codename": "MI 4I",
+    "deviceName": "MI 4I",
     "marketingName": "MI 4I",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 4s": {
-    "codename": "MI 4S",
+    "deviceName": "MI 4S",
     "marketingName": "MI 4S",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 4w": {
-    "codename": "MI 4W",
+    "deviceName": "MI 4W",
     "marketingName": "MI 4W",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "xiaomitech mi 5": {
-    "codename": "MI 5",
+    "deviceName": "MI 5",
     "marketingName": "MI 5",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 5c": {
-    "codename": "MI 5c",
+    "deviceName": "MI 5c",
     "marketingName": "MI 5c",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 5s": {
-    "codename": "MI 5S",
+    "deviceName": "MI 5S",
     "marketingName": "MI 5S",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 5s plus": {
-    "codename": "MI 5s Plus",
+    "deviceName": "MI 5s Plus",
     "marketingName": "MI 5s Plus",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 6": {
-    "codename": "MI 6",
+    "deviceName": "MI 6",
     "marketingName": "MI 6",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 6x": {
-    "codename": "Mi 6X",
+    "deviceName": "Mi 6X",
     "marketingName": "Mi 6X",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi 8": {
-    "codename": "MI 8",
+    "deviceName": "MI 8",
     "marketingName": "MI 8",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2248,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2248,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi a1": {
-    "codename": "MI A1",
+    "deviceName": "MI A1",
     "marketingName": "MI A1",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi a2": {
-    "codename": "Mi A2",
+    "deviceName": "Mi A2",
     "marketingName": "Mi A2",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi a2 lite": {
-    "codename": "MI A2 Lite",
+    "deviceName": "MI A2 Lite",
     "marketingName": "MI A2 Lite",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2280,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi max": {
-    "codename": "Mi Max",
+    "deviceName": "Mi Max",
     "marketingName": "Mi Max",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi max 2": {
-    "codename": "Mi Max 2",
+    "deviceName": "Mi Max 2",
     "marketingName": "Mi Max 2",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi max 3": {
-    "codename": "Mi Max 3",
+    "deviceName": "Mi Max 3",
     "marketingName": "Mi Max 3",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi mix 2": {
-    "codename": "Mi Mix 2",
+    "deviceName": "Mi Mix 2",
     "marketingName": "Mi Mix 2",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi mix 2s": {
-    "codename": "Mi Mix 2S",
+    "deviceName": "Mi Mix 2S",
     "marketingName": "Mi Mix 2S",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi note": {
-    "codename": "MI Note",
+    "deviceName": "MI Note",
     "marketingName": "MI Note",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi note 2": {
-    "codename": "MI Note 2",
+    "deviceName": "MI Note 2",
     "marketingName": "MI Note 2",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi note 3": {
-    "codename": "MI Note 3",
+    "deviceName": "MI Note 3",
     "marketingName": "MI Note 3",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech mi note pro": {
-    "codename": "MI NOTE Pro",
+    "deviceName": "MI NOTE Pro",
     "marketingName": "MI NOTE Pro",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech pocophone f1": {
-    "codename": "Pocophone F1",
+    "deviceName": "Pocophone F1",
     "marketingName": "Pocophone F1",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2246,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2246,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 1s": {
-    "codename": "Redmi 1s",
+    "deviceName": "Redmi 1s",
     "marketingName": "Redmi 1s",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 3": {
-    "codename": "Redmi 3",
+    "deviceName": "Redmi 3",
     "marketingName": "Redmi 3",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 3s": {
-    "codename": "Redmi 3S",
+    "deviceName": "Redmi 3S",
     "marketingName": "Redmi 3S",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 3x": {
-    "codename": "Redmi 3X",
+    "deviceName": "Redmi 3X",
     "marketingName": "Redmi 3X",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 4": {
-    "codename": "Redmi 4",
+    "deviceName": "Redmi 4",
     "marketingName": "Redmi 4",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 4a": {
-    "codename": "Redmi 4A",
+    "deviceName": "Redmi 4A",
     "marketingName": "Redmi 4A",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 4x": {
-    "codename": "Redmi 4X",
+    "deviceName": "Redmi 4X",
     "marketingName": "Redmi 4X",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 5": {
-    "codename": "Redmi 5",
+    "deviceName": "Redmi 5",
     "marketingName": "Redmi 5",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 5 plus": {
-    "codename": "Redmi 5 Plus",
+    "deviceName": "Redmi 5 Plus",
     "marketingName": "Redmi 5 Plus",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 5a": {
-    "codename": "Redmi 5A",
+    "deviceName": "Redmi 5A",
     "marketingName": "Redmi 5A",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 6": {
-    "codename": "Redmi 6",
+    "deviceName": "Redmi 6",
     "marketingName": "Redmi 6",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi 6a": {
-    "codename": "Redmi 6A",
+    "deviceName": "Redmi 6A",
     "marketingName": "Redmi 6A",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 2": {
-    "codename": "Redmi Note 2",
+    "deviceName": "Redmi Note 2",
     "marketingName": "Redmi Note 2",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 3": {
-    "codename": "Redmi Note 3",
+    "deviceName": "Redmi Note 3",
     "marketingName": "Redmi Note 3",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 4": {
-    "codename": "Redmi Note 4",
+    "deviceName": "Redmi Note 4",
     "marketingName": "Redmi Note 4",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 4x": {
-    "codename": "Redmi Note 4X",
+    "deviceName": "Redmi Note 4X",
     "marketingName": "Redmi Note 4X",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 5": {
-    "codename": "Redmi Note 5",
+    "deviceName": "Redmi Note 5",
     "marketingName": "Redmi Note 5",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 5 pro": {
-    "codename": "Redmi Note 5 Pro",
+    "deviceName": "Redmi Note 5 Pro",
     "marketingName": "Redmi Note 5 Pro",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2160,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 5a": {
-    "codename": "Redmi Note 5A",
+    "deviceName": "Redmi Note 5A",
     "marketingName": "Redmi Note 5A",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 5a prime": {
-    "codename": "Redmi Note 5A Prime",
+    "deviceName": "Redmi Note 5A Prime",
     "marketingName": "Redmi Note 5A Prime",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi note 6 pro": {
-    "codename": "Redmi Note 6 Pro",
+    "deviceName": "Redmi Note 6 Pro",
     "marketingName": "Redmi Note 6 Pro",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2280,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi pro": {
-    "codename": "Redmi Pro",
+    "deviceName": "Redmi Pro",
     "marketingName": "Redmi Pro",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi s2": {
-    "codename": "Redmi S2",
+    "deviceName": "Redmi S2",
     "marketingName": "Redmi S2",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi y1": {
-    "codename": "Redmi Y1",
+    "deviceName": "Redmi Y1",
     "marketingName": "Redmi Y1",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xiaomitech redmi y2": {
-    "codename": "Redmi Y2",
+    "deviceName": "Redmi Y2",
     "marketingName": "Redmi Y2",
     "manufacturer": "XiaomiTech",
     "brand": "XiaomiTech",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

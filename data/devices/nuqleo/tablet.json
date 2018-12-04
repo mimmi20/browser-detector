@@ -1,38 +1,47 @@
 {
   "general nuqleo device": {
-    "codename": "general Nuqleo Device",
+    "deviceName": "general Nuqleo Device",
     "marketingName": "general Nuqleo Device",
     "manufacturer": "Nuqleo",
     "brand": "Nuqleo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nuqleo zaffire 1010": {
-    "codename": "Zaffire 1010",
+    "deviceName": "Zaffire 1010",
     "marketingName": "Zaffire 1010",
     "manufacturer": "Nuqleo",
     "brand": "Nuqleo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nuqleo zaffire 785": {
-    "codename": "Zaffire 785",
+    "deviceName": "Zaffire 785",
     "marketingName": "Zaffire 785",
     "manufacturer": "Nuqleo",
     "brand": "Nuqleo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

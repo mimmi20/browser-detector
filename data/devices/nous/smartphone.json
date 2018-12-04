@@ -1,50 +1,62 @@
 {
   "general nous device": {
-    "codename": "general Nous Device",
+    "deviceName": "general Nous Device",
     "marketingName": "general Nous Device",
     "manufacturer": "Nous",
     "brand": "Nous",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "nous ns5003": {
-    "codename": "NS 5003",
+    "deviceName": "NS 5003",
     "marketingName": "NS 5003",
     "manufacturer": "Nous",
     "brand": "Nous",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nous ns5006": {
-    "codename": "NS 5006",
+    "deviceName": "NS 5006",
     "marketingName": "NS 5006",
     "manufacturer": "Nous",
     "brand": "Nous",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "nous ns6": {
-    "codename": "NS 6",
+    "deviceName": "NS 6",
     "marketingName": "NS 6",
     "manufacturer": "Nous",
     "brand": "Nous",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   }
 }

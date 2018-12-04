@@ -1,26 +1,32 @@
 {
   "general auris-mobile device": {
-    "codename": "general Auris Mobile Device",
+    "deviceName": "general Auris Mobile Device",
     "marketingName": "general Auris Mobile Device",
     "manufacturer": "Auris Mobile",
     "brand": "Auris Mobile",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "auris-mobile tb-703g": {
-    "codename": "TB-703G",
+    "deviceName": "TB-703G",
     "marketingName": "TB-703G",
     "manufacturer": "Auris Mobile",
     "brand": "Auris Mobile",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

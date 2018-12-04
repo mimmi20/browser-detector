@@ -1,38 +1,47 @@
 {
   "general firefly device": {
-    "codename": "general Firefly Device",
+    "deviceName": "general Firefly Device",
     "marketingName": "general Firefly Device",
     "manufacturer": "Firefly Mobile",
     "brand": "Firefly Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "firefly gt100": {
-    "codename": "GT100",
+    "deviceName": "GT100",
     "marketingName": "GT100",
     "manufacturer": "Firefly Mobile",
     "brand": "Firefly Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "firefly s30": {
-    "codename": "S30",
+    "deviceName": "S30",
     "marketingName": "S30",
     "manufacturer": "Firefly Mobile",
     "brand": "Firefly Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

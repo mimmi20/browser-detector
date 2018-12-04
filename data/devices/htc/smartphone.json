@@ -1,2318 +1,2897 @@
 {
   "general htc device": {
-    "codename": "general HTC Device",
+    "deviceName": "general HTC Device",
     "marketingName": "general HTC Device",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 0p4e2": {
-    "codename": "0P4E2",
+    "deviceName": "0P4E2",
     "marketingName": "Desire 601",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 0p6b": {
-    "codename": "0P6B",
+    "deviceName": "0P6B",
     "marketingName": "One M8",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 0p6b180": {
-    "codename": "0P6B180",
+    "deviceName": "0P6B180",
     "marketingName": "One M8 for Windows",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc 0pcv1": {
-    "codename": "0PCV1",
+    "deviceName": "0PCV1",
     "marketingName": "Desire 510 (CDMA+LTE)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 0pcv2": {
-    "codename": "0PCV2",
+    "deviceName": "0PCV2",
     "marketingName": "Desire 510 (GSM+LTE)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 0pja10": {
-    "codename": "0PJA10",
+    "deviceName": "0PJA10",
     "marketingName": "One M9",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc 0pja2": {
-    "codename": "0PJA2",
+    "deviceName": "0PJA2",
     "marketingName": "One M9 (Sprint)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc 0pm92": {
-    "codename": "0PM92",
+    "deviceName": "0PM92",
     "marketingName": "Desire 626S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc 10": {
-    "codename": "10",
+    "deviceName": "10",
     "marketingName": "10",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 10 evo": {
-    "codename": "10 evo",
+    "deviceName": "10 evo",
     "marketingName": "10 evo",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 1000c": {
-    "codename": "H1000C",
+    "deviceName": "H1000C",
     "marketingName": "Desire C",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 2pxh3": {
-    "codename": "2PXH3",
+    "deviceName": "2PXH3",
     "marketingName": "One X10",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc 2q4d100": {
-    "codename": "2Q4D100",
+    "deviceName": "2Q4D100",
     "marketingName": "U11 Plus",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 608": {
-    "codename": "608",
+    "deviceName": "608",
     "marketingName": "Desire 608",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 7088": {
-    "codename": "7088",
+    "deviceName": "7088",
     "marketingName": "Desire 7088",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 802d": {
-    "codename": "802d",
+    "deviceName": "802d",
     "marketingName": "One M7 Dual SIM",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 802t": {
-    "codename": "802T",
+    "deviceName": "802T",
     "marketingName": "One Dual SIM",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 802w": {
-    "codename": "802W",
+    "deviceName": "802W",
     "marketingName": "One M7 Dual SIM",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 809d": {
-    "codename": "809D",
+    "deviceName": "809D",
     "marketingName": "One Max CDMA+GSM",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 831c": {
-    "codename": "831C",
+    "deviceName": "831C",
     "marketingName": "One M8 Harmon/Kardon Edition",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 8s": {
-    "codename": "8S",
+    "deviceName": "8S",
     "marketingName": "8S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc 919d": {
-    "codename": "919d",
+    "deviceName": "919d",
     "marketingName": "Butterfly S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc 9292": {
-    "codename": "9292",
+    "deviceName": "9292",
     "marketingName": "EVO 4G",
     "manufacturer": "Htc",
     "brand": "Sprint",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a310e": {
-    "codename": "A310e",
+    "deviceName": "A310e",
     "marketingName": "Explorer",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a315c": {
-    "codename": "A315c",
+    "deviceName": "A315c",
     "marketingName": "Wildfire S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a3333": {
-    "codename": "A3333",
+    "deviceName": "A3333",
     "marketingName": "Wildfire",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a3335": {
-    "codename": "A3335",
+    "deviceName": "A3335",
     "marketingName": "Wildfire S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a510": {
-    "codename": "A510",
+    "deviceName": "A510",
     "marketingName": "Wildfire S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a510a": {
-    "codename": "A510a",
+    "deviceName": "A510a",
     "marketingName": "Wildfire S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a510e": {
-    "codename": "A510e",
+    "deviceName": "A510e",
     "marketingName": "Wildfire S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a6366": {
-    "codename": "A6366",
+    "deviceName": "A6366",
     "marketingName": "Aria",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a6380": {
-    "codename": "A6380",
+    "deviceName": "A6380",
     "marketingName": "Gratia",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a7272": {
-    "codename": "A7272",
+    "deviceName": "A7272",
     "marketingName": "Desire Z",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a7373": {
-    "codename": "A7373",
+    "deviceName": "A7373",
     "marketingName": "Evo Shift 4G",
     "manufacturer": "Htc",
     "brand": "Sprint",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a8181": {
-    "codename": "A8181",
+    "deviceName": "A8181",
     "marketingName": "Desire",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a9191": {
-    "codename": "A9191",
+    "deviceName": "A9191",
     "marketingName": "Desire HD",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc a9s": {
-    "codename": "A9s",
+    "deviceName": "A9s",
     "marketingName": "One A9",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc a9u": {
-    "codename": "A9u",
+    "deviceName": "A9u",
     "marketingName": "One A9",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc adr6200": {
-    "codename": "ADR6200",
+    "deviceName": "ADR6200",
     "marketingName": "Bravo C",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc adr6230": {
-    "codename": "ADR6230",
+    "deviceName": "ADR6230",
     "marketingName": "Wildfire S (CDMA)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc adr6300": {
-    "codename": "ADR6300",
+    "deviceName": "ADR6300",
     "marketingName": "Droid Incredible 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc adr6325": {
-    "codename": "ADR6325",
+    "deviceName": "ADR6325",
     "marketingName": "Merge",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc adr6350": {
-    "codename": "ADR6350",
+    "deviceName": "ADR6350",
     "marketingName": "Droid Incredible 2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc adr6400l": {
-    "codename": "ADR6400L",
+    "deviceName": "ADR6400L",
     "marketingName": "Incredible HD",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc adr6410lra": {
-    "codename": "ADR6410LRA",
+    "deviceName": "ADR6410LRA",
     "marketingName": "Desire 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc adr6410lvw": {
-    "codename": "ADR6410LVW",
+    "deviceName": "ADR6410LVW",
     "marketingName": "Droid Incredible 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc adr6425lvw": {
-    "codename": "ADR6425LVW",
+    "deviceName": "ADR6425LVW",
     "marketingName": "Rezound",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc amaze 4g": {
-    "codename": "Amaze 4G",
+    "deviceName": "Amaze 4G",
     "marketingName": "Amaze 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc butterfly": {
-    "codename": "Butterfly",
+    "deviceName": "Butterfly",
     "marketingName": "Butterfly",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc butterfly2": {
-    "codename": "Butterfly 2",
+    "deviceName": "Butterfly 2",
     "marketingName": "Butterfly 2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc c2": {
-    "codename": "C2",
+    "deviceName": "C2",
     "marketingName": "One S C2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc c525u": {
-    "codename": "C525U",
+    "deviceName": "C525U",
     "marketingName": "One SV 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc c625b": {
-    "codename": "C625B",
+    "deviceName": "C625B",
     "marketingName": "Windows Phone 8X LTE",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc c625e": {
-    "codename": "C625E",
+    "deviceName": "C625E",
     "marketingName": "Windows Phone 8X LTE",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc c715c": {
-    "codename": "C715C",
+    "deviceName": "C715C",
     "marketingName": "Evo Design 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc d160lvwpp": {
-    "codename": "D160LVWPP",
+    "deviceName": "D160LVWPP",
     "marketingName": "Desire 530",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc d820mu": {
-    "codename": "D820mu",
+    "deviceName": "D820mu",
     "marketingName": "Desire 820",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc d820u": {
-    "codename": "D820u",
+    "deviceName": "D820u",
     "marketingName": "D820u",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc d820us": {
-    "codename": "D820us",
+    "deviceName": "D820us",
     "marketingName": "Desire 820",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire": {
-    "codename": "Desire",
+    "deviceName": "Desire",
     "marketingName": "Desire",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 10 pro": {
-    "codename": "Desire 10 Pro",
+    "deviceName": "Desire 10 Pro",
     "marketingName": "Desire 10 Pro",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 12": {
-    "codename": "Desire 12",
+    "deviceName": "Desire 12",
     "marketingName": "Desire 12",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc desire 12+": {
-    "codename": "Desire 12+",
+    "deviceName": "Desire 12+",
     "marketingName": "Desire 12+",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc desire 210": {
-    "codename": "Desire 210",
+    "deviceName": "Desire 210",
     "marketingName": "Desire 210",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 300": {
-    "codename": "Desire 300",
+    "deviceName": "Desire 300",
     "marketingName": "Desire 300",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 310": {
-    "codename": "Desire 310",
+    "deviceName": "Desire 310",
     "marketingName": "Desire 310",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 320": {
-    "codename": "Desire 320",
+    "deviceName": "Desire 320",
     "marketingName": "Desire 320",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 400": {
-    "codename": "Desire 400",
+    "deviceName": "Desire 400",
     "marketingName": "Desire 400",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 500": {
-    "codename": "Desire 500",
+    "deviceName": "Desire 500",
     "marketingName": "Desire 500",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 510": {
-    "codename": "Desire 510",
+    "deviceName": "Desire 510",
     "marketingName": "Desire 510",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 516": {
-    "codename": "Desire 516",
+    "deviceName": "Desire 516",
     "marketingName": "Desire 516",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 526g": {
-    "codename": "Desire 526G",
+    "deviceName": "Desire 526G",
     "marketingName": "Desire 526G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 526g plus": {
-    "codename": "Desire 526G+",
+    "deviceName": "Desire 526G+",
     "marketingName": "Desire 526G+",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 530": {
-    "codename": "Desire 530",
+    "deviceName": "Desire 530",
     "marketingName": "Desire 530",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 600": {
-    "codename": "Desire 600",
+    "deviceName": "Desire 600",
     "marketingName": "Desire 600",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 600c": {
-    "codename": "Desire 600c",
+    "deviceName": "Desire 600c",
     "marketingName": "Desire 600c",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 606w": {
-    "codename": "Desire 606w",
+    "deviceName": "Desire 606w",
     "marketingName": "Desire 606w",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 610": {
-    "codename": "Desire 610",
+    "deviceName": "Desire 610",
     "marketingName": "Desire 610",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 620": {
-    "codename": "Desire 620",
+    "deviceName": "Desire 620",
     "marketingName": "Desire 620",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 620g": {
-    "codename": "Desire 620G",
+    "deviceName": "Desire 620G",
     "marketingName": "Desire 620G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 626": {
-    "codename": "Desire 626",
+    "deviceName": "Desire 626",
     "marketingName": "Desire 626",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 626g": {
-    "codename": "Desire 626G",
+    "deviceName": "Desire 626G",
     "marketingName": "Desire 626G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 626g plus": {
-    "codename": "Desire 626G+",
+    "deviceName": "Desire 626G+",
     "marketingName": "Desire 626G+",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 626s": {
-    "codename": "Desire 626s",
+    "deviceName": "Desire 626s",
     "marketingName": "Desire 626s",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 628": {
-    "codename": "Desire 628",
+    "deviceName": "Desire 628",
     "marketingName": "Desire 628",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc desire 700": {
-    "codename": "Desire 700",
+    "deviceName": "Desire 700",
     "marketingName": "Desire 700",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 728": {
-    "codename": "Desire 728",
+    "deviceName": "Desire 728",
     "marketingName": "Desire 728",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 728g": {
-    "codename": "Desire 728G",
+    "deviceName": "Desire 728G",
     "marketingName": "Desire 728G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire 816": {
-    "codename": "Desire 816",
+    "deviceName": "Desire 816",
     "marketingName": "Desire 816",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc desire 816g": {
-    "codename": "Desire 816G",
+    "deviceName": "Desire 816G",
     "marketingName": "Desire 816G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc desire 820": {
-    "codename": "Desire 820",
+    "deviceName": "Desire 820",
     "marketingName": "Desire 820",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc desire 820s": {
-    "codename": "Desire 820s",
+    "deviceName": "Desire 820s",
     "marketingName": "Desire 820s",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc desire 826": {
-    "codename": "Desire 826",
+    "deviceName": "Desire 826",
     "marketingName": "Desire 826",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc desire eye": {
-    "codename": "Desire Eye",
+    "deviceName": "Desire Eye",
     "marketingName": "Desire Eye",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire hd": {
-    "codename": "Desire HD",
+    "deviceName": "Desire HD",
     "marketingName": "Desire HD",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire s": {
-    "codename": "Desire S",
+    "deviceName": "Desire S",
     "marketingName": "Desire S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire sv": {
-    "codename": "Desire SV",
+    "deviceName": "Desire SV",
     "marketingName": "Desire SV",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire u": {
-    "codename": "T327w",
+    "deviceName": "T327w",
     "marketingName": "Desire U",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire v": {
-    "codename": "Desire V",
+    "deviceName": "Desire V",
     "marketingName": "Desire V",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc desire z": {
-    "codename": "Desire Z",
+    "deviceName": "Desire Z",
     "marketingName": "Desire Z",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc dream": {
-    "codename": "Dream",
+    "deviceName": "Dream",
     "marketingName": "Dream",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc eris": {
-    "codename": "Droid Eris",
+    "deviceName": "Droid Eris",
     "marketingName": "Droid Eris",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc espresso": {
-    "codename": "Espresso",
+    "deviceName": "Espresso",
     "marketingName": "Espresso",
     "manufacturer": "Htc",
     "brand": "Tmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc evo hd2": {
-    "codename": "Evo HD2",
+    "deviceName": "Evo HD2",
     "marketingName": "Evo HD2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc g21": {
-    "codename": "G21",
+    "deviceName": "G21",
     "marketingName": "Sensation XL",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc glacier": {
-    "codename": "Glacier",
+    "deviceName": "Glacier",
     "marketingName": "Glacier",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc hero": {
-    "codename": "Hero",
+    "deviceName": "Hero",
     "marketingName": "Hero",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc htc6435lvw": {
-    "codename": "HTC6435LVW",
+    "deviceName": "HTC6435LVW",
     "marketingName": "Droid DNA",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc htc6525lvw": {
-    "codename": "HTC6525LVW",
+    "deviceName": "HTC6525LVW",
     "marketingName": "One (M8) CDMA",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc htc6990lvw": {
-    "codename": "HTC6990LVW",
+    "deviceName": "HTC6990LVW",
     "marketingName": "Windows Phone 8X 4G (Verizon)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc inspire 4g": {
-    "codename": "A9192",
+    "deviceName": "A9192",
     "marketingName": "Inspire 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc legend": {
-    "codename": "Legend",
+    "deviceName": "Legend",
     "marketingName": "Legend",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m10f": {
-    "codename": "M10f",
+    "deviceName": "M10f",
     "marketingName": "M10f",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc m10h": {
-    "codename": "M10h",
+    "deviceName": "M10h",
     "marketingName": "10",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc m7": {
-    "codename": "M7",
+    "deviceName": "M7",
     "marketingName": "One",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m7 (htc6500lvw)": {
-    "codename": "M7 (HTC6500LVW)",
+    "deviceName": "M7 (HTC6500LVW)",
     "marketingName": "One (Verizon)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m8": {
-    "codename": "M8",
+    "deviceName": "M8",
     "marketingName": "One M8",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m8s": {
-    "codename": "M8s",
+    "deviceName": "M8s",
     "marketingName": "One M8s",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m8x": {
-    "codename": "M8x",
+    "deviceName": "M8x",
     "marketingName": "One M8x",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m9": {
-    "codename": "M9",
+    "deviceName": "M9",
     "marketingName": "One M9",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m9 plus": {
-    "codename": "M9 Plus",
+    "deviceName": "M9 Plus",
     "marketingName": "One M9 Plus",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m9u": {
-    "codename": "M9u",
+    "deviceName": "M9u",
     "marketingName": "One M9 Hima (Taiwan)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc m9w": {
-    "codename": "M9w",
+    "deviceName": "M9w",
     "marketingName": "One M9 Hima (China)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc magic": {
-    "codename": "Magic",
+    "deviceName": "Magic",
     "marketingName": "Magic",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc mda compact v": {
-    "codename": "Touch Diamond 2",
+    "deviceName": "Touch Diamond 2",
     "marketingName": "MDA Compact V",
     "manufacturer": "Htc",
     "brand": "Tmobile",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc mda vario v": {
-    "codename": "MDA Vario V",
+    "deviceName": "MDA Vario V",
     "marketingName": "MDA Vario V",
     "manufacturer": "Htc",
     "brand": "Tmobile",
-    "platform": "windows mobile os",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows mobile os"
   },
   "htc one a9": {
-    "codename": "One A9",
+    "deviceName": "One A9",
     "marketingName": "One A9",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc one e8": {
-    "codename": "One E8",
+    "deviceName": "One E8",
     "marketingName": "One E8",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc one e9 plus": {
-    "codename": "One E9+",
+    "deviceName": "One E9+",
     "marketingName": "One E9+",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc one e9s": {
-    "codename": "One E9s",
+    "deviceName": "One E9s",
     "marketingName": "One E9s",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc one m8 eye": {
-    "codename": "M8 Eye",
+    "deviceName": "M8 Eye",
     "marketingName": "One (M8 Eye)",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc one max": {
-    "codename": "One Max",
+    "deviceName": "One Max",
     "marketingName": "One Max",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc one me dual sim": {
-    "codename": "One ME",
+    "deviceName": "One ME",
     "marketingName": "One ME",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc one mini": {
-    "codename": "One Mini",
+    "deviceName": "One Mini",
     "marketingName": "One Mini",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc one mini 2": {
-    "codename": "One Mini 2",
+    "deviceName": "One Mini 2",
     "marketingName": "One Mini 2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc one sv": {
-    "codename": "One SV",
+    "deviceName": "One SV",
     "marketingName": "One SV",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc one v": {
-    "codename": "H2000C",
+    "deviceName": "H2000C",
     "marketingName": "One V",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc panache": {
-    "codename": "Panache",
+    "deviceName": "Panache",
     "marketingName": "Panache",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pc36100": {
-    "codename": "PC36100",
+    "deviceName": "PC36100",
     "marketingName": "Evo 4G",
     "manufacturer": "Htc",
     "brand": "Sprint",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pg86100": {
-    "codename": "PG86100",
+    "deviceName": "PG86100",
     "marketingName": "EVO 3D",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc ph06130": {
-    "codename": "PH06130",
+    "deviceName": "PH06130",
     "marketingName": "Status",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc ph39100": {
-    "codename": "PH39100",
+    "deviceName": "PH39100",
     "marketingName": "Vivid",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pj401": {
-    "codename": "PJ401",
+    "deviceName": "PJ401",
     "marketingName": "One S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pj83100 x": {
-    "codename": "PJ83100",
+    "deviceName": "PJ83100",
     "marketingName": "One X",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pj83100 xl": {
-    "codename": "PJ83100",
+    "deviceName": "PJ83100",
     "marketingName": "One XL",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pm63100": {
-    "codename": "PM63100",
+    "deviceName": "PM63100",
     "marketingName": "One X+",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pn071": {
-    "codename": "PN071",
+    "deviceName": "PN071",
     "marketingName": "One",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc pn07120": {
-    "codename": "PN07120",
+    "deviceName": "PN07120",
     "marketingName": "One M7 Google Play",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc po58220": {
-    "codename": "PO58220",
+    "deviceName": "PO58220",
     "marketingName": "One mini",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc ruby": {
-    "codename": "Ruby",
+    "deviceName": "Ruby",
     "marketingName": "Ruby",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc s510b": {
-    "codename": "S510B",
+    "deviceName": "S510B",
     "marketingName": "Rhyme",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc s510e": {
-    "codename": "S510e",
+    "deviceName": "S510e",
     "marketingName": "Desire S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc s710e": {
-    "codename": "S710E",
+    "deviceName": "S710E",
     "marketingName": "Incredible S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc s901s": {
-    "codename": "S901s",
+    "deviceName": "S901s",
     "marketingName": "Butterfly S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc salsa": {
-    "codename": "C510e",
+    "deviceName": "C510e",
     "marketingName": "Salsa",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc sensation 4g": {
-    "codename": "Sensation 4G",
+    "deviceName": "Sensation 4G",
     "marketingName": "Sensation 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc sensation xe beats z715e": {
-    "codename": "Z715e",
+    "deviceName": "Z715e",
     "marketingName": "Sensation XE with Beats Audio",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc t120c": {
-    "codename": "T120C",
+    "deviceName": "T120C",
     "marketingName": "T120C",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc t328d": {
-    "codename": "T328d",
+    "deviceName": "T328d",
     "marketingName": "Desire VC",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc t328e": {
-    "codename": "T328E",
+    "deviceName": "T328E",
     "marketingName": "Desire X",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc t328w": {
-    "codename": "T328w",
+    "deviceName": "T328w",
     "marketingName": "Desire V",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc t329d": {
-    "codename": "T329d",
+    "deviceName": "T329d",
     "marketingName": "Desire XC",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc t329w": {
-    "codename": "T329w",
+    "deviceName": "T329w",
     "marketingName": "Desire X",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc t528d": {
-    "codename": "T528D",
+    "deviceName": "T528D",
     "marketingName": "One SC",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc t528w": {
-    "codename": "T528w",
+    "deviceName": "T528w",
     "marketingName": "One SU",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc t7373": {
-    "codename": "T7373",
+    "deviceName": "T7373",
     "marketingName": "Touch Pro2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc t8585": {
-    "codename": "T8585",
+    "deviceName": "T8585",
     "marketingName": "Nexus HD2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc t9292": {
-    "codename": "T9292",
+    "deviceName": "T9292",
     "marketingName": "HD7",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc tattoo": {
-    "codename": "Tattoo",
+    "deviceName": "Tattoo",
     "marketingName": "Tattoo",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc touch diamond 2": {
-    "codename": "Touch Diamond 2",
+    "deviceName": "Touch Diamond 2",
     "marketingName": "Touch Diamond 2",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc u play": {
-    "codename": "U Play",
+    "deviceName": "U Play",
     "marketingName": "U Play",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc u ultra": {
-    "codename": "U Ultra",
+    "deviceName": "U Ultra",
     "marketingName": "U Ultra",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc u11": {
-    "codename": "U11",
+    "deviceName": "U11",
     "marketingName": "U11",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2560,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc u11 life": {
-    "codename": "U11 Life",
+    "deviceName": "U11 Life",
     "marketingName": "U11 Life",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc u12+": {
-    "codename": "U12+",
+    "deviceName": "U12+",
     "marketingName": "U12+",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2880,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2880,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc v1": {
-    "codename": "V1",
+    "deviceName": "V1",
     "marketingName": "Primo",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "htc velocity": {
-    "codename": "Velocity",
+    "deviceName": "Velocity",
     "marketingName": "Velocity",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc velocity 4g": {
-    "codename": "Velocity 4G",
+    "deviceName": "Velocity 4G",
     "marketingName": "Velocity 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc wildfire": {
-    "codename": "Wildfire",
+    "deviceName": "Wildfire",
     "marketingName": "Wildfire",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc wildfire s ls": {
-    "codename": "Wildfire S",
+    "deviceName": "Wildfire S",
     "marketingName": "Wildfire S",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc windows phone 8x": {
-    "codename": "Windows Phone 8X",
+    "deviceName": "Windows Phone 8X",
     "marketingName": "Windows Phone 8X",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "windows phone",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "windows phone"
   },
   "htc x315e": {
-    "codename": "X315e",
+    "deviceName": "X315e",
     "marketingName": "Sensation XL with Beats Audio",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc x515": {
-    "codename": "X515",
+    "deviceName": "X515",
     "marketingName": "EVO 3D",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc x515a": {
-    "codename": "X515a",
+    "deviceName": "X515a",
     "marketingName": "EVO 3D",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc x515c": {
-    "codename": "X515c",
+    "deviceName": "X515c",
     "marketingName": "EVO 3D",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc x515e": {
-    "codename": "X515e",
+    "deviceName": "X515e",
     "marketingName": "Evo 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc x515m": {
-    "codename": "X515m",
+    "deviceName": "X515m",
     "marketingName": "EVO 3D",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc x525a": {
-    "codename": "X525A",
+    "deviceName": "X525A",
     "marketingName": "One X+",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc x710s": {
-    "codename": "X710s",
+    "deviceName": "X710s",
     "marketingName": "Velocity 4G",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc x9": {
-    "codename": "X9",
+    "deviceName": "X9",
     "marketingName": "One X9",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc z710": {
-    "codename": "Z710",
+    "deviceName": "Z710",
     "marketingName": "Sensation",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htc z710e": {
-    "codename": "Z710e",
+    "deviceName": "Z710e",
     "marketingName": "Sensation",
     "manufacturer": "Htc",
     "brand": "Htc",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

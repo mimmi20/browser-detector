@@ -1,26 +1,32 @@
 {
   "general vk-mobile device": {
-    "codename": "general VK Mobile Device",
+    "deviceName": "general VK Mobile Device",
     "marketingName": "general VK Mobile Device",
     "manufacturer": "VK Mobile",
     "brand": "VK Mobile",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "vk-mobile vk900": {
-    "codename": "VK900",
+    "deviceName": "VK900",
     "marketingName": "VK900",
     "manufacturer": "VK Mobile",
     "brand": "VK Mobile",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 176,
-    "resolutionHeight": 220,
-    "dualOrientation": false
+    "display": {
+      "width": 176,
+      "height": 220,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

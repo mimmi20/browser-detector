@@ -1,110 +1,137 @@
 {
   "general jiayu device": {
-    "codename": "general Jiayu Device",
+    "deviceName": "general Jiayu Device",
     "marketingName": "general Jiayu Device",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jiayu jy-g2": {
-    "codename": "JY-G2",
+    "deviceName": "JY-G2",
     "marketingName": "JY-G2",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jiayu jy-g3": {
-    "codename": "JY-G3",
+    "deviceName": "JY-G3",
     "marketingName": "JY-G3",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jiayu jy-g4": {
-    "codename": "JY-G4",
+    "deviceName": "JY-G4",
     "marketingName": "JY-G4",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jiayu jy-g4s": {
-    "codename": "JY-G4S",
+    "deviceName": "JY-G4S",
     "marketingName": "JY-G4S",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jiayu jy-g5": {
-    "codename": "JY-G5",
+    "deviceName": "JY-G5",
     "marketingName": "JY-G5",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jiayu jy-s2": {
-    "codename": "JY-S2",
+    "deviceName": "JY-S2",
     "marketingName": "S2",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jiayu jy-s3": {
-    "codename": "JY-S3",
+    "deviceName": "JY-S3",
     "marketingName": "JY-S3",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "jiayu jy-s3s": {
-    "codename": "JY-S3S",
+    "deviceName": "JY-S3S",
     "marketingName": "JY-S3S",
     "manufacturer": "Jiayu",
     "brand": "Jiayu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

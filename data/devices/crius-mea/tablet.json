@@ -1,38 +1,47 @@
 {
   "general crius-mea device": {
-    "codename": "general Crius Mea Device",
+    "deviceName": "general Crius Mea Device",
     "marketingName": "general Crius Mea Device",
     "manufacturer": "Crius Mea",
     "brand": "Crius Mea",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "crius-mea q7a": {
-    "codename": "Q7A",
+    "deviceName": "Q7A",
     "marketingName": "Q7A",
     "manufacturer": "Crius Mea",
     "brand": "Crius Mea",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "crius-mea q7a+": {
-    "codename": "Q7A+",
+    "deviceName": "Q7A+",
     "marketingName": "Q7A+",
     "manufacturer": "Crius Mea",
     "brand": "Crius Mea",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

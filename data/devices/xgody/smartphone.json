@@ -1,38 +1,47 @@
 {
   "general xgody device": {
-    "codename": "general Xgody Device",
+    "deviceName": "general Xgody Device",
     "marketingName": "general Xgody Device",
     "manufacturer": "Xgody",
     "brand": "Xgody",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xgody d10": {
-    "codename": "D10",
+    "deviceName": "D10",
     "marketingName": "D10",
     "manufacturer": "Xgody",
     "brand": "Xgody",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "xgody y14": {
-    "codename": "Y14",
+    "deviceName": "Y14",
     "marketingName": "Y14",
     "manufacturer": "Xgody",
     "brand": "Xgody",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

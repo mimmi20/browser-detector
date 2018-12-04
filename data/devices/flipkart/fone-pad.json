@@ -1,26 +1,32 @@
 {
   "general flipkart device": {
-    "codename": "general Flipkart Device",
+    "deviceName": "general Flipkart Device",
     "marketingName": "general Flipkart Device",
     "manufacturer": "Flipkart",
     "brand": "Flipkart",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "flipkart xt811": {
-    "codename": "XT811",
+    "deviceName": "XT811",
     "marketingName": "Digiflip Pro XT811",
     "manufacturer": "Flipkart",
     "brand": "Flipkart",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

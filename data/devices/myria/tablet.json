@@ -1,14 +1,17 @@
 {
   "myria easy tab 9": {
-    "codename": "Easy Tab 9",
+    "deviceName": "Easy Tab 9",
     "marketingName": "Easy Tab 9",
     "manufacturer": "Myria",
     "brand": "Myria",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

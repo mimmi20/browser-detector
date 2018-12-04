@@ -1,110 +1,137 @@
 {
   "general tp-link device": {
-    "codename": "general TP-Link Device",
+    "deviceName": "general TP-Link Device",
     "marketingName": "general TP-Link Device",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tp-link neffos c5": {
-    "codename": "Neffos C5",
+    "deviceName": "Neffos C5",
     "marketingName": "Neffos C5",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tp-link neffos c5 max": {
-    "codename": "Neffos C5 Max",
+    "deviceName": "Neffos C5 Max",
     "marketingName": "Neffos C5 Max",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tp-link neffos c5l": {
-    "codename": "Neffos C5L",
+    "deviceName": "Neffos C5L",
     "marketingName": "Neffos C5L",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tp-link neffos c7": {
-    "codename": "Neffos C7",
+    "deviceName": "Neffos C7",
     "marketingName": "Neffos C7",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tp-link neffos x1": {
-    "codename": "Neffos X1",
+    "deviceName": "Neffos X1",
     "marketingName": "Neffos X1",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tp-link neffos x1 lite": {
-    "codename": "Neffos X1 Lite",
+    "deviceName": "Neffos X1 Lite",
     "marketingName": "Neffos X1 Lite",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tp-link neffos x1 max": {
-    "codename": "Neffos X1 Max",
+    "deviceName": "Neffos X1 Max",
     "marketingName": "Neffos X1 Max",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tp-link neffos y5l": {
-    "codename": "Neffos Y5L",
+    "deviceName": "Neffos Y5L",
     "marketingName": "Neffos Y5L",
     "manufacturer": "TP-LINK",
     "brand": "TP-LINK",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

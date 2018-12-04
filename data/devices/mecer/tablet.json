@@ -1,86 +1,107 @@
 {
   "general mecer device": {
-    "codename": "general Mecer Device",
+    "deviceName": "general Mecer Device",
     "marketingName": "general Mecer Device",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mecer 101p51c": {
-    "codename": "101P51C",
+    "deviceName": "101P51C",
     "marketingName": "Xpress Smartlife 101P51C",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mecer 800p31c": {
-    "codename": "800P31C",
+    "deviceName": "800P31C",
     "marketingName": "Xpress Smartlife 800P31C",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mecer 800p32c": {
-    "codename": "800P32C",
+    "deviceName": "800P32C",
     "marketingName": "Xpress Smartlife 800P32C",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mecer m785": {
-    "codename": "M785",
+    "deviceName": "M785",
     "marketingName": "Xpress Smartlife M785",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mecer s10-0g": {
-    "codename": "S10-0G",
+    "deviceName": "S10-0G",
     "marketingName": "S10-0G",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "mecer x1010": {
-    "codename": "X1010",
+    "deviceName": "X1010",
     "marketingName": "X1010",
     "manufacturer": "Mecer",
     "brand": "Mecer",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

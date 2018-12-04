@@ -1,182 +1,227 @@
 {
   "general elephone device": {
-    "codename": "general Elephone Device",
+    "deviceName": "general Elephone Device",
     "marketingName": "general Elephone Device",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone g6": {
-    "codename": "G6",
+    "deviceName": "G6",
     "marketingName": "G6",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p10c": {
-    "codename": "P10C",
+    "deviceName": "P10C",
     "marketingName": "P10C",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p2000": {
-    "codename": "P2000",
+    "deviceName": "P2000",
     "marketingName": "P2000",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p3000": {
-    "codename": "P3000",
+    "deviceName": "P3000",
     "marketingName": "P3000",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p3000s": {
-    "codename": "P3000S",
+    "deviceName": "P3000S",
     "marketingName": "P3000S",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p5000": {
-    "codename": "P5000",
+    "deviceName": "P5000",
     "marketingName": "P5000",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p6000": {
-    "codename": "P6000",
+    "deviceName": "P6000",
     "marketingName": "P6000",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p6000 02": {
-    "codename": "P6000 02",
+    "deviceName": "P6000 02",
     "marketingName": "P6000 02",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p7000": {
-    "codename": "P7000",
+    "deviceName": "P7000",
     "marketingName": "Pioneer",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p8 mini": {
-    "codename": "P8 Mini",
+    "deviceName": "P8 Mini",
     "marketingName": "P8 Mini",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p8000": {
-    "codename": "P8000",
+    "deviceName": "P8000",
     "marketingName": "P8000",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p8000 6.0": {
-    "codename": "P8000 6.0",
+    "deviceName": "P8000 6.0",
     "marketingName": "P8000 6.0",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone p9000": {
-    "codename": "P9000",
+    "deviceName": "P9000",
     "marketingName": "P9000",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "elephone s2": {
-    "codename": "S2",
+    "deviceName": "S2",
     "marketingName": "S2",
     "manufacturer": "Elephone",
     "brand": "Elephone",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

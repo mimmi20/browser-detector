@@ -1,38 +1,47 @@
 {
   "general gigaset device": {
-    "codename": "general Gigaset Device",
+    "deviceName": "general Gigaset Device",
     "marketingName": "general Gigaset Device",
     "manufacturer": "Gigaset",
     "brand": "Gigaset",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gigaset qv1030": {
-    "codename": "QV1030",
+    "deviceName": "QV1030",
     "marketingName": "QV1030",
     "manufacturer": "Gigaset",
     "brand": "Gigaset",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "gigaset qv830": {
-    "codename": "QV830",
+    "deviceName": "QV830",
     "marketingName": "QV830",
     "manufacturer": "Gigaset",
     "brand": "Gigaset",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

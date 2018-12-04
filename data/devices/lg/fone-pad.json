@@ -1,86 +1,107 @@
 {
   "lg l-06c": {
-    "codename": "L-06C",
+    "deviceName": "L-06C",
     "marketingName": "Optimus Pad",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg v490": {
-    "codename": "V490",
+    "deviceName": "V490",
     "marketingName": "G Pad 8.0 4G LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg v521": {
-    "codename": "V521",
+    "deviceName": "V521",
     "marketingName": "G Pad X",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg v900": {
-    "codename": "V900",
+    "deviceName": "V900",
     "marketingName": "Optimus Pad",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg v905r": {
-    "codename": "V905R",
+    "deviceName": "V905R",
     "marketingName": "Optimus Pad",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg v935": {
-    "codename": "V935",
+    "deviceName": "V935",
     "marketingName": "G Pad II 10.1 LTE",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "lg vk810 4g": {
-    "codename": "VK810 4G",
+    "deviceName": "VK810 4G",
     "marketingName": "G Pad 8.3 4G",
     "manufacturer": "Lg",
     "brand": "Lg",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

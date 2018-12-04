@@ -1,38 +1,47 @@
 {
   "general o+ device": {
-    "codename": "general O+ Device",
+    "deviceName": "general O+ Device",
     "marketingName": "general O+ Device",
     "manufacturer": "O+",
     "brand": "O+",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "o+ 8.36": {
-    "codename": "8.36",
+    "deviceName": "8.36",
     "marketingName": "8.36",
     "manufacturer": "O+",
     "brand": "O+",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "o+ presto": {
-    "codename": "Presto",
+    "deviceName": "Presto",
     "marketingName": "Presto",
     "manufacturer": "O+",
     "brand": "O+",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general positivo device": {
-    "codename": "general Positivo Device",
+    "deviceName": "general Positivo Device",
     "marketingName": "general Positivo Device",
     "manufacturer": "Positivo",
     "brand": "Positivo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "positivo ypy s450": {
-    "codename": "Ypy S450",
+    "deviceName": "Ypy S450",
     "marketingName": "Ypy S450",
     "manufacturer": "Positivo",
     "brand": "Positivo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

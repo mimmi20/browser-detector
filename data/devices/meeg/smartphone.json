@@ -1,50 +1,62 @@
 {
   "general meeg device": {
-    "codename": "general MEEG Device",
+    "deviceName": "general MEEG Device",
     "marketingName": "general MEEG Device",
     "manufacturer": "MEEG",
     "brand": "MEEG",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "meeg 101m": {
-    "codename": "101M",
+    "deviceName": "101M",
     "marketingName": "101M",
     "manufacturer": "MEEG",
     "brand": "MEEG",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meeg 103m": {
-    "codename": "103M",
+    "deviceName": "103M",
     "marketingName": "103M",
     "manufacturer": "MEEG",
     "brand": "MEEG",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "meeg 210r": {
-    "codename": "210R",
+    "deviceName": "210R",
     "marketingName": "210R",
     "manufacturer": "MEEG",
     "brand": "MEEG",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

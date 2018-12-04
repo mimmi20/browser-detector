@@ -1,26 +1,32 @@
 {
   "general tecno device": {
-    "codename": "general Tecno Device",
+    "deviceName": "general Tecno Device",
     "marketingName": "general Tecno Device",
     "manufacturer": "Tecno",
     "brand": "Tecno",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tecno p9": {
-    "codename": "P9",
+    "deviceName": "P9",
     "marketingName": "Phantom Mini Pad",
     "manufacturer": "Tecno",
     "brand": "Tecno",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,14 +1,17 @@
 {
   "spv m700": {
-    "codename": "M700",
+    "deviceName": "M700",
     "marketingName": "M700",
     "manufacturer": "Htc",
     "brand": "SPV",
-    "platform": "windows ce",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "windows ce"
   }
 }

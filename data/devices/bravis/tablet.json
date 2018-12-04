@@ -1,38 +1,47 @@
 {
   "general bravis device": {
-    "codename": "general Bravis Device",
+    "deviceName": "general Bravis Device",
     "marketingName": "general Bravis Device",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bravis np101": {
-    "codename": "NP101",
+    "deviceName": "NP101",
     "marketingName": "NP101",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bravis np844": {
-    "codename": "NP844",
+    "deviceName": "NP844",
     "marketingName": "NP844",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general kurio device": {
-    "codename": "general Kurio Device",
+    "deviceName": "general Kurio Device",
     "marketingName": "general Kurio Device",
     "manufacturer": "Kurio",
     "brand": "Kurio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kurio c15100m": {
-    "codename": "C15100M",
+    "deviceName": "C15100M",
     "marketingName": "Tab 2",
     "manufacturer": "Kurio",
     "brand": "Kurio",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

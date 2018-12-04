@@ -1,14 +1,17 @@
 {
   "easypix easyphone ep5": {
-    "codename": "EasyPhone EP5",
+    "deviceName": "EasyPhone EP5",
     "marketingName": "EasyPhone EP5",
     "manufacturer": "Easypix",
     "brand": "Easypix",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 640,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

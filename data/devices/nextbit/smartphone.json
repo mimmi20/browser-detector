@@ -1,26 +1,32 @@
 {
   "general nextbit device": {
-    "codename": "general Nextbit Device",
+    "deviceName": "general Nextbit Device",
     "marketingName": "general Nextbit Device",
     "manufacturer": "Nextbit",
     "brand": "Nextbit",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nextbit robin": {
-    "codename": "Robin",
+    "deviceName": "Robin",
     "marketingName": "Robin",
     "manufacturer": "Nextbit",
     "brand": "Nextbit",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

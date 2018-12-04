@@ -1,38 +1,47 @@
 {
   "asus eee 701": {
-    "codename": "EEE 701",
+    "deviceName": "EEE 701",
     "marketingName": "EEE 701",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": "android",
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "asus pc": {
-    "codename": "PC",
+    "deviceName": "PC",
     "marketingName": "PC",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "eee pc": {
-    "codename": "eee pc",
+    "deviceName": "eee pc",
     "marketingName": "eee pc",
     "manufacturer": "Asus",
     "brand": "Asus",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

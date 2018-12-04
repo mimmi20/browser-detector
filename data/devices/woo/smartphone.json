@@ -1,26 +1,32 @@
 {
   "general woo device": {
-    "codename": "general Woo Device",
+    "deviceName": "general Woo Device",
     "marketingName": "general Woo Device",
     "manufacturer": "Woo",
     "brand": "Woo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "woo sp6020": {
-    "codename": "SP6020",
+    "deviceName": "SP6020",
     "marketingName": "Quasar",
     "manufacturer": "Woo",
     "brand": "Woo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

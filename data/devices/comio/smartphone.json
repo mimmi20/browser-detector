@@ -1,50 +1,62 @@
 {
   "general comio device": {
-    "codename": "general Comio Device",
+    "deviceName": "general Comio Device",
     "marketingName": "general Comio Device",
     "manufacturer": "Comio",
     "brand": "Comio",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "comio p1": {
-    "codename": "P1",
+    "deviceName": "P1",
     "marketingName": "P1",
     "manufacturer": "Comio",
     "brand": "Comio",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "comio s1": {
-    "codename": "S1",
+    "deviceName": "S1",
     "marketingName": "S1",
     "manufacturer": "Comio",
     "brand": "Comio",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "comio s1 lite": {
-    "codename": "S1 Lite",
+    "deviceName": "S1 Lite",
     "marketingName": "S1 Lite",
     "manufacturer": "Comio",
     "brand": "Comio",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general united device": {
-    "codename": "general United Device",
+    "deviceName": "general United Device",
     "marketingName": "general United Device",
     "manufacturer": "UnitedTimeTechnology",
     "brand": "UnitedTimeTechnology",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "united mt6515m": {
-    "codename": "MT6515M",
+    "deviceName": "MT6515M",
     "marketingName": "Utime S23",
     "manufacturer": "UnitedTimeTechnology",
     "brand": "UnitedTimeTechnology",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

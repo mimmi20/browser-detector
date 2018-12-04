@@ -1,26 +1,32 @@
 {
   "general ctc device": {
-    "codename": "general CTC Device",
+    "deviceName": "general CTC Device",
     "marketingName": "general CTC Device",
     "manufacturer": "CTC",
     "brand": "CTC",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ctc 601": {
-    "codename": "601",
+    "deviceName": "601",
     "marketingName": "601",
     "manufacturer": "CTC",
     "brand": "CTC",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

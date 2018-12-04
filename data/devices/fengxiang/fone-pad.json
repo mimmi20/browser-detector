@@ -1,26 +1,32 @@
 {
   "general fengxiang device": {
-    "codename": "general Fengxiang Device",
+    "deviceName": "general Fengxiang Device",
     "marketingName": "general Fengxiang Device",
     "manufacturer": "Fengxiang",
     "brand": "Fengxiang",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fengxiang vkb011b": {
-    "codename": "VKB011B",
+    "deviceName": "VKB011B",
     "marketingName": "VKB011B",
     "manufacturer": "Fengxiang",
     "brand": "Fengxiang",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,14 +1,17 @@
 {
   "kyocera 402kc": {
-    "codename": "402KC",
+    "deviceName": "402KC",
     "marketingName": "402KC",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

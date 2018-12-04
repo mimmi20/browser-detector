@@ -1,26 +1,32 @@
 {
   "bravis a501 bright": {
-    "codename": "A501 Bright",
+    "deviceName": "A501 Bright",
     "marketingName": "A501 Bright",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bravis trend": {
-    "codename": "Trend",
+    "deviceName": "Trend",
     "marketingName": "Trend",
     "manufacturer": "Bravis",
     "brand": "Bravis",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

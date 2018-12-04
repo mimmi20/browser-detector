@@ -1,14 +1,17 @@
 {
   "panasonic sv-mv100": {
-    "codename": "SV-MV100",
+    "deviceName": "SV-MV100",
     "marketingName": "SV-MV100",
     "manufacturer": "Panasonic",
     "brand": "Panasonic",
-    "platform": "android",
     "type": "mobile-media-player",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

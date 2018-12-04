@@ -1,50 +1,62 @@
 {
   "general allwinner device": {
-    "codename": "general AllWinner Device",
+    "deviceName": "general AllWinner Device",
     "marketingName": "general AllWinner Device",
     "manufacturer": "AllWinner",
     "brand": "AllWinner",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allwinner a10": {
-    "codename": "A10",
+    "deviceName": "A10",
     "marketingName": "A10",
     "manufacturer": "AllWinner",
     "brand": "AllWinner",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allwinner mp907c": {
-    "codename": "MP907C",
+    "deviceName": "MP907C",
     "marketingName": "MP907C",
     "manufacturer": "AllWinner",
     "brand": "AllWinner",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "allwinner tablet": {
-    "codename": "Tablet",
+    "deviceName": "Tablet",
     "marketingName": "Tablet",
     "manufacturer": "AllWinner",
     "brand": "AllWinner",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

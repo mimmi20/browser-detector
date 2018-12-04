@@ -1,314 +1,392 @@
 {
   "general doogee device": {
-    "codename": "general Doogee Device",
+    "deviceName": "general Doogee Device",
     "marketingName": "general Doogee Device",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee bl5000": {
-    "codename": "BL5000",
+    "deviceName": "BL5000",
     "marketingName": "BL5000",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg150": {
-    "codename": "DG150",
+    "deviceName": "DG150",
     "marketingName": "Titans",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg2014": {
-    "codename": "DG2014",
+    "deviceName": "DG2014",
     "marketingName": "Turbo",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg300": {
-    "codename": "DG300",
+    "deviceName": "DG300",
     "marketingName": "Voyager",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg310": {
-    "codename": "DG310",
+    "deviceName": "DG310",
     "marketingName": "Voyager 2",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg330": {
-    "codename": "DG330",
+    "deviceName": "DG330",
     "marketingName": "Mint",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg500": {
-    "codename": "DG500",
+    "deviceName": "DG500",
     "marketingName": "Discovery",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg500c": {
-    "codename": "DG500C",
+    "deviceName": "DG500C",
     "marketingName": "Discovery 2",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg600": {
-    "codename": "DG600",
+    "deviceName": "DG600",
     "marketingName": "Bigboy",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg700": {
-    "codename": "DG700",
+    "deviceName": "DG700",
     "marketingName": "Titans 2",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee dg800": {
-    "codename": "DG800",
+    "deviceName": "DG800",
     "marketingName": "Valencia",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee f3 pro": {
-    "codename": "F3 Pro",
+    "deviceName": "F3 Pro",
     "marketingName": "F3 Pro",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee s60 lite": {
-    "codename": "S60 Lite",
+    "deviceName": "S60 Lite",
     "marketingName": "S60 Lite",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee t6": {
-    "codename": "T6",
+    "deviceName": "T6",
     "marketingName": "T6",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee x20": {
-    "codename": "X20",
+    "deviceName": "X20",
     "marketingName": "X20",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee x30": {
-    "codename": "X30",
+    "deviceName": "X30",
     "marketingName": "X30",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee x5max pro": {
-    "codename": "X5max Pro",
+    "deviceName": "X5max Pro",
     "marketingName": "X5max Pro",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee x6 pro": {
-    "codename": "X6 Pro",
+    "deviceName": "X6 Pro",
     "marketingName": "X6 Pro",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee x7 pro": {
-    "codename": "X7 Pro",
+    "deviceName": "X7 Pro",
     "marketingName": "X7 Pro",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee x9 pro": {
-    "codename": "X9 Pro",
+    "deviceName": "X9 Pro",
     "marketingName": "X9 Pro",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee y6 max": {
-    "codename": "Y6 Max",
+    "deviceName": "Y6 Max",
     "marketingName": "Y6 Max",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee y6 max 3d": {
-    "codename": "Y6 Max 3D",
+    "deviceName": "Y6 Max 3D",
     "marketingName": "Y6 Max 3D",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee y6 piano": {
-    "codename": "Y6 Piano",
+    "deviceName": "Y6 Piano",
     "marketingName": "Y6 Piano",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee y6 piano black": {
-    "codename": "Y6 Piano Black",
+    "deviceName": "Y6 Piano Black",
     "marketingName": "Y6 Piano Black",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doogee y6c": {
-    "codename": "Y6C",
+    "deviceName": "Y6C",
     "marketingName": "Y6C",
     "manufacturer": "Doogee",
     "brand": "Doogee",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

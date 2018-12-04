@@ -1,38 +1,47 @@
 {
   "general irulu device": {
-    "codename": "general iRulu Device",
+    "deviceName": "general iRulu Device",
     "marketingName": "general iRulu Device",
     "manufacturer": "Irulu",
     "brand": "Irulu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "irulu u1": {
-    "codename": "U1",
+    "deviceName": "U1",
     "marketingName": "Universe 1",
     "manufacturer": "Irulu",
     "brand": "Irulu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "irulu v3": {
-    "codename": "V3",
+    "deviceName": "V3",
     "marketingName": "V3",
     "manufacturer": "Irulu",
     "brand": "Irulu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,14 +1,17 @@
 {
   "denver taq-10182mk2": {
-    "codename": "TAQ-10182MK2",
+    "deviceName": "TAQ-10182MK2",
     "marketingName": "TAQ-10182MK2",
     "manufacturer": "Denver",
     "brand": "Denver",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

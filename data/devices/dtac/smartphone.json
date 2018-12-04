@@ -1,26 +1,32 @@
 {
   "general dtac device": {
-    "codename": "general DTAC Device",
+    "deviceName": "general DTAC Device",
     "marketingName": "general DTAC Device",
     "manufacturer": "DTAC",
     "brand": "DTAC",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dtac phone s2": {
-    "codename": "Phone S2",
+    "deviceName": "Phone S2",
     "marketingName": "Phone S2",
     "manufacturer": "DTAC",
     "brand": "DTAC",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,26 +1,32 @@
 {
   "general sunsbell device": {
-    "codename": "general Sunsbell Device",
+    "deviceName": "general Sunsbell Device",
     "marketingName": "general Sunsbell Device",
     "manufacturer": "Sunsbell",
     "brand": "Sunsbell",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sunsbell x538": {
-    "codename": "X538",
+    "deviceName": "X538",
     "marketingName": "Swees X538",
     "manufacturer": "Sunsbell",
     "brand": "Sunsbell",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

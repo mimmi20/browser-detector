@@ -1,14 +1,17 @@
 {
   "netrangemmh": {
-    "codename": "NETRANGEMMH",
+    "deviceName": "NETRANGEMMH",
     "marketingName": "NETRANGEMMH",
     "manufacturer": "Netrange",
     "brand": "Netrange",
-    "platform": "linux",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux"
   }
 }

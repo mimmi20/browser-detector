@@ -1,26 +1,32 @@
 {
   "general ciotcud device": {
-    "codename": "general CIOtCUD Device",
+    "deviceName": "general CIOtCUD Device",
     "marketingName": "general CIOtCUD Device",
     "manufacturer": "Ciotcud",
     "brand": "Ciotcud",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ciotcud l930": {
-    "codename": "L930",
+    "deviceName": "L930",
     "marketingName": "L930",
     "manufacturer": "Ciotcud",
     "brand": "Ciotcud",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

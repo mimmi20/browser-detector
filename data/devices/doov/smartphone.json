@@ -1,98 +1,122 @@
 {
   "general doov device": {
-    "codename": "general Doov Device",
+    "deviceName": "general Doov Device",
     "marketingName": "general Doov Device",
     "manufacturer": "Doov",
     "brand": "Doov",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doov d2": {
-    "codename": "D2",
+    "deviceName": "D2",
     "marketingName": "iEva",
     "manufacturer": "Doov",
     "brand": "Doov",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doov d300": {
-    "codename": "D300",
+    "deviceName": "D300",
     "marketingName": "D300",
     "manufacturer": "Doov",
     "brand": "Doov",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doov d350": {
-    "codename": "D350",
+    "deviceName": "D350",
     "marketingName": "D350",
     "manufacturer": "Doov",
     "brand": "Doov",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doov d8": {
-    "codename": "D8",
+    "deviceName": "D8",
     "marketingName": "D8",
     "manufacturer": "Doov",
     "brand": "Doov",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doov s1": {
-    "codename": "S1",
+    "deviceName": "S1",
     "marketingName": "iSuper S1",
     "manufacturer": "Doov",
     "brand": "Doov",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doov s2y": {
-    "codename": "S2y",
+    "deviceName": "S2y",
     "marketingName": "S2y",
     "manufacturer": "Doov",
     "brand": "Doov",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "doov t60": {
-    "codename": "T60",
+    "deviceName": "T60",
     "marketingName": "T60",
     "manufacturer": "Doov",
     "brand": "Doov",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

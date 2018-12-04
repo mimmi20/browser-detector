@@ -1,50 +1,62 @@
 {
   "general intel device": {
-    "codename": "general Intel Device",
+    "deviceName": "general Intel Device",
     "marketingName": "general Intel Device",
     "manufacturer": "Intel Corporation",
     "brand": "Intel Corporation",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "intel tr10cd1": {
-    "codename": "TR10CD1",
+    "deviceName": "TR10CD1",
     "marketingName": "Grand Hill",
     "manufacturer": "Intel Corporation",
     "brand": "Intel Corporation",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "intel tr10rs1": {
-    "codename": "TR10RS1",
+    "deviceName": "TR10RS1",
     "marketingName": "Flag Hill Value",
     "manufacturer": "Intel Corporation",
     "brand": "Intel Corporation",
-    "platform": null,
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "intel w032i c3": {
-    "codename": "W032i C3",
+    "deviceName": "W032i C3",
     "marketingName": "W032i C3",
     "manufacturer": "Intel Corporation",
     "brand": "Intel Corporation",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

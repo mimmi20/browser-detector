@@ -1,26 +1,32 @@
 {
   "itel it1701": {
-    "codename": "IT1701",
+    "deviceName": "IT1701",
     "marketingName": "iNote Prime",
     "manufacturer": "Itel",
     "brand": "Itel",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "itel it1702": {
-    "codename": "IT1702",
+    "deviceName": "IT1702",
     "marketingName": "Prime 2",
     "manufacturer": "Itel",
     "brand": "Itel",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

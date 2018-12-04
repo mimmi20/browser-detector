@@ -1,122 +1,152 @@
 {
   "general catsound device": {
-    "codename": "general CatSound Device",
+    "deviceName": "general CatSound Device",
     "marketingName": "general CatSound Device",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "catsound cat nova 8": {
-    "codename": "Cat Nova 8",
+    "deviceName": "Cat Nova 8",
     "marketingName": "Cat Nova 8",
     "manufacturer": "CatSound",
     "brand": "Weltbild",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "catsound cathelixm": {
-    "codename": "CatHelixM",
+    "deviceName": "CatHelixM",
     "marketingName": "Cat Helix Wifi",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "catsound galactica x": {
-    "codename": "Galactica X",
+    "deviceName": "Galactica X",
     "marketingName": "Galactica X",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "catsound nova": {
-    "codename": "Nova",
+    "deviceName": "Nova",
     "marketingName": "Nova",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "catsound phoenix": {
-    "codename": "Phoenix",
+    "deviceName": "Phoenix",
     "marketingName": "Phoenix",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "catsound phoenix 8.1j0": {
-    "codename": "Phoenix 8.1J0",
+    "deviceName": "Phoenix 8.1J0",
     "marketingName": "Phoenix 8.1J0",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "catsound stargate": {
-    "codename": "StarGate",
+    "deviceName": "StarGate",
     "marketingName": "StarGate",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "catsound tablet": {
-    "codename": "Tablet",
+    "deviceName": "Tablet",
     "marketingName": "Tablet",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "catsound tablet pc 4": {
-    "codename": "Tablet PC 4",
+    "deviceName": "Tablet PC 4",
     "marketingName": "Tablet PC 4",
     "manufacturer": "CatSound",
     "brand": "CatSound",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

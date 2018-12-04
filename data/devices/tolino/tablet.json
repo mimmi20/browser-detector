@@ -1,50 +1,62 @@
 {
   "general tolino device": {
-    "codename": "general Tolino Device",
+    "deviceName": "general Tolino Device",
     "marketingName": "general Tolino Device",
     "manufacturer": "Tolino",
     "brand": "Tolino",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tolino tab 7": {
-    "codename": "Tab 7",
+    "deviceName": "Tab 7",
     "marketingName": "Tab 7",
     "manufacturer": "TrekStor",
     "brand": "Tolino",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 900,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 900,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tolino tab 8": {
-    "codename": "Tab 8",
+    "deviceName": "Tab 8",
     "marketingName": "Tab 8",
     "manufacturer": "Tolino",
     "brand": "Tolino",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tolino tab 8.9": {
-    "codename": "Tab 8.9",
+    "deviceName": "Tab 8.9",
     "marketingName": "Tab 8.9",
     "manufacturer": "Tolino",
     "brand": "Tolino",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

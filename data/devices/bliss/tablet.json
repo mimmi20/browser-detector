@@ -1,26 +1,32 @@
 {
   "general bliss device": {
-    "codename": "general Bliss Device",
+    "deviceName": "general Bliss Device",
     "marketingName": "general Bliss Device",
     "manufacturer": "Bliss",
     "brand": "Bliss",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "bliss pad b9712kb": {
-    "codename": "Pad B9712KB",
+    "deviceName": "Pad B9712KB",
     "marketingName": "Pad B9712KB",
     "manufacturer": "Bliss",
     "brand": "Bliss",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

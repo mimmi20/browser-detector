@@ -1,26 +1,32 @@
 {
   "general sunup device": {
-    "codename": "general Sunup Device",
+    "deviceName": "general Sunup Device",
     "marketingName": "general Sunup Device",
     "manufacturer": "Sunup",
     "brand": "Sunup",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "sunup ok999": {
-    "codename": "OK999",
+    "deviceName": "OK999",
     "marketingName": "OK999",
     "manufacturer": "Sunup",
     "brand": "Sunup",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

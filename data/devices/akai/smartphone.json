@@ -1,98 +1,122 @@
 {
   "akai eco e2": {
-    "codename": "Eco E2",
+    "deviceName": "Eco E2",
     "marketingName": "Eco E2",
     "manufacturer": "Akai",
     "brand": "Akai",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "akai glory g5": {
-    "codename": "Glory G5",
+    "deviceName": "Glory G5",
     "marketingName": "Glory G5",
     "manufacturer": "Akai",
     "brand": "Akai",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "akai glory l3": {
-    "codename": "Glory L3",
+    "deviceName": "Glory L3",
     "marketingName": "Glory L3",
     "manufacturer": "Akai",
     "brand": "Akai",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "akai glory o2": {
-    "codename": "Glory O2",
+    "deviceName": "Glory O2",
     "marketingName": "Glory O2",
     "manufacturer": "Akai",
     "brand": "Akai",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "akai ilike x6 metal": {
-    "codename": "ILIKE X6 Metal",
+    "deviceName": "ILIKE X6 Metal",
     "marketingName": "ILIKE X6 Metal",
     "manufacturer": "Akai",
     "brand": "Akai",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "akai k40": {
-    "codename": "K40",
+    "deviceName": "K40",
     "marketingName": "K40",
     "manufacturer": "Akai",
     "brand": "Akai",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "akai leon quadra": {
-    "codename": "Leon Quadra",
+    "deviceName": "Leon Quadra",
     "marketingName": "Leon Quadra",
     "manufacturer": "Akai",
     "brand": "Akai",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "akai neo": {
-    "codename": "GW4503",
+    "deviceName": "GW4503",
     "marketingName": "Neo",
     "manufacturer": "Akai",
     "brand": "Akai",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

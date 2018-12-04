@@ -1,122 +1,152 @@
 {
   "general tesla device": {
-    "codename": "general Tesla Device",
+    "deviceName": "general Tesla Device",
     "marketingName": "general Tesla Device",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla l7 quad": {
-    "codename": "L7 Quad",
+    "deviceName": "L7 Quad",
     "marketingName": "L7 Quad",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla l7 quad lite": {
-    "codename": "L7 Quad Lite",
+    "deviceName": "L7 Quad Lite",
     "marketingName": "L7 Quad Lite",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla l7.1": {
-    "codename": "L7.1",
+    "deviceName": "L7.1",
     "marketingName": "L7.1",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla m7": {
-    "codename": "M7",
+    "deviceName": "M7",
     "marketingName": "M7",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla m8": {
-    "codename": "M8",
+    "deviceName": "M8",
     "marketingName": "M8",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla tablet 785": {
-    "codename": "Tablet 785",
+    "deviceName": "Tablet 785",
     "marketingName": "Tablet 785",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 720,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla tth7": {
-    "codename": "TTH7",
+    "deviceName": "TTH7",
     "marketingName": "TTH7",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla ttl8": {
-    "codename": "TTL8",
+    "deviceName": "TTL8",
     "marketingName": "TTL8",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "tesla ttl8.1": {
-    "codename": "TTL8.1",
+    "deviceName": "TTL8.1",
     "marketingName": "TTL8.1",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

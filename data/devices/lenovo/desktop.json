@@ -1,26 +1,32 @@
 {
   "lenovo g780": {
-    "codename": "G780",
+    "deviceName": "G780",
     "marketingName": "G780",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "lenovo pc": {
-    "codename": "PC",
+    "deviceName": "PC",
     "marketingName": "PC",
     "manufacturer": "Lenovo",
     "brand": "Lenovo",
-    "platform": null,
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

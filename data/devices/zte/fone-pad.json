@@ -1,26 +1,32 @@
 {
   "zte e8q+": {
-    "codename": "E8Q+",
+    "deviceName": "E8Q+",
     "marketingName": "E8Q+",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "zte v9": {
-    "codename": "V9",
+    "deviceName": "V9",
     "marketingName": "V9",
     "manufacturer": "Zte",
     "brand": "Zte",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

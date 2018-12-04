@@ -1,26 +1,32 @@
 {
   "general nvsbl device": {
-    "codename": "general NVSBL Device",
+    "deviceName": "general NVSBL Device",
     "marketingName": "general NVSBL Device",
     "manufacturer": "Nvsbl",
     "brand": "Nvsbl",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "nvsbl p4d sirius": {
-    "codename": "P4D Sirius",
+    "deviceName": "P4D Sirius",
     "marketingName": "P4D Sirius",
     "manufacturer": "Nvsbl",
     "brand": "Nvsbl",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

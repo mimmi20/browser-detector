@@ -1,38 +1,47 @@
 {
   "general spice device": {
-    "codename": "general Spice Device",
+    "deviceName": "general Spice Device",
     "marketingName": "general Spice Device",
     "manufacturer": "Spice",
     "brand": "Spice",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "spice m5395": {
-    "codename": "M5395",
+    "deviceName": "M5395",
     "marketingName": "M5395",
     "manufacturer": "Spice",
     "brand": "Spice",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   },
   "spice qt-75": {
-    "codename": "QT-75",
+    "deviceName": "QT-75",
     "marketingName": "QT-75",
     "manufacturer": "Spice",
     "brand": "Spice",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 220,
-    "resolutionHeight": 176,
-    "dualOrientation": false
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

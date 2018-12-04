@@ -1,254 +1,317 @@
 {
   "general sharp device": {
-    "codename": "general Sharp Device",
+    "deviceName": "general Sharp Device",
     "marketingName": "general Sharp Device",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp 304sh": {
-    "codename": "304SH",
+    "deviceName": "304SH",
     "marketingName": "Aquos Xx",
     "manufacturer": "Sharp",
     "brand": "Softbank",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp 306sh": {
-    "codename": "306SH",
+    "deviceName": "306SH",
     "marketingName": "Aquos Crystal",
     "manufacturer": "Sharp",
     "brand": "Sprint",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp 506sh": {
-    "codename": "506SH",
+    "deviceName": "506SH",
     "marketingName": "Aquos Xx3",
     "manufacturer": "Sharp",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp ads1": {
-    "codename": "ADS1",
+    "deviceName": "ADS1",
     "marketingName": "FX Plus",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp fs8010": {
-    "codename": "FS8010",
+    "deviceName": "FS8010",
     "marketingName": "Aquos S2 Dual SIM",
     "manufacturer": "Foxconn",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2040,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2040,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp is05": {
-    "codename": "IS05",
+    "deviceName": "IS05",
     "marketingName": "IS05",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh-01f": {
-    "codename": "SH-01F",
+    "deviceName": "SH-01F",
     "marketingName": "Aquos Phone Zeta",
     "manufacturer": "Sharp",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh-02e": {
-    "codename": "SH-02E",
+    "deviceName": "SH-02E",
     "marketingName": "Aquos Phone Zeta",
     "manufacturer": "Sharp",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh-06d": {
-    "codename": "SH-06D",
+    "deviceName": "SH-06D",
     "marketingName": "SH-06D",
     "manufacturer": "Sharp",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh-07d": {
-    "codename": "SH-07D",
+    "deviceName": "SH-07D",
     "marketingName": "Aquos Phone st",
     "manufacturer": "Sharp",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh-10d": {
-    "codename": "SH-10D",
+    "deviceName": "SH-10D",
     "marketingName": "SH-10D",
     "manufacturer": "Sharp",
     "brand": "DoCoMo",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh05c": {
-    "codename": "SH-05C",
+    "deviceName": "SH-05C",
     "marketingName": "SH-05C",
     "manufacturer": "Sharp",
     "brand": "DoCoMo",
-    "platform": "symbian",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "symbian"
   },
   "sharp sh7228u": {
-    "codename": "SH7228U",
+    "deviceName": "SH7228U",
     "marketingName": "SH7228U",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh80f": {
-    "codename": "SH80F",
+    "deviceName": "SH80F",
     "marketingName": "Aquos Phone",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh8128u": {
-    "codename": "SH8128U",
+    "deviceName": "SH8128U",
     "marketingName": "SH8128U",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp sh837w": {
-    "codename": "SH837W",
+    "deviceName": "SH837W",
     "marketingName": "SH837W",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp shl22": {
-    "codename": "SHL22",
+    "deviceName": "SHL22",
     "marketingName": "Aquos Phone",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp shl25": {
-    "codename": "SHL25",
+    "deviceName": "SHL25",
     "marketingName": "Aquos Crystal",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp shv31": {
-    "codename": "SHV31",
+    "deviceName": "SHV31",
     "marketingName": "Aquos Serie Mini",
     "manufacturer": "Sharp",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "sharp shv35": {
-    "codename": "SHV35",
+    "deviceName": "SHV35",
     "marketingName": "Aquos U",
     "manufacturer": "Foxconn",
     "brand": "Sharp",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

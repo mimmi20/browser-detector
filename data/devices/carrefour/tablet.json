@@ -1,98 +1,122 @@
 {
   "general carrefour device": {
-    "codename": "general Carrefour Device",
+    "deviceName": "general Carrefour Device",
     "marketingName": "general Carrefour Device",
     "manufacturer": "Carrefour",
     "brand": "Carrefour",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "carrefour ct1000": {
-    "codename": "CT1000",
+    "deviceName": "CT1000",
     "marketingName": "CT1000",
     "manufacturer": "Carrefour",
     "brand": "Carrefour",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "carrefour ct1010": {
-    "codename": "CT1010",
+    "deviceName": "CT1010",
     "marketingName": "CT1010",
     "manufacturer": "Carrefour",
     "brand": "Carrefour",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "carrefour ct1020w": {
-    "codename": "CT1020W",
+    "deviceName": "CT1020W",
     "marketingName": "CT1020W",
     "manufacturer": "Carrefour",
     "brand": "Carrefour",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "carrefour ct1030": {
-    "codename": "CT1030",
+    "deviceName": "CT1030",
     "marketingName": "CT1030",
     "manufacturer": "Carrefour",
     "brand": "Carrefour",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "carrefour ct710fr": {
-    "codename": "CT710FR",
+    "deviceName": "CT710FR",
     "marketingName": "CT710FR",
     "manufacturer": "Carrefour",
     "brand": "Carrefour",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "carrefour ct720": {
-    "codename": "CT720",
+    "deviceName": "CT720",
     "marketingName": "CT720",
     "manufacturer": "Carrefour",
     "brand": "Carrefour",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "carrefour ct820": {
-    "codename": "CT820",
+    "deviceName": "CT820",
     "marketingName": "CT820",
     "manufacturer": "Carrefour",
     "brand": "Carrefour",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

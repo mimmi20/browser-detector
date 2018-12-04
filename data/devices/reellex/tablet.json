@@ -1,26 +1,32 @@
 {
   "general reellex device": {
-    "codename": "general Reellex Device",
+    "deviceName": "general Reellex Device",
     "marketingName": "general Reellex Device",
     "manufacturer": "Reellex",
     "brand": "Reellex",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "reellex tab-97e-01": {
-    "codename": "TAB-97E-01",
+    "deviceName": "TAB-97E-01",
     "marketingName": "TAB-97E-01",
     "manufacturer": "Reellex",
     "brand": "Reellex",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

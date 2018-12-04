@@ -1,26 +1,32 @@
 {
   "general tizzbird tv": {
-    "codename": "General TizzBird TV",
+    "deviceName": "General TizzBird TV",
     "marketingName": "General TizzBird TV",
     "manufacturer": "TizzBird",
     "brand": "TizzBird",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "tizzbird n1": {
-    "codename": "N1",
+    "deviceName": "N1",
     "marketingName": "N1",
     "manufacturer": "TizzBird",
     "brand": "TizzBird",
-    "platform": "android",
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

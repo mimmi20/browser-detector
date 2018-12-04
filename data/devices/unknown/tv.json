@@ -1,26 +1,32 @@
 {
   "general tv device": {
-    "codename": "general TV Device",
+    "deviceName": "general TV Device",
     "marketingName": "general TV Device",
     "manufacturer": "Unknown",
     "brand": "Unknown",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "idl-6651n": {
-    "codename": "IDL-6651N",
+    "deviceName": "IDL-6651N",
     "marketingName": "IDL-6651N",
     "manufacturer": "Unknown",
     "brand": "Unknown",
-    "platform": "linux",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux"
   }
 }

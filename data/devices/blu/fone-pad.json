@@ -1,14 +1,17 @@
 {
   "blu studio 7.0": {
-    "codename": "Studio 7.0",
+    "deviceName": "Studio 7.0",
     "marketingName": "Studio 7.0",
     "manufacturer": "Blu",
     "brand": "Blu",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

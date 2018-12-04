@@ -1,26 +1,32 @@
 {
   "general flytouch device": {
-    "codename": "general Flytouch Device",
+    "deviceName": "general Flytouch Device",
     "marketingName": "general Flytouch Device",
     "manufacturer": "Flytouch",
     "brand": "Flytouch",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "flytouch 9": {
-    "codename": "9",
+    "deviceName": "9",
     "marketingName": "SuperPAD IX",
     "manufacturer": "Flytouch",
     "brand": "Flytouch",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

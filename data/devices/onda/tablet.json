@@ -1,38 +1,47 @@
 {
   "general onda device": {
-    "codename": "general ONDA device",
+    "deviceName": "general ONDA device",
     "marketingName": "general ONDA device",
     "manufacturer": "Onda",
     "brand": "Onda",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "onda mid": {
-    "codename": "MID",
+    "deviceName": "MID",
     "marketingName": "MID",
     "manufacturer": "Onda",
     "brand": "Onda",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "onda v989": {
-    "codename": "V989",
+    "deviceName": "V989",
     "marketingName": "Air",
     "manufacturer": "Onda",
     "brand": "Onda",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

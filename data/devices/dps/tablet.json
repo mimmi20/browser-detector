@@ -1,26 +1,32 @@
 {
   "general dps device": {
-    "codename": "general DPS Device",
+    "deviceName": "general DPS Device",
     "marketingName": "general DPS Device",
     "manufacturer": "DPS",
     "brand": "DPS",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "dps dream 9": {
-    "codename": "Dream 9",
+    "deviceName": "Dream 9",
     "marketingName": "Dream 9",
     "manufacturer": "DPS",
     "brand": "DPS",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

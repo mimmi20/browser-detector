@@ -1,26 +1,32 @@
 {
   "general iball device": {
-    "codename": "general Iball Device",
+    "deviceName": "general Iball Device",
     "marketingName": "general Iball Device",
     "manufacturer": "Iball",
     "brand": "Iball",
-    "platform": "android",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "iball majestic 2.4d": {
-    "codename": "Majestic 2.4D",
+    "deviceName": "Majestic 2.4D",
     "marketingName": "Majestic 2.4D",
     "manufacturer": "Iball",
     "brand": "Iball",
-    "platform": "java",
     "type": "feature-phone",
-    "pointingMethod": "stylus",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": false
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "java"
   }
 }

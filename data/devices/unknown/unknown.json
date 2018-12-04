@@ -1,14 +1,17 @@
 {
   "unknown": {
-    "codename": null,
+    "deviceName": null,
     "marketingName": null,
     "manufacturer": "Unknown",
     "brand": "Unknown",
-    "platform": null,
     "type": "unknown",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

@@ -1,26 +1,32 @@
 {
   "samsung sm-n960f": {
-    "codename": "SM-N960F",
+    "deviceName": "SM-N960F",
     "marketingName": "Galaxy Note 9",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "phablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2960,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "samsung sm-n960u": {
-    "codename": "SM-N960U",
+    "deviceName": "SM-N960U",
     "marketingName": "Galaxy Note 9",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "phablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1440,
-    "resolutionHeight": 2960,
-    "dualOrientation": true
+    "display": {
+      "width": 1440,
+      "height": 2960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,62 +1,77 @@
 {
   "motorola mz604": {
-    "codename": "MZ604",
+    "deviceName": "MZ604",
     "marketingName": "Xoom",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mz606": {
-    "codename": "MZ606",
+    "deviceName": "MZ606",
     "marketingName": "Xoom",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mz607": {
-    "codename": "MZ607",
+    "deviceName": "MZ607",
     "marketingName": "Xoom 2 Media Edition",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola mz615": {
-    "codename": "MZ615",
+    "deviceName": "MZ615",
     "marketingName": "Xoom 2",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "motorola xoom": {
-    "codename": "Xoom",
+    "deviceName": "Xoom",
     "marketingName": "Xoom",
     "manufacturer": "Motorola",
     "brand": "Motorola",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

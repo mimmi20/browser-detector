@@ -1,26 +1,32 @@
 {
   "general twz device": {
-    "codename": "general TWZ Device",
+    "deviceName": "general TWZ Device",
     "marketingName": "general TWZ Device",
     "manufacturer": "Twz",
     "brand": "Twz",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "twz a49": {
-    "codename": "A49",
+    "deviceName": "A49",
     "marketingName": "A49",
     "manufacturer": "Twz",
     "brand": "Twz",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "excelvan kp-703": {
-    "codename": "KP-703",
+    "deviceName": "KP-703",
     "marketingName": "KP-703",
     "manufacturer": "Excelvan",
     "brand": "Excelvan",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "excelvan mt10b": {
-    "codename": "MT10B",
+    "deviceName": "MT10B",
     "marketingName": "MT10B",
     "manufacturer": "Excelvan",
     "brand": "Excelvan",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "excelvan mt13": {
-    "codename": "MT13",
+    "deviceName": "MT13",
     "marketingName": "MT13",
     "manufacturer": "Excelvan",
     "brand": "Excelvan",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,434 +1,542 @@
 {
   "general coolpad device": {
-    "codename": "general Coolpad Device",
+    "deviceName": "general Coolpad Device",
     "marketingName": "general Coolpad Device",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 3505i": {
-    "codename": "3505I",
+    "deviceName": "3505I",
     "marketingName": "Note 5 Lite",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 3600i": {
-    "codename": "3600I",
+    "deviceName": "3600I",
     "marketingName": "Note 5",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 5210s": {
-    "codename": "5210S",
+    "deviceName": "5210S",
     "marketingName": "5210S",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 5860s": {
-    "codename": "5860S",
+    "deviceName": "5860S",
     "marketingName": "5860S",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 5890": {
-    "codename": "5890",
+    "deviceName": "5890",
     "marketingName": "5890",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 5891": {
-    "codename": "5891",
+    "deviceName": "5891",
     "marketingName": "5891",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 5950": {
-    "codename": "5950",
+    "deviceName": "5950",
     "marketingName": "5950",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 7230b": {
-    "codename": "7230B",
+    "deviceName": "7230B",
     "marketingName": "7230B",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 7260": {
-    "codename": "7260",
+    "deviceName": "7260",
     "marketingName": "7260",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 7295+": {
-    "codename": "7295+",
+    "deviceName": "7295+",
     "marketingName": "7295+",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 7295a": {
-    "codename": "7295A",
+    "deviceName": "7295A",
     "marketingName": "7295A",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 7296": {
-    "codename": "7296",
+    "deviceName": "7296",
     "marketingName": "7296",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8076": {
-    "codename": "8076",
+    "deviceName": "8076",
     "marketingName": "8076",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8076d": {
-    "codename": "8076D",
+    "deviceName": "8076D",
     "marketingName": "8076D",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8079": {
-    "codename": "8079",
+    "deviceName": "8079",
     "marketingName": "8079",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8190": {
-    "codename": "8190",
+    "deviceName": "8190",
     "marketingName": "8190",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8190q": {
-    "codename": "8190Q",
+    "deviceName": "8190Q",
     "marketingName": "8190Q",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8198t": {
-    "codename": "8198T",
+    "deviceName": "8198T",
     "marketingName": "8198T",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8295": {
-    "codename": "8295",
+    "deviceName": "8295",
     "marketingName": "8295",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8295m": {
-    "codename": "8295M",
+    "deviceName": "8295M",
     "marketingName": "8295M",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8297w": {
-    "codename": "8297W",
+    "deviceName": "8297W",
     "marketingName": "F1",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8720l": {
-    "codename": "8720L",
+    "deviceName": "8720L",
     "marketingName": "8720L",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad 8720q": {
-    "codename": "8720Q",
+    "deviceName": "8720Q",
     "marketingName": "8720Q",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad c103": {
-    "codename": "C103",
+    "deviceName": "C103",
     "marketingName": "Cool 1",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad cp8298 i00": {
-    "codename": "CP8298 I00",
+    "deviceName": "CP8298 I00",
     "marketingName": "Note 3 Lite",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad cp8676 i02": {
-    "codename": "CP8676 I02",
+    "deviceName": "CP8676 I02",
     "marketingName": "Note 3",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad e501": {
-    "codename": "E501",
+    "deviceName": "E501",
     "marketingName": "Modena",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad e502": {
-    "codename": "E502",
+    "deviceName": "E502",
     "marketingName": "Modena 2",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad e561": {
-    "codename": "E561",
+    "deviceName": "E561",
     "marketingName": "Fancy",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad e570": {
-    "codename": "E570",
+    "deviceName": "E570",
     "marketingName": "E570",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad flo": {
-    "codename": "Flo",
+    "deviceName": "Flo",
     "marketingName": "Flo",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad n930": {
-    "codename": "N930",
+    "deviceName": "N930",
     "marketingName": "N930",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad r108": {
-    "codename": "R108",
+    "deviceName": "R108",
     "marketingName": "R108",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad vcr-i0": {
-    "codename": "VCR-I0",
+    "deviceName": "VCR-I0",
     "marketingName": "Cool Play 6",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "coolpad w713": {
-    "codename": "W713",
+    "deviceName": "W713",
     "marketingName": "W713",
     "manufacturer": "Coolpad",
     "brand": "Coolpad",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,38 +1,47 @@
 {
   "general htm device": {
-    "codename": "general HTM Device",
+    "deviceName": "general HTM Device",
     "marketingName": "general HTM Device",
     "manufacturer": "Htm",
     "brand": "Htm",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htm gt-a7100": {
-    "codename": "GT-A7100",
+    "deviceName": "GT-A7100",
     "marketingName": "GT-A7100",
     "manufacturer": "Htm",
     "brand": "Htm",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "htm gt-a9500": {
-    "codename": "GT-A9500",
+    "deviceName": "GT-A9500",
     "marketingName": "GT-A9500",
     "manufacturer": "Htm",
     "brand": "Htm",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

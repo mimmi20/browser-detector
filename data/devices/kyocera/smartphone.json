@@ -1,194 +1,242 @@
 {
   "general kyocera device": {
-    "codename": "general Kyocera Device",
+    "deviceName": "general Kyocera Device",
     "marketingName": "general Kyocera Device",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": null,
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   },
   "kyocera c5120": {
-    "codename": "C5120",
+    "deviceName": "C5120",
     "marketingName": "Milano",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 240,
-    "resolutionHeight": 320,
-    "dualOrientation": true
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c5155": {
-    "codename": "C5155",
+    "deviceName": "C5155",
     "marketingName": "Rise",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c5170": {
-    "codename": "C5170",
+    "deviceName": "C5170",
     "marketingName": "Hydro C5170",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c5215": {
-    "codename": "C5215",
+    "deviceName": "C5215",
     "marketingName": "Hydro Edge",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c6522n": {
-    "codename": "C6522N",
+    "deviceName": "C6522N",
     "marketingName": "Hydro XTRM",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c6730": {
-    "codename": "C6730",
+    "deviceName": "C6730",
     "marketingName": "Hydro Icon",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c6740n": {
-    "codename": "C6740N",
+    "deviceName": "C6740N",
     "marketingName": "Hydro Wave",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c6742": {
-    "codename": "C6742",
+    "deviceName": "C6742",
     "marketingName": "Hydro View",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c6742a": {
-    "codename": "C6742A",
+    "deviceName": "C6742A",
     "marketingName": "Hydro Shore",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c6743": {
-    "codename": "C6743",
+    "deviceName": "C6743",
     "marketingName": "Hydro Reach",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera c6750": {
-    "codename": "C6750",
+    "deviceName": "C6750",
     "marketingName": "Hydro Elite",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera dm015k": {
-    "codename": "DM015K",
+    "deviceName": "DM015K",
     "marketingName": "DM015K",
     "manufacturer": "Kyocera",
     "brand": "Disney Mobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera e6560": {
-    "codename": "E6560",
+    "deviceName": "E6560",
     "marketingName": "DuraForce",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera kc-s701": {
-    "codename": "KC-S701",
+    "deviceName": "KC-S701",
     "marketingName": "Torque",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "kyocera kyl21": {
-    "codename": "KYL21",
+    "deviceName": "KYL21",
     "marketingName": "Digno S",
     "manufacturer": "Kyocera",
     "brand": "Kyocera",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

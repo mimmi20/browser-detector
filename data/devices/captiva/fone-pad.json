@@ -1,50 +1,62 @@
 {
   "general captiva device": {
-    "codename": "general Captiva Device",
+    "deviceName": "general Captiva Device",
     "marketingName": "general Captiva Device",
     "manufacturer": "Captiva",
     "brand": "Captiva",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "captiva pad 10 3g": {
-    "codename": "Pad 10 3G",
+    "deviceName": "Pad 10 3G",
     "marketingName": "Pad 10 3G",
     "manufacturer": "Captiva",
     "brand": "Captiva",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "captiva pad 10 3g plus": {
-    "codename": "Pad 10 3G Plus",
+    "deviceName": "Pad 10 3G Plus",
     "marketingName": "Pad 10 3G Plus",
     "manufacturer": "Captiva",
     "brand": "Captiva",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "captiva pad 10.1 quad fhd 3g": {
-    "codename": "PAD 10.1 Quad FHD 3G",
+    "deviceName": "PAD 10.1 Quad FHD 3G",
     "marketingName": "PAD 10.1 Quad FHD 3G",
     "manufacturer": "Captiva",
     "brand": "Captiva",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

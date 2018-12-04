@@ -1,38 +1,47 @@
 {
   "general fnac device": {
-    "codename": "general Fnac Device",
+    "deviceName": "general Fnac Device",
     "marketingName": "general Fnac Device",
     "manufacturer": "Fnac",
     "brand": "Fnac",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fnac 3.5": {
-    "codename": "3.5",
+    "deviceName": "3.5",
     "marketingName": "3.5",
     "manufacturer": "Fnac",
     "brand": "Fnac",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "fnac phablet 4.5": {
-    "codename": "Phablet 4.5",
+    "deviceName": "Phablet 4.5",
     "marketingName": "Phablet 4.5",
     "manufacturer": "Fnac",
     "brand": "Fnac",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

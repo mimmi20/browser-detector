@@ -1,14 +1,17 @@
 {
   "dns mb40ii1": {
-    "codename": "MB40II1",
+    "deviceName": "MB40II1",
     "marketingName": "MB40II1",
     "manufacturer": "Dns",
     "brand": "Dns",
-    "platform": "android",
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

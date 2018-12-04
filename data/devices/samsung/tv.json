@@ -1,14 +1,17 @@
 {
   "samsung smart tv": {
-    "codename": "Smart TV",
+    "deviceName": "Smart TV",
     "marketingName": "Smart TV",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

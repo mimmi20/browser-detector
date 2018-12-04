@@ -1,26 +1,32 @@
 {
   "general unonu device": {
-    "codename": "general Unonu Device",
+    "deviceName": "general Unonu Device",
     "marketingName": "general Unonu Device",
     "manufacturer": "Unonu",
     "brand": "Unonu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "unonu um405 lite": {
-    "codename": "UM405 Lite",
+    "deviceName": "UM405 Lite",
     "marketingName": "UM405 Lite",
     "manufacturer": "Unonu",
     "brand": "Unonu",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

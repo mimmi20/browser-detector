@@ -1,14 +1,17 @@
 {
   "general apple device": {
-    "codename": "general Apple Device",
+    "deviceName": "general Apple Device",
     "marketingName": "general Apple Device",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "platform": null,
     "type": "mobile-device",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": null
   }
 }

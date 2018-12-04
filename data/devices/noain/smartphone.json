@@ -1,62 +1,77 @@
 {
   "general noain device": {
-    "codename": "general Noain Device",
+    "deviceName": "general Noain Device",
     "marketingName": "general Noain Device",
     "manufacturer": "Noain",
     "brand": "Noain",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "noain a900s": {
-    "codename": "A900S",
+    "deviceName": "A900S",
     "marketingName": "A900S",
     "manufacturer": "Noain",
     "brand": "Noain",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "noain a913": {
-    "codename": "A913",
+    "deviceName": "A913",
     "marketingName": "A913",
     "manufacturer": "Noain",
     "brand": "Noain",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": false
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "noain m15": {
-    "codename": "M15",
+    "deviceName": "M15",
     "marketingName": "M15",
     "manufacturer": "Noain",
     "brand": "Noain",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": false
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   },
   "noain m6": {
-    "codename": "M6",
+    "deviceName": "M6",
     "marketingName": "M6",
     "manufacturer": "Noain",
     "brand": "Noain",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": false
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

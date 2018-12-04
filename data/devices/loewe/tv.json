@@ -1,62 +1,77 @@
 {
   "loewe sl121": {
-    "codename": "SL121",
+    "deviceName": "SL121",
     "marketingName": "SL121",
     "manufacturer": "Loewe",
     "brand": "Loewe",
-    "platform": "linux",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux"
   },
   "loewe sl150": {
-    "codename": "SL150",
+    "deviceName": "SL150",
     "marketingName": "SL150",
     "manufacturer": "Loewe",
     "brand": "Loewe",
-    "platform": "linux",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux"
   },
   "loewe sl220": {
-    "codename": "SL220",
+    "deviceName": "SL220",
     "marketingName": "SL220",
     "manufacturer": "Loewe",
     "brand": "Loewe",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "loewe sl320": {
-    "codename": "SL320",
+    "deviceName": "SL320",
     "marketingName": "SL320",
     "manufacturer": "Loewe",
     "brand": "Loewe",
-    "platform": null,
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": 3840,
-    "resolutionHeight": 2160,
-    "dualOrientation": false
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   },
   "loewe sl32x": {
-    "codename": "SL32x",
+    "deviceName": "SL32x",
     "marketingName": "SL32x",
     "manufacturer": "Loewe",
     "brand": "Loewe",
-    "platform": "linux smartphone os (maemo)",
     "type": "tv",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "linux smartphone os (maemo)"
   }
 }

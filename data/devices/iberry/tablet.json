@@ -1,26 +1,32 @@
 {
   "general iberry device": {
-    "codename": "general iBerry Device",
+    "deviceName": "general iBerry Device",
     "marketingName": "general iBerry Device",
     "manufacturer": "iBerry",
     "brand": "iBerry",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "iberry auxus ax01": {
-    "codename": "Auxus AX01",
+    "deviceName": "Auxus AX01",
     "marketingName": "Auxus AX01",
     "manufacturer": "iBerry",
     "brand": "iBerry",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

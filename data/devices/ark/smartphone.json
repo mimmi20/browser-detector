@@ -1,26 +1,32 @@
 {
   "general ark device": {
-    "codename": "general ARK Device",
+    "deviceName": "general ARK Device",
     "marketingName": "general ARK Device",
     "manufacturer": "Ark",
     "brand": "Ark",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ark benefit m3s": {
-    "codename": "Benefit M3S",
+    "deviceName": "Benefit M3S",
     "marketingName": "Benefit M3S",
     "manufacturer": "Ark",
     "brand": "Ark",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

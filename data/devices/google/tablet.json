@@ -1,62 +1,77 @@
 {
   "general google device": {
-    "codename": "general Google Device",
+    "deviceName": "general Google Device",
     "marketingName": "general Google Device",
     "manufacturer": "Google",
     "brand": "Google",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "google nexus 10": {
-    "codename": "Nexus 10",
+    "deviceName": "Nexus 10",
     "marketingName": "Nexus 10",
     "manufacturer": "Samsung",
     "brand": "Google",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1600,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "google nexus 7": {
-    "codename": "Nexus 7",
+    "deviceName": "Nexus 7",
     "marketingName": "Nexus 7",
     "manufacturer": "Asus",
     "brand": "Google",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "google nexus 9": {
-    "codename": "Nexus 9",
+    "deviceName": "Nexus 9",
     "marketingName": "Nexus 9",
     "manufacturer": "Htc",
     "brand": "Google",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "google pixel c": {
-    "codename": "Pixel C",
+    "deviceName": "Pixel C",
     "marketingName": "Pixel C",
     "manufacturer": "Google",
     "brand": "Google",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2560,
-    "resolutionHeight": 1800,
-    "dualOrientation": true
+    "display": {
+      "width": 2560,
+      "height": 1800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

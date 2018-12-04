@@ -1,62 +1,77 @@
 {
   "general pipo device": {
-    "codename": "general PiPO Device",
+    "deviceName": "general PiPO Device",
     "marketingName": "general PiPO Device",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pipo i75": {
-    "codename": "i75",
+    "deviceName": "i75",
     "marketingName": "i75",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pipo m6": {
-    "codename": "M6",
+    "deviceName": "M6",
     "marketingName": "M6",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pipo q107": {
-    "codename": "Q107",
+    "deviceName": "Q107",
     "marketingName": "M9 Pro",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "pipo q977": {
-    "codename": "Q977",
+    "deviceName": "Q977",
     "marketingName": "M6 pro",
     "manufacturer": "Pipo",
     "brand": "Pipo",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 2048,
-    "resolutionHeight": 1536,
-    "dualOrientation": true
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

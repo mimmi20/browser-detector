@@ -1,14 +1,17 @@
 {
   "thomson ths845": {
-    "codename": "THS845",
+    "deviceName": "THS845",
     "marketingName": "THS845",
     "manufacturer": "Thomson",
     "brand": "Thomson",
-    "platform": null,
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

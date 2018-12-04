@@ -1,26 +1,32 @@
 {
   "general prology device": {
-    "codename": "general Prology Device",
+    "deviceName": "general Prology Device",
     "marketingName": "general Prology Device",
     "manufacturer": "Prology",
     "brand": "Prology",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "prology tab-970": {
-    "codename": "Tab-970",
+    "deviceName": "Tab-970",
     "marketingName": "Evolution",
     "manufacturer": "Prology",
     "brand": "Prology",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

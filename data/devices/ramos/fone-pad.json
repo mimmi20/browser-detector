@@ -1,14 +1,17 @@
 {
   "ramos x10 pro": {
-    "codename": "X10 Pro",
+    "deviceName": "X10 Pro",
     "marketingName": "X10 Pro",
     "manufacturer": "Ramos",
     "brand": "Ramos",
-    "platform": "android",
     "type": "fone-pad",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

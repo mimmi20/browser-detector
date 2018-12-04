@@ -1,14 +1,17 @@
 {
   "miray midm-8803": {
-    "codename": "MIDM-8803",
+    "deviceName": "MIDM-8803",
     "marketingName": "MIDM-8803",
     "manufacturer": "Miray",
     "brand": "Miray",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 800,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

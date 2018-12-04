@@ -1,14 +1,17 @@
 {
   "dexp h135": {
-    "codename": "H135",
+    "deviceName": "H135",
     "marketingName": "Atlas",
     "manufacturer": "Dexp",
     "brand": "Dexp",
-    "platform": "android",
     "type": "desktop",
-    "pointingMethod": "mouse",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": "android"
   }
 }

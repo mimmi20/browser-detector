@@ -1,14 +1,17 @@
 {
   "fengxiang vkb004l": {
-    "codename": "vKB004L",
+    "deviceName": "vKB004L",
     "marketingName": "vKB004L",
     "manufacturer": "Fengxiang",
     "brand": "Fengxiang",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1280,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

@@ -1,50 +1,62 @@
 {
   "general ramos device": {
-    "codename": "general Ramos Device",
+    "deviceName": "general Ramos Device",
     "marketingName": "general Ramos Device",
     "manufacturer": "Ramos",
     "brand": "Ramos",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ramos i11 pro": {
-    "codename": "i11 Pro",
+    "deviceName": "i11 Pro",
     "marketingName": "i11 Pro",
     "manufacturer": "Ramos",
     "brand": "Ramos",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1080,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ramos i9": {
-    "codename": "i9",
+    "deviceName": "i9",
     "marketingName": "i9",
     "manufacturer": "Ramos",
     "brand": "Ramos",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1920,
-    "resolutionHeight": 1200,
-    "dualOrientation": true
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "ramos w27 pro": {
-    "codename": "W27 Pro",
+    "deviceName": "W27 Pro",
     "marketingName": "W27 Pro",
     "manufacturer": "Ramos",
     "brand": "Ramos",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

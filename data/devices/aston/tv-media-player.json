@@ -1,14 +1,17 @@
 {
   "aston xenahd twin connect": {
-    "codename": "Xena HD Twin Connect",
+    "deviceName": "Xena HD Twin Connect",
     "marketingName": "Xena HD Twin Connect",
     "manufacturer": "ASTON",
     "brand": "ASTON",
-    "platform": null,
     "type": "tv-media-player",
-    "pointingMethod": null,
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": false
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": null
+    },
+    "dualOrientation": false,
+    "platform": null
   }
 }

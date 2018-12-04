@@ -1,242 +1,302 @@
 {
   "general umi device": {
-    "codename": "general UMi Device",
+    "deviceName": "general UMi Device",
     "marketingName": "general UMi Device",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi a1 pro": {
-    "codename": "A1 Pro",
+    "deviceName": "A1 Pro",
     "marketingName": "A1 Pro",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi c note": {
-    "codename": "C Note",
+    "deviceName": "C Note",
     "marketingName": "C Note",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi diamond": {
-    "codename": "Diamond",
+    "deviceName": "Diamond",
     "marketingName": "Diamond",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi diamond x": {
-    "codename": "Diamond X",
+    "deviceName": "Diamond X",
     "marketingName": "Diamond X",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi emax": {
-    "codename": "eMax",
+    "deviceName": "eMax",
     "marketingName": "eMax",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi hammer s": {
-    "codename": "Hammer S",
+    "deviceName": "Hammer S",
     "marketingName": "Hammer S",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi iron": {
-    "codename": "Iron",
+    "deviceName": "Iron",
     "marketingName": "Iron",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi iron pro": {
-    "codename": "Iron Pro",
+    "deviceName": "Iron Pro",
     "marketingName": "Iron Pro",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi london": {
-    "codename": "London",
+    "deviceName": "London",
     "marketingName": "London",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi max": {
-    "codename": "Max",
+    "deviceName": "Max",
     "marketingName": "Max",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi plus e": {
-    "codename": "Plus E",
+    "deviceName": "Plus E",
     "marketingName": "Plus E",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi s2 lite": {
-    "codename": "S2 Lite",
+    "deviceName": "S2 Lite",
     "marketingName": "S2 Lite",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1440,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi super": {
-    "codename": "Super",
+    "deviceName": "Super",
     "marketingName": "Super",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi touch x": {
-    "codename": "Touch X",
+    "deviceName": "Touch X",
     "marketingName": "Touch X",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi x2": {
-    "codename": "X2",
+    "deviceName": "X2",
     "marketingName": "X2",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi z": {
-    "codename": "Z",
+    "deviceName": "Z",
     "marketingName": "Z",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi z2": {
-    "codename": "Z2",
+    "deviceName": "Z2",
     "marketingName": "Z2",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2246,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2246,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi z2 pro": {
-    "codename": "Z2 Pro",
+    "deviceName": "Z2 Pro",
     "marketingName": "Z2 Pro",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 2246,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 2246,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "umi zero": {
-    "codename": "Zero",
+    "deviceName": "Zero",
     "marketingName": "Zero",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1080,
-    "resolutionHeight": 1920,
-    "dualOrientation": true
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

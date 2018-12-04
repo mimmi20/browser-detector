@@ -1,50 +1,62 @@
 {
   "samsung ek-gc100": {
-    "codename": "EK-GC100",
+    "deviceName": "EK-GC100",
     "marketingName": "Galaxy Camera",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "digital-camera",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "samsung ek-gc110": {
-    "codename": "EK-GC110",
+    "deviceName": "EK-GC110",
     "marketingName": "Galaxy Camera Wi-Fi",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "digital-camera",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "samsung ek-gc200": {
-    "codename": "EK-GC200",
+    "deviceName": "EK-GC200",
     "marketingName": "Galaxy Camera 2",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "digital-camera",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "samsung ek-gn120": {
-    "codename": "EK-GN120",
+    "deviceName": "EK-GN120",
     "marketingName": "Galaxy Camera",
     "manufacturer": "Samsung",
     "brand": "Samsung",
-    "platform": "android",
     "type": "digital-camera",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

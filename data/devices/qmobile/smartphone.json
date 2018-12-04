@@ -1,218 +1,272 @@
 {
   "general qmobile device": {
-    "codename": "general QMobile Device",
+    "deviceName": "general QMobile Device",
     "marketingName": "general QMobile Device",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile a10": {
-    "codename": "A10",
+    "deviceName": "A10",
     "marketingName": "Noir A10",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile a11": {
-    "codename": "A11",
+    "deviceName": "A11",
     "marketingName": "Noir Note A11",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile a2 lite": {
-    "codename": "A2 Lite",
+    "deviceName": "A2 Lite",
     "marketingName": "Bolt A2 Lite",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile a290": {
-    "codename": "A290",
+    "deviceName": "A290",
     "marketingName": "Noir A290",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile a30": {
-    "codename": "A30",
+    "deviceName": "A30",
     "marketingName": "Noir A30",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile a300": {
-    "codename": "A300",
+    "deviceName": "A300",
     "marketingName": "Noir A300",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile a65": {
-    "codename": "A65",
+    "deviceName": "A65",
     "marketingName": "Noir A65",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile e1": {
-    "codename": "E1",
+    "deviceName": "E1",
     "marketingName": "E1",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile i7": {
-    "codename": "i7",
+    "deviceName": "i7",
     "marketingName": "Noir i7",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 540,
-    "resolutionHeight": 960,
-    "dualOrientation": true
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile q-smart s12": {
-    "codename": "Q-Smart S12",
+    "deviceName": "Q-Smart S12",
     "marketingName": "Q-Smart S12",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 320,
-    "resolutionHeight": 480,
-    "dualOrientation": true
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile s1": {
-    "codename": "S1",
+    "deviceName": "S1",
     "marketingName": "Noir S1",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 854,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile s2": {
-    "codename": "S2",
+    "deviceName": "S2",
     "marketingName": "Noir S2",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile s6s": {
-    "codename": "S6s",
+    "deviceName": "S6s",
     "marketingName": "Noir S6s",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile t250": {
-    "codename": "T250",
+    "deviceName": "T250",
     "marketingName": "Bolt",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 768,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 768,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile x25": {
-    "codename": "X25",
+    "deviceName": "X25",
     "marketingName": "Noir X25",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": null,
-    "resolutionHeight": null,
-    "dualOrientation": true
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile x60": {
-    "codename": "X60",
+    "deviceName": "X60",
     "marketingName": "Noir X60",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 480,
-    "resolutionHeight": 800,
-    "dualOrientation": true
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   },
   "qmobile x900": {
-    "codename": "X900",
+    "deviceName": "X900",
     "marketingName": "Noir X900",
     "manufacturer": "Qmobile",
     "brand": "Qmobile",
-    "platform": "android",
     "type": "smartphone",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 720,
-    "resolutionHeight": 1280,
-    "dualOrientation": true
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }

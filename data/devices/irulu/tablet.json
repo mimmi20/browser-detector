@@ -1,14 +1,17 @@
 {
   "irulu x11": {
-    "codename": "X11",
+    "deviceName": "X11",
     "marketingName": "X11",
     "manufacturer": "Irulu",
     "brand": "Irulu",
-    "platform": "android",
     "type": "tablet",
-    "pointingMethod": "touchscreen",
-    "resolutionWidth": 1024,
-    "resolutionHeight": 600,
-    "dualOrientation": true
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": null
+    },
+    "dualOrientation": true,
+    "platform": "android"
   }
 }
