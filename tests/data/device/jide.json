@@ -8,11 +8,14 @@
       "marketingName": "Remix SK1W",
       "manufacturer": "Jide",
       "brand": "Jide",
-      "pointingMethod": "mouse",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1080,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Chrome",

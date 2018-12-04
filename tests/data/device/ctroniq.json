@@ -8,11 +8,14 @@
       "marketingName": "C55",
       "manufacturer": "Ctroniq",
       "brand": "Ctroniq",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 854,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",

@@ -8,11 +8,14 @@
       "marketingName": "Windows RT Tablet",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Internet Explorer",
@@ -44,11 +47,14 @@
       "marketingName": "Kin Two",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -80,11 +86,14 @@
       "marketingName": "Zune HD",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 272,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "display": {
+        "width": 272,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -116,11 +125,14 @@
       "marketingName": "Surface 3",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1200,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Internet Explorer",
@@ -152,11 +164,14 @@
       "marketingName": "Xbox One",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-console"
+      "type": "tv-console",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Edge Mobile",
@@ -188,11 +203,14 @@
       "marketingName": "Xbox 360",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-console"
+      "type": "tv-console",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",

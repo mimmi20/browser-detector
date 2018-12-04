@@ -8,11 +8,14 @@
       "marketingName": "C2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -44,11 +47,14 @@
       "marketingName": "Asha 205",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -80,11 +86,14 @@
       "marketingName": "Asha 311",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 400,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 400,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -116,11 +125,14 @@
       "marketingName": "X2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -152,11 +164,14 @@
       "marketingName": "110",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -188,11 +203,14 @@
       "marketingName": "C2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -224,11 +242,14 @@
       "marketingName": "Asha 206",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -260,11 +281,14 @@
       "marketingName": "Asha 200",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -296,11 +320,14 @@
       "marketingName": "X2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -332,11 +359,14 @@
       "marketingName": "Asha 308",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 400,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 400,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -368,11 +398,14 @@
       "marketingName": "Asha 305",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 400,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 400,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -404,11 +437,14 @@
       "marketingName": "C1",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -440,11 +476,14 @@
       "marketingName": "500",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -476,11 +515,14 @@
       "marketingName": "Asha 220",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -512,11 +554,14 @@
       "marketingName": "Lumia 650",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -548,11 +593,14 @@
       "marketingName": "Lumia 535",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -584,11 +632,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -620,11 +671,14 @@
       "marketingName": "Lumia 540",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -656,11 +710,14 @@
       "marketingName": "Asha 203",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -692,11 +749,14 @@
       "marketingName": "6120 Classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -728,11 +788,14 @@
       "marketingName": "Lumia 635 (Global)",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -764,11 +827,14 @@
       "marketingName": "Lumia 635 (USA)",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -800,11 +866,14 @@
       "marketingName": "Lumia 930",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -836,11 +905,14 @@
       "marketingName": "6303 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -872,11 +944,14 @@
       "marketingName": "6300",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -908,11 +983,14 @@
       "marketingName": "Lumia 630",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -944,11 +1022,14 @@
       "marketingName": "C2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -980,11 +1061,14 @@
       "marketingName": "Asha 301",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -1016,11 +1100,14 @@
       "marketingName": "C3",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -1052,11 +1139,14 @@
       "marketingName": "Asha 309",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 400,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 400,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -1088,11 +1178,14 @@
       "marketingName": "6303i classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -1124,11 +1217,14 @@
       "marketingName": "Asha 300",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -1160,11 +1256,14 @@
       "marketingName": "X3",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -1196,11 +1295,14 @@
       "marketingName": "Lumia 620",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -1232,11 +1334,14 @@
       "marketingName": "Lumia 735",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -1268,11 +1373,14 @@
       "marketingName": "Lumia 735",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -1304,11 +1412,14 @@
       "marketingName": "Lumia 535",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -1340,11 +1451,14 @@
       "marketingName": "Lumia 650",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1376,11 +1490,14 @@
       "marketingName": "Lumia 1520",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1412,11 +1529,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1448,11 +1568,14 @@
       "marketingName": "Lumia 950",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1484,11 +1607,14 @@
       "marketingName": "Lumia 950 XL",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1520,11 +1646,14 @@
       "marketingName": "Lumia 640 XL LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1556,11 +1685,14 @@
       "marketingName": "Lumia 930",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1592,11 +1724,14 @@
       "marketingName": "Lumia 550",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1628,11 +1763,14 @@
       "marketingName": "Lumia 920",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1664,11 +1802,14 @@
       "marketingName": "Lumia 1020",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1700,11 +1841,14 @@
       "marketingName": "Lumia 1320",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1736,11 +1880,14 @@
       "marketingName": "Lumia 535",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1772,11 +1919,14 @@
       "marketingName": "Lumia 535",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1808,11 +1958,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1844,11 +1997,14 @@
       "marketingName": "Lumia 830",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -1880,11 +2036,14 @@
       "marketingName": "Lumia 650",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -1916,11 +2075,14 @@
       "marketingName": "XL2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -1952,11 +2114,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -1988,11 +2153,14 @@
       "marketingName": "Lumia 640 Dual SIM LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2024,11 +2192,14 @@
       "marketingName": "Lumia 640 XL Dual SIM LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2060,11 +2231,14 @@
       "marketingName": "Lumia 535 Dual SIM",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2096,11 +2270,14 @@
       "marketingName": "Lumia 532",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2132,11 +2309,14 @@
       "marketingName": "Lumia 1320",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2168,11 +2348,14 @@
       "marketingName": "Lumia 638",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -2204,11 +2387,14 @@
       "marketingName": "N1",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 2048,
-      "resolutionHeight": 1536,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2240,11 +2426,14 @@
       "marketingName": "Lumia 720",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2276,11 +2465,14 @@
       "marketingName": "5800 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -2312,11 +2504,14 @@
       "marketingName": "Lumia 521",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2348,11 +2543,14 @@
       "marketingName": "Nuron",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -2384,11 +2582,14 @@
       "marketingName": "N8",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -2420,11 +2621,14 @@
       "marketingName": "N95",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "joystick",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -2456,11 +2660,14 @@
       "marketingName": "Lumia 540",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -2492,11 +2699,14 @@
       "marketingName": "6700 slide",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -2528,11 +2738,14 @@
       "marketingName": "Lumia 520",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2564,11 +2777,14 @@
       "marketingName": "Lumia 735",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -2600,11 +2816,14 @@
       "marketingName": "Lumia 635 (Global)",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2636,11 +2855,14 @@
       "marketingName": "Lumia 710",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2672,11 +2894,14 @@
       "marketingName": "Lumia 610",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2708,11 +2933,14 @@
       "marketingName": "Lumia 900",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Windows Phone Search",
@@ -2744,11 +2972,14 @@
       "marketingName": "Lumia 1020",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2780,11 +3011,14 @@
       "marketingName": "Lumia 630",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2816,11 +3050,14 @@
       "marketingName": "Lumia 510",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2852,11 +3089,14 @@
       "marketingName": "Lumia 925",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2888,11 +3128,14 @@
       "marketingName": "Lumia 925",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2924,11 +3167,14 @@
       "marketingName": "Lumia 925",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2960,11 +3206,14 @@
       "marketingName": "Lumia 928",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -2996,11 +3245,14 @@
       "marketingName": "Lumia 620",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3032,11 +3284,14 @@
       "marketingName": "Lumia 820",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3068,11 +3323,14 @@
       "marketingName": "Lumia 625",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3104,11 +3362,14 @@
       "marketingName": "Lumia 530",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3140,11 +3401,14 @@
       "marketingName": "Lumia 526",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3176,11 +3440,14 @@
       "marketingName": "Asha 500",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -3212,11 +3479,14 @@
       "marketingName": "Asha 210",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -3248,11 +3518,14 @@
       "marketingName": "Asha 200",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -3284,11 +3557,14 @@
       "marketingName": "Lumia 730",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3320,11 +3596,14 @@
       "marketingName": "Lumia 630",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3356,11 +3635,14 @@
       "marketingName": "Lumia 930",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3392,11 +3674,14 @@
       "marketingName": "Lumia 640 Dual SIM LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3428,11 +3713,14 @@
       "marketingName": "Lumia 435",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3464,11 +3752,14 @@
       "marketingName": "Lumia 800",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3500,11 +3791,14 @@
       "marketingName": "Lumia 925",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -3536,11 +3830,14 @@
       "marketingName": "N70",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 176,
-      "resolutionHeight": 208,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 176,
+        "height": 208,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3572,11 +3869,14 @@
       "marketingName": "XL",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -3608,11 +3908,14 @@
       "marketingName": "XL",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -3644,11 +3947,14 @@
       "marketingName": "X3",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3680,11 +3986,14 @@
       "marketingName": "C6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3716,11 +4025,14 @@
       "marketingName": "6700 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3752,11 +4064,14 @@
       "marketingName": "N82",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3788,11 +4103,14 @@
       "marketingName": "C5 5MP",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3824,11 +4142,14 @@
       "marketingName": "Lumia 630 Dual SIM",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -3860,11 +4181,14 @@
       "marketingName": "C6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3896,11 +4220,14 @@
       "marketingName": "C6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3932,11 +4259,14 @@
       "marketingName": "E71",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "joystick",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -3968,11 +4298,14 @@
       "marketingName": "E71",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "joystick",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4004,11 +4337,14 @@
       "marketingName": "Asha 501",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -4040,11 +4376,14 @@
       "marketingName": "7230",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4076,11 +4415,14 @@
       "marketingName": "X6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4112,11 +4454,14 @@
       "marketingName": "X2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4148,11 +4493,14 @@
       "marketingName": "X2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4184,11 +4532,14 @@
       "marketingName": "X2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4220,11 +4571,14 @@
       "marketingName": "X2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4256,11 +4610,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4292,11 +4649,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4328,11 +4688,14 @@
       "marketingName": "Lumia 640 LTE (AT&T)",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4364,11 +4727,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4400,11 +4766,14 @@
       "marketingName": "Lumia 640 Dual SIM LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4436,11 +4805,14 @@
       "marketingName": "Lumia 640 XL LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4472,11 +4844,14 @@
       "marketingName": "Lumia 640 XL LTE (AT&T)",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4508,11 +4883,14 @@
       "marketingName": "Lumia 640 XL LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4544,11 +4922,14 @@
       "marketingName": "Lumia 640 XL Dual SIM LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4580,11 +4961,14 @@
       "marketingName": "Lumia 640 XL LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -4616,11 +5000,14 @@
       "marketingName": "Lumia 520",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -4652,11 +5039,14 @@
       "marketingName": "Lumia 640 Dual SIM LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -4688,11 +5078,14 @@
       "marketingName": "N81",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4724,11 +5117,14 @@
       "marketingName": "N85",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4760,11 +5156,14 @@
       "marketingName": "N8",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4796,11 +5195,14 @@
       "marketingName": "N90",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "joystick",
-      "resolutionWidth": 352,
-      "resolutionHeight": 416,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 352,
+        "height": 416,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Classilla",
@@ -4832,11 +5234,14 @@
       "marketingName": "N96",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4868,11 +5273,14 @@
       "marketingName": "N97",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4904,11 +5312,14 @@
       "marketingName": "N9",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4940,11 +5351,14 @@
       "marketingName": "N78",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -4976,11 +5390,14 @@
       "marketingName": "N79",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "joystick",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5012,11 +5429,14 @@
       "marketingName": "X2 Dual SIM",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5048,11 +5468,14 @@
       "marketingName": "X2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -5084,11 +5507,14 @@
       "marketingName": "X3",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -5120,11 +5546,14 @@
       "marketingName": "X6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5156,11 +5585,14 @@
       "marketingName": "X7",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5192,11 +5624,14 @@
       "marketingName": "X7",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5228,11 +5663,14 @@
       "marketingName": "E7",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5264,11 +5702,14 @@
       "marketingName": "E72",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5300,11 +5741,14 @@
       "marketingName": "E75",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": true,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5336,11 +5780,14 @@
       "marketingName": "E7",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5372,11 +5819,14 @@
       "marketingName": "E6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 480,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5408,11 +5858,14 @@
       "marketingName": "E6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 480,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5444,11 +5897,14 @@
       "marketingName": "E63",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5480,11 +5936,14 @@
       "marketingName": "E66",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5516,11 +5975,14 @@
       "marketingName": "E5",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -5552,11 +6014,14 @@
       "marketingName": "E5",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -5588,11 +6053,14 @@
       "marketingName": "E50",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5624,11 +6092,14 @@
       "marketingName": "E51",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5660,11 +6131,14 @@
       "marketingName": "E52",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5696,11 +6170,14 @@
       "marketingName": "E90",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 800,
-      "resolutionHeight": 352,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 800,
+        "height": 352,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5732,11 +6209,14 @@
       "marketingName": "C7",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5768,11 +6248,14 @@
       "marketingName": "C7",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5804,11 +6287,14 @@
       "marketingName": "C6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5840,11 +6326,14 @@
       "marketingName": "C5",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5876,11 +6365,14 @@
       "marketingName": "C5",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -5912,11 +6404,14 @@
       "marketingName": "C5",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -5948,11 +6443,14 @@
       "marketingName": "C5",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -5984,11 +6482,14 @@
       "marketingName": "C5",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -6020,11 +6521,14 @@
       "marketingName": "C3",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "joystick",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6056,11 +6560,14 @@
       "marketingName": "C3",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6092,11 +6599,14 @@
       "marketingName": "C2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -6128,11 +6638,14 @@
       "marketingName": "C2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -6164,11 +6677,14 @@
       "marketingName": "C2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -6200,11 +6716,14 @@
       "marketingName": "C1",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -6236,11 +6755,14 @@
       "marketingName": "6610i",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 128,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6272,11 +6794,14 @@
       "marketingName": "6220 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6308,11 +6833,14 @@
       "marketingName": "6210",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 96,
-      "resolutionHeight": 60,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 96,
+        "height": 60,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6344,11 +6872,14 @@
       "marketingName": "6120 Classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6380,11 +6911,14 @@
       "marketingName": "5800 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -6416,11 +6950,14 @@
       "marketingName": "5530 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6452,11 +6989,14 @@
       "marketingName": "5530 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6488,11 +7028,14 @@
       "marketingName": "5250",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6524,11 +7067,14 @@
       "marketingName": "5233",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6560,11 +7106,14 @@
       "marketingName": "5130 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -6596,11 +7145,14 @@
       "marketingName": "5130 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -6632,11 +7184,14 @@
       "marketingName": "Asha 301",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -6668,11 +7223,14 @@
       "marketingName": "2320 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6704,11 +7262,14 @@
       "marketingName": "808 PureView",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6740,11 +7301,14 @@
       "marketingName": "701",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6776,11 +7340,14 @@
       "marketingName": "700",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6812,11 +7379,14 @@
       "marketingName": "603",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Nokia Browser",
@@ -6848,11 +7418,14 @@
       "marketingName": "515",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -6884,11 +7457,14 @@
       "marketingName": "Asha 306",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 400,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 400,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -6920,11 +7496,14 @@
       "marketingName": "Asha 302",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "joystick",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -6956,11 +7535,14 @@
       "marketingName": "Asha 201",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -6992,11 +7574,14 @@
       "marketingName": "112",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -7028,11 +7613,14 @@
       "marketingName": "109",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -7064,11 +7652,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -7100,11 +7691,14 @@
       "marketingName": "Lumia 640 LTE",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -7136,11 +7730,14 @@
       "marketingName": "N86",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7172,11 +7769,14 @@
       "marketingName": "N91",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "joystick",
-      "resolutionWidth": 176,
-      "resolutionHeight": 208,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 176,
+        "height": 208,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7208,11 +7808,14 @@
       "marketingName": "E62",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7244,11 +7847,14 @@
       "marketingName": "E55",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7280,11 +7886,14 @@
       "marketingName": "C2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -7316,11 +7925,14 @@
       "marketingName": "C1",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7352,11 +7964,14 @@
       "marketingName": "9500",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 640,
-      "resolutionHeight": 200,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 640,
+        "height": 200,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -7388,11 +8003,14 @@
       "marketingName": "Supernova",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7424,11 +8042,14 @@
       "marketingName": "6730 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7460,11 +8081,14 @@
       "marketingName": "6720 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7496,11 +8120,14 @@
       "marketingName": "6710 Navigator",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7532,11 +8159,14 @@
       "marketingName": "6630",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 176,
-      "resolutionHeight": 208,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 176,
+        "height": 208,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -7568,11 +8198,14 @@
       "marketingName": "6500 slide",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -7604,11 +8237,14 @@
       "marketingName": "6500 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7640,11 +8276,14 @@
       "marketingName": "6131",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7676,11 +8315,14 @@
       "marketingName": "5310 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7712,11 +8354,14 @@
       "marketingName": "5228",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7748,11 +8393,14 @@
       "marketingName": "5220 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7784,11 +8432,14 @@
       "marketingName": "5130 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -7820,11 +8471,14 @@
       "marketingName": "3710",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7856,11 +8510,14 @@
       "marketingName": "Asha 301",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -7892,11 +8549,14 @@
       "marketingName": "2760",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -7928,11 +8588,14 @@
       "marketingName": "2730 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -7964,11 +8627,14 @@
       "marketingName": "2720",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8000,11 +8666,14 @@
       "marketingName": "2700 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8036,11 +8705,14 @@
       "marketingName": "2630",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8072,11 +8744,14 @@
       "marketingName": "2330 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8108,11 +8783,14 @@
       "marketingName": "2323 classic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8144,11 +8822,14 @@
       "marketingName": "Asha 303",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -8180,11 +8861,14 @@
       "marketingName": "113",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -8216,11 +8900,14 @@
       "marketingName": "N900",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "MicroB",
@@ -8252,11 +8939,14 @@
       "marketingName": "6555",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8288,11 +8978,14 @@
       "marketingName": "5130 XpressMusic",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -8324,11 +9017,14 @@
       "marketingName": "X",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -8360,11 +9056,14 @@
       "marketingName": "Lumia 430 Dual SIM",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -8396,11 +9095,14 @@
       "marketingName": "Lumia 435 Dual SIM DTV",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",
@@ -8432,11 +9134,14 @@
       "marketingName": "Lumia 535 Dual SIM",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -8468,11 +9173,14 @@
       "marketingName": "Lumia 540 Dual SIM",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -8504,11 +9212,14 @@
       "marketingName": "Lumia 550",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -8540,11 +9251,14 @@
       "marketingName": "Lumia 640 Dual SIM DTV",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",
@@ -8576,11 +9290,14 @@
       "marketingName": "Lumia 650 Dual SIM",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -8612,11 +9329,14 @@
       "marketingName": "Lumia Icon",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -8648,11 +9368,14 @@
       "marketingName": "Asha 202",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -8684,11 +9407,14 @@
       "marketingName": "5320di",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -8720,11 +9446,14 @@
       "marketingName": "5235",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 360,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 360,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8756,11 +9485,14 @@
       "marketingName": "N80",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 352,
-      "resolutionHeight": 416,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 352,
+        "height": 416,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8792,11 +9524,14 @@
       "marketingName": "N76",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8828,11 +9563,14 @@
       "marketingName": "5320d",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8864,11 +9602,14 @@
       "marketingName": "6120",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8900,11 +9641,14 @@
       "marketingName": "6650d",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8936,11 +9680,14 @@
       "marketingName": "E90",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 800,
-      "resolutionHeight": 352,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 800,
+        "height": 352,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -8972,11 +9719,14 @@
       "marketingName": "E61i",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -9008,11 +9758,14 @@
       "marketingName": "E61",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -9044,11 +9797,14 @@
       "marketingName": "N73",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -9080,11 +9836,14 @@
       "marketingName": "6124 Classic (Vodafone)",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -9116,11 +9875,14 @@
       "marketingName": "5730S Xpress music side slide",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -9152,11 +9914,14 @@
       "marketingName": "6790s",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": null,
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -9188,11 +9953,14 @@
       "marketingName": "Asha 503",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Proxy Browser",
@@ -9224,11 +9992,14 @@
       "marketingName": "208",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -9260,11 +10031,14 @@
       "marketingName": "2626",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 128,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -9296,11 +10070,14 @@
       "marketingName": "2690",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -9332,11 +10109,14 @@
       "marketingName": "Asha 310",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 400,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 400,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -9368,11 +10148,14 @@
       "marketingName": "8",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -9404,11 +10187,14 @@
       "marketingName": "6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -9440,11 +10226,14 @@
       "marketingName": "8 Sirocco",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -9476,11 +10265,14 @@
       "marketingName": "6",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -9512,11 +10304,14 @@
       "marketingName": "Lumia 430",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -9548,11 +10343,14 @@
       "marketingName": "2",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -9584,11 +10382,14 @@
       "marketingName": "Lumia 640 XL Unlocked International",
       "manufacturer": "Microsoft",
       "brand": "Microsoft",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile",
@@ -9620,11 +10421,14 @@
       "marketingName": "6.1",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -9656,11 +10460,14 @@
       "marketingName": "1",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -9692,11 +10499,14 @@
       "marketingName": "8 Sirocco",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -9728,11 +10538,14 @@
       "marketingName": "7 plus",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 2160,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 2160,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -9764,11 +10577,14 @@
       "marketingName": "Lumia 920",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -9800,11 +10616,14 @@
       "marketingName": "Lumia 925",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -9836,11 +10655,14 @@
       "marketingName": "Lumia 625",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -9872,11 +10694,14 @@
       "marketingName": "Lumia 630",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -9908,11 +10733,14 @@
       "marketingName": "Lumia 735",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -9944,11 +10772,14 @@
       "marketingName": "3.1",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1440,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1440,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -9980,11 +10811,14 @@
       "marketingName": "8",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -10016,11 +10850,14 @@
       "marketingName": "3",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -10052,11 +10889,14 @@
       "marketingName": "5.1",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 2160,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 2160,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",

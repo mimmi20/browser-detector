@@ -8,11 +8,14 @@
       "marketingName": "VK900",
       "manufacturer": "VK Mobile",
       "brand": "VK Mobile",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 176,
-      "resolutionHeight": 220,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 176,
+        "height": 220,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Openwave Mobile Browser",

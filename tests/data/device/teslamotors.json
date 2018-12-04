@@ -8,11 +8,14 @@
       "marketingName": "Model S",
       "manufacturer": "TeslaMotors",
       "brand": "Tesla",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": false,
-      "type": "car-entertainment-system"
+      "type": "car-entertainment-system",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Model S Browser",

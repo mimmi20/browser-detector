@@ -8,11 +8,14 @@
       "marketingName": "W11K",
       "manufacturer": "Kyocera",
       "brand": "Kddi",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Openwave Mobile Browser",
@@ -44,11 +47,14 @@
       "marketingName": "Regza IS04",
       "manufacturer": "Kddi",
       "brand": "Fujitsu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -80,11 +86,14 @@
       "marketingName": "CA005",
       "manufacturer": "Kddi",
       "brand": "Kddi",
-      "pointingMethod": null,
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Openwave Mobile Browser",
@@ -116,11 +125,14 @@
       "marketingName": "KC4A",
       "manufacturer": "Kddi",
       "brand": "Kddi",
-      "pointingMethod": null,
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Opera Mobile",
@@ -152,11 +164,14 @@
       "marketingName": "URBANO AFFARE",
       "manufacturer": "Kddi",
       "brand": "Kddi",
-      "pointingMethod": null,
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Openwave Mobile Browser",
@@ -188,11 +203,14 @@
       "marketingName": "X-RAY",
       "manufacturer": "Kddi",
       "brand": "Kddi",
-      "pointingMethod": null,
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Openwave Mobile Browser",

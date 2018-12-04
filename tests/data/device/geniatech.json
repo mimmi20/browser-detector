@@ -8,11 +8,14 @@
       "marketingName": "MX Enjoy TV BOX",
       "manufacturer": "Geniatech",
       "brand": "Geniatech",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Chrome",
