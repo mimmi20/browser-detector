@@ -17,7 +17,6 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
-use UaResult\Company\CompanyLoader;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 
@@ -29,7 +28,7 @@ class PlatformLoader implements SpecificLoaderInterface
     private $logger;
 
     /**
-     * @var \UaResult\Company\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoader
      */
     private $companyLoader;
 
@@ -39,9 +38,9 @@ class PlatformLoader implements SpecificLoaderInterface
     private $initData;
 
     /**
-     * @param \Psr\Log\LoggerInterface            $logger
-     * @param \UaResult\Company\CompanyLoader     $companyLoader
-     * @param \BrowserDetector\Loader\Helper\Data $initData
+     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     * @param \BrowserDetector\Loader\Helper\Data   $initData
      */
     public function __construct(
         LoggerInterface $logger,

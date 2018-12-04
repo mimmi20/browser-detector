@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
+use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
@@ -19,7 +20,6 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\NullLogger;
 use UaResult\Company\Company;
-use UaResult\Company\CompanyLoader;
 use UaResult\Os\OsInterface;
 
 class PlatformLoaderTest extends TestCase

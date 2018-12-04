@@ -18,7 +18,6 @@ use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use UaBrowserType\TypeLoader;
-use UaResult\Company\CompanyLoader;
 
 class BrowserLoaderFactory
 {

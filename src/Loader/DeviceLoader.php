@@ -14,8 +14,8 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Loader\Helper\Data;
 use Psr\Log\LoggerInterface;
 use UaDeviceType\TypeLoader;
-use UaResult\Company\CompanyLoader;
 use UaResult\Device\Device;
+use UaResult\Device\DisplayFactory;
 
 class DeviceLoader implements SpecificLoaderInterface
 {
@@ -25,7 +25,7 @@ class DeviceLoader implements SpecificLoaderInterface
     private $logger;
 
     /**
-     * @var \UaResult\Company\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoader
      */
     private $companyLoader;
 
@@ -46,7 +46,7 @@ class DeviceLoader implements SpecificLoaderInterface
 
     /**
      * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \UaResult\Company\CompanyLoader                $companyLoader
+     * @param \BrowserDetector\Loader\CompanyLoader          $companyLoader
      * @param \UaDeviceType\TypeLoader                       $typeLoader
      * @param \BrowserDetector\Loader\GenericLoaderInterface $platformLoader
      * @param \BrowserDetector\Loader\Helper\Data            $initData
@@ -97,15 +97,19 @@ class DeviceLoader implements SpecificLoaderInterface
             }
         }
 
+        $display = null;
+
+        if (null !== $deviceData->display) {
+            $display = (new DisplayFactory())->fromArray($this->logger, $deviceData->display);
+        }
+
         $device = new Device(
-            $deviceData->codename,
+            $deviceData->deviceName,
             $deviceData->marketingName,
             $this->companyLoader->load($deviceData->manufacturer),
             $this->companyLoader->load($deviceData->brand),
             $this->typeLoader->load($deviceData->type),
-            $deviceData->pointingMethod,
-            $deviceData->resolutionWidth,
-            $deviceData->resolutionHeight,
+            $display,
             $deviceData->dualOrientation
         );
 
