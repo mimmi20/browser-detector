@@ -15,7 +15,6 @@ use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
-use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
@@ -27,7 +26,7 @@ class EngineLoader implements SpecificLoaderInterface
     private $logger;
 
     /**
-     * @var \UaResult\Company\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoader
      */
     private $companyLoader;
 
@@ -37,9 +36,9 @@ class EngineLoader implements SpecificLoaderInterface
     private $initData;
 
     /**
-     * @param \Psr\Log\LoggerInterface            $logger
-     * @param \UaResult\Company\CompanyLoader     $companyLoader
-     * @param \BrowserDetector\Loader\Helper\Data $initData
+     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     * @param \BrowserDetector\Loader\Helper\Data   $initData
      */
     public function __construct(
         LoggerInterface $logger,

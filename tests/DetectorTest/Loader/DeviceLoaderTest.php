@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
+use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\Helper\Data;
@@ -21,7 +22,6 @@ use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaDeviceType\TypeLoader;
 use UaDeviceType\Unknown;
 use UaResult\Company\Company;
-use UaResult\Company\CompanyLoader;
 use UaResult\Device\DeviceInterface;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
@@ -272,11 +272,14 @@ class DeviceLoaderTest extends TestCase
             'brand' => 'Unknown',
             'type' => 'unknown',
             'platform' => null,
-            'codename' => null,
+            'deviceName' => null,
             'marketingName' => null,
-            'pointingMethod' => null,
-            'resolutionWidth' => null,
-            'resolutionHeight' => null,
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'type' => null,
+            ],
             'dualOrientation' => true,
         ];
 
@@ -390,11 +393,14 @@ class DeviceLoaderTest extends TestCase
             'brand' => 'Unknown',
             'type' => 'unknown',
             'platform' => 'unknown',
-            'codename' => null,
+            'deviceName' => null,
             'marketingName' => null,
-            'pointingMethod' => null,
-            'resolutionWidth' => null,
-            'resolutionHeight' => null,
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'type' => null,
+            ],
             'dualOrientation' => true,
         ];
 
@@ -512,11 +518,14 @@ class DeviceLoaderTest extends TestCase
             'brand' => 'Unknown',
             'type' => 'unknown',
             'platform' => 'unknown',
-            'codename' => 'test-device',
+            'deviceName' => 'test-device',
             'marketingName' => null,
-            'pointingMethod' => null,
-            'resolutionWidth' => null,
-            'resolutionHeight' => null,
+            'display' => [
+                'width' => null,
+                'height' => null,
+                'touch' => null,
+                'type' => null,
+            ],
             'dualOrientation' => true,
         ];
 

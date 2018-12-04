@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\BrowserLoader;
+use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\NotFoundException;
@@ -22,7 +23,6 @@ use UaBrowserType\TypeLoader;
 use UaBrowserType\Unknown;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
-use UaResult\Company\CompanyLoader;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 

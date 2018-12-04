@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "version": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "version",
+    "manufacturer"
+  ]
+}

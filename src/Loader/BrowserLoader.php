@@ -18,7 +18,6 @@ use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
-use UaResult\Company\CompanyLoader;
 
 class BrowserLoader implements SpecificLoaderInterface
 {
@@ -28,7 +27,7 @@ class BrowserLoader implements SpecificLoaderInterface
     private $logger;
 
     /**
-     * @var \UaResult\Company\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoader
      */
     private $companyLoader;
 
@@ -49,7 +48,7 @@ class BrowserLoader implements SpecificLoaderInterface
 
     /**
      * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \UaResult\Company\CompanyLoader                $companyLoader
+     * @param \BrowserDetector\Loader\CompanyLoader          $companyLoader
      * @param \UaBrowserType\TypeLoader                      $typeLoader
      * @param \BrowserDetector\Loader\GenericLoaderInterface $engineLoader
      * @param \BrowserDetector\Loader\Helper\Data            $initData
