@@ -8,14 +8,14 @@
       "marketingName": "G009",
       "manufacturer": "Yxtel",
       "brand": "Yxtel",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",

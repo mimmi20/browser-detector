@@ -8,14 +8,14 @@
       "marketingName": "G708",
       "manufacturer": "Colorfly",
       "brand": "Colorfly",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",

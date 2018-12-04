@@ -8,14 +8,14 @@
       "marketingName": "MPM-AVA758",
       "manufacturer": "Miray",
       "brand": "Miray",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "MPM-I616",
       "manufacturer": "Miray",
       "brand": "Miray",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -86,14 +86,14 @@
       "marketingName": "MIDM-8803",
       "manufacturer": "Miray",
       "brand": "Miray",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",

@@ -8,14 +8,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Opera",
@@ -47,14 +47,14 @@
       "marketingName": "Galaxy Fit",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "type": "smartphone",
       "display": {
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -86,14 +86,14 @@
       "marketingName": "Manhattan",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "type": "feature-phone",
       "display": {
         "width": 220,
         "height": 176,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Opera Mini",
@@ -125,14 +125,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Opera Mobile",
@@ -164,14 +164,14 @@
       "marketingName": "G7300",
       "manufacturer": "Huawei",
       "brand": "Huawei",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Opera Mobile",
@@ -203,14 +203,14 @@
       "marketingName": "X650",
       "manufacturer": "Micromax",
       "brand": "Micromax",
-      "type": "feature-phone",
       "display": {
         "width": 240,
         "height": 400,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Opera Mobile",

@@ -8,14 +8,14 @@
       "marketingName": "iP1020",
       "manufacturer": "Dex",
       "brand": "Dex",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Yandex Browser",

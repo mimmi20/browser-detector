@@ -8,14 +8,14 @@
       "marketingName": "P-720",
       "manufacturer": "Exeq",
       "brand": "Exeq",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",

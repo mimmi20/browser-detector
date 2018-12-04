@@ -8,14 +8,14 @@
       "marketingName": "QT-75",
       "manufacturer": "Spice",
       "brand": "Spice",
-      "type": "feature-phone",
       "display": {
         "width": 220,
         "height": 176,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "WAP Browser",
@@ -47,14 +47,14 @@
       "marketingName": "Mi-424",
       "manufacturer": "Spice",
       "brand": "Spice",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -86,14 +86,14 @@
       "marketingName": "M5395",
       "manufacturer": "Spice",
       "brand": "Spice",
-      "type": "feature-phone",
       "display": {
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "WAP Browser",
@@ -125,14 +125,14 @@
       "marketingName": "Smart Flo Edge",
       "manufacturer": "Spice",
       "brand": "Spice",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -164,14 +164,14 @@
       "marketingName": "Smart Flo Pace",
       "manufacturer": "Spice",
       "brand": "Spice",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -203,14 +203,14 @@
       "marketingName": "Smart Flo Pace 2",
       "manufacturer": "Spice",
       "brand": "Spice",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -242,14 +242,14 @@
       "marketingName": "Mi-520",
       "manufacturer": "Spice",
       "brand": "Spice",
-      "type": "smartphone",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",

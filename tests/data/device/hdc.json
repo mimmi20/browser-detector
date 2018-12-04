@@ -8,14 +8,14 @@
       "marketingName": "Galaxy S3 EX",
       "manufacturer": "Hdc",
       "brand": "Hdc",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

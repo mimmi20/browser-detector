@@ -8,14 +8,14 @@
       "marketingName": "Andromeda S925 3G",
       "manufacturer": "Starway",
       "brand": "Starway",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Opera Mobile",

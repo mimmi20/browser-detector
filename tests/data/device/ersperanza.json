@@ -8,14 +8,14 @@
       "marketingName": "Dream Tab 7 AX2 HD",
       "manufacturer": "Esperanza",
       "brand": "Esperanza",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Opera Mobile",

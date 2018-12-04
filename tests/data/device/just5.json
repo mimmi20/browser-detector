@@ -8,14 +8,14 @@
       "marketingName": "Blaster 2",
       "manufacturer": "Just5",
       "brand": "Just5",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",

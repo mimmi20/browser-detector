@@ -8,14 +8,14 @@
       "marketingName": "ViewPad 10S",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "ViewPad 10e",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -86,14 +86,14 @@
       "marketingName": "ViewPad 7e",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -125,14 +125,14 @@
       "marketingName": "ViewPad7",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "fone-pad",
       "display": {
         "width": 800,
         "height": 400,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android Webkit",
@@ -164,14 +164,14 @@
       "marketingName": "V350",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -203,14 +203,14 @@
       "marketingName": "VSD220",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "desktop",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Android Webkit",
@@ -242,14 +242,14 @@
       "marketingName": "ViewPad 7Q",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android Webkit",
@@ -281,14 +281,14 @@
       "marketingName": "V500",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "smartphone",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -320,14 +320,14 @@
       "marketingName": "ViewPhone 3",
       "manufacturer": "ViewSonic",
       "brand": "ViewSonic",
-      "type": "smartphone",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

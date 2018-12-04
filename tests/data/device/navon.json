@@ -8,14 +8,14 @@
       "marketingName": "Mizu M502",
       "manufacturer": "Navon",
       "brand": "Navon",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",

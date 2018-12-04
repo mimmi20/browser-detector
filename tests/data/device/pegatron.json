@@ -8,14 +8,14 @@
       "marketingName": "Chagall",
       "manufacturer": "Pegatron",
       "brand": "Pegatron",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "CM Browser",

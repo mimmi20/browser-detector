@@ -8,14 +8,14 @@
       "marketingName": "Digio 33i HD+",
       "manufacturer": "Telestar",
       "brand": "Telestar",
-      "type": "tv",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "tv"
     },
     "browser": {
       "name": "Safari",

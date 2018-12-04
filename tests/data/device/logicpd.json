@@ -8,14 +8,14 @@
       "marketingName": "Nook Color",
       "manufacturer": "Logicpd",
       "brand": "BarnesNoble",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

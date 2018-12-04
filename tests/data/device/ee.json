@@ -8,14 +8,14 @@
       "marketingName": "Harrier Tab",
       "manufacturer": "EE",
       "brand": "EE",
-      "type": "fone-pad",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",

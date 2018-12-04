@@ -8,14 +8,14 @@
       "marketingName": "S7G",
       "manufacturer": "SuperTab",
       "brand": "SuperTab",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android WebView",

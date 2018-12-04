@@ -8,14 +8,14 @@
       "marketingName": "oneTab XST2",
       "manufacturer": "4G Systems",
       "brand": "4G Systems",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

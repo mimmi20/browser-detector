@@ -8,14 +8,14 @@
       "marketingName": "King 7",
       "manufacturer": "PPTV",
       "brand": "PPTV",
-      "type": "smartphone",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "King 7S",
       "manufacturer": "PPTV",
       "brand": "PPTV",
-      "type": "smartphone",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android WebView",

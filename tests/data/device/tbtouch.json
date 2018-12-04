@@ -8,14 +8,14 @@
       "marketingName": "Ignis 8",
       "manufacturer": "TbTouch",
       "brand": "TbTouch",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

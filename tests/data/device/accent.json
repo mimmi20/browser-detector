@@ -8,14 +8,14 @@
       "marketingName": "Touareg8 3G",
       "manufacturer": "Accent",
       "brand": "Accent",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "Eagle7 3G",
       "manufacturer": "Accent",
       "brand": "Accent",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android WebView",

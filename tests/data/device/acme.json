@@ -8,14 +8,14 @@
       "marketingName": "TB1016",
       "manufacturer": "ACME",
       "brand": "ACME",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "TB717-3G",
       "manufacturer": "ACME",
       "brand": "ACME",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android WebView",

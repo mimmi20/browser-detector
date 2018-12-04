@@ -8,14 +8,14 @@
       "marketingName": "FunTab 8",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "Zilo",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -86,14 +86,14 @@
       "marketingName": "M700",
       "manufacturer": "Htc",
       "brand": "SPV",
-      "type": "feature-phone",
       "display": {
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Orangebot",
@@ -125,14 +125,14 @@
       "marketingName": "Daytona",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -164,14 +164,14 @@
       "marketingName": "Dublin",
       "manufacturer": "Zte",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -203,14 +203,14 @@
       "marketingName": "Hiro",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Baidu Browser",
@@ -242,14 +242,14 @@
       "marketingName": "Kivo",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -281,14 +281,14 @@
       "marketingName": "Monte Carlo",
       "manufacturer": "Zte",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -320,14 +320,14 @@
       "marketingName": "San Francisco",
       "manufacturer": "Zte",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -359,14 +359,14 @@
       "marketingName": "Tactile Internet 2",
       "manufacturer": "Zte",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -398,14 +398,14 @@
       "marketingName": "Yomi",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -437,14 +437,14 @@
       "marketingName": "Yumo",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -476,14 +476,14 @@
       "marketingName": "Zali",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google App",
@@ -515,14 +515,14 @@
       "marketingName": "Sego",
       "manufacturer": "Orange",
       "brand": "Orange",
-      "type": "fone-pad",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",

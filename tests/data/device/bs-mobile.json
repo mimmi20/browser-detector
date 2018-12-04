@@ -8,14 +8,14 @@
       "marketingName": "Rune",
       "manufacturer": "BS Mobile",
       "brand": "BS Mobile",
-      "type": "smartphone",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

@@ -8,14 +8,14 @@
       "marketingName": "SF1",
       "manufacturer": "Obi Worldphone",
       "brand": "Obi Worldphone",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -47,14 +47,14 @@
       "marketingName": "Hornbill",
       "manufacturer": "Obi Worldphone",
       "brand": "Obi Worldphone",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",

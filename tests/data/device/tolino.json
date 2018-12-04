@@ -8,14 +8,14 @@
       "marketingName": "Tab 8.9",
       "manufacturer": "Tolino",
       "brand": "Tolino",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "UC Browser",
@@ -47,14 +47,14 @@
       "marketingName": "Tab 8",
       "manufacturer": "Tolino",
       "brand": "Tolino",
-      "type": "tablet",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
@@ -86,14 +86,14 @@
       "marketingName": "Tab 7",
       "manufacturer": "TrekStor",
       "brand": "Tolino",
-      "type": "tablet",
       "display": {
         "width": 1440,
         "height": 900,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",
@@ -125,14 +125,14 @@
       "marketingName": "Tolino Shine",
       "manufacturer": "Longshine",
       "brand": "Weltbild",
-      "type": "ebook-reader",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "ebook-reader"
     },
     "browser": {
       "name": "Android Webkit",
@@ -164,14 +164,14 @@
       "marketingName": "Vision 2",
       "manufacturer": "Tolino",
       "brand": "Tolino",
-      "type": "ebook-reader",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "ebook-reader"
     },
     "browser": {
       "name": "Android Webkit",
@@ -203,14 +203,14 @@
       "marketingName": "Vision",
       "manufacturer": "Tolino",
       "brand": "Tolino",
-      "type": "ebook-reader",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "ebook-reader"
     },
     "browser": {
       "name": "Android Webkit",
@@ -242,14 +242,14 @@
       "marketingName": "Vision 4",
       "manufacturer": "Tolino",
       "brand": "Tolino",
-      "type": "ebook-reader",
       "display": {
         "width": 1448,
         "height": 1072,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "ebook-reader"
     },
     "browser": {
       "name": "Android WebView",

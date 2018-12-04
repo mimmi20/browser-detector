@@ -8,14 +8,14 @@
       "marketingName": "D3",
       "manufacturer": "Cowon",
       "brand": "Cowon",
-      "type": "mobile-media-player",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Android Webkit",
@@ -47,14 +47,14 @@
       "marketingName": "Plenue",
       "manufacturer": "Cowon",
       "brand": "Cowon",
-      "type": "mobile-media-player",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Android Webkit",

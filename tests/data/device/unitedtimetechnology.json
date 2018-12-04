@@ -8,14 +8,14 @@
       "marketingName": "Utime S23",
       "manufacturer": "UnitedTimeTechnology",
       "brand": "UnitedTimeTechnology",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",

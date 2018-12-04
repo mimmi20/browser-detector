@@ -8,14 +8,14 @@
       "marketingName": "Ursus 9EV 3G",
       "manufacturer": "Dexp",
       "brand": "Dexp",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Opera Mobile",
@@ -47,14 +47,14 @@
       "marketingName": "Ixion ES255",
       "manufacturer": "Dexp",
       "brand": "Dexp",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Opera Mobile",
@@ -86,14 +86,14 @@
       "marketingName": "Atlas",
       "manufacturer": "Dexp",
       "brand": "Dexp",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Android Webkit",
@@ -125,14 +125,14 @@
       "marketingName": "Rage Plus",
       "manufacturer": "Dexp",
       "brand": "Dexp",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Yandex Browser",

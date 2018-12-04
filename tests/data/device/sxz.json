@@ -8,14 +8,14 @@
       "marketingName": "PDX0-01",
       "manufacturer": "Sxz",
       "brand": "Sxz",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

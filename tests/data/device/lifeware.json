@@ -8,14 +8,14 @@
       "marketingName": "Fabtab Quadro 8",
       "manufacturer": "Lifeware",
       "brand": "Lifeware",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 720,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android WebView",
@@ -47,14 +47,14 @@
       "marketingName": "Fabtab Quadro 8",
       "manufacturer": "Lifeware",
       "brand": "Lifeware",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 720,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "UC Browser",

@@ -8,14 +8,14 @@
       "marketingName": "TAB-97E-01",
       "manufacturer": "Reellex",
       "brand": "Reellex",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "UC Browser",

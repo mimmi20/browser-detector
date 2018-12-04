@@ -8,14 +8,14 @@
       "marketingName": "iPod Touch",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Safari",
@@ -47,14 +47,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Safari",
@@ -86,14 +86,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Safari",
@@ -125,14 +125,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Safari",
@@ -164,14 +164,14 @@
       "marketingName": "iPod Touch",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Safari",
@@ -203,14 +203,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Puffin",
@@ -242,14 +242,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Puffin",
@@ -281,14 +281,14 @@
       "marketingName": "iPhone 4 (GSM)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -320,14 +320,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "iOS dataaccessd",
@@ -359,14 +359,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -398,14 +398,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "BB Work Connect",
@@ -437,14 +437,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "UC Browser",
@@ -476,14 +476,14 @@
       "marketingName": "iPod Touch (Gen 1)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Facebook App",
@@ -515,14 +515,14 @@
       "marketingName": "iPod Touch (Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Facebook App",
@@ -554,14 +554,14 @@
       "marketingName": "iPod Touch (Gen 3)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Grindr",
@@ -593,14 +593,14 @@
       "marketingName": "iPod Touch (Gen 4)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 960,
         "height": 640,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Grindr",
@@ -632,14 +632,14 @@
       "marketingName": "iPod Touch (Gen 5)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 960,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Facebook App",
@@ -671,14 +671,14 @@
       "marketingName": "iPod Touch (Gen 5)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 960,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -710,14 +710,14 @@
       "marketingName": "iPod Touch (Gen 6)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-media-player",
       "display": {
         "width": 960,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-media-player"
     },
     "browser": {
       "name": "Instagram App",
@@ -749,14 +749,14 @@
       "marketingName": "iPad (Gen 1)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "UC Browser",
@@ -788,14 +788,14 @@
       "marketingName": "iPad (Wi-Fi, Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -827,14 +827,14 @@
       "marketingName": "iPad (Wi-Fi+3G, AT&T, Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -866,14 +866,14 @@
       "marketingName": "iPad (Wi-Fi+3G, Verizon, Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -905,14 +905,14 @@
       "marketingName": "iPad (Wi-Fi, Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -944,14 +944,14 @@
       "marketingName": "iPad mini (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "UC Browser",
@@ -983,14 +983,14 @@
       "marketingName": "iPad mini (Wi-Fi+4G, AT&T)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "UC Browser",
@@ -1022,14 +1022,14 @@
       "marketingName": "iPad mini (Wi-Fi+4G, Verizon, Sprint)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1061,14 +1061,14 @@
       "marketingName": "iPad 3 (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -1100,14 +1100,14 @@
       "marketingName": "iPad 3 (Wi-Fi+3G, Verizon)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Instagram App",
@@ -1139,14 +1139,14 @@
       "marketingName": "iPad 3 (Wi-Fi+3G, AT&T)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Instagram App",
@@ -1178,14 +1178,14 @@
       "marketingName": "iPad 4 (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Instagram App",
@@ -1217,14 +1217,14 @@
       "marketingName": "iPad 4 (Wi-Fi+4G, AT&T)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Instagram App",
@@ -1256,14 +1256,14 @@
       "marketingName": "iPad 4 (Wi-Fi+4G, Verizon, Sprint)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Instagram App",
@@ -1295,14 +1295,14 @@
       "marketingName": "iPad Air (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -1334,14 +1334,14 @@
       "marketingName": "iPad Air (Wi-Fi+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1373,14 +1373,14 @@
       "marketingName": "iPad Air (Wi-Fi+4G, China)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1412,14 +1412,14 @@
       "marketingName": "iPad mini 2 (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -1451,14 +1451,14 @@
       "marketingName": "iPad mini 2 (Wi-Fi+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1490,14 +1490,14 @@
       "marketingName": "iPad mini 2 (Wi-Fi+4G, China)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1529,14 +1529,14 @@
       "marketingName": "iPad mini 3 (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -1568,14 +1568,14 @@
       "marketingName": "iPad mini 3 (Wi-Fi+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1607,14 +1607,14 @@
       "marketingName": "iPad mini 3 (Wi-Fi+4G, China)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1646,14 +1646,14 @@
       "marketingName": "iPad mini 4 (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -1685,14 +1685,14 @@
       "marketingName": "iPad mini 4 (Wi-Fi+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1724,14 +1724,14 @@
       "marketingName": "iPad Air 2 (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -1763,14 +1763,14 @@
       "marketingName": "iPad Air 2 (Wi-Fi+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1802,14 +1802,14 @@
       "marketingName": "iPad Pro (9.7, Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Facebook App",
@@ -1841,14 +1841,14 @@
       "marketingName": "iPad Pro (9.7, Wi-Fi+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "fone-pad",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Facebook App",
@@ -1880,14 +1880,14 @@
       "marketingName": "iPad Pro (12.9, Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2732,
         "height": 2048,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -1919,14 +1919,14 @@
       "marketingName": "iPhone 2G",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -1958,14 +1958,14 @@
       "marketingName": "iPhone 3G",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Grindr",
@@ -1997,14 +1997,14 @@
       "marketingName": "iPhone 3GS",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google+ App",
@@ -2036,14 +2036,14 @@
       "marketingName": "iPhone 4 (GSM)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google+ App",
@@ -2075,14 +2075,14 @@
       "marketingName": "iPhone 4 (GSM)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "AppStore App",
@@ -2114,14 +2114,14 @@
       "marketingName": "iPhone 4 (CDMA, Verizon, Sprint)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Instagram App",
@@ -2153,14 +2153,14 @@
       "marketingName": "iPhone 4S",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google+ App",
@@ -2192,14 +2192,14 @@
       "marketingName": "iPhone 5 (3G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Instagram App",
@@ -2231,14 +2231,14 @@
       "marketingName": "iPhone 5 (3G+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google+ App",
@@ -2270,14 +2270,14 @@
       "marketingName": "iPhone 5C (3G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook Messenger App",
@@ -2309,14 +2309,14 @@
       "marketingName": "iPhone 5C (3G+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
@@ -2348,14 +2348,14 @@
       "marketingName": "iPhone 5S (3G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "AppStore App",
@@ -2387,14 +2387,14 @@
       "marketingName": "iPhone 5S (3G+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Instagram App",
@@ -2426,14 +2426,14 @@
       "marketingName": "iPhone 6",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Rocky ChatWork Mobile",
@@ -2465,14 +2465,14 @@
       "marketingName": "iPhone 6S",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook Messenger App",
@@ -2504,14 +2504,14 @@
       "marketingName": "iPhone 6S Plus",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
@@ -2543,14 +2543,14 @@
       "marketingName": "iPhone SE",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
@@ -2582,14 +2582,14 @@
       "marketingName": "iPhone 7 (AT&T, T-Mobile, Global)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
@@ -2621,14 +2621,14 @@
       "marketingName": "iPhone 7 Plus (AT&T, T-Mobile, Global)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
@@ -2660,14 +2660,14 @@
       "marketingName": "iPhone 4S",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -2699,14 +2699,14 @@
       "marketingName": "iPhone 5 (3G+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -2738,14 +2738,14 @@
       "marketingName": "iPhone 5S (3G+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -2777,14 +2777,14 @@
       "marketingName": "iPhone 5S (3G+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google Mobile App",
@@ -2816,14 +2816,14 @@
       "marketingName": "iPhone 6",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "XING App",
@@ -2855,14 +2855,14 @@
       "marketingName": "iPhone 8 Plus (AT&T, T-Mobile, Global)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
@@ -2894,14 +2894,14 @@
       "marketingName": "iPhone 8 Plus (AT&T, T-Mobile, Global)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google Mobile App",
@@ -2933,14 +2933,14 @@
       "marketingName": "iPhone 6",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google Mobile App",
@@ -2972,14 +2972,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "AdsBot Google-Mobile",
@@ -3011,14 +3011,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Google Bot",
@@ -3050,14 +3050,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Safari",
@@ -3089,14 +3089,14 @@
       "marketingName": "iPad Air 2 (Wi-Fi)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Google Mobile App",
@@ -3128,14 +3128,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -3167,14 +3167,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome for iOS",
@@ -3206,14 +3206,14 @@
       "marketingName": "Watch",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "watch",
       "display": {
         "width": 390,
         "height": 312,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "watch"
     },
     "browser": {
       "name": "CoreMedia",
@@ -3245,14 +3245,14 @@
       "marketingName": "HomePod",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "speaker",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "speaker"
     },
     "browser": {
       "name": "CoreMedia",
@@ -3284,14 +3284,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome for iOS",
@@ -3323,14 +3323,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Miui Browser",
@@ -3362,14 +3362,14 @@
       "marketingName": "iPhone 6 Plus",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Baidu Box App",
@@ -3401,14 +3401,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Yahoo Ad Monitoring",
@@ -3440,14 +3440,14 @@
       "marketingName": "iPhone 6S",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -3479,14 +3479,14 @@
       "marketingName": "iPhone X (AT&T, T-Mobile, Global)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 1125,
         "height": 2436,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -3518,14 +3518,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "smartphone",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Firefox for iOS",
@@ -3557,14 +3557,14 @@
       "marketingName": "iMac",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -3596,14 +3596,14 @@
       "marketingName": "MacBook Pro",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -3635,14 +3635,14 @@
       "marketingName": "MacBook Air",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -3674,14 +3674,14 @@
       "marketingName": "MacBook",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -3713,14 +3713,14 @@
       "marketingName": "Mac Mini",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -3752,14 +3752,14 @@
       "marketingName": "MacPro",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -3791,14 +3791,14 @@
       "marketingName": "PowerMac",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -3830,14 +3830,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Mercury",
@@ -3869,14 +3869,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -3908,14 +3908,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -3947,14 +3947,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -3986,14 +3986,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -4025,14 +4025,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -4057,279 +4057,6 @@
   },
   {
     "headers": {
-      "user-agent": "Safari/9537.85.10.17.1 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (iMac11%2C3)"
-    },
-    "device": {
-      "deviceName": "iMac",
-      "marketingName": "iMac",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "type": "desktop",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "type": null
-      },
-      "dualOrientation": false
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "Apple",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.9.4",
-      "manufacturer": "Apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "673.5.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Safari/9537.85.11.5 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro5%2C1)"
-    },
-    "device": {
-      "deviceName": "MacBook Pro",
-      "marketingName": "MacBook Pro",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "type": "desktop",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "type": null
-      },
-      "dualOrientation": false
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "Apple",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.9.4",
-      "manufacturer": "Apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "673.5.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Safari/7534.53.10 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookAir4%2C1)"
-    },
-    "device": {
-      "deviceName": "MacBook Air",
-      "marketingName": "MacBook Air",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "type": "desktop",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "type": null
-      },
-      "dualOrientation": false
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.1.0",
-      "manufacturer": "Apple",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.7.3",
-      "manufacturer": "Apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "520.3.2",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook4%2C1)"
-    },
-    "device": {
-      "deviceName": "MacBook",
-      "marketingName": "MacBook",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "type": "desktop",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "type": null
-      },
-      "dualOrientation": false
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Apple",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.6.8",
-      "manufacturer": "Apple",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "454.12.4",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Unibox/283 CFNetwork/673.5 Darwin/13.4.0 (x86_64) (Macmini5%2C2)"
-    },
-    "device": {
-      "deviceName": "Mac Mini",
-      "marketingName": "Mac Mini",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "type": "desktop",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "type": null
-      },
-      "dualOrientation": false
-    },
-    "browser": {
-      "name": "Unibox",
-      "modus": null,
-      "version": "283.0.0",
-      "manufacturer": "eightloops",
-      "bits": 64,
-      "type": "email-client"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.9.4",
-      "manufacturer": "Apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "673.5.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacPro4%2C1)"
-    },
-    "device": {
-      "deviceName": "MacPro",
-      "marketingName": "MacPro",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "type": "desktop",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "type": null
-      },
-      "dualOrientation": false
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "Apple",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.6.8",
-      "manufacturer": "Apple",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "454.12.4",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac12%2C1)"
-    },
-    "device": {
-      "deviceName": "PowerMac",
-      "marketingName": "PowerMac",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "type": "desktop",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "type": null
-      },
-      "dualOrientation": false
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "Apple",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.5.8",
-      "manufacturer": "Apple",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "438.16.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Safari/12602.1.50 CFNetwork/807.0.1 Darwin/16.0.0 (x86_64)"
     },
     "device": {
@@ -4337,14 +4064,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -4376,14 +4103,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -4415,14 +4142,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -4454,14 +4181,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -4493,14 +4220,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -4532,14 +4259,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -4571,14 +4298,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -4610,14 +4337,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -4649,14 +4376,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -4688,14 +4415,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -4727,14 +4454,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -4766,14 +4493,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Unibox",
@@ -4805,14 +4532,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -4844,14 +4571,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -4883,14 +4610,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -4922,14 +4649,14 @@
       "marketingName": "MacBook Pro",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -4961,14 +4688,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -5000,14 +4727,14 @@
       "marketingName": "MacBook",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -5039,14 +4766,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -5078,14 +4805,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -5117,14 +4844,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "mobile-device",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "mobile-device"
     },
     "browser": {
       "name": "Safari",
@@ -5156,14 +4883,14 @@
       "marketingName": "MacBook Pro",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -5195,14 +4922,14 @@
       "marketingName": "PowerMac",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Safari",
@@ -5227,45 +4954,6 @@
   },
   {
     "headers": {
-      "user-agent": "BB_Work_Connect/1.0.23217.42 CFNetwork/711.3.18 Darwin/14.0.0Mozilla/5.0 (X11; Linux x86_64; rv:41.0) Gecko/20100101 Firefox/41.0"
-    },
-    "device": {
-      "deviceName": "general Apple Device",
-      "marketingName": "general Apple Device",
-      "manufacturer": "Apple",
-      "brand": "Apple",
-      "type": "mobile-device",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "type": null
-      },
-      "dualOrientation": true
-    },
-    "browser": {
-      "name": "BB Work Connect",
-      "modus": null,
-      "version": "1.0.23217.42",
-      "manufacturer": "Unknown",
-      "bits": 64,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.3.0",
-      "manufacturer": "Apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "AppleCoreMedia/1.0.0.12F69 (Apple TV; U; CPU OS 8_3 like Mac OS X; en_us)"
     },
     "device": {
@@ -5273,14 +4961,14 @@
       "marketingName": "Apple TV",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "type": "tv",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "tv"
     },
     "browser": {
       "name": "CoreMedia",

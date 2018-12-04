@@ -8,14 +8,14 @@
       "marketingName": "Sirius QS",
       "manufacturer": "Vonino",
       "brand": "Vonino",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Chrome",

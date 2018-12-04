@@ -8,14 +8,14 @@
       "marketingName": "Pad B9712KB",
       "manufacturer": "Bliss",
       "brand": "Bliss",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Opera Mobile",

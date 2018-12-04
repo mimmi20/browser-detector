@@ -8,14 +8,14 @@
       "marketingName": "Remix SK1W",
       "manufacturer": "Jide",
       "brand": "Jide",
-      "type": "desktop",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "Chrome",

@@ -8,14 +8,14 @@
       "marketingName": "M52 Red Note",
       "manufacturer": "Mlais",
       "brand": "Mlais",
-      "type": "smartphone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android WebView",

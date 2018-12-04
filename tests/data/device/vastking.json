@@ -8,14 +8,14 @@
       "marketingName": "M717R-HD",
       "manufacturer": "VastKing",
       "brand": "VastKing",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Opera Mobile",

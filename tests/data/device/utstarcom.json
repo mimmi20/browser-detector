@@ -8,14 +8,14 @@
       "marketingName": "Quickfire",
       "manufacturer": "UtStarcom",
       "brand": "Att",
-      "type": "feature-phone",
       "display": {
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Polaris",
@@ -47,14 +47,14 @@
       "marketingName": "G26",
       "manufacturer": "UtStarcom",
       "brand": "UtStarcom",
-      "type": "feature-phone",
       "display": {
         "width": 128,
         "height": 128,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
@@ -86,14 +86,14 @@
       "marketingName": "XV6175",
       "manufacturer": "UtStarcom",
       "brand": "UtStarcom",
-      "type": "feature-phone",
       "display": {
         "width": 176,
         "height": 220,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "feature-phone"
     },
     "browser": {
       "name": "IEMobile",

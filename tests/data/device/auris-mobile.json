@@ -8,14 +8,14 @@
       "marketingName": "TB-703G",
       "manufacturer": "Auris Mobile",
       "brand": "Auris Mobile",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android WebView",

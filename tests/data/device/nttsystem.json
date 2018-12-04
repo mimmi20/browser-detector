@@ -8,14 +8,14 @@
       "marketingName": "NTT 611 10.1",
       "manufacturer": "NttSystem",
       "brand": "NttSystem",
-      "type": "tablet",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",

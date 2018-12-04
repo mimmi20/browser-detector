@@ -8,14 +8,14 @@
       "marketingName": "Barca Tab 7",
       "manufacturer": "Advan",
       "brand": "Advan",
-      "type": "fone-pad",
       "display": {
         "width": 1024,
         "height": 800,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "fone-pad"
     },
     "browser": {
       "name": "UC Browser",
@@ -47,14 +47,14 @@
       "marketingName": "T1L",
       "manufacturer": "Advan",
       "brand": "Advan",
-      "type": "tablet",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android WebView",
@@ -86,14 +86,14 @@
       "marketingName": "Vandroid",
       "manufacturer": "Advan",
       "brand": "Advan",
-      "type": "smartphone",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",

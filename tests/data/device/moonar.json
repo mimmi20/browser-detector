@@ -8,14 +8,14 @@
       "marketingName": "K1001L1B",
       "manufacturer": "Moonar",
       "brand": "Moonar",
-      "type": "tablet",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": true
+      "dualOrientation": true,
+      "type": "tablet"
     },
     "browser": {
       "name": "Android Webkit",

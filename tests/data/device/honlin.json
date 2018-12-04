@@ -8,14 +8,14 @@
       "marketingName": "PC1088",
       "manufacturer": "Honlin",
       "brand": "Honlin",
-      "type": "desktop",
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "type": null
+        "type": "unknown"
       },
-      "dualOrientation": false
+      "dualOrientation": false,
+      "type": "desktop"
     },
     "browser": {
       "name": "UC Browser",
