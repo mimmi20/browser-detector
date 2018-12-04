@@ -8,11 +8,14 @@
       "marketingName": "WiiU",
       "manufacturer": "Nintendo",
       "brand": "Nintendo",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-console"
+      "type": "tv-console",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "NetFront NX",
@@ -44,11 +47,14 @@
       "marketingName": "3DS",
       "manufacturer": "Nintendo",
       "brand": "Nintendo",
-      "pointingMethod": null,
-      "resolutionWidth": 320,
-      "resolutionHeight": 200,
-      "dualOrientation": false,
-      "type": "mobile-console"
+      "type": "mobile-console",
+      "display": {
+        "width": 320,
+        "height": 200,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "NetFront NX",
@@ -80,11 +86,14 @@
       "marketingName": "Wii",
       "manufacturer": "Nintendo",
       "brand": "Nintendo",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-console"
+      "type": "tv-console",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Opera",
@@ -116,11 +125,14 @@
       "marketingName": "Wii",
       "manufacturer": "Nintendo",
       "brand": "Nintendo",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-console"
+      "type": "tv-console",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -152,11 +164,14 @@
       "marketingName": "DSi",
       "manufacturer": "Nintendo",
       "brand": "Nintendo",
-      "pointingMethod": null,
-      "resolutionWidth": 256,
-      "resolutionHeight": 192,
-      "dualOrientation": false,
-      "type": "mobile-console"
+      "type": "mobile-console",
+      "display": {
+        "width": 256,
+        "height": 192,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Opera",
@@ -188,11 +203,14 @@
       "marketingName": "DS",
       "manufacturer": "Nintendo",
       "brand": "Nintendo",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 256,
-      "resolutionHeight": 192,
-      "dualOrientation": false,
-      "type": "mobile-console"
+      "type": "mobile-console",
+      "display": {
+        "width": 256,
+        "height": 192,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": null,

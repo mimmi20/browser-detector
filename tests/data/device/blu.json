@@ -8,11 +8,14 @@
       "marketingName": "Win HD LTE",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -44,11 +47,14 @@
       "marketingName": "Win JR LTE",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -80,11 +86,14 @@
       "marketingName": "Win HD W510u",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -116,11 +125,14 @@
       "marketingName": "Win JR W410a",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -152,11 +164,14 @@
       "marketingName": "Win JR LTE",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge",
@@ -188,11 +203,14 @@
       "marketingName": "Studio 5.5",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Facebook App",
@@ -224,11 +242,14 @@
       "marketingName": "Vivo IV",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -260,11 +281,14 @@
       "marketingName": "Studio 5.0 S II",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -296,11 +320,14 @@
       "marketingName": "Studio 7.0",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -332,11 +359,14 @@
       "marketingName": "Studio G",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -368,11 +398,14 @@
       "marketingName": "Studio XL 2",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -404,11 +437,14 @@
       "marketingName": "Dash 3.5",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -440,11 +476,14 @@
       "marketingName": "Dash 4.0",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -476,11 +515,14 @@
       "marketingName": "Dash 4.5",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -512,11 +554,14 @@
       "marketingName": "Dash 5.0",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -548,11 +593,14 @@
       "marketingName": "Dash JR",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -584,11 +632,14 @@
       "marketingName": "Dash Music 4.0",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -620,11 +671,14 @@
       "marketingName": "Life One",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -656,11 +710,14 @@
       "marketingName": "Life View",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -692,11 +749,14 @@
       "marketingName": "Magic",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -728,11 +788,14 @@
       "marketingName": "Quattro 4.5",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -764,11 +827,14 @@
       "marketingName": "Studio 5.0",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -800,11 +866,14 @@
       "marketingName": "Studio 5.0 II",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -836,11 +905,14 @@
       "marketingName": "Studio 5.3 II",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -872,11 +944,14 @@
       "marketingName": "Vivo 4.65",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -908,11 +983,14 @@
       "marketingName": "Studio View XL",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1440,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1440,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -944,11 +1022,14 @@
       "marketingName": "Studio G HD",
       "manufacturer": "Blu",
       "brand": "Blu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "CM Browser",

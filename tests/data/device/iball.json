@@ -8,11 +8,14 @@
       "marketingName": "Majestic 2.4D",
       "manufacturer": "Iball",
       "brand": "Iball",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "iBall",
@@ -44,11 +47,14 @@
       "marketingName": "Slide 3G 7271",
       "manufacturer": "Iball",
       "brand": "Iball",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -80,11 +86,14 @@
       "marketingName": "Slide Snap 4G2",
       "manufacturer": "Iball",
       "brand": "Iball",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",

@@ -8,11 +8,14 @@
       "marketingName": "Z110",
       "manufacturer": "xido",
       "brand": "xido",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -44,11 +47,14 @@
       "marketingName": "Z110",
       "manufacturer": "xido",
       "brand": "xido",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -80,11 +86,14 @@
       "marketingName": "Z120",
       "manufacturer": "xido",
       "brand": "xido",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",

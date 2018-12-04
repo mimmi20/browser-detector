@@ -8,11 +8,14 @@
       "marketingName": "miTab Think",
       "manufacturer": "Wolder Electronics",
       "brand": "Wolder Electronics",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -44,11 +47,14 @@
       "marketingName": "miSmart Wink",
       "manufacturer": "Wolder Electronics",
       "brand": "Wolder Electronics",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -80,11 +86,14 @@
       "marketingName": "miTab Brooklyn",
       "manufacturer": "Wolder Electronics",
       "brand": "Wolder Electronics",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "FlyFlow",
@@ -116,11 +125,14 @@
       "marketingName": "miTab Epsilon",
       "manufacturer": "Wolder Electronics",
       "brand": "Wolder Electronics",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -152,11 +164,14 @@
       "marketingName": "miTab Funk",
       "manufacturer": "Wolder Electronics",
       "brand": "Wolder Electronics",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -188,11 +203,14 @@
       "marketingName": "miTab Hero",
       "manufacturer": "Wolder Electronics",
       "brand": "Wolder Electronics",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -224,11 +242,14 @@
       "marketingName": "miTab Jump",
       "manufacturer": "Wolder Electronics",
       "brand": "Wolder Electronics",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",

@@ -8,11 +8,14 @@
       "marketingName": "Olipad 3",
       "manufacturer": "Olivetti",
       "brand": "Olivetti",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -44,11 +47,14 @@
       "marketingName": "OP110",
       "manufacturer": "Olivetti",
       "brand": "Olivetti",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -80,11 +86,14 @@
       "marketingName": "Olipad Smart",
       "manufacturer": "Olivetti",
       "brand": "Olivetti",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",

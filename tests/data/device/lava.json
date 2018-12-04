@@ -8,11 +8,14 @@
       "marketingName": "Spark 284",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": null,
@@ -44,11 +47,14 @@
       "marketingName": "KKT20",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "WAP Browser",
@@ -80,11 +86,14 @@
       "marketingName": "iris X8s",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -116,11 +125,14 @@
       "marketingName": "Pixel V2+",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -152,11 +164,14 @@
       "marketingName": "Iris 700",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -188,11 +203,14 @@
       "marketingName": "Iris X1",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -224,11 +242,14 @@
       "marketingName": "Iris Fuel50",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -260,11 +281,14 @@
       "marketingName": "X17",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -296,11 +320,14 @@
       "marketingName": "Iris 402+",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -332,11 +359,14 @@
       "marketingName": "Iris Fuel 60",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -368,11 +398,14 @@
       "marketingName": "Iris X1 Atom",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -404,11 +437,14 @@
       "marketingName": "Iris X1 Selfie",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -440,11 +476,14 @@
       "marketingName": "Iris X8 L",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -476,11 +515,14 @@
       "marketingName": "Iris X5 4G",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -512,11 +554,14 @@
       "marketingName": "Pixel V1",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -548,11 +593,14 @@
       "marketingName": "Iris 349+",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -584,11 +632,14 @@
       "marketingName": "Iris 349i",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -620,11 +671,14 @@
       "marketingName": "Iris 356",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -656,11 +710,14 @@
       "marketingName": "Iris 402e",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -692,11 +749,14 @@
       "marketingName": "Iris 405+",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -728,11 +788,14 @@
       "marketingName": "Iris 501",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -764,11 +827,14 @@
       "marketingName": "Iris 504Q",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -800,11 +866,14 @@
       "marketingName": "Iris 78W",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -836,11 +905,14 @@
       "marketingName": "Flair Z1",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -872,11 +944,14 @@
       "marketingName": "Z60",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -908,11 +983,14 @@
       "marketingName": "X41 Plus",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -944,11 +1022,14 @@
       "marketingName": "RI",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -980,11 +1061,14 @@
       "marketingName": "Z70",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -1016,11 +1100,14 @@
       "marketingName": "Iris X9",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Facebook App",
@@ -1052,11 +1139,14 @@
       "marketingName": "Z90",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -1088,11 +1178,14 @@
       "marketingName": "Pixel V2",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -1124,11 +1217,14 @@
       "marketingName": "Iris 750",
       "manufacturer": "Lava",
       "brand": "Lava",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",

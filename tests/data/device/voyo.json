@@ -8,11 +8,14 @@
       "marketingName": "Q101 4G",
       "manufacturer": "Voyo",
       "brand": "Voyo",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1200,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -44,11 +47,14 @@
       "marketingName": "i8 Max 4G",
       "manufacturer": "Voyo",
       "brand": "Voyo",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1200,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",

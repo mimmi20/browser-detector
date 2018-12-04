@@ -8,11 +8,14 @@
       "marketingName": "S10",
       "manufacturer": "EBEST",
       "brand": "EBEST",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "QQ Browser",
@@ -44,11 +47,14 @@
       "marketingName": "T3482",
       "manufacturer": "EBEST",
       "brand": "EBEST",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "WeChat App",
@@ -80,11 +86,14 @@
       "marketingName": "T7",
       "manufacturer": "EBEST",
       "brand": "EBEST",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -116,11 +125,14 @@
       "marketingName": "U1",
       "manufacturer": "EBEST",
       "brand": "EBEST",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -152,11 +164,14 @@
       "marketingName": "W70",
       "manufacturer": "EBEST",
       "brand": "EBEST",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",

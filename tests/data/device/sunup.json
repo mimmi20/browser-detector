@@ -8,11 +8,14 @@
       "marketingName": "OK999",
       "manufacturer": "Sunup",
       "brand": "Sunup",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Yandex Browser",

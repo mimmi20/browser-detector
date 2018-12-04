@@ -8,11 +8,14 @@
       "marketingName": "M1009",
       "manufacturer": "Excelvan",
       "brand": "Excelvan",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -44,11 +47,14 @@
       "marketingName": "MT13",
       "manufacturer": "Excelvan",
       "brand": "Excelvan",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -80,11 +86,14 @@
       "marketingName": "KP-703",
       "manufacturer": "Excelvan",
       "brand": "Excelvan",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -116,11 +125,14 @@
       "marketingName": "M1009B",
       "manufacturer": "Excelvan",
       "brand": "Excelvan",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -152,11 +164,14 @@
       "marketingName": "MT10B",
       "manufacturer": "Excelvan",
       "brand": "Excelvan",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",

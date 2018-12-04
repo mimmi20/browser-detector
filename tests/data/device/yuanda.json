@@ -8,11 +8,14 @@
       "marketingName": "50",
       "manufacturer": "Yuanda",
       "brand": "Yuanda",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "MAUI Wap Browser",

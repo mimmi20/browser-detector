@@ -1,46 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "properties": {
-    "name": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ]
-    },
-    "modus": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ]
-    },
-    "version": {
-      "type": "string"
-    },
-    "manufacturer": {
-      "type": "string"
-    },
-    "bits": {
-      "type": "integer"
-    },
-    "type": {
-      "type": "string"
-    }
-  },
-  "required": [
-    "name",
-    "modus",
-    "version",
-    "manufacturer",
-    "bits",
-    "type"
-  ]
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "def.json#/definitions/browser"
 }

@@ -8,11 +8,14 @@
       "marketingName": "NS 5003",
       "manufacturer": "Nous",
       "brand": "Nous",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -44,11 +47,14 @@
       "marketingName": "NS 5006",
       "manufacturer": "Nous",
       "brand": "Nous",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dalvik",
@@ -80,11 +86,14 @@
       "marketingName": "NS 6",
       "manufacturer": "Nous",
       "brand": "Nous",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",

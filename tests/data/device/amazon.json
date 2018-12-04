@@ -8,11 +8,14 @@
       "marketingName": "Kindle",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Safari",
@@ -44,11 +47,14 @@
       "marketingName": "Fire HD 7 (4th Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -80,11 +86,14 @@
       "marketingName": "Fire Phone",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -116,11 +125,14 @@
       "marketingName": "Kindle Fire HD 7 (2nd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -152,11 +164,14 @@
       "marketingName": "Kindle Fire HDX 7 (3rd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1200,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -188,11 +203,14 @@
       "marketingName": "Kindle Fire HD 7 (3rd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -224,11 +242,14 @@
       "marketingName": "Kindle Fire (2nd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -260,11 +281,14 @@
       "marketingName": "Kindle Fire HD 8.9 (2nd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1200,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -296,11 +320,14 @@
       "marketingName": "Kindle Fire HD 8.9 LTE (2nd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1200,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -332,11 +359,14 @@
       "marketingName": "Kindle Fire HDX 8.9 (3rd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 2560,
-      "resolutionHeight": 1600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -368,11 +398,14 @@
       "marketingName": "Kindle Fire HDX 8.9 LTE (3rd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 2560,
-      "resolutionHeight": 1600,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -404,11 +437,14 @@
       "marketingName": "Kindle Fire",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -440,11 +476,14 @@
       "marketingName": "Fire HD 7 (4th Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dalvik",
@@ -476,11 +515,14 @@
       "marketingName": "Kindle Fire 2",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -512,11 +554,14 @@
       "marketingName": "Fire HD 6 (4th Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -548,11 +593,14 @@
       "marketingName": "Kindle Fire HDX 7 LTE (3rd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1200,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -584,11 +632,14 @@
       "marketingName": "Fire HD 10 (5th Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -620,11 +671,14 @@
       "marketingName": "Fire HD 8 (5th Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -656,11 +710,14 @@
       "marketingName": "Fire (5th Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -692,11 +749,14 @@
       "marketingName": "Fire HDX 8.9 (4th Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 2560,
-      "resolutionHeight": 1600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -728,11 +788,14 @@
       "marketingName": "Fire HDX 8.9 LTE (4th Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 2560,
-      "resolutionHeight": 1600,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -764,11 +827,14 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -800,11 +866,14 @@
       "marketingName": "Fire HD 8 (2017)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -836,11 +905,14 @@
       "marketingName": "Fire (2017)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -872,11 +944,14 @@
       "marketingName": "Kindle Fire HDX 8.9 (3rd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 2560,
-      "resolutionHeight": 1600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -908,11 +983,14 @@
       "marketingName": "Kindle Fire HDX 8.9 (3rd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 2560,
-      "resolutionHeight": 1600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -944,11 +1022,14 @@
       "marketingName": "Tate",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -980,11 +1061,14 @@
       "marketingName": "Kindle Fire HD 7",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -1016,11 +1100,14 @@
       "marketingName": "Fire HD 10 (2017)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1200,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -1052,11 +1139,14 @@
       "marketingName": "Fire TV Stick",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-media-player"
+      "type": "tv-media-player",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Android WebView",
@@ -1088,11 +1178,14 @@
       "marketingName": "Fire TV Stick",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-media-player"
+      "type": "tv-media-player",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Android WebView",

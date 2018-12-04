@@ -8,11 +8,14 @@
       "marketingName": "MT5396",
       "manufacturer": "MediaTek",
       "brand": "MediaTek",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "ANTGalio",

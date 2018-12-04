@@ -8,11 +8,14 @@
       "marketingName": "Pro V400",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -44,11 +47,14 @@
       "marketingName": "Pro 4006",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -80,11 +86,14 @@
       "marketingName": "Pro 400B",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -116,11 +125,14 @@
       "marketingName": "Pro 450B",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -152,11 +164,14 @@
       "marketingName": "Pro 4611",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -188,11 +203,14 @@
       "marketingName": "Pro 5701",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -224,11 +242,14 @@
       "marketingName": "Pro 7111",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -260,11 +281,14 @@
       "marketingName": "Pro V350",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -296,11 +320,14 @@
       "marketingName": "MID0714",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -332,11 +359,14 @@
       "marketingName": "MIDC010PR001",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -368,11 +398,14 @@
       "marketingName": "Pearl 10.1",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -404,11 +437,14 @@
       "marketingName": "Executive 10.1",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -440,11 +476,14 @@
       "marketingName": "Touch Glass 10.1",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -476,11 +515,14 @@
       "marketingName": "MIDC128",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -512,11 +554,14 @@
       "marketingName": "MIDC407",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -548,11 +593,14 @@
       "marketingName": "MIDC408",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -584,11 +632,14 @@
       "marketingName": "Diamond 8",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -620,11 +671,14 @@
       "marketingName": "Diamond III",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -656,11 +710,14 @@
       "marketingName": "MIDC410",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -692,11 +749,14 @@
       "marketingName": "MIDC430",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 272,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 480,
+        "height": 272,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -728,11 +788,14 @@
       "marketingName": "MIDC497",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -764,11 +827,14 @@
       "marketingName": "MIDC801",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -800,11 +866,14 @@
       "marketingName": "MIDC802",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -836,11 +905,14 @@
       "marketingName": "MIDC901",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 400,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 400,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -872,11 +944,14 @@
       "marketingName": "MIDC970",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -908,11 +983,14 @@
       "marketingName": "MIDCD10",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -944,11 +1022,14 @@
       "marketingName": "Executive 9.7",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -980,11 +1061,14 @@
       "marketingName": "PMID4311",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1016,11 +1100,14 @@
       "marketingName": "7 Neon",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -1052,11 +1139,14 @@
       "marketingName": "Cosmo K LTE",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -1088,11 +1178,14 @@
       "marketingName": "Turbo E",
       "manufacturer": "Polaroid",
       "brand": "Polaroid",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",

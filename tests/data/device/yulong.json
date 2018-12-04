@@ -8,11 +8,14 @@
       "marketingName": "Smart 4 Tourbo",
       "manufacturer": "Yulong Computer",
       "brand": "Vodafone",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dalvik",

@@ -8,11 +8,14 @@
       "marketingName": "HANNSpad",
       "manufacturer": "Hannspree",
       "brand": "Hannspree",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -44,11 +47,14 @@
       "marketingName": "HSG1303",
       "manufacturer": "Hannspree",
       "brand": "Hannspree",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -80,11 +86,14 @@
       "marketingName": "HSG1279",
       "manufacturer": "Hannspree",
       "brand": "Hannspree",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -116,11 +125,14 @@
       "marketingName": "HSG1329",
       "manufacturer": "Hannspree",
       "brand": "Hannspree",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1920,
-      "resolutionHeight": 1080,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Puffin",
@@ -152,11 +164,14 @@
       "marketingName": "HSG1316",
       "manufacturer": "Hannspree",
       "brand": "Hannspree",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Samsung Browser",

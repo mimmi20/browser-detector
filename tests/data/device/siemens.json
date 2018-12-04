@@ -8,11 +8,14 @@
       "marketingName": "S65",
       "manufacturer": "Siemens",
       "brand": "Siemens",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 132,
-      "resolutionHeight": 176,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 132,
+        "height": 176,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Openwave Mobile Browser",
@@ -44,11 +47,14 @@
       "marketingName": "SL45",
       "manufacturer": "Siemens",
       "brand": "Siemens",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 101,
-      "resolutionHeight": 80,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 101,
+        "height": 80,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": null,
@@ -80,11 +86,14 @@
       "marketingName": "SL45i",
       "manufacturer": "Siemens",
       "brand": "Siemens",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 101,
-      "resolutionHeight": 80,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 101,
+        "height": 80,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": null,
@@ -116,11 +125,14 @@
       "marketingName": "CF61",
       "manufacturer": "BenQ-Siemens",
       "brand": "BenQ-Siemens",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 128,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 128,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Openwave Mobile Browser",

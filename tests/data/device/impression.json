@@ -8,11 +8,14 @@
       "marketingName": "ImPAD 0413",
       "manufacturer": "Impression",
       "brand": "Impression",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -44,11 +47,14 @@
       "marketingName": "ImPAD 6213M V2",
       "manufacturer": "Impression",
       "brand": "Impression",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -80,11 +86,14 @@
       "marketingName": "ImPAD 9708",
       "manufacturer": "Impression",
       "brand": "Impression",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 2048,
-      "resolutionHeight": 1536,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",

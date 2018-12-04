@@ -8,11 +8,14 @@
       "marketingName": "Func Titan-02",
       "manufacturer": "Dfunc",
       "brand": "Dfunc",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "mobile-console"
+      "type": "mobile-console",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",

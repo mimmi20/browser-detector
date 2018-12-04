@@ -8,11 +8,14 @@
       "marketingName": "WeTab",
       "manufacturer": "WeTab",
       "brand": "WeTab",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1366,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "WeTab Browser",

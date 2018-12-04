@@ -8,11 +8,14 @@
       "marketingName": "NETRANGEMMH",
       "manufacturer": "Netrange",
       "brand": "Netrange",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Opera",

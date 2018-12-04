@@ -8,11 +8,14 @@
       "marketingName": "A900S",
       "manufacturer": "Noain",
       "brand": "Noain",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -44,11 +47,14 @@
       "marketingName": "A913",
       "manufacturer": "Noain",
       "brand": "Noain",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Baidu Box App",
@@ -80,11 +86,14 @@
       "marketingName": "M15",
       "manufacturer": "Noain",
       "brand": "Noain",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",
@@ -116,11 +125,14 @@
       "marketingName": "M6",
       "manufacturer": "Noain",
       "brand": "Noain",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "UC Browser",

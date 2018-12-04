@@ -8,11 +8,14 @@
       "marketingName": "X96mini",
       "manufacturer": "Edal",
       "brand": "Edal",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-media-player"
+      "type": "tv-media-player",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Chrome",

@@ -8,11 +8,14 @@
       "marketingName": "Coolpix S800c",
       "manufacturer": "Nikon",
       "brand": "Nikon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "digital-camera"
+      "type": "digital-camera",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",

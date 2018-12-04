@@ -8,11 +8,14 @@
       "marketingName": "Q9c",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": null,
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "IEMobile",
@@ -44,11 +47,14 @@
       "marketingName": "E1000",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -80,11 +86,14 @@
       "marketingName": "SLVR L7",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": null,
-      "resolutionWidth": 176,
-      "resolutionHeight": 220,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 176,
+        "height": 220,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -116,11 +125,14 @@
       "marketingName": "Motoluxe",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -152,11 +164,14 @@
       "marketingName": "RAZR V3i",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": null,
-      "resolutionWidth": 176,
-      "resolutionHeight": 220,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 176,
+        "height": 220,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -188,11 +203,14 @@
       "marketingName": "Moto G Dual SIM (2nd gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -224,11 +242,14 @@
       "marketingName": "Moto G (3rd gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -260,11 +281,14 @@
       "marketingName": "Moto G LTE",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -296,11 +320,14 @@
       "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -332,11 +359,14 @@
       "marketingName": "XPRT (CDMA)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -368,11 +398,14 @@
       "marketingName": "Droid Ultra",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -404,11 +437,14 @@
       "marketingName": "Moto E",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -440,11 +476,14 @@
       "marketingName": "Moto X (AT&T)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -476,11 +515,14 @@
       "marketingName": "Moto X (Europe)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -512,11 +554,14 @@
       "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -548,11 +593,14 @@
       "marketingName": "Droid Razr HD (Verizon)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -584,11 +632,14 @@
       "marketingName": "Droid Razr HD 4G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -620,11 +671,14 @@
       "marketingName": "Droid Razr HD 3G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -656,11 +710,14 @@
       "marketingName": "Droid Razr",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -692,11 +749,14 @@
       "marketingName": "Droid Razr M",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -728,11 +788,14 @@
       "marketingName": "Razr I",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -764,11 +827,14 @@
       "marketingName": "Droid Bionic LTE",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -800,11 +866,14 @@
       "marketingName": "Motoluxe",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -836,11 +905,14 @@
       "marketingName": "Defy Mini",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -872,11 +944,14 @@
       "marketingName": "Fire",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -908,11 +983,14 @@
       "marketingName": "Xoom",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -944,11 +1022,14 @@
       "marketingName": "Gleam+",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 400,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 400,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Opera Mobile",
@@ -980,11 +1061,14 @@
       "marketingName": "Razr V3x",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": null,
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -1016,11 +1100,14 @@
       "marketingName": "Xoom 2 Media Edition 3G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dalvik",
@@ -1052,11 +1139,14 @@
       "marketingName": "Xoom 2 Media Edition",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1088,11 +1178,14 @@
       "marketingName": "Xoom 2 3G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dalvik",
@@ -1124,11 +1217,14 @@
       "marketingName": "Xoom 2",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1160,11 +1256,14 @@
       "marketingName": "Xoom",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1196,11 +1295,14 @@
       "marketingName": "Xoom",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1232,11 +1334,14 @@
       "marketingName": "Milestone",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1268,11 +1373,14 @@
       "marketingName": "Atrix",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1304,11 +1412,14 @@
       "marketingName": "Pro+",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1340,11 +1451,14 @@
       "marketingName": "Defy+",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -1376,11 +1490,14 @@
       "marketingName": "Defy",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -1412,11 +1529,14 @@
       "marketingName": "FlipOut",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1448,11 +1568,14 @@
       "marketingName": "Backflip",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -1484,11 +1607,14 @@
       "marketingName": "Droid X2",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1520,11 +1646,14 @@
       "marketingName": "Droid X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": null,
@@ -1556,11 +1685,14 @@
       "marketingName": "Droid Razr",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1592,11 +1724,14 @@
       "marketingName": "Droid2",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1628,11 +1763,14 @@
       "marketingName": "Droid",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1664,11 +1802,14 @@
       "marketingName": "Milestone 2",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1700,11 +1841,14 @@
       "marketingName": "Milestone",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1736,11 +1880,14 @@
       "marketingName": "XT702",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1772,11 +1919,14 @@
       "marketingName": "Droid Pro",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1808,11 +1958,14 @@
       "marketingName": "Fire XT",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1844,11 +1997,14 @@
       "marketingName": "XT316",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1880,11 +2036,14 @@
       "marketingName": "T720",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": null,
-      "resolutionWidth": 120,
-      "resolutionHeight": 160,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 120,
+        "height": 160,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Android Webkit",
@@ -1916,11 +2075,14 @@
       "marketingName": "Milestone X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1952,11 +2114,14 @@
       "marketingName": "Atrix",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1988,11 +2153,14 @@
       "marketingName": "BackFlip",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",
@@ -2024,11 +2192,14 @@
       "marketingName": "BackFlip",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",
@@ -2060,11 +2231,14 @@
       "marketingName": "Defy",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",
@@ -2096,11 +2270,14 @@
       "marketingName": "Defy",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -2132,11 +2309,14 @@
       "marketingName": "FlipOut",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",
@@ -2168,11 +2348,14 @@
       "marketingName": "Cliq",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",
@@ -2204,11 +2387,14 @@
       "marketingName": "Cliq",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -2240,11 +2426,14 @@
       "marketingName": "ES405B",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 640,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 480,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -2276,11 +2465,14 @@
       "marketingName": "Droid Razr 4G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -2312,11 +2504,14 @@
       "marketingName": "Droid Pro",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -2348,11 +2543,14 @@
       "marketingName": "Droid Bionic",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mozilla",
@@ -2384,11 +2582,14 @@
       "marketingName": "Atrix HD 4G LTE",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -2420,11 +2621,14 @@
       "marketingName": "Moto E Dual SIM",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -2456,11 +2660,14 @@
       "marketingName": "Moto E Dual SIM",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2492,11 +2699,14 @@
       "marketingName": "Moto X (Verizon)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2528,11 +2738,14 @@
       "marketingName": "Moto X (T-Mobile)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2564,11 +2777,14 @@
       "marketingName": "Moto X (U.S. Cellular)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2600,11 +2816,14 @@
       "marketingName": "Moto X (Sprint)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2636,11 +2855,14 @@
       "marketingName": "Moto G 4G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2672,11 +2894,14 @@
       "marketingName": "Moto E (2nd Gen., CDMA+LTE, Verizon)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -2708,11 +2933,14 @@
       "marketingName": "Moto E (2nd Gen., CDMA+LTE, Verizon)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2744,11 +2972,14 @@
       "marketingName": "Moto E (2nd Gen., GSM+LTE, USA)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2780,11 +3011,14 @@
       "marketingName": "Moto E (2nd Gen., CDMA+LTE, Sprint)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2816,11 +3050,14 @@
       "marketingName": "Moto E (2nd Gen., GSM+LTE, Global)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2852,11 +3089,14 @@
       "marketingName": "Moto E (2nd Gen., GSM+LTE, Global, Dual SIM)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2888,11 +3128,14 @@
       "marketingName": "Moto E (2nd Gen., GSM, USA)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2924,11 +3167,14 @@
       "marketingName": "Moto E (2nd Gen., GSM, Global, Dual SIM)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2960,11 +3206,14 @@
       "marketingName": "Moto E (2nd Gen., GSM, Global)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -2996,11 +3245,14 @@
       "marketingName": "Moto G4",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -3032,11 +3284,14 @@
       "marketingName": "Moto E (2nd Gen., CDMA+LTE, Verizon)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -3068,11 +3323,14 @@
       "marketingName": "Defy",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Baidu Box App",
@@ -3104,11 +3362,14 @@
       "marketingName": "Droid Turbo",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Facebook App",
@@ -3140,11 +3401,14 @@
       "marketingName": "Moto G4",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "WebPagetest",
@@ -3176,11 +3440,14 @@
       "marketingName": "Moto Z Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3212,11 +3479,14 @@
       "marketingName": "Moto X (2nd Gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3248,11 +3518,14 @@
       "marketingName": "Moto X Style",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3284,11 +3557,14 @@
       "marketingName": "Moto X Force",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3320,11 +3596,14 @@
       "marketingName": "Moto X Force Dual SIM",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3356,11 +3635,14 @@
       "marketingName": "Moto G5 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3392,11 +3674,14 @@
       "marketingName": "Moto G5",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3428,11 +3713,14 @@
       "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3464,11 +3752,14 @@
       "marketingName": "Moto G5 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3500,11 +3791,14 @@
       "marketingName": "Moto G5 Plus (Dual SIM)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3536,11 +3830,14 @@
       "marketingName": "Moto G5 Plus (USA)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3572,11 +3869,14 @@
       "marketingName": "Moto G5 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3608,11 +3908,14 @@
       "marketingName": "Moto Z Force",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3644,11 +3947,14 @@
       "marketingName": "Moto G Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3680,11 +3986,14 @@
       "marketingName": "Moto G4 Play (Europe)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3716,11 +4025,14 @@
       "marketingName": "Moto G4 Play (Europe, India, Australia)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3752,11 +4064,14 @@
       "marketingName": "Moto G4 Play (USA, Canada)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3788,11 +4103,14 @@
       "marketingName": "Moto G4 Play (USA)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3824,11 +4142,14 @@
       "marketingName": "Moto G4 Play (Latin America, Mexico)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3860,11 +4181,14 @@
       "marketingName": "Moto G4 Play (Brazil)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3896,11 +4220,14 @@
       "marketingName": "Xoom",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3932,11 +4259,14 @@
       "marketingName": "Moto G 4G (2nd gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -3968,11 +4298,14 @@
       "marketingName": "Moto G (2nd gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4004,11 +4337,14 @@
       "marketingName": "Moto X Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4040,11 +4376,14 @@
       "marketingName": "Moto E",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 897,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 897,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4076,11 +4415,14 @@
       "marketingName": "Droid 4",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -4112,11 +4454,14 @@
       "marketingName": "Fire XT",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -4148,11 +4493,14 @@
       "marketingName": "Droid Razr HD 4G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4184,11 +4532,14 @@
       "marketingName": "Moto Z",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4220,11 +4571,14 @@
       "marketingName": "Moto G4 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android WebView",
@@ -4256,11 +4610,14 @@
       "marketingName": "Moto X (Europe)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4292,11 +4649,14 @@
       "marketingName": "V360v",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 176,
-      "resolutionHeight": 220,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 176,
+        "height": 220,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -4328,11 +4688,14 @@
       "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4364,11 +4727,14 @@
       "marketingName": "Moto E",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4400,11 +4766,14 @@
       "marketingName": "Droid Mini",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4436,11 +4805,14 @@
       "marketingName": "Moto E (2nd Gen., GSM, Global)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4472,11 +4844,14 @@
       "marketingName": "Moto X Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4508,11 +4883,14 @@
       "marketingName": "Droid Turbo 2",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4544,11 +4922,14 @@
       "marketingName": "Moto X (2nd Gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4580,11 +4961,14 @@
       "marketingName": "Moto X (2nd Gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4616,11 +5000,14 @@
       "marketingName": "Moto X (2nd Gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4652,11 +5039,14 @@
       "marketingName": "Moto G5S (Europe)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4688,11 +5078,14 @@
       "marketingName": "Moto G5S (Europe)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4724,11 +5117,14 @@
       "marketingName": "Moto G5S (Europe, India)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4760,11 +5156,14 @@
       "marketingName": "Moto G5S (Brazil)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4796,11 +5195,14 @@
       "marketingName": "Moto C",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -4832,11 +5234,14 @@
       "marketingName": "Admiral",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 640,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 640,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -4868,11 +5273,14 @@
       "marketingName": "Atrix TV",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -4904,11 +5312,14 @@
       "marketingName": "Atrix TV Dual",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -4940,11 +5351,14 @@
       "marketingName": "Defy Mini Dual",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -4976,11 +5390,14 @@
       "marketingName": "Defy XT",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5012,11 +5429,14 @@
       "marketingName": "Defy XT",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5048,11 +5468,14 @@
       "marketingName": "Defy XT",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5084,11 +5507,14 @@
       "marketingName": "Droid2 Global",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5120,11 +5546,14 @@
       "marketingName": "Droid 3",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5156,11 +5585,14 @@
       "marketingName": "Droid 4",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5192,11 +5624,14 @@
       "marketingName": "Razr D1",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5228,11 +5663,14 @@
       "marketingName": "Razr D1 (Latin America)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5264,11 +5702,14 @@
       "marketingName": "Razr D1 Dual",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5300,11 +5741,14 @@
       "marketingName": "Razr D1 Dual",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5336,11 +5780,14 @@
       "marketingName": "Razr D3",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5372,11 +5819,14 @@
       "marketingName": "Razr D3 Dual",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5408,11 +5858,14 @@
       "marketingName": "Razr V",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5444,11 +5897,14 @@
       "marketingName": "Razr V",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5480,11 +5936,14 @@
       "marketingName": "Electrify 2",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5516,11 +5975,14 @@
       "marketingName": "Electrify M",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5552,11 +6014,14 @@
       "marketingName": "Electrify M",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5588,11 +6053,14 @@
       "marketingName": "Glam",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5624,11 +6092,14 @@
       "marketingName": "IronRock",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5660,11 +6131,14 @@
       "marketingName": "Backflip",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5696,11 +6170,14 @@
       "marketingName": "Milestone 3",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5732,11 +6209,14 @@
       "marketingName": "Milestone 3",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5768,11 +6248,14 @@
       "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5804,11 +6287,14 @@
       "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5840,11 +6326,14 @@
       "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5876,11 +6365,14 @@
       "marketingName": "Moto G (2nd gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5912,11 +6404,14 @@
       "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -5948,11 +6443,14 @@
       "marketingName": "Moto",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -5984,11 +6482,14 @@
       "marketingName": "Moto Z Play Dual",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dalvik",
@@ -6020,11 +6521,14 @@
       "marketingName": "Motoluxe",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6056,11 +6560,14 @@
       "marketingName": "MotoRoi X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6092,11 +6599,14 @@
       "marketingName": "XT390",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6128,11 +6638,14 @@
       "marketingName": "Motosmart Me",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6164,11 +6677,14 @@
       "marketingName": "Motosmart Me Dual",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6200,11 +6716,14 @@
       "marketingName": "Photon Q 4G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Google App",
@@ -6236,11 +6755,14 @@
       "marketingName": "Ferrari",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6272,11 +6794,14 @@
       "marketingName": "Quench XT3",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6308,11 +6833,14 @@
       "marketingName": "Spice",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6344,11 +6872,14 @@
       "marketingName": "Moto X (Sprint)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6380,11 +6911,14 @@
       "marketingName": "Moto G6 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 2160,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 2160,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6416,11 +6950,14 @@
       "marketingName": "Moto E4 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6452,11 +6989,14 @@
       "marketingName": "Moto E3",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6488,11 +7028,14 @@
       "marketingName": "Moto E4",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6524,11 +7067,14 @@
       "marketingName": "Droid XYBoard 10.1",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -6560,11 +7106,14 @@
       "marketingName": "Moto X4",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6596,11 +7145,14 @@
       "marketingName": "Moto Z Dual",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "WeChat App",
@@ -6632,11 +7184,14 @@
       "marketingName": "Moto C Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "BingWeb App",
@@ -6668,11 +7223,14 @@
       "marketingName": "Moto E5 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1440,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1440,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6704,11 +7262,14 @@
       "marketingName": "Moto E3 Power Dual SIM",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6740,11 +7301,14 @@
       "marketingName": "Moto G6",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 2160,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 2160,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6776,11 +7340,14 @@
       "marketingName": "Moto Z2",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1440,
-      "resolutionHeight": 2560,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6812,11 +7379,14 @@
       "marketingName": "Moto E5",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1440,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1440,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -6848,11 +7418,14 @@
       "marketingName": "Moto Z2 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6884,11 +7457,14 @@
       "marketingName": "Moto Z2 Play (USA)",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6920,11 +7496,14 @@
       "marketingName": "Moto Z2 Play (USA)",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6956,11 +7535,14 @@
       "marketingName": "Moto Z2 Play (Brazil)",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -6992,11 +7574,14 @@
       "marketingName": "Moto Z2 Play (India)",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -7028,11 +7613,14 @@
       "marketingName": "Moto Z2 Play (China, Hong Kong)",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -7064,11 +7652,14 @@
       "marketingName": "Moto Z2 Play (China, Hong Kong)",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -7100,11 +7691,14 @@
       "marketingName": "Moto Z2 Play (Australia, New Zealand, Indonesia, Japan, Malaysia, Taiwan)",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -7136,11 +7730,14 @@
       "marketingName": "Moto Z3 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 2160,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 2160,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -7172,11 +7769,14 @@
       "marketingName": "Moto Z Play Droid XLTE",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -7208,11 +7808,14 @@
       "marketingName": "Moto G5S Plus",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -7244,11 +7847,14 @@
       "marketingName": "Moto G6 Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",
@@ -7280,11 +7886,14 @@
       "marketingName": "Moto G Dual DTV (2014)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome",

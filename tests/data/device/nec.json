@@ -8,11 +8,14 @@
       "marketingName": "Medias X",
       "manufacturer": "Nec",
       "brand": "DoCoMo",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -44,11 +47,14 @@
       "marketingName": "N905i",
       "manufacturer": "Nec",
       "brand": "Nec",
-      "pointingMethod": null,
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Google Bot Mobile",
@@ -80,11 +86,14 @@
       "marketingName": "N705i",
       "manufacturer": "Nec",
       "brand": "Nec",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 427,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 427,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": null,
@@ -116,11 +125,14 @@
       "marketingName": "NEC Casio N-02E",
       "manufacturer": "Nec",
       "brand": "DoCoMo",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -152,11 +164,14 @@
       "marketingName": "Medias Tab LTE",
       "manufacturer": "Nec",
       "brand": "Nec",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",

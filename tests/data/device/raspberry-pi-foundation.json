@@ -8,11 +8,14 @@
       "marketingName": "Raspberry Pi",
       "manufacturer": "Raspberry Pi Foundation",
       "brand": "Raspberry Pi Foundation",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Epiphany",
@@ -44,11 +47,14 @@
       "marketingName": "Raspberry Pi",
       "manufacturer": "Raspberry Pi Foundation",
       "brand": "Raspberry Pi Foundation",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Epiphany",

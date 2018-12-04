@@ -8,11 +8,14 @@
       "marketingName": "B556",
       "manufacturer": "Lemon",
       "brand": "Lemon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": null,

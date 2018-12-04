@@ -1,0 +1,223 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "definitions": {
+    "headers": {
+      "type": "object",
+      "properties": {
+        "user-agent": {
+          "type": "string"
+        }
+      }
+    },
+    "engine": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "version": {
+          "type": "string"
+        },
+        "manufacturer": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "manufacturer"
+      ]
+    },
+    "os": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "marketingName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "version": {
+          "type": "string"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "bits": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "marketingName",
+        "version",
+        "manufacturer",
+        "bits"
+      ]
+    },
+    "browser": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modus": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "version": {
+          "type": "string"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "bits": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "modus",
+        "version",
+        "manufacturer",
+        "bits",
+        "type"
+      ]
+    },
+    "device": {
+      "type": "object",
+      "properties": {
+        "deviceName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "marketingName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "brand": {
+          "type": "string"
+        },
+        "display": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "height": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "touch": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "width",
+            "height",
+            "touch",
+            "type"
+          ]
+        },
+        "dualOrientation": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "deviceName",
+        "marketingName",
+        "manufacturer",
+        "brand",
+        "display",
+        "dualOrientation",
+        "type"
+      ]
+    }
+  }
+}

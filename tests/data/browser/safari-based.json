@@ -8,11 +8,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Safari",
@@ -44,11 +47,14 @@
       "marketingName": "Galaxy S III",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -80,11 +86,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Apple Mail",
@@ -116,11 +125,14 @@
       "marketingName": "Z10",
       "manufacturer": "BlackBerry",
       "brand": "BlackBerry",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "BlackBerry",
@@ -152,11 +164,14 @@
       "marketingName": "Lumia 930",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -188,11 +203,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "PaleMoon",
@@ -224,11 +242,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser",
@@ -260,11 +281,14 @@
       "marketingName": "TAB917QC 8GB",
       "manufacturer": "Sunstech",
       "brand": "Sunstech",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Baidu Browser",
@@ -296,11 +320,14 @@
       "marketingName": "BlackBerry Bold Touch 9900",
       "manufacturer": "Rim",
       "brand": "Rim",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 480,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "BlackBerry",
@@ -332,11 +359,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "UC Browser HD",
@@ -368,11 +398,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mini",
@@ -404,11 +437,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Coast",
@@ -440,11 +476,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "iCab Mobile",
@@ -476,11 +515,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "PhantomJS",
@@ -512,11 +554,14 @@
       "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "PhantomJS",
@@ -548,11 +593,14 @@
       "marketingName": "iPod Touch (Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Facebook App",
@@ -584,11 +632,14 @@
       "marketingName": "Galaxy S II",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "FlyFlow",
@@ -620,11 +671,14 @@
       "marketingName": "S4502",
       "manufacturer": "Dns",
       "brand": "Dns",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Baidu Browser Mini",
@@ -656,11 +710,14 @@
       "marketingName": "Kindle Fire HD 7 (2nd Gen)",
       "manufacturer": "Amazon",
       "brand": "Amazon",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Silk",
@@ -692,11 +749,14 @@
       "marketingName": "Galaxy S II (NTT DoCoMo)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Matome",
@@ -728,11 +788,14 @@
       "marketingName": "Live with Walkman",
       "manufacturer": "SonyEricsson",
       "brand": "SonyEricsson",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "NetFrontLifeBrowser",
@@ -764,11 +827,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Chedot",
@@ -800,11 +866,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Qword Browser",
@@ -836,11 +905,14 @@
       "marketingName": "Galaxy Ace",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Maxthon",
@@ -872,11 +944,14 @@
       "marketingName": "Galaxy S II",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Maxthon",
@@ -908,11 +983,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "SuperBird",
@@ -944,11 +1022,14 @@
       "marketingName": "Redmi Note 4G",
       "manufacturer": "XiaomiTech",
       "brand": "XiaomiTech",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "WeChat App",
@@ -980,11 +1061,14 @@
       "marketingName": "Galaxy S II",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "QQ Browser",
@@ -1016,11 +1100,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Pinterest App",
@@ -1052,11 +1139,14 @@
       "marketingName": "Ascend Mate 7",
       "manufacturer": "Huawei",
       "brand": "Huawei",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Baidu Box App",
@@ -1088,11 +1178,14 @@
       "marketingName": "Z1",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Samsung WebView",
@@ -1124,11 +1217,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Midori",
@@ -1160,11 +1256,14 @@
       "marketingName": "iPod Touch",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Schoolwires App",
@@ -1196,11 +1295,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Chrome for iOS",
@@ -1232,11 +1334,14 @@
       "marketingName": "Galaxy S II",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dolfin",
@@ -1268,11 +1373,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Arora",
@@ -1304,11 +1412,14 @@
       "marketingName": "MI 2A",
       "manufacturer": "XiaomiTech",
       "brand": "XiaomiTech",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "douban App",
@@ -1340,11 +1451,14 @@
       "marketingName": "MI 2S",
       "manufacturer": "XiaomiTech",
       "brand": "XiaomiTech",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Miui Browser",
@@ -1376,11 +1490,14 @@
       "marketingName": "Galaxy 551",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 400,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 240,
+        "height": 400,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "iBrowser",
@@ -1412,11 +1529,14 @@
       "marketingName": "Galaxy Pocket Duos",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "OneBrowser",
@@ -1448,11 +1568,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Baidu Mobile Search",
@@ -1484,11 +1607,14 @@
       "marketingName": "Xperia Tablet S",
       "manufacturer": "Sony",
       "brand": "Sony",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Yahoo! App",
@@ -1520,11 +1646,14 @@
       "marketingName": "One X",
       "manufacturer": "Htc",
       "brand": "Htc",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1556,11 +1685,14 @@
       "marketingName": "Sensation",
       "manufacturer": "Htc",
       "brand": "Htc",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1592,11 +1724,14 @@
       "marketingName": "Utime S23",
       "manufacturer": "UnitedTimeTechnology",
       "brand": "UnitedTimeTechnology",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1628,11 +1763,14 @@
       "marketingName": "AT-AS40SE",
       "manufacturer": "Wolfgang",
       "brand": "Wolfgang",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1664,11 +1802,14 @@
       "marketingName": "R813T",
       "manufacturer": "Oppo",
       "brand": "Oppo",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -1700,11 +1841,14 @@
       "marketingName": "BlackBerry Curve 9320",
       "manufacturer": "Rim",
       "brand": "Rim",
-      "pointingMethod": "clickwheel",
-      "resolutionWidth": 320,
-      "resolutionHeight": 240,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "BlackBerry",
@@ -1736,11 +1880,14 @@
       "marketingName": "Touchpad",
       "manufacturer": "Hp",
       "brand": "Hp",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "webOS Browser",
@@ -1772,11 +1919,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "OmniWeb",
@@ -1808,11 +1958,14 @@
       "marketingName": "7230",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Nokia Browser",
@@ -1844,11 +1997,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Twitter App",
@@ -1880,11 +2036,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Google App",
@@ -1916,11 +2075,14 @@
       "marketingName": "Model S",
       "manufacturer": "TeslaMotors",
       "brand": "Tesla",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": false,
-      "type": "car-entertainment-system"
+      "type": "car-entertainment-system",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Model S Browser",
@@ -1952,11 +2114,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Qt",
@@ -1988,11 +2153,14 @@
       "marketingName": "iPhone 5 (3G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 1136,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 640,
+        "height": 1136,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Instagram App",
@@ -2024,11 +2192,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "WebClip App",
@@ -2060,11 +2231,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mercury",
@@ -2096,11 +2270,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Mac AppStore App",
@@ -2132,11 +2309,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Web Glance",
@@ -2168,11 +2348,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "NewsBlur Feed Fetcher",
@@ -2204,11 +2387,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Apple Mail",
@@ -2240,11 +2426,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Apple Mail",
@@ -2276,11 +2465,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Apple Mail",
@@ -2312,11 +2504,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Apple Mail",
@@ -2348,11 +2543,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "msnbot-media",
@@ -2384,11 +2582,14 @@
       "marketingName": "Z10",
       "manufacturer": "BlackBerry",
       "brand": "BlackBerry",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 768,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 768,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "BlackBerry",
@@ -2420,11 +2621,14 @@
       "marketingName": "BlackBerry PlayBook",
       "manufacturer": "Rim",
       "brand": "Rim",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 600,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Blackberry Playbook Browser",
@@ -2456,11 +2660,14 @@
       "marketingName": "WeTab",
       "manufacturer": "WeTab",
       "brand": "WeTab",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1366,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "WeTab Browser",
@@ -2492,11 +2699,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "profiller",
@@ -2528,11 +2738,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "wkhtmltopdf",
@@ -2564,11 +2777,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "wkhtmltoimage",
@@ -2600,11 +2816,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Okta Mobile App",
@@ -2636,11 +2855,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "KMail2",
@@ -2672,11 +2894,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Elmedia Player",
@@ -2708,11 +2933,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Dreamweaver",
@@ -2744,11 +2972,14 @@
       "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "akregator",
@@ -2780,11 +3011,14 @@
       "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Installatron",
@@ -2816,11 +3050,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "AdsBot Google-Mobile",
@@ -2852,11 +3089,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Epiphany",
@@ -2888,11 +3128,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "rekonq",
@@ -2924,11 +3167,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Skyfire",
@@ -2960,11 +3206,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Flixster App",
@@ -2996,11 +3245,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Adbeat Bot",
@@ -3032,11 +3284,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Second Life Client",
@@ -3068,11 +3323,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "SalesForce App",
@@ -3104,11 +3362,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "AdSense Bot",
@@ -3140,11 +3401,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "PagePeeker Screenshot Maker",
@@ -3176,11 +3440,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Diigo Browser",
@@ -3212,11 +3479,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Kontact",
@@ -3248,11 +3518,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "QupZilla",
@@ -3284,11 +3557,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Firefox for iOS",
@@ -3320,11 +3596,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "qutebrowser",
@@ -3356,11 +3635,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Otter",
@@ -3392,11 +3674,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Applebot",
@@ -3428,11 +3713,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Rival IQ Bot",
@@ -3464,11 +3752,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Evernote App",
@@ -3500,11 +3791,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Fluid",
@@ -3536,11 +3830,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -3572,11 +3869,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -3608,11 +3908,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "TWC SportsNet",
@@ -3644,11 +3947,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Adobe AIR",
@@ -3680,11 +3986,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -3716,11 +4025,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "luakit",
@@ -3752,11 +4064,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Safari",
@@ -3788,11 +4103,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Google Bot",
@@ -3824,11 +4142,14 @@
       "marketingName": "WiiU",
       "manufacturer": "Nintendo",
       "brand": "Nintendo",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-console"
+      "type": "tv-console",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "NetFront NX",
@@ -3860,11 +4181,14 @@
       "marketingName": "Playstation 4",
       "manufacturer": "Sony",
       "brand": "Sony",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "NetFront",
@@ -3896,11 +4220,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "CloudFlare AlwaysOnline",
@@ -3932,11 +4259,14 @@
       "marketingName": "C199",
       "manufacturer": "Lg",
       "brand": "Lg",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Phantom Browser",
@@ -3968,11 +4298,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Shrook",
@@ -4004,11 +4337,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "HRCrawler",
@@ -4040,11 +4376,14 @@
       "marketingName": "general TV Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Espial TV Browser",
@@ -4076,11 +4415,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "SiteCon",
@@ -4112,11 +4454,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "iBooks Author",
@@ -4148,11 +4493,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "iWeb",
@@ -4184,11 +4532,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "NewsFire",
@@ -4220,11 +4571,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "RMSnapKit",
@@ -4256,11 +4610,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Sandvox",
@@ -4292,11 +4649,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "TubeTV",
@@ -4328,11 +4688,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Elluminate Live",
@@ -4364,11 +4727,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Element Browser",
@@ -4400,11 +4766,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "QuickLook",
@@ -4436,11 +4805,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Zetakey Browser",
@@ -4472,11 +4844,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Prismatic App",
@@ -4508,11 +4883,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Prismatic App",
@@ -4544,11 +4922,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "open-webkit-sharp",
@@ -4580,11 +4961,14 @@
       "marketingName": "Galaxy S II",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dalvik",
@@ -4616,11 +5000,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "iTunes",
@@ -4652,11 +5039,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Atomic Browser",
@@ -4688,11 +5078,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Atomic Browser Lite",
@@ -4724,11 +5117,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Perfect Browser",
@@ -4760,11 +5156,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Reeder",
@@ -4796,11 +5195,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "FastBrowser",
@@ -4832,11 +5234,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "ABrowse",
@@ -4868,11 +5273,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -4904,11 +5312,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -4940,11 +5351,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -4976,11 +5390,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5012,11 +5429,14 @@
       "marketingName": "MacBook Pro",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5048,11 +5468,14 @@
       "marketingName": "iMac",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5084,11 +5507,14 @@
       "marketingName": "Mac Mini",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5120,11 +5546,14 @@
       "marketingName": "MacBook",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5156,11 +5585,14 @@
       "marketingName": "MacBook",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5192,11 +5624,14 @@
       "marketingName": "MacBook Pro",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5228,11 +5663,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -5264,11 +5702,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5300,11 +5741,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -5336,11 +5780,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Safari",
@@ -5372,11 +5819,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "BB Work Connect",
@@ -5408,11 +5858,14 @@
       "marketingName": "Iconia Tab A3",
       "manufacturer": "Acer",
       "brand": "Acer",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Dalvik",
@@ -5444,11 +5897,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -5480,11 +5936,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Notes App",
@@ -5516,11 +5975,14 @@
       "marketingName": "iPhone 3G",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Grindr",
@@ -5552,11 +6014,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Ninesky Browser",
@@ -5588,11 +6053,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "1Password",
@@ -5624,11 +6092,14 @@
       "marketingName": "MacBook Pro",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "1PasswordThumbs",
@@ -5660,11 +6131,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Firefox Focus",
@@ -5696,11 +6170,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Safari",
@@ -5732,11 +6209,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Quick Heal Browser",
@@ -5768,11 +6248,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Google Earth",
@@ -5804,11 +6287,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Unibox",
@@ -5840,11 +6326,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "kded",
@@ -5876,11 +6365,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Iris Browser",
@@ -5912,11 +6404,14 @@
       "marketingName": "N900D",
       "manufacturer": "Zte",
       "brand": "Zte",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "360 Browser",
@@ -5948,11 +6443,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "online-versicherungsportal.info Bot",
@@ -5984,11 +6482,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "versicherungssuchmaschine.net Bot",
@@ -6020,11 +6521,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "ReadKit",
@@ -6056,11 +6560,14 @@
       "marketingName": "iPhone 5 (3G+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 1136,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 640,
+        "height": 1136,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Facebook Messenger App",
@@ -6092,11 +6599,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "HotmailBuzzr",
@@ -6128,11 +6638,14 @@
       "marketingName": "Picasso E",
       "manufacturer": "Acer",
       "brand": "Acer",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Listia",
@@ -6164,11 +6677,14 @@
       "marketingName": "iPhone 6",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 750,
-      "resolutionHeight": 1334,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 750,
+        "height": 1334,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "XING App",
@@ -6200,11 +6716,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Konqueror",
@@ -6236,11 +6755,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "MythBrowser",
@@ -6272,11 +6794,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Appcent",
@@ -6308,11 +6833,14 @@
       "marketingName": "Peoples Tablet 3G",
       "manufacturer": "TrekStor",
       "brand": "TrekStor",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Aldiko",
@@ -6344,11 +6872,14 @@
       "marketingName": "iPhone 5 (3G+4G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 1136,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 640,
+        "height": 1136,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Google+ App",
@@ -6380,11 +6911,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Konqueror",
@@ -6416,11 +6950,14 @@
       "marketingName": "iPhone 6S",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 750,
-      "resolutionHeight": 1334,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 750,
+        "height": 1334,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Snapchat",
@@ -6452,11 +6989,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Feeddler RSS Reader",
@@ -6488,11 +7028,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -6524,11 +7067,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "SoundCloud App",
@@ -6560,11 +7106,14 @@
       "marketingName": "iPhone 5S (3G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 1136,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 640,
+        "height": 1136,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Rocky ChatWork Mobile",
@@ -6596,11 +7145,14 @@
       "marketingName": "iPhone 4 (GSM)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 640,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Quora App",
@@ -6632,11 +7184,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "EB iPhone/IPad App",
@@ -6668,11 +7223,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "WordPress App",
@@ -6704,11 +7262,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "CoreMedia",
@@ -6740,11 +7301,14 @@
       "marketingName": "iPhone 5 (3G)",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 640,
-      "resolutionHeight": 1136,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 640,
+        "height": 1136,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "AppStore App",
@@ -6776,11 +7340,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "iOS dataaccessd",
@@ -6812,11 +7379,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "iTunes",
@@ -6848,11 +7418,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "iTunes",
@@ -6884,11 +7457,14 @@
       "marketingName": "iPod Touch",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "iTunes",
@@ -6920,11 +7496,14 @@
       "marketingName": "iPod Touch",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Yahoo Mobile App",
@@ -6956,11 +7535,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Puffin",
@@ -6992,11 +7574,14 @@
       "marketingName": "JY-G4",
       "manufacturer": "Jiayu",
       "brand": "Jiayu",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 720,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "CM Browser",
@@ -7028,11 +7613,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Wayback Archive Bot",
@@ -7064,11 +7652,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "WorxWebAppStore",
@@ -7100,11 +7691,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "HotmailBuzzr",
@@ -7136,11 +7730,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "BSNBrowserLite",
@@ -7172,11 +7769,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "BingWeb App",
@@ -7208,11 +7808,14 @@
       "marketingName": "iPhone 6S",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 750,
-      "resolutionHeight": 1334,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 750,
+        "height": 1334,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Google Mobile App",
@@ -7244,11 +7847,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "MobileNotes",
@@ -7280,11 +7886,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Safari",
@@ -7316,11 +7925,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "iCab",
@@ -7352,11 +7964,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Cloudflare AMP Fetcher",
@@ -7388,11 +8003,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Iron",
@@ -7424,11 +8042,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "iDownloader",
@@ -7460,11 +8081,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Maxthon",
@@ -7496,11 +8120,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "CronoMail",
@@ -7532,11 +8159,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Darwin Browser",
@@ -7568,11 +8198,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "SiriViewService",
@@ -7604,11 +8237,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Inboxcube",
@@ -7640,11 +8276,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "AtBat",
@@ -7676,11 +8315,14 @@
       "marketingName": "Galaxy S4 LTE+",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Android Webkit",
@@ -7712,11 +8354,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "MailBar",
@@ -7748,11 +8393,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "DuckDuck App",
@@ -7784,11 +8432,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Outlook",
@@ -7820,11 +8471,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Aloha Browser",
@@ -7856,11 +8510,14 @@
       "marketingName": "Galaxy Note",
       "manufacturer": "Samsung",
       "brand": "Samsung",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 800,
-      "resolutionHeight": 1280,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 800,
+        "height": 1280,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Opera Mobile",
@@ -7892,11 +8549,14 @@
       "marketingName": "Nexus 7",
       "manufacturer": "Asus",
       "brand": "Google",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1280,
-      "resolutionHeight": 800,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Flipboard App",
@@ -7928,11 +8588,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Yandex Browser",
@@ -7964,11 +8627,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Google App Engine",
@@ -8000,11 +8666,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Coc Coc Browser",
@@ -8036,11 +8705,14 @@
       "marketingName": "HTB5260G",
       "manufacturer": "Philips",
       "brand": "Philips",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv-media-player"
+      "type": "tv-media-player",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "NewB",
@@ -8072,11 +8744,14 @@
       "marketingName": "general Metz TV",
       "manufacturer": "Metz",
       "brand": "Metz",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Chromium",
@@ -8108,11 +8783,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "QtWeb Internet Browser",
@@ -8144,11 +8822,14 @@
       "marketingName": "general TV Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Boxee",
@@ -8180,11 +8861,14 @@
       "marketingName": "general Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "SurfBrowser",
@@ -8216,11 +8900,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "QQ Browser",
@@ -8252,11 +8939,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "MavenPlus",
@@ -8288,11 +8978,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Lunascape",
@@ -8324,11 +9017,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Twitter App",
@@ -8360,11 +9056,14 @@
       "marketingName": "Xperia Z Ultra HSPA+",
       "manufacturer": "Sony",
       "brand": "Sony",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1080,
-      "resolutionHeight": 1920,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "QQ Browser",
@@ -8396,11 +9095,14 @@
       "marketingName": "V185",
       "manufacturer": "Gionee",
       "brand": "Gionee",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Qvod Player Browser",
@@ -8432,11 +9134,14 @@
       "marketingName": "Phone",
       "manufacturer": "Jolla",
       "brand": "Jolla",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 540,
-      "resolutionHeight": 960,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 540,
+        "height": 960,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Sailfish Browser",
@@ -8468,11 +9173,14 @@
       "marketingName": "general Motorola Device",
       "manufacturer": "Motorola",
       "brand": "Motorola",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Motorola Webkit",
@@ -8504,11 +9212,14 @@
       "marketingName": "47LM9600-NA",
       "manufacturer": "Lg",
       "brand": "Lg",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "LG Browser",
@@ -8540,11 +9251,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Newsflow",
@@ -8576,11 +9290,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "HP Smart",
@@ -8612,11 +9329,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Viber",
@@ -8648,11 +9368,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Fluid",
@@ -8684,11 +9407,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "FileBox",
@@ -8720,11 +9446,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Seznam Browser",
@@ -8756,11 +9485,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Seznam Browser",
@@ -8792,11 +9524,14 @@
       "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "AW Browser",
@@ -8828,11 +9563,14 @@
       "marketingName": "iPad",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 1024,
-      "resolutionHeight": 768,
-      "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Iron Mobile",
@@ -8864,11 +9602,14 @@
       "marketingName": "iPhone",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 320,
-      "resolutionHeight": 480,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Edge Mobile for iOS",
@@ -8900,11 +9641,14 @@
       "marketingName": "general Mobile Device",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "News",

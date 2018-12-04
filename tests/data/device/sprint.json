@@ -8,11 +8,14 @@
       "marketingName": "6700",
       "manufacturer": "Htc",
       "brand": "Sprint",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Opera Mobile",
@@ -44,11 +47,14 @@
       "marketingName": "Coast",
       "manufacturer": "Kyocera",
       "brand": "Sprint",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "NetFront",

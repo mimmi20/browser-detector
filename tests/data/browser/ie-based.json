@@ -8,11 +8,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -44,11 +47,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -80,11 +86,14 @@
       "marketingName": "Macintosh",
       "manufacturer": "Apple",
       "brand": "Apple",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -116,11 +125,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Avant",
@@ -152,11 +164,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "CybEye",
@@ -188,11 +203,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -224,11 +242,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "MarketwireBot",
@@ -260,11 +281,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Google Toolbar",
@@ -296,11 +320,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Netscape",
@@ -332,11 +359,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Lightspeed Systems Crawler",
@@ -368,11 +398,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Second Life Commerce Client",
@@ -404,11 +437,14 @@
       "marketingName": "Lumia 635 (Global)",
       "manufacturer": "Nokia",
       "brand": "Nokia",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "IEMobile",
@@ -440,11 +476,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Bing Preview",
@@ -476,11 +515,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Windows Live Mail",
@@ -512,11 +554,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Office",
@@ -548,11 +593,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Crazy Browser",
@@ -584,11 +632,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Deepnet Explorer",
@@ -620,11 +671,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "KKMAN",
@@ -656,11 +710,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Lunascape",
@@ -692,11 +749,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Sleipnir",
@@ -728,11 +788,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Smartsite HTTPClient",
@@ -764,11 +827,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -800,11 +866,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -836,11 +905,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -872,11 +944,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "360 Secure Browser",
@@ -908,11 +983,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Daumoa",
@@ -944,11 +1022,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Daumoa",
@@ -980,11 +1061,14 @@
       "marketingName": "SH-05C",
       "manufacturer": "Sharp",
       "brand": "DoCoMo",
-      "pointingMethod": "touchscreen",
-      "resolutionWidth": 480,
-      "resolutionHeight": 854,
-      "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "display": {
+        "width": 480,
+        "height": 854,
+        "touch": true,
+        "type": null
+      },
+      "dualOrientation": true
     },
     "browser": {
       "name": "Sharp",
@@ -1016,11 +1100,14 @@
       "marketingName": "M700",
       "manufacturer": "Htc",
       "brand": "SPV",
-      "pointingMethod": "stylus",
-      "resolutionWidth": 240,
-      "resolutionHeight": 320,
-      "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "display": {
+        "width": 240,
+        "height": 320,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Orangebot",
@@ -1052,11 +1139,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Sogou Spider",
@@ -1088,11 +1178,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "T-Online Browser",
@@ -1124,11 +1217,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "T-Online Browser",
@@ -1160,11 +1256,14 @@
       "marketingName": null,
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": null,
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "SimplePie",
@@ -1196,11 +1295,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Google App Engine",
@@ -1232,11 +1334,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "ArgClrInt",
@@ -1268,11 +1373,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "CrystalSemanticsBot",
@@ -1304,11 +1412,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "HaosouSpider",
@@ -1340,11 +1451,14 @@
       "marketingName": "PC",
       "manufacturer": "Lenovo",
       "brand": "Lenovo",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Office",
@@ -1376,11 +1490,14 @@
       "marketingName": "PC",
       "manufacturer": "Lenovo",
       "brand": "Lenovo",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Office",
@@ -1412,11 +1529,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Maxthon",
@@ -1448,11 +1568,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Office",
@@ -1484,11 +1607,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Internet Explorer",
@@ -1520,11 +1646,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "360 Secure Browser",
@@ -1556,11 +1685,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "TheWorld Browser",
@@ -1592,11 +1724,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "WebPagetest",
@@ -1628,11 +1763,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "2345 Explorer",
@@ -1664,11 +1802,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "MathPlayer",
@@ -1700,11 +1841,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Outlook",
@@ -1736,11 +1880,14 @@
       "marketingName": "PC",
       "manufacturer": "Asus",
       "brand": "Asus",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Wayback Archive Bot",
@@ -1772,11 +1919,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "SaveWealth",
@@ -1808,11 +1958,14 @@
       "marketingName": "Linux Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Cobalt Application Container",
@@ -1844,11 +1997,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "QQ Browser",
@@ -1880,11 +2036,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Polarity",
@@ -1916,11 +2075,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Windows-RSS-Platform",
@@ -1952,11 +2114,14 @@
       "marketingName": "Windows Desktop",
       "manufacturer": "Unknown",
       "brand": "Unknown",
-      "pointingMethod": "mouse",
-      "resolutionWidth": null,
-      "resolutionHeight": null,
-      "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": null
+      },
+      "dualOrientation": false
     },
     "browser": {
       "name": "Baidu Browser",
