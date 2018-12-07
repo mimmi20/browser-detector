@@ -1,32 +1,46 @@
 {
-  "mecer 800p71d": {
-    "deviceName": "800P71D",
-    "marketingName": "800P71D",
-    "manufacturer": "Mecer",
-    "brand": "Mecer",
-    "type": "fone-pad",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "type": null
+    "mecer 800p71d": {
+        "deviceName": "800P71D",
+        "marketingName": "800P71D",
+        "manufacturer": "Mecer",
+        "brand": "Mecer",
+        "type": "fone-pad",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mecer a1013r": {
-    "deviceName": "A1013R",
-    "marketingName": "Xpress Smartlife 10",
-    "manufacturer": "Mecer",
-    "brand": "Mecer",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mecer a1013r": {
+        "deviceName": "A1013R",
+        "marketingName": "Xpress Smartlife 10",
+        "manufacturer": "Mecer",
+        "brand": "Mecer",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

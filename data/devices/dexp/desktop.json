@@ -1,17 +1,24 @@
 {
-  "dexp h135": {
-    "deviceName": "H135",
-    "marketingName": "Atlas",
-    "manufacturer": "Dexp",
-    "brand": "Dexp",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "dexp h135": {
+        "deviceName": "H135",
+        "marketingName": "Atlas",
+        "manufacturer": "Dexp",
+        "brand": "Dexp",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

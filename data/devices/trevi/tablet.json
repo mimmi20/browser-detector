@@ -1,32 +1,46 @@
 {
-  "general trevi device": {
-    "deviceName": "general Trevi Device",
-    "marketingName": "general Trevi Device",
-    "manufacturer": "Trevi",
-    "brand": "Trevi",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general trevi device": {
+        "deviceName": "general Trevi Device",
+        "marketingName": "general Trevi Device",
+        "manufacturer": "Trevi",
+        "brand": "Trevi",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "trevi c4": {
-    "deviceName": "C4",
-    "marketingName": "Tab 7",
-    "manufacturer": "Trevi",
-    "brand": "Trevi",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "trevi c4": {
+        "deviceName": "C4",
+        "marketingName": "Tab 7",
+        "manufacturer": "Trevi",
+        "brand": "Trevi",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

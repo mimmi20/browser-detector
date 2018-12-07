@@ -1,47 +1,68 @@
 {
-  "general nomi device": {
-    "deviceName": "general Nomi Device",
-    "marketingName": "general Nomi Device",
-    "manufacturer": "Nomi",
-    "brand": "Nomi",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nomi device": {
+        "deviceName": "general Nomi Device",
+        "marketingName": "general Nomi Device",
+        "manufacturer": "Nomi",
+        "brand": "Nomi",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nomi a10100": {
-    "deviceName": "A10100",
-    "marketingName": "A10100",
-    "manufacturer": "Nomi",
-    "brand": "Nomi",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "nomi a10100": {
+        "deviceName": "A10100",
+        "marketingName": "A10100",
+        "manufacturer": "Nomi",
+        "brand": "Nomi",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nomi c07000": {
-    "deviceName": "C07000",
-    "marketingName": "C07000",
-    "manufacturer": "Nomi",
-    "brand": "Nomi",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nomi c07000": {
+        "deviceName": "C07000",
+        "marketingName": "C07000",
+        "manufacturer": "Nomi",
+        "brand": "Nomi",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

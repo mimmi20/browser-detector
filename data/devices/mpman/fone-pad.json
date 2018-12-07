@@ -1,17 +1,24 @@
 {
-  "mpman mpqc1040i": {
-    "deviceName": "MPQC1040i",
-    "marketingName": "MPQC1040i",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mpman mpqc1040i": {
+        "deviceName": "MPQC1040i",
+        "marketingName": "MPQC1040i",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

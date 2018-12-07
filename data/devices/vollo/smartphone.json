@@ -1,32 +1,46 @@
 {
-  "general vollo device": {
-    "deviceName": "general Vollo Device",
-    "marketingName": "general Vollo Device",
-    "manufacturer": "Vollo",
-    "brand": "Vollo",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general vollo device": {
+        "deviceName": "general Vollo Device",
+        "marketingName": "general Vollo Device",
+        "manufacturer": "Vollo",
+        "brand": "Vollo",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vollo vi86": {
-    "deviceName": "Vi86",
-    "marketingName": "Vi86",
-    "manufacturer": "Vollo",
-    "brand": "Vollo",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "vollo vi86": {
+        "deviceName": "Vi86",
+        "marketingName": "Vi86",
+        "manufacturer": "Vollo",
+        "brand": "Vollo",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

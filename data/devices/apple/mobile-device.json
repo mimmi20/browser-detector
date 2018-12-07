@@ -1,17 +1,24 @@
 {
-  "general apple device": {
-    "deviceName": "general Apple Device",
-    "marketingName": "general Apple Device",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "mobile-device",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": null
-  }
+    "general apple device": {
+        "deviceName": "general Apple Device",
+        "marketingName": "general Apple Device",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "mobile-device",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

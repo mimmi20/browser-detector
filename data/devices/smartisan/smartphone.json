@@ -1,107 +1,156 @@
 {
-  "general smartisan device": {
-    "deviceName": "general Smartisan Device",
-    "marketingName": "general Smartisan Device",
-    "manufacturer": "Smartisan",
-    "brand": "Smartisan",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general smartisan device": {
+        "deviceName": "general Smartisan Device",
+        "marketingName": "general Smartisan Device",
+        "manufacturer": "Smartisan",
+        "brand": "Smartisan",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "smartisan od103": {
-    "deviceName": "OD103",
-    "marketingName": "OD103",
-    "manufacturer": "Smartisan",
-    "brand": "Smartisan",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "smartisan od103": {
+        "deviceName": "OD103",
+        "marketingName": "OD103",
+        "manufacturer": "Smartisan",
+        "brand": "Smartisan",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "smartisan od105": {
-    "deviceName": "OD105",
-    "marketingName": "OD105",
-    "manufacturer": "Smartisan",
-    "brand": "Smartisan",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "smartisan od105": {
+        "deviceName": "OD105",
+        "marketingName": "OD105",
+        "manufacturer": "Smartisan",
+        "brand": "Smartisan",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "smartisan sm701": {
-    "deviceName": "SM701",
-    "marketingName": "T1",
-    "manufacturer": "Smartisan",
-    "brand": "Smartisan",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "smartisan sm701": {
+        "deviceName": "SM701",
+        "marketingName": "T1",
+        "manufacturer": "Smartisan",
+        "brand": "Smartisan",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "smartisan sm801": {
-    "deviceName": "SM801",
-    "marketingName": "T2",
-    "manufacturer": "Smartisan",
-    "brand": "Smartisan",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "smartisan sm801": {
+        "deviceName": "SM801",
+        "marketingName": "T2",
+        "manufacturer": "Smartisan",
+        "brand": "Smartisan",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "smartisan sm919": {
-    "deviceName": "SM919",
-    "marketingName": "M1L",
-    "manufacturer": "Smartisan",
-    "brand": "Smartisan",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2560,
-      "touch": true,
-      "type": null
+    "smartisan sm919": {
+        "deviceName": "SM919",
+        "marketingName": "M1L",
+        "manufacturer": "Smartisan",
+        "brand": "Smartisan",
+        "type": "smartphone",
+        "display": {
+            "width": 1440,
+            "height": 2560,
+            "touch": true,
+            "type": "QHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "smartisan yq601": {
-    "deviceName": "YQ601",
-    "marketingName": "U1 Jianguo",
-    "manufacturer": "Smartisan",
-    "brand": "Smartisan",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "smartisan yq601": {
+        "deviceName": "YQ601",
+        "marketingName": "U1 Jianguo",
+        "manufacturer": "Smartisan",
+        "brand": "Smartisan",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

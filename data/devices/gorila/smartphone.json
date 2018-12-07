@@ -1,32 +1,46 @@
 {
-  "general gorila device": {
-    "deviceName": "general Gorila Device",
-    "marketingName": "general Gorila Device",
-    "manufacturer": "Gorila",
-    "brand": "Gorila",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general gorila device": {
+        "deviceName": "general Gorila Device",
+        "marketingName": "general Gorila Device",
+        "manufacturer": "Gorila",
+        "brand": "Gorila",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "gorila grv11": {
-    "deviceName": "GRV11",
-    "marketingName": "2",
-    "manufacturer": "Gorila",
-    "brand": "Gorila",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "gorila grv11": {
+        "deviceName": "GRV11",
+        "marketingName": "2",
+        "manufacturer": "Gorila",
+        "brand": "Gorila",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

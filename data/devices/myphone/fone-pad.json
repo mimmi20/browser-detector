@@ -1,17 +1,24 @@
 {
-  "myphone mytab 10 q": {
-    "deviceName": "MyTab 10 Q",
-    "marketingName": "MyTab 10 Q",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "myphone mytab 10 q": {
+        "deviceName": "MyTab 10 Q",
+        "marketingName": "MyTab 10 Q",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

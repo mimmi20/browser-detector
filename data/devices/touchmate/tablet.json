@@ -1,17 +1,24 @@
 {
-  "touchmate tm-mid710": {
-    "deviceName": "TM-MID710",
-    "marketingName": "TM-MID710",
-    "manufacturer": "Touchmate",
-    "brand": "Touchmate",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "touchmate tm-mid710": {
+        "deviceName": "TM-MID710",
+        "marketingName": "TM-MID710",
+        "manufacturer": "Touchmate",
+        "brand": "Touchmate",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

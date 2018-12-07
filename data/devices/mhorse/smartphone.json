@@ -1,77 +1,112 @@
 {
-  "general mhorse device": {
-    "deviceName": "general M-HORSE device",
-    "marketingName": "general M-HORSE device",
-    "manufacturer": "MHorse",
-    "brand": "MHorse",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general mhorse device": {
+        "deviceName": "general M-HORSE device",
+        "marketingName": "general M-HORSE device",
+        "manufacturer": "MHorse",
+        "brand": "MHorse",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mhorse pure 2": {
-    "deviceName": "Pure 2",
-    "marketingName": "Pure 2",
-    "manufacturer": "MHorse",
-    "brand": "MHorse",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "mhorse pure 2": {
+        "deviceName": "Pure 2",
+        "marketingName": "Pure 2",
+        "manufacturer": "MHorse",
+        "brand": "MHorse",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mhorse pure 2a": {
-    "deviceName": "Pure 2A",
-    "marketingName": "Pure 2A",
-    "manufacturer": "MHorse",
-    "brand": "MHorse",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "mhorse pure 2a": {
+        "deviceName": "Pure 2A",
+        "marketingName": "Pure 2A",
+        "manufacturer": "MHorse",
+        "brand": "MHorse",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mhorse pure 3": {
-    "deviceName": "Pure 3",
-    "marketingName": "Pure 3",
-    "manufacturer": "MHorse",
-    "brand": "MHorse",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "mhorse pure 3": {
+        "deviceName": "Pure 3",
+        "marketingName": "Pure 3",
+        "manufacturer": "MHorse",
+        "brand": "MHorse",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mhorse sphs on hsdroid": {
-    "deviceName": "SPHS On HSDroid",
-    "marketingName": "9500mini",
-    "manufacturer": "MHorse",
-    "brand": "MHorse",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mhorse sphs on hsdroid": {
+        "deviceName": "SPHS On HSDroid",
+        "marketingName": "9500mini",
+        "manufacturer": "MHorse",
+        "brand": "MHorse",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general moonar device": {
-    "deviceName": "general Moonar Device",
-    "marketingName": "general Moonar Device",
-    "manufacturer": "Moonar",
-    "brand": "Moonar",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general moonar device": {
+        "deviceName": "general Moonar Device",
+        "marketingName": "general Moonar Device",
+        "manufacturer": "Moonar",
+        "brand": "Moonar",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "moonar k1001l1b": {
-    "deviceName": "K1001L1B",
-    "marketingName": "K1001L1B",
-    "manufacturer": "Moonar",
-    "brand": "Moonar",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "moonar k1001l1b": {
+        "deviceName": "K1001L1B",
+        "marketingName": "K1001L1B",
+        "manufacturer": "Moonar",
+        "brand": "Moonar",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

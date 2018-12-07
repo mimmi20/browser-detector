@@ -1,17 +1,24 @@
 {
-  "bq edison 3g": {
-    "deviceName": "Edison 3G",
-    "marketingName": "Edison 3G",
-    "manufacturer": "Bq",
-    "brand": "Bq",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bq edison 3g": {
+        "deviceName": "Edison 3G",
+        "marketingName": "Edison 3G",
+        "manufacturer": "Bq",
+        "brand": "Bq",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

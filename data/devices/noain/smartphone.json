@@ -1,77 +1,112 @@
 {
-  "general noain device": {
-    "deviceName": "general Noain Device",
-    "marketingName": "general Noain Device",
-    "manufacturer": "Noain",
-    "brand": "Noain",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general noain device": {
+        "deviceName": "general Noain Device",
+        "marketingName": "general Noain Device",
+        "manufacturer": "Noain",
+        "brand": "Noain",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "noain a900s": {
-    "deviceName": "A900S",
-    "marketingName": "A900S",
-    "manufacturer": "Noain",
-    "brand": "Noain",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "noain a900s": {
+        "deviceName": "A900S",
+        "marketingName": "A900S",
+        "manufacturer": "Noain",
+        "brand": "Noain",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "noain a913": {
-    "deviceName": "A913",
-    "marketingName": "A913",
-    "manufacturer": "Noain",
-    "brand": "Noain",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "noain a913": {
+        "deviceName": "A913",
+        "marketingName": "A913",
+        "manufacturer": "Noain",
+        "brand": "Noain",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "noain m15": {
-    "deviceName": "M15",
-    "marketingName": "M15",
-    "manufacturer": "Noain",
-    "brand": "Noain",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "noain m15": {
+        "deviceName": "M15",
+        "marketingName": "M15",
+        "manufacturer": "Noain",
+        "brand": "Noain",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "noain m6": {
-    "deviceName": "M6",
-    "marketingName": "M6",
-    "manufacturer": "Noain",
-    "brand": "Noain",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "noain m6": {
+        "deviceName": "M6",
+        "marketingName": "M6",
+        "manufacturer": "Noain",
+        "brand": "Noain",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

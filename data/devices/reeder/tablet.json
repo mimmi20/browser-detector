@@ -1,32 +1,46 @@
 {
-  "general reeder device": {
-    "deviceName": "general Reeder Device",
-    "marketingName": "general Reeder Device",
-    "manufacturer": "Reeder",
-    "brand": "Reeder",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general reeder device": {
+        "deviceName": "general Reeder Device",
+        "marketingName": "general Reeder Device",
+        "manufacturer": "Reeder",
+        "brand": "Reeder",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "reeder a8r": {
-    "deviceName": "A8R",
-    "marketingName": "A8R",
-    "manufacturer": "Reeder",
-    "brand": "Reeder",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "reeder a8r": {
+        "deviceName": "A8R",
+        "marketingName": "A8R",
+        "manufacturer": "Reeder",
+        "brand": "Reeder",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

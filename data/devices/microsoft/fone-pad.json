@@ -1,17 +1,24 @@
 {
-  "microsoft surface 3": {
-    "deviceName": "H9P",
-    "marketingName": "Surface 3",
-    "manufacturer": "Microsoft",
-    "brand": "Microsoft",
-    "type": "fone-pad",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": null
-  }
+    "microsoft surface 3": {
+        "deviceName": "H9P",
+        "marketingName": "Surface 3",
+        "manufacturer": "Microsoft",
+        "brand": "Microsoft",
+        "type": "fone-pad",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

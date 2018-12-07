@@ -1,47 +1,68 @@
 {
-  "general excelvan device": {
-    "deviceName": "general Excelvan Device",
-    "marketingName": "general Excelvan Device",
-    "manufacturer": "Excelvan",
-    "brand": "Excelvan",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general excelvan device": {
+        "deviceName": "general Excelvan Device",
+        "marketingName": "general Excelvan Device",
+        "manufacturer": "Excelvan",
+        "brand": "Excelvan",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "excelvan m1009": {
-    "deviceName": "M1009",
-    "marketingName": "M1009",
-    "manufacturer": "Excelvan",
-    "brand": "Excelvan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "excelvan m1009": {
+        "deviceName": "M1009",
+        "marketingName": "M1009",
+        "manufacturer": "Excelvan",
+        "brand": "Excelvan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "excelvan m1009b": {
-    "deviceName": "M1009B",
-    "marketingName": "M1009B",
-    "manufacturer": "Excelvan",
-    "brand": "Excelvan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "excelvan m1009b": {
+        "deviceName": "M1009B",
+        "marketingName": "M1009B",
+        "manufacturer": "Excelvan",
+        "brand": "Excelvan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

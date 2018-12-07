@@ -1,32 +1,46 @@
 {
-  "general ouya device": {
-    "deviceName": "general Ouya Device",
-    "marketingName": "general Ouya Device",
-    "manufacturer": "Ouya",
-    "brand": "Ouya",
-    "type": "tv-console",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general ouya device": {
+        "deviceName": "general Ouya Device",
+        "marketingName": "general Ouya Device",
+        "manufacturer": "Ouya",
+        "brand": "Ouya",
+        "type": "tv-console",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "ouya ouya": {
-    "deviceName": "Ouya",
-    "marketingName": "Ouya",
-    "manufacturer": "Ouya",
-    "brand": "Ouya",
-    "type": "tv-console",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "ouya ouya": {
+        "deviceName": "Ouya",
+        "marketingName": "Ouya",
+        "manufacturer": "Ouya",
+        "brand": "Ouya",
+        "type": "tv-console",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

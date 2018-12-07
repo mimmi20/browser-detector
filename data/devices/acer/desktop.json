@@ -1,32 +1,46 @@
 {
-  "acer da220hql": {
-    "deviceName": "DA220HQL",
-    "marketingName": "DA220HQL",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "desktop",
-    "display": {
-      "width": 1920,
-      "height": 1032,
-      "touch": false,
-      "type": null
+    "acer da220hql": {
+        "deviceName": "DA220HQL",
+        "marketingName": "DA220HQL",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "desktop",
+        "display": {
+            "width": 1920,
+            "height": 1032,
+            "touch": false,
+            "type": "Custom 1032x1920",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "acer pc": {
-    "deviceName": "PC",
-    "marketingName": "PC",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "acer pc": {
+        "deviceName": "PC",
+        "marketingName": "PC",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

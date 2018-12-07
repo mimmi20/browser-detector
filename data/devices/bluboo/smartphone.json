@@ -1,152 +1,222 @@
 {
-  "general bluboo device": {
-    "deviceName": "general Bluboo Device",
-    "marketingName": "general Bluboo Device",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general bluboo device": {
+        "deviceName": "general Bluboo Device",
+        "marketingName": "general Bluboo Device",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo dual": {
-    "deviceName": "Dual",
-    "marketingName": "Dual",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "bluboo dual": {
+        "deviceName": "Dual",
+        "marketingName": "Dual",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo maya": {
-    "deviceName": "Maya",
-    "marketingName": "Maya",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "bluboo maya": {
+        "deviceName": "Maya",
+        "marketingName": "Maya",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo maya max": {
-    "deviceName": "Maya Max",
-    "marketingName": "Maya Max",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "bluboo maya max": {
+        "deviceName": "Maya Max",
+        "marketingName": "Maya Max",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo mini": {
-    "deviceName": "Mini",
-    "marketingName": "Mini",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "bluboo mini": {
+        "deviceName": "Mini",
+        "marketingName": "Mini",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo picasso": {
-    "deviceName": "Picasso",
-    "marketingName": "Picasso",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "bluboo picasso": {
+        "deviceName": "Picasso",
+        "marketingName": "Picasso",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo s1a": {
-    "deviceName": "S1a",
-    "marketingName": "S1a",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "bluboo s1a": {
+        "deviceName": "S1a",
+        "marketingName": "S1a",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo s8": {
-    "deviceName": "S8",
-    "marketingName": "S8",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "bluboo s8": {
+        "deviceName": "S8",
+        "marketingName": "S8",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo xfire": {
-    "deviceName": "XFire",
-    "marketingName": "XFire",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "bluboo xfire": {
+        "deviceName": "XFire",
+        "marketingName": "XFire",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bluboo xfire2": {
-    "deviceName": "XFire 2",
-    "marketingName": "XFire 2",
-    "manufacturer": "Bluboo",
-    "brand": "Bluboo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bluboo xfire2": {
+        "deviceName": "XFire 2",
+        "marketingName": "XFire 2",
+        "manufacturer": "Bluboo",
+        "brand": "Bluboo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

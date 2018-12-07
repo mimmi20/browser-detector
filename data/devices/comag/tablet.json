@@ -1,32 +1,46 @@
 {
-  "general comag device": {
-    "deviceName": "general Comag Device",
-    "marketingName": "general Comag Device",
-    "manufacturer": "Comag",
-    "brand": "Comag",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general comag device": {
+        "deviceName": "general Comag Device",
+        "marketingName": "general Comag Device",
+        "manufacturer": "Comag",
+        "brand": "Comag",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "comag wtdr1018": {
-    "deviceName": "WTDR1018",
-    "marketingName": "WTDR1018",
-    "manufacturer": "Comag",
-    "brand": "Comag",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "comag wtdr1018": {
+        "deviceName": "WTDR1018",
+        "marketingName": "WTDR1018",
+        "manufacturer": "Comag",
+        "brand": "Comag",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

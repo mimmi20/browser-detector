@@ -1,62 +1,90 @@
 {
-  "general pandigital device": {
-    "deviceName": "general Pandigital Device",
-    "marketingName": "general Pandigital Device",
-    "manufacturer": "Pandigital",
-    "brand": "Pandigital",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general pandigital device": {
+        "deviceName": "general Pandigital Device",
+        "marketingName": "general Pandigital Device",
+        "manufacturer": "Pandigital",
+        "brand": "Pandigital",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pandigital 9hr": {
-    "deviceName": "9hr",
-    "marketingName": "9hr",
-    "manufacturer": "Pandigital",
-    "brand": "Pandigital",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "pandigital 9hr": {
+        "deviceName": "9hr",
+        "marketingName": "9hr",
+        "manufacturer": "Pandigital",
+        "brand": "Pandigital",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pandigital novel": {
-    "deviceName": "Novel",
-    "marketingName": "Novel",
-    "manufacturer": "Pandigital",
-    "brand": "Pandigital",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "pandigital novel": {
+        "deviceName": "Novel",
+        "marketingName": "Novel",
+        "manufacturer": "Pandigital",
+        "brand": "Pandigital",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pandigital supernova": {
-    "deviceName": "SuperNova",
-    "marketingName": "SuperNova",
-    "manufacturer": "Pandigital",
-    "brand": "Pandigital",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pandigital supernova": {
+        "deviceName": "SuperNova",
+        "marketingName": "SuperNova",
+        "manufacturer": "Pandigital",
+        "brand": "Pandigital",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

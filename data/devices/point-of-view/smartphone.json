@@ -1,17 +1,24 @@
 {
-  "point-of-view mob-5045": {
-    "deviceName": "MOB-5045",
-    "marketingName": "MOB-5045",
-    "manufacturer": "PointOfView",
-    "brand": "PointOfView",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "point-of-view mob-5045": {
+        "deviceName": "MOB-5045",
+        "marketingName": "MOB-5045",
+        "manufacturer": "PointOfView",
+        "brand": "PointOfView",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

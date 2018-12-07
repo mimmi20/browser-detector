@@ -1,47 +1,68 @@
 {
-  "general obi device": {
-    "deviceName": "general Obi Worldphone Device",
-    "marketingName": "general Obi Worldphone Device",
-    "manufacturer": "Obi Worldphone",
-    "brand": "Obi Worldphone",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general obi device": {
+        "deviceName": "general Obi Worldphone Device",
+        "marketingName": "general Obi Worldphone Device",
+        "manufacturer": "Obi Worldphone",
+        "brand": "Obi Worldphone",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "obi s551": {
-    "deviceName": "S551",
-    "marketingName": "Hornbill",
-    "manufacturer": "Obi Worldphone",
-    "brand": "Obi Worldphone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "obi s551": {
+        "deviceName": "S551",
+        "marketingName": "Hornbill",
+        "manufacturer": "Obi Worldphone",
+        "brand": "Obi Worldphone",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "obi sf1": {
-    "deviceName": "SF1",
-    "marketingName": "SF1",
-    "manufacturer": "Obi Worldphone",
-    "brand": "Obi Worldphone",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "obi sf1": {
+        "deviceName": "SF1",
+        "marketingName": "SF1",
+        "manufacturer": "Obi Worldphone",
+        "brand": "Obi Worldphone",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

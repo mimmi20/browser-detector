@@ -1,77 +1,112 @@
 {
-  "loewe sl121": {
-    "deviceName": "SL121",
-    "marketingName": "SL121",
-    "manufacturer": "Loewe",
-    "brand": "Loewe",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "loewe sl121": {
+        "deviceName": "SL121",
+        "marketingName": "SL121",
+        "manufacturer": "Loewe",
+        "brand": "Loewe",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "linux"
     },
-    "dualOrientation": false,
-    "platform": "linux"
-  },
-  "loewe sl150": {
-    "deviceName": "SL150",
-    "marketingName": "SL150",
-    "manufacturer": "Loewe",
-    "brand": "Loewe",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "loewe sl150": {
+        "deviceName": "SL150",
+        "marketingName": "SL150",
+        "manufacturer": "Loewe",
+        "brand": "Loewe",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "linux"
     },
-    "dualOrientation": false,
-    "platform": "linux"
-  },
-  "loewe sl220": {
-    "deviceName": "SL220",
-    "marketingName": "SL220",
-    "manufacturer": "Loewe",
-    "brand": "Loewe",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "loewe sl220": {
+        "deviceName": "SL220",
+        "marketingName": "SL220",
+        "manufacturer": "Loewe",
+        "brand": "Loewe",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "loewe sl320": {
-    "deviceName": "SL320",
-    "marketingName": "SL320",
-    "manufacturer": "Loewe",
-    "brand": "Loewe",
-    "type": "tv",
-    "display": {
-      "width": 3840,
-      "height": 2160,
-      "touch": false,
-      "type": null
+    "loewe sl320": {
+        "deviceName": "SL320",
+        "marketingName": "SL320",
+        "manufacturer": "Loewe",
+        "brand": "Loewe",
+        "type": "tv",
+        "display": {
+            "width": 3840,
+            "height": 2160,
+            "touch": false,
+            "type": "4K UHD",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "loewe sl32x": {
-    "deviceName": "SL32x",
-    "marketingName": "SL32x",
-    "manufacturer": "Loewe",
-    "brand": "Loewe",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "linux smartphone os (maemo)"
-  }
+    "loewe sl32x": {
+        "deviceName": "SL32x",
+        "marketingName": "SL32x",
+        "manufacturer": "Loewe",
+        "brand": "Loewe",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "linux smartphone os (maemo)"
+    }
 }

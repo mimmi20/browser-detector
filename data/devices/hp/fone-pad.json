@@ -1,17 +1,24 @@
 {
-  "hp slate 6 voice": {
-    "deviceName": "Slate 6 Voice",
-    "marketingName": "Slate 6 Voice",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "hp slate 6 voice": {
+        "deviceName": "Slate 6 Voice",
+        "marketingName": "Slate 6 Voice",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 720,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

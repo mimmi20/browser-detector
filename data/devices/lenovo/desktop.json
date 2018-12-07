@@ -1,32 +1,46 @@
 {
-  "lenovo g780": {
-    "deviceName": "G780",
-    "marketingName": "G780",
-    "manufacturer": "Lenovo",
-    "brand": "Lenovo",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "lenovo g780": {
+        "deviceName": "G780",
+        "marketingName": "G780",
+        "manufacturer": "Lenovo",
+        "brand": "Lenovo",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "lenovo pc": {
-    "deviceName": "PC",
-    "marketingName": "PC",
-    "manufacturer": "Lenovo",
-    "brand": "Lenovo",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "lenovo pc": {
+        "deviceName": "PC",
+        "marketingName": "PC",
+        "manufacturer": "Lenovo",
+        "brand": "Lenovo",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

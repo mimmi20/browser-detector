@@ -1,47 +1,68 @@
 {
-  "general pptv device": {
-    "deviceName": "general PPTV Device",
-    "marketingName": "general PPTV Device",
-    "manufacturer": "PPTV",
-    "brand": "PPTV",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general pptv device": {
+        "deviceName": "general PPTV Device",
+        "marketingName": "general PPTV Device",
+        "manufacturer": "PPTV",
+        "brand": "PPTV",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pptv king 7": {
-    "deviceName": "King 7",
-    "marketingName": "King 7",
-    "manufacturer": "PPTV",
-    "brand": "PPTV",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2560,
-      "touch": true,
-      "type": null
+    "pptv king 7": {
+        "deviceName": "King 7",
+        "marketingName": "King 7",
+        "manufacturer": "PPTV",
+        "brand": "PPTV",
+        "type": "smartphone",
+        "display": {
+            "width": 1440,
+            "height": 2560,
+            "touch": true,
+            "type": "QHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pptv king 7s": {
-    "deviceName": "King 7S",
-    "marketingName": "King 7S",
-    "manufacturer": "PPTV",
-    "brand": "PPTV",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2560,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pptv king 7s": {
+        "deviceName": "King 7S",
+        "marketingName": "King 7S",
+        "manufacturer": "PPTV",
+        "brand": "PPTV",
+        "type": "smartphone",
+        "display": {
+            "width": 1440,
+            "height": 2560,
+            "touch": true,
+            "type": "QHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "nec n-06d": {
-    "deviceName": "N-06D",
-    "marketingName": "Medias Tab LTE",
-    "manufacturer": "Nec",
-    "brand": "Nec",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nec n-06d": {
+        "deviceName": "N-06D",
+        "marketingName": "Medias Tab LTE",
+        "manufacturer": "Nec",
+        "brand": "Nec",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

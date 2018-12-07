@@ -1,32 +1,46 @@
 {
-  "general s-tell device": {
-    "deviceName": "general S-TELL Device",
-    "marketingName": "general S-TELL Device",
-    "manufacturer": "Stell",
-    "brand": "Stell",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general s-tell device": {
+        "deviceName": "general S-TELL Device",
+        "marketingName": "general S-TELL Device",
+        "manufacturer": "Stell",
+        "brand": "Stell",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "s-tell m260": {
-    "deviceName": "M260",
-    "marketingName": "M260",
-    "manufacturer": "Stell",
-    "brand": "Stell",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "s-tell m260": {
+        "deviceName": "M260",
+        "marketingName": "M260",
+        "manufacturer": "Stell",
+        "brand": "Stell",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

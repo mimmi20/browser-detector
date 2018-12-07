@@ -1,77 +1,112 @@
 {
-  "general hosin device": {
-    "deviceName": "general Hosin Device",
-    "marketingName": "general Hosin Device",
-    "manufacturer": "Hosin",
-    "brand": "Hosin",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general hosin device": {
+        "deviceName": "general Hosin Device",
+        "marketingName": "general Hosin Device",
+        "manufacturer": "Hosin",
+        "brand": "Hosin",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hosin t50": {
-    "deviceName": "T50",
-    "marketingName": "T50",
-    "manufacturer": "Hosin",
-    "brand": "Hosin",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hosin t50": {
+        "deviceName": "T50",
+        "marketingName": "T50",
+        "manufacturer": "Hosin",
+        "brand": "Hosin",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hosin t70": {
-    "deviceName": "T70",
-    "marketingName": "T70",
-    "manufacturer": "Hosin",
-    "brand": "Hosin",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hosin t70": {
+        "deviceName": "T70",
+        "marketingName": "T70",
+        "manufacturer": "Hosin",
+        "brand": "Hosin",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hosin u7": {
-    "deviceName": "U7",
-    "marketingName": "U7",
-    "manufacturer": "Hosin",
-    "brand": "Hosin",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hosin u7": {
+        "deviceName": "U7",
+        "marketingName": "U7",
+        "manufacturer": "Hosin",
+        "brand": "Hosin",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hosin v70": {
-    "deviceName": "V70",
-    "marketingName": "V70",
-    "manufacturer": "Hosin",
-    "brand": "Hosin",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "hosin v70": {
+        "deviceName": "V70",
+        "marketingName": "V70",
+        "manufacturer": "Hosin",
+        "brand": "Hosin",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

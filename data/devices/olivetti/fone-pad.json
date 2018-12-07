@@ -1,32 +1,46 @@
 {
-  "olivetti op110": {
-    "deviceName": "OP110",
-    "marketingName": "OP110",
-    "manufacturer": "Olivetti",
-    "brand": "Olivetti",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "olivetti op110": {
+        "deviceName": "OP110",
+        "marketingName": "OP110",
+        "manufacturer": "Olivetti",
+        "brand": "Olivetti",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "olivetti op111": {
-    "deviceName": "OP111",
-    "marketingName": "Olipad 3",
-    "manufacturer": "Olivetti",
-    "brand": "Olivetti",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "olivetti op111": {
+        "deviceName": "OP111",
+        "marketingName": "Olipad 3",
+        "manufacturer": "Olivetti",
+        "brand": "Olivetti",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general dps device": {
-    "deviceName": "general DPS Device",
-    "marketingName": "general DPS Device",
-    "manufacturer": "DPS",
-    "brand": "DPS",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general dps device": {
+        "deviceName": "general DPS Device",
+        "marketingName": "general DPS Device",
+        "manufacturer": "DPS",
+        "brand": "DPS",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "dps dream 9": {
-    "deviceName": "Dream 9",
-    "marketingName": "Dream 9",
-    "manufacturer": "DPS",
-    "brand": "DPS",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "dps dream 9": {
+        "deviceName": "Dream 9",
+        "marketingName": "Dream 9",
+        "manufacturer": "DPS",
+        "brand": "DPS",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

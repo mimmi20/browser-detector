@@ -1,32 +1,46 @@
 {
-  "general turkcell device": {
-    "deviceName": "general Turkcell Device",
-    "marketingName": "general Turkcell Device",
-    "manufacturer": "Turkcell",
-    "brand": "Turkcell",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general turkcell device": {
+        "deviceName": "general Turkcell Device",
+        "marketingName": "general Turkcell Device",
+        "manufacturer": "Turkcell",
+        "brand": "Turkcell",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "turkcell t50": {
-    "deviceName": "T50",
-    "marketingName": "T50",
-    "manufacturer": "Turkcell",
-    "brand": "Turkcell",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "turkcell t50": {
+        "deviceName": "T50",
+        "marketingName": "T50",
+        "manufacturer": "Turkcell",
+        "brand": "Turkcell",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

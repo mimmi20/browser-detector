@@ -1,32 +1,46 @@
 {
-  "general iru device": {
-    "deviceName": "general iRU Device",
-    "marketingName": "general iRU Device",
-    "manufacturer": "Iru",
-    "brand": "Iru",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general iru device": {
+        "deviceName": "general iRU Device",
+        "marketingName": "general iRU Device",
+        "manufacturer": "Iru",
+        "brand": "Iru",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "iru m5301": {
-    "deviceName": "M5301",
-    "marketingName": "M5301",
-    "manufacturer": "Iru",
-    "brand": "Iru",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "iru m5301": {
+        "deviceName": "M5301",
+        "marketingName": "M5301",
+        "manufacturer": "Iru",
+        "brand": "Iru",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "wortmann terra pad 1002": {
-    "deviceName": "TERRA PAD 1002",
-    "marketingName": "TERRA PAD 1002",
-    "manufacturer": "Wortmann",
-    "brand": "Wortmann",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "wortmann terra pad 1002": {
+        "deviceName": "TERRA PAD 1002",
+        "marketingName": "TERRA PAD 1002",
+        "manufacturer": "Wortmann",
+        "brand": "Wortmann",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general cce device": {
-    "deviceName": "general CCE Device",
-    "marketingName": "general CCE Device",
-    "manufacturer": "Cce",
-    "brand": "Cce",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general cce device": {
+        "deviceName": "general CCE Device",
+        "marketingName": "general CCE Device",
+        "manufacturer": "Cce",
+        "brand": "Cce",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "cce sk352": {
-    "deviceName": "SK352",
-    "marketingName": "Motion Plus",
-    "manufacturer": "Cce",
-    "brand": "Cce",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "cce sk352": {
+        "deviceName": "SK352",
+        "marketingName": "Motion Plus",
+        "manufacturer": "Cce",
+        "brand": "Cce",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

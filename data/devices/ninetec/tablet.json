@@ -1,47 +1,68 @@
 {
-  "general ninetec device": {
-    "deviceName": "general NINETEC Device",
-    "marketingName": "general NINETEC Device",
-    "manufacturer": "NINETEC",
-    "brand": "NINETEC",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general ninetec device": {
+        "deviceName": "general NINETEC Device",
+        "marketingName": "general NINETEC Device",
+        "manufacturer": "NINETEC",
+        "brand": "NINETEC",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ninetec nt.i10g2": {
-    "deviceName": "NT.I10G2",
-    "marketingName": "Inspire 10 G2",
-    "manufacturer": "NINETEC",
-    "brand": "NINETEC",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "ninetec nt.i10g2": {
+        "deviceName": "NT.I10G2",
+        "marketingName": "Inspire 10 G2",
+        "manufacturer": "NINETEC",
+        "brand": "NINETEC",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ninetec nt.p10g2": {
-    "deviceName": "NT.P10G2",
-    "marketingName": "Platinum 10 G2",
-    "manufacturer": "NINETEC",
-    "brand": "NINETEC",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ninetec nt.p10g2": {
+        "deviceName": "NT.P10G2",
+        "marketingName": "Platinum 10 G2",
+        "manufacturer": "NINETEC",
+        "brand": "NINETEC",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

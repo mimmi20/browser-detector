@@ -1,47 +1,68 @@
 {
-  "general desktop": {
-    "deviceName": "general Desktop",
-    "marketingName": "general Desktop",
-    "manufacturer": "Unknown",
-    "brand": "Unknown",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general desktop": {
+        "deviceName": "general Desktop",
+        "marketingName": "general Desktop",
+        "manufacturer": "Unknown",
+        "brand": "Unknown",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "linux desktop": {
-    "deviceName": "Linux Desktop",
-    "marketingName": "Linux Desktop",
-    "manufacturer": "Unknown",
-    "brand": "Unknown",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "linux desktop": {
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "Unknown",
+        "brand": "Unknown",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "windows desktop": {
-    "deviceName": "Windows Desktop",
-    "marketingName": "Windows Desktop",
-    "manufacturer": "Unknown",
-    "brand": "Unknown",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "windows desktop": {
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "Unknown",
+        "brand": "Unknown",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

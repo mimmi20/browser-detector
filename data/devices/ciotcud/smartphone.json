@@ -1,32 +1,46 @@
 {
-  "general ciotcud device": {
-    "deviceName": "general CIOtCUD Device",
-    "marketingName": "general CIOtCUD Device",
-    "manufacturer": "Ciotcud",
-    "brand": "Ciotcud",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general ciotcud device": {
+        "deviceName": "general CIOtCUD Device",
+        "marketingName": "general CIOtCUD Device",
+        "manufacturer": "Ciotcud",
+        "brand": "Ciotcud",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ciotcud l930": {
-    "deviceName": "L930",
-    "marketingName": "L930",
-    "manufacturer": "Ciotcud",
-    "brand": "Ciotcud",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ciotcud l930": {
+        "deviceName": "L930",
+        "marketingName": "L930",
+        "manufacturer": "Ciotcud",
+        "brand": "Ciotcud",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

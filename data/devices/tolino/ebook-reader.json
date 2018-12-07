@@ -1,62 +1,90 @@
 {
-  "tolino shine": {
-    "deviceName": "Tolino Shine",
-    "marketingName": "Tolino Shine",
-    "manufacturer": "Longshine",
-    "brand": "Weltbild",
-    "type": "ebook-reader",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "tolino shine": {
+        "deviceName": "Tolino Shine",
+        "marketingName": "Tolino Shine",
+        "manufacturer": "Longshine",
+        "brand": "Weltbild",
+        "type": "ebook-reader",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tolino vision": {
-    "deviceName": "Vision",
-    "marketingName": "Vision",
-    "manufacturer": "Tolino",
-    "brand": "Tolino",
-    "type": "ebook-reader",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "tolino vision": {
+        "deviceName": "Vision",
+        "marketingName": "Vision",
+        "manufacturer": "Tolino",
+        "brand": "Tolino",
+        "type": "ebook-reader",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tolino vision 2": {
-    "deviceName": "Vision 2",
-    "marketingName": "Vision 2",
-    "manufacturer": "Tolino",
-    "brand": "Tolino",
-    "type": "ebook-reader",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "tolino vision 2": {
+        "deviceName": "Vision 2",
+        "marketingName": "Vision 2",
+        "manufacturer": "Tolino",
+        "brand": "Tolino",
+        "type": "ebook-reader",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tolino vision 4": {
-    "deviceName": "Vision 4",
-    "marketingName": "Vision 4",
-    "manufacturer": "Tolino",
-    "brand": "Tolino",
-    "type": "ebook-reader",
-    "display": {
-      "width": 1448,
-      "height": 1072,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "tolino vision 4": {
+        "deviceName": "Vision 4",
+        "marketingName": "Vision 4",
+        "manufacturer": "Tolino",
+        "brand": "Tolino",
+        "type": "ebook-reader",
+        "display": {
+            "width": 1448,
+            "height": 1072,
+            "touch": true,
+            "type": "Custom 1072x1448",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "bravis a501 bright": {
-    "deviceName": "A501 Bright",
-    "marketingName": "A501 Bright",
-    "manufacturer": "Bravis",
-    "brand": "Bravis",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "bravis a501 bright": {
+        "deviceName": "A501 Bright",
+        "marketingName": "A501 Bright",
+        "manufacturer": "Bravis",
+        "brand": "Bravis",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bravis trend": {
-    "deviceName": "Trend",
-    "marketingName": "Trend",
-    "manufacturer": "Bravis",
-    "brand": "Bravis",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bravis trend": {
+        "deviceName": "Trend",
+        "marketingName": "Trend",
+        "manufacturer": "Bravis",
+        "brand": "Bravis",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

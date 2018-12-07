@@ -1,77 +1,112 @@
 {
-  "spice mi-349": {
-    "deviceName": "Mi-349",
-    "marketingName": "Smart Flo Edge",
-    "manufacturer": "Spice",
-    "brand": "Spice",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "spice mi-349": {
+        "deviceName": "Mi-349",
+        "marketingName": "Smart Flo Edge",
+        "manufacturer": "Spice",
+        "brand": "Spice",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "spice mi-422": {
-    "deviceName": "Mi-422",
-    "marketingName": "Smart Flo Pace",
-    "manufacturer": "Spice",
-    "brand": "Spice",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "spice mi-422": {
+        "deviceName": "Mi-422",
+        "marketingName": "Smart Flo Pace",
+        "manufacturer": "Spice",
+        "brand": "Spice",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "spice mi-424": {
-    "deviceName": "Mi-424",
-    "marketingName": "Mi-424",
-    "manufacturer": "Spice",
-    "brand": "Spice",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "spice mi-424": {
+        "deviceName": "Mi-424",
+        "marketingName": "Mi-424",
+        "manufacturer": "Spice",
+        "brand": "Spice",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "spice mi-502": {
-    "deviceName": "Mi-502",
-    "marketingName": "Smart Flo Pace 2",
-    "manufacturer": "Spice",
-    "brand": "Spice",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "spice mi-502": {
+        "deviceName": "Mi-502",
+        "marketingName": "Smart Flo Pace 2",
+        "manufacturer": "Spice",
+        "brand": "Spice",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "spice mi-520": {
-    "deviceName": "Mi-520",
-    "marketingName": "Mi-520",
-    "manufacturer": "Spice",
-    "brand": "Spice",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "spice mi-520": {
+        "deviceName": "Mi-520",
+        "marketingName": "Mi-520",
+        "manufacturer": "Spice",
+        "brand": "Spice",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

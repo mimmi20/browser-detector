@@ -1,32 +1,46 @@
 {
-  "general techpad device": {
-    "deviceName": "general TechPad Device",
-    "marketingName": "general TechPad Device",
-    "manufacturer": "TechPad",
-    "brand": "TechPad",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general techpad device": {
+        "deviceName": "general TechPad Device",
+        "marketingName": "general TechPad Device",
+        "manufacturer": "TechPad",
+        "brand": "TechPad",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "techpad s813g": {
-    "deviceName": "S813G",
-    "marketingName": "S813G",
-    "manufacturer": "TechPad",
-    "brand": "TechPad",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "techpad s813g": {
+        "deviceName": "S813G",
+        "marketingName": "S813G",
+        "manufacturer": "TechPad",
+        "brand": "TechPad",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

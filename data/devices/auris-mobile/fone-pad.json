@@ -1,32 +1,46 @@
 {
-  "general auris-mobile device": {
-    "deviceName": "general Auris Mobile Device",
-    "marketingName": "general Auris Mobile Device",
-    "manufacturer": "Auris Mobile",
-    "brand": "Auris Mobile",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general auris-mobile device": {
+        "deviceName": "general Auris Mobile Device",
+        "marketingName": "general Auris Mobile Device",
+        "manufacturer": "Auris Mobile",
+        "brand": "Auris Mobile",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "auris-mobile tb-703g": {
-    "deviceName": "TB-703G",
-    "marketingName": "TB-703G",
-    "manufacturer": "Auris Mobile",
-    "brand": "Auris Mobile",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "auris-mobile tb-703g": {
+        "deviceName": "TB-703G",
+        "marketingName": "TB-703G",
+        "manufacturer": "Auris Mobile",
+        "brand": "Auris Mobile",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

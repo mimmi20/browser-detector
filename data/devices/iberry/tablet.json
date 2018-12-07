@@ -1,32 +1,46 @@
 {
-  "general iberry device": {
-    "deviceName": "general iBerry Device",
-    "marketingName": "general iBerry Device",
-    "manufacturer": "iBerry",
-    "brand": "iBerry",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general iberry device": {
+        "deviceName": "general iBerry Device",
+        "marketingName": "general iBerry Device",
+        "manufacturer": "iBerry",
+        "brand": "iBerry",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "iberry auxus ax01": {
-    "deviceName": "Auxus AX01",
-    "marketingName": "Auxus AX01",
-    "manufacturer": "iBerry",
-    "brand": "iBerry",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "iberry auxus ax01": {
+        "deviceName": "Auxus AX01",
+        "marketingName": "Auxus AX01",
+        "manufacturer": "iBerry",
+        "brand": "iBerry",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,137 +1,200 @@
 {
-  "alcatel 3075a": {
-    "deviceName": "OT-3075A",
-    "marketingName": "OneTouch Tribe",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": true,
-      "type": null
+    "alcatel 3075a": {
+        "deviceName": "OT-3075A",
+        "marketingName": "OneTouch Tribe",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 220,
+            "height": 176,
+            "touch": true,
+            "type": "Custom 176x220",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "alcatel oh5": {
-    "deviceName": "OH5",
-    "marketingName": "OH5",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 128,
-      "touch": false,
-      "type": null
+    "alcatel oh5": {
+        "deviceName": "OH5",
+        "marketingName": "OH5",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 128,
+            "touch": false,
+            "type": "Custom 128x128",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "alcatel ot-216": {
-    "deviceName": "OT-216",
-    "marketingName": "OT-216",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 128,
-      "touch": true,
-      "type": null
+    "alcatel ot-216": {
+        "deviceName": "OT-216",
+        "marketingName": "OT-216",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 128,
+            "touch": true,
+            "type": "Custom 128x128",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "alcatel ot-510a": {
-    "deviceName": "OT-510A",
-    "marketingName": "OT-510A",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "type": null
+    "alcatel ot-510a": {
+        "deviceName": "OT-510A",
+        "marketingName": "OT-510A",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 160,
+            "touch": false,
+            "type": "Custom 128x160",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "nucleus os"
     },
-    "dualOrientation": false,
-    "platform": "nucleus os"
-  },
-  "alcatel ot-585": {
-    "deviceName": "OT-585",
-    "marketingName": "OT-585",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": true,
-      "type": null
+    "alcatel ot-585": {
+        "deviceName": "OT-585",
+        "marketingName": "OT-585",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 220,
+            "height": 176,
+            "touch": true,
+            "type": "Custom 176x220",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "alcatel ot-710d": {
-    "deviceName": "OT-710D",
-    "marketingName": "OT-710D",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "alcatel ot-710d": {
+        "deviceName": "OT-710D",
+        "marketingName": "OT-710D",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "alcatel ot-807d": {
-    "deviceName": "OT-807D",
-    "marketingName": "OT-807D",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": true,
-      "type": null
+    "alcatel ot-807d": {
+        "deviceName": "OT-807D",
+        "marketingName": "OT-807D",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 320,
+            "height": 240,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "alcatel ot-818": {
-    "deviceName": "OT-818",
-    "marketingName": "OneTouch 818",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": true,
-      "type": null
+    "alcatel ot-818": {
+        "deviceName": "OT-818",
+        "marketingName": "OneTouch 818",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 400,
+            "touch": true,
+            "type": "WQVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "alcatel ot-871a": {
-    "deviceName": "OT-871A",
-    "marketingName": "OneTouch 871A",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "alcatel ot-871a": {
+        "deviceName": "OT-871A",
+        "marketingName": "OneTouch 871A",
+        "manufacturer": "Alcatel",
+        "brand": "Alcatel",
+        "type": "feature-phone",
+        "display": {
+            "width": 220,
+            "height": 176,
+            "touch": true,
+            "type": "Custom 176x220",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

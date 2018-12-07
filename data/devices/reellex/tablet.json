@@ -1,32 +1,46 @@
 {
-  "general reellex device": {
-    "deviceName": "general Reellex Device",
-    "marketingName": "general Reellex Device",
-    "manufacturer": "Reellex",
-    "brand": "Reellex",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general reellex device": {
+        "deviceName": "general Reellex Device",
+        "marketingName": "general Reellex Device",
+        "manufacturer": "Reellex",
+        "brand": "Reellex",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "reellex tab-97e-01": {
-    "deviceName": "TAB-97E-01",
-    "marketingName": "TAB-97E-01",
-    "manufacturer": "Reellex",
-    "brand": "Reellex",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "reellex tab-97e-01": {
+        "deviceName": "TAB-97E-01",
+        "marketingName": "TAB-97E-01",
+        "manufacturer": "Reellex",
+        "brand": "Reellex",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

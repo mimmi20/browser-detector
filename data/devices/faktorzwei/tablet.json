@@ -1,32 +1,46 @@
 {
-  "general faktorzwei device": {
-    "deviceName": "general Faktor Zwei Device",
-    "marketingName": "general Faktor Zwei Device",
-    "manufacturer": "FaktorZwei",
-    "brand": "FaktorZwei",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general faktorzwei device": {
+        "deviceName": "general Faktor Zwei Device",
+        "marketingName": "general Faktor Zwei Device",
+        "manufacturer": "FaktorZwei",
+        "brand": "FaktorZwei",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "faktorzwei 812223": {
-    "deviceName": "812223",
-    "marketingName": "FX2 PAD10",
-    "manufacturer": "FaktorZwei",
-    "brand": "FaktorZwei",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "faktorzwei 812223": {
+        "deviceName": "812223",
+        "marketingName": "FX2 PAD10",
+        "manufacturer": "FaktorZwei",
+        "brand": "FaktorZwei",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

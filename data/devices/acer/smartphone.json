@@ -1,512 +1,750 @@
 {
-  "general acer device": {
-    "deviceName": "general Acer Device",
-    "marketingName": "general Acer Device",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general acer device": {
+        "deviceName": "general Acer Device",
+        "marketingName": "general Acer Device",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "acer allegro": {
-    "deviceName": "Allegro",
-    "marketingName": "Allegro",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "acer allegro": {
+        "deviceName": "Allegro",
+        "marketingName": "Allegro",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer e140": {
-    "deviceName": "E140",
-    "marketingName": "beTouch",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "acer e140": {
+        "deviceName": "E140",
+        "marketingName": "beTouch",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer e310": {
-    "deviceName": "E310",
-    "marketingName": "Liquid Mini",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "acer e310": {
+        "deviceName": "E310",
+        "marketingName": "Liquid Mini",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer e320": {
-    "deviceName": "E320",
-    "marketingName": "Liquid Express",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "acer e320": {
+        "deviceName": "E320",
+        "marketingName": "Liquid Express",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer e380": {
-    "deviceName": "E380",
-    "marketingName": "Liquid E3",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer e380": {
+        "deviceName": "E380",
+        "marketingName": "Liquid E3",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer e39": {
-    "deviceName": "E39",
-    "marketingName": "Liquid E700",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer e39": {
+        "deviceName": "E39",
+        "marketingName": "Liquid E700",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer e600": {
-    "deviceName": "E600",
-    "marketingName": "Liquid E600",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "acer e600": {
+        "deviceName": "E600",
+        "marketingName": "Liquid E600",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer e700": {
-    "deviceName": "E700",
-    "marketingName": "Liquid E700",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer e700": {
+        "deviceName": "E700",
+        "marketingName": "Liquid E700",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer m220": {
-    "deviceName": "M220",
-    "marketingName": "Liquid",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "acer m220": {
+        "deviceName": "M220",
+        "marketingName": "Liquid",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
     },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  },
-  "acer s100": {
-    "deviceName": "S100",
-    "marketingName": "Liquid E",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "acer s100": {
+        "deviceName": "S100",
+        "marketingName": "Liquid E",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer s120": {
-    "deviceName": "S120",
-    "marketingName": "Liquid Metal",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "acer s120": {
+        "deviceName": "S120",
+        "marketingName": "Liquid Metal",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer s500": {
-    "deviceName": "S500",
-    "marketingName": "CloudMobile",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer s500": {
+        "deviceName": "S500",
+        "marketingName": "CloudMobile",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer s510": {
-    "deviceName": "S510",
-    "marketingName": "Liquid S1",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer s510": {
+        "deviceName": "S510",
+        "marketingName": "Liquid S1",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer s520": {
-    "deviceName": "S520",
-    "marketingName": "Liquid S2",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "acer s520": {
+        "deviceName": "S520",
+        "marketingName": "Liquid S2",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer s55": {
-    "deviceName": "S55",
-    "marketingName": "Liquid Jade",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer s55": {
+        "deviceName": "S55",
+        "marketingName": "Liquid Jade",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer stream s110": {
-    "deviceName": "S110",
-    "marketingName": "Liquid Stream S110",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "acer stream s110": {
+        "deviceName": "S110",
+        "marketingName": "Liquid Stream S110",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "acer t03": {
-    "deviceName": "T03",
-    "marketingName": "Liquid Z630",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer t03": {
+        "deviceName": "T03",
+        "marketingName": "Liquid Z630",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer t04": {
-    "deviceName": "T04",
-    "marketingName": "Liquid Z630S",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer t04": {
+        "deviceName": "T04",
+        "marketingName": "Liquid Z630S",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer t06": {
-    "deviceName": "T06",
-    "marketingName": "T06",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer t06": {
+        "deviceName": "T06",
+        "marketingName": "T06",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer t07": {
-    "deviceName": "T07",
-    "marketingName": "Liquid Zest 4G",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer t07": {
+        "deviceName": "T07",
+        "marketingName": "Liquid Zest 4G",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer t08": {
-    "deviceName": "T08",
-    "marketingName": "Liquid Zest Plus",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer t08": {
+        "deviceName": "T08",
+        "marketingName": "Liquid Zest Plus",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer t09": {
-    "deviceName": "T09",
-    "marketingName": "Liquid Z6",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer t09": {
+        "deviceName": "T09",
+        "marketingName": "Liquid Z6",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer tm01": {
-    "deviceName": "TM01",
-    "marketingName": "Liquid M330 LTE",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "acer tm01": {
+        "deviceName": "TM01",
+        "marketingName": "Liquid M330 LTE",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
     },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  },
-  "acer v360": {
-    "deviceName": "V360",
-    "marketingName": "Liquid E1 Duo",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "acer v360": {
+        "deviceName": "V360",
+        "marketingName": "Liquid E1 Duo",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer v370": {
-    "deviceName": "V370",
-    "marketingName": "Liquid E2 Duo",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "acer v370": {
+        "deviceName": "V370",
+        "marketingName": "Liquid E2 Duo",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer z110": {
-    "deviceName": "Z110",
-    "marketingName": "Liquid Z110",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "acer z110": {
+        "deviceName": "Z110",
+        "marketingName": "Liquid Z110",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer z130": {
-    "deviceName": "Z130",
-    "marketingName": "Liquid Z3",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "acer z130": {
+        "deviceName": "Z130",
+        "marketingName": "Liquid Z3",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer z150": {
-    "deviceName": "Z150",
-    "marketingName": "Liquid Z5 Duo",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "acer z150": {
+        "deviceName": "Z150",
+        "marketingName": "Liquid Z5 Duo",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer z160": {
-    "deviceName": "Z160",
-    "marketingName": "Liquid Z4 Duo",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "acer z160": {
+        "deviceName": "Z160",
+        "marketingName": "Liquid Z4 Duo",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer z200": {
-    "deviceName": "Z200",
-    "marketingName": "Liquid Z200",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "acer z200": {
+        "deviceName": "Z200",
+        "marketingName": "Liquid Z200",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer z410": {
-    "deviceName": "Z410",
-    "marketingName": "Liquid Z410",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "acer z410": {
+        "deviceName": "Z410",
+        "marketingName": "Liquid Z410",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer z500": {
-    "deviceName": "Z500",
-    "marketingName": "Liquid Z500",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "acer z500": {
+        "deviceName": "Z500",
+        "marketingName": "Liquid Z500",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "acer z520": {
-    "deviceName": "Z520",
-    "marketingName": "Liquid Z520",
-    "manufacturer": "Acer",
-    "brand": "Acer",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "acer z520": {
+        "deviceName": "Z520",
+        "marketingName": "Liquid Z520",
+        "manufacturer": "Acer",
+        "brand": "Acer",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

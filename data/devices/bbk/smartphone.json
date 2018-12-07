@@ -1,32 +1,46 @@
 {
-  "general bbk device": {
-    "deviceName": "general BBK Device",
-    "marketingName": "general BBK Device",
-    "manufacturer": "BBK",
-    "brand": "BBK",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general bbk device": {
+        "deviceName": "general BBK Device",
+        "marketingName": "general BBK Device",
+        "manufacturer": "BBK",
+        "brand": "BBK",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bbk vivo x6s a dual sim": {
-    "deviceName": "Vivo X6S A Dual SIM",
-    "marketingName": "Vivo X6S A Dual SIM",
-    "manufacturer": "BBK",
-    "brand": "BBK",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bbk vivo x6s a dual sim": {
+        "deviceName": "Vivo X6S A Dual SIM",
+        "marketingName": "Vivo X6S A Dual SIM",
+        "manufacturer": "BBK",
+        "brand": "BBK",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

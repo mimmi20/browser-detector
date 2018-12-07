@@ -1,32 +1,46 @@
 {
-  "general irbis device": {
-    "deviceName": "general Irbis Device",
-    "marketingName": "general Irbis Device",
-    "manufacturer": "Irbis",
-    "brand": "Irbis",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general irbis device": {
+        "deviceName": "general Irbis Device",
+        "marketingName": "general Irbis Device",
+        "manufacturer": "Irbis",
+        "brand": "Irbis",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "irbis tx08": {
-    "deviceName": "TX08",
-    "marketingName": "TX08",
-    "manufacturer": "Irbis",
-    "brand": "Irbis",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "irbis tx08": {
+        "deviceName": "TX08",
+        "marketingName": "TX08",
+        "manufacturer": "Irbis",
+        "brand": "Irbis",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

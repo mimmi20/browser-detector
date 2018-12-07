@@ -1,47 +1,68 @@
 {
-  "general onda device": {
-    "deviceName": "general ONDA device",
-    "marketingName": "general ONDA device",
-    "manufacturer": "Onda",
-    "brand": "Onda",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general onda device": {
+        "deviceName": "general ONDA device",
+        "marketingName": "general ONDA device",
+        "manufacturer": "Onda",
+        "brand": "Onda",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "onda mid": {
-    "deviceName": "MID",
-    "marketingName": "MID",
-    "manufacturer": "Onda",
-    "brand": "Onda",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "onda mid": {
+        "deviceName": "MID",
+        "marketingName": "MID",
+        "manufacturer": "Onda",
+        "brand": "Onda",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "onda v989": {
-    "deviceName": "V989",
-    "marketingName": "Air",
-    "manufacturer": "Onda",
-    "brand": "Onda",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "onda v989": {
+        "deviceName": "V989",
+        "marketingName": "Air",
+        "manufacturer": "Onda",
+        "brand": "Onda",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

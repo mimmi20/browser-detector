@@ -1,32 +1,46 @@
 {
-  "general microsoft device": {
-    "deviceName": "general Microsoft Device",
-    "marketingName": "general Microsoft Device",
-    "manufacturer": "Microsoft",
-    "brand": "Microsoft",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general microsoft device": {
+        "deviceName": "general Microsoft Device",
+        "marketingName": "general Microsoft Device",
+        "manufacturer": "Microsoft",
+        "brand": "Microsoft",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows"
     },
-    "dualOrientation": true,
-    "platform": "windows"
-  },
-  "microsoft windows rt tablet": {
-    "deviceName": "Windows RT Tablet",
-    "marketingName": "Windows RT Tablet",
-    "manufacturer": "Microsoft",
-    "brand": "Microsoft",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": null
-  }
+    "microsoft windows rt tablet": {
+        "deviceName": "Windows RT Tablet",
+        "marketingName": "Windows RT Tablet",
+        "manufacturer": "Microsoft",
+        "brand": "Microsoft",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "pearl touchlet xa100": {
-    "deviceName": "Touchlet XA100",
-    "marketingName": "Touchlet XA100",
-    "manufacturer": "Pearl",
-    "brand": "Pearl",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pearl touchlet xa100": {
+        "deviceName": "Touchlet XA100",
+        "marketingName": "Touchlet XA100",
+        "manufacturer": "Pearl",
+        "brand": "Pearl",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

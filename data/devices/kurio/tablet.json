@@ -1,32 +1,46 @@
 {
-  "general kurio device": {
-    "deviceName": "general Kurio Device",
-    "marketingName": "general Kurio Device",
-    "manufacturer": "Kurio",
-    "brand": "Kurio",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general kurio device": {
+        "deviceName": "general Kurio Device",
+        "marketingName": "general Kurio Device",
+        "manufacturer": "Kurio",
+        "brand": "Kurio",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "kurio c15100m": {
-    "deviceName": "C15100M",
-    "marketingName": "Tab 2",
-    "manufacturer": "Kurio",
-    "brand": "Kurio",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "kurio c15100m": {
+        "deviceName": "C15100M",
+        "marketingName": "Tab 2",
+        "manufacturer": "Kurio",
+        "brand": "Kurio",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

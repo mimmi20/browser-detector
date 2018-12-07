@@ -1,32 +1,46 @@
 {
-  "comio ct701g plus": {
-    "deviceName": "CT701G Plus",
-    "marketingName": "CT701G Plus",
-    "manufacturer": "Comio",
-    "brand": "Comio",
-    "type": "fone-pad",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "comio ct701g plus": {
+        "deviceName": "CT701G Plus",
+        "marketingName": "CT701G Plus",
+        "manufacturer": "Comio",
+        "brand": "Comio",
+        "type": "fone-pad",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "comio ct701w": {
-    "deviceName": "CT701W",
-    "marketingName": "CT701W",
-    "manufacturer": "Comio",
-    "brand": "Comio",
-    "type": "fone-pad",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "comio ct701w": {
+        "deviceName": "CT701W",
+        "marketingName": "CT701W",
+        "manufacturer": "Comio",
+        "brand": "Comio",
+        "type": "fone-pad",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

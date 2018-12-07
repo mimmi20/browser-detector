@@ -1,32 +1,46 @@
 {
-  "xbox 360": {
-    "deviceName": "Xbox 360",
-    "marketingName": "Xbox 360",
-    "manufacturer": "Microsoft",
-    "brand": "Microsoft",
-    "type": "tv-console",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "xbox 360": {
+        "deviceName": "Xbox 360",
+        "marketingName": "Xbox 360",
+        "manufacturer": "Microsoft",
+        "brand": "Microsoft",
+        "type": "tv-console",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "xbox one": {
-    "deviceName": "Xbox One",
-    "marketingName": "Xbox One",
-    "manufacturer": "Microsoft",
-    "brand": "Microsoft",
-    "type": "tv-console",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "xbox one": {
+        "deviceName": "Xbox One",
+        "marketingName": "Xbox One",
+        "manufacturer": "Microsoft",
+        "brand": "Microsoft",
+        "type": "tv-console",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

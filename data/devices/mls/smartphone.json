@@ -1,32 +1,46 @@
 {
-  "general mls device": {
-    "deviceName": "general MLS Device",
-    "marketingName": "general MLS Device",
-    "manufacturer": "MLS",
-    "brand": "MLS",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general mls device": {
+        "deviceName": "general MLS Device",
+        "marketingName": "general MLS Device",
+        "manufacturer": "MLS",
+        "brand": "MLS",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mls iq1055": {
-    "deviceName": "iQ1055",
-    "marketingName": "iQTalk Color",
-    "manufacturer": "MLS",
-    "brand": "MLS",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mls iq1055": {
+        "deviceName": "iQ1055",
+        "marketingName": "iQTalk Color",
+        "manufacturer": "MLS",
+        "brand": "MLS",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

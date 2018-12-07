@@ -1,32 +1,46 @@
 {
-  "general vsun device": {
-    "deviceName": "general Vsun Device",
-    "marketingName": "general Vsun Device",
-    "manufacturer": "Vsun",
-    "brand": "Vsun",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general vsun device": {
+        "deviceName": "general Vsun Device",
+        "marketingName": "general Vsun Device",
+        "manufacturer": "Vsun",
+        "brand": "Vsun",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vsun i5": {
-    "deviceName": "i5",
-    "marketingName": "i5",
-    "manufacturer": "Vsun",
-    "brand": "Vsun",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "vsun i5": {
+        "deviceName": "i5",
+        "marketingName": "i5",
+        "manufacturer": "Vsun",
+        "brand": "Vsun",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,92 +1,134 @@
 {
-  "general lepan device": {
-    "deviceName": "general LePan Device",
-    "marketingName": "general LePan Device",
-    "manufacturer": "LePan",
-    "brand": "LePan",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general lepan device": {
+        "deviceName": "general LePan Device",
+        "marketingName": "general LePan Device",
+        "manufacturer": "LePan",
+        "brand": "LePan",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lepan": {
-    "deviceName": "LePan",
-    "marketingName": "LePan",
-    "manufacturer": "LePan",
-    "brand": "LePan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "lepan": {
+        "deviceName": "LePan",
+        "marketingName": "LePan",
+        "manufacturer": "LePan",
+        "brand": "LePan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lepan ii": {
-    "deviceName": "LePan II",
-    "marketingName": "LePan II",
-    "manufacturer": "LePan",
-    "brand": "LePan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "lepan ii": {
+        "deviceName": "LePan II",
+        "marketingName": "LePan II",
+        "manufacturer": "LePan",
+        "brand": "LePan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lepan tc802a": {
-    "deviceName": "TC802A",
-    "marketingName": "Mini",
-    "manufacturer": "LePan",
-    "brand": "LePan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "lepan tc802a": {
+        "deviceName": "TC802A",
+        "marketingName": "Mini",
+        "manufacturer": "LePan",
+        "brand": "LePan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lepan tc970": {
-    "deviceName": "TC970",
-    "marketingName": "TC970",
-    "manufacturer": "LePan",
-    "brand": "LePan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "lepan tc970": {
+        "deviceName": "TC970",
+        "marketingName": "TC970",
+        "manufacturer": "LePan",
+        "brand": "LePan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lepan tc978": {
-    "deviceName": "TC978",
-    "marketingName": "LePan S",
-    "manufacturer": "LePan",
-    "brand": "LePan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "lepan tc978": {
+        "deviceName": "TC978",
+        "marketingName": "LePan S",
+        "manufacturer": "LePan",
+        "brand": "LePan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,62 +1,90 @@
 {
-  "general koridy device": {
-    "deviceName": "general Koridy Device",
-    "marketingName": "general Koridy Device",
-    "manufacturer": "Koridy",
-    "brand": "Koridy",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general koridy device": {
+        "deviceName": "general Koridy Device",
+        "marketingName": "general Koridy Device",
+        "manufacturer": "Koridy",
+        "brand": "Koridy",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "koridy h15": {
-    "deviceName": "H15",
-    "marketingName": "H15",
-    "manufacturer": "Koridy",
-    "brand": "Koridy",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "koridy h15": {
+        "deviceName": "H15",
+        "marketingName": "H15",
+        "manufacturer": "Koridy",
+        "brand": "Koridy",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "koridy h16": {
-    "deviceName": "H16",
-    "marketingName": "H16",
-    "manufacturer": "Koridy",
-    "brand": "Koridy",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "koridy h16": {
+        "deviceName": "H16",
+        "marketingName": "H16",
+        "manufacturer": "Koridy",
+        "brand": "Koridy",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "koridy h20": {
-    "deviceName": "H20",
-    "marketingName": "H20",
-    "manufacturer": "Koridy",
-    "brand": "Koridy",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "koridy h20": {
+        "deviceName": "H20",
+        "marketingName": "H20",
+        "manufacturer": "Koridy",
+        "brand": "Koridy",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,47 +1,68 @@
 {
-  "general hyundai device": {
-    "deviceName": "general Hyundai Device",
-    "marketingName": "general Hyundai Device",
-    "manufacturer": "Hyundai",
-    "brand": "Hyundai",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general hyundai device": {
+        "deviceName": "general Hyundai Device",
+        "marketingName": "general Hyundai Device",
+        "manufacturer": "Hyundai",
+        "brand": "Hyundai",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hyundai t10": {
-    "deviceName": "T10",
-    "marketingName": "T10",
-    "manufacturer": "Hyundai",
-    "brand": "Hyundai",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hyundai t10": {
+        "deviceName": "T10",
+        "marketingName": "T10",
+        "manufacturer": "Hyundai",
+        "brand": "Hyundai",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hyundai t7s": {
-    "deviceName": "T7S",
-    "marketingName": "T7S",
-    "manufacturer": "Hyundai",
-    "brand": "Hyundai",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "hyundai t7s": {
+        "deviceName": "T7S",
+        "marketingName": "T7S",
+        "manufacturer": "Hyundai",
+        "brand": "Hyundai",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

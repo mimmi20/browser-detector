@@ -1,32 +1,46 @@
 {
-  "general nuclear device": {
-    "deviceName": "general Nuclear Device",
-    "marketingName": "general Nuclear Device",
-    "manufacturer": "Nuclear",
-    "brand": "Nuclear",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nuclear device": {
+        "deviceName": "general Nuclear Device",
+        "marketingName": "general Nuclear Device",
+        "manufacturer": "Nuclear",
+        "brand": "Nuclear",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "nuclear sx-sp5": {
-    "deviceName": "SX-SP5",
-    "marketingName": "SX-SP5",
-    "manufacturer": "Nuclear",
-    "brand": "Nuclear",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nuclear sx-sp5": {
+        "deviceName": "SX-SP5",
+        "marketingName": "SX-SP5",
+        "manufacturer": "Nuclear",
+        "brand": "Nuclear",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,122 +1,178 @@
 {
-  "general bird device": {
-    "deviceName": "general Bird Device",
-    "marketingName": "general Bird Device",
-    "manufacturer": "Bird",
-    "brand": "Bird",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general bird device": {
+        "deviceName": "general Bird Device",
+        "marketingName": "general Bird Device",
+        "manufacturer": "Bird",
+        "brand": "Bird",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bird e700": {
-    "deviceName": "E700",
-    "marketingName": "E700",
-    "manufacturer": "Bird",
-    "brand": "Bird",
-    "type": "smartphone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "bird e700": {
+        "deviceName": "E700",
+        "marketingName": "E700",
+        "manufacturer": "Bird",
+        "brand": "Bird",
+        "type": "smartphone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bird i600": {
-    "deviceName": "I600",
-    "marketingName": "I600",
-    "manufacturer": "Bird",
-    "brand": "Bird",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "bird i600": {
+        "deviceName": "I600",
+        "marketingName": "I600",
+        "manufacturer": "Bird",
+        "brand": "Bird",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bird i7": {
-    "deviceName": "I7",
-    "marketingName": "I7",
-    "manufacturer": "Bird",
-    "brand": "Bird",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "bird i7": {
+        "deviceName": "I7",
+        "marketingName": "I7",
+        "manufacturer": "Bird",
+        "brand": "Bird",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bird t900": {
-    "deviceName": "T900",
-    "marketingName": "T900",
-    "manufacturer": "Bird",
-    "brand": "Bird",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "bird t900": {
+        "deviceName": "T900",
+        "marketingName": "T900",
+        "manufacturer": "Bird",
+        "brand": "Bird",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bird t9108": {
-    "deviceName": "T9108",
-    "marketingName": "T9108",
-    "manufacturer": "Bird",
-    "brand": "Bird",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "bird t9108": {
+        "deviceName": "T9108",
+        "marketingName": "T9108",
+        "manufacturer": "Bird",
+        "brand": "Bird",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bird v8": {
-    "deviceName": "V8",
-    "marketingName": "V8",
-    "manufacturer": "Bird",
-    "brand": "Bird",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "bird v8": {
+        "deviceName": "V8",
+        "marketingName": "V8",
+        "manufacturer": "Bird",
+        "brand": "Bird",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bird w5": {
-    "deviceName": "W5",
-    "marketingName": "W5",
-    "manufacturer": "Bird",
-    "brand": "Bird",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bird w5": {
+        "deviceName": "W5",
+        "marketingName": "W5",
+        "manufacturer": "Bird",
+        "brand": "Bird",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

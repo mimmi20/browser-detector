@@ -1,17 +1,24 @@
 {
-  "coby mid7120": {
-    "deviceName": "MID7120",
-    "marketingName": "Kyros MID7120",
-    "manufacturer": "Coby",
-    "brand": "Coby",
-    "type": "fone-pad",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "coby mid7120": {
+        "deviceName": "MID7120",
+        "marketingName": "Kyros MID7120",
+        "manufacturer": "Coby",
+        "brand": "Coby",
+        "type": "fone-pad",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

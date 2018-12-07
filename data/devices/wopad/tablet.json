@@ -1,47 +1,68 @@
 {
-  "general wopad device": {
-    "deviceName": "general Wopad Device",
-    "marketingName": "general Wopad Device",
-    "manufacturer": "Wopad",
-    "brand": "Wopad",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general wopad device": {
+        "deviceName": "general Wopad Device",
+        "marketingName": "general Wopad Device",
+        "manufacturer": "Wopad",
+        "brand": "Wopad",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wopad 7001": {
-    "deviceName": "7001",
-    "marketingName": "7001",
-    "manufacturer": "Wopad",
-    "brand": "Wopad",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "wopad 7001": {
+        "deviceName": "7001",
+        "marketingName": "7001",
+        "manufacturer": "Wopad",
+        "brand": "Wopad",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wopad q10s": {
-    "deviceName": "Q10S",
-    "marketingName": "Q10S",
-    "manufacturer": "Wopad",
-    "brand": "Wopad",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "wopad q10s": {
+        "deviceName": "Q10S",
+        "marketingName": "Q10S",
+        "manufacturer": "Wopad",
+        "brand": "Wopad",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

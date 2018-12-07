@@ -1,62 +1,90 @@
 {
-  "general viewsonic device": {
-    "deviceName": "general ViewSonic Device",
-    "marketingName": "general ViewSonic Device",
-    "manufacturer": "ViewSonic",
-    "brand": "ViewSonic",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general viewsonic device": {
+        "deviceName": "general ViewSonic Device",
+        "marketingName": "general ViewSonic Device",
+        "manufacturer": "ViewSonic",
+        "brand": "ViewSonic",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "viewsonic viewpad 10e": {
-    "deviceName": "ViewPad 10e",
-    "marketingName": "ViewPad 10e",
-    "manufacturer": "ViewSonic",
-    "brand": "ViewSonic",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "viewsonic viewpad 10e": {
+        "deviceName": "ViewPad 10e",
+        "marketingName": "ViewPad 10e",
+        "manufacturer": "ViewSonic",
+        "brand": "ViewSonic",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "viewsonic viewpad 10s": {
-    "deviceName": "ViewPad 10S",
-    "marketingName": "ViewPad 10S",
-    "manufacturer": "ViewSonic",
-    "brand": "ViewSonic",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "viewsonic viewpad 10s": {
+        "deviceName": "ViewPad 10S",
+        "marketingName": "ViewPad 10S",
+        "manufacturer": "ViewSonic",
+        "brand": "ViewSonic",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "viewsonic viewpad 7e": {
-    "deviceName": "ViewPad 7e",
-    "marketingName": "ViewPad 7e",
-    "manufacturer": "ViewSonic",
-    "brand": "ViewSonic",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "viewsonic viewpad 7e": {
+        "deviceName": "ViewPad 7e",
+        "marketingName": "ViewPad 7e",
+        "manufacturer": "ViewSonic",
+        "brand": "ViewSonic",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

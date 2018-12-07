@@ -1,32 +1,46 @@
 {
-  "general tomtec device": {
-    "deviceName": "general Tomtec Device",
-    "marketingName": "general Tomtec Device",
-    "manufacturer": "Tomtec",
-    "brand": "Tomtec",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general tomtec device": {
+        "deviceName": "general Tomtec Device",
+        "marketingName": "general Tomtec Device",
+        "manufacturer": "Tomtec",
+        "brand": "Tomtec",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tomtec excellent 8": {
-    "deviceName": "Excellent 8",
-    "marketingName": "Excellent 8",
-    "manufacturer": "Tomtec",
-    "brand": "Tomtec",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "tomtec excellent 8": {
+        "deviceName": "Excellent 8",
+        "marketingName": "Excellent 8",
+        "manufacturer": "Tomtec",
+        "brand": "Tomtec",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

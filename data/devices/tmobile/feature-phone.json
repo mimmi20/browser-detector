@@ -1,17 +1,24 @@
 {
-  "t-mobile vairy touch ii": {
-    "deviceName": "Vairy Touch II",
-    "marketingName": "Vairy Touch II",
-    "manufacturer": "Tmobile",
-    "brand": "Tmobile",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "t-mobile vairy touch ii": {
+        "deviceName": "Vairy Touch II",
+        "marketingName": "Vairy Touch II",
+        "manufacturer": "Tmobile",
+        "brand": "Tmobile",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 400,
+            "touch": true,
+            "type": "WQVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

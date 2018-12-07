@@ -1,47 +1,68 @@
 {
-  "apple audioaccessory1,1": {
-    "deviceName": "AudioAccessory1,1",
-    "marketingName": "HomePod",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "speaker",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "apple audioaccessory1,1": {
+        "deviceName": "AudioAccessory1,1",
+        "marketingName": "HomePod",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "speaker",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "audio os"
     },
-    "dualOrientation": false,
-    "platform": "audio os"
-  },
-  "apple audioaccessory1,2": {
-    "deviceName": "AudioAccessory1,2",
-    "marketingName": "HomePod",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "speaker",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "apple audioaccessory1,2": {
+        "deviceName": "AudioAccessory1,2",
+        "marketingName": "HomePod",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "speaker",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "audio os"
     },
-    "dualOrientation": false,
-    "platform": "audio os"
-  },
-  "apple homepod": {
-    "deviceName": "HomePod",
-    "marketingName": "HomePod",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "speaker",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "audio os"
-  }
+    "apple homepod": {
+        "deviceName": "HomePod",
+        "marketingName": "HomePod",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "speaker",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "audio os"
+    }
 }

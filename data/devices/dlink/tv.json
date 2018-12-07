@@ -1,17 +1,24 @@
 {
-  "dlink dsm 380": {
-    "deviceName": "DSM 380",
-    "marketingName": "DSM 380",
-    "manufacturer": "Dlink",
-    "brand": "Dlink",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "linux"
-  }
+    "dlink dsm 380": {
+        "deviceName": "DSM 380",
+        "marketingName": "DSM 380",
+        "manufacturer": "Dlink",
+        "brand": "Dlink",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "linux"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "andoer cx919": {
-    "deviceName": "CX919",
-    "marketingName": "CX919",
-    "manufacturer": "Andoer",
-    "brand": "Andoer",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "andoer cx919": {
+        "deviceName": "CX919",
+        "marketingName": "CX919",
+        "manufacturer": "Andoer",
+        "brand": "Andoer",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

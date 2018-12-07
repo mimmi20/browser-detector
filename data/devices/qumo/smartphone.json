@@ -1,32 +1,46 @@
 {
-  "general qumo device": {
-    "deviceName": "general Qumo Device",
-    "marketingName": "general Qumo Device",
-    "manufacturer": "Qumo",
-    "brand": "Qumo",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general qumo device": {
+        "deviceName": "general Qumo Device",
+        "marketingName": "general Qumo Device",
+        "manufacturer": "Qumo",
+        "brand": "Qumo",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "qumo quest 450": {
-    "deviceName": "Quest 450",
-    "marketingName": "Quest 450",
-    "manufacturer": "Qumo",
-    "brand": "Qumo",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "qumo quest 450": {
+        "deviceName": "Quest 450",
+        "marketingName": "Quest 450",
+        "manufacturer": "Qumo",
+        "brand": "Qumo",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

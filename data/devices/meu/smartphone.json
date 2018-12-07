@@ -1,47 +1,68 @@
 {
-  "general meu device": {
-    "deviceName": "general MEU Device",
-    "marketingName": "general MEU Device",
-    "manufacturer": "MEU",
-    "brand": "MEU",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general meu device": {
+        "deviceName": "general MEU Device",
+        "marketingName": "general MEU Device",
+        "manufacturer": "MEU",
+        "brand": "MEU",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "meu an400": {
-    "deviceName": "AN400",
-    "marketingName": "AN400",
-    "manufacturer": "MEU",
-    "brand": "MEU",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "meu an400": {
+        "deviceName": "AN400",
+        "marketingName": "AN400",
+        "manufacturer": "MEU",
+        "brand": "MEU",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "meu an500": {
-    "deviceName": "AN500",
-    "marketingName": "AN500",
-    "manufacturer": "MEU",
-    "brand": "MEU",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "meu an500": {
+        "deviceName": "AN500",
+        "marketingName": "AN500",
+        "manufacturer": "MEU",
+        "brand": "MEU",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

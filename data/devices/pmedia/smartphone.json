@@ -1,32 +1,46 @@
 {
-  "general pmedia device": {
-    "deviceName": "general PMEDIA Device",
-    "marketingName": "general PMEDIA Device",
-    "manufacturer": "Pmedia",
-    "brand": "Pmedia",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general pmedia device": {
+        "deviceName": "general PMEDIA Device",
+        "marketingName": "general PMEDIA Device",
+        "manufacturer": "Pmedia",
+        "brand": "Pmedia",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pmedia pmsmart450": {
-    "deviceName": "PMSmart450",
-    "marketingName": "PMSmart450",
-    "manufacturer": "Pmedia",
-    "brand": "Pmedia",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pmedia pmsmart450": {
+        "deviceName": "PMSmart450",
+        "marketingName": "PMSmart450",
+        "manufacturer": "Pmedia",
+        "brand": "Pmedia",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

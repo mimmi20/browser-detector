@@ -1,32 +1,46 @@
 {
-  "general nuvision device": {
-    "deviceName": "general NuVision Device",
-    "marketingName": "general NuVision Device",
-    "manufacturer": "NuVision",
-    "brand": "NuVision",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nuvision device": {
+        "deviceName": "general NuVision Device",
+        "marketingName": "general NuVision Device",
+        "manufacturer": "NuVision",
+        "brand": "NuVision",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nuvision tm785m3": {
-    "deviceName": "TM785M3",
-    "marketingName": "TM785M3",
-    "manufacturer": "NuVision",
-    "brand": "NuVision",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nuvision tm785m3": {
+        "deviceName": "TM785M3",
+        "marketingName": "TM785M3",
+        "manufacturer": "NuVision",
+        "brand": "NuVision",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

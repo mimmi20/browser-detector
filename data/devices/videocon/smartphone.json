@@ -1,77 +1,112 @@
 {
-  "general videocon device": {
-    "deviceName": "general Videocon Device",
-    "marketingName": "general Videocon Device",
-    "manufacturer": "Videocon",
-    "brand": "Videocon",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general videocon device": {
+        "deviceName": "general Videocon Device",
+        "marketingName": "general Videocon Device",
+        "manufacturer": "Videocon",
+        "brand": "Videocon",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "videocon a10": {
-    "deviceName": "A10",
-    "marketingName": "A10",
-    "manufacturer": "Videocon",
-    "brand": "Videocon",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "videocon a10": {
+        "deviceName": "A10",
+        "marketingName": "A10",
+        "manufacturer": "Videocon",
+        "brand": "Videocon",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "videocon a15": {
-    "deviceName": "A15",
-    "marketingName": "A15",
-    "manufacturer": "Videocon",
-    "brand": "Videocon",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "videocon a15": {
+        "deviceName": "A15",
+        "marketingName": "A15",
+        "manufacturer": "Videocon",
+        "brand": "Videocon",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "videocon a27i": {
-    "deviceName": "A27i",
-    "marketingName": "A27i",
-    "manufacturer": "Videocon",
-    "brand": "Videocon",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "videocon a27i": {
+        "deviceName": "A27i",
+        "marketingName": "A27i",
+        "manufacturer": "Videocon",
+        "brand": "Videocon",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "videocon vt75c": {
-    "deviceName": "VT75C",
-    "marketingName": "VT75C",
-    "manufacturer": "Videocon",
-    "brand": "Videocon",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "videocon vt75c": {
+        "deviceName": "VT75C",
+        "marketingName": "VT75C",
+        "manufacturer": "Videocon",
+        "brand": "Videocon",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

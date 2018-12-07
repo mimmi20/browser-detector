@@ -1,17 +1,24 @@
 {
-  "general tcl tv": {
-    "deviceName": "general TCL TV",
-    "marketingName": "general TCL TV",
-    "manufacturer": "Tcl",
-    "brand": "Tcl",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "general tcl tv": {
+        "deviceName": "general TCL TV",
+        "marketingName": "general TCL TV",
+        "manufacturer": "Tcl",
+        "brand": "Tcl",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

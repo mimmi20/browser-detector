@@ -1,62 +1,90 @@
 {
-  "general go-mobile device": {
-    "deviceName": "general GoMobile Device",
-    "marketingName": "general GoMobile Device",
-    "manufacturer": "GoMobile",
-    "brand": "GoMobile",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general go-mobile device": {
+        "deviceName": "general GoMobile Device",
+        "marketingName": "general GoMobile Device",
+        "manufacturer": "GoMobile",
+        "brand": "GoMobile",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "go-mobile go 1402": {
-    "deviceName": "GO 1402",
-    "marketingName": "GO 1402",
-    "manufacturer": "GoMobile",
-    "brand": "GoMobile",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "go-mobile go 1402": {
+        "deviceName": "GO 1402",
+        "marketingName": "GO 1402",
+        "manufacturer": "GoMobile",
+        "brand": "GoMobile",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "go-mobile go 503": {
-    "deviceName": "GO 503",
-    "marketingName": "GO 503",
-    "manufacturer": "GoMobile",
-    "brand": "GoMobile",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "go-mobile go 503": {
+        "deviceName": "GO 503",
+        "marketingName": "GO 503",
+        "manufacturer": "GoMobile",
+        "brand": "GoMobile",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "go-mobile go onyx": {
-    "deviceName": "GO Onyx",
-    "marketingName": "GO Onyx",
-    "manufacturer": "GoMobile",
-    "brand": "GoMobile",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "go-mobile go onyx": {
+        "deviceName": "GO Onyx",
+        "marketingName": "GO Onyx",
+        "manufacturer": "GoMobile",
+        "brand": "GoMobile",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

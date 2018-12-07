@@ -1,32 +1,46 @@
 {
-  "general kempler-strauss device": {
-    "deviceName": "general Kempler and Strauss Device",
-    "marketingName": "general Kempler and Strauss Device",
-    "manufacturer": "Kempler and Strauss",
-    "brand": "Kempler and Strauss",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general kempler-strauss device": {
+        "deviceName": "general Kempler and Strauss Device",
+        "marketingName": "general Kempler and Strauss Device",
+        "manufacturer": "Kempler and Strauss",
+        "brand": "Kempler and Strauss",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "kempler-strauss alumini 2": {
-    "deviceName": "Alumini 2",
-    "marketingName": "Alumini 2",
-    "manufacturer": "Kempler and Strauss",
-    "brand": "Kempler and Strauss",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "kempler-strauss alumini 2": {
+        "deviceName": "Alumini 2",
+        "marketingName": "Alumini 2",
+        "manufacturer": "Kempler and Strauss",
+        "brand": "Kempler and Strauss",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

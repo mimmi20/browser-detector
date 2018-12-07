@@ -1,17 +1,24 @@
 {
-  "fujitsu pc": {
-    "deviceName": "PC",
-    "marketingName": "PC",
-    "manufacturer": "Fujitsu",
-    "brand": "Fujitsu",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "fujitsu pc": {
+        "deviceName": "PC",
+        "marketingName": "PC",
+        "manufacturer": "Fujitsu",
+        "brand": "Fujitsu",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

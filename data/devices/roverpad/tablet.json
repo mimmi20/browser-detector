@@ -1,32 +1,46 @@
 {
-  "general roverpad device": {
-    "deviceName": "general RoverPad Device",
-    "marketingName": "general RoverPad Device",
-    "manufacturer": "RoverPad",
-    "brand": "RoverPad",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general roverpad device": {
+        "deviceName": "general RoverPad Device",
+        "marketingName": "general RoverPad Device",
+        "manufacturer": "RoverPad",
+        "brand": "RoverPad",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "roverpad air a70": {
-    "deviceName": "Air A70",
-    "marketingName": "Air A70",
-    "manufacturer": "RoverPad",
-    "brand": "RoverPad",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "roverpad air a70": {
+        "deviceName": "Air A70",
+        "marketingName": "Air A70",
+        "manufacturer": "RoverPad",
+        "brand": "RoverPad",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

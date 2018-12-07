@@ -1,182 +1,266 @@
 {
-  "general logicom device": {
-    "deviceName": "general Logicom Device",
-    "marketingName": "general Logicom Device",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general logicom device": {
+        "deviceName": "general Logicom Device",
+        "marketingName": "general Logicom Device",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom e1031": {
-    "deviceName": "E1031",
-    "marketingName": "E1031",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "logicom e1031": {
+        "deviceName": "E1031",
+        "marketingName": "E1031",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom e731": {
-    "deviceName": "E731",
-    "marketingName": "E731",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "logicom e731": {
+        "deviceName": "E731",
+        "marketingName": "E731",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom e812": {
-    "deviceName": "E812",
-    "marketingName": "E812",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "logicom e812": {
+        "deviceName": "E812",
+        "marketingName": "E812",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom e912": {
-    "deviceName": "E912",
-    "marketingName": "E912",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "logicom e912": {
+        "deviceName": "E912",
+        "marketingName": "E912",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom l-ement tab 741": {
-    "deviceName": "L-Ement Tab 741",
-    "marketingName": "L-Ement Tab 741",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "logicom l-ement tab 741": {
+        "deviceName": "L-Ement Tab 741",
+        "marketingName": "L-Ement Tab 741",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom l-ement tab 901": {
-    "deviceName": "L-Ement Tab 901",
-    "marketingName": "L-Ement Tab 901",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "logicom l-ement tab 901": {
+        "deviceName": "L-Ement Tab 901",
+        "marketingName": "L-Ement Tab 901",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom l-ement tab1040 bt": {
-    "deviceName": "L-Ement TAB1040 BT",
-    "marketingName": "L-Ement TAB1040 BT",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "logicom l-ement tab1040 bt": {
+        "deviceName": "L-Ement TAB1040 BT",
+        "marketingName": "L-Ement TAB1040 BT",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom l-ixir tab 1041": {
-    "deviceName": "L-Ixir Tab 1041",
-    "marketingName": "L-Ixir Tab 1041",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 1366,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "logicom l-ixir tab 1041": {
+        "deviceName": "L-Ixir Tab 1041",
+        "marketingName": "L-Ixir Tab 1041",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 1366,
+            "height": 768,
+            "touch": true,
+            "type": "FWXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom s9782": {
-    "deviceName": "S9782",
-    "marketingName": "S9782",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "logicom s9782": {
+        "deviceName": "S9782",
+        "marketingName": "S9782",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom tab 1062": {
-    "deviceName": "Tab 1062",
-    "marketingName": "Tab 1062",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "logicom tab 1062": {
+        "deviceName": "Tab 1062",
+        "marketingName": "Tab 1062",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom tab 950": {
-    "deviceName": "Tab 950",
-    "marketingName": "Tab 950",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "logicom tab 950": {
+        "deviceName": "Tab 950",
+        "marketingName": "Tab 950",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

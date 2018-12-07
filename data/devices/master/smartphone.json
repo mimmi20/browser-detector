@@ -1,32 +1,46 @@
 {
-  "general master device": {
-    "deviceName": "general Master Device",
-    "marketingName": "general Master Device",
-    "manufacturer": "Master",
-    "brand": "Master",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general master device": {
+        "deviceName": "general Master Device",
+        "marketingName": "general Master Device",
+        "manufacturer": "Master",
+        "brand": "Master",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "master smartphone 650": {
-    "deviceName": "Smartphone 650",
-    "marketingName": "Smartphone 650",
-    "manufacturer": "Master",
-    "brand": "Master",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "master smartphone 650": {
+        "deviceName": "Smartphone 650",
+        "marketingName": "Smartphone 650",
+        "manufacturer": "Master",
+        "brand": "Master",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

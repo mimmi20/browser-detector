@@ -1,17 +1,24 @@
 {
-  "raspberry pi": {
-    "deviceName": "Raspberry Pi",
-    "marketingName": "Raspberry Pi",
-    "manufacturer": "Raspberry Pi Foundation",
-    "brand": "Raspberry Pi Foundation",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "debian"
-  }
+    "raspberry pi": {
+        "deviceName": "Raspberry Pi",
+        "marketingName": "Raspberry Pi",
+        "manufacturer": "Raspberry Pi Foundation",
+        "brand": "Raspberry Pi Foundation",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "debian"
+    }
 }

@@ -1,77 +1,112 @@
 {
-  "general pearl device": {
-    "deviceName": "general Pearl Device",
-    "marketingName": "general Pearl Device",
-    "manufacturer": "Pearl",
-    "brand": "Pearl",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general pearl device": {
+        "deviceName": "general Pearl Device",
+        "marketingName": "general Pearl Device",
+        "manufacturer": "Pearl",
+        "brand": "Pearl",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pearl touchlet x7g": {
-    "deviceName": "Touchlet X7G",
-    "marketingName": "Touchlet X7G",
-    "manufacturer": "Pearl",
-    "brand": "Pearl",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "pearl touchlet x7g": {
+        "deviceName": "Touchlet X7G",
+        "marketingName": "Touchlet X7G",
+        "manufacturer": "Pearl",
+        "brand": "Pearl",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pearl x10": {
-    "deviceName": "Touchlet X10",
-    "marketingName": "Touchlet X10",
-    "manufacturer": "Pearl",
-    "brand": "Pearl",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "pearl x10": {
+        "deviceName": "Touchlet X10",
+        "marketingName": "Touchlet X10",
+        "manufacturer": "Pearl",
+        "brand": "Pearl",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pearl x10+": {
-    "deviceName": "X10+",
-    "marketingName": "Touchlet X10.Dual+",
-    "manufacturer": "Pearl",
-    "brand": "Pearl",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "pearl x10+": {
+        "deviceName": "X10+",
+        "marketingName": "Touchlet X10.Dual+",
+        "manufacturer": "Pearl",
+        "brand": "Pearl",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pearl x10.quad.fm": {
-    "deviceName": "X10.quad.FM",
-    "marketingName": "X10.quad.FM",
-    "manufacturer": "Pearl",
-    "brand": "Pearl",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pearl x10.quad.fm": {
+        "deviceName": "X10.quad.FM",
+        "marketingName": "X10.quad.FM",
+        "manufacturer": "Pearl",
+        "brand": "Pearl",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

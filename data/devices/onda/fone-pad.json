@@ -1,32 +1,46 @@
 {
-  "onda v10 4g": {
-    "deviceName": "V10 4G",
-    "marketingName": "V10 4G",
-    "manufacturer": "Onda",
-    "brand": "Onda",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "onda v10 4g": {
+        "deviceName": "V10 4G",
+        "marketingName": "V10 4G",
+        "manufacturer": "Onda",
+        "brand": "Onda",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "onda v919 3g air": {
-    "deviceName": "V919",
-    "marketingName": "Air 3G",
-    "manufacturer": "Onda",
-    "brand": "Onda",
-    "type": "fone-pad",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": null
-  }
+    "onda v919 3g air": {
+        "deviceName": "V919",
+        "marketingName": "Air 3G",
+        "manufacturer": "Onda",
+        "brand": "Onda",
+        "type": "fone-pad",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general maxx device": {
-    "deviceName": "general Maxx Device",
-    "marketingName": "general Maxx Device",
-    "manufacturer": "Maxx",
-    "brand": "Maxx",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general maxx device": {
+        "deviceName": "general Maxx Device",
+        "marketingName": "general Maxx Device",
+        "manufacturer": "Maxx",
+        "brand": "Maxx",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "maxx ax5 duo": {
-    "deviceName": "AX5 Duo",
-    "marketingName": "AX5 Duo",
-    "manufacturer": "Maxx",
-    "brand": "Maxx",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "maxx ax5 duo": {
+        "deviceName": "AX5 Duo",
+        "marketingName": "AX5 Duo",
+        "manufacturer": "Maxx",
+        "brand": "Maxx",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

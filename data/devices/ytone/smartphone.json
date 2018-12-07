@@ -1,92 +1,134 @@
 {
-  "general ytone device": {
-    "deviceName": "general Ytone Device",
-    "marketingName": "general Ytone Device",
-    "manufacturer": "Ytone",
-    "brand": "Ytone",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general ytone device": {
+        "deviceName": "general Ytone Device",
+        "marketingName": "general Ytone Device",
+        "manufacturer": "Ytone",
+        "brand": "Ytone",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ytone l919": {
-    "deviceName": "L919",
-    "marketingName": "L919",
-    "manufacturer": "Ytone",
-    "brand": "Ytone",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "ytone l919": {
+        "deviceName": "L919",
+        "marketingName": "L919",
+        "manufacturer": "Ytone",
+        "brand": "Ytone",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ytone l985s": {
-    "deviceName": "L985S",
-    "marketingName": "L985S",
-    "manufacturer": "Ytone",
-    "brand": "Ytone",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "ytone l985s": {
+        "deviceName": "L985S",
+        "marketingName": "L985S",
+        "manufacturer": "Ytone",
+        "brand": "Ytone",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ytone l988": {
-    "deviceName": "L988",
-    "marketingName": "L988",
-    "manufacturer": "Ytone",
-    "brand": "Ytone",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "ytone l988": {
+        "deviceName": "L988",
+        "marketingName": "L988",
+        "manufacturer": "Ytone",
+        "brand": "Ytone",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ytone l999": {
-    "deviceName": "L999",
-    "marketingName": "L999",
-    "manufacturer": "Ytone",
-    "brand": "Ytone",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "ytone l999": {
+        "deviceName": "L999",
+        "marketingName": "L999",
+        "manufacturer": "Ytone",
+        "brand": "Ytone",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ytone m7x": {
-    "deviceName": "M7X",
-    "marketingName": "M7X",
-    "manufacturer": "Ytone",
-    "brand": "Ytone",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ytone m7x": {
+        "deviceName": "M7X",
+        "marketingName": "M7X",
+        "manufacturer": "Ytone",
+        "brand": "Ytone",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

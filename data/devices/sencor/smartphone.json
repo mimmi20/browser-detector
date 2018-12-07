@@ -1,32 +1,46 @@
 {
-  "general sencor device": {
-    "deviceName": "general Sencor Device",
-    "marketingName": "general Sencor Device",
-    "manufacturer": "Sencor",
-    "brand": "Sencor",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general sencor device": {
+        "deviceName": "general Sencor Device",
+        "marketingName": "general Sencor Device",
+        "manufacturer": "Sencor",
+        "brand": "Sencor",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "sencor element p501": {
-    "deviceName": "Element P501",
-    "marketingName": "Element P501",
-    "manufacturer": "Sencor",
-    "brand": "Sencor",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "sencor element p501": {
+        "deviceName": "Element P501",
+        "marketingName": "Element P501",
+        "manufacturer": "Sencor",
+        "brand": "Sencor",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

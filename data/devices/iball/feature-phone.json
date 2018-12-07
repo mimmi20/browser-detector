@@ -1,32 +1,46 @@
 {
-  "general iball device": {
-    "deviceName": "general Iball Device",
-    "marketingName": "general Iball Device",
-    "manufacturer": "Iball",
-    "brand": "Iball",
-    "type": "feature-phone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general iball device": {
+        "deviceName": "general Iball Device",
+        "marketingName": "general Iball Device",
+        "manufacturer": "Iball",
+        "brand": "Iball",
+        "type": "feature-phone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "iball majestic 2.4d": {
-    "deviceName": "Majestic 2.4D",
-    "marketingName": "Majestic 2.4D",
-    "manufacturer": "Iball",
-    "brand": "Iball",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "iball majestic 2.4d": {
+        "deviceName": "Majestic 2.4D",
+        "marketingName": "Majestic 2.4D",
+        "manufacturer": "Iball",
+        "brand": "Iball",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

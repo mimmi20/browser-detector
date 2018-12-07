@@ -1,17 +1,24 @@
 {
-  "fly flylife connect 7 3g": {
-    "deviceName": "Flylife Connect 7 3G",
-    "marketingName": "Flylife Connect 7 3G",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "fly flylife connect 7 3g": {
+        "deviceName": "Flylife Connect 7 3G",
+        "marketingName": "Flylife Connect 7 3G",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

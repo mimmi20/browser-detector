@@ -1,47 +1,68 @@
 {
-  "general msi device": {
-    "deviceName": "general MSI Device",
-    "marketingName": "general MSI Device",
-    "manufacturer": "Msi",
-    "brand": "Msi",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general msi device": {
+        "deviceName": "general MSI Device",
+        "marketingName": "general MSI Device",
+        "manufacturer": "Msi",
+        "brand": "Msi",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "msi primo76": {
-    "deviceName": "Primo76",
-    "marketingName": "Global Primo 76",
-    "manufacturer": "Msi",
-    "brand": "Msi",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "msi primo76": {
+        "deviceName": "Primo76",
+        "marketingName": "Global Primo 76",
+        "manufacturer": "Msi",
+        "brand": "Msi",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "msi primo91": {
-    "deviceName": "Primo 91",
-    "marketingName": "Windpad",
-    "manufacturer": "Msi",
-    "brand": "Msi",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "msi primo91": {
+        "deviceName": "Primo 91",
+        "marketingName": "Windpad",
+        "manufacturer": "Msi",
+        "brand": "Msi",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

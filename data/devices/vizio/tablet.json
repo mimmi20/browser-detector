@@ -1,32 +1,46 @@
 {
-  "general vizio device": {
-    "deviceName": "general Vizio Device",
-    "marketingName": "general Vizio Device",
-    "manufacturer": "Vizio",
-    "brand": "Vizio",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general vizio device": {
+        "deviceName": "general Vizio Device",
+        "marketingName": "general Vizio Device",
+        "manufacturer": "Vizio",
+        "brand": "Vizio",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vizio vtab1008": {
-    "deviceName": "VTAB1008",
-    "marketingName": "VTAB1008",
-    "manufacturer": "Vizio",
-    "brand": "Vizio",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "vizio vtab1008": {
+        "deviceName": "VTAB1008",
+        "marketingName": "VTAB1008",
+        "manufacturer": "Vizio",
+        "brand": "Vizio",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

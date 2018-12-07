@@ -1,77 +1,112 @@
 {
-  "general kingsun device": {
-    "deviceName": "general Kingsun Device",
-    "marketingName": "general Kingsun Device",
-    "manufacturer": "Kingsun",
-    "brand": "Kingsun",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general kingsun device": {
+        "deviceName": "general Kingsun Device",
+        "marketingName": "general Kingsun Device",
+        "manufacturer": "Kingsun",
+        "brand": "Kingsun",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "kingsun f1": {
-    "deviceName": "F1",
-    "marketingName": "F1",
-    "manufacturer": "Kingsun",
-    "brand": "Kingsun",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "kingsun f1": {
+        "deviceName": "F1",
+        "marketingName": "F1",
+        "manufacturer": "Kingsun",
+        "brand": "Kingsun",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "kingsun s5q": {
-    "deviceName": "S5Q",
-    "marketingName": "S5Q",
-    "manufacturer": "Kingsun",
-    "brand": "Kingsun",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "kingsun s5q": {
+        "deviceName": "S5Q",
+        "marketingName": "S5Q",
+        "manufacturer": "Kingsun",
+        "brand": "Kingsun",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "kingsun s6": {
-    "deviceName": "S6",
-    "marketingName": "S6",
-    "manufacturer": "Kingsun",
-    "brand": "Kingsun",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "kingsun s6": {
+        "deviceName": "S6",
+        "marketingName": "S6",
+        "manufacturer": "Kingsun",
+        "brand": "Kingsun",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "kingsun s8": {
-    "deviceName": "S8",
-    "marketingName": "S8",
-    "manufacturer": "Kingsun",
-    "brand": "Kingsun",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "kingsun s8": {
+        "deviceName": "S8",
+        "marketingName": "S8",
+        "manufacturer": "Kingsun",
+        "brand": "Kingsun",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

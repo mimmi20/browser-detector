@@ -1,32 +1,46 @@
 {
-  "general azpen device": {
-    "deviceName": "general Azpen Device",
-    "marketingName": "general Azpen Device",
-    "manufacturer": "Azpen",
-    "brand": "Azpen",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general azpen device": {
+        "deviceName": "general Azpen Device",
+        "marketingName": "general Azpen Device",
+        "manufacturer": "Azpen",
+        "brand": "Azpen",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "azpen a727": {
-    "deviceName": "A727",
-    "marketingName": "A727",
-    "manufacturer": "Azpen",
-    "brand": "Azpen",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "azpen a727": {
+        "deviceName": "A727",
+        "marketingName": "A727",
+        "manufacturer": "Azpen",
+        "brand": "Azpen",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

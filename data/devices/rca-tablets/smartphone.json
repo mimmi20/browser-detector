@@ -1,17 +1,24 @@
 {
-  "rca-tablets rct6773w22": {
-    "deviceName": "RCT6773W22",
-    "marketingName": "RCT6773W22",
-    "manufacturer": "RCA Tablets",
-    "brand": "RCA Tablets",
-    "type": "smartphone",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "rca-tablets rct6773w22": {
+        "deviceName": "RCT6773W22",
+        "marketingName": "RCT6773W22",
+        "manufacturer": "RCA Tablets",
+        "brand": "RCA Tablets",
+        "type": "smartphone",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

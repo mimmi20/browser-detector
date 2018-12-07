@@ -1,17 +1,24 @@
 {
-  "advan t1x plus": {
-    "deviceName": "T1X Plus",
-    "marketingName": "Barca Tab 7",
-    "manufacturer": "Advan",
-    "brand": "Advan",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "advan t1x plus": {
+        "deviceName": "T1X Plus",
+        "marketingName": "Barca Tab 7",
+        "manufacturer": "Advan",
+        "brand": "Advan",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 800,
+            "touch": true,
+            "type": "Custom 800x1024",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

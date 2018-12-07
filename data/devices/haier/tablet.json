@@ -1,47 +1,68 @@
 {
-  "haier pad 971": {
-    "deviceName": "Pad 971",
-    "marketingName": "Pad 971",
-    "manufacturer": "Haier",
-    "brand": "Haier",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "haier pad 971": {
+        "deviceName": "Pad 971",
+        "marketingName": "Pad 971",
+        "manufacturer": "Haier",
+        "brand": "Haier",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "haier pad g781": {
-    "deviceName": "PAD G781",
-    "marketingName": "Pad Mini",
-    "manufacturer": "Haier",
-    "brand": "Haier",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "haier pad g781": {
+        "deviceName": "PAD G781",
+        "marketingName": "Pad Mini",
+        "manufacturer": "Haier",
+        "brand": "Haier",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "haier sy0880": {
-    "deviceName": "SY0880",
-    "marketingName": "SY0880",
-    "manufacturer": "Haier",
-    "brand": "Haier",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "haier sy0880": {
+        "deviceName": "SY0880",
+        "marketingName": "SY0880",
+        "manufacturer": "Haier",
+        "brand": "Haier",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

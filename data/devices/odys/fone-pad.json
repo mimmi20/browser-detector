@@ -1,272 +1,398 @@
 {
-  "odys connect 8 plus 3g": {
-    "deviceName": "Connect 8 plus 3G",
-    "marketingName": "Connect 8 plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "odys connect 8 plus 3g": {
+        "deviceName": "Connect 8 plus 3G",
+        "marketingName": "Connect 8 plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys falcon 10 plus 3g": {
-    "deviceName": "Falcon 10 Plus 3G",
-    "marketingName": "Falcon 10 Plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "odys falcon 10 plus 3g": {
+        "deviceName": "Falcon 10 Plus 3G",
+        "marketingName": "Falcon 10 Plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys goal 10 plus 3g": {
-    "deviceName": "Goal 10 Plus 3G",
-    "marketingName": "Goal 10 Plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "odys goal 10 plus 3g": {
+        "deviceName": "Goal 10 Plus 3G",
+        "marketingName": "Goal 10 Plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys maven 10 hd plus 3g": {
-    "deviceName": "Maven 10 HD plus 3G",
-    "marketingName": "Maven 10 HD plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "odys maven 10 hd plus 3g": {
+        "deviceName": "Maven 10 HD plus 3G",
+        "marketingName": "Maven 10 HD plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys maven 10 pro plus 3g": {
-    "deviceName": "Maven 10 Pro plus 3G",
-    "marketingName": "Maven 10 Pro plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "odys maven 10 pro plus 3g": {
+        "deviceName": "Maven 10 Pro plus 3G",
+        "marketingName": "Maven 10 Pro plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys maven x10 hd lte": {
-    "deviceName": "Maven X10 HD LTE",
-    "marketingName": "Maven X10 HD LTE",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "odys maven x10 hd lte": {
+        "deviceName": "Maven X10 HD LTE",
+        "marketingName": "Maven X10 HD LTE",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "odys pro q8 plus": {
-    "deviceName": "Pro Q8 plus",
-    "marketingName": "Pro Q8 plus",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "odys pro q8 plus": {
+        "deviceName": "Pro Q8 plus",
+        "marketingName": "Pro Q8 plus",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys rapid 10 lte": {
-    "deviceName": "Rapid 10 LTE",
-    "marketingName": "Rapid 10 LTE",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "odys rapid 10 lte": {
+        "deviceName": "Rapid 10 LTE",
+        "marketingName": "Rapid 10 LTE",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "odys rapid 7 lte": {
-    "deviceName": "Rapid 7 LTE",
-    "marketingName": "Rapid 7 LTE",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "odys rapid 7 lte": {
+        "deviceName": "Rapid 7 LTE",
+        "marketingName": "Rapid 7 LTE",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys score plus 3g": {
-    "deviceName": "Score plus 3G",
-    "marketingName": "Score plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "odys score plus 3g": {
+        "deviceName": "Score plus 3G",
+        "marketingName": "Score plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys sky plus 3g": {
-    "deviceName": "Sky plus 3G",
-    "marketingName": "Sky plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "odys sky plus 3g": {
+        "deviceName": "Sky plus 3G",
+        "marketingName": "Sky plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys space 10 plus 3g": {
-    "deviceName": "Space 10 plus 3G",
-    "marketingName": "Space 10 plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "odys space 10 plus 3g": {
+        "deviceName": "Space 10 plus 3G",
+        "marketingName": "Space 10 plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys space 10 pro 3g": {
-    "deviceName": "Space 10 Pro 3G",
-    "marketingName": "Space 10 Pro 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "odys space 10 pro 3g": {
+        "deviceName": "Space 10 Pro 3G",
+        "marketingName": "Space 10 Pro 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys thor 10 plus 3g": {
-    "deviceName": "Thor 10 plus 3G",
-    "marketingName": "Thor 10 plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "odys thor 10 plus 3g": {
+        "deviceName": "Thor 10 plus 3G",
+        "marketingName": "Thor 10 plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys xelio 10 plus 3g": {
-    "deviceName": "Xelio 10 plus 3G",
-    "marketingName": "Xelio 10 plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "odys xelio 10 plus 3g": {
+        "deviceName": "Xelio 10 plus 3G",
+        "marketingName": "Xelio 10 plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys xelio hd 10 plus lte": {
-    "deviceName": "Xelio HD 10 plus LTE",
-    "marketingName": "Xelio HD 10 plus LTE",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "odys xelio hd 10 plus lte": {
+        "deviceName": "Xelio HD 10 plus LTE",
+        "marketingName": "Xelio HD 10 plus LTE",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys xelio next 10 plus 3g": {
-    "deviceName": "Xelio Next 10 plus 3G",
-    "marketingName": "Xelio Next 10 plus 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "odys xelio next 10 plus 3g": {
+        "deviceName": "Xelio Next 10 plus 3G",
+        "marketingName": "Xelio Next 10 plus 3G",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "odys xelio pt2 pro": {
-    "deviceName": "Xelio PT2 Pro",
-    "marketingName": "Xelio Phonetab 2 Pro",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": null
-  }
+    "odys xelio pt2 pro": {
+        "deviceName": "Xelio PT2 Pro",
+        "marketingName": "Xelio Phonetab 2 Pro",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

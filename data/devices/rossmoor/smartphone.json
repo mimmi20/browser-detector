@@ -1,17 +1,24 @@
 {
-  "ross&moor rm-560": {
-    "deviceName": "RM-560",
-    "marketingName": "RM-560",
-    "manufacturer": "RossMoor",
-    "brand": "RossMoor",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ross&moor rm-560": {
+        "deviceName": "RM-560",
+        "marketingName": "RM-560",
+        "manufacturer": "RossMoor",
+        "brand": "RossMoor",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "turbo-x pi": {
-    "deviceName": "PI",
-    "marketingName": "PI",
-    "manufacturer": "Turbo-X",
-    "brand": "Turbo-X",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "turbo-x pi": {
+        "deviceName": "PI",
+        "marketingName": "PI",
+        "manufacturer": "Turbo-X",
+        "brand": "Turbo-X",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "turbo-x pi 4g": {
-    "deviceName": "PI 4G",
-    "marketingName": "PI 4G",
-    "manufacturer": "Turbo-X",
-    "brand": "Turbo-X",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "turbo-x pi 4g": {
+        "deviceName": "PI 4G",
+        "marketingName": "PI 4G",
+        "manufacturer": "Turbo-X",
+        "brand": "Turbo-X",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

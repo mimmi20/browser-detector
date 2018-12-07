@@ -1,242 +1,354 @@
 {
-  "general lenco device": {
-    "deviceName": "general Lenco Device",
-    "marketingName": "general Lenco Device",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general lenco device": {
+        "deviceName": "general Lenco Device",
+        "marketingName": "general Lenco Device",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco cartab-920": {
-    "deviceName": "CarTab 920",
-    "marketingName": "CarTab 920",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "lenco cartab-920": {
+        "deviceName": "CarTab 920",
+        "marketingName": "CarTab 920",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco cartab-925": {
-    "deviceName": "CarTab 925",
-    "marketingName": "CarTab 925",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco cartab-925": {
+        "deviceName": "CarTab 925",
+        "marketingName": "CarTab 925",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco cm900hz": {
-    "deviceName": "Tab 811",
-    "marketingName": "Tab 811",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco cm900hz": {
+        "deviceName": "Tab 811",
+        "marketingName": "Tab 811",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco cooltab-70": {
-    "deviceName": "CoolTab 70",
-    "marketingName": "CoolTab 70",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "lenco cooltab-70": {
+        "deviceName": "CoolTab 70",
+        "marketingName": "CoolTab 70",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco cooltab-72": {
-    "deviceName": "CoolTab 72",
-    "marketingName": "CoolTab 72",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco cooltab-72": {
+        "deviceName": "CoolTab 72",
+        "marketingName": "CoolTab 72",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco cooltab-80": {
-    "deviceName": "CoolTab 80",
-    "marketingName": "CoolTab 80",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco cooltab-80": {
+        "deviceName": "CoolTab 80",
+        "marketingName": "CoolTab 80",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco kidztab-70": {
-    "deviceName": "KidzTab 70",
-    "marketingName": "KidzTab 70",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco kidztab-70": {
+        "deviceName": "KidzTab 70",
+        "marketingName": "KidzTab 70",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco tab 1014": {
-    "deviceName": "Tab 1014",
-    "marketingName": "Tab 1014",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco tab 1014": {
+        "deviceName": "Tab 1014",
+        "marketingName": "Tab 1014",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco tab 1030": {
-    "deviceName": "Tab 1030",
-    "marketingName": "Tab 1030",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco tab 1030": {
+        "deviceName": "Tab 1030",
+        "marketingName": "Tab 1030",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco tab 704": {
-    "deviceName": "Tab 704",
-    "marketingName": "Tab 704",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "lenco tab 704": {
+        "deviceName": "Tab 704",
+        "marketingName": "Tab 704",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco tab 712": {
-    "deviceName": "Tab 712",
-    "marketingName": "Tab 712",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "lenco tab 712": {
+        "deviceName": "Tab 712",
+        "marketingName": "Tab 712",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco tab 813": {
-    "deviceName": "Tab 813",
-    "marketingName": "Tab 813",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco tab 813": {
+        "deviceName": "Tab 813",
+        "marketingName": "Tab 813",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco tab 900": {
-    "deviceName": "Tab 900",
-    "marketingName": "Tab 900",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "lenco tab 900": {
+        "deviceName": "Tab 900",
+        "marketingName": "Tab 900",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco tab 925": {
-    "deviceName": "Tab 925",
-    "marketingName": "Tab 925",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "lenco tab 925": {
+        "deviceName": "Tab 925",
+        "marketingName": "Tab 925",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lenco tab 9720": {
-    "deviceName": "Tab 9720",
-    "marketingName": "Tab 9720",
-    "manufacturer": "Lenco",
-    "brand": "Lenco",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "lenco tab 9720": {
+        "deviceName": "Tab 9720",
+        "marketingName": "Tab 9720",
+        "manufacturer": "Lenco",
+        "brand": "Lenco",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

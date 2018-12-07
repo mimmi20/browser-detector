@@ -1,32 +1,46 @@
 {
-  "general top-house device": {
-    "deviceName": "general Top House Device",
-    "marketingName": "general Top House Device",
-    "manufacturer": "Top House",
-    "brand": "Top House",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general top-house device": {
+        "deviceName": "general Top House Device",
+        "marketingName": "general Top House Device",
+        "manufacturer": "Top House",
+        "brand": "Top House",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "top-house coto w418": {
-    "deviceName": "Coto W418",
-    "marketingName": "Coto W418",
-    "manufacturer": "Top House",
-    "brand": "Top House",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "top-house coto w418": {
+        "deviceName": "Coto W418",
+        "marketingName": "Coto W418",
+        "manufacturer": "Top House",
+        "brand": "Top House",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

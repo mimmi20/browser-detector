@@ -1,92 +1,134 @@
 {
-  "general konrow device": {
-    "deviceName": "general Konrow Device",
-    "marketingName": "general Konrow Device",
-    "manufacturer": "Konrow",
-    "brand": "Konrow",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general konrow device": {
+        "deviceName": "general Konrow Device",
+        "marketingName": "general Konrow Device",
+        "manufacturer": "Konrow",
+        "brand": "Konrow",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "konrow bigcool": {
-    "deviceName": "BIGCOOL",
-    "marketingName": "BIGCOOL",
-    "manufacturer": "Konrow",
-    "brand": "Konrow",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "konrow bigcool": {
+        "deviceName": "BIGCOOL",
+        "marketingName": "BIGCOOL",
+        "manufacturer": "Konrow",
+        "brand": "Konrow",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "konrow cool-k": {
-    "deviceName": "COOL-K",
-    "marketingName": "COOL-K",
-    "manufacturer": "Konrow",
-    "brand": "Konrow",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "konrow cool-k": {
+        "deviceName": "COOL-K",
+        "marketingName": "COOL-K",
+        "manufacturer": "Konrow",
+        "brand": "Konrow",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "konrow coolfive": {
-    "deviceName": "COOLFIVE",
-    "marketingName": "COOLFIVE",
-    "manufacturer": "Konrow",
-    "brand": "Konrow",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "konrow coolfive": {
+        "deviceName": "COOLFIVE",
+        "marketingName": "COOLFIVE",
+        "manufacturer": "Konrow",
+        "brand": "Konrow",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "konrow just5": {
-    "deviceName": "Just5",
-    "marketingName": "Just5",
-    "manufacturer": "Konrow",
-    "brand": "Konrow",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "konrow just5": {
+        "deviceName": "Just5",
+        "marketingName": "Just5",
+        "manufacturer": "Konrow",
+        "brand": "Konrow",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "konrow link5": {
-    "deviceName": "LINK5",
-    "marketingName": "LINK5",
-    "manufacturer": "Konrow",
-    "brand": "Konrow",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "konrow link5": {
+        "deviceName": "LINK5",
+        "marketingName": "LINK5",
+        "manufacturer": "Konrow",
+        "brand": "Konrow",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,47 +1,68 @@
 {
-  "general nec device": {
-    "deviceName": "general NEC Device",
-    "marketingName": "general NEC Device",
-    "manufacturer": "Nec",
-    "brand": "Nec",
-    "type": "feature-phone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nec device": {
+        "deviceName": "general NEC Device",
+        "marketingName": "general NEC Device",
+        "manufacturer": "Nec",
+        "brand": "Nec",
+        "type": "feature-phone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "nec n705i": {
-    "deviceName": "N705i",
-    "marketingName": "N705i",
-    "manufacturer": "Nec",
-    "brand": "Nec",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 427,
-      "touch": true,
-      "type": null
+    "nec n705i": {
+        "deviceName": "N705i",
+        "marketingName": "N705i",
+        "manufacturer": "Nec",
+        "brand": "Nec",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 427,
+            "touch": true,
+            "type": "Custom 240x427",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "linux smartphone os (maemo)"
     },
-    "dualOrientation": false,
-    "platform": "linux smartphone os (maemo)"
-  },
-  "nec n905i": {
-    "deviceName": "N905i",
-    "marketingName": "N905i",
-    "manufacturer": "Nec",
-    "brand": "Nec",
-    "type": "feature-phone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "linux smartphone os (maemo)"
-  }
+    "nec n905i": {
+        "deviceName": "N905i",
+        "marketingName": "N905i",
+        "manufacturer": "Nec",
+        "brand": "Nec",
+        "type": "feature-phone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": false,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "linux smartphone os (maemo)"
+    }
 }

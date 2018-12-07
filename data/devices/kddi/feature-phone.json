@@ -1,92 +1,134 @@
 {
-  "general kddi device": {
-    "deviceName": "general KDDI Device",
-    "marketingName": "general KDDI Device",
-    "manufacturer": "Kddi",
-    "brand": "Kddi",
-    "type": "feature-phone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general kddi device": {
+        "deviceName": "general KDDI Device",
+        "marketingName": "general KDDI Device",
+        "manufacturer": "Kddi",
+        "brand": "Kddi",
+        "type": "feature-phone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "kddi ca3h": {
-    "deviceName": "CA3H",
-    "marketingName": "CA005",
-    "manufacturer": "Kddi",
-    "brand": "Kddi",
-    "type": "feature-phone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": false,
-      "type": null
+    "kddi ca3h": {
+        "deviceName": "CA3H",
+        "marketingName": "CA005",
+        "manufacturer": "Kddi",
+        "brand": "Kddi",
+        "type": "feature-phone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": false,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "kddi kc31": {
-    "deviceName": "KC31",
-    "marketingName": "W11K",
-    "manufacturer": "Kyocera",
-    "brand": "Kddi",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "kddi kc31": {
+        "deviceName": "KC31",
+        "marketingName": "W11K",
+        "manufacturer": "Kyocera",
+        "brand": "Kddi",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "kddi kc4a": {
-    "deviceName": "KC4A",
-    "marketingName": "KC4A",
-    "manufacturer": "Kddi",
-    "brand": "Kddi",
-    "type": "feature-phone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": false,
-      "type": null
+    "kddi kc4a": {
+        "deviceName": "KC4A",
+        "marketingName": "KC4A",
+        "manufacturer": "Kddi",
+        "brand": "Kddi",
+        "type": "feature-phone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": false,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "kddi sn3v": {
-    "deviceName": "SN3V",
-    "marketingName": "URBANO AFFARE",
-    "manufacturer": "Kddi",
-    "brand": "Kddi",
-    "type": "feature-phone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": false,
-      "type": null
+    "kddi sn3v": {
+        "deviceName": "SN3V",
+        "marketingName": "URBANO AFFARE",
+        "manufacturer": "Kddi",
+        "brand": "Kddi",
+        "type": "feature-phone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": false,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "kddi ts3w": {
-    "deviceName": "TS3W",
-    "marketingName": "X-RAY",
-    "manufacturer": "Kddi",
-    "brand": "Kddi",
-    "type": "feature-phone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "kddi ts3w": {
+        "deviceName": "TS3W",
+        "marketingName": "X-RAY",
+        "manufacturer": "Kddi",
+        "brand": "Kddi",
+        "type": "feature-phone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": false,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

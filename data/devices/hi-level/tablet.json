@@ -1,47 +1,68 @@
 {
-  "general hi-level device": {
-    "deviceName": "general Hi-Level Device",
-    "marketingName": "general Hi-Level Device",
-    "manufacturer": "Hi-Level",
-    "brand": "Hi-Level",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general hi-level device": {
+        "deviceName": "general Hi-Level Device",
+        "marketingName": "general Hi-Level Device",
+        "manufacturer": "Hi-Level",
+        "brand": "Hi-Level",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hi-level hlv-t1002w": {
-    "deviceName": "HLV-T1002W",
-    "marketingName": "HLV-T1002W",
-    "manufacturer": "Hi-Level",
-    "brand": "Hi-Level",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "hi-level hlv-t1002w": {
+        "deviceName": "HLV-T1002W",
+        "marketingName": "HLV-T1002W",
+        "manufacturer": "Hi-Level",
+        "brand": "Hi-Level",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hi-level hlv-tn75": {
-    "deviceName": "HLV-TN75",
-    "marketingName": "HLV-TN75",
-    "manufacturer": "Hi-Level",
-    "brand": "Hi-Level",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "hi-level hlv-tn75": {
+        "deviceName": "HLV-TN75",
+        "marketingName": "HLV-TN75",
+        "manufacturer": "Hi-Level",
+        "brand": "Hi-Level",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

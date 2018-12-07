@@ -1,377 +1,552 @@
 {
-  "general texet device": {
-    "deviceName": "general TeXet Device",
-    "marketingName": "general TeXet Device",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general texet device": {
+        "deviceName": "general TeXet Device",
+        "marketingName": "general TeXet Device",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tb-711a": {
-    "deviceName": "TB-711A",
-    "marketingName": "TB-711A",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "texet tb-711a": {
+        "deviceName": "TB-711A",
+        "marketingName": "TB-711A",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tb-771a": {
-    "deviceName": "TB-771A",
-    "marketingName": "TB-771A",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "texet tb-771a": {
+        "deviceName": "TB-771A",
+        "marketingName": "TB-771A",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-1067": {
-    "deviceName": "TM-1067",
-    "marketingName": "TM-1067",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "texet tm-1067": {
+        "deviceName": "TM-1067",
+        "marketingName": "TM-1067",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-6906": {
-    "deviceName": "TM-6906",
-    "marketingName": "TM-6906",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "texet tm-6906": {
+        "deviceName": "TM-6906",
+        "marketingName": "TM-6906",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-7021": {
-    "deviceName": "TM-7021",
-    "marketingName": "TM-7021",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "texet tm-7021": {
+        "deviceName": "TM-7021",
+        "marketingName": "TM-7021",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-7023": {
-    "deviceName": "TM-7023",
-    "marketingName": "TM-7023",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "texet tm-7023": {
+        "deviceName": "TM-7023",
+        "marketingName": "TM-7023",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-7024": {
-    "deviceName": "TM-7024",
-    "marketingName": "TM-7024",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "texet tm-7024": {
+        "deviceName": "TM-7024",
+        "marketingName": "TM-7024",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-7026": {
-    "deviceName": "TM-7026",
-    "marketingName": "TM-7026",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "texet tm-7026": {
+        "deviceName": "TM-7026",
+        "marketingName": "TM-7026",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-7041": {
-    "deviceName": "TM-7041",
-    "marketingName": "TM-7041",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "texet tm-7041": {
+        "deviceName": "TM-7041",
+        "marketingName": "TM-7041",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-7043xd": {
-    "deviceName": "TM-7043XD",
-    "marketingName": "TM-7043XD",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "texet tm-7043xd": {
+        "deviceName": "TM-7043XD",
+        "marketingName": "TM-7043XD",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-7066": {
-    "deviceName": "TM-7066",
-    "marketingName": "X-pad LITE 7.1",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "texet tm-7066": {
+        "deviceName": "TM-7066",
+        "marketingName": "X-pad LITE 7.1",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-7867": {
-    "deviceName": "TM-7867",
-    "marketingName": "TM-7867",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "texet tm-7867": {
+        "deviceName": "TM-7867",
+        "marketingName": "TM-7867",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-8041hd": {
-    "deviceName": "TM-8041HD",
-    "marketingName": "TM-8041HD",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "texet tm-8041hd": {
+        "deviceName": "TM-8041HD",
+        "marketingName": "TM-8041HD",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9720": {
-    "deviceName": "TM-9720",
-    "marketingName": "TM-9720",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "texet tm-9720": {
+        "deviceName": "TM-9720",
+        "marketingName": "TM-9720",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9738w": {
-    "deviceName": "TM-9738W",
-    "marketingName": "TM-9738W",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "texet tm-9738w": {
+        "deviceName": "TM-9738W",
+        "marketingName": "TM-9738W",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9740": {
-    "deviceName": "TM-9740",
-    "marketingName": "TM-9740",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "texet tm-9740": {
+        "deviceName": "TM-9740",
+        "marketingName": "TM-9740",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9741": {
-    "deviceName": "TM-9741",
-    "marketingName": "TM-9741",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "texet tm-9741": {
+        "deviceName": "TM-9741",
+        "marketingName": "TM-9741",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9743w": {
-    "deviceName": "TM-9743W",
-    "marketingName": "TM-9743W",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "texet tm-9743w": {
+        "deviceName": "TM-9743W",
+        "marketingName": "TM-9743W",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9747bt": {
-    "deviceName": "TM-9747BT",
-    "marketingName": "TM-9747BT",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "texet tm-9747bt": {
+        "deviceName": "TM-9747BT",
+        "marketingName": "TM-9747BT",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9750hd": {
-    "deviceName": "TM-9750HD",
-    "marketingName": "TM-9750HD",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "texet tm-9750hd": {
+        "deviceName": "TM-9750HD",
+        "marketingName": "TM-9750HD",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9751hd": {
-    "deviceName": "TM-9751HD",
-    "marketingName": "TM-9751HD",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "texet tm-9751hd": {
+        "deviceName": "TM-9751HD",
+        "marketingName": "TM-9751HD",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9757": {
-    "deviceName": "TM-9757",
-    "marketingName": "TM-9757",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "texet tm-9757": {
+        "deviceName": "TM-9757",
+        "marketingName": "TM-9757",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9758": {
-    "deviceName": "TM-9758",
-    "marketingName": "TM-9758",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "texet tm-9758": {
+        "deviceName": "TM-9758",
+        "marketingName": "TM-9758",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "texet tm-9767": {
-    "deviceName": "TM-9767",
-    "marketingName": "X-Pad Style 10",
-    "manufacturer": "Texet",
-    "brand": "Texet",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "texet tm-9767": {
+        "deviceName": "TM-9767",
+        "marketingName": "X-Pad Style 10",
+        "manufacturer": "Texet",
+        "brand": "Texet",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

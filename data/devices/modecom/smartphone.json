@@ -1,17 +1,24 @@
 {
-  "modecom xino z46 x4": {
-    "deviceName": "Xino Z46 X4",
-    "marketingName": "Xino Z46 X4",
-    "manufacturer": "Modecom",
-    "brand": "Modecom",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "modecom xino z46 x4": {
+        "deviceName": "Xino Z46 X4",
+        "marketingName": "Xino Z46 X4",
+        "manufacturer": "Modecom",
+        "brand": "Modecom",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

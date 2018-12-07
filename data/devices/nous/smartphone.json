@@ -1,62 +1,90 @@
 {
-  "general nous device": {
-    "deviceName": "general Nous Device",
-    "marketingName": "general Nous Device",
-    "manufacturer": "Nous",
-    "brand": "Nous",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nous device": {
+        "deviceName": "general Nous Device",
+        "marketingName": "general Nous Device",
+        "manufacturer": "Nous",
+        "brand": "Nous",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "nous ns5003": {
-    "deviceName": "NS 5003",
-    "marketingName": "NS 5003",
-    "manufacturer": "Nous",
-    "brand": "Nous",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "nous ns5003": {
+        "deviceName": "NS 5003",
+        "marketingName": "NS 5003",
+        "manufacturer": "Nous",
+        "brand": "Nous",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "symbian"
     },
-    "dualOrientation": true,
-    "platform": "symbian"
-  },
-  "nous ns5006": {
-    "deviceName": "NS 5006",
-    "marketingName": "NS 5006",
-    "manufacturer": "Nous",
-    "brand": "Nous",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "nous ns5006": {
+        "deviceName": "NS 5006",
+        "marketingName": "NS 5006",
+        "manufacturer": "Nous",
+        "brand": "Nous",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "symbian"
     },
-    "dualOrientation": true,
-    "platform": "symbian"
-  },
-  "nous ns6": {
-    "deviceName": "NS 6",
-    "marketingName": "NS 6",
-    "manufacturer": "Nous",
-    "brand": "Nous",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "symbian"
-  }
+    "nous ns6": {
+        "deviceName": "NS 6",
+        "marketingName": "NS 6",
+        "manufacturer": "Nous",
+        "brand": "Nous",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "symbian"
+    }
 }

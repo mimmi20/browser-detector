@@ -1,17 +1,24 @@
 {
-  "iberry auxus nuclea n1": {
-    "deviceName": "Auxus Nuclea N1",
-    "marketingName": "Auxus Nuclea N1",
-    "manufacturer": "iBerry",
-    "brand": "iBerry",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "iberry auxus nuclea n1": {
+        "deviceName": "Auxus Nuclea N1",
+        "marketingName": "Auxus Nuclea N1",
+        "manufacturer": "iBerry",
+        "brand": "iBerry",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

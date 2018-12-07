@@ -1,137 +1,200 @@
 {
-  "general cherry-mobile device": {
-    "deviceName": "general Cherry Mobile Device",
-    "marketingName": "general Cherry Mobile Device",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general cherry-mobile device": {
+        "deviceName": "general Cherry Mobile Device",
+        "marketingName": "general Cherry Mobile Device",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "cherry-mobile alpha luxe": {
-    "deviceName": "Alpha Luxe",
-    "marketingName": "Alpha Luxe",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "cherry-mobile alpha luxe": {
+        "deviceName": "Alpha Luxe",
+        "marketingName": "Alpha Luxe",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
     },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  },
-  "cherry-mobile flare 2x": {
-    "deviceName": "Flare 2X",
-    "marketingName": "Flare 2X",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "cherry-mobile flare 2x": {
+        "deviceName": "Flare 2X",
+        "marketingName": "Flare 2X",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "cherry-mobile flare hd max": {
-    "deviceName": "Flare HD Max",
-    "marketingName": "Flare HD Max",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "cherry-mobile flare hd max": {
+        "deviceName": "Flare HD Max",
+        "marketingName": "Flare HD Max",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "cherry-mobile life": {
-    "deviceName": "Life",
-    "marketingName": "Life",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "cherry-mobile life": {
+        "deviceName": "Life",
+        "marketingName": "Life",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "cherry-mobile razor": {
-    "deviceName": "Razor",
-    "marketingName": "Razor",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "cherry-mobile razor": {
+        "deviceName": "Razor",
+        "marketingName": "Razor",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "cherry-mobile snap": {
-    "deviceName": "Snap",
-    "marketingName": "Snap",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "cherry-mobile snap": {
+        "deviceName": "Snap",
+        "marketingName": "Snap",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "cherry-mobile sonic": {
-    "deviceName": "Sonic",
-    "marketingName": "Sonic",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "cherry-mobile sonic": {
+        "deviceName": "Sonic",
+        "marketingName": "Sonic",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "cherry-mobile w380": {
-    "deviceName": "W380",
-    "marketingName": "Amber",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "cherry-mobile w380": {
+        "deviceName": "W380",
+        "marketingName": "Amber",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

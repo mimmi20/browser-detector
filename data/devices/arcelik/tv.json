@@ -1,32 +1,46 @@
 {
-  "arcelik bk": {
-    "deviceName": "BK",
-    "marketingName": "BK",
-    "manufacturer": "Arcelik",
-    "brand": "Arcelik",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "arcelik bk": {
+        "deviceName": "BK",
+        "marketingName": "BK",
+        "manufacturer": "Arcelik",
+        "brand": "Arcelik",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "arcelik j5": {
-    "deviceName": "J5",
-    "marketingName": "J5",
-    "manufacturer": "Arcelik",
-    "brand": "Arcelik",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "arcelik j5": {
+        "deviceName": "J5",
+        "marketingName": "J5",
+        "manufacturer": "Arcelik",
+        "brand": "Arcelik",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

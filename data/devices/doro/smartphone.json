@@ -1,107 +1,156 @@
 {
-  "general doro device": {
-    "deviceName": "general Doro Device",
-    "marketingName": "general Doro Device",
-    "manufacturer": "Doro",
-    "brand": "Doro",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general doro device": {
+        "deviceName": "general Doro Device",
+        "marketingName": "general Doro Device",
+        "manufacturer": "Doro",
+        "brand": "Doro",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "doro 8030": {
-    "deviceName": "8030",
-    "marketingName": "8030",
-    "manufacturer": "Doro",
-    "brand": "Doro",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "doro 8030": {
+        "deviceName": "8030",
+        "marketingName": "8030",
+        "manufacturer": "Doro",
+        "brand": "Doro",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "doro 8031": {
-    "deviceName": "8031",
-    "marketingName": "8031",
-    "manufacturer": "Doro",
-    "brand": "Doro",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "doro 8031": {
+        "deviceName": "8031",
+        "marketingName": "8031",
+        "manufacturer": "Doro",
+        "brand": "Doro",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "doro 8040": {
-    "deviceName": "8040",
-    "marketingName": "8040",
-    "manufacturer": "Doro",
-    "brand": "Doro",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "doro 8040": {
+        "deviceName": "8040",
+        "marketingName": "8040",
+        "manufacturer": "Doro",
+        "brand": "Doro",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "doro liberto 820": {
-    "deviceName": "Liberto 820",
-    "marketingName": "Liberto 820",
-    "manufacturer": "Doro",
-    "brand": "Doro",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "doro liberto 820": {
+        "deviceName": "Liberto 820",
+        "marketingName": "Liberto 820",
+        "manufacturer": "Doro",
+        "brand": "Doro",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "doro liberto 820 mini": {
-    "deviceName": "Liberto 820 Mini",
-    "marketingName": "Liberto 820 Mini",
-    "manufacturer": "Doro",
-    "brand": "Doro",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "doro liberto 820 mini": {
+        "deviceName": "Liberto 820 Mini",
+        "marketingName": "Liberto 820 Mini",
+        "manufacturer": "Doro",
+        "brand": "Doro",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "doro liberto 825": {
-    "deviceName": "Liberto 825",
-    "marketingName": "Liberto 825",
-    "manufacturer": "Doro",
-    "brand": "Doro",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "doro liberto 825": {
+        "deviceName": "Liberto 825",
+        "marketingName": "Liberto 825",
+        "manufacturer": "Doro",
+        "brand": "Doro",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

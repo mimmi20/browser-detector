@@ -1,92 +1,134 @@
 {
-  "general hannspree device": {
-    "deviceName": "general HANNspree Device",
-    "marketingName": "general HANNspree Device",
-    "manufacturer": "Hannspree",
-    "brand": "Hannspree",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general hannspree device": {
+        "deviceName": "general HANNspree Device",
+        "marketingName": "general HANNspree Device",
+        "manufacturer": "Hannspree",
+        "brand": "Hannspree",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hannspree hsg1279": {
-    "deviceName": "HSG1279",
-    "marketingName": "HSG1279",
-    "manufacturer": "Hannspree",
-    "brand": "Hannspree",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hannspree hsg1279": {
+        "deviceName": "HSG1279",
+        "marketingName": "HSG1279",
+        "manufacturer": "Hannspree",
+        "brand": "Hannspree",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hannspree hsg1303": {
-    "deviceName": "HSG1303",
-    "marketingName": "HSG1303",
-    "manufacturer": "Hannspree",
-    "brand": "Hannspree",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hannspree hsg1303": {
+        "deviceName": "HSG1303",
+        "marketingName": "HSG1303",
+        "manufacturer": "Hannspree",
+        "brand": "Hannspree",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hannspree hsg1316": {
-    "deviceName": "HSG1316",
-    "marketingName": "HSG1316",
-    "manufacturer": "Hannspree",
-    "brand": "Hannspree",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "hannspree hsg1316": {
+        "deviceName": "HSG1316",
+        "marketingName": "HSG1316",
+        "manufacturer": "Hannspree",
+        "brand": "Hannspree",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hannspree hsg1329": {
-    "deviceName": "HSG1329",
-    "marketingName": "HSG1329",
-    "manufacturer": "Hannspree",
-    "brand": "Hannspree",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "type": null
+    "hannspree hsg1329": {
+        "deviceName": "HSG1329",
+        "marketingName": "HSG1329",
+        "manufacturer": "Hannspree",
+        "brand": "Hannspree",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hannspree sn10t1": {
-    "deviceName": "SN10T1",
-    "marketingName": "HANNSpad",
-    "manufacturer": "Hannspree",
-    "brand": "Hannspree",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "hannspree sn10t1": {
+        "deviceName": "SN10T1",
+        "marketingName": "HANNSpad",
+        "manufacturer": "Hannspree",
+        "brand": "Hannspree",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

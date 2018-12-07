@@ -1,32 +1,46 @@
 {
-  "sony playstation portable": {
-    "deviceName": "PlayStation Portable",
-    "marketingName": "PlayStation Portable",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "type": "mobile-console",
-    "display": {
-      "width": 480,
-      "height": 272,
-      "touch": true,
-      "type": null
+    "sony playstation portable": {
+        "deviceName": "PlayStation Portable",
+        "marketingName": "PlayStation Portable",
+        "manufacturer": "Sony",
+        "brand": "Sony",
+        "type": "mobile-console",
+        "display": {
+            "width": 480,
+            "height": 272,
+            "touch": true,
+            "type": "Custom 272x480",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sony playstation vita": {
-    "deviceName": "PlayStation Vita",
-    "marketingName": "PlayStation Vita",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "type": "mobile-console",
-    "display": {
-      "width": 960,
-      "height": 544,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "java"
-  }
+    "sony playstation vita": {
+        "deviceName": "PlayStation Vita",
+        "marketingName": "PlayStation Vita",
+        "manufacturer": "Sony",
+        "brand": "Sony",
+        "type": "mobile-console",
+        "display": {
+            "width": 960,
+            "height": 544,
+            "touch": true,
+            "type": "Custom 544x960",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

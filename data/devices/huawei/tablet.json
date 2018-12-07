@@ -1,317 +1,464 @@
 {
-  "huawei ags-w09": {
-    "deviceName": "AGS-W09",
-    "marketingName": "MediaPad T3 10 (Wi-Fi)",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "huawei ags-w09": {
+        "deviceName": "AGS-W09",
+        "marketingName": "MediaPad T3 10 (Wi-Fi)",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei ags2-w09": {
-    "deviceName": "AGS2-W09",
-    "marketingName": "MediaPad T5 Wi-Fi",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "huawei ags2-w09": {
+        "deviceName": "AGS2-W09",
+        "marketingName": "MediaPad T5 Wi-Fi",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei bah-w09": {
-    "deviceName": "BAH-W09",
-    "marketingName": "M3 Lite (Wi-Fi)",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "huawei bah-w09": {
+        "deviceName": "BAH-W09",
+        "marketingName": "M3 Lite (Wi-Fi)",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei bah2-w09": {
-    "deviceName": "BAH2-W09",
-    "marketingName": "MediaPad M5 Lite 10 Wi-Fi",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "huawei bah2-w09": {
+        "deviceName": "BAH2-W09",
+        "marketingName": "MediaPad M5 Lite 10 Wi-Fi",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei bah2-w19": {
-    "deviceName": "BAH2-W19",
-    "marketingName": "MediaPad M5 Lite 10 Wi-Fi",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "huawei bah2-w19": {
+        "deviceName": "BAH2-W19",
+        "marketingName": "MediaPad M5 Lite 10 Wi-Fi",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei bg2-w09": {
-    "deviceName": "BG2-W09",
-    "marketingName": "MediaPad T3 7.0 Wi-Fi (2017)",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "huawei bg2-w09": {
+        "deviceName": "BG2-W09",
+        "marketingName": "MediaPad T3 7.0 Wi-Fi (2017)",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei btv-w09": {
-    "deviceName": "BTV-W09",
-    "marketingName": "MediaPad M3 8.4",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "type": null
+    "huawei btv-w09": {
+        "deviceName": "BTV-W09",
+        "marketingName": "MediaPad M3 8.4",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 2560,
+            "height": 1600,
+            "touch": true,
+            "type": "WQXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei cmr-w09": {
-    "deviceName": "CMR-W09",
-    "marketingName": "MediaPad M5 10.8 Wi-Fi",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "type": null
+    "huawei cmr-w09": {
+        "deviceName": "CMR-W09",
+        "marketingName": "MediaPad M5 10.8 Wi-Fi",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 2560,
+            "height": 1600,
+            "touch": true,
+            "type": "WQXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei kob-w09": {
-    "deviceName": "KOB-W09",
-    "marketingName": "MediaPad T3 8 Wi-Fi",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "huawei kob-w09": {
+        "deviceName": "KOB-W09",
+        "marketingName": "MediaPad T3 8 Wi-Fi",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei m2-801w": {
-    "deviceName": "M2-801W",
-    "marketingName": "MediaPad M2 8.0",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "huawei m2-801w": {
+        "deviceName": "M2-801W",
+        "marketingName": "MediaPad M2 8.0",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei m2-a01l": {
-    "deviceName": "M2-A01L",
-    "marketingName": "MediaPad M2 10.0",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "huawei m2-a01l": {
+        "deviceName": "M2-A01L",
+        "marketingName": "MediaPad M2 10.0",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei m2-a01w": {
-    "deviceName": "M2-A01W",
-    "marketingName": "MediaPad M2 10.0",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "huawei m2-a01w": {
+        "deviceName": "M2-A01W",
+        "marketingName": "MediaPad M2 10.0",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei mediapad 10 fhd": {
-    "deviceName": "MediaPad 10 FHD",
-    "marketingName": "MediaPad 10 FHD",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "huawei mediapad 10 fhd": {
+        "deviceName": "MediaPad 10 FHD",
+        "marketingName": "MediaPad 10 FHD",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei mediapad 10+": {
-    "deviceName": "MediaPad 10+",
-    "marketingName": "MediaPad 10 Link+",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "huawei mediapad 10+": {
+        "deviceName": "MediaPad 10+",
+        "marketingName": "MediaPad 10 Link+",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei mediapad 7 youth": {
-    "deviceName": "MediaPad 7 Youth",
-    "marketingName": "MediaPad 7 Youth",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "huawei mediapad 7 youth": {
+        "deviceName": "MediaPad 7 Youth",
+        "marketingName": "MediaPad 7 Youth",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei mediapad m1 8.0": {
-    "deviceName": "MediaPad M1 8.0",
-    "marketingName": "MediaPad M1 8.0",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "huawei mediapad m1 8.0": {
+        "deviceName": "MediaPad M1 8.0",
+        "marketingName": "MediaPad M1 8.0",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei s7-301w": {
-    "deviceName": "S7-301w",
-    "marketingName": "MediaPad 10 Link",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "huawei s7-301w": {
+        "deviceName": "S7-301w",
+        "marketingName": "MediaPad 10 Link",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei s8-701u": {
-    "deviceName": "S8-701u",
-    "marketingName": "MediaPad T1 8.0",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "huawei s8-701u": {
+        "deviceName": "S8-701u",
+        "marketingName": "MediaPad T1 8.0",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei s8-701w": {
-    "deviceName": "S8-701W",
-    "marketingName": "Honor T1",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "huawei s8-701w": {
+        "deviceName": "S8-701W",
+        "marketingName": "Honor T1",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei sht-w09": {
-    "deviceName": "SHT-W09",
-    "marketingName": "MediaPad M5 8.4 Wi-Fi",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "type": null
+    "huawei sht-w09": {
+        "deviceName": "SHT-W09",
+        "marketingName": "MediaPad M5 8.4 Wi-Fi",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 2560,
+            "height": 1600,
+            "touch": true,
+            "type": "WQXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "huawei t1-701u": {
-    "deviceName": "T1-701U",
-    "marketingName": "MediaPad T1 7.0 3G",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "huawei t1-701u": {
+        "deviceName": "T1-701U",
+        "marketingName": "MediaPad T1 7.0 3G",
+        "manufacturer": "Huawei",
+        "brand": "Huawei",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

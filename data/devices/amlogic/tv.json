@@ -1,32 +1,46 @@
 {
-  "general amlogic device": {
-    "deviceName": "general Amlogic Device",
-    "marketingName": "general Amlogic Device",
-    "manufacturer": "Amlogic",
-    "brand": "Amlogic",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general amlogic device": {
+        "deviceName": "general Amlogic Device",
+        "marketingName": "general Amlogic Device",
+        "manufacturer": "Amlogic",
+        "brand": "Amlogic",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "amlogic m8": {
-    "deviceName": "M8",
-    "marketingName": "M8",
-    "manufacturer": "Amlogic",
-    "brand": "Amlogic",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "amlogic m8": {
+        "deviceName": "M8",
+        "marketingName": "M8",
+        "manufacturer": "Amlogic",
+        "brand": "Amlogic",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general bs-mobile device": {
-    "deviceName": "general BS Mobile Device",
-    "marketingName": "general BS Mobile Device",
-    "manufacturer": "BS Mobile",
-    "brand": "BS Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general bs-mobile device": {
+        "deviceName": "general BS Mobile Device",
+        "marketingName": "general BS Mobile Device",
+        "manufacturer": "BS Mobile",
+        "brand": "BS Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bs-mobile rune": {
-    "deviceName": "Rune",
-    "marketingName": "Rune",
-    "manufacturer": "BS Mobile",
-    "brand": "BS Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bs-mobile rune": {
+        "deviceName": "Rune",
+        "marketingName": "Rune",
+        "manufacturer": "BS Mobile",
+        "brand": "BS Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

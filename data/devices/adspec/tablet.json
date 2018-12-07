@@ -1,32 +1,46 @@
 {
-  "general adspec device": {
-    "deviceName": "general Adspec Device",
-    "marketingName": "general Adspec Device",
-    "manufacturer": "Adspec",
-    "brand": "Adspec",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general adspec device": {
+        "deviceName": "general Adspec Device",
+        "marketingName": "general Adspec Device",
+        "manufacturer": "Adspec",
+        "brand": "Adspec",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "adspec adtab 7 lite": {
-    "deviceName": "AdTab 7 Lite",
-    "marketingName": "AdTab 7 Lite",
-    "manufacturer": "Adspec",
-    "brand": "Adspec",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "adspec adtab 7 lite": {
+        "deviceName": "AdTab 7 Lite",
+        "marketingName": "AdTab 7 Lite",
+        "manufacturer": "Adspec",
+        "brand": "Adspec",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

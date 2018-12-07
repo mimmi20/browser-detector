@@ -1,32 +1,46 @@
 {
-  "mpman ph350": {
-    "deviceName": "PH350",
-    "marketingName": "PH350",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "mpman ph350": {
+        "deviceName": "PH350",
+        "marketingName": "PH350",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman ph520": {
-    "deviceName": "PH520",
-    "marketingName": "PH520",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mpman ph520": {
+        "deviceName": "PH520",
+        "marketingName": "PH520",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

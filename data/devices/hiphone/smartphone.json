@@ -1,17 +1,24 @@
 {
-  "general hiphone device": {
-    "deviceName": "general HiPhone Device",
-    "marketingName": "general HiPhone Device",
-    "manufacturer": "HiPhone",
-    "brand": "HiPhone",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "general hiphone device": {
+        "deviceName": "general HiPhone Device",
+        "marketingName": "general HiPhone Device",
+        "manufacturer": "HiPhone",
+        "brand": "HiPhone",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

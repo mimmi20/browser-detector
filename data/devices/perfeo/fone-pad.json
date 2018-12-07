@@ -1,32 +1,46 @@
 {
-  "general perfeo device": {
-    "deviceName": "general Perfeo Device",
-    "marketingName": "general Perfeo Device",
-    "manufacturer": "Perfeo",
-    "brand": "Perfeo",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general perfeo device": {
+        "deviceName": "general Perfeo Device",
+        "marketingName": "general Perfeo Device",
+        "manufacturer": "Perfeo",
+        "brand": "Perfeo",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "perfeo 7007-hd": {
-    "deviceName": "7007-HD",
-    "marketingName": "7007-HD",
-    "manufacturer": "Perfeo",
-    "brand": "Perfeo",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "perfeo 7007-hd": {
+        "deviceName": "7007-HD",
+        "marketingName": "7007-HD",
+        "manufacturer": "Perfeo",
+        "brand": "Perfeo",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

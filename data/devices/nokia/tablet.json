@@ -1,17 +1,24 @@
 {
-  "nokia n1": {
-    "deviceName": "N1",
-    "marketingName": "N1",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nokia n1": {
+        "deviceName": "N1",
+        "marketingName": "N1",
+        "manufacturer": "Nokia",
+        "brand": "Nokia",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,137 +1,200 @@
 {
-  "general myphone device": {
-    "deviceName": "general myPhone Device",
-    "marketingName": "general myPhone Device",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general myphone device": {
+        "deviceName": "general myPhone Device",
+        "marketingName": "general myPhone Device",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "myphone a888": {
-    "deviceName": "A888",
-    "marketingName": "A888",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "myphone a888": {
+        "deviceName": "A888",
+        "marketingName": "A888",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "myphone a919 duo": {
-    "deviceName": "A919 Duo",
-    "marketingName": "A919 Duo",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "myphone a919 duo": {
+        "deviceName": "A919 Duo",
+        "marketingName": "A919 Duo",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "myphone axe 3g": {
-    "deviceName": "Axe 3G",
-    "marketingName": "Axe 3G",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "myphone axe 3g": {
+        "deviceName": "Axe 3G",
+        "marketingName": "Axe 3G",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "myphone axe lte": {
-    "deviceName": "Axe LTE",
-    "marketingName": "Axe LTE",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "myphone axe lte": {
+        "deviceName": "Axe LTE",
+        "marketingName": "Axe LTE",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "myphone cube": {
-    "deviceName": "Cube",
-    "marketingName": "Cube",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "myphone cube": {
+        "deviceName": "Cube",
+        "marketingName": "Cube",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "myphone cube lte": {
-    "deviceName": "Cube LTE",
-    "marketingName": "Cube LTE",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "myphone cube lte": {
+        "deviceName": "Cube LTE",
+        "marketingName": "Cube LTE",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "myphone hammer active": {
-    "deviceName": "Hammer Active",
-    "marketingName": "Hammer Active",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "myphone hammer active": {
+        "deviceName": "Hammer Active",
+        "marketingName": "Hammer Active",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "myphone infinity 2 lte": {
-    "deviceName": "Infinity 2 LTE",
-    "marketingName": "Infinity 2 LTE",
-    "manufacturer": "myPhone",
-    "brand": "myPhone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "myphone infinity 2 lte": {
+        "deviceName": "Infinity 2 LTE",
+        "marketingName": "Infinity 2 LTE",
+        "manufacturer": "myPhone",
+        "brand": "myPhone",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

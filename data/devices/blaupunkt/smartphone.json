@@ -1,17 +1,24 @@
 {
-  "blaupunkt sl 02": {
-    "deviceName": "SL 02",
-    "marketingName": "SL 02",
-    "manufacturer": "Blaupunkt",
-    "brand": "Blaupunkt",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "blaupunkt sl 02": {
+        "deviceName": "SL 02",
+        "marketingName": "SL 02",
+        "manufacturer": "Blaupunkt",
+        "brand": "Blaupunkt",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

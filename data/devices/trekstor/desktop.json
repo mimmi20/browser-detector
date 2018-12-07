@@ -1,32 +1,46 @@
 {
-  "trekstor pc": {
-    "deviceName": "PC",
-    "marketingName": "PC",
-    "manufacturer": "TrekStor",
-    "brand": "TrekStor",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "trekstor pc": {
+        "deviceName": "PC",
+        "marketingName": "PC",
+        "manufacturer": "TrekStor",
+        "brand": "TrekStor",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "trekstor surfbook w1": {
-    "deviceName": "SurfBook W1",
-    "marketingName": "SurfBook W1",
-    "manufacturer": "TrekStor",
-    "brand": "TrekStor",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "trekstor surfbook w1": {
+        "deviceName": "SurfBook W1",
+        "marketingName": "SurfBook W1",
+        "manufacturer": "TrekStor",
+        "brand": "TrekStor",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

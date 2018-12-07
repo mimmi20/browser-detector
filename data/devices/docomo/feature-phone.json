@@ -1,47 +1,68 @@
 {
-  "general docomo device": {
-    "deviceName": "general DoCoMo Device",
-    "marketingName": "general DoCoMo Device",
-    "manufacturer": "DoCoMo",
-    "brand": "DoCoMo",
-    "type": "feature-phone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general docomo device": {
+        "deviceName": "general DoCoMo Device",
+        "marketingName": "general DoCoMo Device",
+        "manufacturer": "DoCoMo",
+        "brand": "DoCoMo",
+        "type": "feature-phone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "docomo p900i": {
-    "deviceName": "P900i",
-    "marketingName": "P900i",
-    "manufacturer": "DoCoMo",
-    "brand": "DoCoMo",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "type": null
+    "docomo p900i": {
+        "deviceName": "P900i",
+        "marketingName": "P900i",
+        "manufacturer": "DoCoMo",
+        "brand": "DoCoMo",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 160,
+            "touch": false,
+            "type": "Custom 128x160",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "docomo p905i": {
-    "deviceName": "P905i",
-    "marketingName": "P905i",
-    "manufacturer": "DoCoMo",
-    "brand": "DoCoMo",
-    "type": "feature-phone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "docomo p905i": {
+        "deviceName": "P905i",
+        "marketingName": "P905i",
+        "manufacturer": "DoCoMo",
+        "brand": "DoCoMo",
+        "type": "feature-phone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": false,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

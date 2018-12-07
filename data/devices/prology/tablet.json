@@ -1,32 +1,46 @@
 {
-  "general prology device": {
-    "deviceName": "general Prology Device",
-    "marketingName": "general Prology Device",
-    "manufacturer": "Prology",
-    "brand": "Prology",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general prology device": {
+        "deviceName": "general Prology Device",
+        "marketingName": "general Prology Device",
+        "manufacturer": "Prology",
+        "brand": "Prology",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "prology tab-970": {
-    "deviceName": "Tab-970",
-    "marketingName": "Evolution",
-    "manufacturer": "Prology",
-    "brand": "Prology",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "prology tab-970": {
+        "deviceName": "Tab-970",
+        "marketingName": "Evolution",
+        "manufacturer": "Prology",
+        "brand": "Prology",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

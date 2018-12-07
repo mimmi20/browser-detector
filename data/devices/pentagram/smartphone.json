@@ -1,47 +1,68 @@
 {
-  "pentagram p430-1": {
-    "deviceName": "P430-1",
-    "marketingName": "Monster",
-    "manufacturer": "Pentagram",
-    "brand": "Pentagram",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "pentagram p430-1": {
+        "deviceName": "P430-1",
+        "marketingName": "Monster",
+        "manufacturer": "Pentagram",
+        "brand": "Pentagram",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pentagram p450-1": {
-    "deviceName": "P450-1",
-    "marketingName": "Ego",
-    "manufacturer": "Pentagram",
-    "brand": "Pentagram",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "pentagram p450-1": {
+        "deviceName": "P450-1",
+        "marketingName": "Ego",
+        "manufacturer": "Pentagram",
+        "brand": "Pentagram",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pentagram p500-1": {
-    "deviceName": "P500-1",
-    "marketingName": "Monster X5",
-    "manufacturer": "Pentagram",
-    "brand": "Pentagram",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pentagram p500-1": {
+        "deviceName": "P500-1",
+        "marketingName": "Monster X5",
+        "manufacturer": "Pentagram",
+        "brand": "Pentagram",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

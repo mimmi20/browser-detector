@@ -1,17 +1,24 @@
 {
-  "arnova an7bg3": {
-    "deviceName": "AN7BG3",
-    "marketingName": "7B G3",
-    "manufacturer": "Arnova",
-    "brand": "Arnova",
-    "type": "fone-pad",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "arnova an7bg3": {
+        "deviceName": "AN7BG3",
+        "marketingName": "7B G3",
+        "manufacturer": "Arnova",
+        "brand": "Arnova",
+        "type": "fone-pad",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

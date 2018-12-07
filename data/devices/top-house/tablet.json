@@ -1,32 +1,46 @@
 {
-  "top-house coto t117": {
-    "deviceName": "Coto T117",
-    "marketingName": "Coto T117",
-    "manufacturer": "Top House",
-    "brand": "Top House",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "top-house coto t117": {
+        "deviceName": "Coto T117",
+        "marketingName": "Coto T117",
+        "manufacturer": "Top House",
+        "brand": "Top House",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "top-house x1013": {
-    "deviceName": "X1013",
-    "marketingName": "X1013",
-    "manufacturer": "Top House",
-    "brand": "Top House",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "top-house x1013": {
+        "deviceName": "X1013",
+        "marketingName": "X1013",
+        "manufacturer": "Top House",
+        "brand": "Top House",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

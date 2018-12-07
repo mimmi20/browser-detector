@@ -1,32 +1,46 @@
 {
-  "general mts device": {
-    "deviceName": "general MTS Device",
-    "marketingName": "general MTS Device",
-    "manufacturer": "MTS",
-    "brand": "MTS",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general mts device": {
+        "deviceName": "general MTS Device",
+        "marketingName": "general MTS Device",
+        "manufacturer": "MTS",
+        "brand": "MTS",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mts smart race 4g": {
-    "deviceName": "Smart Race 4G",
-    "marketingName": "Smart Race 4G",
-    "manufacturer": "MTS",
-    "brand": "MTS",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mts smart race 4g": {
+        "deviceName": "Smart Race 4G",
+        "marketingName": "Smart Race 4G",
+        "manufacturer": "MTS",
+        "brand": "MTS",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

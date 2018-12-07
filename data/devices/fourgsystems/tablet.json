@@ -1,32 +1,46 @@
 {
-  "general 4g-systems device": {
-    "deviceName": "general 4G Systems Device",
-    "marketingName": "general 4G Systems Device",
-    "manufacturer": "4G Systems",
-    "brand": "4G Systems",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general 4g-systems device": {
+        "deviceName": "general 4G Systems Device",
+        "marketingName": "general 4G Systems Device",
+        "manufacturer": "4G Systems",
+        "brand": "4G Systems",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "4g-systems xst2": {
-    "deviceName": "XST2",
-    "marketingName": "oneTab XST2",
-    "manufacturer": "4G Systems",
-    "brand": "4G Systems",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "4g-systems xst2": {
+        "deviceName": "XST2",
+        "marketingName": "oneTab XST2",
+        "manufacturer": "4G Systems",
+        "brand": "4G Systems",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

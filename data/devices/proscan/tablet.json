@@ -1,77 +1,112 @@
 {
-  "general proscan device": {
-    "deviceName": "general ProScan Device",
-    "marketingName": "general ProScan Device",
-    "manufacturer": "ProScan",
-    "brand": "ProScan",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general proscan device": {
+        "deviceName": "general ProScan Device",
+        "marketingName": "general ProScan Device",
+        "manufacturer": "ProScan",
+        "brand": "ProScan",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "proscan plt7035-c": {
-    "deviceName": "PLT7035-C",
-    "marketingName": "PLT7035-C",
-    "manufacturer": "ProScan",
-    "brand": "ProScan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "proscan plt7035-c": {
+        "deviceName": "PLT7035-C",
+        "marketingName": "PLT7035-C",
+        "manufacturer": "ProScan",
+        "brand": "ProScan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "proscan plt7044k-b": {
-    "deviceName": "PLT7044K-B",
-    "marketingName": "PLT7044K-B",
-    "manufacturer": "ProScan",
-    "brand": "ProScan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "proscan plt7044k-b": {
+        "deviceName": "PLT7044K-B",
+        "marketingName": "PLT7044K-B",
+        "manufacturer": "ProScan",
+        "brand": "ProScan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "proscan plt7602g": {
-    "deviceName": "PLT7602G",
-    "marketingName": "PLT7602G",
-    "manufacturer": "ProScan",
-    "brand": "ProScan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "proscan plt7602g": {
+        "deviceName": "PLT7602G",
+        "marketingName": "PLT7602G",
+        "manufacturer": "ProScan",
+        "brand": "ProScan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "proscan plt7802": {
-    "deviceName": "PLT7802",
-    "marketingName": "PLT7802",
-    "manufacturer": "ProScan",
-    "brand": "ProScan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "proscan plt7802": {
+        "deviceName": "PLT7802",
+        "marketingName": "PLT7802",
+        "manufacturer": "ProScan",
+        "brand": "ProScan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general tv device": {
-    "deviceName": "general TV Device",
-    "marketingName": "general TV Device",
-    "manufacturer": "Unknown",
-    "brand": "Unknown",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general tv device": {
+        "deviceName": "general TV Device",
+        "marketingName": "general TV Device",
+        "manufacturer": "Unknown",
+        "brand": "Unknown",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "idl-6651n": {
-    "deviceName": "IDL-6651N",
-    "marketingName": "IDL-6651N",
-    "manufacturer": "Unknown",
-    "brand": "Unknown",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "linux"
-  }
+    "idl-6651n": {
+        "deviceName": "IDL-6651N",
+        "marketingName": "IDL-6651N",
+        "manufacturer": "Unknown",
+        "brand": "Unknown",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "linux"
+    }
 }

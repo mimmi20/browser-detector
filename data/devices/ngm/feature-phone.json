@@ -1,17 +1,24 @@
 {
-  "ngm coffee": {
-    "deviceName": "Coffee",
-    "marketingName": "Coffee",
-    "manufacturer": "Ngm",
-    "brand": "Ngm",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "java"
-  }
+    "ngm coffee": {
+        "deviceName": "Coffee",
+        "marketingName": "Coffee",
+        "manufacturer": "Ngm",
+        "brand": "Ngm",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 400,
+            "touch": true,
+            "type": "WQVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

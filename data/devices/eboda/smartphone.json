@@ -1,32 +1,46 @@
 {
-  "general e-boda device": {
-    "deviceName": "general E-Boda Device",
-    "marketingName": "general E-Boda Device",
-    "manufacturer": "E-Boda",
-    "brand": "E-Boda",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general e-boda device": {
+        "deviceName": "general E-Boda Device",
+        "marketingName": "general E-Boda Device",
+        "manufacturer": "E-Boda",
+        "brand": "E-Boda",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "e-boda rainbow v47": {
-    "deviceName": "Rainbow V47",
-    "marketingName": "Rainbow V47",
-    "manufacturer": "E-Boda",
-    "brand": "E-Boda",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "e-boda rainbow v47": {
+        "deviceName": "Rainbow V47",
+        "marketingName": "Rainbow V47",
+        "manufacturer": "E-Boda",
+        "brand": "E-Boda",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

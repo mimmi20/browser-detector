@@ -1,107 +1,156 @@
 {
-  "general barnes & noble device": {
-    "deviceName": "general Barnes & Noble Device",
-    "marketingName": "general Barnes & Noble Device",
-    "manufacturer": "BarnesNoble",
-    "brand": "BarnesNoble",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general barnes & noble device": {
+        "deviceName": "general Barnes & Noble Device",
+        "marketingName": "general Barnes & Noble Device",
+        "manufacturer": "BarnesNoble",
+        "brand": "BarnesNoble",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "barnesnoble bnrv200": {
-    "deviceName": "BNRV200",
-    "marketingName": "Nook Color Wifi",
-    "manufacturer": "BarnesNoble",
-    "brand": "BarnesNoble",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "barnesnoble bnrv200": {
+        "deviceName": "BNRV200",
+        "marketingName": "Nook Color Wifi",
+        "manufacturer": "BarnesNoble",
+        "brand": "BarnesNoble",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "barnesnoble bntv250": {
-    "deviceName": "BNTV250",
-    "marketingName": "BNTV250",
-    "manufacturer": "BarnesNoble",
-    "brand": "BarnesNoble",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "barnesnoble bntv250": {
+        "deviceName": "BNTV250",
+        "marketingName": "BNTV250",
+        "manufacturer": "BarnesNoble",
+        "brand": "BarnesNoble",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "barnesnoble bntv250a": {
-    "deviceName": "BNTV250A",
-    "marketingName": "BNTV250A",
-    "manufacturer": "BarnesNoble",
-    "brand": "BarnesNoble",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "barnesnoble bntv250a": {
+        "deviceName": "BNTV250A",
+        "marketingName": "BNTV250A",
+        "manufacturer": "BarnesNoble",
+        "brand": "BarnesNoble",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "barnesnoble bntv400": {
-    "deviceName": "BNTV400",
-    "marketingName": "Nook HD",
-    "manufacturer": "BarnesNoble",
-    "brand": "BarnesNoble",
-    "type": "tablet",
-    "display": {
-      "width": 1440,
-      "height": 900,
-      "touch": true,
-      "type": null
+    "barnesnoble bntv400": {
+        "deviceName": "BNTV400",
+        "marketingName": "Nook HD",
+        "manufacturer": "BarnesNoble",
+        "brand": "BarnesNoble",
+        "type": "tablet",
+        "display": {
+            "width": 1440,
+            "height": 900,
+            "touch": true,
+            "type": "WXGA+",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "barnesnoble bntv600": {
-    "deviceName": "BNTV600",
-    "marketingName": "Nook HD+",
-    "manufacturer": "BarnesNoble",
-    "brand": "BarnesNoble",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "barnesnoble bntv600": {
+        "deviceName": "BNTV600",
+        "marketingName": "Nook HD+",
+        "manufacturer": "BarnesNoble",
+        "brand": "BarnesNoble",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1280,
+            "touch": true,
+            "type": "Custom 1280x1920",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "barnesnoble nook tablet": {
-    "deviceName": "Nook Tablet",
-    "marketingName": "Nook Tablet",
-    "manufacturer": "BarnesNoble",
-    "brand": "BarnesNoble",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "barnesnoble nook tablet": {
+        "deviceName": "Nook Tablet",
+        "marketingName": "Nook Tablet",
+        "manufacturer": "BarnesNoble",
+        "brand": "BarnesNoble",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

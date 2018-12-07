@@ -1,17 +1,24 @@
 {
-  "tcl vf-1497": {
-    "deviceName": "VF-1497",
-    "marketingName": "Tab Prime 6",
-    "manufacturer": "Tcl",
-    "brand": "Vodafone",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "tcl vf-1497": {
+        "deviceName": "VF-1497",
+        "marketingName": "Tab Prime 6",
+        "manufacturer": "Tcl",
+        "brand": "Vodafone",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

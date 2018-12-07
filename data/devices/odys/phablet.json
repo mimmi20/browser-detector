@@ -1,17 +1,24 @@
 {
-  "odys xelio phonetab 3": {
-    "deviceName": "Xelio PhoneTab 3",
-    "marketingName": "Xelio PhoneTab 3",
-    "manufacturer": "Odys",
-    "brand": "Odys",
-    "type": "phablet",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "odys xelio phonetab 3": {
+        "deviceName": "Xelio PhoneTab 3",
+        "marketingName": "Xelio PhoneTab 3",
+        "manufacturer": "Odys",
+        "brand": "Odys",
+        "type": "phablet",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

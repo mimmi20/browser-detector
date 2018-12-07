@@ -1,62 +1,90 @@
 {
-  "general evercoss device": {
-    "deviceName": "general Evercoss Device",
-    "marketingName": "general Evercoss Device",
-    "manufacturer": "Evercoss",
-    "brand": "Evercoss",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general evercoss device": {
+        "deviceName": "general Evercoss Device",
+        "marketingName": "general Evercoss Device",
+        "manufacturer": "Evercoss",
+        "brand": "Evercoss",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "evercoss a5p": {
-    "deviceName": "A5P",
-    "marketingName": "A5P",
-    "manufacturer": "Evercoss",
-    "brand": "Evercoss",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "evercoss a5p": {
+        "deviceName": "A5P",
+        "marketingName": "A5P",
+        "manufacturer": "Evercoss",
+        "brand": "Evercoss",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "evercoss a66a": {
-    "deviceName": "A66A",
-    "marketingName": "Elevate Y",
-    "manufacturer": "Evercoss",
-    "brand": "Evercoss",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "evercoss a66a": {
+        "deviceName": "A66A",
+        "marketingName": "Elevate Y",
+        "manufacturer": "Evercoss",
+        "brand": "Evercoss",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "evercoss a74a": {
-    "deviceName": "A74A",
-    "marketingName": "Winner T",
-    "manufacturer": "Evercoss",
-    "brand": "Evercoss",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "evercoss a74a": {
+        "deviceName": "A74A",
+        "marketingName": "Winner T",
+        "manufacturer": "Evercoss",
+        "brand": "Evercoss",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

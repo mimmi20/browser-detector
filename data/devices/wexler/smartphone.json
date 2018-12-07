@@ -1,47 +1,68 @@
 {
-  "wexler zen 4.5": {
-    "deviceName": "Zen 4.5",
-    "marketingName": "Zen 4.5",
-    "manufacturer": "Wexler",
-    "brand": "Wexler",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "wexler zen 4.5": {
+        "deviceName": "Zen 4.5",
+        "marketingName": "Zen 4.5",
+        "manufacturer": "Wexler",
+        "brand": "Wexler",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wexler zen 4.7": {
-    "deviceName": "Zen 4.7",
-    "marketingName": "Zen 4.7",
-    "manufacturer": "Wexler",
-    "brand": "Wexler",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "wexler zen 4.7": {
+        "deviceName": "Zen 4.7",
+        "marketingName": "Zen 4.7",
+        "manufacturer": "Wexler",
+        "brand": "Wexler",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wexler zen 5": {
-    "deviceName": "Zen 5",
-    "marketingName": "Zen 5",
-    "manufacturer": "Wexler",
-    "brand": "Wexler",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "wexler zen 5": {
+        "deviceName": "Zen 5",
+        "marketingName": "Zen 5",
+        "manufacturer": "Wexler",
+        "brand": "Wexler",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

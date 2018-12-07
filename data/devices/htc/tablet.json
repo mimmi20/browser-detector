@@ -1,32 +1,46 @@
 {
-  "htc flyer": {
-    "deviceName": "Flyer",
-    "marketingName": "Flyer",
-    "manufacturer": "Htc",
-    "brand": "Htc",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "htc flyer": {
+        "deviceName": "Flyer",
+        "marketingName": "Flyer",
+        "manufacturer": "Htc",
+        "brand": "Htc",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "htc p510e": {
-    "deviceName": "P510e",
-    "marketingName": "Flyer",
-    "manufacturer": "Htc",
-    "brand": "Htc",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "htc p510e": {
+        "deviceName": "P510e",
+        "marketingName": "Flyer",
+        "manufacturer": "Htc",
+        "brand": "Htc",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

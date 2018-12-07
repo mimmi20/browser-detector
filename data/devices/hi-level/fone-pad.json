@@ -1,32 +1,46 @@
 {
-  "hi-level hlv-t702": {
-    "deviceName": "HLV-T702",
-    "marketingName": "HLV-T702",
-    "manufacturer": "Hi-Level",
-    "brand": "Hi-Level",
-    "type": "fone-pad",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "hi-level hlv-t702": {
+        "deviceName": "HLV-T702",
+        "marketingName": "HLV-T702",
+        "manufacturer": "Hi-Level",
+        "brand": "Hi-Level",
+        "type": "fone-pad",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hi-level hlv-t704": {
-    "deviceName": "HLV-T704",
-    "marketingName": "HLV-T704",
-    "manufacturer": "Hi-Level",
-    "brand": "Hi-Level",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "hi-level hlv-t704": {
+        "deviceName": "HLV-T704",
+        "marketingName": "HLV-T704",
+        "manufacturer": "Hi-Level",
+        "brand": "Hi-Level",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

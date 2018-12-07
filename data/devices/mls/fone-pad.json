@@ -1,17 +1,24 @@
 {
-  "mls iq1010": {
-    "deviceName": "iQ1010",
-    "marketingName": "iQTab 10 3G",
-    "manufacturer": "MLS",
-    "brand": "MLS",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mls iq1010": {
+        "deviceName": "iQ1010",
+        "marketingName": "iQTab 10 3G",
+        "manufacturer": "MLS",
+        "brand": "MLS",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

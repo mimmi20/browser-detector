@@ -1,62 +1,90 @@
 {
-  "lg v400": {
-    "deviceName": "V400",
-    "marketingName": "G Pad 7.0",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "lg v400": {
+        "deviceName": "V400",
+        "marketingName": "G Pad 7.0",
+        "manufacturer": "Lg",
+        "brand": "Lg",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lg v480": {
-    "deviceName": "V480",
-    "marketingName": "G Pad 8.0",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "lg v480": {
+        "deviceName": "V480",
+        "marketingName": "G Pad 8.0",
+        "manufacturer": "Lg",
+        "brand": "Lg",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lg v500": {
-    "deviceName": "V500",
-    "marketingName": "G Pad 8.3",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "lg v500": {
+        "deviceName": "V500",
+        "marketingName": "G Pad 8.3",
+        "manufacturer": "Lg",
+        "brand": "Lg",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lg v700": {
-    "deviceName": "V700",
-    "marketingName": "G Pad 10.1",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "lg v700": {
+        "deviceName": "V700",
+        "marketingName": "G Pad 10.1",
+        "manufacturer": "Lg",
+        "brand": "Lg",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

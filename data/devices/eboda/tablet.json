@@ -1,32 +1,46 @@
 {
-  "e-boda supreme x80 dual core": {
-    "deviceName": "Supreme X80 Dual Core",
-    "marketingName": "Supreme X80 Dual Core",
-    "manufacturer": "E-Boda",
-    "brand": "E-Boda",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "e-boda supreme x80 dual core": {
+        "deviceName": "Supreme X80 Dual Core",
+        "marketingName": "Supreme X80 Dual Core",
+        "manufacturer": "E-Boda",
+        "brand": "E-Boda",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "e-boda supreme xl 200 ips": {
-    "deviceName": "Supreme XL 200 IPS",
-    "marketingName": "Supreme XL 200 IPS",
-    "manufacturer": "E-Boda",
-    "brand": "E-Boda",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "e-boda supreme xl 200 ips": {
+        "deviceName": "Supreme XL 200 IPS",
+        "marketingName": "Supreme XL 200 IPS",
+        "manufacturer": "E-Boda",
+        "brand": "E-Boda",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

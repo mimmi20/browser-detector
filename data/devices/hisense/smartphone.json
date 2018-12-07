@@ -1,572 +1,838 @@
 {
-  "hisense e621t": {
-    "deviceName": "E621T",
-    "marketingName": "E621T",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "hisense e621t": {
+        "deviceName": "E621T",
+        "marketingName": "E621T",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense eg680": {
-    "deviceName": "EG680",
-    "marketingName": "EG680",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense eg680": {
+        "deviceName": "EG680",
+        "marketingName": "EG680",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense f20": {
-    "deviceName": "F20",
-    "marketingName": "F20",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense f20": {
+        "deviceName": "F20",
+        "marketingName": "F20",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-e912": {
-    "deviceName": "HS-E912",
-    "marketingName": "HS-E912",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-e912": {
+        "deviceName": "HS-E912",
+        "marketingName": "HS-E912",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-e920": {
-    "deviceName": "HS-E920",
-    "marketingName": "HS-E920",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-e920": {
+        "deviceName": "HS-E920",
+        "marketingName": "HS-E920",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-e968": {
-    "deviceName": "HS-E968",
-    "marketingName": "HS-E968",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "hisense hs-e968": {
+        "deviceName": "HS-E968",
+        "marketingName": "HS-E968",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-eg970": {
-    "deviceName": "HS-EG970",
-    "marketingName": "Mira",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "hisense hs-eg970": {
+        "deviceName": "HS-EG970",
+        "marketingName": "Mira",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-g610": {
-    "deviceName": "HS-G610",
-    "marketingName": "King Kong",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense hs-g610": {
+        "deviceName": "HS-G610",
+        "marketingName": "King Kong",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-i630m": {
-    "deviceName": "HS-I630M",
-    "marketingName": "HS-I630M",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense hs-i630m": {
+        "deviceName": "HS-I630M",
+        "marketingName": "HS-I630M",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-i630t": {
-    "deviceName": "HS-I630T",
-    "marketingName": "HS-I630T",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense hs-i630t": {
+        "deviceName": "HS-I630T",
+        "marketingName": "HS-I630T",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-l691": {
-    "deviceName": "HS-L691",
-    "marketingName": "Sero 5",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense hs-l691": {
+        "deviceName": "HS-L691",
+        "marketingName": "Sero 5",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-t912": {
-    "deviceName": "HS-T912",
-    "marketingName": "HS-T912",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-t912": {
+        "deviceName": "HS-T912",
+        "marketingName": "HS-T912",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-t958": {
-    "deviceName": "HS-T958",
-    "marketingName": "HS-T958",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "hisense hs-t958": {
+        "deviceName": "HS-T958",
+        "marketingName": "HS-T958",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-t959s1": {
-    "deviceName": "HS-T959S1",
-    "marketingName": "HS-T959S1",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "hisense hs-t959s1": {
+        "deviceName": "HS-T959S1",
+        "marketingName": "HS-T959S1",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-t96": {
-    "deviceName": "HS-T96",
-    "marketingName": "HS-T96",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-t96": {
+        "deviceName": "HS-T96",
+        "marketingName": "HS-T96",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u602": {
-    "deviceName": "HS-U602",
-    "marketingName": "Glory",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "hisense hs-u602": {
+        "deviceName": "HS-U602",
+        "marketingName": "Glory",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u606": {
-    "deviceName": "HS-U606",
-    "marketingName": "Glory U",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-u606": {
+        "deviceName": "HS-U606",
+        "marketingName": "Glory U",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u8": {
-    "deviceName": "HS-U8",
-    "marketingName": "HS-U8",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-u8": {
+        "deviceName": "HS-U8",
+        "marketingName": "HS-U8",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u800": {
-    "deviceName": "HS-U800",
-    "marketingName": "Infinity H6",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense hs-u800": {
+        "deviceName": "HS-U800",
+        "marketingName": "Infinity H6",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u820": {
-    "deviceName": "HS-U820",
-    "marketingName": "HS-U820",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "hisense hs-u820": {
+        "deviceName": "HS-U820",
+        "marketingName": "HS-U820",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u850": {
-    "deviceName": "HS-U850",
-    "marketingName": "HS-U850",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "hisense hs-u850": {
+        "deviceName": "HS-U850",
+        "marketingName": "HS-U850",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u912": {
-    "deviceName": "HS-U912",
-    "marketingName": "HS-U912",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-u912": {
+        "deviceName": "HS-U912",
+        "marketingName": "HS-U912",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u912c": {
-    "deviceName": "HS-U912C",
-    "marketingName": "HS-U912C",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-u912c": {
+        "deviceName": "HS-U912C",
+        "marketingName": "HS-U912C",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u929": {
-    "deviceName": "HS-U929",
-    "marketingName": "HS-U929",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hisense hs-u929": {
+        "deviceName": "HS-U929",
+        "marketingName": "HS-U929",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u939": {
-    "deviceName": "HS-U939",
-    "marketingName": "HS-U939",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "hisense hs-u939": {
+        "deviceName": "HS-U939",
+        "marketingName": "HS-U939",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u950": {
-    "deviceName": "HS-U950",
-    "marketingName": "HS-U950",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "hisense hs-u950": {
+        "deviceName": "HS-U950",
+        "marketingName": "HS-U950",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u966": {
-    "deviceName": "HS-U966",
-    "marketingName": "HS-U966",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "hisense hs-u966": {
+        "deviceName": "HS-U966",
+        "marketingName": "HS-U966",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u970": {
-    "deviceName": "HS-U970",
-    "marketingName": "Infinity Prime 1",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "hisense hs-u970": {
+        "deviceName": "HS-U970",
+        "marketingName": "Infinity Prime 1",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u971": {
-    "deviceName": "HS-U971",
-    "marketingName": "HS-U971",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense hs-u971": {
+        "deviceName": "HS-U971",
+        "marketingName": "HS-U971",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u98": {
-    "deviceName": "HS-U98",
-    "marketingName": "HS-U98",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "hisense hs-u98": {
+        "deviceName": "HS-U98",
+        "marketingName": "HS-U98",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-u980": {
-    "deviceName": "HS-U980",
-    "marketingName": "Pure 1",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense hs-u980": {
+        "deviceName": "HS-U980",
+        "marketingName": "Pure 1",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-x1": {
-    "deviceName": "HS-X1",
-    "marketingName": "HS-X1",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "hisense hs-x1": {
+        "deviceName": "HS-X1",
+        "marketingName": "HS-X1",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-x68t": {
-    "deviceName": "HS-X68T",
-    "marketingName": "HS-X68T",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "hisense hs-x68t": {
+        "deviceName": "HS-X68T",
+        "marketingName": "HS-X68T",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-x8c": {
-    "deviceName": "HS-X8C",
-    "marketingName": "HS-X8C",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "hisense hs-x8c": {
+        "deviceName": "HS-X8C",
+        "marketingName": "HS-X8C",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense hs-x8t": {
-    "deviceName": "HS-X8T",
-    "marketingName": "HS-X8T",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "hisense hs-x8t": {
+        "deviceName": "HS-X8T",
+        "marketingName": "HS-X8T",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense i639m": {
-    "deviceName": "I639M",
-    "marketingName": "I639M",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense i639m": {
+        "deviceName": "I639M",
+        "marketingName": "I639M",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense i639t": {
-    "deviceName": "I639T",
-    "marketingName": "I639T",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "hisense i639t": {
+        "deviceName": "I639T",
+        "marketingName": "I639T",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hisense u972": {
-    "deviceName": "U972",
-    "marketingName": "Infinity",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "hisense u972": {
+        "deviceName": "U972",
+        "marketingName": "Infinity",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "lava kkt20": {
-    "deviceName": "KKT20",
-    "marketingName": "KKT20",
-    "manufacturer": "Lava",
-    "brand": "Lava",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "lava kkt20": {
+        "deviceName": "KKT20",
+        "marketingName": "KKT20",
+        "manufacturer": "Lava",
+        "brand": "Lava",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "lava spark 284": {
-    "deviceName": "Spark 284",
-    "marketingName": "Spark 284",
-    "manufacturer": "Lava",
-    "brand": "Lava",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "lava spark 284": {
+        "deviceName": "Spark 284",
+        "marketingName": "Spark 284",
+        "manufacturer": "Lava",
+        "brand": "Lava",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }
