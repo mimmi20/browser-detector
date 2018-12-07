@@ -1,77 +1,112 @@
 {
-  "general pipo device": {
-    "deviceName": "general PiPO Device",
-    "marketingName": "general PiPO Device",
-    "manufacturer": "Pipo",
-    "brand": "Pipo",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general pipo device": {
+        "deviceName": "general PiPO Device",
+        "marketingName": "general PiPO Device",
+        "manufacturer": "Pipo",
+        "brand": "Pipo",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pipo i75": {
-    "deviceName": "i75",
-    "marketingName": "i75",
-    "manufacturer": "Pipo",
-    "brand": "Pipo",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "pipo i75": {
+        "deviceName": "i75",
+        "marketingName": "i75",
+        "manufacturer": "Pipo",
+        "brand": "Pipo",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pipo m6": {
-    "deviceName": "M6",
-    "marketingName": "M6",
-    "manufacturer": "Pipo",
-    "brand": "Pipo",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "pipo m6": {
+        "deviceName": "M6",
+        "marketingName": "M6",
+        "manufacturer": "Pipo",
+        "brand": "Pipo",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pipo q107": {
-    "deviceName": "Q107",
-    "marketingName": "M9 Pro",
-    "manufacturer": "Pipo",
-    "brand": "Pipo",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "pipo q107": {
+        "deviceName": "Q107",
+        "marketingName": "M9 Pro",
+        "manufacturer": "Pipo",
+        "brand": "Pipo",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pipo q977": {
-    "deviceName": "Q977",
-    "marketingName": "M6 pro",
-    "manufacturer": "Pipo",
-    "brand": "Pipo",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pipo q977": {
+        "deviceName": "Q977",
+        "marketingName": "M6 pro",
+        "manufacturer": "Pipo",
+        "brand": "Pipo",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,47 +1,68 @@
 {
-  "general teclast device": {
-    "deviceName": "general Teclast Device",
-    "marketingName": "general Teclast Device",
-    "manufacturer": "Teclast",
-    "brand": "Teclast",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general teclast device": {
+        "deviceName": "general Teclast Device",
+        "marketingName": "general Teclast Device",
+        "manufacturer": "Teclast",
+        "brand": "Teclast",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "teclast d4c5": {
-    "deviceName": "D4C5",
-    "marketingName": "P80h",
-    "manufacturer": "Teclast",
-    "brand": "Teclast",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "teclast d4c5": {
+        "deviceName": "D4C5",
+        "marketingName": "P80h",
+        "manufacturer": "Teclast",
+        "brand": "Teclast",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "teclast k9c6": {
-    "deviceName": "K9C6",
-    "marketingName": "X98 Pro",
-    "manufacturer": "Teclast",
-    "brand": "Teclast",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "teclast k9c6": {
+        "deviceName": "K9C6",
+        "marketingName": "X98 Pro",
+        "manufacturer": "Teclast",
+        "brand": "Teclast",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

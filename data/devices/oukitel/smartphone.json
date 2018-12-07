@@ -1,212 +1,310 @@
 {
-  "general oukitel device": {
-    "deviceName": "general Oukitel Device",
-    "marketingName": "general Oukitel Device",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general oukitel device": {
+        "deviceName": "general Oukitel Device",
+        "marketingName": "general Oukitel Device",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel k10000": {
-    "deviceName": "K10000",
-    "marketingName": "K10000",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "oukitel k10000": {
+        "deviceName": "K10000",
+        "marketingName": "K10000",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel k10000 max": {
-    "deviceName": "K10000 Max",
-    "marketingName": "K10000 Max",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "oukitel k10000 max": {
+        "deviceName": "K10000 Max",
+        "marketingName": "K10000 Max",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel k10000 pro": {
-    "deviceName": "K10000 Pro",
-    "marketingName": "K10000 Pro",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "oukitel k10000 pro": {
+        "deviceName": "K10000 Pro",
+        "marketingName": "K10000 Pro",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel k4000": {
-    "deviceName": "K4000",
-    "marketingName": "K4000",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "oukitel k4000": {
+        "deviceName": "K4000",
+        "marketingName": "K4000",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel k4000 pro": {
-    "deviceName": "K4000 Pro",
-    "marketingName": "K4000 Pro",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "oukitel k4000 pro": {
+        "deviceName": "K4000 Pro",
+        "marketingName": "K4000 Pro",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel k6000 plus": {
-    "deviceName": "K6000 Plus",
-    "marketingName": "K6000 Plus",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "oukitel k6000 plus": {
+        "deviceName": "K6000 Plus",
+        "marketingName": "K6000 Plus",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel k6000 pro": {
-    "deviceName": "K6000 Pro",
-    "marketingName": "K6000 Pro",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "oukitel k6000 pro": {
+        "deviceName": "K6000 Pro",
+        "marketingName": "K6000 Pro",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel u10": {
-    "deviceName": "U10",
-    "marketingName": "U10",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "oukitel u10": {
+        "deviceName": "U10",
+        "marketingName": "U10",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel u16 max": {
-    "deviceName": "U16 Max",
-    "marketingName": "U16 Max",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "oukitel u16 max": {
+        "deviceName": "U16 Max",
+        "marketingName": "U16 Max",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel u22": {
-    "deviceName": "U22",
-    "marketingName": "U22",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "oukitel u22": {
+        "deviceName": "U22",
+        "marketingName": "U22",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel u7 plus": {
-    "deviceName": "U7 Plus",
-    "marketingName": "U7 Plus",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "oukitel u7 plus": {
+        "deviceName": "U7 Plus",
+        "marketingName": "U7 Plus",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel universetap": {
-    "deviceName": "U8 Universe Tap",
-    "marketingName": "U8 Universe Tap",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "oukitel universetap": {
+        "deviceName": "U8 Universe Tap",
+        "marketingName": "U8 Universe Tap",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "oukitel wp5000": {
-    "deviceName": "WP5000",
-    "marketingName": "WP5000",
-    "manufacturer": "Oukitel",
-    "brand": "Oukitel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "oukitel wp5000": {
+        "deviceName": "WP5000",
+        "marketingName": "WP5000",
+        "manufacturer": "Oukitel",
+        "brand": "Oukitel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

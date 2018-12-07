@@ -1,62 +1,90 @@
 {
-  "general wolfgang device": {
-    "deviceName": "general Wolfgang Device",
-    "marketingName": "general Wolfgang Device",
-    "manufacturer": "Wolfgang",
-    "brand": "Wolfgang",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general wolfgang device": {
+        "deviceName": "general Wolfgang Device",
+        "marketingName": "general Wolfgang Device",
+        "manufacturer": "Wolfgang",
+        "brand": "Wolfgang",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolfgang at-as40se": {
-    "deviceName": "AT-AS40SE",
-    "marketingName": "AT-AS40SE",
-    "manufacturer": "Wolfgang",
-    "brand": "Wolfgang",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "wolfgang at-as40se": {
+        "deviceName": "AT-AS40SE",
+        "marketingName": "AT-AS40SE",
+        "manufacturer": "Wolfgang",
+        "brand": "Wolfgang",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolfgang at-as43d3": {
-    "deviceName": "AT-AS43D3",
-    "marketingName": "AT-AS43D3",
-    "manufacturer": "Wolfgang",
-    "brand": "Wolfgang",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "wolfgang at-as43d3": {
+        "deviceName": "AT-AS43D3",
+        "marketingName": "AT-AS43D3",
+        "manufacturer": "Wolfgang",
+        "brand": "Wolfgang",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolfgang at-as45d1": {
-    "deviceName": "AT-AS45D1",
-    "marketingName": "AT-AS45D1",
-    "manufacturer": "Wolfgang",
-    "brand": "Wolfgang",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "wolfgang at-as45d1": {
+        "deviceName": "AT-AS45D1",
+        "marketingName": "AT-AS45D1",
+        "manufacturer": "Wolfgang",
+        "brand": "Wolfgang",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

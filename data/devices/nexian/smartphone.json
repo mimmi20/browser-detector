@@ -1,32 +1,46 @@
 {
-  "general nexian device": {
-    "deviceName": "general Nexian Device",
-    "marketingName": "general Nexian Device",
-    "manufacturer": "Nexian",
-    "brand": "Nexian",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nexian device": {
+        "deviceName": "general Nexian Device",
+        "marketingName": "general Nexian Device",
+        "manufacturer": "Nexian",
+        "brand": "Nexian",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nexian mi430": {
-    "deviceName": "Mi430",
-    "marketingName": "Xtreme 2",
-    "manufacturer": "Nexian",
-    "brand": "Nexian",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nexian mi430": {
+        "deviceName": "Mi430",
+        "marketingName": "Xtreme 2",
+        "manufacturer": "Nexian",
+        "brand": "Nexian",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

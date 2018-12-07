@@ -1,107 +1,156 @@
 {
-  "general pulid device": {
-    "deviceName": "general PULID Device",
-    "marketingName": "general PULID Device",
-    "manufacturer": "Pulid",
-    "brand": "Pulid",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general pulid device": {
+        "deviceName": "general PULID Device",
+        "marketingName": "general PULID Device",
+        "manufacturer": "Pulid",
+        "brand": "Pulid",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pulid f11": {
-    "deviceName": "F11",
-    "marketingName": "F11",
-    "manufacturer": "Pulid",
-    "brand": "Pulid",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "pulid f11": {
+        "deviceName": "F11",
+        "marketingName": "F11",
+        "manufacturer": "Pulid",
+        "brand": "Pulid",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pulid f13": {
-    "deviceName": "F13",
-    "marketingName": "F13",
-    "manufacturer": "Pulid",
-    "brand": "Pulid",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "pulid f13": {
+        "deviceName": "F13",
+        "marketingName": "F13",
+        "manufacturer": "Pulid",
+        "brand": "Pulid",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pulid f15": {
-    "deviceName": "F15",
-    "marketingName": "F15",
-    "manufacturer": "Pulid",
-    "brand": "Pulid",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "pulid f15": {
+        "deviceName": "F15",
+        "marketingName": "F15",
+        "manufacturer": "Pulid",
+        "brand": "Pulid",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pulid f6": {
-    "deviceName": "F6",
-    "marketingName": "F6",
-    "manufacturer": "Pulid",
-    "brand": "Pulid",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "pulid f6": {
+        "deviceName": "F6",
+        "marketingName": "F6",
+        "manufacturer": "Pulid",
+        "brand": "Pulid",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pulid f7": {
-    "deviceName": "F7",
-    "marketingName": "F7",
-    "manufacturer": "Pulid",
-    "brand": "Pulid",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "pulid f7": {
+        "deviceName": "F7",
+        "marketingName": "F7",
+        "manufacturer": "Pulid",
+        "brand": "Pulid",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pulid t3": {
-    "deviceName": "T3",
-    "marketingName": "T3",
-    "manufacturer": "Pulid",
-    "brand": "Pulid",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pulid t3": {
+        "deviceName": "T3",
+        "marketingName": "T3",
+        "manufacturer": "Pulid",
+        "brand": "Pulid",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

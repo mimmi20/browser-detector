@@ -1,17 +1,24 @@
 {
-  "4good t700i 3g": {
-    "deviceName": "T700i 3G",
-    "marketingName": "T700i 3G",
-    "manufacturer": "4Good",
-    "brand": "4Good",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "4good t700i 3g": {
+        "deviceName": "T700i 3G",
+        "marketingName": "T700i 3G",
+        "manufacturer": "4Good",
+        "brand": "4Good",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

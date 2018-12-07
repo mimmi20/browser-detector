@@ -1,107 +1,156 @@
 {
-  "general wolder device": {
-    "deviceName": "general Wolder Device",
-    "marketingName": "general Wolder Device",
-    "manufacturer": "Wolder Electronics",
-    "brand": "Wolder Electronics",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general wolder device": {
+        "deviceName": "general Wolder Device",
+        "marketingName": "general Wolder Device",
+        "manufacturer": "Wolder Electronics",
+        "brand": "Wolder Electronics",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolder mitab brooklyn": {
-    "deviceName": "miTab Brooklyn",
-    "marketingName": "miTab Brooklyn",
-    "manufacturer": "Wolder Electronics",
-    "brand": "Wolder Electronics",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "wolder mitab brooklyn": {
+        "deviceName": "miTab Brooklyn",
+        "marketingName": "miTab Brooklyn",
+        "manufacturer": "Wolder Electronics",
+        "brand": "Wolder Electronics",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolder mitab epsilon": {
-    "deviceName": "miTab Epsilon",
-    "marketingName": "miTab Epsilon",
-    "manufacturer": "Wolder Electronics",
-    "brand": "Wolder Electronics",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "wolder mitab epsilon": {
+        "deviceName": "miTab Epsilon",
+        "marketingName": "miTab Epsilon",
+        "manufacturer": "Wolder Electronics",
+        "brand": "Wolder Electronics",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolder mitab funk": {
-    "deviceName": "miTab Funk",
-    "marketingName": "miTab Funk",
-    "manufacturer": "Wolder Electronics",
-    "brand": "Wolder Electronics",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "wolder mitab funk": {
+        "deviceName": "miTab Funk",
+        "marketingName": "miTab Funk",
+        "manufacturer": "Wolder Electronics",
+        "brand": "Wolder Electronics",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolder mitab hero": {
-    "deviceName": "miTab Hero",
-    "marketingName": "miTab Hero",
-    "manufacturer": "Wolder Electronics",
-    "brand": "Wolder Electronics",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "wolder mitab hero": {
+        "deviceName": "miTab Hero",
+        "marketingName": "miTab Hero",
+        "manufacturer": "Wolder Electronics",
+        "brand": "Wolder Electronics",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolder mitab jump": {
-    "deviceName": "miTab Jump",
-    "marketingName": "miTab Jump",
-    "manufacturer": "Wolder Electronics",
-    "brand": "Wolder Electronics",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "wolder mitab jump": {
+        "deviceName": "miTab Jump",
+        "marketingName": "miTab Jump",
+        "manufacturer": "Wolder Electronics",
+        "brand": "Wolder Electronics",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wolder mitab think": {
-    "deviceName": "miTab Think",
-    "marketingName": "miTab Think",
-    "manufacturer": "Wolder Electronics",
-    "brand": "Wolder Electronics",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "wolder mitab think": {
+        "deviceName": "miTab Think",
+        "marketingName": "miTab Think",
+        "manufacturer": "Wolder Electronics",
+        "brand": "Wolder Electronics",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

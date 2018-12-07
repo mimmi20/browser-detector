@@ -1,107 +1,156 @@
 {
-  "general vernee device": {
-    "deviceName": "general Vernee Device",
-    "marketingName": "general Vernee Device",
-    "manufacturer": "Vernee",
-    "brand": "Vernee",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general vernee device": {
+        "deviceName": "general Vernee Device",
+        "marketingName": "general Vernee Device",
+        "manufacturer": "Vernee",
+        "brand": "Vernee",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vernee apollo": {
-    "deviceName": "Apollo",
-    "marketingName": "Apollo",
-    "manufacturer": "Vernee",
-    "brand": "Vernee",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2560,
-      "touch": true,
-      "type": null
+    "vernee apollo": {
+        "deviceName": "Apollo",
+        "marketingName": "Apollo",
+        "manufacturer": "Vernee",
+        "brand": "Vernee",
+        "type": "smartphone",
+        "display": {
+            "width": 1440,
+            "height": 2560,
+            "touch": true,
+            "type": "QHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vernee apollo lite": {
-    "deviceName": "Apollo Lite",
-    "marketingName": "Apollo Lite",
-    "manufacturer": "Vernee",
-    "brand": "Vernee",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "vernee apollo lite": {
+        "deviceName": "Apollo Lite",
+        "marketingName": "Apollo Lite",
+        "manufacturer": "Vernee",
+        "brand": "Vernee",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vernee m5": {
-    "deviceName": "M5",
-    "marketingName": "M5",
-    "manufacturer": "Vernee",
-    "brand": "Vernee",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "vernee m5": {
+        "deviceName": "M5",
+        "marketingName": "M5",
+        "manufacturer": "Vernee",
+        "brand": "Vernee",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vernee mars pro": {
-    "deviceName": "Mars Pro",
-    "marketingName": "Mars Pro",
-    "manufacturer": "Vernee",
-    "brand": "Vernee",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "vernee mars pro": {
+        "deviceName": "Mars Pro",
+        "marketingName": "Mars Pro",
+        "manufacturer": "Vernee",
+        "brand": "Vernee",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vernee thor": {
-    "deviceName": "Thor",
-    "marketingName": "Thor",
-    "manufacturer": "Vernee",
-    "brand": "Vernee",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "vernee thor": {
+        "deviceName": "Thor",
+        "marketingName": "Thor",
+        "manufacturer": "Vernee",
+        "brand": "Vernee",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vernee thor e": {
-    "deviceName": "Thor E",
-    "marketingName": "Thor E",
-    "manufacturer": "Vernee",
-    "brand": "Vernee",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "vernee thor e": {
+        "deviceName": "Thor E",
+        "marketingName": "Thor E",
+        "manufacturer": "Vernee",
+        "brand": "Vernee",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

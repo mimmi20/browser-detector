@@ -1,17 +1,24 @@
 {
-  "gemini gem7032g": {
-    "deviceName": "GEM7032G",
-    "marketingName": "Duo 7 3G",
-    "manufacturer": "Gemini",
-    "brand": "Gemini",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "gemini gem7032g": {
+        "deviceName": "GEM7032G",
+        "marketingName": "Duo 7 3G",
+        "manufacturer": "Gemini",
+        "brand": "Gemini",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

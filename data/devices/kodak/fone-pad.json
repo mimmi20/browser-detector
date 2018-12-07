@@ -1,17 +1,24 @@
 {
-  "kodak tablet 10": {
-    "deviceName": "Tablet 10",
-    "marketingName": "Tablet 10",
-    "manufacturer": "Kodak",
-    "brand": "Kodak",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "kodak tablet 10": {
+        "deviceName": "Tablet 10",
+        "marketingName": "Tablet 10",
+        "manufacturer": "Kodak",
+        "brand": "Kodak",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "lexand sc7 pro hd": {
-    "deviceName": "SC7 Pro HD",
-    "marketingName": "SC7 Pro HD",
-    "manufacturer": "Lexand",
-    "brand": "Lexand",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "lexand sc7 pro hd": {
+        "deviceName": "SC7 Pro HD",
+        "marketingName": "SC7 Pro HD",
+        "manufacturer": "Lexand",
+        "brand": "Lexand",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

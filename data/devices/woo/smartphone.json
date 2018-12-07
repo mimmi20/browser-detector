@@ -1,32 +1,46 @@
 {
-  "general woo device": {
-    "deviceName": "general Woo Device",
-    "marketingName": "general Woo Device",
-    "manufacturer": "Woo",
-    "brand": "Woo",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general woo device": {
+        "deviceName": "general Woo Device",
+        "marketingName": "general Woo Device",
+        "manufacturer": "Woo",
+        "brand": "Woo",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "woo sp6020": {
-    "deviceName": "SP6020",
-    "marketingName": "Quasar",
-    "manufacturer": "Woo",
-    "brand": "Woo",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "woo sp6020": {
+        "deviceName": "SP6020",
+        "marketingName": "Quasar",
+        "manufacturer": "Woo",
+        "brand": "Woo",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

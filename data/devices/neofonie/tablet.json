@@ -1,32 +1,46 @@
 {
-  "general neofonie device": {
-    "deviceName": "general Neofonie Device",
-    "marketingName": "general Neofonie Device",
-    "manufacturer": "WeTab",
-    "brand": "WeTab",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general neofonie device": {
+        "deviceName": "general Neofonie Device",
+        "marketingName": "general Neofonie Device",
+        "manufacturer": "WeTab",
+        "brand": "WeTab",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "meego"
     },
-    "dualOrientation": true,
-    "platform": "meego"
-  },
-  "neofonie wetab": {
-    "deviceName": "WeTab",
-    "marketingName": "WeTab",
-    "manufacturer": "WeTab",
-    "brand": "WeTab",
-    "type": "tablet",
-    "display": {
-      "width": 1366,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "meego"
-  }
+    "neofonie wetab": {
+        "deviceName": "WeTab",
+        "marketingName": "WeTab",
+        "manufacturer": "WeTab",
+        "brand": "WeTab",
+        "type": "tablet",
+        "display": {
+            "width": 1366,
+            "height": 768,
+            "touch": true,
+            "type": "FWXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "meego"
+    }
 }

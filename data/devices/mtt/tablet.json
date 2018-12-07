@@ -1,17 +1,24 @@
 {
-  "mtt tablet": {
-    "deviceName": "Tablet",
-    "marketingName": "Tablet",
-    "manufacturer": "MTT",
-    "brand": "MTT",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mtt tablet": {
+        "deviceName": "Tablet",
+        "marketingName": "Tablet",
+        "manufacturer": "MTT",
+        "brand": "MTT",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

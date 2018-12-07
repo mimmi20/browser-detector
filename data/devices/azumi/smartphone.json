@@ -1,32 +1,46 @@
 {
-  "general azumi device": {
-    "deviceName": "general Azumi Device",
-    "marketingName": "general Azumi Device",
-    "manufacturer": "Azumi",
-    "brand": "Azumi",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general azumi device": {
+        "deviceName": "general Azumi Device",
+        "marketingName": "general Azumi Device",
+        "manufacturer": "Azumi",
+        "brand": "Azumi",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "azumi iro a5q": {
-    "deviceName": "Iro A5Q",
-    "marketingName": "Iro A5Q",
-    "manufacturer": "Azumi",
-    "brand": "Azumi",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "azumi iro a5q": {
+        "deviceName": "Iro A5Q",
+        "marketingName": "Iro A5Q",
+        "manufacturer": "Azumi",
+        "brand": "Azumi",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

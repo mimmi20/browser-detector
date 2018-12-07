@@ -1,17 +1,24 @@
 {
-  "ramos x10 pro": {
-    "deviceName": "X10 Pro",
-    "marketingName": "X10 Pro",
-    "manufacturer": "Ramos",
-    "brand": "Ramos",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ramos x10 pro": {
+        "deviceName": "X10 Pro",
+        "marketingName": "X10 Pro",
+        "manufacturer": "Ramos",
+        "brand": "Ramos",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,62 +1,90 @@
 {
-  "general turbo-x device": {
-    "deviceName": "general Turbo-X Device",
-    "marketingName": "general Turbo-X Device",
-    "manufacturer": "Turbo-X",
-    "brand": "Turbo-X",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general turbo-x device": {
+        "deviceName": "general Turbo-X Device",
+        "marketingName": "general Turbo-X Device",
+        "manufacturer": "Turbo-X",
+        "brand": "Turbo-X",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "turbo-x coral ii": {
-    "deviceName": "Coral II",
-    "marketingName": "Coral II",
-    "manufacturer": "Turbo-X",
-    "brand": "Turbo-X",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "turbo-x coral ii": {
+        "deviceName": "Coral II",
+        "marketingName": "Coral II",
+        "manufacturer": "Turbo-X",
+        "brand": "Turbo-X",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "turbo-x ice": {
-    "deviceName": "Ice",
-    "marketingName": "Ice",
-    "manufacturer": "Turbo-X",
-    "brand": "Turbo-X",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "turbo-x ice": {
+        "deviceName": "Ice",
+        "marketingName": "Ice",
+        "manufacturer": "Turbo-X",
+        "brand": "Turbo-X",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "turbo-x tablet spice iii": {
-    "deviceName": "Tablet Spice III",
-    "marketingName": "Tablet Spice III",
-    "manufacturer": "Turbo-X",
-    "brand": "Turbo-X",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "turbo-x tablet spice iii": {
+        "deviceName": "Tablet Spice III",
+        "marketingName": "Tablet Spice III",
+        "manufacturer": "Turbo-X",
+        "brand": "Turbo-X",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

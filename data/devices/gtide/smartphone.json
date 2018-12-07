@@ -1,32 +1,46 @@
 {
-  "general gtide device": {
-    "deviceName": "general G-Tide Device",
-    "marketingName": "general G-Tide Device",
-    "manufacturer": "Gtide",
-    "brand": "Gtide",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general gtide device": {
+        "deviceName": "general G-Tide Device",
+        "marketingName": "general G-Tide Device",
+        "manufacturer": "Gtide",
+        "brand": "Gtide",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "gtide e77": {
-    "deviceName": "E77",
-    "marketingName": "E77",
-    "manufacturer": "Gtide",
-    "brand": "Gtide",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "gtide e77": {
+        "deviceName": "E77",
+        "marketingName": "E77",
+        "manufacturer": "Gtide",
+        "brand": "Gtide",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

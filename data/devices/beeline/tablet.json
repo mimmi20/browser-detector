@@ -1,32 +1,46 @@
 {
-  "general beeline device": {
-    "deviceName": "general Beeline Device",
-    "marketingName": "general Beeline Device",
-    "manufacturer": "Beeline",
-    "brand": "Beeline",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general beeline device": {
+        "deviceName": "general Beeline Device",
+        "marketingName": "general Beeline Device",
+        "manufacturer": "Beeline",
+        "brand": "Beeline",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "beeline tab": {
-    "deviceName": "Tab",
-    "marketingName": "Tab",
-    "manufacturer": "Beeline",
-    "brand": "Beeline",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "beeline tab": {
+        "deviceName": "Tab",
+        "marketingName": "Tab",
+        "manufacturer": "Beeline",
+        "brand": "Beeline",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

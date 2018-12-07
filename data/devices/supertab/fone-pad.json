@@ -1,32 +1,46 @@
 {
-  "general supertab device": {
-    "deviceName": "general SuperTab Device",
-    "marketingName": "general SuperTab Device",
-    "manufacturer": "SuperTab",
-    "brand": "SuperTab",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general supertab device": {
+        "deviceName": "general SuperTab Device",
+        "marketingName": "general SuperTab Device",
+        "manufacturer": "SuperTab",
+        "brand": "SuperTab",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "supertab s7g": {
-    "deviceName": "S7G",
-    "marketingName": "S7G",
-    "manufacturer": "SuperTab",
-    "brand": "SuperTab",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "supertab s7g": {
+        "deviceName": "S7G",
+        "marketingName": "S7G",
+        "manufacturer": "SuperTab",
+        "brand": "SuperTab",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

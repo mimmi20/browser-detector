@@ -1,32 +1,46 @@
 {
-  "general mtn device": {
-    "deviceName": "general MTN Device",
-    "marketingName": "general MTN Device",
-    "manufacturer": "MTN",
-    "brand": "MTN",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general mtn device": {
+        "deviceName": "general MTN Device",
+        "marketingName": "general MTN Device",
+        "manufacturer": "MTN",
+        "brand": "MTN",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mtn mt10": {
-    "deviceName": "MT10",
-    "marketingName": "MT10",
-    "manufacturer": "MTN",
-    "brand": "MTN",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mtn mt10": {
+        "deviceName": "MT10",
+        "marketingName": "MT10",
+        "manufacturer": "MTN",
+        "brand": "MTN",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

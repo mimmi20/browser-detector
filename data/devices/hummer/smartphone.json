@@ -1,32 +1,46 @@
 {
-  "general hummer device": {
-    "deviceName": "general Hummer Device",
-    "marketingName": "general Hummer Device",
-    "manufacturer": "Hummer",
-    "brand": "Hummer",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general hummer device": {
+        "deviceName": "general Hummer Device",
+        "marketingName": "general Hummer Device",
+        "manufacturer": "Hummer",
+        "brand": "Hummer",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hummer h1+": {
-    "deviceName": "H1+",
-    "marketingName": "H1+",
-    "manufacturer": "Hummer",
-    "brand": "Hummer",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "hummer h1+": {
+        "deviceName": "H1+",
+        "marketingName": "H1+",
+        "manufacturer": "Hummer",
+        "brand": "Hummer",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

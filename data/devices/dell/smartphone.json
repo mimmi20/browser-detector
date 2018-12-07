@@ -1,62 +1,90 @@
 {
-  "dell aero": {
-    "deviceName": "Aero",
-    "marketingName": "Aero",
-    "manufacturer": "Dell",
-    "brand": "Dell",
-    "type": "smartphone",
-    "display": {
-      "width": 360,
-      "height": 640,
-      "touch": true,
-      "type": null
+    "dell aero": {
+        "deviceName": "Aero",
+        "marketingName": "Aero",
+        "manufacturer": "Dell",
+        "brand": "Dell",
+        "type": "smartphone",
+        "display": {
+            "width": 360,
+            "height": 640,
+            "touch": true,
+            "type": "nHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "dell venue": {
-    "deviceName": "Venue",
-    "marketingName": "Venue",
-    "manufacturer": "Dell",
-    "brand": "Dell",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "dell venue": {
+        "deviceName": "Venue",
+        "marketingName": "Venue",
+        "manufacturer": "Dell",
+        "brand": "Dell",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "dell venue pro": {
-    "deviceName": "Venue Pro",
-    "marketingName": "Venue Pro",
-    "manufacturer": "Dell",
-    "brand": "Dell",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "dell venue pro": {
+        "deviceName": "Venue Pro",
+        "marketingName": "Venue Pro",
+        "manufacturer": "Dell",
+        "brand": "Dell",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
     },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  },
-  "dell xcd35": {
-    "deviceName": "XCD35",
-    "marketingName": "XCD35",
-    "manufacturer": "Dell",
-    "brand": "Dell",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "dell xcd35": {
+        "deviceName": "XCD35",
+        "marketingName": "XCD35",
+        "manufacturer": "Dell",
+        "brand": "Dell",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general lifeware device": {
-    "deviceName": "general Lifeware Device",
-    "marketingName": "general Lifeware Device",
-    "manufacturer": "Lifeware",
-    "brand": "Lifeware",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general lifeware device": {
+        "deviceName": "general Lifeware Device",
+        "marketingName": "general Lifeware Device",
+        "manufacturer": "Lifeware",
+        "brand": "Lifeware",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "lifeware ft-4008": {
-    "deviceName": "FT-4008",
-    "marketingName": "Fabtab Quadro 8",
-    "manufacturer": "Lifeware",
-    "brand": "Lifeware",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 720,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "lifeware ft-4008": {
+        "deviceName": "FT-4008",
+        "marketingName": "Fabtab Quadro 8",
+        "manufacturer": "Lifeware",
+        "brand": "Lifeware",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 720,
+            "touch": true,
+            "type": "Custom 720x1024",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

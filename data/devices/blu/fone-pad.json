@@ -1,17 +1,24 @@
 {
-  "blu studio 7.0": {
-    "deviceName": "Studio 7.0",
-    "marketingName": "Studio 7.0",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "blu studio 7.0": {
+        "deviceName": "Studio 7.0",
+        "marketingName": "Studio 7.0",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

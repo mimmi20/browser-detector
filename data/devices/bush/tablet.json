@@ -1,32 +1,46 @@
 {
-  "bush 10.0 mytablet": {
-    "deviceName": "10.0 MyTablet",
-    "marketingName": "10.0 MyTablet",
-    "manufacturer": "Bush",
-    "brand": "Bush",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "bush 10.0 mytablet": {
+        "deviceName": "10.0 MyTablet",
+        "marketingName": "10.0 MyTablet",
+        "manufacturer": "Bush",
+        "brand": "Bush",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bush 7.85 tablet": {
-    "deviceName": "7.85 Tablet",
-    "marketingName": "7.85 Tablet",
-    "manufacturer": "Bush",
-    "brand": "Bush",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bush 7.85 tablet": {
+        "deviceName": "7.85 Tablet",
+        "marketingName": "7.85 Tablet",
+        "manufacturer": "Bush",
+        "brand": "Bush",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

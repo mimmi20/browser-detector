@@ -1,32 +1,46 @@
 {
-  "nintendo wii": {
-    "deviceName": "Wii",
-    "marketingName": "Wii",
-    "manufacturer": "Nintendo",
-    "brand": "Nintendo",
-    "type": "tv-console",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "nintendo wii": {
+        "deviceName": "Wii",
+        "marketingName": "Wii",
+        "manufacturer": "Nintendo",
+        "brand": "Nintendo",
+        "type": "tv-console",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "nintendo wiiu": {
-    "deviceName": "WiiU",
-    "marketingName": "WiiU",
-    "manufacturer": "Nintendo",
-    "brand": "Nintendo",
-    "type": "tv-console",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "nintendo wiiu": {
+        "deviceName": "WiiU",
+        "marketingName": "WiiU",
+        "manufacturer": "Nintendo",
+        "brand": "Nintendo",
+        "type": "tv-console",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

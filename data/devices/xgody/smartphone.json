@@ -1,47 +1,68 @@
 {
-  "general xgody device": {
-    "deviceName": "general Xgody Device",
-    "marketingName": "general Xgody Device",
-    "manufacturer": "Xgody",
-    "brand": "Xgody",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general xgody device": {
+        "deviceName": "general Xgody Device",
+        "marketingName": "general Xgody Device",
+        "manufacturer": "Xgody",
+        "brand": "Xgody",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xgody d10": {
-    "deviceName": "D10",
-    "marketingName": "D10",
-    "manufacturer": "Xgody",
-    "brand": "Xgody",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "xgody d10": {
+        "deviceName": "D10",
+        "marketingName": "D10",
+        "manufacturer": "Xgody",
+        "brand": "Xgody",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xgody y14": {
-    "deviceName": "Y14",
-    "marketingName": "Y14",
-    "manufacturer": "Xgody",
-    "brand": "Xgody",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "xgody y14": {
+        "deviceName": "Y14",
+        "marketingName": "Y14",
+        "manufacturer": "Xgody",
+        "brand": "Xgody",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

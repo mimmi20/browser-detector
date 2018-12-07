@@ -1,32 +1,46 @@
 {
-  "general quechua device": {
-    "deviceName": "general Quechua Device",
-    "marketingName": "general Quechua Device",
-    "manufacturer": "Quechua",
-    "brand": "Quechua",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general quechua device": {
+        "deviceName": "general Quechua Device",
+        "marketingName": "general Quechua Device",
+        "manufacturer": "Quechua",
+        "brand": "Quechua",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "quechua phone 5": {
-    "deviceName": "Phone 5",
-    "marketingName": "Phone 5",
-    "manufacturer": "Quechua",
-    "brand": "Quechua",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 840,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "quechua phone 5": {
+        "deviceName": "Phone 5",
+        "marketingName": "Phone 5",
+        "manufacturer": "Quechua",
+        "brand": "Quechua",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 840,
+            "touch": true,
+            "type": "Custom 480x840",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

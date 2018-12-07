@@ -1,47 +1,68 @@
 {
-  "google android sdk": {
-    "deviceName": "Android SDK",
-    "marketingName": "Android SDK",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "type": "mobile-device",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "google android sdk": {
+        "deviceName": "Android SDK",
+        "marketingName": "Android SDK",
+        "manufacturer": "Google",
+        "brand": "Google",
+        "type": "mobile-device",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google compute engine": {
-    "deviceName": "Google Compute Engine",
-    "marketingName": "Google Compute Engine",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "type": "mobile-device",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "google compute engine": {
+        "deviceName": "Google Compute Engine",
+        "marketingName": "Google Compute Engine",
+        "manufacturer": "Google",
+        "brand": "Google",
+        "type": "mobile-device",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google glass 1": {
-    "deviceName": "Glass",
-    "marketingName": "Glass",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "type": "mobile-device",
-    "display": {
-      "width": 640,
-      "height": 360,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "google glass 1": {
+        "deviceName": "Glass",
+        "marketingName": "Glass",
+        "manufacturer": "Google",
+        "brand": "Google",
+        "type": "mobile-device",
+        "display": {
+            "width": 640,
+            "height": 360,
+            "touch": true,
+            "type": "nHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

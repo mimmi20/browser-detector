@@ -1,62 +1,90 @@
 {
-  "general tolino device": {
-    "deviceName": "general Tolino Device",
-    "marketingName": "general Tolino Device",
-    "manufacturer": "Tolino",
-    "brand": "Tolino",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general tolino device": {
+        "deviceName": "general Tolino Device",
+        "marketingName": "general Tolino Device",
+        "manufacturer": "Tolino",
+        "brand": "Tolino",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tolino tab 7": {
-    "deviceName": "Tab 7",
-    "marketingName": "Tab 7",
-    "manufacturer": "TrekStor",
-    "brand": "Tolino",
-    "type": "tablet",
-    "display": {
-      "width": 1440,
-      "height": 900,
-      "touch": true,
-      "type": null
+    "tolino tab 7": {
+        "deviceName": "Tab 7",
+        "marketingName": "Tab 7",
+        "manufacturer": "TrekStor",
+        "brand": "Tolino",
+        "type": "tablet",
+        "display": {
+            "width": 1440,
+            "height": 900,
+            "touch": true,
+            "type": "WXGA+",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tolino tab 8": {
-    "deviceName": "Tab 8",
-    "marketingName": "Tab 8",
-    "manufacturer": "Tolino",
-    "brand": "Tolino",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "tolino tab 8": {
+        "deviceName": "Tab 8",
+        "marketingName": "Tab 8",
+        "manufacturer": "Tolino",
+        "brand": "Tolino",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tolino tab 8.9": {
-    "deviceName": "Tab 8.9",
-    "marketingName": "Tab 8.9",
-    "manufacturer": "Tolino",
-    "brand": "Tolino",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "tolino tab 8.9": {
+        "deviceName": "Tab 8.9",
+        "marketingName": "Tab 8.9",
+        "manufacturer": "Tolino",
+        "brand": "Tolino",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

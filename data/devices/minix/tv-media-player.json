@@ -1,47 +1,68 @@
 {
-  "general minix device": {
-    "deviceName": "general Minix Device",
-    "marketingName": "general Minix Device",
-    "manufacturer": "Minix",
-    "brand": "Minix",
-    "type": "tv-media-player",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general minix device": {
+        "deviceName": "general Minix Device",
+        "marketingName": "general Minix Device",
+        "manufacturer": "Minix",
+        "brand": "Minix",
+        "type": "tv-media-player",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "minix neo x5": {
-    "deviceName": "Neo X5",
-    "marketingName": "Neo X5",
-    "manufacturer": "Minix",
-    "brand": "Minix",
-    "type": "tv-media-player",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "minix neo x5": {
+        "deviceName": "Neo X5",
+        "marketingName": "Neo X5",
+        "manufacturer": "Minix",
+        "brand": "Minix",
+        "type": "tv-media-player",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "minix neo x8 plus": {
-    "deviceName": "Neo X8 Plus",
-    "marketingName": "Neo X8 Plus",
-    "manufacturer": "Minix",
-    "brand": "Minix",
-    "type": "tv-media-player",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "minix neo x8 plus": {
+        "deviceName": "Neo X8 Plus",
+        "marketingName": "Neo X8 Plus",
+        "manufacturer": "Minix",
+        "brand": "Minix",
+        "type": "tv-media-player",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "sharp stx2": {
-    "deviceName": "STX2",
-    "marketingName": "FX",
-    "manufacturer": "Sharp",
-    "brand": "Sharp",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": false,
-      "type": null
+    "sharp stx2": {
+        "deviceName": "STX2",
+        "marketingName": "FX",
+        "manufacturer": "Sharp",
+        "brand": "Sharp",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 400,
+            "touch": false,
+            "type": "WQVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sharp tq-gx30i": {
-    "deviceName": "GX30i",
-    "marketingName": "GX30i",
-    "manufacturer": "Sharp",
-    "brand": "Sharp",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "sharp tq-gx30i": {
+        "deviceName": "GX30i",
+        "marketingName": "GX30i",
+        "manufacturer": "Sharp",
+        "brand": "Sharp",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

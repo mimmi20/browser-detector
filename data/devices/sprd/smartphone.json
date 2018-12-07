@@ -1,77 +1,112 @@
 {
-  "general sprd device": {
-    "deviceName": "general sprd device",
-    "marketingName": "general sprd device",
-    "manufacturer": "Sprd",
-    "brand": "Sprd",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general sprd device": {
+        "deviceName": "general sprd device",
+        "marketingName": "general sprd device",
+        "manufacturer": "Sprd",
+        "brand": "Sprd",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "sprd b51+": {
-    "deviceName": "B51+",
-    "marketingName": "B51+",
-    "manufacturer": "Sprd",
-    "brand": "Sprd",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "sprd b51+": {
+        "deviceName": "B51+",
+        "marketingName": "B51+",
+        "manufacturer": "Sprd",
+        "brand": "Sprd",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "sprd galaxy s4": {
-    "deviceName": "Galaxy S4",
-    "marketingName": "Galaxy S4",
-    "manufacturer": "Sprd",
-    "brand": "Sprd",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "sprd galaxy s4": {
+        "deviceName": "Galaxy S4",
+        "marketingName": "Galaxy S4",
+        "manufacturer": "Sprd",
+        "brand": "Sprd",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "sprd galaxy s5": {
-    "deviceName": "Galaxy S5",
-    "marketingName": "Galaxy S5",
-    "manufacturer": "Sprd",
-    "brand": "Sprd",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "sprd galaxy s5": {
+        "deviceName": "Galaxy S5",
+        "marketingName": "Galaxy S5",
+        "manufacturer": "Sprd",
+        "brand": "Sprd",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "sprd sphs on hsdroid": {
-    "deviceName": "SPHS On HSDroid",
-    "marketingName": "SPHS On HSDroid",
-    "manufacturer": "Sprd",
-    "brand": "Sprd",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "sprd sphs on hsdroid": {
+        "deviceName": "SPHS On HSDroid",
+        "marketingName": "SPHS On HSDroid",
+        "manufacturer": "Sprd",
+        "brand": "Sprd",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

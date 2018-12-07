@@ -1,77 +1,112 @@
 {
-  "general pentagram device": {
-    "deviceName": "general Pentagram Device",
-    "marketingName": "general Pentagram Device",
-    "manufacturer": "Pentagram",
-    "brand": "Pentagram",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general pentagram device": {
+        "deviceName": "general Pentagram Device",
+        "marketingName": "general Pentagram Device",
+        "manufacturer": "Pentagram",
+        "brand": "Pentagram",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pentagram p5335": {
-    "deviceName": "P5335",
-    "marketingName": "Eon Prix",
-    "manufacturer": "Pentagram",
-    "brand": "Pentagram",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "pentagram p5335": {
+        "deviceName": "P5335",
+        "marketingName": "Eon Prix",
+        "manufacturer": "Pentagram",
+        "brand": "Pentagram",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pentagram quadra 7 ultraslim": {
-    "deviceName": "Quadra 7 UltraSlim",
-    "marketingName": "Quadra 7 UltraSlim",
-    "manufacturer": "Pentagram",
-    "brand": "Pentagram",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "pentagram quadra 7 ultraslim": {
+        "deviceName": "Quadra 7 UltraSlim",
+        "marketingName": "Quadra 7 UltraSlim",
+        "manufacturer": "Pentagram",
+        "brand": "Pentagram",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pentagram tab 7.6": {
-    "deviceName": "Tab 7.6",
-    "marketingName": "Tab 7.6",
-    "manufacturer": "Pentagram",
-    "brand": "Pentagram",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "pentagram tab 7.6": {
+        "deviceName": "Tab 7.6",
+        "marketingName": "Tab 7.6",
+        "manufacturer": "Pentagram",
+        "brand": "Pentagram",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "pentagram tab 8.5": {
-    "deviceName": "Tab 8.5",
-    "marketingName": "Tab 8.5",
-    "manufacturer": "Pentagram",
-    "brand": "Pentagram",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "pentagram tab 8.5": {
+        "deviceName": "Tab 8.5",
+        "marketingName": "Tab 8.5",
+        "manufacturer": "Pentagram",
+        "brand": "Pentagram",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

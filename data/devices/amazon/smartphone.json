@@ -1,17 +1,24 @@
 {
-  "amazon sd4930ur": {
-    "deviceName": "SD4930UR",
-    "marketingName": "Fire Phone",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "amazon sd4930ur": {
+        "deviceName": "SD4930UR",
+        "marketingName": "Fire Phone",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

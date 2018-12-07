@@ -1,32 +1,46 @@
 {
-  "general nextway device": {
-    "deviceName": "general Nextway Device",
-    "marketingName": "general Nextway Device",
-    "manufacturer": "Nextway",
-    "brand": "Nextway",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nextway device": {
+        "deviceName": "general Nextway Device",
+        "marketingName": "general Nextway Device",
+        "manufacturer": "Nextway",
+        "brand": "Nextway",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextway f10x": {
-    "deviceName": "F10X",
-    "marketingName": "F10X",
-    "manufacturer": "Nextway",
-    "brand": "Nextway",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nextway f10x": {
+        "deviceName": "F10X",
+        "marketingName": "F10X",
+        "manufacturer": "Nextway",
+        "brand": "Nextway",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "energy-sistem phone pro 3": {
-    "deviceName": "Energy Phone Pro 3",
-    "marketingName": "Energy Phone Pro 3",
-    "manufacturer": "Energy Sistem",
-    "brand": "Energy Sistem",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "energy-sistem phone pro 3": {
+        "deviceName": "Energy Phone Pro 3",
+        "marketingName": "Energy Phone Pro 3",
+        "manufacturer": "Energy Sistem",
+        "brand": "Energy Sistem",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "hisense hs-t39": {
-    "deviceName": "HS-T39",
-    "marketingName": "HS-T39",
-    "manufacturer": "Hisense",
-    "brand": "Hisense",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "hisense hs-t39": {
+        "deviceName": "HS-T39",
+        "marketingName": "HS-T39",
+        "manufacturer": "Hisense",
+        "brand": "Hisense",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

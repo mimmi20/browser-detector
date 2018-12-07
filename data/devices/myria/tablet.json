@@ -1,17 +1,24 @@
 {
-  "myria easy tab 9": {
-    "deviceName": "Easy Tab 9",
-    "marketingName": "Easy Tab 9",
-    "manufacturer": "Myria",
-    "brand": "Myria",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "myria easy tab 9": {
+        "deviceName": "Easy Tab 9",
+        "marketingName": "Easy Tab 9",
+        "manufacturer": "Myria",
+        "brand": "Myria",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

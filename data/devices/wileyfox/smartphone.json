@@ -1,92 +1,134 @@
 {
-  "general wileyfox device": {
-    "deviceName": "general Wileyfox Device",
-    "marketingName": "general Wileyfox Device",
-    "manufacturer": "Wileyfox",
-    "brand": "Wileyfox",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general wileyfox device": {
+        "deviceName": "general Wileyfox Device",
+        "marketingName": "general Wileyfox Device",
+        "manufacturer": "Wileyfox",
+        "brand": "Wileyfox",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wileyfox spark +": {
-    "deviceName": "Spark +",
-    "marketingName": "Spark +",
-    "manufacturer": "Wileyfox",
-    "brand": "Wileyfox",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "wileyfox spark +": {
+        "deviceName": "Spark +",
+        "marketingName": "Spark +",
+        "manufacturer": "Wileyfox",
+        "brand": "Wileyfox",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wileyfox storm": {
-    "deviceName": "Storm",
-    "marketingName": "Storm",
-    "manufacturer": "Wileyfox",
-    "brand": "Wileyfox",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "wileyfox storm": {
+        "deviceName": "Storm",
+        "marketingName": "Storm",
+        "manufacturer": "Wileyfox",
+        "brand": "Wileyfox",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wileyfox swift": {
-    "deviceName": "Swift",
-    "marketingName": "Swift",
-    "manufacturer": "Wileyfox",
-    "brand": "Wileyfox",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "wileyfox swift": {
+        "deviceName": "Swift",
+        "marketingName": "Swift",
+        "manufacturer": "Wileyfox",
+        "brand": "Wileyfox",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wileyfox swift 2": {
-    "deviceName": "Swift 2",
-    "marketingName": "Swift 2",
-    "manufacturer": "Wileyfox",
-    "brand": "Wileyfox",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "wileyfox swift 2": {
+        "deviceName": "Swift 2",
+        "marketingName": "Swift 2",
+        "manufacturer": "Wileyfox",
+        "brand": "Wileyfox",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "wileyfox swift 2 plus": {
-    "deviceName": "Swift 2 Plus",
-    "marketingName": "Swift 2 Plus",
-    "manufacturer": "Wileyfox",
-    "brand": "Wileyfox",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "wileyfox swift 2 plus": {
+        "deviceName": "Swift 2 Plus",
+        "marketingName": "Swift 2 Plus",
+        "manufacturer": "Wileyfox",
+        "brand": "Wileyfox",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,212 +1,310 @@
 {
-  "general nextbook device": {
-    "deviceName": "general Nextbook Device",
-    "marketingName": "general Nextbook Device",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nextbook device": {
+        "deviceName": "general Nextbook Device",
+        "marketingName": "general Nextbook Device",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook m803hc": {
-    "deviceName": "M803HC",
-    "marketingName": "Premium8",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "nextbook m803hc": {
+        "deviceName": "M803HC",
+        "marketingName": "Premium8",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook next": {
-    "deviceName": "Next",
-    "marketingName": "Next",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "nextbook next": {
+        "deviceName": "Next",
+        "marketingName": "Next",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook next10p12": {
-    "deviceName": "Next10P12",
-    "marketingName": "Premium 10 SE",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "nextbook next10p12": {
+        "deviceName": "Next10P12",
+        "marketingName": "Premium 10 SE",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook next7p12": {
-    "deviceName": "Next7P12",
-    "marketingName": "7",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "nextbook next7p12": {
+        "deviceName": "Next7P12",
+        "marketingName": "7",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook next800k": {
-    "deviceName": "Next800K",
-    "marketingName": "Efun 8",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "nextbook next800k": {
+        "deviceName": "Next800K",
+        "marketingName": "Efun 8",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook next8p12": {
-    "deviceName": "Next8P12",
-    "marketingName": "Premium 8 SE",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "nextbook next8p12": {
+        "deviceName": "Next8P12",
+        "marketingName": "Premium 8 SE",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook next9p": {
-    "deviceName": "Next9P",
-    "marketingName": "Premium 9",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "nextbook next9p": {
+        "deviceName": "Next9P",
+        "marketingName": "Premium 9",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook nx008hd8g": {
-    "deviceName": "NX008HD8G",
-    "marketingName": "Premium 8 HD",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "nextbook nx008hd8g": {
+        "deviceName": "NX008HD8G",
+        "marketingName": "Premium 8 HD",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook nx010hi8g": {
-    "deviceName": "NX010HI8G",
-    "marketingName": "Premium 10 Hi",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "nextbook nx010hi8g": {
+        "deviceName": "NX010HI8G",
+        "marketingName": "Premium 10 Hi",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook nx785qc8g": {
-    "deviceName": "NX785QC8G",
-    "marketingName": "8",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "nextbook nx785qc8g": {
+        "deviceName": "NX785QC8G",
+        "marketingName": "8",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook nxm726": {
-    "deviceName": "NXM726",
-    "marketingName": "Premium 7",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "nextbook nxm726": {
+        "deviceName": "NXM726",
+        "marketingName": "Premium 7",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook nxm900mc": {
-    "deviceName": "NXM900MC",
-    "marketingName": "8 Pro",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "nextbook nxm900mc": {
+        "deviceName": "NXM900MC",
+        "marketingName": "8 Pro",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nextbook nxm908hc": {
-    "deviceName": "NXM908HC",
-    "marketingName": "Premium 9",
-    "manufacturer": "Nextbook",
-    "brand": "Nextbook",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nextbook nxm908hc": {
+        "deviceName": "NXM908HC",
+        "marketingName": "Premium 9",
+        "manufacturer": "Nextbook",
+        "brand": "Nextbook",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

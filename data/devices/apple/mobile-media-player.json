@@ -1,107 +1,156 @@
 {
-  "apple ipod 1,1": {
-    "deviceName": "iPod Touch",
-    "marketingName": "iPod Touch (Gen 1)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "mobile-media-player",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "apple ipod 1,1": {
+        "deviceName": "iPod Touch",
+        "marketingName": "iPod Touch (Gen 1)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "mobile-media-player",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipod 2,1": {
-    "deviceName": "iPod Touch",
-    "marketingName": "iPod Touch (Gen 2)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "mobile-media-player",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "apple ipod 2,1": {
+        "deviceName": "iPod Touch",
+        "marketingName": "iPod Touch (Gen 2)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "mobile-media-player",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipod 3,1": {
-    "deviceName": "iPod Touch",
-    "marketingName": "iPod Touch (Gen 3)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "mobile-media-player",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "apple ipod 3,1": {
+        "deviceName": "iPod Touch",
+        "marketingName": "iPod Touch (Gen 3)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "mobile-media-player",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipod 4,1": {
-    "deviceName": "iPod Touch",
-    "marketingName": "iPod Touch (Gen 4)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "mobile-media-player",
-    "display": {
-      "width": 960,
-      "height": 640,
-      "touch": true,
-      "type": null
+    "apple ipod 4,1": {
+        "deviceName": "iPod Touch",
+        "marketingName": "iPod Touch (Gen 4)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "mobile-media-player",
+        "display": {
+            "width": 960,
+            "height": 640,
+            "touch": true,
+            "type": "DVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipod 5,1": {
-    "deviceName": "iPod Touch",
-    "marketingName": "iPod Touch (Gen 5)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "mobile-media-player",
-    "display": {
-      "width": 960,
-      "height": 1136,
-      "touch": true,
-      "type": null
+    "apple ipod 5,1": {
+        "deviceName": "iPod Touch",
+        "marketingName": "iPod Touch (Gen 5)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "mobile-media-player",
+        "display": {
+            "width": 960,
+            "height": 1136,
+            "touch": true,
+            "type": "Custom 960x1136",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipod 7,1": {
-    "deviceName": "iPod Touch",
-    "marketingName": "iPod Touch (Gen 6)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "mobile-media-player",
-    "display": {
-      "width": 960,
-      "height": 1136,
-      "touch": true,
-      "type": null
+    "apple ipod 7,1": {
+        "deviceName": "iPod Touch",
+        "marketingName": "iPod Touch (Gen 6)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "mobile-media-player",
+        "display": {
+            "width": 960,
+            "height": 1136,
+            "touch": true,
+            "type": "Custom 960x1136",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipod touch": {
-    "deviceName": "iPod Touch",
-    "marketingName": "iPod Touch",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "mobile-media-player",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "ios"
-  }
+    "apple ipod touch": {
+        "deviceName": "iPod Touch",
+        "marketingName": "iPod Touch",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "mobile-media-player",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
+    }
 }

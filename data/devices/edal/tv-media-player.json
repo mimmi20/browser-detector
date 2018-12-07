@@ -1,32 +1,46 @@
 {
-  "general edal tv": {
-    "deviceName": "General Edal TV",
-    "marketingName": "General Edal TV",
-    "manufacturer": "Edal",
-    "brand": "Edal",
-    "type": "tv-media-player",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general edal tv": {
+        "deviceName": "General Edal TV",
+        "marketingName": "General Edal TV",
+        "manufacturer": "Edal",
+        "brand": "Edal",
+        "type": "tv-media-player",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "edal x96mini": {
-    "deviceName": "X96mini",
-    "marketingName": "X96mini",
-    "manufacturer": "Edal",
-    "brand": "Edal",
-    "type": "tv-media-player",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "edal x96mini": {
+        "deviceName": "X96mini",
+        "marketingName": "X96mini",
+        "manufacturer": "Edal",
+        "brand": "Edal",
+        "type": "tv-media-player",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

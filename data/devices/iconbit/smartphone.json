@@ -1,17 +1,24 @@
 {
-  "iconbit nt-3506m": {
-    "deviceName": "NT-3506M",
-    "marketingName": "NetTAB Mercury",
-    "manufacturer": "IconBit",
-    "brand": "IconBit",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "iconbit nt-3506m": {
+        "deviceName": "NT-3506M",
+        "marketingName": "NetTAB Mercury",
+        "manufacturer": "IconBit",
+        "brand": "IconBit",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,962 +1,1410 @@
 {
-  "general fly device": {
-    "deviceName": "general Fly Device",
-    "marketingName": "general Fly Device",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs401": {
-    "deviceName": "FS401",
-    "marketingName": "Stratus 1",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs402": {
-    "deviceName": "FS402",
-    "marketingName": "Stratus 2",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs403": {
-    "deviceName": "FS403",
-    "marketingName": "Cumulus 1",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs404": {
-    "deviceName": "FS404",
-    "marketingName": "Stratus 3",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs405": {
-    "deviceName": "FS405",
-    "marketingName": "Stratus 4",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs406": {
-    "deviceName": "FS406",
-    "marketingName": "Stratus 5",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs407": {
-    "deviceName": "FS407",
-    "marketingName": "Stratus 6",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs451": {
-    "deviceName": "FS451",
-    "marketingName": "Nimbus 1",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs452": {
-    "deviceName": "FS452",
-    "marketingName": "Nimbus 2",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs454": {
-    "deviceName": "FS454",
-    "marketingName": "Nimbus 8",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs501": {
-    "deviceName": "FS501",
-    "marketingName": "Nimbus 3",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs502": {
-    "deviceName": "FS502",
-    "marketingName": "Cirrus 1",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs504": {
-    "deviceName": "FS504",
-    "marketingName": "Cirrus 2",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs505": {
-    "deviceName": "FS505",
-    "marketingName": "Nimbus 7",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs506": {
-    "deviceName": "FS506",
-    "marketingName": "Cirrus 3",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs508": {
-    "deviceName": "FS508",
-    "marketingName": "Cirrus 6",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs509": {
-    "deviceName": "FS509",
-    "marketingName": "Nimbus 9",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs511": {
-    "deviceName": "FS511",
-    "marketingName": "Cirrus 7",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly fs551": {
-    "deviceName": "FS551",
-    "marketingName": "Nimbus 4",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq236": {
-    "deviceName": "IQ236",
-    "marketingName": "Victory",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq237": {
-    "deviceName": "IQ237",
-    "marketingName": "Dynamic",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq238": {
-    "deviceName": "IQ238",
-    "marketingName": "Jazz",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq240": {
-    "deviceName": "IQ240",
-    "marketingName": "Whizz",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq255": {
-    "deviceName": "IQ255",
-    "marketingName": "Pride",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq256": {
-    "deviceName": "IQ256",
-    "marketingName": "Vogue",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq270": {
-    "deviceName": "IQ270",
-    "marketingName": "Firebird",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq275": {
-    "deviceName": "IQ275",
-    "marketingName": "Marathon",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq285": {
-    "deviceName": "IQ285",
-    "marketingName": "Turbo",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq430": {
-    "deviceName": "IQ430",
-    "marketingName": "Evoke",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq431": {
-    "deviceName": "IQ431",
-    "marketingName": "Glory",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq432": {
-    "deviceName": "IQ432",
-    "marketingName": "Era Nano 1",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq434": {
-    "deviceName": "IQ434",
-    "marketingName": "Era Nano 5",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq436": {
-    "deviceName": "IQ436",
-    "marketingName": "Era Nano 3",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq436i": {
-    "deviceName": "IQ436i",
-    "marketingName": "Era Nano 9",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq440": {
-    "deviceName": "IQ440",
-    "marketingName": "Energie",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4403": {
-    "deviceName": "IQ4403",
-    "marketingName": "Energie 3",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4404": {
-    "deviceName": "IQ4404",
-    "marketingName": "Spark",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4406": {
-    "deviceName": "IQ4406",
-    "marketingName": "Era Nano 6",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4409": {
-    "deviceName": "IQ4409",
-    "marketingName": "Era Life 4",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq441": {
-    "deviceName": "IQ441",
-    "marketingName": "IQ441",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4410": {
-    "deviceName": "IQ4410",
-    "marketingName": "Phoenix",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4410i": {
-    "deviceName": "IQ4410i",
-    "marketingName": "Phoenix 2",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4411": {
-    "deviceName": "IQ4411",
-    "marketingName": "Energie 2",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4413": {
-    "deviceName": "IQ4413",
-    "marketingName": "Thunder 5",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4414": {
-    "deviceName": "IQ4414",
-    "marketingName": "Evo Tech 3",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4415": {
-    "deviceName": "IQ4415",
-    "marketingName": "Era Style 3",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4416": {
-    "deviceName": "IQ4416",
-    "marketingName": "Era Life 5",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq442": {
-    "deviceName": "IQ442",
-    "marketingName": "Miracle",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq443": {
-    "deviceName": "IQ443",
-    "marketingName": "Trend",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq444": {
-    "deviceName": "IQ444",
-    "marketingName": "Diamond 2 Quattro",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq445": {
-    "deviceName": "IQ445",
-    "marketingName": "Genius",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq446": {
-    "deviceName": "IQ446",
-    "marketingName": "Magic",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq447": {
-    "deviceName": "IQ447",
-    "marketingName": "Era Life 1",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq448": {
-    "deviceName": "IQ448",
-    "marketingName": "Chic",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq449": {
-    "deviceName": "IQ449",
-    "marketingName": "Pronto",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4490": {
-    "deviceName": "IQ4490",
-    "marketingName": "Era Nano 4",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq450": {
-    "deviceName": "IQ450",
-    "marketingName": "Quattro Horizon 2",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4502": {
-    "deviceName": "IQ4502",
-    "marketingName": "Era Energy 1 Quad",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq4504": {
-    "deviceName": "IQ4504",
-    "marketingName": "Evo Energy 5",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq451": {
-    "deviceName": "IQ451",
-    "marketingName": "Vista",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq452": {
-    "deviceName": "IQ452",
-    "marketingName": "EGO Vision 1",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq454": {
-    "deviceName": "IQ454",
-    "marketingName": "Evo Tech 1",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "fly iq456": {
-    "deviceName": "IQ456",
-    "marketingName": "Era Life 2",
-    "manufacturer": "Fly",
-    "brand": "Fly",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "general fly device": {
+        "deviceName": "general Fly Device",
+        "marketingName": "general Fly Device",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs401": {
+        "deviceName": "FS401",
+        "marketingName": "Stratus 1",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs402": {
+        "deviceName": "FS402",
+        "marketingName": "Stratus 2",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs403": {
+        "deviceName": "FS403",
+        "marketingName": "Cumulus 1",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs404": {
+        "deviceName": "FS404",
+        "marketingName": "Stratus 3",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs405": {
+        "deviceName": "FS405",
+        "marketingName": "Stratus 4",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs406": {
+        "deviceName": "FS406",
+        "marketingName": "Stratus 5",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs407": {
+        "deviceName": "FS407",
+        "marketingName": "Stratus 6",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs451": {
+        "deviceName": "FS451",
+        "marketingName": "Nimbus 1",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs452": {
+        "deviceName": "FS452",
+        "marketingName": "Nimbus 2",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs454": {
+        "deviceName": "FS454",
+        "marketingName": "Nimbus 8",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs501": {
+        "deviceName": "FS501",
+        "marketingName": "Nimbus 3",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs502": {
+        "deviceName": "FS502",
+        "marketingName": "Cirrus 1",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs504": {
+        "deviceName": "FS504",
+        "marketingName": "Cirrus 2",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs505": {
+        "deviceName": "FS505",
+        "marketingName": "Nimbus 7",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs506": {
+        "deviceName": "FS506",
+        "marketingName": "Cirrus 3",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs508": {
+        "deviceName": "FS508",
+        "marketingName": "Cirrus 6",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs509": {
+        "deviceName": "FS509",
+        "marketingName": "Nimbus 9",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs511": {
+        "deviceName": "FS511",
+        "marketingName": "Cirrus 7",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly fs551": {
+        "deviceName": "FS551",
+        "marketingName": "Nimbus 4",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq236": {
+        "deviceName": "IQ236",
+        "marketingName": "Victory",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq237": {
+        "deviceName": "IQ237",
+        "marketingName": "Dynamic",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq238": {
+        "deviceName": "IQ238",
+        "marketingName": "Jazz",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq240": {
+        "deviceName": "IQ240",
+        "marketingName": "Whizz",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq255": {
+        "deviceName": "IQ255",
+        "marketingName": "Pride",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq256": {
+        "deviceName": "IQ256",
+        "marketingName": "Vogue",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq270": {
+        "deviceName": "IQ270",
+        "marketingName": "Firebird",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq275": {
+        "deviceName": "IQ275",
+        "marketingName": "Marathon",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq285": {
+        "deviceName": "IQ285",
+        "marketingName": "Turbo",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq430": {
+        "deviceName": "IQ430",
+        "marketingName": "Evoke",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq431": {
+        "deviceName": "IQ431",
+        "marketingName": "Glory",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq432": {
+        "deviceName": "IQ432",
+        "marketingName": "Era Nano 1",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq434": {
+        "deviceName": "IQ434",
+        "marketingName": "Era Nano 5",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq436": {
+        "deviceName": "IQ436",
+        "marketingName": "Era Nano 3",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq436i": {
+        "deviceName": "IQ436i",
+        "marketingName": "Era Nano 9",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq440": {
+        "deviceName": "IQ440",
+        "marketingName": "Energie",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4403": {
+        "deviceName": "IQ4403",
+        "marketingName": "Energie 3",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4404": {
+        "deviceName": "IQ4404",
+        "marketingName": "Spark",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4406": {
+        "deviceName": "IQ4406",
+        "marketingName": "Era Nano 6",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4409": {
+        "deviceName": "IQ4409",
+        "marketingName": "Era Life 4",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq441": {
+        "deviceName": "IQ441",
+        "marketingName": "IQ441",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4410": {
+        "deviceName": "IQ4410",
+        "marketingName": "Phoenix",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4410i": {
+        "deviceName": "IQ4410i",
+        "marketingName": "Phoenix 2",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4411": {
+        "deviceName": "IQ4411",
+        "marketingName": "Energie 2",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4413": {
+        "deviceName": "IQ4413",
+        "marketingName": "Thunder 5",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4414": {
+        "deviceName": "IQ4414",
+        "marketingName": "Evo Tech 3",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4415": {
+        "deviceName": "IQ4415",
+        "marketingName": "Era Style 3",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4416": {
+        "deviceName": "IQ4416",
+        "marketingName": "Era Life 5",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq442": {
+        "deviceName": "IQ442",
+        "marketingName": "Miracle",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq443": {
+        "deviceName": "IQ443",
+        "marketingName": "Trend",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq444": {
+        "deviceName": "IQ444",
+        "marketingName": "Diamond 2 Quattro",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq445": {
+        "deviceName": "IQ445",
+        "marketingName": "Genius",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq446": {
+        "deviceName": "IQ446",
+        "marketingName": "Magic",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq447": {
+        "deviceName": "IQ447",
+        "marketingName": "Era Life 1",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq448": {
+        "deviceName": "IQ448",
+        "marketingName": "Chic",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq449": {
+        "deviceName": "IQ449",
+        "marketingName": "Pronto",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4490": {
+        "deviceName": "IQ4490",
+        "marketingName": "Era Nano 4",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq450": {
+        "deviceName": "IQ450",
+        "marketingName": "Quattro Horizon 2",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4502": {
+        "deviceName": "IQ4502",
+        "marketingName": "Era Energy 1 Quad",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq4504": {
+        "deviceName": "IQ4504",
+        "marketingName": "Evo Energy 5",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq451": {
+        "deviceName": "IQ451",
+        "marketingName": "Vista",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq452": {
+        "deviceName": "IQ452",
+        "marketingName": "EGO Vision 1",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq454": {
+        "deviceName": "IQ454",
+        "marketingName": "Evo Tech 1",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    },
+    "fly iq456": {
+        "deviceName": "IQ456",
+        "marketingName": "Era Life 2",
+        "manufacturer": "Fly",
+        "brand": "Fly",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

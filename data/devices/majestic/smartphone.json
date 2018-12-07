@@ -1,62 +1,90 @@
 {
-  "general majestic device": {
-    "deviceName": "general Majestic Device",
-    "marketingName": "general Majestic Device",
-    "manufacturer": "Majestic",
-    "brand": "Majestic",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general majestic device": {
+        "deviceName": "general Majestic Device",
+        "marketingName": "general Majestic Device",
+        "manufacturer": "Majestic",
+        "brand": "Majestic",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "majestic crono 22": {
-    "deviceName": "Crono 22",
-    "marketingName": "Crono SPH-22",
-    "manufacturer": "Majestic",
-    "brand": "Majestic",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "majestic crono 22": {
+        "deviceName": "Crono 22",
+        "marketingName": "Crono SPH-22",
+        "manufacturer": "Majestic",
+        "brand": "Majestic",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "majestic crono 44": {
-    "deviceName": "Crono 44",
-    "marketingName": "Crono 44",
-    "manufacturer": "Majestic",
-    "brand": "Majestic",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "majestic crono 44": {
+        "deviceName": "Crono 44",
+        "marketingName": "Crono 44",
+        "manufacturer": "Majestic",
+        "brand": "Majestic",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "majestic zeus 21": {
-    "deviceName": "Zeus 21",
-    "marketingName": "SPH-ZEUS 21",
-    "manufacturer": "Majestic",
-    "brand": "Majestic",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "majestic zeus 21": {
+        "deviceName": "Zeus 21",
+        "marketingName": "SPH-ZEUS 21",
+        "manufacturer": "Majestic",
+        "brand": "Majestic",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

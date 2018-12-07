@@ -1,32 +1,46 @@
 {
-  "general magic device": {
-    "deviceName": "general Magic Device",
-    "marketingName": "general Magic Device",
-    "manufacturer": "Magic",
-    "brand": "Magic",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general magic device": {
+        "deviceName": "general Magic Device",
+        "marketingName": "general Magic Device",
+        "manufacturer": "Magic",
+        "brand": "Magic",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "magic w700": {
-    "deviceName": "W700",
-    "marketingName": "Columb",
-    "manufacturer": "Magic",
-    "brand": "Magic",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "magic w700": {
+        "deviceName": "W700",
+        "marketingName": "Columb",
+        "manufacturer": "Magic",
+        "brand": "Magic",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

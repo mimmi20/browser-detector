@@ -1,467 +1,684 @@
 {
-  "general mpman device": {
-    "deviceName": "general MPMan Device",
-    "marketingName": "general MPMan Device",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general mpman device": {
+        "deviceName": "general MPMan Device",
+        "marketingName": "general MPMan Device",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid102c": {
-    "deviceName": "MID102C",
-    "marketingName": "MID102C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mid102c": {
+        "deviceName": "MID102C",
+        "marketingName": "MID102C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid103c": {
-    "deviceName": "MID103C",
-    "marketingName": "MID103C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mid103c": {
+        "deviceName": "MID103C",
+        "marketingName": "MID103C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid104c": {
-    "deviceName": "MID104C",
-    "marketingName": "MID104C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mid104c": {
+        "deviceName": "MID104C",
+        "marketingName": "MID104C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid114c": {
-    "deviceName": "MID114C",
-    "marketingName": "MID114C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mid114c": {
+        "deviceName": "MID114C",
+        "marketingName": "MID114C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid43c": {
-    "deviceName": "MID43C",
-    "marketingName": "MID43C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 480,
-      "height": 272,
-      "touch": true,
-      "type": null
+    "mpman mid43c": {
+        "deviceName": "MID43C",
+        "marketingName": "MID43C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 480,
+            "height": 272,
+            "touch": true,
+            "type": "Custom 272x480",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid74c": {
-    "deviceName": "MID74C",
-    "marketingName": "MID74C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "mpman mid74c": {
+        "deviceName": "MID74C",
+        "marketingName": "MID74C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid77c": {
-    "deviceName": "MID77C",
-    "marketingName": "MID77C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "mpman mid77c": {
+        "deviceName": "MID77C",
+        "marketingName": "MID77C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid7c": {
-    "deviceName": "MID7C",
-    "marketingName": "MID7C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "mpman mid7c": {
+        "deviceName": "MID7C",
+        "marketingName": "MID7C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid82c": {
-    "deviceName": "MID82C",
-    "marketingName": "MID82C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mid82c": {
+        "deviceName": "MID82C",
+        "marketingName": "MID82C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mid84c": {
-    "deviceName": "MID84C",
-    "marketingName": "MID84C",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mid84c": {
+        "deviceName": "MID84C",
+        "marketingName": "MID84C",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mp1010": {
-    "deviceName": "MP1010",
-    "marketingName": "MP1010",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "mpman mp1010": {
+        "deviceName": "MP1010",
+        "marketingName": "MP1010",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mp7007": {
-    "deviceName": "MP7007",
-    "marketingName": "MP7007",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "mpman mp7007": {
+        "deviceName": "MP7007",
+        "marketingName": "MP7007",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mp717": {
-    "deviceName": "MP717",
-    "marketingName": "MP717",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "mpman mp717": {
+        "deviceName": "MP717",
+        "marketingName": "MP717",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mp843": {
-    "deviceName": "MP843",
-    "marketingName": "MP843",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mp843": {
+        "deviceName": "MP843",
+        "marketingName": "MP843",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mp888": {
-    "deviceName": "MP888",
-    "marketingName": "MP888",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mp888": {
+        "deviceName": "MP888",
+        "marketingName": "MP888",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mp959": {
-    "deviceName": "MP959",
-    "marketingName": "MP959",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "mpman mp959": {
+        "deviceName": "MP959",
+        "marketingName": "MP959",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mp969": {
-    "deviceName": "MP969",
-    "marketingName": "MP969",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "mpman mp969": {
+        "deviceName": "MP969",
+        "marketingName": "MP969",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpdc100 bt": {
-    "deviceName": "MPDC100 BT",
-    "marketingName": "MPDC100 BT",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mpdc100 bt": {
+        "deviceName": "MPDC100 BT",
+        "marketingName": "MPDC100 BT",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpdc110 bt ips": {
-    "deviceName": "MPDC110 BT IPS",
-    "marketingName": "MPDC110 BT IPS",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "mpman mpdc110 bt ips": {
+        "deviceName": "MPDC110 BT IPS",
+        "marketingName": "MPDC110 BT IPS",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpdc112 bt ips": {
-    "deviceName": "MPDC112 BT IPS",
-    "marketingName": "MPDC112 BT IPS",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "mpman mpdc112 bt ips": {
+        "deviceName": "MPDC112 BT IPS",
+        "marketingName": "MPDC112 BT IPS",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpdc8 bt": {
-    "deviceName": "MPDC8 BT",
-    "marketingName": "MPDC8 BT",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mpdc8 bt": {
+        "deviceName": "MPDC8 BT",
+        "marketingName": "MPDC8 BT",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpdc88 bt ips": {
-    "deviceName": "MPDC88 BT IPS",
-    "marketingName": "MPDC88 BT IPS",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "mpman mpdc88 bt ips": {
+        "deviceName": "MPDC88 BT IPS",
+        "marketingName": "MPDC88 BT IPS",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpdc903": {
-    "deviceName": "MPDC903",
-    "marketingName": "MPDC903",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mpdc903": {
+        "deviceName": "MPDC903",
+        "marketingName": "MPDC903",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpqc1010": {
-    "deviceName": "MPQC1010",
-    "marketingName": "MPQC1010",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mpqc1010": {
+        "deviceName": "MPQC1010",
+        "marketingName": "MPQC1010",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpqc1030": {
-    "deviceName": "MPQC1030",
-    "marketingName": "MPQC1030",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mpqc1030": {
+        "deviceName": "MPQC1030",
+        "marketingName": "MPQC1030",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpqc30i": {
-    "deviceName": "MPQC30i",
-    "marketingName": "MPQC30i",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "mpman mpqc30i": {
+        "deviceName": "MPQC30i",
+        "marketingName": "MPQC30i",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpqc704 hd": {
-    "deviceName": "MPQC704 HD",
-    "marketingName": "MPQC704 HD",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "mpman mpqc704 hd": {
+        "deviceName": "MPQC704 HD",
+        "marketingName": "MPQC704 HD",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpqc730": {
-    "deviceName": "MPQC730",
-    "marketingName": "MPQC730",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "mpman mpqc730": {
+        "deviceName": "MPQC730",
+        "marketingName": "MPQC730",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpqc784 ips": {
-    "deviceName": "MPQC784 IPS",
-    "marketingName": "MPQC784 IPS",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "mpman mpqc784 ips": {
+        "deviceName": "MPQC784 IPS",
+        "marketingName": "MPQC784 IPS",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mpman mpqc804 hd": {
-    "deviceName": "MPQC804 HD",
-    "marketingName": "MPQC804 HD",
-    "manufacturer": "MPMan",
-    "brand": "MPMan",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mpman mpqc804 hd": {
+        "deviceName": "MPQC804 HD",
+        "marketingName": "MPQC804 HD",
+        "manufacturer": "MPMan",
+        "brand": "MPMan",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

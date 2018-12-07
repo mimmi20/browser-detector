@@ -1,32 +1,46 @@
 {
-  "general aoc device": {
-    "deviceName": "general AOC Device",
-    "marketingName": "general AOC Device",
-    "manufacturer": "Aoc",
-    "brand": "Aoc",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general aoc device": {
+        "deviceName": "general AOC Device",
+        "marketingName": "general AOC Device",
+        "manufacturer": "Aoc",
+        "brand": "Aoc",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "aoc m601": {
-    "deviceName": "M601",
-    "marketingName": "M601",
-    "manufacturer": "Aoc",
-    "brand": "Aoc",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "aoc m601": {
+        "deviceName": "M601",
+        "marketingName": "M601",
+        "manufacturer": "Aoc",
+        "brand": "Aoc",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

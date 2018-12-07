@@ -1,32 +1,46 @@
 {
-  "general flytouch device": {
-    "deviceName": "general Flytouch Device",
-    "marketingName": "general Flytouch Device",
-    "manufacturer": "Flytouch",
-    "brand": "Flytouch",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general flytouch device": {
+        "deviceName": "general Flytouch Device",
+        "marketingName": "general Flytouch Device",
+        "manufacturer": "Flytouch",
+        "brand": "Flytouch",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "flytouch 9": {
-    "deviceName": "9",
-    "marketingName": "SuperPAD IX",
-    "manufacturer": "Flytouch",
-    "brand": "Flytouch",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "flytouch 9": {
+        "deviceName": "9",
+        "marketingName": "SuperPAD IX",
+        "manufacturer": "Flytouch",
+        "brand": "Flytouch",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,227 +1,332 @@
 {
-  "google galaxy nexus": {
-    "deviceName": "Galaxy Nexus",
-    "marketingName": "Galaxy Nexus",
-    "manufacturer": "Samsung",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "google galaxy nexus": {
+        "deviceName": "Galaxy Nexus",
+        "marketingName": "Galaxy Nexus",
+        "manufacturer": "Samsung",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus 4": {
-    "deviceName": "Nexus 4",
-    "marketingName": "Nexus 4",
-    "manufacturer": "Lg",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 768,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "google nexus 4": {
+        "deviceName": "Nexus 4",
+        "marketingName": "Nexus 4",
+        "manufacturer": "Lg",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 768,
+            "height": 1280,
+            "touch": true,
+            "type": "WXGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus 5": {
-    "deviceName": "Nexus 5",
-    "marketingName": "Nexus 5",
-    "manufacturer": "Lg",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "google nexus 5": {
+        "deviceName": "Nexus 5",
+        "marketingName": "Nexus 5",
+        "manufacturer": "Lg",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus 5 caf": {
-    "deviceName": "Nexus 5 CAF",
-    "marketingName": "Nexus 5 CAF",
-    "manufacturer": "Lg",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "google nexus 5 caf": {
+        "deviceName": "Nexus 5 CAF",
+        "marketingName": "Nexus 5 CAF",
+        "manufacturer": "Lg",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus 5 v6.1": {
-    "deviceName": "Nexus 5 V6.1",
-    "marketingName": "Nexus 5 V6.1",
-    "manufacturer": "Lg",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "google nexus 5 v6.1": {
+        "deviceName": "Nexus 5 V6.1",
+        "marketingName": "Nexus 5 V6.1",
+        "manufacturer": "Lg",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus 5x": {
-    "deviceName": "Nexus 5X",
-    "marketingName": "Nexus 5X",
-    "manufacturer": "Lg",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "google nexus 5x": {
+        "deviceName": "Nexus 5X",
+        "marketingName": "Nexus 5X",
+        "manufacturer": "Lg",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus 6": {
-    "deviceName": "Nexus 6",
-    "marketingName": "Nexus 6",
-    "manufacturer": "Motorola",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2560,
-      "touch": true,
-      "type": null
+    "google nexus 6": {
+        "deviceName": "Nexus 6",
+        "marketingName": "Nexus 6",
+        "manufacturer": "Motorola",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1440,
+            "height": 2560,
+            "touch": true,
+            "type": "QHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus 6p": {
-    "deviceName": "Nexus 6P",
-    "marketingName": "Nexus 6P",
-    "manufacturer": "Huawei",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2560,
-      "touch": true,
-      "type": null
+    "google nexus 6p": {
+        "deviceName": "Nexus 6P",
+        "marketingName": "Nexus 6P",
+        "manufacturer": "Huawei",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1440,
+            "height": 2560,
+            "touch": true,
+            "type": "QHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus one": {
-    "deviceName": "Nexus One",
-    "marketingName": "Nexus One",
-    "manufacturer": "Htc",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "google nexus one": {
+        "deviceName": "Nexus One",
+        "marketingName": "Nexus One",
+        "manufacturer": "Htc",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus s": {
-    "deviceName": "Nexus S",
-    "marketingName": "Nexus S",
-    "manufacturer": "Samsung",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "google nexus s": {
+        "deviceName": "Nexus S",
+        "marketingName": "Nexus S",
+        "manufacturer": "Samsung",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google nexus s 4g": {
-    "deviceName": "SPH-D720",
-    "marketingName": "Nexus S 4G",
-    "manufacturer": "Samsung",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "google nexus s 4g": {
+        "deviceName": "SPH-D720",
+        "marketingName": "Nexus S 4G",
+        "manufacturer": "Samsung",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google pixel": {
-    "deviceName": "Pixel",
-    "marketingName": "Pixel",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "google pixel": {
+        "deviceName": "Pixel",
+        "marketingName": "Pixel",
+        "manufacturer": "Google",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google pixel 2": {
-    "deviceName": "Pixel 2",
-    "marketingName": "Pixel 2",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "google pixel 2": {
+        "deviceName": "Pixel 2",
+        "marketingName": "Pixel 2",
+        "manufacturer": "Google",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google pixel 2 xl": {
-    "deviceName": "Pixel 2 XL",
-    "marketingName": "Pixel 2 XL",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2880,
-      "touch": true,
-      "type": null
+    "google pixel 2 xl": {
+        "deviceName": "Pixel 2 XL",
+        "marketingName": "Pixel 2 XL",
+        "manufacturer": "Google",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1440,
+            "height": 2880,
+            "touch": true,
+            "type": "Custom 1440x2880",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "google pixel xl": {
-    "deviceName": "Pixel XL",
-    "marketingName": "Pixel XL",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2560,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "google pixel xl": {
+        "deviceName": "Pixel XL",
+        "marketingName": "Pixel XL",
+        "manufacturer": "Google",
+        "brand": "Google",
+        "type": "smartphone",
+        "display": {
+            "width": 1440,
+            "height": 2560,
+            "touch": true,
+            "type": "QHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

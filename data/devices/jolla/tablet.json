@@ -1,17 +1,24 @@
 {
-  "jolla sailfish tablet": {
-    "deviceName": "Tablet",
-    "marketingName": "Tablet",
-    "manufacturer": "Jolla",
-    "brand": "Jolla",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "sailfishos"
-  }
+    "jolla sailfish tablet": {
+        "deviceName": "Tablet",
+        "marketingName": "Tablet",
+        "manufacturer": "Jolla",
+        "brand": "Jolla",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "sailfishos"
+    }
 }

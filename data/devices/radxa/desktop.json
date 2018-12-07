@@ -1,32 +1,46 @@
 {
-  "general radxa device": {
-    "deviceName": "general Radxa Device",
-    "marketingName": "general Radxa Device",
-    "manufacturer": "Radxa",
-    "brand": "Radxa",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general radxa device": {
+        "deviceName": "general Radxa Device",
+        "marketingName": "general Radxa Device",
+        "manufacturer": "Radxa",
+        "brand": "Radxa",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "radxa rock": {
-    "deviceName": "Rock",
-    "marketingName": "Rock",
-    "manufacturer": "Radxa",
-    "brand": "Radxa",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "radxa rock": {
+        "deviceName": "Rock",
+        "marketingName": "Rock",
+        "manufacturer": "Radxa",
+        "brand": "Radxa",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

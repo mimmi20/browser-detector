@@ -1,257 +1,376 @@
 {
-  "apple ipad": {
-    "deviceName": "iPad",
-    "marketingName": "iPad",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "apple ipad": {
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 1,1": {
-    "deviceName": "iPad",
-    "marketingName": "iPad (Gen 1)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "apple ipad 1,1": {
+        "deviceName": "iPad",
+        "marketingName": "iPad (Gen 1)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 2,1": {
-    "deviceName": "iPad",
-    "marketingName": "iPad (Wi-Fi, Gen 2)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "apple ipad 2,1": {
+        "deviceName": "iPad",
+        "marketingName": "iPad (Wi-Fi, Gen 2)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 2,4": {
-    "deviceName": "iPad",
-    "marketingName": "iPad (Wi-Fi, Gen 2)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "apple ipad 2,4": {
+        "deviceName": "iPad",
+        "marketingName": "iPad (Wi-Fi, Gen 2)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 2,5": {
-    "deviceName": "iPad mini",
-    "marketingName": "iPad mini (Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "apple ipad 2,5": {
+        "deviceName": "iPad mini",
+        "marketingName": "iPad mini (Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 3,1": {
-    "deviceName": "iPad 3",
-    "marketingName": "iPad 3 (Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "apple ipad 3,1": {
+        "deviceName": "iPad 3",
+        "marketingName": "iPad 3 (Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 3,4": {
-    "deviceName": "iPad 4",
-    "marketingName": "iPad 4 (Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "apple ipad 3,4": {
+        "deviceName": "iPad 4",
+        "marketingName": "iPad 4 (Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 4,1": {
-    "deviceName": "iPad Air",
-    "marketingName": "iPad Air (Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "apple ipad 4,1": {
+        "deviceName": "iPad Air",
+        "marketingName": "iPad Air (Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 4,4": {
-    "deviceName": "iPad mini 2",
-    "marketingName": "iPad mini 2 (Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "apple ipad 4,4": {
+        "deviceName": "iPad mini 2",
+        "marketingName": "iPad mini 2 (Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 4,7": {
-    "deviceName": "iPad mini 3",
-    "marketingName": "iPad mini 3 (Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "apple ipad 4,7": {
+        "deviceName": "iPad mini 3",
+        "marketingName": "iPad mini 3 (Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 5,1": {
-    "deviceName": "iPad mini 4",
-    "marketingName": "iPad mini 4 (Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "apple ipad 5,1": {
+        "deviceName": "iPad mini 4",
+        "marketingName": "iPad mini 4 (Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 5,3": {
-    "deviceName": "iPad Air 2",
-    "marketingName": "iPad Air 2 (Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "apple ipad 5,3": {
+        "deviceName": "iPad Air 2",
+        "marketingName": "iPad Air 2 (Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 6,3": {
-    "deviceName": "iPad Pro 9.7",
-    "marketingName": "iPad Pro (9.7, Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
+    "apple ipad 6,3": {
+        "deviceName": "iPad Pro 9.7",
+        "marketingName": "iPad Pro (9.7, Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 6,7": {
-    "deviceName": "iPad Pro",
-    "marketingName": "iPad Pro (12.9, Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2732,
-      "height": 2048,
-      "touch": true,
-      "type": null
+    "apple ipad 6,7": {
+        "deviceName": "iPad Pro",
+        "marketingName": "iPad Pro (12.9, Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2732,
+            "height": 2048,
+            "touch": true,
+            "type": "Custom 2048x2732",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 7,1": {
-    "deviceName": "iPad7,1",
-    "marketingName": "iPad Pro (12.9, Wi-Fi, 2nd Gen)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2732,
-      "height": 2048,
-      "touch": true,
-      "type": null
+    "apple ipad 7,1": {
+        "deviceName": "iPad7,1",
+        "marketingName": "iPad Pro (12.9, Wi-Fi, 2nd Gen)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2732,
+            "height": 2048,
+            "touch": true,
+            "type": "Custom 2048x2732",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 7,3": {
-    "deviceName": "iPad7,3",
-    "marketingName": "iPad Pro (10.5, Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2224,
-      "height": 1668,
-      "touch": true,
-      "type": null
+    "apple ipad 7,3": {
+        "deviceName": "iPad7,3",
+        "marketingName": "iPad Pro (10.5, Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2224,
+            "height": 1668,
+            "touch": true,
+            "type": "Custom 1668x2224",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
     },
-    "dualOrientation": true,
-    "platform": "ios"
-  },
-  "apple ipad 7,5": {
-    "deviceName": "iPad7,5",
-    "marketingName": "iPad 6 (9.7, Wi-Fi)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "ios"
-  }
+    "apple ipad 7,5": {
+        "deviceName": "iPad7,5",
+        "marketingName": "iPad 6 (9.7, Wi-Fi)",
+        "manufacturer": "Apple",
+        "brand": "Apple",
+        "type": "tablet",
+        "display": {
+            "width": 2048,
+            "height": 1536,
+            "touch": true,
+            "type": "QXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "ios"
+    }
 }

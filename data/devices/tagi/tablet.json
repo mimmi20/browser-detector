@@ -1,32 +1,46 @@
 {
-  "general tagi device": {
-    "deviceName": "general Tagi Device",
-    "marketingName": "general Tagi Device",
-    "manufacturer": "Tagi",
-    "brand": "Tagi",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general tagi device": {
+        "deviceName": "general Tagi Device",
+        "marketingName": "general Tagi Device",
+        "manufacturer": "Tagi",
+        "brand": "Tagi",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tagi x12": {
-    "deviceName": "X12",
-    "marketingName": "X12",
-    "manufacturer": "Tagi",
-    "brand": "Tagi",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "tagi x12": {
+        "deviceName": "X12",
+        "marketingName": "X12",
+        "manufacturer": "Tagi",
+        "brand": "Tagi",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

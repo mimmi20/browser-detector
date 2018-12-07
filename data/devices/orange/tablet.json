@@ -1,32 +1,46 @@
 {
-  "general orange device": {
-    "deviceName": "general Orange Device",
-    "marketingName": "general Orange Device",
-    "manufacturer": "Orange",
-    "brand": "Orange",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general orange device": {
+        "deviceName": "general Orange Device",
+        "marketingName": "general Orange Device",
+        "manufacturer": "Orange",
+        "brand": "Orange",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "orange funtab 8": {
-    "deviceName": "FunTab 8",
-    "marketingName": "FunTab 8",
-    "manufacturer": "Orange",
-    "brand": "Orange",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "orange funtab 8": {
+        "deviceName": "FunTab 8",
+        "marketingName": "FunTab 8",
+        "manufacturer": "Orange",
+        "brand": "Orange",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "denver sdq-52001g": {
-    "deviceName": "SDQ-52001G",
-    "marketingName": "Silver",
-    "manufacturer": "Denver",
-    "brand": "Denver",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "denver sdq-52001g": {
+        "deviceName": "SDQ-52001G",
+        "marketingName": "Silver",
+        "manufacturer": "Denver",
+        "brand": "Denver",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "denver sdq-55024l grey": {
-    "deviceName": "SDQ-55024L",
-    "marketingName": "Grey",
-    "manufacturer": "Denver",
-    "brand": "Denver",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "denver sdq-55024l grey": {
+        "deviceName": "SDQ-55024L",
+        "marketingName": "Grey",
+        "manufacturer": "Denver",
+        "brand": "Denver",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

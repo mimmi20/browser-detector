@@ -1,32 +1,46 @@
 {
-  "general beneve device": {
-    "deviceName": "general Beneve Device",
-    "marketingName": "general Beneve Device",
-    "manufacturer": "Beneve",
-    "brand": "Beneve",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general beneve device": {
+        "deviceName": "general Beneve Device",
+        "marketingName": "general Beneve Device",
+        "manufacturer": "Beneve",
+        "brand": "Beneve",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "beneve s750": {
-    "deviceName": "S750",
-    "marketingName": "S750",
-    "manufacturer": "Beneve",
-    "brand": "Beneve",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "beneve s750": {
+        "deviceName": "S750",
+        "marketingName": "S750",
+        "manufacturer": "Beneve",
+        "brand": "Beneve",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

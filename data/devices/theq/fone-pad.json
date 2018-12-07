@@ -1,47 +1,68 @@
 {
-  "general theq device": {
-    "deviceName": "general TheQ Device",
-    "marketingName": "general TheQ Device",
-    "manufacturer": "TheQ",
-    "brand": "TheQ",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general theq device": {
+        "deviceName": "general TheQ Device",
+        "marketingName": "general TheQ Device",
+        "manufacturer": "TheQ",
+        "brand": "TheQ",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "theq tp31-3g": {
-    "deviceName": "TP31-3G",
-    "marketingName": "TP31-3G",
-    "manufacturer": "TheQ",
-    "brand": "TheQ",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "theq tp31-3g": {
+        "deviceName": "TP31-3G",
+        "marketingName": "TP31-3G",
+        "manufacturer": "TheQ",
+        "brand": "TheQ",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "theq tp41-3g": {
-    "deviceName": "TP41-3G",
-    "marketingName": "TP41-3G",
-    "manufacturer": "TheQ",
-    "brand": "TheQ",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "theq tp41-3g": {
+        "deviceName": "TP41-3G",
+        "marketingName": "TP41-3G",
+        "manufacturer": "TheQ",
+        "brand": "TheQ",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,47 +1,68 @@
 {
-  "general lg tv": {
-    "deviceName": "general LG TV",
-    "marketingName": "general LG TV",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general lg tv": {
+        "deviceName": "general LG TV",
+        "marketingName": "general LG TV",
+        "manufacturer": "Lg",
+        "brand": "Lg",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "lg 32lh590u": {
-    "deviceName": "32LH590U",
-    "marketingName": "32LH590U",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "type": "tv",
-    "display": {
-      "width": 1366,
-      "height": 768,
-      "touch": false,
-      "type": null
+    "lg 32lh590u": {
+        "deviceName": "32LH590U",
+        "marketingName": "32LH590U",
+        "manufacturer": "Lg",
+        "brand": "Lg",
+        "type": "tv",
+        "display": {
+            "width": 1366,
+            "height": 768,
+            "touch": false,
+            "type": "FWXGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "lg 47lm9600-na": {
-    "deviceName": "47LM9600-NA",
-    "marketingName": "47LM9600-NA",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "lg 47lm9600-na": {
+        "deviceName": "47LM9600-NA",
+        "marketingName": "47LM9600-NA",
+        "manufacturer": "Lg",
+        "brand": "Lg",
+        "type": "tv",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

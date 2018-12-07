@@ -1,77 +1,112 @@
 {
-  "general senseit device": {
-    "deviceName": "general SENSEIT Device",
-    "marketingName": "general SENSEIT Device",
-    "manufacturer": "Senseit",
-    "brand": "Senseit",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general senseit device": {
+        "deviceName": "general SENSEIT Device",
+        "marketingName": "general SENSEIT Device",
+        "manufacturer": "Senseit",
+        "brand": "Senseit",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "senseit a109": {
-    "deviceName": "A109",
-    "marketingName": "A109",
-    "manufacturer": "Senseit",
-    "brand": "Senseit",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "senseit a109": {
+        "deviceName": "A109",
+        "marketingName": "A109",
+        "manufacturer": "Senseit",
+        "brand": "Senseit",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "senseit e500": {
-    "deviceName": "E500",
-    "marketingName": "E500",
-    "manufacturer": "Senseit",
-    "brand": "Senseit",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "senseit e500": {
+        "deviceName": "E500",
+        "marketingName": "E500",
+        "manufacturer": "Senseit",
+        "brand": "Senseit",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "senseit l301": {
-    "deviceName": "L301",
-    "marketingName": "L301",
-    "manufacturer": "Senseit",
-    "brand": "Senseit",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "senseit l301": {
+        "deviceName": "L301",
+        "marketingName": "L301",
+        "manufacturer": "Senseit",
+        "brand": "Senseit",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "senseit r390": {
-    "deviceName": "R390",
-    "marketingName": "R390",
-    "manufacturer": "Senseit",
-    "brand": "Senseit",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "senseit r390": {
+        "deviceName": "R390",
+        "marketingName": "R390",
+        "manufacturer": "Senseit",
+        "brand": "Senseit",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

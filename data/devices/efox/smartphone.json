@@ -1,32 +1,46 @@
 {
-  "general efox device": {
-    "deviceName": "general eFOX Device",
-    "marketingName": "general eFOX Device",
-    "manufacturer": "Efox",
-    "brand": "Efox",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general efox device": {
+        "deviceName": "general eFOX Device",
+        "marketingName": "general eFOX Device",
+        "manufacturer": "Efox",
+        "brand": "Efox",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "efox smart e5": {
-    "deviceName": "SMART E5",
-    "marketingName": "SMART E5",
-    "manufacturer": "Efox",
-    "brand": "Efox",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "efox smart e5": {
+        "deviceName": "SMART E5",
+        "marketingName": "SMART E5",
+        "manufacturer": "Efox",
+        "brand": "Efox",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

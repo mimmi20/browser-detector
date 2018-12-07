@@ -1,32 +1,46 @@
 {
-  "general essential device": {
-    "deviceName": "general Essential Device",
-    "marketingName": "general Essential Device",
-    "manufacturer": "Essential",
-    "brand": "Essential",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general essential device": {
+        "deviceName": "general Essential Device",
+        "marketingName": "general Essential Device",
+        "manufacturer": "Essential",
+        "brand": "Essential",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "essential ph-1": {
-    "deviceName": "PH-1",
-    "marketingName": "PH-1",
-    "manufacturer": "Essential",
-    "brand": "Essential",
-    "type": "smartphone",
-    "display": {
-      "width": 1312,
-      "height": 2560,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "essential ph-1": {
+        "deviceName": "PH-1",
+        "marketingName": "PH-1",
+        "manufacturer": "Essential",
+        "brand": "Essential",
+        "type": "smartphone",
+        "display": {
+            "width": 1312,
+            "height": 2560,
+            "touch": true,
+            "type": "Custom 1312x2560",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

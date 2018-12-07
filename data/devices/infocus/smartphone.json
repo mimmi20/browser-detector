@@ -1,182 +1,266 @@
 {
-  "general infocus device": {
-    "deviceName": "general InFocus Device",
-    "marketingName": "general InFocus Device",
-    "manufacturer": "InFocus",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general infocus device": {
+        "deviceName": "general InFocus Device",
+        "marketingName": "general InFocus Device",
+        "manufacturer": "InFocus",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus if9021": {
-    "deviceName": "IF9021",
-    "marketingName": "Turbo 5 Plus Dual SIM",
-    "manufacturer": "Foxconn",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infocus if9021": {
+        "deviceName": "IF9021",
+        "marketingName": "Turbo 5 Plus Dual SIM",
+        "manufacturer": "Foxconn",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus if9031": {
-    "deviceName": "IF9031",
-    "marketingName": "Vision 3 Dual SIM",
-    "manufacturer": "Foxconn",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "infocus if9031": {
+        "deviceName": "IF9031",
+        "marketingName": "Vision 3 Dual SIM",
+        "manufacturer": "Foxconn",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus m2": {
-    "deviceName": "M2",
-    "marketingName": "M2",
-    "manufacturer": "InFocus",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 768,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infocus m2": {
+        "deviceName": "M2",
+        "marketingName": "M2",
+        "manufacturer": "InFocus",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 768,
+            "height": 1280,
+            "touch": true,
+            "type": "WXGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus m310": {
-    "deviceName": "M310",
-    "marketingName": "M310",
-    "manufacturer": "InFocus",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infocus m310": {
+        "deviceName": "M310",
+        "marketingName": "M310",
+        "manufacturer": "InFocus",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus m320m": {
-    "deviceName": "M320m",
-    "marketingName": "M320m",
-    "manufacturer": "InFocus",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infocus m320m": {
+        "deviceName": "M320m",
+        "marketingName": "M320m",
+        "manufacturer": "InFocus",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus m350": {
-    "deviceName": "M350",
-    "marketingName": "M350",
-    "manufacturer": "InFocus",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infocus m350": {
+        "deviceName": "M350",
+        "marketingName": "M350",
+        "manufacturer": "InFocus",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus m370i": {
-    "deviceName": "M370i",
-    "marketingName": "M370i",
-    "manufacturer": "InFocus",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infocus m370i": {
+        "deviceName": "M370i",
+        "marketingName": "M370i",
+        "manufacturer": "InFocus",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus m430": {
-    "deviceName": "M430",
-    "marketingName": "Bingo 21",
-    "manufacturer": "Foxconn",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "infocus m430": {
+        "deviceName": "M430",
+        "marketingName": "Bingo 21",
+        "manufacturer": "Foxconn",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus m535": {
-    "deviceName": "M535",
-    "marketingName": "M535",
-    "manufacturer": "Foxconn",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infocus m535": {
+        "deviceName": "M535",
+        "marketingName": "M535",
+        "manufacturer": "Foxconn",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus m810u": {
-    "deviceName": "M810u",
-    "marketingName": "M810u",
-    "manufacturer": "InFocus",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "infocus m810u": {
+        "deviceName": "M810u",
+        "marketingName": "M810u",
+        "manufacturer": "InFocus",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infocus vzh": {
-    "deviceName": "VZH",
-    "marketingName": "VZH",
-    "manufacturer": "InFocus",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "infocus vzh": {
+        "deviceName": "VZH",
+        "marketingName": "VZH",
+        "manufacturer": "InFocus",
+        "brand": "InFocus",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

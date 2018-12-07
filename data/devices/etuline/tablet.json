@@ -1,32 +1,46 @@
 {
-  "general etuline device": {
-    "deviceName": "general Etuline Device",
-    "marketingName": "general Etuline Device",
-    "manufacturer": "Etuline",
-    "brand": "Etuline",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general etuline device": {
+        "deviceName": "general Etuline Device",
+        "marketingName": "general Etuline Device",
+        "manufacturer": "Etuline",
+        "brand": "Etuline",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "etuline t880g": {
-    "deviceName": "T880G",
-    "marketingName": "T880G",
-    "manufacturer": "Etuline",
-    "brand": "Etuline",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "etuline t880g": {
+        "deviceName": "T880G",
+        "marketingName": "T880G",
+        "manufacturer": "Etuline",
+        "brand": "Etuline",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

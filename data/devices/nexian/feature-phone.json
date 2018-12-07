@@ -1,62 +1,90 @@
 {
-  "nexian nx-g730": {
-    "deviceName": "NX-G730",
-    "marketingName": "NX-G730",
-    "manufacturer": "Nexian",
-    "brand": "Nexian",
-    "type": "feature-phone",
-    "display": {
-      "width": 176,
-      "height": 220,
-      "touch": false,
-      "type": null
+    "nexian nx-g730": {
+        "deviceName": "NX-G730",
+        "marketingName": "NX-G730",
+        "manufacturer": "Nexian",
+        "brand": "Nexian",
+        "type": "feature-phone",
+        "display": {
+            "width": 176,
+            "height": 220,
+            "touch": false,
+            "type": "Custom 176x220",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "nexian nx-g868": {
-    "deviceName": "NX-G868",
-    "marketingName": "NX-G868",
-    "manufacturer": "Nexian",
-    "brand": "Nexian",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "nexian nx-g868": {
+        "deviceName": "NX-G868",
+        "marketingName": "NX-G868",
+        "manufacturer": "Nexian",
+        "brand": "Nexian",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "nexian nx-g868t": {
-    "deviceName": "NX-G868T",
-    "marketingName": "NX-G868T",
-    "manufacturer": "Nexian",
-    "brand": "Nexian",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "nexian nx-g868t": {
+        "deviceName": "NX-G868T",
+        "marketingName": "NX-G868T",
+        "manufacturer": "Nexian",
+        "brand": "Nexian",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "nexian nx-m5760": {
-    "deviceName": "NX-M5760",
-    "marketingName": "NX-M5760",
-    "manufacturer": "Nexian",
-    "brand": "Nexian",
-    "type": "feature-phone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "nexian nx-m5760": {
+        "deviceName": "NX-M5760",
+        "marketingName": "NX-M5760",
+        "manufacturer": "Nexian",
+        "brand": "Nexian",
+        "type": "feature-phone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

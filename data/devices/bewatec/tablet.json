@@ -1,62 +1,90 @@
 {
-  "general bewatec device": {
-    "deviceName": "general BEWATEC Device",
-    "marketingName": "general BEWATEC Device",
-    "manufacturer": "Bewatec",
-    "brand": "Bewatec",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general bewatec device": {
+        "deviceName": "general BEWATEC Device",
+        "marketingName": "general BEWATEC Device",
+        "manufacturer": "Bewatec",
+        "brand": "Bewatec",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bewatec medipad": {
-    "deviceName": "MediPaD",
-    "marketingName": "MediPaD",
-    "manufacturer": "Bewatec",
-    "brand": "Bewatec",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "bewatec medipad": {
+        "deviceName": "MediPaD",
+        "marketingName": "MediPaD",
+        "manufacturer": "Bewatec",
+        "brand": "Bewatec",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bewatec medipad 13": {
-    "deviceName": "MediPaD 13",
-    "marketingName": "MediPaD 13",
-    "manufacturer": "Bewatec",
-    "brand": "Bewatec",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "type": null
+    "bewatec medipad 13": {
+        "deviceName": "MediPaD 13",
+        "marketingName": "MediPaD 13",
+        "manufacturer": "Bewatec",
+        "brand": "Bewatec",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bewatec medipad 16": {
-    "deviceName": "MediPaD 16",
-    "marketingName": "MediPaD 16",
-    "manufacturer": "Bewatec",
-    "brand": "Bewatec",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bewatec medipad 16": {
+        "deviceName": "MediPaD 16",
+        "marketingName": "MediPaD 16",
+        "manufacturer": "Bewatec",
+        "brand": "Bewatec",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

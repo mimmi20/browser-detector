@@ -1,47 +1,68 @@
 {
-  "general jlinksz device": {
-    "deviceName": "general Jlinksz Device",
-    "marketingName": "general Jlinksz Device",
-    "manufacturer": "Jlinksz",
-    "brand": "Jlinksz",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general jlinksz device": {
+        "deviceName": "general Jlinksz Device",
+        "marketingName": "general Jlinksz Device",
+        "manufacturer": "Jlinksz",
+        "brand": "Jlinksz",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jlinksz k960": {
-    "deviceName": "K960",
-    "marketingName": "K960",
-    "manufacturer": "Jlinksz",
-    "brand": "Jlinksz",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "jlinksz k960": {
+        "deviceName": "K960",
+        "marketingName": "K960",
+        "manufacturer": "Jlinksz",
+        "brand": "Jlinksz",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jlinksz zh960": {
-    "deviceName": "ZH960",
-    "marketingName": "ZH960",
-    "manufacturer": "Jlinksz",
-    "brand": "Jlinksz",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "jlinksz zh960": {
+        "deviceName": "ZH960",
+        "marketingName": "ZH960",
+        "manufacturer": "Jlinksz",
+        "brand": "Jlinksz",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

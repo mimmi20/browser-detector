@@ -1,32 +1,46 @@
 {
-  "general kata device": {
-    "deviceName": "general Kata Device",
-    "marketingName": "general Kata Device",
-    "manufacturer": "Kata",
-    "brand": "Kata",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general kata device": {
+        "deviceName": "general Kata Device",
+        "marketingName": "general Kata Device",
+        "manufacturer": "Kata",
+        "brand": "Kata",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "kata t5": {
-    "deviceName": "T5",
-    "marketingName": "T5",
-    "manufacturer": "Kata",
-    "brand": "Kata",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "kata t5": {
+        "deviceName": "T5",
+        "marketingName": "T5",
+        "manufacturer": "Kata",
+        "brand": "Kata",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

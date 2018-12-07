@@ -1,32 +1,46 @@
 {
-  "general ctroniq device": {
-    "deviceName": "general Ctroniq Device",
-    "marketingName": "general Ctroniq Device",
-    "manufacturer": "Ctroniq",
-    "brand": "Ctroniq",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general ctroniq device": {
+        "deviceName": "general Ctroniq Device",
+        "marketingName": "general Ctroniq Device",
+        "manufacturer": "Ctroniq",
+        "brand": "Ctroniq",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ctroniq c55": {
-    "deviceName": "C55",
-    "marketingName": "C55",
-    "manufacturer": "Ctroniq",
-    "brand": "Ctroniq",
-    "type": "tablet",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ctroniq c55": {
+        "deviceName": "C55",
+        "marketingName": "C55",
+        "manufacturer": "Ctroniq",
+        "brand": "Ctroniq",
+        "type": "tablet",
+        "display": {
+            "width": 854,
+            "height": 480,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

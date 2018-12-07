@@ -1,62 +1,90 @@
 {
-  "general avvio device": {
-    "deviceName": "general Avvio Device",
-    "marketingName": "general Avvio Device",
-    "manufacturer": "Avvio",
-    "brand": "Avvio",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general avvio device": {
+        "deviceName": "general Avvio Device",
+        "marketingName": "general Avvio Device",
+        "manufacturer": "Avvio",
+        "brand": "Avvio",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "avvio 765": {
-    "deviceName": "765",
-    "marketingName": "765",
-    "manufacturer": "Avvio",
-    "brand": "Avvio",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "avvio 765": {
+        "deviceName": "765",
+        "marketingName": "765",
+        "manufacturer": "Avvio",
+        "brand": "Avvio",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "avvio 775": {
-    "deviceName": "775",
-    "marketingName": "775",
-    "manufacturer": "Avvio",
-    "brand": "Avvio",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "avvio 775": {
+        "deviceName": "775",
+        "marketingName": "775",
+        "manufacturer": "Avvio",
+        "brand": "Avvio",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "avvio l500": {
-    "deviceName": "L500",
-    "marketingName": "L500",
-    "manufacturer": "Avvio",
-    "brand": "Avvio",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "avvio l500": {
+        "deviceName": "L500",
+        "marketingName": "L500",
+        "manufacturer": "Avvio",
+        "brand": "Avvio",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

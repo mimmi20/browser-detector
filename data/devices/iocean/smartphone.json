@@ -1,32 +1,46 @@
 {
-  "general iocean device": {
-    "deviceName": "general iOcean Device",
-    "marketingName": "general iOcean Device",
-    "manufacturer": "iOcean",
-    "brand": "iOcean",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general iocean device": {
+        "deviceName": "general iOcean Device",
+        "marketingName": "general iOcean Device",
+        "manufacturer": "iOcean",
+        "brand": "iOcean",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "iocean x7": {
-    "deviceName": "X7",
-    "marketingName": "X7",
-    "manufacturer": "iOcean",
-    "brand": "iOcean",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "iocean x7": {
+        "deviceName": "X7",
+        "marketingName": "X7",
+        "manufacturer": "iOcean",
+        "brand": "iOcean",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

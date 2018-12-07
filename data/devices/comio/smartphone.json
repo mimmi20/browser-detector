@@ -1,62 +1,90 @@
 {
-  "general comio device": {
-    "deviceName": "general Comio Device",
-    "marketingName": "general Comio Device",
-    "manufacturer": "Comio",
-    "brand": "Comio",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general comio device": {
+        "deviceName": "general Comio Device",
+        "marketingName": "general Comio Device",
+        "manufacturer": "Comio",
+        "brand": "Comio",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "comio p1": {
-    "deviceName": "P1",
-    "marketingName": "P1",
-    "manufacturer": "Comio",
-    "brand": "Comio",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "comio p1": {
+        "deviceName": "P1",
+        "marketingName": "P1",
+        "manufacturer": "Comio",
+        "brand": "Comio",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "comio s1": {
-    "deviceName": "S1",
-    "marketingName": "S1",
-    "manufacturer": "Comio",
-    "brand": "Comio",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "comio s1": {
+        "deviceName": "S1",
+        "marketingName": "S1",
+        "manufacturer": "Comio",
+        "brand": "Comio",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "comio s1 lite": {
-    "deviceName": "S1 Lite",
-    "marketingName": "S1 Lite",
-    "manufacturer": "Comio",
-    "brand": "Comio",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "comio s1 lite": {
+        "deviceName": "S1 Lite",
+        "marketingName": "S1 Lite",
+        "manufacturer": "Comio",
+        "brand": "Comio",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general globex device": {
-    "deviceName": "general Globex Device",
-    "marketingName": "general Globex Device",
-    "manufacturer": "Globex",
-    "brand": "Globex",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general globex device": {
+        "deviceName": "general Globex Device",
+        "marketingName": "general Globex Device",
+        "manufacturer": "Globex",
+        "brand": "Globex",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "globex gu7814": {
-    "deviceName": "GU7814",
-    "marketingName": "GU7814",
-    "manufacturer": "Globex",
-    "brand": "Globex",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "globex gu7814": {
+        "deviceName": "GU7814",
+        "marketingName": "GU7814",
+        "manufacturer": "Globex",
+        "brand": "Globex",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

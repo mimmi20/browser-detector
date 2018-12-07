@@ -1,32 +1,46 @@
 {
-  "tecno t36": {
-    "deviceName": "T36",
-    "marketingName": "T36",
-    "manufacturer": "Tecno",
-    "brand": "Tecno",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "tecno t36": {
+        "deviceName": "T36",
+        "marketingName": "T36",
+        "manufacturer": "Tecno",
+        "brand": "Tecno",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "tecno t611": {
-    "deviceName": "T611",
-    "marketingName": "T611",
-    "manufacturer": "Tecno",
-    "brand": "Tecno",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "tecno t611": {
+        "deviceName": "T611",
+        "marketingName": "T611",
+        "manufacturer": "Tecno",
+        "brand": "Tecno",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

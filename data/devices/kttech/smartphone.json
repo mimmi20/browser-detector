@@ -1,32 +1,46 @@
 {
-  "general kt-tech device": {
-    "deviceName": "general KT-Tech Device",
-    "marketingName": "general KT-Tech Device",
-    "manufacturer": "KT-Tech",
-    "brand": "KT-Tech",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general kt-tech device": {
+        "deviceName": "general KT-Tech Device",
+        "marketingName": "general KT-Tech Device",
+        "manufacturer": "KT-Tech",
+        "brand": "KT-Tech",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "kt-tech km-e100": {
-    "deviceName": "KM-E100",
-    "marketingName": "KM-E100",
-    "manufacturer": "KT-Tech",
-    "brand": "KT-Tech",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "kt-tech km-e100": {
+        "deviceName": "KM-E100",
+        "marketingName": "KM-E100",
+        "manufacturer": "KT-Tech",
+        "brand": "KT-Tech",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

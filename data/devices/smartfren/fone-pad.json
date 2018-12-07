@@ -1,32 +1,46 @@
 {
-  "smartfren androtab 7": {
-    "deviceName": "Androtab 7",
-    "marketingName": "Andromax Tab 7.0",
-    "manufacturer": "Smartfren",
-    "brand": "Smartfren",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "smartfren androtab 7": {
+        "deviceName": "Androtab 7",
+        "marketingName": "Andromax Tab 7.0",
+        "manufacturer": "Smartfren",
+        "brand": "Smartfren",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "smartfren androtab s7": {
-    "deviceName": "Androtab S7",
-    "marketingName": "Androtab S7",
-    "manufacturer": "Smartfren",
-    "brand": "Smartfren",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "smartfren androtab s7": {
+        "deviceName": "Androtab S7",
+        "marketingName": "Androtab S7",
+        "manufacturer": "Smartfren",
+        "brand": "Smartfren",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

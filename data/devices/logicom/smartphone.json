@@ -1,62 +1,90 @@
 {
-  "logicom l-ement500": {
-    "deviceName": "L-EMENT500",
-    "marketingName": "L-EMENT500",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "logicom l-ement500": {
+        "deviceName": "L-EMENT500",
+        "marketingName": "L-EMENT500",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom l-ite 402": {
-    "deviceName": "L-ITE 402",
-    "marketingName": "L-ITE 402",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "logicom l-ite 402": {
+        "deviceName": "L-ITE 402",
+        "marketingName": "L-ITE 402",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom l-ite 502 plus": {
-    "deviceName": "L-ITE 502 Plus",
-    "marketingName": "L-ITE 502 Plus",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "logicom l-ite 502 plus": {
+        "deviceName": "L-ITE 502 Plus",
+        "marketingName": "L-ITE 502 Plus",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "logicom l-ite 504 hd": {
-    "deviceName": "L-ITE 504 HD",
-    "marketingName": "L-ITE 504 HD",
-    "manufacturer": "Logicom",
-    "brand": "Logicom",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "logicom l-ite 504 hd": {
+        "deviceName": "L-ITE 504 HD",
+        "marketingName": "L-ITE 504 HD",
+        "manufacturer": "Logicom",
+        "brand": "Logicom",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

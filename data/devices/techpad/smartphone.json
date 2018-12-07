@@ -1,32 +1,46 @@
 {
-  "techpad q545": {
-    "deviceName": "Q545",
-    "marketingName": "Q545",
-    "manufacturer": "TechPad",
-    "brand": "TechPad",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "techpad q545": {
+        "deviceName": "Q545",
+        "marketingName": "Q545",
+        "manufacturer": "TechPad",
+        "brand": "TechPad",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "techpad x5": {
-    "deviceName": "X5",
-    "marketingName": "X5",
-    "manufacturer": "TechPad",
-    "brand": "TechPad",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "techpad x5": {
+        "deviceName": "X5",
+        "marketingName": "X5",
+        "manufacturer": "TechPad",
+        "brand": "TechPad",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

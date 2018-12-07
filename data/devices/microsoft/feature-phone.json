@@ -1,17 +1,24 @@
 {
-  "microsoft kin two": {
-    "deviceName": "Kin Two",
-    "marketingName": "Kin Two",
-    "manufacturer": "Microsoft",
-    "brand": "Microsoft",
-    "type": "feature-phone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "windows ce"
-  }
+    "microsoft kin two": {
+        "deviceName": "Kin Two",
+        "marketingName": "Kin Two",
+        "manufacturer": "Microsoft",
+        "brand": "Microsoft",
+        "type": "feature-phone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows ce"
+    }
 }

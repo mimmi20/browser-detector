@@ -1,32 +1,46 @@
 {
-  "general unonu device": {
-    "deviceName": "general Unonu Device",
-    "marketingName": "general Unonu Device",
-    "manufacturer": "Unonu",
-    "brand": "Unonu",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general unonu device": {
+        "deviceName": "general Unonu Device",
+        "marketingName": "general Unonu Device",
+        "manufacturer": "Unonu",
+        "brand": "Unonu",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "unonu um405 lite": {
-    "deviceName": "UM405 Lite",
-    "marketingName": "UM405 Lite",
-    "manufacturer": "Unonu",
-    "brand": "Unonu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "unonu um405 lite": {
+        "deviceName": "UM405 Lite",
+        "marketingName": "UM405 Lite",
+        "manufacturer": "Unonu",
+        "brand": "Unonu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

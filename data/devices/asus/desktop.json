@@ -1,47 +1,68 @@
 {
-  "asus eee 701": {
-    "deviceName": "EEE 701",
-    "marketingName": "EEE 701",
-    "manufacturer": "Asus",
-    "brand": "Asus",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "asus eee 701": {
+        "deviceName": "EEE 701",
+        "marketingName": "EEE 701",
+        "manufacturer": "Asus",
+        "brand": "Asus",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "asus pc": {
-    "deviceName": "PC",
-    "marketingName": "PC",
-    "manufacturer": "Asus",
-    "brand": "Asus",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "asus pc": {
+        "deviceName": "PC",
+        "marketingName": "PC",
+        "manufacturer": "Asus",
+        "brand": "Asus",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "eee pc": {
-    "deviceName": "eee pc",
-    "marketingName": "eee pc",
-    "manufacturer": "Asus",
-    "brand": "Asus",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "eee pc": {
+        "deviceName": "eee pc",
+        "marketingName": "eee pc",
+        "manufacturer": "Asus",
+        "brand": "Asus",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

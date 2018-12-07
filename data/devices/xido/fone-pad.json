@@ -1,47 +1,68 @@
 {
-  "general xido device": {
-    "deviceName": "general XIDO Device",
-    "marketingName": "general XIDO Device",
-    "manufacturer": "xido",
-    "brand": "xido",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general xido device": {
+        "deviceName": "general XIDO Device",
+        "marketingName": "general XIDO Device",
+        "manufacturer": "xido",
+        "brand": "xido",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xido z110 3g": {
-    "deviceName": "Z110",
-    "marketingName": "Z110",
-    "manufacturer": "xido",
-    "brand": "xido",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "xido z110 3g": {
+        "deviceName": "Z110",
+        "marketingName": "Z110",
+        "manufacturer": "xido",
+        "brand": "xido",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xido z120 3g": {
-    "deviceName": "Z120",
-    "marketingName": "Z120",
-    "manufacturer": "xido",
-    "brand": "xido",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "xido z120 3g": {
+        "deviceName": "Z120",
+        "marketingName": "Z120",
+        "manufacturer": "xido",
+        "brand": "xido",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

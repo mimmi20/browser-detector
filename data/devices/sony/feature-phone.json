@@ -1,857 +1,1256 @@
 {
-  "kddi sn3f": {
-    "deviceName": "SN3F",
-    "marketingName": "SN3F",
-    "manufacturer": "SonyEricsson",
-    "brand": "Kddi",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": true,
-      "type": null
+    "kddi sn3f": {
+        "deviceName": "SN3F",
+        "marketingName": "SN3F",
+        "manufacturer": "SonyEricsson",
+        "brand": "Kddi",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 400,
+            "touch": true,
+            "type": "WQVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson c902": {
-    "deviceName": "C902",
-    "marketingName": "C902",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson c902": {
+        "deviceName": "C902",
+        "marketingName": "C902",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson c905": {
-    "deviceName": "C905",
-    "marketingName": "C905",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson c905": {
+        "deviceName": "C905",
+        "marketingName": "C905",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson ck13i": {
-    "deviceName": "CK13i",
-    "marketingName": "txt",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "type": null
+    "sonyericsson ck13i": {
+        "deviceName": "CK13i",
+        "marketingName": "txt",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 320,
+            "height": 240,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson ck15i": {
-    "deviceName": "CK15i",
-    "marketingName": "Txt Pro",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": true,
-      "type": null
+    "sonyericsson ck15i": {
+        "deviceName": "CK15i",
+        "marketingName": "Txt Pro",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 400,
+            "touch": true,
+            "type": "WQVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": true,
-    "platform": "java"
-  },
-  "sonyericsson f100i": {
-    "deviceName": "F100i",
-    "marketingName": "Jalou",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson f100i": {
+        "deviceName": "F100i",
+        "marketingName": "Jalou",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson g700": {
-    "deviceName": "G700",
-    "marketingName": "G700",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson g700": {
+        "deviceName": "G700",
+        "marketingName": "G700",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson g700c": {
-    "deviceName": "G700c",
-    "marketingName": "G700c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson g700c": {
+        "deviceName": "G700c",
+        "marketingName": "G700c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson j105i": {
-    "deviceName": "J105i",
-    "marketingName": "Naite",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson j105i": {
+        "deviceName": "J105i",
+        "marketingName": "Naite",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson j108i": {
-    "deviceName": "J108i",
-    "marketingName": "Cedar",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson j108i": {
+        "deviceName": "J108i",
+        "marketingName": "Cedar",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson j10i2": {
-    "deviceName": "J10i2",
-    "marketingName": "Elm",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson j10i2": {
+        "deviceName": "J10i2",
+        "marketingName": "Elm",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson j20i": {
-    "deviceName": "J20i",
-    "marketingName": "Hazel",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson j20i": {
+        "deviceName": "J20i",
+        "marketingName": "Hazel",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson j300a": {
-    "deviceName": "J300a",
-    "marketingName": "J300a",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 128,
-      "touch": false,
-      "type": null
+    "sonyericsson j300a": {
+        "deviceName": "J300a",
+        "marketingName": "J300a",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 128,
+            "touch": false,
+            "type": "Custom 128x128",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson j300c": {
-    "deviceName": "J300c",
-    "marketingName": "J300c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 128,
-      "touch": false,
-      "type": null
+    "sonyericsson j300c": {
+        "deviceName": "J300c",
+        "marketingName": "J300c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 128,
+            "touch": false,
+            "type": "Custom 128x128",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson j300i": {
-    "deviceName": "J300i",
-    "marketingName": "J300i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 128,
-      "touch": false,
-      "type": null
+    "sonyericsson j300i": {
+        "deviceName": "J300i",
+        "marketingName": "J300i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 128,
+            "touch": false,
+            "type": "Custom 128x128",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson k770i": {
-    "deviceName": "K770i",
-    "marketingName": "K770i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson k770i": {
+        "deviceName": "K770i",
+        "marketingName": "K770i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson k790a": {
-    "deviceName": "K790a",
-    "marketingName": "K790a",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson k790a": {
+        "deviceName": "K790a",
+        "marketingName": "K790a",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson k790c": {
-    "deviceName": "K790c",
-    "marketingName": "K790c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson k790c": {
+        "deviceName": "K790c",
+        "marketingName": "K790c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson k790i": {
-    "deviceName": "K790i",
-    "marketingName": "K790i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson k790i": {
+        "deviceName": "K790i",
+        "marketingName": "K790i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson k800c": {
-    "deviceName": "K800c",
-    "marketingName": "K800c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson k800c": {
+        "deviceName": "K800c",
+        "marketingName": "K800c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson k800i": {
-    "deviceName": "K800i",
-    "marketingName": "K800i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson k800i": {
+        "deviceName": "K800i",
+        "marketingName": "K800i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson k810c": {
-    "deviceName": "K810c",
-    "marketingName": "K810c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson k810c": {
+        "deviceName": "K810c",
+        "marketingName": "K810c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson k810i": {
-    "deviceName": "K810i",
-    "marketingName": "K810i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson k810i": {
+        "deviceName": "K810i",
+        "marketingName": "K810i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson p910a": {
-    "deviceName": "P910a",
-    "marketingName": "P910",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 208,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "sonyericsson p910a": {
+        "deviceName": "P910a",
+        "marketingName": "P910",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 208,
+            "height": 320,
+            "touch": true,
+            "type": "Custom 208x320",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "symbian"
     },
-    "dualOrientation": false,
-    "platform": "symbian"
-  },
-  "sonyericsson p910c": {
-    "deviceName": "P910c",
-    "marketingName": "P910",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 208,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "sonyericsson p910c": {
+        "deviceName": "P910c",
+        "marketingName": "P910",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 208,
+            "height": 320,
+            "touch": true,
+            "type": "Custom 208x320",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "symbian"
     },
-    "dualOrientation": false,
-    "platform": "symbian"
-  },
-  "sonyericsson p910i": {
-    "deviceName": "P910i",
-    "marketingName": "P910",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 208,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "sonyericsson p910i": {
+        "deviceName": "P910i",
+        "marketingName": "P910",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 208,
+            "height": 320,
+            "touch": true,
+            "type": "Custom 208x320",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "symbian"
     },
-    "dualOrientation": false,
-    "platform": "symbian"
-  },
-  "sonyericsson s312": {
-    "deviceName": "S312",
-    "marketingName": "S312",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 176,
-      "height": 220,
-      "touch": false,
-      "type": null
+    "sonyericsson s312": {
+        "deviceName": "S312",
+        "marketingName": "S312",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 176,
+            "height": 220,
+            "touch": false,
+            "type": "Custom 176x220",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson s500c": {
-    "deviceName": "S500c",
-    "marketingName": "S500c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson s500c": {
+        "deviceName": "S500c",
+        "marketingName": "S500c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson s500i": {
-    "deviceName": "S500i",
-    "marketingName": "S500i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson s500i": {
+        "deviceName": "S500i",
+        "marketingName": "S500i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson u1": {
-    "deviceName": "U1",
-    "marketingName": "Satio",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 360,
-      "height": 640,
-      "touch": true,
-      "type": null
+    "sonyericsson u1": {
+        "deviceName": "U1",
+        "marketingName": "Satio",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 360,
+            "height": 640,
+            "touch": true,
+            "type": "nHD",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "symbian"
     },
-    "dualOrientation": false,
-    "platform": "symbian"
-  },
-  "sonyericsson u10i": {
-    "deviceName": "U10i",
-    "marketingName": "Aino",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 432,
-      "touch": true,
-      "type": null
+    "sonyericsson u10i": {
+        "deviceName": "U10i",
+        "marketingName": "Aino",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 432,
+            "touch": true,
+            "type": "FWQVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "nokia os"
     },
-    "dualOrientation": false,
-    "platform": "nokia os"
-  },
-  "sonyericsson w100i": {
-    "deviceName": "W100i",
-    "marketingName": "Spiro",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w100i": {
+        "deviceName": "W100i",
+        "marketingName": "Spiro",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w150a": {
-    "deviceName": "W150a",
-    "marketingName": "Yizo",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "sonyericsson w150a": {
+        "deviceName": "W150a",
+        "marketingName": "Yizo",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w150i": {
-    "deviceName": "W150i",
-    "marketingName": "Yendo",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "sonyericsson w150i": {
+        "deviceName": "W150i",
+        "marketingName": "Yendo",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w20": {
-    "deviceName": "W20",
-    "marketingName": "Zylo",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w20": {
+        "deviceName": "W20",
+        "marketingName": "Zylo",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w200a": {
-    "deviceName": "W200a",
-    "marketingName": "W200a",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "type": null
+    "sonyericsson w200a": {
+        "deviceName": "W200a",
+        "marketingName": "W200a",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 160,
+            "touch": false,
+            "type": "Custom 128x160",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w200c": {
-    "deviceName": "W200c",
-    "marketingName": "W200c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "type": null
+    "sonyericsson w200c": {
+        "deviceName": "W200c",
+        "marketingName": "W200c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 160,
+            "touch": false,
+            "type": "Custom 128x160",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w200i": {
-    "deviceName": "W200i",
-    "marketingName": "W200i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "type": null
+    "sonyericsson w200i": {
+        "deviceName": "W200i",
+        "marketingName": "W200i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 160,
+            "touch": false,
+            "type": "Custom 128x160",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w20i": {
-    "deviceName": "W20i",
-    "marketingName": "Zylo",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w20i": {
+        "deviceName": "W20i",
+        "marketingName": "Zylo",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w508a": {
-    "deviceName": "W508a",
-    "marketingName": "W508a",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w508a": {
+        "deviceName": "W508a",
+        "marketingName": "W508a",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w580c": {
-    "deviceName": "W580c",
-    "marketingName": "W580c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w580c": {
+        "deviceName": "W580c",
+        "marketingName": "W580c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w580i": {
-    "deviceName": "W580i",
-    "marketingName": "W580i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w580i": {
+        "deviceName": "W580i",
+        "marketingName": "W580i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w595": {
-    "deviceName": "W595",
-    "marketingName": "W595",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w595": {
+        "deviceName": "W595",
+        "marketingName": "W595",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w595a": {
-    "deviceName": "W595a",
-    "marketingName": "W595a",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w595a": {
+        "deviceName": "W595a",
+        "marketingName": "W595a",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w595c": {
-    "deviceName": "W595c",
-    "marketingName": "W595c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w595c": {
+        "deviceName": "W595c",
+        "marketingName": "W595c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w705a": {
-    "deviceName": "W705a",
-    "marketingName": "W705a",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w705a": {
+        "deviceName": "W705a",
+        "marketingName": "W705a",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w715v": {
-    "deviceName": "W715v",
-    "marketingName": "W715v",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w715v": {
+        "deviceName": "W715v",
+        "marketingName": "W715v",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w760c": {
-    "deviceName": "W760c",
-    "marketingName": "W760c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w760c": {
+        "deviceName": "W760c",
+        "marketingName": "W760c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w760i": {
-    "deviceName": "W760i",
-    "marketingName": "W760i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w760i": {
+        "deviceName": "W760i",
+        "marketingName": "W760i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w890c": {
-    "deviceName": "W890c",
-    "marketingName": "W890c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w890c": {
+        "deviceName": "W890c",
+        "marketingName": "W890c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w890i": {
-    "deviceName": "W890i",
-    "marketingName": "W890i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w890i": {
+        "deviceName": "W890i",
+        "marketingName": "W890i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sonyericsson w910i": {
-    "deviceName": "W910i",
-    "marketingName": "W910i",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w910i": {
+        "deviceName": "W910i",
+        "marketingName": "W910i",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w918c": {
-    "deviceName": "W918c",
-    "marketingName": "W918c",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w918c": {
+        "deviceName": "W918c",
+        "marketingName": "W918c",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w960": {
-    "deviceName": "W960",
-    "marketingName": "W960",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "sonyericsson w960": {
+        "deviceName": "W960",
+        "marketingName": "W960",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "symbian"
     },
-    "dualOrientation": false,
-    "platform": "symbian"
-  },
-  "sonyericsson w995": {
-    "deviceName": "W995",
-    "marketingName": "W995",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w995": {
+        "deviceName": "W995",
+        "marketingName": "W995",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson w995a": {
-    "deviceName": "W995a",
-    "marketingName": "W995a",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
+    "sonyericsson w995a": {
+        "deviceName": "W995a",
+        "marketingName": "W995a",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "sonyericsson wt13i": {
-    "deviceName": "WT13i",
-    "marketingName": "Mix Walkman",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "sonyericsson wt13i": {
+        "deviceName": "WT13i",
+        "marketingName": "Mix Walkman",
+        "manufacturer": "SonyEricsson",
+        "brand": "SonyEricsson",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 400,
+            "touch": true,
+            "type": "WQVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

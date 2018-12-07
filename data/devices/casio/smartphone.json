@@ -1,62 +1,90 @@
 {
-  "general casio device": {
-    "deviceName": "general CASIO Device",
-    "marketingName": "general CASIO Device",
-    "manufacturer": "Casio",
-    "brand": "Casio",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general casio device": {
+        "deviceName": "general CASIO Device",
+        "marketingName": "general CASIO Device",
+        "manufacturer": "Casio",
+        "brand": "Casio",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "casio c771": {
-    "deviceName": "C771",
-    "marketingName": "GzOne Commando",
-    "manufacturer": "Casio",
-    "brand": "Casio",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "casio c771": {
+        "deviceName": "C771",
+        "marketingName": "GzOne Commando",
+        "manufacturer": "Casio",
+        "brand": "Casio",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "casio c811": {
-    "deviceName": "C811",
-    "marketingName": "GzOne Commando",
-    "manufacturer": "Casio",
-    "brand": "Casio",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "casio c811": {
+        "deviceName": "C811",
+        "marketingName": "GzOne Commando",
+        "manufacturer": "Casio",
+        "brand": "Casio",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "casio gzone cal21": {
-    "deviceName": "CAL21",
-    "marketingName": "GzOne Type-L",
-    "manufacturer": "Casio",
-    "brand": "Casio",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "casio gzone cal21": {
+        "deviceName": "CAL21",
+        "marketingName": "GzOne Type-L",
+        "manufacturer": "Casio",
+        "brand": "Casio",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,77 +1,112 @@
 {
-  "general rca-tablets device": {
-    "deviceName": "general RCA Tablets Device",
-    "marketingName": "general RCA Tablets Device",
-    "manufacturer": "RCA Tablets",
-    "brand": "RCA Tablets",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general rca-tablets device": {
+        "deviceName": "general RCA Tablets Device",
+        "marketingName": "general RCA Tablets Device",
+        "manufacturer": "RCA Tablets",
+        "brand": "RCA Tablets",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "rca-tablets rct6077w2": {
-    "deviceName": "RCT6077W2",
-    "marketingName": "RCT6077W2",
-    "manufacturer": "RCA Tablets",
-    "brand": "RCA Tablets",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "rca-tablets rct6077w2": {
+        "deviceName": "RCT6077W2",
+        "marketingName": "RCT6077W2",
+        "manufacturer": "RCA Tablets",
+        "brand": "RCA Tablets",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "rca-tablets rct6077w22": {
-    "deviceName": "RCT6077W22",
-    "marketingName": "RCT6077W22",
-    "manufacturer": "RCA Tablets",
-    "brand": "RCA Tablets",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "rca-tablets rct6077w22": {
+        "deviceName": "RCT6077W22",
+        "marketingName": "RCT6077W22",
+        "manufacturer": "RCA Tablets",
+        "brand": "RCA Tablets",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "rca-tablets rct6213w87m": {
-    "deviceName": "RCT6213W87M",
-    "marketingName": "RCT6213W87M",
-    "manufacturer": "RCA Tablets",
-    "brand": "RCA Tablets",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "rca-tablets rct6213w87m": {
+        "deviceName": "RCT6213W87M",
+        "marketingName": "RCT6213W87M",
+        "manufacturer": "RCA Tablets",
+        "brand": "RCA Tablets",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "rca-tablets rct6873w42": {
-    "deviceName": "RCT6873W42",
-    "marketingName": "RCT6873W42",
-    "manufacturer": "RCA Tablets",
-    "brand": "RCA Tablets",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "rca-tablets rct6873w42": {
+        "deviceName": "RCT6873W42",
+        "marketingName": "RCT6873W42",
+        "manufacturer": "RCA Tablets",
+        "brand": "RCA Tablets",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

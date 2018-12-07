@@ -1,32 +1,46 @@
 {
-  "general casper device": {
-    "deviceName": "general Casper Device",
-    "marketingName": "general Casper Device",
-    "manufacturer": "Casper",
-    "brand": "Casper",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general casper device": {
+        "deviceName": "general Casper Device",
+        "marketingName": "general Casper Device",
+        "manufacturer": "Casper",
+        "brand": "Casper",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "casper via m1": {
-    "deviceName": "Via M1",
-    "marketingName": "Via M1",
-    "manufacturer": "Casper",
-    "brand": "Casper",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "casper via m1": {
+        "deviceName": "Via M1",
+        "marketingName": "Via M1",
+        "manufacturer": "Casper",
+        "brand": "Casper",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

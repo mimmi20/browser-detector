@@ -1,77 +1,112 @@
 {
-  "general komu device": {
-    "deviceName": "general Komu Device",
-    "marketingName": "general Komu Device",
-    "manufacturer": "Komu",
-    "brand": "Komu",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general komu device": {
+        "deviceName": "general Komu Device",
+        "marketingName": "general Komu Device",
+        "manufacturer": "Komu",
+        "brand": "Komu",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "komu color": {
-    "deviceName": "Color",
-    "marketingName": "Color",
-    "manufacturer": "Komu",
-    "brand": "Komu",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "komu color": {
+        "deviceName": "Color",
+        "marketingName": "Color",
+        "manufacturer": "Komu",
+        "brand": "Komu",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "komu energy": {
-    "deviceName": "Energy",
-    "marketingName": "Energy",
-    "manufacturer": "Komu",
-    "brand": "Komu",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "komu energy": {
+        "deviceName": "Energy",
+        "marketingName": "Energy",
+        "manufacturer": "Komu",
+        "brand": "Komu",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "komu k5": {
-    "deviceName": "K5",
-    "marketingName": "K5",
-    "manufacturer": "Komu",
-    "brand": "Komu",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "komu k5": {
+        "deviceName": "K5",
+        "marketingName": "K5",
+        "manufacturer": "Komu",
+        "brand": "Komu",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "komu mini": {
-    "deviceName": "Mini",
-    "marketingName": "Mini",
-    "manufacturer": "Komu",
-    "brand": "Komu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "komu mini": {
+        "deviceName": "Mini",
+        "marketingName": "Mini",
+        "manufacturer": "Komu",
+        "brand": "Komu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "viewsonic vsd220": {
-    "deviceName": "VSD220",
-    "marketingName": "VSD220",
-    "manufacturer": "ViewSonic",
-    "brand": "ViewSonic",
-    "type": "desktop",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "android"
-  }
+    "viewsonic vsd220": {
+        "deviceName": "VSD220",
+        "marketingName": "VSD220",
+        "manufacturer": "ViewSonic",
+        "brand": "ViewSonic",
+        "type": "desktop",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": false,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

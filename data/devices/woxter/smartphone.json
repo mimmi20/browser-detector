@@ -1,17 +1,24 @@
 {
-  "woxter zielo d15": {
-    "deviceName": "Zielo D15",
-    "marketingName": "Zielo D15",
-    "manufacturer": "Woxter",
-    "brand": "Woxter",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "woxter zielo d15": {
+        "deviceName": "Zielo D15",
+        "marketingName": "Zielo D15",
+        "manufacturer": "Woxter",
+        "brand": "Woxter",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

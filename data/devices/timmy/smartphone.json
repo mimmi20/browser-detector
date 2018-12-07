@@ -1,32 +1,46 @@
 {
-  "general timmy device": {
-    "deviceName": "general Timmy Device",
-    "marketingName": "general Timmy Device",
-    "manufacturer": "Timmy",
-    "brand": "Timmy",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general timmy device": {
+        "deviceName": "general Timmy Device",
+        "marketingName": "general Timmy Device",
+        "manufacturer": "Timmy",
+        "brand": "Timmy",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "timmy m20": {
-    "deviceName": "M20",
-    "marketingName": "M20",
-    "manufacturer": "Timmy",
-    "brand": "Timmy",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "timmy m20": {
+        "deviceName": "M20",
+        "marketingName": "M20",
+        "manufacturer": "Timmy",
+        "brand": "Timmy",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general trekstor device": {
-    "deviceName": "general TrekStor Device",
-    "marketingName": "general TrekStor Device",
-    "manufacturer": "TrekStor",
-    "brand": "TrekStor",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general trekstor device": {
+        "deviceName": "general TrekStor Device",
+        "marketingName": "general TrekStor Device",
+        "manufacturer": "TrekStor",
+        "brand": "TrekStor",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "trekstor winphone 4.7 hd": {
-    "deviceName": "WinPhone 4.7 HD",
-    "marketingName": "WinPhone 4.7 HD",
-    "manufacturer": "TrekStor",
-    "brand": "TrekStor",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  }
+    "trekstor winphone 4.7 hd": {
+        "deviceName": "WinPhone 4.7 HD",
+        "marketingName": "WinPhone 4.7 HD",
+        "manufacturer": "TrekStor",
+        "brand": "TrekStor",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
+    }
 }

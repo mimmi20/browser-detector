@@ -1,32 +1,46 @@
 {
-  "general mway device": {
-    "deviceName": "general M-way Device",
-    "marketingName": "general M-way Device",
-    "manufacturer": "Mway",
-    "brand": "Mway",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general mway device": {
+        "deviceName": "general M-way Device",
+        "marketingName": "general M-way Device",
+        "manufacturer": "Mway",
+        "brand": "Mway",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "mway md948g": {
-    "deviceName": "MD-948G",
-    "marketingName": "MD-948G",
-    "manufacturer": "Mway",
-    "brand": "Mway",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "mway md948g": {
+        "deviceName": "MD-948G",
+        "marketingName": "MD-948G",
+        "manufacturer": "Mway",
+        "brand": "Mway",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

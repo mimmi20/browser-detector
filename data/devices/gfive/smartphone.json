@@ -1,32 +1,46 @@
 {
-  "general gfive device": {
-    "deviceName": "general GFive Device",
-    "marketingName": "general GFive Device",
-    "manufacturer": "Gfive",
-    "brand": "Gfive",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general gfive device": {
+        "deviceName": "general GFive Device",
+        "marketingName": "general GFive Device",
+        "manufacturer": "Gfive",
+        "brand": "Gfive",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "gfive president g10 fashion": {
-    "deviceName": "President G10 Fashion",
-    "marketingName": "President G10 Fashion",
-    "manufacturer": "Gfive",
-    "brand": "Gfive",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "gfive president g10 fashion": {
+        "deviceName": "President G10 Fashion",
+        "marketingName": "President G10 Fashion",
+        "manufacturer": "Gfive",
+        "brand": "Gfive",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

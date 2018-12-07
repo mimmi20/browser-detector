@@ -1,47 +1,68 @@
 {
-  "general ruggear device": {
-    "deviceName": "general RugGear Device",
-    "marketingName": "general RugGear Device",
-    "manufacturer": "RugGear",
-    "brand": "RugGear",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general ruggear device": {
+        "deviceName": "general RugGear Device",
+        "marketingName": "general RugGear Device",
+        "manufacturer": "RugGear",
+        "brand": "RugGear",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ruggear rg500": {
-    "deviceName": "RG500",
-    "marketingName": "RG500",
-    "manufacturer": "RugGear",
-    "brand": "RugGear",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "ruggear rg500": {
+        "deviceName": "RG500",
+        "marketingName": "RG500",
+        "manufacturer": "RugGear",
+        "brand": "RugGear",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ruggear rg700": {
-    "deviceName": "RG700",
-    "marketingName": "RG700",
-    "manufacturer": "RugGear",
-    "brand": "RugGear",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ruggear rg700": {
+        "deviceName": "RG700",
+        "marketingName": "RG700",
+        "manufacturer": "RugGear",
+        "brand": "RugGear",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

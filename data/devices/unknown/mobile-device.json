@@ -1,17 +1,24 @@
 {
-  "general mobile device": {
-    "deviceName": "general Mobile Device",
-    "marketingName": "general Mobile Device",
-    "manufacturer": "Unknown",
-    "brand": "Unknown",
-    "type": "mobile-device",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": null
-  }
+    "general mobile device": {
+        "deviceName": "general Mobile Device",
+        "marketingName": "general Mobile Device",
+        "manufacturer": "Unknown",
+        "brand": "Unknown",
+        "type": "mobile-device",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

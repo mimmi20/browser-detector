@@ -1,32 +1,46 @@
 {
-  "general ergo device": {
-    "deviceName": "general Ergo Device",
-    "marketingName": "general Ergo Device",
-    "manufacturer": "Ergo",
-    "brand": "Ergo",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general ergo device": {
+        "deviceName": "general Ergo Device",
+        "marketingName": "general Ergo Device",
+        "manufacturer": "Ergo",
+        "brand": "Ergo",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ergo tab crystal lite": {
-    "deviceName": "Tab Crystal Lite",
-    "marketingName": "Tab Crystal Lite",
-    "manufacturer": "Ergo",
-    "brand": "Ergo",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ergo tab crystal lite": {
+        "deviceName": "Tab Crystal Lite",
+        "marketingName": "Tab Crystal Lite",
+        "manufacturer": "Ergo",
+        "brand": "Ergo",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

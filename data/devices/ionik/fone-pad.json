@@ -1,17 +1,24 @@
 {
-  "ionik tu-1489a": {
-    "deviceName": "TU-1489A",
-    "marketingName": "TU-1489A",
-    "manufacturer": "Ionik",
-    "brand": "Ionik",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ionik tu-1489a": {
+        "deviceName": "TU-1489A",
+        "marketingName": "TU-1489A",
+        "manufacturer": "Ionik",
+        "brand": "Ionik",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

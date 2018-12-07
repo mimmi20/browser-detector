@@ -1,62 +1,90 @@
 {
-  "general intel device": {
-    "deviceName": "general Intel Device",
-    "marketingName": "general Intel Device",
-    "manufacturer": "Intel Corporation",
-    "brand": "Intel Corporation",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general intel device": {
+        "deviceName": "general Intel Device",
+        "marketingName": "general Intel Device",
+        "manufacturer": "Intel Corporation",
+        "brand": "Intel Corporation",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "intel tr10cd1": {
-    "deviceName": "TR10CD1",
-    "marketingName": "Grand Hill",
-    "manufacturer": "Intel Corporation",
-    "brand": "Intel Corporation",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "intel tr10cd1": {
+        "deviceName": "TR10CD1",
+        "marketingName": "Grand Hill",
+        "manufacturer": "Intel Corporation",
+        "brand": "Intel Corporation",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "intel tr10rs1": {
-    "deviceName": "TR10RS1",
-    "marketingName": "Flag Hill Value",
-    "manufacturer": "Intel Corporation",
-    "brand": "Intel Corporation",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "intel tr10rs1": {
+        "deviceName": "TR10RS1",
+        "marketingName": "Flag Hill Value",
+        "manufacturer": "Intel Corporation",
+        "brand": "Intel Corporation",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "intel w032i c3": {
-    "deviceName": "W032i C3",
-    "marketingName": "W032i C3",
-    "manufacturer": "Intel Corporation",
-    "brand": "Intel Corporation",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "intel w032i c3": {
+        "deviceName": "W032i C3",
+        "marketingName": "W032i C3",
+        "manufacturer": "Intel Corporation",
+        "brand": "Intel Corporation",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "allview ax4nano": {
-    "deviceName": "AX4 Nano",
-    "marketingName": "AX4 Nano",
-    "manufacturer": "Allview",
-    "brand": "Allview",
-    "type": "fone-pad",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "allview ax4nano": {
+        "deviceName": "AX4 Nano",
+        "marketingName": "AX4 Nano",
+        "manufacturer": "Allview",
+        "brand": "Allview",
+        "type": "fone-pad",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

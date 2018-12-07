@@ -1,257 +1,376 @@
 {
-  "general xolo device": {
-    "deviceName": "general XOLO Device",
-    "marketingName": "general XOLO Device",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general xolo device": {
+        "deviceName": "general XOLO Device",
+        "marketingName": "general XOLO Device",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo a1000s": {
-    "deviceName": "A1000s",
-    "marketingName": "A1000s",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "xolo a1000s": {
+        "deviceName": "A1000s",
+        "marketingName": "A1000s",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo era 2": {
-    "deviceName": "Era 2",
-    "marketingName": "Era 2",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "xolo era 2": {
+        "deviceName": "Era 2",
+        "marketingName": "Era 2",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo era 2x": {
-    "deviceName": "Era 2X",
-    "marketingName": "Era 2X",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "xolo era 2x": {
+        "deviceName": "Era 2X",
+        "marketingName": "Era 2X",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo omega 5.0": {
-    "deviceName": "Omega 5.0",
-    "marketingName": "Omega 5.0",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "xolo omega 5.0": {
+        "deviceName": "Omega 5.0",
+        "marketingName": "Omega 5.0",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo omega 5.5": {
-    "deviceName": "Omega 5.5",
-    "marketingName": "Omega 5.5",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "xolo omega 5.5": {
+        "deviceName": "Omega 5.5",
+        "marketingName": "Omega 5.5",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo one": {
-    "deviceName": "One",
-    "marketingName": "One",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "xolo one": {
+        "deviceName": "One",
+        "marketingName": "One",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo q1000 opus": {
-    "deviceName": "Q1000 Opus",
-    "marketingName": "Q1000 Opus",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "xolo q1000 opus": {
+        "deviceName": "Q1000 Opus",
+        "marketingName": "Q1000 Opus",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo q1000s plus": {
-    "deviceName": "Q1000s Plus",
-    "marketingName": "Q1000s Plus",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "xolo q1000s plus": {
+        "deviceName": "Q1000s Plus",
+        "marketingName": "Q1000s Plus",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo q1010i": {
-    "deviceName": "Q1010i",
-    "marketingName": "Q1010i",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "xolo q1010i": {
+        "deviceName": "Q1010i",
+        "marketingName": "Q1010i",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo q2000": {
-    "deviceName": "Q2000",
-    "marketingName": "Q2000",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "xolo q2000": {
+        "deviceName": "Q2000",
+        "marketingName": "Q2000",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo q600": {
-    "deviceName": "Q600",
-    "marketingName": "Q600",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "xolo q600": {
+        "deviceName": "Q600",
+        "marketingName": "Q600",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo q600s": {
-    "deviceName": "Q600s",
-    "marketingName": "Q600s",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "xolo q600s": {
+        "deviceName": "Q600s",
+        "marketingName": "Q600s",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo q700": {
-    "deviceName": "Q700",
-    "marketingName": "Q700",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "xolo q700": {
+        "deviceName": "Q700",
+        "marketingName": "Q700",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo q800": {
-    "deviceName": "Q800",
-    "marketingName": "Q800",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "xolo q800": {
+        "deviceName": "Q800",
+        "marketingName": "Q800",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "xolo win q1000": {
-    "deviceName": "Win Q1000",
-    "marketingName": "Win Q1000",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "xolo win q1000": {
+        "deviceName": "Win Q1000",
+        "marketingName": "Win Q1000",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
     },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  },
-  "xolo x1000": {
-    "deviceName": "X1000",
-    "marketingName": "X1000",
-    "manufacturer": "Xolo",
-    "brand": "Xolo",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "xolo x1000": {
+        "deviceName": "X1000",
+        "marketingName": "X1000",
+        "manufacturer": "Xolo",
+        "brand": "Xolo",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

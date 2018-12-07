@@ -1,32 +1,46 @@
 {
-  "general innohit device": {
-    "deviceName": "general Inno-Hit Device",
-    "marketingName": "general Inno-Hit Device",
-    "manufacturer": "Inno-Hit",
-    "brand": "Inno-Hit",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general innohit device": {
+        "deviceName": "general Inno-Hit Device",
+        "marketingName": "general Inno-Hit Device",
+        "manufacturer": "Inno-Hit",
+        "brand": "Inno-Hit",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "innohit ih-g101": {
-    "deviceName": "IH-G101",
-    "marketingName": "IH-G101",
-    "manufacturer": "Inno-Hit",
-    "brand": "Inno-Hit",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "innohit ih-g101": {
+        "deviceName": "IH-G101",
+        "marketingName": "IH-G101",
+        "manufacturer": "Inno-Hit",
+        "brand": "Inno-Hit",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

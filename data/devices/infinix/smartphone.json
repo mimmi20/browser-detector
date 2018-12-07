@@ -1,377 +1,552 @@
 {
-  "general infinix device": {
-    "deviceName": "general Infinix Device",
-    "marketingName": "general Infinix Device",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general infinix device": {
+        "deviceName": "general Infinix Device",
+        "marketingName": "general Infinix Device",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix buzz": {
-    "deviceName": "Buzz",
-    "marketingName": "Buzz",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "infinix buzz": {
+        "deviceName": "Buzz",
+        "marketingName": "Buzz",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 320,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix hot 4 lite": {
-    "deviceName": "Hot 4 Lite",
-    "marketingName": "Hot 4 Lite",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infinix hot 4 lite": {
+        "deviceName": "Hot 4 Lite",
+        "marketingName": "Hot 4 Lite",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix hot 4 pro": {
-    "deviceName": "Hot 4 Pro",
-    "marketingName": "Hot 4 Pro",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infinix hot 4 pro": {
+        "deviceName": "Hot 4 Pro",
+        "marketingName": "Hot 4 Pro",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x351": {
-    "deviceName": "X351",
-    "marketingName": "Surf Smart",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "infinix x351": {
+        "deviceName": "X351",
+        "marketingName": "Surf Smart",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x352": {
-    "deviceName": "X352",
-    "marketingName": "Surf Smart 2",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "infinix x352": {
+        "deviceName": "X352",
+        "marketingName": "Surf Smart 2",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x401": {
-    "deviceName": "X401",
-    "marketingName": "Race Lite",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "infinix x401": {
+        "deviceName": "X401",
+        "marketingName": "Race Lite",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x450": {
-    "deviceName": "X450",
-    "marketingName": "Race Bolt",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "infinix x450": {
+        "deviceName": "X450",
+        "marketingName": "Race Bolt",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x501": {
-    "deviceName": "X501",
-    "marketingName": "Race Jet",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "infinix x501": {
+        "deviceName": "X501",
+        "marketingName": "Race Jet",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x503": {
-    "deviceName": "X503",
-    "marketingName": "Surf Bravo",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "infinix x503": {
+        "deviceName": "X503",
+        "marketingName": "Surf Bravo",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x507": {
-    "deviceName": "X507",
-    "marketingName": "Hot",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "infinix x507": {
+        "deviceName": "X507",
+        "marketingName": "Hot",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x510": {
-    "deviceName": "X510",
-    "marketingName": "Hot 2",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infinix x510": {
+        "deviceName": "X510",
+        "marketingName": "Hot 2",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x530": {
-    "deviceName": "X530",
-    "marketingName": "Race Max Q",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "infinix x530": {
+        "deviceName": "X530",
+        "marketingName": "Race Max Q",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x551": {
-    "deviceName": "X551",
-    "marketingName": "Hot Note",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infinix x551": {
+        "deviceName": "X551",
+        "marketingName": "Hot Note",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x5515f": {
-    "deviceName": "X5515F",
-    "marketingName": "Smart 2",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "infinix x5515f": {
+        "deviceName": "X5515F",
+        "marketingName": "Smart 2",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x552": {
-    "deviceName": "X552",
-    "marketingName": "Zero 3",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "infinix x552": {
+        "deviceName": "X552",
+        "marketingName": "Zero 3",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x559c": {
-    "deviceName": "X559C",
-    "marketingName": "Hot 5 Lite Dual SIM",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "infinix x559c": {
+        "deviceName": "X559C",
+        "marketingName": "Hot 5 Lite Dual SIM",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x572": {
-    "deviceName": "X572",
-    "marketingName": "Note 4",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "infinix x572": {
+        "deviceName": "X572",
+        "marketingName": "Note 4",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x573": {
-    "deviceName": "X573",
-    "marketingName": "Hot S3",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "infinix x573": {
+        "deviceName": "X573",
+        "marketingName": "Hot S3",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x573b": {
-    "deviceName": "X573B",
-    "marketingName": "Hot S3",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "infinix x573b": {
+        "deviceName": "X573B",
+        "marketingName": "Hot S3",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x600": {
-    "deviceName": "X600",
-    "marketingName": "Note 2",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infinix x600": {
+        "deviceName": "X600",
+        "marketingName": "Note 2",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x600 lte": {
-    "deviceName": "X600",
-    "marketingName": "Note 2 LTE",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "infinix x600 lte": {
+        "deviceName": "X600",
+        "marketingName": "Note 2 LTE",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x606b": {
-    "deviceName": "X606B",
-    "marketingName": "Hot 6",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "infinix x606b": {
+        "deviceName": "X606B",
+        "marketingName": "Hot 6",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix x608": {
-    "deviceName": "X608",
-    "marketingName": "Hot 6 Pro Dual SIM",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "infinix x608": {
+        "deviceName": "X608",
+        "marketingName": "Hot 6 Pro Dual SIM",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "infinix zero 3": {
-    "deviceName": "Zero 3",
-    "marketingName": "Zero 3",
-    "manufacturer": "Infinix",
-    "brand": "Infinix",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "infinix zero 3": {
+        "deviceName": "Zero 3",
+        "marketingName": "Zero 3",
+        "manufacturer": "Infinix",
+        "brand": "Infinix",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

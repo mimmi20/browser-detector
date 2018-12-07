@@ -1,17 +1,24 @@
 {
-  "symphony l102": {
-    "deviceName": "L102",
-    "marketingName": "L102",
-    "manufacturer": "Symphony",
-    "brand": "Symphony",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "symphony l102": {
+        "deviceName": "L102",
+        "marketingName": "L102",
+        "manufacturer": "Symphony",
+        "brand": "Symphony",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

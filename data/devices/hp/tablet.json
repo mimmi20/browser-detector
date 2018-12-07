@@ -1,227 +1,332 @@
 {
-  "general hp device": {
-    "deviceName": "general HP Device",
-    "marketingName": "general HP Device",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general hp device": {
+        "deviceName": "general HP Device",
+        "marketingName": "general HP Device",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "hp 7": {
-    "deviceName": "7",
-    "marketingName": "7",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "hp 7": {
+        "deviceName": "7",
+        "marketingName": "7",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "hp 8": {
-    "deviceName": "8",
-    "marketingName": "8",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "hp 8": {
+        "deviceName": "8",
+        "marketingName": "8",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "hp compaq 7": {
-    "deviceName": "Compaq 7",
-    "marketingName": "Compaq 7",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "hp compaq 7": {
+        "deviceName": "Compaq 7",
+        "marketingName": "Compaq 7",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "hp compaq 8": {
-    "deviceName": "Compaq 8",
-    "marketingName": "Compaq 8",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "hp compaq 8": {
+        "deviceName": "Compaq 8",
+        "marketingName": "Compaq 8",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "hp slate 10": {
-    "deviceName": "Slate 10",
-    "marketingName": "Slate 10",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hp slate 10": {
+        "deviceName": "Slate 10",
+        "marketingName": "Slate 10",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hp slate 17": {
-    "deviceName": "Slate 17",
-    "marketingName": "Slate 17",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "type": null
+    "hp slate 17": {
+        "deviceName": "Slate 17",
+        "marketingName": "Slate 17",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hp slate 21": {
-    "deviceName": "Slate 21",
-    "marketingName": "Slate 21",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "type": null
+    "hp slate 21": {
+        "deviceName": "Slate 21",
+        "marketingName": "Slate 21",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hp slate 7": {
-    "deviceName": "Slate 7",
-    "marketingName": "Slate 7",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "hp slate 7": {
+        "deviceName": "Slate 7",
+        "marketingName": "Slate 7",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "hp slate 7 extreme": {
-    "deviceName": "Slate 7 Extreme",
-    "marketingName": "Slate 7 Extreme",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hp slate 7 extreme": {
+        "deviceName": "Slate 7 Extreme",
+        "marketingName": "Slate 7 Extreme",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "hp slate 7 hd": {
-    "deviceName": "Slate 7 HD",
-    "marketingName": "Slate 7 HD",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hp slate 7 hd": {
+        "deviceName": "Slate 7 HD",
+        "marketingName": "Slate 7 HD",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hp slate 7 plus": {
-    "deviceName": "Slate 7 Plus",
-    "marketingName": "Slate 7 Plus",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "hp slate 7 plus": {
+        "deviceName": "Slate 7 Plus",
+        "marketingName": "Slate 7 Plus",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hp slate 8 pro": {
-    "deviceName": "Slate 8 Pro",
-    "marketingName": "Slate 8 Pro",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1600,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "hp slate 8 pro": {
+        "deviceName": "Slate 8 Pro",
+        "marketingName": "Slate 8 Pro",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1600,
+            "height": 1200,
+            "touch": true,
+            "type": "UXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "hp slatebook 10 x2 pc": {
-    "deviceName": "SlateBook 10 x2 PC",
-    "marketingName": "SlateBook 10 x2 PC",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "hp slatebook 10 x2 pc": {
+        "deviceName": "SlateBook 10 x2 PC",
+        "marketingName": "SlateBook 10 x2 PC",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "hp touchpad": {
-    "deviceName": "Touchpad",
-    "marketingName": "Touchpad",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": null
-  }
+    "hp touchpad": {
+        "deviceName": "Touchpad",
+        "marketingName": "Touchpad",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

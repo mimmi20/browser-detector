@@ -1,32 +1,46 @@
 {
-  "general dtac device": {
-    "deviceName": "general DTAC Device",
-    "marketingName": "general DTAC Device",
-    "manufacturer": "DTAC",
-    "brand": "DTAC",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general dtac device": {
+        "deviceName": "general DTAC Device",
+        "marketingName": "general DTAC Device",
+        "manufacturer": "DTAC",
+        "brand": "DTAC",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "dtac phone s2": {
-    "deviceName": "Phone S2",
-    "marketingName": "Phone S2",
-    "manufacturer": "DTAC",
-    "brand": "DTAC",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "dtac phone s2": {
+        "deviceName": "Phone S2",
+        "marketingName": "Phone S2",
+        "manufacturer": "DTAC",
+        "brand": "DTAC",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,122 +1,178 @@
 {
-  "general general-mobile device": {
-    "deviceName": "general General Mobile Device",
-    "marketingName": "general General Mobile Device",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general general-mobile device": {
+        "deviceName": "general General Mobile Device",
+        "marketingName": "general General Mobile Device",
+        "manufacturer": "General Mobile",
+        "brand": "General Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "general-mobile 4g dual": {
-    "deviceName": "4G Dual",
-    "marketingName": "4G Dual",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "general-mobile 4g dual": {
+        "deviceName": "4G Dual",
+        "marketingName": "4G Dual",
+        "manufacturer": "General Mobile",
+        "brand": "General Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "general-mobile discovery": {
-    "deviceName": "Discovery",
-    "marketingName": "Discovery",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "general-mobile discovery": {
+        "deviceName": "Discovery",
+        "marketingName": "Discovery",
+        "manufacturer": "General Mobile",
+        "brand": "General Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "general-mobile discovery elite": {
-    "deviceName": "Discovery Elite",
-    "marketingName": "Discovery Elite",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "general-mobile discovery elite": {
+        "deviceName": "Discovery Elite",
+        "marketingName": "Discovery Elite",
+        "manufacturer": "General Mobile",
+        "brand": "General Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "general-mobile discovery ii": {
-    "deviceName": "Discovery II",
-    "marketingName": "Discovery II",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "general-mobile discovery ii": {
+        "deviceName": "Discovery II",
+        "marketingName": "Discovery II",
+        "manufacturer": "General Mobile",
+        "brand": "General Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "general-mobile gm 5 plus": {
-    "deviceName": "GM 5 Plus",
-    "marketingName": "GM 5 Plus",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "general-mobile gm 5 plus": {
+        "deviceName": "GM 5 Plus",
+        "marketingName": "GM 5 Plus",
+        "manufacturer": "General Mobile",
+        "brand": "General Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "general-mobile gm 5 plus d": {
-    "deviceName": "GM 5 Plus D",
-    "marketingName": "GM 5 Plus D",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "general-mobile gm 5 plus d": {
+        "deviceName": "GM 5 Plus D",
+        "marketingName": "GM 5 Plus D",
+        "manufacturer": "General Mobile",
+        "brand": "General Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "general-mobile gm 8": {
-    "deviceName": "GM 8",
-    "marketingName": "GM 8",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "general-mobile gm 8": {
+        "deviceName": "GM 8",
+        "marketingName": "GM 8",
+        "manufacturer": "General Mobile",
+        "brand": "General Mobile",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

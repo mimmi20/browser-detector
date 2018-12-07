@@ -1,32 +1,46 @@
 {
-  "hp 9000": {
-    "deviceName": "9000",
-    "marketingName": "9000",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "hp 9000": {
+        "deviceName": "9000",
+        "marketingName": "9000",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "hp pc": {
-    "deviceName": "PC",
-    "marketingName": "PC",
-    "manufacturer": "Hp",
-    "brand": "Hp",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": null
-  }
+    "hp pc": {
+        "deviceName": "PC",
+        "marketingName": "PC",
+        "manufacturer": "Hp",
+        "brand": "Hp",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
+    }
 }

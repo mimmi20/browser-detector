@@ -1,77 +1,112 @@
 {
-  "general siemens device": {
-    "deviceName": "general Siemens Device",
-    "marketingName": "general Siemens Device",
-    "manufacturer": "Siemens",
-    "brand": "Siemens",
-    "type": "feature-phone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general siemens device": {
+        "deviceName": "general Siemens Device",
+        "marketingName": "general Siemens Device",
+        "manufacturer": "Siemens",
+        "brand": "Siemens",
+        "type": "feature-phone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "benq-siemens cf61": {
-    "deviceName": "CF61",
-    "marketingName": "CF61",
-    "manufacturer": "BenQ-Siemens",
-    "brand": "BenQ-Siemens",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "type": null
+    "benq-siemens cf61": {
+        "deviceName": "CF61",
+        "marketingName": "CF61",
+        "manufacturer": "BenQ-Siemens",
+        "brand": "BenQ-Siemens",
+        "type": "feature-phone",
+        "display": {
+            "width": 128,
+            "height": 160,
+            "touch": false,
+            "type": "Custom 128x160",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "siemens s65": {
-    "deviceName": "S65",
-    "marketingName": "S65",
-    "manufacturer": "Siemens",
-    "brand": "Siemens",
-    "type": "feature-phone",
-    "display": {
-      "width": 132,
-      "height": 176,
-      "touch": false,
-      "type": null
+    "siemens s65": {
+        "deviceName": "S65",
+        "marketingName": "S65",
+        "manufacturer": "Siemens",
+        "brand": "Siemens",
+        "type": "feature-phone",
+        "display": {
+            "width": 132,
+            "height": 176,
+            "touch": false,
+            "type": "Custom 132x176",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "siemens sl45": {
-    "deviceName": "SL45",
-    "marketingName": "SL45",
-    "manufacturer": "Siemens",
-    "brand": "Siemens",
-    "type": "feature-phone",
-    "display": {
-      "width": 101,
-      "height": 80,
-      "touch": false,
-      "type": null
+    "siemens sl45": {
+        "deviceName": "SL45",
+        "marketingName": "SL45",
+        "manufacturer": "Siemens",
+        "brand": "Siemens",
+        "type": "feature-phone",
+        "display": {
+            "width": 101,
+            "height": 80,
+            "touch": false,
+            "type": "Custom 80x101",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "siemens sl45i": {
-    "deviceName": "SL45i",
-    "marketingName": "SL45i",
-    "manufacturer": "Siemens",
-    "brand": "Siemens",
-    "type": "feature-phone",
-    "display": {
-      "width": 101,
-      "height": 80,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "siemens sl45i": {
+        "deviceName": "SL45i",
+        "marketingName": "SL45i",
+        "manufacturer": "Siemens",
+        "brand": "Siemens",
+        "type": "feature-phone",
+        "display": {
+            "width": 101,
+            "height": 80,
+            "touch": false,
+            "type": "Custom 80x101",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

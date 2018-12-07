@@ -1,362 +1,530 @@
 {
-  "general karbonn device": {
-    "deviceName": "general Karbonn Device",
-    "marketingName": "general Karbonn Device",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general karbonn device": {
+        "deviceName": "general Karbonn Device",
+        "marketingName": "general Karbonn Device",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a1*": {
-    "deviceName": "A1*",
-    "marketingName": "A1*",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "karbonn a1*": {
+        "deviceName": "A1*",
+        "marketingName": "A1*",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a1+": {
-    "deviceName": "A1+",
-    "marketingName": "A1+",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "karbonn a1+": {
+        "deviceName": "A1+",
+        "marketingName": "A1+",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a10": {
-    "deviceName": "A10",
-    "marketingName": "A10",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "karbonn a10": {
+        "deviceName": "A10",
+        "marketingName": "A10",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a2": {
-    "deviceName": "A2",
-    "marketingName": "A2",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "karbonn a2": {
+        "deviceName": "A2",
+        "marketingName": "A2",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a2+": {
-    "deviceName": "A2+",
-    "marketingName": "A2+",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "karbonn a2+": {
+        "deviceName": "A2+",
+        "marketingName": "A2+",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a26": {
-    "deviceName": "A26",
-    "marketingName": "A26",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "karbonn a26": {
+        "deviceName": "A26",
+        "marketingName": "A26",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a27": {
-    "deviceName": "A27",
-    "marketingName": "A27",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "karbonn a27": {
+        "deviceName": "A27",
+        "marketingName": "A27",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a27+": {
-    "deviceName": "A27+",
-    "marketingName": "A27+",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "karbonn a27+": {
+        "deviceName": "A27+",
+        "marketingName": "A27+",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a35": {
-    "deviceName": "A35",
-    "marketingName": "A35",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "karbonn a35": {
+        "deviceName": "A35",
+        "marketingName": "A35",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a4": {
-    "deviceName": "A4",
-    "marketingName": "A4",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "karbonn a4": {
+        "deviceName": "A4",
+        "marketingName": "A4",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a50": {
-    "deviceName": "A50",
-    "marketingName": "A50",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "karbonn a50": {
+        "deviceName": "A50",
+        "marketingName": "A50",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a5i": {
-    "deviceName": "A5i",
-    "marketingName": "A5i",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "karbonn a5i": {
+        "deviceName": "A5i",
+        "marketingName": "A5i",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a6": {
-    "deviceName": "A6",
-    "marketingName": "A6",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "karbonn a6": {
+        "deviceName": "A6",
+        "marketingName": "A6",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn a91": {
-    "deviceName": "A91",
-    "marketingName": "A91",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "karbonn a91": {
+        "deviceName": "A91",
+        "marketingName": "A91",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn k9 smart grand": {
-    "deviceName": "K9 Smart Grand",
-    "marketingName": "K9 Smart Grand",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "karbonn k9 smart grand": {
+        "deviceName": "K9 Smart Grand",
+        "marketingName": "K9 Smart Grand",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn s2": {
-    "deviceName": "S2",
-    "marketingName": "S2 Titanium",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "karbonn s2": {
+        "deviceName": "S2",
+        "marketingName": "S2 Titanium",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn sparkle v": {
-    "deviceName": "Sparkle V",
-    "marketingName": "Sparkle V",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "karbonn sparkle v": {
+        "deviceName": "Sparkle V",
+        "marketingName": "Sparkle V",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn titanium machfive": {
-    "deviceName": "Titanium MachFive",
-    "marketingName": "Titanium MachFive",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "karbonn titanium machfive": {
+        "deviceName": "Titanium MachFive",
+        "marketingName": "Titanium MachFive",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn titanium octane": {
-    "deviceName": "Titanium Octane",
-    "marketingName": "Titanium Octane",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "karbonn titanium octane": {
+        "deviceName": "Titanium Octane",
+        "marketingName": "Titanium Octane",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn titanium s109": {
-    "deviceName": "Titanium S109",
-    "marketingName": "Titanium S109",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "karbonn titanium s109": {
+        "deviceName": "Titanium S109",
+        "marketingName": "Titanium S109",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn titanium s202": {
-    "deviceName": "S202",
-    "marketingName": "Titanium Dazzle 2",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "karbonn titanium s202": {
+        "deviceName": "S202",
+        "marketingName": "Titanium Dazzle 2",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn titanium s5 ultra": {
-    "deviceName": "Titanium S5 Ultra",
-    "marketingName": "Titanium S5 Ultra",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "karbonn titanium s5 ultra": {
+        "deviceName": "Titanium S5 Ultra",
+        "marketingName": "Titanium S5 Ultra",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "karbonn titanium wind w4": {
-    "deviceName": "Titanium Wind W4",
-    "marketingName": "Titanium Wind W4",
-    "manufacturer": "Karbonn",
-    "brand": "Karbonn",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  }
+    "karbonn titanium wind w4": {
+        "deviceName": "Titanium Wind W4",
+        "marketingName": "Titanium Wind W4",
+        "manufacturer": "Karbonn",
+        "brand": "Karbonn",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
+    }
 }

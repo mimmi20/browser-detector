@@ -1,392 +1,574 @@
 {
-  "general blu device": {
-    "deviceName": "general BLU Device",
-    "marketingName": "general BLU Device",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general blu device": {
+        "deviceName": "general BLU Device",
+        "marketingName": "general BLU Device",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "blu dash 3.5": {
-    "deviceName": "Dash 3.5",
-    "marketingName": "Dash 3.5",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "blu dash 3.5": {
+        "deviceName": "Dash 3.5",
+        "marketingName": "Dash 3.5",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu dash 4.0": {
-    "deviceName": "Dash 4.0",
-    "marketingName": "Dash 4.0",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "blu dash 4.0": {
+        "deviceName": "Dash 4.0",
+        "marketingName": "Dash 4.0",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu dash 4.5": {
-    "deviceName": "Dash 4.5",
-    "marketingName": "Dash 4.5",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "blu dash 4.5": {
+        "deviceName": "Dash 4.5",
+        "marketingName": "Dash 4.5",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu dash 5.0": {
-    "deviceName": "Dash 5.0",
-    "marketingName": "Dash 5.0",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "blu dash 5.0": {
+        "deviceName": "Dash 5.0",
+        "marketingName": "Dash 5.0",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu dash jr": {
-    "deviceName": "Dash JR",
-    "marketingName": "Dash JR",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "blu dash jr": {
+        "deviceName": "Dash JR",
+        "marketingName": "Dash JR",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu dash music 4.0": {
-    "deviceName": "Dash Music 4.0",
-    "marketingName": "Dash Music 4.0",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "blu dash music 4.0": {
+        "deviceName": "Dash Music 4.0",
+        "marketingName": "Dash Music 4.0",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu life one": {
-    "deviceName": "Life One",
-    "marketingName": "Life One",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "blu life one": {
+        "deviceName": "Life One",
+        "marketingName": "Life One",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu life view": {
-    "deviceName": "Life View",
-    "marketingName": "Life View",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "blu life view": {
+        "deviceName": "Life View",
+        "marketingName": "Life View",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu magic": {
-    "deviceName": "Magic",
-    "marketingName": "Magic",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "blu magic": {
+        "deviceName": "Magic",
+        "marketingName": "Magic",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu quattro 4.5": {
-    "deviceName": "Quattro 4.5",
-    "marketingName": "Quattro 4.5",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "blu quattro 4.5": {
+        "deviceName": "Quattro 4.5",
+        "marketingName": "Quattro 4.5",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio 5.0": {
-    "deviceName": "Studio 5.0",
-    "marketingName": "Studio 5.0",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "blu studio 5.0": {
+        "deviceName": "Studio 5.0",
+        "marketingName": "Studio 5.0",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio 5.0 ii": {
-    "deviceName": "Studio 5.0 II",
-    "marketingName": "Studio 5.0 II",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "blu studio 5.0 ii": {
+        "deviceName": "Studio 5.0 II",
+        "marketingName": "Studio 5.0 II",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio 5.0 s ii": {
-    "deviceName": "Studio 5.0 S II",
-    "marketingName": "Studio 5.0 S II",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "blu studio 5.0 s ii": {
+        "deviceName": "Studio 5.0 S II",
+        "marketingName": "Studio 5.0 S II",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio 5.3 ii": {
-    "deviceName": "Studio 5.3 II",
-    "marketingName": "Studio 5.3 II",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "blu studio 5.3 ii": {
+        "deviceName": "Studio 5.3 II",
+        "marketingName": "Studio 5.3 II",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio 5.5": {
-    "deviceName": "Studio 5.5",
-    "marketingName": "Studio 5.5",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "blu studio 5.5": {
+        "deviceName": "Studio 5.5",
+        "marketingName": "Studio 5.5",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio g": {
-    "deviceName": "Studio G",
-    "marketingName": "Studio G",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "blu studio g": {
+        "deviceName": "Studio G",
+        "marketingName": "Studio G",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio g hd": {
-    "deviceName": "Studio G HD",
-    "marketingName": "Studio G HD",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "blu studio g hd": {
+        "deviceName": "Studio G HD",
+        "marketingName": "Studio G HD",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio view xl": {
-    "deviceName": "Studio View XL",
-    "marketingName": "Studio View XL",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "type": null
+    "blu studio view xl": {
+        "deviceName": "Studio View XL",
+        "marketingName": "Studio View XL",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1440,
+            "touch": true,
+            "type": "Custom 720x1440",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu studio xl 2": {
-    "deviceName": "Studio XL 2",
-    "marketingName": "Studio XL 2",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "blu studio xl 2": {
+        "deviceName": "Studio XL 2",
+        "marketingName": "Studio XL 2",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu vivo 4.65": {
-    "deviceName": "Vivo 4.65",
-    "marketingName": "Vivo 4.65",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "blu vivo 4.65": {
+        "deviceName": "Vivo 4.65",
+        "marketingName": "Vivo 4.65",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu vivo iv": {
-    "deviceName": "Vivo IV",
-    "marketingName": "Vivo IV",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": null
+    "blu vivo iv": {
+        "deviceName": "Vivo IV",
+        "marketingName": "Vivo IV",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 1080,
+            "height": 1920,
+            "touch": true,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "blu win hd lte": {
-    "deviceName": "Win HD LTE",
-    "marketingName": "Win HD LTE",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "blu win hd lte": {
+        "deviceName": "Win HD LTE",
+        "marketingName": "Win HD LTE",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
     },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  },
-  "blu win hd w510u": {
-    "deviceName": "Win HD W510u",
-    "marketingName": "Win HD W510u",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "blu win hd w510u": {
+        "deviceName": "Win HD W510u",
+        "marketingName": "Win HD W510u",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
     },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  },
-  "blu win jr lte": {
-    "deviceName": "Win JR LTE",
-    "marketingName": "Win JR LTE",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "blu win jr lte": {
+        "deviceName": "Win JR LTE",
+        "marketingName": "Win JR LTE",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
     },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  },
-  "blu win jr w410a": {
-    "deviceName": "Win JR W410a",
-    "marketingName": "Win JR W410a",
-    "manufacturer": "Blu",
-    "brand": "Blu",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "windows phone"
-  }
+    "blu win jr w410a": {
+        "deviceName": "Win JR W410a",
+        "marketingName": "Win JR W410a",
+        "manufacturer": "Blu",
+        "brand": "Blu",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows phone"
+    }
 }

@@ -1,32 +1,46 @@
 {
-  "general yusu device": {
-    "deviceName": "general Yusu Device",
-    "marketingName": "general Yusu Device",
-    "manufacturer": "Yusu",
-    "brand": "Yusu",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general yusu device": {
+        "deviceName": "general Yusu Device",
+        "marketingName": "general Yusu Device",
+        "manufacturer": "Yusu",
+        "brand": "Yusu",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "yusu e1107": {
-    "deviceName": "E1107",
-    "marketingName": "E1107",
-    "manufacturer": "Yusu",
-    "brand": "Yusu",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "yusu e1107": {
+        "deviceName": "E1107",
+        "marketingName": "E1107",
+        "manufacturer": "Yusu",
+        "brand": "Yusu",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

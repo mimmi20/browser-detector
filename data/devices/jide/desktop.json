@@ -1,32 +1,46 @@
 {
-  "general jide device": {
-    "deviceName": "general Jide Device",
-    "marketingName": "general Jide Device",
-    "manufacturer": "Jide",
-    "brand": "Jide",
-    "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "type": null
+    "general jide device": {
+        "deviceName": "general Jide Device",
+        "marketingName": "general Jide Device",
+        "manufacturer": "Jide",
+        "brand": "Jide",
+        "type": "desktop",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": false,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "jide remix sk1w": {
-    "deviceName": "Remix SK1W",
-    "marketingName": "Remix SK1W",
-    "manufacturer": "Jide",
-    "brand": "Jide",
-    "type": "desktop",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "remixos"
-  }
+    "jide remix sk1w": {
+        "deviceName": "Remix SK1W",
+        "marketingName": "Remix SK1W",
+        "manufacturer": "Jide",
+        "brand": "Jide",
+        "type": "desktop",
+        "display": {
+            "width": 1920,
+            "height": 1080,
+            "touch": false,
+            "type": "FHD",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "remixos"
+    }
 }

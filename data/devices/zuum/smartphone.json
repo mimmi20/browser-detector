@@ -1,92 +1,134 @@
 {
-  "general zuum device": {
-    "deviceName": "general Zuum Device",
-    "marketingName": "general Zuum Device",
-    "manufacturer": "Zuum",
-    "brand": "Zuum",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general zuum device": {
+        "deviceName": "general Zuum Device",
+        "marketingName": "general Zuum Device",
+        "manufacturer": "Zuum",
+        "brand": "Zuum",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "zuum blaze": {
-    "deviceName": "Blaze",
-    "marketingName": "Blaze",
-    "manufacturer": "Zuum",
-    "brand": "Zuum",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "zuum blaze": {
+        "deviceName": "Blaze",
+        "marketingName": "Blaze",
+        "manufacturer": "Zuum",
+        "brand": "Zuum",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "zuum covet": {
-    "deviceName": "Covet",
-    "marketingName": "Covet",
-    "manufacturer": "Zuum",
-    "brand": "Zuum",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "zuum covet": {
+        "deviceName": "Covet",
+        "marketingName": "Covet",
+        "manufacturer": "Zuum",
+        "brand": "Zuum",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "zuum magno": {
-    "deviceName": "Magno",
-    "marketingName": "Magno",
-    "manufacturer": "Zuum",
-    "brand": "Zuum",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "zuum magno": {
+        "deviceName": "Magno",
+        "marketingName": "Magno",
+        "manufacturer": "Zuum",
+        "brand": "Zuum",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "zuum stedi": {
-    "deviceName": "Stedi",
-    "marketingName": "Stedi",
-    "manufacturer": "Zuum",
-    "brand": "Zuum",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "zuum stedi": {
+        "deviceName": "Stedi",
+        "marketingName": "Stedi",
+        "manufacturer": "Zuum",
+        "brand": "Zuum",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "zuum zen i": {
-    "deviceName": "Zen I",
-    "marketingName": "Zen I",
-    "manufacturer": "Zuum",
-    "brand": "Zuum",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "zuum zen i": {
+        "deviceName": "Zen I",
+        "marketingName": "Zen I",
+        "manufacturer": "Zuum",
+        "brand": "Zuum",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

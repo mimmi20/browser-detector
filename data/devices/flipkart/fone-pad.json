@@ -1,32 +1,46 @@
 {
-  "general flipkart device": {
-    "deviceName": "general Flipkart Device",
-    "marketingName": "general Flipkart Device",
-    "manufacturer": "Flipkart",
-    "brand": "Flipkart",
-    "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general flipkart device": {
+        "deviceName": "general Flipkart Device",
+        "marketingName": "general Flipkart Device",
+        "manufacturer": "Flipkart",
+        "brand": "Flipkart",
+        "type": "fone-pad",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "flipkart xt811": {
-    "deviceName": "XT811",
-    "marketingName": "Digiflip Pro XT811",
-    "manufacturer": "Flipkart",
-    "brand": "Flipkart",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "flipkart xt811": {
+        "deviceName": "XT811",
+        "marketingName": "Digiflip Pro XT811",
+        "manufacturer": "Flipkart",
+        "brand": "Flipkart",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

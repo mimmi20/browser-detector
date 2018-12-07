@@ -1,17 +1,24 @@
 {
-  "microsoft zune hd": {
-    "deviceName": "Zune HD",
-    "marketingName": "Zune HD",
-    "manufacturer": "Microsoft",
-    "brand": "Microsoft",
-    "type": "mobile-media-player",
-    "display": {
-      "width": 272,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "windows ce"
-  }
+    "microsoft zune hd": {
+        "deviceName": "Zune HD",
+        "marketingName": "Zune HD",
+        "manufacturer": "Microsoft",
+        "brand": "Microsoft",
+        "type": "mobile-media-player",
+        "display": {
+            "width": 272,
+            "height": 480,
+            "touch": true,
+            "type": "Custom 272x480",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "windows ce"
+    }
 }

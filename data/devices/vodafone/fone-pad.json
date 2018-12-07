@@ -1,62 +1,90 @@
 {
-  "vodafone vfd 1100": {
-    "deviceName": "VFD 1100",
-    "marketingName": "Tab Mini 7",
-    "manufacturer": "Vodafone",
-    "brand": "Vodafone",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "vodafone vfd 1100": {
+        "deviceName": "VFD 1100",
+        "marketingName": "Tab Mini 7",
+        "manufacturer": "Vodafone",
+        "brand": "Vodafone",
+        "type": "fone-pad",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vodafone vfd 1300": {
-    "deviceName": "VFD 1300",
-    "marketingName": "Smart Tab N8",
-    "manufacturer": "Vodafone",
-    "brand": "Vodafone",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "vodafone vfd 1300": {
+        "deviceName": "VFD 1300",
+        "marketingName": "Smart Tab N8",
+        "manufacturer": "Vodafone",
+        "brand": "Vodafone",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vodafone vfd 1400": {
-    "deviceName": "VFD 1400",
-    "marketingName": "Tab Prime 7",
-    "manufacturer": "Vodafone",
-    "brand": "Vodafone",
-    "type": "fone-pad",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "vodafone vfd 1400": {
+        "deviceName": "VFD 1400",
+        "marketingName": "Tab Prime 7",
+        "manufacturer": "Vodafone",
+        "brand": "Vodafone",
+        "type": "fone-pad",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "vodafone vodacom power tab 10": {
-    "deviceName": "Vodacom Power Tab 10",
-    "marketingName": "Vodacom Power Tab 10",
-    "manufacturer": "Vodafone",
-    "brand": "Vodafone",
-    "type": "fone-pad",
-    "display": {
-      "width": 1200,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "vodafone vodacom power tab 10": {
+        "deviceName": "Vodacom Power Tab 10",
+        "marketingName": "Vodacom Power Tab 10",
+        "manufacturer": "Vodafone",
+        "brand": "Vodafone",
+        "type": "fone-pad",
+        "display": {
+            "width": 1200,
+            "height": 800,
+            "touch": true,
+            "type": "Custom 800x1200",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

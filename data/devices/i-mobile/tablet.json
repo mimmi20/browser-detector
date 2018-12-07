@@ -1,17 +1,24 @@
 {
-  "i-mobile i-note wifi 9": {
-    "deviceName": "i-note WiFi 9",
-    "marketingName": "i-note WiFi 9",
-    "manufacturer": "Imobile",
-    "brand": "Imobile",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "i-mobile i-note wifi 9": {
+        "deviceName": "i-note WiFi 9",
+        "marketingName": "i-note WiFi 9",
+        "manufacturer": "Imobile",
+        "brand": "Imobile",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

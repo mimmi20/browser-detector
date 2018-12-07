@@ -1,32 +1,46 @@
 {
-  "general concorde device": {
-    "deviceName": "general ConCorde Device",
-    "marketingName": "general ConCorde Device",
-    "manufacturer": "ConCorde",
-    "brand": "ConCorde",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general concorde device": {
+        "deviceName": "general ConCorde Device",
+        "marketingName": "general ConCorde Device",
+        "manufacturer": "ConCorde",
+        "brand": "ConCorde",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "concorde smartphone 4300": {
-    "deviceName": "SmartPhone 4300",
-    "marketingName": "SmartPhone 4300",
-    "manufacturer": "ConCorde",
-    "brand": "ConCorde",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "concorde smartphone 4300": {
+        "deviceName": "SmartPhone 4300",
+        "marketingName": "SmartPhone 4300",
+        "manufacturer": "ConCorde",
+        "brand": "ConCorde",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

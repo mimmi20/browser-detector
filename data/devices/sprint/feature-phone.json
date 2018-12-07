@@ -1,47 +1,68 @@
 {
-  "general sprint device": {
-    "deviceName": "general Sprint Device",
-    "marketingName": "general Sprint Device",
-    "manufacturer": "Sprint",
-    "brand": "Sprint",
-    "type": "feature-phone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general sprint device": {
+        "deviceName": "general Sprint Device",
+        "marketingName": "general Sprint Device",
+        "manufacturer": "Sprint",
+        "brand": "Sprint",
+        "type": "feature-phone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": false,
-    "platform": "android"
-  },
-  "sprint 6700": {
-    "deviceName": "Apache",
-    "marketingName": "6700",
-    "manufacturer": "Htc",
-    "brand": "Sprint",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
+    "sprint 6700": {
+        "deviceName": "Apache",
+        "marketingName": "6700",
+        "manufacturer": "Htc",
+        "brand": "Sprint",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": false,
-    "platform": null
-  },
-  "sprint s2151": {
-    "deviceName": "S2151",
-    "marketingName": "Coast",
-    "manufacturer": "Kyocera",
-    "brand": "Sprint",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "brew"
-  }
+    "sprint s2151": {
+        "deviceName": "S2151",
+        "marketingName": "Coast",
+        "manufacturer": "Kyocera",
+        "brand": "Sprint",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": false,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "brew"
+    }
 }

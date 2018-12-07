@@ -1,32 +1,46 @@
 {
-  "general ipro device": {
-    "deviceName": "general IPRO Device",
-    "marketingName": "general IPRO Device",
-    "manufacturer": "IPRO",
-    "brand": "IPRO",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general ipro device": {
+        "deviceName": "general IPRO Device",
+        "marketingName": "general IPRO Device",
+        "manufacturer": "IPRO",
+        "brand": "IPRO",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ipro sense golly": {
-    "deviceName": "Sense Golly",
-    "marketingName": "Sense Golly",
-    "manufacturer": "IPRO",
-    "brand": "IPRO",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ipro sense golly": {
+        "deviceName": "Sense Golly",
+        "marketingName": "Sense Golly",
+        "manufacturer": "IPRO",
+        "brand": "IPRO",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

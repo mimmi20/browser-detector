@@ -1,32 +1,46 @@
 {
-  "general nvsbl device": {
-    "deviceName": "general NVSBL Device",
-    "marketingName": "general NVSBL Device",
-    "manufacturer": "Nvsbl",
-    "brand": "Nvsbl",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general nvsbl device": {
+        "deviceName": "general NVSBL Device",
+        "marketingName": "general NVSBL Device",
+        "manufacturer": "Nvsbl",
+        "brand": "Nvsbl",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "nvsbl p4d sirius": {
-    "deviceName": "P4D Sirius",
-    "marketingName": "P4D Sirius",
-    "manufacturer": "Nvsbl",
-    "brand": "Nvsbl",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "nvsbl p4d sirius": {
+        "deviceName": "P4D Sirius",
+        "marketingName": "P4D Sirius",
+        "manufacturer": "Nvsbl",
+        "brand": "Nvsbl",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 768,
+            "touch": true,
+            "type": "WXGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

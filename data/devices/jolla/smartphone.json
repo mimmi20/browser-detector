@@ -1,47 +1,68 @@
 {
-  "general jolla device": {
-    "deviceName": "general Jolla Device",
-    "marketingName": "general Jolla Device",
-    "manufacturer": "Jolla",
-    "brand": "Jolla",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general jolla device": {
+        "deviceName": "general Jolla Device",
+        "marketingName": "general Jolla Device",
+        "manufacturer": "Jolla",
+        "brand": "Jolla",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "jolla jolla c": {
-    "deviceName": "Jolla C",
-    "marketingName": "Jolla C",
-    "manufacturer": "Jolla",
-    "brand": "Jolla",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "jolla jolla c": {
+        "deviceName": "Jolla C",
+        "marketingName": "Jolla C",
+        "manufacturer": "Jolla",
+        "brand": "Jolla",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": null
     },
-    "dualOrientation": true,
-    "platform": null
-  },
-  "jolla sailfish": {
-    "deviceName": "Phone",
-    "marketingName": "Phone",
-    "manufacturer": "Jolla",
-    "brand": "Jolla",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "sailfishos"
-  }
+    "jolla sailfish": {
+        "deviceName": "Phone",
+        "marketingName": "Phone",
+        "manufacturer": "Jolla",
+        "brand": "Jolla",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "sailfishos"
+    }
 }

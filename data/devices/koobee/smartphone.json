@@ -1,62 +1,90 @@
 {
-  "general koobee device": {
-    "deviceName": "general Koobee Device",
-    "marketingName": "general Koobee Device",
-    "manufacturer": "Koobee",
-    "brand": "Koobee",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general koobee device": {
+        "deviceName": "general Koobee Device",
+        "marketingName": "general Koobee Device",
+        "manufacturer": "Koobee",
+        "brand": "Koobee",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "koobee m2": {
-    "deviceName": "M2",
-    "marketingName": "Muse M2",
-    "manufacturer": "Koobee",
-    "brand": "Koobee",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "koobee m2": {
+        "deviceName": "M2",
+        "marketingName": "Muse M2",
+        "manufacturer": "Koobee",
+        "brand": "Koobee",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "koobee m3": {
-    "deviceName": "M3",
-    "marketingName": "M3",
-    "manufacturer": "Koobee",
-    "brand": "Koobee",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "koobee m3": {
+        "deviceName": "M3",
+        "marketingName": "M3",
+        "manufacturer": "Koobee",
+        "brand": "Koobee",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "koobee t550": {
-    "deviceName": "T550",
-    "marketingName": "T550",
-    "manufacturer": "Koobee",
-    "brand": "Koobee",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "koobee t550": {
+        "deviceName": "T550",
+        "marketingName": "T550",
+        "manufacturer": "Koobee",
+        "brand": "Koobee",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,122 +1,178 @@
 {
-  "general jaytech device": {
-    "deviceName": "general JAY-tech Device",
-    "marketingName": "general JAY-tech Device",
-    "manufacturer": "Jaytech",
-    "brand": "Jaytech",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general jaytech device": {
+        "deviceName": "general JAY-tech Device",
+        "marketingName": "general JAY-tech Device",
+        "manufacturer": "Jaytech",
+        "brand": "Jaytech",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jaytech pa10.1m": {
-    "deviceName": "TPC-PA10.1M",
-    "marketingName": "TPC-PA10.1M",
-    "manufacturer": "Jaytech",
-    "brand": "Jaytech",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "jaytech pa10.1m": {
+        "deviceName": "TPC-PA10.1M",
+        "marketingName": "TPC-PA10.1M",
+        "manufacturer": "Jaytech",
+        "brand": "Jaytech",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jaytech tpc-101": {
-    "deviceName": "TPC-101",
-    "marketingName": "TPC-101",
-    "manufacturer": "Jaytech",
-    "brand": "Jaytech",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "jaytech tpc-101": {
+        "deviceName": "TPC-101",
+        "marketingName": "TPC-101",
+        "manufacturer": "Jaytech",
+        "brand": "Jaytech",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jaytech tpc-pa7807": {
-    "deviceName": "TPC-PA7807",
-    "marketingName": "TPC-PA7807",
-    "manufacturer": "Jaytech",
-    "brand": "Jaytech",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "jaytech tpc-pa7807": {
+        "deviceName": "TPC-PA7807",
+        "marketingName": "TPC-PA7807",
+        "manufacturer": "Jaytech",
+        "brand": "Jaytech",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jaytech tpc-pa9702": {
-    "deviceName": "TPC-PA9702",
-    "marketingName": "TPC-PA9702",
-    "manufacturer": "Jaytech",
-    "brand": "Jaytech",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
+    "jaytech tpc-pa9702": {
+        "deviceName": "TPC-PA9702",
+        "marketingName": "TPC-PA9702",
+        "manufacturer": "Jaytech",
+        "brand": "Jaytech",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jaytech tpc-x10f1": {
-    "deviceName": "TPC-X10F1",
-    "marketingName": "TPC-X10F1",
-    "manufacturer": "Jaytech",
-    "brand": "Jaytech",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "jaytech tpc-x10f1": {
+        "deviceName": "TPC-X10F1",
+        "marketingName": "TPC-X10F1",
+        "manufacturer": "Jaytech",
+        "brand": "Jaytech",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jaytech tpc-xe10d": {
-    "deviceName": "TPC-XE10D",
-    "marketingName": "TPC-XE10D",
-    "manufacturer": "Jaytech",
-    "brand": "Jaytech",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "jaytech tpc-xe10d": {
+        "deviceName": "TPC-XE10D",
+        "marketingName": "TPC-XE10D",
+        "manufacturer": "Jaytech",
+        "brand": "Jaytech",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "jaytech tpcy-txe10d": {
-    "deviceName": "TPCY-TXE10D",
-    "marketingName": "TPCY-TXE10D",
-    "manufacturer": "Jaytech",
-    "brand": "Jaytech",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "jaytech tpcy-txe10d": {
+        "deviceName": "TPCY-TXE10D",
+        "marketingName": "TPCY-TXE10D",
+        "manufacturer": "Jaytech",
+        "brand": "Jaytech",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

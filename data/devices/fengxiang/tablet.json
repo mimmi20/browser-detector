@@ -1,17 +1,24 @@
 {
-  "fengxiang vkb004l": {
-    "deviceName": "vKB004L",
-    "marketingName": "vKB004L",
-    "manufacturer": "Fengxiang",
-    "brand": "Fengxiang",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "fengxiang vkb004l": {
+        "deviceName": "vKB004L",
+        "marketingName": "vKB004L",
+        "manufacturer": "Fengxiang",
+        "brand": "Fengxiang",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

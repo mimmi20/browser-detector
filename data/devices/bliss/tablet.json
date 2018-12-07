@@ -1,32 +1,46 @@
 {
-  "general bliss device": {
-    "deviceName": "general Bliss Device",
-    "marketingName": "general Bliss Device",
-    "manufacturer": "Bliss",
-    "brand": "Bliss",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general bliss device": {
+        "deviceName": "general Bliss Device",
+        "marketingName": "general Bliss Device",
+        "manufacturer": "Bliss",
+        "brand": "Bliss",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "bliss pad b9712kb": {
-    "deviceName": "Pad B9712KB",
-    "marketingName": "Pad B9712KB",
-    "manufacturer": "Bliss",
-    "brand": "Bliss",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "bliss pad b9712kb": {
+        "deviceName": "Pad B9712KB",
+        "marketingName": "Pad B9712KB",
+        "manufacturer": "Bliss",
+        "brand": "Bliss",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

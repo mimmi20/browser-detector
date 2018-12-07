@@ -1,47 +1,68 @@
 {
-  "general gigaset device": {
-    "deviceName": "general Gigaset Device",
-    "marketingName": "general Gigaset Device",
-    "manufacturer": "Gigaset",
-    "brand": "Gigaset",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general gigaset device": {
+        "deviceName": "general Gigaset Device",
+        "marketingName": "general Gigaset Device",
+        "manufacturer": "Gigaset",
+        "brand": "Gigaset",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "gigaset qv1030": {
-    "deviceName": "QV1030",
-    "marketingName": "QV1030",
-    "manufacturer": "Gigaset",
-    "brand": "Gigaset",
-    "type": "tablet",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "type": null
+    "gigaset qv1030": {
+        "deviceName": "QV1030",
+        "marketingName": "QV1030",
+        "manufacturer": "Gigaset",
+        "brand": "Gigaset",
+        "type": "tablet",
+        "display": {
+            "width": 2560,
+            "height": 1600,
+            "touch": true,
+            "type": "WQXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "gigaset qv830": {
-    "deviceName": "QV830",
-    "marketingName": "QV830",
-    "manufacturer": "Gigaset",
-    "brand": "Gigaset",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "gigaset qv830": {
+        "deviceName": "QV830",
+        "marketingName": "QV830",
+        "manufacturer": "Gigaset",
+        "brand": "Gigaset",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

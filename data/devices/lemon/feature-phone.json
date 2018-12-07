@@ -1,32 +1,46 @@
 {
-  "general lemon device": {
-    "deviceName": "general Lemon Device",
-    "marketingName": "general Lemon Device",
-    "manufacturer": "Lemon",
-    "brand": "Lemon",
-    "type": "feature-phone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general lemon device": {
+        "deviceName": "general Lemon Device",
+        "marketingName": "general Lemon Device",
+        "manufacturer": "Lemon",
+        "brand": "Lemon",
+        "type": "feature-phone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
     },
-    "dualOrientation": false,
-    "platform": "java"
-  },
-  "lemon b556": {
-    "deviceName": "B556",
-    "marketingName": "B556",
-    "manufacturer": "Lemon",
-    "brand": "Lemon",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": false,
-    "platform": "java"
-  }
+    "lemon b556": {
+        "deviceName": "B556",
+        "marketingName": "B556",
+        "manufacturer": "Lemon",
+        "brand": "Lemon",
+        "type": "feature-phone",
+        "display": {
+            "width": 240,
+            "height": 320,
+            "touch": true,
+            "type": "QVGA",
+            "size": null
+        },
+        "dualOrientation": false,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "java"
+    }
 }

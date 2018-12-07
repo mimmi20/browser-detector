@@ -1,32 +1,46 @@
 {
-  "general ais device": {
-    "deviceName": "general AIS Device",
-    "marketingName": "general AIS Device",
-    "manufacturer": "Ais",
-    "brand": "Ais",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general ais device": {
+        "deviceName": "general AIS Device",
+        "marketingName": "general AIS Device",
+        "manufacturer": "Ais",
+        "brand": "Ais",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "ais iris708": {
-    "deviceName": "Iris 708",
-    "marketingName": "LAVA PRO 4.5",
-    "manufacturer": "Ais",
-    "brand": "Ais",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "ais iris708": {
+        "deviceName": "Iris 708",
+        "marketingName": "LAVA PRO 4.5",
+        "manufacturer": "Ais",
+        "brand": "Ais",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

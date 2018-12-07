@@ -1,122 +1,178 @@
 {
-  "general boway device": {
-    "deviceName": "general Boway Device",
-    "marketingName": "general Boway Device",
-    "manufacturer": "Boway",
-    "brand": "Boway",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general boway device": {
+        "deviceName": "general Boway Device",
+        "marketingName": "general Boway Device",
+        "manufacturer": "Boway",
+        "brand": "Boway",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "boway i5": {
-    "deviceName": "I5",
-    "marketingName": "I5",
-    "manufacturer": "Boway",
-    "brand": "Boway",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "boway i5": {
+        "deviceName": "I5",
+        "marketingName": "I5",
+        "manufacturer": "Boway",
+        "brand": "Boway",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "boway i6": {
-    "deviceName": "I6",
-    "marketingName": "I6",
-    "manufacturer": "Boway",
-    "brand": "Boway",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "boway i6": {
+        "deviceName": "I6",
+        "marketingName": "I6",
+        "manufacturer": "Boway",
+        "brand": "Boway",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 800,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "boway i7": {
-    "deviceName": "I7",
-    "marketingName": "I7",
-    "manufacturer": "Boway",
-    "brand": "Boway",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
+    "boway i7": {
+        "deviceName": "I7",
+        "marketingName": "I7",
+        "manufacturer": "Boway",
+        "brand": "Boway",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "boway u3": {
-    "deviceName": "U3",
-    "marketingName": "U3",
-    "manufacturer": "Boway",
-    "brand": "Boway",
-    "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "type": null
+    "boway u3": {
+        "deviceName": "U3",
+        "marketingName": "U3",
+        "manufacturer": "Boway",
+        "brand": "Boway",
+        "type": "smartphone",
+        "display": {
+            "width": 320,
+            "height": 480,
+            "touch": true,
+            "type": "HVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "boway u7": {
-    "deviceName": "U7",
-    "marketingName": "U7",
-    "manufacturer": "Boway",
-    "brand": "Boway",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": null
+    "boway u7": {
+        "deviceName": "U7",
+        "marketingName": "U7",
+        "manufacturer": "Boway",
+        "brand": "Boway",
+        "type": "smartphone",
+        "display": {
+            "width": 480,
+            "height": 854,
+            "touch": true,
+            "type": "FWVGA (variant 1)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "boway v100": {
-    "deviceName": "V100",
-    "marketingName": "V100",
-    "manufacturer": "Boway",
-    "brand": "Boway",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "boway v100": {
+        "deviceName": "V100",
+        "marketingName": "V100",
+        "manufacturer": "Boway",
+        "brand": "Boway",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "boway v95pro": {
-    "deviceName": "V95 Pro",
-    "marketingName": "V95 Pro",
-    "manufacturer": "Boway",
-    "brand": "Boway",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "boway v95pro": {
+        "deviceName": "V95 Pro",
+        "marketingName": "V95 Pro",
+        "manufacturer": "Boway",
+        "brand": "Boway",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

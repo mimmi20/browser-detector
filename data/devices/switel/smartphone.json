@@ -1,47 +1,68 @@
 {
-  "general switel device": {
-    "deviceName": "general Switel Device",
-    "marketingName": "general Switel Device",
-    "manufacturer": "Switel",
-    "brand": "Switel",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general switel device": {
+        "deviceName": "general Switel Device",
+        "marketingName": "general Switel Device",
+        "manufacturer": "Switel",
+        "brand": "Switel",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "switel esmart m3": {
-    "deviceName": "eSmart M3",
-    "marketingName": "eSmart M3",
-    "manufacturer": "Switel",
-    "brand": "Switel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
+    "switel esmart m3": {
+        "deviceName": "eSmart M3",
+        "marketingName": "eSmart M3",
+        "manufacturer": "Switel",
+        "brand": "Switel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "switel s5003d": {
-    "deviceName": "S5003D",
-    "marketingName": "Champ",
-    "manufacturer": "Switel",
-    "brand": "Switel",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "switel s5003d": {
+        "deviceName": "S5003D",
+        "marketingName": "Champ",
+        "manufacturer": "Switel",
+        "brand": "Switel",
+        "type": "smartphone",
+        "display": {
+            "width": 720,
+            "height": 1280,
+            "touch": true,
+            "type": "HD/WXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

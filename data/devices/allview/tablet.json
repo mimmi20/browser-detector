@@ -1,17 +1,24 @@
 {
-  "allview 2 speed quad": {
-    "deviceName": "2 Speed Quad",
-    "marketingName": "2 Speed Quad",
-    "manufacturer": "Allview",
-    "brand": "Allview",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "allview 2 speed quad": {
+        "deviceName": "2 Speed Quad",
+        "marketingName": "2 Speed Quad",
+        "manufacturer": "Allview",
+        "brand": "Allview",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 768,
+            "touch": true,
+            "type": "XGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

@@ -1,17 +1,24 @@
 {
-  "cherry-mobile fusion bolt": {
-    "deviceName": "Fusion Bolt",
-    "marketingName": "Fusion Bolt",
-    "manufacturer": "Cherry Mobile",
-    "brand": "Cherry Mobile",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "cherry-mobile fusion bolt": {
+        "deviceName": "Fusion Bolt",
+        "marketingName": "Fusion Bolt",
+        "manufacturer": "Cherry Mobile",
+        "brand": "Cherry Mobile",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

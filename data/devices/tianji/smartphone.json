@@ -1,32 +1,46 @@
 {
-  "general tianji device": {
-    "deviceName": "general Tianji Device",
-    "marketingName": "general Tianji Device",
-    "manufacturer": "Tianji",
-    "brand": "Tianji",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general tianji device": {
+        "deviceName": "general Tianji Device",
+        "marketingName": "general Tianji Device",
+        "manufacturer": "Tianji",
+        "brand": "Tianji",
+        "type": "smartphone",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "tianji q880": {
-    "deviceName": "Q880",
-    "marketingName": "Q880",
-    "manufacturer": "Tianji",
-    "brand": "Tianji",
-    "type": "smartphone",
-    "display": {
-      "width": 540,
-      "height": 960,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "tianji q880": {
+        "deviceName": "Q880",
+        "marketingName": "Q880",
+        "manufacturer": "Tianji",
+        "brand": "Tianji",
+        "type": "smartphone",
+        "display": {
+            "width": 540,
+            "height": 960,
+            "touch": true,
+            "type": "qHD",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

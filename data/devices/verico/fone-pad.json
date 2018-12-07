@@ -1,17 +1,24 @@
 {
-  "verico uqm11a": {
-    "deviceName": "KM-UQM11A",
-    "marketingName": "Uni Pad 10.1",
-    "manufacturer": "Verico",
-    "brand": "Verico",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "verico uqm11a": {
+        "deviceName": "KM-UQM11A",
+        "marketingName": "Uni Pad 10.1",
+        "manufacturer": "Verico",
+        "brand": "Verico",
+        "type": "fone-pad",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }

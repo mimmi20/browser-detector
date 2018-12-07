@@ -1,332 +1,486 @@
 {
-  "general amazon device": {
-    "deviceName": "general Amazon Device",
-    "marketingName": "general Amazon Device",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": null
+    "general amazon device": {
+        "deviceName": "general Amazon Device",
+        "marketingName": "general Amazon Device",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": null,
+            "height": null,
+            "touch": true,
+            "type": "unknown",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon d01400": {
-    "deviceName": "D01400",
-    "marketingName": "Kindle Fire",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "amazon d01400": {
+        "deviceName": "D01400",
+        "marketingName": "Kindle Fire",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon jem": {
-    "deviceName": "Jem",
-    "marketingName": "Kindle Fire HD 7",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon jem": {
+        "deviceName": "Jem",
+        "marketingName": "Kindle Fire HD 7",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfapwi": {
-    "deviceName": "KFAPWI",
-    "marketingName": "Kindle Fire HDX 8.9 (3rd Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "type": null
+    "amazon kfapwi": {
+        "deviceName": "KFAPWI",
+        "marketingName": "Kindle Fire HDX 8.9 (3rd Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 2560,
+            "height": 1600,
+            "touch": true,
+            "type": "WQXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfarwi": {
-    "deviceName": "KFARWI",
-    "marketingName": "Fire HD 6 (4th Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon kfarwi": {
+        "deviceName": "KFARWI",
+        "marketingName": "Fire HD 6 (4th Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfaswi": {
-    "deviceName": "KFASWI",
-    "marketingName": "Fire HD 7 (4th Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon kfaswi": {
+        "deviceName": "KFASWI",
+        "marketingName": "Fire HD 7 (4th Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfauwi": {
-    "deviceName": "KFAUWI",
-    "marketingName": "Fire (2017)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "amazon kfauwi": {
+        "deviceName": "KFAUWI",
+        "marketingName": "Fire (2017)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfdowi": {
-    "deviceName": "KFDOWI",
-    "marketingName": "Fire HD 8 (2017)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon kfdowi": {
+        "deviceName": "KFDOWI",
+        "marketingName": "Fire HD 8 (2017)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kffowi": {
-    "deviceName": "KFFOWI",
-    "marketingName": "Fire (5th Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "amazon kffowi": {
+        "deviceName": "KFFOWI",
+        "marketingName": "Fire (5th Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfgiwi": {
-    "deviceName": "KFGIWI",
-    "marketingName": "Fire HD 8 (2016)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon kfgiwi": {
+        "deviceName": "KFGIWI",
+        "marketingName": "Fire HD 8 (2016)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfjwi": {
-    "deviceName": "KFJWI",
-    "marketingName": "Kindle Fire HD 8.9 (2nd Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "amazon kfjwi": {
+        "deviceName": "KFJWI",
+        "marketingName": "Kindle Fire HD 8.9 (2nd Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfmewi": {
-    "deviceName": "KFMEWI",
-    "marketingName": "Fire HD 8 (5th Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon kfmewi": {
+        "deviceName": "KFMEWI",
+        "marketingName": "Fire HD 8 (5th Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfot": {
-    "deviceName": "KFOT",
-    "marketingName": "Kindle Fire (2nd Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "amazon kfot": {
+        "deviceName": "KFOT",
+        "marketingName": "Kindle Fire (2nd Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfsawi": {
-    "deviceName": "KFSAWI",
-    "marketingName": "Fire HDX 8.9 (4th Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "type": null
+    "amazon kfsawi": {
+        "deviceName": "KFSAWI",
+        "marketingName": "Fire HDX 8.9 (4th Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 2560,
+            "height": 1600,
+            "touch": true,
+            "type": "WQXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfsowi": {
-    "deviceName": "KFSOWI",
-    "marketingName": "Kindle Fire HD 7 (3rd Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon kfsowi": {
+        "deviceName": "KFSOWI",
+        "marketingName": "Kindle Fire HD 7 (3rd Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfsuwi": {
-    "deviceName": "KFSUWI",
-    "marketingName": "Fire HD 10 (2017)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "amazon kfsuwi": {
+        "deviceName": "KFSUWI",
+        "marketingName": "Fire HD 10 (2017)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kftbwi": {
-    "deviceName": "KFTBWI",
-    "marketingName": "Fire HD 10 (5th Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon kftbwi": {
+        "deviceName": "KFTBWI",
+        "marketingName": "Fire HD 10 (5th Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kfthwi": {
-    "deviceName": "KFTHWI",
-    "marketingName": "Kindle Fire HDX 7 (3rd Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": null
+    "amazon kfthwi": {
+        "deviceName": "KFTHWI",
+        "marketingName": "Kindle Fire HDX 7 (3rd Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1920,
+            "height": 1200,
+            "touch": true,
+            "type": "WUXGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kftt": {
-    "deviceName": "KFTT",
-    "marketingName": "Kindle Fire HD 7 (2nd Gen)",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": null
+    "amazon kftt": {
+        "deviceName": "KFTT",
+        "marketingName": "Kindle Fire HD 7 (2nd Gen)",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1280,
+            "height": 800,
+            "touch": true,
+            "type": "WXGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kindle": {
-    "deviceName": "Kindle",
-    "marketingName": "Kindle",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "amazon kindle": {
+        "deviceName": "Kindle",
+        "marketingName": "Kindle",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 600,
+            "touch": true,
+            "type": "SVGA",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon kindle fire 2": {
-    "deviceName": "Kindle Fire 2",
-    "marketingName": "Kindle Fire 2",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": null
+    "amazon kindle fire 2": {
+        "deviceName": "Kindle Fire 2",
+        "marketingName": "Kindle Fire 2",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 1024,
+            "height": 600,
+            "touch": true,
+            "type": "WSVGA (variant 2)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
     },
-    "dualOrientation": true,
-    "platform": "android"
-  },
-  "amazon tate": {
-    "deviceName": "Tate",
-    "marketingName": "Tate",
-    "manufacturer": "Amazon",
-    "brand": "Amazon",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": null
-    },
-    "dualOrientation": true,
-    "platform": "android"
-  }
+    "amazon tate": {
+        "deviceName": "Tate",
+        "marketingName": "Tate",
+        "manufacturer": "Amazon",
+        "brand": "Amazon",
+        "type": "tablet",
+        "display": {
+            "width": 800,
+            "height": 480,
+            "touch": true,
+            "type": "WVGA (variant 3)",
+            "size": null
+        },
+        "dualOrientation": true,
+        "simCount": null,
+        "market": {
+            "regions": [],
+            "countries": [],
+            "vendors": []
+        },
+        "platform": "android"
+    }
 }
