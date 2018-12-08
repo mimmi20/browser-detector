@@ -11,12 +11,23 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
+use BrowserDetector\Factory\Device\DarwinFactory;
+use BrowserDetector\Factory\Device\DesktopFactory;
+use BrowserDetector\Factory\Device\MobileFactory;
+use BrowserDetector\Factory\Device\TvFactory;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
+use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Loader\NotFoundException;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
+use UaDeviceType\TypeLoader;
+use UaDeviceType\Unknown;
+use UaResult\Device\Device;
+use UaResult\Device\DeviceInterface;
+use UaResult\Device\Display;
 
 /**
  * Device detection class
@@ -24,22 +35,22 @@ use Stringy\Stringy;
 class DeviceFactory implements DeviceFactoryInterface
 {
     /**
-     * @var Device\DarwinFactory
+     * @var \BrowserDetector\Factory\Device\DarwinFactory
      */
     private $darwinFactory;
 
     /**
-     * @var Device\MobileFactory
+     * @var \BrowserDetector\Factory\Device\MobileFactory
      */
     private $mobileFactory;
 
     /**
-     * @var Device\TvFactory
+     * @var \BrowserDetector\Factory\Device\TvFactory
      */
     private $tvFactory;
 
     /**
-     * @var Device\DesktopFactory
+     * @var \BrowserDetector\Factory\Device\DesktopFactory
      */
     private $desktopFactory;
 
@@ -49,15 +60,22 @@ class DeviceFactory implements DeviceFactoryInterface
     private $loaderFactory;
 
     /**
+     * @var LoggerInterface
+     */
+    private $logger;
+
+    /**
      * @param \Psr\Log\LoggerInterface $logger
      */
     public function __construct(LoggerInterface $logger)
     {
-        $this->darwinFactory  = new Device\DarwinFactory($logger);
-        $this->mobileFactory  = new Device\MobileFactory($logger);
-        $this->tvFactory      = new Device\TvFactory($logger);
-        $this->desktopFactory = new Device\DesktopFactory($logger);
+        $this->darwinFactory  = new DarwinFactory($logger);
+        $this->mobileFactory  = new MobileFactory($logger);
+        $this->tvFactory      = new TvFactory($logger);
+        $this->desktopFactory = new DesktopFactory($logger);
         $this->loaderFactory  = new DeviceLoaderFactory($logger);
+
+        $this->logger = $logger;
     }
 
     /**
@@ -143,5 +161,56 @@ class DeviceFactory implements DeviceFactoryInterface
         $loader        = $loaderFactory('unknown', 'unknown');
 
         return $loader($useragent);
+    }
+
+    /**
+     * @param array                    $data
+     *
+     * @return \UaResult\Device\DeviceInterface
+     */
+    public function fromArray(array $data): DeviceInterface
+    {
+        $deviceName       = array_key_exists('deviceName', $data) ? (string) $data['deviceName'] : null;
+        $marketingName    = array_key_exists('marketingName', $data) ? (string) $data['marketingName'] : null;
+        $dualOrientation  = array_key_exists('dualOrientation', $data) ? (bool) $data['dualOrientation'] : false;
+        $simCount         = array_key_exists('simCount', $data) ? (int) $data['simCount'] : 0;
+
+        $type = new Unknown();
+        if (array_key_exists('type', $data)) {
+            try {
+                $type = (new TypeLoader())->load((string) $data['type']);
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+            }
+        }
+
+        $manufacturer = CompanyLoader::getInstance()->load('Unknown');
+        if (array_key_exists('manufacturer', $data)) {
+            try {
+                $manufacturer = CompanyLoader::getInstance()->load((string) $data['manufacturer']);
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+            }
+        }
+
+        $brand = CompanyLoader::getInstance()->load('Unknown');
+        if (array_key_exists('brand', $data)) {
+            try {
+                $brand = CompanyLoader::getInstance()->load((string) $data['brand']);
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+            }
+        }
+
+        $display = new Display(null, null, null, new \UaDisplaySize\Unknown(), null);
+        if (array_key_exists('display', $data)) {
+            try {
+                $display = (new DisplayFactory())->fromArray($this->logger, (array) $data['display']);
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+            }
+        }
+
+        return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display, $dualOrientation, $simCount);
     }
 }

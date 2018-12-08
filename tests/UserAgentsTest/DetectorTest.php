@@ -17,6 +17,7 @@ use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
+use BrowserDetector\Factory\ResultFactory;
 use BrowserDetector\Loader\CompanyLoader;
 use ExceptionalJSON\DecodeErrorException;
 use ExceptionalJSON\EncodeErrorException;
@@ -30,7 +31,6 @@ use UaResult\Device\DeviceInterface;
 use UaResult\Engine\EngineInterface;
 use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
-use UaResult\Result\ResultFactory;
 use UaResult\Result\ResultInterface;
 
 class DetectorTest extends TestCase
@@ -205,7 +205,7 @@ class DetectorTest extends TestCase
             }
 
             foreach ($tests as $i => $test) {
-                $expectedResult = (new ResultFactory(CompanyLoader::getInstance()))->fromArray($logger, $test);
+                $expectedResult = (new ResultFactory())->fromArray($logger, $test);
                 $index          = sprintf('file:%s test:%d', $file->getRelativePathname(), $i);
 
                 $data[$index] = [

@@ -15,6 +15,7 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
@@ -76,7 +77,7 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue(false));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
@@ -272,16 +273,18 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($browserData));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
+
+        $company = $this->createMock(Company::class);
 
         $companyLoader
             ->expects(self::once())
             ->method('load')
             ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -384,16 +387,18 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($browserData));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
+
+        $company = $this->createMock(Company::class);
 
         $companyLoader
             ->expects(self::once())
             ->method('load')
             ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -502,16 +507,18 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($browserData));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
+
+        $company = $this->createMock(Company::class);
 
         $companyLoader
             ->expects(self::once())
             ->method('load')
             ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -617,16 +624,18 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($browserData));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
+
+        $company = $this->createMock(Company::class);
 
         $companyLoader
             ->expects(self::once())
             ->method('load')
             ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -644,11 +653,13 @@ class BrowserLoaderTest extends TestCase
             ->setMethods(['load', 'init'])
             ->getMock();
 
+        $engine = $this->createMock(Engine::class);
+
         $engineLoader
             ->expects(self::once())
             ->method('load')
             ->with('unknown', 'test/1.0')
-            ->willReturn(new Engine());
+            ->willReturn($engine);
 
         $engineLoader
             ->expects(self::once())

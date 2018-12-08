@@ -11,11 +11,13 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Factory\DisplayFactory;
 use BrowserDetector\Loader\Helper\Data;
 use Psr\Log\LoggerInterface;
 use UaDeviceType\TypeLoader;
+use UaDisplaySize\Unknown;
 use UaResult\Device\Device;
-use UaResult\Device\DisplayFactory;
+use UaResult\Device\Display;
 
 class DeviceLoader implements SpecificLoaderInterface
 {
@@ -97,10 +99,10 @@ class DeviceLoader implements SpecificLoaderInterface
             }
         }
 
-        $display = null;
-
         if (null !== $deviceData->display) {
             $display = (new DisplayFactory())->fromArray($this->logger, (array) $deviceData->display);
+        } else {
+            $display = new Display(null, null, null, new Unknown(), null);
         }
 
         $device = new Device(
@@ -110,7 +112,9 @@ class DeviceLoader implements SpecificLoaderInterface
             $this->companyLoader->load($deviceData->brand),
             $this->typeLoader->load($deviceData->type),
             $display,
-            $deviceData->dualOrientation
+            $deviceData->dualOrientation,
+            $deviceData->simCount,
+            $deviceData->market
         );
 
         return [$device, $platform];
