@@ -69,6 +69,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->createMock(Device::class);
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -77,7 +80,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device(), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -87,7 +90,10 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -97,7 +103,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -176,6 +182,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->createMock(Device::class);
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -184,7 +193,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device(), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -194,7 +203,10 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -204,7 +216,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -287,6 +299,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->createMock(Device::class);
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -295,7 +310,7 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device(), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -305,7 +320,10 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -315,7 +333,7 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -407,6 +425,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->createMock(Device::class);
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -415,7 +436,7 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device(), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -425,7 +446,10 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -435,7 +459,7 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -514,6 +538,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->createMock(Device::class);
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -522,7 +549,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device(), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -532,7 +559,10 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -542,7 +572,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -621,6 +651,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->createMock(Device::class);
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -629,7 +662,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device(), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -639,7 +672,10 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -649,7 +685,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -728,6 +764,12 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -736,7 +778,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device('testDevice'), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -746,7 +788,10 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -756,7 +801,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -849,6 +894,11 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::throwException(new NotFoundException('test')));
 
+        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os->expects(self::once())
+            ->method('getName')
+            ->willReturn('test-os');
+
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -857,7 +907,10 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os('test-os')));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -867,7 +920,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -971,6 +1024,9 @@ class DetectorTest extends TestCase
             ->with('testagent')
             ->will(self::throwException(new NotFoundException('test')));
 
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->createMock(Engine::class);
+
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -979,7 +1035,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), new Engine()]));
+            ->will(self::returnValue([$browser, $engine]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -1063,6 +1119,12 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -1071,7 +1133,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device('testDevice'), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -1081,7 +1143,13 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
+        $engine = $this->getMockBuilder(Engine::class)->getMock();
+        $engine->expects(self::once())
+            ->method('getName')
+            ->willReturn('test-engine');
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -1091,7 +1159,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), null]));
+            ->will(self::returnValue([$browser, null]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -1101,7 +1169,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Engine('test-engine')));
+            ->will(self::returnValue($engine));
         $engineFactory
             ->expects(self::never())
             ->method('load');
@@ -1177,6 +1245,12 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+        $os = $this->createMock(Os::class);
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -1185,7 +1259,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device('testDevice'), new Os()]));
+            ->will(self::returnValue([$device, $os]));
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -1195,7 +1269,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -1205,7 +1281,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), null]));
+            ->will(self::returnValue([$browser, null]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -1291,6 +1367,16 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+
+        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os->expects(self::once())
+            ->method('getName')
+            ->willReturn('iOS');
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -1299,7 +1385,9 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device('testDevice'), new Os('iOS')]));
+            ->will(self::returnValue([$device, $os]));
+
+        $os = $this->createMock(Os::class);
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -1309,7 +1397,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -1319,7 +1409,12 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), null]));
+            ->will(self::returnValue([$browser, null]));
+
+        $engine = $this->getMockBuilder(Engine::class)->getMock();
+        $engine->expects(self::once())
+            ->method('getName')
+            ->willReturn('test-engine');
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -1329,12 +1424,17 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Engine('test-engine')));
+            ->will(self::returnValue($engine));
+
+        $engine2 = $this->getMockBuilder(Engine::class)->getMock();
+        $engine2->expects(self::once())
+            ->method('getName')
+            ->willReturn('webkit-test');
         $engineFactory
             ->expects(self::once())
             ->method('load')
             ->with('webkit', 'testagent')
-            ->will(self::returnValue(new Engine('webkit-test')));
+            ->will(self::returnValue($engine2));
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()
@@ -1408,6 +1508,15 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os->expects(self::once())
+            ->method('getName')
+            ->willReturn('iOS');
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -1416,7 +1525,9 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device('testDevice'), new Os('iOS')]));
+            ->will(self::returnValue([$device, $os]));
+
+        $os = $this->createMock(Os::class);
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -1426,7 +1537,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -1436,7 +1549,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), null]));
+            ->will(self::returnValue([$browser, null]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -1444,9 +1557,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineFactory
             ->expects(self::never())
-            ->method('__invoke')
-            ->with('testagent')
-            ->will(self::returnValue(new Engine('test-engine')));
+            ->method('__invoke');
         $engineFactory
             ->expects(self::once())
             ->method('load')
@@ -1525,6 +1636,15 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os->expects(self::once())
+            ->method('getName')
+            ->willReturn('iOS');
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -1533,7 +1653,9 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device('testDevice'), new Os('iOS')]));
+            ->will(self::returnValue([$device, $os]));
+
+        $os = $this->createMock(Os::class);
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -1543,7 +1665,9 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(Browser::class);
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -1553,7 +1677,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Browser(), null]));
+            ->will(self::returnValue([$browser, null]));
 
         $engineFactory = $this->getMockBuilder(EngineFactory::class)
             ->disableOriginalConstructor()
@@ -1561,9 +1685,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineFactory
             ->expects(self::never())
-            ->method('__invoke')
-            ->with('testagent')
-            ->will(self::returnValue(new Engine('test-engine')));
+            ->method('__invoke');
         $engineFactory
             ->expects(self::once())
             ->method('load')
@@ -1642,6 +1764,15 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os->expects(self::once())
+            ->method('getName')
+            ->willReturn('iOS');
+
         $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke'])
@@ -1650,7 +1781,9 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue([new Device('testDevice'), new Os('iOS')]));
+            ->will(self::returnValue([$device, $os]));
+
+        $os = $this->createMock(Os::class);
 
         $platformFactory = $this->getMockBuilder(PlatformFactory::class)
             ->disableOriginalConstructor()
@@ -1660,7 +1793,7 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
-            ->will(self::returnValue(new Os()));
+            ->will(self::returnValue($os));
 
         $browserFactory = $this->getMockBuilder(BrowserFactory::class)
             ->disableOriginalConstructor()
@@ -1678,14 +1811,18 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineFactory
             ->expects(self::never())
-            ->method('__invoke')
-            ->with('testagent')
-            ->will(self::returnValue(new Engine('test-engine')));
+            ->method('__invoke');
+
+        $engine2 = $this->getMockBuilder(Engine::class)->getMock();
+        $engine2->expects(self::once())
+            ->method('getName')
+            ->willReturn('webkit-test');
+
         $engineFactory
             ->expects(self::once())
             ->method('load')
             ->with('webkit', 'testagent')
-            ->will(self::returnValue(new Engine('webkit-test')));
+            ->will(self::returnValue($engine2));
 
         $cache = $this->getMockBuilder(Cache::class)
             ->disableOriginalConstructor()

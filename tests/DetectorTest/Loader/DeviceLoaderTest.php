@@ -15,6 +15,7 @@ use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
@@ -76,16 +77,14 @@ class DeviceLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::throwException(new InvalidArgumentException('fail')));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
 
         $companyLoader
             ->expects(self::never())
-            ->method('load')
-            ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->method('load');
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -174,16 +173,14 @@ class DeviceLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue(null));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
 
         $companyLoader
             ->expects(self::never())
-            ->method('load')
-            ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->method('load');
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -289,16 +286,18 @@ class DeviceLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($deviceData));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
+
+        $company = $this->createMock(Company::class);
 
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
             ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -410,16 +409,18 @@ class DeviceLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($deviceData));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
+
+        $company = $this->createMock(Company::class);
 
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
             ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -535,16 +536,18 @@ class DeviceLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($deviceData));
 
-        $companyLoader = $this->getMockBuilder(CompanyLoader::class)
+        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['load'])
             ->getMock();
+
+        $company = $this->createMock(Company::class);
 
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
             ->with('Unknown')
-            ->willReturn(new Company('Unknown'));
+            ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoader::class)
             ->disableOriginalConstructor()
@@ -562,11 +565,13 @@ class DeviceLoaderTest extends TestCase
             ->setMethods(['load', 'init'])
             ->getMock();
 
+        $os = $this->createMock(Os::class);
+
         $platformLoader
             ->expects(self::once())
             ->method('load')
             ->with('unknown', 'test/1.0')
-            ->willReturn(new Os());
+            ->willReturn($os);
 
         $platformLoader
             ->expects(self::once())

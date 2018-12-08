@@ -114,7 +114,7 @@ class BrowserLoader implements SpecificLoaderInterface
             }
         }
 
-        $browser = new Browser($browserData->name, $manufacturer, $version, $type, $bits);
+        $browser = new Browser($browserData->name, $manufacturer, $version, $type, $bits, $browserData->modus);
 
         return [$browser, $engine];
     }
