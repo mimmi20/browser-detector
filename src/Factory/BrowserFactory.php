@@ -21,57 +21,8 @@ use UaBrowserType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Browser\BrowserInterface;
 
-class BrowserFactory implements BrowserFactoryInterface
+final class BrowserFactory
 {
-    private $factories = [
-        '/edge/i' => 'edge',
-        '/chrome|crmo|chr0me/i' => 'blink',
-        '/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i' => 'webkit',
-        '/iOS/' => 'webkit',
-        '/presto|opera/i' => 'presto',
-        '/trident|msie|like gecko/i' => 'trident',
-        '/gecko|firefox|minefield|shiretoko|bonecho|namoroka/i' => 'gecko',
-    ];
-
-    /**
-     * @var \BrowserDetector\Loader\BrowserLoaderFactory
-     */
-    private $loaderFactory;
-
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     */
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->loaderFactory = new BrowserLoaderFactory($logger);
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param string $useragent
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return array
-     */
-    public function __invoke(string $useragent): array
-    {
-        $loaderFactory = $this->loaderFactory;
-
-        foreach ($this->factories as $rule => $mode) {
-            if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory($mode);
-
-                return $loader($useragent);
-            }
-        }
-
-        $loader = $loaderFactory('genericbrowser');
-
-        return $loader($useragent);
-    }
-
     /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data

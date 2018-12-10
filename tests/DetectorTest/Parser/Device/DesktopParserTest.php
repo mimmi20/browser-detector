@@ -9,18 +9,18 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetectorTest\Factory\Device;
+namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Factory\Device\MobileFactory;
+use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
-class MobileFactoryTest extends TestCase
+class DesktopParserTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\MobileFactory
+     * @var \BrowserDetector\Parser\Device\DesktopParser
      */
     private $object;
 
@@ -32,37 +32,7 @@ class MobileFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        $this->object = new MobileFactory($logger);
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testInvokeFail(): void
-    {
-        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactory::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-        $mockLoaderFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with('samsung', 'mobile')
-            ->willThrowException(new \Exception('error'));
-
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
-
-        $object = $this->object;
-
-        $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage('An error occured while matching rule "/samsung[is \-;\/](?!galaxy nexus)|galaxy(?! nexus)|(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)-|g710[68]|n8000d|n[579]1[01]0|f031|n900\+|sc[lt]2[0-9]|isw11sc|s7562|sghi[0-9]{3}|i8910|i545|i(7110|9100|9300)|blaze|s8500/i"');
-
-        $object('Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3');
+        $this->object = new DesktopParser($logger);
     }
 
     /**
@@ -96,7 +66,7 @@ class MobileFactoryTest extends TestCase
         $mockLoaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($expectedCompany, 'mobile')
+            ->with($expectedCompany, 'desktop')
             ->willReturn($mockLoader);
 
         $property = new \ReflectionProperty($this->object, 'loaderFactory');
@@ -115,13 +85,13 @@ class MobileFactoryTest extends TestCase
     {
         return [
             [
-                'Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3',
-                'samsung',
+                'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/7.8 (3.8.2.0-0rpi18rpi1) Epiphany/3.8.2',
+                'raspberry pi foundation',
                 [],
             ],
             [
-                'Mozilla/5.0 (Linux; U; Android 2.2.2; ru; GT-A7100 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.8.0.435 U3/0.8.0 Mobile Safari/533.1',
-                'htm',
+                'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MASP)',
+                'sony',
                 [],
             ],
             [

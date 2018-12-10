@@ -13,7 +13,7 @@ namespace BrowserDetector\Cache;
 
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 
-class Cache implements CacheInterface
+final class Cache implements CacheInterface
 {
     /**
      * @var \Psr\SimpleCache\CacheInterface

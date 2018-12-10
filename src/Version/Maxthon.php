@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-class Maxthon implements VersionCacheFactoryInterface
+final class Maxthon implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

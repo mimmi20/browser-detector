@@ -60,7 +60,7 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataI::class)
             ->disableOriginalConstructor()
             ->setMethods(['hasItem', 'getItem'])
             ->getMock();
@@ -79,7 +79,7 @@ class BrowserLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $companyLoader
@@ -275,7 +275,7 @@ class BrowserLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -389,7 +389,7 @@ class BrowserLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+           // ->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -509,7 +509,7 @@ class BrowserLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -626,7 +626,7 @@ class BrowserLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);

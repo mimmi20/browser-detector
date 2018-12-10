@@ -1,4 +1,12 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
@@ -6,7 +14,7 @@ namespace BrowserDetector\Factory;
 use Psr\Log\LoggerInterface;
 use UaResult\Result\Result;
 
-class ResultFactory
+final class ResultFactory
 {
     /**
      * @param \Psr\Log\LoggerInterface $logger
@@ -28,17 +36,17 @@ class ResultFactory
 
         $browser = null;
         if (array_key_exists('browser', $data)) {
-            $browser = (new BrowserFactory($logger))->fromArray($logger, (array)$data['browser']);
+            $browser = (new BrowserFactory($logger))->fromArray($logger, (array) $data['browser']);
         }
 
         $os = null;
         if (array_key_exists('os', $data)) {
-            $os = (new PlatformFactory($logger))->fromArray($logger, (array)$data['os']);
+            $os = (new PlatformFactory())->fromArray($logger, (array) $data['os']);
         }
 
         $engine = null;
         if (array_key_exists('engine', $data)) {
-            $engine = (new EngineFactory($logger))->fromArray($logger, (array)$data['engine']);
+            $engine = (new EngineFactory())->fromArray($logger, (array) $data['engine']);
         }
 
         return new Result($headers, $device, $os, $browser, $engine);

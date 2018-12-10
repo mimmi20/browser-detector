@@ -9,20 +9,18 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory;
+namespace BrowserDetector\Parser;
 
-use Stringy\Stringy;
-
-/**
- * interface for all factories
- */
-interface FactoryInterface
+interface DeviceParserInterface
 {
     /**
-     * @param string           $useragent
-     * @param \Stringy\Stringy $s
+     * Gets the information about the browser by User Agent
      *
-     * @return mixed
+     * @param string $useragent
+     *
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return array
      */
-    public function detect(string $useragent, Stringy $s);
+    public function __invoke(string $useragent): array;
 }

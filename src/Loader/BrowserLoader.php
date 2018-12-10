@@ -19,7 +19,7 @@ use Psr\Log\LoggerInterface;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\Browser;
 
-class BrowserLoader implements SpecificLoaderInterface
+final class BrowserLoader implements SpecificLoaderInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -96,7 +96,7 @@ class BrowserLoader implements SpecificLoaderInterface
         } elseif ('VersionFactory' === $browserVersionClass) {
             $version = (new VersionFactory())->detectVersion($useragent, $browserData->version->search);
         } else {
-            /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
+            /* @var \BrowserDetector\Version\VersionDetectorInterface $versionClass */
             $versionClass = new $browserVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }

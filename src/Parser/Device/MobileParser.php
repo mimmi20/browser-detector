@@ -9,13 +9,13 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory\Device;
+namespace BrowserDetector\Parser\Device;
 
-use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Parser\DeviceParserInterface;
 use Psr\Log\LoggerInterface;
 
-class MobileFactory implements DeviceFactoryInterface
+final class MobileParser implements DeviceParserInterface
 {
     private $factories = [
         '/startrail|starxtrem|starshine|staraddict|starnaute|startext|startab/i' => 'sfr', // also includes the 'Tunisie Telecom' and the 'Altice' branded devices

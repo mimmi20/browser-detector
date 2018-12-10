@@ -12,14 +12,14 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\Cache;
-use BrowserDetector\Factory\BrowserFactory;
-use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Factory\PlatformFactory;
+use BrowserDetector\Parser\BrowserParser;
+use BrowserDetector\Parser\DeviceParser;
+use BrowserDetector\Parser\EngineParser;
+use BrowserDetector\Parser\PlatformParser;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 
-class DetectorFactory
+final class DetectorFactory
 {
     /**
      * @var \BrowserDetector\Cache\CacheInterface
@@ -49,12 +49,12 @@ class DetectorFactory
         static $detector = null;
 
         if (null === $detector) {
-            $deviceFactory   = new DeviceFactory($this->logger);
-            $platformFactory = new PlatformFactory($this->logger);
-            $browserFactory  = new BrowserFactory($this->logger);
-            $engineFactory   = new EngineFactory($this->logger);
+            $deviceParser   = new DeviceParser($this->logger);
+            $platformParser = new PlatformParser($this->logger);
+            $browserParser  = new BrowserParser($this->logger);
+            $engineParser   = new EngineParser($this->logger);
 
-            $detector = new Detector($this->logger, $this->cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+            $detector = new Detector($this->logger, $this->cache, $deviceParser, $platformParser, $browserParser, $engineParser);
         }
 
         return $detector;

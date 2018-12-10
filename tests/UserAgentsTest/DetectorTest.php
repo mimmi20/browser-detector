@@ -18,7 +18,6 @@ use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Factory\ResultFactory;
-use BrowserDetector\Loader\CompanyLoader;
 use ExceptionalJSON\DecodeErrorException;
 use ExceptionalJSON\EncodeErrorException;
 use JsonClass\Json;

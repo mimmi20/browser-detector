@@ -19,7 +19,7 @@ use UaDisplaySize\Unknown;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
 
-class DeviceLoader implements SpecificLoaderInterface
+final class DeviceLoader implements SpecificLoaderInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface

@@ -13,10 +13,7 @@ namespace BrowserDetector\Bits;
 
 use Stringy\Stringy;
 
-/**
- * Class to detect the Bit count for an Browser
- */
-class Browser
+final class Browser implements BitsInterface
 {
     /**
      * @var string the user agent to handle

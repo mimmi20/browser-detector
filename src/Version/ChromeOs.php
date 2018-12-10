@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-class ChromeOs implements VersionCacheFactoryInterface
+final class ChromeOs implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

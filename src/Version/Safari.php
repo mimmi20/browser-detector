@@ -13,7 +13,7 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Helper\Safari as SafariHelper;
 
-class Safari implements VersionCacheFactoryInterface
+final class Safari implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

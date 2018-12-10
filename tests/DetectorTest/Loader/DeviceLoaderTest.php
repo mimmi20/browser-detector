@@ -79,7 +79,7 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $companyLoader
@@ -175,7 +175,7 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $companyLoader
@@ -288,7 +288,7 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -411,7 +411,7 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -538,7 +538,7 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);

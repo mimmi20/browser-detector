@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-class Raspbian implements VersionCacheFactoryInterface
+final class Raspbian implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

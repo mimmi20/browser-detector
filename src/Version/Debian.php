@@ -13,7 +13,7 @@ namespace BrowserDetector\Version;
 
 use Stringy\Stringy;
 
-class Debian implements VersionCacheFactoryInterface
+final class Debian implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

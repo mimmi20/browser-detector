@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-class Trident implements VersionCacheFactoryInterface
+final class Trident implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

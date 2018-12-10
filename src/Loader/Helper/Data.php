@@ -16,7 +16,7 @@ use ExceptionalJSON\DecodeErrorException;
 use JsonClass\Json;
 use Symfony\Component\Finder\Finder;
 
-class Data implements CacheInterface
+final class Data implements CacheInterface
 {
     /**
      * @var \Symfony\Component\Finder\Finder

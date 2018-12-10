@@ -23,7 +23,7 @@ use Psr\Log\NullLogger;
 use UaResult\Company\Company;
 use UaResult\Os\OsInterface;
 
-class PlatformLoaderTest extends TestCase
+final class PlatformLoaderTest extends TestCase
 {
     /**
      * @return void
@@ -75,7 +75,7 @@ class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $companyLoader
@@ -147,7 +147,7 @@ class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $companyLoader
@@ -226,7 +226,7 @@ class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -308,7 +308,7 @@ class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -390,7 +390,7 @@ class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -474,7 +474,7 @@ class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);

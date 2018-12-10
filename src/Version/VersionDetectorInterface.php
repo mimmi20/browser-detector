@@ -9,18 +9,16 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory;
+namespace BrowserDetector\Version;
 
-interface DeviceFactoryInterface
+interface VersionDetectorInterface
 {
     /**
-     * Gets the information about the browser by User Agent
+     * detects the bit count by this browser from the given user agent
      *
      * @param string $useragent
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return array
+     * @return \BrowserDetector\Version\VersionInterface
      */
-    public function __invoke(string $useragent): array;
+    public function detectVersion(string $useragent): VersionInterface;
 }

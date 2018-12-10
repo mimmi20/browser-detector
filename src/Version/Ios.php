@@ -13,7 +13,7 @@ namespace BrowserDetector\Version;
 
 use peterkahl\iOSbuild\iOSbuild;
 
-class Ios implements VersionCacheFactoryInterface
+final class Ios implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

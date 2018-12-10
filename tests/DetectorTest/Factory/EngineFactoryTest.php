@@ -31,122 +31,14 @@ class EngineFactoryTest extends TestCase
      */
     protected function setUp(): void
     {
-        /** @var NullLogger $logger */
-        $logger = $this->createMock(NullLogger::class);
-
-        $this->object = new EngineFactory($logger);
+        $this->object = new EngineFactory();
     }
 
     /**
-     * @dataProvider providerInvoke
-     *
-     * @param string          $useragent
-     * @param EngineInterface $expectedResult
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \ReflectionException
-     *
      * @return void
      */
-    public function testInvoke(string $useragent, EngineInterface $expectedResult): void
+    public function testToArray(): void
     {
-        $mockLoader = $this->getMockBuilder(GenericLoader::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-        $mockLoader
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $mockLoaderFactory = $this->getMockBuilder(EngineLoaderFactory::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-        $mockLoaderFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->willReturn($mockLoader);
-
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
-
-        $object = $this->object;
-
-        self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerInvoke(): array
-    {
-        $engine = $this->createMock(Engine::class);
-
-        return [
-            [
-                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
-                $engine,
-            ],
-        ];
-    }
-
-    /**
-     * @dataProvider providerLoad
-     *
-     * @param string          $useragent
-     * @param EngineInterface $expectedResult
-     * @param string          $key
-     *
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testLoad(string $useragent, string $key, EngineInterface $expectedResult): void
-    {
-        $mockLoader = $this->getMockBuilder(GenericLoader::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['load'])
-            ->getMock();
-        $mockLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with($key, $useragent)
-            ->willReturn($expectedResult);
-
-        $mockLoaderFactory = $this->getMockBuilder(EngineLoaderFactory::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
-            ->getMock();
-        $mockLoaderFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->willReturn($mockLoader);
-
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
-
-        $object = $this->object;
-
-        self::assertSame($expectedResult, $object->load($key, $useragent));
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerLoad(): array
-    {
-        $engine = $this->createMock(Engine::class);
-
-        return [
-            [
-                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
-                'trident',
-                $engine,
-            ],
-        ];
+        self::markTestIncomplete();
     }
 }

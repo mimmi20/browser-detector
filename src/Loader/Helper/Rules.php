@@ -15,7 +15,7 @@ use ExceptionalJSON\DecodeErrorException;
 use JsonClass\Json;
 use Symfony\Component\Finder\SplFileInfo;
 
-class Rules
+final class Rules
 {
     /**
      * @var \Symfony\Component\Finder\SplFileInfo

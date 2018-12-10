@@ -13,10 +13,7 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-/**
- * a helper to detect TV devices
- */
-class Tv
+final class Tv
 {
     /**
      * @var \Stringy\Stringy the user agent to handle

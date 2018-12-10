@@ -18,7 +18,7 @@ use Psr\Log\LoggerInterface;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
-class EngineLoader implements SpecificLoaderInterface
+final class EngineLoader implements SpecificLoaderInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -78,7 +78,7 @@ class EngineLoader implements SpecificLoaderInterface
         } elseif ('VersionFactory' === $engineVersionClass) {
             $version = (new VersionFactory())->detectVersion($useragent, $engineData->version->search);
         } else {
-            /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
+            /* @var \BrowserDetector\Version\VersionDetectorInterface $versionClass */
             $versionClass = new $engineVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }

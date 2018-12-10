@@ -13,7 +13,7 @@ namespace BrowserDetector\Version;
 
 use Stringy\Stringy;
 
-class WindowsMobileOs implements VersionCacheFactoryInterface
+final class WindowsMobileOs implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

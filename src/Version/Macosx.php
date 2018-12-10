@@ -13,7 +13,7 @@ namespace BrowserDetector\Version;
 
 use peterkahl\OSXbuild\OSXbuild;
 
-class Macosx implements VersionCacheFactoryInterface
+final class Macosx implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

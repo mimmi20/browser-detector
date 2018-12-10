@@ -11,10 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version\Helper;
 
-/**
- * a helper for detecting safari and some of his derefered browsers
- */
-class Safari
+final class Safari
 {
     /**
      * maps different Safari Versions to a normalized format
