@@ -13,12 +13,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "tesla impulse 7.85 3g": {
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "tesla l7.1 3g": {
@@ -57,12 +61,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "tesla tablet l7 3g": {
@@ -79,12 +86,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "tesla ttl7": {
@@ -101,12 +111,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

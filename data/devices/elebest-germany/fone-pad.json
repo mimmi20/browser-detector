@@ -13,17 +13,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "elebest-germany op109 4g": {
-        "deviceName": "OP109 4G",
-        "marketingName": "OP109 4G",
+        "deviceName": "OP109",
+        "marketingName": "OP109",
         "manufacturer": "Elebest Germany",
         "brand": "Elebest Germany",
         "type": "fone-pad",
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     }
 }

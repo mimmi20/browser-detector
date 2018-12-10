@@ -13,17 +13,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     },
     "telenor smart 4g": {
-        "deviceName": "Smart 4G",
-        "marketingName": "Smart 4G",
+        "deviceName": "Smart",
+        "marketingName": "Smart",
         "manufacturer": "Telenor",
         "brand": "Telenor",
         "type": "smartphone",
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "telenor smart pro": {
@@ -57,12 +61,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "telenor touch plus": {
@@ -79,12 +84,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

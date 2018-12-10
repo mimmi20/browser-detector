@@ -1,7 +1,7 @@
 {
     "general china-phone device": {
-        "deviceName": "general China Phone Device",
-        "marketingName": "general China Phone Device",
+        "deviceName": "general  Phone Device",
+        "marketingName": "general  Phone Device",
         "manufacturer": "China Phone",
         "brand": "China Phone",
         "type": "smartphone",
@@ -13,12 +13,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "WCDMA"
+        ],
         "platform": "android"
     },
     "china-phone a1303": {
@@ -35,12 +40,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "china-phone a309w": {
@@ -57,12 +63,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "china-phone m651cy": {
@@ -79,12 +86,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

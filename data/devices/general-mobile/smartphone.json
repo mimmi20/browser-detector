@@ -13,17 +13,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "general-mobile 4g dual": {
-        "deviceName": "4G Dual",
-        "marketingName": "4G Dual",
+        "deviceName": " Dual",
+        "marketingName": " Dual",
         "manufacturer": "General Mobile",
         "brand": "General Mobile",
         "type": "smartphone",
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "general-mobile discovery": {
@@ -57,12 +61,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "general-mobile discovery elite": {
@@ -79,12 +84,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "general-mobile discovery ii": {
@@ -101,12 +107,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "general-mobile gm 5 plus": {
@@ -123,12 +130,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "general-mobile gm 5 plus d": {
@@ -145,12 +153,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "general-mobile gm 8": {
@@ -167,12 +176,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

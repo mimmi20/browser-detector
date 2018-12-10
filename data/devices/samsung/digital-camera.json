@@ -13,17 +13,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung ek-gc110": {
         "deviceName": "EK-GC110",
-        "marketingName": "Galaxy Camera Wi-Fi",
+        "marketingName": "Galaxy Camera",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "digital-camera",
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi"
+        ],
         "platform": "android"
     },
     "samsung ek-gc200": {
@@ -57,12 +61,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung ek-gn120": {
@@ -79,12 +84,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

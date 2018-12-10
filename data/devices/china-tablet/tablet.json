@@ -1,7 +1,7 @@
 {
     "general china-tablet device": {
-        "deviceName": "general China Tablet Device",
-        "marketingName": "general China Tablet Device",
+        "deviceName": "general  Tablet Device",
+        "marketingName": "general  Tablet Device",
         "manufacturer": "China Tablet",
         "brand": "China Tablet",
         "type": "tablet",
@@ -13,12 +13,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "WCDMA"
+        ],
         "platform": "android"
     },
     "china-tablet i101mtk": {
@@ -35,12 +40,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

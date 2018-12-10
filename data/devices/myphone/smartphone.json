@@ -13,12 +13,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "myphone a888": {
@@ -35,12 +36,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "myphone a919 duo": {
@@ -57,12 +59,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "myphone axe 3g": {
@@ -79,17 +82,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "myphone axe lte": {
-        "deviceName": "Axe LTE",
-        "marketingName": "Axe LTE",
+        "deviceName": "Axe",
+        "marketingName": "Axe",
         "manufacturer": "myPhone",
         "brand": "myPhone",
         "type": "smartphone",
@@ -101,12 +107,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "myphone cube": {
@@ -123,17 +132,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "myphone cube lte": {
-        "deviceName": "Cube LTE",
-        "marketingName": "Cube LTE",
+        "deviceName": "Cube",
+        "marketingName": "Cube",
         "manufacturer": "myPhone",
         "brand": "myPhone",
         "type": "smartphone",
@@ -145,12 +155,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "myphone hammer active": {
@@ -167,17 +180,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "myphone infinity 2 lte": {
-        "deviceName": "Infinity 2 LTE",
-        "marketingName": "Infinity 2 LTE",
+        "deviceName": "Infinity 2",
+        "marketingName": "Infinity 2",
         "manufacturer": "myPhone",
         "brand": "myPhone",
         "type": "smartphone",
@@ -189,12 +203,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     }
 }

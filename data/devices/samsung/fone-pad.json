@@ -13,17 +13,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung gt-n5120": {
         "deviceName": "GT-N5120",
-        "marketingName": "Galaxy Note 8.0 LTE",
+        "marketingName": "Galaxy Note 8.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung gt-n8000": {
@@ -57,12 +61,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung gt-n8000d": {
@@ -79,17 +86,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung gt-n8005": {
         "deviceName": "GT-N8005",
-        "marketingName": "Galaxy Note 10.1 LTE",
+        "marketingName": "Galaxy Note 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -101,17 +111,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung gt-n8020": {
         "deviceName": "GT-N8020",
-        "marketingName": "Galaxy Note 10.1 LTE",
+        "marketingName": "Galaxy Note 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -123,17 +136,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung gt-p1000n": {
         "deviceName": "GT-P1000N",
-        "marketingName": "Galaxy Tab 7.0 (3G, USA)",
+        "marketingName": "Galaxy Tab 7.0 (3G)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -145,12 +161,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung gt-p3100": {
@@ -167,12 +188,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung gt-p3100b": {
@@ -189,12 +213,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung gt-p5100": {
@@ -211,12 +238,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung gt-p5200": {
@@ -233,12 +261,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung gt-p5210": {
@@ -255,17 +286,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung gt-p5220": {
         "deviceName": "GT-P5220",
-        "marketingName": "Galaxy Tab 3 10.1 LTE",
+        "marketingName": "Galaxy Tab 3 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -277,17 +311,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung gt-p7320": {
         "deviceName": "GT-P7320",
-        "marketingName": "Galaxy Tab 8.9 LTE",
+        "marketingName": "Galaxy Tab 8.9",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -299,12 +336,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung gt-p7500": {
@@ -321,12 +361,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung gt-p7500m": {
@@ -343,17 +386,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sch-i800": {
         "deviceName": "SCH-I800",
-        "marketingName": "Galaxy Tab 7.0 (Verizon)",
+        "marketingName": "Galaxy Tab 7.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -365,17 +411,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "samsung sch-i815": {
         "deviceName": "SCH-I815",
-        "marketingName": "Galaxy Tab 7.7 CDMA + LTE (Verizon)",
+        "marketingName": "Galaxy Tab 7.7  +",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -387,17 +440,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon"
+            ]
         },
+        "connections": [
+            "LTE",
+            "CDMA"
+        ],
         "platform": "android"
     },
     "samsung sch-i915": {
         "deviceName": "SCH-I915",
-        "marketingName": "Galaxy Tab 2 10.1 CDMA (Verizon)",
+        "marketingName": "Galaxy Tab 2 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -409,17 +470,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "samsung sgh-i467": {
         "deviceName": "SGH-I467",
-        "marketingName": "Galaxy Note 8.0 4G (AT&T)",
+        "marketingName": "Galaxy Note 8.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -431,17 +499,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sgh-i497": {
         "deviceName": "SGH-I497",
-        "marketingName": "Galaxy Tab 2 10.1 CDMA (AT&T)",
+        "marketingName": "Galaxy Tab 2 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -453,17 +528,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "samsung sgh-i957": {
         "deviceName": "SGH-I957",
-        "marketingName": "Galaxy Tab 8.9 4G",
+        "marketingName": "Galaxy Tab 8.9",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -475,17 +557,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sgh-i957r": {
         "deviceName": "SGH-I957R",
-        "marketingName": "Galaxy Tab 8.9 4G",
+        "marketingName": "Galaxy Tab 8.9",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -497,17 +582,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sgh-t779": {
         "deviceName": "SGH-T779",
-        "marketingName": "Galaxy Tab 2 10.1 CDMA (T-Mobile)",
+        "marketingName": "Galaxy Tab 2 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -519,12 +607,19 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "T-Mobile"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "samsung shv-e140l": {
@@ -541,12 +636,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung shw-m305w": {
@@ -563,12 +659,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung shw-m380k": {
@@ -585,12 +682,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-n8000": {
@@ -607,17 +707,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-p355": {
         "deviceName": "SM-P355",
-        "marketingName": "Galaxy Tab A 8.0 LTE",
+        "marketingName": "Galaxy Tab A 8.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -629,17 +732,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-p555": {
         "deviceName": "SM-P555",
-        "marketingName": "Galaxy Tab A 9.7 WiFi+LTE with S Pen",
+        "marketingName": "Galaxy Tab A 9.7 WiFi+ with S Pen",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -651,12 +757,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-p585": {
@@ -673,12 +782,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-p601": {
@@ -695,12 +805,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-p602": {
@@ -717,17 +830,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": null
     },
     "samsung sm-p605": {
         "deviceName": "SM-P605",
-        "marketingName": "Galaxy Note 10.1 2014 Edition WI-FI + 4G LTE",
+        "marketingName": "Galaxy Note 10.1 2014 Edition WI-FI +",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -739,17 +855,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-p607t": {
         "deviceName": "SM-P607T",
-        "marketingName": "Galaxy Note 10.1 (2014, T-Mobile)",
+        "marketingName": "Galaxy Note 10.1 (2014)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -761,17 +880,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "T-Mobile"
+            ]
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-p901": {
         "deviceName": "SM-P901",
-        "marketingName": "Galaxy Note Pro 12.2 Wi-Fi + 3G",
+        "marketingName": "Galaxy Note Pro 12.2  + 3G",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -783,17 +907,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-p905": {
         "deviceName": "SM-P905",
-        "marketingName": "Galaxy Note Pro 12.2 LTE",
+        "marketingName": "Galaxy Note Pro 12.2",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -805,17 +933,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-p905m": {
         "deviceName": "SM-P905M",
-        "marketingName": "Galaxy Note Pro 12.2 LTE",
+        "marketingName": "Galaxy Note Pro 12.2",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -827,17 +958,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-p905v": {
         "deviceName": "SM-P905V",
-        "marketingName": "Galaxy Note Pro 12.2 LTE",
+        "marketingName": "Galaxy Note Pro 12.2",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -849,17 +983,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-p907a": {
         "deviceName": "SM-P907A",
-        "marketingName": "Galaxy Note Pro 12.2 LTE (AT&T)",
+        "marketingName": "Galaxy Note Pro 12.2",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -871,12 +1008,19 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t111": {
@@ -893,12 +1037,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-t116": {
@@ -915,12 +1062,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-t116bu": {
@@ -937,12 +1087,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t116nu": {
@@ -959,12 +1110,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t211": {
@@ -981,17 +1133,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-t217a": {
         "deviceName": "SM-T217A",
-        "marketingName": "Galaxy Tab 3 7.0 4G (AT&T)",
+        "marketingName": "Galaxy Tab 3 7.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1003,17 +1158,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t217s": {
         "deviceName": "SM-T217S",
-        "marketingName": "Galaxy Tab 3 7.0 4G (Sprint)",
+        "marketingName": "Galaxy Tab 3 7.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1025,17 +1187,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Sprint"
+            ]
         },
+        "connections": [
+            "LTE",
+            "CDMA"
+        ],
         "platform": "android"
     },
     "samsung sm-t235": {
         "deviceName": "SM-T235",
-        "marketingName": "Galaxy Tab 4 7.0 WiFi + LTE",
+        "marketingName": "Galaxy Tab 4 7.0 WiFi +",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1047,17 +1217,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t285": {
         "deviceName": "SM-T285",
-        "marketingName": "Galaxy Tab A (7.0, 4G+Wi-Fi, 2016)",
+        "marketingName": "Galaxy Tab A (7.0, +, 2016)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1069,12 +1242,16 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t311": {
@@ -1091,17 +1268,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-t315": {
         "deviceName": "SM-T315",
-        "marketingName": "Galaxy Tab 3 8.0 LTE",
+        "marketingName": "Galaxy Tab 3 8.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1113,17 +1293,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t325": {
         "deviceName": "SM-T325",
-        "marketingName": "Galaxy Tab Pro 8.4 LTE",
+        "marketingName": "Galaxy Tab Pro 8.4",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1135,12 +1318,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t331": {
@@ -1157,17 +1343,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-t335": {
         "deviceName": "SM-T335",
-        "marketingName": "Galaxy Tab 3 8.0 LTE",
+        "marketingName": "Galaxy Tab 3 8.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1179,17 +1368,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t337a": {
         "deviceName": "SM-T337A",
-        "marketingName": "Galaxy Tab 4 8.0 (AT&T)",
+        "marketingName": "Galaxy Tab 4 8.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1201,12 +1393,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t355": {
@@ -1223,17 +1420,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-t355y": {
         "deviceName": "SM-T355Y",
-        "marketingName": "Galaxy Tab A 8.0 4G",
+        "marketingName": "Galaxy Tab A 8.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1245,17 +1445,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t375s": {
         "deviceName": "SM-T375S",
-        "marketingName": "Galaxy Tab E (8.0, LTE)",
+        "marketingName": "Galaxy Tab E (8.0)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1267,17 +1470,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t377v": {
         "deviceName": "SM-T377V",
-        "marketingName": "Galaxy Tab E  (8.0, XLTE)",
+        "marketingName": "Galaxy Tab E  (8.0)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1289,12 +1495,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "XLTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t385": {
@@ -1311,12 +1520,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t385l": {
@@ -1333,12 +1543,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t390": {
@@ -1355,12 +1566,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t395": {
@@ -1377,17 +1589,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t525": {
         "deviceName": "SM-T525",
-        "marketingName": "Galaxy Tab Pro 10.1 LTE",
+        "marketingName": "Galaxy Tab Pro 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1399,12 +1612,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t530": {
@@ -1421,12 +1637,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t530nu": {
@@ -1443,12 +1660,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t531": {
@@ -1465,12 +1683,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-t533": {
@@ -1487,17 +1708,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t535": {
         "deviceName": "SM-T535",
-        "marketingName": "Galaxy Tab 4 10.1 LTE",
+        "marketingName": "Galaxy Tab 4 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1509,17 +1731,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t555": {
         "deviceName": "SM-T555",
-        "marketingName": "Galaxy Tab A 9.7 LTE",
+        "marketingName": "Galaxy Tab A 9.7",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1531,12 +1756,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t561": {
@@ -1553,17 +1781,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "samsung sm-t585": {
         "deviceName": "SM-T585",
-        "marketingName": "Galaxy Tab A (2016, 10.1, LTE)",
+        "marketingName": "Galaxy Tab A (2016, 10.1)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1575,17 +1806,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t585n0": {
         "deviceName": "SM-T585N0",
-        "marketingName": "Galaxy Tab A (2016, 10.1, LTE)",
+        "marketingName": "Galaxy Tab A (2016, 10.1)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1597,17 +1831,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t595": {
         "deviceName": "SM-T595",
-        "marketingName": "Galaxy Tab A (10.5, LTE)",
+        "marketingName": "Galaxy Tab A (10.5)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1619,17 +1856,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t677v": {
         "deviceName": "SM-T677V",
-        "marketingName": "Galaxy Tab View (XLTE)",
+        "marketingName": "Galaxy Tab View",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1641,17 +1881,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "XLTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t705": {
         "deviceName": "SM-T705",
-        "marketingName": "Galaxy Tab S 8.4 LTE",
+        "marketingName": "Galaxy Tab S 8.4",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1663,17 +1906,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t705m": {
         "deviceName": "SM-T705M",
-        "marketingName": "Galaxy Tab S 8.4 LTE",
+        "marketingName": "Galaxy Tab S 8.4",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1685,17 +1931,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t715": {
         "deviceName": "SM-T715",
-        "marketingName": "Galaxy Tab S2 8.0 (2015, LTE)",
+        "marketingName": "Galaxy Tab S2 8.0 (2015)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1707,17 +1956,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t715y": {
         "deviceName": "SM-T715Y",
-        "marketingName": "Galaxy Tab S2 8.0 LTE",
+        "marketingName": "Galaxy Tab S2 8.0",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1729,17 +1981,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "samsung sm-t719": {
         "deviceName": "SM-T719",
-        "marketingName": "Galaxy Tab S2 8.0 (2016, LTE)",
+        "marketingName": "Galaxy Tab S2 8.0 (2016)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1751,17 +2006,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t719n": {
         "deviceName": "SM-T719N",
-        "marketingName": "Galaxy Tab S2 8.0 (2016, LTE)",
+        "marketingName": "Galaxy Tab S2 8.0 (2016)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1773,17 +2031,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t805": {
         "deviceName": "SM-T805",
-        "marketingName": "Galaxy Tab S 10.5 LTE",
+        "marketingName": "Galaxy Tab S 10.5",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1795,12 +2056,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t807j": {
@@ -1817,17 +2081,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sm-t815": {
         "deviceName": "SM-T815",
-        "marketingName": "Galaxy Tab S2 (9.7, LTE, 2015)",
+        "marketingName": "Galaxy Tab S2 (9.7, 2015)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1839,17 +2104,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t815y": {
         "deviceName": "SM-T815Y",
-        "marketingName": "Galaxy Tab S2 (9.7, LTE, 2015)",
+        "marketingName": "Galaxy Tab S2 (9.7, 2015)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1861,17 +2129,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t819": {
         "deviceName": "SM-T819",
-        "marketingName": "Galaxy Tab S2 (9.7, LTE, 2016)",
+        "marketingName": "Galaxy Tab S2 (9.7, 2016)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1883,17 +2154,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t825": {
         "deviceName": "SM-T825",
-        "marketingName": "Galaxy Tab S3 (9.7, LTE)",
+        "marketingName": "Galaxy Tab S3 (9.7)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1905,17 +2179,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-t835": {
         "deviceName": "SM-T835",
-        "marketingName": "Galaxy Tab S4 (10.5, LTE)",
+        "marketingName": "Galaxy Tab S4 (10.5)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1927,17 +2204,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "samsung sm-w708y": {
         "deviceName": "SM-W708Y",
-        "marketingName": "Galaxy Tab Pro S (12.0, LTE)",
+        "marketingName": "Galaxy Tab Pro S (12.0)",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1949,12 +2229,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": null
     },
     "samsung sph-p100": {
@@ -1971,17 +2254,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "samsung sph-p500": {
         "deviceName": "SPH-P500",
-        "marketingName": "Galaxy Tab 2 10.1 CDMA (Sprint)",
+        "marketingName": "Galaxy Tab 2 10.1",
         "manufacturer": "Samsung",
         "brand": "Samsung",
         "type": "fone-pad",
@@ -1993,12 +2277,19 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Sprint"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     }
 }

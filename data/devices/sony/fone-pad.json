@@ -1,7 +1,7 @@
 {
     "sony sgp311": {
         "deviceName": "SGP311",
-        "marketingName": "Xperia Tablet Z LTE",
+        "marketingName": "Xperia Tablet Z",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -13,17 +13,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony sgp321": {
         "deviceName": "SGP321",
-        "marketingName": "Xperia Tablet Z LTE (Europe)",
+        "marketingName": "Xperia Tablet Z",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -35,17 +38,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Europe"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony sgp351": {
         "deviceName": "SGP351",
-        "marketingName": "Xperia Tablet Z LTE (USA)",
+        "marketingName": "Xperia Tablet Z",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -57,17 +65,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony sgp521": {
         "deviceName": "SGP521",
-        "marketingName": "Xperia Tablet Z2 LTE",
+        "marketingName": "Xperia Tablet Z2",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -79,17 +92,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony sgp551": {
         "deviceName": "SGP551",
-        "marketingName": "Xperia Tablet Z2 LTE",
+        "marketingName": "Xperia Tablet Z2",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -101,12 +117,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony sgp612": {
@@ -123,17 +142,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "sony sgp621": {
         "deviceName": "SGP621",
-        "marketingName": "Xperia Z3 Tablet Compact LTE",
+        "marketingName": "Xperia Z3 Tablet Compact",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -145,17 +165,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony sgp641": {
         "deviceName": "SGP641",
-        "marketingName": "Xperia Z3 Tablet Compact LTE",
+        "marketingName": "Xperia Z3 Tablet Compact",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -167,17 +190,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony sgp771": {
         "deviceName": "SGP771",
-        "marketingName": "Xperia Z4 Tablet LTE",
+        "marketingName": "Xperia Z4 Tablet",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -189,17 +215,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony so-03e": {
         "deviceName": "SO-03E",
-        "marketingName": "Xperia Tablet Z LTE (Japan)",
+        "marketingName": "Xperia Tablet Z",
         "manufacturer": "Sony",
         "brand": "Sony",
         "type": "fone-pad",
@@ -211,12 +240,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "Japan"
+            ],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "sony so-05f": {
@@ -233,12 +267,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

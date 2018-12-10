@@ -1,7 +1,7 @@
 {
     "general 4good device": {
-        "deviceName": "general 4Good Device",
-        "marketingName": "general 4Good Device",
+        "deviceName": "general ood Device",
+        "marketingName": "general ood Device",
         "manufacturer": "4Good",
         "brand": "4Good",
         "type": "smartphone",
@@ -13,12 +13,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "4good light a103": {
@@ -35,17 +38,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "4good s450m 4g": {
-        "deviceName": "S450m 4G",
-        "marketingName": "S450m 4G",
+        "deviceName": "S450m",
+        "marketingName": "S450m",
         "manufacturer": "4Good",
         "brand": "4Good",
         "type": "smartphone",
@@ -57,12 +61,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "4good s501m 3g": {
@@ -79,12 +86,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "4good s555m 4g": {
@@ -101,12 +111,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }
