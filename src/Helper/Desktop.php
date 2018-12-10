@@ -13,10 +13,7 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-/**
- * a helper to detect Desktop devices
- */
-class Desktop
+final class Desktop
 {
     /**
      * @var \Stringy\Stringy the user agent to handle

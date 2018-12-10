@@ -9,19 +9,20 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Version;
+namespace BrowserDetector\Parser;
 
-/**
- * a general version detector factory
- */
-interface VersionCacheFactoryInterface
+use UaResult\Os\OsInterface;
+
+interface PlatformParserInterface
 {
     /**
-     * detects the bit count by this browser from the given user agent
+     * Gets the information about the browser by User Agent
      *
      * @param string $useragent
      *
-     * @return \BrowserDetector\Version\VersionInterface
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return \UaResult\Os\OsInterface
      */
-    public function detectVersion(string $useragent): VersionInterface;
+    public function __invoke(string $useragent): OsInterface;
 }

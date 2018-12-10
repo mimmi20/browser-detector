@@ -13,10 +13,7 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-/**
- * helper to get information if the device is a mobile
- */
-class MobileDevice
+final class MobileDevice
 {
     /**
      * @var \Stringy\Stringy the user agent to handle

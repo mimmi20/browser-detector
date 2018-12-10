@@ -9,18 +9,18 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetectorTest\Factory\Device;
+namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Factory\Device\DarwinFactory;
+use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
-class DarwinFactoryTest extends TestCase
+class DarwinParserTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\DarwinFactory
+     * @var \BrowserDetector\Parser\Device\DarwinParser
      */
     private $object;
 
@@ -32,7 +32,7 @@ class DarwinFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        $this->object = new DarwinFactory($logger);
+        $this->object = new DarwinParser($logger);
     }
 
     /**

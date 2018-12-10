@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version\Helper;
 
-class MicrosoftOffice
+final class MicrosoftOffice
 {
     /**
      * maps the version

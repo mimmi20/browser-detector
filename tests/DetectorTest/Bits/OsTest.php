@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Bits;
 use BrowserDetector\Bits\Os;
 use PHPUnit\Framework\TestCase;
 
-class OsTest extends TestCase
+final class OsTest extends TestCase
 {
     /**
      * @dataProvider providerGetBits

@@ -20,7 +20,7 @@ use Psr\Log\LoggerInterface;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 
-class PlatformLoader implements SpecificLoaderInterface
+final class PlatformLoader implements SpecificLoaderInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -81,7 +81,7 @@ class PlatformLoader implements SpecificLoaderInterface
         } elseif ('VersionFactory' === $platformVersionClass) {
             $version = (new VersionFactory())->detectVersion($useragent, $platformData->version->search);
         } else {
-            /* @var \BrowserDetector\Version\VersionCacheFactoryInterface $versionClass */
+            /* @var \BrowserDetector\Version\VersionDetectorInterface $versionClass */
             $versionClass = new $platformVersionClass();
             $version      = $versionClass->detectVersion($useragent);
         }

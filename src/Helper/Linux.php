@@ -13,7 +13,7 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-class Linux
+final class Linux
 {
     /**
      * @var \Stringy\Stringy the user agent to handle

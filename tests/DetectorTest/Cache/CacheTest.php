@@ -40,7 +40,6 @@ final class CacheTest extends TestCase
     {
         $adapter = $this->getMockBuilder(ArrayCache::class)
             ->disableOriginalConstructor()
-            ->setMethods(['has', 'set', 'get'])
             ->getMock();
         $adapter
             ->expects(self::once())
@@ -72,7 +71,6 @@ final class CacheTest extends TestCase
     {
         $adapter = $this->getMockBuilder(ArrayCache::class)
             ->disableOriginalConstructor()
-            ->setMethods(['has', 'set', 'get'])
             ->getMock();
         $adapter
             ->expects(self::once())
@@ -105,7 +103,6 @@ final class CacheTest extends TestCase
     {
         $adapter = $this->getMockBuilder(ArrayCache::class)
             ->disableOriginalConstructor()
-            ->setMethods(['has', 'set', 'get'])
             ->getMock();
         $adapter
             ->expects(self::once())
@@ -136,7 +133,6 @@ final class CacheTest extends TestCase
     {
         $adapter = $this->getMockBuilder(ArrayCache::class)
             ->disableOriginalConstructor()
-            ->setMethods(['delete'])
             ->getMock();
         $adapter
             ->expects(self::once())
@@ -157,7 +153,6 @@ final class CacheTest extends TestCase
     {
         $adapter = $this->getMockBuilder(ArrayCache::class)
             ->disableOriginalConstructor()
-            ->setMethods(['clear'])
             ->getMock();
         $adapter
             ->expects(self::once())

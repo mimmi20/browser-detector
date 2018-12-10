@@ -9,18 +9,14 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory;
+namespace BrowserDetector\Bits;
 
-interface BrowserFactoryInterface
+interface BitsInterface
 {
     /**
-     * Gets the information about the browser by User Agent
+     * @throws \UnexpectedValueException
      *
-     * @param string $useragent
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return array
+     * @return int
      */
-    public function __invoke(string $useragent): array;
+    public function getBits(): int;
 }

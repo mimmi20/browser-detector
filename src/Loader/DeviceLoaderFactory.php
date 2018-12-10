@@ -19,7 +19,7 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use UaDeviceType\TypeLoader;
 
-class DeviceLoaderFactory
+final class DeviceLoaderFactory
 {
     /**
      * @var \Psr\Log\LoggerInterface

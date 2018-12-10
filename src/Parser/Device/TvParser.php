@@ -9,13 +9,13 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory\Device;
+namespace BrowserDetector\Parser\Device;
 
-use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Parser\DeviceParserInterface;
 use Psr\Log\LoggerInterface;
 
-class TvFactory implements DeviceFactoryInterface
+final class TvParser implements DeviceParserInterface
 {
     private $factories = [
         '/kdl\d{2}|nsz\-gs7\/gx70|sonydtv|netbox|bravia/i' => 'sony',

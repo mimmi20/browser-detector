@@ -12,26 +12,32 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Factory\BrowserFactoryInterface;
-use BrowserDetector\Factory\DeviceFactoryInterface;
-use BrowserDetector\Factory\EngineFactoryInterface;
-use BrowserDetector\Factory\PlatformFactoryInterface;
 use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Parser\BrowserParserInterface;
+use BrowserDetector\Parser\DeviceParserInterface;
+use BrowserDetector\Parser\EngineParserInterface;
+use BrowserDetector\Parser\PlatformParserInterface;
+use BrowserDetector\Version\Version;
 use ExceptionalJSON\DecodeErrorException;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
+use UaDeviceType\Unknown;
 use UaNormalizer\NormalizerFactory;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
+use UaResult\Browser\Browser;
+use UaResult\Company\Company;
+use UaResult\Device\Device;
+use UaResult\Device\Display;
+use UaResult\Device\Market;
+use UaResult\Engine\Engine;
+use UaResult\Os\Os;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
-/**
- * Browser Detection class
- */
-class Detector implements DetectorInterface
+final class Detector implements DetectorInterface
 {
     /**
      * an logger instance
@@ -46,49 +52,49 @@ class Detector implements DetectorInterface
     private $cache;
 
     /**
-     * @var \BrowserDetector\Factory\DeviceFactoryInterface
+     * @var \BrowserDetector\Parser\DeviceParserInterface
      */
-    private $deviceFactory;
+    private $deviceParser;
 
     /**
-     * @var \BrowserDetector\Factory\PlatformFactoryInterface
+     * @var \BrowserDetector\Parser\PlatformParserInterface
      */
-    private $platformFactory;
+    private $platformParser;
 
     /**
-     * @var \BrowserDetector\Factory\BrowserFactoryInterface
+     * @var \BrowserDetector\Parser\BrowserParserInterface
      */
-    private $browserFactory;
+    private $browserParser;
 
     /**
-     * @var \BrowserDetector\Factory\EngineFactoryInterface
+     * @var \BrowserDetector\Parser\EngineParserInterface
      */
-    private $engineFactory;
+    private $engineParser;
 
     /**
      * sets the cache used to make the detection faster
      *
-     * @param \Psr\Log\LoggerInterface                          $logger
-     * @param \BrowserDetector\Cache\CacheInterface             $cache
-     * @param \BrowserDetector\Factory\DeviceFactoryInterface   $deviceFactory
-     * @param \BrowserDetector\Factory\PlatformFactoryInterface $platformFactory
-     * @param \BrowserDetector\Factory\BrowserFactoryInterface  $browserFactory
-     * @param \BrowserDetector\Factory\EngineFactoryInterface   $engineFactory
+     * @param \Psr\Log\LoggerInterface                        $logger
+     * @param \BrowserDetector\Cache\CacheInterface           $cache
+     * @param \BrowserDetector\Parser\DeviceParserInterface   $deviceParser
+     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     * @param \BrowserDetector\Parser\BrowserParserInterface  $browserParser
+     * @param \BrowserDetector\Parser\EngineParserInterface   $engineParser
      */
     public function __construct(
         LoggerInterface $logger,
         CacheInterface $cache,
-        DeviceFactoryInterface $deviceFactory,
-        PlatformFactoryInterface $platformFactory,
-        BrowserFactoryInterface $browserFactory,
-        EngineFactoryInterface $engineFactory
+        DeviceParserInterface $deviceParser,
+        PlatformParserInterface $platformParser,
+        BrowserParserInterface $browserParser,
+        EngineParserInterface $engineParser
     ) {
-        $this->logger          = $logger;
-        $this->cache           = $cache;
-        $this->deviceFactory   = $deviceFactory;
-        $this->platformFactory = $platformFactory;
-        $this->browserFactory  = $browserFactory;
-        $this->engineFactory   = $engineFactory;
+        $this->logger         = $logger;
+        $this->cache          = $cache;
+        $this->deviceParser   = $deviceParser;
+        $this->platformParser = $platformParser;
+        $this->browserParser  = $browserParser;
+        $this->engineParser   = $engineParser;
     }
 
     /**
@@ -141,63 +147,99 @@ class Detector implements DetectorInterface
     private function parse(GenericRequest $request)
     {
         //$normalizer    = (new NormalizerFactory())->build();
-        $deviceUa      = $request->getDeviceUserAgent(); //$normalizer->normalize($request->getDeviceUserAgent());
-        $deviceFactory = $this->deviceFactory;
+        $deviceUa     = $request->getDeviceUserAgent(); //$normalizer->normalize($request->getDeviceUserAgent());
+        $deviceParser = $this->deviceParser;
+
+        $defaultDevice = new Device(
+            null,
+            null,
+            new Company('Unknown', null, null),
+            new Company('Unknown', null, null),
+            new Unknown(),
+            new Display(null, null, null, new \UaDisplaySize\Unknown(), null),
+            false,
+            0,
+            new Market([], [], [])
+        );
+
+        $defaultPlatform = new Os(
+            null,
+            null,
+            new Company('Unknown', null, null),
+            new Version('0'),
+            null
+        );
 
         /* @var \UaResult\Device\DeviceInterface $device */
         /* @var \UaResult\Os\OsInterface $platform */
         try {
-            [$device, $platform] = $deviceFactory($deviceUa);
+            [$device, $platform] = $deviceParser($deviceUa);
         } catch (NotFoundException | InvalidArgumentException $e) {
             $this->logger->warning($e);
 
-            $device   = null;
-            $platform = null;
+            $device   = clone $defaultDevice;
+            $platform = clone $defaultPlatform;
         }
 
         $browserUa = $request->getBrowserUserAgent(); //$normalizer->normalize($request->getBrowserUserAgent());
 
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
-            $platformFactory = $this->platformFactory;
+            $platformParser = $this->platformParser;
 
             try {
-                $platform = $platformFactory($browserUa);
+                $platform = $platformParser($browserUa);
             } catch (NotFoundException | InvalidArgumentException $e) {
                 $this->logger->warning($e);
-                $platform = null;
+                $platform = clone $defaultPlatform;
             }
         }
 
-        $browserFactory = $this->browserFactory;
+        $browserParser = $this->browserParser;
+
+        $defaultBrowser = new Browser(
+            null,
+            new Company('Unknown', null, null),
+            new Version('0'),
+            new \UaBrowserType\Unknown(),
+            0,
+            null
+        );
+
+        $defaultEngine = new Engine(
+            null,
+            new Company('Unknown', null, null),
+            new Version('0')
+        );
 
         /* @var \UaResult\Browser\BrowserInterface $browser */
         /* @var \UaResult\Engine\EngineInterface $engine */
         try {
-            [$browser, $engine] = $browserFactory($browserUa);
+            [$browser, $engine] = $browserParser($browserUa);
         } catch (DecodeErrorException | InvalidArgumentException $e) {
             $this->logger->error($e);
 
-            $browser = null;
-            $engine  = null;
+            $browser = clone $defaultBrowser;
+            $engine  = clone $defaultEngine;
         }
 
         if (null === $engine) {
             $this->logger->debug('engine not detected from browser');
+            $engine  = clone $defaultEngine;
 
             if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
                 try {
-                    $engine = $this->engineFactory->load('webkit', $browserUa);
+                    $engine = $this->engineParser->load('webkit', $browserUa);
                 } catch (DecodeErrorException $e) {
                     $this->logger->error($e);
                 } catch (NotFoundException $e) {
                     $this->logger->warning($e);
                 }
             } else {
-                $engineFactory = $this->engineFactory;
+                $engineParser = $this->engineParser;
 
                 try {
-                    $engine = $engineFactory($browserUa);
+                    $engine = $engineParser($browserUa);
                 } catch (InvalidArgumentException $e) {
                     $this->logger->error($e);
                 }

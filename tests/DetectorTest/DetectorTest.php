@@ -11,13 +11,13 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest;
 
-use BrowserDetector\Cache\Cache;
+use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Detector;
-use BrowserDetector\Factory\BrowserFactory;
-use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Parser\BrowserParserInterface;
+use BrowserDetector\Parser\DeviceParserInterface;
+use BrowserDetector\Parser\EngineParserInterface;
+use BrowserDetector\Parser\PlatformParserInterface;
 use ExceptionalJSON\DecodeErrorException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
@@ -25,10 +25,15 @@ use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaRequest\Constants;
 use UaRequest\GenericRequestFactory;
 use UaResult\Browser\Browser;
+use UaResult\Browser\BrowserInterface;
 use UaResult\Device\Device;
+use UaResult\Device\DeviceInterface;
 use UaResult\Engine\Engine;
+use UaResult\Engine\EngineInterface;
 use UaResult\Os\Os;
+use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
+use UaResult\Result\ResultInterface;
 use Zend\Diactoros\ServerRequestFactory;
 
 class DetectorTest extends TestCase
@@ -69,56 +74,56 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->createMock(Device::class);
-        $os = $this->createMock(Os::class);
+        $device = $this->createMock(DeviceInterface::class);
+        $os     = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -133,17 +138,17 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         /* @var \UaResult\Result\Result $result */
         $result = $object->getBrowser('testagent');
 
-        self::assertInstanceOf(Result::class, $result);
+        self::assertInstanceOf(ResultInterface::class, $result);
     }
 
     /**
@@ -182,56 +187,56 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->createMock(Device::class);
-        $os = $this->createMock(Os::class);
+        $device = $this->createMock(DeviceInterface::class);
+        $os     = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -246,12 +251,12 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
         $requestFactory = new GenericRequestFactory();
@@ -260,7 +265,7 @@ class DetectorTest extends TestCase
         /* @var Result $result */
         $result = $object($request);
 
-        self::assertInstanceOf(Result::class, $result);
+        self::assertInstanceOf(ResultInterface::class, $result);
     }
 
     /**
@@ -299,58 +304,58 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->createMock(Device::class);
-        $os = $this->createMock(Os::class);
+        $device = $this->createMock(DeviceInterface::class);
+        $os     = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $mockResult = $this->createMock(Result::class);
+        $mockResult = $this->createMock(ResultInterface::class);
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::exactly(2))
@@ -366,12 +371,12 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
         $requestFactory = new GenericRequestFactory();
@@ -380,7 +385,7 @@ class DetectorTest extends TestCase
         /* @var Result $result */
         $result = $object($request);
 
-        self::assertInstanceOf(Result::class, $result);
+        self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($mockResult, $result);
 
         /* @var Result $result2 */
@@ -425,56 +430,56 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->createMock(Device::class);
-        $os = $this->createMock(Os::class);
+        $device = $this->createMock(DeviceInterface::class);
+        $os     = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::never())
@@ -489,12 +494,12 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $this->expectException(\UnexpectedValueException::class);
         $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');
@@ -538,56 +543,56 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->createMock(Device::class);
-        $os = $this->createMock(Os::class);
+        $device = $this->createMock(DeviceInterface::class);
+        $os     = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -602,17 +607,17 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         /* @var \UaResult\Result\Result $result */
         $result = $object('testagent');
 
-        self::assertInstanceOf(Result::class, $result);
+        self::assertInstanceOf(ResultInterface::class, $result);
     }
 
     /**
@@ -651,56 +656,56 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->createMock(Device::class);
-        $os = $this->createMock(Os::class);
+        $device = $this->createMock(DeviceInterface::class);
+        $os     = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -715,17 +720,17 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         /* @var Result $result */
         $result = $object([Constants::HEADER_HTTP_USERAGENT => 'testagent']);
 
-        self::assertInstanceOf(Result::class, $result);
+        self::assertInstanceOf(ResultInterface::class, $result);
     }
 
     /**
@@ -764,59 +769,59 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
         $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -831,20 +836,20 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
     }
 
@@ -884,58 +889,58 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::throwException(new NotFoundException('test')));
 
-        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os = $this->getMockBuilder(OsInterface::class)->getMock();
         $os->expects(self::once())
             ->method('getName')
             ->willReturn('test-os');
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -950,20 +955,20 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertNull($result->getDevice()->getDeviceName());
         self::assertSame('test-os', $result->getOs()->getName());
     }
@@ -1004,53 +1009,53 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::throwException(new NotFoundException('test')));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::throwException(new NotFoundException('test')));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->createMock(Engine::class);
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->createMock(EngineInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, $engine]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1065,20 +1070,20 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertNull($result->getDevice()->getDeviceName());
         self::assertNull($result->getOs()->getName());
     }
@@ -1119,64 +1124,64 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
         $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
-        $engine = $this->getMockBuilder(Engine::class)->getMock();
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
         $engine->expects(self::once())
             ->method('getName')
             ->willReturn('test-engine');
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, null]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($engine));
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1191,20 +1196,20 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
         self::assertSame('test-engine', $result->getEngine()->getName());
     }
@@ -1245,60 +1250,60 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
         $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
+        $browser = $this->createMock(BrowserInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, null]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::throwException(new InvalidArgumentException('test')));
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('load');
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1313,20 +1318,20 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
         self::assertNull($result->getEngine()->getName());
     }
@@ -1367,78 +1372,78 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
         $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
 
-        $os = $this->getMockBuilder(Os::class)->getMock();
-        $os->expects(self::once())
+        $os = $this->getMockBuilder(OsInterface::class)->getMock();
+        $os->expects(self::exactly(2))
             ->method('getName')
             ->willReturn('iOS');
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
+        $browser = $this->createMock(BrowserInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, null]));
 
-        $engine = $this->getMockBuilder(Engine::class)->getMock();
-        $engine->expects(self::once())
+        $engine = $this->getMockBuilder(EngineInterface::class)->getMock();
+        $engine->expects(self::never())
             ->method('getName')
             ->willReturn('test-engine');
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($engine));
 
-        $engine2 = $this->getMockBuilder(Engine::class)->getMock();
+        $engine2 = $this->getMockBuilder(EngineInterface::class)->getMock();
         $engine2->expects(self::once())
             ->method('getName')
             ->willReturn('webkit-test');
-        $engineFactory
+        $engineParser
             ->expects(self::once())
             ->method('load')
             ->with('webkit', 'testagent')
             ->will(self::returnValue($engine2));
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1453,20 +1458,20 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
         self::assertSame('webkit-test', $result->getEngine()->getName());
         self::assertSame('iOS', $result->getOs()->getName());
@@ -1508,65 +1513,65 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
         $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
-        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os = $this->getMockBuilder(OsInterface::class)->getMock();
         $os->expects(self::once())
             ->method('getName')
             ->willReturn('iOS');
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
+        $browser = $this->createMock(BrowserInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, null]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::once())
             ->method('load')
             ->with('webkit', 'testagent')
             ->will(self::throwException(new DecodeErrorException(0, 'parsing failed', '')));
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1581,20 +1586,20 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
         self::assertNull($result->getEngine()->getName());
         self::assertSame('iOS', $result->getOs()->getName());
@@ -1636,65 +1641,65 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
         $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
-        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os = $this->getMockBuilder(OsInterface::class)->getMock();
         $os->expects(self::once())
             ->method('getName')
             ->willReturn('iOS');
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browser = $this->createMock(Browser::class);
+        $browser = $this->createMock(BrowserInterface::class);
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$browser, null]));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
-        $engineFactory
+        $engineParser
             ->expects(self::once())
             ->method('load')
             ->with('webkit', 'testagent')
             ->will(self::throwException(new NotFoundException('something not found')));
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1709,20 +1714,20 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
         self::assertNull($result->getEngine()->getName());
         self::assertSame('iOS', $result->getOs()->getName());
@@ -1764,69 +1769,69 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $device = $this->getMockBuilder(Device::class)->getMock();
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
         $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
-        $os = $this->getMockBuilder(Os::class)->getMock();
+        $os = $this->getMockBuilder(OsInterface::class)->getMock();
         $os->expects(self::once())
             ->method('getName')
             ->willReturn('iOS');
 
-        $deviceFactory = $this->getMockBuilder(DeviceFactory::class)
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $deviceFactory
+        $deviceParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue([$device, $os]));
 
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
-        $platformFactory = $this->getMockBuilder(PlatformFactory::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $platformFactory
+        $platformParser
             ->expects(self::never())
             ->method('__invoke')
             ->with('testagent')
             ->will(self::returnValue($os));
 
-        $browserFactory = $this->getMockBuilder(BrowserFactory::class)
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+            
             ->getMock();
-        $browserFactory
+        $browserParser
             ->expects(self::once())
             ->method('__invoke')
             ->with('testagent')
             ->willThrowException(new DecodeErrorException(0, 'parsing failed', ''));
 
-        $engineFactory = $this->getMockBuilder(EngineFactory::class)
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->setMethods(['__invoke', 'load'])
             ->getMock();
-        $engineFactory
+        $engineParser
             ->expects(self::never())
             ->method('__invoke');
 
-        $engine2 = $this->getMockBuilder(Engine::class)->getMock();
+        $engine2 = $this->getMockBuilder(EngineInterface::class)->getMock();
         $engine2->expects(self::once())
             ->method('getName')
             ->willReturn('webkit-test');
 
-        $engineFactory
+        $engineParser
             ->expects(self::once())
             ->method('load')
             ->with('webkit', 'testagent')
             ->will(self::returnValue($engine2));
 
-        $cache = $this->getMockBuilder(Cache::class)
+        $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem', 'setItem'])
+            
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1841,21 +1846,21 @@ class DetectorTest extends TestCase
             ->willReturn(false);
 
         /** @var NullLogger $logger */
-        /** @var Cache $cache */
-        /** @var DeviceFactory $deviceFactory */
-        /** @var PlatformFactory $platformFactory */
-        /** @var BrowserFactory $browserFactory */
-        /** @var EngineFactory $engineFactory */
-        $object = new Detector($logger, $cache, $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
 
         /* @var Result $result */
         $result = $object($message);
 
-        self::assertInstanceOf(Result::class, $result);
-        self::assertInstanceOf(Device::class, $result->getDevice());
-        self::assertInstanceOf(Browser::class, $result->getBrowser());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertInstanceOf(BrowserInterface::class, $result->getBrowser());
         self::assertNull($result->getBrowser()->getName());
     }
 }

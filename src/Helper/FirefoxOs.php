@@ -13,10 +13,7 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-/**
- * a helper for detecting safari and some of his derefered browsers
- */
-class FirefoxOs
+final class FirefoxOs
 {
     /**
      * @var \Stringy\Stringy the user agent to handle

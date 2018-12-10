@@ -15,7 +15,7 @@ use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\Rules;
 use Psr\Log\LoggerInterface;
 
-class GenericLoader implements GenericLoaderInterface
+final class GenericLoader implements GenericLoaderInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface

@@ -9,13 +9,13 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory\Device;
+namespace BrowserDetector\Parser\Device;
 
-use BrowserDetector\Factory\DeviceFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Parser\DeviceParserInterface;
 use Psr\Log\LoggerInterface;
 
-class DesktopFactory implements DeviceFactoryInterface
+final class DesktopParser implements DeviceParserInterface
 {
     private $factories = [
         '/raspbian|debian.*rpi/i' => 'raspberry pi foundation',

@@ -19,56 +19,8 @@ use Psr\Log\LoggerInterface;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
-class EngineFactory implements EngineFactoryInterface
+final class EngineFactory
 {
-    /**
-     * @var \BrowserDetector\Loader\EngineLoaderFactory
-     */
-    private $loaderFactory;
-
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     */
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->loaderFactory = new EngineLoaderFactory($logger);
-    }
-
-    /**
-     * Gets the information about the engine by User Agent
-     *
-     * @param string $useragent
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return \UaResult\Engine\EngineInterface
-     */
-    public function __invoke(string $useragent): EngineInterface
-    {
-        $loaderFactory = $this->loaderFactory;
-
-        $loader = $loaderFactory();
-
-        return $loader($useragent);
-    }
-
-    /**
-     * @param string $key
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
-     * @return mixed
-     */
-    public function load(string $key, string $useragent = '')
-    {
-        $loaderFactory = $this->loaderFactory;
-
-        $loader = $loaderFactory();
-
-        return $loader->load($key, $useragent);
-    }
-
     /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data

@@ -9,11 +9,11 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory;
+namespace BrowserDetector\Parser;
 
 use UaResult\Engine\EngineInterface;
 
-interface EngineFactoryInterface
+interface EngineParserInterface
 {
     /**
      * Gets the information about the engine by User Agent

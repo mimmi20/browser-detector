@@ -13,7 +13,7 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Helper\Safari as SafariHelper;
 
-class AndroidWebkit implements VersionCacheFactoryInterface
+final class AndroidWebkit implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

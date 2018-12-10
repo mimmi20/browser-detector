@@ -18,7 +18,7 @@ use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
-class PlatformLoaderFactory
+final class PlatformLoaderFactory
 {
     /**
      * @var \Psr\Log\LoggerInterface

@@ -9,24 +9,26 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory\Device;
+namespace BrowserDetector\Parser;
 
-use BrowserDetector\Factory\DeviceFactoryInterface;
-use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Loader\BrowserLoaderFactory;
 use Psr\Log\LoggerInterface;
+use UaResult\Browser\Browser;
 
-/**
- * Browser detection class
- */
-class DarwinFactory implements DeviceFactoryInterface
+final class BrowserParser implements BrowserParserInterface
 {
     private $factories = [
-        '/cfnetwork\/.*\((x86_64|i386)\)/i' => 'desktop',
-        '/cfnetwork\/(97[14]|96[92]|95[85]|948|90[21]|89[743]|88[79]|811|808|790|75[78]|711|709|672|60[29]|548|485|467|459)/i' => 'mobile',
+        '/edge/i' => 'edge',
+        '/chrome|crmo|chr0me/i' => 'blink',
+        '/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i' => 'webkit',
+        '/iOS/' => 'webkit',
+        '/presto|opera/i' => 'presto',
+        '/trident|msie|like gecko/i' => 'trident',
+        '/gecko|firefox|minefield|shiretoko|bonecho|namoroka/i' => 'gecko',
     ];
 
     /**
-     * @var \BrowserDetector\Loader\DeviceLoaderFactory
+     * @var \BrowserDetector\Loader\BrowserLoaderFactory
      */
     private $loaderFactory;
 
@@ -35,11 +37,11 @@ class DarwinFactory implements DeviceFactoryInterface
      */
     public function __construct(LoggerInterface $logger)
     {
-        $this->loaderFactory = new DeviceLoaderFactory($logger);
+        $this->loaderFactory = new BrowserLoaderFactory($logger);
     }
 
     /**
-     * detects the device name from the given user agent
+     * Gets the information about the browser by User Agent
      *
      * @param string $useragent
      *
@@ -53,13 +55,13 @@ class DarwinFactory implements DeviceFactoryInterface
 
         foreach ($this->factories as $rule => $mode) {
             if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory('apple', $mode);
+                $loader = $loaderFactory($mode);
 
                 return $loader($useragent);
             }
         }
 
-        $loader = $loaderFactory('apple', 'desktop');
+        $loader = $loaderFactory('genericbrowser');
 
         return $loader($useragent);
     }

@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-class MicrosoftInternetExplorer implements VersionCacheFactoryInterface
+final class MicrosoftInternetExplorer implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

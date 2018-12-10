@@ -9,18 +9,18 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetectorTest\Factory\Device;
+namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Factory\Device\TvFactory;
+use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
-class TvFactoryTest extends TestCase
+class TvParserTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Factory\Device\TvFactory
+     * @var \BrowserDetector\Parser\Device\TvParser
      */
     private $object;
 
@@ -32,7 +32,7 @@ class TvFactoryTest extends TestCase
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 
-        $this->object = new TvFactory($logger);
+        $this->object = new TvParser($logger);
     }
 
     /**

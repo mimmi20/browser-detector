@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-class CoreMedia implements VersionCacheFactoryInterface
+final class CoreMedia implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

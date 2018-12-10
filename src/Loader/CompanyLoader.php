@@ -15,15 +15,7 @@ use JsonClass\Json;
 use UaResult\Company\Company;
 use UaResult\Company\CompanyInterface;
 
-/**
- * Browser detection class
- *
- * @category  BrowserDetector
- *
- * @copyright 2012-2017 Thomas Mueller
- * @license   http://www.opensource.org/licenses/MIT MIT License
- */
-class CompanyLoader implements LoaderInterface
+final class CompanyLoader implements LoaderInterface
 {
     /**
      * @var array[]

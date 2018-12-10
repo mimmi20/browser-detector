@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-class AndroidOs implements VersionCacheFactoryInterface
+final class AndroidOs implements VersionDetectorInterface
 {
     /**
      * returns the version of the operating system/platform

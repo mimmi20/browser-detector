@@ -13,10 +13,7 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-/**
- * a helper to detect windows
- */
-class AndroidOs
+final class AndroidOs
 {
     /**
      * @var \Stringy\Stringy the user agent to handle

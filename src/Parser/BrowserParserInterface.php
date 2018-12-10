@@ -9,11 +9,9 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory;
+namespace BrowserDetector\Parser;
 
-use UaResult\Os\OsInterface;
-
-interface PlatformFactoryInterface
+interface BrowserParserInterface
 {
     /**
      * Gets the information about the browser by User Agent
@@ -22,7 +20,7 @@ interface PlatformFactoryInterface
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *
-     * @return \UaResult\Os\OsInterface
+     * @return array
      */
-    public function __invoke(string $useragent): OsInterface;
+    public function __invoke(string $useragent): array;
 }

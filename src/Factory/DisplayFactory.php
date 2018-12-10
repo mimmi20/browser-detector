@@ -1,4 +1,12 @@
 <?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
@@ -23,7 +31,7 @@ class DisplayFactory
         $width  = array_key_exists('width', $data) ? $data['width'] : null;
         $height = array_key_exists('height', $data) ? $data['height'] : null;
         $touch  = array_key_exists('touch', $data) ? $data['touch'] : null;
-        $size  = array_key_exists('size', $data) ? $data['size'] : null;
+        $size   = array_key_exists('size', $data) ? $data['size'] : null;
 
         try {
             $type = (new TypeLoader())->load($data['type'] ?? 'unknown');

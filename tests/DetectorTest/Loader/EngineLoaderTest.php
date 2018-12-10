@@ -75,7 +75,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $companyLoader
@@ -147,7 +147,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $companyLoader
@@ -225,7 +225,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -306,7 +306,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
@@ -387,7 +387,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+            //->setMethods(['load'])
             ->getMock();
 
         $company = $this->createMock(Company::class);
