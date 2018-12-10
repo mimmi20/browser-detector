@@ -13,12 +13,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     },
     "microsoft lumia 430": {
@@ -35,12 +36,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft lumia 435": {
@@ -57,12 +59,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft lumia 540": {
@@ -79,12 +82,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft lumia 650": {
@@ -101,12 +105,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1010": {
@@ -123,12 +128,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1031": {
@@ -145,17 +151,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1062": {
         "deviceName": "RM-1062",
-        "marketingName": "Lumia 640 XL LTE",
+        "marketingName": "Lumia 640 XL",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -167,17 +174,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1063": {
         "deviceName": "RM-1063",
-        "marketingName": "Lumia 640 XL LTE (AT&T)",
+        "marketingName": "Lumia 640 XL",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -189,17 +199,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1064": {
         "deviceName": "RM-1064",
-        "marketingName": "Lumia 640 XL LTE",
+        "marketingName": "Lumia 640 XL",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -211,17 +228,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1065": {
         "deviceName": "RM-1065",
-        "marketingName": "Lumia 640 XL Dual SIM LTE",
+        "marketingName": "Lumia 640 XL",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -233,17 +253,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1066": {
         "deviceName": "RM-1066",
-        "marketingName": "Lumia 640 XL LTE",
+        "marketingName": "Lumia 640 XL",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -255,17 +278,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1067": {
         "deviceName": "RM-1067",
-        "marketingName": "Lumia 640 XL Dual SIM LTE",
+        "marketingName": "Lumia 640 XL",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -277,17 +303,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1072": {
         "deviceName": "RM-1072",
-        "marketingName": "Lumia 640 LTE",
+        "marketingName": "Lumia 640",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -299,17 +328,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1073": {
         "deviceName": "RM-1073",
-        "marketingName": "Lumia 640 LTE (AT&T)",
+        "marketingName": "Lumia 640",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -321,17 +353,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1074": {
         "deviceName": "RM-1074",
-        "marketingName": "Lumia 640 LTE",
+        "marketingName": "Lumia 640",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -343,17 +382,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1075": {
         "deviceName": "RM-1075",
-        "marketingName": "Lumia 640 Dual SIM LTE",
+        "marketingName": "Lumia 640",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -365,17 +407,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1076": {
         "deviceName": "RM-1076",
-        "marketingName": "Lumia 640 LTE",
+        "marketingName": "Lumia 640",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -387,17 +432,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1077": {
         "deviceName": "RM-1077",
-        "marketingName": "Lumia 640 Dual SIM LTE",
+        "marketingName": "Lumia 640",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -409,12 +457,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1089": {
@@ -431,17 +482,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1090": {
         "deviceName": "RM-1090",
-        "marketingName": "Lumia 535 Dual SIM",
+        "marketingName": "Lumia 535",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -453,17 +505,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1092": {
         "deviceName": "RM-1092",
-        "marketingName": "Lumia 535 Dual SIM",
+        "marketingName": "Lumia 535",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -475,12 +528,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1096": {
@@ -497,17 +551,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1099": {
         "deviceName": "RM-1099",
-        "marketingName": "Lumia 430 Dual SIM",
+        "marketingName": "Lumia 430",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -519,17 +574,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1109": {
         "deviceName": "RM-1109",
-        "marketingName": "Lumia 640 Dual SIM DTV",
+        "marketingName": "Lumia 640  DTV",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -541,17 +597,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1113": {
         "deviceName": "RM-1113",
-        "marketingName": "Lumia 640 LTE",
+        "marketingName": "Lumia 640",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -563,17 +620,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "microsoft rm-1114": {
         "deviceName": "RM-1114",
-        "marketingName": "Lumia 435 Dual SIM DTV",
+        "marketingName": "Lumia 435  DTV",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -585,12 +645,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1127": {
@@ -607,17 +668,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1141": {
         "deviceName": "RM-1141",
-        "marketingName": "Lumia 540 Dual SIM",
+        "marketingName": "Lumia 540",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -629,17 +691,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-1154": {
         "deviceName": "RM-1154",
-        "marketingName": "Lumia 650 Dual SIM",
+        "marketingName": "Lumia 650",
         "manufacturer": "Microsoft",
         "brand": "Microsoft",
         "type": "smartphone",
@@ -651,12 +714,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-994": {
@@ -673,12 +737,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-995": {
@@ -695,12 +760,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "microsoft rm-996": {
@@ -717,12 +783,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia 1": {
@@ -739,12 +806,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia 2": {
@@ -761,12 +829,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia 3.1": {
@@ -783,12 +852,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia 5.1": {
@@ -805,12 +875,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia 5235": {
@@ -827,12 +898,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia 5530 classic": {
@@ -849,12 +921,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia 6.1": {
@@ -871,12 +944,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia 603": {
@@ -893,12 +967,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia 7 plus": {
@@ -915,12 +990,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia 700": {
@@ -937,12 +1013,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia 701": {
@@ -959,12 +1036,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia 8 sirocco": {
@@ -981,12 +1059,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia 808 pureview": {
@@ -1003,12 +1082,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia c6": {
@@ -1025,12 +1105,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia c6-00": {
@@ -1047,12 +1128,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia c6-01": {
@@ -1069,12 +1151,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia c7": {
@@ -1091,12 +1174,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia e7": {
@@ -1113,12 +1197,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia e7-00": {
@@ -1135,12 +1220,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia lumia": {
@@ -1157,12 +1243,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 1020": {
@@ -1179,12 +1266,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 1520": {
@@ -1201,12 +1289,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 510": {
@@ -1223,12 +1312,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 520 rm-914": {
@@ -1245,12 +1335,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 521": {
@@ -1267,12 +1358,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 530": {
@@ -1289,12 +1381,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 610": {
@@ -1311,12 +1404,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 625": {
@@ -1333,12 +1427,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 630": {
@@ -1355,12 +1450,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 640": {
@@ -1377,12 +1473,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 710": {
@@ -1399,12 +1496,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 720": {
@@ -1421,12 +1519,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 730": {
@@ -1443,12 +1542,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 800": {
@@ -1465,12 +1565,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 820": {
@@ -1487,12 +1588,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 830": {
@@ -1509,12 +1611,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     },
     "nokia lumia 900": {
@@ -1531,12 +1634,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 920": {
@@ -1553,12 +1657,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 925": {
@@ -1575,12 +1680,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 928": {
@@ -1597,12 +1703,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 929": {
@@ -1619,12 +1726,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 950": {
@@ -1641,12 +1749,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia lumia 950 xl": {
@@ -1663,12 +1772,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia n8-00": {
@@ -1685,12 +1795,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "symbian"
     },
     "nokia n9": {
@@ -1707,12 +1818,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "meego"
     },
     "nokia n900": {
@@ -1729,12 +1841,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "linux smartphone os (maemo)"
     },
     "nokia rm-1038": {
@@ -1751,12 +1864,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-1039": {
@@ -1773,12 +1887,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-1042": {
@@ -1795,12 +1910,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia rm-1045": {
@@ -1817,17 +1933,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-808": {
         "deviceName": "RM-808",
-        "marketingName": "Lumia 900 (AT&T)",
+        "marketingName": "Lumia 900",
         "manufacturer": "Nokia",
         "brand": "Nokia",
         "type": "smartphone",
@@ -1839,12 +1956,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-846": {
@@ -1861,12 +1983,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-893": {
@@ -1883,12 +2006,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-910": {
@@ -1905,17 +2029,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-974": {
         "deviceName": "RM-974",
-        "marketingName": "Lumia 635 (Global)",
+        "marketingName": "Lumia 635",
         "manufacturer": "Nokia",
         "brand": "Nokia",
         "type": "smartphone",
@@ -1927,17 +2052,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Global"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-975": {
         "deviceName": "RM-975",
-        "marketingName": "Lumia 635 (USA)",
+        "marketingName": "Lumia 635",
         "manufacturer": "Nokia",
         "brand": "Nokia",
         "type": "smartphone",
@@ -1949,12 +2077,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-976": {
@@ -1971,17 +2102,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-978": {
         "deviceName": "RM-978",
-        "marketingName": "Lumia 630 Dual SIM",
+        "marketingName": "Lumia 630",
         "manufacturer": "Nokia",
         "brand": "Nokia",
         "type": "smartphone",
@@ -1993,12 +2125,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia rm-997": {
@@ -2015,12 +2148,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "nokia ta-1000": {
@@ -2037,12 +2171,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1003": {
@@ -2059,12 +2194,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1004": {
@@ -2081,12 +2217,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1005": {
@@ -2103,12 +2240,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1006": {
@@ -2125,12 +2263,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1007": {
@@ -2147,12 +2286,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1009": {
@@ -2169,12 +2309,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1012": {
@@ -2191,12 +2332,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1013": {
@@ -2213,12 +2355,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1015": {
@@ -2235,12 +2378,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1018": {
@@ -2257,12 +2401,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1020": {
@@ -2279,12 +2424,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1021": {
@@ -2301,12 +2447,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1024": {
@@ -2323,12 +2470,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1025": {
@@ -2345,12 +2493,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1027": {
@@ -2367,12 +2516,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1028": {
@@ -2389,12 +2539,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1029": {
@@ -2411,12 +2562,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1032": {
@@ -2433,12 +2585,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1033": {
@@ -2455,12 +2608,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1035": {
@@ -2477,12 +2631,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1038": {
@@ -2499,12 +2654,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1039": {
@@ -2521,12 +2677,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1040": {
@@ -2543,12 +2700,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1041": {
@@ -2565,12 +2723,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1042": {
@@ -2587,12 +2746,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1044": {
@@ -2609,12 +2769,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia ta-1053": {
@@ -2631,12 +2792,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia x": {
@@ -2653,17 +2815,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia x2ds": {
         "deviceName": "RM-1013",
-        "marketingName": "X2 Dual SIM",
+        "marketingName": "X2",
         "manufacturer": "Nokia",
         "brand": "Nokia",
         "type": "smartphone",
@@ -2675,12 +2838,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia xl": {
@@ -2697,12 +2861,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "nokia xl2": {
@@ -2719,12 +2884,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

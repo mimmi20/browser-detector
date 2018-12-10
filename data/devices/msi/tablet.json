@@ -13,17 +13,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "msi primo76": {
         "deviceName": "Primo76",
-        "marketingName": "Global Primo 76",
+        "marketingName": " Primo 76",
         "manufacturer": "Msi",
         "brand": "Msi",
         "type": "tablet",
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Global"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "msi primo91": {
@@ -57,12 +61,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     }
 }

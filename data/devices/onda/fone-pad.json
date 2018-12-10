@@ -1,7 +1,7 @@
 {
     "onda v10 4g": {
-        "deviceName": "V10 4G",
-        "marketingName": "V10 4G",
+        "deviceName": "V10",
+        "marketingName": "V10",
         "manufacturer": "Onda",
         "brand": "Onda",
         "type": "fone-pad",
@@ -13,12 +13,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": null
     },
     "onda v919 3g air": {
@@ -35,12 +38,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": null
     }
 }

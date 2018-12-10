@@ -13,17 +13,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "mts smart race 4g": {
-        "deviceName": "Smart Race 4G",
-        "marketingName": "Smart Race 4G",
+        "deviceName": "Smart Race",
+        "marketingName": "Smart Race",
         "manufacturer": "MTS",
         "brand": "MTS",
         "type": "smartphone",
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     }
 }

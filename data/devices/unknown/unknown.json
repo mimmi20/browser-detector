@@ -1,7 +1,7 @@
 {
     "unknown": {
-        "deviceName": null,
-        "marketingName": null,
+        "deviceName": "",
+        "marketingName": "",
         "manufacturer": "Unknown",
         "brand": "Unknown",
         "type": "unknown",
@@ -13,12 +13,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     }
 }

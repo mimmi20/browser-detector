@@ -13,12 +13,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc a810e": {
@@ -35,12 +36,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "htc e600": {
@@ -57,12 +59,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc e650": {
@@ -79,12 +82,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc mda compact": {
@@ -101,12 +105,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc mda compact iii": {
@@ -123,12 +128,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc mda vario ii": {
@@ -145,12 +151,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows mobile os"
     },
     "htc mda vario iii": {
@@ -167,12 +174,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows mobile os"
     },
     "htc mini t5555": {
@@ -189,12 +197,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows mobile os"
     },
     "htc mteor": {
@@ -211,12 +220,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc p3300": {
@@ -233,12 +243,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc p3350": {
@@ -255,12 +266,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc p3700": {
@@ -277,12 +289,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     },
     "htc p6300": {
@@ -299,12 +312,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc radar": {
@@ -321,17 +335,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "htc radar 4g": {
-        "deviceName": "Radar 4G",
-        "marketingName": "Radar 4G",
+        "deviceName": "Radar",
+        "marketingName": "Radar",
         "manufacturer": "Htc",
         "brand": "Htc",
         "type": "feature-phone",
@@ -343,12 +358,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "windows phone"
     },
     "htc radar c110e": {
@@ -365,12 +383,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "htc s510": {
@@ -387,12 +406,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows mobile os"
     },
     "htc s620": {
@@ -409,12 +429,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc smart f3188": {
@@ -431,12 +452,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "java"
     },
     "htc spark": {
@@ -453,12 +475,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "htc t3232": {
@@ -475,12 +498,15 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "windows ce"
     },
     "htc t3335": {
@@ -497,12 +523,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows mobile os"
     },
     "htc t7576": {
@@ -519,12 +546,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "htc t8698": {
@@ -541,12 +569,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "htc touch hd t8282": {
@@ -563,12 +592,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     },
     "htc v1510": {
@@ -585,12 +615,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc v3600": {
@@ -607,12 +638,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     },
     "htc vpa compact iv": {
@@ -629,12 +661,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows mobile os"
     },
     "htc vpa touch": {
@@ -651,12 +684,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "htc x310e": {
@@ -673,12 +707,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows phone"
     },
     "htc x7500": {
@@ -695,12 +730,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "windows ce"
     }
 }

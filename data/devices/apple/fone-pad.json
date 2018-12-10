@@ -1,7 +1,7 @@
 {
     "apple ipad 2,2": {
         "deviceName": "iPad",
-        "marketingName": "iPad (Wi-Fi+3G, AT&T, Gen 2)",
+        "marketingName": "iPad (+3G, Gen 2)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -13,17 +13,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "Wi-Fi",
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple ipad 2,3": {
         "deviceName": "iPad",
-        "marketingName": "iPad (Wi-Fi+3G, Verizon, Gen 2)",
+        "marketingName": "iPad (+3G, Gen 2)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -35,17 +43,26 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon"
+            ]
         },
+        "connections": [
+            "Wi-Fi",
+            "GSM",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple ipad 2,6": {
         "deviceName": "iPad mini",
-        "marketingName": "iPad mini (Wi-Fi+4G, AT&T)",
+        "marketingName": "iPad mini",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -57,17 +74,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 2,7": {
         "deviceName": "iPad mini",
-        "marketingName": "iPad mini (Wi-Fi+4G, Verizon, Sprint)",
+        "marketingName": "iPad mini (+, )",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -79,17 +104,27 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon",
+                "Sprint"
+            ]
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple ipad 3,2": {
         "deviceName": "iPad 3",
-        "marketingName": "iPad 3 (Wi-Fi+3G, Verizon)",
+        "marketingName": "iPad 3 (+3G)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -101,17 +136,26 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon"
+            ]
         },
+        "connections": [
+            "Wi-Fi",
+            "GSM",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple ipad 3,3": {
         "deviceName": "iPad 3",
-        "marketingName": "iPad 3 (Wi-Fi+3G, AT&T)",
+        "marketingName": "iPad 3 (+3G)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -123,17 +167,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "Wi-Fi",
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple ipad 3,5": {
         "deviceName": "iPad 4",
-        "marketingName": "iPad 4 (Wi-Fi+4G, AT&T)",
+        "marketingName": "iPad 4",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -145,17 +197,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 3,6": {
         "deviceName": "iPad 4",
-        "marketingName": "iPad 4 (Wi-Fi+4G, Verizon, Sprint)",
+        "marketingName": "iPad 4 (+, )",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -167,17 +227,27 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon",
+                "Sprint"
+            ]
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple ipad 4,2": {
         "deviceName": "iPad Air",
-        "marketingName": "iPad Air (Wi-Fi+4G)",
+        "marketingName": "iPad Air",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -189,17 +259,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 4,3": {
         "deviceName": "iPad Air",
-        "marketingName": "iPad Air (Wi-Fi+4G, China)",
+        "marketingName": "iPad Air",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -211,17 +285,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE",
+            "WCDMA"
+        ],
         "platform": "ios"
     },
     "apple ipad 4,5": {
         "deviceName": "iPad mini 2",
-        "marketingName": "iPad mini 2 (Wi-Fi+4G)",
+        "marketingName": "iPad mini 2",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -233,17 +314,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 4,6": {
         "deviceName": "iPad mini 2",
-        "marketingName": "iPad mini 2 (Wi-Fi+4G, China)",
+        "marketingName": "iPad mini 2",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -255,17 +340,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE",
+            "WCDMA"
+        ],
         "platform": "ios"
     },
     "apple ipad 4,8": {
         "deviceName": "iPad mini 3",
-        "marketingName": "iPad mini 3 (Wi-Fi+4G)",
+        "marketingName": "iPad mini 3",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -277,17 +369,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 4,9": {
         "deviceName": "iPad mini 3",
-        "marketingName": "iPad mini 3 (Wi-Fi+4G, China)",
+        "marketingName": "iPad mini 3",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -299,17 +395,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE",
+            "WCDMA"
+        ],
         "platform": "ios"
     },
     "apple ipad 5,2": {
         "deviceName": "iPad mini 4",
-        "marketingName": "iPad mini 4 (Wi-Fi+4G)",
+        "marketingName": "iPad mini 4",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -321,17 +424,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 5,4": {
         "deviceName": "iPad Air 2",
-        "marketingName": "iPad Air 2 (Wi-Fi+4G)",
+        "marketingName": "iPad Air 2",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -343,17 +450,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 6,4": {
         "deviceName": "iPad Pro 9.7",
-        "marketingName": "iPad Pro (9.7, Wi-Fi+4G)",
+        "marketingName": "iPad Pro (9.7, +)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -365,17 +476,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 6,8": {
         "deviceName": "iPad Pro",
-        "marketingName": "iPad Pro (12.9, Wi-Fi+4G)",
+        "marketingName": "iPad Pro (12.9, +)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -387,17 +502,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 7,2": {
         "deviceName": "iPad7,2",
-        "marketingName": "iPad Pro (12.9, Wi-Fi+4G, 2nd Gen)",
+        "marketingName": "iPad Pro (12.9, +, 2nd Gen)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -409,17 +528,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 7,4": {
         "deviceName": "iPad7,4",
-        "marketingName": "iPad Pro (10.5, Wi-Fi+4G, 2nd Gen)",
+        "marketingName": "iPad Pro (10.5, +, 2nd Gen)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -431,17 +554,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     },
     "apple ipad 7,6": {
         "deviceName": "iPad7,6",
-        "marketingName": "iPad 6 (9.7, Wi-Fi+4G)",
+        "marketingName": "iPad 6 (9.7, +)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "fone-pad",
@@ -453,12 +580,16 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "Wi-Fi",
+            "LTE"
+        ],
         "platform": "ios"
     }
 }

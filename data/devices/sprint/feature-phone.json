@@ -1,7 +1,7 @@
 {
     "general sprint device": {
-        "deviceName": "general Sprint Device",
-        "marketingName": "general Sprint Device",
+        "deviceName": "general  Device",
+        "marketingName": "general  Device",
         "manufacturer": "Sprint",
         "brand": "Sprint",
         "type": "feature-phone",
@@ -13,12 +13,19 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Sprint"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "sprint 6700": {
@@ -35,12 +42,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     },
     "sprint s2151": {
@@ -57,12 +65,13 @@
             "size": null
         },
         "dualOrientation": false,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "brew"
     }
 }

@@ -13,17 +13,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "iball slide snap 4g2": {
-        "deviceName": "Slide Snap 4G2",
-        "marketingName": "Slide Snap 4G2",
+        "deviceName": "Slide Snap 2",
+        "marketingName": "Slide Snap 2",
         "manufacturer": "Iball",
         "brand": "Iball",
         "type": "fone-pad",
@@ -35,12 +38,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     }
 }

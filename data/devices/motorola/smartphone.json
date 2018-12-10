@@ -13,12 +13,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     },
     "motorola a953": {
@@ -35,12 +36,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola droid": {
@@ -57,12 +59,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola droid bionic": {
@@ -79,12 +82,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola droid x2": {
@@ -101,12 +105,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola droid2": {
@@ -123,17 +128,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola droid2 global": {
-        "deviceName": "Droid2 Global",
-        "marketingName": "Droid2 Global",
+        "deviceName": "Droid2",
+        "marketingName": "Droid2",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -145,12 +151,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Global"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola droid3": {
@@ -167,12 +176,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola droid4": {
@@ -189,12 +199,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola droidx": {
@@ -211,12 +222,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola mb200": {
@@ -233,12 +245,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola mb300": {
@@ -255,12 +268,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola mb511": {
@@ -277,12 +291,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola mb525": {
@@ -299,12 +314,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola mb526": {
@@ -321,17 +337,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola mb612": {
         "deviceName": "MB612",
-        "marketingName": "XPRT (CDMA)",
+        "marketingName": "XPRT",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -343,12 +360,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "motorola mb632": {
@@ -365,12 +385,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola mb860": {
@@ -387,17 +408,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola mb886": {
         "deviceName": "MB886",
-        "marketingName": "Atrix HD 4G LTE",
+        "marketingName": "Atrix HD",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -409,12 +431,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "motorola me511": {
@@ -431,12 +456,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola me525": {
@@ -453,12 +479,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola me600": {
@@ -475,12 +502,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola me860": {
@@ -497,12 +525,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola me863": {
@@ -519,12 +548,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola milestone": {
@@ -541,12 +571,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola milestone x": {
@@ -563,12 +594,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto c": {
@@ -585,12 +617,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto c plus": {
@@ -607,12 +640,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto e4": {
@@ -629,12 +663,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto e4 plus": {
@@ -651,12 +686,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto e5": {
@@ -673,12 +709,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto e5 plus": {
@@ -695,12 +732,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto g play": {
@@ -717,12 +755,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto g4": {
@@ -739,12 +778,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto g4 plus": {
@@ -761,12 +801,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto g5": {
@@ -783,12 +824,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto g5s plus": {
@@ -805,12 +847,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto g6": {
@@ -827,12 +870,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto g6 play": {
@@ -849,12 +893,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto g6 plus": {
@@ -871,12 +916,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto x4": {
@@ -893,12 +939,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto z": {
@@ -915,12 +962,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto z2": {
@@ -937,12 +985,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto z2 play": {
@@ -959,12 +1008,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola moto z3 play": {
@@ -981,12 +1031,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola motog3": {
@@ -1003,12 +1054,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola motoroi x": {
@@ -1025,12 +1077,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola razr": {
@@ -1047,12 +1100,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1021": {
@@ -1069,17 +1123,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1022": {
         "deviceName": "XT1022",
-        "marketingName": "Moto E Dual SIM",
+        "marketingName": "Moto E",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1091,12 +1146,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1023": {
@@ -1113,17 +1169,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1025": {
         "deviceName": "XT1025",
-        "marketingName": "Moto E Dual SIM",
+        "marketingName": "Moto E",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1135,12 +1192,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1028": {
@@ -1157,12 +1215,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1030": {
@@ -1179,12 +1238,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1031": {
@@ -1201,12 +1261,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1032": {
@@ -1223,12 +1284,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1033": {
@@ -1245,12 +1307,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1034": {
@@ -1267,17 +1330,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1039": {
         "deviceName": "XT1039",
-        "marketingName": "Moto G LTE",
+        "marketingName": "Moto G",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1289,17 +1353,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": null
     },
     "motorola xt1040": {
         "deviceName": "XT1040",
-        "marketingName": "Moto G 4G",
+        "marketingName": "Moto G",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1311,12 +1378,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": null
     },
     "motorola xt1049": {
@@ -1333,17 +1403,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1052": {
         "deviceName": "XT1052",
-        "marketingName": "Moto X (Europe)",
+        "marketingName": "Moto X",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1355,17 +1426,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Europe"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1053": {
         "deviceName": "XT1053",
-        "marketingName": "Moto X (T-Mobile)",
+        "marketingName": "Moto X",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1377,17 +1451,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "T-Mobile"
+            ]
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1055": {
         "deviceName": "XT1055",
-        "marketingName": "Moto X (U.S. Cellular)",
+        "marketingName": "Moto X",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1399,17 +1478,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "U.S. Cellular"
+            ]
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1056": {
         "deviceName": "XT1056",
-        "marketingName": "Moto X (Sprint)",
+        "marketingName": "Moto X",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1421,17 +1505,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Sprint"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "motorola xt1058": {
         "deviceName": "XT1058",
-        "marketingName": "Moto X (AT&T)",
+        "marketingName": "Moto X",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1443,17 +1534,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T"
+            ]
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1060": {
         "deviceName": "XT1060",
-        "marketingName": "Moto X (Verizon)",
+        "marketingName": "Moto X",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1465,12 +1561,19 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "motorola xt1064": {
@@ -1487,17 +1590,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": null
     },
     "motorola xt1068": {
         "deviceName": "XT1068",
-        "marketingName": "Moto G Dual SIM (2nd gen)",
+        "marketingName": "Moto G  (2nd gen)",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1509,12 +1613,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1069": {
@@ -1531,17 +1636,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1072": {
         "deviceName": "XT1072",
-        "marketingName": "Moto G 4G (2nd gen)",
+        "marketingName": "Moto G  (2nd gen)",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1553,12 +1659,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "motorola xt1080": {
@@ -1575,12 +1684,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1092": {
@@ -1597,12 +1707,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1095": {
@@ -1619,12 +1730,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1096": {
@@ -1641,12 +1753,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1097": {
@@ -1663,12 +1776,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1254": {
@@ -1685,17 +1799,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1505": {
         "deviceName": "XT1505",
-        "marketingName": "Moto E (2nd Gen., GSM, Global)",
+        "marketingName": "Moto E (2nd Gen., )",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1707,17 +1822,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Global"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "motorola xt1506": {
         "deviceName": "XT1506",
-        "marketingName": "Moto E (2nd Gen., GSM, Global, Dual SIM)",
+        "marketingName": "Moto E (2nd Gen., )",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1729,17 +1849,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
-            "regions": [],
+            "regions": [
+                "Global"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "motorola xt1511": {
         "deviceName": "XT1511",
-        "marketingName": "Moto E (2nd Gen., GSM, USA)",
+        "marketingName": "Moto E (2nd Gen., )",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1751,17 +1876,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "motorola xt1521": {
         "deviceName": "XT1521",
-        "marketingName": "Moto E (2nd Gen., GSM+LTE, Global, Dual SIM)",
+        "marketingName": "Moto E (2nd Gen., +, )",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1773,17 +1903,23 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
-            "regions": [],
+            "regions": [
+                "Global"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE",
+            "GSM"
+        ],
         "platform": "android"
     },
     "motorola xt1524": {
         "deviceName": "XT1524",
-        "marketingName": "Moto E (2nd Gen., GSM+LTE, Global)",
+        "marketingName": "Moto E (2nd Gen.)",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1795,17 +1931,23 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Global"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE",
+            "GSM"
+        ],
         "platform": "android"
     },
     "motorola xt1526": {
         "deviceName": "XT1526",
-        "marketingName": "Moto E (2nd Gen., CDMA+LTE, Sprint)",
+        "marketingName": "Moto E (2nd Gen.)",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1817,17 +1959,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Sprint"
+            ]
         },
+        "connections": [
+            "LTE",
+            "CDMA"
+        ],
         "platform": "android"
     },
     "motorola xt1527": {
         "deviceName": "XT1527",
-        "marketingName": "Moto E (2nd Gen., GSM+LTE, USA)",
+        "marketingName": "Moto E (2nd Gen.)",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1839,17 +1989,23 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [
+            "LTE",
+            "GSM"
+        ],
         "platform": "android"
     },
     "motorola xt1528": {
         "deviceName": "XT1528",
-        "marketingName": "Moto E (2nd Gen., CDMA+LTE, Verizon)",
+        "marketingName": "Moto E (2nd Gen.)",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1861,12 +2017,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon"
+            ]
         },
+        "connections": [
+            "LTE",
+            "CDMA"
+        ],
         "platform": "android"
     },
     "motorola xt1562": {
@@ -1883,12 +2047,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1563": {
@@ -1905,12 +2070,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1572": {
@@ -1927,12 +2093,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1580": {
@@ -1949,17 +2116,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1581": {
         "deviceName": "XT1581",
-        "marketingName": "Moto X Force Dual SIM",
+        "marketingName": "Moto X Force",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -1971,12 +2139,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1585": {
@@ -1993,17 +2162,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1601": {
         "deviceName": "XT1601",
-        "marketingName": "Moto G4 Play (Latin America, Mexico)",
+        "marketingName": "Moto G4 Play",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2015,17 +2185,22 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
+            "regions": [
+                "Latin America"
+            ],
+            "countries": [
+                "Mexico"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1602": {
         "deviceName": "XT1602",
-        "marketingName": "Moto G4 Play (Europe, India, Australia)",
+        "marketingName": "Moto G4 Play",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2037,17 +2212,23 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
+            "regions": [
+                "Europe"
+            ],
+            "countries": [
+                "India",
+                "Australia"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1603": {
         "deviceName": "XT1603",
-        "marketingName": "Moto G4 Play (Brazil)",
+        "marketingName": "Moto G4 Play",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2059,17 +2240,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "Brazil"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1604": {
         "deviceName": "XT1604",
-        "marketingName": "Moto G4 Play (Europe)",
+        "marketingName": "Moto G4 Play",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2081,17 +2265,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Europe"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1607": {
         "deviceName": "XT1607",
-        "marketingName": "Moto G4 Play (USA, Canada)",
+        "marketingName": "Moto G4 Play",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2103,17 +2290,21 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA",
+                "Canada"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1609": {
         "deviceName": "XT1609",
-        "marketingName": "Moto G4 Play (USA)",
+        "marketingName": "Moto G4 Play",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2125,17 +2316,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1635-01": {
         "deviceName": "XT1635-01",
-        "marketingName": "Moto Z Play Droid XLTE",
+        "marketingName": "Moto Z Play Droid",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2147,12 +2341,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "XLTE"
+        ],
         "platform": "android"
     },
     "motorola xt1635-02": {
@@ -2169,12 +2366,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1635-03": {
@@ -2191,12 +2389,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1650": {
@@ -2213,12 +2412,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1650-05": {
@@ -2235,12 +2435,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1684": {
@@ -2257,17 +2458,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1685": {
         "deviceName": "XT1685",
-        "marketingName": "Moto G5 Plus (Dual SIM)",
+        "marketingName": "Moto G5 Plus",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2279,12 +2481,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1686": {
@@ -2301,17 +2504,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1687": {
         "deviceName": "XT1687",
-        "marketingName": "Moto G5 Plus (USA)",
+        "marketingName": "Moto G5 Plus",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2323,12 +2527,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1700": {
@@ -2345,17 +2552,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1706": {
         "deviceName": "XT1706",
-        "marketingName": "Moto E3 Power Dual SIM",
+        "marketingName": "Moto E3 Power",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2367,17 +2575,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 2,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1710-01": {
         "deviceName": "XT1710-01",
-        "marketingName": "Moto Z2 Play (USA)",
+        "marketingName": "Moto Z2 Play",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2389,17 +2598,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1710-02": {
         "deviceName": "XT1710-02",
-        "marketingName": "Moto Z2 Play (USA)",
+        "marketingName": "Moto Z2 Play",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2411,17 +2623,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "USA"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1710-07": {
         "deviceName": "XT1710-07",
-        "marketingName": "Moto Z2 Play (Brazil)",
+        "marketingName": "Moto Z2 Play",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2433,17 +2648,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "Brazil"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1710-08": {
         "deviceName": "XT1710-08",
-        "marketingName": "Moto Z2 Play (China, Hong Kong)",
+        "marketingName": "Moto Z2 Play",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2455,17 +2673,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
+            "regions": [
+                "Hong Kong"
+            ],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "WCDMA"
+        ],
         "platform": "android"
     },
     "motorola xt1710-09": {
         "deviceName": "XT1710-09",
-        "marketingName": "Moto Z2 Play (Australia, New Zealand, Indonesia, Japan, Malaysia, Taiwan)",
+        "marketingName": "Moto Z2 Play",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2477,17 +2702,26 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
+            "regions": [
+                "Taiwan"
+            ],
+            "countries": [
+                "Australia",
+                "Japan",
+                "Malaysia",
+                "Indonesia",
+                "New Zealand"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1710-10": {
         "deviceName": "XT1710-10",
-        "marketingName": "Moto Z2 Play (India)",
+        "marketingName": "Moto Z2 Play",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2499,17 +2733,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "India"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1710-11": {
         "deviceName": "XT1710-11",
-        "marketingName": "Moto Z2 Play (China, Hong Kong)",
+        "marketingName": "Moto Z2 Play",
         "manufacturer": "Lenovo",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2521,17 +2758,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
+            "regions": [
+                "Hong Kong"
+            ],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "WCDMA"
+        ],
         "platform": "android"
     },
     "motorola xt1792": {
         "deviceName": "XT1792",
-        "marketingName": "Moto G5S (Brazil)",
+        "marketingName": "Moto G5S",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2543,17 +2787,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "Brazil"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1793": {
         "deviceName": "XT1793",
-        "marketingName": "Moto G5S (Europe)",
+        "marketingName": "Moto G5S",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2565,17 +2812,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Europe"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt1794": {
         "deviceName": "XT1794",
-        "marketingName": "Moto G5S (Europe, India)",
+        "marketingName": "Moto G5S",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -2587,12 +2837,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
+            "regions": [
+                "Europe"
+            ],
+            "countries": [
+                "India"
+            ],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt300": {
@@ -2609,12 +2864,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt303": {
@@ -2631,12 +2887,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt305": {
@@ -2653,12 +2910,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt311": {
@@ -2675,12 +2933,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt316": {
@@ -2697,12 +2956,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt320": {
@@ -2719,12 +2979,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt321": {
@@ -2741,12 +3002,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt389": {
@@ -2763,12 +3025,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt390": {
@@ -2785,12 +3048,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt502": {
@@ -2807,12 +3071,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt530": {
@@ -2829,12 +3094,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt531": {
@@ -2851,12 +3117,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt535": {
@@ -2873,12 +3140,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt555c": {
@@ -2895,12 +3163,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt556": {
@@ -2917,12 +3186,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt557": {
@@ -2939,12 +3209,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt603": {
@@ -2961,12 +3232,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt610": {
@@ -2983,12 +3255,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt615": {
@@ -3005,12 +3278,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt621": {
@@ -3027,12 +3301,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt626": {
@@ -3049,12 +3324,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt682": {
@@ -3071,12 +3347,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt685": {
@@ -3093,12 +3370,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt687": {
@@ -3115,12 +3393,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt702": {
@@ -3137,12 +3416,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt720": {
@@ -3159,12 +3439,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt800w": {
@@ -3181,12 +3462,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt830c": {
@@ -3203,12 +3485,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt860": {
@@ -3225,17 +3508,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt875": {
         "deviceName": "XT875",
-        "marketingName": "Droid Bionic LTE",
+        "marketingName": "Droid Bionic",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -3247,12 +3531,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "motorola xt881": {
@@ -3269,12 +3556,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt882": {
@@ -3291,12 +3579,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt885": {
@@ -3313,12 +3602,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt886": {
@@ -3335,12 +3625,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt890": {
@@ -3357,17 +3648,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt897": {
         "deviceName": "XT897",
-        "marketingName": "Photon Q 4G",
+        "marketingName": "Photon Q",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -3379,12 +3671,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "motorola xt901": {
@@ -3401,12 +3696,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt905": {
@@ -3423,12 +3719,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt907": {
@@ -3445,12 +3742,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt910": {
@@ -3467,17 +3765,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt912b": {
         "deviceName": "XT912B",
-        "marketingName": "Droid Razr 4G",
+        "marketingName": "Droid Razr",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -3489,17 +3788,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "motorola xt914": {
         "deviceName": "XT914",
-        "marketingName": "Razr D1 (Latin America)",
+        "marketingName": "Razr D1",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -3511,12 +3813,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
+            "regions": [
+                "Latin America"
+            ],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt915": {
@@ -3533,12 +3838,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt916": {
@@ -3555,12 +3861,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt918": {
@@ -3577,12 +3884,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt919": {
@@ -3599,12 +3907,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt920": {
@@ -3621,17 +3930,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "motorola xt922": {
         "deviceName": "XT922",
-        "marketingName": "Droid Razr HD (China)",
+        "marketingName": "Droid Razr HD",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -3643,12 +3953,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "WCDMA"
+        ],
         "platform": "android"
     },
     "motorola xt923": {
@@ -3665,17 +3980,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "android"
     },
     "motorola xt925": {
         "deviceName": "XT925",
-        "marketingName": "Droid Razr HD 4G",
+        "marketingName": "Droid Razr HD",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -3687,17 +4005,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "motorola xt926": {
         "deviceName": "XT926",
-        "marketingName": "Droid Razr HD (Verizon)",
+        "marketingName": "Droid Razr HD",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -3709,17 +4030,24 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "android"
     },
     "motorola xt980": {
         "deviceName": "XT980",
-        "marketingName": "Droid Razr HD (China)",
+        "marketingName": "Droid Razr HD",
         "manufacturer": "Motorola",
         "brand": "Motorola",
         "type": "smartphone",
@@ -3731,12 +4059,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "WCDMA"
+        ],
         "platform": "android"
     }
 }

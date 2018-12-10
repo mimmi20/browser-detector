@@ -13,17 +13,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "lg v490": {
         "deviceName": "V490",
-        "marketingName": "G Pad 8.0 4G LTE",
+        "marketingName": "G Pad 8.0",
         "manufacturer": "Lg",
         "brand": "Lg",
         "type": "fone-pad",
@@ -35,12 +36,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "lg v521": {
@@ -57,12 +61,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "lg v900": {
@@ -79,12 +84,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "lg v905r": {
@@ -101,17 +107,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "android"
     },
     "lg v935": {
         "deviceName": "V935",
-        "marketingName": "G Pad II 10.1 LTE",
+        "marketingName": "G Pad II 10.1",
         "manufacturer": "Lg",
         "brand": "Lg",
         "type": "fone-pad",
@@ -123,17 +130,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     },
     "lg vk810 4g": {
-        "deviceName": "VK810 4G",
-        "marketingName": "G Pad 8.3 4G",
+        "deviceName": "VK810",
+        "marketingName": "G Pad 8.3",
         "manufacturer": "Lg",
         "brand": "Lg",
         "type": "fone-pad",
@@ -145,12 +155,15 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE"
+        ],
         "platform": "android"
     }
 }

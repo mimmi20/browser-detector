@@ -13,12 +13,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 1,1": {
@@ -35,12 +36,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 1,2": {
@@ -57,17 +59,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 10,1": {
         "deviceName": "A1863, A1906",
-        "marketingName": "iPhone 8 (Verizon, Sprint, China, Japan)",
+        "marketingName": "iPhone 8",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -79,17 +84,28 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA",
+                "China",
+                "Japan"
+            ],
+            "vendors": [
+                "Verizon",
+                "Sprint"
+            ]
         },
+        "connections": [
+            "WCDMA",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple iphone 10,2": {
         "deviceName": "A1864, A1898",
-        "marketingName": "iPhone 8 Plus (Verizon, Sprint, China, Japan)",
+        "marketingName": "iPhone 8 Plus",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -101,17 +117,28 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA",
+                "China",
+                "Japan"
+            ],
+            "vendors": [
+                "Verizon",
+                "Sprint"
+            ]
         },
+        "connections": [
+            "WCDMA",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple iphone 10,3": {
         "deviceName": "A1865, A1902",
-        "marketingName": "iPhone X (Verizon, Sprint, China, Japan)",
+        "marketingName": "iPhone X",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -123,17 +150,28 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA",
+                "China",
+                "Japan"
+            ],
+            "vendors": [
+                "Verizon",
+                "Sprint"
+            ]
         },
+        "connections": [
+            "WCDMA",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple iphone 10,4": {
         "deviceName": "A1905",
-        "marketingName": "iPhone 8 (AT&T, T-Mobile, Global)",
+        "marketingName": "iPhone 8",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -145,17 +183,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
+            "regions": [
+                "Global"
+            ],
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T",
+                "T-Mobile"
+            ]
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 10,5": {
         "deviceName": "A1897",
-        "marketingName": "iPhone 8 Plus (AT&T, T-Mobile, Global)",
+        "marketingName": "iPhone 8 Plus",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -167,17 +213,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
+            "regions": [
+                "Global"
+            ],
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T",
+                "T-Mobile"
+            ]
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 10,6": {
         "deviceName": "A1901",
-        "marketingName": "iPhone X (AT&T, T-Mobile, Global)",
+        "marketingName": "iPhone X",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -189,12 +243,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
+            "regions": [
+                "Global"
+            ],
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T",
+                "T-Mobile"
+            ]
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 11,2": {
@@ -211,12 +273,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 11,4": {
@@ -233,17 +296,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 11,6": {
         "deviceName": "iPhone 11,6",
-        "marketingName": "iPhone XS Max (China)",
+        "marketingName": "iPhone XS Max",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -255,12 +319,17 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
+            "countries": [
+                "China"
+            ],
             "vendors": []
         },
+        "connections": [
+            "WCDMA"
+        ],
         "platform": "ios"
     },
     "apple iphone 11,8": {
@@ -277,12 +346,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 2,1": {
@@ -299,17 +369,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 3,1": {
         "deviceName": "iPhone 4",
-        "marketingName": "iPhone 4 (GSM)",
+        "marketingName": "iPhone 4",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -321,17 +394,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 3,2": {
         "deviceName": "iPhone 4",
-        "marketingName": "iPhone 4 (GSM)",
+        "marketingName": "iPhone 4",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -343,17 +419,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 3,3": {
         "deviceName": "iPhone 4",
-        "marketingName": "iPhone 4 (CDMA, Verizon, Sprint)",
+        "marketingName": "iPhone 4",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -365,12 +444,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "Verizon",
+                "Sprint"
+            ]
         },
+        "connections": [
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple iphone 4,1": {
@@ -387,12 +474,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 5,1": {
@@ -409,17 +497,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 5,2": {
         "deviceName": "iPhone 5",
-        "marketingName": "iPhone 5 (3G+4G)",
+        "marketingName": "iPhone 5 (3G+)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -431,12 +522,16 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE",
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 5,3": {
@@ -453,17 +548,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 5,4": {
         "deviceName": "iPhone 5C",
-        "marketingName": "iPhone 5C (3G+4G)",
+        "marketingName": "iPhone 5C (3G+)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -475,12 +573,16 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE",
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 6,1": {
@@ -497,17 +599,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 6,2": {
         "deviceName": "iPhone 5S",
-        "marketingName": "iPhone 5S (3G+4G)",
+        "marketingName": "iPhone 5S (3G+)",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -519,12 +624,16 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [
+            "LTE",
+            "GSM"
+        ],
         "platform": "ios"
     },
     "apple iphone 7,1": {
@@ -541,12 +650,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 7,2": {
@@ -563,12 +673,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 8,1": {
@@ -585,12 +696,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 8,2": {
@@ -607,12 +719,13 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 8,4": {
@@ -629,17 +742,18 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
             "countries": [],
             "vendors": []
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 9,1": {
         "deviceName": "A1660, A1779, A1780",
-        "marketingName": "iPhone 7 (Verizon, Sprint, China, Japan)",
+        "marketingName": "iPhone 7",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -651,17 +765,28 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA",
+                "China",
+                "Japan"
+            ],
+            "vendors": [
+                "Verizon",
+                "Sprint"
+            ]
         },
+        "connections": [
+            "WCDMA",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple iphone 9,2": {
         "deviceName": "A1661, A1785, A1786",
-        "marketingName": "iPhone 7 Plus (Verizon, Sprint, China, Japan)",
+        "marketingName": "iPhone 7 Plus",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -673,17 +798,28 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
             "regions": [],
-            "countries": [],
-            "vendors": []
+            "countries": [
+                "USA",
+                "China",
+                "Japan"
+            ],
+            "vendors": [
+                "Verizon",
+                "Sprint"
+            ]
         },
+        "connections": [
+            "WCDMA",
+            "CDMA"
+        ],
         "platform": "ios"
     },
     "apple iphone 9,3": {
         "deviceName": "A1778",
-        "marketingName": "iPhone 7 (AT&T, T-Mobile, Global)",
+        "marketingName": "iPhone 7",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -695,17 +831,25 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
+            "regions": [
+                "Global"
+            ],
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T",
+                "T-Mobile"
+            ]
         },
+        "connections": [],
         "platform": "ios"
     },
     "apple iphone 9,4": {
         "deviceName": "A1784",
-        "marketingName": "iPhone 7 Plus (AT&T, T-Mobile, Global)",
+        "marketingName": "iPhone 7 Plus",
         "manufacturer": "Apple",
         "brand": "Apple",
         "type": "smartphone",
@@ -717,12 +861,20 @@
             "size": null
         },
         "dualOrientation": true,
-        "simCount": null,
+        "simCount": 0,
         "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
+            "regions": [
+                "Global"
+            ],
+            "countries": [
+                "USA"
+            ],
+            "vendors": [
+                "AT&T",
+                "T-Mobile"
+            ]
         },
+        "connections": [],
         "platform": "ios"
     }
 }
