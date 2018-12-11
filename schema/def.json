@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
 
   "definitions": {
     "headers": {
@@ -157,7 +157,8 @@
             "width": {
               "anyOf": [
                 {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0
                 },
                 {
                   "type": "null"
@@ -167,7 +168,8 @@
             "height": {
               "anyOf": [
                 {
-                  "type": "integer"
+                  "type": "integer",
+                  "minimum": 0
                 },
                 {
                   "type": "null"
@@ -185,9 +187,13 @@
               ]
             },
             "type": {
+              "type": "string"
+            },
+            "size": {
               "anyOf": [
                 {
-                  "type": "string"
+                  "type": "number",
+                  "minimum": 0
                 },
                 {
                   "type": "null"
@@ -199,7 +205,8 @@
             "width",
             "height",
             "touch",
-            "type"
+            "type",
+            "size"
           ]
         },
         "dualOrientation": {
@@ -207,6 +214,45 @@
         },
         "type": {
           "type": "string"
+        },
+        "simCount": {
+          "type": "integer",
+          "minimum": 0,
+          "multipleOf": 1
+        },
+        "market": {
+          "type": "object",
+          "properties": {
+            "regions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "countries": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "vendors": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "regions",
+            "countries",
+            "vendors"
+          ]
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "required": [
@@ -216,7 +262,10 @@
         "brand",
         "display",
         "dualOrientation",
-        "type"
+        "type",
+        "simCount",
+        "market",
+        "connections"
       ]
     }
   }
