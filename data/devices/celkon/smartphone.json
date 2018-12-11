@@ -1,278 +1,290 @@
 {
-    "general celkon device": {
-        "deviceName": "general Celkon Device",
-        "marketingName": "general Celkon Device",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general celkon device": {
+    "deviceName": "general Celkon Device",
+    "marketingName": "general Celkon Device",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "celkon a.r 40": {
-        "deviceName": "A.R 40",
-        "marketingName": "A.R 40",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "celkon a10": {
-        "deviceName": "A10",
-        "marketingName": "A10",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "celkon a.r 40": {
+    "deviceName": "A.R 40",
+    "marketingName": "A.R 40",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "celkon a119q": {
-        "deviceName": "A119Q",
-        "marketingName": "Signature HD",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "celkon a125": {
-        "deviceName": "A125",
-        "marketingName": "A125",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a10": {
+    "deviceName": "A10",
+    "marketingName": "A10",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "celkon a15": {
-        "deviceName": "A15",
-        "marketingName": "A15",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "celkon a400": {
-        "deviceName": "A400",
-        "marketingName": "A400",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a125": {
+    "deviceName": "A125",
+    "marketingName": "A125",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "celkon a63": {
-        "deviceName": "A63",
-        "marketingName": "A63",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "celkon a66": {
-        "deviceName": "A66",
-        "marketingName": "A66",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a15": {
+    "deviceName": "A15",
+    "marketingName": "A15",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "celkon a86": {
-        "deviceName": "A86",
-        "marketingName": "A86",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "celkon a9 dual": {
-        "deviceName": "A9 Dual",
-        "marketingName": "A9 Dual",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a400": {
+    "deviceName": "A400",
+    "marketingName": "A400",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "celkon a9+": {
-        "deviceName": "A9 Plus",
-        "marketingName": "A9 Plus",
-        "manufacturer": "Celkon",
-        "brand": "Celkon",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a63": {
+    "deviceName": "A63",
+    "marketingName": "A63",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a66": {
+    "deviceName": "A66",
+    "marketingName": "A66",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a86": {
+    "deviceName": "A86",
+    "marketingName": "A86",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a9 dual": {
+    "deviceName": "A9 Dual",
+    "marketingName": "A9 Dual",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a9+": {
+    "deviceName": "A9 Plus",
+    "marketingName": "A9 Plus",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "celkon a119q": {
+    "deviceName": "A119Q",
+    "marketingName": "Signature HD",
+    "manufacturer": "Celkon",
+    "brand": "Celkon",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

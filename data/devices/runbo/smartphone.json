@@ -1,48 +1,50 @@
 {
-    "general runbo device": {
-        "deviceName": "general Runbo Device",
-        "marketingName": "general Runbo Device",
-        "manufacturer": "Runbo",
-        "brand": "Runbo",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general runbo device": {
+    "deviceName": "general Runbo Device",
+    "marketingName": "general Runbo Device",
+    "manufacturer": "Runbo",
+    "brand": "Runbo",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "runbo f1-en": {
-        "deviceName": "F1-EN",
-        "marketingName": "F1-EN",
-        "manufacturer": "Runbo",
-        "brand": "Runbo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "runbo f1-en": {
+    "deviceName": "F1-EN",
+    "marketingName": "F1-EN",
+    "manufacturer": "Runbo",
+    "brand": "Runbo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

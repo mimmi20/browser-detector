@@ -1,117 +1,122 @@
 {
-    "loewe sl121": {
-        "deviceName": "SL121",
-        "marketingName": "SL121",
-        "manufacturer": "Loewe",
-        "brand": "Loewe",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux"
+  "loewe sl121": {
+    "deviceName": "SL121",
+    "marketingName": "SL121",
+    "manufacturer": "Loewe",
+    "brand": "Loewe",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "loewe sl150": {
-        "deviceName": "SL150",
-        "marketingName": "SL150",
-        "manufacturer": "Loewe",
-        "brand": "Loewe",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "loewe sl220": {
-        "deviceName": "SL220",
-        "marketingName": "SL220",
-        "manufacturer": "Loewe",
-        "brand": "Loewe",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  },
+  "loewe sl150": {
+    "deviceName": "SL150",
+    "marketingName": "SL150",
+    "manufacturer": "Loewe",
+    "brand": "Loewe",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "loewe sl320": {
-        "deviceName": "SL320",
-        "marketingName": "SL320",
-        "manufacturer": "Loewe",
-        "brand": "Loewe",
-        "type": "tv",
-        "display": {
-            "width": 3840,
-            "height": 2160,
-            "touch": false,
-            "type": "4K UHD",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "loewe sl32x": {
-        "deviceName": "SL32x",
-        "marketingName": "SL32x",
-        "manufacturer": "Loewe",
-        "brand": "Loewe",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux smartphone os (maemo)"
-    }
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  },
+  "loewe sl220": {
+    "deviceName": "SL220",
+    "marketingName": "SL220",
+    "manufacturer": "Loewe",
+    "brand": "Loewe",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "loewe sl320": {
+    "deviceName": "SL320",
+    "marketingName": "SL320",
+    "manufacturer": "Loewe",
+    "brand": "Loewe",
+    "type": "tv",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "type": "4K UHD",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "loewe sl32x": {
+    "deviceName": "SL32x",
+    "marketingName": "SL32x",
+    "manufacturer": "Loewe",
+    "brand": "Loewe",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "linux smartphone os (maemo)",
+    "variants": []
+  }
 }

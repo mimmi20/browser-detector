@@ -1,48 +1,50 @@
 {
-    "lava kkt20": {
-        "deviceName": "KKT20",
-        "marketingName": "KKT20",
-        "manufacturer": "Lava",
-        "brand": "Lava",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+  "lava kkt20": {
+    "deviceName": "KKT20",
+    "marketingName": "KKT20",
+    "manufacturer": "Lava",
+    "brand": "Lava",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "lava spark 284": {
-        "deviceName": "Spark 284",
-        "marketingName": "Spark 284",
-        "manufacturer": "Lava",
-        "brand": "Lava",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lava spark 284": {
+    "deviceName": "Spark 284",
+    "marketingName": "Spark 284",
+    "manufacturer": "Lava",
+    "brand": "Lava",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general positivo device": {
-        "deviceName": "general Positivo Device",
-        "marketingName": "general Positivo Device",
-        "manufacturer": "Positivo",
-        "brand": "Positivo",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general positivo device": {
+    "deviceName": "general Positivo Device",
+    "marketingName": "general Positivo Device",
+    "manufacturer": "Positivo",
+    "brand": "Positivo",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "positivo ypy s450": {
-        "deviceName": "Ypy S450",
-        "marketingName": "Ypy S450",
-        "manufacturer": "Positivo",
-        "brand": "Positivo",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "positivo ypy s450": {
+    "deviceName": "Ypy S450",
+    "marketingName": "Ypy S450",
+    "manufacturer": "Positivo",
+    "brand": "Positivo",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

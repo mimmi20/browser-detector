@@ -1,186 +1,194 @@
 {
-    "imac": {
-        "deviceName": "iMac",
-        "marketingName": "iMac",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "mac mini": {
+    "deviceName": "Mac Mini",
+    "marketingName": "Mac Mini",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "mac mini": {
-        "deviceName": "Mac Mini",
-        "marketingName": "Mac Mini",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "macbook": {
-        "deviceName": "MacBook",
-        "marketingName": "MacBook",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "macbook": {
+    "deviceName": "MacBook",
+    "marketingName": "MacBook",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "macbook air": {
-        "deviceName": "MacBook Air",
-        "marketingName": "MacBook Air",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "macbook pro": {
-        "deviceName": "MacBook Pro",
-        "marketingName": "MacBook Pro",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "macbook air": {
+    "deviceName": "MacBook Air",
+    "marketingName": "MacBook Air",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "macintosh": {
-        "deviceName": "Macintosh",
-        "marketingName": "Macintosh",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "macpro": {
-        "deviceName": "MacPro",
-        "marketingName": "MacPro",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "macbook pro": {
+    "deviceName": "MacBook Pro",
+    "marketingName": "MacBook Pro",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "powermac": {
-        "deviceName": "PowerMac",
-        "marketingName": "PowerMac",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "macpro": {
+    "deviceName": "MacPro",
+    "marketingName": "MacPro",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "macintosh": {
+    "deviceName": "Macintosh",
+    "marketingName": "Macintosh",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "powermac": {
+    "deviceName": "PowerMac",
+    "marketingName": "PowerMac",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "imac": {
+    "deviceName": "iMac",
+    "marketingName": "iMac",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

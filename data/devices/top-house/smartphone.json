@@ -1,48 +1,50 @@
 {
-    "general top-house device": {
-        "deviceName": "general Top House Device",
-        "marketingName": "general Top House Device",
-        "manufacturer": "Top House",
-        "brand": "Top House",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general top-house device": {
+    "deviceName": "general Top House Device",
+    "marketingName": "general Top House Device",
+    "manufacturer": "Top House",
+    "brand": "Top House",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "top-house coto w418": {
-        "deviceName": "Coto W418",
-        "marketingName": "Coto W418",
-        "manufacturer": "Top House",
-        "brand": "Top House",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "top-house coto w418": {
+    "deviceName": "Coto W418",
+    "marketingName": "Coto W418",
+    "manufacturer": "Top House",
+    "brand": "Top House",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

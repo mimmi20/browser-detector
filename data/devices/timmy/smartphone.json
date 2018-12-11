@@ -1,48 +1,50 @@
 {
-    "general timmy device": {
-        "deviceName": "general Timmy Device",
-        "marketingName": "general Timmy Device",
-        "manufacturer": "Timmy",
-        "brand": "Timmy",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general timmy device": {
+    "deviceName": "general Timmy Device",
+    "marketingName": "general Timmy Device",
+    "manufacturer": "Timmy",
+    "brand": "Timmy",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "timmy m20": {
-        "deviceName": "M20",
-        "marketingName": "M20",
-        "manufacturer": "Timmy",
-        "brand": "Timmy",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "timmy m20": {
+    "deviceName": "M20",
+    "marketingName": "M20",
+    "manufacturer": "Timmy",
+    "brand": "Timmy",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

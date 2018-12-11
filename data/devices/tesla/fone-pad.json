@@ -1,123 +1,128 @@
 {
-    "tesla gravity 9.7 shd": {
-        "deviceName": "Gravity 9.7 SHD",
-        "marketingName": "Gravity 9.7 SHD",
-        "manufacturer": "Tesla",
-        "brand": "Tesla",
-        "type": "fone-pad",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "tesla gravity 9.7 shd": {
+    "deviceName": "Gravity 9.7 SHD",
+    "marketingName": "Gravity 9.7 SHD",
+    "manufacturer": "Tesla",
+    "brand": "Tesla",
+    "type": "fone-pad",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
     },
-    "tesla impulse 7.85 3g": {
-        "deviceName": "Impulse 7.85 3G",
-        "marketingName": "Impulse 7.85 3G",
-        "manufacturer": "Tesla",
-        "brand": "Tesla",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tesla l7.1 3g": {
-        "deviceName": "L7.1 3G",
-        "marketingName": "L7.1 3G",
-        "manufacturer": "Tesla",
-        "brand": "Tesla",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tesla impulse 7.85 3g": {
+    "deviceName": "Impulse 7.85 3G",
+    "marketingName": "Impulse 7.85 3G",
+    "manufacturer": "Tesla",
+    "brand": "Tesla",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "tesla tablet l7 3g": {
-        "deviceName": "L7 3G",
-        "marketingName": "L7 3G",
-        "manufacturer": "Tesla",
-        "brand": "Tesla",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tesla ttl7": {
-        "deviceName": "TTL7",
-        "marketingName": "TTL7",
-        "manufacturer": "Tesla",
-        "brand": "Tesla",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "tesla tablet l7 3g": {
+    "deviceName": "L7 3G",
+    "marketingName": "L7 3G",
+    "manufacturer": "Tesla",
+    "brand": "Tesla",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "tesla l7.1 3g": {
+    "deviceName": "L7.1 3G",
+    "marketingName": "L7.1 3G",
+    "manufacturer": "Tesla",
+    "brand": "Tesla",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "tesla ttl7": {
+    "deviceName": "TTL7",
+    "marketingName": "TTL7",
+    "manufacturer": "Tesla",
+    "brand": "Tesla",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

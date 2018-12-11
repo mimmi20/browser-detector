@@ -1,48 +1,50 @@
 {
-    "sharp stx2": {
-        "deviceName": "STX2",
-        "marketingName": "FX",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": false,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+  "sharp stx2": {
+    "deviceName": "STX2",
+    "marketingName": "FX",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": false,
+      "type": "WQVGA (variant 3)",
+      "size": null
     },
-    "sharp tq-gx30i": {
-        "deviceName": "GX30i",
-        "marketingName": "GX30i",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "sharp tq-gx30i": {
+    "deviceName": "GX30i",
+    "marketingName": "GX30i",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  }
 }

@@ -1,71 +1,74 @@
 {
-    "general wondermedia device": {
-        "deviceName": "general WonderMedia Device",
-        "marketingName": "general WonderMedia Device",
-        "manufacturer": "WonderMedia",
-        "brand": "WonderMedia",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general wondermedia device": {
+    "deviceName": "general WonderMedia Device",
+    "marketingName": "general WonderMedia Device",
+    "manufacturer": "WonderMedia",
+    "brand": "WonderMedia",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "wondermedia prizm wm8650": {
-        "deviceName": "WM8650",
-        "marketingName": "Prizm",
-        "manufacturer": "WonderMedia",
-        "brand": "WonderMedia",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "wondermedia prizm wm8850": {
-        "deviceName": "WM8850",
-        "marketingName": "Prizm",
-        "manufacturer": "WonderMedia",
-        "brand": "WonderMedia",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "wondermedia prizm wm8650": {
+    "deviceName": "WM8650",
+    "marketingName": "Prizm",
+    "manufacturer": "WonderMedia",
+    "brand": "WonderMedia",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "wondermedia prizm wm8850": {
+    "deviceName": "WM8850",
+    "marketingName": "Prizm",
+    "manufacturer": "WonderMedia",
+    "brand": "WonderMedia",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,140 +1,146 @@
 {
-    "general akai device": {
-        "deviceName": "general Akai Device",
-        "marketingName": "general Akai Device",
-        "manufacturer": "Akai",
-        "brand": "Akai",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general akai device": {
+    "deviceName": "general Akai Device",
+    "marketingName": "general Akai Device",
+    "manufacturer": "Akai",
+    "brand": "Akai",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "akai aktb-703mz": {
-        "deviceName": "AKTB-703MZ",
-        "marketingName": "AKTB-703MZ",
-        "manufacturer": "Akai",
-        "brand": "Akai",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "akai tab-7800": {
-        "deviceName": "Tab-7800",
-        "marketingName": "Tab-7800",
-        "manufacturer": "Akai",
-        "brand": "Akai",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "akai aktb-703mz": {
+    "deviceName": "AKTB-703MZ",
+    "marketingName": "AKTB-703MZ",
+    "manufacturer": "Akai",
+    "brand": "Akai",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "akai tab-7830": {
-        "deviceName": "Tab-7830",
-        "marketingName": "Tab-7830",
-        "manufacturer": "Akai",
-        "brand": "Akai",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "akai tab-9800": {
-        "deviceName": "Tab-9800",
-        "marketingName": "Tab-9800",
-        "manufacturer": "Akai",
-        "brand": "Akai",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "akai tab-7800": {
+    "deviceName": "Tab-7800",
+    "marketingName": "Tab-7800",
+    "manufacturer": "Akai",
+    "brand": "Akai",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "akai tab-9800q": {
-        "deviceName": "Tab-9800Q",
-        "marketingName": "Tab-9800Q",
-        "manufacturer": "Akai",
-        "brand": "Akai",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "akai tab-7830": {
+    "deviceName": "Tab-7830",
+    "marketingName": "Tab-7830",
+    "manufacturer": "Akai",
+    "brand": "Akai",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "akai tab-9800": {
+    "deviceName": "Tab-9800",
+    "marketingName": "Tab-9800",
+    "manufacturer": "Akai",
+    "brand": "Akai",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "akai tab-9800q": {
+    "deviceName": "Tab-9800Q",
+    "marketingName": "Tab-9800Q",
+    "manufacturer": "Akai",
+    "brand": "Akai",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

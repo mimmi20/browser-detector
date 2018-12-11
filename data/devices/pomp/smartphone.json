@@ -1,117 +1,122 @@
 {
-    "general pomp device": {
-        "deviceName": "general Pomp Device",
-        "marketingName": "general Pomp Device",
-        "manufacturer": "Pomp",
-        "brand": "Pomp",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general pomp device": {
+    "deviceName": "general Pomp Device",
+    "marketingName": "general Pomp Device",
+    "manufacturer": "Pomp",
+    "brand": "Pomp",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "pomp c6": {
-        "deviceName": "C6",
-        "marketingName": "C6",
-        "manufacturer": "Pomp",
-        "brand": "Pomp",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pomp w88": {
-        "deviceName": "W88",
-        "marketingName": "W88",
-        "manufacturer": "Pomp",
-        "brand": "Pomp",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pomp c6": {
+    "deviceName": "C6",
+    "marketingName": "C6",
+    "manufacturer": "Pomp",
+    "brand": "Pomp",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "pomp w89": {
-        "deviceName": "W89",
-        "marketingName": "W89",
-        "manufacturer": "Pomp",
-        "brand": "Pomp",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pomp w99": {
-        "deviceName": "W99",
-        "marketingName": "W99",
-        "manufacturer": "Pomp",
-        "brand": "Pomp",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pomp w88": {
+    "deviceName": "W88",
+    "marketingName": "W88",
+    "manufacturer": "Pomp",
+    "brand": "Pomp",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pomp w89": {
+    "deviceName": "W89",
+    "marketingName": "W89",
+    "manufacturer": "Pomp",
+    "brand": "Pomp",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pomp w99": {
+    "deviceName": "W99",
+    "marketingName": "W99",
+    "manufacturer": "Pomp",
+    "brand": "Pomp",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,784 +1,818 @@
 {
-    "general medion device": {
-        "deviceName": "general Medion Device",
-        "marketingName": "general Medion Device",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general medion device": {
+    "deviceName": "general Medion Device",
+    "marketingName": "general Medion Device",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "lenovo lifetab s1033x": {
-        "deviceName": "LifeTab S1033X",
-        "marketingName": "LifeTab S1033X",
-        "manufacturer": "Lenovo",
-        "brand": "Lenovo",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lenovo lifetab s1036x": {
-        "deviceName": "LifeTab S1036X",
-        "marketingName": "LifeTab S1036X",
-        "manufacturer": "Lenovo",
-        "brand": "Lenovo",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion e691x": {
+    "deviceName": "E691X",
+    "marketingName": "E691X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "lenovo lifetab s785x": {
-        "deviceName": "LifeTab S785X",
-        "marketingName": "LifeTab S785X",
-        "manufacturer": "Lenovo",
-        "brand": "Lenovo",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 720,
-            "touch": true,
-            "type": "Custom 720x1024",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lenovo lifetab s831x": {
-        "deviceName": "LifeTab S831X",
-        "marketingName": "LifeTab S831X",
-        "manufacturer": "Lenovo",
-        "brand": "Lenovo",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e10310": {
+    "deviceName": "LifeTab E10310",
+    "marketingName": "LifeTab E10310",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion e691x": {
-        "deviceName": "E691X",
-        "marketingName": "E691X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 720,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab e10310": {
-        "deviceName": "LifeTab E10310",
-        "marketingName": "LifeTab E10310",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e10316": {
+    "deviceName": "LifeTab E10316",
+    "marketingName": "LifeTab E10316",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion lifetab e10316": {
-        "deviceName": "LifeTab E10316",
-        "marketingName": "LifeTab E10316",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab e10320": {
-        "deviceName": "LifeTab E10320",
-        "marketingName": "LifeTab E10320",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e10320": {
+    "deviceName": "LifeTab E10320",
+    "marketingName": "LifeTab E10320",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion lifetab e723x": {
-        "deviceName": "LifeTab E723X",
-        "marketingName": "LifeTab E723X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab e7310": {
-        "deviceName": "LifeTab E7310",
-        "marketingName": "LifeTab E7310",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e723x": {
+    "deviceName": "LifeTab E723X",
+    "marketingName": "LifeTab E723X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "medion lifetab e7312": {
-        "deviceName": "LifeTab E7312",
-        "marketingName": "LifeTab E7312",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab e7313": {
-        "deviceName": "LifeTab E7313",
-        "marketingName": "LifeTab E7313",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e7310": {
+    "deviceName": "LifeTab E7310",
+    "marketingName": "LifeTab E7310",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "medion lifetab e7316": {
-        "deviceName": "LifeTab E7316",
-        "marketingName": "LifeTab E7316",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab e733x": {
-        "deviceName": "LifeTab E733X",
-        "marketingName": "LifeTab E733X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e7312": {
+    "deviceName": "LifeTab E7312",
+    "marketingName": "LifeTab E7312",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "medion lifetab p1034x": {
-        "deviceName": "LifeTab P1034X",
-        "marketingName": "LifeTab P1034X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab p733x": {
-        "deviceName": "LifeTab P733X",
-        "marketingName": "LifeTab P733X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e7313": {
+    "deviceName": "LifeTab E7313",
+    "marketingName": "LifeTab E7313",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "medion lifetab p831x": {
-        "deviceName": "LifeTab P831X",
-        "marketingName": "LifeTab P831X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab p831x.2": {
-        "deviceName": "LifeTab P831X.2",
-        "marketingName": "LifeTab P831X.2",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e7316": {
+    "deviceName": "LifeTab E7316",
+    "marketingName": "LifeTab E7316",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "medion lifetab p891x": {
-        "deviceName": "LifeTab P891X",
-        "marketingName": "LifeTab P891X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab p9514": {
-        "deviceName": "LifeTab P9514",
-        "marketingName": "LifeTab P9514",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab e733x": {
+    "deviceName": "LifeTab E733X",
+    "marketingName": "LifeTab E733X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "medion lifetab p9516": {
-        "deviceName": "LifeTab P9516",
-        "marketingName": "LifeTab P9516",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab s1034x": {
-        "deviceName": "LifeTab S1034X",
-        "marketingName": "LifeTab S1034X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion p1032x": {
+    "deviceName": "LifeTab P1032X",
+    "marketingName": "LifeTab P1032X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion lifetab s732x": {
-        "deviceName": "LifeTab S732X",
-        "marketingName": "LifeTab S732X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion lifetab s9512": {
-        "deviceName": "LifeTab S9512",
-        "marketingName": "LifeTab S9512",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab p1034x": {
+    "deviceName": "LifeTab P1034X",
+    "marketingName": "LifeTab P1034X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion lifetab s9714": {
-        "deviceName": "LifeTab S9714",
-        "marketingName": "LifeTab S9714",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion p1032x": {
-        "deviceName": "LifeTab P1032X",
-        "marketingName": "LifeTab P1032X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion p1035x": {
+    "deviceName": "LifeTab P1035X",
+    "marketingName": "LifeTab P1035X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion p1035x": {
-        "deviceName": "LifeTab P1035X",
-        "marketingName": "LifeTab P1035X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion p1040x": {
-        "deviceName": "P1040X",
-        "marketingName": "P1040X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion p1050x": {
+    "deviceName": "LifeTab P1050X",
+    "marketingName": "LifeTab P1050X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "medion p1050x": {
-        "deviceName": "LifeTab P1050X",
-        "marketingName": "LifeTab P1050X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion p850x": {
-        "deviceName": "P850X",
-        "marketingName": "P850X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab p733x": {
+    "deviceName": "LifeTab P733X",
+    "marketingName": "LifeTab P733X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion p851x": {
-        "deviceName": "LifeTab P851X",
-        "marketingName": "LifeTab P851X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion p970x": {
-        "deviceName": "LifeTab P970X",
-        "marketingName": "LifeTab P970X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "medion lifetab p831x": {
+    "deviceName": "LifeTab P831X",
+    "marketingName": "LifeTab P831X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion x1031x": {
-        "deviceName": "X1031X",
-        "marketingName": "X1031X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "medion lifetab p831x.2": {
+    "deviceName": "LifeTab P831X.2",
+    "marketingName": "LifeTab P831X.2",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "medion p851x": {
+    "deviceName": "LifeTab P851X",
+    "marketingName": "LifeTab P851X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab p891x": {
+    "deviceName": "LifeTab P891X",
+    "marketingName": "LifeTab P891X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "medion lifetab p9514": {
+    "deviceName": "LifeTab P9514",
+    "marketingName": "LifeTab P9514",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab p9516": {
+    "deviceName": "LifeTab P9516",
+    "marketingName": "LifeTab P9516",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion p970x": {
+    "deviceName": "LifeTab P970X",
+    "marketingName": "LifeTab P970X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lenovo lifetab s1033x": {
+    "deviceName": "LifeTab S1033X",
+    "marketingName": "LifeTab S1033X",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab s1034x": {
+    "deviceName": "LifeTab S1034X",
+    "marketingName": "LifeTab S1034X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lenovo lifetab s1036x": {
+    "deviceName": "LifeTab S1036X",
+    "marketingName": "LifeTab S1036X",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab s732x": {
+    "deviceName": "LifeTab S732X",
+    "marketingName": "LifeTab S732X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lenovo lifetab s785x": {
+    "deviceName": "LifeTab S785X",
+    "marketingName": "LifeTab S785X",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 720,
+      "touch": true,
+      "type": "Custom 720x1024",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lenovo lifetab s831x": {
+    "deviceName": "LifeTab S831X",
+    "marketingName": "LifeTab S831X",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "medion lifetab s9512": {
+    "deviceName": "LifeTab S9512",
+    "marketingName": "LifeTab S9512",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion lifetab s9714": {
+    "deviceName": "LifeTab S9714",
+    "marketingName": "LifeTab S9714",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion p1040x": {
+    "deviceName": "P1040X",
+    "marketingName": "P1040X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion p850x": {
+    "deviceName": "P850X",
+    "marketingName": "P850X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion x1031x": {
+    "deviceName": "X1031X",
+    "marketingName": "X1031X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

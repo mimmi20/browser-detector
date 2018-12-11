@@ -1,48 +1,50 @@
 {
-    "general nextbit device": {
-        "deviceName": "general Nextbit Device",
-        "marketingName": "general Nextbit Device",
-        "manufacturer": "Nextbit",
-        "brand": "Nextbit",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general nextbit device": {
+    "deviceName": "general Nextbit Device",
+    "marketingName": "general Nextbit Device",
+    "manufacturer": "Nextbit",
+    "brand": "Nextbit",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "nextbit robin": {
-        "deviceName": "Robin",
-        "marketingName": "Robin",
-        "manufacturer": "Nextbit",
-        "brand": "Nextbit",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "nextbit robin": {
+    "deviceName": "Robin",
+    "marketingName": "Robin",
+    "manufacturer": "Nextbit",
+    "brand": "Nextbit",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

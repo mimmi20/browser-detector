@@ -1,48 +1,50 @@
 {
-    "general yifang device": {
-        "deviceName": "general Yifang Device",
-        "marketingName": "general Yifang Device",
-        "manufacturer": "Yifang",
-        "brand": "Yifang",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general yifang device": {
+    "deviceName": "general Yifang Device",
+    "marketingName": "general Yifang Device",
+    "manufacturer": "Yifang",
+    "brand": "Yifang",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "yifang ebm8000nd 211": {
-        "deviceName": "EBM8000ND 211",
-        "marketingName": "EBM8000ND 211",
-        "manufacturer": "Yifang",
-        "brand": "Yifang",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yifang ebm8000nd 211": {
+    "deviceName": "EBM8000ND 211",
+    "marketingName": "EBM8000ND 211",
+    "manufacturer": "Yifang",
+    "brand": "Yifang",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general etuline device": {
-        "deviceName": "general Etuline Device",
-        "marketingName": "general Etuline Device",
-        "manufacturer": "Etuline",
-        "brand": "Etuline",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general etuline device": {
+    "deviceName": "general Etuline Device",
+    "marketingName": "general Etuline Device",
+    "manufacturer": "Etuline",
+    "brand": "Etuline",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "etuline t880g": {
-        "deviceName": "T880G",
-        "marketingName": "T880G",
-        "manufacturer": "Etuline",
-        "brand": "Etuline",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "etuline t880g": {
+    "deviceName": "T880G",
+    "marketingName": "T880G",
+    "manufacturer": "Etuline",
+    "brand": "Etuline",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

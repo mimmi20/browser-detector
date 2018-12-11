@@ -1,96 +1,100 @@
 {
-    "point-of-view navi 7 3g": {
-        "deviceName": "Onyx 507",
-        "marketingName": "Navi 7 3G",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+  "point-of-view navi 7 3g": {
+    "deviceName": "Onyx 507",
+    "marketingName": "Navi 7 3G",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "point-of-view tab p506": {
-        "deviceName": "Tab P506",
-        "marketingName": "Onyx 506 Navi",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "point-of-view tab p517": {
-        "deviceName": "Tab P517",
-        "marketingName": "Tab P517",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view tab p547": {
+    "deviceName": "Tab P547",
+    "marketingName": "Onxy 547",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "point-of-view tab p547": {
-        "deviceName": "Tab P547",
-        "marketingName": "Onxy 547",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view tab p506": {
+    "deviceName": "Tab P506",
+    "marketingName": "Onyx 506 Navi",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view tab p517": {
+    "deviceName": "Tab P517",
+    "marketingName": "Tab P517",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general intki device": {
-        "deviceName": "general Intki Device",
-        "marketingName": "general Intki Device",
-        "manufacturer": "Intki",
-        "brand": "Intki",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general intki device": {
+    "deviceName": "general Intki Device",
+    "marketingName": "general Intki Device",
+    "manufacturer": "Intki",
+    "brand": "Intki",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "intki e86": {
-        "deviceName": "E86",
-        "marketingName": "E86",
-        "manufacturer": "Intki",
-        "brand": "Intki",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intki e86": {
+    "deviceName": "E86",
+    "marketingName": "E86",
+    "manufacturer": "Intki",
+    "brand": "Intki",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

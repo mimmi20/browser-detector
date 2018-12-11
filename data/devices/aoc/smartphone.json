@@ -1,48 +1,50 @@
 {
-    "general aoc device": {
-        "deviceName": "general AOC Device",
-        "marketingName": "general AOC Device",
-        "manufacturer": "Aoc",
-        "brand": "Aoc",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general aoc device": {
+    "deviceName": "general AOC Device",
+    "marketingName": "general AOC Device",
+    "manufacturer": "Aoc",
+    "brand": "Aoc",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "aoc m601": {
-        "deviceName": "M601",
-        "marketingName": "M601",
-        "manufacturer": "Aoc",
-        "brand": "Aoc",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "aoc m601": {
+    "deviceName": "M601",
+    "marketingName": "M601",
+    "manufacturer": "Aoc",
+    "brand": "Aoc",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

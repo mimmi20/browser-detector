@@ -1,48 +1,50 @@
 {
-    "general starmobile device": {
-        "deviceName": "general Starmobile Device",
-        "marketingName": "general Starmobile Device",
-        "manufacturer": "Starmobile",
-        "brand": "Starmobile",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general starmobile device": {
+    "deviceName": "general Starmobile Device",
+    "marketingName": "general Starmobile Device",
+    "manufacturer": "Starmobile",
+    "brand": "Starmobile",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "starmobile knight": {
-        "deviceName": "Knight",
-        "marketingName": "Knight",
-        "manufacturer": "Starmobile",
-        "brand": "Starmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "starmobile knight": {
+    "deviceName": "Knight",
+    "marketingName": "Knight",
+    "manufacturer": "Starmobile",
+    "brand": "Starmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

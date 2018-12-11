@@ -1,48 +1,50 @@
 {
-    "general gtide device": {
-        "deviceName": "general G-Tide Device",
-        "marketingName": "general G-Tide Device",
-        "manufacturer": "Gtide",
-        "brand": "Gtide",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general gtide device": {
+    "deviceName": "general G-Tide Device",
+    "marketingName": "general G-Tide Device",
+    "manufacturer": "Gtide",
+    "brand": "Gtide",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "gtide e77": {
-        "deviceName": "E77",
-        "marketingName": "E77",
-        "manufacturer": "Gtide",
-        "brand": "Gtide",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "gtide e77": {
+    "deviceName": "E77",
+    "marketingName": "E77",
+    "manufacturer": "Gtide",
+    "brand": "Gtide",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

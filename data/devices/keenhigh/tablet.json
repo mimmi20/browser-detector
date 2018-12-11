@@ -1,48 +1,50 @@
 {
-    "general keenhigh device": {
-        "deviceName": "general Keen High Device",
-        "marketingName": "general Keen High Device",
-        "manufacturer": "KeenHigh",
-        "brand": "KeenHigh",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general keenhigh device": {
+    "deviceName": "general Keen High Device",
+    "marketingName": "general Keen High Device",
+    "manufacturer": "KeenHigh",
+    "brand": "KeenHigh",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "keenhigh mt791": {
-        "deviceName": "MT791",
-        "marketingName": "MT791",
-        "manufacturer": "KeenHigh",
-        "brand": "KeenHigh",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "keenhigh mt791": {
+    "deviceName": "MT791",
+    "marketingName": "MT791",
+    "manufacturer": "KeenHigh",
+    "brand": "KeenHigh",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

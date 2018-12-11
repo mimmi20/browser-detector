@@ -1,48 +1,50 @@
 {
-    "general smartron device": {
-        "deviceName": "general Smartron Device",
-        "marketingName": "general Smartron Device",
-        "manufacturer": "Smartron",
-        "brand": "Smartron",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general smartron device": {
+    "deviceName": "general Smartron Device",
+    "marketingName": "general Smartron Device",
+    "manufacturer": "Smartron",
+    "brand": "Smartron",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "smartron t5524": {
-        "deviceName": "T5524",
-        "marketingName": "T5524",
-        "manufacturer": "Smartron",
-        "brand": "Smartron",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "smartron t5524": {
+    "deviceName": "T5524",
+    "marketingName": "T5524",
+    "manufacturer": "Smartron",
+    "brand": "Smartron",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general colorfly device": {
-        "deviceName": "general Colorfly Device",
-        "marketingName": "general Colorfly Device",
-        "manufacturer": "Colorfly",
-        "brand": "Colorfly",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general colorfly device": {
+    "deviceName": "general Colorfly Device",
+    "marketingName": "general Colorfly Device",
+    "manufacturer": "Colorfly",
+    "brand": "Colorfly",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "colorfly g708 oc": {
-        "deviceName": "G708 Oc",
-        "marketingName": "G708",
-        "manufacturer": "Colorfly",
-        "brand": "Colorfly",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "colorfly g708 oc": {
+    "deviceName": "G708 Oc",
+    "marketingName": "G708",
+    "manufacturer": "Colorfly",
+    "brand": "Colorfly",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

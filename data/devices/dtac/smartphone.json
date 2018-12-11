@@ -1,48 +1,50 @@
 {
-    "general dtac device": {
-        "deviceName": "general DTAC Device",
-        "marketingName": "general DTAC Device",
-        "manufacturer": "DTAC",
-        "brand": "DTAC",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general dtac device": {
+    "deviceName": "general DTAC Device",
+    "marketingName": "general DTAC Device",
+    "manufacturer": "DTAC",
+    "brand": "DTAC",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "dtac phone s2": {
-        "deviceName": "Phone S2",
-        "marketingName": "Phone S2",
-        "manufacturer": "DTAC",
-        "brand": "DTAC",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dtac phone s2": {
+    "deviceName": "Phone S2",
+    "marketingName": "Phone S2",
+    "manufacturer": "DTAC",
+    "brand": "DTAC",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

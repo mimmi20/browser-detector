@@ -1,94 +1,98 @@
 {
-    "general axgio device": {
-        "deviceName": "general Axgio Device",
-        "marketingName": "general Axgio Device",
-        "manufacturer": "Axgio",
-        "brand": "Axgio",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general axgio device": {
+    "deviceName": "general Axgio Device",
+    "marketingName": "general Axgio Device",
+    "manufacturer": "Axgio",
+    "brand": "Axgio",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "axgio neon n1": {
-        "deviceName": "Neon N1",
-        "marketingName": "Neon N1",
-        "manufacturer": "Axgio",
-        "brand": "Axgio",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "axgio neon n2q": {
-        "deviceName": "Neon N2Q",
-        "marketingName": "Neon N2Q",
-        "manufacturer": "Axgio",
-        "brand": "Axgio",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "axgio neon n1": {
+    "deviceName": "Neon N1",
+    "marketingName": "Neon N1",
+    "manufacturer": "Axgio",
+    "brand": "Axgio",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "axgio wing w2": {
-        "deviceName": "Wing W2",
-        "marketingName": "Wing W2",
-        "manufacturer": "Axgio",
-        "brand": "Axgio",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "axgio neon n2q": {
+    "deviceName": "Neon N2Q",
+    "marketingName": "Neon N2Q",
+    "manufacturer": "Axgio",
+    "brand": "Axgio",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "axgio wing w2": {
+    "deviceName": "Wing W2",
+    "marketingName": "Wing W2",
+    "manufacturer": "Axgio",
+    "brand": "Axgio",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

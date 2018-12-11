@@ -1,48 +1,50 @@
 {
-    "general modoex device": {
-        "deviceName": "general Modoex Device",
-        "marketingName": "general Modoex Device",
-        "manufacturer": "Modoex",
-        "brand": "Modoex",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general modoex device": {
+    "deviceName": "general Modoex Device",
+    "marketingName": "general Modoex Device",
+    "manufacturer": "Modoex",
+    "brand": "Modoex",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "modoex m960": {
-        "deviceName": "M960",
-        "marketingName": "M960",
-        "manufacturer": "Modoex",
-        "brand": "Modoex",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "modoex m960": {
+    "deviceName": "M960",
+    "marketingName": "M960",
+    "manufacturer": "Modoex",
+    "brand": "Modoex",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

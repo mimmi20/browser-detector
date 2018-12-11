@@ -1,71 +1,74 @@
 {
-    "general polypad device": {
-        "deviceName": "general PolyPad Device",
-        "marketingName": "general PolyPad Device",
-        "manufacturer": "PolyPad",
-        "brand": "PolyPad",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general polypad device": {
+    "deviceName": "general PolyPad Device",
+    "marketingName": "general PolyPad Device",
+    "manufacturer": "PolyPad",
+    "brand": "PolyPad",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "polypad 7208hd": {
-        "deviceName": "7208HD",
-        "marketingName": "7208HD",
-        "manufacturer": "PolyPad",
-        "brand": "PolyPad",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "polypad 8208hd": {
-        "deviceName": "8208HD",
-        "marketingName": "8208HD",
-        "manufacturer": "PolyPad",
-        "brand": "PolyPad",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polypad 7208hd": {
+    "deviceName": "7208HD",
+    "marketingName": "7208HD",
+    "manufacturer": "PolyPad",
+    "brand": "PolyPad",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polypad 8208hd": {
+    "deviceName": "8208HD",
+    "marketingName": "8208HD",
+    "manufacturer": "PolyPad",
+    "brand": "PolyPad",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

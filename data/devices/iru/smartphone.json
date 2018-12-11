@@ -1,48 +1,50 @@
 {
-    "general iru device": {
-        "deviceName": "general iRU Device",
-        "marketingName": "general iRU Device",
-        "manufacturer": "Iru",
-        "brand": "Iru",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general iru device": {
+    "deviceName": "general iRU Device",
+    "marketingName": "general iRU Device",
+    "manufacturer": "Iru",
+    "brand": "Iru",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "iru m5301": {
-        "deviceName": "M5301",
-        "marketingName": "M5301",
-        "manufacturer": "Iru",
-        "brand": "Iru",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iru m5301": {
+    "deviceName": "M5301",
+    "marketingName": "M5301",
+    "manufacturer": "Iru",
+    "brand": "Iru",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

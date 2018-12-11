@@ -1,48 +1,50 @@
 {
-    "mediatek mt5396": {
-        "deviceName": "MT5396",
-        "marketingName": "MT5396",
-        "manufacturer": "MediaTek",
-        "brand": "MediaTek",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "mediatek mt5396": {
+    "deviceName": "MT5396",
+    "marketingName": "MT5396",
+    "manufacturer": "MediaTek",
+    "brand": "MediaTek",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "mediatek smart tv": {
-        "deviceName": "Smart TV",
-        "marketingName": "Smart TV",
-        "manufacturer": "MediaTek",
-        "brand": "MediaTek",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "mediatek smart tv": {
+    "deviceName": "Smart TV",
+    "marketingName": "Smart TV",
+    "manufacturer": "MediaTek",
+    "brand": "MediaTek",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

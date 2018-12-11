@@ -1,209 +1,218 @@
 {
-    "general jiayu device": {
-        "deviceName": "general Jiayu Device",
-        "marketingName": "general Jiayu Device",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general jiayu device": {
+    "deviceName": "general Jiayu Device",
+    "marketingName": "general Jiayu Device",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "jiayu jy-g2": {
-        "deviceName": "JY-G2",
-        "marketingName": "JY-G2",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "jiayu jy-g3": {
-        "deviceName": "JY-G3",
-        "marketingName": "JY-G3",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "jiayu jy-g2": {
+    "deviceName": "JY-G2",
+    "marketingName": "JY-G2",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "jiayu jy-g4": {
-        "deviceName": "JY-G4",
-        "marketingName": "JY-G4",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "jiayu jy-g4s": {
-        "deviceName": "JY-G4S",
-        "marketingName": "JY-G4S",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "jiayu jy-g3": {
+    "deviceName": "JY-G3",
+    "marketingName": "JY-G3",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "jiayu jy-g5": {
-        "deviceName": "JY-G5",
-        "marketingName": "JY-G5",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "jiayu jy-s2": {
-        "deviceName": "JY-S2",
-        "marketingName": "S2",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "jiayu jy-g4": {
+    "deviceName": "JY-G4",
+    "marketingName": "JY-G4",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "jiayu jy-s3": {
-        "deviceName": "JY-S3",
-        "marketingName": "JY-S3",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "jiayu jy-s3s": {
-        "deviceName": "JY-S3S",
-        "marketingName": "JY-S3S",
-        "manufacturer": "Jiayu",
-        "brand": "Jiayu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "jiayu jy-g4s": {
+    "deviceName": "JY-G4S",
+    "marketingName": "JY-G4S",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "jiayu jy-g5": {
+    "deviceName": "JY-G5",
+    "marketingName": "JY-G5",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "jiayu jy-s3": {
+    "deviceName": "JY-S3",
+    "marketingName": "JY-S3",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "jiayu jy-s3s": {
+    "deviceName": "JY-S3S",
+    "marketingName": "JY-S3S",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "jiayu jy-s2": {
+    "deviceName": "JY-S2",
+    "marketingName": "S2",
+    "manufacturer": "Jiayu",
+    "brand": "Jiayu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

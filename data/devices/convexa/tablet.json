@@ -1,48 +1,50 @@
 {
-    "general convexa device": {
-        "deviceName": "general Convexa Device",
-        "marketingName": "general Convexa Device",
-        "manufacturer": "Convexa",
-        "brand": "Convexa",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general convexa device": {
+    "deviceName": "general Convexa Device",
+    "marketingName": "general Convexa Device",
+    "manufacturer": "Convexa",
+    "brand": "Convexa",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "convexa paddreamer9.7we": {
-        "deviceName": "pad Dreamer 9.7 White Edition",
-        "marketingName": "pad Dreamer 9.7 White Edition",
-        "manufacturer": "Convexa",
-        "brand": "Convexa",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "convexa paddreamer9.7we": {
+    "deviceName": "pad Dreamer 9.7 White Edition",
+    "marketingName": "pad Dreamer 9.7 White Edition",
+    "manufacturer": "Convexa",
+    "brand": "Convexa",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

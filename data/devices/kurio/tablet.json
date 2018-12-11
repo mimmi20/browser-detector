@@ -1,48 +1,50 @@
 {
-    "general kurio device": {
-        "deviceName": "general Kurio Device",
-        "marketingName": "general Kurio Device",
-        "manufacturer": "Kurio",
-        "brand": "Kurio",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general kurio device": {
+    "deviceName": "general Kurio Device",
+    "marketingName": "general Kurio Device",
+    "manufacturer": "Kurio",
+    "brand": "Kurio",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "kurio c15100m": {
-        "deviceName": "C15100M",
-        "marketingName": "Tab 2",
-        "manufacturer": "Kurio",
-        "brand": "Kurio",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kurio c15100m": {
+    "deviceName": "C15100M",
+    "marketingName": "Tab 2",
+    "manufacturer": "Kurio",
+    "brand": "Kurio",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

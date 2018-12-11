@@ -1,48 +1,50 @@
 {
-    "general yuanda device": {
-        "deviceName": "general YUANDA Device",
-        "marketingName": "general YUANDA Device",
-        "manufacturer": "Yuanda",
-        "brand": "Yuanda",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general yuanda device": {
+    "deviceName": "general YUANDA Device",
+    "marketingName": "general YUANDA Device",
+    "manufacturer": "Yuanda",
+    "brand": "Yuanda",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "yuanda 50": {
-        "deviceName": "50",
-        "marketingName": "50",
-        "manufacturer": "Yuanda",
-        "brand": "Yuanda",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yuanda 50": {
+    "deviceName": "50",
+    "marketingName": "50",
+    "manufacturer": "Yuanda",
+    "brand": "Yuanda",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  }
 }

@@ -1,73 +1,76 @@
 {
-    "general acme device": {
-        "deviceName": "general ACME Device",
-        "marketingName": "general ACME Device",
-        "manufacturer": "ACME",
-        "brand": "ACME",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general acme device": {
+    "deviceName": "general ACME Device",
+    "marketingName": "general ACME Device",
+    "manufacturer": "ACME",
+    "brand": "ACME",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "acme tb1016": {
-        "deviceName": "TB1016",
-        "marketingName": "TB1016",
-        "manufacturer": "ACME",
-        "brand": "ACME",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "acme tb717-3g": {
-        "deviceName": "TB717-3G",
-        "marketingName": "TB717-3G",
-        "manufacturer": "ACME",
-        "brand": "ACME",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "acme tb1016": {
+    "deviceName": "TB1016",
+    "marketingName": "TB1016",
+    "manufacturer": "ACME",
+    "brand": "ACME",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "acme tb717-3g": {
+    "deviceName": "TB717-3G",
+    "marketingName": "TB717-3G",
+    "manufacturer": "ACME",
+    "brand": "ACME",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

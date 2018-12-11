@@ -1,48 +1,50 @@
 {
-    "zte e8q+": {
-        "deviceName": "E8Q+",
-        "marketingName": "E8Q+",
-        "manufacturer": "Zte",
-        "brand": "Zte",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "zte e8q+": {
+    "deviceName": "E8Q+",
+    "marketingName": "E8Q+",
+    "manufacturer": "Zte",
+    "brand": "Zte",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "zte v9": {
-        "deviceName": "V9",
-        "marketingName": "V9",
-        "manufacturer": "Zte",
-        "brand": "Zte",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zte v9": {
+    "deviceName": "V9",
+    "marketingName": "V9",
+    "manufacturer": "Zte",
+    "brand": "Zte",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

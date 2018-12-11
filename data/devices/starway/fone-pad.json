@@ -1,50 +1,52 @@
 {
-    "general starway device": {
-        "deviceName": "general Starway Device",
-        "marketingName": "general Starway Device",
-        "manufacturer": "Starway",
-        "brand": "Starway",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general starway device": {
+    "deviceName": "general Starway Device",
+    "marketingName": "general Starway Device",
+    "manufacturer": "Starway",
+    "brand": "Starway",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "starway andromeda s925 3g": {
-        "deviceName": "Andromeda S925 3G",
-        "marketingName": "Andromeda S925 3G",
-        "manufacturer": "Starway",
-        "brand": "Starway",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "starway andromeda s925 3g": {
+    "deviceName": "Andromeda S925 3G",
+    "marketingName": "Andromeda S925 3G",
+    "manufacturer": "Starway",
+    "brand": "Starway",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

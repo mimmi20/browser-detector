@@ -1,698 +1,728 @@
 {
-    "general intex device": {
-        "deviceName": "general Intex Device",
-        "marketingName": "general Intex Device",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general intex device": {
+    "deviceName": "general Intex Device",
+    "marketingName": "general Intex Device",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "intex aqua 3g": {
-        "deviceName": "Aqua 3G",
-        "marketingName": "Aqua 3G",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua active": {
-        "deviceName": "Aqua Active",
-        "marketingName": "Aqua Active",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua 3g": {
+    "deviceName": "Aqua 3G",
+    "marketingName": "Aqua 3G",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "intex aqua craze": {
-        "deviceName": "Aqua Craze",
-        "marketingName": "Aqua Craze",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua glory": {
-        "deviceName": "Aqua Glory",
-        "marketingName": "Aqua Glory",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua active": {
+    "deviceName": "Aqua Active",
+    "marketingName": "Aqua Active",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "intex aqua i-4+": {
-        "deviceName": "Aqua I-4 Plus",
-        "marketingName": "Aqua I-4 Plus",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua life ii": {
-        "deviceName": "Aqua Life II",
-        "marketingName": "Aqua Life II",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua craze": {
+    "deviceName": "Aqua Craze",
+    "marketingName": "Aqua Craze",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "intex aqua life iii": {
-        "deviceName": "Aqua Life III",
-        "marketingName": "Aqua Life III",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua lions 3g": {
-        "deviceName": "Aqua Lions 3G",
-        "marketingName": "Aqua Lions 3G",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua glory": {
+    "deviceName": "Aqua Glory",
+    "marketingName": "Aqua Glory",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "intex aqua marvel": {
-        "deviceName": "Aqua Marvel",
-        "marketingName": "Aqua Marvel",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua n11": {
-        "deviceName": "Aqua N11",
-        "marketingName": "Aqua N11",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua i-4+": {
+    "deviceName": "Aqua I-4 Plus",
+    "marketingName": "Aqua I-4 Plus",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "intex aqua power+": {
-        "deviceName": "Aqua Power+",
-        "marketingName": "Aqua Power+",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua star": {
-        "deviceName": "Aqua Star",
-        "marketingName": "Aqua Star",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua life ii": {
+    "deviceName": "Aqua Life II",
+    "marketingName": "Aqua Life II",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "intex aqua star 4g": {
-        "deviceName": "Aqua Star",
-        "marketingName": "Aqua Star",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua star ii": {
-        "deviceName": "Aqua Star II",
-        "marketingName": "Aqua Star II",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua life iii": {
+    "deviceName": "Aqua Life III",
+    "marketingName": "Aqua Life III",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "intex aqua star ii hd": {
-        "deviceName": "Aqua Star II HD",
-        "marketingName": "Aqua Star II HD",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua style": {
-        "deviceName": "Aqua Style",
-        "marketingName": "Aqua Style",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua lions 3g": {
+    "deviceName": "Aqua Lions 3G",
+    "marketingName": "Aqua Lions 3G",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "intex aqua supreme+": {
-        "deviceName": "Aqua Supreme+",
-        "marketingName": "Aqua Supreme+",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua sx": {
-        "deviceName": "Aqua SX",
-        "marketingName": "Aqua SX",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua marvel": {
+    "deviceName": "Aqua Marvel",
+    "marketingName": "Aqua Marvel",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "intex aqua trend": {
-        "deviceName": "Aqua Trend",
-        "marketingName": "Aqua Trend",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex aqua y2": {
-        "deviceName": "Aqua Y2",
-        "marketingName": "Aqua Y2",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua n11": {
+    "deviceName": "Aqua N11",
+    "marketingName": "Aqua N11",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "intex aqua y2+": {
-        "deviceName": "Aqua Y2+",
-        "marketingName": "Aqua Y2+",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex cloud m5 ii": {
-        "deviceName": "Cloud M5 II",
-        "marketingName": "Cloud M5 II",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua power+": {
+    "deviceName": "Aqua Power+",
+    "marketingName": "Aqua Power+",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "intex cloud x1": {
-        "deviceName": "Cloud X1",
-        "marketingName": "Cloud X1",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex cloud x11": {
-        "deviceName": "Cloud X11",
-        "marketingName": "Cloud X11",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua sx": {
+    "deviceName": "Aqua SX",
+    "marketingName": "Aqua SX",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "intex cloud x2": {
-        "deviceName": "Cloud X2",
-        "marketingName": "Cloud X2",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex cloud x4": {
-        "deviceName": "Cloud X4",
-        "marketingName": "Cloud X4",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua star": {
+    "deviceName": "Aqua Star",
+    "marketingName": "Aqua Star",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "intex cloud x5": {
-        "deviceName": "Cloud X5",
-        "marketingName": "Cloud X5",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intex cloud y2": {
-        "deviceName": "Cloud Y2",
-        "marketingName": "Cloud Y2",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua star 4g": {
+    "deviceName": "Aqua Star",
+    "marketingName": "Aqua Star",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "intex cloud y4": {
-        "deviceName": "Cloud Y4",
-        "marketingName": "Cloud Y4",
-        "manufacturer": "Intex",
-        "brand": "Intex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua star ii": {
+    "deviceName": "Aqua Star II",
+    "marketingName": "Aqua Star II",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua star ii hd": {
+    "deviceName": "Aqua Star II HD",
+    "marketingName": "Aqua Star II HD",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua style": {
+    "deviceName": "Aqua Style",
+    "marketingName": "Aqua Style",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua supreme+": {
+    "deviceName": "Aqua Supreme+",
+    "marketingName": "Aqua Supreme+",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua trend": {
+    "deviceName": "Aqua Trend",
+    "marketingName": "Aqua Trend",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua y2": {
+    "deviceName": "Aqua Y2",
+    "marketingName": "Aqua Y2",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex aqua y2+": {
+    "deviceName": "Aqua Y2+",
+    "marketingName": "Aqua Y2+",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex cloud m5 ii": {
+    "deviceName": "Cloud M5 II",
+    "marketingName": "Cloud M5 II",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex cloud x1": {
+    "deviceName": "Cloud X1",
+    "marketingName": "Cloud X1",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex cloud x11": {
+    "deviceName": "Cloud X11",
+    "marketingName": "Cloud X11",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex cloud x2": {
+    "deviceName": "Cloud X2",
+    "marketingName": "Cloud X2",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex cloud x4": {
+    "deviceName": "Cloud X4",
+    "marketingName": "Cloud X4",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex cloud x5": {
+    "deviceName": "Cloud X5",
+    "marketingName": "Cloud X5",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex cloud y2": {
+    "deviceName": "Cloud Y2",
+    "marketingName": "Cloud Y2",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intex cloud y4": {
+    "deviceName": "Cloud Y4",
+    "marketingName": "Cloud Y4",
+    "manufacturer": "Intex",
+    "brand": "Intex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

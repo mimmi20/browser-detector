@@ -1,71 +1,74 @@
 {
-    "technisat digicorder isio s": {
-        "deviceName": "DigiCorder ISIO S",
-        "marketingName": "DigiCorder ISIO S",
-        "manufacturer": "TechniSat",
-        "brand": "TechniSat",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux"
+  "technisat digit isio s": {
+    "deviceName": "DIGIT ISIO S",
+    "marketingName": "DIGIT ISIO S",
+    "manufacturer": "TechniSat",
+    "brand": "TechniSat",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "technisat digit isio s": {
-        "deviceName": "DIGIT ISIO S",
-        "marketingName": "DIGIT ISIO S",
-        "manufacturer": "TechniSat",
-        "brand": "TechniSat",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "technisat multyvision isio": {
-        "deviceName": "MultyVision ISIO",
-        "marketingName": "MultyVision ISIO",
-        "manufacturer": "TechniSat",
-        "brand": "TechniSat",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux"
-    }
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  },
+  "technisat digicorder isio s": {
+    "deviceName": "DigiCorder ISIO S",
+    "marketingName": "DigiCorder ISIO S",
+    "manufacturer": "TechniSat",
+    "brand": "TechniSat",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  },
+  "technisat multyvision isio": {
+    "deviceName": "MultyVision ISIO",
+    "marketingName": "MultyVision ISIO",
+    "manufacturer": "TechniSat",
+    "brand": "TechniSat",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  }
 }

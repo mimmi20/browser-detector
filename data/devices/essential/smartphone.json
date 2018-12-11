@@ -1,48 +1,50 @@
 {
-    "general essential device": {
-        "deviceName": "general Essential Device",
-        "marketingName": "general Essential Device",
-        "manufacturer": "Essential",
-        "brand": "Essential",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general essential device": {
+    "deviceName": "general Essential Device",
+    "marketingName": "general Essential Device",
+    "manufacturer": "Essential",
+    "brand": "Essential",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "essential ph-1": {
-        "deviceName": "PH-1",
-        "marketingName": "PH-1",
-        "manufacturer": "Essential",
-        "brand": "Essential",
-        "type": "smartphone",
-        "display": {
-            "width": 1312,
-            "height": 2560,
-            "touch": true,
-            "type": "Custom 1312x2560",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "essential ph-1": {
+    "deviceName": "PH-1",
+    "marketingName": "PH-1",
+    "manufacturer": "Essential",
+    "brand": "Essential",
+    "type": "smartphone",
+    "display": {
+      "width": 1312,
+      "height": 2560,
+      "touch": true,
+      "type": "Custom 1312x2560",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

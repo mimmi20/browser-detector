@@ -1,48 +1,50 @@
 {
-    "general sencor device": {
-        "deviceName": "general Sencor Device",
-        "marketingName": "general Sencor Device",
-        "manufacturer": "Sencor",
-        "brand": "Sencor",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general sencor device": {
+    "deviceName": "general Sencor Device",
+    "marketingName": "general Sencor Device",
+    "manufacturer": "Sencor",
+    "brand": "Sencor",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "sencor element p501": {
-        "deviceName": "Element P501",
-        "marketingName": "Element P501",
-        "manufacturer": "Sencor",
-        "brand": "Sencor",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sencor element p501": {
+    "deviceName": "Element P501",
+    "marketingName": "Element P501",
+    "manufacturer": "Sencor",
+    "brand": "Sencor",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

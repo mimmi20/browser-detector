@@ -1,305 +1,318 @@
 {
-    "archos 101 helium": {
-        "deviceName": "101 Helium",
-        "marketingName": "101 Helium",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "archos 101 helium": {
+    "deviceName": "101 Helium",
+    "marketingName": "101 Helium",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "archos 101 platinium 3g": {
-        "deviceName": "101 Platinium 3G",
-        "marketingName": "101 Platinium 3G",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "archos 101 platinum": {
-        "deviceName": "101 Platinum",
-        "marketingName": "101 Platinum",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 101 platinium 3g": {
+    "deviceName": "101 Platinium 3G",
+    "marketingName": "101 Platinium 3G",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "archos 101 xenon": {
-        "deviceName": "101 Xenon",
-        "marketingName": "101 Xenon",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "archos 101b copper": {
-        "deviceName": "101b Copper",
-        "marketingName": "101b Copper",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 101 platinum": {
+    "deviceName": "101 Platinum",
+    "marketingName": "101 Platinum",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "archos 101b xenon v2": {
-        "deviceName": "101b Xenon V2",
-        "marketingName": "101b Xenon V2",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "archos 101c copper": {
-        "deviceName": "101c Copper",
-        "marketingName": "101c Copper",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 101 xenon": {
+    "deviceName": "101 Xenon",
+    "marketingName": "101 Xenon",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "archos 70 xenon color": {
-        "deviceName": "70 Xenon Color",
-        "marketingName": "70 Xenon Color",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "archos 70b helium": {
-        "deviceName": "70b Helium",
-        "marketingName": "70b Helium",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 101b copper": {
+    "deviceName": "101b Copper",
+    "marketingName": "101b Copper",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "archos 70c xenon": {
-        "deviceName": "70c Xenon",
-        "marketingName": "70c Xenon",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "archos 80d xenon": {
-        "deviceName": "80D Xenon",
-        "marketingName": "80D Xenon",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 101b xenon v2": {
+    "deviceName": "101b Xenon V2",
+    "marketingName": "101b Xenon V2",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "archos 90b copper": {
-        "deviceName": "90b Copper",
-        "marketingName": "90b Copper",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "archos access 101 3g v2": {
-        "deviceName": "Access 101 3G V2",
-        "marketingName": "Access 101 3G V2",
-        "manufacturer": "Archos",
-        "brand": "Archos",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 101c copper": {
+    "deviceName": "101c Copper",
+    "marketingName": "101c Copper",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 70 xenon color": {
+    "deviceName": "70 Xenon Color",
+    "marketingName": "70 Xenon Color",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 70b helium": {
+    "deviceName": "70b Helium",
+    "marketingName": "70b Helium",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 70c xenon": {
+    "deviceName": "70c Xenon",
+    "marketingName": "70c Xenon",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 80d xenon": {
+    "deviceName": "80D Xenon",
+    "marketingName": "80D Xenon",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos 90b copper": {
+    "deviceName": "90b Copper",
+    "marketingName": "90b Copper",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "archos access 101 3g v2": {
+    "deviceName": "Access 101 3G V2",
+    "marketingName": "Access 101 3G V2",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

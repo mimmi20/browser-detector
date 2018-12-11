@@ -1,347 +1,362 @@
 {
-    "general leeco device": {
-        "deviceName": "general LeEco Device",
-        "marketingName": "general LeEco Device",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general leeco device": {
+    "deviceName": "general LeEco Device",
+    "marketingName": "general LeEco Device",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "leeco c1-u02": {
-        "deviceName": "C1-U02",
-        "marketingName": "LeRee Le 3",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "leeco le max": {
-        "deviceName": "Le Max",
-        "marketingName": "Le Max",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1440,
-            "height": 2560,
-            "touch": true,
-            "type": "QHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x800": {
+    "deviceName": "Le X800",
+    "marketingName": "Le 1 Pro",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": "QHD",
+      "size": null
     },
-    "leeco le x507": {
-        "deviceName": "Le X507",
-        "marketingName": "Le 1s",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "leeco le x526": {
-        "deviceName": "Le X526",
-        "marketingName": "Le 2",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x507": {
+    "deviceName": "Le X507",
+    "marketingName": "Le 1s",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "leeco le x527": {
-        "deviceName": "Le X527",
-        "marketingName": "Le 2",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "leeco le x620": {
-        "deviceName": "Le X620",
-        "marketingName": "Le 2",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x526": {
+    "deviceName": "Le X526",
+    "marketingName": "Le 2",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "leeco le x626": {
-        "deviceName": "Le X626",
-        "marketingName": "Le S3",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "leeco le x720": {
-        "deviceName": "Le X720",
-        "marketingName": "Le 2s Pro",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x527": {
+    "deviceName": "Le X527",
+    "marketingName": "Le 2",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "leeco le x722": {
-        "deviceName": "Le X722",
-        "marketingName": "Le Pro 3",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "leeco le x800": {
-        "deviceName": "Le X800",
-        "marketingName": "Le 1 Pro",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1440,
-            "height": 2560,
-            "touch": true,
-            "type": "QHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x620": {
+    "deviceName": "Le X620",
+    "marketingName": "Le 2",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "leeco le x820": {
-        "deviceName": "Le X820",
-        "marketingName": "Le Max 2",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1440,
-            "height": 2560,
-            "touch": true,
-            "type": "QHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "leeco le x821": {
-        "deviceName": "Le X821",
-        "marketingName": "Le Max 2",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1440,
-            "height": 2560,
-            "touch": true,
-            "type": "QHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x720": {
+    "deviceName": "Le X720",
+    "marketingName": "Le 2s Pro",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "leeco le x822": {
-        "deviceName": "Le X822",
-        "marketingName": "Le Max 2",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1440,
-            "height": 2560,
-            "touch": true,
-            "type": "QHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "leeco le x829": {
-        "deviceName": "Le X829",
-        "marketingName": "Le Max 2",
-        "manufacturer": "LeEco",
-        "brand": "LeEco",
-        "type": "smartphone",
-        "display": {
-            "width": 1440,
-            "height": 2560,
-            "touch": true,
-            "type": "QHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le max": {
+    "deviceName": "Le Max",
+    "marketingName": "Le Max",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": "QHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x820": {
+    "deviceName": "Le X820",
+    "marketingName": "Le Max 2",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": "QHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x821": {
+    "deviceName": "Le X821",
+    "marketingName": "Le Max 2",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": "QHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x822": {
+    "deviceName": "Le X822",
+    "marketingName": "Le Max 2",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": "QHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x829": {
+    "deviceName": "Le X829",
+    "marketingName": "Le Max 2",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": "QHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x722": {
+    "deviceName": "Le X722",
+    "marketingName": "Le Pro 3",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x626": {
+    "deviceName": "Le X626",
+    "marketingName": "Le S3",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco c1-u02": {
+    "deviceName": "C1-U02",
+    "marketingName": "LeRee Le 3",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

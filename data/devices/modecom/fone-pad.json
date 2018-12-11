@@ -1,52 +1,54 @@
 {
-    "modecom freetab 1014 ips x4 3g+": {
-        "deviceName": "FreeTAB 1014 IPS X4 3G+",
-        "marketingName": "FreeTAB 1014 IPS X4 3G+",
-        "manufacturer": "Modecom",
-        "brand": "Modecom",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+  "modecom freetab 1014 ips x4 3g+": {
+    "deviceName": "FreeTAB 1014 IPS X4 3G+",
+    "marketingName": "FreeTAB 1014 IPS X4 3G+",
+    "manufacturer": "Modecom",
+    "brand": "Modecom",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "modecom freetab 8001 ips x2 3g+": {
-        "deviceName": "FreeTAB 8001 IPS X2 3G+",
-        "marketingName": "FreeTAB 8001 IPS X2 3G+",
-        "manufacturer": "Modecom",
-        "brand": "Modecom",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "modecom freetab 8001 ips x2 3g+": {
+    "deviceName": "FreeTAB 8001 IPS X2 3G+",
+    "marketingName": "FreeTAB 8001 IPS X2 3G+",
+    "manufacturer": "Modecom",
+    "brand": "Modecom",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

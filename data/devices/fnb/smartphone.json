@@ -1,94 +1,98 @@
 {
-    "general fnb device": {
-        "deviceName": "general FNB Device",
-        "marketingName": "general FNB Device",
-        "manufacturer": "FNB",
-        "brand": "FNB",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general fnb device": {
+    "deviceName": "general FNB Device",
+    "marketingName": "general FNB Device",
+    "manufacturer": "FNB",
+    "brand": "FNB",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "fnb conexis x1": {
-        "deviceName": "ConeXis X1",
-        "marketingName": "ConeXis X1",
-        "manufacturer": "FNB",
-        "brand": "FNB",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "fnb conexis x2": {
-        "deviceName": "ConeXis X2",
-        "marketingName": "ConeXis X2",
-        "manufacturer": "FNB",
-        "brand": "FNB",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fnb conexis x1": {
+    "deviceName": "ConeXis X1",
+    "marketingName": "ConeXis X1",
+    "manufacturer": "FNB",
+    "brand": "FNB",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "fnb sp5045v": {
-        "deviceName": "SP5045V",
-        "marketingName": "SP5045V",
-        "manufacturer": "FNB",
-        "brand": "FNB",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fnb conexis x2": {
+    "deviceName": "ConeXis X2",
+    "marketingName": "ConeXis X2",
+    "manufacturer": "FNB",
+    "brand": "FNB",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fnb sp5045v": {
+    "deviceName": "SP5045V",
+    "marketingName": "SP5045V",
+    "manufacturer": "FNB",
+    "brand": "FNB",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

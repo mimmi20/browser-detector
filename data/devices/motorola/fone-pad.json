@@ -1,98 +1,102 @@
 {
-    "motorola mz601": {
-        "deviceName": "MZ601",
-        "marketingName": "Xoom",
-        "manufacturer": "Motorola",
-        "brand": "Motorola",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "motorola mz617": {
+    "deviceName": "MZ617",
+    "marketingName": "Droid XYBoard 10.1",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "motorola mz608": {
-        "deviceName": "MZ608",
-        "marketingName": "Xoom 2 Media Edition 3G",
-        "manufacturer": "Motorola",
-        "brand": "Motorola",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "motorola mz616": {
-        "deviceName": "MZ616",
-        "marketingName": "Xoom 2 3G",
-        "manufacturer": "Motorola",
-        "brand": "Motorola",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "motorola mz601": {
+    "deviceName": "MZ601",
+    "marketingName": "Xoom",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "motorola mz617": {
-        "deviceName": "MZ617",
-        "marketingName": "Droid XYBoard 10.1",
-        "manufacturer": "Motorola",
-        "brand": "Motorola",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "motorola mz616": {
+    "deviceName": "MZ616",
+    "marketingName": "Xoom 2 3G",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "motorola mz608": {
+    "deviceName": "MZ608",
+    "marketingName": "Xoom 2 Media Edition 3G",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

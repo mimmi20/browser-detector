@@ -1,48 +1,50 @@
 {
-    "general vsun device": {
-        "deviceName": "general Vsun Device",
-        "marketingName": "general Vsun Device",
-        "manufacturer": "Vsun",
-        "brand": "Vsun",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general vsun device": {
+    "deviceName": "general Vsun Device",
+    "marketingName": "general Vsun Device",
+    "manufacturer": "Vsun",
+    "brand": "Vsun",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "vsun i5": {
-        "deviceName": "i5",
-        "marketingName": "i5",
-        "manufacturer": "Vsun",
-        "brand": "Vsun",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "vsun i5": {
+    "deviceName": "i5",
+    "marketingName": "i5",
+    "manufacturer": "Vsun",
+    "brand": "Vsun",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

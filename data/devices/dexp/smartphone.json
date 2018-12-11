@@ -1,48 +1,50 @@
 {
-    "dexp ixion es255": {
-        "deviceName": "Ixion ES255",
-        "marketingName": "Ixion ES255",
-        "manufacturer": "Dexp",
-        "brand": "Dexp",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "dexp ixion es255": {
+    "deviceName": "Ixion ES255",
+    "marketingName": "Ixion ES255",
+    "manufacturer": "Dexp",
+    "brand": "Dexp",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "dexp ixion es350": {
-        "deviceName": "Ixion ES350",
-        "marketingName": "Rage Plus",
-        "manufacturer": "Dexp",
-        "brand": "Dexp",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dexp ixion es350": {
+    "deviceName": "Ixion ES350",
+    "marketingName": "Rage Plus",
+    "manufacturer": "Dexp",
+    "brand": "Dexp",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

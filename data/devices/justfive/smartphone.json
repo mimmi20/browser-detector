@@ -1,48 +1,50 @@
 {
-    "general just5 device": {
-        "deviceName": "general Just5 Device",
-        "marketingName": "general Just5 Device",
-        "manufacturer": "Just5",
-        "brand": "Just5",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general just5 device": {
+    "deviceName": "general Just5 Device",
+    "marketingName": "general Just5 Device",
+    "manufacturer": "Just5",
+    "brand": "Just5",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "just5 blaster 2": {
-        "deviceName": "Blaster 2",
-        "marketingName": "Blaster 2",
-        "manufacturer": "Just5",
-        "brand": "Just5",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "just5 blaster 2": {
+    "deviceName": "Blaster 2",
+    "marketingName": "Blaster 2",
+    "manufacturer": "Just5",
+    "brand": "Just5",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

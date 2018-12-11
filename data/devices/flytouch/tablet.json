@@ -1,48 +1,50 @@
 {
-    "general flytouch device": {
-        "deviceName": "general Flytouch Device",
-        "marketingName": "general Flytouch Device",
-        "manufacturer": "Flytouch",
-        "brand": "Flytouch",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general flytouch device": {
+    "deviceName": "general Flytouch Device",
+    "marketingName": "general Flytouch Device",
+    "manufacturer": "Flytouch",
+    "brand": "Flytouch",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "flytouch 9": {
-        "deviceName": "9",
-        "marketingName": "SuperPAD IX",
-        "manufacturer": "Flytouch",
-        "brand": "Flytouch",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "flytouch 9": {
+    "deviceName": "9",
+    "marketingName": "SuperPAD IX",
+    "manufacturer": "Flytouch",
+    "brand": "Flytouch",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

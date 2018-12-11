@@ -1,48 +1,50 @@
 {
-    "general kempler-strauss device": {
-        "deviceName": "general Kempler and Strauss Device",
-        "marketingName": "general Kempler and Strauss Device",
-        "manufacturer": "Kempler and Strauss",
-        "brand": "Kempler and Strauss",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general kempler-strauss device": {
+    "deviceName": "general Kempler and Strauss Device",
+    "marketingName": "general Kempler and Strauss Device",
+    "manufacturer": "Kempler and Strauss",
+    "brand": "Kempler and Strauss",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "kempler-strauss alumini 2": {
-        "deviceName": "Alumini 2",
-        "marketingName": "Alumini 2",
-        "manufacturer": "Kempler and Strauss",
-        "brand": "Kempler and Strauss",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kempler-strauss alumini 2": {
+    "deviceName": "Alumini 2",
+    "marketingName": "Alumini 2",
+    "manufacturer": "Kempler and Strauss",
+    "brand": "Kempler and Strauss",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

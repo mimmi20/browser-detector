@@ -1,94 +1,98 @@
 {
-    "general intenso device": {
-        "deviceName": "general Intenso Device",
-        "marketingName": "general Intenso Device",
-        "manufacturer": "Intenso",
-        "brand": "Intenso",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general intenso device": {
+    "deviceName": "general Intenso Device",
+    "marketingName": "general Intenso Device",
+    "manufacturer": "Intenso",
+    "brand": "Intenso",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "intenso inm8002kp": {
-        "deviceName": "INM8002KP",
-        "marketingName": "TAB 824",
-        "manufacturer": "Intenso",
-        "brand": "Intenso",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "intenso tab 1024": {
-        "deviceName": "Tab 1024",
-        "marketingName": "Tab 1024",
-        "manufacturer": "Intenso",
-        "brand": "Intenso",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intenso inm8002kp": {
+    "deviceName": "INM8002KP",
+    "marketingName": "TAB 824",
+    "manufacturer": "Intenso",
+    "brand": "Intenso",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "intenso tab 803": {
-        "deviceName": "Tab 803",
-        "marketingName": "Tab 803",
-        "manufacturer": "Intenso",
-        "brand": "Intenso",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intenso tab 1024": {
+    "deviceName": "Tab 1024",
+    "marketingName": "Tab 1024",
+    "manufacturer": "Intenso",
+    "brand": "Intenso",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intenso tab 803": {
+    "deviceName": "Tab 803",
+    "marketingName": "Tab 803",
+    "manufacturer": "Intenso",
+    "brand": "Intenso",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

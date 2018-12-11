@@ -1,48 +1,50 @@
 {
-    "general beneve device": {
-        "deviceName": "general Beneve Device",
-        "marketingName": "general Beneve Device",
-        "manufacturer": "Beneve",
-        "brand": "Beneve",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general beneve device": {
+    "deviceName": "general Beneve Device",
+    "marketingName": "general Beneve Device",
+    "manufacturer": "Beneve",
+    "brand": "Beneve",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "beneve s750": {
-        "deviceName": "S750",
-        "marketingName": "S750",
-        "manufacturer": "Beneve",
-        "brand": "Beneve",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "beneve s750": {
+    "deviceName": "S750",
+    "marketingName": "S750",
+    "manufacturer": "Beneve",
+    "brand": "Beneve",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

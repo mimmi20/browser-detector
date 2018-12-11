@@ -1,48 +1,50 @@
 {
-    "general woo device": {
-        "deviceName": "general Woo Device",
-        "marketingName": "general Woo Device",
-        "manufacturer": "Woo",
-        "brand": "Woo",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general woo device": {
+    "deviceName": "general Woo Device",
+    "marketingName": "general Woo Device",
+    "manufacturer": "Woo",
+    "brand": "Woo",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "woo sp6020": {
-        "deviceName": "SP6020",
-        "marketingName": "Quasar",
-        "manufacturer": "Woo",
-        "brand": "Woo",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "woo sp6020": {
+    "deviceName": "SP6020",
+    "marketingName": "Quasar",
+    "manufacturer": "Woo",
+    "brand": "Woo",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

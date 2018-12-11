@@ -1,71 +1,74 @@
 {
-    "excelvan kp-703": {
-        "deviceName": "KP-703",
-        "marketingName": "KP-703",
-        "manufacturer": "Excelvan",
-        "brand": "Excelvan",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "excelvan kp-703": {
+    "deviceName": "KP-703",
+    "marketingName": "KP-703",
+    "manufacturer": "Excelvan",
+    "brand": "Excelvan",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "excelvan mt10b": {
-        "deviceName": "MT10B",
-        "marketingName": "MT10B",
-        "manufacturer": "Excelvan",
-        "brand": "Excelvan",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "excelvan mt13": {
-        "deviceName": "MT13",
-        "marketingName": "MT13",
-        "manufacturer": "Excelvan",
-        "brand": "Excelvan",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "excelvan mt10b": {
+    "deviceName": "MT10B",
+    "marketingName": "MT10B",
+    "manufacturer": "Excelvan",
+    "brand": "Excelvan",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "excelvan mt13": {
+    "deviceName": "MT13",
+    "marketingName": "MT13",
+    "manufacturer": "Excelvan",
+    "brand": "Excelvan",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

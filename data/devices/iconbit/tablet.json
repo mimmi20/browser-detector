@@ -1,257 +1,268 @@
 {
-    "general iconbit device": {
-        "deviceName": "general iconBIT Device",
-        "marketingName": "general iconBIT Device",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general iconbit device": {
+    "deviceName": "general iconBIT Device",
+    "marketingName": "general iconBIT Device",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "iconbit nt-0701s": {
-        "deviceName": "NT-0701S",
-        "marketingName": "NetTAB Sky Net",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "iconbit nt-0704s": {
-        "deviceName": "NT-0704S",
-        "marketingName": "NetTab Sky LE",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-0805c": {
+    "deviceName": "NT-0805C",
+    "marketingName": "NetTAB SKAT MX",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "iconbit nt-0805c": {
-        "deviceName": "NT-0805C",
-        "marketingName": "NetTAB SKAT MX",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "iconbit nt-0902s": {
-        "deviceName": "NT-0902S",
-        "marketingName": "NetTAB Space Quad RX",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-0701s": {
+    "deviceName": "NT-0701S",
+    "marketingName": "NetTAB Sky Net",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "iconbit nt-0909t": {
-        "deviceName": "NT-0909T",
-        "marketingName": "NetTab Thor IZ",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "iconbit nt-1001t": {
-        "deviceName": "NT-1001T",
-        "marketingName": "THOR LE",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-0902s": {
+    "deviceName": "NT-0902S",
+    "marketingName": "NetTAB Space Quad RX",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
     },
-    "iconbit nt-1002t": {
-        "deviceName": "NT-1002T",
-        "marketingName": "THOR LE NT-1002T",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "iconbit nt-1009t": {
-        "deviceName": "NT-1009T",
-        "marketingName": "NetTAB THOR QUAD II",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-1009t": {
+    "deviceName": "NT-1009T",
+    "marketingName": "NetTAB THOR QUAD II",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "iconbit nt-1011t": {
-        "deviceName": "NT-1011T",
-        "marketingName": "NetTab Thor LE",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "iconbit nt-3905t": {
-        "deviceName": "NT-3905T",
-        "marketingName": "NetTAB Thor ZX 3G",
-        "manufacturer": "IconBit",
-        "brand": "IconBit",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1280,
-            "touch": true,
-            "type": "Custom 1280x1920",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-3905t": {
+    "deviceName": "NT-3905T",
+    "marketingName": "NetTAB Thor ZX 3G",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1280,
+      "touch": true,
+      "type": "Custom 1280x1920",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-0704s": {
+    "deviceName": "NT-0704S",
+    "marketingName": "NetTab Sky LE",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-0909t": {
+    "deviceName": "NT-0909T",
+    "marketingName": "NetTab Thor IZ",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-1011t": {
+    "deviceName": "NT-1011T",
+    "marketingName": "NetTab Thor LE",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-1001t": {
+    "deviceName": "NT-1001T",
+    "marketingName": "THOR LE",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-1002t": {
+    "deviceName": "NT-1002T",
+    "marketingName": "THOR LE NT-1002T",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

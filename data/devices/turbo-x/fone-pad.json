@@ -1,52 +1,54 @@
 {
-    "turbo-x hive iv 3g": {
-        "deviceName": "Hive IV 3G",
-        "marketingName": "Hive IV 3G",
-        "manufacturer": "Turbo-X",
-        "brand": "Turbo-X",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+  "turbo-x hive iv 3g": {
+    "deviceName": "Hive IV 3G",
+    "marketingName": "Hive IV 3G",
+    "manufacturer": "Turbo-X",
+    "brand": "Turbo-X",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "turbo-x hive v 3g": {
-        "deviceName": "Hive V 3G",
-        "marketingName": "Hive V 3G",
-        "manufacturer": "Turbo-X",
-        "brand": "Turbo-X",
-        "type": "fone-pad",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "turbo-x hive v 3g": {
+    "deviceName": "Hive V 3G",
+    "marketingName": "Hive V 3G",
+    "manufacturer": "Turbo-X",
+    "brand": "Turbo-X",
+    "type": "fone-pad",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

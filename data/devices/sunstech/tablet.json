@@ -1,71 +1,74 @@
 {
-    "general sunstech device": {
-        "deviceName": "general Sunstech Device",
-        "marketingName": "general Sunstech Device",
-        "manufacturer": "Sunstech",
-        "brand": "Sunstech",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general sunstech device": {
+    "deviceName": "general Sunstech Device",
+    "marketingName": "general Sunstech Device",
+    "manufacturer": "Sunstech",
+    "brand": "Sunstech",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "sunstech tab785 dual": {
-        "deviceName": "TAB785 DUAL",
-        "marketingName": "TAB785 DUAL",
-        "manufacturer": "Sunstech",
-        "brand": "Sunstech",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sunstech tab917qc 8gb": {
-        "deviceName": "TAB917QC 8GB",
-        "marketingName": "TAB917QC 8GB",
-        "manufacturer": "Sunstech",
-        "brand": "Sunstech",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sunstech tab785 dual": {
+    "deviceName": "TAB785 DUAL",
+    "marketingName": "TAB785 DUAL",
+    "manufacturer": "Sunstech",
+    "brand": "Sunstech",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sunstech tab917qc 8gb": {
+    "deviceName": "TAB917QC 8GB",
+    "marketingName": "TAB917QC 8GB",
+    "manufacturer": "Sunstech",
+    "brand": "Sunstech",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

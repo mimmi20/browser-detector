@@ -1,117 +1,122 @@
 {
-    "general ployer device": {
-        "deviceName": "general Ployer Device",
-        "marketingName": "general Ployer Device",
-        "manufacturer": "Ployer",
-        "brand": "Ployer",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ployer device": {
+    "deviceName": "general Ployer Device",
+    "marketingName": "general Ployer Device",
+    "manufacturer": "Ployer",
+    "brand": "Ployer",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ployer momo 9 star": {
-        "deviceName": "Momo 9 Star",
-        "marketingName": "Momo 9 Star",
-        "manufacturer": "Ployer",
-        "brand": "Ployer",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "ployer momo mini s": {
-        "deviceName": "Momo Mini S",
-        "marketingName": "Momo Mini S",
-        "manufacturer": "Ployer",
-        "brand": "Ployer",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ployer momo19": {
+    "deviceName": "Momo 19",
+    "marketingName": "Momo 19",
+    "manufacturer": "Ployer",
+    "brand": "Ployer",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "ployer momo19": {
-        "deviceName": "Momo 19",
-        "marketingName": "Momo 19",
-        "manufacturer": "Ployer",
-        "brand": "Ployer",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "ployer momo8w": {
-        "deviceName": "Momo 8W",
-        "marketingName": "Momo 8W",
-        "manufacturer": "Ployer",
-        "brand": "Ployer",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ployer momo8w": {
+    "deviceName": "Momo 8W",
+    "marketingName": "Momo 8W",
+    "manufacturer": "Ployer",
+    "brand": "Ployer",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ployer momo 9 star": {
+    "deviceName": "Momo 9 Star",
+    "marketingName": "Momo 9 Star",
+    "manufacturer": "Ployer",
+    "brand": "Ployer",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ployer momo mini s": {
+    "deviceName": "Momo Mini S",
+    "marketingName": "Momo Mini S",
+    "manufacturer": "Ployer",
+    "brand": "Ployer",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

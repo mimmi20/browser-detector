@@ -1,71 +1,74 @@
 {
-    "overmax ov-v10": {
-        "deviceName": "OV-V10",
-        "marketingName": "Vertis Yard",
-        "manufacturer": "Overmax",
-        "brand": "Overmax",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "overmax ov-vertis-02": {
+    "deviceName": "OV-Vertis-02",
+    "marketingName": "Vertis 02",
+    "manufacturer": "Overmax",
+    "brand": "Overmax",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "overmax ov-vertis 5011 expi": {
-        "deviceName": "OV-Vertis 5011 Expi",
-        "marketingName": "Vertis 5011 Expi",
-        "manufacturer": "Overmax",
-        "brand": "Overmax",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "overmax ov-vertis-02": {
-        "deviceName": "OV-Vertis-02",
-        "marketingName": "Vertis 02",
-        "manufacturer": "Overmax",
-        "brand": "Overmax",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "overmax ov-vertis 5011 expi": {
+    "deviceName": "OV-Vertis 5011 Expi",
+    "marketingName": "Vertis 5011 Expi",
+    "manufacturer": "Overmax",
+    "brand": "Overmax",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "overmax ov-v10": {
+    "deviceName": "OV-V10",
+    "marketingName": "Vertis Yard",
+    "manufacturer": "Overmax",
+    "brand": "Overmax",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

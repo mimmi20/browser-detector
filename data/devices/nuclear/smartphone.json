@@ -1,48 +1,50 @@
 {
-    "general nuclear device": {
-        "deviceName": "general Nuclear Device",
-        "marketingName": "general Nuclear Device",
-        "manufacturer": "Nuclear",
-        "brand": "Nuclear",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general nuclear device": {
+    "deviceName": "general Nuclear Device",
+    "marketingName": "general Nuclear Device",
+    "manufacturer": "Nuclear",
+    "brand": "Nuclear",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "nuclear sx-sp5": {
-        "deviceName": "SX-SP5",
-        "marketingName": "SX-SP5",
-        "manufacturer": "Nuclear",
-        "brand": "Nuclear",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "nuclear sx-sp5": {
+    "deviceName": "SX-SP5",
+    "marketingName": "SX-SP5",
+    "manufacturer": "Nuclear",
+    "brand": "Nuclear",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

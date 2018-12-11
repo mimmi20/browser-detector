@@ -1,71 +1,74 @@
 {
-    "general keneksi device": {
-        "deviceName": "general Keneksi Device",
-        "marketingName": "general Keneksi Device",
-        "manufacturer": "Keneksi",
-        "brand": "Keneksi",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general keneksi device": {
+    "deviceName": "general Keneksi Device",
+    "marketingName": "general Keneksi Device",
+    "manufacturer": "Keneksi",
+    "brand": "Keneksi",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "keneksi crystal": {
-        "deviceName": "Crystal",
-        "marketingName": "Crystal",
-        "manufacturer": "Keneksi",
-        "brand": "Keneksi",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "keneksi norma 2": {
-        "deviceName": "Norma 2",
-        "marketingName": "Norma 2",
-        "manufacturer": "Keneksi",
-        "brand": "Keneksi",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "keneksi crystal": {
+    "deviceName": "Crystal",
+    "marketingName": "Crystal",
+    "manufacturer": "Keneksi",
+    "brand": "Keneksi",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "keneksi norma 2": {
+    "deviceName": "Norma 2",
+    "marketingName": "Norma 2",
+    "manufacturer": "Keneksi",
+    "brand": "Keneksi",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general g-net device": {
-        "deviceName": "general G Net Device",
-        "marketingName": "general G Net Device",
-        "manufacturer": "G Net",
-        "brand": "G Net",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general g-net device": {
+    "deviceName": "general G Net Device",
+    "marketingName": "general G Net Device",
+    "manufacturer": "G Net",
+    "brand": "G Net",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "g-net gnet": {
-        "deviceName": "G-Pad",
-        "marketingName": "G-Pad Explorer V",
-        "manufacturer": "G Net",
-        "brand": "G Net",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "g-net gnet": {
+    "deviceName": "G-Pad",
+    "marketingName": "G-Pad Explorer V",
+    "manufacturer": "G Net",
+    "brand": "G Net",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

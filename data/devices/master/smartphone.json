@@ -1,48 +1,50 @@
 {
-    "general master device": {
-        "deviceName": "general Master Device",
-        "marketingName": "general Master Device",
-        "manufacturer": "Master",
-        "brand": "Master",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general master device": {
+    "deviceName": "general Master Device",
+    "marketingName": "general Master Device",
+    "manufacturer": "Master",
+    "brand": "Master",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "master smartphone 650": {
-        "deviceName": "Smartphone 650",
-        "marketingName": "Smartphone 650",
-        "manufacturer": "Master",
-        "brand": "Master",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "master smartphone 650": {
+    "deviceName": "Smartphone 650",
+    "marketingName": "Smartphone 650",
+    "manufacturer": "Master",
+    "brand": "Master",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

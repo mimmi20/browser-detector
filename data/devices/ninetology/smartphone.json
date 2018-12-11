@@ -1,48 +1,50 @@
 {
-    "general ninetology device": {
-        "deviceName": "general Ninetology Device",
-        "marketingName": "general Ninetology Device",
-        "manufacturer": "Ninetology",
-        "brand": "Ninetology",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ninetology device": {
+    "deviceName": "general Ninetology Device",
+    "marketingName": "general Ninetology Device",
+    "manufacturer": "Ninetology",
+    "brand": "Ninetology",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ninetology z1": {
-        "deviceName": "Z1",
-        "marketingName": "U9 Z1",
-        "manufacturer": "Ninetology",
-        "brand": "Ninetology",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ninetology z1": {
+    "deviceName": "Z1",
+    "marketingName": "U9 Z1",
+    "manufacturer": "Ninetology",
+    "brand": "Ninetology",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

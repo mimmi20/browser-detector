@@ -1,71 +1,74 @@
 {
-    "general turbopad device": {
-        "deviceName": "general TurboPad Device",
-        "marketingName": "general TurboPad Device",
-        "manufacturer": "TurboPad",
-        "brand": "TurboPad",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general turbopad device": {
+    "deviceName": "general TurboPad Device",
+    "marketingName": "general TurboPad Device",
+    "manufacturer": "TurboPad",
+    "brand": "TurboPad",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "turbopad pad 500": {
-        "deviceName": "Pad 500",
-        "marketingName": "Pad 500",
-        "manufacturer": "TurboPad",
-        "brand": "TurboPad",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "turbopad turbo x6": {
-        "deviceName": "Turbo X6",
-        "marketingName": "Turbo X6",
-        "manufacturer": "TurboPad",
-        "brand": "TurboPad",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "turbopad pad 500": {
+    "deviceName": "Pad 500",
+    "marketingName": "Pad 500",
+    "manufacturer": "TurboPad",
+    "brand": "TurboPad",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "turbopad turbo x6": {
+    "deviceName": "Turbo X6",
+    "marketingName": "Turbo X6",
+    "manufacturer": "TurboPad",
+    "brand": "TurboPad",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

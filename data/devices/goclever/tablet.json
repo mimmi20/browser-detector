@@ -1,370 +1,386 @@
 {
-    "general goclever device": {
-        "deviceName": "general GOCLEVER Device",
-        "marketingName": "general GOCLEVER Device",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general goclever device": {
+    "deviceName": "general GOCLEVER Device",
+    "marketingName": "general GOCLEVER Device",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "goclever a1021": {
-        "deviceName": "A1021",
-        "marketingName": "TERRA 101",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "goclever a93.2": {
-        "deviceName": "A93.2",
-        "marketingName": "A93.2",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever a93.2": {
+    "deviceName": "A93.2",
+    "marketingName": "A93.2",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "goclever aries 101": {
-        "deviceName": "Aries 101",
-        "marketingName": "Aries 101",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "goclever aries 785": {
-        "deviceName": "Aries 785",
-        "marketingName": "Aries 785",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever aries 101": {
+    "deviceName": "Aries 101",
+    "marketingName": "Aries 101",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "goclever elipso 71": {
-        "deviceName": "Elipso 71",
-        "marketingName": "Elipso 71",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "goclever insignia 785 pro": {
-        "deviceName": "Insignia 785 Pro",
-        "marketingName": "Insignia 785 Pro",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever aries 785": {
+    "deviceName": "Aries 785",
+    "marketingName": "Aries 785",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "goclever libra 97": {
-        "deviceName": "Libra 97",
-        "marketingName": "Libra 97",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "goclever orion 102": {
-        "deviceName": "Orion 102",
-        "marketingName": "Orion 102",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever elipso 71": {
+    "deviceName": "Elipso 71",
+    "marketingName": "Elipso 71",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "goclever orion 7o": {
-        "deviceName": "Orion 7o",
-        "marketingName": "Orion 7o",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "goclever quantum 700m": {
-        "deviceName": "Quantum 700m",
-        "marketingName": "Quantum 700m",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever insignia 785 pro": {
+    "deviceName": "Insignia 785 Pro",
+    "marketingName": "Insignia 785 Pro",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "goclever quantum 900": {
-        "deviceName": "Quantum 900",
-        "marketingName": "Quantum 900",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "goclever tab r106": {
-        "deviceName": "Tab R106",
-        "marketingName": "Tab R106",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever libra 97": {
+    "deviceName": "Libra 97",
+    "marketingName": "Libra 97",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
     },
-    "goclever tab r70": {
-        "deviceName": "Tab R70",
-        "marketingName": "Tab R70",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "goclever tab t76": {
-        "deviceName": "Tab T76",
-        "marketingName": "Tab T76",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever orion 102": {
+    "deviceName": "Orion 102",
+    "marketingName": "Orion 102",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "goclever tq700": {
-        "deviceName": "TQ700",
-        "marketingName": "QUANTUM 700",
-        "manufacturer": "GoClever",
-        "brand": "GoClever",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever orion 7o": {
+    "deviceName": "Orion 7o",
+    "marketingName": "Orion 7o",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever tq700": {
+    "deviceName": "TQ700",
+    "marketingName": "QUANTUM 700",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever quantum 700m": {
+    "deviceName": "Quantum 700m",
+    "marketingName": "Quantum 700m",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever quantum 900": {
+    "deviceName": "Quantum 900",
+    "marketingName": "Quantum 900",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever a1021": {
+    "deviceName": "A1021",
+    "marketingName": "TERRA 101",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever tab r106": {
+    "deviceName": "Tab R106",
+    "marketingName": "Tab R106",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever tab r70": {
+    "deviceName": "Tab R70",
+    "marketingName": "Tab R70",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goclever tab t76": {
+    "deviceName": "Tab T76",
+    "marketingName": "Tab T76",
+    "manufacturer": "GoClever",
+    "brand": "GoClever",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

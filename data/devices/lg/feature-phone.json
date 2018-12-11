@@ -1,669 +1,698 @@
 {
-    "lg 220c": {
-        "deviceName": "220C",
-        "marketingName": "220C",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "lg 220c": {
+    "deviceName": "220C",
+    "marketingName": "220C",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "lg 272": {
-        "deviceName": "272",
-        "marketingName": "Rumor Reflex (Boost Mobile)",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": true,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg 900g": {
-        "deviceName": "900G",
-        "marketingName": "900G",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg 900g": {
+    "deviceName": "900G",
+    "marketingName": "900G",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "lg bl40": {
-        "deviceName": "BL40",
-        "marketingName": "New Chocolate",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 345,
-            "height": 800,
-            "touch": true,
-            "type": "Custom 345x800",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg c199": {
-        "deviceName": "C199",
-        "marketingName": "C199",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg km900": {
+    "deviceName": "KM900",
+    "marketingName": "Arena",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": false,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "lg c330": {
-        "deviceName": "C330",
-        "marketingName": "Etna",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg c660": {
-        "deviceName": "C660",
-        "marketingName": "Optimus Pro",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg c199": {
+    "deviceName": "C199",
+    "marketingName": "C199",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
     },
-    "lg gd350": {
-        "deviceName": "GD350",
-        "marketingName": "GD350",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 176,
-            "height": 220,
-            "touch": true,
-            "type": "Custom 176x220",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg gd880": {
-        "deviceName": "GD880",
-        "marketingName": "GD880",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg ku800": {
+    "deviceName": "KU800",
+    "marketingName": "Chocolate",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "lg gm360": {
-        "deviceName": "GM360",
-        "marketingName": "Viewty Snap",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": false,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg gs290": {
-        "deviceName": "GS290",
-        "marketingName": "Cookie Fresh",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": true,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg gs290": {
+    "deviceName": "GS290",
+    "marketingName": "Cookie Fresh",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": "WQVGA (variant 3)",
+      "size": null
     },
-    "lg gt550": {
-        "deviceName": "GT550",
-        "marketingName": "Encore",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": true,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg gw300": {
-        "deviceName": "GW300",
-        "marketingName": "GW300",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg t300": {
+    "deviceName": "T300",
+    "marketingName": "Cookie Lite",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
     },
-    "lg hb620t": {
-        "deviceName": "HB620T",
-        "marketingName": "HB620T",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg kc910": {
-        "deviceName": "KC910",
-        "marketingName": "Renoir",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": true,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg t500": {
+    "deviceName": "T500",
+    "marketingName": "Ego",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
     },
-    "lg km900": {
-        "deviceName": "KM900",
-        "marketingName": "Arena",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": false,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg kp500": {
-        "deviceName": "KP500",
-        "marketingName": "KP500",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": false,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg gt550": {
+    "deviceName": "GT550",
+    "marketingName": "Encore",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": "WQVGA (variant 3)",
+      "size": null
     },
-    "lg ks10": {
-        "deviceName": "KS10",
-        "marketingName": "KS10",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "symbian"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg ks20": {
-        "deviceName": "KS20",
-        "marketingName": "KS20",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg c330": {
+    "deviceName": "C330",
+    "marketingName": "Etna",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
     },
-    "lg ks365": {
-        "deviceName": "KS365",
-        "marketingName": "KS365",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg kt615": {
-        "deviceName": "KT615",
-        "marketingName": "KT615",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "symbian"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg gd350": {
+    "deviceName": "GD350",
+    "marketingName": "GD350",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 176,
+      "height": 220,
+      "touch": true,
+      "type": "Custom 176x220",
+      "size": null
     },
-    "lg kt770": {
-        "deviceName": "KT770",
-        "marketingName": "KT770",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": false,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "symbian"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg ku800": {
-        "deviceName": "KU800",
-        "marketingName": "Chocolate",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg gd880": {
+    "deviceName": "GD880",
+    "marketingName": "GD880",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "lg ln240": {
-        "deviceName": "LN240",
-        "marketingName": "Remarq",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg ln510": {
-        "deviceName": "LN510",
-        "marketingName": "Rumor Touch",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": true,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "brew"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg gw300": {
+    "deviceName": "GW300",
+    "marketingName": "GW300",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "lg t300": {
-        "deviceName": "T300",
-        "marketingName": "Cookie Lite",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg t385": {
-        "deviceName": "T385",
-        "marketingName": "T385",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg hb620t": {
+    "deviceName": "HB620T",
+    "marketingName": "HB620T",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "lg t500": {
-        "deviceName": "T500",
-        "marketingName": "Ego",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "lg x330t": {
-        "deviceName": "X330T",
-        "marketingName": "X330T",
-        "manufacturer": "Lg",
-        "brand": "Lg",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
-    }
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg kp500": {
+    "deviceName": "KP500",
+    "marketingName": "KP500",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": false,
+      "type": "WQVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg ks10": {
+    "deviceName": "KS10",
+    "marketingName": "KS10",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "symbian",
+    "variants": []
+  },
+  "lg ks20": {
+    "deviceName": "KS20",
+    "marketingName": "KS20",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "lg ks365": {
+    "deviceName": "KS365",
+    "marketingName": "KS365",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg kt615": {
+    "deviceName": "KT615",
+    "marketingName": "KT615",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "symbian",
+    "variants": []
+  },
+  "lg kt770": {
+    "deviceName": "KT770",
+    "marketingName": "KT770",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": false,
+      "type": "WQVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "symbian",
+    "variants": []
+  },
+  "lg bl40": {
+    "deviceName": "BL40",
+    "marketingName": "New Chocolate",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 345,
+      "height": 800,
+      "touch": true,
+      "type": "Custom 345x800",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg c660": {
+    "deviceName": "C660",
+    "marketingName": "Optimus Pro",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg ln240": {
+    "deviceName": "LN240",
+    "marketingName": "Remarq",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg kc910": {
+    "deviceName": "KC910",
+    "marketingName": "Renoir",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": "WQVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg 272": {
+    "deviceName": "272",
+    "marketingName": "Rumor Reflex (Boost Mobile)",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": "WQVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg ln510": {
+    "deviceName": "LN510",
+    "marketingName": "Rumor Touch",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": "WQVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "brew",
+    "variants": []
+  },
+  "lg t385": {
+    "deviceName": "T385",
+    "marketingName": "T385",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg gm360": {
+    "deviceName": "GM360",
+    "marketingName": "Viewty Snap",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": false,
+      "type": "WQVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "lg x330t": {
+    "deviceName": "X330T",
+    "marketingName": "X330T",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  }
 }

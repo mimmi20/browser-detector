@@ -1,71 +1,74 @@
 {
-    "general goophone device": {
-        "deviceName": "general GooPhone Device",
-        "marketingName": "general GooPhone Device",
-        "manufacturer": "GooPhone",
-        "brand": "GooPhone",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general goophone device": {
+    "deviceName": "general GooPhone Device",
+    "marketingName": "general GooPhone Device",
+    "manufacturer": "GooPhone",
+    "brand": "GooPhone",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "goophone n3": {
-        "deviceName": "N3",
-        "marketingName": "N3",
-        "manufacturer": "GooPhone",
-        "brand": "GooPhone",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "goophone s4 mega": {
-        "deviceName": "S4 Mega",
-        "marketingName": "S4 Mega",
-        "manufacturer": "GooPhone",
-        "brand": "GooPhone",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goophone n3": {
+    "deviceName": "N3",
+    "marketingName": "N3",
+    "manufacturer": "GooPhone",
+    "brand": "GooPhone",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "goophone s4 mega": {
+    "deviceName": "S4 Mega",
+    "marketingName": "S4 Mega",
+    "manufacturer": "GooPhone",
+    "brand": "GooPhone",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

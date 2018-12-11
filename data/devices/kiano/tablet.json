@@ -1,192 +1,200 @@
 {
-    "general kiano device": {
-        "deviceName": "general Kiano Device",
-        "marketingName": "general Kiano Device",
-        "manufacturer": "Kiano",
-        "brand": "Kiano",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general kiano device": {
+    "deviceName": "general Kiano Device",
+    "marketingName": "general Kiano Device",
+    "manufacturer": "Kiano",
+    "brand": "Kiano",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "kiano cavion base 10": {
-        "deviceName": "Cavion Base 10",
-        "marketingName": "Cavion Base 10",
-        "manufacturer": "Kiano",
-        "brand": "Kiano",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kiano cavion base 7 dual": {
-        "deviceName": "Cavion Base 7 Dual",
-        "marketingName": "Cavion Base 7 Dual",
-        "manufacturer": "Kiano",
-        "brand": "Kiano",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kiano cavion base 10": {
+    "deviceName": "Cavion Base 10",
+    "marketingName": "Cavion Base 10",
+    "manufacturer": "Kiano",
+    "brand": "Kiano",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "kiano elegance": {
-        "deviceName": "Elegance",
-        "marketingName": "Elegance",
-        "manufacturer": "Kiano",
-        "brand": "Kiano",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kiano slim tab 10 3gr": {
-        "deviceName": "Slim Tab 10 3GR",
-        "marketingName": "Slim Tab 10 3GR",
-        "manufacturer": "Kiano",
-        "brand": "Kiano",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kiano cavion base 7 dual": {
+    "deviceName": "Cavion Base 7 Dual",
+    "marketingName": "Cavion Base 7 Dual",
+    "manufacturer": "Kiano",
+    "brand": "Kiano",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "kiano slim tab 8": {
-        "deviceName": "Slim Tab 8",
-        "marketingName": "Slim Tab 8",
-        "manufacturer": "Kiano",
-        "brand": "Kiano",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kiano slim tab 8 3gr": {
-        "deviceName": "Slim Tab 8 3GR",
-        "marketingName": "Slim Tab 8 3GR",
-        "manufacturer": "Kiano",
-        "brand": "Kiano",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kiano elegance": {
+    "deviceName": "Elegance",
+    "marketingName": "Elegance",
+    "manufacturer": "Kiano",
+    "brand": "Kiano",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "kiano slimtab 7 3gr": {
-        "deviceName": "SlimTAB 7 3GR",
-        "marketingName": "SlimTAB 7 3GR",
-        "manufacturer": "Kiano",
-        "brand": "Kiano",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kiano slim tab 10 3gr": {
+    "deviceName": "Slim Tab 10 3GR",
+    "marketingName": "Slim Tab 10 3GR",
+    "manufacturer": "Kiano",
+    "brand": "Kiano",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "kiano slim tab 8": {
+    "deviceName": "Slim Tab 8",
+    "marketingName": "Slim Tab 8",
+    "manufacturer": "Kiano",
+    "brand": "Kiano",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kiano slim tab 8 3gr": {
+    "deviceName": "Slim Tab 8 3GR",
+    "marketingName": "Slim Tab 8 3GR",
+    "manufacturer": "Kiano",
+    "brand": "Kiano",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "kiano slimtab 7 3gr": {
+    "deviceName": "SlimTAB 7 3GR",
+    "marketingName": "SlimTAB 7 3GR",
+    "manufacturer": "Kiano",
+    "brand": "Kiano",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

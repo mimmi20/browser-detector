@@ -1,94 +1,98 @@
 {
-    "general yuandao device": {
-        "deviceName": "general YUANDAO Device",
-        "marketingName": "general YUANDAO Device",
-        "manufacturer": "Yuandao",
-        "brand": "Yuandao",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general yuandao device": {
+    "deviceName": "general YUANDAO Device",
+    "marketingName": "general YUANDAO Device",
+    "manufacturer": "Yuandao",
+    "brand": "Yuandao",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "yuandao n101 dual core2 v11": {
-        "deviceName": "N101 Dual Core 2 V11",
-        "marketingName": "Window N101",
-        "manufacturer": "Yuandao",
-        "brand": "Yuandao",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yuandao n90 dual core2": {
-        "deviceName": "N90 Dual Core 2",
-        "marketingName": "N90 Dual Core 2",
-        "manufacturer": "Yuandao",
-        "brand": "Yuandao",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yuandao n90 dual core2": {
+    "deviceName": "N90 Dual Core 2",
+    "marketingName": "N90 Dual Core 2",
+    "manufacturer": "Yuandao",
+    "brand": "Yuandao",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "yuandao n90fhdrk": {
-        "deviceName": "N90FHDRK",
-        "marketingName": "Vido N90FHD",
-        "manufacturer": "Yuandao",
-        "brand": "Yuandao",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yuandao n90fhdrk": {
+    "deviceName": "N90FHDRK",
+    "marketingName": "Vido N90FHD",
+    "manufacturer": "Yuandao",
+    "brand": "Yuandao",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yuandao n101 dual core2 v11": {
+    "deviceName": "N101 Dual Core 2 V11",
+    "marketingName": "Window N101",
+    "manufacturer": "Yuandao",
+    "brand": "Yuandao",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

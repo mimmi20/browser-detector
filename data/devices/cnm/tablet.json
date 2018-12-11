@@ -1,48 +1,50 @@
 {
-    "general cnm device": {
-        "deviceName": "general CnM Device",
-        "marketingName": "general CnM Device",
-        "manufacturer": "CnM",
-        "brand": "CnM",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general cnm device": {
+    "deviceName": "general CnM Device",
+    "marketingName": "general CnM Device",
+    "manufacturer": "CnM",
+    "brand": "CnM",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "cnm touchpad 9.7": {
-        "deviceName": "Touchpad 9.7",
-        "marketingName": "Touchpad 9.7",
-        "manufacturer": "CnM",
-        "brand": "CnM",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cnm touchpad 9.7": {
+    "deviceName": "Touchpad 9.7",
+    "marketingName": "Touchpad 9.7",
+    "manufacturer": "CnM",
+    "brand": "CnM",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

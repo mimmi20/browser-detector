@@ -1,48 +1,50 @@
 {
-    "general innohit device": {
-        "deviceName": "general Inno-Hit Device",
-        "marketingName": "general Inno-Hit Device",
-        "manufacturer": "Inno-Hit",
-        "brand": "Inno-Hit",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general innohit device": {
+    "deviceName": "general Inno-Hit Device",
+    "marketingName": "general Inno-Hit Device",
+    "manufacturer": "Inno-Hit",
+    "brand": "Inno-Hit",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "innohit ih-g101": {
-        "deviceName": "IH-G101",
-        "marketingName": "IH-G101",
-        "manufacturer": "Inno-Hit",
-        "brand": "Inno-Hit",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "innohit ih-g101": {
+    "deviceName": "IH-G101",
+    "marketingName": "IH-G101",
+    "manufacturer": "Inno-Hit",
+    "brand": "Inno-Hit",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

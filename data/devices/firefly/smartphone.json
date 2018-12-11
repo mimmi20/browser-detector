@@ -1,71 +1,74 @@
 {
-    "general firefly device": {
-        "deviceName": "general Firefly Device",
-        "marketingName": "general Firefly Device",
-        "manufacturer": "Firefly Mobile",
-        "brand": "Firefly Mobile",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general firefly device": {
+    "deviceName": "general Firefly Device",
+    "marketingName": "general Firefly Device",
+    "manufacturer": "Firefly Mobile",
+    "brand": "Firefly Mobile",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "firefly gt100": {
-        "deviceName": "GT100",
-        "marketingName": "GT100",
-        "manufacturer": "Firefly Mobile",
-        "brand": "Firefly Mobile",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "firefly s30": {
-        "deviceName": "S30",
-        "marketingName": "S30",
-        "manufacturer": "Firefly Mobile",
-        "brand": "Firefly Mobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "firefly gt100": {
+    "deviceName": "GT100",
+    "marketingName": "GT100",
+    "manufacturer": "Firefly Mobile",
+    "brand": "Firefly Mobile",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "firefly s30": {
+    "deviceName": "S30",
+    "marketingName": "S30",
+    "manufacturer": "Firefly Mobile",
+    "brand": "Firefly Mobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

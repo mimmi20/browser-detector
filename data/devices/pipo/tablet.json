@@ -1,117 +1,122 @@
 {
-    "general pipo device": {
-        "deviceName": "general PiPO Device",
-        "marketingName": "general PiPO Device",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general pipo device": {
+    "deviceName": "general PiPO Device",
+    "marketingName": "general PiPO Device",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "pipo i75": {
-        "deviceName": "i75",
-        "marketingName": "i75",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pipo m6": {
-        "deviceName": "M6",
-        "marketingName": "M6",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pipo m6": {
+    "deviceName": "M6",
+    "marketingName": "M6",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
     },
-    "pipo q107": {
-        "deviceName": "Q107",
-        "marketingName": "M9 Pro",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pipo q977": {
-        "deviceName": "Q977",
-        "marketingName": "M6 pro",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pipo q977": {
+    "deviceName": "Q977",
+    "marketingName": "M6 pro",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pipo q107": {
+    "deviceName": "Q107",
+    "marketingName": "M9 Pro",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pipo i75": {
+    "deviceName": "i75",
+    "marketingName": "i75",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

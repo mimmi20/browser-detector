@@ -1,117 +1,122 @@
 {
-    "general ainol device": {
-        "deviceName": "general Ainol Device",
-        "marketingName": "general Ainol Device",
-        "manufacturer": "Ainol",
-        "brand": "Ainol",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ainol device": {
+    "deviceName": "general Ainol Device",
+    "marketingName": "general Ainol Device",
+    "manufacturer": "Ainol",
+    "brand": "Ainol",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ainol novo 10 hero": {
-        "deviceName": "Novo 10 Hero",
-        "marketingName": "Novo 10 Hero",
-        "manufacturer": "Ainol",
-        "brand": "Ainol",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "ainol novo 7 flame": {
-        "deviceName": "Novo 7 Flame",
-        "marketingName": "Novo 7 Flame",
-        "manufacturer": "Ainol",
-        "brand": "Ainol",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ainol novo 10 hero": {
+    "deviceName": "Novo 10 Hero",
+    "marketingName": "Novo 10 Hero",
+    "manufacturer": "Ainol",
+    "brand": "Ainol",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "ainol novo 9 spark": {
-        "deviceName": "Novo 9 Spark",
-        "marketingName": "Novo 9 Spark",
-        "manufacturer": "Ainol",
-        "brand": "Ainol",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "ainol novo7fire": {
-        "deviceName": "Novo 7 Fire",
-        "marketingName": "Novo 7 Fire",
-        "manufacturer": "Ainol",
-        "brand": "Ainol",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ainol novo7fire": {
+    "deviceName": "Novo 7 Fire",
+    "marketingName": "Novo 7 Fire",
+    "manufacturer": "Ainol",
+    "brand": "Ainol",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ainol novo 7 flame": {
+    "deviceName": "Novo 7 Flame",
+    "marketingName": "Novo 7 Flame",
+    "manufacturer": "Ainol",
+    "brand": "Ainol",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ainol novo 9 spark": {
+    "deviceName": "Novo 9 Spark",
+    "marketingName": "Novo 9 Spark",
+    "manufacturer": "Ainol",
+    "brand": "Ainol",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

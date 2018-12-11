@@ -1,372 +1,388 @@
 {
-    "general cube device": {
-        "deviceName": "general Cube Device",
-        "marketingName": "general Cube Device",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general cube device": {
+    "deviceName": "general Cube Device",
+    "marketingName": "general Cube Device",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "cube i15-tcl": {
-        "deviceName": "i15-TCL",
-        "marketingName": "iWork 10",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cube i15-tfl": {
-        "deviceName": "i15-TFL",
-        "marketingName": "i15-TFL",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u51gt-w": {
+    "deviceName": "U51GT-W",
+    "marketingName": "Talk 7x",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "cube u20gt ws": {
-        "deviceName": "U20GT WS",
-        "marketingName": "U20GT WS",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cube u23gtc4": {
-        "deviceName": "U23GTC4",
-        "marketingName": "U23GTC4",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u20gt ws": {
+    "deviceName": "U20GT WS",
+    "marketingName": "U20GT WS",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "cube u25gt": {
-        "deviceName": "U25GT",
-        "marketingName": "U25GT",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cube u25gt-c4w": {
-        "deviceName": "U25GT-C4W",
-        "marketingName": "U25GT Super Edition",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u23gtc4": {
+    "deviceName": "U23GTC4",
+    "marketingName": "U23GTC4",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "cube u30gt": {
-        "deviceName": "U30GT",
-        "marketingName": "U30GT",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cube u30gt 2h": {
-        "deviceName": "U30GT 2H",
-        "marketingName": "U30GT 2H",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u25gt": {
+    "deviceName": "U25GT",
+    "marketingName": "U25GT",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "cube u30gt c4": {
-        "deviceName": "U30GT C4",
-        "marketingName": "U30GT C4",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cube u30gt-h": {
-        "deviceName": "U30GT-H",
-        "marketingName": "U30GT-H",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u25gt-c4w": {
+    "deviceName": "U25GT-C4W",
+    "marketingName": "U25GT Super Edition",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "cube u30gt-hs": {
-        "deviceName": "U30GT-HS",
-        "marketingName": "U30GT-HS",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cube u30gt2": {
-        "deviceName": "U30GT2",
-        "marketingName": "U30GT2",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u30gt": {
+    "deviceName": "U30GT",
+    "marketingName": "U30GT",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "cube u51gt-w": {
-        "deviceName": "U51GT-W",
-        "marketingName": "Talk 7x",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cube u9gt": {
-        "deviceName": "U9GT",
-        "marketingName": "U9GT",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u30gt 2h": {
+    "deviceName": "U30GT 2H",
+    "marketingName": "U30GT 2H",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "cube u9gt3": {
-        "deviceName": "U9GT3",
-        "marketingName": "U9GT3",
-        "manufacturer": "Cube",
-        "brand": "Cube",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u30gt c4": {
+    "deviceName": "U30GT C4",
+    "marketingName": "U30GT C4",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u30gt-h": {
+    "deviceName": "U30GT-H",
+    "marketingName": "U30GT-H",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u30gt-hs": {
+    "deviceName": "U30GT-HS",
+    "marketingName": "U30GT-HS",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u30gt2": {
+    "deviceName": "U30GT2",
+    "marketingName": "U30GT2",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u9gt": {
+    "deviceName": "U9GT",
+    "marketingName": "U9GT",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube u9gt3": {
+    "deviceName": "U9GT3",
+    "marketingName": "U9GT3",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube i15-tfl": {
+    "deviceName": "i15-TFL",
+    "marketingName": "i15-TFL",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cube i15-tcl": {
+    "deviceName": "i15-TCL",
+    "marketingName": "iWork 10",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

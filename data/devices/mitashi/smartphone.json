@@ -1,48 +1,50 @@
 {
-    "general mitashi device": {
-        "deviceName": "general Mitashi Device",
-        "marketingName": "general Mitashi Device",
-        "manufacturer": "Mitashi",
-        "brand": "Mitashi",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general mitashi device": {
+    "deviceName": "general Mitashi Device",
+    "marketingName": "general Mitashi Device",
+    "manufacturer": "Mitashi",
+    "brand": "Mitashi",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "mitashi ap-105": {
-        "deviceName": "AP-105",
-        "marketingName": "Play Duo King",
-        "manufacturer": "Mitashi",
-        "brand": "Mitashi",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "mitashi ap-105": {
+    "deviceName": "AP-105",
+    "marketingName": "Play Duo King",
+    "manufacturer": "Mitashi",
+    "brand": "Mitashi",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

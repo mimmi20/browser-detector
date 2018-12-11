@@ -1,100 +1,104 @@
 {
-    "pipo m7t": {
-        "deviceName": "M7T",
-        "marketingName": "M7T 3G",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+  "pipo m7t": {
+    "deviceName": "M7T",
+    "marketingName": "M7T 3G",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "pipo m8 3g": {
-        "deviceName": "M8 3G",
-        "marketingName": "Max M8 3G",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pipo p9 3g": {
-        "deviceName": "P9 3G",
-        "marketingName": "P9 3G",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "pipo m8 3g": {
+    "deviceName": "M8 3G",
+    "marketingName": "Max M8 3G",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "pipo t9": {
-        "deviceName": "T9",
-        "marketingName": "T9",
-        "manufacturer": "Pipo",
-        "brand": "Pipo",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "pipo p9 3g": {
+    "deviceName": "P9 3G",
+    "marketingName": "P9 3G",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "pipo t9": {
+    "deviceName": "T9",
+    "marketingName": "T9",
+    "manufacturer": "Pipo",
+    "brand": "Pipo",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

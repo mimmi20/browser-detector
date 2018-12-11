@@ -1,48 +1,50 @@
 {
-    "general noa device": {
-        "deviceName": "general Noa Device",
-        "marketingName": "general Noa Device",
-        "manufacturer": "Noa",
-        "brand": "Noa",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general noa device": {
+    "deviceName": "general Noa Device",
+    "marketingName": "general Noa Device",
+    "manufacturer": "Noa",
+    "brand": "Noa",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "noa h8se": {
-        "deviceName": "H8se",
-        "marketingName": "H8se",
-        "manufacturer": "Noa",
-        "brand": "Noa",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "noa h8se": {
+    "deviceName": "H8se",
+    "marketingName": "H8se",
+    "manufacturer": "Noa",
+    "brand": "Noa",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

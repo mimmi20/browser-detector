@@ -1,163 +1,170 @@
 {
-    "general hisense device": {
-        "deviceName": "general HiSense Device",
-        "marketingName": "general HiSense Device",
-        "manufacturer": "Hisense",
-        "brand": "Hisense",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general hisense device": {
+    "deviceName": "general HiSense Device",
+    "marketingName": "general HiSense Device",
+    "manufacturer": "Hisense",
+    "brand": "Hisense",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "hisense e2281": {
-        "deviceName": "E2281",
-        "marketingName": "Sero 8",
-        "manufacturer": "Hisense",
-        "brand": "Hisense",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "hisense e2281uk": {
-        "deviceName": "E2281UK",
-        "marketingName": "Sero 8",
-        "manufacturer": "Hisense",
-        "brand": "Hisense",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hisense e270bsa": {
+    "deviceName": "E270BSA",
+    "marketingName": "Sero 7 Lite",
+    "manufacturer": "Hisense",
+    "brand": "Hisense",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "hisense e270bsa": {
-        "deviceName": "E270BSA",
-        "marketingName": "Sero 7 Lite",
-        "manufacturer": "Hisense",
-        "brand": "Hisense",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "hisense f5281": {
-        "deviceName": "F5281",
-        "marketingName": "Sero 8 Pro",
-        "manufacturer": "Hisense",
-        "brand": "Hisense",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hisense m470bsa": {
+    "deviceName": "M470BSA",
+    "marketingName": "Sero 7 Pro",
+    "manufacturer": "Hisense",
+    "brand": "Hisense",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "hisense m470bsa": {
-        "deviceName": "M470BSA",
-        "marketingName": "Sero 7 Pro",
-        "manufacturer": "Hisense",
-        "brand": "Hisense",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "hisense m470bse": {
-        "deviceName": "M470BSE",
-        "marketingName": "Sero 7 Pro",
-        "manufacturer": "Hisense",
-        "brand": "Hisense",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hisense m470bse": {
+    "deviceName": "M470BSE",
+    "marketingName": "Sero 7 Pro",
+    "manufacturer": "Hisense",
+    "brand": "Hisense",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hisense e2281": {
+    "deviceName": "E2281",
+    "marketingName": "Sero 8",
+    "manufacturer": "Hisense",
+    "brand": "Hisense",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hisense e2281uk": {
+    "deviceName": "E2281UK",
+    "marketingName": "Sero 8",
+    "manufacturer": "Hisense",
+    "brand": "Hisense",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hisense f5281": {
+    "deviceName": "F5281",
+    "marketingName": "Sero 8 Pro",
+    "manufacturer": "Hisense",
+    "brand": "Hisense",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

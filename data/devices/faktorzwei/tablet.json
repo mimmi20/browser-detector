@@ -1,48 +1,50 @@
 {
-    "general faktorzwei device": {
-        "deviceName": "general Faktor Zwei Device",
-        "marketingName": "general Faktor Zwei Device",
-        "manufacturer": "FaktorZwei",
-        "brand": "FaktorZwei",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general faktorzwei device": {
+    "deviceName": "general Faktor Zwei Device",
+    "marketingName": "general Faktor Zwei Device",
+    "manufacturer": "FaktorZwei",
+    "brand": "FaktorZwei",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "faktorzwei 812223": {
-        "deviceName": "812223",
-        "marketingName": "FX2 PAD10",
-        "manufacturer": "FaktorZwei",
-        "brand": "FaktorZwei",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "faktorzwei 812223": {
+    "deviceName": "812223",
+    "marketingName": "FX2 PAD10",
+    "manufacturer": "FaktorZwei",
+    "brand": "FaktorZwei",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

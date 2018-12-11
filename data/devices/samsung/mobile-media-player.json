@@ -1,117 +1,122 @@
 {
-    "samsung yp-g1": {
-        "deviceName": "YP-G1",
-        "marketingName": "Galaxy Player 4.0",
-        "manufacturer": "Samsung",
-        "brand": "Samsung",
-        "type": "mobile-media-player",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "samsung yp-gb1": {
+    "deviceName": "YP-GB1",
+    "marketingName": "Galaxy Player",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "type": "mobile-media-player",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "samsung yp-g70": {
-        "deviceName": "YP-G70",
-        "marketingName": "Galaxy Player 5",
-        "manufacturer": "Samsung",
-        "brand": "Samsung",
-        "type": "mobile-media-player",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "samsung yp-gb1": {
-        "deviceName": "YP-GB1",
-        "marketingName": "Galaxy Player",
-        "manufacturer": "Samsung",
-        "brand": "Samsung",
-        "type": "mobile-media-player",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung yp-gs1": {
+    "deviceName": "YP-GS1",
+    "marketingName": "Galaxy Player 3.6",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "type": "mobile-media-player",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "samsung yp-gb70": {
-        "deviceName": "YP-GB70",
-        "marketingName": "Galaxy Player 70 Plus",
-        "manufacturer": "Samsung",
-        "brand": "Samsung",
-        "type": "mobile-media-player",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "samsung yp-gs1": {
-        "deviceName": "YP-GS1",
-        "marketingName": "Galaxy Player 3.6",
-        "manufacturer": "Samsung",
-        "brand": "Samsung",
-        "type": "mobile-media-player",
-        "display": {
-            "width": 480,
-            "height": 320,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung yp-g1": {
+    "deviceName": "YP-G1",
+    "marketingName": "Galaxy Player 4.0",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "type": "mobile-media-player",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung yp-g70": {
+    "deviceName": "YP-G70",
+    "marketingName": "Galaxy Player 5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "type": "mobile-media-player",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung yp-gb70": {
+    "deviceName": "YP-GB70",
+    "marketingName": "Galaxy Player 70 Plus",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "type": "mobile-media-player",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

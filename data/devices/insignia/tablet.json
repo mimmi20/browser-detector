@@ -1,71 +1,74 @@
 {
-    "general insignia device": {
-        "deviceName": "general Insignia Device",
-        "marketingName": "general Insignia Device",
-        "manufacturer": "Insignia",
-        "brand": "Insignia",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general insignia device": {
+    "deviceName": "general Insignia Device",
+    "marketingName": "general Insignia Device",
+    "manufacturer": "Insignia",
+    "brand": "Insignia",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "insignia ns-14t004": {
-        "deviceName": "NS-14T004",
-        "marketingName": "Flex",
-        "manufacturer": "Insignia",
-        "brand": "Insignia",
-        "type": "tablet",
-        "display": {
-            "width": 1366,
-            "height": 768,
-            "touch": true,
-            "type": "FWXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "insignia ns-p10a6100": {
-        "deviceName": "NS-P10A6100",
-        "marketingName": "Flex",
-        "manufacturer": "Insignia",
-        "brand": "Insignia",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "insignia ns-14t004": {
+    "deviceName": "NS-14T004",
+    "marketingName": "Flex",
+    "manufacturer": "Insignia",
+    "brand": "Insignia",
+    "type": "tablet",
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": true,
+      "type": "FWXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "insignia ns-p10a6100": {
+    "deviceName": "NS-P10A6100",
+    "marketingName": "Flex",
+    "manufacturer": "Insignia",
+    "brand": "Insignia",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

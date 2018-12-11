@@ -1,48 +1,50 @@
 {
-    "general bitel device": {
-        "deviceName": "general Bitel Device",
-        "marketingName": "general Bitel Device",
-        "manufacturer": "Bitel",
-        "brand": "Bitel",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general bitel device": {
+    "deviceName": "general Bitel Device",
+    "marketingName": "general Bitel Device",
+    "manufacturer": "Bitel",
+    "brand": "Bitel",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "bitel b9501": {
-        "deviceName": "B9501",
-        "marketingName": "B9501",
-        "manufacturer": "Bitel",
-        "brand": "Bitel",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "bitel b9501": {
+    "deviceName": "B9501",
+    "marketingName": "B9501",
+    "manufacturer": "Bitel",
+    "brand": "Bitel",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

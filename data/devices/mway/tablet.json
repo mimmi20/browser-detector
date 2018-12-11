@@ -1,48 +1,50 @@
 {
-    "general mway device": {
-        "deviceName": "general M-way Device",
-        "marketingName": "general M-way Device",
-        "manufacturer": "Mway",
-        "brand": "Mway",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general mway device": {
+    "deviceName": "general M-way Device",
+    "marketingName": "general M-way Device",
+    "manufacturer": "Mway",
+    "brand": "Mway",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "mway md948g": {
-        "deviceName": "MD-948G",
-        "marketingName": "MD-948G",
-        "manufacturer": "Mway",
-        "brand": "Mway",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "mway md948g": {
+    "deviceName": "MD-948G",
+    "marketingName": "MD-948G",
+    "manufacturer": "Mway",
+    "brand": "Mway",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

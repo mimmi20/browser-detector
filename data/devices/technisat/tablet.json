@@ -1,48 +1,50 @@
 {
-    "technisat aqiston aqipad 7g": {
-        "deviceName": "Aqiston Aqipad 7G",
-        "marketingName": "Aqiston Aqipad 7G",
-        "manufacturer": "TechniSat",
-        "brand": "TechniSat",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "technisat aqiston aqipad 7g": {
+    "deviceName": "Aqiston Aqipad 7G",
+    "marketingName": "Aqiston Aqipad 7G",
+    "manufacturer": "TechniSat",
+    "brand": "TechniSat",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "technisat technipad 10": {
-        "deviceName": "TechniPad 10",
-        "marketingName": "TechniPad 10",
-        "manufacturer": "TechniSat",
-        "brand": "TechniSat",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "technisat technipad 10": {
+    "deviceName": "TechniPad 10",
+    "marketingName": "TechniPad 10",
+    "manufacturer": "TechniSat",
+    "brand": "TechniSat",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

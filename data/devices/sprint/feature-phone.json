@@ -1,77 +1,80 @@
 {
-    "general sprint device": {
-        "deviceName": "general  Device",
-        "marketingName": "general  Device",
-        "manufacturer": "Sprint",
-        "brand": "Sprint",
-        "type": "feature-phone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA"
-            ],
-            "vendors": [
-                "Sprint"
-            ]
-        },
-        "connections": [
-            "CDMA"
-        ],
-        "platform": "android"
+  "general sprint device": {
+    "deviceName": "general  Device",
+    "marketingName": "general  Device",
+    "manufacturer": "Sprint",
+    "brand": "Sprint",
+    "type": "feature-phone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "sprint 6700": {
-        "deviceName": "Apache",
-        "marketingName": "6700",
-        "manufacturer": "Htc",
-        "brand": "Sprint",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "Sprint"
+      ]
     },
-    "sprint s2151": {
-        "deviceName": "S2151",
-        "marketingName": "Coast",
-        "manufacturer": "Kyocera",
-        "brand": "Sprint",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "brew"
-    }
+    "connections": [
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "sprint 6700": {
+    "deviceName": "Apache",
+    "marketingName": "6700",
+    "manufacturer": "Htc",
+    "brand": "Sprint",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "sprint s2151": {
+    "deviceName": "S2151",
+    "marketingName": "Coast",
+    "manufacturer": "Kyocera",
+    "brand": "Sprint",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "brew",
+    "variants": []
+  }
 }

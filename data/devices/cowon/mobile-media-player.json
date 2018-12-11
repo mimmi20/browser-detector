@@ -1,71 +1,74 @@
 {
-    "general cowon device": {
-        "deviceName": "general Cowon Device",
-        "marketingName": "general Cowon Device",
-        "manufacturer": "Cowon",
-        "brand": "Cowon",
-        "type": "mobile-media-player",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general cowon device": {
+    "deviceName": "general Cowon Device",
+    "marketingName": "general Cowon Device",
+    "manufacturer": "Cowon",
+    "brand": "Cowon",
+    "type": "mobile-media-player",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "cowon d3": {
-        "deviceName": "D3",
-        "marketingName": "D3",
-        "manufacturer": "Cowon",
-        "brand": "Cowon",
-        "type": "mobile-media-player",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cowon z2": {
-        "deviceName": "Z2",
-        "marketingName": "Plenue",
-        "manufacturer": "Cowon",
-        "brand": "Cowon",
-        "type": "mobile-media-player",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cowon d3": {
+    "deviceName": "D3",
+    "marketingName": "D3",
+    "manufacturer": "Cowon",
+    "brand": "Cowon",
+    "type": "mobile-media-player",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cowon z2": {
+    "deviceName": "Z2",
+    "marketingName": "Plenue",
+    "manufacturer": "Cowon",
+    "brand": "Cowon",
+    "type": "mobile-media-player",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

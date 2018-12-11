@@ -1,48 +1,50 @@
 {
-    "general ntt-system device": {
-        "deviceName": "general NTT System Device",
-        "marketingName": "general NTT System Device",
-        "manufacturer": "NttSystem",
-        "brand": "NttSystem",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ntt-system device": {
+    "deviceName": "general NTT System Device",
+    "marketingName": "general NTT System Device",
+    "manufacturer": "NttSystem",
+    "brand": "NttSystem",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ntt-system 611": {
-        "deviceName": "NTT 611 10.1",
-        "marketingName": "NTT 611 10.1",
-        "manufacturer": "NttSystem",
-        "brand": "NttSystem",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ntt-system 611": {
+    "deviceName": "NTT 611 10.1",
+    "marketingName": "NTT 611 10.1",
+    "manufacturer": "NttSystem",
+    "brand": "NttSystem",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

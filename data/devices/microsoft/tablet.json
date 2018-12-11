@@ -1,48 +1,50 @@
 {
-    "general microsoft device": {
-        "deviceName": "general Microsoft Device",
-        "marketingName": "general Microsoft Device",
-        "manufacturer": "Microsoft",
-        "brand": "Microsoft",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows"
+  "general microsoft device": {
+    "deviceName": "general Microsoft Device",
+    "marketingName": "general Microsoft Device",
+    "manufacturer": "Microsoft",
+    "brand": "Microsoft",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "microsoft windows rt tablet": {
-        "deviceName": "Windows RT Tablet",
-        "marketingName": "Windows RT Tablet",
-        "manufacturer": "Microsoft",
-        "brand": "Microsoft",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows",
+    "variants": []
+  },
+  "microsoft windows rt tablet": {
+    "deviceName": "Windows RT Tablet",
+    "marketingName": "Windows RT Tablet",
+    "manufacturer": "Microsoft",
+    "brand": "Microsoft",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

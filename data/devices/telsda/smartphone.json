@@ -1,48 +1,50 @@
 {
-    "general telsda device": {
-        "deviceName": "general Telsda Device",
-        "marketingName": "general Telsda Device",
-        "manufacturer": "Telsda",
-        "brand": "Telsda",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general telsda device": {
+    "deviceName": "general Telsda Device",
+    "marketingName": "general Telsda Device",
+    "manufacturer": "Telsda",
+    "brand": "Telsda",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "telsda t9666-1": {
-        "deviceName": "T9666-1",
-        "marketingName": "T9666-1",
-        "manufacturer": "Telsda",
-        "brand": "Telsda",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "telsda t9666-1": {
+    "deviceName": "T9666-1",
+    "marketingName": "T9666-1",
+    "manufacturer": "Telsda",
+    "brand": "Telsda",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

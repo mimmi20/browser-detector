@@ -1,48 +1,50 @@
 {
-    "general cosmote device": {
-        "deviceName": "general Cosmote Device",
-        "marketingName": "general Cosmote Device",
-        "manufacturer": "Cosmote",
-        "brand": "Cosmote",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general cosmote device": {
+    "deviceName": "general Cosmote Device",
+    "marketingName": "general Cosmote Device",
+    "manufacturer": "Cosmote",
+    "brand": "Cosmote",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "cosmote xplore": {
-        "deviceName": "Xplore",
-        "marketingName": "Xplore",
-        "manufacturer": "Cosmote",
-        "brand": "Cosmote",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cosmote xplore": {
+    "deviceName": "Xplore",
+    "marketingName": "Xplore",
+    "manufacturer": "Cosmote",
+    "brand": "Cosmote",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

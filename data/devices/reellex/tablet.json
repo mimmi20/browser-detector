@@ -1,48 +1,50 @@
 {
-    "general reellex device": {
-        "deviceName": "general Reellex Device",
-        "marketingName": "general Reellex Device",
-        "manufacturer": "Reellex",
-        "brand": "Reellex",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general reellex device": {
+    "deviceName": "general Reellex Device",
+    "marketingName": "general Reellex Device",
+    "manufacturer": "Reellex",
+    "brand": "Reellex",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "reellex tab-97e-01": {
-        "deviceName": "TAB-97E-01",
-        "marketingName": "TAB-97E-01",
-        "manufacturer": "Reellex",
-        "brand": "Reellex",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "reellex tab-97e-01": {
+    "deviceName": "TAB-97E-01",
+    "marketingName": "TAB-97E-01",
+    "manufacturer": "Reellex",
+    "brand": "Reellex",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "nintendo wii": {
-        "deviceName": "Wii",
-        "marketingName": "Wii",
-        "manufacturer": "Nintendo",
-        "brand": "Nintendo",
-        "type": "tv-console",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "nintendo wii": {
+    "deviceName": "Wii",
+    "marketingName": "Wii",
+    "manufacturer": "Nintendo",
+    "brand": "Nintendo",
+    "type": "tv-console",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "nintendo wiiu": {
-        "deviceName": "WiiU",
-        "marketingName": "WiiU",
-        "manufacturer": "Nintendo",
-        "brand": "Nintendo",
-        "type": "tv-console",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "nintendo wiiu": {
+    "deviceName": "WiiU",
+    "marketingName": "WiiU",
+    "manufacturer": "Nintendo",
+    "brand": "Nintendo",
+    "type": "tv-console",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

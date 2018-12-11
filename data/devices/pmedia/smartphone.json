@@ -1,48 +1,50 @@
 {
-    "general pmedia device": {
-        "deviceName": "general PMEDIA Device",
-        "marketingName": "general PMEDIA Device",
-        "manufacturer": "Pmedia",
-        "brand": "Pmedia",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general pmedia device": {
+    "deviceName": "general PMEDIA Device",
+    "marketingName": "general PMEDIA Device",
+    "manufacturer": "Pmedia",
+    "brand": "Pmedia",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "pmedia pmsmart450": {
-        "deviceName": "PMSmart450",
-        "marketingName": "PMSmart450",
-        "manufacturer": "Pmedia",
-        "brand": "Pmedia",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pmedia pmsmart450": {
+    "deviceName": "PMSmart450",
+    "marketingName": "PMSmart450",
+    "manufacturer": "Pmedia",
+    "brand": "Pmedia",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

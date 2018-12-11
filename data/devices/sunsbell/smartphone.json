@@ -1,48 +1,50 @@
 {
-    "general sunsbell device": {
-        "deviceName": "general Sunsbell Device",
-        "marketingName": "general Sunsbell Device",
-        "manufacturer": "Sunsbell",
-        "brand": "Sunsbell",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general sunsbell device": {
+    "deviceName": "general Sunsbell Device",
+    "marketingName": "general Sunsbell Device",
+    "manufacturer": "Sunsbell",
+    "brand": "Sunsbell",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "sunsbell x538": {
-        "deviceName": "X538",
-        "marketingName": "Swees X538",
-        "manufacturer": "Sunsbell",
-        "brand": "Sunsbell",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sunsbell x538": {
+    "deviceName": "X538",
+    "marketingName": "Swees X538",
+    "manufacturer": "Sunsbell",
+    "brand": "Sunsbell",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

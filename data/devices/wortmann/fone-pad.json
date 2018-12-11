@@ -1,71 +1,74 @@
 {
-    "general wortmann device": {
-        "deviceName": "general Wortmann Device",
-        "marketingName": "general Wortmann Device",
-        "manufacturer": "Wortmann",
-        "brand": "Wortmann",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general wortmann device": {
+    "deviceName": "general Wortmann Device",
+    "marketingName": "general Wortmann Device",
+    "manufacturer": "Wortmann",
+    "brand": "Wortmann",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "wortmann terra pad 1003": {
-        "deviceName": "TERRA PAD 1003",
-        "marketingName": "TERRA PAD 1003",
-        "manufacturer": "Wortmann",
-        "brand": "Wortmann",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "wortmann terra pad 1004": {
-        "deviceName": "TERRA PAD 1004",
-        "marketingName": "TERRA PAD 1004",
-        "manufacturer": "Wortmann",
-        "brand": "Wortmann",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "wortmann terra pad 1003": {
+    "deviceName": "TERRA PAD 1003",
+    "marketingName": "TERRA PAD 1003",
+    "manufacturer": "Wortmann",
+    "brand": "Wortmann",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "wortmann terra pad 1004": {
+    "deviceName": "TERRA PAD 1004",
+    "marketingName": "TERRA PAD 1004",
+    "manufacturer": "Wortmann",
+    "brand": "Wortmann",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

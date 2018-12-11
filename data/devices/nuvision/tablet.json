@@ -1,48 +1,50 @@
 {
-    "general nuvision device": {
-        "deviceName": "general NuVision Device",
-        "marketingName": "general NuVision Device",
-        "manufacturer": "NuVision",
-        "brand": "NuVision",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general nuvision device": {
+    "deviceName": "general NuVision Device",
+    "marketingName": "general NuVision Device",
+    "manufacturer": "NuVision",
+    "brand": "NuVision",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "nuvision tm785m3": {
-        "deviceName": "TM785M3",
-        "marketingName": "TM785M3",
-        "manufacturer": "NuVision",
-        "brand": "NuVision",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "nuvision tm785m3": {
+    "deviceName": "TM785M3",
+    "marketingName": "TM785M3",
+    "manufacturer": "NuVision",
+    "brand": "NuVision",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,117 +1,122 @@
 {
-    "general chuwi device": {
-        "deviceName": "general Chuwi Device",
-        "marketingName": "general Chuwi Device",
-        "manufacturer": "Chuwi",
-        "brand": "Chuwi",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general chuwi device": {
+    "deviceName": "general Chuwi Device",
+    "marketingName": "general Chuwi Device",
+    "manufacturer": "Chuwi",
+    "brand": "Chuwi",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "chuwi cw-hi8 super": {
-        "deviceName": "CW-HI8 Super",
-        "marketingName": "CW-HI8 Super",
-        "manufacturer": "Chuwi",
-        "brand": "Chuwi",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "chuwi hi10 pro": {
-        "deviceName": "Hi10 Pro",
-        "marketingName": "Hi10 Pro",
-        "manufacturer": "Chuwi",
-        "brand": "Chuwi",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "chuwi cw-hi8 super": {
+    "deviceName": "CW-HI8 Super",
+    "marketingName": "CW-HI8 Super",
+    "manufacturer": "Chuwi",
+    "brand": "Chuwi",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "chuwi hibook": {
-        "deviceName": "HiBook",
-        "marketingName": "HiBook",
-        "manufacturer": "Chuwi",
-        "brand": "Chuwi",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "chuwi vi8 plus": {
-        "deviceName": "Vi8 plus",
-        "marketingName": "Vi8 plus",
-        "manufacturer": "Chuwi",
-        "brand": "Chuwi",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "chuwi hi10 pro": {
+    "deviceName": "Hi10 Pro",
+    "marketingName": "Hi10 Pro",
+    "manufacturer": "Chuwi",
+    "brand": "Chuwi",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "chuwi hibook": {
+    "deviceName": "HiBook",
+    "marketingName": "HiBook",
+    "manufacturer": "Chuwi",
+    "brand": "Chuwi",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "chuwi vi8 plus": {
+    "deviceName": "Vi8 plus",
+    "marketingName": "Vi8 plus",
+    "manufacturer": "Chuwi",
+    "brand": "Chuwi",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

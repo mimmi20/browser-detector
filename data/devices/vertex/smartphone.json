@@ -1,48 +1,50 @@
 {
-    "general vertex device": {
-        "deviceName": "general Vertex Device",
-        "marketingName": "general Vertex Device",
-        "manufacturer": "Vertex",
-        "brand": "Vertex",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general vertex device": {
+    "deviceName": "general Vertex Device",
+    "marketingName": "general Vertex Device",
+    "manufacturer": "Vertex",
+    "brand": "Vertex",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "vertex impress l": {
-        "deviceName": "Impress L",
-        "marketingName": "Impress L",
-        "manufacturer": "Vertex",
-        "brand": "Vertex",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "vertex impress l": {
+    "deviceName": "Impress L",
+    "marketingName": "Impress L",
+    "manufacturer": "Vertex",
+    "brand": "Vertex",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

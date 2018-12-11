@@ -1,255 +1,266 @@
 {
-    "pantech adr910l": {
-        "deviceName": "ADR910L",
-        "marketingName": "Marauder",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "pantech p9070": {
+    "deviceName": "P9070",
+    "marketingName": "Burst",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "pantech im-a830l": {
-        "deviceName": "IM-A830L",
-        "marketingName": "Vega Racer 2",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pantech im-a840s": {
-        "deviceName": "IM-A840S",
-        "marketingName": "Vega S5",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech p8000": {
+    "deviceName": "P8000",
+    "marketingName": "Crossover",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "pantech im-a850k": {
-        "deviceName": "IM-A850K",
-        "marketingName": "Vega R3",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pantech im-a850l": {
-        "deviceName": "IM-A850L",
-        "marketingName": "Vega R3",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech p8010": {
+    "deviceName": "P8010",
+    "marketingName": "Flex",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "pantech im-a900k": {
-        "deviceName": "IM-A900K",
-        "marketingName": "Vega Secret Up",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pantech im-t100k": {
-        "deviceName": "IM-T100K",
-        "marketingName": "Sky Vega 5",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech adr910l": {
+    "deviceName": "ADR910L",
+    "marketingName": "Marauder",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "pantech p8000": {
-        "deviceName": "P8000",
-        "marketingName": "Crossover",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pantech p8010": {
-        "deviceName": "P8010",
-        "marketingName": "Flex",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech p9060": {
+    "deviceName": "P9060",
+    "marketingName": "Pocket",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 600,
+      "height": 800,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
     },
-    "pantech p9060": {
-        "deviceName": "P9060",
-        "marketingName": "Pocket",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 600,
-            "height": 800,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "pantech p9070": {
-        "deviceName": "P9070",
-        "marketingName": "Burst",
-        "manufacturer": "Pantech",
-        "brand": "Pantech",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech im-t100k": {
+    "deviceName": "IM-T100K",
+    "marketingName": "Sky Vega 5",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech im-a850k": {
+    "deviceName": "IM-A850K",
+    "marketingName": "Vega R3",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech im-a850l": {
+    "deviceName": "IM-A850L",
+    "marketingName": "Vega R3",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech im-a830l": {
+    "deviceName": "IM-A830L",
+    "marketingName": "Vega Racer 2",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech im-a840s": {
+    "deviceName": "IM-A840S",
+    "marketingName": "Vega S5",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pantech im-a900k": {
+    "deviceName": "IM-A900K",
+    "marketingName": "Vega Secret Up",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

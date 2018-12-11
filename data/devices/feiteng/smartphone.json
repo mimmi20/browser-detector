@@ -1,71 +1,74 @@
 {
-    "general feiteng device": {
-        "deviceName": "general Feiteng Device",
-        "marketingName": "general Feiteng Device",
-        "manufacturer": "Feiteng",
-        "brand": "Feiteng",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general feiteng device": {
+    "deviceName": "general Feiteng Device",
+    "marketingName": "general Feiteng Device",
+    "manufacturer": "Feiteng",
+    "brand": "Feiteng",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "feiteng gt-h9500": {
-        "deviceName": "GT-H9500",
-        "marketingName": "GT-H9500",
-        "manufacturer": "Feiteng",
-        "brand": "Feiteng",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "feiteng h7100": {
-        "deviceName": "H7100",
-        "marketingName": "H7100",
-        "manufacturer": "Feiteng",
-        "brand": "Feiteng",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "feiteng gt-h9500": {
+    "deviceName": "GT-H9500",
+    "marketingName": "GT-H9500",
+    "manufacturer": "Feiteng",
+    "brand": "Feiteng",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "feiteng h7100": {
+    "deviceName": "H7100",
+    "marketingName": "H7100",
+    "manufacturer": "Feiteng",
+    "brand": "Feiteng",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

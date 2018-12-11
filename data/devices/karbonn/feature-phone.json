@@ -1,71 +1,74 @@
 {
-    "karbonn k222s": {
-        "deviceName": "K222s",
-        "marketingName": "K222s",
-        "manufacturer": "Karbonn",
-        "brand": "Karbonn",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+  "karbonn k222s": {
+    "deviceName": "K222s",
+    "marketingName": "K222s",
+    "manufacturer": "Karbonn",
+    "brand": "Karbonn",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "karbonn k595": {
-        "deviceName": "K595",
-        "marketingName": "K595",
-        "manufacturer": "Karbonn",
-        "brand": "Karbonn",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "karbonn k84": {
-        "deviceName": "K84",
-        "marketingName": "K84",
-        "manufacturer": "Karbonn",
-        "brand": "Karbonn",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
-    }
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "karbonn k595": {
+    "deviceName": "K595",
+    "marketingName": "K595",
+    "manufacturer": "Karbonn",
+    "brand": "Karbonn",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "karbonn k84": {
+    "deviceName": "K84",
+    "marketingName": "K84",
+    "manufacturer": "Karbonn",
+    "brand": "Karbonn",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  }
 }

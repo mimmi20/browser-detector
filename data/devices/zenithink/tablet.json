@@ -1,71 +1,74 @@
 {
-    "general zenithink device": {
-        "deviceName": "general Zenithink Device",
-        "marketingName": "general Zenithink Device",
-        "manufacturer": "Zenithink",
-        "brand": "Zenithink",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general zenithink device": {
+    "deviceName": "general Zenithink Device",
+    "marketingName": "general Zenithink Device",
+    "manufacturer": "Zenithink",
+    "brand": "Zenithink",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "zenithink epad p7901a": {
-        "deviceName": "Epad P7901A",
-        "marketingName": "Epad P7901A",
-        "manufacturer": "Zenithink",
-        "brand": "Zenithink",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zenithink zt180": {
-        "deviceName": "ZT180",
-        "marketingName": "ZT180",
-        "manufacturer": "Zenithink",
-        "brand": "Zenithink",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zenithink epad p7901a": {
+    "deviceName": "Epad P7901A",
+    "marketingName": "Epad P7901A",
+    "manufacturer": "Zenithink",
+    "brand": "Zenithink",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zenithink zt180": {
+    "deviceName": "ZT180",
+    "marketingName": "ZT180",
+    "manufacturer": "Zenithink",
+    "brand": "Zenithink",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

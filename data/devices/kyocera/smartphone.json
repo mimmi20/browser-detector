@@ -1,370 +1,386 @@
 {
-    "general kyocera device": {
-        "deviceName": "general Kyocera Device",
-        "marketingName": "general Kyocera Device",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general kyocera device": {
+    "deviceName": "general Kyocera Device",
+    "marketingName": "general Kyocera Device",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "kyocera c5120": {
-        "deviceName": "C5120",
-        "marketingName": "Milano",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kyocera c5155": {
-        "deviceName": "C5155",
-        "marketingName": "Rise",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "kyocera dm015k": {
+    "deviceName": "DM015K",
+    "marketingName": "DM015K",
+    "manufacturer": "Kyocera",
+    "brand": "Disney Mobile",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "kyocera c5170": {
-        "deviceName": "C5170",
-        "marketingName": "Hydro C5170",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kyocera c5215": {
-        "deviceName": "C5215",
-        "marketingName": "Hydro Edge",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera kyl21": {
+    "deviceName": "KYL21",
+    "marketingName": "Digno S",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "kyocera c6522n": {
-        "deviceName": "C6522N",
-        "marketingName": "Hydro XTRM",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kyocera c6730": {
-        "deviceName": "C6730",
-        "marketingName": "Hydro Icon",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera e6560": {
+    "deviceName": "E6560",
+    "marketingName": "DuraForce",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "kyocera c6740n": {
-        "deviceName": "C6740N",
-        "marketingName": "Hydro Wave",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kyocera c6742": {
-        "deviceName": "C6742",
-        "marketingName": "Hydro View",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c5170": {
+    "deviceName": "C5170",
+    "marketingName": "Hydro C5170",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "kyocera c6742a": {
-        "deviceName": "C6742A",
-        "marketingName": "Hydro Shore",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kyocera c6743": {
-        "deviceName": "C6743",
-        "marketingName": "Hydro Reach",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c5215": {
+    "deviceName": "C5215",
+    "marketingName": "Hydro Edge",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "kyocera c6750": {
-        "deviceName": "C6750",
-        "marketingName": "Hydro Elite",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kyocera dm015k": {
-        "deviceName": "DM015K",
-        "marketingName": "DM015K",
-        "manufacturer": "Kyocera",
-        "brand": "Disney Mobile",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c6750": {
+    "deviceName": "C6750",
+    "marketingName": "Hydro Elite",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "kyocera e6560": {
-        "deviceName": "E6560",
-        "marketingName": "DuraForce",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kyocera kc-s701": {
-        "deviceName": "KC-S701",
-        "marketingName": "Torque",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c6730": {
+    "deviceName": "C6730",
+    "marketingName": "Hydro Icon",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "kyocera kyl21": {
-        "deviceName": "KYL21",
-        "marketingName": "Digno S",
-        "manufacturer": "Kyocera",
-        "brand": "Kyocera",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c6743": {
+    "deviceName": "C6743",
+    "marketingName": "Hydro Reach",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c6742a": {
+    "deviceName": "C6742A",
+    "marketingName": "Hydro Shore",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c6742": {
+    "deviceName": "C6742",
+    "marketingName": "Hydro View",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c6740n": {
+    "deviceName": "C6740N",
+    "marketingName": "Hydro Wave",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c6522n": {
+    "deviceName": "C6522N",
+    "marketingName": "Hydro XTRM",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c5120": {
+    "deviceName": "C5120",
+    "marketingName": "Milano",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera c5155": {
+    "deviceName": "C5155",
+    "marketingName": "Rise",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kyocera kc-s701": {
+    "deviceName": "KC-S701",
+    "marketingName": "Torque",
+    "manufacturer": "Kyocera",
+    "brand": "Kyocera",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

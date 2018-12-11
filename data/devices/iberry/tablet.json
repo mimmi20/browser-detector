@@ -1,48 +1,50 @@
 {
-    "general iberry device": {
-        "deviceName": "general iBerry Device",
-        "marketingName": "general iBerry Device",
-        "manufacturer": "iBerry",
-        "brand": "iBerry",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general iberry device": {
+    "deviceName": "general iBerry Device",
+    "marketingName": "general iBerry Device",
+    "manufacturer": "iBerry",
+    "brand": "iBerry",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "iberry auxus ax01": {
-        "deviceName": "Auxus AX01",
-        "marketingName": "Auxus AX01",
-        "manufacturer": "iBerry",
-        "brand": "iBerry",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iberry auxus ax01": {
+    "deviceName": "Auxus AX01",
+    "marketingName": "Auxus AX01",
+    "manufacturer": "iBerry",
+    "brand": "iBerry",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

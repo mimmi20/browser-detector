@@ -1,96 +1,100 @@
 {
-    "general telenor device": {
-        "deviceName": "general Telenor Device",
-        "marketingName": "general Telenor Device",
-        "manufacturer": "Telenor",
-        "brand": "Telenor",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general telenor device": {
+    "deviceName": "general Telenor Device",
+    "marketingName": "general Telenor Device",
+    "manufacturer": "Telenor",
+    "brand": "Telenor",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "telenor smart 4g": {
-        "deviceName": "Smart",
-        "marketingName": "Smart",
-        "manufacturer": "Telenor",
-        "brand": "Telenor",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "telenor smart pro": {
-        "deviceName": "Smart Pro",
-        "marketingName": "Smart Pro",
-        "manufacturer": "Telenor",
-        "brand": "Telenor",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "telenor smart 4g": {
+    "deviceName": "Smart",
+    "marketingName": "Smart",
+    "manufacturer": "Telenor",
+    "brand": "Telenor",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "telenor touch plus": {
-        "deviceName": "Touch Plus",
-        "marketingName": "Touch Plus",
-        "manufacturer": "Telenor",
-        "brand": "Telenor",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "telenor smart pro": {
+    "deviceName": "Smart Pro",
+    "marketingName": "Smart Pro",
+    "manufacturer": "Telenor",
+    "brand": "Telenor",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "telenor touch plus": {
+    "deviceName": "Touch Plus",
+    "marketingName": "Touch Plus",
+    "manufacturer": "Telenor",
+    "brand": "Telenor",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

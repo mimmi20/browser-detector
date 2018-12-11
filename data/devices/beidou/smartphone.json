@@ -1,71 +1,74 @@
 {
-    "general beidou device": {
-        "deviceName": "general Beidou Device",
-        "marketingName": "general Beidou Device",
-        "manufacturer": "Beidou",
-        "brand": "Beidou",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general beidou device": {
+    "deviceName": "general Beidou Device",
+    "marketingName": "general Beidou Device",
+    "manufacturer": "Beidou",
+    "brand": "Beidou",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "beidou la-m1": {
-        "deviceName": "LA-M1",
-        "marketingName": "Chili Pepper",
-        "manufacturer": "Beidou",
-        "brand": "Beidou",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "beidou la2-t": {
-        "deviceName": "LA2-T",
-        "marketingName": "Red Pepper",
-        "manufacturer": "Beidou",
-        "brand": "Beidou",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "beidou la-m1": {
+    "deviceName": "LA-M1",
+    "marketingName": "Chili Pepper",
+    "manufacturer": "Beidou",
+    "brand": "Beidou",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "beidou la2-t": {
+    "deviceName": "LA2-T",
+    "marketingName": "Red Pepper",
+    "manufacturer": "Beidou",
+    "brand": "Beidou",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

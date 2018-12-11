@@ -1,255 +1,266 @@
 {
-    "hp ipaq 6900": {
-        "deviceName": "iPAQ 6900",
-        "marketingName": "iPAQ 6900",
-        "manufacturer": "Hp",
-        "brand": "Hp",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 240,
-            "touch": true,
-            "type": "Custom 240x240",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "palm pixi": {
+    "deviceName": "Pixi",
+    "marketingName": "Pixi",
+    "manufacturer": "Palm",
+    "brand": "Palm",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 400,
+      "touch": true,
+      "type": "Custom 320x400",
+      "size": null
     },
-    "hp p160u": {
-        "deviceName": "P160U",
-        "marketingName": "Veer",
-        "manufacturer": "Hp",
-        "brand": "Hp",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 400,
-            "touch": true,
-            "type": "Custom 320x400",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "webos"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "hp pre": {
-        "deviceName": "Pre",
-        "marketingName": "Pre",
-        "manufacturer": "Hp",
-        "brand": "Hp",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "webos"
+    "connections": [],
+    "platform": "webos",
+    "variants": []
+  },
+  "hp pre": {
+    "deviceName": "Pre",
+    "marketingName": "Pre",
+    "manufacturer": "Hp",
+    "brand": "Hp",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "hp pre 3": {
-        "deviceName": "Pre 3",
-        "marketingName": "Pre 3",
-        "manufacturer": "Hp",
-        "brand": "Hp",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "webos"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "palm pixi": {
-        "deviceName": "Pixi",
-        "marketingName": "Pixi",
-        "manufacturer": "Palm",
-        "brand": "Palm",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 400,
-            "touch": true,
-            "type": "Custom 320x400",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "webos"
+    "connections": [],
+    "platform": "webos",
+    "variants": []
+  },
+  "hp pre 3": {
+    "deviceName": "Pre 3",
+    "marketingName": "Pre 3",
+    "manufacturer": "Hp",
+    "brand": "Hp",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "palm treo850e": {
-        "deviceName": "Treo850e",
-        "marketingName": "Treo Pro",
-        "manufacturer": "Palm",
-        "brand": "Palm",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 320,
-            "touch": true,
-            "type": "Custom 320x320",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "palm tungsten t3": {
-        "deviceName": "Tungsten T3",
-        "marketingName": "Tungsten T3",
-        "manufacturer": "Palm",
-        "brand": "Palm",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 320,
-            "touch": true,
-            "type": "Custom 320x320",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": "webos",
+    "variants": []
+  },
+  "palm tx": {
+    "deviceName": "TX",
+    "marketingName": "TX",
+    "manufacturer": "Palm",
+    "brand": "Palm",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "palm tunx": {
-        "deviceName": "TunX",
-        "marketingName": "TunX",
-        "manufacturer": "Palm",
-        "brand": "Palm",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 320,
-            "touch": true,
-            "type": "Custom 320x320",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "palm tx": {
-        "deviceName": "TX",
-        "marketingName": "TX",
-        "manufacturer": "Palm",
-        "brand": "Palm",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "webos"
+    "connections": [],
+    "platform": "webos",
+    "variants": []
+  },
+  "palm treo850e": {
+    "deviceName": "Treo850e",
+    "marketingName": "Treo Pro",
+    "manufacturer": "Palm",
+    "brand": "Palm",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "type": "Custom 320x320",
+      "size": null
     },
-    "palm zi72": {
-        "deviceName": "Zi72",
-        "marketingName": "Zire 72",
-        "manufacturer": "Palm",
-        "brand": "Palm",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 320,
-            "touch": true,
-            "type": "Custom 320x320",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "palm zir4": {
-        "deviceName": "Zir4",
-        "marketingName": "Tungsten E2",
-        "manufacturer": "Palm",
-        "brand": "Palm",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 320,
-            "touch": true,
-            "type": "Custom 320x320",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "palm tunx": {
+    "deviceName": "TunX",
+    "marketingName": "TunX",
+    "manufacturer": "Palm",
+    "brand": "Palm",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "type": "Custom 320x320",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "palm zir4": {
+    "deviceName": "Zir4",
+    "marketingName": "Tungsten E2",
+    "manufacturer": "Palm",
+    "brand": "Palm",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "type": "Custom 320x320",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "palm tungsten t3": {
+    "deviceName": "Tungsten T3",
+    "marketingName": "Tungsten T3",
+    "manufacturer": "Palm",
+    "brand": "Palm",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "type": "Custom 320x320",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "hp p160u": {
+    "deviceName": "P160U",
+    "marketingName": "Veer",
+    "manufacturer": "Hp",
+    "brand": "Hp",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 400,
+      "touch": true,
+      "type": "Custom 320x400",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "webos",
+    "variants": []
+  },
+  "palm zi72": {
+    "deviceName": "Zi72",
+    "marketingName": "Zire 72",
+    "manufacturer": "Palm",
+    "brand": "Palm",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "type": "Custom 320x320",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "hp ipaq 6900": {
+    "deviceName": "iPAQ 6900",
+    "marketingName": "iPAQ 6900",
+    "manufacturer": "Hp",
+    "brand": "Hp",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 240,
+      "touch": true,
+      "type": "Custom 240x240",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

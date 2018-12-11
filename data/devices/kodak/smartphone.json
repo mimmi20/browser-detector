@@ -1,48 +1,50 @@
 {
-    "general kodak device": {
-        "deviceName": "general Kodak Device",
-        "marketingName": "general Kodak Device",
-        "manufacturer": "Kodak",
-        "brand": "Kodak",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general kodak device": {
+    "deviceName": "general Kodak Device",
+    "marketingName": "general Kodak Device",
+    "manufacturer": "Kodak",
+    "brand": "Kodak",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "kodak ektra": {
-        "deviceName": "Ektra",
-        "marketingName": "Ektra",
-        "manufacturer": "Kodak",
-        "brand": "Kodak",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kodak ektra": {
+    "deviceName": "Ektra",
+    "marketingName": "Ektra",
+    "manufacturer": "Kodak",
+    "brand": "Kodak",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

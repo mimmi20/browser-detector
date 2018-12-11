@@ -1,71 +1,74 @@
 {
-    "general fujitsu device": {
-        "deviceName": "general Fujitsu Device",
-        "marketingName": "general Fujitsu Device",
-        "manufacturer": "Fujitsu",
-        "brand": "Fujitsu",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general fujitsu device": {
+    "deviceName": "general Fujitsu Device",
+    "marketingName": "general Fujitsu Device",
+    "manufacturer": "Fujitsu",
+    "brand": "Fujitsu",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "fujitsu fartm933kz": {
-        "deviceName": "FARTM933KZ",
-        "marketingName": "FARTM933KZ",
-        "manufacturer": "Fujitsu",
-        "brand": "Fujitsu",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "fujitsu m532": {
-        "deviceName": "M532",
-        "marketingName": "Stylistic",
-        "manufacturer": "Fujitsu",
-        "brand": "Fujitsu",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fujitsu fartm933kz": {
+    "deviceName": "FARTM933KZ",
+    "marketingName": "FARTM933KZ",
+    "manufacturer": "Fujitsu",
+    "brand": "Fujitsu",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fujitsu m532": {
+    "deviceName": "M532",
+    "marketingName": "Stylistic",
+    "manufacturer": "Fujitsu",
+    "brand": "Fujitsu",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

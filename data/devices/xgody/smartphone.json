@@ -1,71 +1,74 @@
 {
-    "general xgody device": {
-        "deviceName": "general Xgody Device",
-        "marketingName": "general Xgody Device",
-        "manufacturer": "Xgody",
-        "brand": "Xgody",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general xgody device": {
+    "deviceName": "general Xgody Device",
+    "marketingName": "general Xgody Device",
+    "manufacturer": "Xgody",
+    "brand": "Xgody",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "xgody d10": {
-        "deviceName": "D10",
-        "marketingName": "D10",
-        "manufacturer": "Xgody",
-        "brand": "Xgody",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "xgody y14": {
-        "deviceName": "Y14",
-        "marketingName": "Y14",
-        "manufacturer": "Xgody",
-        "brand": "Xgody",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "xgody d10": {
+    "deviceName": "D10",
+    "marketingName": "D10",
+    "manufacturer": "Xgody",
+    "brand": "Xgody",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "xgody y14": {
+    "deviceName": "Y14",
+    "marketingName": "Y14",
+    "manufacturer": "Xgody",
+    "brand": "Xgody",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

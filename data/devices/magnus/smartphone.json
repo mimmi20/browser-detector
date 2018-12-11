@@ -1,48 +1,50 @@
 {
-    "general magnus device": {
-        "deviceName": "general Magnus Device",
-        "marketingName": "general Magnus Device",
-        "manufacturer": "Magnus Telecom",
-        "brand": "Magnus Telecom",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general magnus device": {
+    "deviceName": "general Magnus Device",
+    "marketingName": "general Magnus Device",
+    "manufacturer": "Magnus Telecom",
+    "brand": "Magnus Telecom",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "magnus z30": {
-        "deviceName": "Z30",
-        "marketingName": "Bravo",
-        "manufacturer": "Magnus Telecom",
-        "brand": "Magnus Telecom",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "magnus z30": {
+    "deviceName": "Z30",
+    "marketingName": "Bravo",
+    "manufacturer": "Magnus Telecom",
+    "brand": "Magnus Telecom",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,50 +1,52 @@
 {
-    "general elebest-germany device": {
-        "deviceName": "general Faktor Zwei Device",
-        "marketingName": "general Faktor Zwei Device",
-        "manufacturer": "Elebest Germany",
-        "brand": "Elebest Germany",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general elebest-germany device": {
+    "deviceName": "general Faktor Zwei Device",
+    "marketingName": "general Faktor Zwei Device",
+    "manufacturer": "Elebest Germany",
+    "brand": "Elebest Germany",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "elebest-germany op109 4g": {
-        "deviceName": "OP109",
-        "marketingName": "OP109",
-        "manufacturer": "Elebest Germany",
-        "brand": "Elebest Germany",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "elebest-germany op109 4g": {
+    "deviceName": "OP109",
+    "marketingName": "OP109",
+    "manufacturer": "Elebest Germany",
+    "brand": "Elebest Germany",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

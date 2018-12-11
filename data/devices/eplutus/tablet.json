@@ -1,48 +1,50 @@
 {
-    "general eplutus device": {
-        "deviceName": "general Eplutus Device",
-        "marketingName": "general Eplutus Device",
-        "manufacturer": "Eplutus",
-        "brand": "Eplutus",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general eplutus device": {
+    "deviceName": "general Eplutus Device",
+    "marketingName": "general Eplutus Device",
+    "manufacturer": "Eplutus",
+    "brand": "Eplutus",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "eplutus m71": {
-        "deviceName": "M71",
-        "marketingName": "M71",
-        "manufacturer": "Eplutus",
-        "brand": "Eplutus",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "eplutus m71": {
+    "deviceName": "M71",
+    "marketingName": "M71",
+    "manufacturer": "Eplutus",
+    "brand": "Eplutus",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

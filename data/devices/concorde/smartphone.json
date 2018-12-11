@@ -1,48 +1,50 @@
 {
-    "general concorde device": {
-        "deviceName": "general ConCorde Device",
-        "marketingName": "general ConCorde Device",
-        "manufacturer": "ConCorde",
-        "brand": "ConCorde",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general concorde device": {
+    "deviceName": "general ConCorde Device",
+    "marketingName": "general ConCorde Device",
+    "manufacturer": "ConCorde",
+    "brand": "ConCorde",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "concorde smartphone 4300": {
-        "deviceName": "SmartPhone 4300",
-        "marketingName": "SmartPhone 4300",
-        "manufacturer": "ConCorde",
-        "brand": "ConCorde",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "concorde smartphone 4300": {
+    "deviceName": "SmartPhone 4300",
+    "marketingName": "SmartPhone 4300",
+    "manufacturer": "ConCorde",
+    "brand": "ConCorde",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

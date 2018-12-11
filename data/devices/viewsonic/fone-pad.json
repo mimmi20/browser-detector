@@ -1,48 +1,50 @@
 {
-    "viewsonic viewpad 7q": {
-        "deviceName": "ViewPad 7Q",
-        "marketingName": "ViewPad 7Q",
-        "manufacturer": "ViewSonic",
-        "brand": "ViewSonic",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "viewsonic viewpad 7q": {
+    "deviceName": "ViewPad 7Q",
+    "marketingName": "ViewPad 7Q",
+    "manufacturer": "ViewSonic",
+    "brand": "ViewSonic",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "viewsonic viewpad7": {
-        "deviceName": "ViewPad7",
-        "marketingName": "ViewPad7",
-        "manufacturer": "ViewSonic",
-        "brand": "ViewSonic",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 400,
-            "touch": true,
-            "type": "Custom 400x800",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "viewsonic viewpad7": {
+    "deviceName": "ViewPad7",
+    "marketingName": "ViewPad7",
+    "manufacturer": "ViewSonic",
+    "brand": "ViewSonic",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 400,
+      "touch": true,
+      "type": "Custom 400x800",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

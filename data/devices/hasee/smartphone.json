@@ -1,117 +1,122 @@
 {
-    "general hasee device": {
-        "deviceName": "general Hasee Device",
-        "marketingName": "general Hasee Device",
-        "manufacturer": "Hasee",
-        "brand": "Hasee",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general hasee device": {
+    "deviceName": "general Hasee Device",
+    "marketingName": "general Hasee Device",
+    "manufacturer": "Hasee",
+    "brand": "Hasee",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "hasee e50 t1": {
-        "deviceName": "E50 T1",
-        "marketingName": "E50 T1",
-        "manufacturer": "Hasee",
-        "brand": "Hasee",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "hasee h45 t3": {
-        "deviceName": "H45 T3",
-        "marketingName": "H45 T3",
-        "manufacturer": "Hasee",
-        "brand": "Hasee",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hasee e50 t1": {
+    "deviceName": "E50 T1",
+    "marketingName": "E50 T1",
+    "manufacturer": "Hasee",
+    "brand": "Hasee",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "hasee w50 t2": {
-        "deviceName": "W50 T2",
-        "marketingName": "W50 T2",
-        "manufacturer": "Hasee",
-        "brand": "Hasee",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "hasee x50 ts": {
-        "deviceName": "X50 TS",
-        "marketingName": "X50 TS",
-        "manufacturer": "Hasee",
-        "brand": "Hasee",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hasee h45 t3": {
+    "deviceName": "H45 T3",
+    "marketingName": "H45 T3",
+    "manufacturer": "Hasee",
+    "brand": "Hasee",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hasee w50 t2": {
+    "deviceName": "W50 T2",
+    "marketingName": "W50 T2",
+    "manufacturer": "Hasee",
+    "brand": "Hasee",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hasee x50 ts": {
+    "deviceName": "X50 TS",
+    "marketingName": "X50 TS",
+    "manufacturer": "Hasee",
+    "brand": "Hasee",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

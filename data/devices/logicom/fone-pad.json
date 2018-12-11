@@ -1,50 +1,52 @@
 {
-    "logicom kt712a 4.4": {
-        "deviceName": "KT712A 4.4",
-        "marketingName": "L-Ixir Tab 701",
-        "manufacturer": "Logicom",
-        "brand": "Logicom",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "logicom kt712a 4.4": {
+    "deviceName": "KT712A 4.4",
+    "marketingName": "L-Ixir Tab 701",
+    "manufacturer": "Logicom",
+    "brand": "Logicom",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "logicom l-ixir tab 701 3g": {
-        "deviceName": "L-Ixir Tab 701 3G",
-        "marketingName": "L-Ixir Tab 701 3G",
-        "manufacturer": "Logicom",
-        "brand": "Logicom",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "logicom l-ixir tab 701 3g": {
+    "deviceName": "L-Ixir Tab 701 3G",
+    "marketingName": "L-Ixir Tab 701 3G",
+    "manufacturer": "Logicom",
+    "brand": "Logicom",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

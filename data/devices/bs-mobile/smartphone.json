@@ -1,48 +1,50 @@
 {
-    "general bs-mobile device": {
-        "deviceName": "general BS Mobile Device",
-        "marketingName": "general BS Mobile Device",
-        "manufacturer": "BS Mobile",
-        "brand": "BS Mobile",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general bs-mobile device": {
+    "deviceName": "general BS Mobile Device",
+    "marketingName": "general BS Mobile Device",
+    "manufacturer": "BS Mobile",
+    "brand": "BS Mobile",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "bs-mobile rune": {
-        "deviceName": "Rune",
-        "marketingName": "Rune",
-        "manufacturer": "BS Mobile",
-        "brand": "BS Mobile",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "bs-mobile rune": {
+    "deviceName": "Rune",
+    "marketingName": "Rune",
+    "manufacturer": "BS Mobile",
+    "brand": "BS Mobile",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general azpen device": {
-        "deviceName": "general Azpen Device",
-        "marketingName": "general Azpen Device",
-        "manufacturer": "Azpen",
-        "brand": "Azpen",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general azpen device": {
+    "deviceName": "general Azpen Device",
+    "marketingName": "general Azpen Device",
+    "manufacturer": "Azpen",
+    "brand": "Azpen",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "azpen a727": {
-        "deviceName": "A727",
-        "marketingName": "A727",
-        "manufacturer": "Azpen",
-        "brand": "Azpen",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "azpen a727": {
+    "deviceName": "A727",
+    "marketingName": "A727",
+    "manufacturer": "Azpen",
+    "brand": "Azpen",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,186 +1,194 @@
 {
-    "general carrefour device": {
-        "deviceName": "general Carrefour Device",
-        "marketingName": "general Carrefour Device",
-        "manufacturer": "Carrefour",
-        "brand": "Carrefour",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general carrefour device": {
+    "deviceName": "general Carrefour Device",
+    "marketingName": "general Carrefour Device",
+    "manufacturer": "Carrefour",
+    "brand": "Carrefour",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "carrefour ct1000": {
-        "deviceName": "CT1000",
-        "marketingName": "CT1000",
-        "manufacturer": "Carrefour",
-        "brand": "Carrefour",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "carrefour ct1010": {
-        "deviceName": "CT1010",
-        "marketingName": "CT1010",
-        "manufacturer": "Carrefour",
-        "brand": "Carrefour",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "carrefour ct1000": {
+    "deviceName": "CT1000",
+    "marketingName": "CT1000",
+    "manufacturer": "Carrefour",
+    "brand": "Carrefour",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "carrefour ct1020w": {
-        "deviceName": "CT1020W",
-        "marketingName": "CT1020W",
-        "manufacturer": "Carrefour",
-        "brand": "Carrefour",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "carrefour ct1030": {
-        "deviceName": "CT1030",
-        "marketingName": "CT1030",
-        "manufacturer": "Carrefour",
-        "brand": "Carrefour",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "carrefour ct1010": {
+    "deviceName": "CT1010",
+    "marketingName": "CT1010",
+    "manufacturer": "Carrefour",
+    "brand": "Carrefour",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "carrefour ct710fr": {
-        "deviceName": "CT710FR",
-        "marketingName": "CT710FR",
-        "manufacturer": "Carrefour",
-        "brand": "Carrefour",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "carrefour ct720": {
-        "deviceName": "CT720",
-        "marketingName": "CT720",
-        "manufacturer": "Carrefour",
-        "brand": "Carrefour",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "carrefour ct1020w": {
+    "deviceName": "CT1020W",
+    "marketingName": "CT1020W",
+    "manufacturer": "Carrefour",
+    "brand": "Carrefour",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "carrefour ct820": {
-        "deviceName": "CT820",
-        "marketingName": "CT820",
-        "manufacturer": "Carrefour",
-        "brand": "Carrefour",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "carrefour ct1030": {
+    "deviceName": "CT1030",
+    "marketingName": "CT1030",
+    "manufacturer": "Carrefour",
+    "brand": "Carrefour",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "carrefour ct710fr": {
+    "deviceName": "CT710FR",
+    "marketingName": "CT710FR",
+    "manufacturer": "Carrefour",
+    "brand": "Carrefour",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "carrefour ct720": {
+    "deviceName": "CT720",
+    "marketingName": "CT720",
+    "manufacturer": "Carrefour",
+    "brand": "Carrefour",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "carrefour ct820": {
+    "deviceName": "CT820",
+    "marketingName": "CT820",
+    "manufacturer": "Carrefour",
+    "brand": "Carrefour",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }
