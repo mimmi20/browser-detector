@@ -1,48 +1,50 @@
 {
-    "fujitsu f-02f": {
-        "deviceName": "F-02F",
-        "marketingName": "Arrows Tab",
-        "manufacturer": "Fujitsu",
-        "brand": "Fujitsu",
-        "type": "fone-pad",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "fujitsu f-02f": {
+    "deviceName": "F-02F",
+    "marketingName": "Arrows Tab",
+    "manufacturer": "Fujitsu",
+    "brand": "Fujitsu",
+    "type": "fone-pad",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
     },
-    "fujitsu f-05e": {
-        "deviceName": "F-05E",
-        "marketingName": "Arrows Tab",
-        "manufacturer": "Fujitsu",
-        "brand": "DoCoMo",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fujitsu f-05e": {
+    "deviceName": "F-05E",
+    "marketingName": "Arrows Tab",
+    "manufacturer": "Fujitsu",
+    "brand": "DoCoMo",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

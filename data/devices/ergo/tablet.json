@@ -1,48 +1,50 @@
 {
-    "general ergo device": {
-        "deviceName": "general Ergo Device",
-        "marketingName": "general Ergo Device",
-        "manufacturer": "Ergo",
-        "brand": "Ergo",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ergo device": {
+    "deviceName": "general Ergo Device",
+    "marketingName": "general Ergo Device",
+    "manufacturer": "Ergo",
+    "brand": "Ergo",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ergo tab crystal lite": {
-        "deviceName": "Tab Crystal Lite",
-        "marketingName": "Tab Crystal Lite",
-        "manufacturer": "Ergo",
-        "brand": "Ergo",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ergo tab crystal lite": {
+    "deviceName": "Tab Crystal Lite",
+    "marketingName": "Tab Crystal Lite",
+    "manufacturer": "Ergo",
+    "brand": "Ergo",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

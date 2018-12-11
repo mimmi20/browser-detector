@@ -1,48 +1,50 @@
 {
-    "general geniatech device": {
-        "deviceName": "general Geniatech Device",
-        "marketingName": "general Geniatech Device",
-        "manufacturer": "Geniatech",
-        "brand": "Geniatech",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general geniatech device": {
+    "deviceName": "general Geniatech Device",
+    "marketingName": "general Geniatech Device",
+    "manufacturer": "Geniatech",
+    "brand": "Geniatech",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "geniatech mx enjoy tv box": {
-        "deviceName": "MX Enjoy TV BOX",
-        "marketingName": "MX Enjoy TV BOX",
-        "manufacturer": "Geniatech",
-        "brand": "Geniatech",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "geniatech mx enjoy tv box": {
+    "deviceName": "MX Enjoy TV BOX",
+    "marketingName": "MX Enjoy TV BOX",
+    "manufacturer": "Geniatech",
+    "brand": "Geniatech",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

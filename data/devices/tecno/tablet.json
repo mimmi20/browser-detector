@@ -1,48 +1,50 @@
 {
-    "general tecno device": {
-        "deviceName": "general Tecno Device",
-        "marketingName": "general Tecno Device",
-        "manufacturer": "Tecno",
-        "brand": "Tecno",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general tecno device": {
+    "deviceName": "general Tecno Device",
+    "marketingName": "general Tecno Device",
+    "manufacturer": "Tecno",
+    "brand": "Tecno",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "tecno p9": {
-        "deviceName": "P9",
-        "marketingName": "Phantom Mini Pad",
-        "manufacturer": "Tecno",
-        "brand": "Tecno",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tecno p9": {
+    "deviceName": "P9",
+    "marketingName": "Phantom Mini Pad",
+    "manufacturer": "Tecno",
+    "brand": "Tecno",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

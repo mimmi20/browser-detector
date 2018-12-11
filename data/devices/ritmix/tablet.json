@@ -1,71 +1,74 @@
 {
-    "general ritmix device": {
-        "deviceName": "general Ritmix Device",
-        "marketingName": "general Ritmix Device",
-        "manufacturer": "Ritmix",
-        "brand": "Ritmix",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ritmix device": {
+    "deviceName": "general Ritmix Device",
+    "marketingName": "general Ritmix Device",
+    "manufacturer": "Ritmix",
+    "brand": "Ritmix",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ritmix rmd-1025": {
-        "deviceName": "RMD-1025",
-        "marketingName": "RMD-1025",
-        "manufacturer": "Ritmix",
-        "brand": "Ritmix",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "ritmix rmd-1040": {
-        "deviceName": "RMD-1040",
-        "marketingName": "RMD-1040",
-        "manufacturer": "Ritmix",
-        "brand": "Ritmix",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ritmix rmd-1025": {
+    "deviceName": "RMD-1025",
+    "marketingName": "RMD-1025",
+    "manufacturer": "Ritmix",
+    "brand": "Ritmix",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ritmix rmd-1040": {
+    "deviceName": "RMD-1040",
+    "marketingName": "RMD-1040",
+    "manufacturer": "Ritmix",
+    "brand": "Ritmix",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

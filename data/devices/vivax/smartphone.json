@@ -1,48 +1,50 @@
 {
-    "general vivax device": {
-        "deviceName": "general Vivax Device",
-        "marketingName": "general Vivax Device",
-        "manufacturer": "Vivax",
-        "brand": "Vivax",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general vivax device": {
+    "deviceName": "general Vivax Device",
+    "marketingName": "general Vivax Device",
+    "manufacturer": "Vivax",
+    "brand": "Vivax",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "vivax fly4": {
-        "deviceName": "Fly4",
-        "marketingName": "Fly4",
-        "manufacturer": "Vivax",
-        "brand": "Vivax",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "vivax fly4": {
+    "deviceName": "Fly4",
+    "marketingName": "Fly4",
+    "manufacturer": "Vivax",
+    "brand": "Vivax",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

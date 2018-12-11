@@ -1,140 +1,146 @@
 {
-    "general uhappy device": {
-        "deviceName": "general UHAPPY Device",
-        "marketingName": "general UHAPPY Device",
-        "manufacturer": "UHAPPY",
-        "brand": "UHAPPY",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general uhappy device": {
+    "deviceName": "general UHAPPY Device",
+    "marketingName": "general UHAPPY Device",
+    "manufacturer": "UHAPPY",
+    "brand": "UHAPPY",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "uhappy up320": {
-        "deviceName": "UP320",
-        "marketingName": "UP320",
-        "manufacturer": "UHAPPY",
-        "brand": "UHAPPY",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "uhappy up350": {
-        "deviceName": "UP350",
-        "marketingName": "UP350",
-        "manufacturer": "UHAPPY",
-        "brand": "UHAPPY",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "uhappy up320": {
+    "deviceName": "UP320",
+    "marketingName": "UP320",
+    "manufacturer": "UHAPPY",
+    "brand": "UHAPPY",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "uhappy up520": {
-        "deviceName": "UP520",
-        "marketingName": "UP520",
-        "manufacturer": "UHAPPY",
-        "brand": "UHAPPY",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "uhappy up580": {
-        "deviceName": "UP580",
-        "marketingName": "UP580",
-        "manufacturer": "UHAPPY",
-        "brand": "UHAPPY",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "uhappy up350": {
+    "deviceName": "UP350",
+    "marketingName": "UP350",
+    "manufacturer": "UHAPPY",
+    "brand": "UHAPPY",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "uhappy up720": {
-        "deviceName": "UP720",
-        "marketingName": "UP720",
-        "manufacturer": "UHAPPY",
-        "brand": "UHAPPY",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "uhappy up520": {
+    "deviceName": "UP520",
+    "marketingName": "UP520",
+    "manufacturer": "UHAPPY",
+    "brand": "UHAPPY",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "uhappy up580": {
+    "deviceName": "UP580",
+    "marketingName": "UP580",
+    "manufacturer": "UHAPPY",
+    "brand": "UHAPPY",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "uhappy up720": {
+    "deviceName": "UP720",
+    "marketingName": "UP720",
+    "manufacturer": "UHAPPY",
+    "brand": "UHAPPY",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,71 +1,74 @@
 {
-    "general amoi device": {
-        "deviceName": "general Amoi Device",
-        "marketingName": "general Amoi Device",
-        "manufacturer": "Amoi",
-        "brand": "Amoi",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general amoi device": {
+    "deviceName": "general Amoi Device",
+    "marketingName": "general Amoi Device",
+    "manufacturer": "Amoi",
+    "brand": "Amoi",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "amoi a862w": {
-        "deviceName": "A862W",
-        "marketingName": "A862W",
-        "manufacturer": "Amoi",
-        "brand": "Amoi",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "amoi n820": {
-        "deviceName": "N820",
-        "marketingName": "N820",
-        "manufacturer": "Amoi",
-        "brand": "Amoi",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "amoi a862w": {
+    "deviceName": "A862W",
+    "marketingName": "A862W",
+    "manufacturer": "Amoi",
+    "brand": "Amoi",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "amoi n820": {
+    "deviceName": "N820",
+    "marketingName": "N820",
+    "manufacturer": "Amoi",
+    "brand": "Amoi",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

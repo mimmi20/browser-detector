@@ -1,140 +1,146 @@
 {
-    "general highscreen device": {
-        "deviceName": "general Highscreen Device",
-        "marketingName": "general Highscreen Device",
-        "manufacturer": "Highscreen",
-        "brand": "Highscreen",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general highscreen device": {
+    "deviceName": "general Highscreen Device",
+    "marketingName": "general Highscreen Device",
+    "manufacturer": "Highscreen",
+    "brand": "Highscreen",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "highscreen boost ii se": {
-        "deviceName": "Boost II SE",
-        "marketingName": "Boost II SE",
-        "manufacturer": "Highscreen",
-        "brand": "Highscreen",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "highscreen explosion": {
-        "deviceName": "Explosion",
-        "marketingName": "Explosion",
-        "manufacturer": "Highscreen",
-        "brand": "Highscreen",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "highscreen boost ii se": {
+    "deviceName": "Boost II SE",
+    "marketingName": "Boost II SE",
+    "manufacturer": "Highscreen",
+    "brand": "Highscreen",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "highscreen ice 2": {
-        "deviceName": "ICE 2",
-        "marketingName": "ICE 2",
-        "manufacturer": "Highscreen",
-        "brand": "Highscreen",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "highscreen omega prime s": {
-        "deviceName": "Omega Prime S",
-        "marketingName": "Omega Prime S",
-        "manufacturer": "Highscreen",
-        "brand": "Highscreen",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "highscreen explosion": {
+    "deviceName": "Explosion",
+    "marketingName": "Explosion",
+    "manufacturer": "Highscreen",
+    "brand": "Highscreen",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "highscreen zera f": {
-        "deviceName": "Zera F",
-        "marketingName": "Zera F",
-        "manufacturer": "Highscreen",
-        "brand": "Highscreen",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "highscreen ice 2": {
+    "deviceName": "ICE 2",
+    "marketingName": "ICE 2",
+    "manufacturer": "Highscreen",
+    "brand": "Highscreen",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "highscreen omega prime s": {
+    "deviceName": "Omega Prime S",
+    "marketingName": "Omega Prime S",
+    "manufacturer": "Highscreen",
+    "brand": "Highscreen",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "highscreen zera f": {
+    "deviceName": "Zera F",
+    "marketingName": "Zera F",
+    "manufacturer": "Highscreen",
+    "brand": "Highscreen",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

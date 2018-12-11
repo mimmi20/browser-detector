@@ -1,48 +1,50 @@
 {
-    "general teslamotors device": {
-        "deviceName": "general Tesla Motors Device",
-        "marketingName": "general Tesla Motors Device",
-        "manufacturer": "TeslaMotors",
-        "brand": "Tesla",
-        "type": "car-entertainment-system",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux"
+  "general teslamotors device": {
+    "deviceName": "general Tesla Motors Device",
+    "marketingName": "general Tesla Motors Device",
+    "manufacturer": "TeslaMotors",
+    "brand": "Tesla",
+    "type": "car-entertainment-system",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "teslamotors model s": {
-        "deviceName": "Model S",
-        "marketingName": "Model S",
-        "manufacturer": "TeslaMotors",
-        "brand": "Tesla",
-        "type": "car-entertainment-system",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  },
+  "teslamotors model s": {
+    "deviceName": "Model S",
+    "marketingName": "Model S",
+    "manufacturer": "TeslaMotors",
+    "brand": "Tesla",
+    "type": "car-entertainment-system",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  }
 }

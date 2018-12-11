@@ -1,48 +1,50 @@
 {
-    "bravis a501 bright": {
-        "deviceName": "A501 Bright",
-        "marketingName": "A501 Bright",
-        "manufacturer": "Bravis",
-        "brand": "Bravis",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "bravis a501 bright": {
+    "deviceName": "A501 Bright",
+    "marketingName": "A501 Bright",
+    "manufacturer": "Bravis",
+    "brand": "Bravis",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "bravis trend": {
-        "deviceName": "Trend",
-        "marketingName": "Trend",
-        "manufacturer": "Bravis",
-        "brand": "Bravis",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "bravis trend": {
+    "deviceName": "Trend",
+    "marketingName": "Trend",
+    "manufacturer": "Bravis",
+    "brand": "Bravis",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

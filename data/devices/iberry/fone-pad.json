@@ -1,50 +1,52 @@
 {
-    "iberry auxus ax02": {
-        "deviceName": "Auxus AX02",
-        "marketingName": "Auxus AX02",
-        "manufacturer": "iBerry",
-        "brand": "iBerry",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "iberry auxus ax02": {
+    "deviceName": "Auxus AX02",
+    "marketingName": "Auxus AX02",
+    "manufacturer": "iBerry",
+    "brand": "iBerry",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "iberry auxus corex4 3g": {
-        "deviceName": "Auxus CoreX4 3G",
-        "marketingName": "Auxus CoreX4 3G",
-        "manufacturer": "iBerry",
-        "brand": "iBerry",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iberry auxus corex4 3g": {
+    "deviceName": "Auxus CoreX4 3G",
+    "marketingName": "Auxus CoreX4 3G",
+    "manufacturer": "iBerry",
+    "brand": "iBerry",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

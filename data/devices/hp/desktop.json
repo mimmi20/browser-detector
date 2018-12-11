@@ -1,48 +1,50 @@
 {
-    "hp 9000": {
-        "deviceName": "9000",
-        "marketingName": "9000",
-        "manufacturer": "Hp",
-        "brand": "Hp",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "hp 9000": {
+    "deviceName": "9000",
+    "marketingName": "9000",
+    "manufacturer": "Hp",
+    "brand": "Hp",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "hp pc": {
-        "deviceName": "PC",
-        "marketingName": "PC",
-        "manufacturer": "Hp",
-        "brand": "Hp",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "hp pc": {
+    "deviceName": "PC",
+    "marketingName": "PC",
+    "manufacturer": "Hp",
+    "brand": "Hp",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

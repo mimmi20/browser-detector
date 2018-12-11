@@ -1,48 +1,50 @@
 {
-    "general adspec device": {
-        "deviceName": "general Adspec Device",
-        "marketingName": "general Adspec Device",
-        "manufacturer": "Adspec",
-        "brand": "Adspec",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general adspec device": {
+    "deviceName": "general Adspec Device",
+    "marketingName": "general Adspec Device",
+    "manufacturer": "Adspec",
+    "brand": "Adspec",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "adspec adtab 7 lite": {
-        "deviceName": "AdTab 7 Lite",
-        "marketingName": "AdTab 7 Lite",
-        "manufacturer": "Adspec",
-        "brand": "Adspec",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "adspec adtab 7 lite": {
+    "deviceName": "AdTab 7 Lite",
+    "marketingName": "AdTab 7 Lite",
+    "manufacturer": "Adspec",
+    "brand": "Adspec",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

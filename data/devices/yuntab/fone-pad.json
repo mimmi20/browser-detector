@@ -1,71 +1,74 @@
 {
-    "general yuntab device": {
-        "deviceName": "general Yuntab Device",
-        "marketingName": "general Yuntab Device",
-        "manufacturer": "Yuntab",
-        "brand": "Yuntab",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general yuntab device": {
+    "deviceName": "general Yuntab Device",
+    "marketingName": "general Yuntab Device",
+    "manufacturer": "Yuntab",
+    "brand": "Yuntab",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "yuntab k107": {
-        "deviceName": "K107",
-        "marketingName": "K107",
-        "manufacturer": "Yuntab",
-        "brand": "Yuntab",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yuntab k17": {
-        "deviceName": "K17",
-        "marketingName": "K17",
-        "manufacturer": "Yuntab",
-        "brand": "Yuntab",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yuntab k107": {
+    "deviceName": "K107",
+    "marketingName": "K107",
+    "manufacturer": "Yuntab",
+    "brand": "Yuntab",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yuntab k17": {
+    "deviceName": "K17",
+    "marketingName": "K17",
+    "manufacturer": "Yuntab",
+    "brand": "Yuntab",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

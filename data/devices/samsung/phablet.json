@@ -1,48 +1,50 @@
 {
-    "samsung sm-n960f": {
-        "deviceName": "SM-N960F",
-        "marketingName": "Galaxy Note 9",
-        "manufacturer": "Samsung",
-        "brand": "Samsung",
-        "type": "phablet",
-        "display": {
-            "width": 1440,
-            "height": 2960,
-            "touch": true,
-            "type": "Custom 1440x2960",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "samsung sm-n960f": {
+    "deviceName": "SM-N960F",
+    "marketingName": "Galaxy Note 9",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "type": "phablet",
+    "display": {
+      "width": 1440,
+      "height": 2960,
+      "touch": true,
+      "type": "Custom 1440x2960",
+      "size": null
     },
-    "samsung sm-n960u": {
-        "deviceName": "SM-N960U",
-        "marketingName": "Galaxy Note 9",
-        "manufacturer": "Samsung",
-        "brand": "Samsung",
-        "type": "phablet",
-        "display": {
-            "width": 1440,
-            "height": 2960,
-            "touch": true,
-            "type": "Custom 1440x2960",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n960u": {
+    "deviceName": "SM-N960U",
+    "marketingName": "Galaxy Note 9",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "type": "phablet",
+    "display": {
+      "width": 1440,
+      "height": 2960,
+      "touch": true,
+      "type": "Custom 1440x2960",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

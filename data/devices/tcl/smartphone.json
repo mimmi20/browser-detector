@@ -1,533 +1,556 @@
 {
-    "general tcl device": {
-        "deviceName": "general TCL Device",
-        "marketingName": "general TCL Device",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general tcl device": {
+    "deviceName": "general TCL Device",
+    "marketingName": "general TCL Device",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "tcl 9108a": {
-        "deviceName": "9108A",
-        "marketingName": "G60 Gala",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1200,
-            "touch": true,
-            "type": "Custom 720x1200",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl a916": {
-        "deviceName": "A916",
-        "marketingName": "A916",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": true,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl a916": {
+    "deviceName": "A916",
+    "marketingName": "A916",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": "WQVGA (variant 3)",
+      "size": null
     },
-    "tcl d662": {
-        "deviceName": "D662",
-        "marketingName": "D662",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl i718m": {
-        "deviceName": "i718M",
-        "marketingName": "i718M",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl d662": {
+    "deviceName": "D662",
+    "marketingName": "D662",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "tcl j620": {
-        "deviceName": "J620",
-        "marketingName": "J620",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl j636d+": {
-        "deviceName": "J636D+",
-        "marketingName": "J636D+",
-        "manufacturer": "Tcl",
-        "brand": "Alcatel",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl 9108a": {
+    "deviceName": "9108A",
+    "marketingName": "G60 Gala",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1200,
+      "touch": true,
+      "type": "Custom 720x1200",
+      "size": null
     },
-    "tcl j706t": {
-        "deviceName": "J706T",
-        "marketingName": "J706T",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl m2m": {
-        "deviceName": "M2M",
-        "marketingName": "M2M",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": null,
+    "variants": []
+  },
+  "tcl y910": {
+    "deviceName": "Y910",
+    "marketingName": "Hero N3",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "tcl m2u": {
-        "deviceName": "M2U",
-        "marketingName": "M2U",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl p301m": {
-        "deviceName": "P301M",
-        "marketingName": "P301M",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 470,
-            "height": 800,
-            "touch": true,
-            "type": "Custom 470x800",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl j620": {
+    "deviceName": "J620",
+    "marketingName": "J620",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "tcl p331m": {
-        "deviceName": "P331M",
-        "marketingName": "P331M",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl p332u": {
-        "deviceName": "P332U",
-        "marketingName": "P332U",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl j636d+": {
+    "deviceName": "J636D+",
+    "marketingName": "J636D+",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "tcl p360w": {
-        "deviceName": "P360W",
-        "marketingName": "P360W",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl p620m": {
-        "deviceName": "P620M",
-        "marketingName": "P620M",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl j706t": {
+    "deviceName": "J706T",
+    "marketingName": "J706T",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "tcl p728m": {
-        "deviceName": "P728M",
-        "marketingName": "P728M",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl s700": {
-        "deviceName": "S700",
-        "marketingName": "S700",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "tcl m2m": {
+    "deviceName": "M2M",
+    "marketingName": "M2M",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "tcl s720t": {
-        "deviceName": "S720T",
-        "marketingName": "S720T",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl s960": {
-        "deviceName": "S960",
-        "marketingName": "OneTouch Idol X+",
-        "manufacturer": "Tcl",
-        "brand": "Alcatel",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl m2u": {
+    "deviceName": "M2U",
+    "marketingName": "M2U",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "tcl vf685": {
-        "deviceName": "VF685",
-        "marketingName": "Smart 4 Fun",
-        "manufacturer": "Tcl",
-        "brand": "Vodafone",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl w939": {
-        "deviceName": "W939",
-        "marketingName": "W939",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl s960": {
+    "deviceName": "S960",
+    "marketingName": "OneTouch Idol X+",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "tcl y910": {
-        "deviceName": "Y910",
-        "marketingName": "Hero N3",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "tcl z206": {
-        "deviceName": "Z206",
-        "marketingName": "Z206",
-        "manufacturer": "Tcl",
-        "brand": "Tcl",
-        "type": "smartphone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl p301m": {
+    "deviceName": "P301M",
+    "marketingName": "P301M",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 470,
+      "height": 800,
+      "touch": true,
+      "type": "Custom 470x800",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl p331m": {
+    "deviceName": "P331M",
+    "marketingName": "P331M",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl p332u": {
+    "deviceName": "P332U",
+    "marketingName": "P332U",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl p360w": {
+    "deviceName": "P360W",
+    "marketingName": "P360W",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl p620m": {
+    "deviceName": "P620M",
+    "marketingName": "P620M",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl p728m": {
+    "deviceName": "P728M",
+    "marketingName": "P728M",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl s700": {
+    "deviceName": "S700",
+    "marketingName": "S700",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl s720t": {
+    "deviceName": "S720T",
+    "marketingName": "S720T",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl vf685": {
+    "deviceName": "VF685",
+    "marketingName": "Smart 4 Fun",
+    "manufacturer": "Tcl",
+    "brand": "Vodafone",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl w939": {
+    "deviceName": "W939",
+    "marketingName": "W939",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tcl z206": {
+    "deviceName": "Z206",
+    "marketingName": "Z206",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "tcl i718m": {
+    "deviceName": "i718M",
+    "marketingName": "i718M",
+    "manufacturer": "Tcl",
+    "brand": "Tcl",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

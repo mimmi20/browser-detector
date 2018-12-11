@@ -1,48 +1,50 @@
 {
-    "general casper device": {
-        "deviceName": "general Casper Device",
-        "marketingName": "general Casper Device",
-        "manufacturer": "Casper",
-        "brand": "Casper",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general casper device": {
+    "deviceName": "general Casper Device",
+    "marketingName": "general Casper Device",
+    "manufacturer": "Casper",
+    "brand": "Casper",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "casper via m1": {
-        "deviceName": "Via M1",
-        "marketingName": "Via M1",
-        "manufacturer": "Casper",
-        "brand": "Casper",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "casper via m1": {
+    "deviceName": "Via M1",
+    "marketingName": "Via M1",
+    "manufacturer": "Casper",
+    "brand": "Casper",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

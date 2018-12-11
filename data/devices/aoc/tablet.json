@@ -1,48 +1,50 @@
 {
-    "aoc mg97dr": {
-        "deviceName": "MG97DR",
-        "marketingName": "MG97DR",
-        "manufacturer": "Aoc",
-        "brand": "Aoc",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "aoc mg97dr": {
+    "deviceName": "MG97DR",
+    "marketingName": "MG97DR",
+    "manufacturer": "Aoc",
+    "brand": "Aoc",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "aoc u702": {
-        "deviceName": "U702",
-        "marketingName": "U702",
-        "manufacturer": "Aoc",
-        "brand": "Aoc",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "aoc u702": {
+    "deviceName": "U702",
+    "marketingName": "U702",
+    "manufacturer": "Aoc",
+    "brand": "Aoc",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

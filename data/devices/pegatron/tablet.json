@@ -1,48 +1,50 @@
 {
-    "general pegatron device": {
-        "deviceName": "general Pegatron Device",
-        "marketingName": "general Pegatron Device",
-        "manufacturer": "Pegatron",
-        "brand": "Pegatron",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general pegatron device": {
+    "deviceName": "general Pegatron Device",
+    "marketingName": "general Pegatron Device",
+    "manufacturer": "Pegatron",
+    "brand": "Pegatron",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "pegatron chagall": {
-        "deviceName": "Chagall",
-        "marketingName": "Chagall",
-        "manufacturer": "Pegatron",
-        "brand": "Pegatron",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "pegatron chagall": {
+    "deviceName": "Chagall",
+    "marketingName": "Chagall",
+    "manufacturer": "Pegatron",
+    "brand": "Pegatron",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

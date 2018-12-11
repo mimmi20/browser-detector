@@ -1,71 +1,74 @@
 {
-    "general condor device": {
-        "deviceName": "general Condor Device",
-        "marketingName": "general Condor Device",
-        "manufacturer": "Condor",
-        "brand": "Condor",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general condor device": {
+    "deviceName": "general Condor Device",
+    "marketingName": "general Condor Device",
+    "manufacturer": "Condor",
+    "brand": "Condor",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "condor ctab101l32g": {
-        "deviceName": "CTAB101L32G",
-        "marketingName": "CTAB101L32G",
-        "manufacturer": "Condor",
-        "brand": "Condor",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "condor ctab700l": {
-        "deviceName": "CTAB700L",
-        "marketingName": "CTAB700L",
-        "manufacturer": "Condor",
-        "brand": "Condor",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "condor ctab101l32g": {
+    "deviceName": "CTAB101L32G",
+    "marketingName": "CTAB101L32G",
+    "manufacturer": "Condor",
+    "brand": "Condor",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "condor ctab700l": {
+    "deviceName": "CTAB700L",
+    "marketingName": "CTAB700L",
+    "manufacturer": "Condor",
+    "brand": "Condor",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

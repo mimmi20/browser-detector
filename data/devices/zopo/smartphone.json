@@ -1,462 +1,482 @@
 {
-    "general zopo device": {
-        "deviceName": "general Zopo Device",
-        "marketingName": "general Zopo Device",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general zopo device": {
+    "deviceName": "general Zopo Device",
+    "marketingName": "general Zopo Device",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "zopo 9xxquad": {
-        "deviceName": "9xxQuad",
-        "marketingName": "9xxQuad",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp100": {
-        "deviceName": "ZP100",
-        "marketingName": "Pilot",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo 9xxquad": {
+    "deviceName": "9xxQuad",
+    "marketingName": "9xxQuad",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "zopo zp200": {
-        "deviceName": "ZP200",
-        "marketingName": "Shining+",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 960,
-            "touch": true,
-            "type": "DVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp200+": {
-        "deviceName": "ZP200+",
-        "marketingName": "ZP200+",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp960": {
+    "deviceName": "ZP960",
+    "marketingName": "C2",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "zopo zp300": {
-        "deviceName": "ZP300",
-        "marketingName": "Field",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp500": {
-        "deviceName": "ZP500",
-        "marketingName": "Libero",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp998": {
+    "deviceName": "ZP998",
+    "marketingName": "C2 II",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "zopo zp500+": {
-        "deviceName": "ZP500+",
-        "marketingName": "Libero",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp700": {
-        "deviceName": "ZP700",
-        "marketingName": "ZP700",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp300": {
+    "deviceName": "ZP300",
+    "marketingName": "Field",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "zopo zp810": {
-        "deviceName": "ZP810",
-        "marketingName": "Libero HD",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp900": {
-        "deviceName": "ZP900",
-        "marketingName": "Leader",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp900": {
+    "deviceName": "ZP900",
+    "marketingName": "Leader",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "zopo zp910": {
-        "deviceName": "ZP910",
-        "marketingName": "ZP900H",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp950": {
-        "deviceName": "ZP950",
-        "marketingName": "Leader Max",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp950": {
+    "deviceName": "ZP950",
+    "marketingName": "Leader Max",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "zopo zp950+": {
-        "deviceName": "ZP950+",
-        "marketingName": "ZP950+",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp952": {
-        "deviceName": "ZP952",
-        "marketingName": "Speed 7 Plus",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp500": {
+    "deviceName": "ZP500",
+    "marketingName": "Libero",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "zopo zp960": {
-        "deviceName": "ZP960",
-        "marketingName": "C2",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp980": {
-        "deviceName": "ZP980",
-        "marketingName": "Scorpio",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp500+": {
+    "deviceName": "ZP500+",
+    "marketingName": "Libero",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "zopo zp990": {
-        "deviceName": "ZP990",
-        "marketingName": "ZP990",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zopo zp990+": {
-        "deviceName": "ZP990+",
-        "marketingName": "ZP990+",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp810": {
+    "deviceName": "ZP810",
+    "marketingName": "Libero HD",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "zopo zp998": {
-        "deviceName": "ZP998",
-        "marketingName": "C2 II",
-        "manufacturer": "Zopo",
-        "brand": "Zopo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp100": {
+    "deviceName": "ZP100",
+    "marketingName": "Pilot",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp980": {
+    "deviceName": "ZP980",
+    "marketingName": "Scorpio",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp200": {
+    "deviceName": "ZP200",
+    "marketingName": "Shining+",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": "DVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp952": {
+    "deviceName": "ZP952",
+    "marketingName": "Speed 7 Plus",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp200+": {
+    "deviceName": "ZP200+",
+    "marketingName": "ZP200+",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp700": {
+    "deviceName": "ZP700",
+    "marketingName": "ZP700",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp910": {
+    "deviceName": "ZP910",
+    "marketingName": "ZP900H",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp950+": {
+    "deviceName": "ZP950+",
+    "marketingName": "ZP950+",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp990": {
+    "deviceName": "ZP990",
+    "marketingName": "ZP990",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zopo zp990+": {
+    "deviceName": "ZP990+",
+    "marketingName": "ZP990+",
+    "manufacturer": "Zopo",
+    "brand": "Zopo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "top-house coto t117": {
-        "deviceName": "Coto T117",
-        "marketingName": "Coto T117",
-        "manufacturer": "Top House",
-        "brand": "Top House",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "top-house coto t117": {
+    "deviceName": "Coto T117",
+    "marketingName": "Coto T117",
+    "manufacturer": "Top House",
+    "brand": "Top House",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "top-house x1013": {
-        "deviceName": "X1013",
-        "marketingName": "X1013",
-        "manufacturer": "Top House",
-        "brand": "Top House",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "top-house x1013": {
+    "deviceName": "X1013",
+    "marketingName": "X1013",
+    "manufacturer": "Top House",
+    "brand": "Top House",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

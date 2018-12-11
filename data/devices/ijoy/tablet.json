@@ -1,48 +1,50 @@
 {
-    "ijoy neon 7": {
-        "deviceName": "Neon 7",
-        "marketingName": "Neon 7",
-        "manufacturer": "i-Joy",
-        "brand": "i-Joy",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "ijoy neon 7": {
+    "deviceName": "Neon 7",
+    "marketingName": "Neon 7",
+    "manufacturer": "i-Joy",
+    "brand": "i-Joy",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "ijoy neon 9": {
-        "deviceName": "Neon 9",
-        "marketingName": "Neon 9",
-        "manufacturer": "i-Joy",
-        "brand": "i-Joy",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ijoy neon 9": {
+    "deviceName": "Neon 9",
+    "marketingName": "Neon 9",
+    "manufacturer": "i-Joy",
+    "brand": "i-Joy",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general alldaymall device": {
-        "deviceName": "general Alldaymall Device",
-        "marketingName": "general Alldaymall Device",
-        "manufacturer": "Alldaymall",
-        "brand": "Alldaymall",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general alldaymall device": {
+    "deviceName": "general Alldaymall Device",
+    "marketingName": "general Alldaymall Device",
+    "manufacturer": "Alldaymall",
+    "brand": "Alldaymall",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "alldaymall a88x": {
-        "deviceName": "A88X",
-        "marketingName": "A88X",
-        "manufacturer": "Alldaymall",
-        "brand": "Alldaymall",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alldaymall a88x": {
+    "deviceName": "A88X",
+    "marketingName": "A88X",
+    "manufacturer": "Alldaymall",
+    "brand": "Alldaymall",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

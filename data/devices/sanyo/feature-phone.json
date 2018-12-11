@@ -1,186 +1,194 @@
 {
-    "general sanyo device": {
-        "deviceName": "general Sanyo Device",
-        "marketingName": "general Sanyo Device",
-        "manufacturer": "Sanyo",
-        "brand": "Sanyo",
-        "type": "feature-phone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "brew"
+  "general sanyo device": {
+    "deviceName": "general Sanyo Device",
+    "marketingName": "general Sanyo Device",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "feature-phone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "sanyo e4100": {
-        "deviceName": "E4100",
-        "marketingName": "Taho",
-        "manufacturer": "Sanyo",
-        "brand": "Sanyo",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "brew"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sanyo pm8200": {
-        "deviceName": "PM-8200",
-        "marketingName": "PM-8200",
-        "manufacturer": "Sanyo",
-        "brand": "Sanyo",
-        "type": "feature-phone",
-        "display": {
-            "width": 132,
-            "height": 160,
-            "touch": false,
-            "type": "Custom 132x160",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "brew",
+    "variants": []
+  },
+  "sanyo scp6760": {
+    "deviceName": "SCP-6760",
+    "marketingName": "Incognito",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "sanyo scp3810": {
-        "deviceName": "SCP-3810",
-        "marketingName": "SCP-3810",
-        "manufacturer": "Sanyo",
-        "brand": "Sanyo",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "brew"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sanyo scp588cn": {
-        "deviceName": "SCP-588CN",
-        "marketingName": "SCP-588CN",
-        "manufacturer": "Sanyo",
-        "brand": "Sanyo",
-        "type": "feature-phone",
-        "display": {
-            "width": 176,
-            "height": 136,
-            "touch": false,
-            "type": "Custom 136x176",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "connections": [],
+    "platform": "brew",
+    "variants": []
+  },
+  "sanyo scp6780": {
+    "deviceName": "SCP-6780",
+    "marketingName": "Innuendo",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "feature-phone",
+    "display": {
+      "width": 400,
+      "height": 280,
+      "touch": false,
+      "type": "Custom 280x400",
+      "size": null
     },
-    "sanyo scp6750": {
-        "deviceName": "SCP-6750",
-        "marketingName": "Katana Eclipse",
-        "manufacturer": "Sanyo",
-        "brand": "Sanyo",
-        "type": "feature-phone",
-        "display": {
-            "width": 176,
-            "height": 220,
-            "touch": false,
-            "type": "Custom 176x220",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "brew"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sanyo scp6760": {
-        "deviceName": "SCP-6760",
-        "marketingName": "Incognito",
-        "manufacturer": "Sanyo",
-        "brand": "Sanyo",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "brew"
+    "connections": [],
+    "platform": "brew",
+    "variants": []
+  },
+  "sanyo scp6750": {
+    "deviceName": "SCP-6750",
+    "marketingName": "Katana Eclipse",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "feature-phone",
+    "display": {
+      "width": 176,
+      "height": 220,
+      "touch": false,
+      "type": "Custom 176x220",
+      "size": null
     },
-    "sanyo scp6780": {
-        "deviceName": "SCP-6780",
-        "marketingName": "Innuendo",
-        "manufacturer": "Sanyo",
-        "brand": "Sanyo",
-        "type": "feature-phone",
-        "display": {
-            "width": 400,
-            "height": 280,
-            "touch": false,
-            "type": "Custom 280x400",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "brew"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "brew",
+    "variants": []
+  },
+  "sanyo pm8200": {
+    "deviceName": "PM-8200",
+    "marketingName": "PM-8200",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "feature-phone",
+    "display": {
+      "width": 132,
+      "height": 160,
+      "touch": false,
+      "type": "Custom 132x160",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "sanyo scp3810": {
+    "deviceName": "SCP-3810",
+    "marketingName": "SCP-3810",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "brew",
+    "variants": []
+  },
+  "sanyo scp588cn": {
+    "deviceName": "SCP-588CN",
+    "marketingName": "SCP-588CN",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "feature-phone",
+    "display": {
+      "width": 176,
+      "height": 136,
+      "touch": false,
+      "type": "Custom 136x176",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "sanyo e4100": {
+    "deviceName": "E4100",
+    "marketingName": "Taho",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "brew",
+    "variants": []
+  }
 }

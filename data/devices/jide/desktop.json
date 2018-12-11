@@ -1,48 +1,50 @@
 {
-    "general jide device": {
-        "deviceName": "general Jide Device",
-        "marketingName": "general Jide Device",
-        "manufacturer": "Jide",
-        "brand": "Jide",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general jide device": {
+    "deviceName": "general Jide Device",
+    "marketingName": "general Jide Device",
+    "manufacturer": "Jide",
+    "brand": "Jide",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "jide remix sk1w": {
-        "deviceName": "Remix SK1W",
-        "marketingName": "Remix SK1W",
-        "manufacturer": "Jide",
-        "brand": "Jide",
-        "type": "desktop",
-        "display": {
-            "width": 1920,
-            "height": 1080,
-            "touch": false,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "remixos"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "jide remix sk1w": {
+    "deviceName": "Remix SK1W",
+    "marketingName": "Remix SK1W",
+    "manufacturer": "Jide",
+    "brand": "Jide",
+    "type": "desktop",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "remixos",
+    "variants": []
+  }
 }

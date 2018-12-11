@@ -1,48 +1,50 @@
 {
-    "general shiru device": {
-        "deviceName": "general Shiru Device",
-        "marketingName": "general Shiru Device",
-        "manufacturer": "Shiru",
-        "brand": "Shiru",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general shiru device": {
+    "deviceName": "general Shiru Device",
+    "marketingName": "general Shiru Device",
+    "manufacturer": "Shiru",
+    "brand": "Shiru",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "shiru samurai10": {
-        "deviceName": "Samurai 10",
-        "marketingName": "Samurai 10",
-        "manufacturer": "Shiru",
-        "brand": "Shiru",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "shiru samurai10": {
+    "deviceName": "Samurai 10",
+    "marketingName": "Samurai 10",
+    "manufacturer": "Shiru",
+    "brand": "Shiru",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

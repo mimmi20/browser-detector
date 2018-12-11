@@ -1,52 +1,54 @@
 {
-    "onda v10 4g": {
-        "deviceName": "V10",
-        "marketingName": "V10",
-        "manufacturer": "Onda",
-        "brand": "Onda",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": null
+  "onda v919 3g air": {
+    "deviceName": "V919",
+    "marketingName": "Air 3G",
+    "manufacturer": "Onda",
+    "brand": "Onda",
+    "type": "fone-pad",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
     },
-    "onda v919 3g air": {
-        "deviceName": "V919",
-        "marketingName": "Air 3G",
-        "manufacturer": "Onda",
-        "brand": "Onda",
-        "type": "fone-pad",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": null
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": null,
+    "variants": []
+  },
+  "onda v10 4g": {
+    "deviceName": "V10",
+    "marketingName": "V10",
+    "manufacturer": "Onda",
+    "brand": "Onda",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": null,
+    "variants": []
+  }
 }

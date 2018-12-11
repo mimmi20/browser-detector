@@ -1,48 +1,50 @@
 {
-    "acer da220hql": {
-        "deviceName": "DA220HQL",
-        "marketingName": "DA220HQL",
-        "manufacturer": "Acer",
-        "brand": "Acer",
-        "type": "desktop",
-        "display": {
-            "width": 1920,
-            "height": 1032,
-            "touch": false,
-            "type": "Custom 1032x1920",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "acer da220hql": {
+    "deviceName": "DA220HQL",
+    "marketingName": "DA220HQL",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "type": "desktop",
+    "display": {
+      "width": 1920,
+      "height": 1032,
+      "touch": false,
+      "type": "Custom 1032x1920",
+      "size": null
     },
-    "acer pc": {
-        "deviceName": "PC",
-        "marketingName": "PC",
-        "manufacturer": "Acer",
-        "brand": "Acer",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "acer pc": {
+    "deviceName": "PC",
+    "marketingName": "PC",
+    "manufacturer": "Acer",
+    "brand": "Acer",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

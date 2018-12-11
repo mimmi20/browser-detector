@@ -1,71 +1,74 @@
 {
-    "general kobo device": {
-        "deviceName": "general Kobo Device",
-        "marketingName": "general Kobo Device",
-        "manufacturer": "Kobo",
-        "brand": "Kobo",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general kobo device": {
+    "deviceName": "general Kobo Device",
+    "marketingName": "general Kobo Device",
+    "manufacturer": "Kobo",
+    "brand": "Kobo",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "kobo arc": {
-        "deviceName": "Arc",
-        "marketingName": "Arc",
-        "manufacturer": "Kobo",
-        "brand": "Kobo",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "kobo touch": {
-        "deviceName": "Touch",
-        "marketingName": "Touch eReader",
-        "manufacturer": "Kobo",
-        "brand": "Kobo",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kobo arc": {
+    "deviceName": "Arc",
+    "marketingName": "Arc",
+    "manufacturer": "Kobo",
+    "brand": "Kobo",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kobo touch": {
+    "deviceName": "Touch",
+    "marketingName": "Touch eReader",
+    "manufacturer": "Kobo",
+    "brand": "Kobo",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

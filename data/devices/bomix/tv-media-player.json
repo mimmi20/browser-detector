@@ -1,48 +1,50 @@
 {
-    "general bomix tv": {
-        "deviceName": "General Bomix TV",
-        "marketingName": "General Bomix TV",
-        "manufacturer": "Bomix",
-        "brand": "Bomix",
-        "type": "tv-media-player",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general bomix tv": {
+    "deviceName": "General Bomix TV",
+    "marketingName": "General Bomix TV",
+    "manufacturer": "Bomix",
+    "brand": "Bomix",
+    "type": "tv-media-player",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "bomix mxq pro": {
-        "deviceName": "MXQ Pro",
-        "marketingName": "MXQ Pro",
-        "manufacturer": "Bomix",
-        "brand": "Bomix",
-        "type": "tv-media-player",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "bomix mxq pro": {
+    "deviceName": "MXQ Pro",
+    "marketingName": "MXQ Pro",
+    "manufacturer": "Bomix",
+    "brand": "Bomix",
+    "type": "tv-media-player",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

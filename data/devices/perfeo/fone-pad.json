@@ -1,48 +1,50 @@
 {
-    "general perfeo device": {
-        "deviceName": "general Perfeo Device",
-        "marketingName": "general Perfeo Device",
-        "manufacturer": "Perfeo",
-        "brand": "Perfeo",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general perfeo device": {
+    "deviceName": "general Perfeo Device",
+    "marketingName": "general Perfeo Device",
+    "manufacturer": "Perfeo",
+    "brand": "Perfeo",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "perfeo 7007-hd": {
-        "deviceName": "7007-HD",
-        "marketingName": "7007-HD",
-        "manufacturer": "Perfeo",
-        "brand": "Perfeo",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "perfeo 7007-hd": {
+    "deviceName": "7007-HD",
+    "marketingName": "7007-HD",
+    "manufacturer": "Perfeo",
+    "brand": "Perfeo",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

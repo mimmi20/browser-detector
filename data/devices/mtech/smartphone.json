@@ -1,48 +1,50 @@
 {
-    "general mtech device": {
-        "deviceName": "general MTech Device",
-        "marketingName": "general MTech Device",
-        "manufacturer": "Mtech",
-        "brand": "Mtech",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general mtech device": {
+    "deviceName": "general MTech Device",
+    "marketingName": "general MTech Device",
+    "manufacturer": "Mtech",
+    "brand": "Mtech",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "mtech ace 4": {
-        "deviceName": "Ace 4",
-        "marketingName": "Ace 4",
-        "manufacturer": "Mtech",
-        "brand": "Mtech",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "mtech ace 4": {
+    "deviceName": "Ace 4",
+    "marketingName": "Ace 4",
+    "manufacturer": "Mtech",
+    "brand": "Mtech",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

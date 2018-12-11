@@ -1,370 +1,386 @@
 {
-    "general allview device": {
-        "deviceName": "general Allview Device",
-        "marketingName": "general Allview Device",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general allview device": {
+    "deviceName": "general Allview Device",
+    "marketingName": "general Allview Device",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "allview a4all": {
-        "deviceName": "A4ALL",
-        "marketingName": "A4ALL",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "allview a4you": {
-        "deviceName": "A4You",
-        "marketingName": "A4 You",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview a4you": {
+    "deviceName": "A4You",
+    "marketingName": "A4 You",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "allview impera s": {
-        "deviceName": "Impera S",
-        "marketingName": "Impera S",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows phone"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "allview p41 emagic": {
-        "deviceName": "P41 Emagic",
-        "marketingName": "P41 Emagic",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview a4all": {
+    "deviceName": "A4ALL",
+    "marketingName": "A4ALL",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "allview p4i": {
-        "deviceName": "P4i",
-        "marketingName": "AllDro P4",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "allview p5 energy": {
-        "deviceName": "P5 Energy",
-        "marketingName": "P5 Energy",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview p4i": {
+    "deviceName": "P4i",
+    "marketingName": "AllDro P4",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "allview p5 mini": {
-        "deviceName": "P5 Mini",
-        "marketingName": "P5 Mini",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "allview p5 quad": {
-        "deviceName": "P5 Quad",
-        "marketingName": "P5 Quad",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview impera s": {
+    "deviceName": "Impera S",
+    "marketingName": "Impera S",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "allview p6": {
-        "deviceName": "P6",
-        "marketingName": "P6",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "allview p9 energy lite": {
-        "deviceName": "P9 Energy Lite",
-        "marketingName": "P9 Energy Lite",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "allview p41 emagic": {
+    "deviceName": "P41 Emagic",
+    "marketingName": "P41 Emagic",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "allview v1 viper": {
-        "deviceName": "V1 Viper",
-        "marketingName": "V1 Viper",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "allview v1 viper i": {
-        "deviceName": "V1 Viper I",
-        "marketingName": "V1 Viper I",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview p5 energy": {
+    "deviceName": "P5 Energy",
+    "marketingName": "P5 Energy",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "allview x1 soul": {
-        "deviceName": "X1 Soul",
-        "marketingName": "X1 Soul",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "allview x2 soul": {
-        "deviceName": "X2 Soul",
-        "marketingName": "X2 Soul",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview p5 mini": {
+    "deviceName": "P5 Mini",
+    "marketingName": "P5 Mini",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "allview x4 soul lite": {
-        "deviceName": "X4 Soul Lite",
-        "marketingName": "X4 Soul Lite",
-        "manufacturer": "Allview",
-        "brand": "Allview",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview p5 quad": {
+    "deviceName": "P5 Quad",
+    "marketingName": "P5 Quad",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview p6": {
+    "deviceName": "P6",
+    "marketingName": "P6",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview p9 energy lite": {
+    "deviceName": "P9 Energy Lite",
+    "marketingName": "P9 Energy Lite",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview v1 viper": {
+    "deviceName": "V1 Viper",
+    "marketingName": "V1 Viper",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview v1 viper i": {
+    "deviceName": "V1 Viper I",
+    "marketingName": "V1 Viper I",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview x1 soul": {
+    "deviceName": "X1 Soul",
+    "marketingName": "X1 Soul",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview x2 soul": {
+    "deviceName": "X2 Soul",
+    "marketingName": "X2 Soul",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allview x4 soul lite": {
+    "deviceName": "X4 Soul Lite",
+    "marketingName": "X4 Soul Lite",
+    "manufacturer": "Allview",
+    "brand": "Allview",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

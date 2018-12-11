@@ -1,71 +1,74 @@
 {
-    "medion e10312": {
-        "deviceName": "LifeTab E10312",
-        "marketingName": "LifeTab E10312",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "medion e10312": {
+    "deviceName": "LifeTab E10312",
+    "marketingName": "LifeTab E10312",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "medion s1035x": {
-        "deviceName": "LifeTab S1035X",
-        "marketingName": "LifeTab S1035X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "medion x1060x": {
-        "deviceName": "X1060X",
-        "marketingName": "X1060X",
-        "manufacturer": "Medion",
-        "brand": "Medion",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion s1035x": {
+    "deviceName": "LifeTab S1035X",
+    "marketingName": "LifeTab S1035X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "medion x1060x": {
+    "deviceName": "X1060X",
+    "marketingName": "X1060X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

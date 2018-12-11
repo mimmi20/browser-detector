@@ -1,48 +1,50 @@
 {
-    "general dragon-touch device": {
-        "deviceName": "general Dragon Touch Device",
-        "marketingName": "general Dragon Touch Device",
-        "manufacturer": "Dragon Touch",
-        "brand": "Dragon Touch",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general dragon-touch device": {
+    "deviceName": "general Dragon Touch Device",
+    "marketingName": "general Dragon Touch Device",
+    "manufacturer": "Dragon Touch",
+    "brand": "Dragon Touch",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "dragon-touch y88x": {
-        "deviceName": "Y88X",
-        "marketingName": "Y88X",
-        "manufacturer": "Dragon Touch",
-        "brand": "Dragon Touch",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dragon-touch y88x": {
+    "deviceName": "Y88X",
+    "marketingName": "Y88X",
+    "manufacturer": "Dragon Touch",
+    "brand": "Dragon Touch",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

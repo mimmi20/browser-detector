@@ -1,71 +1,74 @@
 {
-    "general supersonic device": {
-        "deviceName": "general SuperSonic Device",
-        "marketingName": "general SuperSonic Device",
-        "manufacturer": "SuperSonic",
-        "brand": "SuperSonic",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general supersonic device": {
+    "deviceName": "general SuperSonic Device",
+    "marketingName": "general SuperSonic Device",
+    "manufacturer": "SuperSonic",
+    "brand": "SuperSonic",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "supersonic sc-74jb": {
-        "deviceName": "SC-74JB",
-        "marketingName": "SC-74JB",
-        "manufacturer": "SuperSonic",
-        "brand": "SuperSonic",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "supersonic sc-91mid": {
-        "deviceName": "SC-91MID",
-        "marketingName": "SC-91MID",
-        "manufacturer": "SuperSonic",
-        "brand": "SuperSonic",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "supersonic sc-74jb": {
+    "deviceName": "SC-74JB",
+    "marketingName": "SC-74JB",
+    "manufacturer": "SuperSonic",
+    "brand": "SuperSonic",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "supersonic sc-91mid": {
+    "deviceName": "SC-91MID",
+    "marketingName": "SC-91MID",
+    "manufacturer": "SuperSonic",
+    "brand": "SuperSonic",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

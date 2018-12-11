@@ -1,52 +1,54 @@
 {
-    "brondi surfing tab b 9.7 3g": {
-        "deviceName": "Surfing Tab B 9.7 3G",
-        "marketingName": "Surfing Tab B 9.7 3G",
-        "manufacturer": "Brondi",
-        "brand": "Brondi",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+  "brondi surfing tab b 9.7 3g": {
+    "deviceName": "Surfing Tab B 9.7 3G",
+    "marketingName": "Surfing Tab B 9.7 3G",
+    "manufacturer": "Brondi",
+    "brand": "Brondi",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "brondi surfing tab c 3g": {
-        "deviceName": "Surfing Tab C 3G",
-        "marketingName": "Surfing Tab C 3G",
-        "manufacturer": "Brondi",
-        "brand": "Brondi",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "brondi surfing tab c 3g": {
+    "deviceName": "Surfing Tab C 3G",
+    "marketingName": "Surfing Tab C 3G",
+    "manufacturer": "Brondi",
+    "brand": "Brondi",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

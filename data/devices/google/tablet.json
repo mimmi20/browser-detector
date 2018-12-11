@@ -1,117 +1,122 @@
 {
-    "general google device": {
-        "deviceName": "general Google Device",
-        "marketingName": "general Google Device",
-        "manufacturer": "Google",
-        "brand": "Google",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general google device": {
+    "deviceName": "general Google Device",
+    "marketingName": "general Google Device",
+    "manufacturer": "Google",
+    "brand": "Google",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "google nexus 10": {
-        "deviceName": "Nexus 10",
-        "marketingName": "Nexus 10",
-        "manufacturer": "Samsung",
-        "brand": "Google",
-        "type": "tablet",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "google nexus 7": {
-        "deviceName": "Nexus 7",
-        "marketingName": "Nexus 7",
-        "manufacturer": "Asus",
-        "brand": "Google",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "google nexus 10": {
+    "deviceName": "Nexus 10",
+    "marketingName": "Nexus 10",
+    "manufacturer": "Samsung",
+    "brand": "Google",
+    "type": "tablet",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
     },
-    "google nexus 9": {
-        "deviceName": "Nexus 9",
-        "marketingName": "Nexus 9",
-        "manufacturer": "Htc",
-        "brand": "Google",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "google pixel c": {
-        "deviceName": "Pixel C",
-        "marketingName": "Pixel C",
-        "manufacturer": "Google",
-        "brand": "Google",
-        "type": "tablet",
-        "display": {
-            "width": 2560,
-            "height": 1800,
-            "touch": true,
-            "type": "Custom 1800x2560",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "google nexus 7": {
+    "deviceName": "Nexus 7",
+    "marketingName": "Nexus 7",
+    "manufacturer": "Asus",
+    "brand": "Google",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "google nexus 9": {
+    "deviceName": "Nexus 9",
+    "marketingName": "Nexus 9",
+    "manufacturer": "Htc",
+    "brand": "Google",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "google pixel c": {
+    "deviceName": "Pixel C",
+    "marketingName": "Pixel C",
+    "manufacturer": "Google",
+    "brand": "Google",
+    "type": "tablet",
+    "display": {
+      "width": 2560,
+      "height": 1800,
+      "touch": true,
+      "type": "Custom 1800x2560",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

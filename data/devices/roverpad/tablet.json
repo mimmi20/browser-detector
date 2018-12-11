@@ -1,48 +1,50 @@
 {
-    "general roverpad device": {
-        "deviceName": "general RoverPad Device",
-        "marketingName": "general RoverPad Device",
-        "manufacturer": "RoverPad",
-        "brand": "RoverPad",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general roverpad device": {
+    "deviceName": "general RoverPad Device",
+    "marketingName": "general RoverPad Device",
+    "manufacturer": "RoverPad",
+    "brand": "RoverPad",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "roverpad air a70": {
-        "deviceName": "Air A70",
-        "marketingName": "Air A70",
-        "manufacturer": "RoverPad",
-        "brand": "RoverPad",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "roverpad air a70": {
+    "deviceName": "Air A70",
+    "marketingName": "Air A70",
+    "manufacturer": "RoverPad",
+    "brand": "RoverPad",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

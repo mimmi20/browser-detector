@@ -1,48 +1,50 @@
 {
-    "general kt-tech device": {
-        "deviceName": "general KT-Tech Device",
-        "marketingName": "general KT-Tech Device",
-        "manufacturer": "KT-Tech",
-        "brand": "KT-Tech",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general kt-tech device": {
+    "deviceName": "general KT-Tech Device",
+    "marketingName": "general KT-Tech Device",
+    "manufacturer": "KT-Tech",
+    "brand": "KT-Tech",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "kt-tech km-e100": {
-        "deviceName": "KM-E100",
-        "marketingName": "KM-E100",
-        "manufacturer": "KT-Tech",
-        "brand": "KT-Tech",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "kt-tech km-e100": {
+    "deviceName": "KM-E100",
+    "marketingName": "KM-E100",
+    "manufacturer": "KT-Tech",
+    "brand": "KT-Tech",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

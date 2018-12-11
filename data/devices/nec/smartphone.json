@@ -1,48 +1,50 @@
 {
-    "nec 0912": {
-        "deviceName": "0912",
-        "marketingName": "NEC Casio N-02E",
-        "manufacturer": "Nec",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "nec n-06e": {
+    "deviceName": "N-06E",
+    "marketingName": "Medias X",
+    "manufacturer": "Nec",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "nec n-06e": {
-        "deviceName": "N-06E",
-        "marketingName": "Medias X",
-        "manufacturer": "Nec",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "nec 0912": {
+    "deviceName": "0912",
+    "marketingName": "NEC Casio N-02E",
+    "manufacturer": "Nec",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

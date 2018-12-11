@@ -1,48 +1,50 @@
 {
-    "general yones-toptech device": {
-        "deviceName": "general Yones Toptech Device",
-        "marketingName": "general Yones Toptech Device",
-        "manufacturer": "Yones Toptech",
-        "brand": "Yones Toptech",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general yones-toptech device": {
+    "deviceName": "general Yones Toptech Device",
+    "marketingName": "general Yones Toptech Device",
+    "manufacturer": "Yones Toptech",
+    "brand": "Yones Toptech",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "yones-toptech bs1078": {
-        "deviceName": "BS1078",
-        "marketingName": "BS1078",
-        "manufacturer": "Yones Toptech",
-        "brand": "Yones Toptech",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yones-toptech bs1078": {
+    "deviceName": "BS1078",
+    "marketingName": "BS1078",
+    "manufacturer": "Yones Toptech",
+    "brand": "Yones Toptech",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "xiaomitech mi pad": {
-        "deviceName": "Mi Pad",
-        "marketingName": "Mi Pad",
-        "manufacturer": "XiaomiTech",
-        "brand": "XiaomiTech",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "xiaomitech mi pad": {
+    "deviceName": "Mi Pad",
+    "marketingName": "Mi Pad",
+    "manufacturer": "XiaomiTech",
+    "brand": "XiaomiTech",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
     },
-    "xiaomitech mi pad 2": {
-        "deviceName": "Mi Pad 2",
-        "marketingName": "Mi Pad 2",
-        "manufacturer": "XiaomiTech",
-        "brand": "XiaomiTech",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "xiaomitech mi pad 2": {
+    "deviceName": "Mi Pad 2",
+    "marketingName": "Mi Pad 2",
+    "manufacturer": "XiaomiTech",
+    "brand": "XiaomiTech",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

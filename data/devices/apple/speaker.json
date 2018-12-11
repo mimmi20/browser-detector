@@ -1,71 +1,74 @@
 {
-    "apple audioaccessory1,1": {
-        "deviceName": "AudioAccessory1,1",
-        "marketingName": "HomePod",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "speaker",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "audio os"
+  "apple audioaccessory1,1": {
+    "deviceName": "AudioAccessory1,1",
+    "marketingName": "HomePod",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "speaker",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "apple audioaccessory1,2": {
-        "deviceName": "AudioAccessory1,2",
-        "marketingName": "HomePod",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "speaker",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "audio os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple homepod": {
-        "deviceName": "HomePod",
-        "marketingName": "HomePod",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "speaker",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "audio os"
-    }
+    "connections": [],
+    "platform": "audio os",
+    "variants": []
+  },
+  "apple audioaccessory1,2": {
+    "deviceName": "AudioAccessory1,2",
+    "marketingName": "HomePod",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "speaker",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "audio os",
+    "variants": []
+  },
+  "apple homepod": {
+    "deviceName": "HomePod",
+    "marketingName": "HomePod",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "speaker",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "audio os",
+    "variants": []
+  }
 }

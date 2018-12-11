@@ -1,48 +1,50 @@
 {
-    "general iball device": {
-        "deviceName": "general Iball Device",
-        "marketingName": "general Iball Device",
-        "manufacturer": "Iball",
-        "brand": "Iball",
-        "type": "feature-phone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general iball device": {
+    "deviceName": "general Iball Device",
+    "marketingName": "general Iball Device",
+    "manufacturer": "Iball",
+    "brand": "Iball",
+    "type": "feature-phone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "iball majestic 2.4d": {
-        "deviceName": "Majestic 2.4D",
-        "marketingName": "Majestic 2.4D",
-        "manufacturer": "Iball",
-        "brand": "Iball",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iball majestic 2.4d": {
+    "deviceName": "Majestic 2.4D",
+    "marketingName": "Majestic 2.4D",
+    "manufacturer": "Iball",
+    "brand": "Iball",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  }
 }

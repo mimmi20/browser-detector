@@ -1,71 +1,74 @@
 {
-    "general htm device": {
-        "deviceName": "general HTM Device",
-        "marketingName": "general HTM Device",
-        "manufacturer": "Htm",
-        "brand": "Htm",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general htm device": {
+    "deviceName": "general HTM Device",
+    "marketingName": "general HTM Device",
+    "manufacturer": "Htm",
+    "brand": "Htm",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "htm gt-a7100": {
-        "deviceName": "GT-A7100",
-        "marketingName": "GT-A7100",
-        "manufacturer": "Htm",
-        "brand": "Htm",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htm gt-a9500": {
-        "deviceName": "GT-A9500",
-        "marketingName": "GT-A9500",
-        "manufacturer": "Htm",
-        "brand": "Htm",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "htm gt-a7100": {
+    "deviceName": "GT-A7100",
+    "marketingName": "GT-A7100",
+    "manufacturer": "Htm",
+    "brand": "Htm",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "htm gt-a9500": {
+    "deviceName": "GT-A9500",
+    "marketingName": "GT-A9500",
+    "manufacturer": "Htm",
+    "brand": "Htm",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

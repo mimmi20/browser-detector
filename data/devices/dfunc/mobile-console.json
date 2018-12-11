@@ -1,48 +1,50 @@
 {
-    "general dfunc device": {
-        "deviceName": "general DFunc Device",
-        "marketingName": "general DFunc Device",
-        "manufacturer": "Dfunc",
-        "brand": "Dfunc",
-        "type": "mobile-console",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general dfunc device": {
+    "deviceName": "general DFunc Device",
+    "marketingName": "general DFunc Device",
+    "manufacturer": "Dfunc",
+    "brand": "Dfunc",
+    "type": "mobile-console",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "func titan-02": {
-        "deviceName": "Func Titan-02",
-        "marketingName": "Func Titan-02",
-        "manufacturer": "Dfunc",
-        "brand": "Dfunc",
-        "type": "mobile-console",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "func titan-02": {
+    "deviceName": "Func Titan-02",
+    "marketingName": "Func Titan-02",
+    "manufacturer": "Dfunc",
+    "brand": "Dfunc",
+    "type": "mobile-console",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

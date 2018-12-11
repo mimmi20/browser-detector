@@ -1,742 +1,774 @@
 {
-    "htc 8500": {
-        "deviceName": "8500",
-        "marketingName": "Qtek 8500",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+  "htc t8698": {
+    "deviceName": "T8698",
+    "marketingName": "7 Mozart",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "htc a810e": {
-        "deviceName": "A810e",
-        "marketingName": "ChaCha",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 320,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc e600": {
-        "deviceName": "S620",
-        "marketingName": "E600",
-        "manufacturer": "Htc",
-        "brand": "SPV",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "htc t7576": {
+    "deviceName": "T7576",
+    "marketingName": "7 Pro",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "htc e650": {
-        "deviceName": "E650",
-        "marketingName": "E650",
-        "manufacturer": "Htc",
-        "brand": "SPV",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc mda compact": {
-        "deviceName": "Magician",
-        "marketingName": "MDA Compact",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "htc spark": {
+    "deviceName": "Spark",
+    "marketingName": "7 Trophy",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "htc mda compact iii": {
-        "deviceName": "MDA Compact III",
-        "marketingName": "MDA Compact III",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc mda vario ii": {
-        "deviceName": "TyTN",
-        "marketingName": "MDA Vario II",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows mobile os"
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "htc x7500": {
+    "deviceName": "X7500",
+    "marketingName": "Advantage",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": false,
+      "type": "VGA",
+      "size": null
     },
-    "htc mda vario iii": {
-        "deviceName": "TyTN II",
-        "marketingName": "MDA Vario III",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows mobile os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc mini t5555": {
-        "deviceName": "T5555",
-        "marketingName": "HD mini",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows mobile os"
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc a810e": {
+    "deviceName": "A810e",
+    "marketingName": "ChaCha",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "htc mteor": {
-        "deviceName": "MTeoR",
-        "marketingName": "MTeoR",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc p3300": {
-        "deviceName": "P3300",
-        "marketingName": "P3300",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "htc e600": {
+    "deviceName": "S620",
+    "marketingName": "E600",
+    "manufacturer": "Htc",
+    "brand": "SPV",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc p3350": {
-        "deviceName": "P3350",
-        "marketingName": "Love",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc p3700": {
-        "deviceName": "P3700",
-        "marketingName": "Touch Diamond",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 640,
-            "touch": true,
-            "type": "VGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc e650": {
+    "deviceName": "E650",
+    "marketingName": "E650",
+    "manufacturer": "Htc",
+    "brand": "SPV",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc p6300": {
-        "deviceName": "P6300",
-        "marketingName": "P6300",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc radar": {
-        "deviceName": "Radar",
-        "marketingName": "Radar",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows phone"
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc s620": {
+    "deviceName": "S620",
+    "marketingName": "Excalibur",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc radar 4g": {
-        "deviceName": "Radar",
-        "marketingName": "Radar",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "windows phone"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc radar c110e": {
-        "deviceName": "Radar C110e",
-        "marketingName": "Radar C110e",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows phone"
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc mini t5555": {
+    "deviceName": "T5555",
+    "marketingName": "HD mini",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "htc s510": {
-        "deviceName": "S510",
-        "marketingName": "Snap",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows mobile os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc s620": {
-        "deviceName": "S620",
-        "marketingName": "Excalibur",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "connections": [],
+    "platform": "windows mobile os",
+    "variants": []
+  },
+  "htc vpa compact iv": {
+    "deviceName": "VPA Compact IV",
+    "marketingName": "Herald/Wing/Atlas",
+    "manufacturer": "Htc",
+    "brand": "Vodafone",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc smart f3188": {
-        "deviceName": "F3188",
-        "marketingName": "Smart",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc spark": {
-        "deviceName": "Spark",
-        "marketingName": "7 Trophy",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows phone"
+    "connections": [],
+    "platform": "windows mobile os",
+    "variants": []
+  },
+  "htc p3350": {
+    "deviceName": "P3350",
+    "marketingName": "Love",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc t3232": {
-        "deviceName": "T3232",
-        "marketingName": "Touch 3G",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "windows ce"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc t3335": {
-        "deviceName": "T3335",
-        "marketingName": "Touch2",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows mobile os"
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc mda compact": {
+    "deviceName": "Magician",
+    "marketingName": "MDA Compact",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
     },
-    "htc t7576": {
-        "deviceName": "T7576",
-        "marketingName": "7 Pro",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows phone"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc t8698": {
-        "deviceName": "T8698",
-        "marketingName": "7 Mozart",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows phone"
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc mda compact iii": {
+    "deviceName": "MDA Compact III",
+    "marketingName": "MDA Compact III",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc touch hd t8282": {
-        "deviceName": "T8282",
-        "marketingName": "Touch HD",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc v1510": {
-        "deviceName": "v1510",
-        "marketingName": "v1510",
-        "manufacturer": "Htc",
-        "brand": "Vodafone",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc mda vario ii": {
+    "deviceName": "TyTN",
+    "marketingName": "MDA Vario II",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc v3600": {
-        "deviceName": "v3600",
-        "marketingName": "v3600",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc vpa compact iv": {
-        "deviceName": "VPA Compact IV",
-        "marketingName": "Herald/Wing/Atlas",
-        "manufacturer": "Htc",
-        "brand": "Vodafone",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows mobile os"
+    "connections": [],
+    "platform": "windows mobile os",
+    "variants": []
+  },
+  "htc mda vario iii": {
+    "deviceName": "TyTN II",
+    "marketingName": "MDA Vario III",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc vpa touch": {
-        "deviceName": "VPA Touch",
-        "marketingName": "VPA Touch",
-        "manufacturer": "Htc",
-        "brand": "Vodafone",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": true,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "htc x310e": {
-        "deviceName": "X310e",
-        "marketingName": "Titan",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows phone"
+    "connections": [],
+    "platform": "windows mobile os",
+    "variants": []
+  },
+  "htc mteor": {
+    "deviceName": "MTeoR",
+    "marketingName": "MTeoR",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "htc x7500": {
-        "deviceName": "X7500",
-        "marketingName": "Advantage",
-        "manufacturer": "Htc",
-        "brand": "Htc",
-        "type": "feature-phone",
-        "display": {
-            "width": 640,
-            "height": 480,
-            "touch": false,
-            "type": "VGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows ce"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc p3300": {
+    "deviceName": "P3300",
+    "marketingName": "P3300",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc p6300": {
+    "deviceName": "P6300",
+    "marketingName": "P6300",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc 8500": {
+    "deviceName": "8500",
+    "marketingName": "Qtek 8500",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc radar": {
+    "deviceName": "Radar",
+    "marketingName": "Radar",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "htc radar 4g": {
+    "deviceName": "Radar",
+    "marketingName": "Radar",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "htc radar c110e": {
+    "deviceName": "Radar C110e",
+    "marketingName": "Radar C110e",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "htc smart f3188": {
+    "deviceName": "F3188",
+    "marketingName": "Smart",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "htc s510": {
+    "deviceName": "S510",
+    "marketingName": "Snap",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows mobile os",
+    "variants": []
+  },
+  "htc x310e": {
+    "deviceName": "X310e",
+    "marketingName": "Titan",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "htc t3232": {
+    "deviceName": "T3232",
+    "marketingName": "Touch 3G",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc p3700": {
+    "deviceName": "P3700",
+    "marketingName": "Touch Diamond",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 640,
+      "touch": true,
+      "type": "VGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "htc touch hd t8282": {
+    "deviceName": "T8282",
+    "marketingName": "Touch HD",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "htc t3335": {
+    "deviceName": "T3335",
+    "marketingName": "Touch2",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows mobile os",
+    "variants": []
+  },
+  "htc vpa touch": {
+    "deviceName": "VPA Touch",
+    "marketingName": "VPA Touch",
+    "manufacturer": "Htc",
+    "brand": "Vodafone",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "htc v1510": {
+    "deviceName": "v1510",
+    "marketingName": "v1510",
+    "manufacturer": "Htc",
+    "brand": "Vodafone",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  },
+  "htc v3600": {
+    "deviceName": "v3600",
+    "marketingName": "v3600",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows ce",
+    "variants": []
+  }
 }

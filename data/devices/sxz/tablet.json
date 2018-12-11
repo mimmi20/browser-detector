@@ -1,48 +1,50 @@
 {
-    "general sxz device": {
-        "deviceName": "general SXZ Device",
-        "marketingName": "general SXZ Device",
-        "manufacturer": "Sxz",
-        "brand": "Sxz",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general sxz device": {
+    "deviceName": "general SXZ Device",
+    "marketingName": "general SXZ Device",
+    "manufacturer": "Sxz",
+    "brand": "Sxz",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "sxz pdx0-01": {
-        "deviceName": "PDX0-01",
-        "marketingName": "PDX0-01",
-        "manufacturer": "Sxz",
-        "brand": "Sxz",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sxz pdx0-01": {
+    "deviceName": "PDX0-01",
+    "marketingName": "PDX0-01",
+    "manufacturer": "Sxz",
+    "brand": "Sxz",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

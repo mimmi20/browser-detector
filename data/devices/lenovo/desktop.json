@@ -1,48 +1,50 @@
 {
-    "lenovo g780": {
-        "deviceName": "G780",
-        "marketingName": "G780",
-        "manufacturer": "Lenovo",
-        "brand": "Lenovo",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "lenovo g780": {
+    "deviceName": "G780",
+    "marketingName": "G780",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "lenovo pc": {
-        "deviceName": "PC",
-        "marketingName": "PC",
-        "manufacturer": "Lenovo",
-        "brand": "Lenovo",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "lenovo pc": {
+    "deviceName": "PC",
+    "marketingName": "PC",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

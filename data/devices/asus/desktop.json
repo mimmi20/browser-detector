@@ -1,71 +1,74 @@
 {
-    "asus eee 701": {
-        "deviceName": "EEE 701",
-        "marketingName": "EEE 701",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "asus eee 701": {
+    "deviceName": "EEE 701",
+    "marketingName": "EEE 701",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "asus pc": {
-        "deviceName": "PC",
-        "marketingName": "PC",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "eee pc": {
-        "deviceName": "eee pc",
-        "marketingName": "eee pc",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus pc": {
+    "deviceName": "PC",
+    "marketingName": "PC",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "eee pc": {
+    "deviceName": "eee pc",
+    "marketingName": "eee pc",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

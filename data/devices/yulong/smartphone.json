@@ -1,48 +1,50 @@
 {
-    "general yulong device": {
-        "deviceName": "general Yulong Device",
-        "marketingName": "general Yulong Device",
-        "manufacturer": "Yulong Computer",
-        "brand": "Yulong Computer",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general yulong device": {
+    "deviceName": "general Yulong Device",
+    "marketingName": "general Yulong Device",
+    "manufacturer": "Yulong Computer",
+    "brand": "Yulong Computer",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "yulong 890n": {
-        "deviceName": "890N",
-        "marketingName": "Smart 4 Tourbo",
-        "manufacturer": "Yulong Computer",
-        "brand": "Vodafone",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yulong 890n": {
+    "deviceName": "890N",
+    "marketingName": "Smart 4 Tourbo",
+    "manufacturer": "Yulong Computer",
+    "brand": "Vodafone",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

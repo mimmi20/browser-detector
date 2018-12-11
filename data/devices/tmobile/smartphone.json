@@ -1,288 +1,300 @@
 {
-    "general t-mobile device": {
-        "deviceName": "general  Device",
-        "marketingName": "general  Device",
-        "manufacturer": "Tmobile",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA"
-            ],
-            "vendors": [
-                "T-Mobile"
-            ]
-        },
-        "connections": [],
-        "platform": null
+  "general t-mobile device": {
+    "deviceName": "general  Device",
+    "marketingName": "general  Device",
+    "manufacturer": "Tmobile",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "t-mobile ameo": {
-        "deviceName": "Athena",
-        "marketingName": "Ameo",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 480,
-            "touch": true,
-            "type": "VGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "T-Mobile"
+      ]
     },
-    "t-mobile g1": {
-        "deviceName": "Dream",
-        "marketingName": "G1",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "t-mobile ameo": {
+    "deviceName": "Athena",
+    "marketingName": "Ameo",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": true,
+      "type": "VGA",
+      "size": null
     },
-    "t-mobile g2 touch": {
-        "deviceName": "G2 Touch",
-        "marketingName": "G2 Touch",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "t-mobile garminfone": {
-        "deviceName": "Garminfone",
-        "marketingName": "Garminfone",
-        "manufacturer": "GarminAsus",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile g1": {
+    "deviceName": "Dream",
+    "marketingName": "G1",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "t-mobile leo": {
-        "deviceName": "T8585",
-        "marketingName": "Leo",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "t-mobile mytouch 3g": {
-        "deviceName": "myTouch 3G",
-        "marketingName": "myTouch 3G",
-        "manufacturer": "Tmobile",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile g2 touch": {
+    "deviceName": "G2 Touch",
+    "marketingName": "G2 Touch",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "t-mobile mytouch 3g slide": {
-        "deviceName": "myTouch 3G Slide",
-        "marketingName": "myTouch 3G Slide",
-        "manufacturer": "Tmobile",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "t-mobile mytouch q": {
-        "deviceName": "myTouch Q",
-        "marketingName": "myTouch Q",
-        "manufacturer": "Tmobile",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile garminfone": {
+    "deviceName": "Garminfone",
+    "marketingName": "Garminfone",
+    "manufacturer": "GarminAsus",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "t-mobile mytouch4g": {
-        "deviceName": "Panache",
-        "marketingName": "myTouch",
-        "manufacturer": "Htc",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "t-mobile pulse": {
-        "deviceName": "Pulse",
-        "marketingName": "Pulse",
-        "manufacturer": "Huawei",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile leo": {
+    "deviceName": "T8585",
+    "marketingName": "Leo",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "t-mobile vivacity": {
-        "deviceName": "Vivacity",
-        "marketingName": "Vivacity",
-        "manufacturer": "Tmobile",
-        "brand": "Tmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "t-mobile pulse": {
+    "deviceName": "Pulse",
+    "marketingName": "Pulse",
+    "manufacturer": "Huawei",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile vivacity": {
+    "deviceName": "Vivacity",
+    "marketingName": "Vivacity",
+    "manufacturer": "Tmobile",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile mytouch4g": {
+    "deviceName": "Panache",
+    "marketingName": "myTouch",
+    "manufacturer": "Htc",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile mytouch 3g": {
+    "deviceName": "myTouch 3G",
+    "marketingName": "myTouch 3G",
+    "manufacturer": "Tmobile",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile mytouch 3g slide": {
+    "deviceName": "myTouch 3G Slide",
+    "marketingName": "myTouch 3G Slide",
+    "manufacturer": "Tmobile",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "t-mobile mytouch q": {
+    "deviceName": "myTouch Q",
+    "marketingName": "myTouch Q",
+    "manufacturer": "Tmobile",
+    "brand": "Tmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

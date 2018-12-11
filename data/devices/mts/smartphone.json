@@ -1,50 +1,52 @@
 {
-    "general mts device": {
-        "deviceName": "general MTS Device",
-        "marketingName": "general MTS Device",
-        "manufacturer": "MTS",
-        "brand": "MTS",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general mts device": {
+    "deviceName": "general MTS Device",
+    "marketingName": "general MTS Device",
+    "manufacturer": "MTS",
+    "brand": "MTS",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "mts smart race 4g": {
-        "deviceName": "Smart Race",
-        "marketingName": "Smart Race",
-        "manufacturer": "MTS",
-        "brand": "MTS",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "mts smart race 4g": {
+    "deviceName": "Smart Race",
+    "marketingName": "Smart Race",
+    "manufacturer": "MTS",
+    "brand": "MTS",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

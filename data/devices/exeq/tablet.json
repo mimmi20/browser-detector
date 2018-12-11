@@ -1,48 +1,50 @@
 {
-    "general exeq device": {
-        "deviceName": "general Exeq Device",
-        "marketingName": "general Exeq Device",
-        "manufacturer": "Exeq",
-        "brand": "Exeq",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general exeq device": {
+    "deviceName": "general Exeq Device",
+    "marketingName": "general Exeq Device",
+    "manufacturer": "Exeq",
+    "brand": "Exeq",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "exeq p-720": {
-        "deviceName": "P-720",
-        "marketingName": "P-720",
-        "manufacturer": "Exeq",
-        "brand": "Exeq",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "exeq p-720": {
+    "deviceName": "P-720",
+    "marketingName": "P-720",
+    "manufacturer": "Exeq",
+    "brand": "Exeq",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

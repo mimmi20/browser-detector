@@ -1,48 +1,50 @@
 {
-    "general winmax device": {
-        "deviceName": "general Winmax Device",
-        "marketingName": "general Winmax Device",
-        "manufacturer": "Winmax",
-        "brand": "Winmax",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general winmax device": {
+    "deviceName": "general Winmax Device",
+    "marketingName": "general Winmax Device",
+    "manufacturer": "Winmax",
+    "brand": "Winmax",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "winmax tx5": {
-        "deviceName": "TX5",
-        "marketingName": "TX5",
-        "manufacturer": "Winmax",
-        "brand": "Winmax",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "winmax tx5": {
+    "deviceName": "TX5",
+    "marketingName": "TX5",
+    "manufacturer": "Winmax",
+    "brand": "Winmax",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,117 +1,122 @@
 {
-    "general xianghe device": {
-        "deviceName": "general Xianghe Device",
-        "marketingName": "general Xianghe Device",
-        "manufacturer": "Xianghe",
-        "brand": "Xianghe",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general xianghe device": {
+    "deviceName": "general Xianghe Device",
+    "marketingName": "general Xianghe Device",
+    "manufacturer": "Xianghe",
+    "brand": "Xianghe",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "xianghe iphone": {
-        "deviceName": "iphone",
-        "marketingName": "iphone",
-        "manufacturer": "Xianghe",
-        "brand": "Xianghe",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "xianghe iphone 5": {
-        "deviceName": "iphone 5",
-        "marketingName": "iphone 5",
-        "manufacturer": "Xianghe",
-        "brand": "Xianghe",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "xianghe iphone": {
+    "deviceName": "iphone",
+    "marketingName": "iphone",
+    "manufacturer": "Xianghe",
+    "brand": "Xianghe",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "xianghe iphone 5c": {
-        "deviceName": "iphone 5c",
-        "marketingName": "iphone 5c",
-        "manufacturer": "Xianghe",
-        "brand": "Xianghe",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "xianghe iphone 6c": {
-        "deviceName": "iphone 6c",
-        "marketingName": "iphone 6c",
-        "manufacturer": "Xianghe",
-        "brand": "Xianghe",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "xianghe iphone 5": {
+    "deviceName": "iphone 5",
+    "marketingName": "iphone 5",
+    "manufacturer": "Xianghe",
+    "brand": "Xianghe",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "xianghe iphone 5c": {
+    "deviceName": "iphone 5c",
+    "marketingName": "iphone 5c",
+    "manufacturer": "Xianghe",
+    "brand": "Xianghe",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "xianghe iphone 6c": {
+    "deviceName": "iphone 6c",
+    "marketingName": "iphone 6c",
+    "manufacturer": "Xianghe",
+    "brand": "Xianghe",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

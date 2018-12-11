@@ -1,257 +1,268 @@
 {
-    "general polaroid device": {
-        "deviceName": "general Polaroid Device",
-        "marketingName": "general Polaroid Device",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general polaroid device": {
+    "deviceName": "general Polaroid Device",
+    "marketingName": "general Polaroid Device",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "polaroid p4526a": {
-        "deviceName": "P4526A",
-        "marketingName": "Turbo E",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "polaroid p5006a": {
-        "deviceName": "P5006A",
-        "marketingName": "Cosmo K",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid p5006a": {
+    "deviceName": "P5006A",
+    "marketingName": "Cosmo K",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "polaroid pro 4006": {
-        "deviceName": "Pro 4006",
-        "marketingName": "Pro 4006",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "polaroid pro 400b": {
-        "deviceName": "Pro 400B",
-        "marketingName": "Pro 400B",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid pro 4006": {
+    "deviceName": "Pro 4006",
+    "marketingName": "Pro 4006",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "polaroid pro 450b": {
-        "deviceName": "Pro 450B",
-        "marketingName": "Pro 450B",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "polaroid pro 4611": {
-        "deviceName": "Pro 4611",
-        "marketingName": "Pro 4611",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid pro 400b": {
+    "deviceName": "Pro 400B",
+    "marketingName": "Pro 400B",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "polaroid pro 5701": {
-        "deviceName": "Pro 5701",
-        "marketingName": "Pro 5701",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "polaroid pro 7111": {
-        "deviceName": "Pro 7111",
-        "marketingName": "Pro 7111",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid pro 450b": {
+    "deviceName": "Pro 450B",
+    "marketingName": "Pro 450B",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "polaroid pro v350": {
-        "deviceName": "Pro V350",
-        "marketingName": "Pro V350",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "polaroid pro v400": {
-        "deviceName": "Pro V400",
-        "marketingName": "Pro V400",
-        "manufacturer": "Polaroid",
-        "brand": "Polaroid",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid pro 4611": {
+    "deviceName": "Pro 4611",
+    "marketingName": "Pro 4611",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid pro 5701": {
+    "deviceName": "Pro 5701",
+    "marketingName": "Pro 5701",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid pro 7111": {
+    "deviceName": "Pro 7111",
+    "marketingName": "Pro 7111",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid pro v350": {
+    "deviceName": "Pro V350",
+    "marketingName": "Pro V350",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid pro v400": {
+    "deviceName": "Pro V400",
+    "marketingName": "Pro V400",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "polaroid p4526a": {
+    "deviceName": "P4526A",
+    "marketingName": "Turbo E",
+    "manufacturer": "Polaroid",
+    "brand": "Polaroid",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

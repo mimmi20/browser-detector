@@ -1,48 +1,50 @@
 {
-    "i-mobile i-note 2": {
-        "deviceName": "i-note 2",
-        "marketingName": "i-note 2",
-        "manufacturer": "Imobile",
-        "brand": "Imobile",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "i-mobile i-note 2": {
+    "deviceName": "i-note 2",
+    "marketingName": "i-note 2",
+    "manufacturer": "Imobile",
+    "brand": "Imobile",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "i-mobile i-note 3": {
-        "deviceName": "i-note 3",
-        "marketingName": "i-note 3",
-        "manufacturer": "Imobile",
-        "brand": "Imobile",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "i-mobile i-note 3": {
+    "deviceName": "i-note 3",
+    "marketingName": "i-note 3",
+    "manufacturer": "Imobile",
+    "brand": "Imobile",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

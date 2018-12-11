@@ -1,94 +1,98 @@
 {
-    "general fairphone device": {
-        "deviceName": "general Fairphone Device",
-        "marketingName": "general Fairphone Device",
-        "manufacturer": "Fairphone",
-        "brand": "Fairphone",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general fairphone device": {
+    "deviceName": "general Fairphone Device",
+    "marketingName": "general Fairphone Device",
+    "manufacturer": "Fairphone",
+    "brand": "Fairphone",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "fairphone fp1": {
-        "deviceName": "FP1",
-        "marketingName": "FP1",
-        "manufacturer": "Fairphone",
-        "brand": "Fairphone",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "fairphone fp1u": {
-        "deviceName": "FP1U",
-        "marketingName": "FP1U",
-        "manufacturer": "Fairphone",
-        "brand": "Fairphone",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fairphone fp1": {
+    "deviceName": "FP1",
+    "marketingName": "FP1",
+    "manufacturer": "Fairphone",
+    "brand": "Fairphone",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "fairphone fp2": {
-        "deviceName": "FP2",
-        "marketingName": "FP2",
-        "manufacturer": "Fairphone",
-        "brand": "Fairphone",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fairphone fp1u": {
+    "deviceName": "FP1U",
+    "marketingName": "FP1U",
+    "manufacturer": "Fairphone",
+    "brand": "Fairphone",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "fairphone fp2": {
+    "deviceName": "FP2",
+    "marketingName": "FP2",
+    "manufacturer": "Fairphone",
+    "brand": "Fairphone",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

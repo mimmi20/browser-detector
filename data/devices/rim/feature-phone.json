@@ -1,857 +1,894 @@
 {
-    "general blackberry device": {
-        "deviceName": "general BlackBerry Device",
-        "marketingName": "general BlackBerry Device",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general blackberry device": {
+    "deviceName": "general BlackBerry Device",
+    "marketingName": "general BlackBerry Device",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "blackberry 7130": {
-        "deviceName": "BlackBerry 7130",
-        "marketingName": "BlackBerry 7130",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 260,
-            "touch": false,
-            "type": "Custom 240x260",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 7520": {
-        "deviceName": "BlackBerry 7520",
-        "marketingName": "BlackBerry 7520",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 160,
-            "touch": false,
-            "type": "HQVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "blackberry 7130": {
+    "deviceName": "BlackBerry 7130",
+    "marketingName": "BlackBerry 7130",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 260,
+      "touch": false,
+      "type": "Custom 240x260",
+      "size": null
     },
-    "blackberry 8100": {
-        "deviceName": "BlackBerry 8100",
-        "marketingName": "BlackBerry Pearl 8100",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 260,
-            "touch": false,
-            "type": "Custom 240x260",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 8110": {
-        "deviceName": "BlackBerry 8110",
-        "marketingName": "BlackBerry Pearl 8110",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 260,
-            "touch": false,
-            "type": "Custom 240x260",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 7520": {
+    "deviceName": "BlackBerry 7520",
+    "marketingName": "BlackBerry 7520",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 160,
+      "touch": false,
+      "type": "HQVGA",
+      "size": null
     },
-    "blackberry 8230": {
-        "deviceName": "BlackBerry 8230",
-        "marketingName": "BlackBerry Pearl Flip 8230",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 240,
-            "height": 320,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 8310": {
-        "deviceName": "BlackBerry 8310",
-        "marketingName": "BlackBerry Curve 8310",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8700": {
+    "deviceName": "BlackBerry 8700",
+    "marketingName": "BlackBerry 8700",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "blackberry 8330": {
-        "deviceName": "BlackBerry 8330",
-        "marketingName": "BlackBerry Curve 8330",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 8350i": {
-        "deviceName": "BlackBerry 8350i",
-        "marketingName": "BlackBerry Curve 8350i",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8800": {
+    "deviceName": "BlackBerry 8800",
+    "marketingName": "BlackBerry 8800",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "blackberry 8520": {
-        "deviceName": "BlackBerry 8520",
-        "marketingName": "BlackBerry Curve 8520",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 8530": {
-        "deviceName": "BlackBerry 8530",
-        "marketingName": "BlackBerry Curve 8530",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8830": {
+    "deviceName": "BlackBerry 8830",
+    "marketingName": "BlackBerry 8830 World Edition",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "blackberry 8700": {
-        "deviceName": "BlackBerry 8700",
-        "marketingName": "BlackBerry 8700",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 8800": {
-        "deviceName": "BlackBerry 8800",
-        "marketingName": "BlackBerry 8800",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9000": {
+    "deviceName": "BlackBerry 9000",
+    "marketingName": "BlackBerry Bold 9000",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": false,
+      "type": "HVGA",
+      "size": null
     },
-    "blackberry 8830": {
-        "deviceName": "BlackBerry 8830",
-        "marketingName": "BlackBerry 8830 World Edition",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 8900": {
-        "deviceName": "BlackBerry 8900",
-        "marketingName": "BlackBerry Curve 8900",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 360,
-            "touch": false,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9700": {
+    "deviceName": "BlackBerry 9700",
+    "marketingName": "BlackBerry Bold 9700",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": false,
+      "type": "Custom 360x480",
+      "size": null
     },
-    "blackberry 9000": {
-        "deviceName": "BlackBerry 9000",
-        "marketingName": "BlackBerry Bold 9000",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 320,
-            "touch": false,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9105": {
-        "deviceName": "BlackBerry 9105",
-        "marketingName": "BlackBerry Pearl 3G 9105",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 360,
-            "height": 400,
-            "touch": false,
-            "type": "Custom 360x400",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9720": {
+    "deviceName": "BlackBerry 9720",
+    "marketingName": "BlackBerry Bold 9720",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": false,
+      "type": "Custom 360x480",
+      "size": null
     },
-    "blackberry 9220": {
-        "deviceName": "BlackBerry 9220",
-        "marketingName": "BlackBerry Curve 9220",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9300": {
-        "deviceName": "BlackBerry 9300",
-        "marketingName": "BlackBerry Curve 3G 9300",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9780": {
+    "deviceName": "BlackBerry 9780",
+    "marketingName": "BlackBerry Bold 9780",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": false,
+      "type": "Custom 360x480",
+      "size": null
     },
-    "blackberry 9320": {
-        "deviceName": "BlackBerry 9320",
-        "marketingName": "BlackBerry Curve 9320",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 320,
-            "height": 240,
-            "touch": false,
-            "type": "QVGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9360": {
-        "deviceName": "BlackBerry 9360",
-        "marketingName": "BlackBerry Curve 9360",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 360,
-            "touch": false,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9790": {
+    "deviceName": "BlackBerry 9790",
+    "marketingName": "BlackBerry Bold 9790",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": false,
+      "type": "Custom 360x480",
+      "size": null
     },
-    "blackberry 9380": {
-        "deviceName": "BlackBerry 9380",
-        "marketingName": "BlackBerry Curve 9380",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 360,
-            "height": 480,
-            "touch": true,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9500": {
-        "deviceName": "BlackBerry 9500",
-        "marketingName": "BlackBerry Storm 9500",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 360,
-            "height": 480,
-            "touch": true,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry bold touch 9900": {
+    "deviceName": "BlackBerry Bold Touch 9900",
+    "marketingName": "BlackBerry Bold Touch 9900",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": true,
+      "type": "VGA",
+      "size": null
     },
-    "blackberry 9520": {
-        "deviceName": "BlackBerry 9520",
-        "marketingName": "BlackBerry Storm2 9520",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 360,
-            "height": 480,
-            "touch": true,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9550": {
-        "deviceName": "BlackBerry 9550",
-        "marketingName": "BlackBerry Storm2 9550",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 360,
-            "height": 480,
-            "touch": true,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9930": {
+    "deviceName": "BlackBerry 9930",
+    "marketingName": "BlackBerry Bold Touch 9930",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": true,
+      "type": "VGA",
+      "size": null
     },
-    "blackberry 9630": {
-        "deviceName": "BlackBerry 9630",
-        "marketingName": "BlackBerry Tour 9630",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 360,
-            "touch": false,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9670": {
-        "deviceName": "BlackBerry 9670",
-        "marketingName": "BlackBerry Style 9670",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 360,
-            "height": 400,
-            "touch": false,
-            "type": "Custom 360x400",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9300": {
+    "deviceName": "BlackBerry 9300",
+    "marketingName": "BlackBerry Curve 3G 9300",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "blackberry 9700": {
-        "deviceName": "BlackBerry 9700",
-        "marketingName": "BlackBerry Bold 9700",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 360,
-            "touch": false,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9720": {
-        "deviceName": "BlackBerry 9720",
-        "marketingName": "BlackBerry Bold 9720",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 360,
-            "touch": false,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8310": {
+    "deviceName": "BlackBerry 8310",
+    "marketingName": "BlackBerry Curve 8310",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "blackberry 9780": {
-        "deviceName": "BlackBerry 9780",
-        "marketingName": "BlackBerry Bold 9780",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 360,
-            "touch": false,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9790": {
-        "deviceName": "BlackBerry 9790",
-        "marketingName": "BlackBerry Bold 9790",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 360,
-            "touch": false,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8330": {
+    "deviceName": "BlackBerry 8330",
+    "marketingName": "BlackBerry Curve 8330",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "blackberry 9800": {
-        "deviceName": "BlackBerry 9800",
-        "marketingName": "BlackBerry Torch 9800",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 360,
-            "height": 480,
-            "touch": false,
-            "type": "Custom 360x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9810": {
-        "deviceName": "BlackBerry 9810",
-        "marketingName": "BlackBerry Torch 9810",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 640,
-            "touch": true,
-            "type": "VGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8350i": {
+    "deviceName": "BlackBerry 8350i",
+    "marketingName": "BlackBerry Curve 8350i",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "blackberry 9930": {
-        "deviceName": "BlackBerry 9930",
-        "marketingName": "BlackBerry Bold Touch 9930",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 640,
-            "height": 480,
-            "touch": true,
-            "type": "VGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry 9981": {
-        "deviceName": "BlackBerry 9981",
-        "marketingName": "BlackBerry Porsche Design P9981",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 640,
-            "height": 480,
-            "touch": true,
-            "type": "VGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8520": {
+    "deviceName": "BlackBerry 8520",
+    "marketingName": "BlackBerry Curve 8520",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
     },
-    "blackberry bold touch 9900": {
-        "deviceName": "BlackBerry Bold Touch 9900",
-        "marketingName": "BlackBerry Bold Touch 9900",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 640,
-            "height": 480,
-            "touch": true,
-            "type": "VGA",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "blackberry torch 9860": {
-        "deviceName": "BlackBerry Torch 9860",
-        "marketingName": "BlackBerry Torch 9860",
-        "manufacturer": "Rim",
-        "brand": "Rim",
-        "type": "feature-phone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "rim os"
-    }
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8530": {
+    "deviceName": "BlackBerry 8530",
+    "marketingName": "BlackBerry Curve 8530",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8900": {
+    "deviceName": "BlackBerry 8900",
+    "marketingName": "BlackBerry Curve 8900",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": false,
+      "type": "Custom 360x480",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9220": {
+    "deviceName": "BlackBerry 9220",
+    "marketingName": "BlackBerry Curve 9220",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9320": {
+    "deviceName": "BlackBerry 9320",
+    "marketingName": "BlackBerry Curve 9320",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9360": {
+    "deviceName": "BlackBerry 9360",
+    "marketingName": "BlackBerry Curve 9360",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": false,
+      "type": "Custom 360x480",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9380": {
+    "deviceName": "BlackBerry 9380",
+    "marketingName": "BlackBerry Curve 9380",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 360,
+      "height": 480,
+      "touch": true,
+      "type": "Custom 360x480",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9105": {
+    "deviceName": "BlackBerry 9105",
+    "marketingName": "BlackBerry Pearl 3G 9105",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 360,
+      "height": 400,
+      "touch": false,
+      "type": "Custom 360x400",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8100": {
+    "deviceName": "BlackBerry 8100",
+    "marketingName": "BlackBerry Pearl 8100",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 260,
+      "touch": false,
+      "type": "Custom 240x260",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8110": {
+    "deviceName": "BlackBerry 8110",
+    "marketingName": "BlackBerry Pearl 8110",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 260,
+      "touch": false,
+      "type": "Custom 240x260",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 8230": {
+    "deviceName": "BlackBerry 8230",
+    "marketingName": "BlackBerry Pearl Flip 8230",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": false,
+      "type": "QVGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9981": {
+    "deviceName": "BlackBerry 9981",
+    "marketingName": "BlackBerry Porsche Design P9981",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": true,
+      "type": "VGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9500": {
+    "deviceName": "BlackBerry 9500",
+    "marketingName": "BlackBerry Storm 9500",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 360,
+      "height": 480,
+      "touch": true,
+      "type": "Custom 360x480",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9520": {
+    "deviceName": "BlackBerry 9520",
+    "marketingName": "BlackBerry Storm2 9520",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 360,
+      "height": 480,
+      "touch": true,
+      "type": "Custom 360x480",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9550": {
+    "deviceName": "BlackBerry 9550",
+    "marketingName": "BlackBerry Storm2 9550",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 360,
+      "height": 480,
+      "touch": true,
+      "type": "Custom 360x480",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9670": {
+    "deviceName": "BlackBerry 9670",
+    "marketingName": "BlackBerry Style 9670",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 360,
+      "height": 400,
+      "touch": false,
+      "type": "Custom 360x400",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9800": {
+    "deviceName": "BlackBerry 9800",
+    "marketingName": "BlackBerry Torch 9800",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 360,
+      "height": 480,
+      "touch": false,
+      "type": "Custom 360x480",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9810": {
+    "deviceName": "BlackBerry 9810",
+    "marketingName": "BlackBerry Torch 9810",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 640,
+      "touch": true,
+      "type": "VGA",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry torch 9860": {
+    "deviceName": "BlackBerry Torch 9860",
+    "marketingName": "BlackBerry Torch 9860",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  },
+  "blackberry 9630": {
+    "deviceName": "BlackBerry 9630",
+    "marketingName": "BlackBerry Tour 9630",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "type": "feature-phone",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": false,
+      "type": "Custom 360x480",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "rim os",
+    "variants": []
+  }
 }

@@ -1,71 +1,74 @@
 {
-    "general creative device": {
-        "deviceName": "general Creative Device",
-        "marketingName": "general Creative Device",
-        "manufacturer": "Creative",
-        "brand": "Creative",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general creative device": {
+    "deviceName": "general Creative Device",
+    "marketingName": "general Creative Device",
+    "manufacturer": "Creative",
+    "brand": "Creative",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "creative ziio 10": {
-        "deviceName": "ZiiO 10",
-        "marketingName": "ZiiO 10",
-        "manufacturer": "Creative",
-        "brand": "Creative",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "creative ziio7": {
-        "deviceName": "ZiiO7",
-        "marketingName": "ZiiO7",
-        "manufacturer": "Creative",
-        "brand": "Creative",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "creative ziio 10": {
+    "deviceName": "ZiiO 10",
+    "marketingName": "ZiiO 10",
+    "manufacturer": "Creative",
+    "brand": "Creative",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "creative ziio7": {
+    "deviceName": "ZiiO7",
+    "marketingName": "ZiiO7",
+    "manufacturer": "Creative",
+    "brand": "Creative",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

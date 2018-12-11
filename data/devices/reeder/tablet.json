@@ -1,48 +1,50 @@
 {
-    "general reeder device": {
-        "deviceName": "general Reeder Device",
-        "marketingName": "general Reeder Device",
-        "manufacturer": "Reeder",
-        "brand": "Reeder",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general reeder device": {
+    "deviceName": "general Reeder Device",
+    "marketingName": "general Reeder Device",
+    "manufacturer": "Reeder",
+    "brand": "Reeder",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "reeder a8r": {
-        "deviceName": "A8R",
-        "marketingName": "A8R",
-        "manufacturer": "Reeder",
-        "brand": "Reeder",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "reeder a8r": {
+    "deviceName": "A8R",
+    "marketingName": "A8R",
+    "manufacturer": "Reeder",
+    "brand": "Reeder",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

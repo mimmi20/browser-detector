@@ -1,48 +1,50 @@
 {
-    "general tv device": {
-        "deviceName": "general TV Device",
-        "marketingName": "general TV Device",
-        "manufacturer": "Unknown",
-        "brand": "Unknown",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general tv device": {
+    "deviceName": "general TV Device",
+    "marketingName": "general TV Device",
+    "manufacturer": "Unknown",
+    "brand": "Unknown",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "idl-6651n": {
-        "deviceName": "IDL-6651N",
-        "marketingName": "IDL-6651N",
-        "manufacturer": "Unknown",
-        "brand": "Unknown",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "linux"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "idl-6651n": {
+    "deviceName": "IDL-6651N",
+    "marketingName": "IDL-6651N",
+    "manufacturer": "Unknown",
+    "brand": "Unknown",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  }
 }

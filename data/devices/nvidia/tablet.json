@@ -1,71 +1,74 @@
 {
-    "general nvidia device": {
-        "deviceName": "general NVIDIA Device",
-        "marketingName": "general NVIDIA Device",
-        "manufacturer": "NVIDIA",
-        "brand": "NVIDIA",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general nvidia device": {
+    "deviceName": "general NVIDIA Device",
+    "marketingName": "general NVIDIA Device",
+    "manufacturer": "NVIDIA",
+    "brand": "NVIDIA",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "nvidia shield tablet": {
-        "deviceName": "Shield",
-        "marketingName": "Shield",
-        "manufacturer": "NVIDIA",
-        "brand": "NVIDIA",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "nvidia shield tablet k1": {
-        "deviceName": "Shield K1",
-        "marketingName": "Shield K1",
-        "manufacturer": "NVIDIA",
-        "brand": "NVIDIA",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "nvidia shield tablet": {
+    "deviceName": "Shield",
+    "marketingName": "Shield",
+    "manufacturer": "NVIDIA",
+    "brand": "NVIDIA",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "nvidia shield tablet k1": {
+    "deviceName": "Shield K1",
+    "marketingName": "Shield K1",
+    "manufacturer": "NVIDIA",
+    "brand": "NVIDIA",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

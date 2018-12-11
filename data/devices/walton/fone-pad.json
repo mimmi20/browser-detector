@@ -1,71 +1,74 @@
 {
-    "walton primo walpad 7": {
-        "deviceName": "Primo Walpad 7",
-        "marketingName": "Primo Walpad 7",
-        "manufacturer": "Walton",
-        "brand": "Walton",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "walton primo walpad 7": {
+    "deviceName": "Primo Walpad 7",
+    "marketingName": "Primo Walpad 7",
+    "manufacturer": "Walton",
+    "brand": "Walton",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "walton primo walpad 8b": {
-        "deviceName": "Primo Walpad 8B",
-        "marketingName": "Primo Walpad 8B",
-        "manufacturer": "Walton",
-        "brand": "Walton",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 768,
-            "touch": true,
-            "type": "WXGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "walton primo walpad 8w": {
-        "deviceName": "Primo Walpad 8W",
-        "marketingName": "Primo Walpad 8W",
-        "manufacturer": "Walton",
-        "brand": "Walton",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "walton primo walpad 8b": {
+    "deviceName": "Primo Walpad 8B",
+    "marketingName": "Primo Walpad 8B",
+    "manufacturer": "Walton",
+    "brand": "Walton",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "type": "WXGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "walton primo walpad 8w": {
+    "deviceName": "Primo Walpad 8W",
+    "marketingName": "Primo Walpad 8W",
+    "manufacturer": "Walton",
+    "brand": "Walton",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

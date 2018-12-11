@@ -1,48 +1,50 @@
 {
-    "sony playstation portable": {
-        "deviceName": "PlayStation Portable",
-        "marketingName": "PlayStation Portable",
-        "manufacturer": "Sony",
-        "brand": "Sony",
-        "type": "mobile-console",
-        "display": {
-            "width": 480,
-            "height": 272,
-            "touch": true,
-            "type": "Custom 272x480",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
+  "sony playstation portable": {
+    "deviceName": "PlayStation Portable",
+    "marketingName": "PlayStation Portable",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "type": "mobile-console",
+    "display": {
+      "width": 480,
+      "height": 272,
+      "touch": true,
+      "type": "Custom 272x480",
+      "size": null
     },
-    "sony playstation vita": {
-        "deviceName": "PlayStation Vita",
-        "marketingName": "PlayStation Vita",
-        "manufacturer": "Sony",
-        "brand": "Sony",
-        "type": "mobile-console",
-        "display": {
-            "width": 960,
-            "height": 544,
-            "touch": true,
-            "type": "Custom 544x960",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "java"
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "sony playstation vita": {
+    "deviceName": "PlayStation Vita",
+    "marketingName": "PlayStation Vita",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "type": "mobile-console",
+    "display": {
+      "width": 960,
+      "height": 544,
+      "touch": true,
+      "type": "Custom 544x960",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  }
 }

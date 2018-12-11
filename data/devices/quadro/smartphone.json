@@ -1,48 +1,50 @@
 {
-    "general quadro device": {
-        "deviceName": "general Quadro Device",
-        "marketingName": "general Quadro Device",
-        "manufacturer": "Quadro",
-        "brand": "Quadro",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general quadro device": {
+    "deviceName": "general Quadro Device",
+    "marketingName": "general Quadro Device",
+    "manufacturer": "Quadro",
+    "brand": "Quadro",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "quadro sq-50e85f": {
-        "deviceName": "SQ-50E85F",
-        "marketingName": "SQ-50E85F",
-        "manufacturer": "Quadro",
-        "brand": "Quadro",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "quadro sq-50e85f": {
+    "deviceName": "SQ-50E85F",
+    "marketingName": "SQ-50E85F",
+    "manufacturer": "Quadro",
+    "brand": "Quadro",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

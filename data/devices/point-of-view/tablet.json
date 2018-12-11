@@ -1,324 +1,338 @@
 {
-    "general point-of-view device": {
-        "deviceName": "general Point of View Device",
-        "marketingName": "general Point of View Device",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general point-of-view device": {
+    "deviceName": "general Point of View Device",
+    "marketingName": "general Point of View Device",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "point-of-view pi1045": {
-        "deviceName": "PI1045",
-        "marketingName": "Mobii 1045",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "point-of-view protab 2 ips": {
-        "deviceName": "Protab 2 IPS",
-        "marketingName": "Protab 2 IPS",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view pi1045": {
+    "deviceName": "PI1045",
+    "marketingName": "Mobii 1045",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "point-of-view protab 2 xl": {
-        "deviceName": "Protab 2 XL",
-        "marketingName": "Protab 2 XL",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "point-of-view protab 2 xxl": {
-        "deviceName": "Protab 2 XXL",
-        "marketingName": "Protab 2 XXL",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view tab p1325": {
+    "deviceName": "Tab P1325",
+    "marketingName": "Mobii 1325",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "point-of-view protab 25": {
-        "deviceName": "Protab 25",
-        "marketingName": "Protab 25",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "point-of-view protab 25 xxl 8": {
-        "deviceName": "Protab 25 XXL 8",
-        "marketingName": "Protab 25 XXL 8",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view tab p722c": {
+    "deviceName": "Tab P722C",
+    "marketingName": "Mobii 722",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "point-of-view protab 26": {
-        "deviceName": "Protab 26",
-        "marketingName": "Protab 26",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "point-of-view protab 3 xxl": {
-        "deviceName": "Protab 3 XXL",
-        "marketingName": "Protab 3 XXL",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view protab 2 ips": {
+    "deviceName": "Protab 2 IPS",
+    "marketingName": "Protab 2 IPS",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "point-of-view tab p1325": {
-        "deviceName": "Tab P1325",
-        "marketingName": "Mobii 1325",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "point-of-view tab p527s": {
-        "deviceName": "Tab P527S",
-        "marketingName": "Tab P527S",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view protab 2 xl": {
+    "deviceName": "Protab 2 XL",
+    "marketingName": "Protab 2 XL",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
     },
-    "point-of-view tab p722c": {
-        "deviceName": "Tab P722C",
-        "marketingName": "Mobii 722",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "point-of-view tab p925": {
-        "deviceName": "Tab P925",
-        "marketingName": "Tab P925",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view protab 2 xxl": {
+    "deviceName": "Protab 2 XXL",
+    "marketingName": "Protab 2 XXL",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "point-of-view tab pl1015": {
-        "deviceName": "Tab PL1015",
-        "marketingName": "Tab PL1015",
-        "manufacturer": "PointOfView",
-        "brand": "PointOfView",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view protab 25": {
+    "deviceName": "Protab 25",
+    "marketingName": "Protab 25",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view protab 25 xxl 8": {
+    "deviceName": "Protab 25 XXL 8",
+    "marketingName": "Protab 25 XXL 8",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view protab 26": {
+    "deviceName": "Protab 26",
+    "marketingName": "Protab 26",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view protab 3 xxl": {
+    "deviceName": "Protab 3 XXL",
+    "marketingName": "Protab 3 XXL",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view tab p527s": {
+    "deviceName": "Tab P527S",
+    "marketingName": "Tab P527S",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view tab p925": {
+    "deviceName": "Tab P925",
+    "marketingName": "Tab P925",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "point-of-view tab pl1015": {
+    "deviceName": "Tab PL1015",
+    "marketingName": "Tab PL1015",
+    "manufacturer": "PointOfView",
+    "brand": "PointOfView",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

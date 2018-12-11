@@ -1,117 +1,122 @@
 {
-    "general datang device": {
-        "deviceName": "general Datang Device",
-        "marketingName": "general Datang Device",
-        "manufacturer": "Datang",
-        "brand": "Datang",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general datang device": {
+    "deviceName": "general Datang Device",
+    "marketingName": "general Datang Device",
+    "manufacturer": "Datang",
+    "brand": "Datang",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "datang s11": {
-        "deviceName": "S11",
-        "marketingName": "S11",
-        "manufacturer": "Datang",
-        "brand": "Datang",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 640,
-            "touch": true,
-            "type": "VGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "datang s18": {
-        "deviceName": "S18",
-        "marketingName": "S18",
-        "manufacturer": "Datang",
-        "brand": "Datang",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "datang s11": {
+    "deviceName": "S11",
+    "marketingName": "S11",
+    "manufacturer": "Datang",
+    "brand": "Datang",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 640,
+      "touch": true,
+      "type": "VGA",
+      "size": null
     },
-    "datang s18i": {
-        "deviceName": "S18i",
-        "marketingName": "S18i",
-        "manufacturer": "Datang",
-        "brand": "Datang",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "datang s62l": {
-        "deviceName": "S62L",
-        "marketingName": "S62L",
-        "manufacturer": "Datang",
-        "brand": "Datang",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "datang s18": {
+    "deviceName": "S18",
+    "marketingName": "S18",
+    "manufacturer": "Datang",
+    "brand": "Datang",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "datang s18i": {
+    "deviceName": "S18i",
+    "marketingName": "S18i",
+    "manufacturer": "Datang",
+    "brand": "Datang",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "datang s62l": {
+    "deviceName": "S62L",
+    "marketingName": "S62L",
+    "manufacturer": "Datang",
+    "brand": "Datang",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

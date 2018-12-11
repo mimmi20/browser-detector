@@ -1,48 +1,50 @@
 {
-    "general intego device": {
-        "deviceName": "general Intego Device",
-        "marketingName": "general Intego Device",
-        "manufacturer": "Intego",
-        "brand": "Intego",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general intego device": {
+    "deviceName": "general Intego Device",
+    "marketingName": "general Intego Device",
+    "manufacturer": "Intego",
+    "brand": "Intego",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "intego px-0905": {
-        "deviceName": "PX-0905",
-        "marketingName": "PX-0905",
-        "manufacturer": "Intego",
-        "brand": "Intego",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intego px-0905": {
+    "deviceName": "PX-0905",
+    "marketingName": "PX-0905",
+    "manufacturer": "Intego",
+    "brand": "Intego",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

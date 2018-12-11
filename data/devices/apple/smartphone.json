@@ -1,880 +1,913 @@
 {
-    "apple iphone": {
-        "deviceName": "iPhone",
-        "marketingName": "iPhone",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+  "apple iphone": {
+    "deviceName": "iPhone",
+    "marketingName": "iPhone",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "apple iphone 1,1": {
-        "deviceName": "iPhone 2G",
-        "marketingName": "iPhone 2G",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 1,2": {
-        "deviceName": "iPhone 3G",
-        "marketingName": "iPhone 3G",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "ios"
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 1,1": {
+    "deviceName": "iPhone 2G",
+    "marketingName": "iPhone 2G",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "apple iphone 10,1": {
-        "deviceName": "A1863, A1906",
-        "marketingName": "iPhone 8",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 750,
-            "height": 1334,
-            "touch": true,
-            "type": "Custom 750x1334",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA",
-                "China",
-                "Japan"
-            ],
-            "vendors": [
-                "Verizon",
-                "Sprint"
-            ]
-        },
-        "connections": [
-            "WCDMA",
-            "CDMA"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 10,2": {
-        "deviceName": "A1864, A1898",
-        "marketingName": "iPhone 8 Plus",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA",
-                "China",
-                "Japan"
-            ],
-            "vendors": [
-                "Verizon",
-                "Sprint"
-            ]
-        },
-        "connections": [
-            "WCDMA",
-            "CDMA"
-        ],
-        "platform": "ios"
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 1,2": {
+    "deviceName": "iPhone 3G",
+    "marketingName": "iPhone 3G",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "apple iphone 10,3": {
-        "deviceName": "A1865, A1902",
-        "marketingName": "iPhone X",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1125,
-            "height": 2436,
-            "touch": true,
-            "type": "Custom 1125x2436",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA",
-                "China",
-                "Japan"
-            ],
-            "vendors": [
-                "Verizon",
-                "Sprint"
-            ]
-        },
-        "connections": [
-            "WCDMA",
-            "CDMA"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 10,4": {
-        "deviceName": "A1905",
-        "marketingName": "iPhone 8",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 750,
-            "height": 1334,
-            "touch": true,
-            "type": "Custom 750x1334",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [
-                "Global"
-            ],
-            "countries": [
-                "USA"
-            ],
-            "vendors": [
-                "AT&T",
-                "T-Mobile"
-            ]
-        },
-        "connections": [],
-        "platform": "ios"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 2,1": {
+    "deviceName": "iPhone 3GS",
+    "marketingName": "iPhone 3GS",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "apple iphone 10,5": {
-        "deviceName": "A1897",
-        "marketingName": "iPhone 8 Plus",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [
-                "Global"
-            ],
-            "countries": [
-                "USA"
-            ],
-            "vendors": [
-                "AT&T",
-                "T-Mobile"
-            ]
-        },
-        "connections": [],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 10,6": {
-        "deviceName": "A1901",
-        "marketingName": "iPhone X",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1125,
-            "height": 2436,
-            "touch": true,
-            "type": "Custom 1125x2436",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [
-                "Global"
-            ],
-            "countries": [
-                "USA"
-            ],
-            "vendors": [
-                "AT&T",
-                "T-Mobile"
-            ]
-        },
-        "connections": [],
-        "platform": "ios"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 3,1": {
+    "deviceName": "iPhone 4",
+    "marketingName": "iPhone 4",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": "DVGA",
+      "size": null
     },
-    "apple iphone 11,2": {
-        "deviceName": "iPhone 11,2",
-        "marketingName": "iPhone XS",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1125,
-            "height": 2436,
-            "touch": true,
-            "type": "Custom 1125x2436",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 11,4": {
-        "deviceName": "iPhone 11,4",
-        "marketingName": "iPhone XS Max",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1242,
-            "height": 2688,
-            "touch": true,
-            "type": "Custom 1242x2688",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 3,2": {
+    "deviceName": "iPhone 4",
+    "marketingName": "iPhone 4",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": "DVGA",
+      "size": null
     },
-    "apple iphone 11,6": {
-        "deviceName": "iPhone 11,6",
-        "marketingName": "iPhone XS Max",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1242,
-            "height": 2688,
-            "touch": true,
-            "type": "Custom 1242x2688",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "China"
-            ],
-            "vendors": []
-        },
-        "connections": [
-            "WCDMA"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 11,8": {
-        "deviceName": "iPhone 11,8",
-        "marketingName": "iPhone XR",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 828,
-            "height": 1792,
-            "touch": true,
-            "type": "Custom 828x1792",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 3,3": {
+    "deviceName": "iPhone 4",
+    "marketingName": "iPhone 4",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": "DVGA",
+      "size": null
     },
-    "apple iphone 2,1": {
-        "deviceName": "iPhone 3GS",
-        "marketingName": "iPhone 3GS",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "Verizon",
+        "Sprint"
+      ]
     },
-    "apple iphone 3,1": {
-        "deviceName": "iPhone 4",
-        "marketingName": "iPhone 4",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 960,
-            "touch": true,
-            "type": "DVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "ios"
+    "connections": [
+      "CDMA"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 4,1": {
+    "deviceName": "iPhone 4S",
+    "marketingName": "iPhone 4S",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": "DVGA",
+      "size": null
     },
-    "apple iphone 3,2": {
-        "deviceName": "iPhone 4",
-        "marketingName": "iPhone 4",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 960,
-            "touch": true,
-            "type": "DVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 3,3": {
-        "deviceName": "iPhone 4",
-        "marketingName": "iPhone 4",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 960,
-            "touch": true,
-            "type": "DVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA"
-            ],
-            "vendors": [
-                "Verizon",
-                "Sprint"
-            ]
-        },
-        "connections": [
-            "CDMA"
-        ],
-        "platform": "ios"
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 5,1": {
+    "deviceName": "iPhone 5",
+    "marketingName": "iPhone 5 (3G)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 1136,
+      "touch": true,
+      "type": "Custom 640x1136",
+      "size": null
     },
-    "apple iphone 4,1": {
-        "deviceName": "iPhone 4S",
-        "marketingName": "iPhone 4S",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 960,
-            "touch": true,
-            "type": "DVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 5,1": {
-        "deviceName": "iPhone 5",
-        "marketingName": "iPhone 5 (3G)",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 1136,
-            "touch": true,
-            "type": "Custom 640x1136",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "ios"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 5,2": {
+    "deviceName": "iPhone 5",
+    "marketingName": "iPhone 5 (3G+)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 1136,
+      "touch": true,
+      "type": "Custom 640x1136",
+      "size": null
     },
-    "apple iphone 5,2": {
-        "deviceName": "iPhone 5",
-        "marketingName": "iPhone 5 (3G+)",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 1136,
-            "touch": true,
-            "type": "Custom 640x1136",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE",
-            "GSM"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 5,3": {
-        "deviceName": "iPhone 5C",
-        "marketingName": "iPhone 5C (3G)",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 1136,
-            "touch": true,
-            "type": "Custom 640x1136",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "ios"
+    "connections": [
+      "LTE",
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 5,3": {
+    "deviceName": "iPhone 5C",
+    "marketingName": "iPhone 5C (3G)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 1136,
+      "touch": true,
+      "type": "Custom 640x1136",
+      "size": null
     },
-    "apple iphone 5,4": {
-        "deviceName": "iPhone 5C",
-        "marketingName": "iPhone 5C (3G+)",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 1136,
-            "touch": true,
-            "type": "Custom 640x1136",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE",
-            "GSM"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 6,1": {
-        "deviceName": "iPhone 5S",
-        "marketingName": "iPhone 5S (3G)",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 1136,
-            "touch": true,
-            "type": "Custom 640x1136",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "ios"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 5,4": {
+    "deviceName": "iPhone 5C",
+    "marketingName": "iPhone 5C (3G+)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 1136,
+      "touch": true,
+      "type": "Custom 640x1136",
+      "size": null
     },
-    "apple iphone 6,2": {
-        "deviceName": "iPhone 5S",
-        "marketingName": "iPhone 5S (3G+)",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 1136,
-            "touch": true,
-            "type": "Custom 640x1136",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE",
-            "GSM"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 7,1": {
-        "deviceName": "iPhone 6 Plus",
-        "marketingName": "iPhone 6 Plus",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "connections": [
+      "LTE",
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 6,1": {
+    "deviceName": "iPhone 5S",
+    "marketingName": "iPhone 5S (3G)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 1136,
+      "touch": true,
+      "type": "Custom 640x1136",
+      "size": null
     },
-    "apple iphone 7,2": {
-        "deviceName": "iPhone 6",
-        "marketingName": "iPhone 6",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 750,
-            "height": 1334,
-            "touch": true,
-            "type": "Custom 750x1334",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 8,1": {
-        "deviceName": "iPhone 6S",
-        "marketingName": "iPhone 6S",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 750,
-            "height": 1334,
-            "touch": true,
-            "type": "Custom 750x1334",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 6,2": {
+    "deviceName": "iPhone 5S",
+    "marketingName": "iPhone 5S (3G+)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 1136,
+      "touch": true,
+      "type": "Custom 640x1136",
+      "size": null
     },
-    "apple iphone 8,2": {
-        "deviceName": "iPhone 6S Plus",
-        "marketingName": "iPhone 6S Plus",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 8,4": {
-        "deviceName": "A1662, A1723, A1724",
-        "marketingName": "iPhone SE",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 750,
-            "height": 1334,
-            "touch": true,
-            "type": "Custom 750x1334",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "ios"
+    "connections": [
+      "LTE",
+      "GSM"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 7,2": {
+    "deviceName": "iPhone 6",
+    "marketingName": "iPhone 6",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 750,
+      "height": 1334,
+      "touch": true,
+      "type": "Custom 750x1334",
+      "size": null
     },
-    "apple iphone 9,1": {
-        "deviceName": "A1660, A1779, A1780",
-        "marketingName": "iPhone 7",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 750,
-            "height": 1334,
-            "touch": true,
-            "type": "Custom 750x1334",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA",
-                "China",
-                "Japan"
-            ],
-            "vendors": [
-                "Verizon",
-                "Sprint"
-            ]
-        },
-        "connections": [
-            "WCDMA",
-            "CDMA"
-        ],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 9,2": {
-        "deviceName": "A1661, A1785, A1786",
-        "marketingName": "iPhone 7 Plus",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA",
-                "China",
-                "Japan"
-            ],
-            "vendors": [
-                "Verizon",
-                "Sprint"
-            ]
-        },
-        "connections": [
-            "WCDMA",
-            "CDMA"
-        ],
-        "platform": "ios"
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 7,1": {
+    "deviceName": "iPhone 6 Plus",
+    "marketingName": "iPhone 6 Plus",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "apple iphone 9,3": {
-        "deviceName": "A1778",
-        "marketingName": "iPhone 7",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 750,
-            "height": 1334,
-            "touch": true,
-            "type": "Custom 750x1334",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [
-                "Global"
-            ],
-            "countries": [
-                "USA"
-            ],
-            "vendors": [
-                "AT&T",
-                "T-Mobile"
-            ]
-        },
-        "connections": [],
-        "platform": "ios"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "apple iphone 9,4": {
-        "deviceName": "A1784",
-        "marketingName": "iPhone 7 Plus",
-        "manufacturer": "Apple",
-        "brand": "Apple",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [
-                "Global"
-            ],
-            "countries": [
-                "USA"
-            ],
-            "vendors": [
-                "AT&T",
-                "T-Mobile"
-            ]
-        },
-        "connections": [],
-        "platform": "ios"
-    }
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 8,1": {
+    "deviceName": "iPhone 6S",
+    "marketingName": "iPhone 6S",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 750,
+      "height": 1334,
+      "touch": true,
+      "type": "Custom 750x1334",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 8,2": {
+    "deviceName": "iPhone 6S Plus",
+    "marketingName": "iPhone 6S Plus",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 9,1": {
+    "deviceName": "A1660, A1779, A1780",
+    "marketingName": "iPhone 7",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 750,
+      "height": 1334,
+      "touch": true,
+      "type": "Custom 750x1334",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA",
+        "China",
+        "Japan"
+      ],
+      "vendors": [
+        "Verizon",
+        "Sprint"
+      ]
+    },
+    "connections": [
+      "WCDMA",
+      "CDMA"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 9,3": {
+    "deviceName": "A1778",
+    "marketingName": "iPhone 7",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 750,
+      "height": 1334,
+      "touch": true,
+      "type": "Custom 750x1334",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [
+        "Global"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "AT&T",
+        "T-Mobile"
+      ]
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 9,2": {
+    "deviceName": "A1661, A1785, A1786",
+    "marketingName": "iPhone 7 Plus",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA",
+        "China",
+        "Japan"
+      ],
+      "vendors": [
+        "Verizon",
+        "Sprint"
+      ]
+    },
+    "connections": [
+      "WCDMA",
+      "CDMA"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 9,4": {
+    "deviceName": "A1784",
+    "marketingName": "iPhone 7 Plus",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [
+        "Global"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "AT&T",
+        "T-Mobile"
+      ]
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 10,1": {
+    "deviceName": "A1863, A1906",
+    "marketingName": "iPhone 8",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 750,
+      "height": 1334,
+      "touch": true,
+      "type": "Custom 750x1334",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA",
+        "China",
+        "Japan"
+      ],
+      "vendors": [
+        "Verizon",
+        "Sprint"
+      ]
+    },
+    "connections": [
+      "WCDMA",
+      "CDMA"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 10,4": {
+    "deviceName": "A1905",
+    "marketingName": "iPhone 8",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 750,
+      "height": 1334,
+      "touch": true,
+      "type": "Custom 750x1334",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [
+        "Global"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "AT&T",
+        "T-Mobile"
+      ]
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 10,2": {
+    "deviceName": "A1864, A1898",
+    "marketingName": "iPhone 8 Plus",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA",
+        "China",
+        "Japan"
+      ],
+      "vendors": [
+        "Verizon",
+        "Sprint"
+      ]
+    },
+    "connections": [
+      "WCDMA",
+      "CDMA"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 10,5": {
+    "deviceName": "A1897",
+    "marketingName": "iPhone 8 Plus",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [
+        "Global"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "AT&T",
+        "T-Mobile"
+      ]
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 8,4": {
+    "deviceName": "A1662, A1723, A1724",
+    "marketingName": "iPhone SE",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 750,
+      "height": 1334,
+      "touch": true,
+      "type": "Custom 750x1334",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 10,3": {
+    "deviceName": "A1865, A1902",
+    "marketingName": "iPhone X",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1125,
+      "height": 2436,
+      "touch": true,
+      "type": "Custom 1125x2436",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA",
+        "China",
+        "Japan"
+      ],
+      "vendors": [
+        "Verizon",
+        "Sprint"
+      ]
+    },
+    "connections": [
+      "WCDMA",
+      "CDMA"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 10,6": {
+    "deviceName": "A1901",
+    "marketingName": "iPhone X",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1125,
+      "height": 2436,
+      "touch": true,
+      "type": "Custom 1125x2436",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [
+        "Global"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "AT&T",
+        "T-Mobile"
+      ]
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 11,8": {
+    "deviceName": "iPhone 11,8",
+    "marketingName": "iPhone XR",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 828,
+      "height": 1792,
+      "touch": true,
+      "type": "Custom 828x1792",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 11,2": {
+    "deviceName": "iPhone 11,2",
+    "marketingName": "iPhone XS",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1125,
+      "height": 2436,
+      "touch": true,
+      "type": "Custom 1125x2436",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 11,4": {
+    "deviceName": "iPhone 11,4",
+    "marketingName": "iPhone XS Max",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1242,
+      "height": 2688,
+      "touch": true,
+      "type": "Custom 1242x2688",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple iphone 11,6": {
+    "deviceName": "iPhone 11,6",
+    "marketingName": "iPhone XS Max",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "smartphone",
+    "display": {
+      "width": 1242,
+      "height": 2688,
+      "touch": true,
+      "type": "Custom 1242x2688",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "China"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "WCDMA"
+    ],
+    "platform": "ios",
+    "variants": []
+  }
 }

@@ -1,71 +1,74 @@
 {
-    "explay a320": {
-        "deviceName": "A320",
-        "marketingName": "A320",
-        "manufacturer": "Explay",
-        "brand": "Explay",
-        "type": "smartphone",
-        "display": {
-            "width": 240,
-            "height": 400,
-            "touch": true,
-            "type": "WQVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "explay a320": {
+    "deviceName": "A320",
+    "marketingName": "A320",
+    "manufacturer": "Explay",
+    "brand": "Explay",
+    "type": "smartphone",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": true,
+      "type": "WQVGA (variant 3)",
+      "size": null
     },
-    "explay atlant": {
-        "deviceName": "Atlant",
-        "marketingName": "Atlant",
-        "manufacturer": "Explay",
-        "brand": "Explay",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "explay rio play": {
-        "deviceName": "Rio Play",
-        "marketingName": "Rio Play",
-        "manufacturer": "Explay",
-        "brand": "Explay",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "explay atlant": {
+    "deviceName": "Atlant",
+    "marketingName": "Atlant",
+    "manufacturer": "Explay",
+    "brand": "Explay",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "explay rio play": {
+    "deviceName": "Rio Play",
+    "marketingName": "Rio Play",
+    "manufacturer": "Explay",
+    "brand": "Explay",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

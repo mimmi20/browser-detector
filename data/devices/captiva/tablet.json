@@ -1,48 +1,50 @@
 {
-    "captiva 10.1 hd": {
-        "deviceName": "10.1 HD",
-        "marketingName": "10.1 HD",
-        "manufacturer": "Captiva",
-        "brand": "Captiva",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "captiva 10.1 hd": {
+    "deviceName": "10.1 HD",
+    "marketingName": "10.1 HD",
+    "manufacturer": "Captiva",
+    "brand": "Captiva",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "captiva 9.7 super fhd": {
-        "deviceName": "9.7 Super FHD",
-        "marketingName": "9.7 Super FHD",
-        "manufacturer": "Captiva",
-        "brand": "Captiva",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "captiva 9.7 super fhd": {
+    "deviceName": "9.7 Super FHD",
+    "marketingName": "9.7 Super FHD",
+    "manufacturer": "Captiva",
+    "brand": "Captiva",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general vizio device": {
-        "deviceName": "general Vizio Device",
-        "marketingName": "general Vizio Device",
-        "manufacturer": "Vizio",
-        "brand": "Vizio",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general vizio device": {
+    "deviceName": "general Vizio Device",
+    "marketingName": "general Vizio Device",
+    "manufacturer": "Vizio",
+    "brand": "Vizio",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "vizio vtab1008": {
-        "deviceName": "VTAB1008",
-        "marketingName": "VTAB1008",
-        "manufacturer": "Vizio",
-        "brand": "Vizio",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "vizio vtab1008": {
+    "deviceName": "VTAB1008",
+    "marketingName": "VTAB1008",
+    "manufacturer": "Vizio",
+    "brand": "Vizio",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

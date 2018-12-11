@@ -1,945 +1,986 @@
 {
-    "general cubot device": {
-        "deviceName": "general Cubot Device",
-        "marketingName": "general Cubot Device",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general cubot device": {
+    "deviceName": "general Cubot Device",
+    "marketingName": "general Cubot Device",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "cubot c11": {
-        "deviceName": "C11",
-        "marketingName": "C11",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot c7": {
-        "deviceName": "C7",
-        "marketingName": "C7",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot c11": {
+    "deviceName": "C11",
+    "marketingName": "C11",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "cubot c9+": {
-        "deviceName": "C9+",
-        "marketingName": "C9+",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot cheetah": {
-        "deviceName": "Cheetah",
-        "marketingName": "Cheetah",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot c7": {
+    "deviceName": "C7",
+    "marketingName": "C7",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "cubot cheetah 2": {
-        "deviceName": "Cheetah 2",
-        "marketingName": "Cheetah 2",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot dinosaur": {
-        "deviceName": "Dinosaur",
-        "marketingName": "Dinosaur",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot c9+": {
+    "deviceName": "C9+",
+    "marketingName": "C9+",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "cubot echo": {
-        "deviceName": "Echo",
-        "marketingName": "Echo",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot gt72e": {
-        "deviceName": "GT72E",
-        "marketingName": "GT72E",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot cheetah": {
+    "deviceName": "Cheetah",
+    "marketingName": "Cheetah",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "cubot gt99": {
-        "deviceName": "GT99",
-        "marketingName": "GT99",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot h1": {
-        "deviceName": "H1",
-        "marketingName": "H1",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot cheetah 2": {
+    "deviceName": "Cheetah 2",
+    "marketingName": "Cheetah 2",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "cubot h3": {
-        "deviceName": "H3",
-        "marketingName": "H3",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot hafury mix": {
-        "deviceName": "Mix",
-        "marketingName": "Mix",
-        "manufacturer": "Cubot",
-        "brand": "Hafury",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot dinosaur": {
+    "deviceName": "Dinosaur",
+    "marketingName": "Dinosaur",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot hafury umax": {
-        "deviceName": "Umax",
-        "marketingName": "Umax",
-        "manufacturer": "Cubot",
-        "brand": "Hafury",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot king kong": {
-        "deviceName": "King Kong",
-        "marketingName": "King Kong",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot echo": {
+    "deviceName": "Echo",
+    "marketingName": "Echo",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "cubot magic": {
-        "deviceName": "Magic",
-        "marketingName": "Magic",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot manito": {
-        "deviceName": "Manito",
-        "marketingName": "Manito",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot gt72e": {
+    "deviceName": "GT72E",
+    "marketingName": "GT72E",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "cubot max": {
-        "deviceName": "Max",
-        "marketingName": "Max",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot note plus": {
-        "deviceName": "NOTE Plus",
-        "marketingName": "NOTE Plus",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot gt99": {
+    "deviceName": "GT99",
+    "marketingName": "GT99",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot note s": {
-        "deviceName": "Note S",
-        "marketingName": "Note S",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot nova": {
-        "deviceName": "Nova",
-        "marketingName": "Nova",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1440,
-            "touch": true,
-            "type": "Custom 720x1440",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot h1": {
+    "deviceName": "H1",
+    "marketingName": "H1",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot one": {
-        "deviceName": "One",
-        "marketingName": "One",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot one-s": {
-        "deviceName": "One-S",
-        "marketingName": "One-S",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot h3": {
+    "deviceName": "H3",
+    "marketingName": "H3",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot p20": {
-        "deviceName": "P20",
-        "marketingName": "P20",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 2280,
-            "touch": true,
-            "type": "Custom 1080x2280",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot p9": {
-        "deviceName": "P9",
-        "marketingName": "P9",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot king kong": {
+    "deviceName": "King Kong",
+    "marketingName": "King Kong",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot power": {
-        "deviceName": "Power",
-        "marketingName": "Power",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 2160,
-            "touch": true,
-            "type": "Custom 1080x2160",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot r11": {
-        "deviceName": "R11",
-        "marketingName": "R11",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1440,
-            "touch": true,
-            "type": "Custom 720x1440",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot magic": {
+    "deviceName": "Magic",
+    "marketingName": "Magic",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot r9": {
-        "deviceName": "R9",
-        "marketingName": "R9",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot s200": {
-        "deviceName": "S200",
-        "marketingName": "S200",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot manito": {
+    "deviceName": "Manito",
+    "marketingName": "Manito",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot s208": {
-        "deviceName": "S208",
-        "marketingName": "S208",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot s222": {
-        "deviceName": "S222",
-        "marketingName": "S222",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot max": {
+    "deviceName": "Max",
+    "marketingName": "Max",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot s308": {
-        "deviceName": "S308",
-        "marketingName": "S308",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot s550": {
-        "deviceName": "S550",
-        "marketingName": "S550",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot hafury mix": {
+    "deviceName": "Mix",
+    "marketingName": "Mix",
+    "manufacturer": "Cubot",
+    "brand": "Hafury",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot s600": {
-        "deviceName": "S600",
-        "marketingName": "S600",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot x12": {
-        "deviceName": "X12",
-        "marketingName": "X12",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot note plus": {
+    "deviceName": "NOTE Plus",
+    "marketingName": "NOTE Plus",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "cubot x16": {
-        "deviceName": "X16",
-        "marketingName": "X16",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot x17 s": {
-        "deviceName": "X17 S",
-        "marketingName": "X17 S",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot note s": {
+    "deviceName": "Note S",
+    "marketingName": "Note S",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "cubot x18": {
-        "deviceName": "X18",
-        "marketingName": "X18",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1440,
-            "touch": true,
-            "type": "Custom 720x1440",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot x18 plus": {
-        "deviceName": "X18 Plus",
-        "marketingName": "X18 Plus",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 2160,
-            "touch": true,
-            "type": "Custom 1080x2160",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot nova": {
+    "deviceName": "Nova",
+    "marketingName": "Nova",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": "Custom 720x1440",
+      "size": null
     },
-    "cubot x6": {
-        "deviceName": "X6",
-        "marketingName": "X6",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "cubot z100 pro": {
-        "deviceName": "Z100 Pro",
-        "marketingName": "Z100 Pro",
-        "manufacturer": "Cubot",
-        "brand": "Cubot",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot one": {
+    "deviceName": "One",
+    "marketingName": "One",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot one-s": {
+    "deviceName": "One-S",
+    "marketingName": "One-S",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot p20": {
+    "deviceName": "P20",
+    "marketingName": "P20",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 2280,
+      "touch": true,
+      "type": "Custom 1080x2280",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot p9": {
+    "deviceName": "P9",
+    "marketingName": "P9",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot power": {
+    "deviceName": "Power",
+    "marketingName": "Power",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": "Custom 1080x2160",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot r11": {
+    "deviceName": "R11",
+    "marketingName": "R11",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": "Custom 720x1440",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot r9": {
+    "deviceName": "R9",
+    "marketingName": "R9",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot s200": {
+    "deviceName": "S200",
+    "marketingName": "S200",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot s208": {
+    "deviceName": "S208",
+    "marketingName": "S208",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot s222": {
+    "deviceName": "S222",
+    "marketingName": "S222",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot s308": {
+    "deviceName": "S308",
+    "marketingName": "S308",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot s550": {
+    "deviceName": "S550",
+    "marketingName": "S550",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot s600": {
+    "deviceName": "S600",
+    "marketingName": "S600",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot hafury umax": {
+    "deviceName": "Umax",
+    "marketingName": "Umax",
+    "manufacturer": "Cubot",
+    "brand": "Hafury",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot x12": {
+    "deviceName": "X12",
+    "marketingName": "X12",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot x16": {
+    "deviceName": "X16",
+    "marketingName": "X16",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot x17 s": {
+    "deviceName": "X17 S",
+    "marketingName": "X17 S",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot x18": {
+    "deviceName": "X18",
+    "marketingName": "X18",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": "Custom 720x1440",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot x18 plus": {
+    "deviceName": "X18 Plus",
+    "marketingName": "X18 Plus",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": "Custom 1080x2160",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot x6": {
+    "deviceName": "X6",
+    "marketingName": "X6",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "cubot z100 pro": {
+    "deviceName": "Z100 Pro",
+    "marketingName": "Z100 Pro",
+    "manufacturer": "Cubot",
+    "brand": "Cubot",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

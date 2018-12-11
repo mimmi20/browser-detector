@@ -1,462 +1,482 @@
 {
-    "general yarvik device": {
-        "deviceName": "general Yarvik Device",
-        "marketingName": "general Yarvik Device",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general yarvik device": {
+    "deviceName": "general Yarvik Device",
+    "marketingName": "general Yarvik Device",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "yarvik luna tab07-100": {
-        "deviceName": "Tab07-100",
-        "marketingName": "Luna Tab07-100",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik luna tab07-101": {
-        "deviceName": "Tab07-101",
-        "marketingName": "Luna Tab07-101",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik luna tab07-100": {
+    "deviceName": "Tab07-100",
+    "marketingName": "Luna Tab07-100",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "yarvik luna tab07-920n": {
-        "deviceName": "Tab07-920N",
-        "marketingName": "Luna Tab07-920N",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik luna tab10-150": {
-        "deviceName": "Tab10-150",
-        "marketingName": "Luna Tab10-150",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik luna tab07-101": {
+    "deviceName": "Tab07-101",
+    "marketingName": "Luna Tab07-101",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "yarvik luna tab274": {
-        "deviceName": "Tab274",
-        "marketingName": "Luna Tab274",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik luna tab474": {
-        "deviceName": "Tab474",
-        "marketingName": "Luna Tab474",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik luna tab07-920n": {
+    "deviceName": "Tab07-920N",
+    "marketingName": "Luna Tab07-920N",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "yarvik noble tab07-485": {
-        "deviceName": "Noble Mini Tab07-485",
-        "marketingName": "Noble Mini Tab07-485",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik tab07-200": {
-        "deviceName": "Tab07-200",
-        "marketingName": "Xenta 7",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik luna tab10-150": {
+    "deviceName": "Tab10-150",
+    "marketingName": "Luna Tab10-150",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "yarvik tab07-210": {
-        "deviceName": "Tab07-210",
-        "marketingName": "Xenta 7c",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik tab07-211": {
-        "deviceName": "Tab07-211",
-        "marketingName": "Xenta Tab07-211",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik luna tab274": {
+    "deviceName": "Tab274",
+    "marketingName": "Luna Tab274",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "yarvik tab08-200": {
-        "deviceName": "Tab08-200",
-        "marketingName": "Xenta 8ic",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik tab09-200": {
-        "deviceName": "Tab09-200",
-        "marketingName": "Xenta Tab09-200",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik luna tab474": {
+    "deviceName": "Tab474",
+    "marketingName": "Luna Tab474",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "yarvik tab09-211": {
-        "deviceName": "Tab09-211",
-        "marketingName": "Xenta 97ic+",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik tab09-410": {
-        "deviceName": "Tab09-410",
-        "marketingName": "Noble 9.7",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab10-400": {
+    "deviceName": "Tab10-400",
+    "marketingName": "Noble 10c",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "yarvik tab10-201": {
-        "deviceName": "Tab10-201",
-        "marketingName": "Xenta 10ic",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik tab10-211": {
-        "deviceName": "Tab10-211",
-        "marketingName": "Xenta Tab10-211",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab09-410": {
+    "deviceName": "Tab09-410",
+    "marketingName": "Noble 9.7",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
     },
-    "yarvik tab10-400": {
-        "deviceName": "Tab10-400",
-        "marketingName": "Noble 10c",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yarvik tab10-410": {
-        "deviceName": "Tab10-410",
-        "marketingName": "Noble Tab10-410",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik noble tab07-485": {
+    "deviceName": "Noble Mini Tab07-485",
+    "marketingName": "Noble Mini Tab07-485",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "yarvik tab13-201": {
-        "deviceName": "Tab13-201",
-        "marketingName": "Xenta Tab13-201",
-        "manufacturer": "Yarvik",
-        "brand": "Yarvik",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab10-410": {
+    "deviceName": "Tab10-410",
+    "marketingName": "Noble Tab10-410",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab10-201": {
+    "deviceName": "Tab10-201",
+    "marketingName": "Xenta 10ic",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab07-200": {
+    "deviceName": "Tab07-200",
+    "marketingName": "Xenta 7",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab07-210": {
+    "deviceName": "Tab07-210",
+    "marketingName": "Xenta 7c",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab08-200": {
+    "deviceName": "Tab08-200",
+    "marketingName": "Xenta 8ic",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab09-211": {
+    "deviceName": "Tab09-211",
+    "marketingName": "Xenta 97ic+",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab07-211": {
+    "deviceName": "Tab07-211",
+    "marketingName": "Xenta Tab07-211",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab09-200": {
+    "deviceName": "Tab09-200",
+    "marketingName": "Xenta Tab09-200",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab10-211": {
+    "deviceName": "Tab10-211",
+    "marketingName": "Xenta Tab10-211",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yarvik tab13-201": {
+    "deviceName": "Tab13-201",
+    "marketingName": "Xenta Tab13-201",
+    "manufacturer": "Yarvik",
+    "brand": "Yarvik",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

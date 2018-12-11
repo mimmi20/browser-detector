@@ -1,119 +1,124 @@
 {
-    "general touchmate device": {
-        "deviceName": "general Touchmate Device",
-        "marketingName": "general Touchmate Device",
-        "manufacturer": "Touchmate",
-        "brand": "Touchmate",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general touchmate device": {
+    "deviceName": "general Touchmate Device",
+    "marketingName": "general Touchmate Device",
+    "manufacturer": "Touchmate",
+    "brand": "Touchmate",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "touchmate tm-mid1020a": {
-        "deviceName": "TM-MID1020A",
-        "marketingName": "TM-MID1020A",
-        "manufacturer": "Touchmate",
-        "brand": "Touchmate",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "touchmate tm-mid788d": {
-        "deviceName": "TM-MID788D",
-        "marketingName": "TM-MID788D",
-        "manufacturer": "Touchmate",
-        "brand": "Touchmate",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "touchmate tm-mid792": {
+    "deviceName": "TM-MID792",
+    "marketingName": "3G Call Pad Edge",
+    "manufacturer": "Touchmate",
+    "brand": "Touchmate",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "touchmate tm-mid792": {
-        "deviceName": "TM-MID792",
-        "marketingName": "3G Call Pad Edge",
-        "manufacturer": "Touchmate",
-        "brand": "Touchmate",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "touchmate tm-mid798": {
-        "deviceName": "TM-MID798",
-        "marketingName": "TM-MID798",
-        "manufacturer": "Touchmate",
-        "brand": "Touchmate",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "touchmate tm-mid1020a": {
+    "deviceName": "TM-MID1020A",
+    "marketingName": "TM-MID1020A",
+    "manufacturer": "Touchmate",
+    "brand": "Touchmate",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "touchmate tm-mid788d": {
+    "deviceName": "TM-MID788D",
+    "marketingName": "TM-MID788D",
+    "manufacturer": "Touchmate",
+    "brand": "Touchmate",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "touchmate tm-mid798": {
+    "deviceName": "TM-MID798",
+    "marketingName": "TM-MID798",
+    "manufacturer": "Touchmate",
+    "brand": "Touchmate",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

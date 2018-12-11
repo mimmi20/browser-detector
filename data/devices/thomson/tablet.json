@@ -1,94 +1,98 @@
 {
-    "thomson primo 7": {
-        "deviceName": "Primo 7",
-        "marketingName": "Primo 7",
-        "manufacturer": "Thomson",
-        "brand": "Thomson",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "thomson primo 7": {
+    "deviceName": "Primo 7",
+    "marketingName": "Primo 7",
+    "manufacturer": "Thomson",
+    "brand": "Thomson",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "thomson primo 8": {
-        "deviceName": "Primo 8",
-        "marketingName": "Primo 8",
-        "manufacturer": "Thomson",
-        "brand": "Thomson",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "thomson qm734-8g": {
-        "deviceName": "QM734-8G",
-        "marketingName": "QM734-8G",
-        "manufacturer": "Thomson",
-        "brand": "Thomson",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "thomson primo 8": {
+    "deviceName": "Primo 8",
+    "marketingName": "Primo 8",
+    "manufacturer": "Thomson",
+    "brand": "Thomson",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "thomson qm735-8g": {
-        "deviceName": "QM735-8G",
-        "marketingName": "QM735-8G",
-        "manufacturer": "Thomson",
-        "brand": "Thomson",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "thomson qm734-8g": {
+    "deviceName": "QM734-8G",
+    "marketingName": "QM734-8G",
+    "manufacturer": "Thomson",
+    "brand": "Thomson",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "thomson qm735-8g": {
+    "deviceName": "QM735-8G",
+    "marketingName": "QM735-8G",
+    "manufacturer": "Thomson",
+    "brand": "Thomson",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

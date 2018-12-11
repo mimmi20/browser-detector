@@ -1,48 +1,50 @@
 {
-    "general beeline device": {
-        "deviceName": "general Beeline Device",
-        "marketingName": "general Beeline Device",
-        "manufacturer": "Beeline",
-        "brand": "Beeline",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general beeline device": {
+    "deviceName": "general Beeline Device",
+    "marketingName": "general Beeline Device",
+    "manufacturer": "Beeline",
+    "brand": "Beeline",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "beeline tab": {
-        "deviceName": "Tab",
-        "marketingName": "Tab",
-        "manufacturer": "Beeline",
-        "brand": "Beeline",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "beeline tab": {
+    "deviceName": "Tab",
+    "marketingName": "Tab",
+    "manufacturer": "Beeline",
+    "brand": "Beeline",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

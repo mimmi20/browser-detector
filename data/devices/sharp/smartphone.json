@@ -1,485 +1,506 @@
 {
-    "general sharp device": {
-        "deviceName": "general Sharp Device",
-        "marketingName": "general Sharp Device",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general sharp device": {
+    "deviceName": "general Sharp Device",
+    "marketingName": "general Sharp Device",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "sharp 304sh": {
-        "deviceName": "304SH",
-        "marketingName": "Aquos Xx",
-        "manufacturer": "Sharp",
-        "brand": "Softbank",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp 306sh": {
-        "deviceName": "306SH",
-        "marketingName": "Aquos Crystal",
-        "manufacturer": "Sharp",
-        "brand": "Sprint",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp 306sh": {
+    "deviceName": "306SH",
+    "marketingName": "Aquos Crystal",
+    "manufacturer": "Sharp",
+    "brand": "Sprint",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "sharp 506sh": {
-        "deviceName": "506SH",
-        "marketingName": "Aquos Xx3",
-        "manufacturer": "Sharp",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp ads1": {
-        "deviceName": "ADS1",
-        "marketingName": "FX Plus",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp shl25": {
+    "deviceName": "SHL25",
+    "marketingName": "Aquos Crystal",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "sharp fs8010": {
-        "deviceName": "FS8010",
-        "marketingName": "Aquos S2",
-        "manufacturer": "Foxconn",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 2040,
-            "touch": true,
-            "type": "Custom 1080x2040",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 2,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp is05": {
-        "deviceName": "IS05",
-        "marketingName": "IS05",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh80f": {
+    "deviceName": "SH80F",
+    "marketingName": "Aquos Phone",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "sharp sh-01f": {
-        "deviceName": "SH-01F",
-        "marketingName": "Aquos Phone Zeta",
-        "manufacturer": "Sharp",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp sh-02e": {
-        "deviceName": "SH-02E",
-        "marketingName": "Aquos Phone Zeta",
-        "manufacturer": "Sharp",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp shl22": {
+    "deviceName": "SHL22",
+    "marketingName": "Aquos Phone",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "sharp sh-06d": {
-        "deviceName": "SH-06D",
-        "marketingName": "SH-06D",
-        "manufacturer": "Sharp",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp sh-07d": {
-        "deviceName": "SH-07D",
-        "marketingName": "Aquos Phone st",
-        "manufacturer": "Sharp",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh-01f": {
+    "deviceName": "SH-01F",
+    "marketingName": "Aquos Phone Zeta",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "sharp sh-10d": {
-        "deviceName": "SH-10D",
-        "marketingName": "SH-10D",
-        "manufacturer": "Sharp",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp sh05c": {
-        "deviceName": "SH-05C",
-        "marketingName": "SH-05C",
-        "manufacturer": "Sharp",
-        "brand": "DoCoMo",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "symbian"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh-02e": {
+    "deviceName": "SH-02E",
+    "marketingName": "Aquos Phone Zeta",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "sharp sh7228u": {
-        "deviceName": "SH7228U",
-        "marketingName": "SH7228U",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp sh80f": {
-        "deviceName": "SH80F",
-        "marketingName": "Aquos Phone",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh-07d": {
+    "deviceName": "SH-07D",
+    "marketingName": "Aquos Phone st",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "sharp sh8128u": {
-        "deviceName": "SH8128U",
-        "marketingName": "SH8128U",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp sh837w": {
-        "deviceName": "SH837W",
-        "marketingName": "SH837W",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp fs8010": {
+    "deviceName": "FS8010",
+    "marketingName": "Aquos S2",
+    "manufacturer": "Foxconn",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 2040,
+      "touch": true,
+      "type": "Custom 1080x2040",
+      "size": null
     },
-    "sharp shl22": {
-        "deviceName": "SHL22",
-        "marketingName": "Aquos Phone",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp shl25": {
-        "deviceName": "SHL25",
-        "marketingName": "Aquos Crystal",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp shv31": {
+    "deviceName": "SHV31",
+    "marketingName": "Aquos Serie Mini",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "sharp shv31": {
-        "deviceName": "SHV31",
-        "marketingName": "Aquos Serie Mini",
-        "manufacturer": "Sharp",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sharp shv35": {
-        "deviceName": "SHV35",
-        "marketingName": "Aquos U",
-        "manufacturer": "Foxconn",
-        "brand": "Sharp",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp shv35": {
+    "deviceName": "SHV35",
+    "marketingName": "Aquos U",
+    "manufacturer": "Foxconn",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp 304sh": {
+    "deviceName": "304SH",
+    "marketingName": "Aquos Xx",
+    "manufacturer": "Sharp",
+    "brand": "Softbank",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp 506sh": {
+    "deviceName": "506SH",
+    "marketingName": "Aquos Xx3",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp ads1": {
+    "deviceName": "ADS1",
+    "marketingName": "FX Plus",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp is05": {
+    "deviceName": "IS05",
+    "marketingName": "IS05",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh05c": {
+    "deviceName": "SH-05C",
+    "marketingName": "SH-05C",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "symbian",
+    "variants": []
+  },
+  "sharp sh-06d": {
+    "deviceName": "SH-06D",
+    "marketingName": "SH-06D",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh-10d": {
+    "deviceName": "SH-10D",
+    "marketingName": "SH-10D",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh7228u": {
+    "deviceName": "SH7228U",
+    "marketingName": "SH7228U",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh8128u": {
+    "deviceName": "SH8128U",
+    "marketingName": "SH8128U",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sharp sh837w": {
+    "deviceName": "SH837W",
+    "marketingName": "SH837W",
+    "manufacturer": "Sharp",
+    "brand": "Sharp",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,52 +1,54 @@
 {
-    "general china-tablet device": {
-        "deviceName": "general  Tablet Device",
-        "marketingName": "general  Tablet Device",
-        "manufacturer": "China Tablet",
-        "brand": "China Tablet",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "China"
-            ],
-            "vendors": []
-        },
-        "connections": [
-            "WCDMA"
-        ],
-        "platform": "android"
+  "general china-tablet device": {
+    "deviceName": "general  Tablet Device",
+    "marketingName": "general  Tablet Device",
+    "manufacturer": "China Tablet",
+    "brand": "China Tablet",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "china-tablet i101mtk": {
-        "deviceName": "I101MTK",
-        "marketingName": "I101MTK",
-        "manufacturer": "China Tablet",
-        "brand": "China Tablet",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "China"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "WCDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "china-tablet i101mtk": {
+    "deviceName": "I101MTK",
+    "marketingName": "I101MTK",
+    "manufacturer": "China Tablet",
+    "brand": "China Tablet",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

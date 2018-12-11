@@ -1,94 +1,98 @@
 {
-    "general easypix device": {
-        "deviceName": "general Easypix Device",
-        "marketingName": "general Easypix Device",
-        "manufacturer": "Easypix",
-        "brand": "Easypix",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general easypix device": {
+    "deviceName": "general Easypix Device",
+    "marketingName": "general Easypix Device",
+    "manufacturer": "Easypix",
+    "brand": "Easypix",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "easypix easypad 970": {
-        "deviceName": "EasyPad 970",
-        "marketingName": "EasyPad 970",
-        "manufacturer": "Easypix",
-        "brand": "Easypix",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "easypix easypad 971": {
-        "deviceName": "EasyPad 971",
-        "marketingName": "EasyPad 971",
-        "manufacturer": "Easypix",
-        "brand": "Easypix",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "easypix easypad 970": {
+    "deviceName": "EasyPad 970",
+    "marketingName": "EasyPad 970",
+    "manufacturer": "Easypix",
+    "brand": "Easypix",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "easypix junior 4.0": {
-        "deviceName": "EasyPad Junior 4.0",
-        "marketingName": "EasyPad Junior 4.0",
-        "manufacturer": "Easypix",
-        "brand": "Easypix",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "easypix easypad 971": {
+    "deviceName": "EasyPad 971",
+    "marketingName": "EasyPad 971",
+    "manufacturer": "Easypix",
+    "brand": "Easypix",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "easypix junior 4.0": {
+    "deviceName": "EasyPad Junior 4.0",
+    "marketingName": "EasyPad Junior 4.0",
+    "manufacturer": "Easypix",
+    "brand": "Easypix",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

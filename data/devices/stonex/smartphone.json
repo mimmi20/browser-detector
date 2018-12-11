@@ -1,140 +1,146 @@
 {
-    "general stonex device": {
-        "deviceName": "general Stonex Device",
-        "marketingName": "general Stonex Device",
-        "manufacturer": "Stonex",
-        "brand": "Stonex",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general stonex device": {
+    "deviceName": "general Stonex Device",
+    "marketingName": "general Stonex Device",
+    "manufacturer": "Stonex",
+    "brand": "Stonex",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "stonex stx evo": {
-        "deviceName": "STX Evo",
-        "marketingName": "STX Evo",
-        "manufacturer": "Stonex",
-        "brand": "Stonex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "stonex stx mini": {
-        "deviceName": "STX Mini",
-        "marketingName": "STX Mini",
-        "manufacturer": "Stonex",
-        "brand": "Stonex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "stonex stx evo": {
+    "deviceName": "STX Evo",
+    "marketingName": "STX Evo",
+    "manufacturer": "Stonex",
+    "brand": "Stonex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "stonex stx mini 2": {
-        "deviceName": "STX Mini 2",
-        "marketingName": "STX Mini 2",
-        "manufacturer": "Stonex",
-        "brand": "Stonex",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "stonex stx ultra": {
-        "deviceName": "STX Ultra",
-        "marketingName": "STX Ultra",
-        "manufacturer": "Stonex",
-        "brand": "Stonex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "stonex stx mini": {
+    "deviceName": "STX Mini",
+    "marketingName": "STX Mini",
+    "manufacturer": "Stonex",
+    "brand": "Stonex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "stonex stx ultra 2": {
-        "deviceName": "STX Ultra 2",
-        "marketingName": "STX Ultra 2",
-        "manufacturer": "Stonex",
-        "brand": "Stonex",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "stonex stx mini 2": {
+    "deviceName": "STX Mini 2",
+    "marketingName": "STX Mini 2",
+    "manufacturer": "Stonex",
+    "brand": "Stonex",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "stonex stx ultra": {
+    "deviceName": "STX Ultra",
+    "marketingName": "STX Ultra",
+    "manufacturer": "Stonex",
+    "brand": "Stonex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "stonex stx ultra 2": {
+    "deviceName": "STX Ultra 2",
+    "marketingName": "STX Ultra 2",
+    "manufacturer": "Stonex",
+    "brand": "Stonex",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

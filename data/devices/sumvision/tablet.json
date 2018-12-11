@@ -1,71 +1,74 @@
 {
-    "general sumvision device": {
-        "deviceName": "general Sumvision Device",
-        "marketingName": "general Sumvision Device",
-        "manufacturer": "Sumvision",
-        "brand": "Sumvision",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general sumvision device": {
+    "deviceName": "general Sumvision Device",
+    "marketingName": "general Sumvision Device",
+    "manufacturer": "Sumvision",
+    "brand": "Sumvision",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "sumvision cyclone voyager": {
-        "deviceName": "Cyclone Voyager",
-        "marketingName": "Cyclone Voyager",
-        "manufacturer": "Sumvision",
-        "brand": "Sumvision",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "sumvision cyclone voyager 2": {
-        "deviceName": "Cyclone Voyager 2",
-        "marketingName": "Cyclone Voyager 2",
-        "manufacturer": "Sumvision",
-        "brand": "Sumvision",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sumvision cyclone voyager": {
+    "deviceName": "Cyclone Voyager",
+    "marketingName": "Cyclone Voyager",
+    "manufacturer": "Sumvision",
+    "brand": "Sumvision",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sumvision cyclone voyager 2": {
+    "deviceName": "Cyclone Voyager 2",
+    "marketingName": "Cyclone Voyager 2",
+    "manufacturer": "Sumvision",
+    "brand": "Sumvision",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

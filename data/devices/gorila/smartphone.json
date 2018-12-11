@@ -1,48 +1,50 @@
 {
-    "general gorila device": {
-        "deviceName": "general Gorila Device",
-        "marketingName": "general Gorila Device",
-        "manufacturer": "Gorila",
-        "brand": "Gorila",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general gorila device": {
+    "deviceName": "general Gorila Device",
+    "marketingName": "general Gorila Device",
+    "manufacturer": "Gorila",
+    "brand": "Gorila",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "gorila grv11": {
-        "deviceName": "GRV11",
-        "marketingName": "2",
-        "manufacturer": "Gorila",
-        "brand": "Gorila",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "gorila grv11": {
+    "deviceName": "GRV11",
+    "marketingName": "2",
+    "manufacturer": "Gorila",
+    "brand": "Gorila",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

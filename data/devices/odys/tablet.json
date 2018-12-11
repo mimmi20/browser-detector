@@ -1,853 +1,890 @@
 {
-    "general odys device": {
-        "deviceName": "general Odys Device",
-        "marketingName": "general Odys Device",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general odys device": {
+    "deviceName": "general Odys Device",
+    "marketingName": "general Odys Device",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "odys adm816hc": {
-        "deviceName": "ADM816HC",
-        "marketingName": "Neo X",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys adm816kc": {
-        "deviceName": "ADM816KC",
-        "marketingName": "Neo S8 Plus",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys connect 7 pro": {
+    "deviceName": "Connect 7 Pro",
+    "marketingName": "Connect 7 Pro",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "odys connect 7 pro": {
-        "deviceName": "Connect 7 Pro",
-        "marketingName": "Connect 7 Pro",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys evo": {
-        "deviceName": "Evo",
-        "marketingName": "Evo",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys evo": {
+    "deviceName": "Evo",
+    "marketingName": "Evo",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "odys evolution 12": {
-        "deviceName": "Evolution 12",
-        "marketingName": "Evolution 12",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1366,
-            "height": 768,
-            "touch": true,
-            "type": "FWXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys genesis": {
-        "deviceName": "Genesis",
-        "marketingName": "Genesis",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys evolution 12": {
+    "deviceName": "Evolution 12",
+    "marketingName": "Evolution 12",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": true,
+      "type": "FWXGA",
+      "size": null
     },
-    "odys ieos quad": {
-        "deviceName": "Ieos Quad",
-        "marketingName": "Ieos Quad",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys ieos quad 10 pro": {
-        "deviceName": "Ieos Quad 10 Pro",
-        "marketingName": "Ieos Quad 10 Pro",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys genesis": {
+    "deviceName": "Genesis",
+    "marketingName": "Genesis",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
     },
-    "odys ieos quad pro": {
-        "deviceName": "Ieos Quad Pro",
-        "marketingName": "Ieos Quad Pro",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys ieos quad w": {
-        "deviceName": "Ieos Quad W",
-        "marketingName": "Ieos Quad W",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys ieos quad": {
+    "deviceName": "Ieos Quad",
+    "marketingName": "Ieos Quad",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "odys loox": {
-        "deviceName": "Loox",
-        "marketingName": "Loox",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys loox plus": {
-        "deviceName": "Loox Plus",
-        "marketingName": "Loox Plus",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys ieos quad 10 pro": {
+    "deviceName": "Ieos Quad 10 Pro",
+    "marketingName": "Ieos Quad 10 Pro",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "odys maven 10 hd": {
-        "deviceName": "Maven 10 HD",
-        "marketingName": "Maven 10 HD",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys maven 10 plus": {
-        "deviceName": "Maven 10 Plus",
-        "marketingName": "Maven 10 Plus",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys ieos quad pro": {
+    "deviceName": "Ieos Quad Pro",
+    "marketingName": "Ieos Quad Pro",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "odys maven 10 pro": {
-        "deviceName": "Maven 10 Pro",
-        "marketingName": "Maven 10 Pro",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys mira": {
-        "deviceName": "MIRA",
-        "marketingName": "MIRA",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys ieos quad w": {
+    "deviceName": "Ieos Quad W",
+    "marketingName": "Ieos Quad W",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "odys neo quad 10": {
-        "deviceName": "Neo Quad 10",
-        "marketingName": "Neo Quad 10",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys noon": {
-        "deviceName": "Noon",
-        "marketingName": "Noon",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys loox": {
+    "deviceName": "Loox",
+    "marketingName": "Loox",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
     },
-    "odys pace 10": {
-        "deviceName": "Pace 10",
-        "marketingName": "Pace 10",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys q": {
-        "deviceName": "Q",
-        "marketingName": "Q",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys loox plus": {
+    "deviceName": "Loox Plus",
+    "marketingName": "Loox Plus",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
     },
-    "odys space": {
-        "deviceName": "Space",
-        "marketingName": "Space",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys tablet pc 4": {
-        "deviceName": "Tablet PC 4",
-        "marketingName": "Tablet PC 4",
-        "manufacturer": "Odys",
-        "brand": "Weltbild",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys mira": {
+    "deviceName": "MIRA",
+    "marketingName": "MIRA",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "odys tao x10": {
-        "deviceName": "Tao X10",
-        "marketingName": "Tao X10",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys thor 10": {
-        "deviceName": "Thor 10",
-        "marketingName": "Thor 10",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys maven 10 hd": {
+    "deviceName": "Maven 10 HD",
+    "marketingName": "Maven 10 HD",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "odys uno x10": {
-        "deviceName": "Uno X10",
-        "marketingName": "Uno X10",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys visio": {
-        "deviceName": "Visio",
-        "marketingName": "Visio",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys maven 10 plus": {
+    "deviceName": "Maven 10 Plus",
+    "marketingName": "Maven 10 Plus",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "odys xelio": {
-        "deviceName": "Xelio",
-        "marketingName": "Xelio",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys xelio 10 extreme": {
-        "deviceName": "Xelio 10 Extreme",
-        "marketingName": "Xelio 10 Extreme",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys maven 10 pro": {
+    "deviceName": "Maven 10 Pro",
+    "marketingName": "Maven 10 Pro",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "odys xelio 10 pro": {
-        "deviceName": "Xelio 10 Pro",
-        "marketingName": "Xelio 10 Pro",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys xelio 7 pro": {
-        "deviceName": "Xelio 7 Pro",
-        "marketingName": "Xelio 7 Pro",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys neo quad 10": {
+    "deviceName": "Neo Quad 10",
+    "marketingName": "Neo Quad 10",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "odys xelio hd 10": {
-        "deviceName": "Xelio HD 10",
-        "marketingName": "Xelio HD 10",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys xelio next 10": {
-        "deviceName": "Xelio Next 10",
-        "marketingName": "Xelio Next 10",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys adm816kc": {
+    "deviceName": "ADM816KC",
+    "marketingName": "Neo S8 Plus",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
     },
-    "odys xeno 10": {
-        "deviceName": "Xeno 10",
-        "marketingName": "Xeno 10",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys xpress": {
-        "deviceName": "Xpress",
-        "marketingName": "Xpress",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys adm816hc": {
+    "deviceName": "ADM816HC",
+    "marketingName": "Neo X",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
     },
-    "odys xpress pro": {
-        "deviceName": "Xpress Pro",
-        "marketingName": "Xpress Pro",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "odys xtreme": {
-        "deviceName": "Xtreme",
-        "marketingName": "Xtreme",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys noon": {
+    "deviceName": "Noon",
+    "marketingName": "Noon",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys pace 10": {
+    "deviceName": "Pace 10",
+    "marketingName": "Pace 10",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys q": {
+    "deviceName": "Q",
+    "marketingName": "Q",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys space": {
+    "deviceName": "Space",
+    "marketingName": "Space",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys tablet pc 4": {
+    "deviceName": "Tablet PC 4",
+    "marketingName": "Tablet PC 4",
+    "manufacturer": "Odys",
+    "brand": "Weltbild",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys tao x10": {
+    "deviceName": "Tao X10",
+    "marketingName": "Tao X10",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys thor 10": {
+    "deviceName": "Thor 10",
+    "marketingName": "Thor 10",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys uno x10": {
+    "deviceName": "Uno X10",
+    "marketingName": "Uno X10",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys visio": {
+    "deviceName": "Visio",
+    "marketingName": "Visio",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xelio": {
+    "deviceName": "Xelio",
+    "marketingName": "Xelio",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xelio 10 extreme": {
+    "deviceName": "Xelio 10 Extreme",
+    "marketingName": "Xelio 10 Extreme",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xelio 10 pro": {
+    "deviceName": "Xelio 10 Pro",
+    "marketingName": "Xelio 10 Pro",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xelio 7 pro": {
+    "deviceName": "Xelio 7 Pro",
+    "marketingName": "Xelio 7 Pro",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xelio hd 10": {
+    "deviceName": "Xelio HD 10",
+    "marketingName": "Xelio HD 10",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xelio next 10": {
+    "deviceName": "Xelio Next 10",
+    "marketingName": "Xelio Next 10",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xeno 10": {
+    "deviceName": "Xeno 10",
+    "marketingName": "Xeno 10",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xpress": {
+    "deviceName": "Xpress",
+    "marketingName": "Xpress",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xpress pro": {
+    "deviceName": "Xpress Pro",
+    "marketingName": "Xpress Pro",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "odys xtreme": {
+    "deviceName": "Xtreme",
+    "marketingName": "Xtreme",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

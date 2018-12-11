@@ -1,48 +1,50 @@
 {
-    "general quechua device": {
-        "deviceName": "general Quechua Device",
-        "marketingName": "general Quechua Device",
-        "manufacturer": "Quechua",
-        "brand": "Quechua",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general quechua device": {
+    "deviceName": "general Quechua Device",
+    "marketingName": "general Quechua Device",
+    "manufacturer": "Quechua",
+    "brand": "Quechua",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "quechua phone 5": {
-        "deviceName": "Phone 5",
-        "marketingName": "Phone 5",
-        "manufacturer": "Quechua",
-        "brand": "Quechua",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 840,
-            "touch": true,
-            "type": "Custom 480x840",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "quechua phone 5": {
+    "deviceName": "Phone 5",
+    "marketingName": "Phone 5",
+    "manufacturer": "Quechua",
+    "brand": "Quechua",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 840,
+      "touch": true,
+      "type": "Custom 480x840",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general hdc device": {
-        "deviceName": "general HDC Device",
-        "marketingName": "general HDC Device",
-        "manufacturer": "Hdc",
-        "brand": "Hdc",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general hdc device": {
+    "deviceName": "general HDC Device",
+    "marketingName": "general HDC Device",
+    "manufacturer": "Hdc",
+    "brand": "Hdc",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "hdc i9300": {
-        "deviceName": "i9300",
-        "marketingName": "Galaxy S3 EX",
-        "manufacturer": "Hdc",
-        "brand": "Hdc",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hdc i9300": {
+    "deviceName": "i9300",
+    "marketingName": "Galaxy S3 EX",
+    "manufacturer": "Hdc",
+    "brand": "Hdc",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

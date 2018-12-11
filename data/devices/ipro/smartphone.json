@@ -1,48 +1,50 @@
 {
-    "general ipro device": {
-        "deviceName": "general IPRO Device",
-        "marketingName": "general IPRO Device",
-        "manufacturer": "IPRO",
-        "brand": "IPRO",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ipro device": {
+    "deviceName": "general IPRO Device",
+    "marketingName": "general IPRO Device",
+    "manufacturer": "IPRO",
+    "brand": "IPRO",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ipro sense golly": {
-        "deviceName": "Sense Golly",
-        "marketingName": "Sense Golly",
-        "manufacturer": "IPRO",
-        "brand": "IPRO",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ipro sense golly": {
+    "deviceName": "Sense Golly",
+    "marketingName": "Sense Golly",
+    "manufacturer": "IPRO",
+    "brand": "IPRO",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

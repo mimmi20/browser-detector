@@ -1,48 +1,50 @@
 {
-    "general maxx device": {
-        "deviceName": "general Maxx Device",
-        "marketingName": "general Maxx Device",
-        "manufacturer": "Maxx",
-        "brand": "Maxx",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general maxx device": {
+    "deviceName": "general Maxx Device",
+    "marketingName": "general Maxx Device",
+    "manufacturer": "Maxx",
+    "brand": "Maxx",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "maxx ax5 duo": {
-        "deviceName": "AX5 Duo",
-        "marketingName": "AX5 Duo",
-        "manufacturer": "Maxx",
-        "brand": "Maxx",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "maxx ax5 duo": {
+    "deviceName": "AX5 Duo",
+    "marketingName": "AX5 Duo",
+    "manufacturer": "Maxx",
+    "brand": "Maxx",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

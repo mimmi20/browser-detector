@@ -1,48 +1,50 @@
 {
-    "general dex device": {
-        "deviceName": "general DEX Device",
-        "marketingName": "general DEX Device",
-        "manufacturer": "Dex",
-        "brand": "Dex",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general dex device": {
+    "deviceName": "general DEX Device",
+    "marketingName": "general DEX Device",
+    "manufacturer": "Dex",
+    "brand": "Dex",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "dex ip1020": {
-        "deviceName": "iP1020",
-        "marketingName": "iP1020",
-        "manufacturer": "Dex",
-        "brand": "Dex",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dex ip1020": {
+    "deviceName": "iP1020",
+    "marketingName": "iP1020",
+    "manufacturer": "Dex",
+    "brand": "Dex",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general velocity-micro device": {
-        "deviceName": "general Velocity Micro Device",
-        "marketingName": "general Velocity Micro Device",
-        "manufacturer": "VelocityMicro",
-        "brand": "VelocityMicro",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general velocity-micro device": {
+    "deviceName": "general Velocity Micro Device",
+    "marketingName": "general Velocity Micro Device",
+    "manufacturer": "VelocityMicro",
+    "brand": "VelocityMicro",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "velocity-micro t408": {
-        "deviceName": "Cruz",
-        "marketingName": "T408",
-        "manufacturer": "VelocityMicro",
-        "brand": "VelocityMicro",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 600,
-            "touch": true,
-            "type": "SVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "velocity-micro t408": {
+    "deviceName": "Cruz",
+    "marketingName": "T408",
+    "manufacturer": "VelocityMicro",
+    "brand": "VelocityMicro",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "type": "SVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

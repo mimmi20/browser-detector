@@ -1,119 +1,124 @@
 {
-    "general simvalley device": {
-        "deviceName": "general Simvalley Device",
-        "marketingName": "general Simvalley Device",
-        "manufacturer": "Simvalley",
-        "brand": "Simvalley",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general simvalley device": {
+    "deviceName": "general Simvalley Device",
+    "marketingName": "general Simvalley Device",
+    "manufacturer": "Simvalley",
+    "brand": "Simvalley",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "simvalley spt-940": {
-        "deviceName": "SPT-940",
-        "marketingName": "SPT-940",
-        "manufacturer": "Simvalley",
-        "brand": "Simvalley",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "simvalley spx-28": {
-        "deviceName": "SPX-28",
-        "marketingName": "SPX-28",
-        "manufacturer": "Simvalley",
-        "brand": "Simvalley",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "simvalley spt-940": {
+    "deviceName": "SPT-940",
+    "marketingName": "SPT-940",
+    "manufacturer": "Simvalley",
+    "brand": "Simvalley",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "simvalley spx-5": {
-        "deviceName": "SPX-5",
-        "marketingName": "SPX-5",
-        "manufacturer": "Simvalley",
-        "brand": "Simvalley",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "simvalley spx-5 3g": {
-        "deviceName": "SPX-5 3G",
-        "marketingName": "SPX-5 3G",
-        "manufacturer": "Simvalley",
-        "brand": "Simvalley",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "simvalley spx-28": {
+    "deviceName": "SPX-28",
+    "marketingName": "SPX-28",
+    "manufacturer": "Simvalley",
+    "brand": "Simvalley",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "simvalley spx-5": {
+    "deviceName": "SPX-5",
+    "marketingName": "SPX-5",
+    "manufacturer": "Simvalley",
+    "brand": "Simvalley",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "simvalley spx-5 3g": {
+    "deviceName": "SPX-5 3G",
+    "marketingName": "SPX-5 3G",
+    "manufacturer": "Simvalley",
+    "brand": "Simvalley",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

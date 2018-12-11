@@ -1,71 +1,74 @@
 {
-    "general yota device": {
-        "deviceName": "general Yota Device",
-        "marketingName": "general Yota Device",
-        "manufacturer": "Yota",
-        "brand": "Yota",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general yota device": {
+    "deviceName": "general Yota Device",
+    "marketingName": "general Yota Device",
+    "manufacturer": "Yota",
+    "brand": "Yota",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "yota yd201": {
-        "deviceName": "YD201",
-        "marketingName": "Yota Phone 2",
-        "manufacturer": "Yota",
-        "brand": "Yota",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "yota yd206": {
-        "deviceName": "YD206",
-        "marketingName": "Yota Phone 2 (Russia)",
-        "manufacturer": "Yota",
-        "brand": "Yota",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yota yd201": {
+    "deviceName": "YD201",
+    "marketingName": "Yota Phone 2",
+    "manufacturer": "Yota",
+    "brand": "Yota",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "yota yd206": {
+    "deviceName": "YD206",
+    "marketingName": "Yota Phone 2 (Russia)",
+    "manufacturer": "Yota",
+    "brand": "Yota",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

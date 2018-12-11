@@ -1,71 +1,74 @@
 {
-    "general twinovo device": {
-        "deviceName": "general Twinovo Device",
-        "marketingName": "general Twinovo Device",
-        "manufacturer": "Twinovo",
-        "brand": "Twinovo",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general twinovo device": {
+    "deviceName": "general Twinovo Device",
+    "marketingName": "general Twinovo Device",
+    "manufacturer": "Twinovo",
+    "brand": "Twinovo",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "twinovo t108": {
-        "deviceName": "T108",
-        "marketingName": "T108",
-        "manufacturer": "Twinovo",
-        "brand": "Twinovo",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "twinovo t118": {
-        "deviceName": "T118",
-        "marketingName": "T118",
-        "manufacturer": "Twinovo",
-        "brand": "Twinovo",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "twinovo t108": {
+    "deviceName": "T108",
+    "marketingName": "T108",
+    "manufacturer": "Twinovo",
+    "brand": "Twinovo",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "twinovo t118": {
+    "deviceName": "T118",
+    "marketingName": "T118",
+    "manufacturer": "Twinovo",
+    "brand": "Twinovo",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

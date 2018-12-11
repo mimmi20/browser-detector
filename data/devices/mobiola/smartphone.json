@@ -1,48 +1,50 @@
 {
-    "general mobiola device": {
-        "deviceName": "general Mobiola Device",
-        "marketingName": "general Mobiola Device",
-        "manufacturer": "Mobiola",
-        "brand": "Mobiola",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general mobiola device": {
+    "deviceName": "general Mobiola Device",
+    "marketingName": "general Mobiola Device",
+    "manufacturer": "Mobiola",
+    "brand": "Mobiola",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "mobiola ms55l1": {
-        "deviceName": "MS55L1",
-        "marketingName": "Gaia",
-        "manufacturer": "Mobiola",
-        "brand": "Mobiola",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "mobiola ms55l1": {
+    "deviceName": "MS55L1",
+    "marketingName": "Gaia",
+    "manufacturer": "Mobiola",
+    "brand": "Mobiola",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

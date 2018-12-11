@@ -1,48 +1,50 @@
 {
-    "general ark device": {
-        "deviceName": "general ARK Device",
-        "marketingName": "general ARK Device",
-        "manufacturer": "Ark",
-        "brand": "Ark",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ark device": {
+    "deviceName": "general ARK Device",
+    "marketingName": "general ARK Device",
+    "manufacturer": "Ark",
+    "brand": "Ark",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ark benefit m3s": {
-        "deviceName": "Benefit M3S",
-        "marketingName": "Benefit M3S",
-        "manufacturer": "Ark",
-        "brand": "Ark",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ark benefit m3s": {
+    "deviceName": "Benefit M3S",
+    "marketingName": "Benefit M3S",
+    "manufacturer": "Ark",
+    "brand": "Ark",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

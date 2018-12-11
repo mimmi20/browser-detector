@@ -1,48 +1,50 @@
 {
-    "dns airtab p970g": {
-        "deviceName": "AirTab P970g",
-        "marketingName": "AirTab P970g",
-        "manufacturer": "Dns",
-        "brand": "Dns",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "dns airtab p970g": {
+    "deviceName": "AirTab P970g",
+    "marketingName": "AirTab P970g",
+    "manufacturer": "Dns",
+    "brand": "Dns",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "dns airtab pf7001": {
-        "deviceName": "AirTab PF7001",
-        "marketingName": "AirTab PF7001",
-        "manufacturer": "Dns",
-        "brand": "Dns",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dns airtab pf7001": {
+    "deviceName": "AirTab PF7001",
+    "marketingName": "AirTab PF7001",
+    "manufacturer": "Dns",
+    "brand": "Dns",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

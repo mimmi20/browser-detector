@@ -1,48 +1,50 @@
 {
-    "general primepad device": {
-        "deviceName": "general Primepad Device",
-        "marketingName": "general Primepad Device",
-        "manufacturer": "Primepad",
-        "brand": "Primepad",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general primepad device": {
+    "deviceName": "general Primepad Device",
+    "marketingName": "general Primepad Device",
+    "manufacturer": "Primepad",
+    "brand": "Primepad",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "primepad pd-3127": {
-        "deviceName": "PD-3127",
-        "marketingName": "PD-3127",
-        "manufacturer": "Primepad",
-        "brand": "Primepad",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "primepad pd-3127": {
+    "deviceName": "PD-3127",
+    "marketingName": "PD-3127",
+    "manufacturer": "Primepad",
+    "brand": "Primepad",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

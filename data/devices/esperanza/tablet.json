@@ -1,48 +1,50 @@
 {
-    "general esperanza device": {
-        "deviceName": "general Esperanza Device",
-        "marketingName": "general Esperanza Device",
-        "manufacturer": "Esperanza",
-        "brand": "Esperanza",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general esperanza device": {
+    "deviceName": "general Esperanza Device",
+    "marketingName": "general Esperanza Device",
+    "manufacturer": "Esperanza",
+    "brand": "Esperanza",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "esperanza etb106hd": {
-        "deviceName": "ETB106HD",
-        "marketingName": "Dream Tab 7 AX2 HD",
-        "manufacturer": "Esperanza",
-        "brand": "Esperanza",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "esperanza etb106hd": {
+    "deviceName": "ETB106HD",
+    "marketingName": "Dream Tab 7 AX2 HD",
+    "manufacturer": "Esperanza",
+    "brand": "Esperanza",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

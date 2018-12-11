@@ -1,94 +1,98 @@
 {
-    "general allwinner device": {
-        "deviceName": "general AllWinner Device",
-        "marketingName": "general AllWinner Device",
-        "manufacturer": "AllWinner",
-        "brand": "AllWinner",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general allwinner device": {
+    "deviceName": "general AllWinner Device",
+    "marketingName": "general AllWinner Device",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "allwinner a10": {
-        "deviceName": "A10",
-        "marketingName": "A10",
-        "manufacturer": "AllWinner",
-        "brand": "AllWinner",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "allwinner mp907c": {
-        "deviceName": "MP907C",
-        "marketingName": "MP907C",
-        "manufacturer": "AllWinner",
-        "brand": "AllWinner",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allwinner a10": {
+    "deviceName": "A10",
+    "marketingName": "A10",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "allwinner tablet": {
-        "deviceName": "Tablet",
-        "marketingName": "Tablet",
-        "manufacturer": "AllWinner",
-        "brand": "AllWinner",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allwinner mp907c": {
+    "deviceName": "MP907C",
+    "marketingName": "MP907C",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "allwinner tablet": {
+    "deviceName": "Tablet",
+    "marketingName": "Tablet",
+    "manufacturer": "AllWinner",
+    "brand": "AllWinner",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

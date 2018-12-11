@@ -1,48 +1,50 @@
 {
-    "concorde tab play": {
-        "deviceName": "Tab Play",
-        "marketingName": "Tab Play",
-        "manufacturer": "ConCorde",
-        "brand": "ConCorde",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "concorde tab play": {
+    "deviceName": "Tab Play",
+    "marketingName": "Tab Play",
+    "manufacturer": "ConCorde",
+    "brand": "ConCorde",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
     },
-    "concorde tab t10": {
-        "deviceName": "Tab T10",
-        "marketingName": "Tab T10",
-        "manufacturer": "ConCorde",
-        "brand": "ConCorde",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "concorde tab t10": {
+    "deviceName": "Tab T10",
+    "marketingName": "Tab T10",
+    "manufacturer": "ConCorde",
+    "brand": "ConCorde",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general trekstor device": {
-        "deviceName": "general TrekStor Device",
-        "marketingName": "general TrekStor Device",
-        "manufacturer": "TrekStor",
-        "brand": "TrekStor",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general trekstor device": {
+    "deviceName": "general TrekStor Device",
+    "marketingName": "general TrekStor Device",
+    "manufacturer": "TrekStor",
+    "brand": "TrekStor",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "trekstor winphone 4.7 hd": {
-        "deviceName": "WinPhone 4.7 HD",
-        "marketingName": "WinPhone 4.7 HD",
-        "manufacturer": "TrekStor",
-        "brand": "TrekStor",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "windows phone"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "trekstor winphone 4.7 hd": {
+    "deviceName": "WinPhone 4.7 HD",
+    "marketingName": "WinPhone 4.7 HD",
+    "manufacturer": "TrekStor",
+    "brand": "TrekStor",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  }
 }

@@ -1,50 +1,52 @@
 {
-    "general 4g-systems device": {
-        "deviceName": "general  Systems Device",
-        "marketingName": "general  Systems Device",
-        "manufacturer": "4G Systems",
-        "brand": "4G Systems",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": null
+  "general 4g-systems device": {
+    "deviceName": "general  Systems Device",
+    "marketingName": "general  Systems Device",
+    "manufacturer": "4G Systems",
+    "brand": "4G Systems",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "4g-systems xst2": {
-        "deviceName": "XST2",
-        "marketingName": "oneTab XST2",
-        "manufacturer": "4G Systems",
-        "brand": "4G Systems",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": null,
+    "variants": []
+  },
+  "4g-systems xst2": {
+    "deviceName": "XST2",
+    "marketingName": "oneTab XST2",
+    "manufacturer": "4G Systems",
+    "brand": "4G Systems",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

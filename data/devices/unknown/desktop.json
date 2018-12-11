@@ -1,71 +1,74 @@
 {
-    "general desktop": {
-        "deviceName": "general Desktop",
-        "marketingName": "general Desktop",
-        "manufacturer": "Unknown",
-        "brand": "Unknown",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general desktop": {
+    "deviceName": "general Desktop",
+    "marketingName": "general Desktop",
+    "manufacturer": "Unknown",
+    "brand": "Unknown",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "linux desktop": {
-        "deviceName": "Linux Desktop",
-        "marketingName": "Linux Desktop",
-        "manufacturer": "Unknown",
-        "brand": "Unknown",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "windows desktop": {
-        "deviceName": "Windows Desktop",
-        "marketingName": "Windows Desktop",
-        "manufacturer": "Unknown",
-        "brand": "Unknown",
-        "type": "desktop",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "linux desktop": {
+    "deviceName": "Linux Desktop",
+    "marketingName": "Linux Desktop",
+    "manufacturer": "Unknown",
+    "brand": "Unknown",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "windows desktop": {
+    "deviceName": "Windows Desktop",
+    "marketingName": "Windows Desktop",
+    "manufacturer": "Unknown",
+    "brand": "Unknown",
+    "type": "desktop",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

@@ -1,48 +1,50 @@
 {
-    "general wieppo device": {
-        "deviceName": "general Wieppo Device",
-        "marketingName": "general Wieppo Device",
-        "manufacturer": "Wieppo",
-        "brand": "Wieppo",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general wieppo device": {
+    "deviceName": "general Wieppo Device",
+    "marketingName": "general Wieppo Device",
+    "manufacturer": "Wieppo",
+    "brand": "Wieppo",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "wieppo s6 lite": {
-        "deviceName": "S6 Lite",
-        "marketingName": "S6 Lite",
-        "manufacturer": "Wieppo",
-        "brand": "Wieppo",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "wieppo s6 lite": {
+    "deviceName": "S6 Lite",
+    "marketingName": "S6 Lite",
+    "manufacturer": "Wieppo",
+    "brand": "Wieppo",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

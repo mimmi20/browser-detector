@@ -1,48 +1,50 @@
 {
-    "general artel device": {
-        "deviceName": "general Artel Device",
-        "marketingName": "general Artel Device",
-        "manufacturer": "Artel",
-        "brand": "Artel",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general artel device": {
+    "deviceName": "general Artel Device",
+    "marketingName": "general Artel Device",
+    "manufacturer": "Artel",
+    "brand": "Artel",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "artel adi5s": {
-        "deviceName": "Adi5S",
-        "marketingName": "Adi5S",
-        "manufacturer": "Artel",
-        "brand": "Artel",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "artel adi5s": {
+    "deviceName": "Adi5S",
+    "marketingName": "Adi5S",
+    "manufacturer": "Artel",
+    "brand": "Artel",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

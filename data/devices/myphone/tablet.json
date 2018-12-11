@@ -1,73 +1,76 @@
 {
-    "myphone mypad 2": {
-        "deviceName": "MyPad 2",
-        "marketingName": "MyPad 2",
-        "manufacturer": "myPhone",
-        "brand": "myPhone",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "myphone mypad 2": {
+    "deviceName": "MyPad 2",
+    "marketingName": "MyPad 2",
+    "manufacturer": "myPhone",
+    "brand": "myPhone",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "myphone mytab 10 ii": {
-        "deviceName": "MyTab 10 II",
-        "marketingName": "MyTab 10 II",
-        "manufacturer": "myPhone",
-        "brand": "myPhone",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "myphone mytab mini 3g": {
-        "deviceName": "MyTab Mini 3G",
-        "marketingName": "MyTab Mini 3G",
-        "manufacturer": "myPhone",
-        "brand": "myPhone",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "myphone mytab 10 ii": {
+    "deviceName": "MyTab 10 II",
+    "marketingName": "MyTab 10 II",
+    "manufacturer": "myPhone",
+    "brand": "myPhone",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "myphone mytab mini 3g": {
+    "deviceName": "MyTab Mini 3G",
+    "marketingName": "MyTab Mini 3G",
+    "manufacturer": "myPhone",
+    "brand": "myPhone",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

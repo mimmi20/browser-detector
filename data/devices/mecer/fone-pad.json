@@ -1,48 +1,50 @@
 {
-    "mecer 800p71d": {
-        "deviceName": "800P71D",
-        "marketingName": "800P71D",
-        "manufacturer": "Mecer",
-        "brand": "Mecer",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1080,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "mecer 800p71d": {
+    "deviceName": "800P71D",
+    "marketingName": "800P71D",
+    "manufacturer": "Mecer",
+    "brand": "Mecer",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "mecer a1013r": {
-        "deviceName": "A1013R",
-        "marketingName": "Xpress Smartlife 10",
-        "manufacturer": "Mecer",
-        "brand": "Mecer",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "mecer a1013r": {
+    "deviceName": "A1013R",
+    "marketingName": "Xpress Smartlife 10",
+    "manufacturer": "Mecer",
+    "brand": "Mecer",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

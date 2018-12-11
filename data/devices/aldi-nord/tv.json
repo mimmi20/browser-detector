@@ -1,48 +1,50 @@
 {
-    "general aldinord tv": {
-        "deviceName": "general Aldi-Nord TV",
-        "marketingName": "general Aldi-Nord TV",
-        "manufacturer": "Aldi-Nord",
-        "brand": "Aldi-Nord",
-        "type": "tv",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "general aldinord tv": {
+    "deviceName": "general Aldi-Nord TV",
+    "marketingName": "general Aldi-Nord TV",
+    "manufacturer": "Aldi-Nord",
+    "brand": "Aldi-Nord",
+    "type": "tv",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "aldinord mb120": {
-        "deviceName": "MB120",
-        "marketingName": "MB120",
-        "manufacturer": "Aldi-Nord",
-        "brand": "Aldi-Nord",
-        "type": "tv",
-        "display": {
-            "width": 1920,
-            "height": 1080,
-            "touch": false,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "aldinord mb120": {
+    "deviceName": "MB120",
+    "marketingName": "MB120",
+    "manufacturer": "Aldi-Nord",
+    "brand": "Aldi-Nord",
+    "type": "tv",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

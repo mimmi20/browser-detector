@@ -1,853 +1,890 @@
 {
-    "general asus device": {
-        "deviceName": "general Asus Device",
-        "marketingName": "general Asus Device",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general asus device": {
+    "deviceName": "general Asus Device",
+    "marketingName": "general Asus Device",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "asus eee pad tf201": {
-        "deviceName": "Eee Pad TF201",
-        "marketingName": "Transformer Prime",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus k007": {
-        "deviceName": "K007",
-        "marketingName": "K007",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus sl101": {
+    "deviceName": "SL101",
+    "marketingName": "Eee Pad SL101 Slider",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus k00c": {
-        "deviceName": "K00C",
-        "marketingName": "Transformer Pad TF701T",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus k00e": {
-        "deviceName": "K00E",
-        "marketingName": "FonePad 7",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus tf101": {
+    "deviceName": "TF101",
+    "marketingName": "Eee Pad Transformer TF101",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus k00f": {
-        "deviceName": "K00F",
-        "marketingName": "Memo Pad 10 ME102A",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus k00l": {
-        "deviceName": "K00L",
-        "marketingName": "Memo Pad 8 ME180A",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k00e": {
+    "deviceName": "K00E",
+    "marketingName": "FonePad 7",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus k00u": {
-        "deviceName": "K00U",
-        "marketingName": "Memo Pad HD 7",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus k00z": {
-        "deviceName": "K00Z",
-        "marketingName": "Fonepad 7  ME175CG",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 2,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k00z": {
+    "deviceName": "K00Z",
+    "marketingName": "Fonepad 7  ME175CG",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus k010": {
-        "deviceName": "K010",
-        "marketingName": "Transformer Pad TF103C",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus k011": {
-        "deviceName": "K011",
-        "marketingName": "Memo Pad 8 ME181C",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus me371mg": {
+    "deviceName": "ME371MG",
+    "marketingName": "Fonepad ME371MG",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus k012": {
-        "deviceName": "K012",
-        "marketingName": "K012",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus k013": {
-        "deviceName": "K013",
-        "marketingName": "Memo Pad 7 ME176C",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k007": {
+    "deviceName": "K007",
+    "marketingName": "K007",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "asus k017": {
-        "deviceName": "K017",
-        "marketingName": "Memo Pad 7",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus k01a": {
-        "deviceName": "K01A",
-        "marketingName": "Memo Pad 7",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k012": {
+    "deviceName": "K012",
+    "marketingName": "K012",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "asus k01b": {
-        "deviceName": "K01B",
-        "marketingName": "K01B",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus k01e": {
-        "deviceName": "K01E",
-        "marketingName": "Memo Pad ME103K",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k01b": {
+    "deviceName": "K01B",
+    "marketingName": "K01B",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "asus me172v": {
-        "deviceName": "ME172V",
-        "marketingName": "Memo Pad ME172V",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus me173x": {
-        "deviceName": "ME173X",
-        "marketingName": "Memo Pad HD7",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k00f": {
+    "deviceName": "K00F",
+    "marketingName": "Memo Pad 10 ME102A",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus me301t": {
-        "deviceName": "ME301T",
-        "marketingName": "Memo Pad Smart 10",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus me302c": {
-        "deviceName": "ME302C",
-        "marketingName": "Memo Pad FHD 10",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k017": {
+    "deviceName": "K017",
+    "marketingName": "Memo Pad 7",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "asus me302kl": {
-        "deviceName": "ME302KL",
-        "marketingName": "Memo Pad FHD 10",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus me371mg": {
-        "deviceName": "ME371MG",
-        "marketingName": "Fonepad ME371MG",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k01a": {
+    "deviceName": "K01A",
+    "marketingName": "Memo Pad 7",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "asus p00a": {
-        "deviceName": "P00A",
-        "marketingName": "Zenpad 8.0 Z380M",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus p00c": {
-        "deviceName": "P00C",
-        "marketingName": "ZenPad 10",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k013": {
+    "deviceName": "K013",
+    "marketingName": "Memo Pad 7 ME176C",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus p00l": {
-        "deviceName": "P00L",
-        "marketingName": "ZenPad 10 Z301M",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus p022": {
-        "deviceName": "P022",
-        "marketingName": "Zenpad 8.0 Z380C",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k00l": {
+    "deviceName": "K00L",
+    "marketingName": "Memo Pad 8 ME180A",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus p023": {
-        "deviceName": "P023",
-        "marketingName": "ZenPad 10",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus p027": {
-        "deviceName": "P027",
-        "marketingName": "ZenPad 3S 10 Z500M",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "asus k011": {
+    "deviceName": "K011",
+    "marketingName": "Memo Pad 8 ME181C",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus p1801-t": {
-        "deviceName": "P1801-T",
-        "marketingName": "Tablet AiO",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1080,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus sl101": {
-        "deviceName": "SL101",
-        "marketingName": "Eee Pad SL101 Slider",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus me302c": {
+    "deviceName": "ME302C",
+    "marketingName": "Memo Pad FHD 10",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "asus tf101": {
-        "deviceName": "TF101",
-        "marketingName": "Eee Pad Transformer TF101",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus tf300t": {
-        "deviceName": "TF300T",
-        "marketingName": "Transformer Pad TF300T",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus me302kl": {
+    "deviceName": "ME302KL",
+    "marketingName": "Memo Pad FHD 10",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "asus tf300tg": {
-        "deviceName": "TF300TG",
-        "marketingName": "Transformer Pad TF300TG",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus tf300tl": {
-        "deviceName": "TF300TL",
-        "marketingName": "Transformer Pad TF300TL",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k00u": {
+    "deviceName": "K00U",
+    "marketingName": "Memo Pad HD 7",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "asus tf700t": {
-        "deviceName": "TF700T",
-        "marketingName": "Transformer Pad TF700T",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "asus tx201la": {
-        "deviceName": "TX201LA",
-        "marketingName": "Transformer Book Trio",
-        "manufacturer": "Asus",
-        "brand": "Asus",
-        "type": "tablet",
-        "display": {
-            "width": 1920,
-            "height": 1080,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "asus me173x": {
+    "deviceName": "ME173X",
+    "marketingName": "Memo Pad HD7",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k01e": {
+    "deviceName": "K01E",
+    "marketingName": "Memo Pad ME103K",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus me172v": {
+    "deviceName": "ME172V",
+    "marketingName": "Memo Pad ME172V",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus me301t": {
+    "deviceName": "ME301T",
+    "marketingName": "Memo Pad Smart 10",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus p1801-t": {
+    "deviceName": "P1801-T",
+    "marketingName": "Tablet AiO",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus tx201la": {
+    "deviceName": "TX201LA",
+    "marketingName": "Transformer Book Trio",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "asus k010": {
+    "deviceName": "K010",
+    "marketingName": "Transformer Pad TF103C",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus tf300t": {
+    "deviceName": "TF300T",
+    "marketingName": "Transformer Pad TF300T",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus tf300tg": {
+    "deviceName": "TF300TG",
+    "marketingName": "Transformer Pad TF300TG",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus tf300tl": {
+    "deviceName": "TF300TL",
+    "marketingName": "Transformer Pad TF300TL",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus tf700t": {
+    "deviceName": "TF700T",
+    "marketingName": "Transformer Pad TF700T",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus k00c": {
+    "deviceName": "K00C",
+    "marketingName": "Transformer Pad TF701T",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus eee pad tf201": {
+    "deviceName": "Eee Pad TF201",
+    "marketingName": "Transformer Prime",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus p00c": {
+    "deviceName": "P00C",
+    "marketingName": "ZenPad 10",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus p023": {
+    "deviceName": "P023",
+    "marketingName": "ZenPad 10",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus p00l": {
+    "deviceName": "P00L",
+    "marketingName": "ZenPad 10 Z301M",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "asus p027": {
+    "deviceName": "P027",
+    "marketingName": "ZenPad 3S 10 Z500M",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus p022": {
+    "deviceName": "P022",
+    "marketingName": "Zenpad 8.0 Z380C",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "asus p00a": {
+    "deviceName": "P00A",
+    "marketingName": "Zenpad 8.0 Z380M",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

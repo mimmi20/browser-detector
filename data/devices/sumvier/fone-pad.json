@@ -1,50 +1,52 @@
 {
-    "general sumvier device": {
-        "deviceName": "general Sumvier Device",
-        "marketingName": "general Sumvier Device",
-        "manufacturer": "Sumvier",
-        "brand": "Sumvier",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general sumvier device": {
+    "deviceName": "general Sumvier Device",
+    "marketingName": "general Sumvier Device",
+    "manufacturer": "Sumvier",
+    "brand": "Sumvier",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "sumvier m92d-3g": {
-        "deviceName": "M92D-3G",
-        "marketingName": "M92D-3G",
-        "manufacturer": "Sumvier",
-        "brand": "Sumvier",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "sumvier m92d-3g": {
+    "deviceName": "M92D-3G",
+    "marketingName": "M92D-3G",
+    "manufacturer": "Sumvier",
+    "brand": "Sumvier",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

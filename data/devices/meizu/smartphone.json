@@ -1,669 +1,698 @@
 {
-    "general meizu device": {
-        "deviceName": "general Meizu Device",
-        "marketingName": "general Meizu Device",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general meizu device": {
+    "deviceName": "general Meizu Device",
+    "marketingName": "general Meizu Device",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "meizu m031": {
-        "deviceName": "M031",
-        "marketingName": "MX Dual-Core",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 960,
-            "touch": true,
-            "type": "DVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m032": {
-        "deviceName": "M032",
-        "marketingName": "MX 4-core",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 960,
-            "touch": true,
-            "type": "DVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m1 e": {
+    "deviceName": "M1 E",
+    "marketingName": "M1 E",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "meizu m040": {
-        "deviceName": "M040",
-        "marketingName": "MX2",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 800,
-            "height": 1280,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m045": {
-        "deviceName": "M045",
-        "marketingName": "MX2",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 800,
-            "height": 1280,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m1 metal": {
+    "deviceName": "M1 Metal",
+    "marketingName": "M1 Metal",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "meizu m1 e": {
-        "deviceName": "M1 E",
-        "marketingName": "M1 E",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m1 metal": {
-        "deviceName": "M1 Metal",
-        "marketingName": "M1 Metal",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m1 note": {
+    "deviceName": "M1 Note",
+    "marketingName": "M1 Note",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "meizu m1 note": {
-        "deviceName": "M1 Note",
-        "marketingName": "M1 Note",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m2": {
-        "deviceName": "M2",
-        "marketingName": "M2",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m2": {
+    "deviceName": "M2",
+    "marketingName": "M2",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "meizu m2 e": {
-        "deviceName": "M2 E",
-        "marketingName": "M2 E",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m2 note": {
-        "deviceName": "M571C",
-        "marketingName": "M2 Note",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m578c": {
+    "deviceName": "M578C",
+    "marketingName": "M2",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "meizu m3 note": {
-        "deviceName": "M3 Note",
-        "marketingName": "M3 Note",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m351": {
-        "deviceName": "M351",
-        "marketingName": "MX3",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1800,
-            "touch": true,
-            "type": "Custom 1080x1800",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m2 e": {
+    "deviceName": "M2 E",
+    "marketingName": "M2 E",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "meizu m353": {
-        "deviceName": "M353",
-        "marketingName": "MX3",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1800,
-            "touch": true,
-            "type": "Custom 1080x1800",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m355": {
-        "deviceName": "M355",
-        "marketingName": "MX3",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1800,
-            "touch": true,
-            "type": "Custom 1080x1800",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m2 note": {
+    "deviceName": "M571C",
+    "marketingName": "M2 Note",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "meizu m356": {
-        "deviceName": "M356",
-        "marketingName": "MX3",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1800,
-            "touch": true,
-            "type": "Custom 1080x1800",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m3s": {
-        "deviceName": "M3s",
-        "marketingName": "M3s",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m3 note": {
+    "deviceName": "M3 Note",
+    "marketingName": "M3 Note",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "meizu m3x": {
-        "deviceName": "M3x",
-        "marketingName": "M3x",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m578c": {
-        "deviceName": "M578C",
-        "marketingName": "M2",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m3s": {
+    "deviceName": "M3s",
+    "marketingName": "M3s",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "meizu m6 note": {
-        "deviceName": "M6 Note",
-        "marketingName": "M6 Note",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu m9": {
-        "deviceName": "M9",
-        "marketingName": "M9",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 640,
-            "height": 960,
-            "touch": true,
-            "type": "DVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m3x": {
+    "deviceName": "M3x",
+    "marketingName": "M3x",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "meizu mx2": {
-        "deviceName": "MX2",
-        "marketingName": "MX2",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 800,
-            "height": 1280,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu mx4": {
-        "deviceName": "MX4",
-        "marketingName": "MX4",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1152,
-            "height": 1920,
-            "touch": true,
-            "type": "Custom 1152x1920",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m6 note": {
+    "deviceName": "M6 Note",
+    "marketingName": "M6 Note",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
     },
-    "meizu mx4 pro": {
-        "deviceName": "MX4 Pro",
-        "marketingName": "MX4 Pro",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1536,
-            "height": 2560,
-            "touch": true,
-            "type": "Custom 1536x2560",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu mx5": {
-        "deviceName": "MX5",
-        "marketingName": "MX5",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m9": {
+    "deviceName": "M9",
+    "marketingName": "M9",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": "DVGA",
+      "size": null
     },
-    "meizu pro 5": {
-        "deviceName": "PRO 5",
-        "marketingName": "PRO 5",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu pro 6": {
-        "deviceName": "Pro 6",
-        "marketingName": "Pro 6",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m032": {
+    "deviceName": "M032",
+    "marketingName": "MX 4-core",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": "DVGA",
+      "size": null
     },
-    "meizu pro 7": {
-        "deviceName": "Pro 7",
-        "marketingName": "Pro 7",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "meizu pro 7-h": {
-        "deviceName": "Pro 7-H",
-        "marketingName": "Pro 7-H",
-        "manufacturer": "Meizu",
-        "brand": "Meizu",
-        "type": "smartphone",
-        "display": {
-            "width": 1080,
-            "height": 1920,
-            "touch": true,
-            "type": "FHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m031": {
+    "deviceName": "M031",
+    "marketingName": "MX Dual-Core",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 640,
+      "height": 960,
+      "touch": true,
+      "type": "DVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m040": {
+    "deviceName": "M040",
+    "marketingName": "MX2",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 800,
+      "height": 1280,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m045": {
+    "deviceName": "M045",
+    "marketingName": "MX2",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 800,
+      "height": 1280,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu mx2": {
+    "deviceName": "MX2",
+    "marketingName": "MX2",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 800,
+      "height": 1280,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m351": {
+    "deviceName": "M351",
+    "marketingName": "MX3",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1800,
+      "touch": true,
+      "type": "Custom 1080x1800",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m353": {
+    "deviceName": "M353",
+    "marketingName": "MX3",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1800,
+      "touch": true,
+      "type": "Custom 1080x1800",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m355": {
+    "deviceName": "M355",
+    "marketingName": "MX3",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1800,
+      "touch": true,
+      "type": "Custom 1080x1800",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu m356": {
+    "deviceName": "M356",
+    "marketingName": "MX3",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1800,
+      "touch": true,
+      "type": "Custom 1080x1800",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu mx4": {
+    "deviceName": "MX4",
+    "marketingName": "MX4",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1152,
+      "height": 1920,
+      "touch": true,
+      "type": "Custom 1152x1920",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu mx4 pro": {
+    "deviceName": "MX4 Pro",
+    "marketingName": "MX4 Pro",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1536,
+      "height": 2560,
+      "touch": true,
+      "type": "Custom 1536x2560",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu mx5": {
+    "deviceName": "MX5",
+    "marketingName": "MX5",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu pro 5": {
+    "deviceName": "PRO 5",
+    "marketingName": "PRO 5",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu pro 6": {
+    "deviceName": "Pro 6",
+    "marketingName": "Pro 6",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu pro 7": {
+    "deviceName": "Pro 7",
+    "marketingName": "Pro 7",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "meizu pro 7-h": {
+    "deviceName": "Pro 7-H",
+    "marketingName": "Pro 7-H",
+    "manufacturer": "Meizu",
+    "brand": "Meizu",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

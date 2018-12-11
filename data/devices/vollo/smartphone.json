@@ -1,48 +1,50 @@
 {
-    "general vollo device": {
-        "deviceName": "general Vollo Device",
-        "marketingName": "general Vollo Device",
-        "manufacturer": "Vollo",
-        "brand": "Vollo",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general vollo device": {
+    "deviceName": "general Vollo Device",
+    "marketingName": "general Vollo Device",
+    "manufacturer": "Vollo",
+    "brand": "Vollo",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "vollo vi86": {
-        "deviceName": "Vi86",
-        "marketingName": "Vi86",
-        "manufacturer": "Vollo",
-        "brand": "Vollo",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "vollo vi86": {
+    "deviceName": "Vi86",
+    "marketingName": "Vi86",
+    "manufacturer": "Vollo",
+    "brand": "Vollo",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

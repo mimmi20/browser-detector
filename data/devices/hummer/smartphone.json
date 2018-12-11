@@ -1,48 +1,50 @@
 {
-    "general hummer device": {
-        "deviceName": "general Hummer Device",
-        "marketingName": "general Hummer Device",
-        "manufacturer": "Hummer",
-        "brand": "Hummer",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general hummer device": {
+    "deviceName": "general Hummer Device",
+    "marketingName": "general Hummer Device",
+    "manufacturer": "Hummer",
+    "brand": "Hummer",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "hummer h1+": {
-        "deviceName": "H1+",
-        "marketingName": "H1+",
-        "manufacturer": "Hummer",
-        "brand": "Hummer",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "hummer h1+": {
+    "deviceName": "H1+",
+    "marketingName": "H1+",
+    "manufacturer": "Hummer",
+    "brand": "Hummer",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

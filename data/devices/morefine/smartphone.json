@@ -1,48 +1,50 @@
 {
-    "general morefine device": {
-        "deviceName": "general MoreFine Device",
-        "marketingName": "general MoreFine Device",
-        "manufacturer": "MoreFine",
-        "brand": "MoreFine",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general morefine device": {
+    "deviceName": "general MoreFine Device",
+    "marketingName": "general MoreFine Device",
+    "manufacturer": "MoreFine",
+    "brand": "MoreFine",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "morefine mo5": {
-        "deviceName": "MO5",
-        "marketingName": "MO5",
-        "manufacturer": "MoreFine",
-        "brand": "MoreFine",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "morefine mo5": {
+    "deviceName": "MO5",
+    "marketingName": "MO5",
+    "manufacturer": "MoreFine",
+    "brand": "MoreFine",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

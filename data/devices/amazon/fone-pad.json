@@ -1,102 +1,106 @@
 {
-    "amazon kfapwa": {
-        "deviceName": "KFAPWA",
-        "marketingName": "Kindle Fire HDX 8.9  (3rd Gen)",
-        "manufacturer": "Amazon",
-        "brand": "Amazon",
-        "type": "fone-pad",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+  "amazon kfsawa": {
+    "deviceName": "KFSAWA",
+    "marketingName": "Fire HDX 8.9  (4th Gen)",
+    "manufacturer": "Amazon",
+    "brand": "Amazon",
+    "type": "fone-pad",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
     },
-    "amazon kfjwa": {
-        "deviceName": "KFJWA",
-        "marketingName": "Kindle Fire HD 8.9  (2nd Gen)",
-        "manufacturer": "Amazon",
-        "brand": "Amazon",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "amazon kfsawa": {
-        "deviceName": "KFSAWA",
-        "marketingName": "Fire HDX 8.9  (4th Gen)",
-        "manufacturer": "Amazon",
-        "brand": "Amazon",
-        "type": "fone-pad",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "amazon kfjwa": {
+    "deviceName": "KFJWA",
+    "marketingName": "Kindle Fire HD 8.9  (2nd Gen)",
+    "manufacturer": "Amazon",
+    "brand": "Amazon",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "amazon kfthwa": {
-        "deviceName": "KFTHWA",
-        "marketingName": "Kindle Fire HDX 7  (3rd Gen)",
-        "manufacturer": "Amazon",
-        "brand": "Amazon",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "amazon kfthwa": {
+    "deviceName": "KFTHWA",
+    "marketingName": "Kindle Fire HDX 7  (3rd Gen)",
+    "manufacturer": "Amazon",
+    "brand": "Amazon",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "amazon kfapwa": {
+    "deviceName": "KFAPWA",
+    "marketingName": "Kindle Fire HDX 8.9  (3rd Gen)",
+    "manufacturer": "Amazon",
+    "brand": "Amazon",
+    "type": "fone-pad",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

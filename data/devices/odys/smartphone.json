@@ -1,27 +1,28 @@
 {
-    "odys neo 6 lte": {
-        "deviceName": "Neo 6",
-        "marketingName": "Neo 6",
-        "manufacturer": "Odys",
-        "brand": "Odys",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
-    }
+  "odys neo 6 lte": {
+    "deviceName": "Neo 6",
+    "marketingName": "Neo 6",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

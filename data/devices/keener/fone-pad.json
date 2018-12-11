@@ -1,48 +1,50 @@
 {
-    "general keener device": {
-        "deviceName": "general Keener Device",
-        "marketingName": "general Keener Device",
-        "manufacturer": "Keener",
-        "brand": "Keener",
-        "type": "fone-pad",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general keener device": {
+    "deviceName": "general Keener Device",
+    "marketingName": "general Keener Device",
+    "manufacturer": "Keener",
+    "brand": "Keener",
+    "type": "fone-pad",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "keener k-8s": {
-        "deviceName": "K-8S",
-        "marketingName": "K-8S",
-        "manufacturer": "Keener",
-        "brand": "Keener",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "keener k-8s": {
+    "deviceName": "K-8S",
+    "marketingName": "K-8S",
+    "manufacturer": "Keener",
+    "brand": "Keener",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

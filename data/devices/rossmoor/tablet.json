@@ -1,48 +1,50 @@
 {
-    "general ross&moor device": {
-        "deviceName": "general Ross&Moor Device",
-        "marketingName": "general Ross&Moor Device",
-        "manufacturer": "RossMoor",
-        "brand": "RossMoor",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general ross&moor device": {
+    "deviceName": "general Ross&Moor Device",
+    "marketingName": "general Ross&Moor Device",
+    "manufacturer": "RossMoor",
+    "brand": "RossMoor",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "ross&moor rm-997": {
-        "deviceName": "RM-997",
-        "marketingName": "RM-997",
-        "manufacturer": "RossMoor",
-        "brand": "RossMoor",
-        "type": "tablet",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ross&moor rm-997": {
+    "deviceName": "RM-997",
+    "marketingName": "RM-997",
+    "manufacturer": "RossMoor",
+    "brand": "RossMoor",
+    "type": "tablet",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

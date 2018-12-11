@@ -1,127 +1,132 @@
 {
-    "trevi tab 10 3g v16": {
-        "deviceName": "Tab 10 3G V16",
-        "marketingName": "Tab 10 3G V16",
-        "manufacturer": "Trevi",
-        "brand": "Trevi",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+  "trevi tab 10 3g v16": {
+    "deviceName": "Tab 10 3G V16",
+    "marketingName": "Tab 10 3G V16",
+    "manufacturer": "Trevi",
+    "brand": "Trevi",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "trevi tab 7 3g v8": {
-        "deviceName": "Tab 7 3G V8",
-        "marketingName": "Tab 7 3G V8",
-        "manufacturer": "Trevi",
-        "brand": "Trevi",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "trevi tab 8 3g v8": {
-        "deviceName": "Tab 8 3G V8",
-        "marketingName": "Tab 8 3G V8",
-        "manufacturer": "Trevi",
-        "brand": "Trevi",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "trevi tab 7 3g v8": {
+    "deviceName": "Tab 7 3G V8",
+    "marketingName": "Tab 7 3G V8",
+    "manufacturer": "Trevi",
+    "brand": "Trevi",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "trevi tab 9 3g": {
-        "deviceName": "Tab 9 3G",
-        "marketingName": "Tab 9 3G",
-        "manufacturer": "Trevi",
-        "brand": "Trevi",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "trevi tab 9 3g v8": {
-        "deviceName": "Tab 9 3G V8",
-        "marketingName": "Tab 9 3G V8",
-        "manufacturer": "Trevi",
-        "brand": "Trevi",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "trevi tab 8 3g v8": {
+    "deviceName": "Tab 8 3G V8",
+    "marketingName": "Tab 8 3G V8",
+    "manufacturer": "Trevi",
+    "brand": "Trevi",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "trevi tab 9 3g": {
+    "deviceName": "Tab 9 3G",
+    "marketingName": "Tab 9 3G",
+    "manufacturer": "Trevi",
+    "brand": "Trevi",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "trevi tab 9 3g v8": {
+    "deviceName": "Tab 9 3G V8",
+    "marketingName": "Tab 9 3G V8",
+    "manufacturer": "Trevi",
+    "brand": "Trevi",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

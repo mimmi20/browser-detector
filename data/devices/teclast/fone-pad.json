@@ -1,52 +1,54 @@
 {
-    "teclast c5j6": {
-        "deviceName": "C5J6",
-        "marketingName": "X98 Air 3G",
-        "manufacturer": "Teclast",
-        "brand": "Teclast",
-        "type": "fone-pad",
-        "display": {
-            "width": 2048,
-            "height": 1536,
-            "touch": true,
-            "type": "QXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+  "teclast m5k8": {
+    "deviceName": "M5K8",
+    "marketingName": "X10 3G",
+    "manufacturer": "Teclast",
+    "brand": "Teclast",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "teclast m5k8": {
-        "deviceName": "M5K8",
-        "marketingName": "X10 3G",
-        "manufacturer": "Teclast",
-        "brand": "Teclast",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "teclast c5j6": {
+    "deviceName": "C5J6",
+    "marketingName": "X98 Air 3G",
+    "manufacturer": "Teclast",
+    "brand": "Teclast",
+    "type": "fone-pad",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "type": "QXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

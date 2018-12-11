@@ -1,71 +1,74 @@
 {
-    "general nuqleo device": {
-        "deviceName": "general Nuqleo Device",
-        "marketingName": "general Nuqleo Device",
-        "manufacturer": "Nuqleo",
-        "brand": "Nuqleo",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general nuqleo device": {
+    "deviceName": "general Nuqleo Device",
+    "marketingName": "general Nuqleo Device",
+    "manufacturer": "Nuqleo",
+    "brand": "Nuqleo",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "nuqleo zaffire 1010": {
-        "deviceName": "Zaffire 1010",
-        "marketingName": "Zaffire 1010",
-        "manufacturer": "Nuqleo",
-        "brand": "Nuqleo",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "nuqleo zaffire 785": {
-        "deviceName": "Zaffire 785",
-        "marketingName": "Zaffire 785",
-        "manufacturer": "Nuqleo",
-        "brand": "Nuqleo",
-        "type": "tablet",
-        "display": {
-            "width": 1024,
-            "height": 768,
-            "touch": true,
-            "type": "XGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "nuqleo zaffire 1010": {
+    "deviceName": "Zaffire 1010",
+    "marketingName": "Zaffire 1010",
+    "manufacturer": "Nuqleo",
+    "brand": "Nuqleo",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "nuqleo zaffire 785": {
+    "deviceName": "Zaffire 785",
+    "marketingName": "Zaffire 785",
+    "manufacturer": "Nuqleo",
+    "brand": "Nuqleo",
+    "type": "tablet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "type": "XGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

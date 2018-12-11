@@ -1,209 +1,218 @@
 {
-    "general dell device": {
-        "deviceName": "general Dell Device",
-        "marketingName": "general Dell Device",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general dell device": {
+    "deviceName": "general Dell Device",
+    "marketingName": "general Dell Device",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "dell streak": {
-        "deviceName": "Streak",
-        "marketingName": "Streak",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "dell streak 10 pro": {
-        "deviceName": "Streak 10 Pro",
-        "marketingName": "Streak 10 Pro",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dell streak": {
+    "deviceName": "Streak",
+    "marketingName": "Streak",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "dell streak 7": {
-        "deviceName": "Streak 7",
-        "marketingName": "Streak 7",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "dell venue 7 3730": {
-        "deviceName": "Venue 7 3730",
-        "marketingName": "Venue 7 3730",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dell streak 10 pro": {
+    "deviceName": "Streak 10 Pro",
+    "marketingName": "Streak 10 Pro",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "dell venue 7 hspa+": {
-        "deviceName": "Venue 7 HSPA+",
-        "marketingName": "Venue 7 HSPA+",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "dell venue 8 3830": {
-        "deviceName": "Venue 8 3830",
-        "marketingName": "Venue 8 3830",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dell streak 7": {
+    "deviceName": "Streak 7",
+    "marketingName": "Streak 7",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "dell venue 8 7840": {
-        "deviceName": "Venue 8 7840",
-        "marketingName": "Venue 8 7840",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "dell venue 8 hspa+": {
-        "deviceName": "Venue 8 HSPA+",
-        "marketingName": "Venue 8 HSPA+",
-        "manufacturer": "Dell",
-        "brand": "Dell",
-        "type": "tablet",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dell venue 7 3730": {
+    "deviceName": "Venue 7 3730",
+    "marketingName": "Venue 7 3730",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dell venue 7 hspa+": {
+    "deviceName": "Venue 7 HSPA+",
+    "marketingName": "Venue 7 HSPA+",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dell venue 8 3830": {
+    "deviceName": "Venue 8 3830",
+    "marketingName": "Venue 8 3830",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dell venue 8 7840": {
+    "deviceName": "Venue 8 7840",
+    "marketingName": "Venue 8 7840",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "dell venue 8 hspa+": {
+    "deviceName": "Venue 8 HSPA+",
+    "marketingName": "Venue 8 HSPA+",
+    "manufacturer": "Dell",
+    "brand": "Dell",
+    "type": "tablet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

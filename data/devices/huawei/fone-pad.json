@@ -1,707 +1,736 @@
 {
-    "huawei ags-l03": {
-        "deviceName": "AGS-L03",
-        "marketingName": "MediaPad T3 10",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [
-                "USA"
-            ],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "huawei ideos s7": {
+    "deviceName": "Ideos S7",
+    "marketingName": "Ideos S7",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "huawei ags-l09": {
-        "deviceName": "AGS-L09",
-        "marketingName": "MediaPad T3 10",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [
-                "Global"
-            ],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei bah-l09": {
-        "deviceName": "BAH-L09",
-        "marketingName": "M3 Lite",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei s7_slim": {
+    "deviceName": "Ideos S7 Slim",
+    "marketingName": "Ideos S7 Slim",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "huawei bah2-l09": {
-        "deviceName": "BAH2-L09",
-        "marketingName": "MediaPad M5 Lite 10",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei bgo-dl03": {
-        "deviceName": "BGO-DL03",
-        "marketingName": "MediaPad T2 7.0",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei bah-l09": {
+    "deviceName": "BAH-L09",
+    "marketingName": "M3 Lite",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "huawei bgo-dl09": {
-        "deviceName": "BGO-DL09",
-        "marketingName": "MediaPad T2 7.0",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei btv-dl09": {
-        "deviceName": "BTV-DL09",
-        "marketingName": "MediaPad M3 8.4",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei mediapad 7 classic": {
+    "deviceName": "MediaPad 7 Classic",
+    "marketingName": "MediaPad 7 Classic",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "huawei cmr-al09": {
-        "deviceName": "CMR-AL09",
-        "marketingName": "MediaPad M5 10.0",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei cmr-al19": {
-        "deviceName": "CMR-AL19",
-        "marketingName": "MediaPad M5 10 Pro",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 2560,
-            "height": 1600,
-            "touch": true,
-            "type": "WQXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei mediapad 7 lite": {
+    "deviceName": "MediaPad 7 Lite",
+    "marketingName": "MediaPad 7 Lite",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
     },
-    "huawei fdr-a01l": {
-        "deviceName": "FDR-A01L",
-        "marketingName": "MediaPad T2 10.0 Pro",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei fdr-a01w": {
-        "deviceName": "FDR-A01W",
-        "marketingName": "MediaPad T2 10.0 Pro",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei m2-801l": {
+    "deviceName": "M2-801L",
+    "marketingName": "MediaPad M2 8.0 3G",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "huawei fdr-a03l": {
-        "deviceName": "FDR-A03L",
-        "marketingName": "MediaPad T2 10.0 Pro",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei fdr-a04l": {
-        "deviceName": "FDR-A04L",
-        "marketingName": "MediaPad T2 10.0 Pro",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei btv-dl09": {
+    "deviceName": "BTV-DL09",
+    "marketingName": "MediaPad M3 8.4",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
     },
-    "huawei gem-701l": {
-        "deviceName": "GEM-701L",
-        "marketingName": "MediaPad X2 Premium Dual-SIM",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei gem-702l": {
-        "deviceName": "GEM-702L",
-        "marketingName": "MediaPad X2 Premium Dual-SIM",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei cmr-al19": {
+    "deviceName": "CMR-AL19",
+    "marketingName": "MediaPad M5 10 Pro",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
     },
-    "huawei gem-703l": {
-        "deviceName": "GEM-703L",
-        "marketingName": "MediaPad X2 Premium Dual-SIM",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei gem-703lt": {
-        "deviceName": "GEM-703LT",
-        "marketingName": "MediaPad X2 Premium Dual-SIM",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei cmr-al09": {
+    "deviceName": "CMR-AL09",
+    "marketingName": "MediaPad M5 10.0",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WQXGA",
+      "size": null
     },
-    "huawei ideos s7": {
-        "deviceName": "Ideos S7",
-        "marketingName": "Ideos S7",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei m2-801l": {
-        "deviceName": "M2-801L",
-        "marketingName": "MediaPad M2 8.0 3G",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "GSM"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei bah2-l09": {
+    "deviceName": "BAH2-L09",
+    "marketingName": "MediaPad M5 Lite 10",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
     },
-    "huawei mediapad 7 classic": {
-        "deviceName": "MediaPad 7 Classic",
-        "marketingName": "MediaPad 7 Classic",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei mediapad 7 lite": {
-        "deviceName": "MediaPad 7 Lite",
-        "marketingName": "MediaPad 7 Lite",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1024,
-            "height": 600,
-            "touch": true,
-            "type": "WSVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei mediapad t1 10 4g": {
+    "deviceName": "MediaPad T1 10",
+    "marketingName": "MediaPad T1 10",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "huawei mediapad t1 10 4g": {
-        "deviceName": "MediaPad T1 10",
-        "marketingName": "MediaPad T1 10",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei mediapad x1 7.0": {
-        "deviceName": "MediaPad X1 7.0",
-        "marketingName": "MediaPad X1 7.0",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei t1-a21l": {
+    "deviceName": "T1-A21L",
+    "marketingName": "MediaPad T1 10.0",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "huawei ple-701l": {
-        "deviceName": "PLE-701L",
-        "marketingName": "MediaPad T2 7.0 Pro",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei ple-703l": {
-        "deviceName": "PLE-703L",
-        "marketingName": "MediaPad T2 7.0 Pro",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1920,
-            "height": 1200,
-            "touch": true,
-            "type": "WUXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei t1-a21w": {
+    "deviceName": "T1-A21W",
+    "marketingName": "MediaPad T1 10.0 WiFi",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "huawei s7_slim": {
-        "deviceName": "Ideos S7 Slim",
-        "marketingName": "Ideos S7 Slim",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 800,
-            "height": 480,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei t1-821l": {
-        "deviceName": "T1-821L",
-        "marketingName": "MediaPad T1 8.0 Pro",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei t1-821l": {
+    "deviceName": "T1-821L",
+    "marketingName": "MediaPad T1 8.0 Pro",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
     },
-    "huawei t1-a21l": {
-        "deviceName": "T1-A21L",
-        "marketingName": "MediaPad T1 10.0",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "huawei t1-a21w": {
-        "deviceName": "T1-A21W",
-        "marketingName": "MediaPad T1 10.0 WiFi",
-        "manufacturer": "Huawei",
-        "brand": "Huawei",
-        "type": "fone-pad",
-        "display": {
-            "width": 1280,
-            "height": 800,
-            "touch": true,
-            "type": "WXGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei fdr-a01l": {
+    "deviceName": "FDR-A01L",
+    "marketingName": "MediaPad T2 10.0 Pro",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei fdr-a01w": {
+    "deviceName": "FDR-A01W",
+    "marketingName": "MediaPad T2 10.0 Pro",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei fdr-a03l": {
+    "deviceName": "FDR-A03L",
+    "marketingName": "MediaPad T2 10.0 Pro",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei fdr-a04l": {
+    "deviceName": "FDR-A04L",
+    "marketingName": "MediaPad T2 10.0 Pro",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei bgo-dl03": {
+    "deviceName": "BGO-DL03",
+    "marketingName": "MediaPad T2 7.0",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei bgo-dl09": {
+    "deviceName": "BGO-DL09",
+    "marketingName": "MediaPad T2 7.0",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "type": "WSVGA (variant 2)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei ple-701l": {
+    "deviceName": "PLE-701L",
+    "marketingName": "MediaPad T2 7.0 Pro",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei ple-703l": {
+    "deviceName": "PLE-703L",
+    "marketingName": "MediaPad T2 7.0 Pro",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei ags-l03": {
+    "deviceName": "AGS-L03",
+    "marketingName": "MediaPad T3 10",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei ags-l09": {
+    "deviceName": "AGS-L09",
+    "marketingName": "MediaPad T3 10",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [
+        "Global"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei mediapad x1 7.0": {
+    "deviceName": "MediaPad X1 7.0",
+    "marketingName": "MediaPad X1 7.0",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei gem-701l": {
+    "deviceName": "GEM-701L",
+    "marketingName": "MediaPad X2 Premium Dual-SIM",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei gem-702l": {
+    "deviceName": "GEM-702L",
+    "marketingName": "MediaPad X2 Premium Dual-SIM",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei gem-703l": {
+    "deviceName": "GEM-703L",
+    "marketingName": "MediaPad X2 Premium Dual-SIM",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei gem-703lt": {
+    "deviceName": "GEM-703LT",
+    "marketingName": "MediaPad X2 Premium Dual-SIM",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  }
 }

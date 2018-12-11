@@ -1,416 +1,434 @@
 {
-    "general qmobile device": {
-        "deviceName": "general QMobile Device",
-        "marketingName": "general QMobile Device",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general qmobile device": {
+    "deviceName": "general QMobile Device",
+    "marketingName": "general QMobile Device",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "qmobile a10": {
-        "deviceName": "A10",
-        "marketingName": "Noir A10",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "qmobile a11": {
-        "deviceName": "A11",
-        "marketingName": "Noir Note A11",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile t250": {
+    "deviceName": "T250",
+    "marketingName": "Bolt",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 768,
+      "touch": true,
+      "type": "WVGA (variant 2)",
+      "size": null
     },
-    "qmobile a2 lite": {
-        "deviceName": "A2 Lite",
-        "marketingName": "Bolt A2 Lite",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "qmobile a290": {
-        "deviceName": "A290",
-        "marketingName": "Noir A290",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile a2 lite": {
+    "deviceName": "A2 Lite",
+    "marketingName": "Bolt A2 Lite",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "qmobile a30": {
-        "deviceName": "A30",
-        "marketingName": "Noir A30",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "qmobile a300": {
-        "deviceName": "A300",
-        "marketingName": "Noir A300",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile e1": {
+    "deviceName": "E1",
+    "marketingName": "E1",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
     },
-    "qmobile a65": {
-        "deviceName": "A65",
-        "marketingName": "Noir A65",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "qmobile e1": {
-        "deviceName": "E1",
-        "marketingName": "E1",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile a10": {
+    "deviceName": "A10",
+    "marketingName": "Noir A10",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "qmobile i7": {
-        "deviceName": "i7",
-        "marketingName": "Noir i7",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "qmobile q-smart s12": {
-        "deviceName": "Q-Smart S12",
-        "marketingName": "Q-Smart S12",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 320,
-            "height": 480,
-            "touch": true,
-            "type": "HVGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile a290": {
+    "deviceName": "A290",
+    "marketingName": "Noir A290",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "qmobile s1": {
-        "deviceName": "S1",
-        "marketingName": "Noir S1",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "qmobile s2": {
-        "deviceName": "S2",
-        "marketingName": "Noir S2",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile a30": {
+    "deviceName": "A30",
+    "marketingName": "Noir A30",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
     },
-    "qmobile s6s": {
-        "deviceName": "S6s",
-        "marketingName": "Noir S6s",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "qmobile t250": {
-        "deviceName": "T250",
-        "marketingName": "Bolt",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 768,
-            "touch": true,
-            "type": "WVGA (variant 2)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile a300": {
+    "deviceName": "A300",
+    "marketingName": "Noir A300",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "qmobile x25": {
-        "deviceName": "X25",
-        "marketingName": "Noir X25",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "qmobile x60": {
-        "deviceName": "X60",
-        "marketingName": "Noir X60",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile a65": {
+    "deviceName": "A65",
+    "marketingName": "Noir A65",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
     },
-    "qmobile x900": {
-        "deviceName": "X900",
-        "marketingName": "Noir X900",
-        "manufacturer": "Qmobile",
-        "brand": "Qmobile",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile a11": {
+    "deviceName": "A11",
+    "marketingName": "Noir Note A11",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile s1": {
+    "deviceName": "S1",
+    "marketingName": "Noir S1",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile s2": {
+    "deviceName": "S2",
+    "marketingName": "Noir S2",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile s6s": {
+    "deviceName": "S6s",
+    "marketingName": "Noir S6s",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile x25": {
+    "deviceName": "X25",
+    "marketingName": "Noir X25",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile x60": {
+    "deviceName": "X60",
+    "marketingName": "Noir X60",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile x900": {
+    "deviceName": "X900",
+    "marketingName": "Noir X900",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile i7": {
+    "deviceName": "i7",
+    "marketingName": "Noir i7",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "qmobile q-smart s12": {
+    "deviceName": "Q-Smart S12",
+    "marketingName": "Q-Smart S12",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "type": "smartphone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "type": "HVGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }

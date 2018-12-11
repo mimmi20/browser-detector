@@ -1,48 +1,50 @@
 {
-    "xbox 360": {
-        "deviceName": "Xbox 360",
-        "marketingName": "Xbox 360",
-        "manufacturer": "Microsoft",
-        "brand": "Microsoft",
-        "type": "tv-console",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
+  "xbox 360": {
+    "deviceName": "Xbox 360",
+    "marketingName": "Xbox 360",
+    "manufacturer": "Microsoft",
+    "brand": "Microsoft",
+    "type": "tv-console",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
     },
-    "xbox one": {
-        "deviceName": "Xbox One",
-        "marketingName": "Xbox One",
-        "manufacturer": "Microsoft",
-        "brand": "Microsoft",
-        "type": "tv-console",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": false,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": false,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": null
-    }
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "xbox one": {
+    "deviceName": "Xbox One",
+    "marketingName": "Xbox One",
+    "manufacturer": "Microsoft",
+    "brand": "Microsoft",
+    "type": "tv-console",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "type": "unknown",
+      "size": null
+    },
+    "dualOrientation": false,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  }
 }

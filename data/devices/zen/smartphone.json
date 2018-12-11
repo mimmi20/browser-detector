@@ -1,234 +1,244 @@
 {
-    "general zen device": {
-        "deviceName": "general Zen Mobile Device",
-        "marketingName": "general Zen Mobile Device",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": null,
-            "height": null,
-            "touch": true,
-            "type": "unknown",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+  "general zen device": {
+    "deviceName": "general Zen Mobile Device",
+    "marketingName": "general Zen Mobile Device",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "unknown",
+      "size": null
     },
-    "zen admire sxy": {
-        "deviceName": "Admire SXY",
-        "marketingName": "Admire SXY",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zen cinemax 1": {
-        "deviceName": "Cinemax 1",
-        "marketingName": "Cinemax 1",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zen admire sxy": {
+    "deviceName": "Admire SXY",
+    "marketingName": "Admire SXY",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "zen cinemax 2": {
-        "deviceName": "Cinemax 2",
-        "marketingName": "Cinemax 2",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 540,
-            "height": 960,
-            "touch": true,
-            "type": "qHD",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zen cinemax 2+": {
-        "deviceName": "Cinemax 2+",
-        "marketingName": "Cinemax 2+",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zen cinemax 4g": {
+    "deviceName": "Cinemax",
+    "marketingName": "Cinemax",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "zen cinemax 3": {
-        "deviceName": "Cinemax 3",
-        "marketingName": "Cinemax 3",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zen cinemax 4g": {
-        "deviceName": "Cinemax",
-        "marketingName": "Cinemax",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [
-            "LTE"
-        ],
-        "platform": "android"
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "zen cinemax 1": {
+    "deviceName": "Cinemax 1",
+    "marketingName": "Cinemax 1",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
     },
-    "zen cinemax click": {
-        "deviceName": "Cinemax Click",
-        "marketingName": "Cinemax Click",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 720,
-            "height": 1280,
-            "touch": true,
-            "type": "HD/WXGA",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
-    "zen cinemax force": {
-        "deviceName": "Cinemax Force",
-        "marketingName": "Cinemax Force",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 854,
-            "touch": true,
-            "type": "FWVGA (variant 1)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zen cinemax 2": {
+    "deviceName": "Cinemax 2",
+    "marketingName": "Cinemax 2",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 540,
+      "height": 960,
+      "touch": true,
+      "type": "qHD",
+      "size": null
     },
-    "zen ultrafone 303": {
-        "deviceName": "Ultrafone 303",
-        "marketingName": "Ultrafone 303",
-        "manufacturer": "Zen",
-        "brand": "Zen",
-        "type": "smartphone",
-        "display": {
-            "width": 480,
-            "height": 800,
-            "touch": true,
-            "type": "WVGA (variant 3)",
-            "size": null
-        },
-        "dualOrientation": true,
-        "simCount": 0,
-        "market": {
-            "regions": [],
-            "countries": [],
-            "vendors": []
-        },
-        "connections": [],
-        "platform": "android"
-    }
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zen cinemax 2+": {
+    "deviceName": "Cinemax 2+",
+    "marketingName": "Cinemax 2+",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zen cinemax 3": {
+    "deviceName": "Cinemax 3",
+    "marketingName": "Cinemax 3",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zen cinemax click": {
+    "deviceName": "Cinemax Click",
+    "marketingName": "Cinemax Click",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zen cinemax force": {
+    "deviceName": "Cinemax Force",
+    "marketingName": "Cinemax Force",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "type": "FWVGA (variant 1)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zen ultrafone 303": {
+    "deviceName": "Ultrafone 303",
+    "marketingName": "Ultrafone 303",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "type": "WVGA (variant 3)",
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  }
 }
