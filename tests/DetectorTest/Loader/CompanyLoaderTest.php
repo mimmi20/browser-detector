@@ -61,6 +61,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadAvailable(string $companyKey, string $companyName, string $brand): void
     {
+        self::markTestIncomplete();
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->load($companyKey);
 
@@ -103,6 +104,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadByName(string $nameToSearch, ?string $companyName, ?string $brand): void
     {
+        self::markTestIncomplete();
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->loadByName($nameToSearch);
 
@@ -145,6 +147,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadByBrandName(string $brandnameToSearch, ?string $companyName, ?string $brand): void
     {
+        self::markTestIncomplete();
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $this->object->loadByBrandName($brandnameToSearch);
 
@@ -181,6 +184,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadNotAvailable(): void
     {
+        self::markTestIncomplete();
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with key "does not exist" was not found');
 
@@ -192,6 +196,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadByBrandNameNotAvailable(): void
     {
+        self::markTestIncomplete();
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with brand name "This company does not exist" was not found');
 
@@ -203,6 +208,7 @@ class CompanyLoaderTest extends TestCase
      */
     public function testLoadByNameNotAvailable(): void
     {
+        self::markTestIncomplete();
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with name "This company does not exist" was not found');
 

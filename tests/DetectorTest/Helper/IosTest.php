@@ -26,6 +26,7 @@ class IosTest extends TestCase
      */
     public function testIsiOS(string $agent): void
     {
+        self::markTestIncomplete();
         $object = new Helper\Ios(new Stringy($agent));
 
         self::assertTrue($object->isIos());
@@ -63,6 +64,7 @@ class IosTest extends TestCase
      */
     public function testIsNotiOS(string $agent): void
     {
+        self::markTestIncomplete();
         $object = new Helper\Ios(new Stringy($agent));
 
         self::assertFalse($object->isIos());

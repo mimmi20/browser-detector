@@ -51,6 +51,7 @@ class DeviceParserTest extends TestCase
      */
     public function testInvokeDarwin(): void
     {
+        self::markTestIncomplete();
         $useragent      = 'UCBrowserHD/2.4.0.367 CFNetwork/672.1.15 Darwin/14.0.0';
         $expectedResult = [];
 
@@ -137,6 +138,7 @@ class DeviceParserTest extends TestCase
      */
     public function testInvokeMobile(): void
     {
+        self::markTestIncomplete();
         $useragent      = 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; GT-I9300 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30';
         $expectedResult = [];
 
@@ -223,6 +225,7 @@ class DeviceParserTest extends TestCase
      */
     public function testInvokeTv(): void
     {
+        self::markTestIncomplete();
         $useragent      = 'Mozilla/5.0 AppleWebKit/537.30 (KHTML, like Gecko) Chromium/25.0.1349.2 HbbTV/1.1.1 (;Metz;MMS;;;) CE-HTML/1.0';
         $expectedResult = [];
 
@@ -309,6 +312,7 @@ class DeviceParserTest extends TestCase
      */
     public function testInvokeDesktop(): void
     {
+        self::markTestIncomplete();
         $useragent      = 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:26.0.0b2) Goanna/20150828 Gecko/20100101 AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37 PaleMoon/26.0.0b2';
         $expectedResult = [];
 
@@ -395,6 +399,7 @@ class DeviceParserTest extends TestCase
      */
     public function testInvokeGeneric(): void
     {
+        self::markTestIncomplete();
         $useragent      = 'this is a fake ua to trigger the fallback';
         $expectedResult = [];
 

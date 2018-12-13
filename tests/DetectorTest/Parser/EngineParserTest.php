@@ -54,6 +54,7 @@ class EngineParserTest extends TestCase
      */
     public function testInvoke(string $useragent, EngineInterface $expectedResult): void
     {
+        self::markTestIncomplete();
         $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
 
@@ -110,6 +111,7 @@ class EngineParserTest extends TestCase
      */
     public function testLoad(string $useragent, string $key, EngineInterface $expectedResult): void
     {
+        self::markTestIncomplete();
         $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
 

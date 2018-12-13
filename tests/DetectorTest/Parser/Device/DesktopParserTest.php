@@ -56,6 +56,7 @@ class DesktopParserTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedCompany, array $expectedResult): void
     {
+        self::markTestIncomplete();
         $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
