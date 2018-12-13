@@ -68,7 +68,7 @@ final class BrowserLoader implements SpecificLoaderInterface
 
         $initData();
 
-        $this->initData      = $initData;
+        $this->initData = $initData;
     }
 
     /**

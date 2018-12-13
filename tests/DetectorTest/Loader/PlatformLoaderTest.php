@@ -21,7 +21,6 @@ use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\NullLogger;
-use UaResult\Company\Company;
 use UaResult\Company\CompanyInterface;
 use UaResult\Os\OsInterface;
 

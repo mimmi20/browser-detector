@@ -18,7 +18,6 @@ use JsonClass\Json;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
 class EngineParserTest extends TestCase
@@ -33,11 +32,11 @@ class EngineParserTest extends TestCase
      */
     protected function setUp(): void
     {
-        $logger = $this->createMock(NullLogger::class);
+        $logger     = $this->createMock(NullLogger::class);
         $jsonParser = $this->createMock(JsonInterface::class);
 
-        /** @var NullLogger $logger */
-        /** @var Json $jsonParser */
+        /* @var NullLogger $logger */
+        /* @var Json $jsonParser */
         $this->object = new EngineParser($logger, $jsonParser);
     }
 

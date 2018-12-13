@@ -32,13 +32,13 @@ class MobileParserTest extends TestCase
      */
     protected function setUp(): void
     {
-        $logger = $this->createMock(NullLogger::class);
-        $jsonParser = $this->createMock(JsonInterface::class);
+        $logger         = $this->createMock(NullLogger::class);
+        $jsonParser     = $this->createMock(JsonInterface::class);
         $platformParser = $this->createMock(PlatformParserInterface::class);
 
-        /** @var NullLogger $logger */
-        /** @var Json $jsonParser */
-        /** @var PlatformParserInterface $platformParser */
+        /* @var NullLogger $logger */
+        /* @var Json $jsonParser */
+        /* @var PlatformParserInterface $platformParser */
         $this->object = new MobileParser($logger, $jsonParser, $platformParser);
     }
 

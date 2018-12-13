@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader\Helper;
 
-use BrowserDetector\Cache\CacheInterface;
 use ExceptionalJSON\DecodeErrorException;
 use JsonClass\Json;
 use JsonClass\JsonInterface;
@@ -41,7 +40,7 @@ final class Data implements DataInterface
 
     /**
      * @param \Symfony\Component\Finder\Finder $finder
-     * @param \JsonClass\JsonInterface                  $json
+     * @param \JsonClass\JsonInterface         $json
      */
     public function __construct(Finder $finder, JsonInterface $json)
     {

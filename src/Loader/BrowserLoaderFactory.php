@@ -14,7 +14,6 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\EngineParserInterface;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
@@ -39,13 +38,13 @@ final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
 
     /**
      * @param \Psr\Log\LoggerInterface                      $logger
-     * @param \JsonClass\JsonInterface                               $jsonParser
+     * @param \JsonClass\JsonInterface                      $jsonParser
      * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
      */
     public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, EngineParserInterface $engineParser)
     {
-        $this->logger     = $logger;
-        $this->jsonParser = $jsonParser;
+        $this->logger       = $logger;
+        $this->jsonParser   = $jsonParser;
         $this->engineParser = $engineParser;
     }
 
@@ -61,7 +60,7 @@ final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
             return $loader;
         }
 
-        $dataPath  = __DIR__ . '/../../data/browsers';
+        $dataPath = __DIR__ . '/../../data/browsers';
 
         $finder = new Finder();
         $finder->files();

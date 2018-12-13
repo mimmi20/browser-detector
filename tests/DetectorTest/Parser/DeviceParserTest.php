@@ -11,9 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
+use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
 use BrowserDetector\Loader\SpecificLoaderInterface;
 use BrowserDetector\Parser\DeviceParser;
-use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use JsonClass\Json;
@@ -33,13 +33,13 @@ class DeviceParserTest extends TestCase
      */
     protected function setUp(): void
     {
-        $logger = $this->createMock(NullLogger::class);
-        $jsonParser = $this->createMock(JsonInterface::class);
+        $logger         = $this->createMock(NullLogger::class);
+        $jsonParser     = $this->createMock(JsonInterface::class);
         $platformParser = $this->createMock(PlatformParserInterface::class);
 
-        /** @var NullLogger $logger */
-        /** @var Json $jsonParser */
-        /** @var PlatformParserInterface $platformParser */
+        /* @var NullLogger $logger */
+        /* @var Json $jsonParser */
+        /* @var PlatformParserInterface $platformParser */
         $this->object = new DeviceParser($logger, $jsonParser, $platformParser);
     }
 

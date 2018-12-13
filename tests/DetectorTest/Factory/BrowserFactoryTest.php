@@ -13,7 +13,6 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\BrowserFactory;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 class BrowserFactoryTest extends TestCase
 {

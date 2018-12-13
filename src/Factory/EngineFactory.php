@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\EngineLoaderFactory;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;

@@ -13,11 +13,11 @@ namespace UserAgentsTest;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Detector;
-use BrowserDetector\Factory\BrowserFactory;
-use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Factory\ResultFactory;
+use BrowserDetector\Parser\BrowserParser;
+use BrowserDetector\Parser\DeviceParser;
+use BrowserDetector\Parser\EngineParser;
+use BrowserDetector\Parser\PlatformParser;
 use ExceptionalJSON\DecodeErrorException;
 use ExceptionalJSON\EncodeErrorException;
 use JsonClass\Json;
@@ -74,15 +74,16 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = new NullCache();
+        $cache      = new Cache(new NullCache());
+        $jsonParser = new Json();
 
         /** @var NullLogger $logger */
-        $deviceFactory   = new DeviceFactory($logger);
-        $platformFactory = new PlatformFactory($logger);
-        $browserFactory  = new BrowserFactory($logger);
-        $engineFactory   = new EngineFactory($logger);
+        $platformParser = new PlatformParser($logger, $jsonParser);
+        $deviceParser   = new DeviceParser($logger, $jsonParser, $platformParser);
+        $engineParser   = new EngineParser($logger, $jsonParser);
+        $browserParser  = new BrowserParser($logger, $jsonParser, $engineParser);
 
-        $this->object = new Detector($logger, new Cache($cache), $deviceFactory, $platformFactory, $browserFactory, $engineFactory);
+        $this->object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
     }
 
     /**

@@ -226,7 +226,7 @@ final class Detector implements DetectorInterface
 
         if (null === $engine) {
             $this->logger->debug('engine not detected from browser');
-            $engine  = clone $defaultEngine;
+            $engine = clone $defaultEngine;
 
             if (null !== $platform && in_array($platform->getName(), ['iOS'])) {
                 try {

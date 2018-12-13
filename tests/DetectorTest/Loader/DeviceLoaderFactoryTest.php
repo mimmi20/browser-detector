@@ -24,17 +24,17 @@ class DeviceLoaderFactoryTest extends TestCase
     public function testInvoke(): void
     {
         self::markTestIncomplete();
-        /** @var NullLogger $logger */
-        $logger = $this->createMock(NullLogger::class);
-
-        $factory = new DeviceLoaderFactory($logger);
-        $object  = $factory('unknown', 'default');
-
-        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
-
-        $objectTwo = $factory('unknown', 'default');
-
-        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+//        /** @var NullLogger $logger */
+//        $logger = $this->createMock(NullLogger::class);
+//
+//        $factory = new DeviceLoaderFactory($logger);
+//        $object  = $factory('unknown', 'default');
+//
+//        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
+//
+//        $objectTwo = $factory('unknown', 'default');
+//
+//        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
+//        self::assertSame($objectTwo, $object);
     }
 }

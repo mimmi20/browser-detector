@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactory;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
@@ -28,12 +27,12 @@ final class BrowserParser implements BrowserParserInterface
      */
     private $jsonParser;
 
-    private const GENERIC_FILE = '/../../data/factories/browsers.json';
+    private const GENERIC_FILE  = '/../../data/factories/browsers.json';
     private const SPECIFIC_FILE = '/../../data/factories/browsers/%s.json';
 
     /**
      * @param \Psr\Log\LoggerInterface                      $logger
-     * @param \JsonClass\JsonInterface                               $jsonParser
+     * @param \JsonClass\JsonInterface                      $jsonParser
      * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
      */
     public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, EngineParserInterface $engineParser)

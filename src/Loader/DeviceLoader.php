@@ -12,16 +12,9 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Factory\DisplayFactory;
-use BrowserDetector\Factory\MarketFactory;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
-use UaDeviceType\TypeLoader;
-use UaDisplaySize\Unknown;
-use UaResult\Device\Device;
-use UaResult\Device\Display;
-use UaResult\Device\Market;
 
 final class DeviceLoader implements SpecificLoaderInterface
 {
@@ -65,7 +58,7 @@ final class DeviceLoader implements SpecificLoaderInterface
 
         $initData();
 
-        $this->initData       = $initData;
+        $this->initData = $initData;
     }
 
     /**
