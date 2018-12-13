@@ -13,12 +13,9 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\PlatformParserInterface;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
-use Symfony\Component\Finder\SplFileInfo;
-use UaDeviceType\TypeLoader;
 
 final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
 {
@@ -39,13 +36,13 @@ final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
 
     /**
      * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \JsonClass\JsonInterface                                 $jsonParser
+     * @param \JsonClass\JsonInterface                        $jsonParser
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
     public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
     {
-        $this->logger     = $logger;
-        $this->jsonParser = $jsonParser;
+        $this->logger         = $logger;
+        $this->jsonParser     = $jsonParser;
         $this->platformParser = $platformParser;
     }
 
@@ -63,7 +60,7 @@ final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
             return $loader[$company];
         }
 
-        $dataPath  = __DIR__ . '/../../data/devices/' . $company;
+        $dataPath = __DIR__ . '/../../data/devices/' . $company;
 
         $finder = new Finder();
         $finder->files();
@@ -73,7 +70,7 @@ final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
         $finder->ignoreUnreadableDirs();
         $finder->in($dataPath);
 
-        $initData  = new Data($finder, $this->jsonParser);
+        $initData = new Data($finder, $this->jsonParser);
 
         $loader[$company] = new DeviceLoader(
             $this->logger,

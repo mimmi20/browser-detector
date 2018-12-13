@@ -50,7 +50,7 @@ final class EngineLoader implements SpecificLoaderInterface
 
         $initData();
 
-        $this->initData      = $initData;
+        $this->initData = $initData;
     }
 
     /**

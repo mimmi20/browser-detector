@@ -14,7 +14,6 @@ namespace BrowserDetectorTest\Parser;
 use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
 use BrowserDetector\Loader\SpecificLoaderInterface;
 use BrowserDetector\Parser\PlatformParser;
-use BrowserDetector\Loader\PlatformLoaderFactory;
 use JsonClass\Json;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
@@ -33,11 +32,11 @@ class PlatformParserTest extends TestCase
      */
     protected function setUp(): void
     {
-        $logger = $this->createMock(NullLogger::class);
+        $logger     = $this->createMock(NullLogger::class);
         $jsonParser = $this->createMock(JsonInterface::class);
 
-        /** @var NullLogger $logger */
-        /** @var Json $jsonParser */
+        /* @var NullLogger $logger */
+        /* @var Json $jsonParser */
         $this->object = new PlatformParser($logger, $jsonParser);
     }
 

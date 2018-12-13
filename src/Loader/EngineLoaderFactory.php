@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
@@ -31,7 +30,7 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
 
     /**
      * @param \Psr\Log\LoggerInterface $logger
-     * @param \JsonClass\JsonInterface          $jsonParser
+     * @param \JsonClass\JsonInterface $jsonParser
      */
     public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
     {
@@ -51,7 +50,7 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
             return $loader;
         }
 
-        $dataPath  = __DIR__ . '/../../data/engines';
+        $dataPath = __DIR__ . '/../../data/engines';
 
         $finder = new Finder();
         $finder->files();

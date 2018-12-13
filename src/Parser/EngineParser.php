@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\EngineLoaderFactory;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use UaResult\Engine\EngineInterface;
@@ -33,7 +32,7 @@ final class EngineParser implements EngineParserInterface
 
     /**
      * @param \Psr\Log\LoggerInterface $logger
-     * @param \JsonClass\JsonInterface          $jsonParser
+     * @param \JsonClass\JsonInterface $jsonParser
      */
     public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
     {
@@ -56,7 +55,7 @@ final class EngineParser implements EngineParserInterface
             (string) file_get_contents(__DIR__ . self::GENERIC_FILE),
             true
         );
-        $key           = $specFactories['generic'];
+        $key = $specFactories['generic'];
 
         foreach (array_keys($specFactories['rules']) as $rule) {
             if (preg_match($rule, $useragent)) {

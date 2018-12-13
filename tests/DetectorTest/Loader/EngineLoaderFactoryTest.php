@@ -24,17 +24,17 @@ class EngineLoaderFactoryTest extends TestCase
     public function testInvoke(): void
     {
         self::markTestIncomplete();
-        /** @var NullLogger $logger */
-        $logger = $this->createMock(NullLogger::class);
-
-        $factory = new EngineLoaderFactory($logger);
-        $object  = $factory();
-
-        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
-
-        $objectTwo = $factory();
-
-        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+//        /** @var NullLogger $logger */
+//        $logger = $this->createMock(NullLogger::class);
+//
+//        $factory = new EngineLoaderFactory($logger);
+//        $object  = $factory();
+//
+//        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
+//
+//        $objectTwo = $factory();
+//
+//        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
+//        self::assertSame($objectTwo, $object);
     }
 }

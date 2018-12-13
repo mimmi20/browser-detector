@@ -11,13 +11,10 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Helper;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoaderFactory;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
-use Stringy\Stringy;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 

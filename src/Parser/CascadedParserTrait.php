@@ -28,7 +28,7 @@ trait CascadedParserTrait
             (string) file_get_contents(__DIR__ . self::GENERIC_FILE),
             true
         );
-        $mode      = $factories['generic'];
+        $mode = $factories['generic'];
 
         foreach (array_keys($factories['rules']) as $rule) {
             //var_dump($rule);
@@ -42,7 +42,7 @@ trait CascadedParserTrait
             (string) file_get_contents(__DIR__ . sprintf(self::SPECIFIC_FILE, $mode)),
             true
         );
-        $key           = $specFactories['generic'];
+        $key = $specFactories['generic'];
 
         foreach (array_keys($specFactories['rules']) as $rule) {
             if (preg_match($rule, $useragent)) {

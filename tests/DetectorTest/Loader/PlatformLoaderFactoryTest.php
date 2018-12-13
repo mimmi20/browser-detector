@@ -24,17 +24,17 @@ class PlatformLoaderFactoryTest extends TestCase
     public function testInvoke(): void
     {
         self::markTestIncomplete();
-        /** @var NullLogger $logger */
-        $logger = $this->createMock(NullLogger::class);
-
-        $factory = new PlatformLoaderFactory($logger);
-        $object  = $factory('default');
-
-        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
-
-        $objectTwo = $factory('default');
-
-        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+//        /** @var NullLogger $logger */
+//        $logger = $this->createMock(NullLogger::class);
+//
+//        $factory = new PlatformLoaderFactory($logger);
+//        $object  = $factory('default');
+//
+//        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
+//
+//        $objectTwo = $factory('default');
+//
+//        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
+//        self::assertSame($objectTwo, $object);
     }
 }

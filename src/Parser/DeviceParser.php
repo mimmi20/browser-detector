@@ -11,15 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Parser\Device\DarwinParser;
-use BrowserDetector\Parser\Device\DesktopParser;
-use BrowserDetector\Parser\Device\MobileParser;
-use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
 use BrowserDetector\Loader\DeviceLoaderFactory;
-use JsonClass\Json;
+use BrowserDetector\Parser\Device\DarwinParser;
+use BrowserDetector\Parser\Device\DesktopParser;
+use BrowserDetector\Parser\Device\MobileParser;
+use BrowserDetector\Parser\Device\TvParser;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
@@ -63,7 +62,7 @@ final class DeviceParser implements DeviceParserInterface
 
     /**
      * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \JsonClass\JsonInterface                                 $jsonParser
+     * @param \JsonClass\JsonInterface                        $jsonParser
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
     public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)

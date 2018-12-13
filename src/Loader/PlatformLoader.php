@@ -52,7 +52,7 @@ final class PlatformLoader implements SpecificLoaderInterface
 
         $initData();
 
-        $this->initData      = $initData;
+        $this->initData = $initData;
     }
 
     /**

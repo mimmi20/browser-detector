@@ -31,12 +31,12 @@ final class PlatformParser implements PlatformParserInterface
      */
     private $jsonParser;
 
-    private const GENERIC_FILE = '/../../data/factories/platforms.json';
+    private const GENERIC_FILE  = '/../../data/factories/platforms.json';
     private const SPECIFIC_FILE = '/../../data/factories/platforms/%s.json';
 
     /**
      * @param \Psr\Log\LoggerInterface $logger
-     * @param \JsonClass\JsonInterface          $jsonParser
+     * @param \JsonClass\JsonInterface $jsonParser
      */
     public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
     {

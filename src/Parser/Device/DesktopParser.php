@@ -12,10 +12,8 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Parser\CascadedParserTrait;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
@@ -31,12 +29,12 @@ final class DesktopParser implements DeviceParserInterface
      */
     private $jsonParser;
 
-    private const GENERIC_FILE = '/../../../data/factories/devices/desktop.json';
+    private const GENERIC_FILE  = '/../../../data/factories/devices/desktop.json';
     private const SPECIFIC_FILE = '/../../../data/factories/devices/desktop/%s.json';
 
     /**
      * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \JsonClass\JsonInterface                                 $jsonParser
+     * @param \JsonClass\JsonInterface                        $jsonParser
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
     public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
@@ -60,7 +58,7 @@ final class DesktopParser implements DeviceParserInterface
             (string) file_get_contents(__DIR__ . self::GENERIC_FILE),
             true
         );
-        $mode      = $factories['generic'];
+        $mode = $factories['generic'];
 
         foreach (array_keys($factories['rules']) as $rule) {
             if (preg_match($rule, $useragent)) {
@@ -73,7 +71,7 @@ final class DesktopParser implements DeviceParserInterface
             (string) file_get_contents(__DIR__ . sprintf(self::SPECIFIC_FILE, $mode)),
             true
         );
-        $key           = $specFactories['generic'];
+        $key = $specFactories['generic'];
 
         foreach (array_keys($specFactories['rules']) as $rule) {
             if (preg_match($rule, $useragent)) {

@@ -12,10 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader\Helper;
 
 use BrowserDetector\Cache\CacheInterface;
-use ExceptionalJSON\DecodeErrorException;
-use JsonClass\Json;
-use JsonClass\JsonInterface;
-use Symfony\Component\Finder\Finder;
 
 interface DataInterface extends CacheInterface
 {

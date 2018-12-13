@@ -11,14 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Helper\Desktop;
-use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\Tv;
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Log\LoggerInterface;
-use Stringy\Stringy;
 use UaDeviceType\TypeLoader;
 use UaDeviceType\Unknown;
 use UaResult\Device\Device;
@@ -33,7 +28,7 @@ final class DeviceFactory
 {
     /**
      * @param \Psr\Log\LoggerInterface $logger
-     * @param array $data
+     * @param array                    $data
      *
      * @return \UaResult\Device\DeviceInterface
      */

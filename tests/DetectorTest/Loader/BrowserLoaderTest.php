@@ -24,9 +24,7 @@ use Psr\Log\NullLogger;
 use UaBrowserType\TypeLoader;
 use UaBrowserType\Unknown;
 use UaResult\Browser\BrowserInterface;
-use UaResult\Company\Company;
 use UaResult\Company\CompanyInterface;
-use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
 class BrowserLoaderTest extends TestCase
