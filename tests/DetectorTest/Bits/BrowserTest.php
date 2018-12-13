@@ -62,6 +62,10 @@ final class BrowserTest extends TestCase
                 'ua' => 'Mozilla/5.0 Galeon/1.2.6 (X11; Linux i686; U;) Gecko/20020830',
                 'expected' => 32,
             ],
+            [
+                'ua' => 'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.9.2.19) Gecko WebThumb/1.0',
+                'expected' => 32,
+            ],
         ];
     }
 }
