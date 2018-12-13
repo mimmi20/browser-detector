@@ -12,10 +12,20 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -51,10 +61,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -90,10 +108,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -121,18 +147,28 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; myPhone_AXE_LTE Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Axe LTE",
-      "marketingName": "Axe LTE",
+      "deviceName": "Axe",
+      "marketingName": "Axe",
       "manufacturer": "myPhone",
       "brand": "myPhone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android WebView",
@@ -168,10 +204,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -199,18 +243,28 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; CUBE_LTE Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Cube LTE",
-      "marketingName": "Cube LTE",
+      "deviceName": "Cube",
+      "marketingName": "Cube",
       "manufacturer": "myPhone",
       "brand": "myPhone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -238,18 +292,28 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; myPhone_INFINITY_II_LTE Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Infinity 2 LTE",
-      "marketingName": "Infinity 2 LTE",
+      "deviceName": "Infinity 2",
+      "marketingName": "Infinity 2",
       "manufacturer": "myPhone",
       "brand": "myPhone",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android WebView",
@@ -285,10 +349,18 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -324,10 +396,18 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": "unknown"
+        "type": "WSVGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -363,10 +443,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -402,10 +490,20 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -441,10 +539,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",

@@ -12,10 +12,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -51,10 +59,18 @@
         "width": 480,
         "height": 854,
         "touch": false,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Bot Mobile",
@@ -90,10 +106,18 @@
         "width": 240,
         "height": 427,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 240x427",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": null,
@@ -129,10 +153,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -161,17 +193,27 @@
     },
     "device": {
       "deviceName": "N-06D",
-      "marketingName": "Medias Tab LTE",
+      "marketingName": "Medias Tab",
       "manufacturer": "Nec",
       "brand": "Nec",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",

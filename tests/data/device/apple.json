@@ -12,10 +12,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -51,10 +59,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -90,10 +106,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -129,10 +153,18 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -168,10 +200,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -199,18 +239,26 @@
       "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; zh-TW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.114 Safari/537.36 Puffin/3.7.0IT"
     },
     "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "Apple",
-      "brand": "Apple",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
       "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "type": "unknown"
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": "unknown",
+        "size": null
       },
-      "dualOrientation": true,
-      "type": "tablet"
+      "dualOrientation": false,
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Puffin",
@@ -221,10 +269,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": "0.0.0",
-      "manufacturer": "Apple",
+      "manufacturer": "LinuxFoundation",
       "bits": 64
     },
     "engine": {
@@ -238,18 +286,26 @@
       "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.114 Safari/537.36 Puffin/4.4.0IP "
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "Apple",
-      "brand": "Apple",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
       "display": {
-        "width": 320,
-        "height": 480,
-        "touch": true,
-        "type": "unknown"
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": "unknown",
+        "size": null
       },
-      "dualOrientation": true,
-      "type": "smartphone"
+      "dualOrientation": false,
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Puffin",
@@ -260,10 +316,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": "0.0.0",
-      "manufacturer": "Apple",
+      "manufacturer": "LinuxFoundation",
       "bits": 64
     },
     "engine": {
@@ -278,17 +334,27 @@
     },
     "device": {
       "deviceName": "iPhone 4",
-      "marketingName": "iPhone 4 (GSM)",
+      "marketingName": "iPhone 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "DVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "UC Browser",
@@ -324,10 +390,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "iOS dataaccessd",
@@ -363,10 +437,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -402,10 +484,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "BB Work Connect",
@@ -441,10 +531,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -480,10 +578,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -519,10 +625,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -558,10 +672,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Grindr",
@@ -597,10 +719,18 @@
         "width": 960,
         "height": 640,
         "touch": true,
-        "type": "unknown"
+        "type": "DVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Grindr",
@@ -636,10 +766,18 @@
         "width": 960,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 960x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -675,10 +813,18 @@
         "width": 960,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 960x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -714,10 +860,18 @@
         "width": 960,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 960x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-media-player"
+      "type": "mobile-media-player",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Instagram App",
@@ -753,10 +907,18 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -785,17 +947,27 @@
     },
     "device": {
       "deviceName": "iPad",
-      "marketingName": "iPad (Wi-Fi, Gen 2)",
+      "marketingName": "iPad (Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -824,17 +996,32 @@
     },
     "device": {
       "deviceName": "iPad",
-      "marketingName": "iPad (Wi-Fi+3G, AT&T, Gen 2)",
+      "marketingName": "iPad (+3G, Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": [
+        "Wi-Fi",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -863,17 +1050,33 @@
     },
     "device": {
       "deviceName": "iPad",
-      "marketingName": "iPad (Wi-Fi+3G, Verizon, Gen 2)",
+      "marketingName": "iPad (+3G, Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "Wi-Fi",
+        "GSM",
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -902,17 +1105,27 @@
     },
     "device": {
       "deviceName": "iPad",
-      "marketingName": "iPad (Wi-Fi, Gen 2)",
+      "marketingName": "iPad (Gen 2)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -941,17 +1154,27 @@
     },
     "device": {
       "deviceName": "iPad mini",
-      "marketingName": "iPad mini (Wi-Fi)",
+      "marketingName": "iPad mini",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "UC Browser",
@@ -980,17 +1203,32 @@
     },
     "device": {
       "deviceName": "iPad mini",
-      "marketingName": "iPad mini (Wi-Fi+4G, AT&T)",
+      "marketingName": "iPad mini",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE"
+      ]
     },
     "browser": {
       "name": "UC Browser",
@@ -1019,17 +1257,34 @@
     },
     "device": {
       "deviceName": "iPad mini",
-      "marketingName": "iPad mini (Wi-Fi+4G, Verizon, Sprint)",
+      "marketingName": "iPad mini",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon",
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE",
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1058,17 +1313,27 @@
     },
     "device": {
       "deviceName": "iPad 3",
-      "marketingName": "iPad 3 (Wi-Fi)",
+      "marketingName": "iPad 3",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1097,17 +1362,33 @@
     },
     "device": {
       "deviceName": "iPad 3",
-      "marketingName": "iPad 3 (Wi-Fi+3G, Verizon)",
+      "marketingName": "iPad 3 (+3G)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "Wi-Fi",
+        "GSM",
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Instagram App",
@@ -1136,17 +1417,32 @@
     },
     "device": {
       "deviceName": "iPad 3",
-      "marketingName": "iPad 3 (Wi-Fi+3G, AT&T)",
+      "marketingName": "iPad 3 (+3G)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": [
+        "Wi-Fi",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Instagram App",
@@ -1175,17 +1471,27 @@
     },
     "device": {
       "deviceName": "iPad 4",
-      "marketingName": "iPad 4 (Wi-Fi)",
+      "marketingName": "iPad 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Instagram App",
@@ -1214,17 +1520,32 @@
     },
     "device": {
       "deviceName": "iPad 4",
-      "marketingName": "iPad 4 (Wi-Fi+4G, AT&T)",
+      "marketingName": "iPad 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Instagram App",
@@ -1253,17 +1574,34 @@
     },
     "device": {
       "deviceName": "iPad 4",
-      "marketingName": "iPad 4 (Wi-Fi+4G, Verizon, Sprint)",
+      "marketingName": "iPad 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon",
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE",
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Instagram App",
@@ -1292,17 +1630,27 @@
     },
     "device": {
       "deviceName": "iPad Air",
-      "marketingName": "iPad Air (Wi-Fi)",
+      "marketingName": "iPad Air",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1331,17 +1679,28 @@
     },
     "device": {
       "deviceName": "iPad Air",
-      "marketingName": "iPad Air (Wi-Fi+4G)",
+      "marketingName": "iPad Air",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1370,17 +1729,31 @@
     },
     "device": {
       "deviceName": "iPad Air",
-      "marketingName": "iPad Air (Wi-Fi+4G, China)",
+      "marketingName": "iPad Air",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "China"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE",
+        "WCDMA"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1409,17 +1782,27 @@
     },
     "device": {
       "deviceName": "iPad mini 2",
-      "marketingName": "iPad mini 2 (Wi-Fi)",
+      "marketingName": "iPad mini 2",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1448,17 +1831,28 @@
     },
     "device": {
       "deviceName": "iPad mini 2",
-      "marketingName": "iPad mini 2 (Wi-Fi+4G)",
+      "marketingName": "iPad mini 2",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1487,17 +1881,31 @@
     },
     "device": {
       "deviceName": "iPad mini 2",
-      "marketingName": "iPad mini 2 (Wi-Fi+4G, China)",
+      "marketingName": "iPad mini 2",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "China"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE",
+        "WCDMA"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1526,17 +1934,27 @@
     },
     "device": {
       "deviceName": "iPad mini 3",
-      "marketingName": "iPad mini 3 (Wi-Fi)",
+      "marketingName": "iPad mini 3",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1565,17 +1983,28 @@
     },
     "device": {
       "deviceName": "iPad mini 3",
-      "marketingName": "iPad mini 3 (Wi-Fi+4G)",
+      "marketingName": "iPad mini 3",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1604,17 +2033,31 @@
     },
     "device": {
       "deviceName": "iPad mini 3",
-      "marketingName": "iPad mini 3 (Wi-Fi+4G, China)",
+      "marketingName": "iPad mini 3",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "China"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE",
+        "WCDMA"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1643,17 +2086,27 @@
     },
     "device": {
       "deviceName": "iPad mini 4",
-      "marketingName": "iPad mini 4 (Wi-Fi)",
+      "marketingName": "iPad mini 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1682,17 +2135,28 @@
     },
     "device": {
       "deviceName": "iPad mini 4",
-      "marketingName": "iPad mini 4 (Wi-Fi+4G)",
+      "marketingName": "iPad mini 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1721,17 +2185,27 @@
     },
     "device": {
       "deviceName": "iPad Air 2",
-      "marketingName": "iPad Air 2 (Wi-Fi)",
+      "marketingName": "iPad Air 2",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1760,17 +2234,28 @@
     },
     "device": {
       "deviceName": "iPad Air 2",
-      "marketingName": "iPad Air 2 (Wi-Fi+4G)",
+      "marketingName": "iPad Air 2",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1799,17 +2284,27 @@
     },
     "device": {
       "deviceName": "iPad Pro 9.7",
-      "marketingName": "iPad Pro (9.7, Wi-Fi)",
+      "marketingName": "iPad Pro (9.7)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1838,17 +2333,28 @@
     },
     "device": {
       "deviceName": "iPad Pro 9.7",
-      "marketingName": "iPad Pro (9.7, Wi-Fi+4G)",
+      "marketingName": "iPad Pro (9.7, +)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1877,17 +2383,27 @@
     },
     "device": {
       "deviceName": "iPad Pro",
-      "marketingName": "iPad Pro (12.9, Wi-Fi)",
+      "marketingName": "iPad Pro (12.9)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2732,
         "height": 2048,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 2048x2732",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -1923,10 +2439,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -1962,10 +2486,20 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Grindr",
@@ -2001,10 +2535,20 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Google+ App",
@@ -2033,17 +2577,27 @@
     },
     "device": {
       "deviceName": "iPhone 4",
-      "marketingName": "iPhone 4 (GSM)",
+      "marketingName": "iPhone 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "DVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Google+ App",
@@ -2072,17 +2626,27 @@
     },
     "device": {
       "deviceName": "iPhone 4",
-      "marketingName": "iPhone 4 (GSM)",
+      "marketingName": "iPhone 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "DVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "AppStore App",
@@ -2111,17 +2675,32 @@
     },
     "device": {
       "deviceName": "iPhone 4",
-      "marketingName": "iPhone 4 (CDMA, Verizon, Sprint)",
+      "marketingName": "iPhone 4",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "DVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon",
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Instagram App",
@@ -2157,10 +2736,18 @@
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "DVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google+ App",
@@ -2196,10 +2783,20 @@
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Instagram App",
@@ -2228,17 +2825,28 @@
     },
     "device": {
       "deviceName": "iPhone 5",
-      "marketingName": "iPhone 5 (3G+4G)",
+      "marketingName": "iPhone 5 (3G+)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Google+ App",
@@ -2274,10 +2882,20 @@
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Facebook Messenger App",
@@ -2306,17 +2924,28 @@
     },
     "device": {
       "deviceName": "iPhone 5C",
-      "marketingName": "iPhone 5C (3G+4G)",
+      "marketingName": "iPhone 5C (3G+)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -2352,10 +2981,20 @@
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "AppStore App",
@@ -2384,17 +3023,28 @@
     },
     "device": {
       "deviceName": "iPhone 5S",
-      "marketingName": "iPhone 5S (3G+4G)",
+      "marketingName": "iPhone 5S (3G+)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Instagram App",
@@ -2430,10 +3080,18 @@
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 750x1334",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Rocky ChatWork Mobile",
@@ -2469,10 +3127,18 @@
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 750x1334",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook Messenger App",
@@ -2508,10 +3174,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -2547,10 +3221,18 @@
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 750x1334",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -2579,17 +3261,32 @@
     },
     "device": {
       "deviceName": "A1778",
-      "marketingName": "iPhone 7 (AT&T, T-Mobile, Global)",
+      "marketingName": "iPhone 7",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 750x1334",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T",
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -2618,17 +3315,32 @@
     },
     "device": {
       "deviceName": "A1784",
-      "marketingName": "iPhone 7 Plus (AT&T, T-Mobile, Global)",
+      "marketingName": "iPhone 7 Plus",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T",
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -2664,10 +3376,18 @@
         "width": 640,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "DVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -2696,17 +3416,28 @@
     },
     "device": {
       "deviceName": "iPhone 5",
-      "marketingName": "iPhone 5 (3G+4G)",
+      "marketingName": "iPhone 5 (3G+)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "UC Browser",
@@ -2735,17 +3466,28 @@
     },
     "device": {
       "deviceName": "iPhone 5S",
-      "marketingName": "iPhone 5S (3G+4G)",
+      "marketingName": "iPhone 5S (3G+)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "UC Browser",
@@ -2774,17 +3516,28 @@
     },
     "device": {
       "deviceName": "iPhone 5S",
-      "marketingName": "iPhone 5S (3G+4G)",
+      "marketingName": "iPhone 5S (3G+)",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 640,
         "height": 1136,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 640x1136",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Google Mobile App",
@@ -2820,10 +3573,18 @@
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 750x1334",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "XING App",
@@ -2852,17 +3613,32 @@
     },
     "device": {
       "deviceName": "A1897",
-      "marketingName": "iPhone 8 Plus (AT&T, T-Mobile, Global)",
+      "marketingName": "iPhone 8 Plus",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T",
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -2891,17 +3667,32 @@
     },
     "device": {
       "deviceName": "A1897",
-      "marketingName": "iPhone 8 Plus (AT&T, T-Mobile, Global)",
+      "marketingName": "iPhone 8 Plus",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T",
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Mobile App",
@@ -2937,10 +3728,18 @@
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 750x1334",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Mobile App",
@@ -2976,10 +3775,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "AdsBot Google-Mobile",
@@ -3015,10 +3822,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Bot",
@@ -3054,10 +3869,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -3086,17 +3909,27 @@
     },
     "device": {
       "deviceName": "iPad Air 2",
-      "marketingName": "iPad Air 2 (Wi-Fi)",
+      "marketingName": "iPad Air 2",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Google Mobile App",
@@ -3132,10 +3965,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mobile Safari UIWebView",
@@ -3171,10 +4012,18 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome for iOS",
@@ -3210,10 +4059,18 @@
         "width": 390,
         "height": 312,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 312x390",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "watch"
+      "type": "watch",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CoreMedia",
@@ -3249,10 +4106,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "speaker"
+      "type": "speaker",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CoreMedia",
@@ -3288,10 +4153,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome for iOS",
@@ -3327,10 +4200,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Miui Browser",
@@ -3366,10 +4247,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Box App",
@@ -3405,10 +4294,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Yahoo Ad Monitoring",
@@ -3444,10 +4341,18 @@
         "width": 750,
         "height": 1334,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 750x1334",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -3476,17 +4381,32 @@
     },
     "device": {
       "deviceName": "A1901",
-      "marketingName": "iPhone X (AT&T, T-Mobile, Global)",
+      "marketingName": "iPhone X",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": 1125,
         "height": 2436,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1125x2436",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T",
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -3522,10 +4442,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Firefox for iOS",
@@ -3561,10 +4489,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -3600,10 +4536,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -3639,10 +4583,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -3678,10 +4630,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -3717,10 +4677,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -3756,10 +4724,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -3795,10 +4771,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -3834,10 +4818,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mercury",
@@ -3873,10 +4865,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -3912,10 +4912,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -3951,10 +4959,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -3990,10 +5006,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4029,10 +5053,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4068,10 +5100,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4107,10 +5147,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4138,18 +5186,26 @@
       "user-agent": "Safari/12602.1.32.7 CFNetwork/790.2 Darwin/16.0.0 (x86_64)"
     },
     "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
+      "deviceName": "general Apple Device",
+      "marketingName": "general Apple Device",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
-        "type": "unknown"
+        "touch": true,
+        "type": "unknown",
+        "size": null
       },
-      "dualOrientation": false,
-      "type": "desktop"
+      "dualOrientation": true,
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4185,10 +5241,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4224,10 +5288,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -4263,10 +5335,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -4302,10 +5382,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4341,10 +5429,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4380,10 +5476,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -4419,10 +5523,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -4458,10 +5570,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4497,10 +5617,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Unibox",
@@ -4536,10 +5664,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4575,10 +5711,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4614,10 +5758,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4653,10 +5805,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4692,10 +5852,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4731,10 +5899,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4770,10 +5946,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4809,10 +5993,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4848,10 +6040,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4887,10 +6087,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4926,10 +6134,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -4965,10 +6181,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CoreMedia",

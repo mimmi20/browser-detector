@@ -12,10 +12,20 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Opera Mobile",
@@ -51,10 +61,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -90,10 +108,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -129,10 +155,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Yandex Browser",

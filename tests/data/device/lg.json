@@ -12,10 +12,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Darwin Browser",
@@ -51,10 +59,18 @@
         "width": 240,
         "height": 400,
         "touch": true,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -83,17 +99,27 @@
     },
     "device": {
       "deviceName": "H345",
-      "marketingName": "Leon 4G LTE",
+      "marketingName": "Leon",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "LG Player",
@@ -129,10 +155,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -168,10 +202,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -207,10 +249,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -246,10 +296,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -285,10 +343,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -317,17 +383,27 @@
     },
     "device": {
       "deviceName": "H850",
-      "marketingName": "G5 (Europe)",
+      "marketingName": "G5",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Dalvik",
@@ -363,10 +439,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -395,17 +479,27 @@
     },
     "device": {
       "deviceName": "D955",
-      "marketingName": "G Flex (Europe)",
+      "marketingName": "G Flex",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -434,17 +528,27 @@
     },
     "device": {
       "deviceName": "V935",
-      "marketingName": "G Pad II 10.1 LTE",
+      "marketingName": "G Pad II 10.1",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "unknown"
+        "type": "WUXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -480,10 +584,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -519,10 +631,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -558,10 +678,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -597,10 +725,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -636,10 +772,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -675,10 +819,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -714,10 +866,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -753,10 +913,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Yandex Browser",
@@ -785,17 +953,27 @@
     },
     "device": {
       "deviceName": "D856",
-      "marketingName": "G3 Dual LTE",
+      "marketingName": "G3 Dual",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -831,10 +1009,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CM Browser",
@@ -863,17 +1049,27 @@
     },
     "device": {
       "deviceName": "D958",
-      "marketingName": "G Flex (Hong Kong & Asia)",
+      "marketingName": "G Flex ( & Asia)",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Hong Kong"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -902,17 +1098,29 @@
     },
     "device": {
       "deviceName": "D959",
-      "marketingName": "G Flex (T-Mobile)",
+      "marketingName": "G Flex",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -941,17 +1149,29 @@
     },
     "device": {
       "deviceName": "D950",
-      "marketingName": "G Flex (AT&T)",
+      "marketingName": "G Flex",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -980,17 +1200,31 @@
     },
     "device": {
       "deviceName": "LS995",
-      "marketingName": "G Flex (Sprint)",
+      "marketingName": "G Flex",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Android WebView",
@@ -1026,10 +1260,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -1058,17 +1300,27 @@
     },
     "device": {
       "deviceName": "P765",
-      "marketingName": "Optimus L9 (India)",
+      "marketingName": "Optimus L9",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "India"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -1104,10 +1356,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -1143,10 +1403,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -1182,10 +1450,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -1221,10 +1497,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -1253,17 +1537,27 @@
     },
     "device": {
       "deviceName": "H340N",
-      "marketingName": "Leon 4G LTE",
+      "marketingName": "Leon",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -1299,10 +1593,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -1331,17 +1633,27 @@
     },
     "device": {
       "deviceName": "V490",
-      "marketingName": "G Pad 8.0 4G LTE",
+      "marketingName": "G Pad 8.0",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -1377,10 +1689,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -1416,10 +1736,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -1455,10 +1783,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1494,10 +1830,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -1526,17 +1870,31 @@
     },
     "device": {
       "deviceName": "VS980",
-      "marketingName": "G2 (Verizon)",
+      "marketingName": "G2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -1565,17 +1923,31 @@
     },
     "device": {
       "deviceName": "VS880",
-      "marketingName": "G Vista (Verizon)",
+      "marketingName": "G Vista",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Facebook App",
@@ -1604,17 +1976,27 @@
     },
     "device": {
       "deviceName": "VS840",
-      "marketingName": "Lucid 4G",
+      "marketingName": "Lucid",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -1650,10 +2032,18 @@
         "width": 1280,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1689,10 +2079,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1728,10 +2126,18 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "unknown"
+        "type": "WUXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -1767,10 +2173,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Phantom Browser",
@@ -1806,10 +2220,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Phantom Browser",
@@ -1845,10 +2267,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1884,10 +2314,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1923,10 +2361,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1955,17 +2401,27 @@
     },
     "device": {
       "deviceName": "P936",
-      "marketingName": "Optimus True HD LTE",
+      "marketingName": "Optimus True HD",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "UC Browser",
@@ -2001,10 +2457,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -2040,10 +2504,18 @@
         "width": 768,
         "height": 1024,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -2079,10 +2551,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -2118,10 +2598,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -2157,10 +2645,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2196,10 +2692,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2235,10 +2739,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -2274,10 +2786,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2313,10 +2833,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -2352,10 +2880,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2391,10 +2927,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2430,10 +2974,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -2469,10 +3021,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2508,10 +3068,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2547,10 +3115,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2586,10 +3162,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -2618,17 +3202,27 @@
     },
     "device": {
       "deviceName": "L160L",
-      "marketingName": "Optimus LTE2",
+      "marketingName": "Optimus 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -2664,10 +3258,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "IEMobile",
@@ -2703,10 +3305,18 @@
         "width": 240,
         "height": 400,
         "touch": true,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mini",
@@ -2742,10 +3352,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2781,10 +3399,18 @@
         "width": 176,
         "height": 220,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 176x220",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -2820,10 +3446,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -2859,10 +3493,18 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CM Browser",
@@ -2891,17 +3533,27 @@
     },
     "device": {
       "deviceName": "F160K",
-      "marketingName": "Optimus LTE2",
+      "marketingName": "Optimus 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -2930,17 +3582,27 @@
     },
     "device": {
       "deviceName": "F160L",
-      "marketingName": "Optimus LTE2",
+      "marketingName": "Optimus 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -2969,17 +3631,27 @@
     },
     "device": {
       "deviceName": "F160S",
-      "marketingName": "Optimus LTE2",
+      "marketingName": "Optimus 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3015,10 +3687,18 @@
         "width": 768,
         "height": 1024,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -3054,10 +3734,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3086,17 +3774,27 @@
     },
     "device": {
       "deviceName": "E980h",
-      "marketingName": "Optimus G Pro 5.5 4G",
+      "marketingName": "Optimus G Pro 5.5",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3132,10 +3830,18 @@
         "width": 768,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -3171,10 +3877,18 @@
         "width": 768,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -3210,10 +3924,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "IEMobile",
@@ -3249,10 +3971,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "IEMobile",
@@ -3288,10 +4018,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Puffin",
@@ -3327,10 +4065,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -3366,10 +4112,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -3405,10 +4159,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -3444,10 +4206,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3483,10 +4253,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -3522,10 +4300,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -3561,10 +4347,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -3593,17 +4387,27 @@
     },
     "device": {
       "deviceName": "D802",
-      "marketingName": "G2 (Europe)",
+      "marketingName": "G2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3639,10 +4443,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3671,17 +4483,27 @@
     },
     "device": {
       "deviceName": "D722",
-      "marketingName": "G3 S (Europe)",
+      "marketingName": "G3 S",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -3710,17 +4532,30 @@
     },
     "device": {
       "deviceName": "D722K",
-      "marketingName": "G3 S (Taiwan, Hong Kong, India)",
+      "marketingName": "G3 S",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Hong Kong",
+          "Taiwan"
+        ],
+        "countries": [
+          "India"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -3749,17 +4584,29 @@
     },
     "device": {
       "deviceName": "D725",
-      "marketingName": "G3 S (AT&T)",
+      "marketingName": "G3 S",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -3788,17 +4635,29 @@
     },
     "device": {
       "deviceName": "D728",
-      "marketingName": "G3 S (China)",
+      "marketingName": "G3 S",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "China"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "WCDMA"
+      ]
     },
     "browser": {
       "name": "Android WebView",
@@ -3834,10 +4693,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3873,10 +4740,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3912,10 +4787,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3951,10 +4834,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Firefox",
@@ -3990,10 +4881,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CM Browser",
@@ -4022,17 +4921,25 @@
     },
     "device": {
       "deviceName": "D285",
-      "marketingName": "L65 Dual SIM",
+      "marketingName": "L65",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -4068,10 +4975,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4107,10 +5022,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -4146,10 +5069,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4185,10 +5116,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Phantom Browser",
@@ -4224,10 +5163,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Openwave Mobile Browser",
@@ -4263,10 +5210,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4302,10 +5257,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4341,10 +5304,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4380,10 +5351,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4419,10 +5398,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4458,10 +5445,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4497,10 +5492,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4536,10 +5539,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4575,10 +5586,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4614,10 +5633,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4653,10 +5680,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4692,10 +5727,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4731,10 +5774,18 @@
         "width": 240,
         "height": 400,
         "touch": true,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "NetFront",
@@ -4770,10 +5821,18 @@
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": null,
@@ -4809,10 +5868,18 @@
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -4848,10 +5915,18 @@
         "width": 240,
         "height": 400,
         "touch": false,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -4887,10 +5962,18 @@
         "width": 480,
         "height": 800,
         "touch": false,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -4926,10 +6009,18 @@
         "width": 240,
         "height": 400,
         "touch": true,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Obigo Q",
@@ -4965,10 +6056,18 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Obigo Q",
@@ -5004,10 +6103,18 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -5043,10 +6150,18 @@
         "width": 240,
         "height": 400,
         "touch": false,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -5082,10 +6197,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -5121,10 +6244,18 @@
         "width": 768,
         "height": 1024,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5160,10 +6291,18 @@
         "width": 768,
         "height": 1024,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5199,10 +6338,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5238,10 +6385,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5277,10 +6432,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mozilla",
@@ -5316,10 +6479,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5355,10 +6526,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Phantom Browser",
@@ -5394,10 +6573,18 @@
         "width": 345,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 345x800",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Obigo Q",
@@ -5433,10 +6620,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Obigo Q",
@@ -5472,10 +6667,18 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "QQbrowser Mini",
@@ -5511,10 +6714,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -5550,10 +6761,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5589,10 +6808,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5628,10 +6855,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5667,10 +6902,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -5706,10 +6949,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5738,17 +6989,31 @@
     },
     "device": {
       "deviceName": "VS810PP",
-      "marketingName": "Transpyre (Verizon)",
+      "marketingName": "Transpyre",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Android WebView",
@@ -5784,10 +7049,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -5823,10 +7096,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -5862,10 +7143,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5901,10 +7190,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -5940,10 +7237,18 @@
         "width": 240,
         "height": 400,
         "touch": true,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "NetFront",
@@ -5972,17 +7277,31 @@
     },
     "device": {
       "deviceName": "VN271",
-      "marketingName": "Extravert (Verizon)",
+      "marketingName": "Extravert",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 240,
         "height": 400,
         "touch": true,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Opera Mini",
@@ -6018,10 +7337,18 @@
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "NetFront",
@@ -6057,10 +7384,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6096,10 +7431,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "SurfBrowser",
@@ -6128,17 +7471,27 @@
     },
     "device": {
       "deviceName": "H440n",
-      "marketingName": "Spirit LTE",
+      "marketingName": "Spirit",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -6174,10 +7527,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6213,10 +7574,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6252,10 +7621,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6291,10 +7668,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6323,17 +7708,29 @@
     },
     "device": {
       "deviceName": "MS210",
-      "marketingName": "Aristo (T-Mobile)",
+      "marketingName": "Aristo",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6362,17 +7759,31 @@
     },
     "device": {
       "deviceName": "VS995",
-      "marketingName": "V20 (Verizon)",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6401,17 +7812,27 @@
     },
     "device": {
       "deviceName": "H990N",
-      "marketingName": "V20 Dual SIM (Hong Kong)",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Hong Kong"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6440,17 +7861,25 @@
     },
     "device": {
       "deviceName": "H990DS",
-      "marketingName": "V20 Dual SIM",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6479,17 +7908,29 @@
     },
     "device": {
       "deviceName": "H910",
-      "marketingName": "V20 (AT&T)",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6518,17 +7959,29 @@
     },
     "device": {
       "deviceName": "H918",
-      "marketingName": "V20 (T-Mobile)",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6557,17 +8010,31 @@
     },
     "device": {
       "deviceName": "LS997",
-      "marketingName": "V20 (Sprint)",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6596,17 +8063,29 @@
     },
     "device": {
       "deviceName": "US996",
-      "marketingName": "V20 (U.S. Cellular)",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "U.S. Cellular"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6635,17 +8114,27 @@
     },
     "device": {
       "deviceName": "H990T",
-      "marketingName": "V20 (Mexico)",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "Mexico"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aloha Browser",
@@ -6681,10 +8170,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6720,10 +8217,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6759,10 +8264,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6798,10 +8311,18 @@
         "width": 240,
         "height": 400,
         "touch": false,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -6837,10 +8358,18 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -6876,10 +8405,18 @@
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safari",
@@ -6915,10 +8452,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -6947,17 +8492,27 @@
     },
     "device": {
       "deviceName": "H840",
-      "marketingName": "G5 SE (Latin America)",
+      "marketingName": "G5 SE",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Latin America"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -6993,10 +8548,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -7032,10 +8595,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7071,10 +8642,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7110,10 +8689,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7149,10 +8736,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7188,10 +8783,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7227,10 +8830,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7266,10 +8877,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -7305,10 +8924,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -7344,10 +8971,18 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -7383,10 +9018,18 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -7415,17 +9058,27 @@
     },
     "device": {
       "deviceName": "K500N",
-      "marketingName": "X screen (Europe)",
+      "marketingName": "X screen",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7461,10 +9114,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7500,10 +9161,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7532,17 +9201,27 @@
     },
     "device": {
       "deviceName": "H955",
-      "marketingName": "G Flex 2 (Europe, Middle East, Africa)",
+      "marketingName": "G Flex 2 (Middle East, Africa)",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7571,17 +9250,31 @@
     },
     "device": {
       "deviceName": "LS996",
-      "marketingName": "G Flex 2 (Sprint)",
+      "marketingName": "G Flex 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -7610,17 +9303,29 @@
     },
     "device": {
       "deviceName": "H950",
-      "marketingName": "G Flex 2 (AT&T)",
+      "marketingName": "G Flex 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7649,17 +9354,29 @@
     },
     "device": {
       "deviceName": "US995",
-      "marketingName": "G Flex 2 (U.S. Cellular)",
+      "marketingName": "G Flex 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "U.S. Cellular"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7688,17 +9405,27 @@
     },
     "device": {
       "deviceName": "K220",
-      "marketingName": "X Power (Europe)",
+      "marketingName": "X Power",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7727,17 +9454,27 @@
     },
     "device": {
       "deviceName": "K220DS",
-      "marketingName": "X Power (Russia, Europe, Middle East, Africa)",
+      "marketingName": "X Power (Russia, Middle East, Africa)",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7773,10 +9510,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7805,17 +9550,29 @@
     },
     "device": {
       "deviceName": "US610",
-      "marketingName": "X Power (U.S. Cellular)",
+      "marketingName": "X Power",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "U.S. Cellular"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7851,10 +9608,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7890,10 +9655,18 @@
         "width": 768,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -7929,10 +9702,18 @@
         "width": 768,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -7968,10 +9749,18 @@
         "width": 768,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -8007,10 +9796,18 @@
         "width": 768,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -8046,10 +9843,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -8078,17 +9883,27 @@
     },
     "device": {
       "deviceName": "X210",
-      "marketingName": "K7 (Europe)",
+      "marketingName": "K7",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -8124,10 +9939,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -8163,10 +9986,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -8202,10 +10033,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -8241,10 +10080,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -8280,10 +10127,18 @@
         "width": 800,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -8312,17 +10167,27 @@
     },
     "device": {
       "deviceName": "H635",
-      "marketingName": "G4 Stylus 4G",
+      "marketingName": "G4 Stylus",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android WebView",
@@ -8351,17 +10216,27 @@
     },
     "device": {
       "deviceName": "H962",
-      "marketingName": "V10 (Taiwan)",
+      "marketingName": "V10",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Taiwan"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -8397,10 +10272,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -8436,10 +10319,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -8475,10 +10366,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -8514,10 +10413,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -8553,10 +10460,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -8592,10 +10507,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -8624,17 +10547,27 @@
     },
     "device": {
       "deviceName": "H735",
-      "marketingName": "G4S 4G",
+      "marketingName": "G4S",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -8670,10 +10603,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -8702,17 +10643,29 @@
     },
     "device": {
       "deviceName": "D800",
-      "marketingName": "G2 (AT&T)",
+      "marketingName": "G2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -8741,17 +10694,29 @@
     },
     "device": {
       "deviceName": "D801",
-      "marketingName": "G2 (T-Mobile)",
+      "marketingName": "G2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -8780,17 +10745,27 @@
     },
     "device": {
       "deviceName": "D802TA",
-      "marketingName": "G2 (Australia)",
+      "marketingName": "G2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "Australia"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -8819,17 +10794,27 @@
     },
     "device": {
       "deviceName": "D803",
-      "marketingName": "G2 (Canada)",
+      "marketingName": "G2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "Canada"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -8858,17 +10843,31 @@
     },
     "device": {
       "deviceName": "LS980",
-      "marketingName": "G2 (Sprint)",
+      "marketingName": "G2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -8904,10 +10903,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -8936,17 +10943,27 @@
     },
     "device": {
       "deviceName": "D390n",
-      "marketingName": "F60 4G",
+      "marketingName": "F60",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -8982,10 +10999,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9021,10 +11046,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9053,17 +11086,27 @@
     },
     "device": {
       "deviceName": "H961N",
-      "marketingName": "V10 (Hong Kong)",
+      "marketingName": "V10",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Hong Kong"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9099,10 +11142,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9131,17 +11182,28 @@
     },
     "device": {
       "deviceName": "H960A",
-      "marketingName": "V10 (Europe, Latin America)",
+      "marketingName": "V10",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe",
+          "Latin America"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9177,10 +11239,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9216,10 +11286,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9255,10 +11333,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9294,10 +11380,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9326,17 +11420,29 @@
     },
     "device": {
       "deviceName": "H968",
-      "marketingName": "V10 (China)",
+      "marketingName": "V10",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "China"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "WCDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -9365,17 +11471,29 @@
     },
     "device": {
       "deviceName": "H900",
-      "marketingName": "V10 (AT&T)",
+      "marketingName": "V10",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9404,17 +11522,29 @@
     },
     "device": {
       "deviceName": "H901",
-      "marketingName": "V10 (T-Mobile)",
+      "marketingName": "V10",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9443,17 +11573,31 @@
     },
     "device": {
       "deviceName": "VS990",
-      "marketingName": "V10 (Verizon)",
+      "marketingName": "V10",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -9489,10 +11633,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -9528,10 +11680,20 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Android WebView",
@@ -9560,17 +11722,29 @@
     },
     "device": {
       "deviceName": "H445",
-      "marketingName": "Escape 2 (AT&T)",
+      "marketingName": "Escape 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -9606,10 +11780,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -9645,10 +11827,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -9684,10 +11874,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -9723,10 +11921,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -9762,10 +11968,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -9801,10 +12015,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -9840,10 +12062,18 @@
         "width": 768,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -9879,10 +12109,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -9911,17 +12149,27 @@
     },
     "device": {
       "deviceName": "F120K",
-      "marketingName": "Optimus LTE Tag",
+      "marketingName": "Optimus  Tag",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -9957,10 +12205,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -9996,10 +12252,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10035,10 +12299,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10074,10 +12346,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10113,10 +12393,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10152,10 +12440,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10191,10 +12487,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10223,17 +12527,27 @@
     },
     "device": {
       "deviceName": "MS770",
-      "marketingName": "Motion 4G",
+      "marketingName": "Motion",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -10269,10 +12583,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10308,10 +12630,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10340,17 +12670,27 @@
     },
     "device": {
       "deviceName": "L-01D",
-      "marketingName": "Optimus LTE",
+      "marketingName": "Optimus",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -10386,10 +12726,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10425,10 +12773,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10464,10 +12820,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10503,10 +12867,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10542,10 +12914,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10581,10 +12961,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10620,10 +13008,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -10659,10 +13055,18 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -10698,10 +13102,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10737,10 +13149,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10776,10 +13196,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10815,10 +13243,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10854,10 +13290,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -10893,10 +13337,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -10932,10 +13384,18 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "unknown"
+        "type": "WUXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -10971,10 +13431,18 @@
         "width": 1280,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -11010,10 +13478,18 @@
         "width": 1280,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -11049,10 +13525,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11088,10 +13572,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11127,10 +13619,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Kiwi",
@@ -11166,10 +13666,18 @@
         "width": 1440,
         "height": 3120,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x3120",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11205,10 +13713,18 @@
         "width": 1080,
         "height": 2160,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1080x2160",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11244,10 +13760,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11283,10 +13807,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11322,10 +13854,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11361,10 +13901,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11400,10 +13948,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -11432,17 +13988,29 @@
     },
     "device": {
       "deviceName": "H820",
-      "marketingName": "G5 (AT&T)",
+      "marketingName": "G5",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -11471,17 +14039,27 @@
     },
     "device": {
       "deviceName": "H858",
-      "marketingName": "G5 Speed (Taiwan)",
+      "marketingName": "G5 Speed",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Taiwan"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -11510,17 +14088,31 @@
     },
     "device": {
       "deviceName": "VS987",
-      "marketingName": "G5 (Verizon)",
+      "marketingName": "G5",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -11549,17 +14141,31 @@
     },
     "device": {
       "deviceName": "LS992",
-      "marketingName": "G5 (Sprint)",
+      "marketingName": "G5",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -11588,17 +14194,29 @@
     },
     "device": {
       "deviceName": "H830",
-      "marketingName": "G5 (T-Mobile)",
+      "marketingName": "G5",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -11634,10 +14252,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "ShopKeep Pocket",
@@ -11673,10 +14299,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11712,10 +14346,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11751,10 +14393,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11790,10 +14440,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11829,10 +14487,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11868,10 +14534,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11907,10 +14581,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11946,10 +14628,18 @@
         "width": 1440,
         "height": 2880,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2880",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -11985,10 +14675,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12017,17 +14715,27 @@
     },
     "device": {
       "deviceName": "K332",
-      "marketingName": "K7 LTE",
+      "marketingName": "K7",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -12063,10 +14771,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12102,10 +14818,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12141,10 +14865,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12180,10 +14912,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12219,10 +14959,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12258,10 +15006,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12297,10 +15053,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12336,10 +15100,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12375,10 +15147,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12414,10 +15194,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12446,17 +15234,27 @@
     },
     "device": {
       "deviceName": "L82VL",
-      "marketingName": "Stylo 2 LTE",
+      "marketingName": "Stylo 2",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -12492,10 +15290,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12524,17 +15330,27 @@
     },
     "device": {
       "deviceName": "LS450",
-      "marketingName": "K3 4G",
+      "marketingName": "K3",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -12562,18 +15378,28 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; VK810 4G Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36"
     },
     "device": {
-      "deviceName": "VK810 4G",
-      "marketingName": "G Pad 8.3 4G",
+      "deviceName": "VK810",
+      "marketingName": "G Pad 8.3",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "unknown"
+        "type": "WUXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -12609,10 +15435,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12648,10 +15482,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -12687,10 +15529,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",

@@ -4,18 +4,28 @@
       "user-agent": "Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; BLU; WIN HD LTE; BLU 000-33) like Gecko"
     },
     "device": {
-      "deviceName": "Win HD LTE",
-      "marketingName": "Win HD LTE",
+      "deviceName": "Win HD",
+      "marketingName": "Win HD",
       "manufacturer": "Blu",
       "brand": "Blu",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "IEMobile",
@@ -43,18 +53,28 @@
       "user-agent": "Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; BLU; WIN JR LTE; BLU 000-33) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537"
     },
     "device": {
-      "deviceName": "Win JR LTE",
-      "marketingName": "Win JR LTE",
+      "deviceName": "Win JR",
+      "marketingName": "Win JR",
       "manufacturer": "Blu",
       "brand": "Blu",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "IEMobile",
@@ -90,10 +110,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "IEMobile",
@@ -129,10 +157,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "IEMobile",
@@ -160,18 +196,28 @@
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; ARM; WIN JR LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586"
     },
     "device": {
-      "deviceName": "Win JR LTE",
-      "marketingName": "Win JR LTE",
+      "deviceName": "Win JR",
+      "marketingName": "Win JR",
       "manufacturer": "Blu",
       "brand": "Blu",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Edge",
@@ -207,10 +253,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -246,10 +300,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -285,10 +347,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -324,10 +394,18 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": "unknown"
+        "type": "WSVGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -363,10 +441,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -402,10 +488,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -441,10 +535,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -480,10 +582,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -519,10 +629,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -558,10 +676,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -597,10 +723,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -636,10 +770,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -675,10 +817,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -714,10 +864,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -753,10 +911,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -792,10 +958,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -831,10 +1005,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -870,10 +1052,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -909,10 +1099,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -948,10 +1146,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -987,10 +1193,18 @@
         "width": 720,
         "height": 1440,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 720x1440",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -1026,10 +1240,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CM Browser",

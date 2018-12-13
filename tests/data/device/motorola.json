@@ -12,10 +12,18 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "IEMobile",
@@ -51,10 +59,18 @@
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -90,10 +106,18 @@
         "width": 176,
         "height": 220,
         "touch": false,
-        "type": "unknown"
+        "type": "Custom 176x220",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -129,10 +153,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -168,10 +200,18 @@
         "width": 176,
         "height": 220,
         "touch": false,
-        "type": "unknown"
+        "type": "Custom 176x220",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -200,17 +240,25 @@
     },
     "device": {
       "deviceName": "XT1068",
-      "marketingName": "Moto G Dual SIM (2nd gen)",
+      "marketingName": "Moto G  (2nd gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -246,10 +294,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -278,17 +334,27 @@
     },
     "device": {
       "deviceName": "XT1039",
-      "marketingName": "Moto G LTE",
+      "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -324,10 +390,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -356,17 +430,27 @@
     },
     "device": {
       "deviceName": "MB612",
-      "marketingName": "XPRT (CDMA)",
+      "marketingName": "XPRT",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -402,10 +486,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -441,10 +533,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -473,17 +573,29 @@
     },
     "device": {
       "deviceName": "XT1058",
-      "marketingName": "Moto X (AT&T)",
+      "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -512,17 +624,27 @@
     },
     "device": {
       "deviceName": "XT1052",
-      "marketingName": "Moto X (Europe)",
+      "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -558,10 +680,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -590,17 +720,31 @@
     },
     "device": {
       "deviceName": "XT926",
-      "marketingName": "Droid Razr HD (Verizon)",
+      "marketingName": "Droid Razr HD",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -629,17 +773,27 @@
     },
     "device": {
       "deviceName": "XT925",
-      "marketingName": "Droid Razr HD 4G",
+      "marketingName": "Droid Razr HD",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -675,10 +829,20 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -714,10 +878,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -753,10 +925,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -792,10 +972,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -824,17 +1012,27 @@
     },
     "device": {
       "deviceName": "XT875",
-      "marketingName": "Droid Bionic LTE",
+      "marketingName": "Droid Bionic",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -870,10 +1068,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -909,10 +1115,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -948,10 +1162,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -987,10 +1209,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1026,10 +1256,18 @@
         "width": 240,
         "height": 400,
         "touch": false,
-        "type": "unknown"
+        "type": "WQVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Mobile",
@@ -1040,10 +1278,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Nucleus OS",
-      "marketingName": "Nucleus",
+      "name": "Android",
+      "marketingName": "Android",
       "version": "0.0.0",
-      "manufacturer": "Accelerated Technology",
+      "manufacturer": "Google",
       "bits": 32
     },
     "engine": {
@@ -1065,10 +1303,18 @@
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -1104,10 +1350,20 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Dalvik",
@@ -1143,10 +1399,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1182,10 +1446,20 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Dalvik",
@@ -1221,10 +1495,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1260,10 +1542,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1299,10 +1589,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1338,10 +1636,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1377,10 +1683,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1416,10 +1730,18 @@
         "width": 480,
         "height": 640,
         "touch": true,
-        "type": "unknown"
+        "type": "VGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1455,10 +1777,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -1494,10 +1824,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -1533,10 +1871,18 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1572,10 +1918,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -1611,10 +1965,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1650,10 +2012,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": null,
@@ -1689,10 +2059,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1728,10 +2106,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1767,10 +2153,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1806,10 +2200,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1845,10 +2247,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1884,10 +2294,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1923,10 +2341,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -1962,10 +2388,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2001,10 +2435,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2040,10 +2482,18 @@
         "width": 120,
         "height": 160,
         "touch": false,
-        "type": "unknown"
+        "type": "QQVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2079,10 +2529,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2118,10 +2576,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2157,10 +2623,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mozilla",
@@ -2196,10 +2670,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mozilla",
@@ -2235,10 +2717,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mozilla",
@@ -2274,10 +2764,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2313,10 +2811,18 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mozilla",
@@ -2352,10 +2858,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mozilla",
@@ -2391,10 +2905,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2430,10 +2952,18 @@
         "width": 480,
         "height": 640,
         "touch": true,
-        "type": "unknown"
+        "type": "VGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Internet Explorer",
@@ -2462,17 +2992,27 @@
     },
     "device": {
       "deviceName": "XT912B",
-      "marketingName": "Droid Razr 4G",
+      "marketingName": "Droid Razr",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -2508,10 +3048,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -2547,10 +3095,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Mozilla",
@@ -2579,17 +3135,27 @@
     },
     "device": {
       "deviceName": "MB886",
-      "marketingName": "Atrix HD 4G LTE",
+      "marketingName": "Atrix HD",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -2618,17 +3184,25 @@
     },
     "device": {
       "deviceName": "XT1025",
-      "marketingName": "Moto E Dual SIM",
+      "marketingName": "Moto E",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -2657,17 +3231,25 @@
     },
     "device": {
       "deviceName": "XT1022",
-      "marketingName": "Moto E Dual SIM",
+      "marketingName": "Moto E",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -2696,17 +3278,31 @@
     },
     "device": {
       "deviceName": "XT1060",
-      "marketingName": "Moto X (Verizon)",
+      "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -2735,17 +3331,29 @@
     },
     "device": {
       "deviceName": "XT1053",
-      "marketingName": "Moto X (T-Mobile)",
+      "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "T-Mobile"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -2774,17 +3382,29 @@
     },
     "device": {
       "deviceName": "XT1055",
-      "marketingName": "Moto X (U.S. Cellular)",
+      "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "U.S. Cellular"
+        ]
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -2813,17 +3433,31 @@
     },
     "device": {
       "deviceName": "XT1056",
-      "marketingName": "Moto X (Sprint)",
+      "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -2852,17 +3486,27 @@
     },
     "device": {
       "deviceName": "XT1040",
-      "marketingName": "Moto G 4G",
+      "marketingName": "Moto G",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -2891,17 +3535,32 @@
     },
     "device": {
       "deviceName": "XT1528",
-      "marketingName": "Moto E (2nd Gen., CDMA+LTE, Verizon)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "LTE",
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Android WebView",
@@ -2930,17 +3589,32 @@
     },
     "device": {
       "deviceName": "XT1528",
-      "marketingName": "Moto E (2nd Gen., CDMA+LTE, Verizon)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "LTE",
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -2969,17 +3643,30 @@
     },
     "device": {
       "deviceName": "XT1527",
-      "marketingName": "Moto E (2nd Gen., GSM+LTE, USA)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3008,17 +3695,32 @@
     },
     "device": {
       "deviceName": "XT1526",
-      "marketingName": "Moto E (2nd Gen., CDMA+LTE, Sprint)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "LTE",
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3047,17 +3749,30 @@
     },
     "device": {
       "deviceName": "XT1524",
-      "marketingName": "Moto E (2nd Gen., GSM+LTE, Global)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3086,17 +3801,30 @@
     },
     "device": {
       "deviceName": "XT1521",
-      "marketingName": "Moto E (2nd Gen., GSM+LTE, Global, Dual SIM)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3125,17 +3853,29 @@
     },
     "device": {
       "deviceName": "XT1511",
-      "marketingName": "Moto E (2nd Gen., GSM, USA)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3164,17 +3904,29 @@
     },
     "device": {
       "deviceName": "XT1506",
-      "marketingName": "Moto E (2nd Gen., GSM, Global, Dual SIM)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3203,17 +3955,29 @@
     },
     "device": {
       "deviceName": "XT1505",
-      "marketingName": "Moto E (2nd Gen., GSM, Global)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -3249,10 +4013,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -3281,17 +4053,32 @@
     },
     "device": {
       "deviceName": "XT1528",
-      "marketingName": "Moto E (2nd Gen., CDMA+LTE, Verizon)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "LTE",
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "UC Browser",
@@ -3327,10 +4114,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Box App",
@@ -3366,10 +4161,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -3405,10 +4208,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "WebPagetest",
@@ -3444,10 +4255,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3483,10 +4302,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3522,10 +4349,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3561,10 +4396,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3593,17 +4436,25 @@
     },
     "device": {
       "deviceName": "XT1581",
-      "marketingName": "Moto X Force Dual SIM",
+      "marketingName": "Moto X Force",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3639,10 +4490,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3678,10 +4537,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3717,10 +4584,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3756,10 +4631,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3788,17 +4671,25 @@
     },
     "device": {
       "deviceName": "XT1685",
-      "marketingName": "Moto G5 Plus (Dual SIM)",
+      "marketingName": "Moto G5 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3827,17 +4718,27 @@
     },
     "device": {
       "deviceName": "XT1687",
-      "marketingName": "Moto G5 Plus (USA)",
+      "marketingName": "Moto G5 Plus",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3873,10 +4774,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3912,10 +4821,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3951,10 +4868,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -3983,17 +4908,27 @@
     },
     "device": {
       "deviceName": "XT1604",
-      "marketingName": "Moto G4 Play (Europe)",
+      "marketingName": "Moto G4 Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4022,17 +4957,30 @@
     },
     "device": {
       "deviceName": "XT1602",
-      "marketingName": "Moto G4 Play (Europe, India, Australia)",
+      "marketingName": "Moto G4 Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [
+          "India",
+          "Australia"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4061,17 +5009,28 @@
     },
     "device": {
       "deviceName": "XT1607",
-      "marketingName": "Moto G4 Play (USA, Canada)",
+      "marketingName": "Moto G4 Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA",
+          "Canada"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4100,17 +5059,27 @@
     },
     "device": {
       "deviceName": "XT1609",
-      "marketingName": "Moto G4 Play (USA)",
+      "marketingName": "Moto G4 Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4139,17 +5108,29 @@
     },
     "device": {
       "deviceName": "XT1601",
-      "marketingName": "Moto G4 Play (Latin America, Mexico)",
+      "marketingName": "Moto G4 Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Latin America"
+        ],
+        "countries": [
+          "Mexico"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4178,17 +5159,27 @@
     },
     "device": {
       "deviceName": "XT1603",
-      "marketingName": "Moto G4 Play (Brazil)",
+      "marketingName": "Moto G4 Play",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "Brazil"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4224,10 +5215,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4256,17 +5255,27 @@
     },
     "device": {
       "deviceName": "XT1072",
-      "marketingName": "Moto G 4G (2nd gen)",
+      "marketingName": "Moto G  (2nd gen)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -4302,10 +5311,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4341,10 +5358,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4380,10 +5405,18 @@
         "width": 540,
         "height": 897,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 540x897",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4419,10 +5452,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4458,10 +5499,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -4490,17 +5539,27 @@
     },
     "device": {
       "deviceName": "XT925",
-      "marketingName": "Droid Razr HD 4G",
+      "marketingName": "Droid Razr HD",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -4536,10 +5595,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4575,10 +5642,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -4607,17 +5682,27 @@
     },
     "device": {
       "deviceName": "XT1052",
-      "marketingName": "Moto X (Europe)",
+      "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4653,10 +5738,18 @@
         "width": 176,
         "height": 220,
         "touch": false,
-        "type": "unknown"
+        "type": "Custom 176x220",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Motorola Internet Browser",
@@ -4692,10 +5785,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4731,10 +5832,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4770,10 +5879,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4802,17 +5919,29 @@
     },
     "device": {
       "deviceName": "XT1505",
-      "marketingName": "Moto E (2nd Gen., GSM, Global)",
+      "marketingName": "Moto E (2nd Gen.)",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -4848,10 +5977,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4887,10 +6024,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4926,10 +6071,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4965,10 +6118,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5004,10 +6165,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5036,17 +6205,27 @@
     },
     "device": {
       "deviceName": "XT1793",
-      "marketingName": "Moto G5S (Europe)",
+      "marketingName": "Moto G5S",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5075,17 +6254,27 @@
     },
     "device": {
       "deviceName": "XT1793",
-      "marketingName": "Moto G5S (Europe)",
+      "marketingName": "Moto G5S",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5114,17 +6303,29 @@
     },
     "device": {
       "deviceName": "XT1794",
-      "marketingName": "Moto G5S (Europe, India)",
+      "marketingName": "Moto G5S",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [
+          "India"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5153,17 +6354,27 @@
     },
     "device": {
       "deviceName": "XT1792",
-      "marketingName": "Moto G5S (Brazil)",
+      "marketingName": "Moto G5S",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "Brazil"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5199,10 +6410,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5238,10 +6457,18 @@
         "width": 480,
         "height": 640,
         "touch": true,
-        "type": "unknown"
+        "type": "VGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5277,10 +6504,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5316,10 +6551,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5355,10 +6598,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5394,10 +6645,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5433,10 +6692,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5472,10 +6739,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5503,18 +6778,28 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; en-us; DROID2 GLOBAL Build/S273) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "Droid2 Global",
-      "marketingName": "Droid2 Global",
+      "deviceName": "Droid2",
+      "marketingName": "Droid2",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5550,10 +6835,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5589,10 +6882,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5628,10 +6929,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5660,17 +6969,27 @@
     },
     "device": {
       "deviceName": "XT914",
-      "marketingName": "Razr D1 (Latin America)",
+      "marketingName": "Razr D1",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Latin America"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5706,10 +7025,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5745,10 +7072,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5784,10 +7119,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5823,10 +7166,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -5862,10 +7213,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5901,10 +7260,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5940,10 +7307,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -5979,10 +7354,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6018,10 +7401,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6057,10 +7448,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6096,10 +7495,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6135,10 +7542,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6174,10 +7589,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6213,10 +7636,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6252,10 +7683,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6291,10 +7730,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6330,10 +7777,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6369,10 +7824,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6408,10 +7871,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6447,10 +7918,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -6486,10 +7965,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Dalvik",
@@ -6525,10 +8012,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6564,10 +8059,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6603,10 +8106,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6642,10 +8153,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6681,10 +8200,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6713,17 +8240,27 @@
     },
     "device": {
       "deviceName": "XT897",
-      "marketingName": "Photon Q 4G",
+      "marketingName": "Photon Q",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Google App",
@@ -6759,10 +8296,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6798,10 +8343,18 @@
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6837,10 +8390,18 @@
         "width": 240,
         "height": 320,
         "touch": true,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -6869,17 +8430,31 @@
     },
     "device": {
       "deviceName": "XT1056",
-      "marketingName": "Moto X (Sprint)",
+      "marketingName": "Moto X",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -6915,10 +8490,18 @@
         "width": 1080,
         "height": 2160,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1080x2160",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6954,10 +8537,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -6993,10 +8584,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7032,10 +8631,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7071,10 +8678,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -7110,10 +8725,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7149,10 +8772,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "WeChat App",
@@ -7188,10 +8819,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "BingWeb App",
@@ -7227,10 +8866,18 @@
         "width": 720,
         "height": 1440,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 720x1440",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7259,17 +8906,25 @@
     },
     "device": {
       "deviceName": "XT1706",
-      "marketingName": "Moto E3 Power Dual SIM",
+      "marketingName": "Moto E3 Power",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7305,10 +8960,18 @@
         "width": 1080,
         "height": 2160,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1080x2160",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7344,10 +9007,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7383,10 +9054,18 @@
         "width": 720,
         "height": 1440,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 720x1440",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -7422,10 +9101,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7454,17 +9141,27 @@
     },
     "device": {
       "deviceName": "XT1710-01",
-      "marketingName": "Moto Z2 Play (USA)",
+      "marketingName": "Moto Z2 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7493,17 +9190,27 @@
     },
     "device": {
       "deviceName": "XT1710-02",
-      "marketingName": "Moto Z2 Play (USA)",
+      "marketingName": "Moto Z2 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7532,17 +9239,27 @@
     },
     "device": {
       "deviceName": "XT1710-07",
-      "marketingName": "Moto Z2 Play (Brazil)",
+      "marketingName": "Moto Z2 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "Brazil"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7571,17 +9288,27 @@
     },
     "device": {
       "deviceName": "XT1710-10",
-      "marketingName": "Moto Z2 Play (India)",
+      "marketingName": "Moto Z2 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "India"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7610,17 +9337,31 @@
     },
     "device": {
       "deviceName": "XT1710-08",
-      "marketingName": "Moto Z2 Play (China, Hong Kong)",
+      "marketingName": "Moto Z2 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Hong Kong"
+        ],
+        "countries": [
+          "China"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "WCDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -7649,17 +9390,31 @@
     },
     "device": {
       "deviceName": "XT1710-11",
-      "marketingName": "Moto Z2 Play (China, Hong Kong)",
+      "marketingName": "Moto Z2 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Hong Kong"
+        ],
+        "countries": [
+          "China"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "WCDMA"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -7688,17 +9443,33 @@
     },
     "device": {
       "deviceName": "XT1710-09",
-      "marketingName": "Moto Z2 Play (Australia, New Zealand, Indonesia, Japan, Malaysia, Taiwan)",
+      "marketingName": "Moto Z2 Play",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Taiwan"
+        ],
+        "countries": [
+          "Australia",
+          "Japan",
+          "Malaysia",
+          "Indonesia",
+          "New Zealand"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7734,10 +9505,18 @@
         "width": 1080,
         "height": 2160,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1080x2160",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7766,17 +9545,27 @@
     },
     "device": {
       "deviceName": "XT1635-01",
-      "marketingName": "Moto Z Play Droid XLTE",
+      "marketingName": "Moto Z Play Droid",
       "manufacturer": "Lenovo",
       "brand": "Motorola",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "XLTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -7812,10 +9601,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7851,10 +9648,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -7890,10 +9695,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
