@@ -12,8 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\BrowserFactory;
-use BrowserDetector\Loader\BrowserLoaderFactory;
-use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 

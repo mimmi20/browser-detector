@@ -12,14 +12,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Loader\Helper\Rules;
+use BrowserDetector\Parser\PlatformParserInterface;
 use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use UaDeviceType\TypeLoader;
 
-final class DeviceLoaderFactory
+final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -27,31 +28,35 @@ final class DeviceLoaderFactory
     private $logger;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
+     * @var \JsonClass\JsonInterface
      */
-    public function __construct(LoggerInterface $logger)
+    private $jsonParser;
+
+    /**
+     * @var \BrowserDetector\Parser\PlatformParserInterface
+     */
+    private $platformParser;
+
+    /**
+     * @param \Psr\Log\LoggerInterface                        $logger
+     * @param \JsonClass\JsonInterface                                 $jsonParser
+     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     */
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
     {
-        $this->logger = $logger;
+        $this->logger     = $logger;
+        $this->jsonParser = $jsonParser;
+        $this->platformParser = $platformParser;
     }
 
     /**
      * @param string $company
-     * @param string $mode
      *
-     * @return GenericLoaderInterface
+     * @return SpecificLoaderInterface
      */
-    public function __invoke(string $company, string $mode): GenericLoaderInterface
+    public function __invoke(string $company = null): SpecificLoaderInterface
     {
-        static $loaders = [];
-
-        $key = sprintf('%s::%s', $company, $mode);
-
-        if (array_key_exists($key, $loaders)) {
-            return $loaders[$key];
-        }
-
         $dataPath  = __DIR__ . '/../../data/devices/' . $company;
-        $rulesPath = __DIR__ . '/../../data/factories/devices/' . $mode . '/' . $company . '.json';
 
         $finder = new Finder();
         $finder->files();
@@ -61,29 +66,14 @@ final class DeviceLoaderFactory
         $finder->ignoreUnreadableDirs();
         $finder->in($dataPath);
 
-        $json      = new Json();
-        $file      = new SplFileInfo($rulesPath, '', '');
-        $initRules = new Rules($file, $json);
-        $initData  = new Data($finder, $json);
+        $initData  = new Data($finder, $this->jsonParser);
 
-        $loaderFactory  = new PlatformLoaderFactory($this->logger);
-        $platformLoader = $loaderFactory('unknown');
-
-        $loader = new DeviceLoader(
+        return new DeviceLoader(
             $this->logger,
             CompanyLoader::getInstance(),
             new TypeLoader(),
-            $platformLoader,
+            $this->platformParser,
             $initData
         );
-
-        $loaders[$key] = new GenericLoader(
-            $this->logger,
-            $initRules,
-            $initData,
-            $loader
-        );
-
-        return $loaders[$key];
     }
 }

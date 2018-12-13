@@ -65,7 +65,6 @@ class CompanyLoaderTest extends TestCase
         $result = $this->object->load($companyKey);
 
         self::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
-        self::assertInstanceOf(\UaResult\Company\Company::class, $result);
 
         self::assertSame(
             $companyName,
@@ -108,7 +107,6 @@ class CompanyLoaderTest extends TestCase
         $result = $this->object->loadByName($nameToSearch);
 
         self::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
-        self::assertInstanceOf(\UaResult\Company\Company::class, $result);
 
         self::assertSame(
             $companyName,
@@ -151,7 +149,6 @@ class CompanyLoaderTest extends TestCase
         $result = $this->object->loadByBrandName($brandnameToSearch);
 
         self::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
-        self::assertInstanceOf(\UaResult\Company\Company::class, $result);
 
         self::assertSame(
             $companyName,

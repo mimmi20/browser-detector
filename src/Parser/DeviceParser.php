@@ -19,6 +19,8 @@ use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 
@@ -55,17 +57,25 @@ final class DeviceParser implements DeviceParserInterface
     private $logger;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
+     * @var \JsonClass\JsonInterface
      */
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->darwinFactory  = new DarwinParser($logger);
-        $this->mobileFactory  = new MobileParser($logger);
-        $this->tvFactory      = new TvParser($logger);
-        $this->desktopFactory = new DesktopParser($logger);
-        $this->loaderFactory  = new DeviceLoaderFactory($logger);
+    private $jsonParser;
 
-        $this->logger = $logger;
+    /**
+     * @param \Psr\Log\LoggerInterface                        $logger
+     * @param \JsonClass\JsonInterface                                 $jsonParser
+     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     */
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
+    {
+        $this->darwinFactory  = new DarwinParser($logger, $jsonParser, $platformParser);
+        $this->mobileFactory  = new MobileParser($logger, $jsonParser, $platformParser);
+        $this->tvFactory      = new TvParser($logger, $jsonParser, $platformParser);
+        $this->desktopFactory = new DesktopParser($logger, $jsonParser, $platformParser);
+        $this->loaderFactory  = new DeviceLoaderFactory($logger, $jsonParser, $platformParser);
+
+        $this->logger     = $logger;
+        $this->jsonParser = $jsonParser;
     }
 
     /**
@@ -73,7 +83,6 @@ final class DeviceParser implements DeviceParserInterface
      *
      * @param string $useragent
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return array
@@ -115,10 +124,7 @@ final class DeviceParser implements DeviceParserInterface
         ];
 
         if ($s->containsAny($unknownDevices, false)) {
-            $loaderFactory = $this->loaderFactory;
-            $loader        = $loaderFactory('unknown', 'unknown');
-
-            return $loader($useragent);
+            return $this->load('unknown', 'unknown', $useragent);
         }
 
         if (!preg_match('/freebsd|raspbian/i', $useragent)
@@ -147,9 +153,23 @@ final class DeviceParser implements DeviceParserInterface
             return $factory($useragent);
         }
 
-        $loaderFactory = $this->loaderFactory;
-        $loader        = $loaderFactory('unknown', 'unknown');
+        return $this->load('unknown', 'unknown', $useragent);
+    }
 
-        return $loader($useragent);
+    /**
+     * @param string $company
+     * @param string $key
+     * @param string $useragent
+     *
+     * @return array
+     */
+    public function load(string $company, string $key, string $useragent = ''): array
+    {
+        $loaderFactory = $this->loaderFactory;
+
+        /** @var \BrowserDetector\Loader\DeviceLoader $loader */
+        $loader = $loaderFactory($company);
+
+        return $loader($key, $useragent);
     }
 }

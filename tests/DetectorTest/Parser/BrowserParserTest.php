@@ -11,9 +11,12 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
+use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
+use BrowserDetector\Loader\SpecificLoaderInterface;
 use BrowserDetector\Parser\BrowserParser;
-use BrowserDetector\Loader\BrowserLoaderFactory;
-use BrowserDetector\Loader\GenericLoader;
+use BrowserDetector\Parser\EngineParserInterface;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -29,10 +32,14 @@ final class BrowserParserTest extends TestCase
      */
     protected function setUp(): void
     {
-        /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
+        $jsonParser = $this->createMock(JsonInterface::class);
+        $engineParser = $this->createMock(EngineParserInterface::class);
 
-        $this->object = new BrowserParser($logger);
+        /** @var NullLogger $logger */
+        /** @var Json $jsonParser */
+        /** @var EngineParserInterface $engineParser */
+        $this->object = new BrowserParser($logger, $jsonParser, $engineParser);
     }
 
     /**
@@ -49,9 +56,9 @@ final class BrowserParserTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedMode, array $expectedResult): void
     {
-        $mockLoader = $this->getMockBuilder(GenericLoader::class)
+        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mockLoader
             ->expects(self::once())
@@ -59,9 +66,9 @@ final class BrowserParserTest extends TestCase
             ->with($useragent)
             ->willReturn($expectedResult);
 
-        $mockLoaderFactory = $this->getMockBuilder(BrowserLoaderFactory::class)
+        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mockLoaderFactory
             ->expects(self::once())

@@ -12,13 +12,13 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Loader\Helper\Rules;
 use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
-final class PlatformLoaderFactory
+final class PlatformLoaderFactory implements SpecificLoaderFactoryInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -26,53 +26,39 @@ final class PlatformLoaderFactory
     private $logger;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
+     * @var \JsonClass\JsonInterface
      */
-    public function __construct(LoggerInterface $logger)
+    private $jsonParser;
+
+    /**
+     * @param \Psr\Log\LoggerInterface $logger
+     * @param \JsonClass\JsonInterface          $jsonParser
+     */
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
     {
-        $this->logger = $logger;
+        $this->logger     = $logger;
+        $this->jsonParser = $jsonParser;
     }
 
     /**
-     * @param string $mode
-     *
-     * @return GenericLoaderInterface
+     * @return SpecificLoaderInterface
      */
-    public function __invoke(string $mode): GenericLoaderInterface
+    public function __invoke(): SpecificLoaderInterface
     {
-        static $loaders = [];
+        $dataPath  = __DIR__ . '/../../data/platforms';
 
-        if (!array_key_exists($mode, $loaders)) {
-            $dataPath  = __DIR__ . '/../../data/platforms';
-            $rulesPath = __DIR__ . '/../../data/factories/platforms/' . $mode . '.json';
+        $finder = new Finder();
+        $finder->files();
+        $finder->name('*.json');
+        $finder->ignoreDotFiles(true);
+        $finder->ignoreVCS(true);
+        $finder->ignoreUnreadableDirs();
+        $finder->in($dataPath);
 
-            $finder = new Finder();
-            $finder->files();
-            $finder->name('*.json');
-            $finder->ignoreDotFiles(true);
-            $finder->ignoreVCS(true);
-            $finder->ignoreUnreadableDirs();
-            $finder->in($dataPath);
-
-            $json      = new Json();
-            $file      = new SplFileInfo($rulesPath, '', '');
-            $initRules = new Rules($file, $json);
-            $initData  = new Data($finder, $json);
-
-            $loader = new PlatformLoader(
-                $this->logger,
-                CompanyLoader::getInstance(),
-                $initData
-            );
-
-            $loaders[$mode] = new GenericLoader(
-                $this->logger,
-                $initRules,
-                $initData,
-                $loader
-            );
-        }
-
-        return $loaders[$mode];
+        return new PlatformLoader(
+            $this->logger,
+            CompanyLoader::getInstance(),
+            new Data($finder, $this->jsonParser)
+        );
     }
 }

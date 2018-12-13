@@ -47,7 +47,6 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
         $logger
             ->expects(self::once())
@@ -112,7 +111,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -160,7 +158,6 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
         $logger
             ->expects(self::once())
@@ -225,7 +222,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -277,7 +273,6 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -342,7 +337,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -403,7 +398,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -468,7 +463,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -516,7 +511,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::once())
@@ -581,7 +576,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -629,7 +624,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::once())
@@ -694,7 +689,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -742,7 +737,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::once())
@@ -810,7 +805,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -862,7 +857,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -929,7 +924,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -982,7 +977,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1044,7 +1039,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1097,7 +1092,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1168,7 +1163,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::once())
@@ -1223,7 +1218,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1290,7 +1285,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::once())
@@ -1345,7 +1340,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1423,7 +1418,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1486,7 +1481,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1558,7 +1553,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1614,7 +1609,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1686,7 +1681,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1742,7 +1737,7 @@ class DetectorTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1812,7 +1807,7 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke', 'load'])
+
             ->getMock();
         $engineParser
             ->expects(self::never())

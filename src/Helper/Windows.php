@@ -46,10 +46,6 @@ final class Windows
             return true;
         }
 
-        if ($this->isMobileWindows()) {
-            return false;
-        }
-
         $isNotReallyAWindows = [
             // other OS and Mobile Windows
             'linux',
@@ -82,7 +78,6 @@ final class Windows
 
         $windows = [
             'windows nt',
-            'windows iot',
             'win10',
             'win9',
             'win8',

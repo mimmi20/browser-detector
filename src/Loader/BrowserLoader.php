@@ -13,6 +13,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Browser as BrowserBits;
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
@@ -37,9 +38,9 @@ final class BrowserLoader implements SpecificLoaderInterface
     private $typeLoader;
 
     /**
-     * @var \BrowserDetector\Loader\GenericLoaderInterface
+     * @var \BrowserDetector\Parser\EngineParserInterface
      */
-    private $engineLoader;
+    private $engineParser;
 
     /**
      * @var \BrowserDetector\Loader\Helper\Data
@@ -47,23 +48,23 @@ final class BrowserLoader implements SpecificLoaderInterface
     private $initData;
 
     /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \BrowserDetector\Loader\CompanyLoader          $companyLoader
-     * @param \UaBrowserType\TypeLoader                      $typeLoader
-     * @param \BrowserDetector\Loader\GenericLoaderInterface $engineLoader
-     * @param \BrowserDetector\Loader\Helper\Data            $initData
+     * @param \Psr\Log\LoggerInterface                      $logger
+     * @param \BrowserDetector\Loader\CompanyLoader         $companyLoader
+     * @param \UaBrowserType\TypeLoader                     $typeLoader
+     * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
+     * @param \BrowserDetector\Loader\Helper\Data           $initData
      */
     public function __construct(
         LoggerInterface $logger,
         CompanyLoader $companyLoader,
         TypeLoader $typeLoader,
-        GenericLoaderInterface $engineLoader,
+        EngineParserInterface $engineParser,
         Data $initData
     ) {
         $this->logger        = $logger;
         $this->companyLoader = $companyLoader;
         $this->typeLoader    = $typeLoader;
-        $this->engineLoader  = $engineLoader;
+        $this->engineParser  = $engineParser;
         $this->initData      = $initData;
     }
 
@@ -107,8 +108,7 @@ final class BrowserLoader implements SpecificLoaderInterface
 
         if (null !== $engineKey) {
             try {
-                $this->engineLoader->init();
-                $engine = $this->engineLoader->load($engineKey, $useragent);
+                $engine = $this->engineParser->load($engineKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->warning($e);
             }

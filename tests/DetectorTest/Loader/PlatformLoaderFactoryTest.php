@@ -11,8 +11,8 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
-use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\PlatformLoaderFactory;
+use BrowserDetector\Loader\SpecificLoaderInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -29,11 +29,11 @@ class PlatformLoaderFactoryTest extends TestCase
         $factory = new PlatformLoaderFactory($logger);
         $object  = $factory('default');
 
-        self::assertInstanceOf(GenericLoader::class, $object);
+        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
 
         $objectTwo = $factory('default');
 
-        self::assertInstanceOf(GenericLoader::class, $objectTwo);
+        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
         self::assertSame($objectTwo, $object);
     }
 }

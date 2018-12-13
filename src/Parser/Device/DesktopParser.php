@@ -12,69 +12,55 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Parser\CascadedParserTrait;
 use BrowserDetector\Parser\DeviceParserInterface;
+use BrowserDetector\Parser\PlatformParserInterface;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 final class DesktopParser implements DeviceParserInterface
 {
-    private $factories = [
-        '/raspbian|debian.*rpi/i' => 'raspberry pi foundation',
-        '/eeepc|np0[26789]|maau|asjb|asu2/i' => 'asus',
-        '/mdd[crs]/i' => 'dell',
-        '/mafs/i' => 'fujitsu',
-        '/maar/i' => 'acer',
-        '/mas[aep]/i' => 'sony',
-        '/masm/i' => 'samsung',
-        '/mal[cn]|lcjb|len2|lenovog780/i' => 'lenovo',
-        '/mat[bmp]|tnjb|tajb/i' => 'toshiba',
-        '/mamd/i' => 'medion',
-        '/mam[i3]/i' => 'msi',
-        '/magw/i' => 'gateway',
-        '/cpdtdf|cpntdf|cmntdf/i' => 'compaq',
-        '/hpcmhp|hpntdf|hpdtdf|hp\-ux 9000/i' => 'hp',
-        '/h9p/i' => 'microsoft',
-        '/surfbook w1/i' => 'trekstor',
-        '/freebsd/i' => 'unknown',
-        '/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i' => 'apple',
-        '/remix sk1w/i' => 'jide',
-    ];
-
     /**
      * @var \BrowserDetector\Loader\DeviceLoaderFactory
      */
     private $loaderFactory;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
+     * @var \JsonClass\JsonInterface
      */
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->loaderFactory = new DeviceLoaderFactory($logger);
-    }
+    private $jsonParser;
+
+    private const GENERIC_FILE = '/../../../data/factories/devices/desktop.json';
+    private const SPECIFIC_FILE = '/../../../data/factories/devices/desktop/%s.json';
 
     /**
-     * detects the device name from the given user agent
-     *
+     * @param \Psr\Log\LoggerInterface                        $logger
+     * @param \JsonClass\JsonInterface                                 $jsonParser
+     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     */
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
+    {
+        $this->loaderFactory = new DeviceLoaderFactory($logger, $jsonParser, $platformParser);
+        $this->jsonParser    = $jsonParser;
+    }
+
+    use CascadedParserTrait;
+
+    /**
+     * @param string $company
+     * @param string $key
      * @param string $useragent
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function __invoke(string $useragent): array
+    public function load(string $company, string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
 
-        foreach ($this->factories as $rule => $company) {
-            if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory($company, 'desktop');
+        /** @var \BrowserDetector\Loader\DeviceLoader $loader */
+        $loader = $loaderFactory($company);
 
-                return $loader($useragent);
-            }
-        }
-
-        $loader = $loaderFactory('unknown', 'desktop');
-
-        return $loader($useragent);
+        return $loader($key, $useragent);
     }
 }

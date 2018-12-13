@@ -12,7 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Parser\CascadedParserTrait;
 use BrowserDetector\Parser\DeviceParserInterface;
+use BrowserDetector\Parser\PlatformParserInterface;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -20,47 +24,46 @@ use Psr\Log\LoggerInterface;
  */
 final class DarwinParser implements DeviceParserInterface
 {
-    private $factories = [
-        '/cfnetwork\/.*\((x86_64|i386)\)/i' => 'desktop',
-        '/cfnetwork\/(97[14]|96[92]|95[85]|948|90[21]|89[743]|88[79]|811|808|790|75[78]|711|709|672|60[29]|548|485|467|459)/i' => 'mobile',
-    ];
-
     /**
      * @var \BrowserDetector\Loader\DeviceLoaderFactory
      */
     private $loaderFactory;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
+     * @var \JsonClass\JsonInterface
      */
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->loaderFactory = new DeviceLoaderFactory($logger);
-    }
+    private $jsonParser;
+
+    private const GENERIC_FILE = '/../../../data/factories/devices/darwin.json';
+    private const SPECIFIC_FILE = '/../../../data/factories/devices/%s/apple.json';
 
     /**
-     * detects the device name from the given user agent
-     *
+     * @param \Psr\Log\LoggerInterface                        $logger
+     * @param \JsonClass\JsonInterface                                 $jsonParser
+     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     */
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
+    {
+        $this->loaderFactory = new DeviceLoaderFactory($logger, $jsonParser, $platformParser);
+        $this->jsonParser    = $jsonParser;
+    }
+
+    use CascadedParserTrait;
+
+    /**
+     * @param string $company
+     * @param string $key
      * @param string $useragent
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function __invoke(string $useragent): array
+    public function load(string $company, string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
 
-        foreach ($this->factories as $rule => $mode) {
-            if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory('apple', $mode);
+        /** @var \BrowserDetector\Loader\DeviceLoader $loader */
+        $loader = $loaderFactory($company);
 
-                return $loader($useragent);
-            }
-        }
-
-        $loader = $loaderFactory('apple', 'desktop');
-
-        return $loader($useragent);
+        return $loader($key, $useragent);
     }
 }

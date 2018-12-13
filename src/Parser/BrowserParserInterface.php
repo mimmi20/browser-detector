@@ -22,5 +22,15 @@ interface BrowserParserInterface
      *
      * @return array
      */
-    public function __invoke(string $useragent): array;
+    public function __invoke(string $useragent);
+
+    /**
+     * @param string $key
+     * @param string $useragent
+     *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
+     * @return array
+     */
+    public function load(string $key, string $useragent = ''): array;
 }

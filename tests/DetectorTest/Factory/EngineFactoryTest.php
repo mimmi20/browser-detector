@@ -12,12 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Loader\EngineLoaderFactory;
-use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
-use UaResult\Engine\Engine;
-use UaResult\Engine\EngineInterface;
 
 class EngineFactoryTest extends TestCase
 {

@@ -12,57 +12,53 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactory;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use UaResult\Browser\Browser;
 
 final class BrowserParser implements BrowserParserInterface
 {
-    private $factories = [
-        '/edge/i' => 'edge',
-        '/chrome|crmo|chr0me/i' => 'blink',
-        '/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i' => 'webkit',
-        '/iOS/' => 'webkit',
-        '/presto|opera/i' => 'presto',
-        '/trident|msie|like gecko/i' => 'trident',
-        '/gecko|firefox|minefield|shiretoko|bonecho|namoroka/i' => 'gecko',
-    ];
-
     /**
      * @var \BrowserDetector\Loader\BrowserLoaderFactory
      */
     private $loaderFactory;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
+     * @var \JsonClass\JsonInterface
      */
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->loaderFactory = new BrowserLoaderFactory($logger);
-    }
+    private $jsonParser;
+
+    private const GENERIC_FILE = '/../../data/factories/browsers.json';
+    private const SPECIFIC_FILE = '/../../data/factories/browsers/%s.json';
 
     /**
-     * Gets the information about the browser by User Agent
-     *
+     * @param \Psr\Log\LoggerInterface                      $logger
+     * @param \JsonClass\JsonInterface                               $jsonParser
+     * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
+     */
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, EngineParserInterface $engineParser)
+    {
+        $this->loaderFactory = new BrowserLoaderFactory($logger, $jsonParser, $engineParser);
+        $this->jsonParser    = $jsonParser;
+    }
+
+    use CascadedParserTrait;
+
+    /**
+     * @param string $key
      * @param string $useragent
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return array
      */
-    public function __invoke(string $useragent): array
+    public function load(string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
 
-        foreach ($this->factories as $rule => $mode) {
-            if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory($mode);
+        /** @var \BrowserDetector\Loader\BrowserLoader $loader */
+        $loader = $loaderFactory();
 
-                return $loader($useragent);
-            }
-        }
-
-        $loader = $loaderFactory('genericbrowser');
-
-        return $loader($useragent);
+        return $loader($key, $useragent);
     }
 }

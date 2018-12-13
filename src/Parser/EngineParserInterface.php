@@ -32,7 +32,7 @@ interface EngineParserInterface
      *
      * @throws \BrowserDetector\Loader\NotFoundException
      *
-     * @return mixed
+     * @return \UaResult\Engine\EngineInterface
      */
-    public function load(string $key, string $useragent = '');
+    public function load(string $key, string $useragent = ''): EngineInterface;
 }

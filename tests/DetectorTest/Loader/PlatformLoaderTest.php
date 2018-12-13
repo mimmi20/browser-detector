@@ -13,6 +13,7 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
@@ -21,6 +22,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\NullLogger;
 use UaResult\Company\Company;
+use UaResult\Company\CompanyInterface;
 use UaResult\Os\OsInterface;
 
 final class PlatformLoaderTest extends TestCase
@@ -32,7 +34,7 @@ final class PlatformLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -56,9 +58,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -75,7 +77,7 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
         $companyLoader
@@ -104,7 +106,7 @@ final class PlatformLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -128,9 +130,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -147,7 +149,7 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
         $companyLoader
@@ -176,7 +178,7 @@ final class PlatformLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -200,9 +202,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -226,10 +228,10 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
-        $company = $this->createMock(Company::class);
+        $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
             ->expects(self::once())
@@ -258,7 +260,7 @@ final class PlatformLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -282,9 +284,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -308,10 +310,10 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
-        $company = $this->createMock(Company::class);
+        $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
             ->expects(self::once())
@@ -340,7 +342,7 @@ final class PlatformLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -364,9 +366,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -390,10 +392,10 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
-        $company = $this->createMock(Company::class);
+        $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
             ->expects(self::once())
@@ -424,7 +426,7 @@ final class PlatformLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -448,9 +450,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -474,10 +476,10 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
-        $company = $this->createMock(Company::class);
+        $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
             ->expects(self::once())

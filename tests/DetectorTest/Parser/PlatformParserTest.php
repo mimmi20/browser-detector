@@ -11,12 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
+use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
+use BrowserDetector\Loader\SpecificLoaderInterface;
 use BrowserDetector\Parser\PlatformParser;
-use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\PlatformLoaderFactory;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
-use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 
 class PlatformParserTest extends TestCase
@@ -31,10 +33,12 @@ class PlatformParserTest extends TestCase
      */
     protected function setUp(): void
     {
-        /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
+        $jsonParser = $this->createMock(JsonInterface::class);
 
-        $this->object = new PlatformParser($logger);
+        /** @var NullLogger $logger */
+        /** @var Json $jsonParser */
+        $this->object = new PlatformParser($logger, $jsonParser);
     }
 
     /**
@@ -44,16 +48,15 @@ class PlatformParserTest extends TestCase
      * @param string      $expectedMode
      * @param OsInterface $expectedResult
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void
      */
     public function testInvoke(string $useragent, string $expectedMode, OsInterface $expectedResult): void
     {
-        $mockLoader = $this->getMockBuilder(GenericLoader::class)
+        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mockLoader
             ->expects(self::once())
@@ -61,9 +64,9 @@ class PlatformParserTest extends TestCase
             ->with($useragent)
             ->willReturn($expectedResult);
 
-        $mockLoaderFactory = $this->getMockBuilder(PlatformLoaderFactory::class)
+        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mockLoaderFactory
             ->expects(self::once())
@@ -85,7 +88,7 @@ class PlatformParserTest extends TestCase
      */
     public function providerUseragents(): array
     {
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
         return [
             [

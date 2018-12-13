@@ -12,72 +12,55 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Parser\CascadedParserTrait;
 use BrowserDetector\Parser\DeviceParserInterface;
+use BrowserDetector\Parser\PlatformParserInterface;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 final class TvParser implements DeviceParserInterface
 {
-    private $factories = [
-        '/kdl\d{2}|nsz\-gs7\/gx70|sonydtv|netbox|bravia/i' => 'sony',
-        '/THOMSON|LF1V/' => 'thomson',
-        '/philips|avm\-/i' => 'philips',
-        '/xbox/i' => 'microsoft',
-        '/crkey/i' => 'google',
-        '/dlink\.dsm380/i' => 'dlink',
-        '/; ?loewe;|sl320|sl220|sl150|sl32x|sl121/i' => 'loewe',
-        '/digio i33\-hd\+/i' => 'telestar',
-        '/aldinord/i' => 'aldi-nord',
-        '/cx919|gxt_dongle_3188/i' => 'andoer',
-        '/technisat/i' => 'technisat',
-        '/;metz;/i' => 'metz',
-        '/;tcl;/i' => 'tcl',
-        '/;aston;/i' => 'aston',
-        '/;arcelik;/i' => 'arcelik',
-        '/;mstar;/i' => 'mstar',
-        '/;mtk;/i' => 'mediatek',
-        '/; ?lge?;/i' => 'lg',
-        '/mxl661l32|smart\-tv/i' => 'samsung',
-        '/viera/i' => 'panasonic',
-        '/apple tv/i' => 'apple',
-        '/netrangemmh/i' => 'netrange',
-    ];
-
     /**
      * @var \BrowserDetector\Loader\DeviceLoaderFactory
      */
     private $loaderFactory;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
+     * @var \JsonClass\JsonInterface
      */
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->loaderFactory = new DeviceLoaderFactory($logger);
-    }
+    private $jsonParser;
+
+    private const GENERIC_FILE = '/../../../data/factories/devices/tv.json';
+    private const SPECIFIC_FILE = '/../../../data/factories/devices/tv/%s.json';
 
     /**
-     * detects the device name from the given user agent
-     *
+     * @param \Psr\Log\LoggerInterface                        $logger
+     * @param \JsonClass\JsonInterface                                 $jsonParser
+     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     */
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
+    {
+        $this->loaderFactory = new DeviceLoaderFactory($logger, $jsonParser, $platformParser);
+        $this->jsonParser    = $jsonParser;
+    }
+
+    use CascadedParserTrait;
+
+    /**
+     * @param string $company
+     * @param string $key
      * @param string $useragent
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      *
      * @return array
      */
-    public function __invoke(string $useragent): array
+    public function load(string $company, string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
 
-        foreach ($this->factories as $rule => $company) {
-            if (preg_match($rule, $useragent)) {
-                $loader = $loaderFactory($company, 'tv');
+        /** @var \BrowserDetector\Loader\DeviceLoader $loader */
+        $loader = $loaderFactory($company);
 
-                return $loader($useragent);
-            }
-        }
-
-        $loader = $loaderFactory('unknown', 'tv');
-
-        return $loader($useragent);
+        return $loader($key, $useragent);
     }
 }

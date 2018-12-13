@@ -24,5 +24,15 @@ interface PlatformParserInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function __invoke(string $useragent): OsInterface;
+    public function __invoke(string $useragent);
+
+    /**
+     * @param string $key
+     * @param string $useragent
+     *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
+     * @return \UaResult\Os\OsInterface
+     */
+    public function load(string $key, string $useragent = ''): OsInterface;
 }

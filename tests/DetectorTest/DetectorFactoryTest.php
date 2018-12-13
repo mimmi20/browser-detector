@@ -26,7 +26,7 @@ class DetectorFactoryTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())

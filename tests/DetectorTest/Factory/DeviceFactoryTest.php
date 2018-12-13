@@ -11,15 +11,8 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
-use BrowserDetector\Factory\Device\DarwinParser;
-use BrowserDetector\Factory\Device\DesktopParser;
-use BrowserDetector\Factory\Device\MobileParser;
-use BrowserDetector\Factory\Device\TvParser;
 use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Loader\GenericLoader;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 class DeviceFactoryTest extends TestCase
 {

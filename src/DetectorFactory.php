@@ -16,6 +16,7 @@ use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\PlatformParser;
+use JsonClass\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 
@@ -49,10 +50,12 @@ final class DetectorFactory
         static $detector = null;
 
         if (null === $detector) {
-            $deviceParser   = new DeviceParser($this->logger);
-            $platformParser = new PlatformParser($this->logger);
-            $browserParser  = new BrowserParser($this->logger);
-            $engineParser   = new EngineParser($this->logger);
+            $jsonParser = new Json();
+
+            $platformParser = new PlatformParser($this->logger, $jsonParser);
+            $deviceParser   = new DeviceParser($this->logger, $jsonParser, $platformParser);
+            $engineParser   = new EngineParser($this->logger, $jsonParser);
+            $browserParser  = new BrowserParser($this->logger, $jsonParser, $engineParser);
 
             $detector = new Detector($this->logger, $this->cache, $deviceParser, $platformParser, $browserParser, $engineParser);
         }
