@@ -54,6 +54,13 @@ final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
      */
     public function __invoke(): SpecificLoaderInterface
     {
+        /** @var BrowserLoader $loader */
+        static $loader = null;
+
+        if (null !== $loader) {
+            return $loader;
+        }
+
         $dataPath  = __DIR__ . '/../../data/browsers';
 
         $finder = new Finder();
@@ -64,12 +71,14 @@ final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
         $finder->ignoreUnreadableDirs();
         $finder->in($dataPath);
 
-        return new BrowserLoader(
+        $loader = new BrowserLoader(
             $this->logger,
             CompanyLoader::getInstance(),
             new TypeLoader(),
             $this->engineParser,
             new Data($finder, $this->jsonParser)
         );
+
+        return $loader;
     }
 }

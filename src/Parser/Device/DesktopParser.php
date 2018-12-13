@@ -45,7 +45,45 @@ final class DesktopParser implements DeviceParserInterface
         $this->jsonParser    = $jsonParser;
     }
 
-    use CascadedParserTrait;
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string $useragent
+     *
+     * @throws \ExceptionalJSON\DecodeErrorException
+     *
+     * @return mixed
+     */
+    public function __invoke(string $useragent)
+    {
+        $factories = $this->jsonParser->decode(
+            (string) file_get_contents(__DIR__ . self::GENERIC_FILE),
+            true
+        );
+        $mode      = $factories['generic'];
+
+        foreach (array_keys($factories['rules']) as $rule) {
+            if (preg_match($rule, $useragent)) {
+                $mode = $factories['rules'][$rule];
+                break;
+            }
+        }
+
+        $specFactories = $this->jsonParser->decode(
+            (string) file_get_contents(__DIR__ . sprintf(self::SPECIFIC_FILE, $mode)),
+            true
+        );
+        $key           = $specFactories['generic'];
+
+        foreach (array_keys($specFactories['rules']) as $rule) {
+            if (preg_match($rule, $useragent)) {
+                $key = $specFactories['rules'][$rule];
+                break;
+            }
+        }
+
+        return $this->load($mode, $key, $useragent);
+    }
 
     /**
      * @param string $company

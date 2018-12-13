@@ -18,7 +18,7 @@ use UaDisplaySize\Unknown;
 use UaResult\Device\Display;
 use UaResult\Device\DisplayInterface;
 
-class DisplayFactory
+final class DisplayFactory
 {
     /**
      * @param \Psr\Log\LoggerInterface $logger

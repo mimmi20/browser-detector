@@ -1,10 +1,10 @@
 {
   "rules": {
-    "/windows (phone|iot|ce)|microsoft windows; ppc|iemobile|xblwp7|zunewp7|windows ?mobile|wpdesktop|mobile version|lumia| wds |wpos:/": "windowsmobile",
-    "/windows(?! aarch64)|win(10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32)|barca|the bat!|cygwin/": "windows",
-    "/commoncrawler|msie or firefox mutant|not on windows server/": "unknown",
-    "/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/": "symbian",
-    "/maemo|like android|remix|bada|meego|sailfish/": "maemo",
+    "/windows (phone|iot|ce)|microsoft windows; ppc|iemobile|xblwp7|zunewp7|windows ?mobile|wpdesktop|mobile version|lumia| wds |wpos:/i": "windowsmobile",
+    "/windows(?! aarch64)|win(10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32)|barca|the bat!|cygwin/i": "windows",
+    "/commoncrawler|msie or firefox mutant|not on windows server/i": "unknown",
+    "/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i": "symbian",
+    "/maemo|like android|remix|bada|meego|sailfish/i": "maemo",
     "/bsd|dragonfly/i": "bsd",
     "/web[o0]s|hpwos/i": "webos",
     "/hp-?ux|irix|aix|unix|osf1|openvms/i": "unix",
@@ -21,7 +21,7 @@
     "/mac os x|macintosh|os=mac 10|mac_powerpc|ppc|68k|camino|pubsub|integrity/i": "mac",
     "/sunos|solaris/i": "solaris",
     "/palm os|palmsource/i": "palm",
-    "/amigaos|brew|beos|risc|os\/2|warp|cp\/m|nintendo (wii|3ds)|wyderos|liberate|inferno|syllable/i": "genericplatform"
+    "/amigaos|brew|beos|risc|os\\/2|warp|cp\\/m|nintendo (wii|3ds)|wyderos|liberate|inferno|syllable/i": "genericplatform"
   },
   "generic": "unknown"
 }
