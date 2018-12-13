@@ -12,10 +12,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Browser",

@@ -12,10 +12,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -51,10 +59,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera",
@@ -90,10 +106,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Yandex Browser",
@@ -129,10 +153,18 @@
         "width": 1600,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "WQXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Kamelio App",
@@ -168,10 +200,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CM Browser",
@@ -207,10 +247,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Browser HD",
@@ -246,10 +294,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Puffin",
@@ -278,17 +334,27 @@
     },
     "device": {
       "deviceName": "SM-G900F",
-      "marketingName": "Galaxy S5 LTE",
+      "marketingName": "Galaxy S5",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Samsung Browser",
@@ -324,10 +390,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Coc Coc Browser",
@@ -363,10 +437,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Flipboard App",
@@ -402,10 +484,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Seznam Browser",
@@ -441,10 +531,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Aviator",
@@ -480,10 +578,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Dragon",
@@ -519,10 +625,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Beamrise",
@@ -558,10 +672,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Diglo",
@@ -597,10 +719,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "APUSBrowser",
@@ -636,10 +766,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Iridium Browser",
@@ -675,10 +813,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Maxthon Nitro",
@@ -707,17 +853,31 @@
     },
     "device": {
       "deviceName": "SM-N900A",
-      "marketingName": "Galaxy Note 3 LTE (AT&T)",
+      "marketingName": "Galaxy Note 3",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T"
+        ]
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Pinterest App",
@@ -746,17 +906,25 @@
     },
     "device": {
       "deviceName": "802T",
-      "marketingName": "One Dual SIM",
+      "marketingName": "One",
       "manufacturer": "Htc",
       "brand": "Htc",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "WKBrowser",
@@ -792,10 +960,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "2345 Browser",
@@ -831,10 +1007,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android WebView",
@@ -870,10 +1054,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chromium",
@@ -909,10 +1101,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Iron",
@@ -948,10 +1148,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google PageSpeed Insights",
@@ -987,10 +1195,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Wireless Transcoder",
@@ -1026,10 +1242,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "tv"
+      "type": "tv",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Viera Browser",
@@ -1065,10 +1289,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Nichrome",
@@ -1104,10 +1336,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Kinza",
@@ -1143,10 +1383,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Keyword Suggestion",
@@ -1182,10 +1430,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Web Preview",
@@ -1221,10 +1477,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Adwords DisplayAds WebRender",
@@ -1260,10 +1524,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "HubSpot Webcrawler",
@@ -1299,10 +1571,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "RockMelt",
@@ -1338,10 +1618,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Sogou Explorer",
@@ -1377,10 +1665,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "ArchiveBot",
@@ -1416,10 +1712,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Diffbot",
@@ -1455,10 +1759,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Vivaldi",
@@ -1494,10 +1806,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "liebao",
@@ -1533,10 +1853,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Amigo",
@@ -1572,10 +1900,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CoolNovo Chrome Plus",
@@ -1611,10 +1947,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CoolNovo",
@@ -1650,10 +1994,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Kenshoo",
@@ -1689,10 +2041,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Bowser",
@@ -1728,10 +2088,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "360 Secure Browser",
@@ -1767,10 +2135,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "360 Speed Browser",
@@ -1806,10 +2182,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Avast SafeZone",
@@ -1845,10 +2229,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Silk",
@@ -1884,10 +2276,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Wire App",
@@ -1923,10 +2323,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Dragon",
@@ -1962,10 +2370,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Flock",
@@ -1994,17 +2410,27 @@
     },
     "device": {
       "deviceName": "GT-I9195I",
-      "marketingName": "Galaxy S4 Mini LTE",
+      "marketingName": "Galaxy S4 Mini",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Crosswalk App",
@@ -2040,10 +2466,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "vSentry",
@@ -2079,10 +2513,18 @@
         "width": 768,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -2118,10 +2560,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -2157,10 +2607,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "PagePeeker",
@@ -2196,10 +2654,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "HaosouSpider",
@@ -2235,10 +2701,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Safepay",
@@ -2274,10 +2748,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "SohuNews App",
@@ -2313,10 +2795,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "StormCrawler",
@@ -2352,10 +2842,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "WebPagetest",
@@ -2384,17 +2882,27 @@
     },
     "device": {
       "deviceName": "SM-G955U",
-      "marketingName": "Galaxy S8 Plus (USA Unlocked)",
+      "marketingName": "Galaxy S8 Plus ( Unlocked)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1440,
         "height": 2960,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 1440x2960",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "OculusBrowser",
@@ -2430,10 +2938,18 @@
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "SurfBrowser",
@@ -2469,10 +2985,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "QupZilla",
@@ -2508,10 +3032,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Miui Browser",
@@ -2540,17 +3072,27 @@
     },
     "device": {
       "deviceName": "SM-T715",
-      "marketingName": "Galaxy Tab S2 8.0 (2015, LTE)",
+      "marketingName": "Galaxy Tab S2 8.0 (2015)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Opera Mobile",
@@ -2586,10 +3128,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Avira Scout",
@@ -2618,17 +3168,31 @@
     },
     "device": {
       "deviceName": "VS995",
-      "marketingName": "V20 (Verizon)",
+      "marketingName": "V20",
       "manufacturer": "Lg",
       "brand": "Lg",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "Verizon"
+        ]
+      },
+      "connections": [
+        "CDMA"
+      ]
     },
     "browser": {
       "name": "Aloha Browser",
@@ -2664,10 +3228,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "VivoBrowser",
@@ -2696,17 +3268,27 @@
     },
     "device": {
       "deviceName": "SM-T555",
-      "marketingName": "Galaxy Tab A 9.7 LTE",
+      "marketingName": "Galaxy Tab A 9.7",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "type": "unknown"
+        "type": "XGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "BingWeb App",
@@ -2742,10 +3324,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Firefox Focus",
@@ -2781,10 +3371,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "eUI Browser",
@@ -2820,10 +3418,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Headless Chrome",
@@ -2859,10 +3465,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "WhatsApp",
@@ -2898,10 +3512,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Basecamp3",
@@ -2937,10 +3559,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UR Browser",
@@ -2976,10 +3606,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UR Browser",
@@ -3015,10 +3653,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UR Browser",
@@ -3054,10 +3700,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "QQ Browser",
@@ -3093,10 +3747,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "BoBrowser",
@@ -3132,10 +3794,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "SlimBoat",
@@ -3171,10 +3841,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "1st Browser",
@@ -3203,17 +3881,29 @@
     },
     "device": {
       "deviceName": "SM-J700F",
-      "marketingName": "Galaxy J7 LTE (India, Thailand)",
+      "marketingName": "Galaxy J7  (Thailand)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "India"
+        ],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Tenta",
@@ -3249,10 +3939,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Cent",
@@ -3288,10 +3986,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Salam Browser",
@@ -3327,10 +4033,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Whale Browser",
@@ -3366,10 +4080,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Slimjet Browser",
@@ -3405,10 +4127,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "CoRom Browser",
@@ -3444,10 +4174,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Kuaiso Browser",
@@ -3483,10 +4221,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "HubSpot Marketing Grader",
@@ -3522,10 +4268,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "moatbot",
@@ -3561,10 +4315,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Infegy Bot",
@@ -3600,10 +4362,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Yandex Search App",
@@ -3639,10 +4409,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "2345 Chrome",
@@ -3678,10 +4456,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Seznam Browser",
@@ -3717,10 +4503,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Maxthon",
@@ -3756,10 +4550,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Wayback Archive Bot",
@@ -3795,10 +4597,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Bot",
@@ -3827,17 +4637,27 @@
     },
     "device": {
       "deviceName": "SM-G930F",
-      "marketingName": "Galaxy S7 (Global)",
+      "marketingName": "Galaxy S7",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Browser",
@@ -3873,10 +4693,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Origin",
@@ -3905,17 +4733,27 @@
     },
     "device": {
       "deviceName": "SM-G935F",
-      "marketingName": "Galaxy S7 Edge (Global)",
+      "marketingName": "Galaxy S7 Edge",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Facebook App",
@@ -3951,10 +4789,18 @@
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google App",
@@ -3990,10 +4836,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Internet Explorer with Chromeframe",
@@ -4029,10 +4883,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -4068,10 +4930,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "WeChat App",
@@ -4107,10 +4977,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "TheWorld Browser",
@@ -4146,10 +5024,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google App Engine",
@@ -4185,10 +5071,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4224,10 +5118,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Web Preview Analytics",
@@ -4263,10 +5165,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Maxthon",
@@ -4302,10 +5212,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Box App",
@@ -4341,10 +5259,18 @@
         "width": 1440,
         "height": 2560,
         "touch": true,
-        "type": "unknown"
+        "type": "QHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Browser",
@@ -4380,10 +5306,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Browser",
@@ -4419,10 +5353,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google App Engine",
@@ -4458,10 +5400,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Pinterest Bot",
@@ -4497,10 +5447,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google App Engine",
@@ -4536,10 +5494,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Midori",
@@ -4575,10 +5541,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Sleipnir",
@@ -4614,10 +5588,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "LieBaoFast",
@@ -4653,10 +5635,18 @@
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4692,10 +5682,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Firefox Focus",
@@ -4731,10 +5729,18 @@
         "width": null,
         "height": null,
         "touch": true,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "mobile-device"
+      "type": "mobile-device",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Opera Devices",
@@ -4763,17 +5769,27 @@
     },
     "device": {
       "deviceName": "SM-J710F",
-      "marketingName": "Galaxy J7 (2016, Europe, Middle East, Africa)",
+      "marketingName": "Galaxy J7 (2016, Middle East, Africa)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1080,
         "height": 1920,
         "touch": true,
-        "type": "unknown"
+        "type": "FHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser Mini",
@@ -4809,10 +5825,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Citrix Chrome App",
@@ -4848,10 +5872,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -4887,10 +5919,18 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WXGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Kiwi",
@@ -4926,10 +5966,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Refindbot",
@@ -4965,10 +6013,18 @@
         "width": 720,
         "height": 1440,
         "touch": true,
-        "type": "unknown"
+        "type": "Custom 720x1440",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Yaani Browser",
@@ -5004,10 +6060,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "desktop"
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "ZumBot",
@@ -5036,17 +6100,27 @@
     },
     "device": {
       "deviceName": "SM-T813",
-      "marketingName": "Galaxy Tab S2 (9.7, Wi-Fi, 2016)",
+      "marketingName": "Galaxy Tab S2 (9.7, 2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "type": "unknown"
+        "type": "QXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "tablet"
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Samsung CrossApp",
@@ -5082,10 +6156,18 @@
         "width": null,
         "height": null,
         "touch": false,
-        "type": "unknown"
+        "type": "unknown",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "unknown"
+      "type": "unknown",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Google Assess",

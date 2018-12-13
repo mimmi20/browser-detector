@@ -4,18 +4,28 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Q101-4G Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "Q101 4G",
-      "marketingName": "Q101 4G",
+      "deviceName": "Q101",
+      "marketingName": "Q101",
       "manufacturer": "Voyo",
       "brand": "Voyo",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "unknown"
+        "type": "WUXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -43,18 +53,28 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; 4G-Universal version Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.81 Safari/537.36"
     },
     "device": {
-      "deviceName": "i8 Max 4G",
-      "marketingName": "i8 Max 4G",
+      "deviceName": "i8 Max",
+      "marketingName": "i8 Max",
       "manufacturer": "Voyo",
       "brand": "Voyo",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "unknown"
+        "type": "WUXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Android WebView",

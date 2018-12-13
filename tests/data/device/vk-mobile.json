@@ -12,10 +12,18 @@
         "width": 176,
         "height": 220,
         "touch": false,
-        "type": "unknown"
+        "type": "Custom 176x220",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Openwave Mobile Browser",

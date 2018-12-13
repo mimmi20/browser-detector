@@ -4,18 +4,28 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; OP109-4G Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
     },
     "device": {
-      "deviceName": "OP109 4G",
-      "marketingName": "OP109 4G",
+      "deviceName": "OP109",
+      "marketingName": "OP109",
       "manufacturer": "Elebest Germany",
       "brand": "Elebest Germany",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "unknown"
+        "type": "WUXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",

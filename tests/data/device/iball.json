@@ -12,10 +12,18 @@
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "iBall",
@@ -51,10 +59,20 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM"
+      ]
     },
     "browser": {
       "name": "Android Webkit",
@@ -82,18 +100,28 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Snap 4G2 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "Slide Snap 4G2",
-      "marketingName": "Slide Snap 4G2",
+      "deviceName": "Slide Snap 2",
+      "marketingName": "Slide Snap 2",
       "manufacturer": "Iball",
       "brand": "Iball",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "type": "unknown"
+        "type": "WSVGA (variant 2)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "fone-pad"
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
     },
     "browser": {
       "name": "Chrome",

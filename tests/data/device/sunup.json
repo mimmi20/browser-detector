@@ -12,10 +12,18 @@
         "width": 240,
         "height": 320,
         "touch": false,
-        "type": "unknown"
+        "type": "QVGA",
+        "size": null
       },
       "dualOrientation": false,
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Yandex Browser",

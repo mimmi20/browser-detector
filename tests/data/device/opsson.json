@@ -12,10 +12,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -51,10 +59,18 @@
         "width": 480,
         "height": 800,
         "touch": true,
-        "type": "unknown"
+        "type": "WVGA (variant 3)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -82,18 +98,28 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; zh-CN; IUSAI i500 Build/GRK39F) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.1.0.527 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "IUSAI i500",
-      "marketingName": "IUSAI i500",
+      "deviceName": "II i500",
+      "marketingName": "II i500",
       "manufacturer": "Opsson",
       "brand": "Opsson",
       "display": {
         "width": 320,
         "height": 480,
         "touch": true,
-        "type": "unknown"
+        "type": "HVGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -121,18 +147,28 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; IUSAI US16 Build/MocorDroid4.1.2) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baiduboxapp/5.0 (Baidu; P1 4.1.2)"
     },
     "device": {
-      "deviceName": "IUSAI US16",
-      "marketingName": "IUSAI US16",
+      "deviceName": "II US16",
+      "marketingName": "II US16",
       "manufacturer": "Opsson",
       "brand": "Opsson",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Box App",
@@ -160,18 +196,28 @@
       "user-agent": "UCWEB/2.0 (Linux; U; Adr 4.2.2; zh-CN; IUSAI US8) U2/1.0.0 UCBrowser/9.0.1.294 U2/1.0.0 Mobile"
     },
     "device": {
-      "deviceName": "IUSAI US8",
-      "marketingName": "IUSAI US8",
+      "deviceName": "II US8",
+      "marketingName": "II US8",
       "manufacturer": "Opsson",
       "brand": "Opsson",
       "display": {
         "width": 480,
         "height": 854,
         "touch": true,
-        "type": "unknown"
+        "type": "FWVGA (variant 1)",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
@@ -199,18 +245,28 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; IUSAI X2 Build/JLS36C) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baiduboxapp/5.0 (Baidu; P1 4.3)"
     },
     "device": {
-      "deviceName": "IUSAI X2",
-      "marketingName": "IUSAI X2",
+      "deviceName": "II X2",
+      "marketingName": "II X2",
       "manufacturer": "Opsson",
       "brand": "Opsson",
       "display": {
         "width": 720,
         "height": 1280,
         "touch": true,
-        "type": "unknown"
+        "type": "HD/WXGA",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA"
+        ],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Baidu Box App",
@@ -246,10 +302,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "QQ Browser",
@@ -285,10 +349,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Android Webkit",
@@ -324,10 +396,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "Chrome",
@@ -363,10 +443,18 @@
         "width": 540,
         "height": 960,
         "touch": true,
-        "type": "unknown"
+        "type": "qHD",
+        "size": null
       },
       "dualOrientation": true,
-      "type": "smartphone"
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
     },
     "browser": {
       "name": "UC Browser",
