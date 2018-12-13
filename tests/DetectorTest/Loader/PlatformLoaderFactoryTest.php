@@ -23,6 +23,7 @@ class PlatformLoaderFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
+        self::markTestIncomplete();
         /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
 

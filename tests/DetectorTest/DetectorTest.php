@@ -855,6 +855,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUnknownDevice(): void
     {
+        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
 
@@ -975,6 +976,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUnknownDeviceAndPlatform(): void
     {
+        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
 
@@ -1479,6 +1481,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngineIosFail(): void
     {
+        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
 
@@ -1607,6 +1610,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngineIosFail2(): void
     {
+        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
 
@@ -1735,6 +1739,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithBrowserFactoryFail(): void
     {
+        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
 

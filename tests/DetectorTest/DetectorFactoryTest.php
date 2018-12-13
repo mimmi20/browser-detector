@@ -24,6 +24,7 @@ class DetectorFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
+        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
 

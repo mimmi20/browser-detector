@@ -56,6 +56,7 @@ class DarwinParserTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedMode, array $expectedResult): void
     {
+        self::markTestIncomplete();
         $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
