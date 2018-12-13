@@ -54,8 +54,15 @@ final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
      *
      * @return SpecificLoaderInterface
      */
-    public function __invoke(string $company = null): SpecificLoaderInterface
+    public function __invoke(string $company = ''): SpecificLoaderInterface
     {
+        /** @var DeviceLoader[] $loader */
+        static $loader = [];
+
+        if (array_key_exists($company, $loader)) {
+            return $loader[$company];
+        }
+
         $dataPath  = __DIR__ . '/../../data/devices/' . $company;
 
         $finder = new Finder();
@@ -68,12 +75,12 @@ final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
 
         $initData  = new Data($finder, $this->jsonParser);
 
-        return new DeviceLoader(
+        $loader[$company] = new DeviceLoader(
             $this->logger,
-            CompanyLoader::getInstance(),
-            new TypeLoader(),
             $this->platformParser,
             $initData
         );
+
+        return $loader[$company];
     }
 }

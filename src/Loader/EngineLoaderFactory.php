@@ -44,6 +44,13 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
      */
     public function __invoke(): SpecificLoaderInterface
     {
+        /** @var EngineLoader $loader */
+        static $loader = null;
+
+        if (null !== $loader) {
+            return $loader;
+        }
+
         $dataPath  = __DIR__ . '/../../data/engines';
 
         $finder = new Finder();
@@ -54,10 +61,12 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
         $finder->ignoreUnreadableDirs();
         $finder->in($dataPath);
 
-        return new EngineLoader(
+        $loader = new EngineLoader(
             $this->logger,
             CompanyLoader::getInstance(),
             new Data($finder, $this->jsonParser)
         );
+
+        return $loader;
     }
 }

@@ -31,6 +31,7 @@ trait CascadedParserTrait
         $mode      = $factories['generic'];
 
         foreach (array_keys($factories['rules']) as $rule) {
+            //var_dump($rule);
             if (preg_match($rule, $useragent)) {
                 $mode = $factories['rules'][$rule];
                 break;

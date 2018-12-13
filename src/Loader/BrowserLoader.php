@@ -65,6 +65,9 @@ final class BrowserLoader implements SpecificLoaderInterface
         $this->companyLoader = $companyLoader;
         $this->typeLoader    = $typeLoader;
         $this->engineParser  = $engineParser;
+
+        $initData();
+
         $this->initData      = $initData;
     }
 
@@ -114,7 +117,7 @@ final class BrowserLoader implements SpecificLoaderInterface
             }
         }
 
-        $browser = new Browser($browserData->name, $manufacturer, $version, $type, $bits, $browserData->modus);
+        $browser = new Browser($browserData->name, $manufacturer, $version, $type, $bits, $browserData->modus ?? null);
 
         return [$browser, $engine];
     }

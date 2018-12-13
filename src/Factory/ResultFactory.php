@@ -31,12 +31,12 @@ final class ResultFactory
 
         $device = null;
         if (array_key_exists('device', $data)) {
-            $device = (new DeviceFactory($logger))->fromArray((array) $data['device']);
+            $device = (new DeviceFactory())->fromArray($logger, (array) $data['device']);
         }
 
         $browser = null;
         if (array_key_exists('browser', $data)) {
-            $browser = (new BrowserFactory($logger))->fromArray($logger, (array) $data['browser']);
+            $browser = (new BrowserFactory())->fromArray($logger, (array) $data['browser']);
         }
 
         $os = null;

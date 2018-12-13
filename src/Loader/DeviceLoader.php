@@ -11,7 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\DisplayFactory;
+use BrowserDetector\Factory\MarketFactory;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
@@ -19,6 +21,7 @@ use UaDeviceType\TypeLoader;
 use UaDisplaySize\Unknown;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
+use UaResult\Device\Market;
 
 final class DeviceLoader implements SpecificLoaderInterface
 {
@@ -49,22 +52,19 @@ final class DeviceLoader implements SpecificLoaderInterface
 
     /**
      * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \BrowserDetector\Loader\CompanyLoader           $companyLoader
-     * @param \UaDeviceType\TypeLoader                        $typeLoader
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      * @param \BrowserDetector\Loader\Helper\Data             $initData
      */
     public function __construct(
         LoggerInterface $logger,
-        CompanyLoader $companyLoader,
-        TypeLoader $typeLoader,
         PlatformParserInterface $platformParser,
         Data $initData
     ) {
         $this->logger         = $logger;
-        $this->companyLoader  = $companyLoader;
-        $this->typeLoader     = $typeLoader;
         $this->platformParser = $platformParser;
+
+        $initData();
+
         $this->initData       = $initData;
     }
 
@@ -99,23 +99,7 @@ final class DeviceLoader implements SpecificLoaderInterface
             }
         }
 
-        if (null !== $deviceData->display) {
-            $display = (new DisplayFactory())->fromArray($this->logger, (array) $deviceData->display);
-        } else {
-            $display = new Display(null, null, null, new Unknown(), null);
-        }
-
-        $device = new Device(
-            $deviceData->deviceName,
-            $deviceData->marketingName,
-            $this->companyLoader->load($deviceData->manufacturer),
-            $this->companyLoader->load($deviceData->brand),
-            $this->typeLoader->load($deviceData->type),
-            $display,
-            $deviceData->dualOrientation,
-            $deviceData->simCount,
-            $deviceData->market
-        );
+        $device = (new DeviceFactory())->fromArray($this->logger, (array) $deviceData);
 
         return [$device, $platform];
     }

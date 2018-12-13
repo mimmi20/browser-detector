@@ -47,6 +47,9 @@ final class EngineLoader implements SpecificLoaderInterface
     ) {
         $this->logger        = $logger;
         $this->companyLoader = $companyLoader;
+
+        $initData();
+
         $this->initData      = $initData;
     }
 

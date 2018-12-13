@@ -24,6 +24,7 @@ use UaDeviceType\Unknown;
 use UaResult\Device\Device;
 use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
+use UaResult\Device\Market;
 
 /**
  * Device detection class
@@ -38,10 +39,11 @@ final class DeviceFactory
      */
     public function fromArray(LoggerInterface $logger, array $data): DeviceInterface
     {
-        $deviceName      = array_key_exists('deviceName', $data) ? (string) $data['deviceName'] : null;
-        $marketingName   = array_key_exists('marketingName', $data) ? (string) $data['marketingName'] : null;
+        $deviceName      = array_key_exists('deviceName', $data) && null !== $data['deviceName'] ? (string) $data['deviceName'] : null;
+        $marketingName   = array_key_exists('marketingName', $data) && null !== $data['marketingName'] ? (string) $data['marketingName'] : null;
         $dualOrientation = array_key_exists('dualOrientation', $data) ? (bool) $data['dualOrientation'] : false;
         $simCount        = array_key_exists('simCount', $data) ? (int) $data['simCount'] : 0;
+        $connections     = array_key_exists('connections', $data) ? (array) $data['connections'] : [];
 
         $type = new Unknown();
         if (array_key_exists('type', $data)) {
@@ -79,6 +81,15 @@ final class DeviceFactory
             }
         }
 
-        return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display, $dualOrientation, $simCount);
+        $market = new Market([], [], []);
+        if (array_key_exists('market', $data)) {
+            try {
+                $market = (new MarketFactory())->fromArray($logger, (array) $data['market']);
+            } catch (NotFoundException $e) {
+                $logger->info($e);
+            }
+        }
+
+        return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display, $dualOrientation, $simCount, $market, $connections);
     }
 }

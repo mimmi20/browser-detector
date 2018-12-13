@@ -45,6 +45,13 @@ final class PlatformLoaderFactory implements SpecificLoaderFactoryInterface
      */
     public function __invoke(): SpecificLoaderInterface
     {
+        /** @var PlatformLoader $loader */
+        static $loader = null;
+
+        if (null !== $loader) {
+            return $loader;
+        }
+
         $dataPath  = __DIR__ . '/../../data/platforms';
 
         $finder = new Finder();
@@ -55,10 +62,12 @@ final class PlatformLoaderFactory implements SpecificLoaderFactoryInterface
         $finder->ignoreUnreadableDirs();
         $finder->in($dataPath);
 
-        return new PlatformLoader(
+        $loader = new PlatformLoader(
             $this->logger,
             CompanyLoader::getInstance(),
             new Data($finder, $this->jsonParser)
         );
+
+        return $loader;
     }
 }
