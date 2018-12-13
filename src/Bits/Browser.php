@@ -59,7 +59,7 @@ final class Browser implements BitsInterface
         $s = new Stringy($this->useragent);
 
         // 32 bits on 64 bit system
-        if ($s->contains('i686 on x86_64', false)) {
+        if ($s->containsAny(['i686 on x86_64', 'i686 (x86_64)'], false)) {
             return 32;
         }
 
