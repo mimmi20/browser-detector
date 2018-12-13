@@ -13,6 +13,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\DisplayFactory;
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
 use UaDeviceType\TypeLoader;
 use UaDisplaySize\Unknown;
@@ -37,9 +38,9 @@ final class DeviceLoader implements SpecificLoaderInterface
     private $typeLoader;
 
     /**
-     * @var \BrowserDetector\Loader\GenericLoaderInterface
+     * @var \BrowserDetector\Parser\PlatformParserInterface
      */
-    private $platformLoader;
+    private $platformParser;
 
     /**
      * @var \BrowserDetector\Loader\Helper\Data
@@ -47,23 +48,23 @@ final class DeviceLoader implements SpecificLoaderInterface
     private $initData;
 
     /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \BrowserDetector\Loader\CompanyLoader          $companyLoader
-     * @param \UaDeviceType\TypeLoader                       $typeLoader
-     * @param \BrowserDetector\Loader\GenericLoaderInterface $platformLoader
-     * @param \BrowserDetector\Loader\Helper\Data            $initData
+     * @param \Psr\Log\LoggerInterface                        $logger
+     * @param \BrowserDetector\Loader\CompanyLoader           $companyLoader
+     * @param \UaDeviceType\TypeLoader                        $typeLoader
+     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     * @param \BrowserDetector\Loader\Helper\Data             $initData
      */
     public function __construct(
         LoggerInterface $logger,
         CompanyLoader $companyLoader,
         TypeLoader $typeLoader,
-        GenericLoaderInterface $platformLoader,
+        PlatformParserInterface $platformParser,
         Data $initData
     ) {
         $this->logger         = $logger;
         $this->companyLoader  = $companyLoader;
         $this->typeLoader     = $typeLoader;
-        $this->platformLoader = $platformLoader;
+        $this->platformParser = $platformParser;
         $this->initData       = $initData;
     }
 
@@ -92,8 +93,7 @@ final class DeviceLoader implements SpecificLoaderInterface
 
         if (null !== $platformKey) {
             try {
-                $this->platformLoader->init();
-                $platform = $this->platformLoader->load($platformKey, $useragent);
+                $platform = $this->platformParser->load($platformKey, $useragent);
             } catch (NotFoundException $e) {
                 $this->logger->warning($e);
             }

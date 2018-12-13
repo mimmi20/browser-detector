@@ -159,7 +159,8 @@ final class Detector implements DetectorInterface
             new Display(null, null, null, new \UaDisplaySize\Unknown(), null),
             false,
             0,
-            new Market([], [], [])
+            new Market([], [], []),
+            []
         );
 
         $defaultPlatform = new Os(

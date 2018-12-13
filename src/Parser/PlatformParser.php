@@ -13,6 +13,8 @@ namespace BrowserDetector\Parser;
 
 use BrowserDetector\Helper;
 use BrowserDetector\Loader\PlatformLoaderFactory;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
 use UaResult\Os\OsInterface;
@@ -25,159 +27,127 @@ final class PlatformParser implements PlatformParserInterface
     private $loaderFactory;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
+     * @var \JsonClass\JsonInterface
      */
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->loaderFactory = new PlatformLoaderFactory($logger);
-    }
+    private $jsonParser;
+
+    private const GENERIC_FILE = '/../../data/factories/platforms.json';
+    private const SPECIFIC_FILE = '/../../data/factories/platforms/%s.json';
 
     /**
-     * Gets the information about the platform by User Agent
-     *
+     * @param \Psr\Log\LoggerInterface $logger
+     * @param \JsonClass\JsonInterface          $jsonParser
+     */
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
+    {
+        $this->loaderFactory = new PlatformLoaderFactory($logger, $jsonParser);
+        $this->jsonParser    = $jsonParser;
+    }
+
+    use CascadedParserTrait;
+
+//    /**
+//     * Gets the information about the platform by User Agent
+//     *
+//     * @param string $useragent
+//     *
+//     * @throws \ExceptionalJSON\DecodeErrorException
+//     *
+//     * @return \UaResult\Os\OsInterface
+//     */
+//    public function __invoke(string $useragent): OsInterface
+//    {
+//        $factories = $this->jsonParser->decode(
+//            (string) file_get_contents(__DIR__ . '/../../data/factories/platforms.json'),
+//            true
+//        );
+//        $mode      = $factories['generic'];
+//
+//        foreach (array_keys($factories['rules']) as $rule) {
+//            if (preg_match($rule, $useragent)) {
+//                $mode = $factories['rules'][$rule];
+//                break;
+//            }
+//        }
+//
+//        $specFactories = $this->jsonParser->decode(
+//            (string) file_get_contents(__DIR__ . sprintf('/../../data/factories/platforms/%s.json', $mode)),
+//            true
+//        );
+//        $key           = $specFactories['generic'];
+//
+//        foreach (array_keys($specFactories['rules']) as $rule) {
+//            if (preg_match($rule, $useragent)) {
+//                $key = $specFactories['rules'][$rule];
+//                break;
+//            }
+//        }
+//
+//        return $this->load($key, $useragent);
+
+//        $s             = new Stringy($useragent);
+//        $windowsHelper = new Helper\Windows($s);
+//        $loaderFactory = $this->loaderFactory;
+//
+//        if ($windowsHelper->isMobileWindows()) {
+//            $loader = $loaderFactory('windowsmobile');
+//
+//            return $loader($useragent);
+//        }
+//
+//        if ($windowsHelper->isWindows()) {
+//            $loader = $loaderFactory('windows');
+//
+//            return $loader($useragent);
+//        }
+//
+//        if (preg_match('/MIUI/', $useragent)
+//            || preg_match('/yunos|tizen/i', $useragent)
+//            || (new Helper\AndroidOs($s))->isAndroid()
+//        ) {
+//            $loader = $loaderFactory('android');
+//
+//            return $loader($useragent);
+//        }
+//
+//        if ((new Helper\Linux($s))->isLinux()) {
+//            $loader = $loaderFactory('linux');
+//
+//            return $loader($useragent);
+//        }
+//
+//        if ((new Helper\FirefoxOs($s))->isFirefoxOs()) {
+//            $loader = $loaderFactory('firefoxos');
+//
+//            return $loader($useragent);
+//        }
+//
+//        if ((new Helper\Ios($s))->isIos()) {
+//            $loader = $loaderFactory('ios');
+//
+//            return $loader($useragent);
+//        }
+//
+//        $loader = $loaderFactory('unknown');
+//
+//        return $loader($useragent);
+//    }
+
+    /**
+     * @param string $key
      * @param string $useragent
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
-     * @return \UaResult\Os\OsInterface
+     * @return OsInterface
      */
-    public function __invoke(string $useragent): OsInterface
+    public function load(string $key, string $useragent = ''): OsInterface
     {
-        $s             = new Stringy($useragent);
-        $windowsHelper = new Helper\Windows($s);
         $loaderFactory = $this->loaderFactory;
 
-        if ($windowsHelper->isMobileWindows()) {
-            $loader = $loaderFactory('windowsmobile');
+        /** @var \BrowserDetector\Loader\PlatformLoader $loader */
+        $loader = $loaderFactory();
 
-            return $loader($useragent);
-        }
-
-        if ($windowsHelper->isWindows()) {
-            $loader = $loaderFactory('windows');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/commoncrawler|msie or firefox mutant|not on windows server/i', $useragent)) {
-            $loader = $loaderFactory('unknown');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i', $useragent)) {
-            $loader = $loaderFactory('symbian');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/maemo|like android|remix|bada|meego|sailfish/i', $useragent)) {
-            $loader = $loaderFactory('maemo');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/bsd|dragonfly/i', $useragent)) {
-            $loader = $loaderFactory('bsd');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/web[o0]s|hpwos/i', $useragent)) {
-            $loader = $loaderFactory('webos');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/hp\-?ux|irix|aix|unix|osf1|openvms/i', $useragent)) {
-            $loader = $loaderFactory('unix');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/micromaxx650|dolfin\/|yuanda50|wap[- ]?browser/i', $useragent)) {
-            $loader = $loaderFactory('java');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/MIUI/', $useragent)
-            || preg_match('/yunos|tizen/i', $useragent)
-            || (new Helper\AndroidOs($s))->isAndroid()
-        ) {
-            $loader = $loaderFactory('android');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/darwin|cfnetwork/i', $useragent)) {
-            $loader = $loaderFactory('darwin');
-
-            return $loader($useragent);
-        }
-
-        if ((new Helper\Linux($s))->isLinux()) {
-            $loader = $loaderFactory('linux');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/blackberry|bb10|rim tablet/i', $useragent)) {
-            $loader = $loaderFactory('rimos');
-
-            return $loader($useragent);
-        }
-
-        if ((new Helper\FirefoxOs($s))->isFirefoxOs()) {
-            $loader = $loaderFactory('firefoxos');
-
-            return $loader($useragent);
-        }
-
-        if ((new Helper\Ios($s))->isIos()) {
-            $loader = $loaderFactory('ios');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/nokia/i', $useragent)) {
-            $loader = $loaderFactory('symbian');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/\bprofile\b|gt\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\/1\.0|netfront|profile\/midp|j2me\/|java|nucleus|maui runtime|mre/i', $useragent)) {
-            $loader = $loaderFactory('java');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/mac os x|macintosh|os=mac 10|mac_powerpc|ppc|68k|camino|pubsub|integrity/i', $useragent)) {
-            $loader = $loaderFactory('mac');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/sunos|solaris/i', $useragent)) {
-            $loader = $loaderFactory('solaris');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/palm os|palmsource/i', $useragent)) {
-            $loader = $loaderFactory('palm');
-
-            return $loader($useragent);
-        }
-
-        if (preg_match('/amigaos|brew|beos|risc|os\/2|warp|cp\/m|nintendo (wii|3ds)|wyderos|liberate|inferno|syllable/i', $useragent)) {
-            $loader = $loaderFactory('genericplatform');
-
-            return $loader($useragent);
-        }
-
-        $loader = $loaderFactory('unknown');
-
-        return $loader($useragent);
+        return $loader($key, $useragent);
     }
 }

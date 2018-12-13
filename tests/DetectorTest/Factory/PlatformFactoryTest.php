@@ -12,12 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\PlatformFactory;
-use BrowserDetector\Loader\GenericLoader;
-use BrowserDetector\Loader\PlatformLoaderFactory;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
-use UaResult\Os\Os;
-use UaResult\Os\OsInterface;
 
 class PlatformFactoryTest extends TestCase
 {

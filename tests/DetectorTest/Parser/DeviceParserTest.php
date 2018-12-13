@@ -11,13 +11,13 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
-use BrowserDetector\Parser\Device\DarwinParser;
-use BrowserDetector\Parser\Device\DesktopParser;
-use BrowserDetector\Parser\Device\MobileParser;
-use BrowserDetector\Parser\Device\TvParser;
+use BrowserDetector\Loader\SpecificLoaderInterface;
 use BrowserDetector\Parser\DeviceParser;
-use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Loader\GenericLoader;
+use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
+use BrowserDetector\Parser\DeviceParserInterface;
+use BrowserDetector\Parser\PlatformParserInterface;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -33,10 +33,14 @@ class DeviceParserTest extends TestCase
      */
     protected function setUp(): void
     {
-        /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
+        $jsonParser = $this->createMock(JsonInterface::class);
+        $platformParser = $this->createMock(PlatformParserInterface::class);
 
-        $this->object = new DeviceParser($logger);
+        /** @var NullLogger $logger */
+        /** @var Json $jsonParser */
+        /** @var PlatformParserInterface $platformParser */
+        $this->object = new DeviceParser($logger, $jsonParser, $platformParser);
     }
 
     /**
@@ -50,9 +54,9 @@ class DeviceParserTest extends TestCase
         $useragent      = 'UCBrowserHD/2.4.0.367 CFNetwork/672.1.15 Darwin/14.0.0';
         $expectedResult = [];
 
-        $darwinFactory = $this->getMockBuilder(DarwinParser::class)
+        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $darwinFactory
             ->expects(self::once())
@@ -64,9 +68,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $darwinFactory);
 
-        $mobileFactory = $this->getMockBuilder(MobileParser::class)
+        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mobileFactory
             ->expects(self::never())
@@ -78,9 +82,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $mobileFactory);
 
-        $tvFactory = $this->getMockBuilder(TvParser::class)
+        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $tvFactory
             ->expects(self::never())
@@ -92,9 +96,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $tvFactory);
 
-        $desktopFactory = $this->getMockBuilder(DesktopParser::class)
+        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $desktopFactory
             ->expects(self::never())
@@ -106,9 +110,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $desktopFactory);
 
-        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactory::class)
+        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $loaderFactory
             ->expects(self::never())
@@ -136,9 +140,9 @@ class DeviceParserTest extends TestCase
         $useragent      = 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; GT-I9300 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30';
         $expectedResult = [];
 
-        $darwinFactory = $this->getMockBuilder(DarwinParser::class)
+        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $darwinFactory
             ->expects(self::never())
@@ -150,9 +154,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $darwinFactory);
 
-        $mobileFactory = $this->getMockBuilder(MobileParser::class)
+        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mobileFactory
             ->expects(self::once())
@@ -164,9 +168,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $mobileFactory);
 
-        $tvFactory = $this->getMockBuilder(TvParser::class)
+        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $tvFactory
             ->expects(self::never())
@@ -178,9 +182,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $tvFactory);
 
-        $desktopFactory = $this->getMockBuilder(DesktopParser::class)
+        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $desktopFactory
             ->expects(self::never())
@@ -192,9 +196,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $desktopFactory);
 
-        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactory::class)
+        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $loaderFactory
             ->expects(self::never())
@@ -222,9 +226,9 @@ class DeviceParserTest extends TestCase
         $useragent      = 'Mozilla/5.0 AppleWebKit/537.30 (KHTML, like Gecko) Chromium/25.0.1349.2 HbbTV/1.1.1 (;Metz;MMS;;;) CE-HTML/1.0';
         $expectedResult = [];
 
-        $darwinFactory = $this->getMockBuilder(DarwinParser::class)
+        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $darwinFactory
             ->expects(self::never())
@@ -236,9 +240,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $darwinFactory);
 
-        $mobileFactory = $this->getMockBuilder(MobileParser::class)
+        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mobileFactory
             ->expects(self::never())
@@ -250,9 +254,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $mobileFactory);
 
-        $tvFactory = $this->getMockBuilder(TvParser::class)
+        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $tvFactory
             ->expects(self::once())
@@ -264,9 +268,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $tvFactory);
 
-        $desktopFactory = $this->getMockBuilder(DesktopParser::class)
+        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $desktopFactory
             ->expects(self::never())
@@ -278,9 +282,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $desktopFactory);
 
-        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactory::class)
+        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $loaderFactory
             ->expects(self::never())
@@ -308,9 +312,9 @@ class DeviceParserTest extends TestCase
         $useragent      = 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:26.0.0b2) Goanna/20150828 Gecko/20100101 AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37 PaleMoon/26.0.0b2';
         $expectedResult = [];
 
-        $darwinFactory = $this->getMockBuilder(DarwinParser::class)
+        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $darwinFactory
             ->expects(self::never())
@@ -322,9 +326,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $darwinFactory);
 
-        $mobileFactory = $this->getMockBuilder(MobileParser::class)
+        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mobileFactory
             ->expects(self::never())
@@ -336,9 +340,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $mobileFactory);
 
-        $tvFactory = $this->getMockBuilder(TvParser::class)
+        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $tvFactory
             ->expects(self::never())
@@ -350,9 +354,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $tvFactory);
 
-        $desktopFactory = $this->getMockBuilder(DesktopParser::class)
+        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $desktopFactory
             ->expects(self::once())
@@ -364,9 +368,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $desktopFactory);
 
-        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactory::class)
+        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $loaderFactory
             ->expects(self::never())
@@ -394,9 +398,9 @@ class DeviceParserTest extends TestCase
         $useragent      = 'this is a fake ua to trigger the fallback';
         $expectedResult = [];
 
-        $darwinFactory = $this->getMockBuilder(DarwinParser::class)
+        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $darwinFactory
             ->expects(self::never())
@@ -408,9 +412,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $darwinFactory);
 
-        $mobileFactory = $this->getMockBuilder(MobileParser::class)
+        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mobileFactory
             ->expects(self::never())
@@ -422,9 +426,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $mobileFactory);
 
-        $tvFactory = $this->getMockBuilder(TvParser::class)
+        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $tvFactory
             ->expects(self::never())
@@ -436,9 +440,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $tvFactory);
 
-        $desktopFactory = $this->getMockBuilder(DesktopParser::class)
+        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $desktopFactory
             ->expects(self::never())
@@ -450,9 +454,9 @@ class DeviceParserTest extends TestCase
         $property->setAccessible(true);
         $property->setValue($this->object, $desktopFactory);
 
-        $loader = $this->getMockBuilder(GenericLoader::class)
+        $loader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $loader
             ->expects(self::once())
@@ -460,9 +464,9 @@ class DeviceParserTest extends TestCase
             ->with($useragent)
             ->willReturn($expectedResult);
 
-        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactory::class)
+        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $loaderFactory
             ->expects(self::once())

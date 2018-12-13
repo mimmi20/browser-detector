@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Loader\Helper;
 use BrowserDetector\Loader\Helper\Data;
 use ExceptionalJSON\DecodeErrorException;
 use JsonClass\Json;
+use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
@@ -27,7 +28,6 @@ class DataTest extends TestCase
     {
         $file = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
-            ->setMethods(['getContents'])
             ->getMock();
         $file
             ->expects(self::once())
@@ -36,7 +36,6 @@ class DataTest extends TestCase
 
         $iterator = $this->getMockBuilder(\ArrayIterator::class)
             ->disableOriginalConstructor()
-            ->setMethods(['current', 'valid'])
             ->getMock();
         $iterator
             ->expects(self::once())
@@ -62,7 +61,6 @@ class DataTest extends TestCase
 
         $finder = $this->getMockBuilder(Finder::class)
             ->disableOriginalConstructor()
-            ->setMethods(['in', 'getIterator'])
             ->getMock();
         $finder
             ->expects(self::never())
@@ -73,9 +71,8 @@ class DataTest extends TestCase
             ->method('getIterator')
             ->will(self::returnValue($iterator));
 
-        $jsonParser = $this->getMockBuilder(Json::class)
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['decode'])
             ->getMock();
 
         $jsonParser
@@ -100,7 +97,6 @@ class DataTest extends TestCase
     {
         $file = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
-            ->setMethods(['getContents'])
             ->getMock();
         $file
             ->expects(self::exactly(2))
@@ -109,7 +105,6 @@ class DataTest extends TestCase
 
         $iterator = $this->getMockBuilder(\ArrayIterator::class)
             ->disableOriginalConstructor()
-            ->setMethods(['current', 'valid'])
             ->getMock();
         $iterator
             ->expects(self::exactly(2))
@@ -135,7 +130,6 @@ class DataTest extends TestCase
 
         $finder = $this->getMockBuilder(Finder::class)
             ->disableOriginalConstructor()
-            ->setMethods(['in', 'getIterator'])
             ->getMock();
         $finder
             ->expects(self::never())
@@ -146,9 +140,8 @@ class DataTest extends TestCase
             ->method('getIterator')
             ->will(self::returnValue($iterator));
 
-        $jsonParser = $this->getMockBuilder(Json::class)
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['decode'])
             ->getMock();
 
         $jsonParser
@@ -172,7 +165,7 @@ class DataTest extends TestCase
     public function testFlush(): void
     {
         $finder     = $this->createMock(Finder::class);
-        $jsonParser = $this->createMock(Json::class);
+        $jsonParser = $this->createMock(JsonInterface::class);
 
         /** @var Finder $finder */
         /** @var Json $jsonParser */

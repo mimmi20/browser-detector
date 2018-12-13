@@ -14,9 +14,10 @@ namespace BrowserDetector\Loader\Helper;
 use BrowserDetector\Cache\CacheInterface;
 use ExceptionalJSON\DecodeErrorException;
 use JsonClass\Json;
+use JsonClass\JsonInterface;
 use Symfony\Component\Finder\Finder;
 
-final class Data implements CacheInterface
+final class Data implements DataInterface
 {
     /**
      * @var \Symfony\Component\Finder\Finder
@@ -34,15 +35,15 @@ final class Data implements CacheInterface
     private $initialized = false;
 
     /**
-     * @var Json
+     * @var \JsonClass\JsonInterface
      */
     private $json;
 
     /**
      * @param \Symfony\Component\Finder\Finder $finder
-     * @param \JsonClass\Json                  $json
+     * @param \JsonClass\JsonInterface                  $json
      */
-    public function __construct(Finder $finder, Json $json)
+    public function __construct(Finder $finder, JsonInterface $json)
     {
         $this->finder = $finder;
         $this->json   = $json;

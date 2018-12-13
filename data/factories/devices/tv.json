@@ -1,0 +1,27 @@
+{
+  "rules": {
+    "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia/": "sony",
+    "/THOMSON|LF1V/i": "thomson",
+    "/philips|avm\\-/i": "philips",
+    "/xbox/i": "microsoft",
+    "/crkey/i": "google",
+    "/dlink\\.dsm380/i": "dlink",
+    "/; ?loewe;|sl320|sl220|sl150|sl32x|sl121/i": "loewe",
+    "/digio i33\\-hd\\+/i": "telestar",
+    "/aldinord/i": "aldi-nord",
+    "/cx919|gxt_dongle_3188/i": "andoer",
+    "/technisat/i": "technisat",
+    "/;metz;/i": "metz",
+    "/;tcl;/i": "tcl",
+    "/;aston;/i": "aston",
+    "/;arcelik;/i": "arcelik",
+    "/;mstar;/i": "mstar",
+    "/;mtk;/i": "mediatek",
+    "/; ?lge?;/i": "lg",
+    "/mxl661l32|smart\\-tv/i": "samsung",
+    "/viera/i": "panasonic",
+    "/apple tv/i": "apple",
+    "/netrangemmh/i": "netrange"
+  },
+  "generic": "unknown"
+}

@@ -11,9 +11,11 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
+use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
+use BrowserDetector\Loader\SpecificLoaderInterface;
 use BrowserDetector\Parser\EngineParser;
-use BrowserDetector\Loader\EngineLoaderFactory;
-use BrowserDetector\Loader\GenericLoader;
+use JsonClass\Json;
+use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use UaResult\Engine\Engine;
@@ -31,10 +33,12 @@ class EngineParserTest extends TestCase
      */
     protected function setUp(): void
     {
-        /** @var NullLogger $logger */
         $logger = $this->createMock(NullLogger::class);
+        $jsonParser = $this->createMock(JsonInterface::class);
 
-        $this->object = new EngineParser($logger);
+        /** @var NullLogger $logger */
+        /** @var Json $jsonParser */
+        $this->object = new EngineParser($logger, $jsonParser);
     }
 
     /**
@@ -50,9 +54,9 @@ class EngineParserTest extends TestCase
      */
     public function testInvoke(string $useragent, EngineInterface $expectedResult): void
     {
-        $mockLoader = $this->getMockBuilder(GenericLoader::class)
+        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mockLoader
             ->expects(self::once())
@@ -60,9 +64,9 @@ class EngineParserTest extends TestCase
             ->with($useragent)
             ->willReturn($expectedResult);
 
-        $mockLoaderFactory = $this->getMockBuilder(EngineLoaderFactory::class)
+        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mockLoaderFactory
             ->expects(self::once())
@@ -83,7 +87,7 @@ class EngineParserTest extends TestCase
      */
     public function providerInvoke(): array
     {
-        $engine = $this->createMock(Engine::class);
+        $engine = $this->createMock(EngineInterface::class);
 
         return [
             [
@@ -106,9 +110,9 @@ class EngineParserTest extends TestCase
      */
     public function testLoad(string $useragent, string $key, EngineInterface $expectedResult): void
     {
-        $mockLoader = $this->getMockBuilder(GenericLoader::class)
+        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
         $mockLoader
             ->expects(self::once())
@@ -116,9 +120,9 @@ class EngineParserTest extends TestCase
             ->with($key, $useragent)
             ->willReturn($expectedResult);
 
-        $mockLoaderFactory = $this->getMockBuilder(EngineLoaderFactory::class)
+        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['__invoke'])
+
             ->getMock();
         $mockLoaderFactory
             ->expects(self::once())
@@ -139,7 +143,7 @@ class EngineParserTest extends TestCase
      */
     public function providerLoad(): array
     {
-        $engine = $this->createMock(Engine::class);
+        $engine = $this->createMock(EngineInterface::class);
 
         return [
             [

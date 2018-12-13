@@ -13,16 +13,18 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\DeviceLoader;
-use BrowserDetector\Loader\GenericLoader;
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Parser\PlatformParserInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaDeviceType\TypeLoader;
 use UaDeviceType\Unknown;
 use UaResult\Company\Company;
+use UaResult\Company\CompanyInterface;
 use UaResult\Device\DeviceInterface;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
@@ -36,7 +38,7 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -60,9 +62,9 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -79,16 +81,16 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
         $companyLoader
             ->expects(self::never())
             ->method('load');
 
-        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+        $typeLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
 
         $typeLoader
@@ -97,25 +99,25 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(GenericLoader::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
 
-        $platformLoader
+        $platformParser
             ->expects(self::never())
             ->method('load');
 
         /** @var NullLogger $logger */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var GenericLoader $platformLoader */
+        /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
         $object = new DeviceLoader(
             $logger,
             $companyLoader,
             $typeLoader,
-            $platformLoader,
+            $platformParser,
             $initData
         );
 
@@ -132,7 +134,7 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -156,9 +158,9 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -175,16 +177,16 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
         $companyLoader
             ->expects(self::never())
             ->method('load');
 
-        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+        $typeLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
 
         $typeLoader
@@ -193,25 +195,25 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(GenericLoader::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
 
-        $platformLoader
+        $platformParser
             ->expects(self::never())
             ->method('load');
 
         /** @var NullLogger $logger */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var GenericLoader $platformLoader */
+        /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
         $object = new DeviceLoader(
             $logger,
             $companyLoader,
             $typeLoader,
-            $platformLoader,
+            $platformParser,
             $initData
         );
 
@@ -228,7 +230,7 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -252,9 +254,9 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -288,10 +290,10 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
-        $company = $this->createMock(Company::class);
+        $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
             ->expects(self::exactly(2))
@@ -299,9 +301,9 @@ class DeviceLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+        $typeLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
 
         $typeLoader
@@ -310,25 +312,25 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(GenericLoader::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
 
-        $platformLoader
+        $platformParser
             ->expects(self::never())
             ->method('load');
 
         /** @var NullLogger $logger */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var GenericLoader $platformLoader */
+        /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
         $object = new DeviceLoader(
             $logger,
             $companyLoader,
             $typeLoader,
-            $platformLoader,
+            $platformParser,
             $initData
         );
 
@@ -348,7 +350,7 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -375,9 +377,9 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -411,10 +413,10 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
-        $company = $this->createMock(Company::class);
+        $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
             ->expects(self::exactly(2))
@@ -422,9 +424,9 @@ class DeviceLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+        $typeLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
 
         $typeLoader
@@ -433,18 +435,18 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(GenericLoader::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load', 'init'])
+
             ->getMock();
 
-        $platformLoader
+        $platformParser
             ->expects(self::once())
             ->method('load')
             ->with('unknown', 'test/1.0')
             ->willThrowException(new NotFoundException('engine not found'));
 
-        $platformLoader
+        $platformParser
             ->expects(self::once())
             ->method('init')
             ->willReturnSelf();
@@ -452,13 +454,13 @@ class DeviceLoaderTest extends TestCase
         /** @var NullLogger $logger */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var GenericLoader $platformLoader */
+        /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
         $object = new DeviceLoader(
             $logger,
             $companyLoader,
             $typeLoader,
-            $platformLoader,
+            $platformParser,
             $initData
         );
 
@@ -478,7 +480,7 @@ class DeviceLoaderTest extends TestCase
     {
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-            ->setMethods(['info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'])
+
             ->getMock();
         $logger
             ->expects(self::never())
@@ -502,9 +504,9 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $initData = $this->getMockBuilder(Data::class)
+        $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['hasItem', 'getItem'])
+
             ->getMock();
 
         $initData
@@ -538,10 +540,10 @@ class DeviceLoaderTest extends TestCase
 
         $companyLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            //->setMethods(['load'])
+
             ->getMock();
 
-        $company = $this->createMock(Company::class);
+        $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
             ->expects(self::exactly(2))
@@ -549,9 +551,9 @@ class DeviceLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        $typeLoader = $this->getMockBuilder(TypeLoader::class)
+        $typeLoader = $this->getMockBuilder(LoaderInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load'])
+
             ->getMock();
 
         $typeLoader
@@ -560,20 +562,20 @@ class DeviceLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $platformLoader = $this->getMockBuilder(GenericLoader::class)
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-            ->setMethods(['load', 'init'])
+
             ->getMock();
 
-        $os = $this->createMock(Os::class);
+        $os = $this->createMock(OsInterface::class);
 
-        $platformLoader
+        $platformParser
             ->expects(self::once())
             ->method('load')
             ->with('unknown', 'test/1.0')
             ->willReturn($os);
 
-        $platformLoader
+        $platformParser
             ->expects(self::once())
             ->method('init')
             ->willReturnSelf();
@@ -581,13 +583,13 @@ class DeviceLoaderTest extends TestCase
         /** @var NullLogger $logger */
         /** @var CompanyLoader $companyLoader */
         /** @var TypeLoader $typeLoader */
-        /** @var GenericLoader $platformLoader */
+        /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
         $object = new DeviceLoader(
             $logger,
             $companyLoader,
             $typeLoader,
-            $platformLoader,
+            $platformParser,
             $initData
         );
 
