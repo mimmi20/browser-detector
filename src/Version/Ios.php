@@ -106,7 +106,7 @@ final class Ios implements VersionDetectorInterface
             }
         }
 
-        $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\/([\d\.]+)$/i', $useragent, $matches);
+        $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/([\d\.]+)$/i', $useragent, $matches);
 
         if ($doMatch && isset($matches[1])) {
             // @see https://justworks.ca/blog/ios-and

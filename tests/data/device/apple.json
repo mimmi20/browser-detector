@@ -6404,7 +6404,61 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
+      "version": "5.1.1",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
       "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Apple-iPhone9C4/1602.92"
+    },
+    "device": {
+      "deviceName": "A1784",
+      "marketingName": "iPhone 7 Plus",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": "FHD",
+        "size": null
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [
+          "USA"
+        ],
+        "vendors": [
+          "AT&T",
+          "T-Mobile"
+        ]
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Exchange ActiveSync",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.0",
       "manufacturer": "Apple",
       "bits": 32
     },
