@@ -3628,7 +3628,7 @@
     },
     "device": {
       "deviceName": "iPhone 5",
-      "marketingName": "iPhone 5 (3G+)",
+      "marketingName": "iPhone 5",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
@@ -3866,7 +3866,7 @@
     },
     "device": {
       "deviceName": "iPhone 5S",
-      "marketingName": "iPhone 5S (3G)",
+      "marketingName": "iPhone 5S",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
@@ -4056,7 +4056,7 @@
     },
     "device": {
       "deviceName": "iPhone 5S",
-      "marketingName": "iPhone 5S (3G)",
+      "marketingName": "iPhone 5S",
       "manufacturer": "Apple",
       "brand": "Apple",
       "display": {
@@ -6581,12 +6581,12 @@
       ]
     },
     "browser": {
-      "name": "Mobile Safari UIWebView",
+      "name": "Exchange ActiveSync",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Microsoft",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": "iOS",
@@ -6596,9 +6596,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "WebKit",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "Apple"
+      "manufacturer": "Unknown"
     }
   },
   {
@@ -6630,12 +6630,12 @@
       ]
     },
     "browser": {
-      "name": "Mobile Safari UIWebView",
+      "name": "Exchange ActiveSync",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Microsoft",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": "iOS",
@@ -6645,9 +6645,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "WebKit",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "Apple"
+      "manufacturer": "Unknown"
     }
   }
 ]
