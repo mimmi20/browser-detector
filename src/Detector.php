@@ -23,7 +23,6 @@ use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\Unknown;
-use UaNormalizer\NormalizerFactory;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
 use UaResult\Browser\Browser;

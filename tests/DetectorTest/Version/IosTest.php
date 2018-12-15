@@ -37,6 +37,7 @@ class IosTest extends TestCase
      * @param string $expectedVersion
      *
      * @return void
+     * @throws \Exception
      */
     public function testTestdetectVersion(string $useragent, string $expectedVersion): void
     {
@@ -79,6 +80,14 @@ class IosTest extends TestCase
             [
                 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',
                 '8.2.0-beta+5',
+            ],
+            [
+                'Apple-iPhone3C1/902.206',
+                '5.1.1',
+            ],
+            [
+                'Apple-iPhone9C4/1602.92',
+                '12.1.0',
             ],
         ];
     }
