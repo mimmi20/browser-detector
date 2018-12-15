@@ -27,6 +27,7 @@ class WindowsPhoneOsTest extends TestCase
      */
     protected function setUp(): void
     {
+        self::markTestIncomplete();
         $this->object = new WindowsPhoneOs();
     }
 

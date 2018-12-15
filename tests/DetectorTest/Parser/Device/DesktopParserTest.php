@@ -32,6 +32,7 @@ class DesktopParserTest extends TestCase
      */
     protected function setUp(): void
     {
+        self::markTestIncomplete();
         $logger         = $this->createMock(NullLogger::class);
         $jsonParser     = $this->createMock(JsonInterface::class);
         $platformParser = $this->createMock(PlatformParserInterface::class);
