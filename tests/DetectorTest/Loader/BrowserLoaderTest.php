@@ -696,6 +696,6 @@ class BrowserLoaderTest extends TestCase
         $engineResult = $result[1];
         self::assertInstanceOf(EngineInterface::class, $engineResult);
 
-        self:self::assertSame('test-browser', $browserResult->getName());
+        self::assertSame('test-browser', $browserResult->getName());
     }
 }
