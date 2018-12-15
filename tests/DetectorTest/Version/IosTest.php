@@ -37,8 +37,9 @@ class IosTest extends TestCase
      * @param string $useragent
      * @param string $expectedVersion
      *
-     * @return void
      * @throws \Exception
+     *
+     * @return void
      */
     public function testTestdetectVersion(string $useragent, string $expectedVersion): void
     {
