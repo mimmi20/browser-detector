@@ -13,7 +13,6 @@ namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use UaBrowserType\TypeLoader;
 use UaBrowserType\Unknown;
@@ -46,12 +45,12 @@ final class BrowserFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): BrowserInterface
     {
-        $name  = isset($data['name']) ? (string) $data['name'] : null;
-        $modus = isset($data['modus']) ? (string) $data['modus'] : null;
+        $name  = array_key_exists('name', $data) ? (string) $data['name'] : null;
+        $modus = array_key_exists('modus', $data) ? (string) $data['modus'] : null;
         $bits  = (new \BrowserDetector\Bits\Browser($useragent))->getBits();
 
         $type = new Unknown();
-        if (isset($data['type'])) {
+        if (array_key_exists('type', $data)) {
             try {
                 $type = (new TypeLoader())->load((string) $data['type']);
             } catch (NotFoundException $e) {
@@ -59,33 +58,12 @@ final class BrowserFactory
             }
         }
 
-        $version = (new VersionFactory())->set('0');
-        if (isset($data['version'])) {
-            $versionFactory = new VersionFactory();
-
-            if ($data['version'] instanceof \stdClass) {
-                if ('VersionFactory' !== $data['version']->class) {
-                    $className      = $data['version']->class;
-                    $versionFactory = new $className();
-                }
-
-                $version = $versionFactory->detectVersion($useragent, $data['version']->search ?? []);
-            } elseif (is_string($data['version'])) {
-                $version = $versionFactory->set((string) $data['version']);
-            }
-        }
-
-        $companyLoader = $this->companyLoader;
-
-        $manufacturer = $companyLoader('Unknown');
-        if (isset($data['manufacturer'])) {
-            try {
-                $manufacturer = $companyLoader((string) $data['manufacturer']);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
-        }
+        $version      = $this->getVersion($data, $useragent);
+        $manufacturer = $this->getCompany($logger, $data, 'manufacturer');
 
         return new Browser($name, $manufacturer, $version, $type, $bits, $modus);
     }
+
+    use VersionFactoryTrait;
+    use CompanyFactoryTrait;
 }

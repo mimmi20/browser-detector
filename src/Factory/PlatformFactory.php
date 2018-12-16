@@ -12,8 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
@@ -48,33 +47,24 @@ final class PlatformFactory
         $marketingName = array_key_exists('marketingName', $data) ? $data['marketingName'] : null;
         $bits          = (new \BrowserDetector\Bits\Os($useragent))->getBits();
 
-        $version = (new VersionFactory())->set('0');
-        if (array_key_exists('version', $data)) {
-            $versionFactory = new VersionFactory();
+        $version      = $this->getVersion($data, $useragent);
+        $manufacturer = $this->getCompany($logger, $data, 'manufacturer');
 
-            if ($data['version'] instanceof \stdClass) {
-                if ('VersionFactory' !== $data['version']->class) {
-                    $className      = $data['version']->class;
-                    $versionFactory = new $className();
-                }
-
-                $version = $versionFactory->detectVersion($useragent, $data['version']->search ?? null);
-            } elseif (is_string($data['version'])) {
-                $version = $versionFactory->set((string) $data['version']);
-            }
-        }
-
-        $companyLoader = $this->companyLoader;
-
-        $manufacturer = $companyLoader('Unknown');
-        if (array_key_exists('manufacturer', $data)) {
-            try {
-                $manufacturer = $companyLoader($data['manufacturer']);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
+        if ('Mac OS X' === $name
+            && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
+        ) {
+            $name          = 'macOS';
+            $marketingName = 'macOS';
+        } elseif ('iOS' === $name
+            && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '4.0', '<')
+        ) {
+            $name          = 'iPhone OS';
+            $marketingName = 'iPhone OS';
         }
 
         return new Os($name, $marketingName, $manufacturer, $version, $bits);
     }
+
+    use VersionFactoryTrait;
+    use CompanyFactoryTrait;
 }
