@@ -195,13 +195,12 @@ final class MobileDevice
             'steelcore',
             'tablet',
             'mobile',
+            'stitcher',
+            'rssradio',
+            'rss_radio',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {
-            return true;
-        }
-
-        if ($this->useragent->contains('UCWEB', true)) {
             return true;
         }
 
@@ -209,23 +208,7 @@ final class MobileDevice
             return false;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+[WM][TP]?/', (string) $this->useragent)) {
-            return true;
-        }
-
-        if ((new AndroidOs($this->useragent))->isAndroid()) {
-            return true;
-        }
-
-        if ((new Ios($this->useragent))->isIos()) {
-            return true;
-        }
-
-        if (preg_match('/TBD\d{4}/', (string) $this->useragent)) {
-            return true;
-        }
-
-        if (preg_match('/TBD[BCG]\d{3,4}/', (string) $this->useragent)) {
+        if (preg_match('/UCWEB|Puffin\/[\d\.]+[WM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', (string) $this->useragent)) {
             return true;
         }
 

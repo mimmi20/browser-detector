@@ -11,13 +11,10 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Helper;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\PlatformLoaderFactory;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Stringy\Stringy;
 use UaResult\Os\OsInterface;
 
 final class PlatformParser implements PlatformParserInterface
@@ -50,93 +47,6 @@ final class PlatformParser implements PlatformParserInterface
     }
 
     use CascadedParserTrait;
-
-//    /**
-//     * Gets the information about the platform by User Agent
-//     *
-//     * @param string $useragent
-//     *
-//     * @throws \ExceptionalJSON\DecodeErrorException
-//     *
-//     * @return \UaResult\Os\OsInterface
-//     */
-//    public function __invoke(string $useragent): OsInterface
-//    {
-//        $factories = $this->jsonParser->decode(
-//            (string) file_get_contents(__DIR__ . '/../../data/factories/platforms.json'),
-//            true
-//        );
-//        $mode      = $factories['generic'];
-//
-//        foreach (array_keys($factories['rules']) as $rule) {
-//            if (preg_match($rule, $useragent)) {
-//                $mode = $factories['rules'][$rule];
-//                break;
-//            }
-//        }
-//
-//        $specFactories = $this->jsonParser->decode(
-//            (string) file_get_contents(__DIR__ . sprintf('/../../data/factories/platforms/%s.json', $mode)),
-//            true
-//        );
-//        $key           = $specFactories['generic'];
-//
-//        foreach (array_keys($specFactories['rules']) as $rule) {
-//            if (preg_match($rule, $useragent)) {
-//                $key = $specFactories['rules'][$rule];
-//                break;
-//            }
-//        }
-//
-//        return $this->load($key, $useragent);
-
-//        $s             = new Stringy($useragent);
-//        $windowsHelper = new Helper\Windows($s);
-//        $loaderFactory = $this->loaderFactory;
-//
-//        if ($windowsHelper->isMobileWindows()) {
-//            $loader = $loaderFactory('windowsmobile');
-//
-//            return $loader($useragent);
-//        }
-//
-//        if ($windowsHelper->isWindows()) {
-//            $loader = $loaderFactory('windows');
-//
-//            return $loader($useragent);
-//        }
-//
-//        if (preg_match('/MIUI/', $useragent)
-//            || preg_match('/yunos|tizen/i', $useragent)
-//            || (new Helper\AndroidOs($s))->isAndroid()
-//        ) {
-//            $loader = $loaderFactory('android');
-//
-//            return $loader($useragent);
-//        }
-//
-//        if ((new Helper\Linux($s))->isLinux()) {
-//            $loader = $loaderFactory('linux');
-//
-//            return $loader($useragent);
-//        }
-//
-//        if ((new Helper\FirefoxOs($s))->isFirefoxOs()) {
-//            $loader = $loaderFactory('firefoxos');
-//
-//            return $loader($useragent);
-//        }
-//
-//        if ((new Helper\Ios($s))->isIos()) {
-//            $loader = $loaderFactory('ios');
-//
-//            return $loader($useragent);
-//        }
-//
-//        $loader = $loaderFactory('unknown');
-//
-//        return $loader($useragent);
-//    }
 
     /**
      * @param string $key
