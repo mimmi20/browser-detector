@@ -64,25 +64,8 @@ final class DeviceFactory
             }
         }
 
-        $companyLoader = $this->companyLoader;
-
-        $manufacturer = $companyLoader('Unknown');
-        if (array_key_exists('manufacturer', $data)) {
-            try {
-                $manufacturer = $companyLoader((string) $data['manufacturer']);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
-        }
-
-        $brand = $companyLoader('Unknown');
-        if (array_key_exists('brand', $data)) {
-            try {
-                $brand = $companyLoader((string) $data['brand']);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
-        }
+        $manufacturer = $this->getCompany($logger, $data, 'manufacturer');
+        $brand        = $this->getCompany($logger, $data, 'brand');
 
         $display = new Display(null, null, null, new \UaDisplaySize\Unknown(), null);
         if (array_key_exists('display', $data)) {
@@ -104,4 +87,6 @@ final class DeviceFactory
 
         return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display, $dualOrientation, $simCount, $market, $connections);
     }
+
+    use CompanyFactoryTrait;
 }
