@@ -35,14 +35,25 @@ final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
     private $platformParser;
 
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
      * @param \Psr\Log\LoggerInterface                        $logger
      * @param \JsonClass\JsonInterface                        $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoader           $companyLoader
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
-    {
+    public function __construct(
+        LoggerInterface $logger,
+        JsonInterface $jsonParser,
+        CompanyLoader $companyLoader,
+        PlatformParserInterface $platformParser
+    ) {
         $this->logger         = $logger;
         $this->jsonParser     = $jsonParser;
+        $this->companyLoader  = $companyLoader;
         $this->platformParser = $platformParser;
     }
 
@@ -70,12 +81,11 @@ final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
         $finder->ignoreUnreadableDirs();
         $finder->in($dataPath);
 
-        $initData = new Data($finder, $this->jsonParser);
-
         $loader[$company] = new DeviceLoader(
             $this->logger,
-            $this->platformParser,
-            $initData
+            new Data($finder, $this->jsonParser),
+            $this->companyLoader,
+            $this->platformParser
         );
 
         return $loader[$company];

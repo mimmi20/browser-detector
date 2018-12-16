@@ -14,11 +14,8 @@ namespace BrowserDetectorTest\Parser\Device;
 use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
 use BrowserDetector\Loader\SpecificLoaderInterface;
 use BrowserDetector\Parser\Device\MobileParser;
-use BrowserDetector\Parser\PlatformParserInterface;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 class MobileParserTest extends TestCase
 {
@@ -33,14 +30,12 @@ class MobileParserTest extends TestCase
     protected function setUp(): void
     {
         self::markTestIncomplete();
-        $logger         = $this->createMock(NullLogger::class);
-        $jsonParser     = $this->createMock(JsonInterface::class);
-        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $jsonParser    = $this->createMock(JsonInterface::class);
+        $loaderFactory = $this->createMock(SpecificLoaderFactoryInterface::class);
 
-        /* @var NullLogger $logger */
-        /* @var Json $jsonParser */
-        /* @var PlatformParserInterface $platformParser */
-        $this->object = new MobileParser($logger, $jsonParser, $platformParser);
+        /* @var \JsonClass\Json $jsonParser */
+        /* @var \BrowserDetector\Loader\DeviceLoaderFactory $loaderFactory */
+        $this->object = new MobileParser($jsonParser, $loaderFactory);
     }
 
     /**

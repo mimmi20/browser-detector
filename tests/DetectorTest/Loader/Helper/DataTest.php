@@ -160,24 +160,4 @@ class DataTest extends TestCase
 
         self::assertTrue($object->isInitialized());
     }
-
-    /**
-     * @return void
-     */
-    public function testFlush(): void
-    {
-        self::markTestIncomplete();
-        $finder     = $this->createMock(Finder::class);
-        $jsonParser = $this->createMock(JsonInterface::class);
-
-        /** @var Finder $finder */
-        /** @var Json $jsonParser */
-        $object = new Data($finder, $jsonParser);
-
-        self::assertFalse($object->flush());
-        self::assertFalse($object->removeItem(''));
-        self::assertFalse($object->hasItem(''));
-        self::assertFalse($object->setItem('', ''));
-        self::assertNull($object->getItem(''));
-    }
 }

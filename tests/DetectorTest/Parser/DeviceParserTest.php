@@ -36,12 +36,14 @@ class DeviceParserTest extends TestCase
         self::markTestIncomplete();
         $logger         = $this->createMock(NullLogger::class);
         $jsonParser     = $this->createMock(JsonInterface::class);
+        $companyLoader  = $this->createMock(SpecificLoaderInterface::class);
         $platformParser = $this->createMock(PlatformParserInterface::class);
 
         /* @var NullLogger $logger */
         /* @var Json $jsonParser */
+        /* @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         /* @var PlatformParserInterface $platformParser */
-        $this->object = new DeviceParser($logger, $jsonParser, $platformParser);
+        $this->object = new DeviceParser($logger, $jsonParser, $companyLoader, $platformParser);
     }
 
     /**

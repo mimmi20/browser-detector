@@ -11,11 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
-use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
 final class EngineLoader implements SpecificLoaderInterface
@@ -26,24 +24,24 @@ final class EngineLoader implements SpecificLoaderInterface
     private $logger;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
-     */
-    private $companyLoader;
-
-    /**
      * @var \BrowserDetector\Loader\Helper\Data
      */
     private $initData;
 
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
      * @param \Psr\Log\LoggerInterface              $logger
-     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
      * @param \BrowserDetector\Loader\Helper\Data   $initData
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
      */
     public function __construct(
         LoggerInterface $logger,
-        CompanyLoader $companyLoader,
-        Data $initData
+        Data $initData,
+        CompanyLoader $companyLoader
     ) {
         $this->logger        = $logger;
         $this->companyLoader = $companyLoader;
@@ -73,23 +71,6 @@ final class EngineLoader implements SpecificLoaderInterface
             throw new NotFoundException('the engine with key "' . $key . '" was not found');
         }
 
-        $engineVersionClass = $engineData->version->class;
-        $manufacturer       = $this->companyLoader->load($engineData->manufacturer);
-
-        if (!is_string($engineVersionClass)) {
-            $version = new Version('0');
-        } elseif ('VersionFactory' === $engineVersionClass) {
-            $version = (new VersionFactory())->detectVersion($useragent, $engineData->version->search);
-        } else {
-            /* @var \BrowserDetector\Version\VersionDetectorInterface $versionClass */
-            $versionClass = new $engineVersionClass();
-            $version      = $versionClass->detectVersion($useragent);
-        }
-
-        return new Engine(
-            $engineData->name,
-            $manufacturer,
-            $version
-        );
+        return (new EngineFactory($this->companyLoader))->fromArray($this->logger, (array) $engineData, $useragent);
     }
 }

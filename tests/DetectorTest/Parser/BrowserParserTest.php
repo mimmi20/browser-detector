@@ -33,14 +33,16 @@ final class BrowserParserTest extends TestCase
     protected function setUp(): void
     {
         self::markTestIncomplete();
-        $logger       = $this->createMock(NullLogger::class);
-        $jsonParser   = $this->createMock(JsonInterface::class);
-        $engineParser = $this->createMock(EngineParserInterface::class);
+        $logger        = $this->createMock(NullLogger::class);
+        $jsonParser    = $this->createMock(JsonInterface::class);
+        $companyLoader = $this->createMock(SpecificLoaderInterface::class);
+        $engineParser  = $this->createMock(EngineParserInterface::class);
 
         /* @var NullLogger $logger */
         /* @var Json $jsonParser */
+        /* @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         /* @var EngineParserInterface $engineParser */
-        $this->object = new BrowserParser($logger, $jsonParser, $engineParser);
+        $this->object = new BrowserParser($logger, $jsonParser, $companyLoader, $engineParser);
     }
 
     /**

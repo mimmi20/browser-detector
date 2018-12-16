@@ -29,13 +29,23 @@ final class PlatformLoaderFactory implements SpecificLoaderFactoryInterface
     private $jsonParser;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param \JsonClass\JsonInterface $jsonParser
+     * @var \BrowserDetector\Loader\CompanyLoader
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
-    {
-        $this->logger     = $logger;
-        $this->jsonParser = $jsonParser;
+    private $companyLoader;
+
+    /**
+     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \JsonClass\JsonInterface              $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     */
+    public function __construct(
+        LoggerInterface $logger,
+        JsonInterface $jsonParser,
+        CompanyLoader $companyLoader
+    ) {
+        $this->logger        = $logger;
+        $this->jsonParser    = $jsonParser;
+        $this->companyLoader = $companyLoader;
     }
 
     /**
@@ -62,8 +72,8 @@ final class PlatformLoaderFactory implements SpecificLoaderFactoryInterface
 
         $loader = new PlatformLoader(
             $this->logger,
-            CompanyLoader::getInstance(),
-            new Data($finder, $this->jsonParser)
+            new Data($finder, $this->jsonParser),
+            $this->companyLoader
         );
 
         return $loader;

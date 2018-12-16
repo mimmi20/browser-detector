@@ -21,24 +21,53 @@ use UaResult\Engine\EngineInterface;
 final class EngineFactory
 {
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
+     * BrowserFactory constructor.
+     *
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     */
+    public function __construct(CompanyLoader $companyLoader)
+    {
+        $this->companyLoader = $companyLoader;
+    }
+
+    /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data
+     * @param string                   $useragent
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function fromArray(LoggerInterface $logger, array $data): EngineInterface
+    public function fromArray(LoggerInterface $logger, array $data, string $useragent): EngineInterface
     {
         $name = array_key_exists('name', $data) ? $data['name'] : null;
 
         $version = (new VersionFactory())->set('0');
         if (array_key_exists('version', $data)) {
-            $version = (new VersionFactory())->set($data['version']);
+            $versionFactory = new VersionFactory();
+
+            if ($data['version'] instanceof \stdClass) {
+                if ('VersionFactory' !== $data['version']->class) {
+                    $className      = $data['version']->class;
+                    $versionFactory = new $className();
+                }
+
+                $version = $versionFactory->detectVersion($useragent, $data['version']->search ?? null);
+            } elseif (is_string($data['version'])) {
+                $version = $versionFactory->set((string) $data['version']);
+            }
         }
 
-        $manufacturer = CompanyLoader::getInstance()->load('Unknown');
+        $companyLoader = $this->companyLoader;
+
+        $manufacturer = $companyLoader('Unknown');
         if (array_key_exists('manufacturer', $data)) {
             try {
-                $manufacturer = CompanyLoader::getInstance()->load($data['manufacturer']);
+                $manufacturer = $companyLoader($data['manufacturer']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }

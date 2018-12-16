@@ -13,9 +13,7 @@ namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Parser\DeviceParserInterface;
-use BrowserDetector\Parser\PlatformParserInterface;
 use JsonClass\JsonInterface;
-use Psr\Log\LoggerInterface;
 
 final class DesktopParser implements DeviceParserInterface
 {
@@ -33,13 +31,12 @@ final class DesktopParser implements DeviceParserInterface
     private const SPECIFIC_FILE = '/../../../data/factories/devices/desktop/%s.json';
 
     /**
-     * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \JsonClass\JsonInterface                        $jsonParser
-     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     * @param \JsonClass\JsonInterface                    $jsonParser
+     * @param \BrowserDetector\Loader\DeviceLoaderFactory $loaderFactory
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
+    public function __construct(JsonInterface $jsonParser, DeviceLoaderFactory $loaderFactory)
     {
-        $this->loaderFactory = new DeviceLoaderFactory($logger, $jsonParser, $platformParser);
+        $this->loaderFactory = $loaderFactory;
         $this->jsonParser    = $jsonParser;
     }
 

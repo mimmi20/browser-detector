@@ -16,7 +16,7 @@ use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 
-final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
+final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -29,23 +29,13 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
     private $jsonParser;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
+     * @param \Psr\Log\LoggerInterface $logger
+     * @param \JsonClass\JsonInterface $jsonParser
      */
-    private $companyLoader;
-
-    /**
-     * @param \Psr\Log\LoggerInterface              $logger
-     * @param \JsonClass\JsonInterface              $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
-     */
-    public function __construct(
-        LoggerInterface $logger,
-        JsonInterface $jsonParser,
-        CompanyLoader $companyLoader
-    ) {
-        $this->logger        = $logger;
-        $this->jsonParser    = $jsonParser;
-        $this->companyLoader = $companyLoader;
+    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
+    {
+        $this->logger     = $logger;
+        $this->jsonParser = $jsonParser;
     }
 
     /**
@@ -53,14 +43,14 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
      */
     public function __invoke(): SpecificLoaderInterface
     {
-        /** @var EngineLoader $loader */
+        /** @var CompanyLoader $loader */
         static $loader = null;
 
         if (null !== $loader) {
             return $loader;
         }
 
-        $dataPath = __DIR__ . '/../../data/engines';
+        $dataPath = __DIR__ . '/../../data/companies';
 
         $finder = new Finder();
         $finder->files();
@@ -70,10 +60,9 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
         $finder->ignoreUnreadableDirs();
         $finder->in($dataPath);
 
-        $loader = new EngineLoader(
+        $loader = new CompanyLoader(
             $this->logger,
-            new Data($finder, $this->jsonParser),
-            $this->companyLoader
+            new Data($finder, $this->jsonParser)
         );
 
         return $loader;

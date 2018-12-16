@@ -11,14 +11,10 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Bits\Browser as BrowserBits;
+use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\EngineParserInterface;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
-use UaBrowserType\TypeLoader;
-use UaResult\Browser\Browser;
 
 final class BrowserLoader implements SpecificLoaderInterface
 {
@@ -26,16 +22,6 @@ final class BrowserLoader implements SpecificLoaderInterface
      * @var \Psr\Log\LoggerInterface
      */
     private $logger;
-
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoader
-     */
-    private $companyLoader;
-
-    /**
-     * @var \UaBrowserType\TypeLoader
-     */
-    private $typeLoader;
 
     /**
      * @var \BrowserDetector\Parser\EngineParserInterface
@@ -48,23 +34,25 @@ final class BrowserLoader implements SpecificLoaderInterface
     private $initData;
 
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
      * @param \Psr\Log\LoggerInterface                      $logger
-     * @param \BrowserDetector\Loader\CompanyLoader         $companyLoader
-     * @param \UaBrowserType\TypeLoader                     $typeLoader
-     * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
      * @param \BrowserDetector\Loader\Helper\Data           $initData
+     * @param \BrowserDetector\Loader\CompanyLoader         $companyLoader
+     * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
      */
     public function __construct(
         LoggerInterface $logger,
+        Data $initData,
         CompanyLoader $companyLoader,
-        TypeLoader $typeLoader,
-        EngineParserInterface $engineParser,
-        Data $initData
+        EngineParserInterface $engineParser
     ) {
         $this->logger        = $logger;
-        $this->companyLoader = $companyLoader;
-        $this->typeLoader    = $typeLoader;
         $this->engineParser  = $engineParser;
+        $this->companyLoader = $companyLoader;
 
         $initData();
 
@@ -91,21 +79,6 @@ final class BrowserLoader implements SpecificLoaderInterface
             throw new NotFoundException('the browser with key "' . $key . '" was not found');
         }
 
-        $browserVersionClass = $browserData->version->class;
-        $manufacturer        = $this->companyLoader->load($browserData->manufacturer);
-        $type                = $this->typeLoader->load($browserData->type);
-
-        if (!is_string($browserVersionClass)) {
-            $version = new Version('0');
-        } elseif ('VersionFactory' === $browserVersionClass) {
-            $version = (new VersionFactory())->detectVersion($useragent, $browserData->version->search);
-        } else {
-            /* @var \BrowserDetector\Version\VersionDetectorInterface $versionClass */
-            $versionClass = new $browserVersionClass();
-            $version      = $versionClass->detectVersion($useragent);
-        }
-
-        $bits      = (new BrowserBits($useragent))->getBits();
         $engineKey = $browserData->engine;
         $engine    = null;
 
@@ -117,7 +90,7 @@ final class BrowserLoader implements SpecificLoaderInterface
             }
         }
 
-        $browser = new Browser($browserData->name, $manufacturer, $version, $type, $bits, $browserData->modus ?? null);
+        $browser = (new BrowserFactory($this->companyLoader))->fromArray($this->logger, (array) $browserData, $useragent);
 
         return [$browser, $engine];
     }

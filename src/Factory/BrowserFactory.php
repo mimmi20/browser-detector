@@ -23,16 +23,32 @@ use UaResult\Browser\BrowserInterface;
 final class BrowserFactory
 {
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
+     * BrowserFactory constructor.
+     *
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     */
+    public function __construct(CompanyLoader $companyLoader)
+    {
+        $this->companyLoader = $companyLoader;
+    }
+
+    /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data
+     * @param string                   $useragent
      *
      * @return \UaResult\Browser\BrowserInterface
      */
-    public static function fromArray(LoggerInterface $logger, array $data): BrowserInterface
+    public function fromArray(LoggerInterface $logger, array $data, string $useragent): BrowserInterface
     {
         $name  = isset($data['name']) ? (string) $data['name'] : null;
         $modus = isset($data['modus']) ? (string) $data['modus'] : null;
-        $bits  = isset($data['bits']) ? (int) $data['bits'] : null;
+        $bits  = (new \BrowserDetector\Bits\Browser($useragent))->getBits();
 
         $type = new Unknown();
         if (isset($data['type'])) {
@@ -45,13 +61,26 @@ final class BrowserFactory
 
         $version = (new VersionFactory())->set('0');
         if (isset($data['version'])) {
-            $version = (new VersionFactory())->set((string) $data['version']);
+            $versionFactory = new VersionFactory();
+
+            if ($data['version'] instanceof \stdClass) {
+                if ('VersionFactory' !== $data['version']->class) {
+                    $className      = $data['version']->class;
+                    $versionFactory = new $className();
+                }
+
+                $version = $versionFactory->detectVersion($useragent, $data['version']->search ?? []);
+            } elseif (is_string($data['version'])) {
+                $version = $versionFactory->set((string) $data['version']);
+            }
         }
 
-        $manufacturer = CompanyLoader::getInstance()->load('Unknown');
+        $companyLoader = $this->companyLoader;
+
+        $manufacturer = $companyLoader('Unknown');
         if (isset($data['manufacturer'])) {
             try {
-                $manufacturer = CompanyLoader::getInstance()->load((string) $data['manufacturer']);
+                $manufacturer = $companyLoader((string) $data['manufacturer']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }
