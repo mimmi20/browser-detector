@@ -14,6 +14,7 @@ namespace BrowserDetector\Parser;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
+use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Device\DesktopParser;
@@ -63,15 +64,21 @@ final class DeviceParser implements DeviceParserInterface
     /**
      * @param \Psr\Log\LoggerInterface                        $logger
      * @param \JsonClass\JsonInterface                        $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoader           $companyLoader
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, PlatformParserInterface $platformParser)
-    {
-        $this->darwinFactory  = new DarwinParser($logger, $jsonParser, $platformParser);
-        $this->mobileFactory  = new MobileParser($logger, $jsonParser, $platformParser);
-        $this->tvFactory      = new TvParser($logger, $jsonParser, $platformParser);
-        $this->desktopFactory = new DesktopParser($logger, $jsonParser, $platformParser);
-        $this->loaderFactory  = new DeviceLoaderFactory($logger, $jsonParser, $platformParser);
+    public function __construct(
+        LoggerInterface $logger,
+        JsonInterface $jsonParser,
+        CompanyLoader $companyLoader,
+        PlatformParserInterface $platformParser
+    ) {
+        $this->loaderFactory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser);
+
+        $this->darwinFactory  = new DarwinParser($jsonParser, $this->loaderFactory);
+        $this->mobileFactory  = new MobileParser($jsonParser, $this->loaderFactory);
+        $this->tvFactory      = new TvParser($jsonParser, $this->loaderFactory);
+        $this->desktopFactory = new DesktopParser($jsonParser, $this->loaderFactory);
 
         $this->logger     = $logger;
         $this->jsonParser = $jsonParser;

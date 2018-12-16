@@ -60,41 +60,12 @@ final class Data implements DataInterface
 
     /**
      * @param string $cacheId
-     * @param mixed  $content
-     *
-     * @return bool
-     */
-    public function setItem(string $cacheId, $content): bool
-    {
-        return false;
-    }
-
-    /**
-     * @param string $cacheId
      *
      * @return bool
      */
     public function hasItem(string $cacheId): bool
     {
         return array_key_exists($cacheId, $this->items);
-    }
-
-    /**
-     * @param string $cacheId
-     *
-     * @return bool
-     */
-    public function removeItem(string $cacheId): bool
-    {
-        return false;
-    }
-
-    /**
-     * @return bool
-     */
-    public function flush(): bool
-    {
-        return false;
     }
 
     /**
@@ -110,6 +81,10 @@ final class Data implements DataInterface
      */
     public function __invoke(): void
     {
+        if ($this->initialized) {
+            return;
+        }
+
         foreach ($this->finder as $file) {
             /* @var \Symfony\Component\Finder\SplFileInfo $file */
             try {

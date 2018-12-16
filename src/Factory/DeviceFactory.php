@@ -27,6 +27,21 @@ use UaResult\Device\Market;
 final class DeviceFactory
 {
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
+     * BrowserFactory constructor.
+     *
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     */
+    public function __construct(CompanyLoader $companyLoader)
+    {
+        $this->companyLoader = $companyLoader;
+    }
+
+    /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data
      *
@@ -49,19 +64,21 @@ final class DeviceFactory
             }
         }
 
-        $manufacturer = CompanyLoader::getInstance()->load('Unknown');
+        $companyLoader = $this->companyLoader;
+
+        $manufacturer = $companyLoader('Unknown');
         if (array_key_exists('manufacturer', $data)) {
             try {
-                $manufacturer = CompanyLoader::getInstance()->load((string) $data['manufacturer']);
+                $manufacturer = $companyLoader((string) $data['manufacturer']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }
         }
 
-        $brand = CompanyLoader::getInstance()->load('Unknown');
+        $brand = $companyLoader('Unknown');
         if (array_key_exists('brand', $data)) {
             try {
-                $brand = CompanyLoader::getInstance()->load((string) $data['brand']);
+                $brand = $companyLoader((string) $data['brand']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }

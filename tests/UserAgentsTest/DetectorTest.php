@@ -14,6 +14,7 @@ namespace UserAgentsTest;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Detector;
 use BrowserDetector\Factory\ResultFactory;
+use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\EngineParser;
@@ -78,10 +79,15 @@ class DetectorTest extends TestCase
         $jsonParser = new Json();
 
         /** @var NullLogger $logger */
-        $platformParser = new PlatformParser($logger, $jsonParser);
-        $deviceParser   = new DeviceParser($logger, $jsonParser, $platformParser);
-        $engineParser   = new EngineParser($logger, $jsonParser);
-        $browserParser  = new BrowserParser($logger, $jsonParser, $engineParser);
+        $companyLoaderFactory = new CompanyLoaderFactory($logger, $jsonParser);
+
+        /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
+        $companyLoader = $companyLoaderFactory();
+
+        $platformParser = new PlatformParser($logger, $jsonParser, $companyLoader);
+        $deviceParser   = new DeviceParser($logger, $jsonParser, $companyLoader, $platformParser);
+        $engineParser   = new EngineParser($logger, $jsonParser, $companyLoader);
+        $browserParser  = new BrowserParser($logger, $jsonParser, $companyLoader, $engineParser);
 
         $this->object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
     }
@@ -188,8 +194,15 @@ class DetectorTest extends TestCase
         $finder->ignoreUnreadableDirs();
         $finder->in('tests/data/');
 
-        $data   = [];
-        $logger = new NullLogger();
+        $data       = [];
+        $logger     = new NullLogger();
+        $jsonParser = new Json();
+
+        $companyLoaderFactory = new CompanyLoaderFactory($logger, $jsonParser);
+
+        /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
+        $companyLoader = $companyLoaderFactory();
+        $resultFactory = new ResultFactory($companyLoader);
 
         foreach ($finder as $file) {
             /* @var \Symfony\Component\Finder\SplFileInfo $file */
@@ -204,7 +217,7 @@ class DetectorTest extends TestCase
             }
 
             foreach ($tests as $i => $test) {
-                $expectedResult = (new ResultFactory())->fromArray($logger, $test);
+                $expectedResult = $resultFactory->fromArray($logger, $test);
                 $index          = sprintf('file:%s test:%d', $file->getRelativePathname(), $i);
 
                 $data[$index] = [

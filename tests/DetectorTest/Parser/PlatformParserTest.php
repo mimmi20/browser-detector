@@ -33,12 +33,14 @@ class PlatformParserTest extends TestCase
     protected function setUp(): void
     {
         self::markTestIncomplete();
-        $logger     = $this->createMock(NullLogger::class);
-        $jsonParser = $this->createMock(JsonInterface::class);
+        $logger        = $this->createMock(NullLogger::class);
+        $jsonParser    = $this->createMock(JsonInterface::class);
+        $companyLoader = $this->createMock(SpecificLoaderInterface::class);
 
         /* @var NullLogger $logger */
         /* @var Json $jsonParser */
-        $this->object = new PlatformParser($logger, $jsonParser);
+        /* @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
+        $this->object = new PlatformParser($logger, $jsonParser, $companyLoader);
     }
 
     /**

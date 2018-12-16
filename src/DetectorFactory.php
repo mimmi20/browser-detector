@@ -12,6 +12,8 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\Cache;
+use BrowserDetector\Loader\CompanyLoader;
+use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\EngineParser;
@@ -50,12 +52,16 @@ final class DetectorFactory
         static $detector = null;
 
         if (null === $detector) {
-            $jsonParser = new Json();
+            $jsonParser           = new Json();
+            $companyLoaderFactory = new CompanyLoaderFactory($this->logger, $jsonParser);
 
-            $platformParser = new PlatformParser($this->logger, $jsonParser);
-            $deviceParser   = new DeviceParser($this->logger, $jsonParser, $platformParser);
-            $engineParser   = new EngineParser($this->logger, $jsonParser);
-            $browserParser  = new BrowserParser($this->logger, $jsonParser, $engineParser);
+            /** @var CompanyLoader $companyLoader */
+            $companyLoader = $companyLoaderFactory();
+
+            $platformParser = new PlatformParser($this->logger, $jsonParser, $companyLoader);
+            $deviceParser   = new DeviceParser($this->logger, $jsonParser, $companyLoader, $platformParser);
+            $engineParser   = new EngineParser($this->logger, $jsonParser, $companyLoader);
+            $browserParser  = new BrowserParser($this->logger, $jsonParser, $companyLoader, $engineParser);
 
             $detector = new Detector($this->logger, $this->cache, $deviceParser, $platformParser, $browserParser, $engineParser);
         }

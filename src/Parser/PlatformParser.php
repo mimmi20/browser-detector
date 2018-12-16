@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Helper;
+use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\PlatformLoaderFactory;
 use JsonClass\Json;
 use JsonClass\JsonInterface;
@@ -35,12 +36,16 @@ final class PlatformParser implements PlatformParserInterface
     private const SPECIFIC_FILE = '/../../data/factories/platforms/%s.json';
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param \JsonClass\JsonInterface $jsonParser
+     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \JsonClass\JsonInterface              $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
-    {
-        $this->loaderFactory = new PlatformLoaderFactory($logger, $jsonParser);
+    public function __construct(
+        LoggerInterface $logger,
+        JsonInterface $jsonParser,
+        CompanyLoader $companyLoader
+    ) {
+        $this->loaderFactory = new PlatformLoaderFactory($logger, $jsonParser, $companyLoader);
         $this->jsonParser    = $jsonParser;
     }
 

@@ -11,17 +11,24 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader\Helper;
 
-use BrowserDetector\Cache\CacheInterface;
-
-interface DataInterface extends CacheInterface
+interface DataInterface
 {
-    /**
-     * @return bool
-     */
-    public function isInitialized(): bool;
-
     /**
      * @return void
      */
     public function __invoke(): void;
+
+    /**
+     * @param string $cacheId
+     *
+     * @return mixed
+     */
+    public function getItem(string $cacheId);
+
+    /**
+     * @param string $cacheId
+     *
+     * @return bool
+     */
+    public function hasItem(string $cacheId): bool;
 }

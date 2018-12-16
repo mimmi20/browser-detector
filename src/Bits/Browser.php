@@ -21,11 +21,6 @@ final class Browser implements BitsInterface
     private $useragent;
 
     /**
-     * @var int the bits of the detected browser
-     */
-    private $bits;
-
-    /**
      * class constructor
      *
      * @param string $useragent
@@ -39,22 +34,6 @@ final class Browser implements BitsInterface
      * @return int
      */
     public function getBits(): int
-    {
-        if (null !== $this->bits) {
-            return $this->bits;
-        }
-
-        $this->bits = $this->detectBits();
-
-        return $this->bits;
-    }
-
-    /**
-     * detects the bit count by this browser from the given user agent
-     *
-     * @return int
-     */
-    private function detectBits(): int
     {
         $s = new Stringy($this->useragent);
 

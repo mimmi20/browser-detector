@@ -11,13 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Bits\Os as OsBits;
+use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
-use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
-use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 
 final class PlatformLoader implements SpecificLoaderInterface
@@ -28,24 +24,24 @@ final class PlatformLoader implements SpecificLoaderInterface
     private $logger;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
-     */
-    private $companyLoader;
-
-    /**
      * @var \BrowserDetector\Loader\Helper\Data
      */
     private $initData;
 
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
      * @param \Psr\Log\LoggerInterface              $logger
-     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
      * @param \BrowserDetector\Loader\Helper\Data   $initData
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
      */
     public function __construct(
         LoggerInterface $logger,
-        CompanyLoader $companyLoader,
-        Data $initData
+        Data $initData,
+        CompanyLoader $companyLoader
     ) {
         $this->logger        = $logger;
         $this->companyLoader = $companyLoader;
@@ -75,33 +71,6 @@ final class PlatformLoader implements SpecificLoaderInterface
             throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
 
-        $platformVersionClass = $platformData->version->class;
-
-        if (!is_string($platformVersionClass) && isset($platformData->version->value) && is_numeric($platformData->version->value)) {
-            $version = (new VersionFactory())->set((string) $platformData->version->value);
-        } elseif (!is_string($platformVersionClass)) {
-            $version = new Version('0');
-        } elseif ('VersionFactory' === $platformVersionClass) {
-            $version = (new VersionFactory())->detectVersion($useragent, $platformData->version->search);
-        } else {
-            /* @var \BrowserDetector\Version\VersionDetectorInterface $versionClass */
-            $versionClass = new $platformVersionClass();
-            $version      = $versionClass->detectVersion($useragent);
-        }
-
-        $name          = $platformData->name;
-        $marketingName = $platformData->marketingName;
-        $manufacturer  = $this->companyLoader->load($platformData->manufacturer);
-
-        if ('Mac OS X' === $name
-            && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
-        ) {
-            $name          = 'macOS';
-            $marketingName = 'macOS';
-        }
-
-        $bits = (new OsBits($useragent))->getBits();
-
-        return new Os($name, $marketingName, $manufacturer, $version, $bits);
+        return (new PlatformFactory($this->companyLoader))->fromArray($this->logger, (array) $platformData, $useragent);
     }
 }

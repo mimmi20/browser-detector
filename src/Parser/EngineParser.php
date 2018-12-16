@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
+use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\EngineLoaderFactory;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
@@ -31,12 +32,16 @@ final class EngineParser implements EngineParserInterface
     private const GENERIC_FILE = '/../../data/factories/engines.json';
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param \JsonClass\JsonInterface $jsonParser
+     * @param \Psr\Log\LoggerInterface              $logger
+     * @param \JsonClass\JsonInterface              $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
-    {
-        $this->loaderFactory = new EngineLoaderFactory($logger, $jsonParser);
+    public function __construct(
+        LoggerInterface $logger,
+        JsonInterface $jsonParser,
+        CompanyLoader $companyLoader
+    ) {
+        $this->loaderFactory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader);
         $this->jsonParser    = $jsonParser;
     }
 

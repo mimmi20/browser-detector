@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactory;
+use BrowserDetector\Loader\CompanyLoader;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
@@ -33,11 +34,16 @@ final class BrowserParser implements BrowserParserInterface
     /**
      * @param \Psr\Log\LoggerInterface                      $logger
      * @param \JsonClass\JsonInterface                      $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoader         $companyLoader
      * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, EngineParserInterface $engineParser)
-    {
-        $this->loaderFactory = new BrowserLoaderFactory($logger, $jsonParser, $engineParser);
+    public function __construct(
+        LoggerInterface $logger,
+        JsonInterface $jsonParser,
+        CompanyLoader $companyLoader,
+        EngineParserInterface $engineParser
+    ) {
+        $this->loaderFactory = new BrowserLoaderFactory($logger, $jsonParser, $companyLoader, $engineParser);
         $this->jsonParser    = $jsonParser;
     }
 

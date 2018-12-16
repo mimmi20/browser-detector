@@ -17,7 +17,6 @@ use BrowserDetector\Parser\EngineParserInterface;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
-use UaBrowserType\TypeLoader;
 
 final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
 {
@@ -37,15 +36,26 @@ final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
     private $engineParser;
 
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
      * @param \Psr\Log\LoggerInterface                      $logger
      * @param \JsonClass\JsonInterface                      $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoader         $companyLoader
      * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser, EngineParserInterface $engineParser)
-    {
-        $this->logger       = $logger;
-        $this->jsonParser   = $jsonParser;
-        $this->engineParser = $engineParser;
+    public function __construct(
+        LoggerInterface $logger,
+        JsonInterface $jsonParser,
+        CompanyLoader $companyLoader,
+        EngineParserInterface $engineParser
+    ) {
+        $this->logger        = $logger;
+        $this->jsonParser    = $jsonParser;
+        $this->companyLoader = $companyLoader;
+        $this->engineParser  = $engineParser;
     }
 
     /**
@@ -72,10 +82,9 @@ final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
 
         $loader = new BrowserLoader(
             $this->logger,
-            CompanyLoader::getInstance(),
-            new TypeLoader(),
-            $this->engineParser,
-            new Data($finder, $this->jsonParser)
+            new Data($finder, $this->jsonParser),
+            $this->companyLoader,
+            $this->engineParser
         );
 
         return $loader;

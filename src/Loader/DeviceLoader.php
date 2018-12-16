@@ -24,16 +24,6 @@ final class DeviceLoader implements SpecificLoaderInterface
     private $logger;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
-     */
-    private $companyLoader;
-
-    /**
-     * @var \UaDeviceType\TypeLoader
-     */
-    private $typeLoader;
-
-    /**
      * @var \BrowserDetector\Parser\PlatformParserInterface
      */
     private $platformParser;
@@ -44,17 +34,25 @@ final class DeviceLoader implements SpecificLoaderInterface
     private $initData;
 
     /**
+     * @var \BrowserDetector\Loader\CompanyLoader
+     */
+    private $companyLoader;
+
+    /**
      * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      * @param \BrowserDetector\Loader\Helper\Data             $initData
+     * @param \BrowserDetector\Loader\CompanyLoader           $companyLoader
+     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
     public function __construct(
         LoggerInterface $logger,
-        PlatformParserInterface $platformParser,
-        Data $initData
+        Data $initData,
+        CompanyLoader $companyLoader,
+        PlatformParserInterface $platformParser
     ) {
         $this->logger         = $logger;
         $this->platformParser = $platformParser;
+        $this->companyLoader  = $companyLoader;
 
         $initData();
 
@@ -92,7 +90,7 @@ final class DeviceLoader implements SpecificLoaderInterface
             }
         }
 
-        $device = (new DeviceFactory())->fromArray($this->logger, (array) $deviceData);
+        $device = (new DeviceFactory($this->companyLoader))->fromArray($this->logger, (array) $deviceData);
 
         return [$device, $platform];
     }
