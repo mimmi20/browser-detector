@@ -127,47 +127,4 @@ final class CacheTest extends TestCase
 
         self::assertFalse($cache->hasItem('version'));
     }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return void
-     */
-    public function testRemoveItem(): void
-    {
-        self::markTestIncomplete();
-        $adapter = $this->getMockBuilder(ArrayCache::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $adapter
-            ->expects(self::once())
-            ->method('delete')
-            ->with('version')
-            ->will(self::returnValue(false));
-
-        /** @var ArrayCache $adapter */
-        $cache = new Cache($adapter);
-
-        self::assertFalse($cache->removeItem('version'));
-    }
-
-    /**
-     * @return void
-     */
-    public function testFlush(): void
-    {
-        self::markTestIncomplete();
-        $adapter = $this->getMockBuilder(ArrayCache::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $adapter
-            ->expects(self::once())
-            ->method('clear')
-            ->will(self::returnValue(false));
-
-        /** @var ArrayCache $adapter */
-        $cache = new Cache($adapter);
-
-        self::assertFalse($cache->flush());
-    }
 }
