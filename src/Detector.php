@@ -145,8 +145,7 @@ final class Detector implements DetectorInterface
      */
     private function parse(GenericRequest $request)
     {
-        //$normalizer    = (new NormalizerFactory())->build();
-        $deviceUa     = $request->getDeviceUserAgent(); //$normalizer->normalize($request->getDeviceUserAgent());
+        $deviceUa     = $request->getDeviceUserAgent();
         $deviceParser = $this->deviceParser;
 
         $defaultDevice = new Device(
@@ -181,7 +180,7 @@ final class Detector implements DetectorInterface
             $platform = clone $defaultPlatform;
         }
 
-        $browserUa = $request->getBrowserUserAgent(); //$normalizer->normalize($request->getBrowserUserAgent());
+        $browserUa = $request->getBrowserUserAgent();
 
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');

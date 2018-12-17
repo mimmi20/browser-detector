@@ -89,28 +89,4 @@ final class Cache implements CacheInterface
     {
         return $this->cache->has($cacheId);
     }
-
-    /**
-     * Remove an item.
-     *
-     * @param string $cacheId
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return bool
-     */
-    public function removeItem(string $cacheId): bool
-    {
-        return $this->cache->delete($cacheId);
-    }
-
-    /**
-     * Flush the whole storage
-     *
-     * @return bool
-     */
-    public function flush(): bool
-    {
-        return $this->cache->clear();
-    }
 }

@@ -49,24 +49,4 @@ interface CacheInterface
      * @return bool
      */
     public function hasItem(string $cacheId): bool;
-
-    /**
-     * Remove an item.
-     *
-     * @param string $cacheId
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return bool
-     */
-    public function removeItem(string $cacheId): bool;
-
-    /**
-     * Flush the whole storage
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return bool
-     */
-    public function flush(): bool;
 }
