@@ -41,7 +41,6 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUaOld(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -75,7 +74,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -85,7 +83,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -98,7 +95,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -118,7 +114,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -153,7 +148,6 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromGenericRequest(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -187,7 +181,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -197,7 +190,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -210,7 +202,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -230,7 +221,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -269,7 +259,6 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromGenericRequest2(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -303,7 +292,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::never())
@@ -313,7 +301,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -326,7 +313,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::never())
@@ -336,7 +322,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -349,7 +334,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::exactly(2))
@@ -395,10 +379,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromInvalid(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -430,7 +412,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::never())
@@ -440,7 +421,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -453,7 +433,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::never())
@@ -463,7 +442,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -474,7 +452,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::never())
@@ -509,10 +486,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUa(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::once())
@@ -544,7 +519,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -554,7 +528,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -567,7 +540,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -577,7 +549,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -588,7 +559,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -623,10 +593,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromArray(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::once())
@@ -658,7 +626,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -668,7 +635,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -681,7 +647,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -691,7 +656,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -702,7 +666,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -737,10 +700,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromPsr7Message(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::once())
@@ -775,7 +736,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -785,7 +745,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -798,7 +757,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -819,7 +777,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -861,7 +818,6 @@ class DetectorTest extends TestCase
         self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -890,7 +846,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -905,7 +860,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::once())
@@ -918,7 +872,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -928,7 +881,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -939,7 +891,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -982,7 +933,6 @@ class DetectorTest extends TestCase
         self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1011,7 +961,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -1021,7 +970,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::once())
@@ -1034,7 +982,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -1044,7 +991,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1055,7 +1001,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1095,10 +1040,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngine(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1133,7 +1076,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -1143,7 +1085,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -1159,7 +1100,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -1169,7 +1109,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::once())
@@ -1182,7 +1121,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1222,10 +1160,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngine2(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1260,7 +1196,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -1270,7 +1205,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -1282,7 +1216,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -1292,7 +1225,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::once())
@@ -1305,7 +1237,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1345,10 +1276,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngineIos(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1387,7 +1316,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -1399,7 +1327,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -1411,7 +1338,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -1426,7 +1352,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1446,7 +1371,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1490,7 +1414,6 @@ class DetectorTest extends TestCase
         self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1528,7 +1451,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -1540,7 +1462,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -1552,7 +1473,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -1562,7 +1482,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1575,7 +1494,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1619,7 +1537,6 @@ class DetectorTest extends TestCase
         self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::exactly(2))
@@ -1657,7 +1574,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -1669,7 +1585,6 @@ class DetectorTest extends TestCase
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $platformParser
             ->expects(self::never())
@@ -1681,7 +1596,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -1691,7 +1605,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1704,7 +1617,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())
@@ -1748,10 +1660,9 @@ class DetectorTest extends TestCase
         self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('debug');
         $logger
             ->expects(self::never())
@@ -1786,7 +1697,6 @@ class DetectorTest extends TestCase
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $deviceParser
             ->expects(self::once())
@@ -1808,7 +1718,6 @@ class DetectorTest extends TestCase
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $browserParser
             ->expects(self::once())
@@ -1818,7 +1727,6 @@ class DetectorTest extends TestCase
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $engineParser
             ->expects(self::never())
@@ -1837,7 +1745,6 @@ class DetectorTest extends TestCase
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $cache
             ->expects(self::once())

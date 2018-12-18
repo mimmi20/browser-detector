@@ -13,28 +13,20 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
 use JsonClass\JsonInterface;
-use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 
 final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
 {
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
     /**
      * @var \JsonClass\JsonInterface
      */
     private $jsonParser;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
      * @param \JsonClass\JsonInterface $jsonParser
      */
-    public function __construct(LoggerInterface $logger, JsonInterface $jsonParser)
+    public function __construct(JsonInterface $jsonParser)
     {
-        $this->logger     = $logger;
         $this->jsonParser = $jsonParser;
     }
 
@@ -61,7 +53,6 @@ final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
         $finder->in($dataPath);
 
         $loader = new CompanyLoader(
-            $this->logger,
             new Data($finder, $this->jsonParser)
         );
 

@@ -26,7 +26,6 @@ class DataTest extends TestCase
      */
     public function testInvokeFail(): void
     {
-        self::markTestIncomplete();
         $file = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -96,7 +95,6 @@ class DataTest extends TestCase
      */
     public function testInvokeSuccess(): void
     {
-        self::markTestIncomplete();
         $file = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();

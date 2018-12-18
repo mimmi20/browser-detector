@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Loader\CompanyLoader;
+use BrowserDetector\Loader\CompanyLoaderInterface;
 use PHPUnit\Framework\TestCase;
 
 class DeviceFactoryTest extends TestCase
@@ -29,9 +29,9 @@ class DeviceFactoryTest extends TestCase
     {
         self::markTestIncomplete();
 
-        $companyLoader = $this->createMock(CompanyLoader::class);
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
 
-        /* @var CompanyLoader $companyLoader */
+        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         $this->object = new DeviceFactory($companyLoader);
     }
 

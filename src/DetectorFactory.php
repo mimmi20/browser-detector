@@ -53,7 +53,7 @@ final class DetectorFactory
 
         if (null === $detector) {
             $jsonParser           = new Json();
-            $companyLoaderFactory = new CompanyLoaderFactory($this->logger, $jsonParser);
+            $companyLoaderFactory = new CompanyLoaderFactory($jsonParser);
 
             /** @var CompanyLoader $companyLoader */
             $companyLoader = $companyLoaderFactory();

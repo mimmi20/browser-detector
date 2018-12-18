@@ -280,5 +280,52 @@
       "version": "533.1.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "FlyCast/1.34 (BlackBerry; 8330/4.5.0.131 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/-1)"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8330",
+      "marketingName": "BlackBerry Curve 8330",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "type": "QVGA",
+        "size": null
+      },
+      "dualOrientation": false,
+      "type": "feature-phone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.5.0.131",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "BlackBerry",
+      "version": "0.0.0",
+      "manufacturer": "Rim"
+    }
   }
 ]

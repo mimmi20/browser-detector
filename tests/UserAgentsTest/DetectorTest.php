@@ -78,7 +78,7 @@ class DetectorTest extends TestCase
         $jsonParser = new Json();
 
         /** @var NullLogger $logger */
-        $companyLoaderFactory = new CompanyLoaderFactory($logger, $jsonParser);
+        $companyLoaderFactory = new CompanyLoaderFactory($jsonParser);
 
         /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         $companyLoader = $companyLoaderFactory();
@@ -197,7 +197,7 @@ class DetectorTest extends TestCase
         $logger     = new NullLogger();
         $jsonParser = new Json();
 
-        $companyLoaderFactory = new CompanyLoaderFactory($logger, $jsonParser);
+        $companyLoaderFactory = new CompanyLoaderFactory($jsonParser);
 
         /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         $companyLoader = $companyLoaderFactory();

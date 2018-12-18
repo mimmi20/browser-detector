@@ -17,7 +17,7 @@ use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 
-final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
+final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -60,11 +60,11 @@ final class DeviceLoaderFactory implements SpecificLoaderFactoryInterface
     /**
      * @param string $company
      *
-     * @return SpecificLoaderInterface
+     * @return DeviceLoaderInterface
      */
-    public function __invoke(string $company = ''): SpecificLoaderInterface
+    public function __invoke(string $company = ''): DeviceLoaderInterface
     {
-        /** @var DeviceLoader[] $loader */
+        /** @var DeviceLoaderInterface[] $loader */
         static $loader = [];
 
         if (array_key_exists($company, $loader)) {

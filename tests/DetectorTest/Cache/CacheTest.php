@@ -24,7 +24,6 @@ final class CacheTest extends TestCase
      */
     public function testVersion(): void
     {
-        self::markTestIncomplete();
         $adapter = new ArrayCache();
         $cache   = new Cache($adapter);
 
@@ -39,7 +38,6 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem(): void
     {
-        self::markTestIncomplete();
         $adapter = $this->getMockBuilder(ArrayCache::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -71,7 +69,6 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem2(): void
     {
-        self::markTestIncomplete();
         $adapter = $this->getMockBuilder(ArrayCache::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -104,7 +101,6 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem3(): void
     {
-        self::markTestIncomplete();
         $adapter = $this->getMockBuilder(ArrayCache::class)
             ->disableOriginalConstructor()
             ->getMock();

@@ -12,17 +12,15 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\CompanyLoader;
+use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use UaResult\Browser\BrowserInterface;
-use UaResult\Company\CompanyInterface;
 use UaResult\Engine\EngineInterface;
 
 class BrowserLoaderTest extends TestCase
@@ -32,10 +30,8 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeNotInCache(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -61,7 +57,6 @@ class BrowserLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -76,26 +71,16 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue(false));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
-        $engineParser
-            ->expects(self::never())
-            ->method('load');
-
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
+        /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
         $object = new BrowserLoader(
@@ -116,10 +101,8 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeNullInCache(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -145,7 +128,6 @@ class BrowserLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -160,26 +142,16 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue(null));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-
-        $companyLoader
-            ->expects(self::never())
-            ->method('load');
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
-        $engineParser
-            ->expects(self::never())
-            ->method('load');
-
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
+        /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
         $object = new BrowserLoader(
@@ -200,10 +172,8 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeNoVersion(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -229,7 +199,6 @@ class BrowserLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -252,30 +221,16 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($browserData));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-
-        $company = $this->createMock(CompanyInterface::class);
-
-        $companyLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with('Unknown')
-            ->willReturn($company);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
-        $engineParser
-            ->expects(self::never())
-            ->method('load');
-
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
+        /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
         $object = new BrowserLoader(
@@ -287,7 +242,7 @@ class BrowserLoaderTest extends TestCase
 
         $result = $object('test-key', 'test-ua');
 
-        self::assertInternalType('array', $result);
+        self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
         self::assertInstanceOf(BrowserInterface::class, $result[0]);
         self::assertArrayHasKey(1, $result);
@@ -299,10 +254,8 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeGenericVersionAndEngineException(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -314,7 +267,7 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('warning');
         $logger
             ->expects(self::never())
@@ -331,7 +284,6 @@ class BrowserLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -354,36 +306,16 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($browserData));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-
-        $company = $this->createMock(CompanyInterface::class);
-
-        $companyLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with('Unknown')
-            ->willReturn($company);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
-        $engineParser
-            ->expects(self::once())
-            ->method('load')
-            ->with('unknown', 'test/1.0')
-            ->willThrowException(new NotFoundException('engine not found'));
-
-        $engineParser
-            ->expects(self::once())
-            ->method('init');
-
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
+        /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
         $object = new BrowserLoader(
@@ -395,11 +327,11 @@ class BrowserLoaderTest extends TestCase
 
         $result = $object('test-key', 'test/1.0');
 
-        self::assertInternalType('array', $result);
+        self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
         self::assertInstanceOf(BrowserInterface::class, $result[0]);
         self::assertArrayHasKey(1, $result);
-        self::assertNull($result[1]);
+        self::assertInstanceOf(EngineInterface::class, $result[1]);
     }
 
     /**
@@ -407,10 +339,8 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeGenericVersionAndEngineInvalidException(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -422,7 +352,7 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('warning');
         $logger
             ->expects(self::never())
@@ -439,7 +369,6 @@ class BrowserLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -462,36 +391,16 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($browserData));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-
-        $company = $this->createMock(CompanyInterface::class);
-
-        $companyLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with('Unknown')
-            ->willReturn($company);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
-        $engineParser
-            ->expects(self::once())
-            ->method('load')
-            ->with('unknown', 'test/1.0')
-            ->willThrowException(new NotFoundException('engine key not found'));
-
-        $engineParser
-            ->expects(self::once())
-            ->method('init');
-
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
+        /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
         $object = new BrowserLoader(
@@ -503,11 +412,11 @@ class BrowserLoaderTest extends TestCase
 
         $result = $object('test-key', 'test/1.0');
 
-        self::assertInternalType('array', $result);
+        self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
         self::assertInstanceOf(BrowserInterface::class, $result[0]);
         self::assertArrayHasKey(1, $result);
-        self::assertNull($result[1]);
+        self::assertInstanceOf(EngineInterface::class, $result[1]);
     }
 
     /**
@@ -515,10 +424,8 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeVersionAndEngine(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -544,7 +451,6 @@ class BrowserLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -567,38 +473,16 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($browserData));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-
-        $company = $this->createMock(CompanyInterface::class);
-
-        $companyLoader
-            ->expects(self::once())
-            ->method('load')
-            ->with('Unknown')
-            ->willReturn($company);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
-        $engine = $this->createMock(EngineInterface::class);
-
-        $engineParser
-            ->expects(self::once())
-            ->method('load')
-            ->with('unknown', 'test/1.0')
-            ->willReturn($engine);
-
-        $engineParser
-            ->expects(self::once())
-            ->method('init');
-
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
+        /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
         $object = new BrowserLoader(
@@ -610,7 +494,7 @@ class BrowserLoaderTest extends TestCase
 
         $result = $object('test-key', 'test/1.0');
 
-        self::assertInternalType('array', $result);
+        self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
         /** @var BrowserInterface $browserResult */
         $browserResult = $result[0];

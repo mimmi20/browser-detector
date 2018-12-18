@@ -14,8 +14,8 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\DataInterface;
+use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 /**
  * Test class for \BrowserDetector\Loader\CompanyLoader
@@ -23,41 +23,103 @@ use Psr\Log\NullLogger;
 class CompanyLoaderTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
-     */
-    private $object;
-
-    /**
-     * Sets up the fixture, for example, open a network connection.
-     * This method is called before a test is executed.
-     *
-     * @throws \ExceptionalJSON\DecodeErrorException when the decode operation fails
-     * @throws \RuntimeException
-     *
      * @return void
      */
-    protected function setUp(): void
+    public function testLoadFailHasNot(): void
     {
-        self::markTestIncomplete();
-        $data = $this->createMock(DataInterface::class);
+        $companyKey  = 'A6Corp';
+        $companyName = 'A6 Corp';
+        $brand       = 'A6 Corp';
+
+        $result            = new \stdClass();
+        $result->name      = $companyName;
+        $result->brandname = $brand;
+
+        $data = $this->getMockBuilder(DataInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $data->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $data->expects(self::never())
+            ->method('getItem')
+            ->with($companyKey)
+            ->willReturn($result);
+        $data->expects(self::once())
+            ->method('__invoke');
 
         /* @var Data $data */
-        $this->object = new CompanyLoader(new NullLogger(), $data);
+        $object = new CompanyLoader($data);
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the company with key "A6Corp" was not found');
+
+        $object($companyKey);
     }
 
     /**
-     * @dataProvider providerLoad
-     *
-     * @param string $companyKey
-     * @param string $companyName
-     * @param string $brand
-     *
      * @return void
      */
-    public function testLoadAvailable(string $companyKey, string $companyName, string $brand): void
+    public function testLoadFailNullReturned(): void
     {
-        self::markTestIncomplete();
-        $object = $this->object;
+        $companyKey  = 'A6Corp';
+        $companyName = 'A6 Corp';
+        $brand       = 'A6 Corp';
+
+        $result            = new \stdClass();
+        $result->name      = $companyName;
+        $result->brandname = $brand;
+
+        $data = $this->getMockBuilder(DataInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $data->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(true);
+        $data->expects(self::once())
+            ->method('getItem')
+            ->with($companyKey)
+            ->willReturn(null);
+        $data->expects(self::once())
+            ->method('__invoke');
+
+        /* @var Data $data */
+        $object = new CompanyLoader($data);
+
+        $this->expectException(NotFoundException::class);
+        $this->expectExceptionMessage('the company with key "A6Corp" was not found');
+
+        $object($companyKey);
+    }
+
+    /**
+     * @return void
+     */
+    public function testLoadAvailable(): void
+    {
+        $companyKey  = 'A6Corp';
+        $companyName = 'A6 Corp';
+        $brand       = 'A6 Corp';
+
+        $result            = new \stdClass();
+        $result->name      = $companyName;
+        $result->brandname = $brand;
+
+        $data = $this->getMockBuilder(DataInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $data->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(true);
+        $data->expects(self::once())
+            ->method('getItem')
+            ->with($companyKey)
+            ->willReturn($result);
+        $data->expects(self::once())
+            ->method('__invoke');
+
+        /* @var Data $data */
+        $object = new CompanyLoader($data);
 
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $object($companyKey);
@@ -74,19 +136,5 @@ class CompanyLoaderTest extends TestCase
             $result->getBrandName(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")'
         );
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerLoad()
-    {
-        return [
-            [
-                'A6Corp',
-                'A6 Corp',
-                'A6 Corp',
-            ],
-        ];
     }
 }

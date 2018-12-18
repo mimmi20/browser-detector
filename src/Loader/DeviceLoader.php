@@ -12,11 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
 
-final class DeviceLoader implements SpecificLoaderInterface
+final class DeviceLoader implements DeviceLoaderInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -29,25 +29,25 @@ final class DeviceLoader implements SpecificLoaderInterface
     private $platformParser;
 
     /**
-     * @var \BrowserDetector\Loader\Helper\Data
+     * @var \BrowserDetector\Loader\Helper\DataInterface
      */
     private $initData;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
      */
     private $companyLoader;
 
     /**
      * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \BrowserDetector\Loader\Helper\Data             $initData
-     * @param \BrowserDetector\Loader\CompanyLoader           $companyLoader
+     * @param \BrowserDetector\Loader\Helper\DataInterface    $initData
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface  $companyLoader
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
     public function __construct(
         LoggerInterface $logger,
-        Data $initData,
-        CompanyLoader $companyLoader,
+        DataInterface $initData,
+        CompanyLoaderInterface $companyLoader,
         PlatformParserInterface $platformParser
     ) {
         $this->logger         = $logger;

@@ -11,61 +11,56 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
-use BrowserDetector\Loader\SpecificLoaderInterface;
+use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
+use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\MobileParser;
+use ExceptionalJSON\DecodeErrorException;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 
 class MobileParserTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Parser\Device\MobileParser
-     */
-    private $object;
-
-    /**
-     * @return void
-     */
-    protected function setUp(): void
-    {
-        self::markTestIncomplete();
-        $jsonParser    = $this->createMock(JsonInterface::class);
-        $loaderFactory = $this->createMock(SpecificLoaderFactoryInterface::class);
-
-        /* @var \JsonClass\Json $jsonParser */
-        /* @var \BrowserDetector\Loader\DeviceLoaderFactory $loaderFactory */
-        $this->object = new MobileParser($jsonParser, $loaderFactory);
-    }
-
-    /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \ReflectionException
-     *
      * @return void
      */
     public function testInvokeFail(): void
     {
-        self::markTestIncomplete();
-        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderInterface::class)
+        $useragent = 'Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3';
+
+        $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mockLoader
+            ->expects(self::never())
+            ->method('__invoke')
+            ->with('mobile', $useragent)
+            ->willReturn(null);
+
+        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoaderFactory
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('__invoke')
-            ->with('samsung', 'mobile')
-            ->willThrowException(new \Exception('error'));
+            ->with('zte')
+            ->willReturn($mockLoader);
 
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(self::once())
+            ->method('decode')
+            ->willThrowException(new DecodeErrorException(1, 'fail', ''));
 
-        $object = $this->object;
+        /* @var \JsonClass\Json $jsonParser */
+        /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
+        $object = new MobileParser($jsonParser, $mockLoaderFactory);
 
-        $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage('An error occured while matching rule "/samsung[is \-;\/](?!galaxy nexus)|galaxy(?! nexus)|(gt|sam|sc|sch|sec|sgh|shv|shw|sm|sph|continuum|ek|yp)-|g710[68]|n8000d|n[579]1[01]0|f031|n900\+|sc[lt]2[0-9]|isw11sc|s7562|sghi[0-9]{3}|i8910|i545|i(7110|9100|9300)|blaze|s8500/i"');
+        $this->expectException(DecodeErrorException::class);
+        $this->expectExceptionMessage('fail');
 
-        $object('Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3');
+        $object($useragent);
     }
 
     /**
@@ -82,30 +77,35 @@ class MobileParserTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedCompany, array $expectedResult): void
     {
-        self::markTestIncomplete();
-        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
+        $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoader
             ->expects(self::once())
             ->method('__invoke')
-            ->with($useragent)
+            ->with('mobile', $useragent)
             ->willReturn($expectedResult);
 
-        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
+        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($expectedCompany, 'mobile')
+            ->with($expectedCompany)
             ->willReturn($mockLoader);
 
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(self::exactly(2))
+            ->method('decode')
+            ->willReturnOnConsecutiveCalls(['generic' => $expectedCompany, 'rules' => []], ['generic' => 'mobile', 'rules' => []]);
 
-        $object = $this->object;
+        /* @var \JsonClass\Json $jsonParser */
+        /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
+        $object = new MobileParser($jsonParser, $mockLoaderFactory);
 
         self::assertSame($expectedResult, $object($useragent));
     }
