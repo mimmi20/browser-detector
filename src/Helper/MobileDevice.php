@@ -198,6 +198,13 @@ final class MobileDevice
             'stitcher',
             'rssradio',
             'rss_radio',
+            'antennapod',
+            'antenna/',
+            'podcruncher',
+            'captivenetworksupport',
+            'ios;',
+            'audioboom.com/boos',
+            'beyondpod',
         ];
 
         if ($this->useragent->containsAny($mobiles, false)) {
@@ -208,7 +215,7 @@ final class MobileDevice
             return false;
         }
 
-        if (preg_match('/UCWEB|Puffin\/[\d\.]+[WM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', (string) $this->useragent)) {
+        if (preg_match('/UCWEB|Puffin\/[\d\.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', (string) $this->useragent)) {
             return true;
         }
 

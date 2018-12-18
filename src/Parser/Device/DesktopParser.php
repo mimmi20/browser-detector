@@ -11,14 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
-use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use JsonClass\JsonInterface;
 
 final class DesktopParser implements DeviceParserInterface
 {
     /**
-     * @var \BrowserDetector\Loader\DeviceLoaderFactory
+     * @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface
      */
     private $loaderFactory;
 
@@ -31,10 +31,10 @@ final class DesktopParser implements DeviceParserInterface
     private const SPECIFIC_FILE = '/../../../data/factories/devices/desktop/%s.json';
 
     /**
-     * @param \JsonClass\JsonInterface                    $jsonParser
-     * @param \BrowserDetector\Loader\DeviceLoaderFactory $loaderFactory
+     * @param \JsonClass\JsonInterface                             $jsonParser
+     * @param \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory
      */
-    public function __construct(JsonInterface $jsonParser, DeviceLoaderFactory $loaderFactory)
+    public function __construct(JsonInterface $jsonParser, DeviceLoaderFactoryInterface $loaderFactory)
     {
         $this->loaderFactory = $loaderFactory;
         $this->jsonParser    = $jsonParser;
@@ -47,9 +47,9 @@ final class DesktopParser implements DeviceParserInterface
      *
      * @throws \ExceptionalJSON\DecodeErrorException
      *
-     * @return mixed
+     * @return array
      */
-    public function __invoke(string $useragent)
+    public function __invoke(string $useragent): array
     {
         $factories = $this->jsonParser->decode(
             (string) file_get_contents(__DIR__ . self::GENERIC_FILE),

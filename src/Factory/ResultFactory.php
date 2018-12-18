@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoader;
+use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Version\Version;
 use Psr\Log\LoggerInterface;
 use UaDeviceType\Unknown;
@@ -27,16 +28,16 @@ use UaResult\Result\Result;
 final class ResultFactory
 {
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
      */
     private $companyLoader;
 
     /**
      * BrowserFactory constructor.
      *
-     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
      */
-    public function __construct(CompanyLoader $companyLoader)
+    public function __construct(CompanyLoaderInterface $companyLoader)
     {
         $this->companyLoader = $companyLoader;
     }

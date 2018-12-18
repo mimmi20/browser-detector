@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\DataInterface;
 use Psr\Log\LoggerInterface;
 use UaResult\Engine\EngineInterface;
 
@@ -24,24 +24,24 @@ final class EngineLoader implements SpecificLoaderInterface
     private $logger;
 
     /**
-     * @var \BrowserDetector\Loader\Helper\Data
+     * @var \BrowserDetector\Loader\Helper\DataInterface
      */
     private $initData;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
      */
     private $companyLoader;
 
     /**
-     * @param \Psr\Log\LoggerInterface              $logger
-     * @param \BrowserDetector\Loader\Helper\Data   $initData
-     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     * @param \Psr\Log\LoggerInterface                       $logger
+     * @param \BrowserDetector\Loader\Helper\DataInterface   $initData
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
      */
     public function __construct(
         LoggerInterface $logger,
-        Data $initData,
-        CompanyLoader $companyLoader
+        DataInterface $initData,
+        CompanyLoaderInterface $companyLoader
     ) {
         $this->logger        = $logger;
         $this->companyLoader = $companyLoader;

@@ -12,9 +12,8 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Loader\LoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\Test;
@@ -31,10 +30,8 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNotInCache(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -60,7 +57,6 @@ final class PlatformLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -75,22 +71,21 @@ final class PlatformLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::throwException(new InvalidArgumentException('fail')));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $companyLoader
             ->expects(self::never())
-            ->method('load');
+            ->method('__invoke');
 
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
-        /** @var Data $initData */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
             $logger,
-            $companyLoader,
-            $initData
+            $initData,
+            $companyLoader
         );
 
         $this->expectException(NotFoundException::class);
@@ -104,10 +99,8 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNullInCache(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -133,7 +126,6 @@ final class PlatformLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -148,22 +140,21 @@ final class PlatformLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue(null));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $companyLoader
             ->expects(self::never())
-            ->method('load');
+            ->method('__invoke');
 
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
-        /** @var Data $initData */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
             $logger,
-            $companyLoader,
-            $initData
+            $initData,
+            $companyLoader
         );
 
         $this->expectException(NotFoundException::class);
@@ -177,10 +168,8 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNoVersion(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -206,7 +195,6 @@ final class PlatformLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -228,26 +216,25 @@ final class PlatformLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($platformData));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(self::once())
-            ->method('load')
+            ->expects(self::exactly(2))
+            ->method('__invoke')
             ->with('Unknown')
             ->willReturn($company);
 
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
-        /** @var Data $initData */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
             $logger,
-            $companyLoader,
-            $initData
+            $initData,
+            $companyLoader
         );
 
         $result = $object('test-key', 'test-ua');
@@ -260,10 +247,8 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeVersionSet(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -289,7 +274,6 @@ final class PlatformLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -311,26 +295,25 @@ final class PlatformLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($platformData));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(self::once())
-            ->method('load')
+            ->expects(self::exactly(2))
+            ->method('__invoke')
             ->with('Unknown')
             ->willReturn($company);
 
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
-        /** @var Data $initData */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
             $logger,
-            $companyLoader,
-            $initData
+            $initData,
+            $companyLoader
         );
 
         $result = $object('test-key', 'test-ua');
@@ -343,10 +326,8 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeGenericVersion(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -372,7 +353,6 @@ final class PlatformLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -394,26 +374,25 @@ final class PlatformLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($platformData));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(self::once())
-            ->method('load')
+            ->expects(self::exactly(2))
+            ->method('__invoke')
             ->with('Unknown')
             ->willReturn($company);
 
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
-        /** @var Data $initData */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
             $logger,
-            $companyLoader,
-            $initData
+            $initData,
+            $companyLoader
         );
 
         $result = $object('test-key', 'test/10.12');
@@ -428,10 +407,8 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeVersion(): void
     {
-        self::markTestIncomplete();
         $logger = $this->getMockBuilder(NullLogger::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $logger
             ->expects(self::never())
@@ -457,7 +434,6 @@ final class PlatformLoaderTest extends TestCase
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $initData
@@ -479,26 +455,25 @@ final class PlatformLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue($platformData));
 
-        $companyLoader = $this->getMockBuilder(LoaderInterface::class)
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
 
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(self::once())
-            ->method('load')
+            ->expects(self::exactly(2))
+            ->method('__invoke')
             ->with('Unknown')
             ->willReturn($company);
 
         /** @var NullLogger $logger */
-        /** @var CompanyLoader $companyLoader */
-        /** @var Data $initData */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
             $logger,
-            $companyLoader,
-            $initData
+            $initData,
+            $companyLoader
         );
 
         $result = $object('test-key', 'test/12.0');

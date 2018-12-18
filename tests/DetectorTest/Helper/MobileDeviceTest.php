@@ -26,7 +26,6 @@ class MobileDeviceTest extends TestCase
      */
     public function testIsMobile(string $agent): void
     {
-        self::markTestIncomplete();
         $object = new Helper\MobileDevice(new Stringy($agent));
 
         self::assertTrue($object->isMobile());
@@ -120,7 +119,6 @@ class MobileDeviceTest extends TestCase
      */
     public function testIsNotMobile(string $agent): void
     {
-        self::markTestIncomplete();
         $object = new Helper\MobileDevice(new Stringy($agent));
 
         self::assertFalse($object->isMobile());

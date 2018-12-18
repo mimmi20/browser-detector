@@ -12,32 +12,21 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
-use Psr\Log\LoggerInterface;
 use UaResult\Company\Company;
 use UaResult\Company\CompanyInterface;
 
-final class CompanyLoader implements SpecificLoaderInterface
+final class CompanyLoader implements CompanyLoaderInterface
 {
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
     /**
      * @var \BrowserDetector\Loader\Helper\DataInterface
      */
     private $initData;
 
     /**
-     * @param \Psr\Log\LoggerInterface                     $logger
      * @param \BrowserDetector\Loader\Helper\DataInterface $initData
      */
-    public function __construct(
-        LoggerInterface $logger,
-        DataInterface $initData
-    ) {
-        $this->logger = $logger;
-
+    public function __construct(DataInterface $initData)
+    {
         $initData();
 
         $this->initData = $initData;

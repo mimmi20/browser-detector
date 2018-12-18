@@ -26,7 +26,6 @@ final class BrowserTest extends TestCase
      */
     public function testGetBits(string $useragent, int $expected): void
     {
-        self::markTestIncomplete();
         $object = new Browser($useragent);
 
         $result = $object->getBits();

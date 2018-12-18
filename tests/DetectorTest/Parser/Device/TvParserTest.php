@@ -11,33 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
-use BrowserDetector\Loader\SpecificLoaderInterface;
+use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
+use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\TvParser;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 
 class TvParserTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Parser\Device\TvParser
-     */
-    private $object;
-
-    /**
-     * @return void
-     */
-    protected function setUp(): void
-    {
-        self::markTestIncomplete();
-        $jsonParser    = $this->createMock(JsonInterface::class);
-        $loaderFactory = $this->createMock(SpecificLoaderFactoryInterface::class);
-
-        /* @var \JsonClass\Json $jsonParser */
-        /* @var \BrowserDetector\Loader\DeviceLoaderFactory $loaderFactory */
-        $this->object = new TvParser($jsonParser, $loaderFactory);
-    }
-
     /**
      * @dataProvider providerUseragents
      *
@@ -52,30 +33,35 @@ class TvParserTest extends TestCase
      */
     public function testInvoke(string $useragent, string $expectedCompany, array $expectedResult): void
     {
-        self::markTestIncomplete();
-        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
+        $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoader
             ->expects(self::once())
             ->method('__invoke')
-            ->with($useragent)
+            ->with('tv', $useragent)
             ->willReturn($expectedResult);
 
-        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
+        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($expectedCompany, 'tv')
+            ->with($expectedCompany)
             ->willReturn($mockLoader);
 
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(self::exactly(2))
+            ->method('decode')
+            ->willReturnOnConsecutiveCalls(['generic' => $expectedCompany, 'rules' => []], ['generic' => 'tv', 'rules' => []]);
 
-        $object = $this->object;
+        /* @var \JsonClass\Json $jsonParser */
+        /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
+        $object = new TvParser($jsonParser, $mockLoaderFactory);
 
         self::assertSame($expectedResult, $object($useragent));
     }
