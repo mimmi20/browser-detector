@@ -19,7 +19,7 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\InvalidArgumentException;
-use Psr\Log\NullLogger;
+use Psr\Log\LoggerInterface;
 use UaResult\Company\CompanyInterface;
 use UaResult\Engine\EngineInterface;
 
@@ -30,7 +30,7 @@ class EngineLoaderTest extends TestCase
      */
     public function testInvokeNotInCache(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -79,7 +79,7 @@ class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('__invoke');
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new EngineLoader(
@@ -99,7 +99,7 @@ class EngineLoaderTest extends TestCase
      */
     public function testInvokeNullInCache(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -148,7 +148,7 @@ class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('__invoke');
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new EngineLoader(
@@ -168,7 +168,7 @@ class EngineLoaderTest extends TestCase
      */
     public function testInvokeNoVersion(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -227,7 +227,7 @@ class EngineLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new EngineLoader(
@@ -246,7 +246,7 @@ class EngineLoaderTest extends TestCase
      */
     public function testInvokeGenericVersion(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -305,7 +305,7 @@ class EngineLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoader $companyLoader */
         /** @var DataInterface $initData */
         $object = new EngineLoader(
@@ -324,7 +324,7 @@ class EngineLoaderTest extends TestCase
      */
     public function testInvokeVersion(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
 
             ->getMock();
@@ -384,7 +384,7 @@ class EngineLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoader $companyLoader */
         /** @var DataInterface $initData */
         $object = new EngineLoader(

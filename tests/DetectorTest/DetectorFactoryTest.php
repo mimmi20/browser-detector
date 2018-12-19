@@ -14,7 +14,7 @@ namespace BrowserDetectorTest;
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
 class DetectorFactoryTest extends TestCase
@@ -25,7 +25,7 @@ class DetectorFactoryTest extends TestCase
     public function testInvoke(): void
     {
         self::markTestIncomplete();
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
 
             ->getMock();
@@ -53,7 +53,7 @@ class DetectorFactoryTest extends TestCase
 
         $cache = new FilesystemCache('', 0, 'cache/');
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         $factory = new DetectorFactory($cache, $logger);
         $object  = $factory();
 

@@ -14,7 +14,6 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\SpecificLoaderInterface;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 class CompanyLoaderFactoryTest extends TestCase
 {
@@ -24,8 +23,8 @@ class CompanyLoaderFactoryTest extends TestCase
     public function testInvoke(): void
     {
         self::markTestIncomplete();
-//        /** @var NullLogger $logger */
-//        $logger = $this->createMock(NullLogger::class);
+//        /** @var \Psr\Log\LoggerInterface $logger */
+//        $logger = $this->createMock(LoggerInterface::class);
 //
 //        $factory = new CompanyLoaderFactory($logger);
 //        $object  = $factory('default');

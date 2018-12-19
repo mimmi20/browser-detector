@@ -23,6 +23,7 @@ use ExceptionalJSON\DecodeErrorException;
 use ExceptionalJSON\EncodeErrorException;
 use JsonClass\Json;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Symfony\Component\Cache\Simple\NullCache;
 use Symfony\Component\Finder\Finder;
@@ -49,7 +50,7 @@ class DetectorTest extends TestCase
      */
     protected function setUp(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -77,7 +78,7 @@ class DetectorTest extends TestCase
         $cache      = new Cache(new NullCache());
         $jsonParser = new Json();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         $companyLoaderFactory = new CompanyLoaderFactory($jsonParser);
 
         /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */

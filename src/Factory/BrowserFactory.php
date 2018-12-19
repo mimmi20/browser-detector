@@ -11,11 +11,11 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Version\VersionFactoryInterface;
 use Psr\Log\LoggerInterface;
-use UaBrowserType\TypeLoader;
+use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Browser\BrowserInterface;
@@ -28,13 +28,25 @@ final class BrowserFactory
     private $companyLoader;
 
     /**
+     * @var \UaBrowserType\TypeLoaderInterface
+     */
+    private $typeLoader;
+
+    /**
      * BrowserFactory constructor.
      *
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
+     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
+     * @param \UaBrowserType\TypeLoaderInterface               $typeLoader
      */
-    public function __construct(CompanyLoaderInterface $companyLoader)
-    {
-        $this->companyLoader = $companyLoader;
+    public function __construct(
+        CompanyLoaderInterface $companyLoader,
+        VersionFactoryInterface $versionFactory,
+        TypeLoaderInterface $typeLoader
+    ) {
+        $this->companyLoader  = $companyLoader;
+        $this->versionFactory = $versionFactory;
+        $this->typeLoader     = $typeLoader;
     }
 
     /**
@@ -53,7 +65,7 @@ final class BrowserFactory
         $type = new Unknown();
         if (array_key_exists('type', $data)) {
             try {
-                $type = (new TypeLoader())->load((string) $data['type']);
+                $type = $this->typeLoader->load((string) $data['type']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }

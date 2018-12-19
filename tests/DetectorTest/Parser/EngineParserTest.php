@@ -17,6 +17,7 @@ use BrowserDetector\Parser\EngineParser;
 use JsonClass\Json;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use UaResult\Engine\EngineInterface;
 
@@ -33,7 +34,7 @@ class EngineParserTest extends TestCase
     protected function setUp(): void
     {
         self::markTestIncomplete();
-        $logger        = $this->createMock(NullLogger::class);
+        $logger        = $this->createMock(LoggerInterface::class);
         $jsonParser    = $this->createMock(JsonInterface::class);
         $companyLoader = $this->createMock(SpecificLoaderInterface::class);
 

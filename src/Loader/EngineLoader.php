@@ -13,6 +13,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
+use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use UaResult\Engine\EngineInterface;
 
@@ -71,6 +72,6 @@ final class EngineLoader implements SpecificLoaderInterface
             throw new NotFoundException('the engine with key "' . $key . '" was not found');
         }
 
-        return (new EngineFactory($this->companyLoader))->fromArray($this->logger, (array) $engineData, $useragent);
+        return (new EngineFactory($this->companyLoader, new VersionFactory()))->fromArray($this->logger, (array) $engineData, $useragent);
     }
 }

@@ -20,7 +20,7 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\PlatformParserInterface;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
+use Psr\Log\LoggerInterface;
 use UaResult\Device\DeviceInterface;
 use UaResult\Os\OsInterface;
 
@@ -31,7 +31,7 @@ class DeviceLoaderTest extends TestCase
      */
     public function testInvokeNotInCache(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -80,7 +80,7 @@ class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
@@ -102,7 +102,7 @@ class DeviceLoaderTest extends TestCase
      */
     public function testInvokeNullInCache(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -151,7 +151,7 @@ class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
@@ -173,7 +173,7 @@ class DeviceLoaderTest extends TestCase
      */
     public function testInvokeNoVersion(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -230,7 +230,7 @@ class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
@@ -255,7 +255,7 @@ class DeviceLoaderTest extends TestCase
      */
     public function testInvokeGenericVersionAndPlatformInvalidException(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -319,7 +319,7 @@ class DeviceLoaderTest extends TestCase
             ->with('test-platform')
             ->willThrowException(new NotFoundException());
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */
@@ -344,7 +344,7 @@ class DeviceLoaderTest extends TestCase
      */
     public function testInvokeVersionAndPlatform(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -408,7 +408,7 @@ class DeviceLoaderTest extends TestCase
             ->with('test-platform')
             ->willReturn($platform);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var PlatformParserInterface $platformParser */
         /** @var Data $initData */

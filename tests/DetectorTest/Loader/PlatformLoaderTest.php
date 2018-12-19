@@ -19,7 +19,7 @@ use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\InvalidArgumentException;
-use Psr\Log\NullLogger;
+use Psr\Log\LoggerInterface;
 use UaResult\Company\CompanyInterface;
 use UaResult\Os\OsInterface;
 
@@ -30,7 +30,7 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNotInCache(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -79,7 +79,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('__invoke');
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
@@ -99,7 +99,7 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNullInCache(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -148,7 +148,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('__invoke');
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
@@ -168,7 +168,7 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNoVersion(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -228,7 +228,7 @@ final class PlatformLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
@@ -247,7 +247,7 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeVersionSet(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -307,7 +307,7 @@ final class PlatformLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
@@ -326,7 +326,7 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeGenericVersion(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -386,7 +386,7 @@ final class PlatformLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
@@ -407,7 +407,7 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeVersion(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -467,7 +467,7 @@ final class PlatformLoaderTest extends TestCase
             ->with('Unknown')
             ->willReturn($company);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
         $object = new PlatformLoader(
