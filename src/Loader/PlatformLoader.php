@@ -13,6 +13,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
+use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use UaResult\Os\OsInterface;
 
@@ -71,6 +72,6 @@ final class PlatformLoader implements SpecificLoaderInterface
             throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
 
-        return (new PlatformFactory($this->companyLoader))->fromArray($this->logger, (array) $platformData, $useragent);
+        return (new PlatformFactory($this->companyLoader, new VersionFactory()))->fromArray($this->logger, (array) $platformData, $useragent);
     }
 }

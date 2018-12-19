@@ -14,7 +14,9 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Version\Version;
+use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
+use UaBrowserType\TypeLoader;
 use UaDeviceType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
@@ -55,6 +57,8 @@ final class ResultFactory
             $headers = (array) $data['headers'];
         }
 
+        $versionFactory = new VersionFactory();
+
         $device = new Device(
             null,
             null,
@@ -80,7 +84,7 @@ final class ResultFactory
             null
         );
         if (array_key_exists('browser', $data)) {
-            $browser = (new BrowserFactory($this->companyLoader))->fromArray($logger, (array) $data['browser'], $headers['user-agent'] ?? '');
+            $browser = (new BrowserFactory($this->companyLoader, $versionFactory, new TypeLoader()))->fromArray($logger, (array) $data['browser'], $headers['user-agent'] ?? '');
         }
 
         $os = new Os(
@@ -91,7 +95,7 @@ final class ResultFactory
             null
         );
         if (array_key_exists('os', $data)) {
-            $os = (new PlatformFactory($this->companyLoader))->fromArray($logger, (array) $data['os'], $headers['user-agent'] ?? '');
+            $os = (new PlatformFactory($this->companyLoader, $versionFactory))->fromArray($logger, (array) $data['os'], $headers['user-agent'] ?? '');
         }
 
         $engine = new Engine(
@@ -100,7 +104,7 @@ final class ResultFactory
             new Version('0')
         );
         if (array_key_exists('engine', $data)) {
-            $engine = (new EngineFactory($this->companyLoader))->fromArray($logger, (array) $data['engine'], $headers['user-agent'] ?? '');
+            $engine = (new EngineFactory($this->companyLoader, $versionFactory))->fromArray($logger, (array) $data['engine'], $headers['user-agent'] ?? '');
         }
 
         return new Result($headers, $device, $os, $browser, $engine);

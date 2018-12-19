@@ -13,6 +13,7 @@ namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Version\VersionFactoryInterface;
 use Psr\Log\LoggerInterface;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
@@ -27,11 +28,13 @@ final class EngineFactory
     /**
      * BrowserFactory constructor.
      *
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
+     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */
-    public function __construct(CompanyLoaderInterface $companyLoader)
+    public function __construct(CompanyLoaderInterface $companyLoader, VersionFactoryInterface $versionFactory)
     {
-        $this->companyLoader = $companyLoader;
+        $this->companyLoader  = $companyLoader;
+        $this->versionFactory = $versionFactory;
     }
 
     /**

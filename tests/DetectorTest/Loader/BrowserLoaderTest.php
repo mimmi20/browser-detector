@@ -19,7 +19,7 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Version\Test;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
+use Psr\Log\LoggerInterface;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Engine\EngineInterface;
 
@@ -30,7 +30,7 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeNotInCache(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -79,7 +79,7 @@ class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
@@ -101,7 +101,7 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeNullInCache(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -150,7 +150,7 @@ class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
@@ -172,7 +172,7 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeNoVersion(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -229,7 +229,7 @@ class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
@@ -254,7 +254,7 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeGenericVersionAndEngineException(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -314,7 +314,7 @@ class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
@@ -339,7 +339,7 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeGenericVersionAndEngineInvalidException(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -399,7 +399,7 @@ class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */
@@ -424,7 +424,7 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeVersionAndEngine(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -481,7 +481,7 @@ class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
         /** @var EngineParserInterface $engineParser */
         /** @var Data $initData */

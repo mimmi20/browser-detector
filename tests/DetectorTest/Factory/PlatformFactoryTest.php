@@ -13,6 +13,7 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Version\VersionFactory;
 use PHPUnit\Framework\TestCase;
 
 class PlatformFactoryTest extends TestCase
@@ -32,7 +33,7 @@ class PlatformFactoryTest extends TestCase
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
 
         /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        $this->object = new PlatformFactory($companyLoader);
+        $this->object = new PlatformFactory($companyLoader, new VersionFactory());
     }
 
     /**

@@ -20,7 +20,7 @@ use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use ExceptionalJSON\DecodeErrorException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaRequest\Constants;
 use UaRequest\GenericRequestFactory;
@@ -41,7 +41,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUaOld(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -127,7 +127,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -148,7 +148,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromGenericRequest(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -234,7 +234,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -259,7 +259,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromGenericRequest2(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -348,7 +348,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -379,7 +379,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromInvalid(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -465,7 +465,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -486,7 +486,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUa(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -572,7 +572,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -593,7 +593,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromArray(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -679,7 +679,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -700,7 +700,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromPsr7Message(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -790,7 +790,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -816,7 +816,7 @@ class DetectorTest extends TestCase
     public function testGetBrowserFromUnknownDevice(): void
     {
         self::markTestIncomplete();
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -904,7 +904,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -931,7 +931,7 @@ class DetectorTest extends TestCase
     public function testGetBrowserFromUnknownDeviceAndPlatform(): void
     {
         self::markTestIncomplete();
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1014,7 +1014,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -1040,7 +1040,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngine(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1134,7 +1134,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -1160,7 +1160,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngine2(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1250,7 +1250,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -1276,7 +1276,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngineIos(): void
     {
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1384,7 +1384,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -1412,7 +1412,7 @@ class DetectorTest extends TestCase
     public function testGetBrowserWithoutEngineIosFail(): void
     {
         self::markTestIncomplete();
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1507,7 +1507,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -1535,7 +1535,7 @@ class DetectorTest extends TestCase
     public function testGetBrowserWithoutEngineIosFail2(): void
     {
         self::markTestIncomplete();
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1630,7 +1630,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */
@@ -1658,7 +1658,7 @@ class DetectorTest extends TestCase
     public function testGetBrowserWithBrowserFactoryFail(): void
     {
         self::markTestIncomplete();
-        $logger = $this->getMockBuilder(NullLogger::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1758,7 +1758,7 @@ class DetectorTest extends TestCase
             ->method('setItem')
             ->willReturn(false);
 
-        /** @var NullLogger $logger */
+        /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CacheInterface $cache */
         /** @var DeviceParserInterface $deviceParser */
         /** @var PlatformParserInterface $platformParser */

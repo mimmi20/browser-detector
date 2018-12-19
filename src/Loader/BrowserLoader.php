@@ -14,7 +14,9 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Parser\EngineParserInterface;
+use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
+use UaBrowserType\TypeLoader;
 
 final class BrowserLoader implements SpecificLoaderInterface
 {
@@ -90,7 +92,7 @@ final class BrowserLoader implements SpecificLoaderInterface
             }
         }
 
-        $browser = (new BrowserFactory($this->companyLoader))->fromArray($this->logger, (array) $browserData, $useragent);
+        $browser = (new BrowserFactory($this->companyLoader, new VersionFactory(), new TypeLoader()))->fromArray($this->logger, (array) $browserData, $useragent);
 
         return [$browser, $engine];
     }

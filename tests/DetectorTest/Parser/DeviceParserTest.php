@@ -19,6 +19,7 @@ use BrowserDetector\Parser\PlatformParserInterface;
 use JsonClass\Json;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
 class DeviceParserTest extends TestCase
@@ -34,7 +35,7 @@ class DeviceParserTest extends TestCase
     protected function setUp(): void
     {
         self::markTestIncomplete();
-        $logger         = $this->createMock(NullLogger::class);
+        $logger         = $this->createMock(LoggerInterface::class);
         $jsonParser     = $this->createMock(JsonInterface::class);
         $companyLoader  = $this->createMock(SpecificLoaderInterface::class);
         $platformParser = $this->createMock(PlatformParserInterface::class);

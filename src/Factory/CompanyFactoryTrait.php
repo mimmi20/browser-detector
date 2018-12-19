@@ -29,12 +29,14 @@ trait CompanyFactoryTrait
         $companyLoader = $this->companyLoader;
         $manufacturer  = $companyLoader('Unknown');
 
-        if (array_key_exists($field, $data)) {
-            try {
-                $manufacturer = $companyLoader($data[$field]);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
+        if (!array_key_exists($field, $data)) {
+            return $manufacturer;
+        }
+
+        try {
+            $manufacturer = $companyLoader($data[$field]);
+        } catch (NotFoundException $e) {
+            $logger->info($e);
         }
 
         return $manufacturer;

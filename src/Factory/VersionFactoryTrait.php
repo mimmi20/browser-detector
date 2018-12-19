@@ -11,11 +11,15 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 
 trait VersionFactoryTrait
 {
+    /**
+     * @var \BrowserDetector\Version\VersionFactoryInterface
+     */
+    private $versionFactory;
+
     /**
      * @param array  $data
      * @param string $useragent
@@ -24,29 +28,43 @@ trait VersionFactoryTrait
      */
     private function getVersion(array $data, string $useragent): VersionInterface
     {
-        $version = (new VersionFactory())->set('0');
+        $version = $this->versionFactory->set('0');
 
-        if (array_key_exists('version', $data)) {
-            $versionFactory = new VersionFactory();
-
-            if ($data['version'] instanceof \stdClass) {
-                $className = $data['version']->class ?? null;
-                $value     = $data['version']->value ?? null;
-
-                if (null !== $className) {
-                    if ('VersionFactory' !== $className) {
-                        $versionFactory = new $className();
-                    }
-
-                    $version = $versionFactory->detectVersion($useragent, $data['version']->search ?? null);
-                } elseif (null !== $value) {
-                    $version = $versionFactory->set((string) $value);
-                }
-            } elseif (is_string($data['version'])) {
-                $version = $versionFactory->set((string) $data['version']);
-            }
+        if (!array_key_exists('version', $data)) {
+            return $version;
         }
 
-        return $version;
+        if (is_string($data['version'])) {
+            return $this->versionFactory->set((string) $data['version']);
+        }
+
+        if (!$data['version'] instanceof \stdClass) {
+            return $version;
+        }
+
+        $value = $data['version']->value ?? null;
+
+        if (null !== $value) {
+            return $this->versionFactory->set((string) $value);
+        }
+
+        $className = $data['version']->class ?? null;
+
+        if (!is_string($className)) {
+            return $version;
+        }
+
+        if ('VersionFactory' !== $className) {
+            /** @var \BrowserDetector\Version\VersionDetectorInterface $versionDetector */
+            $versionDetector = new $className();
+
+            return $versionDetector->detectVersion($useragent);
+        }
+
+        if (!is_array($data['version']->search ?? null)) {
+            return $version;
+        }
+
+        return $this->versionFactory->detectVersion($useragent, $data['version']->search);
     }
 }
