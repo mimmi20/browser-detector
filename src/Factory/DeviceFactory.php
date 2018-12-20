@@ -45,10 +45,11 @@ final class DeviceFactory
     /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data
+     * @param string                   $useragent
      *
      * @return \UaResult\Device\DeviceInterface
      */
-    public function fromArray(LoggerInterface $logger, array $data): DeviceInterface
+    public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
     {
         $deviceName      = array_key_exists('deviceName', $data) && !empty($data['deviceName']) ? (string) $data['deviceName'] : null;
         $marketingName   = array_key_exists('marketingName', $data) && !empty($data['marketingName']) ? (string) $data['marketingName'] : null;
@@ -65,8 +66,8 @@ final class DeviceFactory
             }
         }
 
-        $manufacturer = $this->getCompany($logger, $data, 'manufacturer');
-        $brand        = $this->getCompany($logger, $data, 'brand');
+        $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
+        $brand        = $this->getCompany($logger, $data, $useragent, 'brand');
 
         $display = new Display(null, null, null, new \UaDisplaySize\Unknown(), null);
         if (array_key_exists('display', $data)) {
@@ -80,7 +81,7 @@ final class DeviceFactory
         $market = new Market([], [], []);
         if (array_key_exists('market', $data)) {
             try {
-                $market = (new MarketFactory())->fromArray($logger, (array) $data['market']);
+                $market = (new MarketFactory())->fromArray((array) $data['market']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }

@@ -20,21 +20,22 @@ trait CompanyFactoryTrait
     /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data
+     * @param string                   $useragent
      * @param string                   $field
      *
      * @return \UaResult\Company\CompanyInterface
      */
-    private function getCompany(LoggerInterface $logger, array $data, string $field): CompanyInterface
+    private function getCompany(LoggerInterface $logger, array $data, string $useragent, string $field): CompanyInterface
     {
         $companyLoader = $this->companyLoader;
-        $manufacturer  = $companyLoader('Unknown');
+        $manufacturer  = $companyLoader('Unknown', $useragent);
 
         if (!array_key_exists($field, $data)) {
             return $manufacturer;
         }
 
         try {
-            $manufacturer = $companyLoader($data[$field]);
+            $manufacturer = $companyLoader($data[$field], $useragent);
         } catch (NotFoundException $e) {
             $logger->info($e);
         }

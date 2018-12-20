@@ -90,7 +90,7 @@ final class DeviceLoader implements DeviceLoaderInterface
             }
         }
 
-        $device = (new DeviceFactory($this->companyLoader))->fromArray($this->logger, (array) $deviceData);
+        $device = (new DeviceFactory($this->companyLoader))->fromArray($this->logger, (array) $deviceData, $useragent);
 
         return [$device, $platform];
     }
