@@ -52,7 +52,7 @@ final class PlatformFactory
         $bits          = (new \BrowserDetector\Bits\Os($useragent))->getBits();
 
         $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($logger, $data, 'manufacturer');
+        $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
 
         if ('Mac OS X' === $name
             && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')

@@ -49,7 +49,7 @@ final class EngineFactory
         $name = array_key_exists('name', $data) ? $data['name'] : null;
 
         $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($logger, $data, 'manufacturer');
+        $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
 
         return new Engine($name, $manufacturer, $version);
     }

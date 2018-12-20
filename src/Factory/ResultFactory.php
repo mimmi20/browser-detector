@@ -72,7 +72,7 @@ final class ResultFactory
             []
         );
         if (array_key_exists('device', $data)) {
-            $device = (new DeviceFactory($this->companyLoader))->fromArray($logger, (array) $data['device']);
+            $device = (new DeviceFactory($this->companyLoader))->fromArray($logger, (array) $data['device'], $headers['user-agent'] ?? '');
         }
 
         $browser = new Browser(

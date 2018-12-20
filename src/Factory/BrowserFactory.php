@@ -58,8 +58,8 @@ final class BrowserFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): BrowserInterface
     {
-        $name  = array_key_exists('name', $data) ? (string) $data['name'] : null;
-        $modus = array_key_exists('modus', $data) ? (string) $data['modus'] : null;
+        $name  = array_key_exists('name', $data) ? $data['name'] : null;
+        $modus = array_key_exists('modus', $data) ? $data['modus'] : null;
         $bits  = (new \BrowserDetector\Bits\Browser($useragent))->getBits();
 
         $type = new Unknown();
@@ -72,7 +72,7 @@ final class BrowserFactory
         }
 
         $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($logger, $data, 'manufacturer');
+        $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
 
         return new Browser($name, $manufacturer, $version, $type, $bits, $modus);
     }
