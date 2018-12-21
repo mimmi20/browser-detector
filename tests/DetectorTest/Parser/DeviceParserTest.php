@@ -48,7 +48,6 @@ class DeviceParserTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void
@@ -135,7 +134,6 @@ class DeviceParserTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void
@@ -222,7 +220,6 @@ class DeviceParserTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void
@@ -309,7 +306,6 @@ class DeviceParserTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void
@@ -396,7 +392,6 @@ class DeviceParserTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void

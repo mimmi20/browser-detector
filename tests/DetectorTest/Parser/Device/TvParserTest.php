@@ -26,9 +26,6 @@ class TvParserTest extends TestCase
      * @param string $expectedCompany
      * @param array  $expectedResult
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \ReflectionException
-     *
      * @return void
      */
     public function testInvoke(string $useragent, string $expectedCompany, array $expectedResult): void

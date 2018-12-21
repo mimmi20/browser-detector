@@ -27,7 +27,6 @@ class RimOsTest extends TestCase
      */
     protected function setUp(): void
     {
-        self::markTestIncomplete();
         $this->object = new RimOs();
     }
 

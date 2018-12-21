@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
-use BrowserDetector\Helper;
+use BrowserDetector\Helper\MobileDevice;
 use PHPUnit\Framework\TestCase;
 use Stringy\Stringy;
 
@@ -26,7 +26,7 @@ class MobileDeviceTest extends TestCase
      */
     public function testIsMobile(string $agent): void
     {
-        $object = new Helper\MobileDevice(new Stringy($agent));
+        $object = new MobileDevice(new Stringy($agent));
 
         self::assertTrue($object->isMobile());
     }
@@ -119,7 +119,7 @@ class MobileDeviceTest extends TestCase
      */
     public function testIsNotMobile(string $agent): void
     {
-        $object = new Helper\MobileDevice(new Stringy($agent));
+        $object = new MobileDevice(new Stringy($agent));
 
         self::assertFalse($object->isMobile());
     }

@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
-use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;

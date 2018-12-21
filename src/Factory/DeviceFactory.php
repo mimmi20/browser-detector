@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Log\LoggerInterface;
@@ -33,13 +32,36 @@ final class DeviceFactory
     private $companyLoader;
 
     /**
+     * @var \UaDeviceType\TypeLoader
+     */
+    private $typeLoader;
+    /**
+     * @var \BrowserDetector\Factory\DisplayFactory
+     */
+    private $displayFactory;
+    /**
+     * @var \BrowserDetector\Factory\MarketFactory
+     */
+    private $marketFactory;
+
+    /**
      * BrowserFactory constructor.
      *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
+     * @param \UaDeviceType\TypeLoader                       $typeLoader
+     * @param \BrowserDetector\Factory\DisplayFactory        $displayFactory
+     * @param \BrowserDetector\Factory\MarketFactory         $marketFactory
      */
-    public function __construct(CompanyLoaderInterface $companyLoader)
-    {
-        $this->companyLoader = $companyLoader;
+    public function __construct(
+        CompanyLoaderInterface $companyLoader,
+        TypeLoader $typeLoader,
+        DisplayFactory $displayFactory,
+        MarketFactory $marketFactory
+    ) {
+        $this->companyLoader  = $companyLoader;
+        $this->typeLoader     = $typeLoader;
+        $this->displayFactory = $displayFactory;
+        $this->marketFactory  = $marketFactory;
     }
 
     /**
@@ -60,7 +82,7 @@ final class DeviceFactory
         $type = new Unknown();
         if (array_key_exists('type', $data)) {
             try {
-                $type = (new TypeLoader())->load((string) $data['type']);
+                $type = $this->typeLoader->load((string) $data['type']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }
@@ -72,7 +94,7 @@ final class DeviceFactory
         $display = new Display(null, null, null, new \UaDisplaySize\Unknown(), null);
         if (array_key_exists('display', $data)) {
             try {
-                $display = (new DisplayFactory())->fromArray($logger, (array) $data['display']);
+                $display = $this->displayFactory->fromArray($logger, (array) $data['display']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }
@@ -81,7 +103,7 @@ final class DeviceFactory
         $market = new Market([], [], []);
         if (array_key_exists('market', $data)) {
             try {
-                $market = (new MarketFactory())->fromArray((array) $data['market']);
+                $market = $this->marketFactory->fromArray((array) $data['market']);
             } catch (NotFoundException $e) {
                 $logger->info($e);
             }

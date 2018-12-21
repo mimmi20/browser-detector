@@ -6,12 +6,12 @@
     backupGlobals="false"
     backupStaticAttributes="false"
     beStrictAboutChangesToGlobalState="true"
-    beStrictAboutCoversAnnotation="true"
+    beStrictAboutCoversAnnotation="false"
     beStrictAboutOutputDuringTests="true"
     beStrictAboutTestsThatDoNotTestAnything="true"
     beStrictAboutTodoAnnotatedTests="true"
-    bootstrap="../vendor/autoload.php"
     failOnWarning="true"
+    bootstrap="../vendor/autoload.php"
     >
     <php>
         <ini name="error_reporting" value="-1"/>

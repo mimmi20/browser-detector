@@ -61,6 +61,7 @@ final class PlatformFactory
             $marketingName = 'macOS';
         } elseif ('iOS' === $name
             && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '4.0', '<')
+            && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '0.0', '>')
         ) {
             $name          = 'iPhone OS';
             $marketingName = 'iPhone OS';

@@ -27,7 +27,6 @@ class TridentTest extends TestCase
      */
     protected function setUp(): void
     {
-        self::markTestIncomplete();
         $this->object = new Trident();
     }
 

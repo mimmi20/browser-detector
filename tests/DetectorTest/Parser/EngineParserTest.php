@@ -50,7 +50,6 @@ class EngineParserTest extends TestCase
      * @param string          $useragent
      * @param EngineInterface $expectedResult
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void
