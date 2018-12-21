@@ -102,6 +102,7 @@ class DetectorTest extends TestCase
      * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return void
+     * @coversNothing
      */
     public function testGetBrowser(array $headers, Result $expectedResult): void
     {

@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
@@ -72,7 +71,13 @@ final class ResultFactory
             []
         );
         if (array_key_exists('device', $data)) {
-            $device = (new DeviceFactory($this->companyLoader))->fromArray($logger, (array) $data['device'], $headers['user-agent'] ?? '');
+            $deviceFactory = new DeviceFactory(
+                $this->companyLoader,
+                new \UaDeviceType\TypeLoader(),
+                new DisplayFactory(new \UaDisplaySize\TypeLoader()),
+                new MarketFactory()
+            );
+            $device = $deviceFactory->fromArray($logger, (array) $data['device'], $headers['user-agent'] ?? '');
         }
 
         $browser = new Browser(

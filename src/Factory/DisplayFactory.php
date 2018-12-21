@@ -13,13 +13,28 @@ namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Log\LoggerInterface;
-use UaDisplaySize\TypeLoader;
+use UaDisplaySize\TypeLoaderInterface;
 use UaDisplaySize\Unknown;
 use UaResult\Device\Display;
 use UaResult\Device\DisplayInterface;
 
 final class DisplayFactory
 {
+    /**
+     * @var TypeLoaderInterface
+     */
+    private $typeLoader;
+
+    /**
+     * DisplayFactory constructor.
+     *
+     * @param \UaDisplaySize\TypeLoaderInterface $typeLoader
+     */
+    public function __construct(TypeLoaderInterface $typeLoader)
+    {
+        $this->typeLoader = $typeLoader;
+    }
+
     /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data
@@ -34,7 +49,7 @@ final class DisplayFactory
         $size   = array_key_exists('size', $data) ? $data['size'] : null;
 
         try {
-            $type = (new TypeLoader())->load($data['type'] ?? 'unknown');
+            $type = $this->typeLoader->load($data['type'] ?? 'unknown');
         } catch (NotFoundException $e) {
             $logger->info($e);
 

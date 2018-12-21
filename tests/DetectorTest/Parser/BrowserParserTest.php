@@ -53,7 +53,6 @@ final class BrowserParserTest extends TestCase
      * @param string $expectedMode
      * @param array  $expectedResult
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \ReflectionException
      *
      * @return void
