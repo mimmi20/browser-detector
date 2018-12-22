@@ -17,7 +17,7 @@ use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use UaResult\Os\OsInterface;
 
-final class PlatformLoader implements SpecificLoaderInterface
+final class PlatformLoader implements PlatformLoaderInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface

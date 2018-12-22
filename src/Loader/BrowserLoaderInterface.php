@@ -11,10 +11,15 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-interface SpecificLoaderFactoryInterface
+interface BrowserLoaderInterface extends SpecificLoaderInterface
 {
     /**
-     * @return SpecificLoaderInterface
+     * @param string $key
+     * @param string $useragent
+     *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
+     * @return array
      */
-    public function __invoke();
+    public function __invoke(string $key, string $useragent = ''): array;
 }

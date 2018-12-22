@@ -14,7 +14,7 @@ namespace BrowserDetector\Factory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use Psr\Log\LoggerInterface;
-use UaDeviceType\TypeLoader;
+use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
 use UaResult\Device\Device;
 use UaResult\Device\DeviceInterface;
@@ -32,31 +32,33 @@ final class DeviceFactory
     private $companyLoader;
 
     /**
-     * @var \UaDeviceType\TypeLoader
+     * @var \UaDeviceType\TypeLoaderInterface
      */
     private $typeLoader;
+
     /**
-     * @var \BrowserDetector\Factory\DisplayFactory
+     * @var \BrowserDetector\Factory\DisplayFactoryInterface
      */
     private $displayFactory;
+
     /**
-     * @var \BrowserDetector\Factory\MarketFactory
+     * @var \BrowserDetector\Factory\MarketFactoryInterface
      */
     private $marketFactory;
 
     /**
      * BrowserFactory constructor.
      *
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     * @param \UaDeviceType\TypeLoader                       $typeLoader
-     * @param \BrowserDetector\Factory\DisplayFactory        $displayFactory
-     * @param \BrowserDetector\Factory\MarketFactory         $marketFactory
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
+     * @param \UaDeviceType\TypeLoaderInterface                $typeLoader
+     * @param \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory
+     * @param \BrowserDetector\Factory\MarketFactoryInterface  $marketFactory
      */
     public function __construct(
         CompanyLoaderInterface $companyLoader,
-        TypeLoader $typeLoader,
-        DisplayFactory $displayFactory,
-        MarketFactory $marketFactory
+        TypeLoaderInterface $typeLoader,
+        DisplayFactoryInterface $displayFactory,
+        MarketFactoryInterface $marketFactory
     ) {
         $this->companyLoader  = $companyLoader;
         $this->typeLoader     = $typeLoader;

@@ -29,19 +29,19 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
     private $jsonParser;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
      */
     private $companyLoader;
 
     /**
-     * @param \Psr\Log\LoggerInterface              $logger
-     * @param \JsonClass\JsonInterface              $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     * @param \Psr\Log\LoggerInterface                       $logger
+     * @param \JsonClass\JsonInterface                       $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
-        CompanyLoader $companyLoader
+        CompanyLoaderInterface $companyLoader
     ) {
         $this->logger        = $logger;
         $this->jsonParser    = $jsonParser;
@@ -49,11 +49,11 @@ final class EngineLoaderFactory implements SpecificLoaderFactoryInterface
     }
 
     /**
-     * @return SpecificLoaderInterface
+     * @return EngineLoaderInterface
      */
-    public function __invoke(): SpecificLoaderInterface
+    public function __invoke(): EngineLoaderInterface
     {
-        /** @var EngineLoader $loader */
+        /** @var EngineLoaderInterface $loader */
         static $loader = null;
 
         if (null !== $loader) {

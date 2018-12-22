@@ -144,11 +144,14 @@ class DataTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
+        $key   = 'rules';
+        $value = 'abc';
+
         $jsonParser
             ->expects(self::exactly(2))
             ->method('decode')
             ->with('{"key": "value"}')
-            ->will(self::returnValue(['rules' => 'abc', 'generic' => 'test', 'generic2' => 'test2']));
+            ->will(self::returnValue([$key => $value, 'generic' => 'test', 'generic2' => 'test2']));
 
         /** @var Finder $finder */
         /** @var Json $jsonParser */
@@ -157,5 +160,11 @@ class DataTest extends TestCase
         $object();
 
         self::assertTrue($object->isInitialized());
+
+        $object();
+
+        self::assertTrue($object->isInitialized());
+        self::assertTrue($object->hasItem($key));
+        self::assertSame($value, $object->getItem($key));
     }
 }

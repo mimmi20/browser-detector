@@ -18,7 +18,7 @@ use UaDisplaySize\Unknown;
 use UaResult\Device\Display;
 use UaResult\Device\DisplayInterface;
 
-final class DisplayFactory
+final class DisplayFactory implements DisplayFactoryInterface
 {
     /**
      * @var TypeLoaderInterface

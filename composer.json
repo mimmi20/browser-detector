@@ -60,6 +60,7 @@
     "zendframework/zend-diactoros": "^1.8"
   },
   "config": {
+    "optimize-autoloader": true,
     "preferred-install": "dist",
     "sort-packages": true
   },
@@ -74,6 +75,8 @@
       "UserAgentsTest\\": "tests/UserAgentsTest/"
     }
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "support": {
     "issues": "https://github.com/mimmi20/BrowserDetector/issues",
     "source": "https://github.com/mimmi20/BrowserDetector"
