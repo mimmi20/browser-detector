@@ -11,10 +11,10 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-interface SpecificLoaderFactoryInterface
+interface BrowserLoaderFactoryInterface extends SpecificLoaderFactoryInterface
 {
     /**
-     * @return SpecificLoaderInterface
+     * @return BrowserLoaderInterface
      */
-    public function __invoke();
+    public function __invoke(): BrowserLoaderInterface;
 }

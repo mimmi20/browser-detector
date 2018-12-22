@@ -11,10 +11,17 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
-interface SpecificLoaderFactoryInterface
+use UaResult\Os\OsInterface;
+
+interface PlatformLoaderInterface extends SpecificLoaderInterface
 {
     /**
-     * @return SpecificLoaderInterface
+     * @param string $key
+     * @param string $useragent
+     *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
+     * @return \UaResult\Os\OsInterface
      */
-    public function __invoke();
+    public function __invoke(string $key, string $useragent = ''): OsInterface;
 }

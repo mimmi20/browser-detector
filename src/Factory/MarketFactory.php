@@ -14,7 +14,7 @@ namespace BrowserDetector\Factory;
 use UaResult\Device\Market;
 use UaResult\Device\MarketInterface;
 
-final class MarketFactory
+final class MarketFactory implements MarketFactoryInterface
 {
     /**
      * @param array $data

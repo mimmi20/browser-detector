@@ -12,7 +12,8 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderFactory;
-use BrowserDetector\Loader\SpecificLoaderInterface;
+use BrowserDetector\Loader\CompanyLoaderInterface;
+use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 
 class CompanyLoaderFactoryTest extends TestCase
@@ -22,18 +23,23 @@ class CompanyLoaderFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        self::markTestIncomplete();
-//        /** @var \Psr\Log\LoggerInterface $logger */
-//        $logger = $this->createMock(LoggerInterface::class);
-//
-//        $factory = new CompanyLoaderFactory($logger);
-//        $object  = $factory('default');
-//
-//        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
-//
-//        $objectTwo = $factory('default');
-//
-//        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
-//        self::assertSame($objectTwo, $object);
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(self::any())
+            ->method('decode')
+            ->willReturn([]);
+
+        /** @var \JsonClass\JsonInterface $jsonParser */
+        $factory = new CompanyLoaderFactory($jsonParser);
+        $object  = $factory();
+
+        self::assertInstanceOf(CompanyLoaderInterface::class, $object);
+
+        $objectTwo = $factory();
+
+        self::assertInstanceOf(CompanyLoaderInterface::class, $objectTwo);
+        self::assertSame($objectTwo, $object);
     }
 }

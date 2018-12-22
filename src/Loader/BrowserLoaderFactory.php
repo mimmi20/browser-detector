@@ -12,13 +12,12 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\EngineParserInterface;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 
-final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
+final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -36,20 +35,20 @@ final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
     private $engineParser;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
      */
     private $companyLoader;
 
     /**
-     * @param \Psr\Log\LoggerInterface                      $logger
-     * @param \JsonClass\JsonInterface                      $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoader         $companyLoader
-     * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
+     * @param \Psr\Log\LoggerInterface                       $logger
+     * @param \JsonClass\JsonInterface                       $jsonParser
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
+     * @param \BrowserDetector\Parser\EngineParserInterface  $engineParser
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
-        CompanyLoader $companyLoader,
+        CompanyLoaderInterface $companyLoader,
         EngineParserInterface $engineParser
     ) {
         $this->logger        = $logger;
@@ -59,9 +58,9 @@ final class BrowserLoaderFactory implements SpecificLoaderFactoryInterface
     }
 
     /**
-     * @return SpecificLoaderInterface
+     * @return BrowserLoaderInterface
      */
-    public function __invoke(): SpecificLoaderInterface
+    public function __invoke(): BrowserLoaderInterface
     {
         /** @var BrowserLoader $loader */
         static $loader = null;

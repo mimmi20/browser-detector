@@ -18,7 +18,7 @@ use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use UaBrowserType\TypeLoader;
 
-final class BrowserLoader implements SpecificLoaderInterface
+final class BrowserLoader implements BrowserLoaderInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface

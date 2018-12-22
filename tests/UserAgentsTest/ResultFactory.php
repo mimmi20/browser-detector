@@ -9,8 +9,14 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Factory;
+namespace UserAgentsTest;
 
+use BrowserDetector\Factory\BrowserFactory;
+use BrowserDetector\Factory\DeviceFactory;
+use BrowserDetector\Factory\DisplayFactory;
+use BrowserDetector\Factory\EngineFactory;
+use BrowserDetector\Factory\MarketFactory;
+use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;

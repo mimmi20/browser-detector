@@ -9,12 +9,16 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Loader;
+namespace BrowserDetector\Factory;
 
-interface SpecificLoaderFactoryInterface
+use UaResult\Device\MarketInterface;
+
+interface MarketFactoryInterface
 {
     /**
-     * @return SpecificLoaderInterface
+     * @param array $data
+     *
+     * @return \UaResult\Device\MarketInterface
      */
-    public function __invoke();
+    public function fromArray(array $data): MarketInterface;
 }

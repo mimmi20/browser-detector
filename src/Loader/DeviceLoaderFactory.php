@@ -35,20 +35,20 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
     private $platformParser;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoader
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
      */
     private $companyLoader;
 
     /**
      * @param \Psr\Log\LoggerInterface                        $logger
      * @param \JsonClass\JsonInterface                        $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoader           $companyLoader
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface  $companyLoader
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
-        CompanyLoader $companyLoader,
+        CompanyLoaderInterface $companyLoader,
         PlatformParserInterface $platformParser
     ) {
         $this->logger         = $logger;

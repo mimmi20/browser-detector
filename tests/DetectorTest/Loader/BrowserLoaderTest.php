@@ -339,7 +339,8 @@ class BrowserLoaderTest extends TestCase
      */
     public function testInvokeGenericVersionAndEngineInvalidException(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $exception = new NotFoundException('engine failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -352,8 +353,9 @@ class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
-            ->method('warning');
+            ->expects(self::once())
+            ->method('warning')
+            ->with($exception);
         $logger
             ->expects(self::never())
             ->method('error');
@@ -377,11 +379,13 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::returnValue(true));
 
+        $useragent   = 'test/1.0';
+        $engineKey   = 'unknown';
         $browserData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
             'manufacturer' => 'Unknown',
             'type' => 'unknown',
-            'engine' => 'unknown',
+            'engine' => $engineKey,
             'name' => null,
         ];
 
@@ -398,6 +402,11 @@ class BrowserLoaderTest extends TestCase
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
+        $engineParser
+            ->expects(self::once())
+            ->method('load')
+            ->with($engineKey, $useragent)
+            ->willThrowException($exception);
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var CompanyLoaderInterface $companyLoader */
@@ -410,13 +419,13 @@ class BrowserLoaderTest extends TestCase
             $engineParser
         );
 
-        $result = $object('test-key', 'test/1.0');
+        $result = $object('test-key', $useragent);
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
         self::assertInstanceOf(BrowserInterface::class, $result[0]);
         self::assertArrayHasKey(1, $result);
-        self::assertInstanceOf(EngineInterface::class, $result[1]);
+        self::assertNull($result[1]);
     }
 
     /**

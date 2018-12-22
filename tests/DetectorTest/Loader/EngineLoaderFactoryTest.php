@@ -11,9 +11,12 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
+use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\EngineLoaderFactory;
-use BrowserDetector\Loader\SpecificLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
+use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 
 class EngineLoaderFactoryTest extends TestCase
 {
@@ -22,18 +25,30 @@ class EngineLoaderFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        self::markTestIncomplete();
-//        /** @var \Psr\Log\LoggerInterface $logger */
-//        $logger = $this->createMock(LoggerInterface::class);
-//
-//        $factory = new EngineLoaderFactory($logger);
-//        $object  = $factory();
-//
-//        self::assertInstanceOf(SpecificLoaderInterface::class, $object);
-//
-//        $objectTwo = $factory();
-//
-//        self::assertInstanceOf(SpecificLoaderInterface::class, $objectTwo);
-//        self::assertSame($objectTwo, $object);
+        $logger     = $this->createMock(LoggerInterface::class);
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(self::any())
+            ->method('decode')
+            ->willReturn([]);
+
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+
+        /** @var \Psr\Log\LoggerInterface $logger */
+        /** @var \JsonClass\JsonInterface $jsonParser */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        $factory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader);
+        $object  = $factory();
+
+        self::assertInstanceOf(EngineLoaderInterface::class, $object);
+
+        $objectTwo = $factory();
+
+        self::assertInstanceOf(EngineLoaderInterface::class, $objectTwo);
+        self::assertSame($objectTwo, $object);
     }
 }
