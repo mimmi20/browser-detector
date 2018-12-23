@@ -9,14 +9,15 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Loader;
+namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderFactory;
+use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
-final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
+final class EngineParserFactory implements EngineParserFactoryInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -49,33 +50,15 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
     }
 
     /**
-     * @return PlatformLoaderInterface
+     * Gets the information about the engine by User Agent
+     *
+     * @return \BrowserDetector\Parser\EngineParserInterface
      */
-    public function __invoke(): PlatformLoaderInterface
+    public function __invoke(): EngineParserInterface
     {
-        /** @var \BrowserDetector\Loader\PlatformLoaderInterface $loader */
-        static $loader = null;
-
-        if (null !== $loader) {
-            return $loader;
-        }
-
-        $dataPath = __DIR__ . '/../../data/platforms';
-
-        $finder = new Finder();
-        $finder->files();
-        $finder->name('*.json');
-        $finder->ignoreDotFiles(true);
-        $finder->ignoreVCS(true);
-        $finder->ignoreUnreadableDirs();
-        $finder->in($dataPath);
-
-        $loader = new PlatformLoader(
-            $this->logger,
-            new Data($finder, $this->jsonParser),
-            $this->companyLoader
+        return new EngineParser(
+            new EngineLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader),
+            new RulefileParser($this->jsonParser, $this->logger)
         );
-
-        return $loader;
     }
 }

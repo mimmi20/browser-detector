@@ -14,29 +14,28 @@ namespace BrowserDetectorTest\Parser\Device;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\TvParser;
-use JsonClass\JsonInterface;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\TestCase;
 
 class TvParserTest extends TestCase
 {
     /**
-     * @dataProvider providerUseragents
-     *
-     * @param string $useragent
-     * @param string $expectedCompany
-     * @param array  $expectedResult
-     *
      * @return void
      */
-    public function testInvoke(string $useragent, string $expectedCompany, array $expectedResult): void
+    public function testInvoke(): void
     {
+        $useragent      = 'test-useragent';
+        $expectedMode   = 'test-mode';
+        $expectedResult = ['test-result'];
+        $genericMode    = 'genericMode';
+
         $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoader
             ->expects(self::once())
             ->method('__invoke')
-            ->with('tv', $useragent)
+            ->with($expectedMode, $useragent)
             ->willReturn($expectedResult);
 
         $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
@@ -45,45 +44,21 @@ class TvParserTest extends TestCase
         $mockLoaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($expectedCompany)
+            ->with($genericMode)
             ->willReturn($mockLoader);
 
-        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $jsonParser
+        $fileParser
             ->expects(self::exactly(2))
-            ->method('decode')
-            ->willReturnOnConsecutiveCalls(['generic' => $expectedCompany, 'rules' => []], ['generic' => 'tv', 'rules' => []]);
+            ->method('parseFile')
+            ->willReturnOnConsecutiveCalls($genericMode, $expectedMode);
 
-        /* @var \JsonClass\Json $jsonParser */
+        /* @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
         /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
-        $object = new TvParser($jsonParser, $mockLoaderFactory);
+        $object = new TvParser($fileParser, $mockLoaderFactory);
 
         self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerUseragents(): array
-    {
-        return [
-            [
-                'Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KD49X8505B; CC/DEU) Presto/2.12.407 Version/12.50',
-                'sony',
-                [],
-            ],
-            [
-                'Opera/9.80 (Linux armv6l; U; NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;THOMSON LF1V401; en) Presto/2.10.250 Version/11.60',
-                'thomson',
-                [],
-            ],
-            [
-                'this is a fake ua to trigger the fallback',
-                'unknown',
-                [],
-            ],
-        ];
     }
 }

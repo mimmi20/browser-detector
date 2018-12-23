@@ -11,38 +11,37 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\EngineLoaderFactory;
-use JsonClass\JsonInterface;
-use Psr\Log\LoggerInterface;
+use BrowserDetector\Loader\EngineLoaderFactoryInterface;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use Symfony\Component\Finder\SplFileInfo;
 use UaResult\Engine\EngineInterface;
 
 final class EngineParser implements EngineParserInterface
 {
     /**
-     * @var \BrowserDetector\Loader\EngineLoaderFactory
+     * @var \BrowserDetector\Loader\EngineLoaderFactoryInterface
      */
     private $loaderFactory;
 
     /**
-     * @var \JsonClass\JsonInterface
+     * @var \BrowserDetector\Parser\Helper\RulefileParserInterface
      */
-    private $jsonParser;
+    private $fileParser;
 
-    private const GENERIC_FILE = '/../../data/factories/engines.json';
+    private const GENERIC_FILE = __DIR__ . '/../../data/factories/engines.json';
 
     /**
-     * @param \Psr\Log\LoggerInterface              $logger
-     * @param \JsonClass\JsonInterface              $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoader $companyLoader
+     * EngineParser constructor.
+     *
+     * @param \BrowserDetector\Loader\EngineLoaderFactoryInterface   $loaderFactory
+     * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
      */
     public function __construct(
-        LoggerInterface $logger,
-        JsonInterface $jsonParser,
-        CompanyLoader $companyLoader
+        EngineLoaderFactoryInterface $loaderFactory,
+        RulefileParserInterface $fileParser
     ) {
-        $this->loaderFactory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader);
-        $this->jsonParser    = $jsonParser;
+        $this->loaderFactory = $loaderFactory;
+        $this->fileParser    = $fileParser;
     }
 
     /**
@@ -56,18 +55,11 @@ final class EngineParser implements EngineParserInterface
      */
     public function __invoke(string $useragent): EngineInterface
     {
-        $specFactories = $this->jsonParser->decode(
-            (string) file_get_contents(__DIR__ . self::GENERIC_FILE),
-            true
+        $key = $this->fileParser->parseFile(
+            new SplFileInfo(self::GENERIC_FILE, '', ''),
+            $useragent,
+            'unknown'
         );
-        $key = $specFactories['generic'];
-
-        foreach (array_keys($specFactories['rules']) as $rule) {
-            if (preg_match($rule, $useragent)) {
-                $key = $specFactories['rules'][$rule];
-                break;
-            }
-        }
 
         return $this->load($key, $useragent);
     }

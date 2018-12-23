@@ -11,43 +11,64 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\BrowserLoaderFactory;
-use BrowserDetector\Loader\CompanyLoader;
-use JsonClass\JsonInterface;
-use Psr\Log\LoggerInterface;
+use BrowserDetector\Loader\BrowserLoaderFactoryInterface;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use Symfony\Component\Finder\SplFileInfo;
 
 final class BrowserParser implements BrowserParserInterface
 {
     /**
-     * @var \BrowserDetector\Loader\BrowserLoaderFactory
+     * @var \BrowserDetector\Loader\BrowserLoaderFactoryInterface
      */
     private $loaderFactory;
 
     /**
-     * @var \JsonClass\JsonInterface
+     * @var \BrowserDetector\Parser\Helper\RulefileParserInterface
      */
-    private $jsonParser;
+    private $fileParser;
 
-    private const GENERIC_FILE  = '/../../data/factories/browsers.json';
-    private const SPECIFIC_FILE = '/../../data/factories/browsers/%s.json';
+    private const GENERIC_FILE  = __DIR__ . '/../../data/factories/browsers.json';
+    private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/browsers/%s.json';
 
     /**
-     * @param \Psr\Log\LoggerInterface                      $logger
-     * @param \JsonClass\JsonInterface                      $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoader         $companyLoader
-     * @param \BrowserDetector\Parser\EngineParserInterface $engineParser
+     * BrowserParser constructor.
+     *
+     * @param \BrowserDetector\Loader\BrowserLoaderFactoryInterface  $loaderFactory
+     * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
      */
     public function __construct(
-        LoggerInterface $logger,
-        JsonInterface $jsonParser,
-        CompanyLoader $companyLoader,
-        EngineParserInterface $engineParser
+        BrowserLoaderFactoryInterface $loaderFactory,
+        RulefileParserInterface $fileParser
     ) {
-        $this->loaderFactory = new BrowserLoaderFactory($logger, $jsonParser, $companyLoader, $engineParser);
-        $this->jsonParser    = $jsonParser;
+        $this->loaderFactory = $loaderFactory;
+        $this->fileParser    = $fileParser;
     }
 
-    use CascadedParserTrait;
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param string $useragent
+     *
+     * @throws \ExceptionalJSON\DecodeErrorException
+     *
+     * @return array
+     */
+    public function __invoke(string $useragent): array
+    {
+        $mode = $this->fileParser->parseFile(
+            new SplFileInfo(self::GENERIC_FILE, '', ''),
+            $useragent,
+            'unknown'
+        );
+
+        $key = $this->fileParser->parseFile(
+            new SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode), '', ''),
+            $useragent,
+            'unknown'
+        );
+
+        return $this->load($key, $useragent);
+    }
 
     /**
      * @param string $key

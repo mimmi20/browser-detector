@@ -9,14 +9,15 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Loader;
+namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\BrowserLoaderFactory;
+use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
-final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
+final class BrowserParserFactory implements BrowserParserFactoryInterface
 {
     /**
      * @var \Psr\Log\LoggerInterface
@@ -34,48 +35,38 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
     private $companyLoader;
 
     /**
+     * @var \BrowserDetector\Parser\EngineParserInterface
+     */
+    private $engineParser;
+
+    /**
      * @param \Psr\Log\LoggerInterface                       $logger
      * @param \JsonClass\JsonInterface                       $jsonParser
      * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
+     * @param \BrowserDetector\Parser\EngineParserInterface  $engineParser
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
-        CompanyLoaderInterface $companyLoader
+        CompanyLoaderInterface $companyLoader,
+        EngineParserInterface $engineParser
     ) {
         $this->logger        = $logger;
         $this->jsonParser    = $jsonParser;
         $this->companyLoader = $companyLoader;
+        $this->engineParser  = $engineParser;
     }
 
     /**
-     * @return PlatformLoaderInterface
+     * Gets the information about the browser by User Agent
+     *
+     * @return BrowserParserInterface
      */
-    public function __invoke(): PlatformLoaderInterface
+    public function __invoke(): BrowserParserInterface
     {
-        /** @var \BrowserDetector\Loader\PlatformLoaderInterface $loader */
-        static $loader = null;
-
-        if (null !== $loader) {
-            return $loader;
-        }
-
-        $dataPath = __DIR__ . '/../../data/platforms';
-
-        $finder = new Finder();
-        $finder->files();
-        $finder->name('*.json');
-        $finder->ignoreDotFiles(true);
-        $finder->ignoreVCS(true);
-        $finder->ignoreUnreadableDirs();
-        $finder->in($dataPath);
-
-        $loader = new PlatformLoader(
-            $this->logger,
-            new Data($finder, $this->jsonParser),
-            $this->companyLoader
+        return new BrowserParser(
+            new BrowserLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, $this->engineParser),
+            new RulefileParser($this->jsonParser, $this->logger)
         );
-
-        return $loader;
     }
 }

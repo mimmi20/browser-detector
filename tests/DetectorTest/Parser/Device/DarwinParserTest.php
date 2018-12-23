@@ -14,22 +14,20 @@ namespace BrowserDetectorTest\Parser\Device;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\DarwinParser;
-use JsonClass\JsonInterface;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\TestCase;
 
 class DarwinParserTest extends TestCase
 {
     /**
-     * @dataProvider providerUseragents
-     *
-     * @param string $useragent
-     * @param string $expectedMode
-     * @param array  $expectedResult
-     *
      * @return void
      */
-    public function testInvoke(string $useragent, string $expectedMode, array $expectedResult): void
+    public function testInvoke(): void
     {
+        $useragent      = 'test-useragent';
+        $expectedMode   = 'test-mode';
+        $expectedResult = ['test-result'];
+
         $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -48,47 +46,18 @@ class DarwinParserTest extends TestCase
             ->with('apple')
             ->willReturn($mockLoader);
 
-        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $jsonParser
+        $fileParser
             ->expects(self::exactly(2))
-            ->method('decode')
-            ->willReturnOnConsecutiveCalls(['generic' => $expectedMode, 'rules' => []], ['generic' => $expectedMode, 'rules' => []]);
+            ->method('parseFile')
+            ->willReturnOnConsecutiveCalls('genericMode', $expectedMode);
 
-        /* @var \JsonClass\Json $jsonParser */
+        /* @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
         /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
-        $object = new DarwinParser($jsonParser, $mockLoaderFactory);
+        $object = new DarwinParser($fileParser, $mockLoaderFactory);
 
         self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerUseragents(): array
-    {
-        return [
-            [
-                'Safari/13604.1.38.1.6 CFNetwork/887 Darwin/17.0.0 (x86_64)',
-                'desktop',
-                [],
-            ],
-            [
-                'Safari/6534.59.10 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook5%2C1)',
-                'desktop',
-                [],
-            ],
-            [
-                'Reeder/3.0.50 CFNetwork/887 Darwin/17.0.0',
-                'mobile',
-                [],
-            ],
-            [
-                'this is a fake ua to trigger the fallback',
-                'desktop',
-                [],
-            ],
-        ];
     }
 }

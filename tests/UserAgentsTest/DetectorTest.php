@@ -14,10 +14,10 @@ namespace UserAgentsTest;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\CompanyLoaderFactory;
-use BrowserDetector\Parser\BrowserParser;
+use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParser;
-use BrowserDetector\Parser\EngineParser;
-use BrowserDetector\Parser\PlatformParser;
+use BrowserDetector\Parser\EngineParserFactory;
+use BrowserDetector\Parser\PlatformParserFactory;
 use ExceptionalJSON\DecodeErrorException;
 use ExceptionalJSON\EncodeErrorException;
 use JsonClass\Json;
@@ -83,10 +83,13 @@ class DetectorTest extends TestCase
         /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         $companyLoader = $companyLoaderFactory();
 
-        $platformParser = new PlatformParser($logger, $jsonParser, $companyLoader);
-        $deviceParser   = new DeviceParser($logger, $jsonParser, $companyLoader, $platformParser);
-        $engineParser   = new EngineParser($logger, $jsonParser, $companyLoader);
-        $browserParser  = new BrowserParser($logger, $jsonParser, $companyLoader, $engineParser);
+        $platformParserFactory = new PlatformParserFactory($logger, $jsonParser, $companyLoader);
+        $platformParser        = $platformParserFactory();
+        $deviceParser          = new DeviceParser($logger, $jsonParser, $companyLoader, $platformParser);
+        $engineParserFactory   = new EngineParserFactory($logger, $jsonParser, $companyLoader);
+        $engineParser          = $engineParserFactory();
+        $browserParserFactory  = new BrowserParserFactory($logger, $jsonParser, $companyLoader, $engineParser);
+        $browserParser         = $browserParserFactory();
 
         $this->object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
     }
