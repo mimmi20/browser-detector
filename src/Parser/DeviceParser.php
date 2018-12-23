@@ -15,11 +15,13 @@ use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
 use BrowserDetector\Loader\CompanyLoader;
+use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Device\MobileParser;
 use BrowserDetector\Parser\Device\TvParser;
+use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use Stringy\Stringy;
@@ -52,36 +54,24 @@ final class DeviceParser implements DeviceParserInterface
     private $loaderFactory;
 
     /**
-     * @var LoggerInterface
-     */
-    private $logger;
-
-    /**
-     * @var \JsonClass\JsonInterface
-     */
-    private $jsonParser;
-
-    /**
      * @param \Psr\Log\LoggerInterface                        $logger
      * @param \JsonClass\JsonInterface                        $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoader           $companyLoader
+     * @param \BrowserDetector\Loader\CompanyLoaderInterface  $companyLoader
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
-        CompanyLoader $companyLoader,
+        CompanyLoaderInterface $companyLoader,
         PlatformParserInterface $platformParser
     ) {
         $this->loaderFactory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser);
+        $fileParser          = new RulefileParser($jsonParser, $logger);
 
-        $this->darwinFactory  = new DarwinParser($jsonParser, $this->loaderFactory);
-        $this->mobileFactory  = new MobileParser($jsonParser, $this->loaderFactory);
-        $this->tvFactory      = new TvParser($jsonParser, $this->loaderFactory);
-        $this->desktopFactory = new DesktopParser($jsonParser, $this->loaderFactory);
-
-        $this->logger     = $logger;
-        $this->jsonParser = $jsonParser;
+        $this->darwinFactory  = new DarwinParser($fileParser, $this->loaderFactory);
+        $this->mobileFactory  = new MobileParser($fileParser, $this->loaderFactory);
+        $this->tvFactory      = new TvParser($fileParser, $this->loaderFactory);
+        $this->desktopFactory = new DesktopParser($fileParser, $this->loaderFactory);
     }
 
     /**

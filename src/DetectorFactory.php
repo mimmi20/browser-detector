@@ -14,10 +14,10 @@ namespace BrowserDetector;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
-use BrowserDetector\Parser\BrowserParser;
+use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParser;
-use BrowserDetector\Parser\EngineParser;
-use BrowserDetector\Parser\PlatformParser;
+use BrowserDetector\Parser\EngineParserFactory;
+use BrowserDetector\Parser\PlatformParserFactory;
 use JsonClass\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
@@ -58,10 +58,13 @@ final class DetectorFactory
             /** @var CompanyLoader $companyLoader */
             $companyLoader = $companyLoaderFactory();
 
-            $platformParser = new PlatformParser($this->logger, $jsonParser, $companyLoader);
-            $deviceParser   = new DeviceParser($this->logger, $jsonParser, $companyLoader, $platformParser);
-            $engineParser   = new EngineParser($this->logger, $jsonParser, $companyLoader);
-            $browserParser  = new BrowserParser($this->logger, $jsonParser, $companyLoader, $engineParser);
+            $platformParserFactory = new PlatformParserFactory($this->logger, $jsonParser, $companyLoader);
+            $platformParser        = $platformParserFactory();
+            $deviceParser          = new DeviceParser($this->logger, $jsonParser, $companyLoader, $platformParser);
+            $engineParserFactory   = new EngineParserFactory($this->logger, $jsonParser, $companyLoader);
+            $engineParser          = $engineParserFactory();
+            $browserParserFactory  = new BrowserParserFactory($this->logger, $jsonParser, $companyLoader, $engineParser);
+            $browserParser         = $browserParserFactory();
 
             $detector = new Detector($this->logger, $this->cache, $deviceParser, $platformParser, $browserParser, $engineParser);
         }

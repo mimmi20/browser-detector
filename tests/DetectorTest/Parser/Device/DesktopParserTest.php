@@ -14,29 +14,28 @@ namespace BrowserDetectorTest\Parser\Device;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\DesktopParser;
-use JsonClass\JsonInterface;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\TestCase;
 
 class DesktopParserTest extends TestCase
 {
     /**
-     * @dataProvider providerUseragents
-     *
-     * @param string $useragent
-     * @param string $expectedCompany
-     * @param array  $expectedResult
-     *
      * @return void
      */
-    public function testInvoke(string $useragent, string $expectedCompany, array $expectedResult): void
+    public function testInvoke(): void
     {
+        $useragent      = 'test-useragent';
+        $expectedMode   = 'test-mode';
+        $expectedResult = ['test-result'];
+        $genericMode    = 'genericMode';
+
         $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoader
             ->expects(self::once())
             ->method('__invoke')
-            ->with('desktop', $useragent)
+            ->with($expectedMode, $useragent)
             ->willReturn($expectedResult);
 
         $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
@@ -45,45 +44,21 @@ class DesktopParserTest extends TestCase
         $mockLoaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($expectedCompany)
+            ->with($genericMode)
             ->willReturn($mockLoader);
 
-        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $jsonParser
+        $fileParser
             ->expects(self::exactly(2))
-            ->method('decode')
-            ->willReturnOnConsecutiveCalls(['generic' => $expectedCompany, 'rules' => []], ['generic' => 'desktop', 'rules' => []]);
+            ->method('parseFile')
+            ->willReturnOnConsecutiveCalls($genericMode, $expectedMode);
 
-        /* @var \JsonClass\Json $jsonParser */
+        /* @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
         /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
-        $object = new DesktopParser($jsonParser, $mockLoaderFactory);
+        $object = new DesktopParser($fileParser, $mockLoaderFactory);
 
         self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerUseragents(): array
-    {
-        return [
-            [
-                'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/7.8 (3.8.2.0-0rpi18rpi1) Epiphany/3.8.2',
-                'raspberry pi foundation',
-                [],
-            ],
-            [
-                'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MASP)',
-                'sony',
-                [],
-            ],
-            [
-                'this is a fake ua to trigger the fallback',
-                'unknown',
-                [],
-            ],
-        ];
     }
 }

@@ -11,105 +11,54 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
-use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
-use BrowserDetector\Loader\SpecificLoaderInterface;
+use BrowserDetector\Loader\BrowserLoaderFactoryInterface;
+use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Parser\BrowserParser;
-use BrowserDetector\Parser\EngineParserInterface;
-use JsonClass\Json;
-use JsonClass\JsonInterface;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
-use Psr\Log\NullLogger;
 
 final class BrowserParserTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Parser\BrowserParser
-     */
-    private $object;
-
-    /**
      * @return void
      */
-    protected function setUp(): void
+    public function testInvoke(): void
     {
-        self::markTestIncomplete();
-        $logger        = $this->createMock(LoggerInterface::class);
-        $jsonParser    = $this->createMock(JsonInterface::class);
-        $companyLoader = $this->createMock(SpecificLoaderInterface::class);
-        $engineParser  = $this->createMock(EngineParserInterface::class);
+        $useragent = 'test-agent';
+        $mode      = 'test-mode';
+        $key       = 'test-key';
+        $result    = ['test-result'];
 
-        /* @var NullLogger $logger */
-        /* @var Json $jsonParser */
-        /* @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
-        /* @var EngineParserInterface $engineParser */
-        $this->object = new BrowserParser($logger, $jsonParser, $companyLoader, $engineParser);
-    }
-
-    /**
-     * @dataProvider providerUseragents
-     *
-     * @param string $useragent
-     * @param string $expectedMode
-     * @param array  $expectedResult
-     *
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testInvoke(string $useragent, string $expectedMode, array $expectedResult): void
-    {
-        self::markTestIncomplete();
-        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
+        $loader = $this->getMockBuilder(BrowserLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $mockLoader
+        $loader
             ->expects(self::once())
             ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
+            ->with($key, $useragent)
+            ->willReturn($result);
 
-        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
+        $loaderFactory = $this->getMockBuilder(BrowserLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $mockLoaderFactory
+        $loaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($expectedMode)
-            ->willReturn($mockLoader);
+            ->willReturn($loader);
 
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
+        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $fileParser
+            ->expects(self::exactly(2))
+            ->method('parseFile')
+            ->willReturnOnConsecutiveCalls($mode, $key);
 
-        $object = $this->object;
+        /** @var \BrowserDetector\Loader\BrowserLoaderFactoryInterface $loaderFactory */
+        /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
+        $parser       = new BrowserParser($loaderFactory, $fileParser);
+        $parserResult = $parser($useragent);
 
-        self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerUseragents(): array
-    {
-        return [
-            [
-                'Mozilla/5.0 (Windows IoT 10.0; Android 6.0.1; WebView/3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Mobile Safari/537.36 Edge/17.17083',
-                'edge',
-                [],
-            ],
-            [
-                'Mozilla/5.0 (Linux; Android 5.1.1; Z110 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Safari/537.36',
-                'blink',
-                [],
-            ],
-            [
-                'this is a fake ua to trigger the fallback',
-                'genericbrowser',
-                [],
-            ],
-        ];
+        self::assertSame($result, $parserResult);
     }
 }

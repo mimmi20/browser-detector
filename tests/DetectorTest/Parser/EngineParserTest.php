@@ -11,150 +11,54 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
-use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
-use BrowserDetector\Loader\SpecificLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderFactoryInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Parser\EngineParser;
-use JsonClass\Json;
-use JsonClass\JsonInterface;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
-use Psr\Log\NullLogger;
 use UaResult\Engine\EngineInterface;
 
 class EngineParserTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Parser\EngineParser
-     */
-    private $object;
-
-    /**
      * @return void
      */
-    protected function setUp(): void
+    public function testInvoke(): void
     {
-        self::markTestIncomplete();
-        $logger        = $this->createMock(LoggerInterface::class);
-        $jsonParser    = $this->createMock(JsonInterface::class);
-        $companyLoader = $this->createMock(SpecificLoaderInterface::class);
+        $useragent = 'test-agent';
+        $mode      = 'test-mode';
+        $result    = $this->createMock(EngineInterface::class);
 
-        /* @var NullLogger $logger */
-        /* @var Json $jsonParser */
-        /* @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
-        $this->object = new EngineParser($logger, $jsonParser, $companyLoader);
-    }
-
-    /**
-     * @dataProvider providerInvoke
-     *
-     * @param string          $useragent
-     * @param EngineInterface $expectedResult
-     *
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testInvoke(string $useragent, EngineInterface $expectedResult): void
-    {
-        self::markTestIncomplete();
-        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
+        $loader = $this->getMockBuilder(EngineLoaderInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $mockLoader
+        $loader
             ->expects(self::once())
             ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
+            ->with($mode, $useragent)
+            ->willReturn($result);
 
-        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
+        $loaderFactory = $this->getMockBuilder(EngineLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $mockLoaderFactory
+        $loaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->willReturn($mockLoader);
+            ->willReturn($loader);
 
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
-
-        $object = $this->object;
-
-        self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerInvoke(): array
-    {
-        $engine = $this->createMock(EngineInterface::class);
-
-        return [
-            [
-                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
-                $engine,
-            ],
-        ];
-    }
-
-    /**
-     * @dataProvider providerLoad
-     *
-     * @param string          $useragent
-     * @param EngineInterface $expectedResult
-     * @param string          $key
-     *
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testLoad(string $useragent, string $key, EngineInterface $expectedResult): void
-    {
-        self::markTestIncomplete();
-        $mockLoader = $this->getMockBuilder(SpecificLoaderInterface::class)
+        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $mockLoader
+        $fileParser
             ->expects(self::once())
-            ->method('load')
-            ->with($key, $useragent)
-            ->willReturn($expectedResult);
+            ->method('parseFile')
+            ->willReturn($mode);
 
-        $mockLoaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
-            ->disableOriginalConstructor()
+        /** @var \BrowserDetector\Loader\EngineLoaderFactoryInterface $loaderFactory */
+        /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
+        $parser       = new EngineParser($loaderFactory, $fileParser);
+        $parserResult = $parser($useragent);
 
-            ->getMock();
-        $mockLoaderFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->willReturn($mockLoader);
-
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mockLoaderFactory);
-
-        $object = $this->object;
-
-        self::assertSame($expectedResult, $object->load($key, $useragent));
-    }
-
-    /**
-     * @return array[]
-     */
-    public function providerLoad(): array
-    {
-        $engine = $this->createMock(EngineInterface::class);
-
-        return [
-            [
-                'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
-                'trident',
-                $engine,
-            ],
-        ];
+        self::assertSame($result, $parserResult);
     }
 }

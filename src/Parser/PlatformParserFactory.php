@@ -9,27 +9,28 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Loader;
+namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\PlatformLoaderFactory;
+use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
-final class EngineLoaderFactory implements EngineLoaderFactoryInterface
+final class PlatformParserFactory implements PlatformParserFactoryInterface
 {
     /**
-     * @var \Psr\Log\LoggerInterface
+     * @var LoggerInterface
      */
     private $logger;
 
     /**
-     * @var \JsonClass\JsonInterface
+     * @var JsonInterface
      */
     private $jsonParser;
 
     /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
+     * @var CompanyLoaderInterface
      */
     private $companyLoader;
 
@@ -49,33 +50,13 @@ final class EngineLoaderFactory implements EngineLoaderFactoryInterface
     }
 
     /**
-     * @return EngineLoaderInterface
+     * @return PlatformParserInterface
      */
-    public function __invoke(): EngineLoaderInterface
+    public function __invoke(): PlatformParserInterface
     {
-        /** @var EngineLoaderInterface $loader */
-        static $loader = null;
-
-        if (null !== $loader) {
-            return $loader;
-        }
-
-        $dataPath = __DIR__ . '/../../data/engines';
-
-        $finder = new Finder();
-        $finder->files();
-        $finder->name('*.json');
-        $finder->ignoreDotFiles(true);
-        $finder->ignoreVCS(true);
-        $finder->ignoreUnreadableDirs();
-        $finder->in($dataPath);
-
-        $loader = new EngineLoader(
-            $this->logger,
-            new Data($finder, $this->jsonParser),
-            $this->companyLoader
+        return new PlatformParser(
+            new PlatformLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader),
+            new RulefileParser($this->jsonParser, $this->logger)
         );
-
-        return $loader;
     }
 }

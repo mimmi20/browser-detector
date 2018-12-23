@@ -13,7 +13,8 @@ namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
-use JsonClass\JsonInterface;
+use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use Symfony\Component\Finder\SplFileInfo;
 
 final class TvParser implements DeviceParserInterface
 {
@@ -23,21 +24,21 @@ final class TvParser implements DeviceParserInterface
     private $loaderFactory;
 
     /**
-     * @var \JsonClass\JsonInterface
+     * @var \BrowserDetector\Parser\Helper\RulefileParserInterface
      */
-    private $jsonParser;
+    private $fileParser;
 
-    private const GENERIC_FILE  = '/../../../data/factories/devices/tv.json';
-    private const SPECIFIC_FILE = '/../../../data/factories/devices/tv/%s.json';
+    private const GENERIC_FILE  = __DIR__ . '/../../../data/factories/devices/tv.json';
+    private const SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/tv/%s.json';
 
     /**
-     * @param \JsonClass\JsonInterface                             $jsonParser
-     * @param \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory
+     * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
+     * @param \BrowserDetector\Loader\DeviceLoaderFactoryInterface   $loaderFactory
      */
-    public function __construct(JsonInterface $jsonParser, DeviceLoaderFactoryInterface $loaderFactory)
+    public function __construct(RulefileParserInterface $fileParser, DeviceLoaderFactoryInterface $loaderFactory)
     {
         $this->loaderFactory = $loaderFactory;
-        $this->jsonParser    = $jsonParser;
+        $this->fileParser    = $fileParser;
     }
 
     /**
@@ -51,31 +52,17 @@ final class TvParser implements DeviceParserInterface
      */
     public function __invoke(string $useragent): array
     {
-        $factories = $this->jsonParser->decode(
-            (string) file_get_contents(__DIR__ . self::GENERIC_FILE),
-            true
+        $mode = $this->fileParser->parseFile(
+            new SplFileInfo(self::GENERIC_FILE, '', ''),
+            $useragent,
+            'unknown'
         );
-        $mode = $factories['generic'];
 
-        foreach (array_keys($factories['rules']) as $rule) {
-            if (preg_match($rule, $useragent)) {
-                $mode = $factories['rules'][$rule];
-                break;
-            }
-        }
-
-        $specFactories = $this->jsonParser->decode(
-            (string) file_get_contents(__DIR__ . sprintf(self::SPECIFIC_FILE, $mode)),
-            true
+        $key = $this->fileParser->parseFile(
+            new SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode), '', ''),
+            $useragent,
+            'unknown'
         );
-        $key = $specFactories['generic'];
-
-        foreach (array_keys($specFactories['rules']) as $rule) {
-            if (preg_match($rule, $useragent)) {
-                $key = $specFactories['rules'][$rule];
-                break;
-            }
-        }
 
         return $this->load($mode, $key, $useragent);
     }
