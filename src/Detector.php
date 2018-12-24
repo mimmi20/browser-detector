@@ -173,7 +173,7 @@ final class Detector implements DetectorInterface
         /* @var \UaResult\Os\OsInterface $platform */
         try {
             [$device, $platform] = $deviceParser($deviceUa);
-        } catch (NotFoundException | InvalidArgumentException $e) {
+        } catch (NotFoundException $e) {
             $this->logger->warning($e);
 
             $device   = clone $defaultDevice;
