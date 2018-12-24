@@ -25,7 +25,7 @@ use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 final class DetectorFactory
 {
     /**
-     * @var \BrowserDetector\Cache\CacheInterface
+     * @var \Psr\SimpleCache\CacheInterface
      */
     private $cache;
 
@@ -40,7 +40,7 @@ final class DetectorFactory
      */
     public function __construct(PsrCacheInterface $cache, LoggerInterface $logger)
     {
-        $this->cache  = new Cache($cache);
+        $this->cache  = $cache;
         $this->logger = $logger;
     }
 
@@ -67,7 +67,7 @@ final class DetectorFactory
             $browserParserFactory  = new BrowserParserFactory($this->logger, $jsonParser, $companyLoader, $engineParser);
             $browserParser         = $browserParserFactory();
 
-            $detector = new Detector($this->logger, $this->cache, $deviceParser, $platformParser, $browserParser, $engineParser);
+            $detector = new Detector($this->logger, new Cache($this->cache), $deviceParser, $platformParser, $browserParser, $engineParser);
         }
 
         return $detector;
