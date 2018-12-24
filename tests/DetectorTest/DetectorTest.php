@@ -41,7 +41,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUaOld(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -78,7 +79,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -87,7 +88,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -99,7 +100,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -136,7 +137,7 @@ class DetectorTest extends TestCase
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         /* @var \UaResult\Result\Result $result */
-        $result = $object->getBrowser('testagent');
+        $result = $object->getBrowser($useragent);
 
         self::assertInstanceOf(ResultInterface::class, $result);
     }
@@ -148,7 +149,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromGenericRequest(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -185,7 +187,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -194,7 +196,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -206,7 +208,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -242,7 +244,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
         $requestFactory = new GenericRequestFactory();
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
@@ -259,7 +261,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromGenericRequest2(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -296,7 +299,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -305,7 +308,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -317,7 +320,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -356,7 +359,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
         $requestFactory = new GenericRequestFactory();
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
@@ -379,7 +382,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromInvalid(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -416,7 +420,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -425,7 +429,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -437,7 +441,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -486,7 +490,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUa(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -523,7 +528,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -532,7 +537,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -544,7 +549,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -581,7 +586,7 @@ class DetectorTest extends TestCase
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         /* @var \UaResult\Result\Result $result */
-        $result = $object('testagent');
+        $result = $object($useragent);
 
         self::assertInstanceOf(ResultInterface::class, $result);
     }
@@ -593,7 +598,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromArray(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -630,7 +636,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -639,7 +645,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -651,7 +657,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -688,7 +694,7 @@ class DetectorTest extends TestCase
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         /* @var Result $result */
-        $result = $object([Constants::HEADER_HTTP_USERAGENT => 'testagent']);
+        $result = $object([Constants::HEADER_HTTP_USERAGENT => $useragent]);
 
         self::assertInstanceOf(ResultInterface::class, $result);
     }
@@ -700,7 +706,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromPsr7Message(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -740,7 +747,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -749,7 +756,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -761,7 +768,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -798,7 +805,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
@@ -815,12 +822,12 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUnknownDevice(): void
     {
-        self::markTestIncomplete();
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('debug');
         $logger
             ->expects(self::never())
@@ -850,21 +857,20 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::throwException(new NotFoundException('test')));
 
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(self::once())
-            ->method('getName')
-            ->willReturn('test-os');
+        $os->expects(self::never())
+            ->method('getName');
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -876,7 +882,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -912,7 +918,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
@@ -920,7 +926,7 @@ class DetectorTest extends TestCase
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertNull($result->getDevice()->getDeviceName());
-        self::assertSame('test-os', $result->getOs()->getName());
+        self::assertNull($result->getOs()->getName());
     }
 
     /**
@@ -930,12 +936,12 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromUnknownDeviceAndPlatform(): void
     {
-        self::markTestIncomplete();
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('debug');
         $logger
             ->expects(self::never())
@@ -944,7 +950,7 @@ class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('warning');
         $logger
             ->expects(self::never())
@@ -965,16 +971,16 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::throwException(new NotFoundException('test')));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::throwException(new NotFoundException('test')));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -986,7 +992,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -1022,7 +1028,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
@@ -1040,7 +1046,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngine(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1080,7 +1087,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -1089,7 +1096,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1104,7 +1111,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -1113,7 +1120,7 @@ class DetectorTest extends TestCase
         $engineParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($engine));
         $engineParser
             ->expects(self::never())
@@ -1142,7 +1149,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
@@ -1160,7 +1167,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngine2(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1200,7 +1208,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
@@ -1209,7 +1217,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1220,7 +1228,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -1229,7 +1237,7 @@ class DetectorTest extends TestCase
         $engineParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::throwException(new InvalidArgumentException('test')));
         $engineParser
             ->expects(self::never())
@@ -1258,7 +1266,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
@@ -1276,7 +1284,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngineIos(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1320,7 +1329,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $os = $this->createMock(OsInterface::class);
@@ -1331,7 +1340,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1342,7 +1351,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
         $engine = $this->getMockBuilder(EngineInterface::class)->getMock();
@@ -1356,7 +1365,7 @@ class DetectorTest extends TestCase
         $engineParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($engine));
 
         $engine2 = $this->getMockBuilder(EngineInterface::class)->getMock();
@@ -1366,7 +1375,7 @@ class DetectorTest extends TestCase
         $engineParser
             ->expects(self::once())
             ->method('load')
-            ->with('webkit', 'testagent')
+            ->with('webkit', $useragent)
             ->will(self::returnValue($engine2));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
@@ -1392,7 +1401,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
@@ -1411,8 +1420,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngineIosFail(): void
     {
-        self::markTestIncomplete();
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1445,7 +1454,7 @@ class DetectorTest extends TestCase
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(self::once())
+        $os->expects(self::exactly(2))
             ->method('getName')
             ->willReturn('iOS');
 
@@ -1455,7 +1464,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $os = $this->createMock(OsInterface::class);
@@ -1466,7 +1475,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1477,7 +1486,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -1489,7 +1498,7 @@ class DetectorTest extends TestCase
         $engineParser
             ->expects(self::once())
             ->method('load')
-            ->with('webkit', 'testagent')
+            ->with('webkit', $useragent)
             ->will(self::throwException(new DecodeErrorException(0, 'parsing failed', '')));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
@@ -1515,7 +1524,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
@@ -1534,8 +1543,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithoutEngineIosFail2(): void
     {
-        self::markTestIncomplete();
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1568,7 +1577,7 @@ class DetectorTest extends TestCase
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(self::once())
+        $os->expects(self::exactly(2))
             ->method('getName')
             ->willReturn('iOS');
 
@@ -1578,7 +1587,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $os = $this->createMock(OsInterface::class);
@@ -1589,7 +1598,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1600,7 +1609,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -1612,7 +1621,7 @@ class DetectorTest extends TestCase
         $engineParser
             ->expects(self::once())
             ->method('load')
-            ->with('webkit', 'testagent')
+            ->with('webkit', $useragent)
             ->will(self::throwException(new NotFoundException('something not found')));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
@@ -1638,7 +1647,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
@@ -1657,8 +1666,8 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserWithBrowserFactoryFail(): void
     {
-        self::markTestIncomplete();
-        $logger = $this->getMockBuilder(LoggerInterface::class)
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1687,11 +1696,11 @@ class DetectorTest extends TestCase
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(self::once())
+        $device->expects(self::never())
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(self::once())
+        $os->expects(self::never())
             ->method('getName')
             ->willReturn('iOS');
 
@@ -1701,7 +1710,7 @@ class DetectorTest extends TestCase
         $deviceParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
         $os = $this->createMock(OsInterface::class);
@@ -1713,7 +1722,7 @@ class DetectorTest extends TestCase
         $platformParser
             ->expects(self::never())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->will(self::returnValue($os));
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
@@ -1722,7 +1731,7 @@ class DetectorTest extends TestCase
         $browserParser
             ->expects(self::once())
             ->method('__invoke')
-            ->with('testagent')
+            ->with($useragent)
             ->willThrowException(new DecodeErrorException(0, 'parsing failed', ''));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
@@ -1733,14 +1742,14 @@ class DetectorTest extends TestCase
             ->method('__invoke');
 
         $engine2 = $this->getMockBuilder(EngineInterface::class)->getMock();
-        $engine2->expects(self::once())
+        $engine2->expects(self::never())
             ->method('getName')
             ->willReturn('webkit-test');
 
         $engineParser
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('load')
-            ->with('webkit', 'testagent')
+            ->with('webkit', $useragent)
             ->will(self::returnValue($engine2));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
@@ -1766,7 +1775,7 @@ class DetectorTest extends TestCase
         /** @var EngineParserInterface $engineParser */
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => ['testagent']]);
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /* @var Result $result */
         $result = $object($message);
