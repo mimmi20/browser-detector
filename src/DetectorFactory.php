@@ -15,7 +15,7 @@ use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Parser\BrowserParserFactory;
-use BrowserDetector\Parser\DeviceParser;
+use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\PlatformParserFactory;
 use JsonClass\Json;
@@ -60,7 +60,8 @@ final class DetectorFactory
 
             $platformParserFactory = new PlatformParserFactory($this->logger, $jsonParser, $companyLoader);
             $platformParser        = $platformParserFactory();
-            $deviceParser          = new DeviceParser($this->logger, $jsonParser, $companyLoader, $platformParser);
+            $deviceParserFactory   = new DeviceParserFactory($this->logger, $jsonParser, $companyLoader, $platformParser);
+            $deviceParser          = $deviceParserFactory();
             $engineParserFactory   = new EngineParserFactory($this->logger, $jsonParser, $companyLoader);
             $engineParser          = $engineParserFactory();
             $browserParserFactory  = new BrowserParserFactory($this->logger, $jsonParser, $companyLoader, $engineParser);

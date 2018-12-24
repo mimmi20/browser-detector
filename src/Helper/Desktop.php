@@ -13,59 +13,48 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-final class Desktop
+final class Desktop implements DesktopInterface
 {
     /**
-     * @var \Stringy\Stringy the user agent to handle
-     */
-    private $useragent;
-
-    /**
-     * Class Constructor
+     * Returns true if the give $useragent is from a desktop device
      *
      * @param \Stringy\Stringy $useragent
-     */
-    public function __construct(Stringy $useragent)
-    {
-        $this->useragent = $useragent;
-    }
-
-    /**
+     *
      * @return bool
      */
-    public function isDesktopDevice(): bool
+    public function isDesktopDevice(Stringy $useragent): bool
     {
-        if ($this->useragent->containsAll(['firefox', 'anonym'], false)) {
+        if ($useragent->containsAll(['firefox', 'anonym'], false)) {
             return true;
         }
 
-        if ($this->useragent->containsAll(['trident', 'anonym'], false)) {
+        if ($useragent->containsAll(['trident', 'anonym'], false)) {
             return true;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($this->useragent->contains('windows nt', false)
-            && $this->useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
+        if ($useragent->contains('windows nt', false)
+            && $useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
         ) {
             return true;
         }
 
-        if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:/i', (string) $this->useragent)) {
+        if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:/i', (string) $useragent)) {
             return false;
         }
 
         // windows
-        if (preg_match('/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!/i', (string) $this->useragent)) {
+        if (preg_match('/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!/i', (string) $useragent)) {
             return true;
         }
 
         // linux
-        if (preg_match('/linux|debian|ubuntu|cros|tinybrowser/i', (string) $this->useragent)) {
+        if (preg_match('/linux|debian|ubuntu|cros|tinybrowser/i', (string) $useragent)) {
             return true;
         }
 
         // macOS
-        if (preg_match('/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i', (string) $this->useragent)) {
+        if (preg_match('/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i', (string) $useragent)) {
             return true;
         }
 
@@ -118,7 +107,7 @@ final class Desktop
             'gvfs',
         ];
 
-        if ($this->useragent->containsAny($othersDesktops, false)) {
+        if ($useragent->containsAny($othersDesktops, false)) {
             return true;
         }
 

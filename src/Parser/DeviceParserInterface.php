@@ -18,11 +18,9 @@ interface DeviceParserInterface
      *
      * @param string $useragent
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return array
      */
-    public function __invoke(string $useragent);
+    public function __invoke(string $useragent): array;
 
     /**
      * @param string $company

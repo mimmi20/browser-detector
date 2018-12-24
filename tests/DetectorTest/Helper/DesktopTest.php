@@ -18,6 +18,19 @@ use Stringy\Stringy;
 class DesktopTest extends TestCase
 {
     /**
+     * @var \BrowserDetector\Helper\Desktop
+     */
+    private $object;
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        $this->object = new Desktop();
+    }
+
+    /**
      * @dataProvider providerIsDesktop
      *
      * @param string $agent
@@ -26,9 +39,7 @@ class DesktopTest extends TestCase
      */
     public function testIsDesktop(string $agent): void
     {
-        $object = new Desktop(new Stringy($agent));
-
-        self::assertTrue($object->isDesktopDevice());
+        self::assertTrue($this->object->isDesktopDevice(new Stringy($agent)));
     }
 
     /**
@@ -96,9 +107,7 @@ class DesktopTest extends TestCase
      */
     public function testIsNoDesktop(string $agent): void
     {
-        $object = new Desktop(new Stringy($agent));
-
-        self::assertFalse($object->isDesktopDevice());
+        self::assertFalse($this->object->isDesktopDevice(new Stringy($agent)));
     }
 
     /**

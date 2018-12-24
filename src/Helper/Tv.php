@@ -13,27 +13,16 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-final class Tv
+final class Tv implements TvInterface
 {
     /**
-     * @var \Stringy\Stringy the user agent to handle
-     */
-    private $useragent;
-
-    /**
-     * Class Constructor
+     * Returns true if the give $useragent is from a tv device
      *
      * @param \Stringy\Stringy $useragent
-     */
-    public function __construct(Stringy $useragent)
-    {
-        $this->useragent = $useragent;
-    }
-
-    /**
+     *
      * @return bool
      */
-    public function isTvDevice(): bool
+    public function isTvDevice(Stringy $useragent): bool
     {
         $tvDevices = [
             'boxee',
@@ -69,7 +58,7 @@ final class Tv
             'netcast',
         ];
 
-        if ($this->useragent->containsAny($tvDevices, false)) {
+        if ($useragent->containsAny($tvDevices, false)) {
             return true;
         }
 

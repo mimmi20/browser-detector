@@ -18,6 +18,19 @@ use Stringy\Stringy;
 class MobileDeviceTest extends TestCase
 {
     /**
+     * @var \BrowserDetector\Helper\MobileDevice
+     */
+    private $object;
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        $this->object = new MobileDevice();
+    }
+
+    /**
      * @dataProvider providerIsMobile
      *
      * @param string $agent
@@ -26,9 +39,7 @@ class MobileDeviceTest extends TestCase
      */
     public function testIsMobile(string $agent): void
     {
-        $object = new MobileDevice(new Stringy($agent));
-
-        self::assertTrue($object->isMobile());
+        self::assertTrue($this->object->isMobile(new Stringy($agent)));
     }
 
     /**
@@ -119,9 +130,7 @@ class MobileDeviceTest extends TestCase
      */
     public function testIsNotMobile(string $agent): void
     {
-        $object = new MobileDevice(new Stringy($agent));
-
-        self::assertFalse($object->isMobile());
+        self::assertFalse($this->object->isMobile(new Stringy($agent)));
     }
 
     /**

@@ -16,9 +16,6 @@ use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use Symfony\Component\Finder\SplFileInfo;
 
-/**
- * Browser detection class
- */
 final class DarwinParser implements DeviceParserInterface
 {
     /**
