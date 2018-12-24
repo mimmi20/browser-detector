@@ -18,6 +18,19 @@ use Stringy\Stringy;
 class TvTest extends TestCase
 {
     /**
+     * @var \BrowserDetector\Helper\Tv
+     */
+    private $object;
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        $this->object = new Tv();
+    }
+
+    /**
      * @dataProvider providerIsTv
      *
      * @param string $agent
@@ -26,9 +39,7 @@ class TvTest extends TestCase
      */
     public function testIsTv(string $agent): void
     {
-        $object = new Tv(new Stringy($agent));
-
-        self::assertTrue($object->isTvDevice());
+        self::assertTrue($this->object->isTvDevice(new Stringy($agent)));
     }
 
     /**
@@ -69,9 +80,7 @@ class TvTest extends TestCase
      */
     public function testIsNotTv(string $agent): void
     {
-        $object = new Tv(new Stringy($agent));
-
-        self::assertFalse($object->isTvDevice());
+        self::assertFalse($this->object->isTvDevice(new Stringy($agent)));
     }
 
     /**

@@ -11,67 +11,82 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Helper\Desktop;
-use BrowserDetector\Helper\MobileDevice;
-use BrowserDetector\Helper\Tv;
-use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Parser\Device\DarwinParser;
-use BrowserDetector\Parser\Device\DesktopParser;
-use BrowserDetector\Parser\Device\MobileParser;
-use BrowserDetector\Parser\Device\TvParser;
-use BrowserDetector\Parser\Helper\RulefileParser;
-use JsonClass\JsonInterface;
-use Psr\Log\LoggerInterface;
+use BrowserDetector\Helper\DesktopInterface;
+use BrowserDetector\Helper\MobileDeviceInterface;
+use BrowserDetector\Helper\TvInterface;
+use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use Stringy\Stringy;
 
 final class DeviceParser implements DeviceParserInterface
 {
     /**
-     * @var \BrowserDetector\Parser\Device\DarwinParser
+     * @var \BrowserDetector\Parser\DeviceParserInterface
      */
-    private $darwinFactory;
+    private $darwinParser;
 
     /**
-     * @var \BrowserDetector\Parser\Device\MobileParser
+     * @var \BrowserDetector\Parser\DeviceParserInterface
      */
-    private $mobileFactory;
+    private $mobileParser;
 
     /**
-     * @var \BrowserDetector\Parser\Device\TvParser
+     * @var \BrowserDetector\Parser\DeviceParserInterface
      */
-    private $tvFactory;
+    private $tvParser;
 
     /**
-     * @var \BrowserDetector\Parser\Device\DesktopParser
+     * @var \BrowserDetector\Parser\DeviceParserInterface
      */
-    private $desktopFactory;
+    private $desktopParser;
 
     /**
-     * @var DeviceLoaderFactory
+     * @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface
      */
     private $loaderFactory;
 
     /**
-     * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \JsonClass\JsonInterface                        $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface  $companyLoader
-     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     * @var \BrowserDetector\Helper\MobileDeviceInterface
+     */
+    private $mobileDevice;
+    /**
+     * @var \BrowserDetector\Helper\TvInterface
+     */
+    private $tvDevice;
+    /**
+     * @var \BrowserDetector\Helper\DesktopInterface
+     */
+    private $desktopDevice;
+
+    /**
+     * DeviceParser constructor.
+     *
+     * @param \BrowserDetector\Parser\DeviceParserInterface        $darwinParser
+     * @param \BrowserDetector\Parser\DeviceParserInterface        $mobileParser
+     * @param \BrowserDetector\Parser\DeviceParserInterface        $tvParser
+     * @param \BrowserDetector\Parser\DeviceParserInterface        $desktopParser
+     * @param \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory
+     * @param \BrowserDetector\Helper\MobileDeviceInterface        $mobileDevice
+     * @param \BrowserDetector\Helper\TvInterface                  $tvDevice
+     * @param \BrowserDetector\Helper\DesktopInterface             $desktopDevice
      */
     public function __construct(
-        LoggerInterface $logger,
-        JsonInterface $jsonParser,
-        CompanyLoaderInterface $companyLoader,
-        PlatformParserInterface $platformParser
+        DeviceParserInterface $darwinParser,
+        DeviceParserInterface $mobileParser,
+        DeviceParserInterface $tvParser,
+        DeviceParserInterface $desktopParser,
+        DeviceLoaderFactoryInterface $loaderFactory,
+        MobileDeviceInterface $mobileDevice,
+        TvInterface $tvDevice,
+        DesktopInterface $desktopDevice
     ) {
-        $this->loaderFactory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser);
-        $fileParser          = new RulefileParser($jsonParser, $logger);
-
-        $this->darwinFactory  = new DarwinParser($fileParser, $this->loaderFactory);
-        $this->mobileFactory  = new MobileParser($fileParser, $this->loaderFactory);
-        $this->tvFactory      = new TvParser($fileParser, $this->loaderFactory);
-        $this->desktopFactory = new DesktopParser($fileParser, $this->loaderFactory);
+        $this->darwinParser  = $darwinParser;
+        $this->mobileParser  = $mobileParser;
+        $this->tvParser      = $tvParser;
+        $this->desktopParser = $desktopParser;
+        $this->loaderFactory = $loaderFactory;
+        $this->mobileDevice  = $mobileDevice;
+        $this->tvDevice      = $tvDevice;
+        $this->desktopDevice = $desktopDevice;
     }
 
     /**
@@ -126,25 +141,25 @@ final class DeviceParser implements DeviceParserInterface
         if (!preg_match('/freebsd|raspbian/i', $useragent)
             && preg_match('/darwin|cfnetwork/i', $useragent)
         ) {
-            $factory = $this->darwinFactory;
+            $factory = $this->darwinParser;
 
             return $factory($useragent);
         }
 
-        if ((new MobileDevice($s))->isMobile()) {
-            $factory = $this->mobileFactory;
+        if ($this->mobileDevice->isMobile($s)) {
+            $factory = $this->mobileParser;
 
             return $factory($useragent);
         }
 
-        if ((new Tv($s))->isTvDevice()) {
-            $factory = $this->tvFactory;
+        if ($this->tvDevice->isTvDevice($s)) {
+            $factory = $this->tvParser;
 
             return $factory($useragent);
         }
 
-        if ((new Desktop($s))->isDesktopDevice()) {
-            $factory = $this->desktopFactory;
+        if ($this->desktopDevice->isDesktopDevice($s)) {
+            $factory = $this->desktopParser;
 
             return $factory($useragent);
         }

@@ -13,29 +13,16 @@ namespace BrowserDetector\Helper;
 
 use Stringy\Stringy;
 
-final class MobileDevice
+final class MobileDevice implements MobileDeviceInterface
 {
-    /**
-     * @var \Stringy\Stringy the user agent to handle
-     */
-    private $useragent;
-
-    /**
-     * Class Constructor
-     *
-     * @param \Stringy\Stringy $useragent
-     */
-    public function __construct(Stringy $useragent)
-    {
-        $this->useragent = $useragent;
-    }
-
     /**
      * Returns true if the give $useragent is from a mobile device
      *
+     * @param \Stringy\Stringy $useragent
+     *
      * @return bool
      */
-    public function isMobile(): bool
+    public function isMobile(Stringy $useragent): bool
     {
         $noMobiles = [
             'xbox',
@@ -59,21 +46,21 @@ final class MobileDevice
             'automobile',
         ];
 
-        if ($this->useragent->containsAny($noMobiles, false)) {
+        if ($useragent->containsAny($noMobiles, false)) {
             return false;
         }
 
-        if ($this->useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
+        if ($useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
             return true;
         }
 
-        if ($this->useragent->containsAll(['windows nt', 'arm;'], false)) {
+        if ($useragent->containsAll(['windows nt', 'arm;'], false)) {
             return true;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($this->useragent->contains('windows nt', false)
-            && $this->useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
+        if ($useragent->contains('windows nt', false)
+            && $useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
         ) {
             return false;
         }
@@ -207,15 +194,15 @@ final class MobileDevice
             'beyondpod',
         ];
 
-        if ($this->useragent->containsAny($mobiles, false)) {
+        if ($useragent->containsAny($mobiles, false)) {
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+WD/', (string) $this->useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+WD/', (string) $useragent)) {
             return false;
         }
 
-        if (preg_match('/UCWEB|Puffin\/[\d\.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', (string) $this->useragent)) {
+        if (preg_match('/UCWEB|Puffin\/[\d\.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', (string) $useragent)) {
             return true;
         }
 

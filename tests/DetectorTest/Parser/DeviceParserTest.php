@@ -11,479 +11,553 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser;
 
-use BrowserDetector\Loader\SpecificLoaderFactoryInterface;
-use BrowserDetector\Loader\SpecificLoaderInterface;
+use BrowserDetector\Helper\DesktopInterface;
+use BrowserDetector\Helper\MobileDeviceInterface;
+use BrowserDetector\Helper\TvInterface;
+use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
+use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\DeviceParserInterface;
-use BrowserDetector\Parser\PlatformParserInterface;
-use JsonClass\Json;
-use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
-use Psr\Log\NullLogger;
 
 class DeviceParserTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Parser\DeviceParser
-     */
-    private $object;
-
-    /**
      * @return void
      */
-    protected function setUp(): void
+    public function testInvokeUnknown(): void
     {
-        self::markTestIncomplete();
-        $logger         = $this->createMock(LoggerInterface::class);
-        $jsonParser     = $this->createMock(JsonInterface::class);
-        $companyLoader  = $this->createMock(SpecificLoaderInterface::class);
-        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $company    = 'unknown';
+        $key        = 'unknown';
+        $useragent  = '<device-test>';
+        $testResult = ['test-result'];
 
-        /* @var NullLogger $logger */
-        /* @var Json $jsonParser */
-        /* @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
-        /* @var PlatformParserInterface $platformParser */
-        $this->object = new DeviceParser($logger, $jsonParser, $companyLoader, $platformParser);
-    }
-
-    /**
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testInvokeDarwin(): void
-    {
-        self::markTestIncomplete();
-        $useragent      = 'UCBrowserHD/2.4.0.367 CFNetwork/672.1.15 Darwin/14.0.0';
-        $expectedResult = [];
-
-        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
+        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $darwinFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'darwinFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $darwinFactory);
-
-        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $mobileFactory
+        $darwinParser
             ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
+            ->method('__invoke');
 
-        $property = new \ReflectionProperty($this->object, 'mobileFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mobileFactory);
-
-        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
+        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $tvFactory
+        $mobileParser
             ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
+            ->method('__invoke');
 
-        $property = new \ReflectionProperty($this->object, 'tvFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $tvFactory);
-
-        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
+        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $desktopFactory
+        $tvParser
             ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
+            ->method('__invoke');
 
-        $property = new \ReflectionProperty($this->object, 'desktopFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $desktopFactory);
-
-        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
+        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
-        $loaderFactory
+        $desktopParser
             ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
+            ->method('__invoke');
 
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $loaderFactory);
-
-        $object = $this->object;
-
-        self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testInvokeMobile(): void
-    {
-        self::markTestIncomplete();
-        $useragent      = 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; GT-I9300 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30';
-        $expectedResult = [];
-
-        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
+        $loader = $this->getMockBuilder(DeviceLoaderInterface::class)
             ->disableOriginalConstructor()
-
-            ->getMock();
-        $darwinFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'darwinFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $darwinFactory);
-
-        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $mobileFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'mobileFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mobileFactory);
-
-        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $tvFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'tvFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $tvFactory);
-
-        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $desktopFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'desktopFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $desktopFactory);
-
-        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $loaderFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $loaderFactory);
-
-        $object = $this->object;
-
-        self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testInvokeTv(): void
-    {
-        self::markTestIncomplete();
-        $useragent      = 'Mozilla/5.0 AppleWebKit/537.30 (KHTML, like Gecko) Chromium/25.0.1349.2 HbbTV/1.1.1 (;Metz;MMS;;;) CE-HTML/1.0';
-        $expectedResult = [];
-
-        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $darwinFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'darwinFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $darwinFactory);
-
-        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $mobileFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'mobileFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mobileFactory);
-
-        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $tvFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'tvFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $tvFactory);
-
-        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $desktopFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'desktopFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $desktopFactory);
-
-        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $loaderFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $loaderFactory);
-
-        $object = $this->object;
-
-        self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testInvokeDesktop(): void
-    {
-        self::markTestIncomplete();
-        $useragent      = 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:26.0.0b2) Goanna/20150828 Gecko/20100101 AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37 PaleMoon/26.0.0b2';
-        $expectedResult = [];
-
-        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $darwinFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'darwinFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $darwinFactory);
-
-        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $mobileFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'mobileFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mobileFactory);
-
-        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $tvFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'tvFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $tvFactory);
-
-        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $desktopFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'desktopFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $desktopFactory);
-
-        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $loaderFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $loaderFactory);
-
-        $object = $this->object;
-
-        self::assertSame($expectedResult, $object($useragent));
-    }
-
-    /**
-     * @throws \ReflectionException
-     *
-     * @return void
-     */
-    public function testInvokeGeneric(): void
-    {
-        self::markTestIncomplete();
-        $useragent      = 'this is a fake ua to trigger the fallback';
-        $expectedResult = [];
-
-        $darwinFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $darwinFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'darwinFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $darwinFactory);
-
-        $mobileFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $mobileFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'mobileFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $mobileFactory);
-
-        $tvFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $tvFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'tvFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $tvFactory);
-
-        $desktopFactory = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-
-            ->getMock();
-        $desktopFactory
-            ->expects(self::never())
-            ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
-
-        $property = new \ReflectionProperty($this->object, 'desktopFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $desktopFactory);
-
-        $loader = $this->getMockBuilder(SpecificLoaderInterface::class)
-            ->disableOriginalConstructor()
-
             ->getMock();
         $loader
             ->expects(self::once())
             ->method('__invoke')
-            ->with($useragent)
-            ->willReturn($expectedResult);
+            ->with($key, $useragent)
+            ->willReturn($testResult);
 
-        $loaderFactory = $this->getMockBuilder(SpecificLoaderFactoryInterface::class)
+        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
             ->disableOriginalConstructor()
-
             ->getMock();
         $loaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with('unknown', 'unknown')
+            ->with($company)
             ->willReturn($loader);
 
-        $property = new \ReflectionProperty($this->object, 'loaderFactory');
-        $property->setAccessible(true);
-        $property->setValue($this->object, $loaderFactory);
+        $mobileDevice = $this->getMockBuilder(MobileDeviceInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileDevice
+            ->expects(self::never())
+            ->method('isMobile');
 
-        $object = $this->object;
+        $tvDevice = $this->getMockBuilder(TvInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvDevice
+            ->expects(self::never())
+            ->method('isTvDevice');
 
-        self::assertSame($expectedResult, $object($useragent));
+        $desktopDevice = $this->getMockBuilder(DesktopInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopDevice
+            ->expects(self::never())
+            ->method('isDesktopDevice');
+
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
+        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
+        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
+        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $result = $object($useragent);
+
+        self::assertSame($testResult, $result);
+    }
+
+    /**
+     * @return void
+     */
+    public function testInvokeDarwin(): void
+    {
+        $useragent  = 'test-darwin';
+        $testResult = ['test-result'];
+
+        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $darwinParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->willReturn($testResult);
+
+        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $loader = $this->getMockBuilder(DeviceLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loader
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loaderFactory
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $mobileDevice = $this->getMockBuilder(MobileDeviceInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileDevice
+            ->expects(self::never())
+            ->method('isMobile');
+
+        $tvDevice = $this->getMockBuilder(TvInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvDevice
+            ->expects(self::never())
+            ->method('isTvDevice');
+
+        $desktopDevice = $this->getMockBuilder(DesktopInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopDevice
+            ->expects(self::never())
+            ->method('isDesktopDevice');
+
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
+        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
+        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
+        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $result = $object($useragent);
+
+        self::assertSame($testResult, $result);
+    }
+
+    /**
+     * @return void
+     */
+    public function testInvokeMobile(): void
+    {
+        $useragent  = 'test-device';
+        $testResult = ['test-result'];
+
+        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $darwinParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->willReturn($testResult);
+
+        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $loader = $this->getMockBuilder(DeviceLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loader
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loaderFactory
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $mobileDevice = $this->getMockBuilder(MobileDeviceInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileDevice
+            ->expects(self::once())
+            ->method('isMobile')
+            ->willReturn(true);
+
+        $tvDevice = $this->getMockBuilder(TvInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvDevice
+            ->expects(self::never())
+            ->method('isTvDevice');
+
+        $desktopDevice = $this->getMockBuilder(DesktopInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopDevice
+            ->expects(self::never())
+            ->method('isDesktopDevice');
+
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
+        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
+        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
+        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $result = $object($useragent);
+
+        self::assertSame($testResult, $result);
+    }
+
+    /**
+     * @return void
+     */
+    public function testInvokeTv(): void
+    {
+        $useragent  = 'test-device';
+        $testResult = ['test-result'];
+
+        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $darwinParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->willReturn($testResult);
+
+        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $loader = $this->getMockBuilder(DeviceLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loader
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loaderFactory
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $mobileDevice = $this->getMockBuilder(MobileDeviceInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileDevice
+            ->expects(self::once())
+            ->method('isMobile')
+            ->willReturn(false);
+
+        $tvDevice = $this->getMockBuilder(TvInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvDevice
+            ->expects(self::once())
+            ->method('isTvDevice')
+            ->willReturn(true);
+
+        $desktopDevice = $this->getMockBuilder(DesktopInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopDevice
+            ->expects(self::never())
+            ->method('isDesktopDevice');
+
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
+        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
+        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
+        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $result = $object($useragent);
+
+        self::assertSame($testResult, $result);
+    }
+
+    /**
+     * @return void
+     */
+    public function testInvokeDesktop(): void
+    {
+        $useragent  = 'test-device';
+        $testResult = ['test-result'];
+
+        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $darwinParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->willReturn($testResult);
+
+        $loader = $this->getMockBuilder(DeviceLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loader
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loaderFactory
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $mobileDevice = $this->getMockBuilder(MobileDeviceInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileDevice
+            ->expects(self::once())
+            ->method('isMobile')
+            ->willReturn(false);
+
+        $tvDevice = $this->getMockBuilder(TvInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvDevice
+            ->expects(self::once())
+            ->method('isTvDevice')
+            ->willReturn(false);
+
+        $desktopDevice = $this->getMockBuilder(DesktopInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopDevice
+            ->expects(self::once())
+            ->method('isDesktopDevice')
+            ->willReturn(true);
+
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
+        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
+        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
+        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $result = $object($useragent);
+
+        self::assertSame($testResult, $result);
+    }
+
+    /**
+     * @return void
+     */
+    public function testInvokeFallback(): void
+    {
+        $company    = 'unknown';
+        $key        = 'unknown';
+        $useragent  = 'test-device';
+        $testResult = ['test-result'];
+
+        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $darwinParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopParser
+            ->expects(self::never())
+            ->method('__invoke');
+
+        $loader = $this->getMockBuilder(DeviceLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loader
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($key, $useragent)
+            ->willReturn($testResult);
+
+        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loaderFactory
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($company)
+            ->willReturn($loader);
+
+        $mobileDevice = $this->getMockBuilder(MobileDeviceInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $mobileDevice
+            ->expects(self::once())
+            ->method('isMobile')
+            ->willReturn(false);
+
+        $tvDevice = $this->getMockBuilder(TvInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $tvDevice
+            ->expects(self::once())
+            ->method('isTvDevice')
+            ->willReturn(false);
+
+        $desktopDevice = $this->getMockBuilder(DesktopInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $desktopDevice
+            ->expects(self::once())
+            ->method('isDesktopDevice')
+            ->willReturn(false);
+
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
+        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
+        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
+        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $result = $object($useragent);
+
+        self::assertSame($testResult, $result);
     }
 }

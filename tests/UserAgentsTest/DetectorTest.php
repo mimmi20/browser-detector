@@ -15,7 +15,7 @@ use BrowserDetector\Cache\Cache;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Parser\BrowserParserFactory;
-use BrowserDetector\Parser\DeviceParser;
+use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\PlatformParserFactory;
 use ExceptionalJSON\DecodeErrorException;
@@ -85,7 +85,8 @@ class DetectorTest extends TestCase
 
         $platformParserFactory = new PlatformParserFactory($logger, $jsonParser, $companyLoader);
         $platformParser        = $platformParserFactory();
-        $deviceParser          = new DeviceParser($logger, $jsonParser, $companyLoader, $platformParser);
+        $deviceParserFactory   = new DeviceParserFactory($logger, $jsonParser, $companyLoader, $platformParser);
+        $deviceParser          = $deviceParserFactory();
         $engineParserFactory   = new EngineParserFactory($logger, $jsonParser, $companyLoader);
         $engineParser          = $engineParserFactory();
         $browserParserFactory  = new BrowserParserFactory($logger, $jsonParser, $companyLoader, $engineParser);
