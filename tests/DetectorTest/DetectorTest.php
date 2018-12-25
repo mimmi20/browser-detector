@@ -1785,4 +1785,245 @@ class DetectorTest extends TestCase
         self::assertInstanceOf(BrowserInterface::class, $result->getBrowser());
         self::assertNull($result->getBrowser()->getName());
     }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testGetDeviceWithoutPlatform(): void
+    {
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::exactly(3))
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+        $os = $this->createMock(OsInterface::class);
+
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $deviceParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->will(self::returnValue([$device, null]));
+
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $platformParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->will(self::returnValue($os));
+
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
+        $engine->expects(self::once())
+            ->method('getName')
+            ->willReturn('test-engine');
+
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $browserParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->will(self::returnValue([$browser, null]));
+
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $engineParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->will(self::returnValue($engine));
+        $engineParser
+            ->expects(self::never())
+            ->method('load');
+
+        $cache = $this->getMockBuilder(CacheInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
+        /** @var \Psr\Log\LoggerInterface $logger */
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
+
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+
+        /* @var Result $result */
+        $result = $object($message);
+
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertSame('test-engine', $result->getEngine()->getName());
+    }
+
+    /**
+     * @throws \Psr\SimpleCache\InvalidArgumentException
+     *
+     * @return void
+     */
+    public function testGetDeviceWithoutPlatformAndError(): void
+    {
+        $useragent = 'testagent';
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::exactly(3))
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::once())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $deviceParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->will(self::returnValue([$device, null]));
+
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $platformParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->willThrowException(new NotFoundException('platform not found'));
+
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
+        $engine->expects(self::once())
+            ->method('getName')
+            ->willReturn('test-engine');
+
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $browserParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->will(self::returnValue([$browser, null]));
+
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $engineParser
+            ->expects(self::once())
+            ->method('__invoke')
+            ->with($useragent)
+            ->will(self::returnValue($engine));
+        $engineParser
+            ->expects(self::never())
+            ->method('load');
+
+        $cache = $this->getMockBuilder(CacheInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
+        /** @var \Psr\Log\LoggerInterface $logger */
+        /** @var CacheInterface $cache */
+        /** @var DeviceParserInterface $deviceParser */
+        /** @var PlatformParserInterface $platformParser */
+        /** @var BrowserParserInterface $browserParser */
+        /** @var EngineParserInterface $engineParser */
+        $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
+
+        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+
+        /* @var Result $result */
+        $result = $object($message);
+
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertSame('test-engine', $result->getEngine()->getName());
+    }
 }
