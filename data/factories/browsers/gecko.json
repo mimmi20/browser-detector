@@ -55,6 +55,7 @@
     "/flock/i": "flock",
     "/epiphany/i": "epiphany",
     "/mobicip/i": "mobicip",
+    "/mozilla\\/5\\.0 \\(windows; rv:.*\\) gecko\\/.* firefox\\/.*/i": "thumbnail.ws bot",
     "/firefox|minefield|shiretoko|bonecho|namoroka/i": "firefox",
     "/xml sitemaps generator/i": "xml sitemaps generator",
     "/webthumb/i": "webthumb",

@@ -1289,7 +1289,7 @@ class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('debug');
         $logger
             ->expects(self::never())
@@ -1425,7 +1425,7 @@ class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('debug');
         $logger
             ->expects(self::never())
@@ -1548,7 +1548,7 @@ class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('debug');
         $logger
             ->expects(self::never())
@@ -1700,7 +1700,7 @@ class DetectorTest extends TestCase
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(self::never())
+        $os->expects(self::once())
             ->method('getName')
             ->willReturn('iOS');
 
@@ -1747,7 +1747,7 @@ class DetectorTest extends TestCase
             ->willReturn('webkit-test');
 
         $engineParser
-            ->expects(self::never())
+            ->expects(self::once())
             ->method('load')
             ->with('webkit', $useragent)
             ->will(self::returnValue($engine2));

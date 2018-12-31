@@ -6170,7 +6170,7 @@
       "connections": []
     },
     "browser": {
-      "name": "Google Assess",
+      "name": "Google DMCA Takedown Tool Bot",
       "modus": null,
       "version": "0.0.0",
       "manufacturer": "Google",
@@ -6182,6 +6182,100 @@
       "marketingName": null,
       "version": "0.0.0",
       "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; FTJ152B Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 Line/6.4.1"
+    },
+    "device": {
+      "deviceName": "FTJ152B",
+      "marketingName": "priori 3s",
+      "manufacturer": "Freetel",
+      "brand": "Freetel",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": "HD/WXGA",
+        "size": null
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Line Browser",
+      "modus": null,
+      "version": "6.4.1",
+      "manufacturer": "LINE",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2652.87 Elements Browser/1.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": "unknown",
+        "size": null
+      },
+      "dualOrientation": false,
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Elements Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "ElementSoftware",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
       "bits": 32
     },
     "engine": {

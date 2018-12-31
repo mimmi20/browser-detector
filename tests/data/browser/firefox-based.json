@@ -3617,5 +3617,52 @@
       "version": "52.9.0",
       "manufacturer": "MozillaFoundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; rv:55.0) Gecko/20100101 Firefox/55.0"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "type": "unknown",
+        "size": null
+      },
+      "dualOrientation": false,
+      "type": "desktop",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "thumbnail.ws Bot",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "thumbnail.ws",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]

@@ -56,6 +56,7 @@ final class Tv implements TvInterface
             'metz',
             'omi/',
             'netcast',
+            'netgem',
         ];
 
         if ($useragent->containsAny($tvDevices, false)) {

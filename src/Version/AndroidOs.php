@@ -38,6 +38,7 @@ final class AndroidOs implements VersionDetectorInterface
             'andr[0o]id\/',
             'andr[0o]id',
             'adr ',
+            '\(os: ',
         ];
 
         $detectedVersion = (new VersionFactory())->detectVersion($useragent, $search);

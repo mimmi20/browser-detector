@@ -222,26 +222,28 @@ final class Detector implements DetectorInterface
             $engine  = clone $defaultEngine;
         }
 
-        if (null === $engine) {
+        if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'])) {
+            try {
+                $engine = $this->engineParser->load('webkit', $browserUa);
+            } catch (DecodeErrorException $e) {
+                $this->logger->error($e);
+
+                $engine = clone $defaultEngine;
+            } catch (NotFoundException $e) {
+                $this->logger->warning($e);
+
+                $engine = clone $defaultEngine;
+            }
+        } elseif (null === $engine) {
             $this->logger->debug('engine not detected from browser');
             $engine = clone $defaultEngine;
 
-            if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'])) {
-                try {
-                    $engine = $this->engineParser->load('webkit', $browserUa);
-                } catch (DecodeErrorException $e) {
-                    $this->logger->error($e);
-                } catch (NotFoundException $e) {
-                    $this->logger->warning($e);
-                }
-            } else {
-                $engineParser = $this->engineParser;
+            $engineParser = $this->engineParser;
 
-                try {
-                    $engine = $engineParser($browserUa);
-                } catch (InvalidArgumentException $e) {
-                    $this->logger->error($e);
-                }
+            try {
+                $engine = $engineParser($browserUa);
+            } catch (InvalidArgumentException $e) {
+                $this->logger->error($e);
             }
         }
 

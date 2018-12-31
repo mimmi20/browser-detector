@@ -11,7 +11,10 @@
     beStrictAboutTestsThatDoNotTestAnything="true"
     beStrictAboutTodoAnnotatedTests="true"
     failOnWarning="true"
+    failOnRisky="true"
+    verbose="false"
     bootstrap="../vendor/autoload.php"
+    enforceTimeLimit="false"
     >
     <php>
         <ini name="error_reporting" value="-1"/>
