@@ -39,7 +39,7 @@ final class Desktop implements DesktopInterface
             return true;
         }
 
-        if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:/i', (string) $useragent)) {
+        if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem/i', (string) $useragent)) {
             return false;
         }
 

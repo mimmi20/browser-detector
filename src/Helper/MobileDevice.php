@@ -44,6 +44,7 @@ final class MobileDevice implements MobileDeviceInterface
             'bravia',
             'tablet pc 2.0',
             'automobile',
+            'netgem',
         ];
 
         if ($useragent->containsAny($noMobiles, false)) {

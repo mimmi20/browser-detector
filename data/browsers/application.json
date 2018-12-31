@@ -205,7 +205,7 @@
         "BB_Work_Connect"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "billigfluegefinal app": {
     "name": "billigFluegeFinal App",
@@ -232,6 +232,20 @@
       "class": "VersionFactory",
       "search": [
         "BingWeb"
+      ]
+    },
+    "engine": "blink"
+  },
+  "booking.com app": {
+    "name": "Booking.com App",
+    "manufacturer": "Booking.com",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Booking.com Android App "
       ]
     },
     "engine": "blink"
@@ -1070,6 +1084,20 @@
     },
     "engine": "webkit"
   },
+  "rddocuments app": {
+    "name": "RDDocuments App",
+    "manufacturer": "unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RDDocuments"
+      ]
+    },
+    "engine": "webkit"
+  },
   "readability": {
     "name": "Readability",
     "manufacturer": "SfxEntertainment",
@@ -1179,7 +1207,7 @@
         "Schoolwires"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "second live commerce client": {
     "name": "Second Life Commerce Client",
@@ -1556,7 +1584,7 @@
         "WorxWebAppStore"
       ]
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "xing app": {
     "name": "XING App",

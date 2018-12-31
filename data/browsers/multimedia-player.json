@@ -13,6 +13,20 @@
     },
     "engine": "unknown"
   },
+  "acast podcast app": {
+    "name": "Acast Podcast App",
+    "manufacturer": "Acast",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Acast"
+      ]
+    },
+    "engine": "blink"
+  },
   "coremedia": {
     "name": "CoreMedia",
     "manufacturer": "Apple",
@@ -120,6 +134,18 @@
       "search": [
         "MathPlayer"
       ]
+    },
+    "engine": "unknown"
+  },
+  "netgem set top box": {
+    "name": "Netgem Set Top Box",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },

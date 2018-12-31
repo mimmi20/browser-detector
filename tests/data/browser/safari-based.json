@@ -1547,9 +1547,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "name": "WebKit",
+      "version": "536.26.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3429,9 +3429,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "name": "WebKit",
+      "version": "534.46.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -3711,9 +3711,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -4087,9 +4087,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "name": "WebKit",
+      "version": "532.9.0",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -7048,9 +7048,9 @@
       "bits": 64
     },
     "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "name": "WebKit",
+      "version": "711.3.18",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -7426,9 +7426,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Blink",
+      "name": "WebKit",
       "version": "602.3.12",
-      "manufacturer": "Google"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -8468,9 +8468,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -9273,9 +9273,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "name": "WebKit",
+      "version": "811.5.4",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -9367,9 +9367,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "name": "WebKit",
+      "version": "811.5.4",
+      "manufacturer": "Apple"
     }
   },
   {
@@ -9414,9 +9414,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Blink",
+      "name": "WebKit",
       "version": "603.2.4",
-      "manufacturer": "Google"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -10262,9 +10262,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Blink",
+      "name": "WebKit",
       "version": "602.1.50",
-      "manufacturer": "Google"
+      "manufacturer": "Apple"
     }
   },
   {
@@ -11674,6 +11674,157 @@
     "engine": {
       "name": "WebKit",
       "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A372 Safari Line/7.12.0"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": "HVGA",
+        "size": null
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Line Browser",
+      "modus": null,
+      "version": "7.12.0",
+      "manufacturer": "LINE",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.4 Mobile/15F79 Safari/604.1 RDDocuments/6.7.1.567"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "display": {
+        "width": 320,
+        "height": 480,
+        "touch": true,
+        "type": "HVGA",
+        "size": null
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "RDDocuments App",
+      "modus": null,
+      "version": "6.7.1.567",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.4.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Acast/1.46.0 (CarPlay; iOS 12.0.0, iPhone10,3)"
+    },
+    "device": {
+      "deviceName": "A1865, A1902",
+      "marketingName": "iPhone X",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "display": {
+        "width": 1125,
+        "height": 2436,
+        "touch": true,
+        "type": "Custom 1125x2436",
+        "size": null
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [
+          "USA",
+          "China",
+          "Japan"
+        ],
+        "vendors": [
+          "Verizon",
+          "Sprint"
+        ]
+      },
+      "connections": [
+        "WCDMA",
+        "CDMA"
+      ]
+    },
+    "browser": {
+      "name": "Acast Podcast App",
+      "modus": null,
+      "version": "1.46.0",
+      "manufacturer": "Acast",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.0.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
       "manufacturer": "Apple"
     }
   }

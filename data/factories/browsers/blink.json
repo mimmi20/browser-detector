@@ -61,6 +61,7 @@
     "/refindbot/i": "refindbot",
     "/instagram/i": "instagram app",
     "/quickbrowser/i": "quick browser",
+    "/line\\//i": "line browser",
     "/chrome.*version|version.*chrome/i": "android webview",
     "/ cent\\//i": "cent",
     "/mobileiron/i": "mobile iron",
@@ -126,6 +127,7 @@
     "/lg browser/i": "lg browser",
     "/qtwebengine/i": "qtwebengine",
     "/zumbot/i": "zumbot",
+    "/elements browser/i": "elements browser",
     "/dragon\\/|chrome\\/\\d+\\.[1-9]\\./i": "dragon",
     "/chr[o0]me\\//i": "chrome",
     "/chromeframe/i": "internet explorer with chromeframe"

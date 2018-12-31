@@ -3071,7 +3071,7 @@
     "engine": null
   },
   "google assess": {
-    "name": "Google Assess",
+    "name": "Google DMCA Takedown Tool Bot",
     "manufacturer": "Google",
     "pdfSupport": true,
     "rssSupport": false,
@@ -8369,6 +8369,18 @@
       "search": [
         "ThumbnailAgent"
       ]
+    },
+    "engine": "unknown"
+  },
+  "thumbnail.ws bot": {
+    "name": "thumbnail.ws Bot",
+    "manufacturer": "thumbnail.ws",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },

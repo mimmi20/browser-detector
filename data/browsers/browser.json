@@ -522,7 +522,7 @@
       "class": null,
       "search": null
     },
-    "engine": "unknown"
+    "engine": "webkit"
   },
   "camino": {
     "name": "Camino",
@@ -999,6 +999,20 @@
       ]
     },
     "engine": "webkit"
+  },
+  "elements browser": {
+    "name": "Elements Browser",
+    "manufacturer": "ElementSoftware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Elements Browser"
+      ]
+    },
+    "engine": "blink"
   },
   "elinks": {
     "name": "ELinks",
@@ -1886,6 +1900,20 @@
       "class": "VersionFactory",
       "search": [
         "LieBaoFast"
+      ]
+    },
+    "engine": null
+  },
+  "line browser": {
+    "name": "Line Browser",
+    "manufacturer": "LINE",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Line"
       ]
     },
     "engine": null

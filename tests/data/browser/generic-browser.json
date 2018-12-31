@@ -31682,5 +31682,101 @@
       "version": "902.2.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Booking.com Android App 16.0.0.5723278 (OS: 8.1.0; Type: tablet; AppStore: google; Brand: samsung; Model: SM-T590;)"
+    },
+    "device": {
+      "deviceName": "SM-T590",
+      "marketingName": "Galaxy Tab A (10.5)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "type": "WUXGA",
+        "size": null
+      },
+      "dualOrientation": true,
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Booking.com App",
+      "modus": null,
+      "version": "16.0.0.5723278",
+      "manufacturer": "Booking.com",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "0.0.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Acast/1.25.2 (Phone; Android 8.0.2; OnePlus 5.0)"
+    },
+    "device": {
+      "deviceName": "A5000",
+      "marketingName": "5",
+      "manufacturer": "Oneplus",
+      "brand": "Oneplus",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": "FHD",
+        "size": null
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Acast Podcast App",
+      "modus": null,
+      "version": "1.25.2",
+      "manufacturer": "Acast",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "0.0.0",
+      "manufacturer": "Google"
+    }
   }
 ]
