@@ -50,7 +50,7 @@ jobs:
   include:
     - php: nightly
       env: COMPOSER_FLAGS="--ignore-platform-reqs"
-      
+
     - stage: test with coverage
       php: 7.1
       env:
@@ -79,14 +79,14 @@ jobs:
         - TEST=phpcs
         - COMPOSER_FLAGS=""
       script: vendor/bin/phpcs --colors
-      
+
     - stage: static code analysis
       php: 7.1
       env:
         - TEST=php-cs-fixer
         - COMPOSER_FLAGS=""
       script: vendor/bin/php-cs-fixer fix --dry-run -vv
-      
+
     - stage: static code analysis
       php: 7.1
       env:
