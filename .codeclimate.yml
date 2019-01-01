@@ -49,5 +49,5 @@ plugins:
       standard: "PSR2"
       ignore_warnings: true
 exclude_patterns:
-- "tests/"
-- "vendor/"
+  - "tests/"
+  - "vendor/"
