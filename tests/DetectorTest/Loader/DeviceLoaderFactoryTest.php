@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2019, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -27,6 +27,8 @@ class DeviceLoaderFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
+        $company = 'test-company';
+
         $logger     = $this->createMock(LoggerInterface::class);
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
@@ -73,7 +75,7 @@ class DeviceLoaderFactoryTest extends TestCase
         $finder
             ->expects(self::once())
             ->method('in')
-            ->with('/home/developer/projects/BrowserDetector/src/Loader/../../data/devices/');
+            ->with(DeviceLoaderFactory::DATA_PATH . $company);
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \JsonClass\JsonInterface $jsonParser */
@@ -81,11 +83,11 @@ class DeviceLoaderFactoryTest extends TestCase
         /** @var \BrowserDetector\Parser\PlatformParserInterface $platformParser */
         /** @var \Symfony\Component\Finder\Finder $finder */
         $factory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser, $finder);
-        $object  = $factory();
+        $object  = $factory($company);
 
         self::assertInstanceOf(DeviceLoaderInterface::class, $object);
 
-        $objectTwo = $factory();
+        $objectTwo = $factory($company);
 
         self::assertInstanceOf(DeviceLoaderInterface::class, $objectTwo);
         self::assertSame($objectTwo, $object);
