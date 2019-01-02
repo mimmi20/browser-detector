@@ -40,6 +40,28 @@ class CompanyLoaderFactoryTest extends TestCase
             ->expects(self::any())
             ->method('getIterator')
             ->willReturn($iterator);
+        $finder
+            ->expects(self::any())
+            ->method('files');
+        $finder
+            ->expects(self::any())
+            ->method('name')
+            ->with('*.json');
+        $finder
+            ->expects(self::any())
+            ->method('ignoreDotFiles')
+            ->with(true);
+        $finder
+            ->expects(self::any())
+            ->method('ignoreVCS')
+            ->with(true);
+        $finder
+            ->expects(self::any())
+            ->method('ignoreUnreadableDirs');
+        $finder
+            ->expects(self::any())
+            ->method('in')
+            ->with('/home/developer/projects/BrowserDetector/src/Loader/../../data/companies');
 
         /** @var \JsonClass\JsonInterface $jsonParser */
         /** @var \Symfony\Component\Finder\Finder $finder */
