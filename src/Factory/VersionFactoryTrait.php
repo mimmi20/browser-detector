@@ -45,7 +45,7 @@ trait VersionFactoryTrait
         $value = $data['version']->value ?? null;
 
         if (null !== $value) {
-            return $this->versionFactory->set($value);
+            return $this->versionFactory->set((string) $value);
         }
 
         $className = $data['version']->class ?? null;
