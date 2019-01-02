@@ -40,21 +40,29 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
     private $companyLoader;
 
     /**
+     * @var \Symfony\Component\Finder\Finder
+     */
+    private $finder;
+
+    /**
      * @param \Psr\Log\LoggerInterface                        $logger
      * @param \JsonClass\JsonInterface                        $jsonParser
      * @param \BrowserDetector\Loader\CompanyLoaderInterface  $companyLoader
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
+     * @param \Symfony\Component\Finder\Finder                $finder
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader,
-        PlatformParserInterface $platformParser
+        PlatformParserInterface $platformParser,
+        Finder $finder
     ) {
         $this->logger         = $logger;
         $this->jsonParser     = $jsonParser;
         $this->companyLoader  = $companyLoader;
         $this->platformParser = $platformParser;
+        $this->finder         = $finder;
     }
 
     /**
@@ -73,17 +81,16 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 
         $dataPath = __DIR__ . '/../../data/devices/' . $company;
 
-        $finder = new Finder();
-        $finder->files();
-        $finder->name('*.json');
-        $finder->ignoreDotFiles(true);
-        $finder->ignoreVCS(true);
-        $finder->ignoreUnreadableDirs();
-        $finder->in($dataPath);
+        $this->finder->files();
+        $this->finder->name('*.json');
+        $this->finder->ignoreDotFiles(true);
+        $this->finder->ignoreVCS(true);
+        $this->finder->ignoreUnreadableDirs();
+        $this->finder->in($dataPath);
 
         $loader[$company] = new DeviceLoader(
             $this->logger,
-            new Data($finder, $this->jsonParser),
+            new Data($this->finder, $this->jsonParser),
             $this->companyLoader,
             $this->platformParser
         );

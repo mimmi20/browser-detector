@@ -15,6 +15,7 @@ use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\Finder\Finder;
 
 class CompanyLoaderFactoryTest extends TestCase
 {
@@ -31,8 +32,18 @@ class CompanyLoaderFactoryTest extends TestCase
             ->method('decode')
             ->willReturn([]);
 
+        $iterator = $this->createMock(\Iterator::class);
+        $finder   = $this->getMockBuilder(Finder::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $finder
+            ->expects(self::any())
+            ->method('getIterator')
+            ->willReturn($iterator);
+
         /** @var \JsonClass\JsonInterface $jsonParser */
-        $factory = new CompanyLoaderFactory($jsonParser);
+        /** @var \Symfony\Component\Finder\Finder $finder */
+        $factory = new CompanyLoaderFactory($jsonParser, $finder);
         $object  = $factory();
 
         self::assertInstanceOf(CompanyLoaderInterface::class, $object);

@@ -227,7 +227,7 @@ class BrowserFactoryTest extends TestCase
             ->with('0')
             ->willReturn($version);
 
-        $typeName = 'unknown-type';
+        $typeName = 1;
         $type     = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -237,7 +237,7 @@ class BrowserFactoryTest extends TestCase
         $typeLoader
             ->expects(self::once())
             ->method('load')
-            ->with($typeName)
+            ->with('1')
             ->willReturn($type);
 
         /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */

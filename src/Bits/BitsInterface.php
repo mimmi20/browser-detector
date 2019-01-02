@@ -14,9 +14,9 @@ namespace BrowserDetector\Bits;
 interface BitsInterface
 {
     /**
-     * @throws \UnexpectedValueException
+     * @param string $useragent
      *
-     * @return int
+     * @return int|null
      */
-    public function getBits(): int;
+    public function getBits(string $useragent): ?int;
 }

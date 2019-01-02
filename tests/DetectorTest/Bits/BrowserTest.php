@@ -17,6 +17,19 @@ use PHPUnit\Framework\TestCase;
 final class BrowserTest extends TestCase
 {
     /**
+     * @var \BrowserDetector\Bits\Browser
+     */
+    private $object;
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        $this->object = new Browser();
+    }
+
+    /**
      * @dataProvider providerGetBits
      *
      * @param string $useragent
@@ -26,12 +39,10 @@ final class BrowserTest extends TestCase
      */
     public function testGetBits(string $useragent, int $expected): void
     {
-        $object = new Browser($useragent);
-
-        $result = $object->getBits();
+        $result = $this->object->getBits($useragent);
         self::assertSame($expected, $result);
 
-        $secondResult = $object->getBits();
+        $secondResult = $this->object->getBits($useragent);
         self::assertSame($expected, $secondResult);
         self::assertSame($result, $secondResult);
     }

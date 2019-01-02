@@ -17,6 +17,7 @@ use BrowserDetector\Loader\EngineLoaderInterface;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\Finder\Finder;
 
 class EngineLoaderFactoryTest extends TestCase
 {
@@ -38,10 +39,20 @@ class EngineLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
+        $iterator = $this->createMock(\Iterator::class);
+        $finder   = $this->getMockBuilder(Finder::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $finder
+            ->expects(self::once())
+            ->method('getIterator')
+            ->willReturn($iterator);
+
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \JsonClass\JsonInterface $jsonParser */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        $factory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader);
+        /** @var \Symfony\Component\Finder\Finder $finder */
+        $factory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader, $finder);
         $object  = $factory();
 
         self::assertInstanceOf(EngineLoaderInterface::class, $object);

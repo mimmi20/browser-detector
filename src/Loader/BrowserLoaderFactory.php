@@ -40,21 +40,29 @@ final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
     private $companyLoader;
 
     /**
+     * @var \Symfony\Component\Finder\Finder
+     */
+    private $finder;
+
+    /**
      * @param \Psr\Log\LoggerInterface                       $logger
      * @param \JsonClass\JsonInterface                       $jsonParser
      * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
      * @param \BrowserDetector\Parser\EngineParserInterface  $engineParser
+     * @param \Symfony\Component\Finder\Finder               $finder
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader,
-        EngineParserInterface $engineParser
+        EngineParserInterface $engineParser,
+        Finder $finder
     ) {
         $this->logger        = $logger;
         $this->jsonParser    = $jsonParser;
         $this->companyLoader = $companyLoader;
         $this->engineParser  = $engineParser;
+        $this->finder        = $finder;
     }
 
     /**
@@ -71,17 +79,16 @@ final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
 
         $dataPath = __DIR__ . '/../../data/browsers';
 
-        $finder = new Finder();
-        $finder->files();
-        $finder->name('*.json');
-        $finder->ignoreDotFiles(true);
-        $finder->ignoreVCS(true);
-        $finder->ignoreUnreadableDirs();
-        $finder->in($dataPath);
+        $this->finder->files();
+        $this->finder->name('*.json');
+        $this->finder->ignoreDotFiles(true);
+        $this->finder->ignoreVCS(true);
+        $this->finder->ignoreUnreadableDirs();
+        $this->finder->in($dataPath);
 
         $loader = new BrowserLoader(
             $this->logger,
-            new Data($finder, $this->jsonParser),
+            new Data($this->finder, $this->jsonParser),
             $this->companyLoader,
             $this->engineParser
         );

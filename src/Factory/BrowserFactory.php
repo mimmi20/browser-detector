@@ -60,7 +60,7 @@ final class BrowserFactory
     {
         $name  = array_key_exists('name', $data) ? $data['name'] : null;
         $modus = array_key_exists('modus', $data) ? $data['modus'] : null;
-        $bits  = (new \BrowserDetector\Bits\Browser($useragent))->getBits();
+        $bits  = (new \BrowserDetector\Bits\Browser())->getBits($useragent);
 
         $type = new Unknown();
         if (array_key_exists('type', $data)) {

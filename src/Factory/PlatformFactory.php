@@ -49,7 +49,7 @@ final class PlatformFactory
     {
         $name          = array_key_exists('name', $data) ? $data['name'] : null;
         $marketingName = array_key_exists('marketingName', $data) ? $data['marketingName'] : null;
-        $bits          = (new \BrowserDetector\Bits\Os($useragent))->getBits();
+        $bits          = (new \BrowserDetector\Bits\Os())->getBits($useragent);
 
         $version      = $this->getVersion($data, $useragent);
         $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');

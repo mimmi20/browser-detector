@@ -6,9 +6,11 @@
     ]
   },
   "phpUnit": {
-    "configDir": "."
+    "configDir": ".",
+    "customPath": "vendor/bin/phpunit"
   },
   "logs": {
-    "text": "infection-log.txt"
+    "text": "infection-log.log",
+    "debug": "infection-debug.log"
   }
 }

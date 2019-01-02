@@ -201,7 +201,7 @@ final class Detector implements DetectorInterface
             new Company('Unknown', null, null),
             new Version('0'),
             new \UaBrowserType\Unknown(),
-            0,
+            null,
             null
         );
 
