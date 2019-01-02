@@ -64,8 +64,7 @@ class DataTest extends TestCase
             ->getMock();
         $finder
             ->expects(self::never())
-            ->method('in')
-            ->will(self::returnSelf());
+            ->method('in');
         $finder
             ->expects(self::once())
             ->method('getIterator')
@@ -78,7 +77,7 @@ class DataTest extends TestCase
         $jsonParser
             ->expects(self::once())
             ->method('decode')
-            ->with('{"key": "value"}')
+            ->with('{"key": "value"}', false, 512, 0)
             ->will(self::throwException(new DecodeErrorException(0, 'error', '')));
 
         /** @var Finder $finder */
@@ -87,6 +86,7 @@ class DataTest extends TestCase
 
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage('file "" contains invalid json');
+        $this->expectExceptionCode(0);
         $object();
     }
 
@@ -101,7 +101,7 @@ class DataTest extends TestCase
         $file
             ->expects(self::exactly(2))
             ->method('getContents')
-            ->will(self::returnValue('{"key": "value"}'));
+            ->willReturnOnConsecutiveCalls('{"key": "value"}', '{"key2": "value2"}');
 
         $iterator = $this->getMockBuilder(\ArrayIterator::class)
             ->disableOriginalConstructor()
@@ -109,23 +109,21 @@ class DataTest extends TestCase
         $iterator
             ->expects(self::exactly(2))
             ->method('current')
-            ->will(self::returnValue($file));
+            ->willReturn($file);
         $iterator
             ->expects(self::exactly(3))
             ->method('valid')
-            ->will(
-                self::returnCallback(
-                    static function () {
-                        static $i = 0;
-                        $return = false;
-                        if (1 >= $i) {
-                            $return = true;
-                        }
-                        ++$i;
-
-                        return $return;
+            ->willReturnCallback(
+                static function () {
+                    static $i = 0;
+                    $return = false;
+                    if (1 >= $i) {
+                        $return = true;
                     }
-                )
+                    ++$i;
+
+                    return $return;
+                }
             );
 
         $finder = $this->getMockBuilder(Finder::class)
@@ -133,12 +131,11 @@ class DataTest extends TestCase
             ->getMock();
         $finder
             ->expects(self::never())
-            ->method('in')
-            ->will(self::returnSelf());
+            ->method('in');
         $finder
             ->expects(self::once())
             ->method('getIterator')
-            ->will(self::returnValue($iterator));
+            ->willReturn($iterator);
 
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
@@ -150,8 +147,8 @@ class DataTest extends TestCase
         $jsonParser
             ->expects(self::exactly(2))
             ->method('decode')
-            ->with('{"key": "value"}')
-            ->will(self::returnValue([$key => $value, 'generic' => 'test', 'generic2' => 'test2']));
+            ->withConsecutive(['{"key": "value"}', false, 512, 0], ['{"key2": "value2"}', false, 512, 0])
+            ->willReturnOnConsecutiveCalls([$key => $value, 'generic' => 'test', 'generic2' => 'test2'], ['generic' => 'test', 'generic2' => 'test2', 'new' => 'newValue']);
 
         /** @var Finder $finder */
         /** @var Json $jsonParser */
@@ -166,5 +163,6 @@ class DataTest extends TestCase
         self::assertTrue($object->isInitialized());
         self::assertTrue($object->hasItem($key));
         self::assertSame($value, $object->getItem($key));
+        self::assertCount(4, $object);
     }
 }

@@ -48,6 +48,7 @@ final class Safari
             10.0,
             10.1,
             11.0,
+            12.0,
         ];
 
         if (in_array($floatVersion, $regularVersions)) {

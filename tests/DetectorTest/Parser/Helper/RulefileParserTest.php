@@ -161,7 +161,7 @@ class RulefileParserTest extends TestCase
         $mode     = 'test-mode';
 
         $generic = 'test-generic';
-        $rules   = ['/test-useragent/' => $mode];
+        $rules   = ['/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
 
         $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
@@ -218,5 +218,74 @@ class RulefileParserTest extends TestCase
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($mode, $result);
+    }
+
+    /**
+     * @return void
+     */
+    public function testParseNotEmptyFile2(): void
+    {
+        $content  = 'test-content';
+        $fallback = 'test-fallback';
+        $mode     = 'test-mode';
+
+        $generic = 'test-generic';
+        $rules   = ['/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
+
+        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $fileInfo
+            ->expects(self::once())
+            ->method('getContents')
+            ->willReturn($content);
+
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(self::once())
+            ->method('decode')
+            ->with($content, true)
+            ->willReturn(['generic' => $generic, 'rules' => $rules]);
+
+        $useragent = 'tets-useragent';
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        /** @var \JsonClass\JsonInterface $jsonParser */
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $object = new RulefileParser($jsonParser, $logger);
+
+        /** @var \Symfony\Component\Finder\SplFileInfo $fileInfo */
+        $result = $object->parseFile($fileInfo, $useragent, $fallback);
+
+        self::assertSame($generic, $result);
     }
 }

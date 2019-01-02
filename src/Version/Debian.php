@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Stringy\Stringy;
-
 final class Debian implements VersionDetectorInterface
 {
     /**
@@ -24,9 +22,7 @@ final class Debian implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $s = new Stringy($useragent);
-
-        if ($s->contains('squeeze', false)) {
+        if (preg_match('/squeeze/i', $useragent)) {
             return (new VersionFactory())->set('6.0');
         }
 

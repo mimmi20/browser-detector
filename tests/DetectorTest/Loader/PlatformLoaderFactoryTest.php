@@ -47,6 +47,28 @@ class PlatformLoaderFactoryTest extends TestCase
             ->expects(self::once())
             ->method('getIterator')
             ->willReturn($iterator);
+        $finder
+            ->expects(self::once())
+            ->method('files');
+        $finder
+            ->expects(self::once())
+            ->method('name')
+            ->with('*.json');
+        $finder
+            ->expects(self::once())
+            ->method('ignoreDotFiles')
+            ->with(true);
+        $finder
+            ->expects(self::once())
+            ->method('ignoreVCS')
+            ->with(true);
+        $finder
+            ->expects(self::once())
+            ->method('ignoreUnreadableDirs');
+        $finder
+            ->expects(self::once())
+            ->method('in')
+            ->with('/home/developer/projects/BrowserDetector/src/Loader/../../data/platforms');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \JsonClass\JsonInterface $jsonParser */

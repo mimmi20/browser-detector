@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader\Helper;
 
-interface DataInterface
+interface DataInterface extends \Countable
 {
     /**
      * @return void
