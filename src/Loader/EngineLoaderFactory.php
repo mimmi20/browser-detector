@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2019, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,6 +18,8 @@ use Symfony\Component\Finder\Finder;
 
 final class EngineLoaderFactory implements EngineLoaderFactoryInterface
 {
+    public const DATA_PATH = __DIR__ . '/../../data/engines';
+
     /**
      * @var \Psr\Log\LoggerInterface
      */
@@ -75,7 +77,7 @@ final class EngineLoaderFactory implements EngineLoaderFactoryInterface
         $this->finder->ignoreDotFiles(true);
         $this->finder->ignoreVCS(true);
         $this->finder->ignoreUnreadableDirs();
-        $this->finder->in($dataPath);
+        $this->finder->in(self::DATA_PATH);
 
         $loader = new EngineLoader(
             $this->logger,

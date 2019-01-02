@@ -23,6 +23,8 @@ LICENSE          text eol=lf
 
 # files/folders to ignore
 /.*                  export-ignore
+.bettercodehub.yml   export-ignore text eol=lf
+.codacy.yml          export-ignore text eol=lf
 .codeclimate.yml     export-ignore text eol=lf
 .coveralls.yml       export-ignore text eol=lf
 .editorconfig        export-ignore text eol=lf
@@ -36,6 +38,7 @@ LICENSE          text eol=lf
 appveyor.yml         export-ignore text eol=lf
 .circleci/config.yml export-ignore text eol=lf
 codecov.yml          export-ignore text eol=lf
+infection.json       export-ignore text eol=lf
 phpcs.xml            export-ignore text eol=lf
 phpstan.neon         export-ignore text eol=lf
 phpunit.xml          export-ignore text eol=lf

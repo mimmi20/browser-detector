@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2018, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2019, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -68,7 +68,7 @@ class PlatformLoaderFactoryTest extends TestCase
         $finder
             ->expects(self::once())
             ->method('in')
-            ->with('/home/developer/projects/BrowserDetector/src/Loader/../../data/platforms');
+            ->with(PlatformLoaderFactory::DATA_PATH);
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \JsonClass\JsonInterface $jsonParser */
