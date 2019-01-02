@@ -75,8 +75,8 @@ final class DeviceFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
     {
-        $deviceName      = array_key_exists('deviceName', $data) && !empty($data['deviceName']) ? (string) $data['deviceName'] : null;
-        $marketingName   = array_key_exists('marketingName', $data) && !empty($data['marketingName']) ? (string) $data['marketingName'] : null;
+        $deviceName      = array_key_exists('deviceName', $data) && !empty($data['deviceName']) ? $data['deviceName'] : null;
+        $marketingName   = array_key_exists('marketingName', $data) && !empty($data['marketingName']) ? $data['marketingName'] : null;
         $dualOrientation = array_key_exists('dualOrientation', $data) ? (bool) $data['dualOrientation'] : false;
         $simCount        = array_key_exists('simCount', $data) ? (int) $data['simCount'] : 0;
         $connections     = array_key_exists('connections', $data) ? (array) $data['connections'] : [];

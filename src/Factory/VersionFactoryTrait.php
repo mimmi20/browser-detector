@@ -35,7 +35,7 @@ trait VersionFactoryTrait
         }
 
         if (is_string($data['version'])) {
-            return $this->versionFactory->set((string) $data['version']);
+            return $this->versionFactory->set($data['version']);
         }
 
         if (!$data['version'] instanceof \stdClass) {
@@ -45,7 +45,7 @@ trait VersionFactoryTrait
         $value = $data['version']->value ?? null;
 
         if (null !== $value) {
-            return $this->versionFactory->set((string) $value);
+            return $this->versionFactory->set($value);
         }
 
         $className = $data['version']->class ?? null;

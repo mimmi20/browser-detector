@@ -11,48 +11,25 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Bits;
 
-use Stringy\Stringy;
-
 final class Os implements BitsInterface
 {
     /**
-     * @var string the user agent to handle
-     */
-    private $useragent;
-
-    /**
-     * class constructor
-     *
      * @param string $useragent
-     */
-    public function __construct(string $useragent)
-    {
-        $this->useragent = $useragent;
-    }
-
-    /**
-     * @throws \UnexpectedValueException
      *
-     * @return int
+     * @return int|null
      */
-    public function getBits(): int
+    public function getBits(string $useragent): ?int
     {
-        $s = new Stringy($this->useragent);
-
-        if ($s->containsAny(
-            ['x64', 'win64', 'wow64', 'x86_64', 'amd64', 'ppc64', 'i686 on x86_64', 'sparc64', 'osf1'],
-            false
-        )
-        ) {
+        if (preg_match('/x64|win64|x86_64|amd64|ppc64|sparc64|osf1/i', $useragent)) {
             return 64;
         }
 
-        if ($s->containsAny(['win3.1', 'windows 3.1'], false)) {
+        if (preg_match('/win3\.1|windows 3\.1/i', $useragent)) {
             return 16;
         }
 
         // old deprecated 8 bit systems
-        if ($s->containsAny(['cp/m', '8-bit'], false)) {
+        if (preg_match('/cp\/m|8-bit/i', $useragent)) {
             return 8;
         }
 

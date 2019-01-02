@@ -23,11 +23,18 @@ final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
     private $jsonParser;
 
     /**
-     * @param \JsonClass\JsonInterface $jsonParser
+     * @var \Symfony\Component\Finder\Finder
      */
-    public function __construct(JsonInterface $jsonParser)
+    private $finder;
+
+    /**
+     * @param \JsonClass\JsonInterface         $jsonParser
+     * @param \Symfony\Component\Finder\Finder $finder
+     */
+    public function __construct(JsonInterface $jsonParser, Finder $finder)
     {
         $this->jsonParser = $jsonParser;
+        $this->finder     = $finder;
     }
 
     /**
@@ -44,16 +51,15 @@ final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
 
         $dataPath = __DIR__ . '/../../data/companies';
 
-        $finder = new Finder();
-        $finder->files();
-        $finder->name('*.json');
-        $finder->ignoreDotFiles(true);
-        $finder->ignoreVCS(true);
-        $finder->ignoreUnreadableDirs();
-        $finder->in($dataPath);
+        $this->finder->files();
+        $this->finder->name('*.json');
+        $this->finder->ignoreDotFiles(true);
+        $this->finder->ignoreVCS(true);
+        $this->finder->ignoreUnreadableDirs();
+        $this->finder->in($dataPath);
 
         $loader = new CompanyLoader(
-            new Data($finder, $this->jsonParser)
+            new Data($this->finder, $this->jsonParser)
         );
 
         return $loader;

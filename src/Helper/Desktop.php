@@ -24,21 +24,6 @@ final class Desktop implements DesktopInterface
      */
     public function isDesktopDevice(Stringy $useragent): bool
     {
-        if ($useragent->containsAll(['firefox', 'anonym'], false)) {
-            return true;
-        }
-
-        if ($useragent->containsAll(['trident', 'anonym'], false)) {
-            return true;
-        }
-
-        // ignore mobile safari token if windows nt token is available
-        if ($useragent->contains('windows nt', false)
-            && $useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
-        ) {
-            return true;
-        }
-
         if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem/i', (string) $useragent)) {
             return false;
         }

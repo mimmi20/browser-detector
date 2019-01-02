@@ -17,6 +17,7 @@ use BrowserDetector\Loader\PlatformLoaderInterface;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\Finder\Finder;
 
 class PlatformLoaderFactoryTest extends TestCase
 {
@@ -38,10 +39,20 @@ class PlatformLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
+        $iterator = $this->createMock(\Iterator::class);
+        $finder   = $this->getMockBuilder(Finder::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $finder
+            ->expects(self::once())
+            ->method('getIterator')
+            ->willReturn($iterator);
+
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \JsonClass\JsonInterface $jsonParser */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        $factory = new PlatformLoaderFactory($logger, $jsonParser, $companyLoader);
+        /** @var \Symfony\Component\Finder\Finder $finder */
+        $factory = new PlatformLoaderFactory($logger, $jsonParser, $companyLoader, $finder);
         $object  = $factory();
 
         self::assertInstanceOf(PlatformLoaderInterface::class, $object);

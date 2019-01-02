@@ -21,6 +21,7 @@ use BrowserDetector\Parser\PlatformParserFactory;
 use JsonClass\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
+use Symfony\Component\Finder\Finder;
 
 final class DetectorFactory
 {
@@ -53,7 +54,7 @@ final class DetectorFactory
 
         if (null === $detector) {
             $jsonParser           = new Json();
-            $companyLoaderFactory = new CompanyLoaderFactory($jsonParser);
+            $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Finder());
 
             /** @var CompanyLoader $companyLoader */
             $companyLoader = $companyLoaderFactory();

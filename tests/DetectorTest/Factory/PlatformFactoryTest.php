@@ -741,6 +741,92 @@ class PlatformFactoryTest extends TestCase
     /**
      * @return void
      */
+    public function testFromArrayWithMappingMacos2(): void
+    {
+        $companyName  = 'test-company';
+        $useragent    = 'this is a test';
+        $platformName = 'Mac OS X--test';
+        $company      = $this->getMockBuilder(CompanyInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader
+            ->expects(self::exactly(2))
+            ->method('__invoke')
+            ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
+            ->willReturn($company);
+
+        $version1 = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $v        = '10.14';
+        $version2 = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $version2
+            ->expects(self::any())
+            ->method('getVersion')
+            ->with(VersionInterface::IGNORE_MICRO)
+            ->willReturn($v);
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(self::exactly(2))
+            ->method('set')
+            ->withConsecutive(['0'], [$v])
+            ->willReturnOnConsecutiveCalls($version1, $version2);
+
+        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        $object = new PlatformFactory($companyLoader, $versionFactory);
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+
+        self::assertInstanceOf(OsInterface::class, $result);
+        self::assertIsString($result->getName());
+        self::assertSame($platformName, $result->getName());
+        self::assertNull($result->getMarketingName());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertSame($version2, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
+    }
+
+    /**
+     * @return void
+     */
     public function testFromArrayWithMappingIos(): void
     {
         $companyName  = 'test-company';
@@ -819,6 +905,264 @@ class PlatformFactoryTest extends TestCase
         self::assertSame('iPhone OS', $result->getName());
         self::assertIsString($result->getMarketingName());
         self::assertSame('iPhone OS', $result->getMarketingName());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertSame($version2, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
+    }
+
+    /**
+     * @return void
+     */
+    public function testFromArrayWithMappingIos2(): void
+    {
+        $companyName  = 'test-company';
+        $useragent    = 'this is a test';
+        $platformName = 'iOS';
+        $company      = $this->getMockBuilder(CompanyInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader
+            ->expects(self::exactly(2))
+            ->method('__invoke')
+            ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
+            ->willReturn($company);
+
+        $version1 = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $v        = '6.0';
+        $version2 = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $version2
+            ->expects(self::any())
+            ->method('getVersion')
+            ->with(VersionInterface::IGNORE_MICRO)
+            ->willReturn($v);
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(self::exactly(2))
+            ->method('set')
+            ->withConsecutive(['0'], [$v])
+            ->willReturnOnConsecutiveCalls($version1, $version2);
+
+        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        $object = new PlatformFactory($companyLoader, $versionFactory);
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+
+        self::assertInstanceOf(OsInterface::class, $result);
+        self::assertIsString($result->getName());
+        self::assertSame($platformName, $result->getName());
+        self::assertNull($result->getMarketingName());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertSame($version2, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
+    }
+
+    /**
+     * @return void
+     */
+    public function testFromArrayWithMappingIos3(): void
+    {
+        $companyName  = 'test-company';
+        $useragent    = 'this is a test';
+        $platformName = 'iOS';
+        $company      = $this->getMockBuilder(CompanyInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader
+            ->expects(self::exactly(2))
+            ->method('__invoke')
+            ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
+            ->willReturn($company);
+
+        $version1 = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $v        = '0.0';
+        $version2 = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $version2
+            ->expects(self::any())
+            ->method('getVersion')
+            ->with(VersionInterface::IGNORE_MICRO)
+            ->willReturn($v);
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(self::exactly(2))
+            ->method('set')
+            ->withConsecutive(['0'], [$v])
+            ->willReturnOnConsecutiveCalls($version1, $version2);
+
+        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        $object = new PlatformFactory($companyLoader, $versionFactory);
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+
+        self::assertInstanceOf(OsInterface::class, $result);
+        self::assertIsString($result->getName());
+        self::assertSame($platformName, $result->getName());
+        self::assertNull($result->getMarketingName());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertSame($version2, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
+    }
+
+    /**
+     * @return void
+     */
+    public function testFromArrayWithMappingIos4(): void
+    {
+        $companyName  = 'test-company';
+        $useragent    = 'this is a test';
+        $platformName = 'iOS--test';
+        $company      = $this->getMockBuilder(CompanyInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader
+            ->expects(self::exactly(2))
+            ->method('__invoke')
+            ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
+            ->willReturn($company);
+
+        $version1 = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $v        = '3.0';
+        $version2 = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $version2
+            ->expects(self::any())
+            ->method('getVersion')
+            ->with(VersionInterface::IGNORE_MICRO)
+            ->willReturn($v);
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(self::exactly(2))
+            ->method('set')
+            ->withConsecutive(['0'], [$v])
+            ->willReturnOnConsecutiveCalls($version1, $version2);
+
+        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        $object = new PlatformFactory($companyLoader, $versionFactory);
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+
+        self::assertInstanceOf(OsInterface::class, $result);
+        self::assertIsString($result->getName());
+        self::assertSame($platformName, $result->getName());
+        self::assertNull($result->getMarketingName());
         self::assertInstanceOf(VersionInterface::class, $result->getVersion());
         self::assertSame($version2, $result->getVersion());
         self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());

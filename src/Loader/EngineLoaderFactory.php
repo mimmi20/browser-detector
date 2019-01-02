@@ -34,18 +34,26 @@ final class EngineLoaderFactory implements EngineLoaderFactoryInterface
     private $companyLoader;
 
     /**
+     * @var \Symfony\Component\Finder\Finder
+     */
+    private $finder;
+
+    /**
      * @param \Psr\Log\LoggerInterface                       $logger
      * @param \JsonClass\JsonInterface                       $jsonParser
      * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
+     * @param \Symfony\Component\Finder\Finder               $finder
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
-        CompanyLoaderInterface $companyLoader
+        CompanyLoaderInterface $companyLoader,
+        Finder $finder
     ) {
         $this->logger        = $logger;
         $this->jsonParser    = $jsonParser;
         $this->companyLoader = $companyLoader;
+        $this->finder        = $finder;
     }
 
     /**
@@ -62,17 +70,16 @@ final class EngineLoaderFactory implements EngineLoaderFactoryInterface
 
         $dataPath = __DIR__ . '/../../data/engines';
 
-        $finder = new Finder();
-        $finder->files();
-        $finder->name('*.json');
-        $finder->ignoreDotFiles(true);
-        $finder->ignoreVCS(true);
-        $finder->ignoreUnreadableDirs();
-        $finder->in($dataPath);
+        $this->finder->files();
+        $this->finder->name('*.json');
+        $this->finder->ignoreDotFiles(true);
+        $this->finder->ignoreVCS(true);
+        $this->finder->ignoreUnreadableDirs();
+        $this->finder->in($dataPath);
 
         $loader = new EngineLoader(
             $this->logger,
-            new Data($finder, $this->jsonParser),
+            new Data($this->finder, $this->jsonParser),
             $this->companyLoader
         );
 
