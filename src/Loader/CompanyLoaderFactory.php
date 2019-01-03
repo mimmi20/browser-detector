@@ -17,6 +17,8 @@ use Symfony\Component\Finder\Finder;
 
 final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
 {
+    public const DATA_PATH = __DIR__ . '/../../data/companies';
+
     /**
      * @var \JsonClass\JsonInterface
      */
@@ -49,14 +51,12 @@ final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
             return $loader;
         }
 
-        $dataPath = __DIR__ . '/../../data/companies';
-
         $this->finder->files();
         $this->finder->name('*.json');
         $this->finder->ignoreDotFiles(true);
         $this->finder->ignoreVCS(true);
         $this->finder->ignoreUnreadableDirs();
-        $this->finder->in($dataPath);
+        $this->finder->in(self::DATA_PATH);
 
         $loader = new CompanyLoader(
             new Data($this->finder, $this->jsonParser)
