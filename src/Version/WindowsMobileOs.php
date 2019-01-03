@@ -26,7 +26,7 @@ final class WindowsMobileOs implements VersionDetectorInterface
     {
         $s = new Stringy($useragent);
 
-        if ($s->contains('windows nt 5.1', false)) {
+        if ($s->contains('windows nt 5.1', false) && !$s->containsAny(['windows mobile', 'windows phone'], false)) {
             return (new VersionFactory())->set('6.0');
         }
 
