@@ -26,19 +26,12 @@ final class AndroidWebkit implements VersionDetectorInterface
     {
         $safariHelper = new SafariHelper();
 
-        $doMatch = preg_match('/Version\/([\d\.]+)/', $useragent, $matches);
+        $doMatch = preg_match('/(?:Version|Safari)\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
         }
 
-        $doMatch = preg_match('/Safari\/([\d\.]+)/', $useragent, $matches);
-
-        if ($doMatch) {
-            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
-        }
-
-        //return (new VersionFactory())->detectVersion($useragent, ['Version', 'Safari', 'JUC \(Linux\; U\;']);
         return (new VersionFactory())->set('0');
     }
 }

@@ -26,42 +26,22 @@ final class FirefoxOs implements VersionDetectorInterface
             return new Version('0');
         }
 
-        $version = (float) $matches[1];
+        $versions = [
+            '44.0' => '2.5',
+            '37.0' => '2.2',
+            '34.0' => '2.1',
+            '32.0' => '2.0',
+            '30.0' => '1.4',
+            '28.0' => '1.3',
+            '26.0' => '1.2',
+            '18.1' => '1.1',
+            '18.0' => '1.0',
+        ];
 
-        if (44.0 <= $version) {
-            return new Version('2', '5');
-        }
-
-        if (37.0 <= $version) {
-            return new Version('2', '2');
-        }
-
-        if (34.0 <= $version) {
-            return new Version('2', '1');
-        }
-
-        if (32.0 <= $version) {
-            return new Version('2', '0');
-        }
-
-        if (30.0 <= $version) {
-            return new Version('1', '4');
-        }
-
-        if (28.0 <= $version) {
-            return new Version('1', '3');
-        }
-
-        if (26.0 <= $version) {
-            return new Version('1', '2');
-        }
-
-        if (18.1 <= $version) {
-            return new Version('1', '1');
-        }
-
-        if (18.0 <= $version) {
-            return new Version('1', '0');
+        foreach ($versions as $engineVersion => $osVersion) {
+            if (version_compare($matches[1], $engineVersion, '>=')) {
+                return (new VersionFactory())->set($osVersion);
+            }
         }
 
         return new Version('0');

@@ -22,8 +22,6 @@ final class Safari
      */
     public function mapSafariVersion(string $detectedVersion): string
     {
-        $floatVersion = (float) $detectedVersion;
-
         $regularVersions = [
             3.0,
             3.1,
@@ -51,56 +49,30 @@ final class Safari
             12.0,
         ];
 
-        if (in_array($floatVersion, $regularVersions)) {
+        if (in_array($detectedVersion, $regularVersions)) {
             return $detectedVersion;
         }
 
-        if (13600 <= $detectedVersion) {
-            return '11.0';
-        }
+        $versions = [
+            '14600' => '12.0',
+            '13600' => '11.0',
+            '12600' => '10.0',
+            '11600' => '9.1',
+            '10500' => '8.0',
+            '9500' => '7.0',
+            '8500' => '6.0',
+            '7500' => '5.1',
+            '6500' => '5.0',
+            '4500' => '4.0',
+            '600' => '5.0',
+            '500' => '4.0',
+            '400' => '3.0',
+        ];
 
-        if (12600 <= $detectedVersion) {
-            return '10.0';
-        }
-
-        if (11600 <= $detectedVersion) {
-            return '9.1';
-        }
-
-        if (10500 <= $detectedVersion) {
-            return '8.0';
-        }
-
-        if (9500 <= $detectedVersion) {
-            return '7.0';
-        }
-
-        if (8500 <= $detectedVersion) {
-            return '6.0';
-        }
-
-        if (7500 <= $detectedVersion) {
-            return '5.1';
-        }
-
-        if (6500 <= $detectedVersion) {
-            return '5.0';
-        }
-
-        if (4500 <= $detectedVersion) {
-            return '4.0';
-        }
-
-        if (600 <= $detectedVersion) {
-            return '5.0';
-        }
-
-        if (500 <= $detectedVersion) {
-            return '4.0';
-        }
-
-        if (400 <= $detectedVersion) {
-            return '3.0';
+        foreach ($versions as $engineVersion => $osVersion) {
+            if (version_compare($detectedVersion, (string) $engineVersion, '>=')) {
+                return $osVersion;
+            }
         }
 
         return '0';

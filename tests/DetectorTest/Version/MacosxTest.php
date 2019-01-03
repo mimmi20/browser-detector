@@ -63,6 +63,10 @@ class MacosxTest extends TestCase
                 '10.13.0',
             ],
             [
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10) AppleWebKit/534.48.3 (KHTML like Gecko) Version/5.1 Safari/534.48.3',
+                '10.0.0',
+            ],
+            [
                 'Mozilla/5.0 (Macintosh; Intel Mac OS X 107) AppleWebKit/534.48.3 (KHTML like Gecko) Version/5.1 Safari/534.48.3',
                 '10.7.0',
             ],
@@ -75,8 +79,16 @@ class MacosxTest extends TestCase
                 '10.10.4',
             ],
             [
-                'Apple Mac OS X v10.6.8 CoreMedia v1.0.0.10K540',
-                '10.6.8',
+                'Apple Mac OS X v10.11.3 CoreMedia v1.0.0.15D13b',
+                '10.11.3-beta+2',
+            ],
+            [
+                'Apple Mac OS X v10.11.3 CoreMedia v1.0.0.1X7',
+                '10.11.3',
+            ],
+            [
+                'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 1X7))',
+                '10.11.3',
             ],
         ];
     }

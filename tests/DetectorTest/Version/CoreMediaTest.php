@@ -53,12 +53,12 @@ class CoreMediaTest extends TestCase
     {
         return [
             [
-                'AppleCoreMedia/1.0.0.12D508 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',
-                '1.0.0',
+                'AppleCoreMedia/1.0.2.12D508 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',
+                '1.0.2',
             ],
             [
-                'Apple Mac OS X v10.6.8 CoreMedia v1.0.0.10K540',
-                '1.0.0',
+                'Apple Mac OS X v10.6.8 CoreMedia v1.0.4.10K540',
+                '1.0.4',
             ],
             [
                 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',

@@ -90,6 +90,14 @@ class IosTest extends TestCase
                 'Apple-iPhone9C4/1602.92',
                 '12.1.0',
             ],
+            [
+                'Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/1X7 Safari/9537.53',
+                '7.1.0',
+            ],
+            [
+                'AppleCoreMedia/1.0.0.1X7 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',
+                '8.2.0',
+            ],
         ];
     }
 }
