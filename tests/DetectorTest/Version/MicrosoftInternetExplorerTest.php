@@ -53,6 +53,10 @@ class MicrosoftInternetExplorerTest extends TestCase
     {
         return [
             [
+                'Mozilla/5.0 (compatible;FW 2.0. 6868.p;FW 2.0. 7049.p; Windows NT 6.1; WOW64; Trident/8.0; rv:11.0) like Gecko',
+                '11.0.0',
+            ],
+            [
                 'Mozilla/5.0 (compatible;FW 2.0. 6868.p;FW 2.0. 7049.p; Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
                 '11.0.0',
             ],

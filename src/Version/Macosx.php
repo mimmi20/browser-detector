@@ -28,7 +28,7 @@ final class Macosx implements VersionDetectorInterface
     {
         $doMatch = preg_match('/\((?:build )?(\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
 
-        if ($doMatch && isset($matches[1])) {
+        if ($doMatch) {
             $buildVersion = OSXbuild::getVersion($matches[1]);
 
             if (false !== $buildVersion) {
@@ -38,7 +38,7 @@ final class Macosx implements VersionDetectorInterface
 
         $doMatch = preg_match('/coremedia v\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
-        if ($doMatch && isset($matches[1])) {
+        if ($doMatch) {
             $buildVersion = OSXbuild::getVersion($matches[1]);
 
             if (false !== $buildVersion) {
@@ -163,19 +163,14 @@ final class Macosx implements VersionDetectorInterface
 
         $detectedVersion = (new VersionFactory())->detectVersion($useragent, $searches);
 
-        if (99 < $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR)) {
-            $versions = [];
-            $found    = preg_match('/(\d{2})(\d)(\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions);
+        if (preg_match('/(\d{2})(\d)(\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
+            $version = $versions[1] . '.' . $versions[2];
 
-            if ($found) {
-                $version = $versions[1] . '.' . $versions[2];
-
-                if (isset($versions[3])) {
-                    $version .= '.' . $versions[3];
-                }
-
-                return (new VersionFactory())->set($version);
+            if (isset($versions[3])) {
+                $version .= '.' . $versions[3];
             }
+
+            return (new VersionFactory())->set($version);
         }
 
         return $detectedVersion;

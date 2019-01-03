@@ -22,21 +22,20 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $version       = (new Trident())->detectVersion($useragent);
-        $engineVersion = (int) $version->getMajor();
+        $version = (new Trident())->detectVersion($useragent);
 
-        switch ($engineVersion) {
-            case 7:
-                return (new VersionFactory())->set('11.0');
-            case 6:
-                return (new VersionFactory())->set('10.0');
-            case 5:
-                return (new VersionFactory())->set('9.0');
-            case 4:
-                return (new VersionFactory())->set('8.0');
-            default:
-                // nothing to do
-                break;
+        $versions = [
+            '8' => '11.0',
+            '7' => '11.0',
+            '6' => '10.0',
+            '5' => '9.0',
+            '4' => '8.0',
+        ];
+
+        foreach ($versions as $engineVersion => $ieVersion) {
+            if (version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
+                return (new VersionFactory())->set($ieVersion);
+            }
         }
 
         $doMatch = preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);

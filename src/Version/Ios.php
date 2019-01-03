@@ -34,7 +34,7 @@ final class Ios implements VersionDetectorInterface
 
         $doMatch = preg_match('/mobile\/(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
-        if ($doMatch && isset($matches[1])) {
+        if ($doMatch) {
             $buildVersion = iOSbuild::getVersion($matches[1]);
 
             if (false !== $buildVersion) {
@@ -44,7 +44,7 @@ final class Ios implements VersionDetectorInterface
 
         $doMatch = preg_match('/applecoremedia\/\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
-        if ($doMatch && isset($matches[1])) {
+        if ($doMatch) {
             $buildVersion = iOSbuild::getVersion($matches[1]);
 
             if (false !== $buildVersion) {
@@ -108,7 +108,7 @@ final class Ios implements VersionDetectorInterface
 
         $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/([\d\.]+)$/i', $useragent, $matches);
 
-        if ($doMatch && isset($matches[1])) {
+        if ($doMatch) {
             // @see https://justworks.ca/blog/ios-and
             $map = [
                 '508.11' => '2.2.1',

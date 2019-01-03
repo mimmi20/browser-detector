@@ -68,6 +68,10 @@ class RimOsTest extends TestCase
                 'BlackBerry8530/5.0.0.973 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105',
                 '5.0.0.973',
             ],
+            [
+                'Opera/9.80 (BlackBerry; Opera Mini/8.0.35667/35.7561; U; en) Presto/2.8.119 Version/11.10',
+                '0.0.0',
+            ],
         ];
     }
 }

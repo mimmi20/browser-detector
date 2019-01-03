@@ -57,6 +57,10 @@ class FirefoxOsTest extends TestCase
                 '2.2.0',
             ],
             [
+                'Mozilla/5.0 (Mobile; OPENC; rv:40.0) Gecko/40.0 Firefox/37.0',
+                '2.2.0',
+            ],
+            [
                 'Mozilla/5.0 (Mobile; OPENC; rv:44.0) Gecko/44.0 Firefox/44.0',
                 '2.5.0',
             ],
