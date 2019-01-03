@@ -61,7 +61,7 @@ class CompanyLoaderFactoryTest extends TestCase
         $finder
             ->expects(self::any())
             ->method('in')
-            ->with('/home/developer/projects/BrowserDetector/src/Loader/../../data/companies');
+            ->with(CompanyLoaderFactory::DATA_PATH);
 
         /** @var \JsonClass\JsonInterface $jsonParser */
         /** @var \Symfony\Component\Finder\Finder $finder */
