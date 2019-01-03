@@ -30,7 +30,7 @@ final class Goanna implements VersionDetectorInterface
         }
 
         // second version: version on "rv:" token
-        $doMatch = preg_match('/rv\:([\d\.]+)/', $useragent, $matchesSecond);
+        $doMatch = preg_match('/rv\:(\d\.[\d\.]*)/', $useragent, $matchesSecond);
 
         if ($doMatch && false !== mb_stripos($useragent, 'goanna')) {
             return (new VersionFactory())->set($matchesSecond[1]);
