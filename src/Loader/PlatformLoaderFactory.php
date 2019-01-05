@@ -12,9 +12,9 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\FilterInterface;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
 final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
 {
@@ -36,26 +36,26 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
     private $companyLoader;
 
     /**
-     * @var \Symfony\Component\Finder\Finder
+     * @var \BrowserDetector\Loader\Helper\FilterInterface
      */
-    private $finder;
+    private $filter;
 
     /**
      * @param \Psr\Log\LoggerInterface                       $logger
      * @param \JsonClass\JsonInterface                       $jsonParser
      * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     * @param \Symfony\Component\Finder\Finder               $finder
+     * @param \BrowserDetector\Loader\Helper\FilterInterface $filter
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader,
-        Finder $finder
+        FilterInterface $filter
     ) {
         $this->logger        = $logger;
         $this->jsonParser    = $jsonParser;
         $this->companyLoader = $companyLoader;
-        $this->finder        = $finder;
+        $this->filter        = $filter;
     }
 
     /**
@@ -70,16 +70,10 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
             return $loader;
         }
 
-        $this->finder->files();
-        $this->finder->name('*.json');
-        $this->finder->ignoreDotFiles(true);
-        $this->finder->ignoreVCS(true);
-        $this->finder->ignoreUnreadableDirs();
-        $this->finder->in(self::DATA_PATH);
-
+        $filter = $this->filter;
         $loader = new PlatformLoader(
             $this->logger,
-            new Data($this->finder, $this->jsonParser),
+            new Data($filter(self::DATA_PATH, 'json'), $this->jsonParser),
             $this->companyLoader
         );
 

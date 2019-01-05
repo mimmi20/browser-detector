@@ -13,12 +13,11 @@ namespace BrowserDetector\Loader\Helper;
 
 use ExceptionalJSON\DecodeErrorException;
 use JsonClass\JsonInterface;
-use Symfony\Component\Finder\Finder;
 
 final class Data implements DataInterface
 {
     /**
-     * @var \Symfony\Component\Finder\Finder
+     * @var \Iterator
      */
     private $finder;
 
@@ -38,10 +37,10 @@ final class Data implements DataInterface
     private $json;
 
     /**
-     * @param \Symfony\Component\Finder\Finder $finder
-     * @param \JsonClass\JsonInterface         $json
+     * @param \Iterator                $finder
+     * @param \JsonClass\JsonInterface $json
      */
-    public function __construct(Finder $finder, JsonInterface $json)
+    public function __construct(\Iterator $finder, JsonInterface $json)
     {
         $this->finder = $finder;
         $this->json   = $json;
@@ -85,10 +84,10 @@ final class Data implements DataInterface
         }
 
         foreach ($this->finder as $file) {
-            /* @var \Symfony\Component\Finder\SplFileInfo $file */
+            /* @var \SplFileInfo $file */
             try {
                 $fileData = $this->json->decode(
-                    $file->getContents(),
+                    file_get_contents($file->getPathname()),
                     false
                 );
             } catch (DecodeErrorException $e) {

@@ -14,7 +14,6 @@ namespace BrowserDetector\Parser\Device;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use Symfony\Component\Finder\SplFileInfo;
 
 final class DarwinParser implements DeviceParserInterface
 {
@@ -51,13 +50,13 @@ final class DarwinParser implements DeviceParserInterface
     public function __invoke(string $useragent): array
     {
         $mode = $this->fileParser->parseFile(
-            new SplFileInfo(self::GENERIC_FILE, '', ''),
+            new \SplFileInfo(self::GENERIC_FILE),
             $useragent,
             'unknown'
         );
 
         $key = $this->fileParser->parseFile(
-            new SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode), '', ''),
+            new \SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode)),
             $useragent,
             'unknown'
         );

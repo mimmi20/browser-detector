@@ -13,28 +13,46 @@ namespace BrowserDetectorTest\Loader\Helper;
 
 use BrowserDetector\Loader\Helper\Data;
 use ExceptionalJSON\DecodeErrorException;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
+use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Finder\Finder;
-use Symfony\Component\Finder\SplFileInfo;
 
 class DataTest extends TestCase
 {
+    private const DATA_PATH = 'root';
+
+    /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
+    private $root;
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        $structure = [
+            'bot.json' => '{"key": "value"}',
+            'tool.json' => '{"key2": "value2"}',
+        ];
+
+        $this->root = vfsStream::setup(self::DATA_PATH, null, $structure);
+    }
+
     /**
      * @return void
      */
     public function testInvokeFail(): void
     {
-        $file = $this->getMockBuilder(SplFileInfo::class)
+        $file = $this->getMockBuilder(\SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $file
-            ->expects(self::once())
-            ->method('getContents')
-            ->will(self::returnValue('{"key": "value"}'));
+            ->expects(self::exactly(2))
+            ->method('getPathname')
+            ->willReturnOnConsecutiveCalls(vfsStream::url(self::DATA_PATH . '/bot.json'), vfsStream::url(self::DATA_PATH . '/tool.json'));
 
-        $iterator = $this->getMockBuilder(\ArrayIterator::class)
+        $iterator = $this->getMockBuilder(\Iterator::class)
             ->disableOriginalConstructor()
             ->getMock();
         $iterator
@@ -59,17 +77,6 @@ class DataTest extends TestCase
                 )
             );
 
-        $finder = $this->getMockBuilder(Finder::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $finder
-            ->expects(self::never())
-            ->method('in');
-        $finder
-            ->expects(self::once())
-            ->method('getIterator')
-            ->will(self::returnValue($iterator));
-
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -80,12 +87,12 @@ class DataTest extends TestCase
             ->with('{"key": "value"}', false, 512, 0)
             ->will(self::throwException(new DecodeErrorException(0, 'error', '')));
 
-        /** @var Finder $finder */
-        /** @var Json $jsonParser */
-        $object = new Data($finder, $jsonParser);
+        /** @var \Iterator $iterator */
+        /** @var \JsonClass\Json $jsonParser */
+        $object = new Data($iterator, $jsonParser);
 
         $this->expectException(\RuntimeException::class);
-        $this->expectExceptionMessage('file "" contains invalid json');
+        $this->expectExceptionMessage('file "vfs://root/tool.json" contains invalid json');
         $this->expectExceptionCode(0);
         $object();
     }
@@ -95,13 +102,13 @@ class DataTest extends TestCase
      */
     public function testInvokeSuccess(): void
     {
-        $file = $this->getMockBuilder(SplFileInfo::class)
+        $file = $this->getMockBuilder(\SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $file
             ->expects(self::exactly(2))
-            ->method('getContents')
-            ->willReturnOnConsecutiveCalls('{"key": "value"}', '{"key2": "value2"}');
+            ->method('getPathname')
+            ->willReturnOnConsecutiveCalls(vfsStream::url(self::DATA_PATH . '/bot.json'), vfsStream::url(self::DATA_PATH . '/tool.json'));
 
         $iterator = $this->getMockBuilder(\ArrayIterator::class)
             ->disableOriginalConstructor()
@@ -126,17 +133,6 @@ class DataTest extends TestCase
                 }
             );
 
-        $finder = $this->getMockBuilder(Finder::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $finder
-            ->expects(self::never())
-            ->method('in');
-        $finder
-            ->expects(self::once())
-            ->method('getIterator')
-            ->willReturn($iterator);
-
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -150,9 +146,9 @@ class DataTest extends TestCase
             ->withConsecutive(['{"key": "value"}', false, 512, 0], ['{"key2": "value2"}', false, 512, 0])
             ->willReturnOnConsecutiveCalls([$key => $value, 'generic' => 'test', 'generic2' => 'test2'], ['generic' => 'test', 'generic2' => 'test2', 'new' => 'newValue']);
 
-        /** @var Finder $finder */
-        /** @var Json $jsonParser */
-        $object = new Data($finder, $jsonParser);
+        /** @var \Iterator $iterator */
+        /** @var \JsonClass\Json $jsonParser */
+        $object = new Data($iterator, $jsonParser);
 
         $object();
 

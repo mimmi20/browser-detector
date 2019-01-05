@@ -11,9 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Parser\Helper;
 
+use ExceptionalJSON\DecodeErrorException;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\SplFileInfo;
 
 final class RulefileParser implements RulefileParserInterface
 {
@@ -38,23 +38,23 @@ final class RulefileParser implements RulefileParserInterface
     }
 
     /**
-     * @param \Symfony\Component\Finder\SplFileInfo $file
-     * @param string                                $useragent
-     * @param string                                $fallback
+     * @param \SplFileInfo $file
+     * @param string       $useragent
+     * @param string       $fallback
      *
      * @return string
      */
-    public function parseFile(SplFileInfo $file, string $useragent, string $fallback): string
+    public function parseFile(\SplFileInfo $file, string $useragent, string $fallback): string
     {
         try {
             $factories = $this->jsonParser->decode(
-                $file->getContents(),
+                file_get_contents($file->getPathname()),
                 true
             );
 
             $mode  = $factories['generic'] ?? $fallback;
             $rules = $factories['rules'] ?? [];
-        } catch (\Throwable $e) {
+        } catch (DecodeErrorException | \RuntimeException $e) {
             $this->logger->error($e);
 
             $mode  = $fallback;

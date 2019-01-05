@@ -12,8 +12,8 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\FilterInterface;
 use JsonClass\JsonInterface;
-use Symfony\Component\Finder\Finder;
 
 final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
 {
@@ -25,18 +25,18 @@ final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
     private $jsonParser;
 
     /**
-     * @var \Symfony\Component\Finder\Finder
+     * @var \BrowserDetector\Loader\Helper\FilterInterface
      */
-    private $finder;
+    private $filter;
 
     /**
-     * @param \JsonClass\JsonInterface         $jsonParser
-     * @param \Symfony\Component\Finder\Finder $finder
+     * @param \JsonClass\JsonInterface                       $jsonParser
+     * @param \BrowserDetector\Loader\Helper\FilterInterface $filter
      */
-    public function __construct(JsonInterface $jsonParser, Finder $finder)
+    public function __construct(JsonInterface $jsonParser, FilterInterface $filter)
     {
         $this->jsonParser = $jsonParser;
-        $this->finder     = $finder;
+        $this->filter     = $filter;
     }
 
     /**
@@ -51,15 +51,9 @@ final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
             return $loader;
         }
 
-        $this->finder->files();
-        $this->finder->name('*.json');
-        $this->finder->ignoreDotFiles(true);
-        $this->finder->ignoreVCS(true);
-        $this->finder->ignoreUnreadableDirs();
-        $this->finder->in(self::DATA_PATH);
-
+        $filter = $this->filter;
         $loader = new CompanyLoader(
-            new Data($this->finder, $this->jsonParser)
+            new Data($filter(self::DATA_PATH, 'json'), $this->jsonParser)
         );
 
         return $loader;

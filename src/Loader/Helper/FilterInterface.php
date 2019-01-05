@@ -9,16 +9,15 @@
  */
 
 declare(strict_types = 1);
-namespace BrowserDetector\Parser\Helper;
+namespace BrowserDetector\Loader\Helper;
 
-interface RulefileParserInterface
+interface FilterInterface
 {
     /**
-     * @param \SplFileInfo $file
-     * @param string       $useragent
-     * @param string       $fallback
+     * @param string $path
+     * @param string $extension
      *
-     * @return string
+     * @return \Iterator
      */
-    public function parseFile(\SplFileInfo $file, string $useragent, string $fallback): string;
+    public function __invoke(string $path, string $extension): \Iterator;
 }

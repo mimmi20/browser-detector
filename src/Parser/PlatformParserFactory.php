@@ -12,11 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Loader\PlatformLoaderFactory;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
 final class PlatformParserFactory implements PlatformParserFactoryInterface
 {
@@ -56,7 +56,7 @@ final class PlatformParserFactory implements PlatformParserFactoryInterface
     public function __invoke(): PlatformParserInterface
     {
         return new PlatformParser(
-            new PlatformLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, new Finder()),
+            new PlatformLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, new Filter()),
             new RulefileParser($this->jsonParser, $this->logger)
         );
     }

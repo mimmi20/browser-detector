@@ -14,11 +14,11 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\BrowserLoaderFactory;
 use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\Helper\FilterInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
 class BrowserLoaderFactoryTest extends TestCase
 {
@@ -45,42 +45,21 @@ class BrowserLoaderFactoryTest extends TestCase
             ->getMock();
 
         $iterator = $this->createMock(\Iterator::class);
-        $finder   = $this->getMockBuilder(Finder::class)
+        $filter   = $this->getMockBuilder(FilterInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $finder
+        $filter
             ->expects(self::once())
-            ->method('getIterator')
+            ->method('__invoke')
+            ->with(BrowserLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
-        $finder
-            ->expects(self::once())
-            ->method('files');
-        $finder
-            ->expects(self::once())
-            ->method('name')
-            ->with('*.json');
-        $finder
-            ->expects(self::once())
-            ->method('ignoreDotFiles')
-            ->with(true);
-        $finder
-            ->expects(self::once())
-            ->method('ignoreVCS')
-            ->with(true);
-        $finder
-            ->expects(self::once())
-            ->method('ignoreUnreadableDirs');
-        $finder
-            ->expects(self::once())
-            ->method('in')
-            ->with(BrowserLoaderFactory::DATA_PATH);
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \JsonClass\JsonInterface $jsonParser */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Parser\EngineParserInterface $engineParser */
-        /** @var \Symfony\Component\Finder\Finder $finder */
-        $factory = new BrowserLoaderFactory($logger, $jsonParser, $companyLoader, $engineParser, $finder);
+        /** @var \BrowserDetector\Loader\Helper\FilterInterface $filter */
+        $factory = new BrowserLoaderFactory($logger, $jsonParser, $companyLoader, $engineParser, $filter);
         $object  = $factory();
 
         self::assertInstanceOf(BrowserLoaderInterface::class, $object);

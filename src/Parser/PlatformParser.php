@@ -13,7 +13,6 @@ namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\PlatformLoaderFactoryInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use Symfony\Component\Finder\SplFileInfo;
 use UaResult\Os\OsInterface;
 
 final class PlatformParser implements PlatformParserInterface
@@ -57,13 +56,13 @@ final class PlatformParser implements PlatformParserInterface
     public function __invoke(string $useragent): OsInterface
     {
         $mode = $this->fileParser->parseFile(
-            new SplFileInfo(self::GENERIC_FILE, '', ''),
+            new \SplFileInfo(self::GENERIC_FILE),
             $useragent,
             'unknown'
         );
 
         $key = $this->fileParser->parseFile(
-            new SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode), '', ''),
+            new \SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode)),
             $useragent,
             'unknown'
         );

@@ -13,12 +13,31 @@ namespace BrowserDetectorTest\Parser\Helper;
 
 use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonClass\JsonInterface;
+use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\SplFileInfo;
 
 class RulefileParserTest extends TestCase
 {
+    private const DATA_PATH = 'root';
+
+    /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
+    private $root;
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        $structure = [
+            'bot.json' => 'test-content',
+        ];
+
+        $this->root = vfsStream::setup(self::DATA_PATH, null, $structure);
+    }
+
     /**
      * @return void
      */
@@ -27,13 +46,13 @@ class RulefileParserTest extends TestCase
         $content  = 'test-content';
         $fallback = 'test-fallback';
 
-        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
             ->expects(self::once())
-            ->method('getContents')
-            ->willReturn($content);
+            ->method('getPathname')
+            ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
 
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
@@ -78,7 +97,7 @@ class RulefileParserTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \Symfony\Component\Finder\SplFileInfo $fileInfo */
+        /** @var \SplFileInfo $fileInfo */
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($fallback, $result);
@@ -93,12 +112,12 @@ class RulefileParserTest extends TestCase
         $fallback  = 'test-fallback';
         $exception = new \RuntimeException('read-error');
 
-        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
             ->expects(self::once())
-            ->method('getContents')
+            ->method('getPathname')
             ->willThrowException($exception);
 
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
@@ -145,7 +164,7 @@ class RulefileParserTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \Symfony\Component\Finder\SplFileInfo $fileInfo */
+        /** @var \SplFileInfo $fileInfo */
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($fallback, $result);
@@ -163,13 +182,13 @@ class RulefileParserTest extends TestCase
         $generic = 'test-generic';
         $rules   = ['/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
 
-        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
             ->expects(self::once())
-            ->method('getContents')
-            ->willReturn($content);
+            ->method('getPathname')
+            ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
 
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
@@ -214,7 +233,7 @@ class RulefileParserTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \Symfony\Component\Finder\SplFileInfo $fileInfo */
+        /** @var \SplFileInfo $fileInfo */
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($mode, $result);
@@ -232,13 +251,13 @@ class RulefileParserTest extends TestCase
         $generic = 'test-generic';
         $rules   = ['/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
 
-        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
             ->expects(self::once())
-            ->method('getContents')
-            ->willReturn($content);
+            ->method('getPathname')
+            ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
 
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
@@ -283,7 +302,7 @@ class RulefileParserTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \Symfony\Component\Finder\SplFileInfo $fileInfo */
+        /** @var \SplFileInfo $fileInfo */
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($generic, $result);
