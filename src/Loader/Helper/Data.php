@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader\Helper;
 
 use ExceptionalJSON\DecodeErrorException;
-use JsonClass\Json;
 use JsonClass\JsonInterface;
 use Symfony\Component\Finder\Finder;
 
