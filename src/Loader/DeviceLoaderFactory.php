@@ -12,10 +12,10 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\Helper\FilterInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
 final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 {
@@ -42,29 +42,29 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
     private $companyLoader;
 
     /**
-     * @var \Symfony\Component\Finder\Finder
+     * @var \BrowserDetector\Loader\Helper\FilterInterface
      */
-    private $finder;
+    private $filter;
 
     /**
      * @param \Psr\Log\LoggerInterface                        $logger
      * @param \JsonClass\JsonInterface                        $jsonParser
      * @param \BrowserDetector\Loader\CompanyLoaderInterface  $companyLoader
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
-     * @param \Symfony\Component\Finder\Finder                $finder
+     * @param \BrowserDetector\Loader\Helper\FilterInterface  $filter
      */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader,
         PlatformParserInterface $platformParser,
-        Finder $finder
+        FilterInterface $filter
     ) {
         $this->logger         = $logger;
         $this->jsonParser     = $jsonParser;
         $this->companyLoader  = $companyLoader;
         $this->platformParser = $platformParser;
-        $this->finder         = $finder;
+        $this->filter         = $filter;
     }
 
     /**
@@ -81,16 +81,10 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             return $loader[$company];
         }
 
-        $this->finder->files();
-        $this->finder->name('*.json');
-        $this->finder->ignoreDotFiles(true);
-        $this->finder->ignoreVCS(true);
-        $this->finder->ignoreUnreadableDirs();
-        $this->finder->in(self::DATA_PATH . $company);
-
+        $filter           = $this->filter;
         $loader[$company] = new DeviceLoader(
             $this->logger,
-            new Data($this->finder, $this->jsonParser),
+            new Data($filter(self::DATA_PATH . $company, 'json'), $this->jsonParser),
             $this->companyLoader,
             $this->platformParser
         );

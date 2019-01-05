@@ -13,10 +13,10 @@ namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
 final class BrowserParserFactory implements BrowserParserFactoryInterface
 {
@@ -66,7 +66,7 @@ final class BrowserParserFactory implements BrowserParserFactoryInterface
     public function __invoke(): BrowserParserInterface
     {
         return new BrowserParser(
-            new BrowserLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, $this->engineParser, new Finder()),
+            new BrowserLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, $this->engineParser, new Filter()),
             new RulefileParser($this->jsonParser, $this->logger)
         );
     }

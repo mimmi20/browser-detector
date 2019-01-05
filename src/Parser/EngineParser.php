@@ -13,7 +13,6 @@ namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\EngineLoaderFactoryInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use Symfony\Component\Finder\SplFileInfo;
 use UaResult\Engine\EngineInterface;
 
 final class EngineParser implements EngineParserInterface
@@ -56,7 +55,7 @@ final class EngineParser implements EngineParserInterface
     public function __invoke(string $useragent): EngineInterface
     {
         $key = $this->fileParser->parseFile(
-            new SplFileInfo(self::GENERIC_FILE, '', ''),
+            new \SplFileInfo(self::GENERIC_FILE),
             $useragent,
             'unknown'
         );

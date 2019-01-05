@@ -13,9 +13,9 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\Helper\FilterInterface;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Finder\Finder;
 
 class CompanyLoaderFactoryTest extends TestCase
 {
@@ -33,39 +33,18 @@ class CompanyLoaderFactoryTest extends TestCase
             ->willReturn([]);
 
         $iterator = $this->createMock(\Iterator::class);
-        $finder   = $this->getMockBuilder(Finder::class)
+        $filter   = $this->getMockBuilder(FilterInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $finder
+        $filter
             ->expects(self::any())
-            ->method('getIterator')
+            ->method('__invoke')
+            ->with(CompanyLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
-        $finder
-            ->expects(self::any())
-            ->method('files');
-        $finder
-            ->expects(self::any())
-            ->method('name')
-            ->with('*.json');
-        $finder
-            ->expects(self::any())
-            ->method('ignoreDotFiles')
-            ->with(true);
-        $finder
-            ->expects(self::any())
-            ->method('ignoreVCS')
-            ->with(true);
-        $finder
-            ->expects(self::any())
-            ->method('ignoreUnreadableDirs');
-        $finder
-            ->expects(self::any())
-            ->method('in')
-            ->with(CompanyLoaderFactory::DATA_PATH);
 
         /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \Symfony\Component\Finder\Finder $finder */
-        $factory = new CompanyLoaderFactory($jsonParser, $finder);
+        /** @var \BrowserDetector\Loader\Helper\FilterInterface $filter */
+        $factory = new CompanyLoaderFactory($jsonParser, $filter);
         $object  = $factory();
 
         self::assertInstanceOf(CompanyLoaderInterface::class, $object);

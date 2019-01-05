@@ -14,11 +14,11 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Loader\DeviceLoaderInterface;
+use BrowserDetector\Loader\Helper\FilterInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
 class DeviceLoaderFactoryTest extends TestCase
 {
@@ -47,42 +47,21 @@ class DeviceLoaderFactoryTest extends TestCase
             ->getMock();
 
         $iterator = $this->createMock(\Iterator::class);
-        $finder   = $this->getMockBuilder(Finder::class)
+        $filter   = $this->getMockBuilder(FilterInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $finder
+        $filter
             ->expects(self::once())
-            ->method('getIterator')
+            ->method('__invoke')
+            ->with(DeviceLoaderFactory::DATA_PATH . $company, 'json')
             ->willReturn($iterator);
-        $finder
-            ->expects(self::once())
-            ->method('files');
-        $finder
-            ->expects(self::once())
-            ->method('name')
-            ->with('*.json');
-        $finder
-            ->expects(self::once())
-            ->method('ignoreDotFiles')
-            ->with(true);
-        $finder
-            ->expects(self::once())
-            ->method('ignoreVCS')
-            ->with(true);
-        $finder
-            ->expects(self::once())
-            ->method('ignoreUnreadableDirs');
-        $finder
-            ->expects(self::once())
-            ->method('in')
-            ->with(DeviceLoaderFactory::DATA_PATH . $company);
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \JsonClass\JsonInterface $jsonParser */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Parser\PlatformParserInterface $platformParser */
-        /** @var \Symfony\Component\Finder\Finder $finder */
-        $factory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser, $finder);
+        /** @var \BrowserDetector\Loader\Helper\FilterInterface $filter */
+        $factory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser, $filter);
         $object  = $factory($company);
 
         self::assertInstanceOf(DeviceLoaderInterface::class, $object);

@@ -16,6 +16,7 @@ use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Device\MobileParser;
@@ -23,7 +24,6 @@ use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Finder\Finder;
 
 final class DeviceParserFactory implements DeviceParserFactoryInterface
 {
@@ -72,7 +72,7 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
      */
     public function __invoke(): DeviceParserInterface
     {
-        $loaderFactory = new DeviceLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, $this->platformParser, new Finder());
+        $loaderFactory = new DeviceLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, $this->platformParser, new Filter());
         $fileParser    = new RulefileParser($this->jsonParser, $this->logger);
         $darwinParser  = new DarwinParser($fileParser, $loaderFactory);
         $mobileParser  = new MobileParser($fileParser, $loaderFactory);

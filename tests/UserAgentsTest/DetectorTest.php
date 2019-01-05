@@ -14,6 +14,7 @@ namespace UserAgentsTest;
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Detector;
 use BrowserDetector\Loader\CompanyLoaderFactory;
+use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
@@ -78,7 +79,7 @@ class DetectorTest extends TestCase
         $jsonParser = new Json();
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Finder());
+        $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
 
         /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         $companyLoader = $companyLoaderFactory();
@@ -202,7 +203,7 @@ class DetectorTest extends TestCase
         $logger     = new NullLogger();
         $jsonParser = new Json();
 
-        $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Finder());
+        $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
 
         /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         $companyLoader = $companyLoaderFactory();
