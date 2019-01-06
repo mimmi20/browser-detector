@@ -32,7 +32,6 @@ class DataTest extends TestCase
     protected function setUp(): void
     {
         $structure = [
-            'bot.txt' => 'some text',
             'bot.json' => '{"key": "value"}',
             'tool.json' => '{"key2": "value2"}',
         ];

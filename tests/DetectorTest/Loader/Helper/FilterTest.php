@@ -11,12 +11,35 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader\Helper;
 
-use BrowserDetector\Loader\BrowserLoaderFactory;
 use BrowserDetector\Loader\Helper\Filter;
+use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
 
 class FilterTest extends TestCase
 {
+    private const DATA_PATH = 'root';
+
+    /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
+    private $root;
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
+    {
+        $structure = [
+            'dir' => [
+                'bot.txt' => 'some text',
+                'bot.json' => '{"key": "value"}',
+                'tool.json' => '{"key2": "value2"}',
+            ],
+        ];
+
+        $this->root = vfsStream::setup(self::DATA_PATH, null, $structure);
+    }
+
     /**
      * @return void
      */
@@ -24,7 +47,7 @@ class FilterTest extends TestCase
     {
         $object = new Filter();
 
-        $result = $object(BrowserLoaderFactory::DATA_PATH, 'json');
+        $result = $object(vfsStream::url(self::DATA_PATH . '/dir'), 'json');
 
         self::assertInstanceOf(\Iterator::class, $result);
     }
