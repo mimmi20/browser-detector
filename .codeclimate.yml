@@ -43,7 +43,7 @@ plugins:
   phan:
     enabled: false
   phpcodesniffer:
-    enabled: true
+    enabled: false
     config:
       file_extensions: "php"
       standard: "PSR2"
