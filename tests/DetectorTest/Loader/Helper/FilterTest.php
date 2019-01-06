@@ -50,5 +50,14 @@ class FilterTest extends TestCase
         $result = $object(vfsStream::url(self::DATA_PATH . '/dir'), 'json');
 
         self::assertInstanceOf(\Iterator::class, $result);
+
+        $counter = 0;
+
+        foreach ($result as $file) {
+            self::assertInstanceOf(\SplFileInfo::class, $file);
+            ++$counter;
+        }
+
+        self::assertSame(2, $counter);
     }
 }

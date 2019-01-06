@@ -24,11 +24,17 @@ final class Filter implements FilterInterface
         $directory = new \RecursiveDirectoryIterator($path);
         $filter    = new \RecursiveCallbackFilterIterator(
             $directory,
-            static function (\SplFileInfo $current) use ($extension) {
+            static function (\SplFileInfo $current, $key, \RecursiveIterator $iterator) use ($extension) {
+                // Allow recursion
+                if ($iterator->hasChildren()) {
+                    return true;
+                }
+
                 // Skip hidden files and directories.
                 if ('.' === $current->getFilename()[0]) {
                     return false;
                 }
+
                 if ($current->getExtension() !== $extension) {
                     return false;
                 }
