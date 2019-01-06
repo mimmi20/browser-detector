@@ -47,7 +47,7 @@ class FilterTest extends TestCase
     {
         $object = new Filter();
 
-        $result = $object(vfsStream::url(self::DATA_PATH . '/dir'), 'json');
+        $result = $object(vfsStream::url(self::DATA_PATH), 'json');
 
         self::assertInstanceOf(\Iterator::class, $result);
 
