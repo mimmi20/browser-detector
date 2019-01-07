@@ -21,11 +21,6 @@ use UaResult\Engine\EngineInterface;
 final class EngineFactory
 {
     /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
-    private $companyLoader;
-
-    /**
      * BrowserFactory constructor.
      *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader

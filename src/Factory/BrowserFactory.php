@@ -23,11 +23,6 @@ use UaResult\Browser\BrowserInterface;
 final class BrowserFactory
 {
     /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
-    private $companyLoader;
-
-    /**
      * @var \UaBrowserType\TypeLoaderInterface
      */
     private $typeLoader;

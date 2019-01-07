@@ -36,7 +36,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -109,7 +109,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -186,7 +186,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -260,7 +260,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -339,7 +339,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -418,7 +418,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -497,7 +497,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -573,7 +573,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -664,7 +664,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
             ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $exception) {
                 if ('Unknown' === $key) {
@@ -746,7 +746,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
             ->willReturn($company);
 
@@ -833,7 +833,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
             ->willReturn($company);
 
@@ -919,7 +919,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
             ->willReturn($company);
 
@@ -1006,7 +1006,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
             ->willReturn($company);
 
@@ -1092,7 +1092,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
             ->willReturn($company);
 
@@ -1178,7 +1178,7 @@ class PlatformFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
             ->willReturn($company);
 

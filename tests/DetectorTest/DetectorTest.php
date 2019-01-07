@@ -78,7 +78,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -87,7 +87,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->createMock(EngineInterface::class);
@@ -97,7 +97,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
@@ -106,7 +106,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -188,7 +188,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -197,7 +197,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->createMock(EngineInterface::class);
@@ -207,7 +207,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
@@ -216,7 +216,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -299,28 +299,28 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -407,28 +407,28 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -506,7 +506,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -515,7 +515,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->createMock(EngineInterface::class);
@@ -525,7 +525,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
@@ -534,7 +534,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -616,7 +616,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -625,7 +625,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->createMock(EngineInterface::class);
@@ -635,7 +635,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
@@ -644,7 +644,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -729,7 +729,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -738,7 +738,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->createMock(EngineInterface::class);
@@ -748,7 +748,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
@@ -758,7 +758,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -842,7 +842,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::throwException(new NotFoundException('test')));
 
@@ -851,7 +851,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->createMock(EngineInterface::class);
@@ -861,7 +861,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
@@ -870,7 +870,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -953,7 +953,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::throwException(new NotFoundException('test')));
 
@@ -962,7 +962,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->createMock(EngineInterface::class);
@@ -972,7 +972,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, $engine]));
 
@@ -981,7 +981,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -1074,7 +1074,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -1083,7 +1083,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
@@ -1096,7 +1096,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
@@ -1105,7 +1105,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue($engine));
         $engineParser
@@ -1198,7 +1198,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -1207,7 +1207,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
 
@@ -1216,7 +1216,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
@@ -1225,7 +1225,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::throwException(new InvalidArgumentException('test')));
         $engineParser
@@ -1322,7 +1322,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -1331,7 +1331,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
 
@@ -1340,7 +1340,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
@@ -1349,7 +1349,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $engine = $this->getMockBuilder(EngineInterface::class)->getMock();
         $engine->expects(self::once())
@@ -1451,7 +1451,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -1460,7 +1460,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
 
@@ -1469,7 +1469,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
@@ -1478,7 +1478,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::once())
             ->method('load')
@@ -1575,7 +1575,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -1584,7 +1584,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
 
@@ -1593,7 +1593,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
@@ -1602,7 +1602,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
         $engineParser
             ->expects(self::once())
             ->method('load')
@@ -1699,7 +1699,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, $os]));
 
@@ -1709,14 +1709,14 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->willThrowException(new DecodeErrorException(0, 'parsing failed', ''));
 
@@ -1725,7 +1725,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('parse');
 
         $engine2 = $this->getMockBuilder(EngineInterface::class)->getMock();
         $engine2->expects(self::never())
@@ -1824,7 +1824,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, null]));
 
@@ -1833,7 +1833,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue($os));
 
@@ -1848,7 +1848,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
@@ -1857,7 +1857,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue($engine));
         $engineParser
@@ -1949,7 +1949,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $deviceParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$device, null]));
 
@@ -1958,7 +1958,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $platformParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->willThrowException(new NotFoundException('platform not found'));
 
@@ -1973,7 +1973,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $browserParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue([$browser, null]));
 
@@ -1982,7 +1982,7 @@ class DetectorTest extends TestCase
             ->getMock();
         $engineParser
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('parse')
             ->with($useragent)
             ->will(self::returnValue($engine));
         $engineParser

@@ -49,7 +49,7 @@ final class TvParser implements DeviceParserInterface
      *
      * @return array
      */
-    public function __invoke(string $useragent): array
+    public function parse(string $useragent): array
     {
         $mode = $this->fileParser->parseFile(
             new \SplFileInfo(self::GENERIC_FILE),
@@ -80,6 +80,6 @@ final class TvParser implements DeviceParserInterface
         /** @var \BrowserDetector\Loader\DeviceLoader $loader */
         $loader = $loaderFactory($company);
 
-        return $loader($key, $useragent);
+        return $loader->load($key, $useragent);
     }
 }

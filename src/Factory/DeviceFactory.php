@@ -27,11 +27,6 @@ use UaResult\Device\Market;
 final class DeviceFactory
 {
     /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
-    private $companyLoader;
-
-    /**
      * @var \UaDeviceType\TypeLoaderInterface
      */
     private $typeLoader;

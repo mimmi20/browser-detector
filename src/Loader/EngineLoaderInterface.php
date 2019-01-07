@@ -23,5 +23,5 @@ interface EngineLoaderInterface extends SpecificLoaderInterface
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function __invoke(string $key, string $useragent = ''): EngineInterface;
+    public function load(string $key, string $useragent = ''): EngineInterface;
 }

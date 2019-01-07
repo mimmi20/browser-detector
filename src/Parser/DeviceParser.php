@@ -98,43 +98,9 @@ final class DeviceParser implements DeviceParserInterface
      *
      * @return array
      */
-    public function __invoke(string $useragent): array
+    public function parse(string $useragent): array
     {
-        $s = new Stringy($useragent);
-
-        $unknownDevices = [
-            'new-sogou-spider',
-            'zollard',
-            'socialradarbot',
-            'microsoft office protocol discovery',
-            'powermarks',
-            'archivebot',
-            'marketwirebot',
-            'microsoft-cryptoapi',
-            'pad-bot',
-            'james bot',
-            'winhttp',
-            'jobboerse',
-            '<',
-            '>',
-            'online-versicherungsportal.info',
-            'versicherungssuchmaschine.net',
-            'microsearch',
-            'microsoft data access',
-            'microsoft url control',
-            'infegyatlas',
-            'msie or firefox mutant',
-            'semantic-visions.com crawler',
-            'labs.topsy.com/butterfly',
-            'dolphin http client',
-            'google wireless transcoder',
-            'commoncrawler',
-            'ipodder',
-            'tripadvisor',
-            'nokia wap gateway',
-        ];
-
-        if ($s->containsAny($unknownDevices, false)) {
+        if (preg_match('/new-sogou-spider|zollard|socialradarbot|microsoft office protocol discovery|powermarks|archivebot|marketwirebot|microsoft-cryptoapi|pad-bot|james bot|winhttp|jobboerse|<|>|online-versicherungsportal\.info|versicherungssuchmaschine\.net|microsearch|microsoft data access|microsoft url control|infegyatlas|msie or firefox mutant|semantic-visions\.com crawler|labs\.topsy\.com\/butterfly|dolphin http client|google wireless transcoder|commoncrawler|ipodder|tripadvisor|nokia wap gateway/i', $useragent)) {
             return $this->load('unknown', 'unknown', $useragent);
         }
 
@@ -143,25 +109,27 @@ final class DeviceParser implements DeviceParserInterface
         ) {
             $factory = $this->darwinParser;
 
-            return $factory($useragent);
+            return $factory->parse($useragent);
         }
+
+        $s = new Stringy($useragent);
 
         if ($this->mobileDevice->isMobile($s)) {
             $factory = $this->mobileParser;
 
-            return $factory($useragent);
+            return $factory->parse($useragent);
         }
 
         if ($this->tvDevice->isTvDevice($s)) {
             $factory = $this->tvParser;
 
-            return $factory($useragent);
+            return $factory->parse($useragent);
         }
 
         if ($this->desktopDevice->isDesktopDevice($s)) {
             $factory = $this->desktopParser;
 
-            return $factory($useragent);
+            return $factory->parse($useragent);
         }
 
         return $this->load('unknown', 'unknown', $useragent);
@@ -181,6 +149,6 @@ final class DeviceParser implements DeviceParserInterface
         /** @var \BrowserDetector\Loader\DeviceLoader $loader */
         $loader = $loaderFactory($company);
 
-        return $loader($key, $useragent);
+        return $loader->load($key, $useragent);
     }
 }

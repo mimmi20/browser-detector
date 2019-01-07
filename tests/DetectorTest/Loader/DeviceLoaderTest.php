@@ -93,7 +93,7 @@ class DeviceLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the device with key "test-key" was not found');
 
-        $object('test-key', 'test-ua');
+        $object->load('test-key', 'test-ua');
     }
 
     /**
@@ -164,7 +164,7 @@ class DeviceLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the device with key "test-key" was not found');
 
-        $object('test-key', 'test-ua');
+        $object->load('test-key', 'test-ua');
     }
 
     /**
@@ -240,7 +240,7 @@ class DeviceLoaderTest extends TestCase
             $platformParser
         );
 
-        $result = $object('test-key', 'test-ua');
+        $result = $object->load('test-key', 'test-ua');
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
@@ -329,7 +329,7 @@ class DeviceLoaderTest extends TestCase
             $platformParser
         );
 
-        $result = $object('test-key', 'test/1.0');
+        $result = $object->load('test-key', 'test/1.0');
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
@@ -418,7 +418,7 @@ class DeviceLoaderTest extends TestCase
             $platformParser
         );
 
-        $result = $object('test-key', 'test/1.0');
+        $result = $object->load('test-key', 'test/1.0');
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);

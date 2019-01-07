@@ -172,7 +172,7 @@ final class Detector implements DetectorInterface
         /* @var \UaResult\Device\DeviceInterface $device */
         /* @var \UaResult\Os\OsInterface $platform */
         try {
-            [$device, $platform] = $deviceParser($deviceUa);
+            [$device, $platform] = $deviceParser->parse($deviceUa);
         } catch (NotFoundException $e) {
             $this->logger->warning($e);
 
@@ -187,7 +187,7 @@ final class Detector implements DetectorInterface
             $platformParser = $this->platformParser;
 
             try {
-                $platform = $platformParser($browserUa);
+                $platform = $platformParser->parse($browserUa);
             } catch (NotFoundException | InvalidArgumentException $e) {
                 $this->logger->warning($e);
                 $platform = clone $defaultPlatform;
@@ -214,7 +214,7 @@ final class Detector implements DetectorInterface
         /* @var \UaResult\Browser\BrowserInterface $browser */
         /* @var \UaResult\Engine\EngineInterface $engine */
         try {
-            [$browser, $engine] = $browserParser($browserUa);
+            [$browser, $engine] = $browserParser->parse($browserUa);
         } catch (DecodeErrorException | InvalidArgumentException $e) {
             $this->logger->error($e);
 
@@ -241,7 +241,7 @@ final class Detector implements DetectorInterface
             $engineParser = $this->engineParser;
 
             try {
-                $engine = $engineParser($browserUa);
+                $engine = $engineParser->parse($browserUa);
             } catch (InvalidArgumentException $e) {
                 $this->logger->error($e);
             }

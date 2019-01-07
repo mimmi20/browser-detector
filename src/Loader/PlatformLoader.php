@@ -60,7 +60,7 @@ final class PlatformLoader implements PlatformLoaderInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function __invoke(string $key, string $useragent = ''): OsInterface
+    public function load(string $key, string $useragent = ''): OsInterface
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the platform with key "' . $key . '" was not found');

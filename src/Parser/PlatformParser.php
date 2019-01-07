@@ -53,7 +53,7 @@ final class PlatformParser implements PlatformParserInterface
      *
      * @return OsInterface
      */
-    public function __invoke(string $useragent): OsInterface
+    public function parse(string $useragent): OsInterface
     {
         $mode = $this->fileParser->parseFile(
             new \SplFileInfo(self::GENERIC_FILE),
@@ -85,6 +85,6 @@ final class PlatformParser implements PlatformParserInterface
         /** @var \BrowserDetector\Loader\PlatformLoader $loader */
         $loader = $loaderFactory();
 
-        return $loader($key, $useragent);
+        return $loader->load($key, $useragent);
     }
 }

@@ -21,5 +21,5 @@ interface BrowserLoaderInterface extends SpecificLoaderInterface
      *
      * @return array
      */
-    public function __invoke(string $key, string $useragent = ''): array;
+    public function load(string $key, string $useragent = ''): array;
 }
