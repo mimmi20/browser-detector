@@ -34,7 +34,7 @@ class EngineParserTest extends TestCase
             ->getMock();
         $loader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with($mode, $useragent)
             ->willReturn($result);
 
@@ -57,7 +57,7 @@ class EngineParserTest extends TestCase
         /** @var \BrowserDetector\Loader\EngineLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
         $parser       = new EngineParser($loaderFactory, $fileParser);
-        $parserResult = $parser($useragent);
+        $parserResult = $parser->parse($useragent);
 
         self::assertSame($result, $parserResult);
     }

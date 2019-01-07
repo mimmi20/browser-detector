@@ -34,7 +34,7 @@ class MobileParserTest extends TestCase
             ->getMock();
         $mockLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with($expectedMode, $useragent)
             ->willReturn($expectedResult);
 
@@ -59,6 +59,6 @@ class MobileParserTest extends TestCase
         /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
         $object = new MobileParser($fileParser, $mockLoaderFactory);
 
-        self::assertSame($expectedResult, $object($useragent));
+        self::assertSame($expectedResult, $object->parse($useragent));
     }
 }

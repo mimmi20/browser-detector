@@ -24,7 +24,7 @@ interface EngineParserInterface
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function __invoke(string $useragent): EngineInterface;
+    public function parse(string $useragent): EngineInterface;
 
     /**
      * @param string $key

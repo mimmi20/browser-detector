@@ -52,7 +52,7 @@ final class BrowserParser implements BrowserParserInterface
      *
      * @return array
      */
-    public function __invoke(string $useragent): array
+    public function parse(string $useragent): array
     {
         $mode = $this->fileParser->parseFile(
             new \SplFileInfo(self::GENERIC_FILE),
@@ -84,6 +84,6 @@ final class BrowserParser implements BrowserParserInterface
         /** @var \BrowserDetector\Loader\BrowserLoader $loader */
         $loader = $loaderFactory();
 
-        return $loader($key, $useragent);
+        return $loader->load($key, $useragent);
     }
 }

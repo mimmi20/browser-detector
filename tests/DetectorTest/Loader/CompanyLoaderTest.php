@@ -54,7 +54,7 @@ class CompanyLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with key "A6Corp" was not found');
 
-        $object($companyKey);
+        $object->load($companyKey);
     }
 
     /**
@@ -89,7 +89,7 @@ class CompanyLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the company with key "A6Corp" was not found');
 
-        $object($companyKey);
+        $object->load($companyKey);
     }
 
     /**
@@ -122,7 +122,7 @@ class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($data);
 
         /** @var \UaResult\Company\CompanyInterface $result */
-        $result = $object($companyKey);
+        $result = $object->load($companyKey);
 
         self::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
 

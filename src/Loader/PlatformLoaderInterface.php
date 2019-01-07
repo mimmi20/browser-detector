@@ -23,5 +23,5 @@ interface PlatformLoaderInterface extends SpecificLoaderInterface
      *
      * @return \UaResult\Os\OsInterface
      */
-    public function __invoke(string $key, string $useragent = ''): OsInterface;
+    public function load(string $key, string $useragent = ''): OsInterface;
 }

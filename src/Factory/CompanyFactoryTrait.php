@@ -18,6 +18,11 @@ use UaResult\Company\CompanyInterface;
 trait CompanyFactoryTrait
 {
     /**
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
+     */
+    private $companyLoader;
+
+    /**
      * @param \Psr\Log\LoggerInterface $logger
      * @param array                    $data
      * @param string                   $useragent
@@ -28,14 +33,14 @@ trait CompanyFactoryTrait
     private function getCompany(LoggerInterface $logger, array $data, string $useragent, string $field): CompanyInterface
     {
         $companyLoader = $this->companyLoader;
-        $manufacturer  = $companyLoader('Unknown', $useragent);
+        $manufacturer  = $companyLoader->load('Unknown', $useragent);
 
         if (!array_key_exists($field, $data)) {
             return $manufacturer;
         }
 
         try {
-            $manufacturer = $companyLoader($data[$field], $useragent);
+            $manufacturer = $companyLoader->load($data[$field], $useragent);
         } catch (NotFoundException $e) {
             $logger->info($e);
         }

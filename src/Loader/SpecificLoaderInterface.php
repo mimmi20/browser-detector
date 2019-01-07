@@ -21,5 +21,5 @@ interface SpecificLoaderInterface
      *
      * @return mixed
      */
-    public function __invoke(string $key, string $useragent = '');
+    public function load(string $key, string $useragent = '');
 }

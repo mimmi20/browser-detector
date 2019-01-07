@@ -40,7 +40,7 @@ final class CompanyLoader implements CompanyLoaderInterface
      *
      * @return \UaResult\Company\CompanyInterface
      */
-    public function __invoke(string $key, string $useragent = ''): CompanyInterface
+    public function load(string $key, string $useragent = ''): CompanyInterface
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the company with key "' . $key . '" was not found');

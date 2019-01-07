@@ -93,7 +93,7 @@ class BrowserLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
 
-        $object('test-key', 'test-ua');
+        $object->load('test-key', 'test-ua');
     }
 
     /**
@@ -164,7 +164,7 @@ class BrowserLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
 
-        $object('test-key', 'test-ua');
+        $object->load('test-key', 'test-ua');
     }
 
     /**
@@ -240,7 +240,7 @@ class BrowserLoaderTest extends TestCase
             $engineParser
         );
 
-        $result = $object('test-key', 'test-ua');
+        $result = $object->load('test-key', 'test-ua');
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
@@ -325,7 +325,7 @@ class BrowserLoaderTest extends TestCase
             $engineParser
         );
 
-        $result = $object('test-key', 'test/1.0');
+        $result = $object->load('test-key', 'test/1.0');
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
@@ -419,7 +419,7 @@ class BrowserLoaderTest extends TestCase
             $engineParser
         );
 
-        $result = $object('test-key', $useragent);
+        $result = $object->load('test-key', $useragent);
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
@@ -501,7 +501,7 @@ class BrowserLoaderTest extends TestCase
             $engineParser
         );
 
-        $result = $object('test-key', 'test/1.0');
+        $result = $object->load('test-key', 'test/1.0');
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);

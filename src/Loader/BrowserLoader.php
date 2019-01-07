@@ -69,7 +69,7 @@ final class BrowserLoader implements BrowserLoaderInterface
      *
      * @return array
      */
-    public function __invoke(string $key, string $useragent = ''): array
+    public function load(string $key, string $useragent = ''): array
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the browser with key "' . $key . '" was not found');

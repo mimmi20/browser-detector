@@ -34,7 +34,7 @@ final class BrowserParserTest extends TestCase
             ->getMock();
         $loader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with($key, $useragent)
             ->willReturn($result);
 
@@ -57,7 +57,7 @@ final class BrowserParserTest extends TestCase
         /** @var \BrowserDetector\Loader\BrowserLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
         $parser       = new BrowserParser($loaderFactory, $fileParser);
-        $parserResult = $parser($useragent);
+        $parserResult = $parser->parse($useragent);
 
         self::assertSame($result, $parserResult);
     }

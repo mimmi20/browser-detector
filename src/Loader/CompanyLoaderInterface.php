@@ -23,5 +23,5 @@ interface CompanyLoaderInterface extends SpecificLoaderInterface
      *
      * @return \UaResult\Company\CompanyInterface
      */
-    public function __invoke(string $key, string $useragent = ''): CompanyInterface;
+    public function load(string $key, string $useragent = ''): CompanyInterface;
 }

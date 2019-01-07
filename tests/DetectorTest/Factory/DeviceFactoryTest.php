@@ -42,7 +42,7 @@ class DeviceFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown', $useragent)
             ->willReturn($company);
 
@@ -137,7 +137,7 @@ class DeviceFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown', $useragent)
             ->willReturn($company);
 
@@ -246,7 +246,7 @@ class DeviceFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(4))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$manufacturerParam, $useragent], ['Unknown', $useragent], [$brandParam, $useragent])
             ->willReturnOnConsecutiveCalls($company, $manufacturer, $company, $brand);
 
@@ -391,7 +391,7 @@ class DeviceFactoryTest extends TestCase
             ->getMock();
         $companyLoader
             ->expects(self::exactly(4))
-            ->method('__invoke')
+            ->method('load')
             ->withConsecutive(['Unknown', $useragent], [$manufacturerParam, $useragent], ['Unknown', $useragent], [$brandParam, $useragent])
             ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $companyException, $manufacturerParam, $manufacturer) {
                 if ('Unknown' === $key) {

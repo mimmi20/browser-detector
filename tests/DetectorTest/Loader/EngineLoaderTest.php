@@ -77,7 +77,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('load');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
@@ -91,7 +91,7 @@ class EngineLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the engine with key "test-key" was not found');
 
-        $object('test-key', 'test-ua');
+        $object->load('test-key', 'test-ua');
     }
 
     /**
@@ -146,7 +146,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('load');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
@@ -160,7 +160,7 @@ class EngineLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the engine with key "test-key" was not found');
 
-        $object('test-key', 'test-ua');
+        $object->load('test-key', 'test-ua');
     }
 
     /**
@@ -223,7 +223,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -236,7 +236,7 @@ class EngineLoaderTest extends TestCase
             $companyLoader
         );
 
-        $result = $object('test-key', 'test-ua');
+        $result = $object->load('test-key', 'test-ua');
 
         self::assertInstanceOf(EngineInterface::class, $result);
     }
@@ -301,7 +301,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -314,7 +314,7 @@ class EngineLoaderTest extends TestCase
             $companyLoader
         );
 
-        $result = $object('test-key', 'test-ua');
+        $result = $object->load('test-key', 'test-ua');
 
         self::assertInstanceOf(EngineInterface::class, $result);
     }
@@ -380,7 +380,7 @@ class EngineLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -393,7 +393,7 @@ class EngineLoaderTest extends TestCase
             $companyLoader
         );
 
-        $result = $object('test-key', 'test-ua');
+        $result = $object->load('test-key', 'test-ua');
 
         self::assertInstanceOf(EngineInterface::class, $result);
     }

@@ -22,11 +22,6 @@ use UaResult\Os\OsInterface;
 final class PlatformFactory
 {
     /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
-    private $companyLoader;
-
-    /**
      * BrowserFactory constructor.
      *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader

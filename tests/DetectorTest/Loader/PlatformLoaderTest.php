@@ -76,7 +76,7 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('load');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
@@ -90,7 +90,7 @@ final class PlatformLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the platform with key "test-key" was not found');
 
-        $object('test-key', 'test-ua');
+        $object->load('test-key', 'test-ua');
     }
 
     /**
@@ -145,7 +145,7 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::never())
-            ->method('__invoke');
+            ->method('load');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
@@ -159,7 +159,7 @@ final class PlatformLoaderTest extends TestCase
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the platform with key "test-key" was not found');
 
-        $object('test-key', 'test-ua');
+        $object->load('test-key', 'test-ua');
     }
 
     /**
@@ -223,7 +223,7 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -236,7 +236,7 @@ final class PlatformLoaderTest extends TestCase
             $companyLoader
         );
 
-        $result = $object('test-key', 'test-ua');
+        $result = $object->load('test-key', 'test-ua');
 
         self::assertInstanceOf(OsInterface::class, $result);
     }
@@ -302,7 +302,7 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -315,7 +315,7 @@ final class PlatformLoaderTest extends TestCase
             $companyLoader
         );
 
-        $result = $object('test-key', 'test-ua');
+        $result = $object->load('test-key', 'test-ua');
 
         self::assertInstanceOf(OsInterface::class, $result);
     }
@@ -381,7 +381,7 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -394,7 +394,7 @@ final class PlatformLoaderTest extends TestCase
             $companyLoader
         );
 
-        $result = $object('test-key', 'test/10.12');
+        $result = $object->load('test-key', 'test/10.12');
 
         self::assertInstanceOf(OsInterface::class, $result);
 
@@ -462,7 +462,7 @@ final class PlatformLoaderTest extends TestCase
 
         $companyLoader
             ->expects(self::exactly(2))
-            ->method('__invoke')
+            ->method('load')
             ->with('Unknown')
             ->willReturn($company);
 
@@ -475,7 +475,7 @@ final class PlatformLoaderTest extends TestCase
             $companyLoader
         );
 
-        $result = $object('test-key', 'test/12.0');
+        $result = $object->load('test-key', 'test/12.0');
 
         self::assertInstanceOf(OsInterface::class, $result);
     }

@@ -20,7 +20,7 @@ interface DeviceParserInterface
      *
      * @return array
      */
-    public function __invoke(string $useragent): array;
+    public function parse(string $useragent): array;
 
     /**
      * @param string $company

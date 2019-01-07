@@ -60,7 +60,7 @@ final class EngineLoader implements EngineLoaderInterface
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function __invoke(string $key, string $useragent = ''): EngineInterface
+    public function load(string $key, string $useragent = ''): EngineInterface
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the engine with key "' . $key . '" was not found');

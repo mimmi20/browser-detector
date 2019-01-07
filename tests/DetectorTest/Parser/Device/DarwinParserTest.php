@@ -33,7 +33,7 @@ class DarwinParserTest extends TestCase
             ->getMock();
         $mockLoader
             ->expects(self::once())
-            ->method('__invoke')
+            ->method('load')
             ->with($expectedMode, $useragent)
             ->willReturn($expectedResult);
 
@@ -58,6 +58,6 @@ class DarwinParserTest extends TestCase
         /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
         $object = new DarwinParser($fileParser, $mockLoaderFactory);
 
-        self::assertSame($expectedResult, $object($useragent));
+        self::assertSame($expectedResult, $object->parse($useragent));
     }
 }

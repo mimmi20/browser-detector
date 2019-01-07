@@ -52,7 +52,7 @@ final class EngineParser implements EngineParserInterface
      *
      * @return \UaResult\Engine\EngineInterface
      */
-    public function __invoke(string $useragent): EngineInterface
+    public function parse(string $useragent): EngineInterface
     {
         $key = $this->fileParser->parseFile(
             new \SplFileInfo(self::GENERIC_FILE),
@@ -78,6 +78,6 @@ final class EngineParser implements EngineParserInterface
         /** @var \BrowserDetector\Loader\EngineLoader $loader */
         $loader = $loaderFactory();
 
-        return $loader($key, $useragent);
+        return $loader->load($key, $useragent);
     }
 }

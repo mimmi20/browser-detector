@@ -22,7 +22,7 @@ interface BrowserParserInterface
      *
      * @return array
      */
-    public function __invoke(string $useragent);
+    public function parse(string $useragent);
 
     /**
      * @param string $key
