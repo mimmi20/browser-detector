@@ -55826,5 +55826,62 @@
       "version": "537.42.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SAMSUNG SM-J610FN Build/M1AJQ) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/8.0 Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J610FN",
+      "marketingName": "Galaxy J6+ (2018)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 720,
+        "height": 1480,
+        "touch": true,
+        "type": "Custom 720x1480",
+        "size": 6
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "EMEA"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "UMTS",
+        "LTE",
+        "HSPA+",
+        "HSUPA",
+        "GPRS",
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]

@@ -6725,5 +6725,60 @@
       "version": "5.0.0",
       "manufacturer": "Microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; ASUS_X015D Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36 Instagram 75.0.0.23.99 Android (24/7.0; 310dpi; 720x1187; asus; ASUS_X015D; ASUS_X015_1; mt6755; pl_PL; 135374882)"
+    },
+    "device": {
+      "deviceName": "X015D",
+      "marketingName": "Zenfone 4 Max Plus",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": "HD/WXGA",
+        "size": 5.5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "HSDPA",
+        "UMTS",
+        "WCDMA",
+        "TD-SCDMA",
+        "LTE",
+        "TD-LTE"
+      ]
+    },
+    "browser": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "75.0.0.23.99",
+      "manufacturer": "Facebook",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]

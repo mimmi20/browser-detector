@@ -1846,5 +1846,37 @@
     "connections": [],
     "platform": "android",
     "variants": []
+  },
+  "asus x015d": {
+    "deviceName": "X015D",
+    "marketingName": "Zenfone 4 Max Plus",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "HSDPA",
+      "UMTS",
+      "WCDMA",
+      "TD-SCDMA",
+      "LTE",
+      "TD-LTE"
+    ],
+    "platform": "android",
+    "variants": []
   }
 }

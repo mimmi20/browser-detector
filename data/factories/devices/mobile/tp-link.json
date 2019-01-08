@@ -1,13 +1,14 @@
 {
   "rules": {
-    "/neffos x1 max/i": "tp-link neffos x1 max",
-    "/neffos x1 lite/i": "tp-link neffos x1 lite",
-    "/neffos x1/i": "tp-link neffos x1",
-    "/neffos y5l/i": "tp-link neffos y5l",
-    "/neffos c7/i": "tp-link neffos c7",
-    "/neffos c5 max/i": "tp-link neffos c5 max",
-    "/neffos c5l|tp601a|tp601b|tp601c|tp601e/i": "tp-link neffos c5l",
-    "/neffos c5/i": "tp-link neffos c5"
+    "/neffos[ _]x1[ _]max/i": "tp-link neffos x1 max",
+    "/neffos[ _]x1[ _]lite/i": "tp-link neffos x1 lite",
+    "/neffos[ _]x1/i": "tp-link neffos x1",
+    "/neffos[ _]y5l/i": "tp-link neffos y5l",
+    "/neffos[ _]c9a/i": "tp-link neffos c9a",
+    "/neffos[ _]c7/i": "tp-link neffos c7",
+    "/neffos[ _]c5[ _]max/i": "tp-link neffos c5 max",
+    "/neffos[ _]c5l|tp601a|tp601b|tp601c|tp601e/i": "tp-link neffos c5l",
+    "/neffos[ _]c5/i": "tp-link neffos c5"
   },
   "generic": "general tp-link device"
 }

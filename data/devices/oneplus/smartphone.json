@@ -358,5 +358,32 @@
     "connections": [],
     "platform": "android",
     "variants": []
+  },
+  "oneplus a6013": {
+    "deviceName": "A6013",
+    "marketingName": "6T",
+    "manufacturer": "Oneplus",
+    "brand": "Oneplus",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "type": "FHD",
+      "size": 6.41
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
   }
 }

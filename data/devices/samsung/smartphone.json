@@ -21095,5 +21095,39 @@
     "connections": [],
     "platform": "tizen",
     "variants": []
+  },
+  "samsung sm-j610fn": {
+    "deviceName": "SM-J610FN",
+    "marketingName": "Galaxy J6+ (2018)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1480,
+      "touch": true,
+      "type": "Custom 720x1480",
+      "size": 6.0
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [
+        "EMEA"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "UMTS",
+      "LTE",
+      "HSPA+",
+      "HSUPA",
+      "GPRS",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
   }
 }
