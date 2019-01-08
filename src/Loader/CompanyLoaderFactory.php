@@ -15,7 +15,7 @@ use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\FilterInterface;
 use JsonClass\JsonInterface;
 
-final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
+final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/companies';
 
@@ -40,9 +40,9 @@ final class CompanyLoaderFactory implements SpecificLoaderFactoryInterface
     }
 
     /**
-     * @return SpecificLoaderInterface
+     * @return CompanyLoaderInterface
      */
-    public function __invoke(): SpecificLoaderInterface
+    public function __invoke(): CompanyLoaderInterface
     {
         /** @var CompanyLoader $loader */
         static $loader = null;

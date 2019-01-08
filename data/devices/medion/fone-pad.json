@@ -70,5 +70,34 @@
     "connections": [],
     "platform": "android",
     "variants": []
+  },
+  "medion e1051x": {
+    "deviceName": "E1051X",
+    "marketingName": "E1051X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "WUXGA",
+      "size": 10.1
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "WI-FI",
+      "GSM",
+      "HSDPA",
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
   }
 }

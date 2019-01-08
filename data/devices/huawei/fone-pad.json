@@ -732,5 +732,34 @@
     ],
     "platform": "android",
     "variants": []
+  },
+  "huawei kob-l09": {
+    "deviceName": "KOB-L09",
+    "marketingName": "MediaPad T3 8",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "type": "WXGA (variant 3)",
+      "size": 8.0
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi",
+      "LTE",
+      "HSDPA",
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
   }
 }

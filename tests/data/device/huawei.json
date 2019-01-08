@@ -2982,7 +2982,7 @@
         "height": 1920,
         "touch": true,
         "type": "FHD",
-        "size": null
+        "size": 6
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -3221,7 +3221,7 @@
         "height": 1920,
         "touch": true,
         "type": "FHD",
-        "size": null
+        "size": 6
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -4114,7 +4114,7 @@
         "height": 1280,
         "touch": true,
         "type": "HD/WXGA",
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -10983,7 +10983,7 @@
         "height": 1920,
         "touch": true,
         "type": "FHD",
-        "size": null
+        "size": 6
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -18191,7 +18191,7 @@
         "height": 800,
         "touch": true,
         "type": "WXGA (variant 3)",
-        "size": null
+        "size": 8
       },
       "dualOrientation": true,
       "type": "tablet",
@@ -18287,11 +18287,11 @@
         "height": 1440,
         "touch": true,
         "type": "Custom 720x1440",
-        "size": null
+        "size": 6
       },
       "dualOrientation": true,
       "type": "smartphone",
-      "simCount": 0,
+      "simCount": 2,
       "market": {
         "regions": [],
         "countries": [],
@@ -20878,7 +20878,7 @@
     },
     "device": {
       "deviceName": "SHT-W09",
-      "marketingName": "MediaPad M5 8.4",
+      "marketingName": "MediaPad M5",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
@@ -20886,7 +20886,7 @@
         "height": 1600,
         "touch": true,
         "type": "WQXGA",
-        "size": null
+        "size": 8.4
       },
       "dualOrientation": true,
       "type": "tablet",
@@ -22778,11 +22778,11 @@
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1440,
+        "height": 3120,
         "touch": true,
-        "type": "unknown",
-        "size": null
+        "type": "Custom 1440x3120",
+        "size": 6.39
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -23638,11 +23638,11 @@
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1440,
+        "height": 3120,
         "touch": true,
-        "type": "unknown",
-        "size": null
+        "type": "Custom 1440x3120",
+        "size": 6.39
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -24195,6 +24195,829 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SHT-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SHT-W09",
+      "marketingName": "MediaPad M5",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "type": "WQXGA",
+        "size": 8.4
+      },
+      "dualOrientation": true,
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; COR-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "COR-L29",
+      "marketingName": "Honor Play",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1080,
+        "height": 2340,
+        "touch": true,
+        "type": "Custom 1080x2340",
+        "size": 6.3
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "UMTS",
+        "LTE",
+        "HSUPA",
+        "GPRS",
+        "EDGE",
+        "HSDPA",
+        "HSPA+",
+        "CDMA"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; EVR-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "EVR-L29",
+      "marketingName": "Mate 20 X",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1080,
+        "height": 2244,
+        "touch": true,
+        "type": "Custom 1080x2244",
+        "size": 7.2
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "UMTS",
+        "LTE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; EVR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "EVR-AL00",
+      "marketingName": "Mate 20 X",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1080,
+        "height": 2244,
+        "touch": true,
+        "type": "Custom 1080x2244",
+        "size": 7.2
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "UMTS",
+        "LTE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; EVR-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "EVR-TL00",
+      "marketingName": "Mate 20 X",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1080,
+        "height": 2244,
+        "touch": true,
+        "type": "Custom 1080x2244",
+        "size": 7.2
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "UMTS",
+        "LTE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; KOB-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KOB-W09",
+      "marketingName": "MediaPad T3 8",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": "WXGA (variant 3)",
+        "size": 8
+      },
+      "dualOrientation": true,
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; KOB-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KOB-L09",
+      "marketingName": "MediaPad T3 8",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "type": "WXGA (variant 3)",
+        "size": 8
+      },
+      "dualOrientation": true,
+      "type": "fone-pad",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi",
+        "LTE",
+        "HSDPA",
+        "GSM"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; DUA-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "DUA-L22",
+      "marketingName": "Honor 7S",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 720,
+        "height": 1440,
+        "touch": true,
+        "type": "Custom 720x1440",
+        "size": 5.45
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "WCDMA",
+        "LTE",
+        "GPRS",
+        "EDGE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; DUK-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "DUK-L09",
+      "marketingName": "Honor 8 Pro",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1440,
+        "height": 2560,
+        "touch": true,
+        "type": "QHD",
+        "size": null
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; HMA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "HMA-L29",
+      "marketingName": "Mate 20",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1080,
+        "height": 2244,
+        "touch": true,
+        "type": "Custom 1080x2244",
+        "size": 6.53
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "WCDMA",
+        "LTE",
+        "GPRS",
+        "EDGE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; HMA-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "HMA-LX9",
+      "marketingName": "Mate 20",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1080,
+        "height": 2244,
+        "touch": true,
+        "type": "Custom 1080x2244",
+        "size": 6.53
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "WCDMA",
+        "LTE",
+        "GPRS",
+        "EDGE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; HMA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "HMA-AL00",
+      "marketingName": "Mate 20",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1080,
+        "height": 2244,
+        "touch": true,
+        "type": "Custom 1080x2244",
+        "size": 6.53
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [
+          "Global"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "WCDMA",
+        "LTE",
+        "GPRS",
+        "EDGE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Hol-U19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "HOL-U19",
+      "marketingName": "Honor Holly",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 720,
+        "height": 1280,
+        "touch": true,
+        "type": "HD/WXGA",
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; LYA-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LYA-L09",
+      "marketingName": "Mate 20 Pro",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1440,
+        "height": 3120,
+        "touch": true,
+        "type": "Custom 1440x3120",
+        "size": 6.39
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; HUAWEI NXT-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "NXT-TL00",
+      "marketingName": "Mate 8",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1080,
+        "height": 1920,
+        "touch": true,
+        "type": "FHD",
+        "size": 6
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; LND-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LND-L29",
+      "marketingName": "Honor 7c Pro (2018)",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 720,
+        "height": 1440,
+        "touch": true,
+        "type": "Custom 720x1440",
+        "size": 6
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
       "manufacturer": "Google",
       "bits": 32
     },

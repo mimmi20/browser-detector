@@ -214,5 +214,36 @@
     "connections": [],
     "platform": "android",
     "variants": []
+  },
+  "tp-link neffos c9a": {
+    "deviceName": "Neffos C9A",
+    "marketingName": "Neffos C9A",
+    "manufacturer": "TP-LINK",
+    "brand": "TP-LINK",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "type": "Custom 720x1440",
+      "size": 5.45
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "HSDPA",
+      "UMTS",
+      "WCDMA",
+      "LTE",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
   }
 }

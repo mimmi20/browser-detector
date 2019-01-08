@@ -2944,26 +2944,31 @@
       "user-agent": "Motorola_ES405B/191 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5.3.5)"
     },
     "device": {
-      "deviceName": "ES405B",
-      "marketingName": "ES405B",
+      "deviceName": "One",
+      "marketingName": "One",
       "manufacturer": "Motorola",
       "brand": "Motorola",
       "display": {
-        "width": 480,
-        "height": 640,
+        "width": 720,
+        "height": 1520,
         "touch": true,
-        "type": "VGA",
-        "size": null
+        "type": "Custom 720x1520",
+        "size": 5.9
       },
-      "dualOrientation": false,
-      "type": "feature-phone",
-      "simCount": 0,
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
       "market": {
         "regions": [],
         "countries": [],
         "vendors": []
       },
-      "connections": []
+      "connections": [
+        "GSM",
+        "UMTS",
+        "LTE",
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Internet Explorer",
@@ -9720,6 +9725,58 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; motorola one) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "One",
+      "marketingName": "One",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "display": {
+        "width": 720,
+        "height": 1520,
+        "touch": true,
+        "type": "Custom 720x1520",
+        "size": 5.9
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "UMTS",
+        "LTE",
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": 32
     },
