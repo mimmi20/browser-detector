@@ -55,22 +55,20 @@ class DisplayFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $typeName = 'test-type';
-        $type     = $this->getMockBuilder(DisplayTypeInterface::class)
+        $type = $this->getMockBuilder(DisplayTypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $type
-            ->expects(self::exactly(11))
-            ->method('getType')
-            ->willReturn($typeName);
+            ->expects(self::never())
+            ->method('getType');
 
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
             ->expects(self::once())
-            ->method('load')
-            ->with('unknown')
+            ->method('loadByDiemsions')
+            ->with(null, null)
             ->willReturn($type);
 
         /** @var TypeLoader $typeLoader */
@@ -80,8 +78,6 @@ class DisplayFactoryTest extends TestCase
         $result = $object->fromArray($logger, []);
 
         self::assertInstanceOf(DisplayInterface::class, $result);
-        self::assertNull($result->getWidth());
-        self::assertNull($result->getHeight());
         self::assertNull($result->hasTouch());
         self::assertNull($result->getSize());
         self::assertInstanceOf(DisplayTypeInterface::class, $result->getType());
@@ -91,13 +87,11 @@ class DisplayFactoryTest extends TestCase
         self::assertArrayHasKey('width', $result->toArray());
         self::assertArrayHasKey('height', $result->toArray());
         self::assertArrayHasKey('touch', $result->toArray());
-        self::assertArrayHasKey('type', $result->toArray());
         self::assertArrayHasKey('size', $result->toArray());
 
         self::assertNull($result->toArray()['width']);
         self::assertNull($result->toArray()['height']);
         self::assertNull($result->toArray()['touch']);
-        self::assertSame($typeName, $result->toArray()['type']);
         self::assertNull($result->toArray()['size']);
     }
 
@@ -134,38 +128,45 @@ class DisplayFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $typeName = 'test-type';
-        $type     = $this->getMockBuilder(DisplayTypeInterface::class)
+        $width  = 1280;
+        $height = 1920;
+
+        $type = $this->getMockBuilder(DisplayTypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $type
-            ->expects(self::exactly(11))
-            ->method('getType')
-            ->willReturn($typeName);
+            ->expects(self::never())
+            ->method('getType');
+        $type
+            ->expects(self::exactly(10))
+            ->method('getHeight')
+            ->willReturn($height);
+        $type
+            ->expects(self::exactly(10))
+            ->method('getWidth')
+            ->willReturn($width);
 
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
             ->expects(self::once())
-            ->method('load')
-            ->with($typeName)
+            ->method('loadByDiemsions')
+            ->with($height, $width)
             ->willReturn($type);
 
         /** @var TypeLoader $typeLoader */
         $object = new DisplayFactory($typeLoader);
 
-        $width  = 1280;
-        $height = 1920;
-        $size   = 12.1;
-        $touch  = true;
+        $size  = 12.1;
+        $touch = true;
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size, 'type' => $typeName]);
+        $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size]);
 
         self::assertInstanceOf(DisplayInterface::class, $result);
-        self::assertSame($width, $result->getWidth());
-        self::assertSame($height, $result->getHeight());
+        self::assertSame($width, $result->getType()->getWidth());
+        self::assertSame($height, $result->getType()->getHeight());
         self::assertTrue($result->hasTouch());
         self::assertSame($size, $result->getSize());
 
@@ -178,13 +179,11 @@ class DisplayFactoryTest extends TestCase
         self::assertArrayHasKey('width', $result->toArray());
         self::assertArrayHasKey('height', $result->toArray());
         self::assertArrayHasKey('touch', $result->toArray());
-        self::assertArrayHasKey('type', $result->toArray());
         self::assertArrayHasKey('size', $result->toArray());
 
         self::assertSame($width, $result->toArray()['width']);
         self::assertSame($height, $result->toArray()['height']);
         self::assertTrue($result->toArray()['touch']);
-        self::assertSame($typeName, $result->toArray()['type']);
         self::assertSame($size, $result->toArray()['size']);
     }
 
@@ -223,38 +222,43 @@ class DisplayFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $typeName = 'test-type';
-        $type     = $this->getMockBuilder(DisplayTypeInterface::class)
+        $width  = 1280;
+        $height = 1920;
+
+        $type = $this->getMockBuilder(DisplayTypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $type
             ->expects(self::never())
-            ->method('getType')
-            ->willReturn($typeName);
+            ->method('getType');
+        $type
+            ->expects(self::never())
+            ->method('getHeight');
+        $type
+            ->expects(self::never())
+            ->method('getWidth');
 
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
             ->expects(self::once())
-            ->method('load')
-            ->with($typeName)
+            ->method('loadByDiemsions')
+            ->with($height, $width)
             ->willThrowException($exception);
 
         /** @var TypeLoader $typeLoader */
         $object = new DisplayFactory($typeLoader);
 
-        $width  = 1280;
-        $height = 1920;
-        $size   = 12.1;
-        $touch  = true;
+        $size  = 12.1;
+        $touch = true;
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size, 'type' => $typeName]);
+        $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size]);
 
         self::assertInstanceOf(DisplayInterface::class, $result);
-        self::assertSame($width, $result->getWidth());
-        self::assertSame($height, $result->getHeight());
+        self::assertNull($result->getType()->getWidth());
+        self::assertNull($result->getType()->getHeight());
         self::assertTrue($result->hasTouch());
         self::assertSame($size, $result->getSize());
 
@@ -267,13 +271,11 @@ class DisplayFactoryTest extends TestCase
         self::assertArrayHasKey('width', $result->toArray());
         self::assertArrayHasKey('height', $result->toArray());
         self::assertArrayHasKey('touch', $result->toArray());
-        self::assertArrayHasKey('type', $result->toArray());
         self::assertArrayHasKey('size', $result->toArray());
 
-        self::assertSame($width, $result->toArray()['width']);
-        self::assertSame($height, $result->toArray()['height']);
+        self::assertNull($result->toArray()['width']);
+        self::assertNull($result->toArray()['height']);
         self::assertTrue($result->toArray()['touch']);
-        self::assertSame('unknown', $result->toArray()['type']);
         self::assertSame($size, $result->toArray()['size']);
     }
 }

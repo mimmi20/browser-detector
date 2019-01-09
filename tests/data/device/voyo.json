@@ -12,8 +12,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "WUXGA",
-        "size": null
+        "size": 10.1
       },
       "dualOrientation": true,
       "type": "fone-pad",
@@ -61,7 +60,6 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "type": "WUXGA",
         "size": null
       },
       "dualOrientation": true,
@@ -88,6 +86,54 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Q101 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Q101",
+      "marketingName": "Q101",
+      "manufacturer": "Voyo",
+      "brand": "Voyo",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "dualOrientation": true,
+      "type": "fone-pad",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
       "manufacturer": "Google",
       "bits": 32
     },

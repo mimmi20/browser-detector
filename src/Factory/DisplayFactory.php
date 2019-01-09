@@ -49,13 +49,13 @@ final class DisplayFactory implements DisplayFactoryInterface
         $size   = array_key_exists('size', $data) ? $data['size'] : null;
 
         try {
-            $type = $this->typeLoader->load($data['type'] ?? 'unknown');
+            $type = $this->typeLoader->loadByDiemsions($height, $width);
         } catch (NotFoundException $e) {
             $logger->info($e);
 
             $type = new Unknown();
         }
 
-        return new Display($width, $height, $touch, $type, $size);
+        return new Display($touch, $type, $size);
     }
 }

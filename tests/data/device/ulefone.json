@@ -9,10 +9,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 720,
-        "height": 1280,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "type": "HD/WXGA",
         "size": null
       },
       "dualOrientation": true,
@@ -56,10 +55,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 720,
-        "height": 1280,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "type": "HD/WXGA",
         "size": null
       },
       "dualOrientation": true,
@@ -103,10 +101,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 1080,
-        "height": 1920,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "type": "FHD",
         "size": null
       },
       "dualOrientation": true,
@@ -150,10 +147,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 720,
-        "height": 1280,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "type": "HD/WXGA",
         "size": null
       },
       "dualOrientation": true,
@@ -197,10 +193,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 1080,
-        "height": 1920,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "type": "FHD",
         "size": null
       },
       "dualOrientation": true,
@@ -244,10 +239,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 720,
-        "height": 1280,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "type": "HD/WXGA",
         "size": null
       },
       "dualOrientation": true,
@@ -291,10 +285,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 1080,
-        "height": 2160,
+        "width": 2160,
+        "height": 1080,
         "touch": true,
-        "type": "Custom 1080x2160",
         "size": null
       },
       "dualOrientation": true,
@@ -338,10 +331,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 720,
-        "height": 1280,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "type": "HD/WXGA",
         "size": null
       },
       "dualOrientation": true,
@@ -385,10 +377,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 1080,
-        "height": 2160,
+        "width": 2160,
+        "height": 1080,
         "touch": true,
-        "type": "Custom 1080x2160",
         "size": null
       },
       "dualOrientation": true,
@@ -432,10 +423,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 720,
-        "height": 1440,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "type": "Custom 720x1440",
         "size": null
       },
       "dualOrientation": true,
@@ -479,10 +469,9 @@
       "manufacturer": "Ulefone",
       "brand": "Ulefone",
       "display": {
-        "width": 720,
-        "height": 1512,
+        "width": 1512,
+        "height": 720,
         "touch": true,
-        "type": "Custom 720x1512",
         "size": null
       },
       "dualOrientation": true,
@@ -499,6 +488,52 @@
       "name": "Chrome",
       "modus": null,
       "version": "69.0.3497.100",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Power_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Power 5",
+      "marketingName": "Power 5",
+      "manufacturer": "Ulefone",
+      "brand": "Ulefone",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.83",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"

@@ -88,7 +88,7 @@ final class DeviceFactory
         $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
         $brand        = $this->getCompany($logger, $data, $useragent, 'brand');
 
-        $display = new Display(null, null, null, new \UaDisplaySize\Unknown(), null);
+        $display = new Display(null, new \UaDisplaySize\Unknown(), null);
         if (array_key_exists('display', $data)) {
             try {
                 $display = $this->displayFactory->fromArray($logger, (array) $data['display']);
