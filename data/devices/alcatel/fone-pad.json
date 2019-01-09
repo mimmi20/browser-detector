@@ -300,5 +300,29 @@
     ],
     "platform": "android",
     "variants": []
+  },
+  "alcatel d820x": {
+    "deviceName": "D820X",
+    "marketingName": "OneTouch Hero 8",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "type": "HD/WXGA",
+      "size": 8.0
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
   }
 }

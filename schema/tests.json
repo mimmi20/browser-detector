@@ -78,9 +78,6 @@
                   }
                 ]
               },
-              "type": {
-                "type": "string"
-              },
               "size": {
                 "anyOf": [
                   {
@@ -97,7 +94,6 @@
               "width",
               "height",
               "touch",
-              "type",
               "size"
             ]
           },

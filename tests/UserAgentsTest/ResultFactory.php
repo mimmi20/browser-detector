@@ -70,7 +70,7 @@ final class ResultFactory
             new Company('Unknown', null, null),
             new Company('Unknown', null, null),
             new Unknown(),
-            new Display(null, null, null, new \UaDisplaySize\Unknown(), null),
+            new Display(null, new \UaDisplaySize\Unknown(), null),
             false,
             0,
             new Market([], [], []),

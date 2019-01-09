@@ -335,6 +335,30 @@
     "platform": "android",
     "variants": []
   },
+  "nokia ta-1052": {
+    "deviceName": "TA-1052",
+    "marketingName": "8",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "type": "QHD",
+      "size": 5.3
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "nokia ta-1053": {
     "deviceName": "TA-1053",
     "marketingName": "5",
@@ -874,7 +898,7 @@
       "height": 2560,
       "touch": true,
       "type": "QHD",
-      "size": null
+      "size": 5.3
     },
     "dualOrientation": true,
     "simCount": 0,

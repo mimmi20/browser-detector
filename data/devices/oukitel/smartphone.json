@@ -334,5 +334,29 @@
     "connections": [],
     "platform": "android",
     "variants": []
+  },
+  "oukitel wp2": {
+    "deviceName": "WP2",
+    "marketingName": "WP2",
+    "manufacturer": "Oukitel",
+    "brand": "Oukitel",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 2160,
+      "touch": true,
+      "type": "Custom 720x1440",
+      "size": 6.0
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
   }
 }
