@@ -118,5 +118,29 @@
     "connections": [],
     "platform": null,
     "variants": []
+  },
+  "chuwi hi9air": {
+    "deviceName": "Hi9Air",
+    "marketingName": "Hi9Air",
+    "manufacturer": "Chuwi",
+    "brand": "Chuwi",
+    "type": "tablet",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "type": "WUXGA",
+      "size": 10.1
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
   }
 }

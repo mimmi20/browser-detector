@@ -1,18 +1,19 @@
 {
   "rules": {
-    "/eluga ray 500/i": "panasonic eluga ray 500",
-    "/eluga_arc_2/i": "panasonic eluga arc 2",
-    "/eluga_i3/i": "panasonic eluga i3",
-    "/eluga_a3/i": "panasonic eluga a3",
-    "/eluga a/i": "panasonic eluga a",
+    "/eluga[ _]ray[ _]500/i": "panasonic eluga ray 500",
+    "/eluga[ _]arc[ _]2/i": "panasonic eluga arc 2",
+    "/eluga[ _]i3/i": "panasonic eluga i3",
+    "/eluga[ _]a3/i": "panasonic eluga a3",
+    "/eluga[ _]a/i": "panasonic eluga a",
     "/t50/i": "panasonic t50",
     "/p61/i": "panasonic p61",
-    "/p55 max/i": "panasonic p55 max",
+    "/p55[ _]max/i": "panasonic p55 max",
     "/p55/i": "panasonic p55",
     "/p31/i": "panasonic p31",
     "/dl1/i": "panasonic dl1",
     "/kx-prxa15/i": "panasonic kx-prxa15",
-    "/sv-mv100/i": "panasonic sv-mv100"
+    "/sv-mv100/i": "panasonic sv-mv100",
+    "/dmc-cm1/i": "panasonic dmc-cm1"
   },
   "generic": "general panasonic device"
 }

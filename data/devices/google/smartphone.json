@@ -392,5 +392,29 @@
     ],
     "platform": "android",
     "variants": []
+  },
+  "google pixel 3 xl": {
+    "deviceName": "Pixel 3 XL",
+    "marketingName": "Pixel 3 XL",
+    "manufacturer": "Google",
+    "brand": "Google",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2960,
+      "touch": true,
+      "type": "Custom 1080x2160",
+      "size": 6.3
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
   }
 }
