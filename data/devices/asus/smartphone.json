@@ -826,7 +826,7 @@
       "height": 1920,
       "touch": true,
       "type": "FHD",
-      "size": null
+      "size": 5.5
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -850,7 +850,7 @@
       "height": 1920,
       "touch": true,
       "type": "FHD",
-      "size": null
+      "size": 5.5
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -946,7 +946,7 @@
       "height": 1920,
       "touch": true,
       "type": "FHD",
-      "size": null
+      "size": 5.5
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -1522,7 +1522,7 @@
       "height": 800,
       "touch": true,
       "type": "WVGA (variant 3)",
-      "size": null
+      "size": 5.5
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -1618,7 +1618,7 @@
       "height": 1920,
       "touch": true,
       "type": "FHD",
-      "size": null
+      "size": 5.5
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -1876,6 +1876,30 @@
       "LTE",
       "TD-LTE"
     ],
+    "platform": "android",
+    "variants": []
+  },
+  "asus z01ks": {
+    "deviceName": "Z01KS",
+    "marketingName": "ZenFone 4",
+    "manufacturer": "Asus",
+    "brand": "Asus",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "type": "FHD",
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
     "platform": "android",
     "variants": []
   }

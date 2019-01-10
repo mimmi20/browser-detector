@@ -3610,7 +3610,7 @@
       "user-agent": "Deezer/5.4.23.14 (Android; 8.1.0; Mobile; fr) WIKO WC300"
     },
     "device": {
-      "deviceName": "View Lite",
+      "deviceName": "WC300",
       "marketingName": "View Lite",
       "manufacturer": "Wiko",
       "brand": "Wiko",
@@ -3618,7 +3618,7 @@
         "width": 1440,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.45
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -3920,6 +3920,52 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; WC300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "WC300",
+      "marketingName": "View Lite",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
       "manufacturer": "Google",
       "bits": 32
     },
