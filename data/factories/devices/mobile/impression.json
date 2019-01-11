@@ -1,9 +1,30 @@
 {
   "rules": {
-    "/impad b702/i": "impression impad b702",
-    "/impad 9708/i": "impression impad 9708",
-    "/impad6213m_v2/i": "impression impad 6213m v2",
-    "/impad 0413/i": "impression impad 0413"
+    "/imsmart[ _]?c571/i": "impression imsmart c571",
+    "/imsmart[ _]?c501/i": "impression imsmart c501",
+    "/imsmart[ _]?a503/i": "impression imsmart a503",
+    "/impad[ _]?b702/i": "impression impad b702",
+    "/impad[ _]?9708/i": "impression impad 9708",
+    "/impad[ _]?9704/i": "impression impad 9704",
+    "/impad[ _]?9702/i": "impression impad 9702",
+    "/impad[ _]?9213/i": "impression impad 9213",
+    "/impad[ _]?8901/i": "impression impad 8901",
+    "/impad[ _]?8213/i": "impression impad 8213",
+    "/impad[ _]?6214/i": "impression impad 6214",
+    "/impad[ _]?6213m[ _]?v2/i": "impression impad 6213m v2",
+    "/impad[ _]?6115m/i": "impression impad 6115m",
+    "/impad[ _]?6115/i": "impression impad 6115",
+    "/impad[ _]?6015/i": "impression impad 6015",
+    "/impad[ _]?4113/i": "impression impad 4113",
+    "/impad[ _]?3412/i": "impression impad 3412",
+    "/impad[ _]?3113/i": "impression impad 3113",
+    "/impad[ _]?2413/i": "impression impad 2413",
+    "/impad[ _]?1412/i": "impression impad 1412",
+    "/impad[ _]?1311/i": "impression impad 1311",
+    "/impad[ _]?1113/i": "impression impad 1113",
+    "/impad[ _]?1006[ _]?v2/i": "impression impad 1006 v2",
+    "/impad[ _]?1002/i": "impression impad 1002",
+    "/impad[ _]?0413/i": "impression impad 0413"
   },
   "generic": "general impression device"
 }
