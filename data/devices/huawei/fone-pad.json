@@ -9,7 +9,6 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "type": "WVGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -33,7 +32,6 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "type": "WVGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +55,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -83,7 +80,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -107,7 +103,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -131,7 +126,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -157,7 +151,6 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "type": "WQXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -173,6 +166,31 @@
     "platform": "android",
     "variants": []
   },
+  "huawei sht-al09": {
+    "deviceName": "SHT-AL09",
+    "marketingName": "MediaPad M5",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "tablet",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 8.4
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "huawei cmr-al19": {
     "deviceName": "CMR-AL19",
     "marketingName": "MediaPad M5 10 Pro",
@@ -183,7 +201,6 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "type": "WQXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -207,7 +224,6 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "type": "WQXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -231,7 +247,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -257,7 +272,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -283,7 +297,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -309,7 +322,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -333,7 +345,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -359,7 +370,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -385,7 +395,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -411,7 +420,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -437,7 +445,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -463,7 +470,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -487,7 +493,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -511,7 +516,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -537,7 +541,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -563,7 +566,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -589,7 +591,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -605,6 +606,59 @@
     "platform": "android",
     "variants": []
   },
+  "huawei bg2-u01": {
+    "deviceName": "BG2-U01",
+    "marketingName": "MediaPad T3 7.0 (2017)",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei kob-l09": {
+    "deviceName": "KOB-L09",
+    "marketingName": "MediaPad T3 8",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi",
+      "LTE",
+      "HSDPA",
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "huawei mediapad x1 7.0": {
     "deviceName": "MediaPad X1 7.0",
     "marketingName": "MediaPad X1 7.0",
@@ -615,7 +669,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -639,7 +692,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -665,7 +717,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -691,7 +742,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -717,7 +767,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -729,61 +778,6 @@
     },
     "connections": [
       "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "huawei kob-l09": {
-    "deviceName": "KOB-L09",
-    "marketingName": "MediaPad T3 8",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": "WXGA (variant 3)",
-      "size": 8.0
-    },
-    "dualOrientation": true,
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "Wi-Fi",
-      "LTE",
-      "HSDPA",
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "huawei bg2-u01": {
-    "deviceName": "BG2-U01",
-    "marketingName": "MediaPad T3 7.0 (2017)",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": "WSVGA (variant 2)",
-      "size": 7.0
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "Wi-Fi"
     ],
     "platform": "android",
     "variants": []

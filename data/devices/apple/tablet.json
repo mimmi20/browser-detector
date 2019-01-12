@@ -9,7 +9,6 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "type": "XGA",
       "size": null
     },
     "dualOrientation": true,
@@ -23,6 +22,31 @@
     "platform": "ios",
     "variants": []
   },
+  "apple ipad 6,12": {
+    "deviceName": "iPad",
+    "marketingName": "iPad (9,7, 2017)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "type": "tablet",
+    "display": {
+      "width": 2732,
+      "height": 2048,
+      "touch": true,
+      "size": 9.7
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
   "apple ipad 1,1": {
     "deviceName": "iPad",
     "marketingName": "iPad (Gen 1)",
@@ -33,7 +57,6 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "type": "XGA",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +80,6 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "type": "XGA",
       "size": null
     },
     "dualOrientation": true,
@@ -83,7 +105,6 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "type": "XGA",
       "size": null
     },
     "dualOrientation": true,
@@ -109,7 +130,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -135,7 +155,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -161,7 +180,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": 9.7
     },
     "dualOrientation": true,
@@ -187,7 +205,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -213,7 +230,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -239,7 +255,6 @@
       "width": 2224,
       "height": 1668,
       "touch": true,
-      "type": "Custom 1668x2224",
       "size": 10.5
     },
     "dualOrientation": true,
@@ -265,34 +280,7 @@
       "width": 2732,
       "height": 2048,
       "touch": true,
-      "type": "Custom 2048x2732",
       "size": 12.9
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "Wi-Fi"
-    ],
-    "platform": "ios",
-    "variants": []
-  },
-  "apple ipad 6,12": {
-    "deviceName": "iPad",
-    "marketingName": "iPad (9,7, 2017)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "tablet",
-    "display": {
-      "width": 2732,
-      "height": 2048,
-      "touch": true,
-      "type": "Custom 2048x2732",
-      "size": 9.7
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -317,7 +305,6 @@
       "width": 2732,
       "height": 2048,
       "touch": true,
-      "type": "Custom 2048x2732",
       "size": 12.9
     },
     "dualOrientation": true,
@@ -343,7 +330,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": 9.7
     },
     "dualOrientation": true,
@@ -369,7 +355,6 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "type": "XGA",
       "size": null
     },
     "dualOrientation": true,
@@ -395,7 +380,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -421,7 +405,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -447,7 +430,6 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "type": "QXGA",
       "size": null
     },
     "dualOrientation": true,

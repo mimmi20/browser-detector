@@ -9,7 +9,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -36,7 +35,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -62,7 +60,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -86,7 +83,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -113,7 +109,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -137,7 +132,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -161,7 +155,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -185,7 +178,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -209,7 +201,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -233,7 +224,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -257,7 +247,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -283,7 +272,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -309,7 +297,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -335,7 +322,6 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -361,7 +347,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -387,7 +372,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -411,7 +395,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -435,7 +418,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -462,7 +444,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -489,7 +470,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -513,7 +493,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -537,7 +516,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -561,7 +539,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -585,7 +562,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -609,11 +585,33 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
     "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lenovo tb-8504x": {
+    "deviceName": "TB-8504X",
+    "marketingName": "Tab 4 10",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "dualOrientation": true,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -633,7 +631,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -659,7 +656,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -683,7 +679,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -709,7 +704,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -733,7 +727,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -757,7 +750,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -781,7 +773,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -805,7 +796,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -829,7 +819,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -853,7 +842,6 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "type": "WQXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -877,7 +865,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -903,7 +890,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -929,7 +915,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -953,7 +938,6 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "type": "WQXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -977,7 +961,6 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "type": "WQXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -1001,7 +984,6 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "type": "WQXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -1025,7 +1007,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -1051,7 +1032,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -1077,7 +1057,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -1103,7 +1082,6 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -1116,30 +1094,6 @@
     "connections": [
       "LTE"
     ],
-    "platform": "android",
-    "variants": []
-  },
-  "lenovo tb-8504x": {
-    "deviceName": "TB-8504X",
-    "marketingName": "Tab 4 10",
-    "manufacturer": "Lenovo",
-    "brand": "Lenovo",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "type": "WXGA (variant 3)",
-      "size": 8.0
-    },
-    "dualOrientation": true,
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "android",
     "variants": []
   }

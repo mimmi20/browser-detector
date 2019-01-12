@@ -9,7 +9,6 @@
       "width": null,
       "height": null,
       "touch": true,
-      "type": "unknown",
       "size": null
     },
     "dualOrientation": true,
@@ -33,7 +32,6 @@
       "width": 480,
       "height": 854,
       "touch": true,
-      "type": "FWVGA (variant 1)",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +55,6 @@
       "width": 768,
       "height": 1280,
       "touch": true,
-      "type": "WXGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -81,7 +78,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -105,7 +101,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -129,7 +124,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -153,7 +147,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -177,11 +170,33 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
     "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "infocus m808": {
+    "deviceName": "M808",
+    "marketingName": "M808",
+    "manufacturer": "Foxconn",
+    "brand": "InFocus",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "size": 5.2
+    },
+    "dualOrientation": true,
+    "simCount": 2,
     "market": {
       "regions": [],
       "countries": [],
@@ -201,7 +216,6 @@
       "width": null,
       "height": null,
       "touch": true,
-      "type": "unknown",
       "size": null
     },
     "dualOrientation": true,
@@ -225,7 +239,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -249,7 +262,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -273,32 +285,7 @@
       "width": 720,
       "height": 1440,
       "touch": true,
-      "type": "Custom 720x1440",
       "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 2,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "infocus m808": {
-    "deviceName": "M808",
-    "marketingName": "M808",
-    "manufacturer": "Foxconn",
-    "brand": "InFocus",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": "Custom 720x1440",
-      "size": 5.2
     },
     "dualOrientation": true,
     "simCount": 2,

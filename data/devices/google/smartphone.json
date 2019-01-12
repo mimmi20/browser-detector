@@ -9,7 +9,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -33,7 +32,6 @@
       "width": 768,
       "height": 1280,
       "touch": true,
-      "type": "WXGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +55,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -81,7 +78,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -105,7 +101,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -129,7 +124,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -153,7 +147,6 @@
       "width": 1440,
       "height": 2560,
       "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -177,7 +170,6 @@
       "width": 1440,
       "height": 2560,
       "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -201,7 +193,6 @@
       "width": 480,
       "height": 800,
       "touch": true,
-      "type": "WVGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -225,7 +216,6 @@
       "width": 480,
       "height": 800,
       "touch": true,
-      "type": "WVGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -249,7 +239,6 @@
       "width": 480,
       "height": 800,
       "touch": true,
-      "type": "WVGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -275,7 +264,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -299,7 +287,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -323,31 +310,6 @@
       "width": 1440,
       "height": 2880,
       "touch": true,
-      "type": "Custom 1440x2880",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "google pixel xl": {
-    "deviceName": "Pixel XL",
-    "marketingName": "Pixel XL",
-    "manufacturer": "Google",
-    "brand": "Google",
-    "type": "smartphone",
-    "display": {
-      "width": 1440,
-      "height": 2560,
-      "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -371,7 +333,6 @@
       "width": 1080,
       "height": 2160,
       "touch": true,
-      "type": "Custom 1080x2160",
       "size": 5.5
     },
     "dualOrientation": true,
@@ -403,11 +364,33 @@
       "width": 1440,
       "height": 2960,
       "touch": true,
-      "type": "Custom 1080x2160",
       "size": 6.3
     },
     "dualOrientation": true,
     "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "google pixel xl": {
+    "deviceName": "Pixel XL",
+    "marketingName": "Pixel XL",
+    "manufacturer": "Google",
+    "brand": "Google",
+    "type": "smartphone",
+    "display": {
+      "width": 1440,
+      "height": 2560,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
     "market": {
       "regions": [],
       "countries": [],

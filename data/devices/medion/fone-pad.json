@@ -1,4 +1,32 @@
 {
+  "medion e1051x": {
+    "deviceName": "E1051X",
+    "marketingName": "E1051X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "WI-FI",
+      "GSM",
+      "HSDPA",
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "medion e10312": {
     "deviceName": "LifeTab E10312",
     "marketingName": "LifeTab E10312",
@@ -9,7 +37,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -33,7 +60,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +83,6 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "type": "WUXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -68,35 +93,6 @@
       "vendors": []
     },
     "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "medion e1051x": {
-    "deviceName": "E1051X",
-    "marketingName": "E1051X",
-    "manufacturer": "Medion",
-    "brand": "Medion",
-    "type": "fone-pad",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": "WUXGA",
-      "size": 10.1
-    },
-    "dualOrientation": true,
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "WI-FI",
-      "GSM",
-      "HSDPA",
-      "LTE"
-    ],
     "platform": "android",
     "variants": []
   }
