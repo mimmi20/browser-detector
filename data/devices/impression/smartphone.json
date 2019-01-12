@@ -1,40 +1,15 @@
 {
-  "impression imsmart c571": {
-    "deviceName": "ImSmart C571",
-    "marketingName": "ImSmart C571",
+  "impression imsmart a401": {
+    "deviceName": "ImSmart A401",
+    "marketingName": "ImSmart A401",
     "manufacturer": "Impression",
     "brand": "Impression",
     "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 480,
+      "height": 800,
       "touch": true,
-      "type": "FWVGA (variant 1)",
-      "size": 5.7
-    },
-    "dualOrientation": true,
-    "simCount": 2,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "impression imsmart c501": {
-    "deviceName": "ImSmart C501",
-    "marketingName": "ImSmart C501",
-    "manufacturer": "Impression",
-    "brand": "Impression",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": "FWVGA (variant 1)",
-      "size": 5.0
+      "size": 3.9
     },
     "dualOrientation": true,
     "simCount": 2,
@@ -57,8 +32,53 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "FWVGA (variant 1)",
-      "size": 5.0
+      "size": 5
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "impression imsmart c501": {
+    "deviceName": "ImSmart C501",
+    "marketingName": "ImSmart C501",
+    "manufacturer": "Impression",
+    "brand": "Impression",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "impression imsmart c571": {
+    "deviceName": "ImSmart C571",
+    "marketingName": "ImSmart C571",
+    "manufacturer": "Impression",
+    "brand": "Impression",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "size": 5.7
     },
     "dualOrientation": true,
     "simCount": 2,

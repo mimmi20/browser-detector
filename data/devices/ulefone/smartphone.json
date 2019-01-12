@@ -9,7 +9,6 @@
       "width": null,
       "height": null,
       "touch": true,
-      "type": "unknown",
       "size": null
     },
     "dualOrientation": true,
@@ -33,7 +32,6 @@
       "width": 720,
       "height": 1512,
       "touch": true,
-      "type": "Custom 720x1512",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +55,6 @@
       "width": 720,
       "height": 1440,
       "touch": true,
-      "type": "Custom 720x1440",
       "size": null
     },
     "dualOrientation": true,
@@ -81,7 +78,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -105,7 +101,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -129,7 +124,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -153,7 +147,6 @@
       "width": 1080,
       "height": 2160,
       "touch": true,
-      "type": "Custom 1080x2160",
       "size": null
     },
     "dualOrientation": true,
@@ -177,103 +170,6 @@
       "width": 1080,
       "height": 2160,
       "touch": true,
-      "type": "Custom 1080x2160",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "ulefone tiger": {
-    "deviceName": "Tiger",
-    "marketingName": "Tiger",
-    "manufacturer": "Ulefone",
-    "brand": "Ulefone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": "HD/WXGA",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "ulefone u007": {
-    "deviceName": "U007",
-    "marketingName": "U007",
-    "manufacturer": "Ulefone",
-    "brand": "Ulefone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": "HD/WXGA",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "ulefone u007 pro": {
-    "deviceName": "U007 Pro",
-    "marketingName": "U007 Pro",
-    "manufacturer": "Ulefone",
-    "brand": "Ulefone",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": "HD/WXGA",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "ulefone vienna": {
-    "deviceName": "Vienna",
-    "marketingName": "Vienna",
-    "manufacturer": "Ulefone",
-    "brand": "Ulefone",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -297,8 +193,122 @@
       "width": 1080,
       "height": 2160,
       "touch": true,
-      "type": "Custom 1080x2160",
-      "size": 5.0
+      "size": 5
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ulefone s9 pro": {
+    "deviceName": "S9 Pro",
+    "marketingName": "S9 Pro",
+    "manufacturer": "Ulefone",
+    "brand": "Ulefone",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ulefone tiger": {
+    "deviceName": "Tiger",
+    "marketingName": "Tiger",
+    "manufacturer": "Ulefone",
+    "brand": "Ulefone",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ulefone u007": {
+    "deviceName": "U007",
+    "marketingName": "U007",
+    "manufacturer": "Ulefone",
+    "brand": "Ulefone",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ulefone u007 pro": {
+    "deviceName": "U007 Pro",
+    "marketingName": "U007 Pro",
+    "manufacturer": "Ulefone",
+    "brand": "Ulefone",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ulefone vienna": {
+    "deviceName": "Vienna",
+    "marketingName": "Vienna",
+    "manufacturer": "Ulefone",
+    "brand": "Ulefone",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "size": null
     },
     "dualOrientation": true,
     "simCount": 0,

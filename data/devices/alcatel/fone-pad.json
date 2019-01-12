@@ -9,8 +9,30 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "type": "XGA",
       "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel d820x": {
+    "deviceName": "D820X",
+    "marketingName": "OneTouch Hero 8",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -33,7 +55,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +78,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -83,7 +103,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -107,7 +126,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -131,7 +149,6 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "type": "WXGA (variant 3)",
       "size": null
     },
     "dualOrientation": true,
@@ -157,7 +174,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -181,7 +197,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -207,7 +222,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -233,7 +247,6 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "type": "qHD",
       "size": null
     },
     "dualOrientation": true,
@@ -259,7 +272,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -285,7 +297,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "type": "WSVGA (variant 2)",
       "size": null
     },
     "dualOrientation": true,
@@ -298,30 +309,6 @@
     "connections": [
       "GSM"
     ],
-    "platform": "android",
-    "variants": []
-  },
-  "alcatel d820x": {
-    "deviceName": "D820X",
-    "marketingName": "OneTouch Hero 8",
-    "manufacturer": "Tcl",
-    "brand": "Alcatel",
-    "type": "fone-pad",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "type": "HD/WXGA",
-      "size": 8.0
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "android",
     "variants": []
   }

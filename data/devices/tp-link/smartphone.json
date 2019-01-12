@@ -9,7 +9,6 @@
       "width": null,
       "height": null,
       "touch": true,
-      "type": "unknown",
       "size": null
     },
     "dualOrientation": true,
@@ -33,7 +32,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +55,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -81,7 +78,6 @@
       "width": 480,
       "height": 854,
       "touch": true,
-      "type": "FWVGA (variant 1)",
       "size": null
     },
     "dualOrientation": true,
@@ -105,103 +101,6 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "type": "HD/WXGA",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "tp-link neffos x1": {
-    "deviceName": "Neffos X1",
-    "marketingName": "Neffos X1",
-    "manufacturer": "TP-LINK",
-    "brand": "TP-LINK",
-    "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "type": "unknown",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "tp-link neffos x1 lite": {
-    "deviceName": "Neffos X1 Lite",
-    "marketingName": "Neffos X1 Lite",
-    "manufacturer": "TP-LINK",
-    "brand": "TP-LINK",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "type": "HD/WXGA",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "tp-link neffos x1 max": {
-    "deviceName": "Neffos X1 Max",
-    "marketingName": "Neffos X1 Max",
-    "manufacturer": "TP-LINK",
-    "brand": "TP-LINK",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": "FHD",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "tp-link neffos y5l": {
-    "deviceName": "Neffos Y5L",
-    "marketingName": "Neffos Y5L",
-    "manufacturer": "TP-LINK",
-    "brand": "TP-LINK",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "type": "FWVGA (variant 1)",
       "size": null
     },
     "dualOrientation": true,
@@ -225,7 +124,6 @@
       "width": 720,
       "height": 1440,
       "touch": true,
-      "type": "Custom 720x1440",
       "size": 5.45
     },
     "dualOrientation": true,
@@ -243,6 +141,98 @@
       "LTE",
       "Wi-Fi"
     ],
+    "platform": "android",
+    "variants": []
+  },
+  "tp-link neffos x1": {
+    "deviceName": "Neffos X1",
+    "marketingName": "Neffos X1",
+    "manufacturer": "TP-LINK",
+    "brand": "TP-LINK",
+    "type": "smartphone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tp-link neffos x1 lite": {
+    "deviceName": "Neffos X1 Lite",
+    "marketingName": "Neffos X1 Lite",
+    "manufacturer": "TP-LINK",
+    "brand": "TP-LINK",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tp-link neffos x1 max": {
+    "deviceName": "Neffos X1 Max",
+    "marketingName": "Neffos X1 Max",
+    "manufacturer": "TP-LINK",
+    "brand": "TP-LINK",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tp-link neffos y5l": {
+    "deviceName": "Neffos Y5L",
+    "marketingName": "Neffos Y5L",
+    "manufacturer": "TP-LINK",
+    "brand": "TP-LINK",
+    "type": "smartphone",
+    "display": {
+      "width": 480,
+      "height": 854,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
     "platform": "android",
     "variants": []
   }

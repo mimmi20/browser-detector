@@ -1,40 +1,15 @@
 {
-  "zync z930+": {
-    "deviceName": "Z930+",
-    "marketingName": "Z930+",
+  "zync z1000": {
+    "deviceName": "Z1000",
+    "marketingName": "Z1000",
     "manufacturer": "Zync",
     "brand": "Zync",
     "type": "tablet",
     "display": {
-      "width": 800,
-      "height": 480,
+      "width": 1024,
+      "height": 768,
       "touch": true,
-      "type": "unknown",
-      "size": 7.0
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "zync z930": {
-    "deviceName": "Z930",
-    "marketingName": "Z930",
-    "manufacturer": "Zync",
-    "brand": "Zync",
-    "type": "tablet",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "type": "unknown",
-      "size": 7.0
+      "size": 9.7
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -57,8 +32,7 @@
       "width": 800,
       "height": 400,
       "touch": true,
-      "type": "unknown",
-      "size": 7.0
+      "size": 7
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -71,18 +45,40 @@
     "platform": "android",
     "variants": []
   },
-  "zync z1000": {
-    "deviceName": "Z1000",
-    "marketingName": "Z1000",
+  "zync z930": {
+    "deviceName": "Z930",
+    "marketingName": "Z930",
     "manufacturer": "Zync",
     "brand": "Zync",
     "type": "tablet",
     "display": {
-      "width": 1024,
-      "height": 768,
+      "width": 800,
+      "height": 480,
       "touch": true,
-      "type": "unknown",
-      "size": 9.7
+      "size": 7
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "zync z930+": {
+    "deviceName": "Z930+",
+    "marketingName": "Z930+",
+    "manufacturer": "Zync",
+    "brand": "Zync",
+    "type": "tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
     },
     "dualOrientation": true,
     "simCount": 0,

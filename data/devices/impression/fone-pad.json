@@ -1,40 +1,15 @@
 {
-  "impression impad b702": {
-    "deviceName": "ImPAD B702",
-    "marketingName": "ImPAD B702",
+  "impression impad 1006 v2": {
+    "deviceName": "ImPAD 1006 v2",
+    "marketingName": "ImPAD 1006 v2",
     "manufacturer": "Impression",
     "brand": "Impression",
     "type": "fone-pad",
     "display": {
-      "width": 1280,
-      "height": 800,
+      "width": 800,
+      "height": 480,
       "touch": true,
-      "type": "WVGA (variant 3)",
-      "size": 7.0
-    },
-    "dualOrientation": true,
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "impression impad 6115m": {
-    "deviceName": "ImPAD 6115M",
-    "marketingName": "ImPAD 6115M",
-    "manufacturer": "Impression",
-    "brand": "Impression",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "type": "WVGA (variant 3)",
-      "size": 7.0
+      "size": 10.1
     },
     "dualOrientation": true,
     "simCount": 1,
@@ -57,8 +32,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "type": "WVGA (variant 3)",
-      "size": 7.0
+      "size": 7
     },
     "dualOrientation": true,
     "simCount": 1,
@@ -71,18 +45,40 @@
     "platform": "android",
     "variants": []
   },
-  "impression impad 1006 v2": {
-    "deviceName": "ImPAD 1006 v2",
-    "marketingName": "ImPAD 1006 v2",
+  "impression impad 6115m": {
+    "deviceName": "ImPAD 6115M",
+    "marketingName": "ImPAD 6115M",
     "manufacturer": "Impression",
     "brand": "Impression",
     "type": "fone-pad",
     "display": {
-      "width": 800,
-      "height": 480,
+      "width": 1024,
+      "height": 600,
       "touch": true,
-      "type": "WVGA (variant 3)",
-      "size": 10.1
+      "size": 7
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "impression impad b702": {
+    "deviceName": "ImPAD B702",
+    "marketingName": "ImPAD B702",
+    "manufacturer": "Impression",
+    "brand": "Impression",
+    "type": "fone-pad",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 7
     },
     "dualOrientation": true,
     "simCount": 1,

@@ -9,7 +9,6 @@
       "width": null,
       "height": null,
       "touch": true,
-      "type": "unknown",
       "size": null
     },
     "dualOrientation": true,
@@ -33,7 +32,6 @@
       "width": 1440,
       "height": 2560,
       "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -57,7 +55,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -81,7 +78,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -105,7 +101,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -129,7 +124,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -153,7 +147,6 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -177,7 +170,6 @@
       "width": 1440,
       "height": 2560,
       "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -201,7 +193,6 @@
       "width": 1440,
       "height": 2560,
       "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -225,7 +216,6 @@
       "width": 1440,
       "height": 2560,
       "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -249,7 +239,6 @@
       "width": 1440,
       "height": 2560,
       "touch": true,
-      "type": "QHD",
       "size": null
     },
     "dualOrientation": true,
@@ -273,79 +262,6 @@
       "width": 1440,
       "height": 2560,
       "touch": true,
-      "type": "QHD",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "leeco le x722": {
-    "deviceName": "Le X722",
-    "marketingName": "Le Pro 3",
-    "manufacturer": "LeEco",
-    "brand": "LeEco",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": "FHD",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "leeco le x626": {
-    "deviceName": "Le X626",
-    "marketingName": "Le S3",
-    "manufacturer": "LeEco",
-    "brand": "LeEco",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": "FHD",
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "leeco c1-u02": {
-    "deviceName": "C1-U02",
-    "marketingName": "LeRee Le 3",
-    "manufacturer": "LeEco",
-    "brand": "LeEco",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "type": "FHD",
       "size": null
     },
     "dualOrientation": true,
@@ -369,8 +285,30 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": 5.5
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x722": {
+    "deviceName": "Le X722",
+    "marketingName": "Le Pro 3",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "size": null
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -393,8 +331,53 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "type": "FHD",
       "size": 5.5
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco le x626": {
+    "deviceName": "Le X626",
+    "marketingName": "Le S3",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "leeco c1-u02": {
+    "deviceName": "C1-U02",
+    "marketingName": "LeRee Le 3",
+    "manufacturer": "LeEco",
+    "brand": "LeEco",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "size": null
     },
     "dualOrientation": true,
     "simCount": 0,
