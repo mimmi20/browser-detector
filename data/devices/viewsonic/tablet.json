@@ -4,7 +4,6 @@
     "marketingName": "general ViewSonic Device",
     "manufacturer": "ViewSonic",
     "brand": "ViewSonic",
-    "type": "tablet",
     "display": {
       "width": null,
       "height": null,
@@ -12,29 +11,7 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "viewsonic viewpad 10s": {
-    "deviceName": "ViewPad 10S",
-    "marketingName": "ViewPad 10S",
-    "manufacturer": "ViewSonic",
-    "brand": "ViewSonic",
     "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
     "simCount": 0,
     "market": {
       "regions": [],
@@ -50,7 +27,6 @@
     "marketingName": "ViewPad 10e",
     "manufacturer": "ViewSonic",
     "brand": "ViewSonic",
-    "type": "tablet",
     "display": {
       "width": 1024,
       "height": 768,
@@ -58,6 +34,30 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "viewsonic viewpad 10s": {
+    "deviceName": "ViewPad 10S",
+    "marketingName": "ViewPad 10S",
+    "manufacturer": "ViewSonic",
+    "brand": "ViewSonic",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -73,7 +73,6 @@
     "marketingName": "ViewPad 7e",
     "manufacturer": "ViewSonic",
     "brand": "ViewSonic",
-    "type": "tablet",
     "display": {
       "width": 800,
       "height": 600,
@@ -81,6 +80,7 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],

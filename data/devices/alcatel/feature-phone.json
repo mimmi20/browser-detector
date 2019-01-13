@@ -4,7 +4,6 @@
     "marketingName": "OH5",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "feature-phone",
     "display": {
       "width": 128,
       "height": 128,
@@ -12,122 +11,8 @@
       "size": null
     },
     "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "java",
-    "variants": []
-  },
-  "alcatel ot-216": {
-    "deviceName": "OT-216",
-    "marketingName": "OT-216",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
     "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 128,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "java",
-    "variants": []
-  },
-  "alcatel ot-510a": {
-    "deviceName": "OT-510A",
-    "marketingName": "OT-510A",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "size": null
-    },
-    "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "nucleus os",
-    "variants": []
-  },
-  "alcatel ot-585": {
-    "deviceName": "OT-585",
-    "marketingName": "OT-585",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "java",
-    "variants": []
-  },
-  "alcatel ot-710d": {
-    "deviceName": "OT-710D",
-    "marketingName": "OT-710D",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "alcatel ot-807d": {
-    "deviceName": "OT-807D",
-    "marketingName": "OT-807D",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "feature-phone",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": false,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -142,15 +27,15 @@
     "marketingName": "OneTouch 818",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "feature-phone",
     "display": {
-      "width": 240,
-      "height": 400,
+      "width": 400,
+      "height": 240,
       "touch": true,
       "size": null
     },
     "dualOrientation": false,
-    "simCount": 0,
+    "type": "feature-phone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -165,7 +50,6 @@
     "marketingName": "OneTouch 871A",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "feature-phone",
     "display": {
       "width": 220,
       "height": 176,
@@ -173,7 +57,8 @@
       "size": null
     },
     "dualOrientation": false,
-    "simCount": 0,
+    "type": "feature-phone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -188,7 +73,6 @@
     "marketingName": "OneTouch Tribe",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "feature-phone",
     "display": {
       "width": 220,
       "height": 176,
@@ -196,7 +80,123 @@
       "size": null
     },
     "dualOrientation": false,
-    "simCount": 0,
+    "type": "feature-phone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "alcatel ot-216": {
+    "deviceName": "OT-216",
+    "marketingName": "OT-216",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "feature-phone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "alcatel ot-510a": {
+    "deviceName": "OT-510A",
+    "marketingName": "OT-510A",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "feature-phone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "nucleus os",
+    "variants": []
+  },
+  "alcatel ot-585": {
+    "deviceName": "OT-585",
+    "marketingName": "OT-585",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "feature-phone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "java",
+    "variants": []
+  },
+  "alcatel ot-710d": {
+    "deviceName": "OT-710D",
+    "marketingName": "OT-710D",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "feature-phone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel ot-807d": {
+    "deviceName": "OT-807D",
+    "marketingName": "OT-807D",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "feature-phone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

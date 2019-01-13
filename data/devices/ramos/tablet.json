@@ -4,7 +4,6 @@
     "marketingName": "general Ramos Device",
     "manufacturer": "Ramos",
     "brand": "Ramos",
-    "type": "tablet",
     "display": {
       "width": null,
       "height": null,
@@ -12,29 +11,7 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "ramos w27 pro": {
-    "deviceName": "W27 Pro",
-    "marketingName": "W27 Pro",
-    "manufacturer": "Ramos",
-    "brand": "Ramos",
     "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
     "simCount": 0,
     "market": {
       "regions": [],
@@ -50,7 +27,6 @@
     "marketingName": "i11 Pro",
     "manufacturer": "Ramos",
     "brand": "Ramos",
-    "type": "tablet",
     "display": {
       "width": 1920,
       "height": 1080,
@@ -58,6 +34,7 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -73,7 +50,6 @@
     "marketingName": "i9",
     "manufacturer": "Ramos",
     "brand": "Ramos",
-    "type": "tablet",
     "display": {
       "width": 1920,
       "height": 1200,
@@ -81,6 +57,30 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "ramos w27 pro": {
+    "deviceName": "W27 Pro",
+    "marketingName": "W27 Pro",
+    "manufacturer": "Ramos",
+    "brand": "Ramos",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],

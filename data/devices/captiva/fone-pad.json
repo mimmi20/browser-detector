@@ -4,7 +4,6 @@
     "marketingName": "general Captiva Device",
     "manufacturer": "Captiva",
     "brand": "Captiva",
-    "type": "fone-pad",
     "display": {
       "width": null,
       "height": null,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -22,37 +22,11 @@
     "platform": "android",
     "variants": []
   },
-  "captiva pad 10.1 quad fhd 3g": {
-    "deviceName": "PAD 10.1 Quad FHD 3G",
-    "marketingName": "PAD 10.1 Quad FHD 3G",
-    "manufacturer": "Captiva",
-    "brand": "Captiva",
-    "type": "fone-pad",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
   "captiva pad 10 3g": {
     "deviceName": "Pad 10 3G",
     "marketingName": "Pad 10 3G",
     "manufacturer": "Captiva",
     "brand": "Captiva",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -60,7 +34,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -77,7 +52,6 @@
     "marketingName": "Pad 10 3G Plus",
     "manufacturer": "Captiva",
     "brand": "Captiva",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -85,7 +59,33 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "captiva pad 10.1 quad fhd 3g": {
+    "deviceName": "PAD 10.1 Quad FHD 3G",
+    "marketingName": "PAD 10.1 Quad FHD 3G",
+    "manufacturer": "Captiva",
+    "brand": "Captiva",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

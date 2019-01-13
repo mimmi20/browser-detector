@@ -4,7 +4,6 @@
     "marketingName": "iPad (Gen 2)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -34,7 +34,6 @@
     "marketingName": "iPad (Gen 2)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -42,7 +41,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -65,7 +65,6 @@
     "marketingName": "iPad 3",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -73,7 +72,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -96,7 +96,6 @@
     "marketingName": "iPad 3",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -104,7 +103,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -126,7 +126,6 @@
     "marketingName": "iPad 4",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -134,7 +133,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -156,7 +156,6 @@
     "marketingName": "iPad 4",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -164,7 +163,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -188,7 +188,6 @@
     "marketingName": "iPad 6 (9.7)",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -196,7 +195,8 @@
       "size": 9.7
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -214,7 +214,6 @@
     "marketingName": "iPad Air",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -222,7 +221,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -240,7 +240,6 @@
     "marketingName": "iPad Air",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -248,7 +247,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -269,7 +269,6 @@
     "marketingName": "iPad Air 2",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -277,111 +276,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "Wi-Fi",
-      "LTE"
-    ],
-    "platform": "ios",
-    "variants": []
-  },
-  "apple ipad 7,4": {
-    "deviceName": "iPad7,4",
-    "marketingName": "iPad Pro (10.5, 2nd Gen)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
     "type": "fone-pad",
-    "display": {
-      "width": 2224,
-      "height": 1668,
-      "touch": true,
-      "size": 10.5
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "Wi-Fi",
-      "LTE"
-    ],
-    "platform": "ios",
-    "variants": []
-  },
-  "apple ipad 6,8": {
-    "deviceName": "iPad Pro",
-    "marketingName": "iPad Pro (12.9)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "fone-pad",
-    "display": {
-      "width": 2732,
-      "height": 2048,
-      "touch": true,
-      "size": 12.9
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "Wi-Fi",
-      "LTE"
-    ],
-    "platform": "ios",
-    "variants": []
-  },
-  "apple ipad 7,2": {
-    "deviceName": "iPad7,2",
-    "marketingName": "iPad Pro (12.9, 2nd Gen)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "fone-pad",
-    "display": {
-      "width": 2732,
-      "height": 2048,
-      "touch": true,
-      "size": 12.9
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "Wi-Fi",
-      "LTE"
-    ],
-    "platform": "ios",
-    "variants": []
-  },
-  "apple ipad 6,4": {
-    "deviceName": "iPad Pro 9.7",
-    "marketingName": "iPad Pro (9.7)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "type": "fone-pad",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "size": 9.7
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -399,7 +295,6 @@
     "marketingName": "iPad mini",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -407,7 +302,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -429,7 +325,6 @@
     "marketingName": "iPad mini",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -437,7 +332,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -461,7 +357,6 @@
     "marketingName": "iPad mini 2",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -469,7 +364,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -487,7 +383,6 @@
     "marketingName": "iPad mini 2",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -495,7 +390,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -516,7 +412,6 @@
     "marketingName": "iPad mini 3",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -524,7 +419,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -542,7 +438,6 @@
     "marketingName": "iPad mini 3",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -550,7 +445,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -571,7 +467,6 @@
     "marketingName": "iPad mini 4",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -579,7 +474,112 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi",
+      "LTE"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple ipad 7,4": {
+    "deviceName": "iPad7,4",
+    "marketingName": "iPad Pro (10.5, 2nd Gen)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "display": {
+      "width": 2224,
+      "height": 1668,
+      "touch": true,
+      "size": 10.5
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi",
+      "LTE"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple ipad 6,8": {
+    "deviceName": "iPad Pro",
+    "marketingName": "iPad Pro (12.9)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "display": {
+      "width": 2732,
+      "height": 2048,
+      "touch": true,
+      "size": 12.9
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi",
+      "LTE"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple ipad 7,2": {
+    "deviceName": "iPad7,2",
+    "marketingName": "iPad Pro (12.9, 2nd Gen)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "display": {
+      "width": 2732,
+      "height": 2048,
+      "touch": true,
+      "size": 12.9
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi",
+      "LTE"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple ipad 6,4": {
+    "deviceName": "iPad Pro 9.7",
+    "marketingName": "iPad Pro (9.7)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

@@ -4,7 +4,6 @@
     "marketingName": "Peoples Tablet 3G",
     "manufacturer": "TrekStor",
     "brand": "TrekStor",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -12,107 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "trekstor surftab breeze 10.1 quad 3g": {
-    "deviceName": "SurfTab Breeze 10.1 Quad 3G",
-    "marketingName": "SurfTab Breeze 10.1 Quad 3G",
-    "manufacturer": "TrekStor",
-    "brand": "TrekStor",
     "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "trekstor surftab xiron 10.1 3g": {
-    "deviceName": "SurfTab Xiron 10.1 3G",
-    "marketingName": "SurfTab Xiron 10.1 3G",
-    "manufacturer": "TrekStor",
-    "brand": "TrekStor",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "trekstor surftab breeze 9.6 quad 3g": {
-    "deviceName": "SurfTab breeze 9.6 Quad 3G",
-    "marketingName": "SurfTab breeze 9.6 Quad 3G",
-    "manufacturer": "TrekStor",
-    "brand": "TrekStor",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "trekstor surftab xintron i 10.1 3g": {
-    "deviceName": "SurfTab xintron i 10.1 3G",
-    "marketingName": "SurfTab xintron i 10.1 3G",
-    "manufacturer": "TrekStor",
-    "brand": "TrekStor",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -129,7 +29,6 @@
     "marketingName": "PrimeTab P10 LTE",
     "manufacturer": "TrekStor",
     "brand": "TrekStor",
-    "type": "tablet",
     "display": {
       "width": 1920,
       "height": 1200,
@@ -137,13 +36,114 @@
       "size": 10.1
     },
     "dualOrientation": true,
-    "simCount": 1,
+    "type": "tablet",
+    "simCount": 0,
     "market": {
       "regions": [],
       "countries": [],
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "trekstor surftab breeze 10.1 quad 3g": {
+    "deviceName": "SurfTab Breeze 10.1 Quad 3G",
+    "marketingName": "SurfTab Breeze 10.1 Quad 3G",
+    "manufacturer": "TrekStor",
+    "brand": "TrekStor",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "trekstor surftab breeze 9.6 quad 3g": {
+    "deviceName": "SurfTab breeze 9.6 Quad 3G",
+    "marketingName": "SurfTab breeze 9.6 Quad 3G",
+    "manufacturer": "TrekStor",
+    "brand": "TrekStor",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "trekstor surftab xintron i 10.1 3g": {
+    "deviceName": "SurfTab xintron i 10.1 3G",
+    "marketingName": "SurfTab xintron i 10.1 3G",
+    "manufacturer": "TrekStor",
+    "brand": "TrekStor",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "trekstor surftab xiron 10.1 3g": {
+    "deviceName": "SurfTab Xiron 10.1 3G",
+    "marketingName": "SurfTab Xiron 10.1 3G",
+    "manufacturer": "TrekStor",
+    "brand": "TrekStor",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
     "platform": "android",
     "variants": []
   }

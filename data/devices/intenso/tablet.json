@@ -4,7 +4,6 @@
     "marketingName": "general Intenso Device",
     "manufacturer": "Intenso",
     "brand": "Intenso",
-    "type": "tablet",
     "display": {
       "width": null,
       "height": null,
@@ -12,29 +11,7 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "intenso inm8002kp": {
-    "deviceName": "INM8002KP",
-    "marketingName": "TAB 824",
-    "manufacturer": "Intenso",
-    "brand": "Intenso",
     "type": "tablet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
     "simCount": 0,
     "market": {
       "regions": [],
@@ -50,7 +27,6 @@
     "marketingName": "Tab 1024",
     "manufacturer": "Intenso",
     "brand": "Intenso",
-    "type": "tablet",
     "display": {
       "width": 1024,
       "height": 600,
@@ -58,6 +34,7 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -73,7 +50,6 @@
     "marketingName": "Tab 803",
     "manufacturer": "Intenso",
     "brand": "Intenso",
-    "type": "tablet",
     "display": {
       "width": 800,
       "height": 600,
@@ -81,6 +57,30 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "intenso inm8002kp": {
+    "deviceName": "INM8002KP",
+    "marketingName": "TAB 824",
+    "manufacturer": "Intenso",
+    "brand": "Intenso",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],

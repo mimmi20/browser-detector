@@ -1,10 +1,9 @@
 {
-  "olivetti op110": {
-    "deviceName": "OP110",
-    "marketingName": "OP110",
+  "olivetti op111": {
+    "deviceName": "OP111",
+    "marketingName": "Olipad 3",
     "manufacturer": "Olivetti",
     "brand": "Olivetti",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -22,12 +22,11 @@
     "platform": "android",
     "variants": []
   },
-  "olivetti op111": {
-    "deviceName": "OP111",
-    "marketingName": "Olipad 3",
+  "olivetti op110": {
+    "deviceName": "OP110",
+    "marketingName": "OP110",
     "manufacturer": "Olivetti",
     "brand": "Olivetti",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -35,7 +34,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

@@ -4,7 +4,6 @@
     "marketingName": "general Wexler Device",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "type": "fone-pad",
     "display": {
       "width": null,
       "height": null,
@@ -12,53 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "wexler tab 7t": {
-    "deviceName": "TAB 7T",
-    "marketingName": "TAB 7T",
-    "manufacturer": "Wexler",
-    "brand": "Wexler",
     "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "wexler tab a742": {
-    "deviceName": "TAB A742",
-    "marketingName": "TAB A742",
-    "manufacturer": "Wexler",
-    "brand": "Wexler",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -73,7 +27,6 @@
     "marketingName": "Tab 10Q",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -81,7 +34,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -96,7 +50,6 @@
     "marketingName": "Tab 7iD",
     "manufacturer": "Wexler",
     "brand": "Wexler",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -104,7 +57,54 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "wexler tab 7t": {
+    "deviceName": "TAB 7T",
+    "marketingName": "TAB 7T",
+    "manufacturer": "Wexler",
+    "brand": "Wexler",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "wexler tab a742": {
+    "deviceName": "TAB A742",
+    "marketingName": "TAB A742",
+    "manufacturer": "Wexler",
+    "brand": "Wexler",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

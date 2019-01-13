@@ -4,7 +4,6 @@
     "marketingName": "general Voyo Device",
     "manufacturer": "Voyo",
     "brand": "Voyo",
-    "type": "fone-pad",
     "display": {
       "width": null,
       "height": null,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -22,20 +22,20 @@
     "platform": "android",
     "variants": []
   },
-  "voyo q101 4g": {
-    "deviceName": "Q101",
-    "marketingName": "Q101",
+  "voyo i8 max 4g": {
+    "deviceName": "i8 Max",
+    "marketingName": "i8 Max",
     "manufacturer": "Voyo",
     "brand": "Voyo",
-    "type": "fone-pad",
     "display": {
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": 10.1
+      "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -47,20 +47,20 @@
     "platform": "android",
     "variants": []
   },
-  "voyo i8 max 4g": {
-    "deviceName": "i8 Max",
-    "marketingName": "i8 Max",
+  "voyo q101 4g": {
+    "deviceName": "Q101",
+    "marketingName": "Q101",
     "manufacturer": "Voyo",
     "brand": "Voyo",
-    "type": "fone-pad",
     "display": {
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

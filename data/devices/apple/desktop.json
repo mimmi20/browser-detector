@@ -1,10 +1,9 @@
 {
-  "mac mini": {
-    "deviceName": "Mac Mini",
-    "marketingName": "Mac Mini",
+  "imac": {
+    "deviceName": "iMac",
+    "marketingName": "iMac",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "desktop",
     "display": {
       "width": null,
       "height": null,
@@ -12,6 +11,30 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "desktop",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "mac mini": {
+    "deviceName": "Mac Mini",
+    "marketingName": "Mac Mini",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "desktop",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -27,7 +50,6 @@
     "marketingName": "MacBook",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "desktop",
     "display": {
       "width": null,
       "height": null,
@@ -35,6 +57,7 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "desktop",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -50,7 +73,6 @@
     "marketingName": "MacBook Air",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "desktop",
     "display": {
       "width": null,
       "height": null,
@@ -58,6 +80,7 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "desktop",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -73,7 +96,6 @@
     "marketingName": "MacBook Pro",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "desktop",
     "display": {
       "width": null,
       "height": null,
@@ -81,29 +103,7 @@
       "size": null
     },
     "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": null,
-    "variants": []
-  },
-  "macpro": {
-    "deviceName": "MacPro",
-    "marketingName": "MacPro",
-    "manufacturer": "Apple",
-    "brand": "Apple",
     "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "dualOrientation": false,
     "simCount": 0,
     "market": {
       "regions": [],
@@ -119,7 +119,6 @@
     "marketingName": "Macintosh",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "desktop",
     "display": {
       "width": null,
       "height": null,
@@ -127,6 +126,30 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "desktop",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "macpro": {
+    "deviceName": "MacPro",
+    "marketingName": "MacPro",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "desktop",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -142,7 +165,6 @@
     "marketingName": "PowerMac",
     "manufacturer": "Apple",
     "brand": "Apple",
-    "type": "desktop",
     "display": {
       "width": null,
       "height": null,
@@ -150,29 +172,7 @@
       "size": null
     },
     "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": null,
-    "variants": []
-  },
-  "imac": {
-    "deviceName": "iMac",
-    "marketingName": "iMac",
-    "manufacturer": "Apple",
-    "brand": "Apple",
     "type": "desktop",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "dualOrientation": false,
     "simCount": 0,
     "market": {
       "regions": [],

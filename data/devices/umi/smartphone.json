@@ -4,7 +4,6 @@
     "marketingName": "general UMi Device",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "type": "smartphone",
     "display": {
       "width": null,
       "height": null,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -27,15 +27,15 @@
     "marketingName": "A1 Pro",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1440,
+      "width": 1440,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -50,15 +50,15 @@
     "marketingName": "C Note",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "type": "smartphone",
     "display": {
-      "width": 1080,
-      "height": 1920,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -73,15 +73,15 @@
     "marketingName": "Diamond",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -96,337 +96,15 @@
     "marketingName": "Diamond X",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi hammer s": {
-    "deviceName": "Hammer S",
-    "marketingName": "Hammer S",
-    "manufacturer": "Umi",
-    "brand": "Umi",
     "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi iron": {
-    "deviceName": "Iron",
-    "marketingName": "Iron",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi iron pro": {
-    "deviceName": "Iron Pro",
-    "marketingName": "Iron Pro",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi london": {
-    "deviceName": "London",
-    "marketingName": "London",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi max": {
-    "deviceName": "Max",
-    "marketingName": "Max",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi plus e": {
-    "deviceName": "Plus E",
-    "marketingName": "Plus E",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi s2 lite": {
-    "deviceName": "S2 Lite",
-    "marketingName": "S2 Lite",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi super": {
-    "deviceName": "Super",
-    "marketingName": "Super",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi touch x": {
-    "deviceName": "Touch X",
-    "marketingName": "Touch X",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi x2": {
-    "deviceName": "X2",
-    "marketingName": "X2",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi z": {
-    "deviceName": "Z",
-    "marketingName": "Z",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi z2": {
-    "deviceName": "Z2",
-    "marketingName": "Z2",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 2246,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi z2 pro": {
-    "deviceName": "Z2 Pro",
-    "marketingName": "Z2 Pro",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 2246,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "umi zero": {
-    "deviceName": "Zero",
-    "marketingName": "Zero",
-    "manufacturer": "Umi",
-    "brand": "Umi",
-    "type": "smartphone",
-    "display": {
-      "width": 1080,
-      "height": 1920,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -441,15 +119,15 @@
     "marketingName": "eMax",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "type": "smartphone",
     "display": {
-      "width": 1080,
-      "height": 1920,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -459,20 +137,112 @@
     "platform": "android",
     "variants": []
   },
-  "umi touch": {
-    "deviceName": "Touch",
-    "marketingName": "Touch",
+  "umi hammer s": {
+    "deviceName": "Hammer S",
+    "marketingName": "Hammer S",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "type": "smartphone",
     "display": {
-      "width": 1080,
-      "height": 1920,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": 5.5
+      "size": null
     },
     "dualOrientation": true,
-    "simCount": 2,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi iron": {
+    "deviceName": "Iron",
+    "marketingName": "Iron",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi iron pro": {
+    "deviceName": "Iron Pro",
+    "marketingName": "Iron Pro",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi london": {
+    "deviceName": "London",
+    "marketingName": "London",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi max": {
+    "deviceName": "Max",
+    "marketingName": "Max",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -487,15 +257,245 @@
     "marketingName": "One Pro",
     "manufacturer": "Umi",
     "brand": "Umi",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1520,
+      "width": 1520,
+      "height": 720,
       "touch": true,
       "size": 5.9
     },
     "dualOrientation": true,
+    "type": "smartphone",
     "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi plus e": {
+    "deviceName": "Plus E",
+    "marketingName": "Plus E",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi s2 lite": {
+    "deviceName": "S2 Lite",
+    "marketingName": "S2 Lite",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi super": {
+    "deviceName": "Super",
+    "marketingName": "Super",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi touch": {
+    "deviceName": "Touch",
+    "marketingName": "Touch",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi touch x": {
+    "deviceName": "Touch X",
+    "marketingName": "Touch X",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi x2": {
+    "deviceName": "X2",
+    "marketingName": "X2",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi z": {
+    "deviceName": "Z",
+    "marketingName": "Z",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi z2": {
+    "deviceName": "Z2",
+    "marketingName": "Z2",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 2246,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi z2 pro": {
+    "deviceName": "Z2 Pro",
+    "marketingName": "Z2 Pro",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 2246,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi zero": {
+    "deviceName": "Zero",
+    "marketingName": "Zero",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

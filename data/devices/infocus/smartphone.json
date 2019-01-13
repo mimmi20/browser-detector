@@ -4,7 +4,6 @@
     "marketingName": "general InFocus Device",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
       "width": null,
       "height": null,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -27,15 +27,15 @@
     "marketingName": "Bingo 21",
     "manufacturer": "Foxconn",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 480,
-      "height": 854,
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -50,15 +50,15 @@
     "marketingName": "M2",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 768,
-      "height": 1280,
+      "width": 1280,
+      "height": 768,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -73,15 +73,15 @@
     "marketingName": "M310",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -96,15 +96,15 @@
     "marketingName": "M320m",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -119,15 +119,15 @@
     "marketingName": "M350",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -142,15 +142,15 @@
     "marketingName": "M370i",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -165,15 +165,15 @@
     "marketingName": "M535",
     "manufacturer": "Foxconn",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -188,14 +188,14 @@
     "marketingName": "M808",
     "manufacturer": "Foxconn",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 1080,
-      "height": 1920,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": 5.2
     },
     "dualOrientation": true,
+    "type": "smartphone",
     "simCount": 2,
     "market": {
       "regions": [],
@@ -211,7 +211,6 @@
     "marketingName": "M810u",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
       "width": null,
       "height": null,
@@ -219,7 +218,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -234,14 +234,37 @@
     "marketingName": "Turbo 5 Plus",
     "manufacturer": "Foxconn",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "infocus if9031": {
+    "deviceName": "IF9031",
+    "marketingName": "Vision 3",
+    "manufacturer": "Foxconn",
+    "brand": "InFocus",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
     "simCount": 2,
     "market": {
       "regions": [],
@@ -257,38 +280,15 @@
     "marketingName": "VZH",
     "manufacturer": "InFocus",
     "brand": "InFocus",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "infocus if9031": {
-    "deviceName": "IF9031",
-    "marketingName": "Vision 3",
-    "manufacturer": "Foxconn",
-    "brand": "InFocus",
     "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 2,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

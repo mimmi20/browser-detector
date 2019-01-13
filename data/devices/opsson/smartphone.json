@@ -4,7 +4,6 @@
     "marketingName": "general Opsson Device",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
       "width": null,
       "height": null,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -27,15 +27,15 @@
     "marketingName": "D1",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 480,
-      "height": 800,
+      "width": 800,
+      "height": 480,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -50,18 +50,43 @@
     "marketingName": "Genesis 1",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 540,
-      "height": 960,
+      "width": 960,
+      "height": 540,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "opsson iusai i500": {
+    "deviceName": "II i500",
+    "marketingName": "II i500",
+    "manufacturer": "Opsson",
+    "brand": "Opsson",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
       "vendors": []
     },
     "connections": [],
@@ -73,15 +98,15 @@
     "marketingName": "II US16",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 480,
-      "height": 854,
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -98,15 +123,15 @@
     "marketingName": "II US8",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 480,
-      "height": 854,
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -123,40 +148,15 @@
     "marketingName": "II X2",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "opsson iusai i500": {
-    "deviceName": "II i500",
-    "marketingName": "II i500",
-    "manufacturer": "Opsson",
-    "brand": "Opsson",
     "type": "smartphone",
-    "display": {
-      "width": 320,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [
@@ -173,15 +173,15 @@
     "marketingName": "IMO 1000",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 480,
-      "height": 800,
+      "width": 800,
+      "height": 480,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -196,15 +196,15 @@
     "marketingName": "IVO 6622",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 540,
-      "height": 960,
+      "width": 960,
+      "height": 540,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -219,15 +219,15 @@
     "marketingName": "IVO 6655",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 540,
-      "height": 960,
+      "width": 960,
+      "height": 540,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -242,15 +242,15 @@
     "marketingName": "Q3",
     "manufacturer": "Opsson",
     "brand": "Opsson",
-    "type": "smartphone",
     "display": {
-      "width": 540,
-      "height": 960,
+      "width": 960,
+      "height": 540,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

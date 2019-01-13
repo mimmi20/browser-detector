@@ -4,7 +4,6 @@
     "marketingName": "ActiveD 7.4 3G",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -29,7 +29,6 @@
     "marketingName": "ActiveD 8.2 3G",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -37,7 +36,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -54,7 +54,6 @@
     "marketingName": "Art 3G",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -62,7 +61,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -79,7 +79,6 @@
     "marketingName": "CinemaTV 3G",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -87,7 +86,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -104,7 +104,6 @@
     "marketingName": "D7.2 3G",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -112,7 +111,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -129,7 +129,6 @@
     "marketingName": "Informer 706 3G",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "fone-pad",
     "display": {
       "width": null,
       "height": null,
@@ -137,57 +136,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "explay surfer 7.32 3g": {
-    "deviceName": "Surfer 7.32 3G",
-    "marketingName": "Surfer 7.32 3G",
-    "manufacturer": "Explay",
-    "brand": "Explay",
     "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "explay surfer 7.34 3g": {
-    "deviceName": "Surfer 7.34 3G",
-    "marketingName": "Surfer 7.34 3G",
-    "manufacturer": "Explay",
-    "brand": "Explay",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -204,7 +154,6 @@
     "marketingName": "sQuad 10.06 3G",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "fone-pad",
     "display": {
       "width": null,
       "height": null,
@@ -212,7 +161,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -229,7 +179,6 @@
     "marketingName": "sQuad 7.82 3G",
     "manufacturer": "Explay",
     "brand": "Explay",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -237,7 +186,58 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "explay surfer 7.32 3g": {
+    "deviceName": "Surfer 7.32 3G",
+    "marketingName": "Surfer 7.32 3G",
+    "manufacturer": "Explay",
+    "brand": "Explay",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "explay surfer 7.34 3g": {
+    "deviceName": "Surfer 7.34 3G",
+    "marketingName": "Surfer 7.34 3G",
+    "manufacturer": "Explay",
+    "brand": "Explay",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
