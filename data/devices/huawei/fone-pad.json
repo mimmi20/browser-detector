@@ -781,5 +781,57 @@
     ],
     "platform": "android",
     "variants": []
+  },
+  "huawei ags2-l09": {
+    "deviceName": "AGS2-L09",
+    "marketingName": "MediaPad T5",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei ags2-l03": {
+    "deviceName": "AGS2-L03",
+    "marketingName": "MediaPad T5",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "type": "fone-pad",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
   }
 }

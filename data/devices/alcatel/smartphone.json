@@ -6990,7 +6990,7 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "size": null
+      "size": 5.0
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -7015,7 +7015,7 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "size": null
+      "size": 5.0
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -7040,7 +7040,7 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "size": null
+      "size": 5.0
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -7065,7 +7065,7 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "size": null
+      "size": 5.0
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -7090,7 +7090,7 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "size": null
+      "size": 5.0
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -7115,7 +7115,7 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "size": null
+      "size": 5.0
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -7140,7 +7140,7 @@
       "width": 720,
       "height": 1280,
       "touch": true,
-      "size": null
+      "size": 5.0
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -7257,7 +7257,7 @@
       "width": 1080,
       "height": 1920,
       "touch": true,
-      "size": null
+      "size": 5.0
     },
     "dualOrientation": true,
     "simCount": 0,
@@ -9326,6 +9326,52 @@
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 5051d": {
+    "deviceName": "5051D",
+    "marketingName": "OneTouch Pop 4",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1280,
+      "touch": true,
+      "size": 5.0
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 6060x": {
+    "deviceName": "6060X",
+    "marketingName": "OneTouch Idol 5S",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "size": 5.2
+    },
+    "dualOrientation": true,
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": ["GPRS" , "EDGE" , "UMTS" , "HSUPA" , "HSDPA", "HSPA+" , "LTE"],
     "platform": "android",
     "variants": []
   }

@@ -458,5 +458,51 @@
     "connections": [],
     "platform": "android",
     "variants": []
+  },
+  "umi touch": {
+    "deviceName": "Touch",
+    "marketingName": "Touch",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "type": "smartphone",
+    "display": {
+      "width": 1080,
+      "height": 1920,
+      "touch": true,
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "umi one pro": {
+    "deviceName": "One Pro",
+    "marketingName": "One Pro",
+    "manufacturer": "Umi",
+    "brand": "Umi",
+    "type": "smartphone",
+    "display": {
+      "width": 720,
+      "height": 1520,
+      "touch": true,
+      "size": 5.9
+    },
+    "dualOrientation": true,
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
   }
 }

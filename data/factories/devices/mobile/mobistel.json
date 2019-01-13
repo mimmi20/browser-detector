@@ -1,20 +1,21 @@
 {
   "rules": {
-    "/cynus t8/i": "mobistel cynus t8",
-    "/cynus t6/i": "mobistel cynus t6",
-    "/cynus t5/i": "mobistel cynus t5",
-    "/cynus t2/i": "mobistel cynus t2",
-    "/cynus t1/i": "mobistel cynus t1",
+    "/cynus[_ ]t8/i": "mobistel cynus t8",
+    "/cynus[_ ]t6/i": "mobistel cynus t6",
+    "/cynus[_ ]t5/i": "mobistel cynus t5",
+    "/cynus[_ ]t2/i": "mobistel cynus t2",
+    "/cynus[_ ]t1/i": "mobistel cynus t1",
     "/cynus[_ ]f10/i": "mobistel cynus f10",
-    "/cynus_f9/i": "mobistel cynus f9",
+    "/cynus[_ ]f9/i": "mobistel cynus f9",
     "/cynus[_ ]f8/i": "mobistel cynus f8",
-    "/cynus f6/i": "mobistel cynus f6",
-    "/cynus f5/i": "mobistel cynus f5",
-    "/cynus f4/i": "mobistel mt-7521s",
-    "/cynus f3/i": "mobistel cynus f3",
-    "/cynus e7/i": "mobistel cynus e7",
-    "/cynus_e5/i": "mobistel cynus e5",
-    "/cynus e1/i": "mobistel cynus e1"
+    "/cynus[_ ]f6/i": "mobistel cynus f6",
+    "/cynus[_ ]f5/i": "mobistel cynus f5",
+    "/cynus[_ ]f4/i": "mobistel mt-7521s",
+    "/cynus[_ ]f3/i": "mobistel cynus f3",
+    "/cynus[_ ]e8/i": "mobistel cynus e8",
+    "/cynus[_ ]e7/i": "mobistel cynus e7",
+    "/cynus[_ ]e5/i": "mobistel cynus e5",
+    "/cynus[_ ]e1/i": "mobistel cynus e1"
   },
   "generic": "general mobistel device"
 }
