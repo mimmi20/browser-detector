@@ -4,7 +4,6 @@
     "marketingName": "OneTouch Evo 8 HD",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -27,7 +27,6 @@
     "marketingName": "OneTouch Hero 8",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1920,
       "height": 1200,
@@ -35,61 +34,14 @@
       "size": 8
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
       "vendors": []
     },
     "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "alcatel p321": {
-    "deviceName": "OT-P321",
-    "marketingName": "OneTouch POP 8",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "alcatel p320x": {
-    "deviceName": "OT-P320X",
-    "marketingName": "OneTouch POP 8 3G",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
     "platform": "android",
     "variants": []
   },
@@ -98,7 +50,6 @@
     "marketingName": "OneTouch Pixi 3",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -106,7 +57,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -121,7 +73,6 @@
     "marketingName": "OneTouch Pixi 3",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -129,7 +80,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -144,7 +96,6 @@
     "marketingName": "OneTouch Pixi 3 (8) 3G",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -152,7 +103,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -169,7 +121,6 @@
     "marketingName": "OneTouch Pixi 4 (7)",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -177,7 +128,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -192,7 +144,6 @@
     "marketingName": "OneTouch Pixi 4 (7) 3G",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -200,7 +151,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -217,7 +169,6 @@
     "marketingName": "OneTouch Pixi 4 (7) 3G",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -225,7 +176,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -242,7 +194,6 @@
     "marketingName": "OneTouch Pixi 7 3G",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 960,
       "height": 540,
@@ -250,7 +201,56 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel p321": {
+    "deviceName": "OT-P321",
+    "marketingName": "OneTouch POP 8",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel p320x": {
+    "deviceName": "OT-P320X",
+    "marketingName": "OneTouch POP 8 3G",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -267,7 +267,6 @@
     "marketingName": "OneTouch Pop7 WiFi 3G",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -275,7 +274,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -292,7 +292,6 @@
     "marketingName": "OneTouch Pop7 WiFi 3G",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -300,7 +299,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

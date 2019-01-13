@@ -4,7 +4,6 @@
     "marketingName": "NetTAB Matrix 3G Duo",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -29,7 +29,6 @@
     "marketingName": "NetTAB Matrix 3GT",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -37,7 +36,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -54,7 +54,6 @@
     "marketingName": "NetTAB Pocket 3G",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "type": "fone-pad",
     "display": {
       "width": 800,
       "height": 480,
@@ -62,7 +61,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -79,7 +79,6 @@
     "marketingName": "NetTAB Pocket 3G Slim",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "type": "fone-pad",
     "display": {
       "width": 800,
       "height": 480,
@@ -87,7 +86,56 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-3805c": {
+    "deviceName": "NT-3805C",
+    "marketingName": "NetTab Skat Quad",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "iconbit nt-3701s": {
+    "deviceName": "NT-3701S",
+    "marketingName": "NetTAB Sky 3G Duo",
+    "manufacturer": "IconBit",
+    "brand": "IconBit",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -104,7 +152,6 @@
     "marketingName": "NetTAB SKY 3G Plus",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -112,32 +159,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "iconbit nt-3701s": {
-    "deviceName": "NT-3701S",
-    "marketingName": "NetTAB Sky 3G Duo",
-    "manufacturer": "IconBit",
-    "brand": "IconBit",
     "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -154,7 +177,6 @@
     "marketingName": "NetTAB Sky HD 3G",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -162,7 +184,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -179,7 +202,6 @@
     "marketingName": "NetTAB Thor 3G Quad",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -187,7 +209,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -204,7 +227,6 @@
     "marketingName": "NetTAB Thor IZ",
     "manufacturer": "IconBit",
     "brand": "IconBit",
-    "type": "fone-pad",
     "display": {
       "width": 1920,
       "height": 1200,
@@ -212,30 +234,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "iconbit nt-3805c": {
-    "deviceName": "NT-3805C",
-    "marketingName": "NetTab Skat Quad",
-    "manufacturer": "IconBit",
-    "brand": "IconBit",
     "type": "fone-pad",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

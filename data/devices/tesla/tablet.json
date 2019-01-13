@@ -4,7 +4,6 @@
     "marketingName": "general Tesla Device",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "type": "tablet",
     "display": {
       "width": null,
       "height": null,
@@ -12,6 +11,7 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -27,7 +27,6 @@
     "marketingName": "L7 Quad",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "type": "tablet",
     "display": {
       "width": 1024,
       "height": 600,
@@ -35,6 +34,7 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -50,7 +50,6 @@
     "marketingName": "L7 Quad Lite",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "type": "tablet",
     "display": {
       "width": 1024,
       "height": 600,
@@ -58,6 +57,7 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -73,7 +73,6 @@
     "marketingName": "L7.1",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "type": "tablet",
     "display": {
       "width": 1024,
       "height": 600,
@@ -81,6 +80,7 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -96,7 +96,6 @@
     "marketingName": "M7",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "type": "tablet",
     "display": {
       "width": 1280,
       "height": 800,
@@ -104,6 +103,7 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -119,7 +119,6 @@
     "marketingName": "M8",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "type": "tablet",
     "display": {
       "width": 1280,
       "height": 800,
@@ -127,75 +126,7 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "tesla tth7": {
-    "deviceName": "TTH7",
-    "marketingName": "TTH7",
-    "manufacturer": "Tesla",
-    "brand": "Tesla",
     "type": "tablet",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "tesla ttl8": {
-    "deviceName": "TTL8",
-    "marketingName": "TTL8",
-    "manufacturer": "Tesla",
-    "brand": "Tesla",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "tesla ttl8.1": {
-    "deviceName": "TTL8.1",
-    "marketingName": "TTL8.1",
-    "manufacturer": "Tesla",
-    "brand": "Tesla",
-    "type": "tablet",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
     "simCount": 0,
     "market": {
       "regions": [],
@@ -211,7 +142,6 @@
     "marketingName": "Tablet 785",
     "manufacturer": "Tesla",
     "brand": "Tesla",
-    "type": "tablet",
     "display": {
       "width": 1280,
       "height": 720,
@@ -219,6 +149,76 @@
       "size": null
     },
     "dualOrientation": true,
+    "type": "tablet",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tesla tth7": {
+    "deviceName": "TTH7",
+    "marketingName": "TTH7",
+    "manufacturer": "Tesla",
+    "brand": "Tesla",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "tablet",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tesla ttl8": {
+    "deviceName": "TTL8",
+    "marketingName": "TTL8",
+    "manufacturer": "Tesla",
+    "brand": "Tesla",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "tablet",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "tesla ttl8.1": {
+    "deviceName": "TTL8.1",
+    "marketingName": "TTL8.1",
+    "manufacturer": "Tesla",
+    "brand": "Tesla",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "tablet",
     "simCount": 0,
     "market": {
       "regions": [],

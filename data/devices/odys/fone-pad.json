@@ -4,7 +4,6 @@
     "marketingName": "Connect 8 plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -29,7 +29,6 @@
     "marketingName": "Falcon 10 Plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -37,7 +36,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -54,7 +54,6 @@
     "marketingName": "Goal 10 Plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -62,7 +61,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -79,7 +79,6 @@
     "marketingName": "Maven 10 HD plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -87,7 +86,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -104,7 +104,6 @@
     "marketingName": "Maven 10 Pro plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -112,7 +111,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -129,7 +129,6 @@
     "marketingName": "Maven X10 HD",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -137,7 +136,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -154,7 +154,6 @@
     "marketingName": "Pro Q8 plus",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -162,7 +161,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -177,7 +177,6 @@
     "marketingName": "Rapid 10",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -185,7 +184,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -202,7 +202,6 @@
     "marketingName": "Rapid 7",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -210,7 +209,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -227,7 +227,6 @@
     "marketingName": "Score plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -235,7 +234,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -252,7 +252,6 @@
     "marketingName": "Sky plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -260,32 +259,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "odys space 10 pro 3g": {
-    "deviceName": "Space 10 Pro 3G",
-    "marketingName": "Space 10 Pro 3G",
-    "manufacturer": "Odys",
-    "brand": "Odys",
     "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -302,7 +277,6 @@
     "marketingName": "Space 10 plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -310,7 +284,33 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "odys space 10 pro 3g": {
+    "deviceName": "Space 10 Pro 3G",
+    "marketingName": "Space 10 Pro 3G",
+    "manufacturer": "Odys",
+    "brand": "Odys",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -327,7 +327,6 @@
     "marketingName": "Thor 10 plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -335,7 +334,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -352,7 +352,6 @@
     "marketingName": "Titan 10 LTE",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -360,6 +359,7 @@
       "size": 10.1
     },
     "dualOrientation": true,
+    "type": "fone-pad",
     "simCount": 2,
     "market": {
       "regions": [],
@@ -375,7 +375,6 @@
     "marketingName": "Xelio 10 plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -383,7 +382,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -400,7 +400,6 @@
     "marketingName": "Xelio HD 10 plus",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -408,7 +407,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -425,7 +425,6 @@
     "marketingName": "Xelio Next 10 plus 3G",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -433,7 +432,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -450,7 +450,6 @@
     "marketingName": "Xelio Phonetab 2 Pro",
     "manufacturer": "Odys",
     "brand": "Odys",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -458,7 +457,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

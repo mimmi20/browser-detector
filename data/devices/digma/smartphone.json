@@ -4,15 +4,15 @@
     "marketingName": "Citi Z510 3G",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "smartphone",
     "display": {
-      "width": 480,
-      "height": 854,
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -29,15 +29,15 @@
     "marketingName": "Citi Z520 3G",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -45,198 +45,6 @@
     },
     "connections": [
       "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma idxq5": {
-    "deviceName": "iDxQ5",
-    "marketingName": "Linx 4.5",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "digma pt452e": {
-    "deviceName": "PT452E",
-    "marketingName": "Linx 4.5",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ps474s": {
-    "deviceName": "PS474S",
-    "marketingName": "Linx 4.7 HD",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ps604m": {
-    "deviceName": "PS604M",
-    "marketingName": "Linx 6.0",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "digma lt4001pg": {
-    "deviceName": "LT4001PG",
-    "marketingName": "Linx A400 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma lt5001pg": {
-    "deviceName": "LT5001PG",
-    "marketingName": "Linx C500 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "smartphone",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma vox s502 3g": {
-    "deviceName": "VOX S502 3G",
-    "marketingName": "VOX S502 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma vs5013ml": {
-    "deviceName": "VS5013ML",
-    "marketingName": "Vox S502",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "smartphone",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
     ],
     "platform": "android",
     "variants": []
@@ -246,15 +54,15 @@
     "marketingName": "iDx5",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "smartphone",
     "display": {
-      "width": 480,
-      "height": 800,
+      "width": 800,
+      "height": 480,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -269,15 +77,15 @@
     "marketingName": "iDxD4 3G",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "smartphone",
     "display": {
-      "width": 540,
-      "height": 960,
+      "width": 960,
+      "height": 540,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -294,21 +102,213 @@
     "marketingName": "iDxD5",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "digma idxq5": {
+    "deviceName": "iDxQ5",
+    "marketingName": "Linx 4.5",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "digma pt452e": {
+    "deviceName": "PT452E",
+    "marketingName": "Linx 4.5",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ps474s": {
+    "deviceName": "PS474S",
+    "marketingName": "Linx 4.7 HD",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ps604m": {
+    "deviceName": "PS604M",
+    "marketingName": "Linx 6.0",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "digma lt4001pg": {
+    "deviceName": "LT4001PG",
+    "marketingName": "Linx A400 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma lt5001pg": {
+    "deviceName": "LT5001PG",
+    "marketingName": "Linx C500 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma vs5013ml": {
+    "deviceName": "VS5013ML",
+    "marketingName": "Vox S502",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma vox s502 3g": {
+    "deviceName": "VOX S502 3G",
+    "marketingName": "VOX S502 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
     "platform": "android",
     "variants": []
   }

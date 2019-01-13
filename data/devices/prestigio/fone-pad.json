@@ -1,10 +1,9 @@
 {
-  "prestigio pmt7177_3g": {
-    "deviceName": "PMT7177_3G",
-    "marketingName": "MultiPad 4 Diamond 10.1 3G",
+  "prestigio pmp7100d3g": {
+    "deviceName": "PMP7100D3G",
+    "marketingName": "Multipad",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -12,7 +11,56 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "prestigio pmp7280c3g": {
+    "deviceName": "PMP7280C3G",
+    "marketingName": "Multipad 2 Ultra Duo 8.0 3G",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "prestigio pmt7177_3g": {
+    "deviceName": "PMT7177_3G",
+    "marketingName": "MultiPad 4 Diamond 10.1 3G",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -29,7 +77,6 @@
     "marketingName": "MultiPad 4 Diamond 7.0 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -37,7 +84,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -54,7 +102,6 @@
     "marketingName": "MultiPad 4 Diamond 7.85 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -62,7 +109,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -79,7 +127,6 @@
     "marketingName": "MultiPad 4 Diamond 7.85, 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -87,7 +134,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -104,7 +152,6 @@
     "marketingName": "MultiPad 4 Pro Quad 8.0",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -112,7 +159,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -127,7 +175,6 @@
     "marketingName": "MultiPad 4 Quantum 7.85 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -135,7 +182,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -152,7 +200,6 @@
     "marketingName": "MultiPad 4 Ultimate 8.0 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -160,7 +207,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -177,7 +225,6 @@
     "marketingName": "MultiPad 4 Ultra Quad 8.0 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -185,203 +232,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "prestigio pmp7880d3g": {
-    "deviceName": "PMP7880D3G",
-    "marketingName": "MultiPad 8",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
     "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "prestigio pmt3277_3g": {
-    "deviceName": "PMT3277_3G",
-    "marketingName": "MultiPad Ranger 7.0 3G",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "prestigio pmt3287_3g": {
-    "deviceName": "PMT3287_3G",
-    "marketingName": "MultiPad Ranger 8.0 3G Wifi",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "prestigio pmp3007c": {
-    "deviceName": "PMP3007C",
-    "marketingName": "MultiPad Rider 7.0 3G",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "prestigio pmt3767_3g": {
-    "deviceName": "PMT3767_3G",
-    "marketingName": "MultiPad WIZE 3767 3G",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "prestigio pmt3037_3g": {
-    "deviceName": "PMT3037_3G",
-    "marketingName": "MultiPad Wize 3037 3G",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "prestigio pmp7100d3g": {
-    "deviceName": "PMP7100D3G",
-    "marketingName": "Multipad",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "prestigio pmp7280c3g": {
-    "deviceName": "PMP7280C3G",
-    "marketingName": "Multipad 2 Ultra Duo 8.0 3G",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -398,7 +250,6 @@
     "marketingName": "Multipad 7.0 Prime 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 800,
       "height": 480,
@@ -406,7 +257,106 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "prestigio pmp7880d3g": {
+    "deviceName": "PMP7880D3G",
+    "marketingName": "MultiPad 8",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "prestigio pmt3277_3g": {
+    "deviceName": "PMT3277_3G",
+    "marketingName": "MultiPad Ranger 7.0 3G",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "prestigio pmt3287_3g": {
+    "deviceName": "PMT3287_3G",
+    "marketingName": "MultiPad Ranger 8.0 3G Wifi",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "prestigio pmp3007c": {
+    "deviceName": "PMP3007C",
+    "marketingName": "MultiPad Rider 7.0 3G",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -423,7 +373,6 @@
     "marketingName": "Multipad WIZE",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -431,7 +380,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -441,12 +391,36 @@
     "platform": "android",
     "variants": []
   },
-  "prestigio pmt3101_4g": {
-    "deviceName": "PMT3101_",
-    "marketingName": "PMT3101_",
+  "prestigio pmt3037_3g": {
+    "deviceName": "PMT3037_3G",
+    "marketingName": "MultiPad Wize 3037 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
     "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "prestigio pmt3767_3g": {
+    "deviceName": "PMT3767_3G",
+    "marketingName": "MultiPad WIZE 3767 3G",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
     "display": {
       "width": 1280,
       "height": 800,
@@ -454,7 +428,33 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "prestigio pmt3101_4g": {
+    "deviceName": "PMT3101_",
+    "marketingName": "PMT3101_",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -471,7 +471,6 @@
     "marketingName": "PMT5001_3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -479,7 +478,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -496,7 +496,6 @@
     "marketingName": "Wize 3108 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -504,7 +503,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],

@@ -4,7 +4,6 @@
     "marketingName": "Citi 1902 3G",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -12,7 +11,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -29,7 +29,6 @@
     "marketingName": "D-Plane2 7",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -37,7 +36,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -52,7 +52,6 @@
     "marketingName": "Hit",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -60,7 +59,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -68,354 +68,6 @@
     },
     "connections": [
       "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma tt1003mg": {
-    "deviceName": "TT1003MG",
-    "marketingName": "Optima 10.3 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ts1087mg": {
-    "deviceName": "TS1087MG",
-    "marketingName": "Optima 1104S 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ts7055mg": {
-    "deviceName": "TS7055MG",
-    "marketingName": "Optima 7202 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma tt7071mg": {
-    "deviceName": "TT7071MG",
-    "marketingName": "Optima E7.1 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma tt7008aw": {
-    "deviceName": "TT7008AW",
-    "marketingName": "Optima M7.0",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "digma tt7000mg": {
-    "deviceName": "TT7000MG",
-    "marketingName": "Optima Prime 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ps1043mg": {
-    "deviceName": "PS1043MG",
-    "marketingName": "Plane 10.3 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ps7022mg": {
-    "deviceName": "PS7022MG",
-    "marketingName": "Plane 7501M 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ps8040mg": {
-    "deviceName": "PS8040MG",
-    "marketingName": "Plane 8.4 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ps8106pg": {
-    "deviceName": "PS8106PG",
-    "marketingName": "Plane 8713T 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ps7005mg": {
-    "deviceName": "PS7005MG",
-    "marketingName": "Plane S7.0 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ns7001ql": {
-    "deviceName": "NS7001QL",
-    "marketingName": "Platina 7.1",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ns6902ql": {
-    "deviceName": "NS6902QL",
-    "marketingName": "Platina 7.2",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "digma ns9797mg": {
-    "deviceName": "NS9797MG",
-    "marketingName": "Platina 9.7 3G",
-    "manufacturer": "Digma",
-    "brand": "Digma",
-    "type": "fone-pad",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
     ],
     "platform": "android",
     "variants": []
@@ -425,7 +77,6 @@
     "marketingName": "iDj7",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 800,
       "height": 480,
@@ -433,7 +84,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -448,7 +100,6 @@
     "marketingName": "iDnD7",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -456,7 +107,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -471,7 +123,6 @@
     "marketingName": "iDrQ10 3G",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -479,7 +130,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -496,7 +148,6 @@
     "marketingName": "iDs10",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -504,7 +155,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -519,7 +171,6 @@
     "marketingName": "iDsD7 3G",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -527,7 +178,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -544,7 +196,6 @@
     "marketingName": "iDxD10 3G",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -552,7 +203,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -569,7 +221,6 @@
     "marketingName": "iDxD8",
     "manufacturer": "Digma",
     "brand": "Digma",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 768,
@@ -577,13 +228,362 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "digma tt1003mg": {
+    "deviceName": "TT1003MG",
+    "marketingName": "Optima 10.3 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ts1087mg": {
+    "deviceName": "TS1087MG",
+    "marketingName": "Optima 1104S 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ts7055mg": {
+    "deviceName": "TS7055MG",
+    "marketingName": "Optima 7202 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma tt7071mg": {
+    "deviceName": "TT7071MG",
+    "marketingName": "Optima E7.1 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma tt7008aw": {
+    "deviceName": "TT7008AW",
+    "marketingName": "Optima M7.0",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "digma tt7000mg": {
+    "deviceName": "TT7000MG",
+    "marketingName": "Optima Prime 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ps1043mg": {
+    "deviceName": "PS1043MG",
+    "marketingName": "Plane 10.3 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ps7022mg": {
+    "deviceName": "PS7022MG",
+    "marketingName": "Plane 7501M 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ps8040mg": {
+    "deviceName": "PS8040MG",
+    "marketingName": "Plane 8.4 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ps8106pg": {
+    "deviceName": "PS8106PG",
+    "marketingName": "Plane 8713T 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ps7005mg": {
+    "deviceName": "PS7005MG",
+    "marketingName": "Plane S7.0 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ns7001ql": {
+    "deviceName": "NS7001QL",
+    "marketingName": "Platina 7.1",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ns6902ql": {
+    "deviceName": "NS6902QL",
+    "marketingName": "Platina 7.2",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "digma ns9797mg": {
+    "deviceName": "NS9797MG",
+    "marketingName": "Platina 9.7 3G",
+    "manufacturer": "Digma",
+    "brand": "Digma",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
     "platform": "android",
     "variants": []
   }

@@ -1,10 +1,34 @@
 {
+  "cube i1-3gd": {
+    "deviceName": "I1-3GD",
+    "marketingName": "iWork 8 3G",
+    "manufacturer": "Cube",
+    "brand": "Cube",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": null,
+    "variants": []
+  },
   "cube u51gt": {
     "deviceName": "U51GT",
     "marketingName": "Talk 7",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -12,7 +36,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -27,7 +52,6 @@
     "marketingName": "Talk 7 XS 3G",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -35,7 +59,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -52,7 +77,6 @@
     "marketingName": "Talk 79 3G",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -60,7 +84,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -77,7 +102,6 @@
     "marketingName": "Talk 7x",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -85,7 +109,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -100,7 +125,6 @@
     "marketingName": "Talk 7x",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "type": "fone-pad",
     "display": {
       "width": 1024,
       "height": 600,
@@ -108,7 +132,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -123,7 +148,6 @@
     "marketingName": "Talk 8H 3G",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "type": "fone-pad",
     "display": {
       "width": 1280,
       "height": 800,
@@ -131,7 +155,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -148,7 +173,6 @@
     "marketingName": "Talk 9",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "type": "fone-pad",
     "display": {
       "width": 1920,
       "height": 1280,
@@ -156,7 +180,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -171,7 +196,6 @@
     "marketingName": "Talk 9X",
     "manufacturer": "Cube",
     "brand": "Cube",
-    "type": "fone-pad",
     "display": {
       "width": 2048,
       "height": 1536,
@@ -179,7 +203,8 @@
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "fone-pad",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -187,31 +212,6 @@
     },
     "connections": [],
     "platform": "android",
-    "variants": []
-  },
-  "cube i1-3gd": {
-    "deviceName": "I1-3GD",
-    "marketingName": "iWork 8 3G",
-    "manufacturer": "Cube",
-    "brand": "Cube",
-    "type": "fone-pad",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": null,
     "variants": []
   }
 }

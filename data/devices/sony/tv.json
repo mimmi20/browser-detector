@@ -4,14 +4,14 @@
     "marketingName": "Bravia 4K GB",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
-      "width": 2160,
-      "height": 3840,
+      "width": 3840,
+      "height": 2160,
       "touch": false,
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -22,12 +22,11 @@
     "platform": null,
     "variants": []
   },
-  "sony google tv": {
-    "deviceName": "Google TV",
-    "marketingName": "Google TV",
+  "sony dtv": {
+    "deviceName": "general Sony TV",
+    "marketingName": "general Sony TV",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -35,6 +34,30 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "linux",
+    "variants": []
+  },
+  "sony google tv": {
+    "deviceName": "Google TV",
+    "marketingName": "Google TV",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -50,7 +73,6 @@
     "marketingName": "KDL32HX755",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -58,6 +80,7 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -73,7 +96,6 @@
     "marketingName": "KDL32W655A",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -81,6 +103,7 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -96,7 +119,6 @@
     "marketingName": "KDL37EX720",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -104,6 +126,7 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -119,7 +142,6 @@
     "marketingName": "KDL40EX720",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -127,6 +149,7 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -142,7 +165,6 @@
     "marketingName": "KDL42W655A",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -150,6 +172,7 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -165,7 +188,6 @@
     "marketingName": "KDL50W815B",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -173,29 +195,7 @@
       "size": null
     },
     "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": null,
-    "variants": []
-  },
-  "sony nsz-gs7-gx70": {
-    "deviceName": "NSZ-GS7/GX70",
-    "marketingName": "NSZ-GS7/GX70",
-    "manufacturer": "Sony",
-    "brand": "Sony",
     "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "dualOrientation": false,
     "simCount": 0,
     "market": {
       "regions": [],
@@ -211,7 +211,6 @@
     "marketingName": "Netbox",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -219,6 +218,7 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -229,12 +229,11 @@
     "platform": "linux",
     "variants": []
   },
-  "sony playstation 4": {
-    "deviceName": "Playstation 4",
-    "marketingName": "Playstation 4",
+  "sony nsz-gs7-gx70": {
+    "deviceName": "NSZ-GS7/GX70",
+    "marketingName": "NSZ-GS7/GX70",
     "manufacturer": "Sony",
     "brand": "Sony",
-    "type": "tv",
     "display": {
       "width": null,
       "height": null,
@@ -242,6 +241,30 @@
       "size": null
     },
     "dualOrientation": false,
+    "type": "tv",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": null,
+    "variants": []
+  },
+  "sony playstation 4": {
+    "deviceName": "Playstation 4",
+    "marketingName": "Playstation 4",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "dualOrientation": false,
+    "type": "tv",
     "simCount": 0,
     "market": {
       "regions": [],
@@ -250,29 +273,6 @@
     },
     "connections": [],
     "platform": "cellos",
-    "variants": []
-  },
-  "sony dtv": {
-    "deviceName": "general Sony TV",
-    "marketingName": "general Sony TV",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "type": "tv",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "dualOrientation": false,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "linux",
     "variants": []
   }
 }

@@ -4,15 +4,15 @@
     "marketingName": " Dual",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -29,15 +29,15 @@
     "marketingName": "Discovery",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -52,15 +52,15 @@
     "marketingName": "Discovery Elite",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "type": "smartphone",
     "display": {
-      "width": 1080,
-      "height": 1920,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -75,15 +75,38 @@
     "marketingName": "Discovery II",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "type": "smartphone",
     "display": {
-      "width": 1080,
-      "height": 1920,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "general general-mobile device": {
+    "deviceName": "general General Mobile Device",
+    "marketingName": "general General Mobile Device",
+    "manufacturer": "General Mobile",
+    "brand": "General Mobile",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -98,14 +121,14 @@
     "marketingName": "GM 5 D",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1280,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": 5
     },
     "dualOrientation": true,
+    "type": "smartphone",
     "simCount": 1,
     "market": {
       "regions": [],
@@ -121,15 +144,15 @@
     "marketingName": "GM 5 Plus",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "type": "smartphone",
     "display": {
-      "width": 1080,
-      "height": 1920,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -144,15 +167,15 @@
     "marketingName": "GM 5 Plus D",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "type": "smartphone",
     "display": {
-      "width": 1080,
-      "height": 1920,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
+    "type": "smartphone",
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
@@ -167,38 +190,15 @@
     "marketingName": "GM 8",
     "manufacturer": "General Mobile",
     "brand": "General Mobile",
-    "type": "smartphone",
     "display": {
-      "width": 720,
-      "height": 1440,
+      "width": 1440,
+      "height": 720,
       "touch": true,
       "size": null
     },
     "dualOrientation": true,
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "general general-mobile device": {
-    "deviceName": "general General Mobile Device",
-    "marketingName": "general General Mobile Device",
-    "manufacturer": "General Mobile",
-    "brand": "General Mobile",
     "type": "smartphone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "simCount": 0,
+    "simCount": 1,
     "market": {
       "regions": [],
       "countries": [],
