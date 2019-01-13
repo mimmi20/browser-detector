@@ -1,12 +1,13 @@
 {
   "rules": {
-    "/(s61)/i": "caterpillar s61",
-    "/(s60)/i": "caterpillar s60",
-    "/(s41)/i": "caterpillar s41",
-    "/(s40)/i": "caterpillar s40",
-    "/(s31)/i": "caterpillar s31",
-    "/(b15q)/i": "caterpillar b15q",
-    "/(b15)/i": "caterpillar b15"
+    "/s61/i": "caterpillar s61",
+    "/s60/i": "caterpillar s60",
+    "/s50/i": "caterpillar s50",
+    "/s41/i": "caterpillar s41",
+    "/s40/i": "caterpillar s40",
+    "/s31/i": "caterpillar s31",
+    "/b15q/i": "caterpillar b15q",
+    "/b15/i": "caterpillar b15"
   },
   "generic": "general caterpillar device"
 }
