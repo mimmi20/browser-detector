@@ -50,6 +50,37 @@
     "platform": "android",
     "variants": []
   },
+  "medion p1061x": {
+    "deviceName": "LifeTab P1061X",
+    "marketingName": "LifeTab P1061X",
+    "manufacturer": "Medion",
+    "brand": "Medion",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "EDGE",
+      "GPRS",
+      "GSM",
+      "LTE",
+      "UMTS",
+      "WCDMA",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "medion s1035x": {
     "deviceName": "LifeTab S1035X",
     "marketingName": "LifeTab S1035X",

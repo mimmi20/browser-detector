@@ -53930,14 +53930,14 @@
     },
     "device": {
       "deviceName": "SM-T377V",
-      "marketingName": "Galaxy Tab E (8.0)",
+      "marketingName": "Galaxy Tab E",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "dualOrientation": true,
       "type": "fone-pad",
@@ -55054,6 +55054,58 @@
       "marketingName": "Tizen",
       "version": "0.0.0",
       "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-T377W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T377W",
+      "marketingName": "Galaxy Tab E",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "dualOrientation": true,
+      "type": "fone-pad",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "UMTS",
+        "HSUPA",
+        "HSDPA",
+        "HSPA+",
+        "LTE"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
       "bits": 32
     },
     "engine": {

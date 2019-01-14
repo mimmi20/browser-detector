@@ -706,7 +706,30 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei g7-l03": {
+    "deviceName": "G7-L03",
+    "marketingName": "Ascend G7",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -729,7 +752,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -2386,6 +2409,41 @@
     "platform": "android",
     "variants": []
   },
+  "huawei ldn-al00": {
+    "deviceName": "LDN-AL00",
+    "marketingName": "Enjoy 8",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
+      "DC-HSDPA",
+      "CDMA",
+      "TD-SCDMA",
+      "TD-HSDPA",
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "huawei u8665": {
     "deviceName": "U8665",
     "marketingName": "Fusion 2",
@@ -2638,6 +2696,32 @@
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei h892l": {
+    "deviceName": "H892L",
+    "marketingName": "H892L",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.6
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "CDMA",
+      "Wi-Fi"
+    ],
     "platform": "android",
     "variants": []
   },
@@ -5157,7 +5241,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 6.6
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5167,7 +5251,19 @@
       "countries": [],
       "vendors": []
     },
-    "connections": [],
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
+      "DC-HSDPA",
+      "CDMA",
+      "TD-SCDMA",
+      "TD-HSDPA",
+      "LTE"
+    ],
     "platform": "android",
     "variants": []
   },
@@ -6536,7 +6632,7 @@
       "width": 1440,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -9656,7 +9752,7 @@
       "width": 1440,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -9679,7 +9775,7 @@
       "width": 1440,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "dualOrientation": true,
     "type": "smartphone",

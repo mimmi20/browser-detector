@@ -5542,6 +5542,34 @@
     "platform": "android",
     "variants": []
   },
+  "lg l44vl": {
+    "deviceName": "L44VL",
+    "marketingName": "Rebel",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": [
+        "TracFone"
+      ]
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "lg h343": {
     "deviceName": "H343",
     "marketingName": "Risio (Cricket)",
@@ -5779,6 +5807,32 @@
       ]
     },
     "connections": [
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "lg ls660": {
+    "deviceName": "LS660",
+    "marketingName": "Tribute",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE",
       "CDMA"
     ],
     "platform": "android",
