@@ -15,7 +15,6 @@ use BrowserDetector\Helper\DesktopInterface;
 use BrowserDetector\Helper\MobileDeviceInterface;
 use BrowserDetector\Helper\TvInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use Stringy\Stringy;
 
 final class DeviceParser implements DeviceParserInterface
 {
@@ -112,21 +111,19 @@ final class DeviceParser implements DeviceParserInterface
             return $factory->parse($useragent);
         }
 
-        $s = new Stringy($useragent);
-
-        if ($this->mobileDevice->isMobile($s)) {
+        if ($this->mobileDevice->isMobile($useragent)) {
             $factory = $this->mobileParser;
 
             return $factory->parse($useragent);
         }
 
-        if ($this->tvDevice->isTvDevice($s)) {
+        if ($this->tvDevice->isTvDevice($useragent)) {
             $factory = $this->tvParser;
 
             return $factory->parse($useragent);
         }
 
-        if ($this->desktopDevice->isDesktopDevice($s)) {
+        if ($this->desktopDevice->isDesktopDevice($useragent)) {
             $factory = $this->desktopParser;
 
             return $factory->parse($useragent);

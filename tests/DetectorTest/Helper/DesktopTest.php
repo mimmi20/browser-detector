@@ -13,7 +13,6 @@ namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\Desktop;
 use PHPUnit\Framework\TestCase;
-use Stringy\Stringy;
 
 class DesktopTest extends TestCase
 {
@@ -39,7 +38,7 @@ class DesktopTest extends TestCase
      */
     public function testIsDesktop(string $agent): void
     {
-        self::assertTrue($this->object->isDesktopDevice(new Stringy($agent)));
+        self::assertTrue($this->object->isDesktopDevice($agent));
     }
 
     /**
@@ -107,7 +106,7 @@ class DesktopTest extends TestCase
      */
     public function testIsNoDesktop(string $agent): void
     {
-        self::assertFalse($this->object->isDesktopDevice(new Stringy($agent)));
+        self::assertFalse($this->object->isDesktopDevice($agent));
     }
 
     /**

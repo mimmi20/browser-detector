@@ -11,88 +11,37 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
-use Stringy\Stringy;
-
 final class Desktop implements DesktopInterface
 {
     /**
      * Returns true if the give $useragent is from a desktop device
      *
-     * @param \Stringy\Stringy $useragent
+     * @param string $useragent
      *
      * @return bool
      */
-    public function isDesktopDevice(Stringy $useragent): bool
+    public function isDesktopDevice(string $useragent): bool
     {
-        if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem/i', (string) $useragent)) {
+        if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem/i', $useragent)) {
             return false;
         }
 
         // windows
-        if (preg_match('/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!/i', (string) $useragent)) {
+        if (preg_match('/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!/i', $useragent)) {
             return true;
         }
 
         // linux
-        if (preg_match('/linux|debian|ubuntu|cros|tinybrowser/i', (string) $useragent)) {
+        if (preg_match('/linux|debian|ubuntu|cros|tinybrowser/i', $useragent)) {
             return true;
         }
 
         // macOS
-        if (preg_match('/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i', (string) $useragent)) {
+        if (preg_match('/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i', $useragent)) {
             return true;
         }
 
-        $othersDesktops = [
-            // BSD
-            'freebsd',
-            'openbsd',
-            'netbsd',
-            'bsd four',
-            // other platforms
-            'os/2',
-            'warp',
-            'sunos',
-            'hp-ux',
-            'hpux',
-            'beos',
-            'irix',
-            'solaris',
-            'openvms',
-            'aix',
-            'esx',
-            'unix',
-            // desktop apps
-            'w3m',
-            'google desktop',
-            'eeepc',
-            'dillo',
-            'konqueror',
-            'eudora',
-            'masking-agent',
-            'safersurf',
-            'integrity',
-            'davclnt',
-            'cybeye',
-            'google pp default',
-            'microsoft office',
-            'nsplayer',
-            'msfrontpage',
-            'ms frontpage',
-            'revolt',
-            'akregator',
-            'installatron',
-            'lynx',
-            'camino',
-            'osf1',
-            'barca',
-            'the bat!',
-            'libvlc',
-            'openvas',
-            'gvfs',
-        ];
-
-        if ($useragent->containsAny($othersDesktops, false)) {
+        if (preg_match('/freebsd|openbsd|netbsd|bsd four|os\/2|warp|sunos|hp-?ux|beos|irix|solaris|openvms|aix|esx|unix|w3m|google desktop|eeepc|dillo|konqueror|eudora|masking-agent|safersurf|integrity|davclnt|cybeye|google pp default|microsoft office|nsplayer|ms ?frontpage|revolt|akregator|installatron|lynx|camino|osf1|barca|the bat!|libvlc|openvas|gvfs/i', $useragent)) {
             return true;
         }
 
