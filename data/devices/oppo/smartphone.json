@@ -183,6 +183,40 @@
     "platform": "android",
     "variants": []
   },
+  "oppo pbam00": {
+    "deviceName": "PBAM00",
+    "marketingName": "A5",
+    "manufacturer": "Oppo",
+    "brand": "Oppo",
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 6.2
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
+      "CDMA",
+      "TD-SCDMA",
+      "TD-HSDPA",
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "oppo cph1701": {
     "deviceName": "CPH1701",
     "marketingName": "A57",
@@ -1309,6 +1343,40 @@
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "oppo paam00": {
+    "deviceName": "PAAM00",
+    "marketingName": "R15 Dream Mirror Edition",
+    "manufacturer": "Oppo",
+    "brand": "Oppo",
+    "display": {
+      "width": 2280,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
+      "CDMA",
+      "TD-SCDMA",
+      "TD-HSDPA",
+      "LTE"
+    ],
     "platform": "android",
     "variants": []
   },

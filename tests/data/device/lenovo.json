@@ -7882,7 +7882,9 @@
         "countries": [],
         "vendors": []
       },
-      "connections": []
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -8982,7 +8984,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "dualOrientation": true,
       "type": "tablet",
@@ -8992,7 +8994,9 @@
         "countries": [],
         "vendors": []
       },
-      "connections": []
+      "connections": [
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -9028,7 +9032,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "dualOrientation": true,
       "type": "fone-pad",
@@ -9039,7 +9043,12 @@
         "vendors": []
       },
       "connections": [
-        "LTE"
+        "GSM",
+        "CDMA",
+        "TD-SCDMA",
+        "HSPA",
+        "LTE",
+        "Wi-Fi"
       ]
     },
     "browser": {
@@ -9548,7 +9557,14 @@
         "countries": [],
         "vendors": []
       },
-      "connections": []
+      "connections": [
+        "GSM",
+        "CDMA",
+        "TD-SCDMA",
+        "HSPA",
+        "LTE",
+        "Wi-Fi"
+      ]
     },
     "browser": {
       "name": "Chrome",
@@ -9608,6 +9624,257 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 7.1.1; TB-X304F Build/NMF26F AppleWebKit/537.36 KHTML, like Gecko Chrome/68.0.3440.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TB-X304F",
+      "marketingName": "Tab 4 10",
+      "manufacturer": "Lenovo",
+      "brand": "Medion",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "dualOrientation": true,
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 7.1.1; TB-X304L Build/NMF26F AppleWebKit/537.36 KHTML, like Gecko Chrome/68.0.3440.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TB-X304L",
+      "marketingName": "Tab 4 10",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "dualOrientation": true,
+      "type": "fone-pad",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "CDMA",
+        "TD-SCDMA",
+        "HSPA",
+        "LTE",
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 7.1.1; TB-8504F Build/NMF26F AppleWebKit/537.36 KHTML, like Gecko Chrome/61.0.3163.98 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TB-8504F",
+      "marketingName": "Tab 4 10",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "dualOrientation": true,
+      "type": "tablet",
+      "simCount": 0,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 7.1.1; TB-8504X Build/NMF26F AppleWebKit/537.36 KHTML, like Gecko Chrome/61.0.3163.98 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TB-8504X",
+      "marketingName": "Tab 4 10",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "dualOrientation": true,
+      "type": "fone-pad",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "CDMA",
+        "TD-SCDMA",
+        "HSPA",
+        "LTE",
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Lenovo A2020a40 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A2020a40",
+      "marketingName": "Vibe C",
+      "manufacturer": "Lenovo",
+      "brand": "Lenovo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "LTE",
+        "Wi-FI"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },

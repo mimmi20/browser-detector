@@ -1794,6 +1794,60 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-t377v": {
+    "deviceName": "SM-T377V",
+    "marketingName": "Galaxy Tab E",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "XLTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-t377w": {
+    "deviceName": "SM-T377W",
+    "marketingName": "Galaxy Tab E",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-t375s": {
     "deviceName": "SM-T375S",
     "marketingName": "Galaxy Tab E (8.0)",
@@ -1815,31 +1869,6 @@
     },
     "connections": [
       "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-t377v": {
-    "deviceName": "SM-T377V",
-    "marketingName": "Galaxy Tab E (8.0)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "fone-pad",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "XLTE"
     ],
     "platform": "android",
     "variants": []

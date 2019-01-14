@@ -565,7 +565,14 @@
       "countries": [],
       "vendors": []
     },
-    "connections": [],
+    "connections": [
+      "GSM",
+      "CDMA",
+      "TD-SCDMA",
+      "HSPA",
+      "LTE",
+      "Wi-Fi"
+    ],
     "platform": "android",
     "variants": []
   },
@@ -578,7 +585,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "dualOrientation": true,
     "type": "fone-pad",
@@ -589,7 +596,12 @@
       "vendors": []
     },
     "connections": [
-      "LTE"
+      "GSM",
+      "CDMA",
+      "TD-SCDMA",
+      "HSPA",
+      "LTE",
+      "Wi-Fi"
     ],
     "platform": "android",
     "variants": []
