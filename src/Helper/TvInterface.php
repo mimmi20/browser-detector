@@ -11,16 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
-use Stringy\Stringy;
-
 interface TvInterface
 {
     /**
      * Returns true if the give $useragent is from a tv device
      *
-     * @param \Stringy\Stringy $useragent
+     * @param string $useragent
      *
      * @return bool
      */
-    public function isTvDevice(Stringy $useragent): bool;
+    public function isTvDevice(string $useragent): bool;
 }

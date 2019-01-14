@@ -11,16 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
-use Stringy\Stringy;
-
 interface DesktopInterface
 {
     /**
      * Returns true if the give $useragent is from a desktop device
      *
-     * @param \Stringy\Stringy $useragent
+     * @param string $useragent
      *
      * @return bool
      */
-    public function isDesktopDevice(Stringy $useragent): bool;
+    public function isDesktopDevice(string $useragent): bool;
 }

@@ -13,7 +13,6 @@ namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\Tv;
 use PHPUnit\Framework\TestCase;
-use Stringy\Stringy;
 
 class TvTest extends TestCase
 {
@@ -39,7 +38,7 @@ class TvTest extends TestCase
      */
     public function testIsTv(string $agent): void
     {
-        self::assertTrue($this->object->isTvDevice(new Stringy($agent)));
+        self::assertTrue($this->object->isTvDevice($agent));
     }
 
     /**
@@ -81,7 +80,7 @@ class TvTest extends TestCase
      */
     public function testIsNotTv(string $agent): void
     {
-        self::assertFalse($this->object->isTvDevice(new Stringy($agent)));
+        self::assertFalse($this->object->isTvDevice($agent));
     }
 
     /**

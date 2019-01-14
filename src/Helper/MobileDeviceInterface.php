@@ -11,16 +11,14 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
-use Stringy\Stringy;
-
 interface MobileDeviceInterface
 {
     /**
      * Returns true if the give $useragent is from a mobile device
      *
-     * @param \Stringy\Stringy $useragent
+     * @param string $useragent
      *
      * @return bool
      */
-    public function isMobile(Stringy $useragent): bool;
+    public function isMobile(string $useragent): bool;
 }

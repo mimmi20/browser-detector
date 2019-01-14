@@ -11,199 +11,43 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Helper;
 
-use Stringy\Stringy;
-
 final class MobileDevice implements MobileDeviceInterface
 {
     /**
      * Returns true if the give $useragent is from a mobile device
      *
-     * @param \Stringy\Stringy $useragent
+     * @param string $useragent
      *
      * @return bool
      */
-    public function isMobile(Stringy $useragent): bool
+    public function isMobile(string $useragent): bool
     {
-        $noMobiles = [
-            'xbox',
-            'googletv',
-            'eeepc',
-            'smart-tv',
-            'smarttv',
-            'sonydtv',
-            'hbbtv',
-            'gxt_dongle_3188',
-            'apple tv',
-            'mxl661l32',
-            'nettv',
-            'crkey',
-            'lenovog780',
-            'windows iot',
-            'netcast',
-            'raspbian',
-            'bravia',
-            'tablet pc 2.0',
-            'automobile',
-            'netgem',
-        ];
-
-        if ($useragent->containsAny($noMobiles, false)) {
+        if (preg_match('/xbox|googletv|eeepc|smart-?tv|sonydtv|hbbtv|gxt_dongle_3188|apple tv|mxl661l32|nettv|crkey|lenovog780|windows iot|netcast|raspbian|bravia|tablet pc 2\.0|automobile|netgem/i', $useragent)) {
             return false;
         }
 
-        if ($useragent->containsAll(['windows nt', 'iphone', 'micromessenger'], false)) {
+        if (preg_match('/windows nt.*iphone.*micromessenger/i', $useragent)) {
             return true;
         }
 
-        if ($useragent->containsAll(['windows nt', 'arm;'], false)) {
+        if (preg_match('/windows nt.*arm;/i', $useragent)) {
             return true;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if ($useragent->contains('windows nt', false)
-            && $useragent->containsAny(['mobile safari', 'opera mobi', 'iphone'], false)
-        ) {
+        if (preg_match('/windows nt.*(mobile safari|opera mobi|iphone)/i', $useragent)) {
             return false;
         }
 
-        /* @var array $mobiles Collection of mobile browser keywords */
-        $mobiles = [
-            'android',
-            'arm; touch',
-            'aspen simulator',
-            'bada',
-            'bb10',
-            'blackberry',
-            'blazer',
-            'bolt',
-            'brew',
-            'cldc',
-            'dalvik',
-            'danger hiptop',
-            'embider',
-            'firefox or ie',
-            'foma',
-            'folio100',
-            'gingerbread',
-            'hd_mini_t',
-            'hp-tablet',
-            'hpwOS',
-            'htc',
-            'ipad',
-            'iphone',
-            'iphoneosx',
-            'iphone os',
-            'ipod',
-            'iris',
-            'iuc(u;ios',
-            'j2me',
-            'juc(linux;u;',
-            'juc (linux; u;',
-            'kindle',
-            'lenovo',
-            'like mac os x',
-            'linux armv',
-            'look-alike',
-            'maemo',
-            'meego',
-            'midp',
-            'mobile version',
-            'mobile safari',
-            'mqqbrowser',
-            'netfront',
-            'nintendo',
-            'nokia',
-            'obigo',
-            'openwave',
-            'opera mini',
-            'opera mobi',
-            'palm',
-            'phone',
-            'playstation',
-            'pocket pc',
-            'pocketpc',
-            'rim tablet',
-            'samsung-gt',
-            'samsung-sph',
-            'series40',
-            'series 60',
-            'silk',
-            'symbian',
-            'symbianos',
-            'symbos',
-            'toshiba_ac_and_az',
-            'touchpad',
-            'transformer tf',
-            'up.browser',
-            'up.link',
-            'xblwp7',
-            'wap2',
-            'webos',
-            'wetab-browser',
-            'windows ce',
-            'windows mobile',
-            'windows phone os',
-            'wireless',
-            'xda_diamond_2',
-            'zunewp7',
-            'wpdesktop',
-            'jolla',
-            'sailfish',
-            'padfone',
-            'st80208',
-            'mtk',
-            'onebrowser',
-            'qtcarbrowser',
-            'wap browser/maui',
-            'wetab',
-            '[fban',
-            'dataaccessd',
-            'crowsnest',
-            'wap-browser',
-            'dino762',
-            'iball',
-            'terra_101',
-            'ktouch',
-            'lemon b556',
-            'spark284',
-            'spice qt-75',
-            'velocitymicro',
-            'lumia',
-            'surftab',
-            'folio_and_a',
-            'docomo',
-            'portalmmm',
-            'hisense',
-            'siemens',
-            'karbonn',
-            'm2 note',
-            'lenovotablet',
-            'remixos',
-            'micromax',
-            'steelcore',
-            'tablet',
-            'mobile',
-            'stitcher',
-            'rssradio',
-            'rss_radio',
-            'antennapod',
-            'antenna/',
-            'podcruncher',
-            'captivenetworksupport',
-            'ios;',
-            'audioboom.com/boos',
-            'beyondpod',
-        ];
+        if (preg_match('/Puffin\/[\d\.]+WD/', $useragent)) {
+            return false;
+        }
 
-        if ($useragent->containsAny($mobiles, false)) {
+        if (preg_match('/UCWEB|Puffin\/[\d\.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', $useragent)) {
             return true;
         }
 
-        if (preg_match('/Puffin\/[\d\.]+WD/', (string) $useragent)) {
-            return false;
-        }
-
-        if (preg_match('/UCWEB|Puffin\/[\d\.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', (string) $useragent)) {
+        if (preg_match('/mobile|tablet|phone|wireless|wpdesktop|zunewp7|xblwp7|android|iphone|ip[ao]d|micromax|htc|karbonn|hisense|docomo|siemens|ktouch|portalmmm|rim tablet|jolla|iball|windows mobile|windows ce|symbos|symbian|remixos|webos|velocitymicro|samsung-(gt|sph)|lenovo|lumia|surftab|padfone|xda_diamond_2|transformer tf|touchpad|toshiba_ac_and_az|hpwos|silk|wap-browser|sailfish|crowsnest|folio_and_a|steelcore|m2 note|spice qt-75|spark284|lemon b556|terra_101|dino762|wetab|dataaccessd|mtk|lenovotablet|qtcarbrowser|onebrowser|stitcher|rss_?radio|antennapod|antenna\/|podcruncher|captivenetworksupport|ios;|audioboom.com\/boos|beyondpod|st80208|\[fban|wap2|up\.link|up\.browser|series ?[46]0|pocket ?pc|playstation|palm|opera mobi|opera mini|openwave|obigo|nokia|nintendo|netfront|mqqbrowser|midp|meego|maemo|look-alike|linux armv|like mac os x|kindle|juc ?\(linux; ?u;|j2me|iuc\(u;ios|iris|hp-tablet|hd_mini_t|gingerbread|folio100|foma|firefox or ie|embider|danger hiptop|cldc|blazer|dalvik|brew|bolt|blackberry|bb10|bada|aspen simulator|arm; touch/i', $useragent)) {
             return true;
         }
 
