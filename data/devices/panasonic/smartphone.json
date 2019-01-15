@@ -68,6 +68,36 @@
     "platform": "android",
     "variants": []
   },
+  "panasonic eluga a2": {
+    "deviceName": "Eluga A2",
+    "marketingName": "Eluga A2",
+    "manufacturer": "Panasonic",
+    "brand": "Panasonic",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE",
+      "UMTS",
+      "GSM",
+      "EDGE",
+      "GPRS",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "panasonic eluga a3": {
     "deviceName": "Eluga A3",
     "marketingName": "Eluga A3",

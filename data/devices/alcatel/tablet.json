@@ -274,5 +274,30 @@
     "connections": [],
     "platform": "android",
     "variants": []
+  },
+  "alcatel 9020a": {
+    "deviceName": "9020A",
+    "marketingName": "Trek HD",
+    "manufacturer": "Alcatel",
+    "brand": "Att",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "dualOrientation": true,
+    "type": "tablet",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
   }
 }
