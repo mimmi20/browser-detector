@@ -1449,6 +1449,39 @@
     "platform": "android",
     "variants": []
   },
+  "wiko tommy": {
+    "deviceName": "Tommy",
+    "marketingName": "Tommy",
+    "manufacturer": "Wiko",
+    "brand": "Wiko",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "HSPA",
+      "LTE",
+      "HSDPA",
+      "GPRS",
+      "EDGE",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "wiko w-v600": {
     "deviceName": "W-V600",
     "marketingName": "Tommy 3 Plus",

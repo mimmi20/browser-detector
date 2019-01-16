@@ -8925,7 +8925,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -8936,6 +8936,33 @@
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "huawei lua-u22": {
+    "deviceName": "LUA-U22",
+    "marketingName": "Y3 II",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "HSDPA",
+      "Wi-Fi"
+    ],
     "platform": "android",
     "variants": []
   },
