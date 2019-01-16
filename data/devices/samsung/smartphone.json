@@ -5332,7 +5332,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5357,7 +5357,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5382,7 +5382,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5407,7 +5407,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5432,7 +5432,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5457,7 +5457,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5469,6 +5469,38 @@
     },
     "connections": [
       "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j120zn": {
+    "deviceName": "SM-J120ZN",
+    "marketingName": "Galaxy J1 (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
+      "LTE",
+      "Wi-Fi"
     ],
     "platform": "android",
     "variants": []
@@ -6352,6 +6384,37 @@
       "vendors": []
     },
     "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j327az": {
+    "deviceName": "SM-J327AZ",
+    "marketingName": "Galaxy J3 (2017)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
       "LTE"
     ],
     "platform": "android",
@@ -11660,6 +11723,72 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g550t": {
+    "deviceName": "SM-G550T",
+    "marketingName": "Galaxy On5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
+      "LTE",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g550t1": {
+    "deviceName": "SM-G550T1",
+    "marketingName": "Galaxy On5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "UMTS",
+      "LTE",
+      "GPRS",
+      "EDGE",
+      "HSDPA",
+      "HSUPA",
+      "HSPA",
+      "Wi-Fi",
+      "HSPA+"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g550t2": {
     "deviceName": "SM-G550T2",
     "marketingName": "Galaxy On5",
@@ -11669,7 +11798,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",

@@ -4116,5 +4116,61 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; TOMMY Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Tommy",
+      "marketingName": "Tommy",
+      "manufacturer": "Wiko",
+      "brand": "Wiko",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 1,
+      "market": {
+        "regions": [
+          "Europe"
+        ],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "HSPA",
+        "LTE",
+        "HSDPA",
+        "GPRS",
+        "EDGE",
+        "Wi-Fi"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "59.0.3071.125",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]

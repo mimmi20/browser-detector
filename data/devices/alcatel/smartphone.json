@@ -4743,29 +4743,6 @@
     "platform": "android",
     "variants": []
   },
-  "alcatel 4034d": {
-    "deviceName": "OT-4034D",
-    "marketingName": "OneTouch Pixi 4",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "alcatel 5010e": {
     "deviceName": "5010E",
     "marketingName": "OneTouch Pixi 4",
@@ -4812,13 +4789,13 @@
     "platform": "android",
     "variants": []
   },
-  "alcatel 5010d": {
-    "deviceName": "OT-5010D",
-    "marketingName": "OneTouch Pixi 4 (5)",
+  "alcatel 4034d": {
+    "deviceName": "OT-4034D",
+    "marketingName": "OneTouch Pixi 4",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
     "display": {
-      "width": 854,
+      "width": 800,
       "height": 480,
       "touch": true,
       "size": null
@@ -4843,6 +4820,29 @@
     "display": {
       "width": 1280,
       "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 5010d": {
+    "deviceName": "OT-5010D",
+    "marketingName": "OneTouch Pixi 4 (5)",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": null
     },
@@ -5742,62 +5742,16 @@
     "platform": null,
     "variants": []
   },
-  "alcatel 5042a": {
-    "deviceName": "OT-5042A",
-    "marketingName": "OneTouch Pop 2 (4.5)",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "alcatel 5042d": {
-    "deviceName": "OT-5042D",
-    "marketingName": "OneTouch Pop 2 (4.5)",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "alcatel 4045a": {
     "deviceName": "4045A",
-    "marketingName": "OneTouch Pop 2 4.0",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5813,14 +5767,14 @@
   },
   "alcatel 4045d": {
     "deviceName": "4045D",
-    "marketingName": "OneTouch Pop 2 4.0",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5836,14 +5790,14 @@
   },
   "alcatel 4045e": {
     "deviceName": "4045E",
-    "marketingName": "OneTouch Pop 2 4.0",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5859,14 +5813,60 @@
   },
   "alcatel 4045x": {
     "deviceName": "4045X",
-    "marketingName": "OneTouch Pop 2 4.0",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 5042a": {
+    "deviceName": "5042A",
+    "marketingName": "OneTouch Pop 2",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 5042d": {
+    "deviceName": "5042D",
+    "marketingName": "OneTouch Pop 2",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5882,14 +5882,14 @@
   },
   "alcatel 5042e": {
     "deviceName": "5042E",
-    "marketingName": "OneTouch Pop 2 4.5",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5905,14 +5905,14 @@
   },
   "alcatel 5042f": {
     "deviceName": "5042F",
-    "marketingName": "OneTouch Pop 2 4.5",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5928,14 +5928,14 @@
   },
   "alcatel 5042g": {
     "deviceName": "5042G",
-    "marketingName": "OneTouch Pop 2 4.5",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5951,14 +5951,14 @@
   },
   "alcatel 5042w": {
     "deviceName": "5042W",
-    "marketingName": "OneTouch Pop 2 4.5",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5974,14 +5974,14 @@
   },
   "alcatel 5042x": {
     "deviceName": "5042X",
-    "marketingName": "OneTouch Pop 2 4.5",
+    "marketingName": "OneTouch Pop 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -6722,16 +6722,16 @@
     "platform": "android",
     "variants": []
   },
-  "alcatel 4015a": {
-    "deviceName": "4015A",
-    "marketingName": "OneTouch POP C1",
-    "manufacturer": "Tcl",
+  "alcatel 5042t": {
+    "deviceName": "5042T",
+    "marketingName": "OneTouch Pop Astro",
+    "manufacturer": "Alcatel",
     "brand": "Alcatel",
     "display": {
-      "width": 480,
-      "height": 320,
+      "width": 960,
+      "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -6741,14 +6741,23 @@
       "countries": [],
       "vendors": []
     },
-    "connections": [],
+    "connections": [
+      "GSM",
+      "UMTS",
+      "LTE",
+      "EDGE",
+      "GPRS",
+      "HSPA+",
+      "HSUPA",
+      "HSDPA"
+    ],
     "platform": "android",
     "variants": []
   },
-  "alcatel 4015d": {
-    "deviceName": "OT-4015D",
+  "alcatel 4015a": {
+    "deviceName": "4015A",
     "marketingName": "OneTouch POP C1",
-    "manufacturer": "Alcatel",
+    "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 480,
@@ -6795,29 +6804,6 @@
     "deviceName": "4015T",
     "marketingName": "OneTouch POP C1",
     "manufacturer": "Tcl",
-    "brand": "Alcatel",
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "alcatel 4015x": {
-    "deviceName": "OT-4015X",
-    "marketingName": "OneTouch POP C1",
-    "manufacturer": "Alcatel",
     "brand": "Alcatel",
     "display": {
       "width": 480,
@@ -6887,6 +6873,52 @@
     "deviceName": "4016X",
     "marketingName": "OneTouch POP C1",
     "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 4015d": {
+    "deviceName": "OT-4015D",
+    "marketingName": "OneTouch POP C1",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 4015x": {
+    "deviceName": "OT-4015X",
+    "marketingName": "OneTouch POP C1",
+    "manufacturer": "Alcatel",
     "brand": "Alcatel",
     "display": {
       "width": 480,
@@ -7274,8 +7306,8 @@
     "platform": "android",
     "variants": []
   },
-  "alcatel 7047d": {
-    "deviceName": "OT-7047D",
+  "alcatel 7047a": {
+    "deviceName": "7047A",
     "marketingName": "OneTouch Pop C9",
     "manufacturer": "Alcatel",
     "brand": "Alcatel",
@@ -7283,7 +7315,36 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": [
+        "AT&T"
+      ]
+    },
+    "connections": [
+      "HSPA+",
+      "GSM",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 7047d": {
+    "deviceName": "7047D",
+    "marketingName": "OneTouch Pop C9",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5.5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -8293,6 +8354,37 @@
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel a570bl": {
+    "deviceName": "A570BL",
+    "marketingName": "Pixi Avion",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "EDGE",
+      "GPRS",
+      "GSM",
+      "LTE",
+      "UMTS",
+      "WCDMA",
+      "Wi-Fi"
+    ],
     "platform": "android",
     "variants": []
   },

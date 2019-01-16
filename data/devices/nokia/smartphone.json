@@ -1701,8 +1701,8 @@
     "platform": "windows phone",
     "variants": []
   },
-  "nokia lumia 630": {
-    "deviceName": "RM-977",
+  "nokia rm-976": {
+    "deviceName": "RM-976",
     "marketingName": "Lumia 630",
     "manufacturer": "Nokia",
     "brand": "Nokia",
@@ -1724,8 +1724,8 @@
     "platform": "windows phone",
     "variants": []
   },
-  "nokia rm-976": {
-    "deviceName": "RM-976",
+  "nokia lumia 630": {
+    "deviceName": "RM-977",
     "marketingName": "Lumia 630",
     "manufacturer": "Nokia",
     "brand": "Nokia",
@@ -1828,6 +1828,29 @@
     "display": {
       "width": 854,
       "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "nokia lumia 640": {
+    "deviceName": "Lumia 640",
+    "marketingName": "Lumia 640",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
@@ -2019,29 +2042,6 @@
     "connections": [
       "LTE"
     ],
-    "platform": "windows phone",
-    "variants": []
-  },
-  "nokia lumia 640": {
-    "deviceName": "Lumia 640",
-    "marketingName": "Lumia 640",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "windows phone",
     "variants": []
   },
@@ -2475,29 +2475,6 @@
     "platform": null,
     "variants": []
   },
-  "nokia lumia 900": {
-    "deviceName": "RM-823",
-    "marketingName": "Lumia 900",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "windows phone",
-    "variants": []
-  },
   "nokia rm-808": {
     "deviceName": "RM-808",
     "marketingName": "Lumia 900",
@@ -2520,6 +2497,29 @@
       "vendors": [
         "AT&T"
       ]
+    },
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
+  "nokia lumia 900": {
+    "deviceName": "RM-823",
+    "marketingName": "Lumia 900",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
     "connections": [],
     "platform": "windows phone",
@@ -2847,8 +2847,8 @@
     "platform": "android",
     "variants": []
   },
-  "nokia rm-1042": {
-    "deviceName": "RM-1042",
+  "nokia xl": {
+    "deviceName": "RM-1030",
     "marketingName": "XL",
     "manufacturer": "Nokia",
     "brand": "Nokia",
@@ -2870,8 +2870,8 @@
     "platform": "android",
     "variants": []
   },
-  "nokia xl": {
-    "deviceName": "RM-1030",
+  "nokia rm-1042": {
+    "deviceName": "RM-1042",
     "marketingName": "XL",
     "manufacturer": "Nokia",
     "brand": "Nokia",

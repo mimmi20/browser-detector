@@ -1162,6 +1162,41 @@
     "platform": "android",
     "variants": []
   },
+  "lg d852g": {
+    "deviceName": "D852G",
+    "marketingName": "G3",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": [
+        "Sprint",
+        "Cricket",
+        "Boost Mobile"
+      ]
+    },
+    "connections": [
+      "HSPA+",
+      "GSM",
+      "UMTS",
+      "GPRS",
+      "EDGE",
+      "HSPA",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "lg d855": {
     "deviceName": "D855",
     "marketingName": "G3",
@@ -1620,6 +1655,36 @@
     "platform": "android",
     "variants": []
   },
+  "lg h812": {
+    "deviceName": "H812",
+    "marketingName": "G5",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.3
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": [
+        "Sprint",
+        "Cricket",
+        "Boost Mobile"
+      ]
+    },
+    "connections": [
+      "GSM",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "lg h820": {
     "deviceName": "H820",
     "marketingName": "G5",
@@ -1629,7 +1694,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.3
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -1656,7 +1721,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.3
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -1674,6 +1739,37 @@
     "platform": "android",
     "variants": []
   },
+  "lg h831": {
+    "deviceName": "H831",
+    "marketingName": "G5",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.3
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "WCDMA",
+      "LTE",
+      "GPRS",
+      "EDGE",
+      "HSPA",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "lg h850": {
     "deviceName": "H850",
     "marketingName": "G5",
@@ -1683,7 +1779,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.3
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -1708,7 +1804,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.3
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -1731,7 +1827,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.3
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -1760,7 +1856,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.3
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -2747,6 +2843,41 @@
     "platform": null,
     "variants": []
   },
+  "lg d165ar": {
+    "deviceName": "D165AR",
+    "marketingName": "L40",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": [
+        "Sprint",
+        "Cricket",
+        "Boost Mobile"
+      ]
+    },
+    "connections": [
+      "GSM",
+      "WCDMA",
+      "LTE",
+      "GPRS",
+      "EDGE",
+      "HSDPA",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "lg d213": {
     "deviceName": "D213",
     "marketingName": "L50",
@@ -3029,6 +3160,36 @@
     },
     "connections": [
       "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "lg vs870 4g": {
+    "deviceName": "VS870 4G",
+    "marketingName": "Lucid 2",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.3
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "CDMA",
+      "GSM",
+      "LTE",
+      "UMTS",
+      "HSDPA",
+      "Wi-Fi"
     ],
     "platform": "android",
     "variants": []
@@ -5798,6 +5959,42 @@
       "vendors": []
     },
     "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg ls777": {
+    "deviceName": "LS777",
+    "marketingName": "Stylo 3",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.7
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": [
+        "Sprint",
+        "Cricket",
+        "Boost Mobile"
+      ]
+    },
+    "connections": [
+      "GSM",
+      "CDMA",
+      "UMTS",
+      "LTE",
+      "GPRS",
+      "EDGE",
+      "HSPA",
+      "Wi-Fi"
+    ],
     "platform": "android",
     "variants": []
   },
