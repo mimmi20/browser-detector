@@ -17,7 +17,7 @@ parameters:
     - vendor/localheinz/phpstan-rules/rules.neon
   parameters:
     exceptionRules:
-      reportUnusedCatchesOfUncheckedExceptions: false
+      reportUnusedCatchesOfUncheckedExceptions: true
       uncheckedExceptions: []
   excludes_analyse:
     - */tests/*/data/*
