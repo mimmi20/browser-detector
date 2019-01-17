@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Stringy\Stringy;
-
 final class WindowsPhoneOs implements VersionDetectorInterface
 {
     /**
@@ -24,9 +22,7 @@ final class WindowsPhoneOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $s = new Stringy($useragent);
-
-        if ($s->containsAny(['xblwp7', 'zunewp7'], false)) {
+        if (preg_match('/xblwp7|zunewp7/i', $useragent)) {
             return (new VersionFactory())->set('7.5.0');
         }
 
@@ -34,12 +30,12 @@ final class WindowsPhoneOs implements VersionDetectorInterface
             return (new VersionFactory())->set($matches[1]);
         }
 
-        if ($s->contains('wpdesktop', false)) {
-            if ($s->contains('windows nt 6.3', false)) {
+        if (preg_match('/wpdesktop/i', $useragent)) {
+            if (preg_match('/windows nt 6\.3/i', $useragent)) {
                 return (new VersionFactory())->set('8.1.0');
             }
 
-            if ($s->contains('windows nt 6.2', false)) {
+            if (preg_match('/windows nt 6\.2/i', $useragent)) {
                 return (new VersionFactory())->set('8.0.0');
             }
 

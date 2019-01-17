@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Stringy\Stringy;
-
 final class WindowsMobileOs implements VersionDetectorInterface
 {
     /**
@@ -24,9 +22,7 @@ final class WindowsMobileOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $s = new Stringy($useragent);
-
-        if ($s->contains('windows nt 5.1', false) && !$s->containsAny(['windows mobile', 'windows phone'], false)) {
+        if (false !== mb_stripos($useragent, 'windows nt 5.1') && !preg_match('/windows mobile|windows phone/i', $useragent)) {
             return (new VersionFactory())->set('6.0');
         }
 
