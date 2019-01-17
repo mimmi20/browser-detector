@@ -13,7 +13,6 @@ namespace BrowserDetectorTest\Factory;
 
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\DisplayFactoryInterface;
-use BrowserDetector\Factory\MarketFactoryInterface;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
@@ -24,7 +23,6 @@ use UaDeviceType\Unknown;
 use UaResult\Company\CompanyInterface;
 use UaResult\Device\Device;
 use UaResult\Device\DisplayInterface;
-use UaResult\Device\MarketInterface;
 
 class DeviceFactoryTest extends TestCase
 {
@@ -60,18 +58,10 @@ class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('fromArray');
 
-        $marketFactory = $this->getMockBuilder(MarketFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $marketFactory
-            ->expects(self::never())
-            ->method('fromArray');
-
         /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /* @var \UaDeviceType\TypeLoaderInterface $typeLoader */
         /* @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
-        /* @var \BrowserDetector\Factory\MarketFactoryInterface $marketFactory */
-        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory, $marketFactory);
+        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -107,16 +97,10 @@ class DeviceFactoryTest extends TestCase
         self::assertInstanceOf(Device::class, $result);
         self::assertNull($result->getDeviceName());
         self::assertNull($result->getMarketingName());
-        self::assertFalse($result->getDualOrientation());
-        self::assertIsInt($result->getSimCount());
-        self::assertSame(0, $result->getSimCount());
-        self::assertIsArray($result->getConnections());
-        self::assertSame([], $result->getConnections());
 
         self::assertInstanceOf(TypeInterface::class, $result->getType());
         self::assertInstanceOf(Unknown::class, $result->getType());
         self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        self::assertInstanceOf(MarketInterface::class, $result->getMarket());
         self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         self::assertSame($company, $result->getManufacturer());
         self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
@@ -155,18 +139,10 @@ class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('fromArray');
 
-        $marketFactory = $this->getMockBuilder(MarketFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $marketFactory
-            ->expects(self::never())
-            ->method('fromArray');
-
         /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /* @var \UaDeviceType\TypeLoaderInterface $typeLoader */
         /* @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
-        /* @var \BrowserDetector\Factory\MarketFactoryInterface $marketFactory */
-        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory, $marketFactory);
+        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -202,16 +178,10 @@ class DeviceFactoryTest extends TestCase
         self::assertInstanceOf(Device::class, $result);
         self::assertNull($result->getDeviceName());
         self::assertNull($result->getMarketingName());
-        self::assertFalse($result->getDualOrientation());
-        self::assertIsInt($result->getSimCount());
-        self::assertSame(0, $result->getSimCount());
-        self::assertIsArray($result->getConnections());
-        self::assertSame([], $result->getConnections());
 
         self::assertInstanceOf(TypeInterface::class, $result->getType());
         self::assertInstanceOf(Unknown::class, $result->getType());
         self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        self::assertInstanceOf(MarketInterface::class, $result->getMarket());
         self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         self::assertSame($company, $result->getManufacturer());
         self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
@@ -304,24 +274,10 @@ class DeviceFactoryTest extends TestCase
             ->with($logger, $displayParam)
             ->willReturn($display);
 
-        $marketParam = [];
-        $market      = $this->getMockBuilder(MarketInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $marketFactory = $this->getMockBuilder(MarketFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $marketFactory
-            ->expects(self::once())
-            ->method('fromArray')
-            ->with($marketParam)
-            ->willReturn($market);
-
         /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /* @var \UaDeviceType\TypeLoaderInterface $typeLoader */
         /* @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
-        /* @var \BrowserDetector\Factory\MarketFactoryInterface $marketFactory */
-        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory, $marketFactory);
+        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $data = [
             'deviceName' => $deviceName,
@@ -344,18 +300,11 @@ class DeviceFactoryTest extends TestCase
         self::assertSame($deviceName, $result->getDeviceName());
         self::assertIsString($result->getMarketingName());
         self::assertSame($marketingName, $result->getMarketingName());
-        self::assertTrue($result->getDualOrientation());
-        self::assertIsInt($result->getSimCount());
-        self::assertSame($simCount, $result->getSimCount());
-        self::assertIsArray($result->getConnections());
-        self::assertSame($connections, $result->getConnections());
 
         self::assertInstanceOf(TypeInterface::class, $result->getType());
         self::assertSame($type, $result->getType());
         self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
         self::assertSame($display, $result->getDisplay());
-        self::assertInstanceOf(MarketInterface::class, $result->getMarket());
-        self::assertSame($market, $result->getMarket());
         self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         self::assertSame($manufacturer, $result->getManufacturer());
         self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
@@ -377,7 +326,6 @@ class DeviceFactoryTest extends TestCase
         $brandParam        = 'test-brand';
         $companyException  = new NotFoundException('company failed');
         $displayException  = new NotFoundException('display failed');
-        $marketException   = new NotFoundException('market failed');
         $typeException     = new NotFoundException('type failed');
 
         $company = $this->getMockBuilder(CompanyInterface::class)
@@ -420,9 +368,9 @@ class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(self::exactly(4))
+            ->expects(self::exactly(3))
             ->method('info')
-            ->withConsecutive($typeException, $companyException, $displayException, $marketException);
+            ->withConsecutive($typeException, $companyException, $displayException);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -452,21 +400,10 @@ class DeviceFactoryTest extends TestCase
             ->with($logger, $displayParam)
             ->willThrowException($displayException);
 
-        $marketParam   = [];
-        $marketFactory = $this->getMockBuilder(MarketFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $marketFactory
-            ->expects(self::once())
-            ->method('fromArray')
-            ->with($marketParam)
-            ->willThrowException($marketException);
-
         /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /* @var \UaDeviceType\TypeLoaderInterface $typeLoader */
         /* @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
-        /* @var \BrowserDetector\Factory\MarketFactoryInterface $marketFactory */
-        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory, $marketFactory);
+        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $data = [
             'deviceName' => $deviceName,
@@ -489,16 +426,10 @@ class DeviceFactoryTest extends TestCase
         self::assertSame($deviceName, $result->getDeviceName());
         self::assertIsString($result->getMarketingName());
         self::assertSame($marketingName, $result->getMarketingName());
-        self::assertTrue($result->getDualOrientation());
-        self::assertIsInt($result->getSimCount());
-        self::assertSame($simCount, $result->getSimCount());
-        self::assertIsArray($result->getConnections());
-        self::assertSame($connections, $result->getConnections());
 
         self::assertInstanceOf(TypeInterface::class, $result->getType());
         self::assertInstanceOf(Unknown::class, $result->getType());
         self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        self::assertInstanceOf(MarketInterface::class, $result->getMarket());
         self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         self::assertSame($manufacturer, $result->getManufacturer());
         self::assertInstanceOf(CompanyInterface::class, $result->getBrand());

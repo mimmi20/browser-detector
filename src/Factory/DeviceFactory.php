@@ -19,7 +19,6 @@ use UaDeviceType\Unknown;
 use UaResult\Device\Device;
 use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
-use UaResult\Device\Market;
 
 /**
  * Device detection class
@@ -37,28 +36,20 @@ final class DeviceFactory
     private $displayFactory;
 
     /**
-     * @var \BrowserDetector\Factory\MarketFactoryInterface
-     */
-    private $marketFactory;
-
-    /**
      * BrowserFactory constructor.
      *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
      * @param \UaDeviceType\TypeLoaderInterface                $typeLoader
      * @param \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory
-     * @param \BrowserDetector\Factory\MarketFactoryInterface  $marketFactory
      */
     public function __construct(
         CompanyLoaderInterface $companyLoader,
         TypeLoaderInterface $typeLoader,
-        DisplayFactoryInterface $displayFactory,
-        MarketFactoryInterface $marketFactory
+        DisplayFactoryInterface $displayFactory
     ) {
         $this->companyLoader  = $companyLoader;
         $this->typeLoader     = $typeLoader;
         $this->displayFactory = $displayFactory;
-        $this->marketFactory  = $marketFactory;
     }
 
     /**
@@ -70,11 +61,8 @@ final class DeviceFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
     {
-        $deviceName      = array_key_exists('deviceName', $data) && !empty($data['deviceName']) ? $data['deviceName'] : null;
-        $marketingName   = array_key_exists('marketingName', $data) && !empty($data['marketingName']) ? $data['marketingName'] : null;
-        $dualOrientation = array_key_exists('dualOrientation', $data) ? (bool) $data['dualOrientation'] : false;
-        $simCount        = array_key_exists('simCount', $data) ? (int) $data['simCount'] : 0;
-        $connections     = array_key_exists('connections', $data) ? (array) $data['connections'] : [];
+        $deviceName    = array_key_exists('deviceName', $data) && !empty($data['deviceName']) ? $data['deviceName'] : null;
+        $marketingName = array_key_exists('marketingName', $data) && !empty($data['marketingName']) ? $data['marketingName'] : null;
 
         $type = new Unknown();
         if (array_key_exists('type', $data)) {
@@ -97,16 +85,7 @@ final class DeviceFactory
             }
         }
 
-        $market = new Market([], [], []);
-        if (array_key_exists('market', $data)) {
-            try {
-                $market = $this->marketFactory->fromArray((array) $data['market']);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
-        }
-
-        return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display, $dualOrientation, $simCount, $market, $connections);
+        return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display);
     }
 
     use CompanyFactoryTrait;

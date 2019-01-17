@@ -86,44 +86,8 @@
           "size"
         ]
       },
-      "dualOrientation": {
-        "type": "boolean"
-      },
       "type": {
         "type": "string"
-      },
-      "simCount": {
-        "type": "integer",
-        "minimum": 0,
-        "multipleOf": 1
-      },
-      "market": {
-        "type": "object",
-        "properties": {
-          "regions": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "countries": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "vendors": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          }
-        },
-        "required": [
-          "regions",
-          "countries",
-          "vendors"
-        ]
       }
     },
     "required": [
@@ -132,10 +96,7 @@
       "manufacturer",
       "brand",
       "display",
-      "dualOrientation",
-      "type",
-      "simCount",
-      "market"
+      "type"
     ]
   }
 }
