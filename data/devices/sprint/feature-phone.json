@@ -10,23 +10,8 @@
       "touch": true,
       "size": null
     },
-    "dualOrientation": false,
     "type": "feature-phone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": [
-        "Sprint"
-      ]
-    },
-    "connections": [
-      "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
+    "platform": "android"
   },
   "sprint 6700": {
     "deviceName": "Apache",
@@ -39,17 +24,8 @@
       "touch": true,
       "size": null
     },
-    "dualOrientation": false,
     "type": "feature-phone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": null,
-    "variants": []
+    "platform": null
   },
   "sprint s2151": {
     "deviceName": "S2151",
@@ -62,16 +38,7 @@
       "touch": false,
       "size": null
     },
-    "dualOrientation": false,
     "type": "feature-phone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "brew",
-    "variants": []
+    "platform": "brew"
   }
 }
