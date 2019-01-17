@@ -5181,14 +5181,14 @@
     },
     "device": {
       "deviceName": "CUN-L03",
-      "marketingName": "Y5II",
+      "marketingName": "Y5 II",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -5282,7 +5282,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -5415,14 +5415,14 @@
     },
     "device": {
       "deviceName": "CUN-L21",
-      "marketingName": "Y5II",
+      "marketingName": "Y5 II",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -9165,7 +9165,7 @@
     },
     "device": {
       "deviceName": "WAS-LX1A",
-      "marketingName": "P10 Lite (Middle East, Africa)",
+      "marketingName": "P10 Lite",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
@@ -9213,7 +9213,7 @@
     },
     "device": {
       "deviceName": "WAS-LX1",
-      "marketingName": "P10 Lite (Middle East, Africa)",
+      "marketingName": "P10 Lite",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
@@ -9309,7 +9309,7 @@
     },
     "device": {
       "deviceName": "WAS-LX2",
-      "marketingName": "P10 Lite (Asia)",
+      "marketingName": "P10 Lite",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
@@ -10651,14 +10651,14 @@
     },
     "device": {
       "deviceName": "CUN-L01",
-      "marketingName": "Y5II",
+      "marketingName": "Y5 II",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -17156,7 +17156,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -18744,7 +18744,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -20681,7 +20681,7 @@
     },
     "device": {
       "deviceName": "WAS-LX1A",
-      "marketingName": "P10 Lite (Middle East, Africa)",
+      "marketingName": "P10 Lite",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
@@ -25891,6 +25891,210 @@
       "name": "Chrome",
       "modus": null,
       "version": "49.0.2623.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; HUAWEI LUA-L02 Build/HUAWEILUA-L02) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LUA-L02",
+      "marketingName": "Y3 II",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GPRS",
+        "EDGE",
+        "GSM",
+        "UMTS",
+        "HSUPA",
+        "HSDPA",
+        "HSPA+",
+        "LTE",
+        "WI-FI"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; HUAWEI LUA-L22 Build/HUAWEILUA-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LUA-L22",
+      "marketingName": "Y3 II",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GPRS",
+        "EDGE",
+        "GSM",
+        "UMTS",
+        "HSUPA",
+        "HSDPA",
+        "HSPA+",
+        "LTE",
+        "WI-FI"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "60.0.3112.116",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; HUAWEI LYO-L02 Build/HUAWEILYO-L02) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LYO-L02",
+      "marketingName": "Y6 Elite",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "CUN-L22",
+      "marketingName": "Y5 II",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"

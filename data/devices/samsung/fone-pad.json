@@ -49,6 +49,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-p602": {
+    "deviceName": "SM-P602",
+    "marketingName": "Galaxy Note 10.1 (2014)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": null,
+    "variants": []
+  },
   "samsung sm-p607t": {
     "deviceName": "SM-P607T",
     "marketingName": "Galaxy Note 10.1 (2014)",
@@ -74,31 +99,6 @@
     },
     "connections": [],
     "platform": "android",
-    "variants": []
-  },
-  "samsung sm-p602": {
-    "deviceName": "SM-P602",
-    "marketingName": "Galaxy Note 10.1 (2014, 3G)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "fone-pad",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
-    "platform": null,
     "variants": []
   },
   "samsung sm-p601": {
@@ -933,7 +933,7 @@
   },
   "samsung sm-t116": {
     "deviceName": "SM-T116",
-    "marketingName": "Galaxy Tab 3 Lite (7.0, 3G)",
+    "marketingName": "Galaxy Tab 3 Lite (7.0)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -1223,6 +1223,33 @@
     "platform": "android",
     "variants": []
   },
+  "samsung gt-p1000n": {
+    "deviceName": "GT-P1000N",
+    "marketingName": "Galaxy Tab 7.0",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "fone-pad",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sch-i800": {
     "deviceName": "SCH-I800",
     "marketingName": "Galaxy Tab 7.0",
@@ -1272,33 +1299,6 @@
       "vendors": []
     },
     "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung gt-p1000n": {
-    "deviceName": "GT-P1000N",
-    "marketingName": "Galaxy Tab 7.0 (3G)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "fone-pad",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "GSM"
-    ],
     "platform": "android",
     "variants": []
   },
@@ -1407,8 +1407,8 @@
     "platform": "android",
     "variants": []
   },
-  "samsung shw-m305w": {
-    "deviceName": "SHW-M305W",
+  "samsung shv-e140l": {
+    "deviceName": "SHV-E140L",
     "marketingName": "Galaxy Tab 8.9",
     "manufacturer": "Samsung",
     "brand": "Samsung",
@@ -1430,9 +1430,9 @@
     "platform": "android",
     "variants": []
   },
-  "samsung shv-e140l": {
-    "deviceName": "SHV-E140L",
-    "marketingName": "Galaxy Tab 8.9 (Korea)",
+  "samsung shw-m305w": {
+    "deviceName": "SHW-M305W",
+    "marketingName": "Galaxy Tab 8.9",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -1530,7 +1530,7 @@
   },
   "samsung sm-t285": {
     "deviceName": "SM-T285",
-    "marketingName": "Galaxy Tab A (7.0, +, 2016)",
+    "marketingName": "Galaxy Tab A (7.0, 2016)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {

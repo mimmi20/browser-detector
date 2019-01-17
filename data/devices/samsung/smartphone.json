@@ -1061,6 +1061,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-a510fd": {
+    "deviceName": "SM-A510FD",
+    "marketingName": "Galaxy A5 (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-a510m": {
     "deviceName": "SM-A510M",
     "marketingName": "Galaxy A5 (2016)",
@@ -1079,6 +1104,31 @@
       "regions": [
         "Latin America"
       ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-a510s": {
+    "deviceName": "SM-A510S",
+    "marketingName": "Galaxy A5 (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -1115,14 +1165,14 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-a510s": {
-    "deviceName": "SM-A510S",
-    "marketingName": "Galaxy A5 (2016, Korea)",
+  "samsung sm-a520f": {
+    "deviceName": "SM-A520F",
+    "marketingName": "Galaxy A5 (2017)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
-      "width": 1920,
-      "height": 1080,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
@@ -1140,9 +1190,59 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-a510fd": {
-    "deviceName": "SM-A510FD",
-    "marketingName": "Galaxy A5 (2016, Southeast Asia)",
+  "samsung sm-a520k": {
+    "deviceName": "SM-A520K",
+    "marketingName": "Galaxy A5 (2017)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-a520l": {
+    "deviceName": "SM-A520L",
+    "marketingName": "Galaxy A5 (2017)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-a520s": {
+    "deviceName": "SM-A520S",
+    "marketingName": "Galaxy A5 (2017)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -1168,106 +1268,6 @@
   "samsung sm-a520w": {
     "deviceName": "SM-A520W",
     "marketingName": "Galaxy A5 (2017)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a520f": {
-    "deviceName": "SM-A520F",
-    "marketingName": "Galaxy A5 (2017, Europa)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a520k": {
-    "deviceName": "SM-A520K",
-    "marketingName": "Galaxy A5 (2017, Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a520l": {
-    "deviceName": "SM-A520L",
-    "marketingName": "Galaxy A5 (2017, Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a520s": {
-    "deviceName": "SM-A520S",
-    "marketingName": "Galaxy A5 (2017, Korea)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -1453,6 +1453,135 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-a700f": {
+    "deviceName": "SM-A700F",
+    "marketingName": "Galaxy A7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-a700fd": {
+    "deviceName": "SM-A700FD",
+    "marketingName": "Galaxy A7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "Malaysia"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-a700k": {
+    "deviceName": "SM-A700K",
+    "marketingName": "Galaxy A7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-a700l": {
+    "deviceName": "SM-A700L",
+    "marketingName": "Galaxy A7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-a700s": {
+    "deviceName": "SM-A700S",
+    "marketingName": "Galaxy A7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-a7100": {
     "deviceName": "SM-A7100",
     "marketingName": "Galaxy A7 (2016)",
@@ -1496,6 +1625,29 @@
       "regions": [
         "Europe"
       ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-a710fd": {
+    "deviceName": "SM-A710FD",
+    "marketingName": "Galaxy A7 (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -1553,29 +1705,6 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-a710fd": {
-    "deviceName": "SM-A710FD",
-    "marketingName": "Galaxy A7 (2016, Southeast Asia)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-a720f": {
     "deviceName": "SM-A720F",
     "marketingName": "Galaxy A7 (2017)",
@@ -1621,135 +1750,6 @@
       "vendors": []
     },
     "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a700k": {
-    "deviceName": "SM-A700K",
-    "marketingName": "Galaxy A7 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a700l": {
-    "deviceName": "SM-A700L",
-    "marketingName": "Galaxy A7 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a700s": {
-    "deviceName": "SM-A700S",
-    "marketingName": "Galaxy A7 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a700f": {
-    "deviceName": "SM-A700F",
-    "marketingName": "Galaxy A7 (Middle East, Africa)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a700fd": {
-    "deviceName": "SM-A700FD",
-    "marketingName": "Galaxy A7 (Pakistan)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "Malaysia"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
     "platform": "android",
     "variants": []
   },
@@ -1978,6 +1978,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-a800y": {
+    "deviceName": "SM-A800Y",
+    "marketingName": "Galaxy A8 Duos",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-a810f": {
     "deviceName": "SM-A810F",
     "marketingName": "Galaxy A8 Duos (2016)",
@@ -2023,31 +2048,6 @@
       "regions": [
         "Taiwan"
       ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-a800y": {
-    "deviceName": "SM-A800Y",
-    "marketingName": "Galaxy A8 Duos (Asia)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -2650,6 +2650,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g850m": {
+    "deviceName": "SM-G850M",
+    "marketingName": "Galaxy Alpha",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g850t": {
     "deviceName": "SM-G850T",
     "marketingName": "Galaxy Alpha",
@@ -2723,29 +2746,6 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-g850m": {
-    "deviceName": "SM-G850M",
-    "marketingName": "Galaxy Alpha (Vodafone)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-g386t": {
     "deviceName": "SM-G386T",
     "marketingName": "Galaxy Avant",
@@ -2775,7 +2775,7 @@
   },
   "samsung sm-g386t1": {
     "deviceName": "SM-G386T1",
-    "marketingName": "Galaxy Avant (Metro PCS)",
+    "marketingName": "Galaxy Avant",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -3354,6 +3354,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g360az": {
+    "deviceName": "SM-G360AZ",
+    "marketingName": "Galaxy Core Prime",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g360f": {
     "deviceName": "SM-G360F",
     "marketingName": "Galaxy Core Prime",
@@ -3458,6 +3483,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g360t1": {
+    "deviceName": "SM-G360T1",
+    "marketingName": "Galaxy Core Prime",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-s820l": {
     "deviceName": "SM-S820L",
     "marketingName": "Galaxy Core Prime",
@@ -3478,56 +3528,6 @@
       "vendors": []
     },
     "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g360az": {
-    "deviceName": "SM-G360AZ",
-    "marketingName": "Galaxy Core Prime (Cricket)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g360t1": {
-    "deviceName": "SM-G360T1",
-    "marketingName": "Galaxy Core Prime (MetroPCS)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
     "platform": "android",
     "variants": []
   },
@@ -4862,6 +4862,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g530az": {
+    "deviceName": "SM-G530AZ",
+    "marketingName": "Galaxy Grand Prime",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g530f": {
     "deviceName": "SM-G530F",
     "marketingName": "Galaxy Grand Prime",
@@ -5041,29 +5064,6 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-g530az": {
-    "deviceName": "SM-G530AZ",
-    "marketingName": "Galaxy Grand Prime (Cricket)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-g530h": {
     "deviceName": "SM-G530H",
     "marketingName": "Galaxy Grand Prime Duos",
@@ -5181,7 +5181,7 @@
   },
   "samsung sc-02f": {
     "deviceName": "SC-02F",
-    "marketingName": "Galaxy J (NTT DoCoMo)",
+    "marketingName": "Galaxy J",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -5505,38 +5505,9 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-j110m": {
-    "deviceName": "SM-J110M",
-    "marketingName": "Galaxy J1 Ace",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Latin America"
-      ],
-      "countries": [
-        "New Zealand"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-j110f": {
     "deviceName": "SM-J110F",
-    "marketingName": "Galaxy J1 Ace (Africa, UAE)",
+    "marketingName": "Galaxy J1 Ace",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -5563,7 +5534,7 @@
   },
   "samsung sm-j110g": {
     "deviceName": "SM-J110G",
-    "marketingName": "Galaxy J1 Ace (Singapore)",
+    "marketingName": "Galaxy J1 Ace",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -5580,6 +5551,35 @@
       "countries": [
         "Malaysia",
         "Indonesia"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j110m": {
+    "deviceName": "SM-J110M",
+    "marketingName": "Galaxy J1 Ace",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Latin America"
+      ],
+      "countries": [
+        "New Zealand"
       ],
       "vendors": []
     },
@@ -5779,6 +5779,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-j200f": {
+    "deviceName": "SM-J200F",
+    "marketingName": "Galaxy J2",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-j200g": {
     "deviceName": "SM-J200G",
     "marketingName": "Galaxy J2",
@@ -5798,6 +5823,33 @@
       "countries": [
         "India",
         "Indonesia"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j200gu": {
+    "deviceName": "SM-J200GU",
+    "marketingName": "Galaxy J2",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "Malaysia"
       ],
       "vendors": []
     },
@@ -5886,61 +5938,9 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-j200gu": {
-    "deviceName": "SM-J200GU",
-    "marketingName": "Galaxy J2 (Philippines, Thailand)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "Malaysia"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-j200f": {
-    "deviceName": "SM-J200F",
-    "marketingName": "Galaxy J2 (UAE, Turkey)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-j200h": {
     "deviceName": "SM-J200H",
-    "marketingName": "Galaxy J2 3G (South Africa, Kazakhstan)",
+    "marketingName": "Galaxy J2 3G",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -6364,31 +6364,6 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-j320yz": {
-    "deviceName": "SM-J320YZ",
-    "marketingName": "Galaxy J3 (2016) Duos",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-j327az": {
     "deviceName": "SM-J327AZ",
     "marketingName": "Galaxy J3 (2017)",
@@ -6564,6 +6539,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-j320yz": {
+    "deviceName": "SM-J320YZ",
+    "marketingName": "Galaxy J3 Duos (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-s327vl": {
     "deviceName": "SM-S327VL",
     "marketingName": "Galaxy J3 Luna Pro",
@@ -6704,6 +6704,35 @@
     "market": {
       "regions": [],
       "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j500f": {
+    "deviceName": "SM-J500F",
+    "marketingName": "Galaxy J5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Hong Kong"
+      ],
+      "countries": [
+        "India"
+      ],
       "vendors": []
     },
     "connections": [
@@ -6901,6 +6930,33 @@
     "platform": null,
     "variants": []
   },
+  "samsung sm-j510f": {
+    "deviceName": "SM-J510F",
+    "marketingName": "Galaxy J5 (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "India"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-j510g": {
     "deviceName": "SM-J510G",
     "marketingName": "Galaxy J5 (2016)",
@@ -7010,33 +7066,6 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-j510f": {
-    "deviceName": "SM-J510F",
-    "marketingName": "Galaxy J5 (2016, Hong-Kong, South Africa, Thailand)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "India"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-j530f": {
     "deviceName": "SM-J530F",
     "marketingName": "Galaxy J5 (2017)",
@@ -7060,35 +7089,6 @@
     },
     "connections": [],
     "platform": null,
-    "variants": []
-  },
-  "samsung sm-j500f": {
-    "deviceName": "SM-J500F",
-    "marketingName": "Galaxy J5 (South Africa, Thailand)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Hong Kong"
-      ],
-      "countries": [
-        "India"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
     "variants": []
   },
   "samsung sm-j510h": {
@@ -7166,6 +7166,54 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g570f": {
+    "deviceName": "SM-G570F",
+    "marketingName": "Galaxy J5 Prime",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g570m": {
+    "deviceName": "SM-G570M",
+    "marketingName": "Galaxy J5 Prime",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g570y": {
     "deviceName": "SM-G570Y",
     "marketingName": "Galaxy J5 Prime",
@@ -7185,31 +7233,6 @@
       "countries": [
         "Australia"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g570f": {
-    "deviceName": "SM-G570F",
-    "marketingName": "Galaxy J5 Prime (Middle East, Africa)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -7318,6 +7341,33 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-j700f": {
+    "deviceName": "SM-J700F",
+    "marketingName": "Galaxy J7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "India"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-j700m": {
     "deviceName": "SM-J700M",
     "marketingName": "Galaxy J7",
@@ -7336,6 +7386,31 @@
       "regions": [
         "Latin America"
       ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j700p": {
+    "deviceName": "SM-J700P",
+    "marketingName": "Galaxy J7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -7374,8 +7449,106 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-j700t1": {
+    "deviceName": "SM-J700T1",
+    "marketingName": "Galaxy J7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j710f": {
+    "deviceName": "SM-J710F",
+    "marketingName": "Galaxy J7 (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j710fn": {
+    "deviceName": "SM-J710FN",
+    "marketingName": "Galaxy J7 (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-j710gn": {
     "deviceName": "SM-J710GN",
+    "marketingName": "Galaxy J7 (2016)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j710h": {
+    "deviceName": "SM-J710H",
     "marketingName": "Galaxy J7 (2016)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
@@ -7447,79 +7620,6 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-j710f": {
-    "deviceName": "SM-J710F",
-    "marketingName": "Galaxy J7 (2016, Middle East, Africa)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-j710fn": {
-    "deviceName": "SM-J710FN",
-    "marketingName": "Galaxy J7 (2016, Middle East, Africa)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-j710h": {
-    "deviceName": "SM-J710H",
-    "marketingName": "Galaxy J7 (2016, South Africa, Pakistan, Vietnam)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-j727u": {
     "deviceName": "SM-J727U",
     "marketingName": "Galaxy J7 (2017)",
@@ -7542,83 +7642,6 @@
       "vendors": []
     },
     "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-j700t1": {
-    "deviceName": "SM-J700T1",
-    "marketingName": "Galaxy J7 (MetroPCS)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-j700f": {
-    "deviceName": "SM-J700F",
-    "marketingName": "Galaxy J7 (Thailand)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "India"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-j700p": {
-    "deviceName": "SM-J700P",
-    "marketingName": "Galaxy J7 (Virgin Mobile, Boost)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
     "platform": "android",
     "variants": []
   },
@@ -7663,6 +7686,29 @@
       "regions": [
         "Global"
       ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-j730fm": {
+    "deviceName": "SM-J730FM",
+    "marketingName": "Galaxy J7 Duos (2017)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -7718,32 +7764,9 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-j730fm": {
-    "deviceName": "SM-J730FM",
-    "marketingName": "Galaxy J7 Duos (UAE, Russia, 2017)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-j700h": {
     "deviceName": "SM-J700H",
-    "marketingName": "Galaxy J7 G3 (South Africa, Pakistan, Vietnam)",
+    "marketingName": "Galaxy J7 G3",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -7812,6 +7835,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g610f": {
+    "deviceName": "SM-G610F",
+    "marketingName": "Galaxy J7 Prime",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g610m": {
     "deviceName": "SM-G610M",
     "marketingName": "Galaxy J7 Prime",
@@ -7839,7 +7887,7 @@
   },
   "samsung sm-g610y": {
     "deviceName": "SM-G610Y",
-    "marketingName": "Galaxy J7 Prime ( & Philippines)",
+    "marketingName": "Galaxy J7 Prime",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -7854,31 +7902,6 @@
     "market": {
       "regions": [
         "Taiwan"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g610f": {
-    "deviceName": "SM-G610F",
-    "marketingName": "Galaxy J7 Prime (Middle East & Africa)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
       ],
       "countries": [],
       "vendors": []
@@ -8555,6 +8578,32 @@
     "platform": "android",
     "variants": []
   },
+  "samsung gt-n7105": {
+    "deviceName": "GT-N7105",
+    "marketingName": "Galaxy Note 2",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE",
+      "GSM"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sch-i605": {
     "deviceName": "SCH-I605",
     "marketingName": "Galaxy Note 2",
@@ -8581,6 +8630,29 @@
     "connections": [
       "CDMA"
     ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sch-n719": {
+    "deviceName": "SCH-N719",
+    "marketingName": "Galaxy Note 2",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -8663,6 +8735,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung shv-e250k": {
+    "deviceName": "SHV-E250K",
+    "marketingName": "Galaxy Note 2",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sph-l900": {
     "deviceName": "SPH-L900",
     "marketingName": "Galaxy Note 2",
@@ -8688,80 +8785,6 @@
     },
     "connections": [
       "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung gt-n7105": {
-    "deviceName": "GT-N7105",
-    "marketingName": "Galaxy Note 2 (3G)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE",
-      "GSM"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sch-n719": {
-    "deviceName": "SCH-N719",
-    "marketingName": "Galaxy Note 2 (Anycall)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e250k": {
-    "deviceName": "SHV-E250K",
-    "marketingName": "Galaxy Note 2 (Korea KTF)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
     ],
     "platform": "android",
     "variants": []
@@ -8814,6 +8837,52 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sc-01f": {
+    "deviceName": "SC-01F",
+    "marketingName": "Galaxy Note 3",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n9000q": {
+    "deviceName": "SM-N9000Q",
+    "marketingName": "Galaxy Note 3",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-n9005": {
     "deviceName": "SM-N9005",
     "marketingName": "Galaxy Note 3",
@@ -8835,6 +8904,33 @@
     },
     "connections": [
       "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n9006": {
+    "deviceName": "SM-N9006",
+    "marketingName": "Galaxy Note 3",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "China"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "WCDMA"
     ],
     "platform": "android",
     "variants": []
@@ -8914,6 +9010,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-n900k": {
+    "deviceName": "SM-N900K",
+    "marketingName": "Galaxy Note 3",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-n900l": {
     "deviceName": "SM-N900L",
     "marketingName": "Galaxy Note 3",
@@ -8965,6 +9084,29 @@
     "connections": [
       "CDMA"
     ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n900s": {
+    "deviceName": "SM-N900S",
+    "marketingName": "Galaxy Note 3",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -9044,125 +9186,6 @@
       "countries": [
         "Canada"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n9006": {
-    "deviceName": "SM-N9006",
-    "marketingName": "Galaxy Note 3 (/)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "China"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "WCDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n900k": {
-    "deviceName": "SM-N900K",
-    "marketingName": "Galaxy Note 3 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sc-01f": {
-    "deviceName": "SC-01F",
-    "marketingName": "Galaxy Note 3 (NTT DoCoMo)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n900s": {
-    "deviceName": "SM-N900S",
-    "marketingName": "Galaxy Note 3 (South Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n9000q": {
-    "deviceName": "SM-N9000Q",
-    "marketingName": "Galaxy Note 3 (Turkey)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -9411,7 +9434,7 @@
   },
   "samsung sm-n7500q": {
     "deviceName": "SM-N7500Q",
-    "marketingName": "Galaxy Note 3 Neo 3G (Turkey)",
+    "marketingName": "Galaxy Note 3 Neo 3G",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -9510,6 +9533,63 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-n910a": {
+    "deviceName": "SM-N910A",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "AT&T"
+      ]
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910c": {
+    "deviceName": "SM-N910C",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-n910f": {
     "deviceName": "SM-N910F",
     "marketingName": "Galaxy Note 4",
@@ -9528,6 +9608,446 @@
       "regions": [
         "Europe"
       ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910fd": {
+    "deviceName": "SM-N910FD",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910fq": {
+    "deviceName": "SM-N910FQ",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910g": {
+    "deviceName": "SM-N910G",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "India",
+        "Australia"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910h": {
+    "deviceName": "SM-N910H",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910k": {
+    "deviceName": "SM-N910K",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910l": {
+    "deviceName": "SM-N910L",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910m": {
+    "deviceName": "SM-N910M",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910p": {
+    "deviceName": "SM-N910P",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "Sprint"
+      ]
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910r4": {
+    "deviceName": "SM-N910R4",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "U.S. Cellular"
+      ]
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910s": {
+    "deviceName": "SM-N910S",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910t": {
+    "deviceName": "SM-N910T",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "T-Mobile"
+      ]
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910t1": {
+    "deviceName": "SM-N910T1",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "T-Mobile"
+      ]
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910t3": {
+    "deviceName": "SM-N910T3",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "T-Mobile"
+      ]
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910u": {
+    "deviceName": "SM-N910U",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Hong Kong",
+        "Taiwan"
+      ],
+      "countries": [
+        "Australia",
+        "New Zealand"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910v": {
+    "deviceName": "SM-N910V",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "Verizon"
+      ]
+    },
+    "connections": [
+      "LTE",
+      "CDMA"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n910w8": {
+    "deviceName": "SM-N910W8",
+    "marketingName": "Galaxy Note 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -9562,377 +10082,9 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-n910a": {
-    "deviceName": "SM-N910A",
-    "marketingName": "Galaxy Note 4 ( + )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": [
-        "AT&T"
-      ]
-    },
-    "connections": [
-      "LTE",
-      "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910p": {
-    "deviceName": "SM-N910P",
-    "marketingName": "Galaxy Note 4 ( + )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": [
-        "Sprint"
-      ]
-    },
-    "connections": [
-      "LTE",
-      "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910r4": {
-    "deviceName": "SM-N910R4",
-    "marketingName": "Galaxy Note 4 ( + )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": [
-        "U.S. Cellular"
-      ]
-    },
-    "connections": [
-      "LTE",
-      "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910t": {
-    "deviceName": "SM-N910T",
-    "marketingName": "Galaxy Note 4 ( + )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": [
-        "T-Mobile"
-      ]
-    },
-    "connections": [
-      "LTE",
-      "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910t1": {
-    "deviceName": "SM-N910T1",
-    "marketingName": "Galaxy Note 4 ( + )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": [
-        "T-Mobile"
-      ]
-    },
-    "connections": [
-      "LTE",
-      "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910t3": {
-    "deviceName": "SM-N910T3",
-    "marketingName": "Galaxy Note 4 ( + )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": [
-        "T-Mobile"
-      ]
-    },
-    "connections": [
-      "LTE",
-      "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910v": {
-    "deviceName": "SM-N910V",
-    "marketingName": "Galaxy Note 4 ( + )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": [
-        "Verizon"
-      ]
-    },
-    "connections": [
-      "LTE",
-      "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910u": {
-    "deviceName": "SM-N910U",
-    "marketingName": "Galaxy Note 4 (, Chile)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Hong Kong",
-        "Taiwan"
-      ],
-      "countries": [
-        "Australia",
-        "New Zealand"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910c": {
-    "deviceName": "SM-N910C",
-    "marketingName": "Galaxy Note 4 (Asia, South America)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910h": {
-    "deviceName": "SM-N910H",
-    "marketingName": "Galaxy Note 4 (Asia-Pacific)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910k": {
-    "deviceName": "SM-N910K",
-    "marketingName": "Galaxy Note 4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910l": {
-    "deviceName": "SM-N910L",
-    "marketingName": "Galaxy Note 4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910s": {
-    "deviceName": "SM-N910S",
-    "marketingName": "Galaxy Note 4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-n916k": {
     "deviceName": "SM-N916K",
-    "marketingName": "Galaxy Note 4 (Korea)",
+    "marketingName": "Galaxy Note 4",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -9955,7 +10107,7 @@
   },
   "samsung sm-n916s": {
     "deviceName": "SM-N916S",
-    "marketingName": "Galaxy Note 4 (Korea)",
+    "marketingName": "Galaxy Note 4",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -9974,135 +10126,6 @@
     },
     "connections": [],
     "platform": null,
-    "variants": []
-  },
-  "samsung sm-n910w8": {
-    "deviceName": "SM-N910W8",
-    "marketingName": "Galaxy Note 4 (North America)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910g": {
-    "deviceName": "SM-N910G",
-    "marketingName": "Galaxy Note 4 (Singapore)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "India",
-        "Australia"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910fq": {
-    "deviceName": "SM-N910FQ",
-    "marketingName": "Galaxy Note 4 (Turkey)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910fd": {
-    "deviceName": "SM-N910FD",
-    "marketingName": "Galaxy Note 4 (United Arab Emirates)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n910m": {
-    "deviceName": "SM-N910M",
-    "marketingName": "Galaxy Note 4 (Vodafone,  + )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE",
-      "CDMA"
-    ],
-    "platform": "android",
     "variants": []
   },
   "samsung sm-n9200": {
@@ -10186,8 +10209,114 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-n920c": {
+    "deviceName": "SM-N920C",
+    "marketingName": "Galaxy Note 5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-n920g": {
     "deviceName": "SM-N920G",
+    "marketingName": "Galaxy Note 5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n920i": {
+    "deviceName": "SM-N920I",
+    "marketingName": "Galaxy Note 5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "Australia",
+        "Canada",
+        "New Zealand"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n920k": {
+    "deviceName": "SM-N920K",
+    "marketingName": "Galaxy Note 5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n920l": {
+    "deviceName": "SM-N920L",
     "marketingName": "Galaxy Note 5",
     "manufacturer": "Samsung",
     "brand": "Samsung",
@@ -10233,6 +10362,31 @@
       "vendors": [
         "U.S. Cellular"
       ]
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n920s": {
+    "deviceName": "SM-N920S",
+    "marketingName": "Galaxy Note 5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
     "connections": [
       "LTE"
@@ -10356,137 +10510,6 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-n920c": {
-    "deviceName": "SM-N920C",
-    "marketingName": "Galaxy Note 5 (Africa, Middle East, and Southeast Asia)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n920k": {
-    "deviceName": "SM-N920K",
-    "marketingName": "Galaxy Note 5 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n920l": {
-    "deviceName": "SM-N920L",
-    "marketingName": "Galaxy Note 5 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n920s": {
-    "deviceName": "SM-N920S",
-    "marketingName": "Galaxy Note 5 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n920i": {
-    "deviceName": "SM-N920I",
-    "marketingName": "Galaxy Note 5 (Singapore)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "Australia",
-        "Canada",
-        "New Zealand"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-n9300": {
     "deviceName": "SM-N9300",
     "marketingName": "Galaxy Note 7",
@@ -10572,6 +10595,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-n930az": {
+    "deviceName": "SM-N930AZ",
+    "marketingName": "Galaxy Note 7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-n930f": {
     "deviceName": "SM-N930F",
     "marketingName": "Galaxy Note 7",
@@ -10590,6 +10638,56 @@
       "regions": [
         "Europe"
       ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n930k": {
+    "deviceName": "SM-N930K",
+    "marketingName": "Galaxy Note 7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n930l": {
+    "deviceName": "SM-N930L",
+    "marketingName": "Galaxy Note 7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -10688,6 +10786,56 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-n930r7": {
+    "deviceName": "SM-N930R7",
+    "marketingName": "Galaxy Note 7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n930s": {
+    "deviceName": "SM-N930S",
+    "marketingName": "Galaxy Note 7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-n930t": {
     "deviceName": "SM-N930T",
     "marketingName": "Galaxy Note 7",
@@ -10710,6 +10858,31 @@
       "vendors": [
         "T-Mobile"
       ]
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n930t1": {
+    "deviceName": "SM-N930T1",
+    "marketingName": "Galaxy Note 7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
     "connections": [
       "LTE"
@@ -10799,159 +10972,9 @@
     "platform": "android",
     "variants": []
   },
-  "samsung sm-n930r7": {
-    "deviceName": "SM-N930R7",
-    "marketingName": "Galaxy Note 7 (C Spire Wireless)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n930az": {
-    "deviceName": "SM-N930AZ",
-    "marketingName": "Galaxy Note 7 (Cricket)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n930k": {
-    "deviceName": "SM-N930K",
-    "marketingName": "Galaxy Note 7 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n930l": {
-    "deviceName": "SM-N930L",
-    "marketingName": "Galaxy Note 7 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n930s": {
-    "deviceName": "SM-N930S",
-    "marketingName": "Galaxy Note 7 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n930t1": {
-    "deviceName": "SM-N930T1",
-    "marketingName": "Galaxy Note 7 (MetroPCS)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
   "samsung sm-n930fd": {
     "deviceName": "SM-N930FD",
-    "marketingName": "Galaxy Note 7 Duos (Southeast Asia)",
+    "marketingName": "Galaxy Note 7 Duos",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -11028,6 +11051,54 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-n950fd": {
+    "deviceName": "SM-N950FD",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [
+        "Global"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-n950n": {
+    "deviceName": "SM-N950N",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-n950u": {
     "deviceName": "SM-N950U",
     "marketingName": "Galaxy Note 8",
@@ -11097,54 +11168,6 @@
       "countries": [
         "Canada"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n950fd": {
-    "deviceName": "SM-N950FD",
-    "marketingName": "Galaxy Note 8 ( )",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 2,
-    "market": {
-      "regions": [
-        "Global"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-n950n": {
-    "deviceName": "SM-N950N",
-    "marketingName": "Galaxy Note 8 (South Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -11339,6 +11362,108 @@
     "platform": null,
     "variants": []
   },
+  "samsung sm-n915g": {
+    "deviceName": "SM-N915G",
+    "marketingName": "Galaxy Note Edge 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "Australia"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": null,
+    "variants": []
+  },
+  "samsung sm-n915k": {
+    "deviceName": "SM-N915K",
+    "marketingName": "Galaxy Note Edge 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": null,
+    "variants": []
+  },
+  "samsung sm-n915l": {
+    "deviceName": "SM-N915L",
+    "marketingName": "Galaxy Note Edge 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": null,
+    "variants": []
+  },
+  "samsung sm-n915s": {
+    "deviceName": "SM-N915S",
+    "marketingName": "Galaxy Note Edge 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": null,
+    "variants": []
+  },
   "samsung sm-n915t": {
     "deviceName": "SM-N915T",
     "marketingName": "Galaxy Note Edge 4",
@@ -11423,108 +11548,6 @@
       "LTE"
     ],
     "platform": "windows phone",
-    "variants": []
-  },
-  "samsung sm-n915k": {
-    "deviceName": "SM-N915K",
-    "marketingName": "Galaxy Note Edge 4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": null,
-    "variants": []
-  },
-  "samsung sm-n915l": {
-    "deviceName": "SM-N915L",
-    "marketingName": "Galaxy Note Edge 4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": null,
-    "variants": []
-  },
-  "samsung sm-n915s": {
-    "deviceName": "SM-N915S",
-    "marketingName": "Galaxy Note Edge 4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": null,
-    "variants": []
-  },
-  "samsung sm-n915g": {
-    "deviceName": "SM-N915G",
-    "marketingName": "Galaxy Note Edge 4 (Singapore, Spain)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "Australia"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": null,
     "variants": []
   },
   "samsung sm-n935f": {
@@ -11652,7 +11675,7 @@
   },
   "samsung shv-e250l": {
     "deviceName": "SHV-E250L",
-    "marketingName": "Galaxy Note II (Korea LG+)",
+    "marketingName": "Galaxy Note II",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -11677,7 +11700,7 @@
   },
   "samsung shv-e250s": {
     "deviceName": "SHV-E250S",
-    "marketingName": "Galaxy Note II (Korea SK Telecom)",
+    "marketingName": "Galaxy Note II",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -12251,7 +12274,7 @@
   },
   "samsung sph-m840": {
     "deviceName": "SPH-M840",
-    "marketingName": "Galaxy Ring (Virgin Mobile)",
+    "marketingName": "Galaxy Ring",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -12297,7 +12320,7 @@
   },
   "samsung sph-m830": {
     "deviceName": "SPH-M830",
-    "marketingName": "Galaxy Rush (Boost Mobile)",
+    "marketingName": "Galaxy Rush",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -12456,6 +12479,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sc-02b": {
+    "deviceName": "SC-02B",
+    "marketingName": "Galaxy S",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sgh-i9000": {
     "deviceName": "SGH-I9000",
     "marketingName": "Galaxy S",
@@ -12534,29 +12580,6 @@
   "samsung shw-m110s": {
     "deviceName": "SHW-M110S",
     "marketingName": "Galaxy S",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sc-02b": {
-    "deviceName": "SC-02B",
-    "marketingName": "Galaxy S (NTT DoCoMo)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -12999,6 +13022,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sc-02c": {
+    "deviceName": "SC-02C",
+    "marketingName": "Galaxy S II",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sgh-i727r": {
     "deviceName": "SGH-I727R",
     "marketingName": "Galaxy S II",
@@ -13049,30 +13095,7 @@
   },
   "samsung shv-e110s": {
     "deviceName": "SHV-E110S",
-    "marketingName": "Galaxy S II (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sc-02c": {
-    "deviceName": "SC-02C",
-    "marketingName": "Galaxy S II (NTT DoCoMo)",
+    "marketingName": "Galaxy S II",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -13310,6 +13333,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sc-06d": {
+    "deviceName": "SC-06D",
+    "marketingName": "Galaxy S III",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sch-i535": {
     "deviceName": "SCH-I535",
     "marketingName": "Galaxy S III",
@@ -13486,8 +13532,79 @@
     "platform": "android",
     "variants": []
   },
+  "samsung shv-e210k": {
+    "deviceName": "SHV-E210K",
+    "marketingName": "Galaxy S III",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung shv-e210l": {
     "deviceName": "SHV-E210L",
+    "marketingName": "Galaxy S III",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung shv-e210s": {
+    "deviceName": "SHV-E210S",
+    "marketingName": "Galaxy S III",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung shw-m440s": {
+    "deviceName": "SHW-M440S",
     "marketingName": "Galaxy S III",
     "manufacturer": "Samsung",
     "brand": "Samsung",
@@ -13579,100 +13696,6 @@
     "connections": [
       "LTE"
     ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e210k": {
-    "deviceName": "SHV-E210K",
-    "marketingName": "Galaxy S III (Korea KT)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e210s": {
-    "deviceName": "SHV-E210S",
-    "marketingName": "Galaxy S III (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shw-m440s": {
-    "deviceName": "SHW-M440S",
-    "marketingName": "Galaxy S III (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sc-06d": {
-    "deviceName": "SC-06D",
-    "marketingName": "Galaxy S III (NTT DoCoMo)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -13962,6 +13985,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sch-r530c": {
+    "deviceName": "SCH-R530C",
+    "marketingName": "Galaxy S3",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sch-r530u": {
     "deviceName": "SCH-R530U",
     "marketingName": "Galaxy S3",
@@ -13992,29 +14038,6 @@
   "samsung sch-s968c": {
     "deviceName": "SCH-S968C",
     "marketingName": "Galaxy S3",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sch-r530c": {
-    "deviceName": "SCH-R530C",
-    "marketingName": "Galaxy S3 (Cricket)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -14494,6 +14517,56 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sch-r970c": {
+    "deviceName": "SCH-R970C",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sch-r970x": {
+    "deviceName": "SCH-R970X",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sgh-i337": {
     "deviceName": "SGH-I337",
     "marketingName": "Galaxy S4",
@@ -14631,6 +14704,127 @@
     "platform": "android",
     "variants": []
   },
+  "samsung shv-e300k": {
+    "deviceName": "SHV-E300K",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung shv-e300l": {
+    "deviceName": "SHV-E300L",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung shv-e300s": {
+    "deviceName": "SHV-E300S",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung shv-e330k": {
+    "deviceName": "SHV-E330K",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung shv-e330l": {
+    "deviceName": "SHV-E330L",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sph-l720": {
     "deviceName": "SPH-L720",
     "marketingName": "Galaxy S4",
@@ -14688,177 +14882,6 @@
       "LTE",
       "CDMA"
     ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sch-r970x": {
-    "deviceName": "SCH-R970X",
-    "marketingName": "Galaxy S4 (C Spire)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sch-r970c": {
-    "deviceName": "SCH-R970C",
-    "marketingName": "Galaxy S4 (Cricket)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e300k": {
-    "deviceName": "SHV-E300K",
-    "marketingName": "Galaxy S4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e300l": {
-    "deviceName": "SHV-E300L",
-    "marketingName": "Galaxy S4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e300s": {
-    "deviceName": "SHV-E300S",
-    "marketingName": "Galaxy S4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e330k": {
-    "deviceName": "SHV-E330K",
-    "marketingName": "Galaxy S4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e330l": {
-    "deviceName": "SHV-E330L",
-    "marketingName": "Galaxy S4 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -15060,6 +15083,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung shv-e370k": {
+    "deviceName": "SHV-E370K",
+    "marketingName": "Galaxy S4 Mini",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sph-l520": {
     "deviceName": "SPH-L520",
     "marketingName": "Galaxy S4 Mini",
@@ -15086,29 +15132,6 @@
     "connections": [
       "CDMA"
     ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung shv-e370k": {
-    "deviceName": "SHV-E370K",
-    "marketingName": "Galaxy S4 Mini (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -15535,6 +15558,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g900t1": {
+    "deviceName": "SM-G900T1",
+    "marketingName": "Galaxy S5",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g900v": {
     "deviceName": "SM-G900V",
     "marketingName": "Galaxy S5",
@@ -15597,31 +15645,6 @@
     "display": {
       "width": 2560,
       "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g900t1": {
-    "deviceName": "SM-G900T1",
-    "marketingName": "Galaxy S5 (MetroPCS)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1920,
-      "height": 1080,
       "touch": true,
       "size": null
     },
@@ -15973,6 +15996,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g800hq": {
+    "deviceName": "SM-G800HQ",
+    "marketingName": "Galaxy S5 Mini",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g800m": {
     "deviceName": "SM-G800M",
     "marketingName": "Galaxy S5 Mini",
@@ -16044,29 +16090,6 @@
       "countries": [
         "New Zealand"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g800hq": {
-    "deviceName": "SM-G800HQ",
-    "marketingName": "Galaxy S5 Mini (Turkey)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -16368,6 +16391,136 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g920fd": {
+    "deviceName": "SM-G920FD",
+    "marketingName": "Galaxy S6",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g920i": {
+    "deviceName": "SM-G920I",
+    "marketingName": "Galaxy S6",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Latin America"
+      ],
+      "countries": [
+        "India",
+        "Australia"
+      ],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g920k": {
+    "deviceName": "SM-G920K",
+    "marketingName": "Galaxy S6",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g920l": {
+    "deviceName": "SM-G920L",
+    "marketingName": "Galaxy S6",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g920s": {
+    "deviceName": "SM-G920S",
+    "marketingName": "Galaxy S6",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g920t": {
     "deviceName": "SM-G920T",
     "marketingName": "Galaxy S6",
@@ -16390,6 +16543,31 @@
       "vendors": [
         "T-Mobile"
       ]
+    },
+    "connections": [
+      "LTE"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g920t1": {
+    "deviceName": "SM-G920T1",
+    "marketingName": "Galaxy S6",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
     "connections": [
       "LTE"
@@ -16510,161 +16688,6 @@
     "connections": [
       "LTE",
       "CDMA"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g920k": {
-    "deviceName": "SM-G920K",
-    "marketingName": "Galaxy S6 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g920l": {
-    "deviceName": "SM-G920L",
-    "marketingName": "Galaxy S6 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g920s": {
-    "deviceName": "SM-G920S",
-    "marketingName": "Galaxy S6 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g920t1": {
-    "deviceName": "SM-G920T1",
-    "marketingName": "Galaxy S6 (MetroPCS)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g920fd": {
-    "deviceName": "SM-G920FD",
-    "marketingName": "Galaxy S6 (Pakistan, Philippines)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
-    ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g920i": {
-    "deviceName": "SM-G920I",
-    "marketingName": "Galaxy S6 (Singapore)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Latin America"
-      ],
-      "countries": [
-        "India",
-        "Australia"
-      ],
-      "vendors": []
-    },
-    "connections": [
-      "LTE"
     ],
     "platform": "android",
     "variants": []
@@ -16802,6 +16825,103 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g925fq": {
+    "deviceName": "SM-G925FQ",
+    "marketingName": "Galaxy S6 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g925i": {
+    "deviceName": "SM-G925I",
+    "marketingName": "Galaxy S6 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Latin America"
+      ],
+      "countries": [
+        "India",
+        "Australia"
+      ],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g925k": {
+    "deviceName": "SM-G925K",
+    "marketingName": "Galaxy S6 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g925l": {
+    "deviceName": "SM-G925L",
+    "marketingName": "Galaxy S6 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g925p": {
     "deviceName": "SM-G925P",
     "marketingName": "Galaxy S6 Edge",
@@ -16831,6 +16951,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g925r": {
+    "deviceName": "SM-G925R",
+    "marketingName": "Galaxy S6 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "windows phone",
+    "variants": []
+  },
   "samsung sm-g925r4": {
     "deviceName": "SM-G925R4",
     "marketingName": "Galaxy S6 Edge",
@@ -16853,6 +16996,29 @@
       "vendors": [
         "U.S. Cellular"
       ]
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g925s": {
+    "deviceName": "SM-G925S",
+    "marketingName": "Galaxy S6 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
     "connections": [],
     "platform": "android",
@@ -16933,149 +17099,6 @@
       "countries": [
         "Canada"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "windows phone",
-    "variants": []
-  },
-  "samsung sm-g925k": {
-    "deviceName": "SM-G925K",
-    "marketingName": "Galaxy S6 Edge (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": 5.1
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g925l": {
-    "deviceName": "SM-G925L",
-    "marketingName": "Galaxy S6 Edge (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": 5.1
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g925s": {
-    "deviceName": "SM-G925S",
-    "marketingName": "Galaxy S6 Edge (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": 5.1
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g925i": {
-    "deviceName": "SM-G925I",
-    "marketingName": "Galaxy S6 Edge (Singapore)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": 5.1
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Latin America"
-      ],
-      "countries": [
-        "India",
-        "Australia"
-      ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g925fq": {
-    "deviceName": "SM-G925FQ",
-    "marketingName": "Galaxy S6 Edge (Turkey)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": 5.1
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g925r": {
-    "deviceName": "SM-G925R",
-    "marketingName": "Galaxy S6 Edge (US Cellular)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": 5.1
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -17441,6 +17464,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g930fd": {
+    "deviceName": "SM-G930FD",
+    "marketingName": "Galaxy S7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g930p": {
     "deviceName": "SM-G930P",
     "marketingName": "Galaxy S7",
@@ -17524,6 +17570,31 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g930u": {
+    "deviceName": "SM-G930U",
+    "marketingName": "Galaxy S7",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g930v": {
     "deviceName": "SM-G930V",
     "marketingName": "Galaxy S7",
@@ -17550,54 +17621,6 @@
     "connections": [
       "CDMA"
     ],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g930fd": {
-    "deviceName": "SM-G930FD",
-    "marketingName": "Galaxy S7 (Southeast Asia)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g930u": {
-    "deviceName": "SM-G930U",
-    "marketingName": "Galaxy S7 (Unlocked)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -17646,6 +17669,29 @@
       "regions": [
         "Global"
       ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sc-02h": {
+    "deviceName": "SC-02H",
+    "marketingName": "Galaxy S7 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -17732,6 +17778,75 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g935fd": {
+    "deviceName": "SM-G935FD",
+    "marketingName": "Galaxy S7 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g935k": {
+    "deviceName": "SM-G935K",
+    "marketingName": "Galaxy S7 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g935l": {
+    "deviceName": "SM-G935L",
+    "marketingName": "Galaxy S7 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g935p": {
     "deviceName": "SM-G935P",
     "marketingName": "Galaxy S7 Edge",
@@ -17783,6 +17898,29 @@
       "vendors": [
         "U.S. Cellular"
       ]
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g935s": {
+    "deviceName": "SM-G935S",
+    "marketingName": "Galaxy S7 Edge",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
     "connections": [],
     "platform": "android",
@@ -17872,121 +18010,6 @@
   "samsung sm-g935x": {
     "deviceName": "SM-G935X",
     "marketingName": "Galaxy S7 Edge",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g935k": {
-    "deviceName": "SM-G935K",
-    "marketingName": "Galaxy S7 Edge (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g935l": {
-    "deviceName": "SM-G935L",
-    "marketingName": "Galaxy S7 Edge (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g935s": {
-    "deviceName": "SM-G935S",
-    "marketingName": "Galaxy S7 Edge (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sc-02h": {
-    "deviceName": "SC-02H",
-    "marketingName": "Galaxy S7 Edge (NTT DoCoMo)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g935fd": {
-    "deviceName": "SM-G935FD",
-    "marketingName": "Galaxy S7 Edge (Southeast Asia)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -18111,6 +18134,52 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g950k": {
+    "deviceName": "SM-G950K",
+    "marketingName": "Galaxy S8",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g950l": {
+    "deviceName": "SM-G950L",
+    "marketingName": "Galaxy S8",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g950n": {
     "deviceName": "SM-G950N",
     "marketingName": "Galaxy S8",
@@ -18190,6 +18259,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g950s": {
+    "deviceName": "SM-G950S",
+    "marketingName": "Galaxy S8",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g950t": {
     "deviceName": "SM-G950T",
     "marketingName": "Galaxy S8",
@@ -18212,6 +18304,31 @@
       "vendors": [
         "T-Mobile"
       ]
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g950u": {
+    "deviceName": "SM-G950U",
+    "marketingName": "Galaxy S8",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": []
     },
     "connections": [],
     "platform": "android",
@@ -18265,100 +18382,6 @@
       "countries": [
         "Canada"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g950u": {
-    "deviceName": "SM-G950U",
-    "marketingName": "Galaxy S8 ( Unlocked)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g950k": {
-    "deviceName": "SM-G950K",
-    "marketingName": "Galaxy S8 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g950l": {
-    "deviceName": "SM-G950L",
-    "marketingName": "Galaxy S8 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g950s": {
-    "deviceName": "SM-G950S",
-    "marketingName": "Galaxy S8 (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -18444,6 +18467,77 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g955fd": {
+    "deviceName": "SM-G955FD",
+    "marketingName": "Galaxy S8 Plus",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Global"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g955k": {
+    "deviceName": "SM-G955K",
+    "marketingName": "Galaxy S8 Plus",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g955l": {
+    "deviceName": "SM-G955L",
+    "marketingName": "Galaxy S8 Plus",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g955p": {
     "deviceName": "SM-G955P",
     "marketingName": "Galaxy S8 Plus",
@@ -18500,6 +18594,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g955s": {
+    "deviceName": "SM-G955S",
+    "marketingName": "Galaxy S8 Plus",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g955t": {
     "deviceName": "SM-G955T",
     "marketingName": "Galaxy S8 Plus",
@@ -18522,6 +18639,31 @@
       "vendors": [
         "T-Mobile"
       ]
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "samsung sm-g955u": {
+    "deviceName": "SM-G955U",
+    "marketingName": "Galaxy S8 Plus",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": []
     },
     "connections": [],
     "platform": "android",
@@ -18575,125 +18717,6 @@
       "countries": [
         "Canada"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g955fd": {
-    "deviceName": "SM-G955FD",
-    "marketingName": "Galaxy S8 Plus ( Dual-SIM)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Global"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g955u": {
-    "deviceName": "SM-G955U",
-    "marketingName": "Galaxy S8 Plus ( Unlocked)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [
-        "USA"
-      ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g955k": {
-    "deviceName": "SM-G955K",
-    "marketingName": "Galaxy S8 Plus (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g955l": {
-    "deviceName": "SM-G955L",
-    "marketingName": "Galaxy S8 Plus (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g955s": {
-    "deviceName": "SM-G955S",
-    "marketingName": "Galaxy S8 Plus (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -18906,6 +18929,29 @@
     "platform": "android",
     "variants": []
   },
+  "samsung sm-g965n": {
+    "deviceName": "SM-G965N",
+    "marketingName": "Galaxy S9 Plus",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "samsung sm-g965u": {
     "deviceName": "SM-G965U",
     "marketingName": "Galaxy S9 Plus",
@@ -18950,29 +18996,6 @@
       "countries": [
         "Canada"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "samsung sm-g965n": {
-    "deviceName": "SM-G965N",
-    "marketingName": "Galaxy S9 Plus (Korea)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 2960,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -19328,7 +19351,7 @@
   },
   "samsung shw-m130l": {
     "deviceName": "SHW-M130L",
-    "marketingName": "Galaxy U (Korea)",
+    "marketingName": "Galaxy U",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {

@@ -4289,7 +4289,7 @@
     },
     "device": {
       "deviceName": "N9520",
-      "marketingName": "Max (Boost)",
+      "marketingName": "Max",
       "manufacturer": "Zte",
       "brand": "Zte",
       "display": {
@@ -4335,7 +4335,7 @@
     },
     "device": {
       "deviceName": "N9521",
-      "marketingName": "Max+ (Boost)",
+      "marketingName": "Max+",
       "manufacturer": "Zte",
       "brand": "Zte",
       "display": {
@@ -6223,7 +6223,7 @@
     },
     "device": {
       "deviceName": "N9510",
-      "marketingName": "Warp (Boost)",
+      "marketingName": "Warp",
       "manufacturer": "Zte",
       "brand": "Zte",
       "display": {
@@ -6271,7 +6271,7 @@
     },
     "device": {
       "deviceName": "N9515",
-      "marketingName": "Warp Sync (Boost)",
+      "marketingName": "Warp Sync",
       "manufacturer": "Zte",
       "brand": "Zte",
       "display": {
@@ -6317,7 +6317,7 @@
     },
     "device": {
       "deviceName": "X500",
-      "marketingName": "Score (Cricket)",
+      "marketingName": "Score",
       "manufacturer": "Zte",
       "brand": "Zte",
       "display": {
@@ -6363,7 +6363,7 @@
     },
     "device": {
       "deviceName": "X501",
-      "marketingName": "Groove (Cricket)",
+      "marketingName": "Groove",
       "manufacturer": "Zte",
       "brand": "Zte",
       "display": {
@@ -9702,6 +9702,52 @@
       "name": "Chrome",
       "modus": null,
       "version": "46.0.2490.76",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Z837VL Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Z837VL",
+      "marketingName": "Zfive 2",
+      "manufacturer": "Zte",
+      "brand": "Zte",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.124",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"

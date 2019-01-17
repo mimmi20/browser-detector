@@ -22,34 +22,9 @@
     "platform": "ios",
     "variants": []
   },
-  "apple ipad 6,12": {
-    "deviceName": "iPad",
-    "marketingName": "iPad (9,7, 2017)",
-    "manufacturer": "Apple",
-    "brand": "Apple",
-    "display": {
-      "width": 2732,
-      "height": 2048,
-      "touch": true,
-      "size": 9.7
-    },
-    "dualOrientation": true,
-    "type": "tablet",
-    "simCount": 0,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [
-      "Wi-Fi"
-    ],
-    "platform": "ios",
-    "variants": []
-  },
   "apple ipad 1,1": {
     "deviceName": "iPad",
-    "marketingName": "iPad (Gen 1)",
+    "marketingName": "iPad (1st Gen.)",
     "manufacturer": "Apple",
     "brand": "Apple",
     "display": {
@@ -72,7 +47,7 @@
   },
   "apple ipad 2,1": {
     "deviceName": "iPad",
-    "marketingName": "iPad (Gen 2)",
+    "marketingName": "iPad (2nd Gen.)",
     "manufacturer": "Apple",
     "brand": "Apple",
     "display": {
@@ -97,7 +72,7 @@
   },
   "apple ipad 2,4": {
     "deviceName": "iPad",
-    "marketingName": "iPad (Gen 2)",
+    "marketingName": "iPad (2nd Gen.)",
     "manufacturer": "Apple",
     "brand": "Apple",
     "display": {
@@ -105,6 +80,31 @@
       "height": 768,
       "touch": true,
       "size": null
+    },
+    "dualOrientation": true,
+    "type": "tablet",
+    "simCount": 0,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "Wi-Fi"
+    ],
+    "platform": "ios",
+    "variants": []
+  },
+  "apple ipad 6,12": {
+    "deviceName": "iPad",
+    "marketingName": "iPad (9,7, 2017)",
+    "manufacturer": "Apple",
+    "brand": "Apple",
+    "display": {
+      "width": 2732,
+      "height": 2048,
+      "touch": true,
+      "size": 9.7
     },
     "dualOrientation": true,
     "type": "tablet",
@@ -397,7 +397,7 @@
   },
   "apple ipad 7,1": {
     "deviceName": "iPad7,1",
-    "marketingName": "iPad Pro (12.9, 2nd Gen)",
+    "marketingName": "iPad Pro (12.9, 2nd Gen.)",
     "manufacturer": "Apple",
     "brand": "Apple",
     "display": {
