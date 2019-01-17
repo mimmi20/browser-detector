@@ -373,8 +373,7 @@ class DetectorTest extends TestCase
      */
     public function testGetBrowserFromInvalid(): void
     {
-        $useragent = 'testagent';
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
+        $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
@@ -1022,8 +1021,6 @@ class DetectorTest extends TestCase
 
         self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertNull($result->getDevice()->getDeviceName());
-        self::assertFalse($result->getDevice()->getDualOrientation());
-        self::assertSame(0, $result->getDevice()->getSimCount());
         self::assertNull($result->getOs()->getName());
     }
 

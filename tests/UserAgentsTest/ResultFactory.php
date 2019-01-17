@@ -15,7 +15,6 @@ use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\DisplayFactory;
 use BrowserDetector\Factory\EngineFactory;
-use BrowserDetector\Factory\MarketFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Version\Version;
@@ -27,7 +26,6 @@ use UaResult\Browser\Browser;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
 use UaResult\Device\Display;
-use UaResult\Device\Market;
 use UaResult\Engine\Engine;
 use UaResult\Os\Os;
 use UaResult\Result\Result;
@@ -70,18 +68,13 @@ final class ResultFactory
             new Company('Unknown', null, null),
             new Company('Unknown', null, null),
             new Unknown(),
-            new Display(null, new \UaDisplaySize\Unknown(), null),
-            false,
-            0,
-            new Market([], [], []),
-            []
+            new Display(null, new \UaDisplaySize\Unknown(), null)
         );
         if (array_key_exists('device', $data)) {
             $deviceFactory = new DeviceFactory(
                 $this->companyLoader,
                 new \UaDeviceType\TypeLoader(),
-                new DisplayFactory(new \UaDisplaySize\TypeLoader()),
-                new MarketFactory()
+                new DisplayFactory(new \UaDisplaySize\TypeLoader())
             );
             $device = $deviceFactory->fromArray($logger, (array) $data['device'], $headers['user-agent'] ?? '');
         }

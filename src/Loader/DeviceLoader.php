@@ -13,7 +13,6 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\DisplayFactory;
-use BrowserDetector\Factory\MarketFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
@@ -95,8 +94,7 @@ final class DeviceLoader implements DeviceLoaderInterface
         $deviceFactory = new DeviceFactory(
             $this->companyLoader,
             new \UaDeviceType\TypeLoader(),
-            new DisplayFactory(new \UaDisplaySize\TypeLoader()),
-            new MarketFactory()
+            new DisplayFactory(new \UaDisplaySize\TypeLoader())
         );
         $device = $deviceFactory->fromArray($this->logger, (array) $deviceData, $useragent);
 
