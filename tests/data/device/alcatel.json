@@ -4297,14 +4297,14 @@
     },
     "device": {
       "deviceName": "5045D",
-      "marketingName": "OneTouch Pixi 4 (5)",
+      "marketingName": "OneTouch Pixi 4 5.0",
       "manufacturer": "Alcatel",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -5451,7 +5451,7 @@
     },
     "device": {
       "deviceName": "OT-9005X",
-      "marketingName": "OneTouch Pixi 3 (8) 3G",
+      "marketingName": "OneTouch Pixi 3 (8)",
       "manufacturer": "Alcatel",
       "brand": "Alcatel",
       "display": {
@@ -8133,7 +8133,7 @@
     },
     "device": {
       "deviceName": "9003X",
-      "marketingName": "OneTouch Pixi 4 (7) 3G",
+      "marketingName": "OneTouch Pixi 4 (7)",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
@@ -10442,7 +10442,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -10488,7 +10488,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -10534,7 +10534,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -10580,7 +10580,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -10626,7 +10626,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -10672,7 +10672,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "dualOrientation": true,
       "type": "smartphone",
@@ -11309,7 +11309,7 @@
     },
     "device": {
       "deviceName": "9003A",
-      "marketingName": "OneTouch Pixi 4 (7) 3G",
+      "marketingName": "OneTouch Pixi 4 (7)",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
@@ -20932,6 +20932,108 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; 4060W Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "4060W",
+      "marketingName": "OneTouch Pixi 4 5.0",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 2,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": [
+        "GSM",
+        "UMTS",
+        "HSPA+",
+        "EDGE",
+        "GPRS",
+        "LTE",
+        "HSPA",
+        "HSUPA",
+        "WI-FI"
+      ]
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; 5045T Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5045T",
+      "marketingName": "OneTouch Pixi 4 5.0",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
       "manufacturer": "Google",
       "bits": 32
     },

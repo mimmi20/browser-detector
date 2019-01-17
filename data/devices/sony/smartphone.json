@@ -277,7 +277,7 @@
   },
   "sony so-04e": {
     "deviceName": "SO-04E",
-    "marketingName": "Xperia A (NTT DoCoMo)",
+    "marketingName": "Xperia A",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -323,7 +323,7 @@
   },
   "sony so-03d": {
     "deviceName": "SO-03D",
-    "marketingName": "Xperia acro (NTT DoCoMo)",
+    "marketingName": "Xperia acro",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -691,7 +691,7 @@
   },
   "sonyericsson so-01e": {
     "deviceName": "SO-01E",
-    "marketingName": "Xperia AX (NTT DoCoMo)",
+    "marketingName": "Xperia AX",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
     "display": {
@@ -1594,7 +1594,7 @@
   },
   "sony so-04d": {
     "deviceName": "SO-04D",
-    "marketingName": "Xperia GX (NTT DoCoMo)",
+    "marketingName": "Xperia GX",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -1826,6 +1826,31 @@
     "platform": "android",
     "variants": []
   },
+  "sony g3312": {
+    "deviceName": "G3312",
+    "marketingName": "Xperia L1",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "sony g3313": {
     "deviceName": "G3313",
     "marketingName": "Xperia L1",
@@ -1845,31 +1870,6 @@
       "countries": [
         "USA"
       ],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "sony g3312": {
-    "deviceName": "G3312",
-    "marketingName": "Xperia L1 (Middle East, Africa)",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
-      "countries": [],
       "vendors": []
     },
     "connections": [],
@@ -4405,7 +4405,7 @@
   },
   "sony f3115": {
     "deviceName": "F3115",
-    "marketingName": "Xperia XA (Asia)",
+    "marketingName": "Xperia XA",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -4626,6 +4626,29 @@
     "platform": "android",
     "variants": []
   },
+  "sony g3116": {
+    "deviceName": "G3116",
+    "marketingName": "Xperia XA1",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "sony g3121": {
     "deviceName": "G3121",
     "marketingName": "Xperia XA1",
@@ -4676,32 +4699,9 @@
     "platform": "android",
     "variants": []
   },
-  "sony g3116": {
-    "deviceName": "G3116",
-    "marketingName": "Xperia XA1 (Asia)",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 2,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "sony g3125": {
     "deviceName": "G3125",
-    "marketingName": "Xperia XA1 (Asia)",
+    "marketingName": "Xperia XA1",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -5416,7 +5416,7 @@
   },
   "sonyericsson so-02e": {
     "deviceName": "SO-02E",
-    "marketingName": "Xperia Z (NTT DoCoMo)",
+    "marketingName": "Xperia Z",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
     "display": {
@@ -5700,7 +5700,7 @@
   },
   "sony so-01f": {
     "deviceName": "SO-01F",
-    "marketingName": "Xperia Z1 (NTT DoCoMo)",
+    "marketingName": "Xperia Z1",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -5748,7 +5748,7 @@
   },
   "sony so-02f": {
     "deviceName": "SO-02F",
-    "marketingName": "Xperia Z1F (NTT DoCoMo)",
+    "marketingName": "Xperia Z1F",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -6059,7 +6059,7 @@
   },
   "sony so-01g": {
     "deviceName": "SO-01G",
-    "marketingName": "Xperia Z3 (NTT DoCoMo)",
+    "marketingName": "Xperia Z3",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -6105,7 +6105,7 @@
   },
   "sony d5833": {
     "deviceName": "D5833",
-    "marketingName": "Xperia Z3 Compact (Asia)",
+    "marketingName": "Xperia Z3 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -6128,7 +6128,7 @@
   },
   "sony so-02g": {
     "deviceName": "SO-02G",
-    "marketingName": "Xperia Z3 Compact (NTT DoCoMo)",
+    "marketingName": "Xperia Z3 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {

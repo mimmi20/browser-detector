@@ -4812,29 +4812,6 @@
     "platform": "android",
     "variants": []
   },
-  "alcatel 5045d": {
-    "deviceName": "5045D",
-    "marketingName": "OneTouch Pixi 4 (5)",
-    "manufacturer": "Alcatel",
-    "brand": "Alcatel",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "alcatel 5010d": {
     "deviceName": "OT-5010D",
     "marketingName": "OneTouch Pixi 4 (5)",
@@ -5088,6 +5065,39 @@
     "platform": "android",
     "variants": []
   },
+  "alcatel 4060w": {
+    "deviceName": "4060W",
+    "marketingName": "OneTouch Pixi 4 5.0",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GSM",
+      "UMTS",
+      "HSPA+",
+      "EDGE",
+      "GPRS",
+      "LTE",
+      "HSPA",
+      "HSUPA",
+      "WI-FI"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "alcatel 5010g": {
     "deviceName": "5010G",
     "marketingName": "OneTouch Pixi 4 5.0",
@@ -5143,7 +5153,30 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 5045d": {
+    "deviceName": "5045D",
+    "marketingName": "OneTouch Pixi 4 5.0",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5166,7 +5199,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5189,7 +5222,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5212,7 +5245,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5235,7 +5268,30 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "alcatel 5045t": {
+    "deviceName": "5045T",
+    "marketingName": "OneTouch Pixi 4 5.0",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -5258,7 +5314,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",

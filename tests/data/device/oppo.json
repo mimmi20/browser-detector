@@ -4312,5 +4312,51 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; OPPO R9tm Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/9.1 baidubrowser/7.15.15.0 (Baidu; P1 5.1)"
+    },
+    "device": {
+      "deviceName": "R9tm",
+      "marketingName": "R9",
+      "manufacturer": "Oppo",
+      "brand": "Oppo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "dualOrientation": true,
+      "type": "smartphone",
+      "simCount": 1,
+      "market": {
+        "regions": [],
+        "countries": [],
+        "vendors": []
+      },
+      "connections": []
+    },
+    "browser": {
+      "name": "Baidu Browser",
+      "modus": null,
+      "version": "7.15.15.0",
+      "manufacturer": "Baidu",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "T7",
+      "version": "9.1.0",
+      "manufacturer": "Baidu"
+    }
   }
 ]

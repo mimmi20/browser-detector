@@ -168,6 +168,43 @@
     "platform": "android",
     "variants": []
   },
+  "lg k373": {
+    "deviceName": "K373",
+    "marketingName": "Escape 3",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "Cricket"
+      ]
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "GSM",
+      "UMTS",
+      "HSDPA",
+      "HSUPA",
+      "HSPA+",
+      "LTE",
+      "WI-FI"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "lg eve": {
     "deviceName": "GW620R",
     "marketingName": "Eve",
@@ -320,6 +357,31 @@
     "platform": "android",
     "variants": []
   },
+  "lg d958": {
+    "deviceName": "D958",
+    "marketingName": "G Flex",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Hong Kong"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "lg d959": {
     "deviceName": "D959",
     "marketingName": "G Flex",
@@ -342,6 +404,29 @@
       "vendors": [
         "T-Mobile"
       ]
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg f340": {
+    "deviceName": "F340",
+    "marketingName": "G Flex",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
     },
     "connections": [],
     "platform": "android",
@@ -376,54 +461,6 @@
     "platform": "android",
     "variants": []
   },
-  "lg d958": {
-    "deviceName": "D958",
-    "marketingName": "G Flex ( & Asia)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Hong Kong"
-      ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg f340": {
-    "deviceName": "F340",
-    "marketingName": "G Flex (Korea)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "lg h950": {
     "deviceName": "H950",
     "marketingName": "G Flex 2",
@@ -446,6 +483,31 @@
       "vendors": [
         "AT&T"
       ]
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg h955": {
+    "deviceName": "H955",
+    "marketingName": "G Flex 2",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
     },
     "connections": [],
     "platform": "android",
@@ -502,31 +564,6 @@
       "vendors": [
         "U.S. Cellular"
       ]
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg h955": {
-    "deviceName": "H955",
-    "marketingName": "G Flex 2 (Middle East, Africa)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
-      "countries": [],
-      "vendors": []
     },
     "connections": [],
     "platform": "android",
@@ -693,6 +730,29 @@
     "platform": "android",
     "variants": []
   },
+  "lg h634": {
+    "deviceName": "H634",
+    "marketingName": "G Stylo",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "lg ls770": {
     "deviceName": "LS770",
     "marketingName": "G Stylo",
@@ -719,29 +779,6 @@
   "lg ms631": {
     "deviceName": "MS631",
     "marketingName": "G Stylo",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg h634": {
-    "deviceName": "H634",
-    "marketingName": "G Stylo (Cricket)",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -1847,6 +1884,29 @@
     "platform": "android",
     "variants": []
   },
+  "lg us992": {
+    "deviceName": "US992",
+    "marketingName": "G5",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "lg vs987": {
     "deviceName": "VS987",
     "marketingName": "G5",
@@ -1873,29 +1933,6 @@
     "connections": [
       "CDMA"
     ],
-    "platform": "android",
-    "variants": []
-  },
-  "lg us992": {
-    "deviceName": "US992",
-    "marketingName": "G5 (US Cellular)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -1926,7 +1963,7 @@
   },
   "lg h845": {
     "deviceName": "H845",
-    "marketingName": "G5 SE (Russia)",
+    "marketingName": "G5 SE",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -2331,6 +2368,38 @@
     "platform": "android",
     "variants": []
   },
+  "lg mp260": {
+    "deviceName": "MP260",
+    "marketingName": "K20 Plus",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.3
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "GSM",
+      "UMTS",
+      "HSUPA",
+      "HSDPA",
+      "LTE",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "lg k100": {
     "deviceName": "K100",
     "marketingName": "K3",
@@ -2388,7 +2457,67 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg m153": {
+    "deviceName": "M153",
+    "marketingName": "K4",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [
+        "USA"
+      ],
+      "vendors": [
+        "Cricket"
+      ]
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "GSM",
+      "UMTS",
+      "HSDPA",
+      "HSUPA",
+      "HSPA+",
+      "LTE",
+      "WI-FI"
+    ],
+    "platform": "android",
+    "variants": []
+  },
+  "lg m151": {
+    "deviceName": "M151",
+    "marketingName": "K4 (2017)",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -2411,7 +2540,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "dualOrientation": true,
     "type": "smartphone",
@@ -2473,6 +2602,52 @@
     "platform": "android",
     "variants": []
   },
+  "lg ls675": {
+    "deviceName": "LS675",
+    "marketingName": "K7",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg ms330": {
+    "deviceName": "MS330",
+    "marketingName": "K7",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "lg x210": {
     "deviceName": "X210",
     "marketingName": "K7",
@@ -2498,55 +2673,9 @@
     "platform": "android",
     "variants": []
   },
-  "lg ls675": {
-    "deviceName": "LS675",
-    "marketingName": "K7 (Boost Mobile)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg ms330": {
-    "deviceName": "MS330",
-    "marketingName": "K7 (MetroPCS)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
   "lg x210ds": {
     "deviceName": "X210DS",
-    "marketingName": "K7 (Russia)",
+    "marketingName": "K7",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -4822,7 +4951,7 @@
   },
   "lg ms323": {
     "deviceName": "MS323",
-    "marketingName": "Optimus L70 (MetroPCS)",
+    "marketingName": "Optimus L70",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -5797,7 +5926,7 @@
   },
   "lg h343": {
     "deviceName": "H343",
-    "marketingName": "Risio (Cricket)",
+    "marketingName": "Risio",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -5870,7 +5999,7 @@
   },
   "lg k120": {
     "deviceName": "K120",
-    "marketingName": "Spree (Cricket)",
+    "marketingName": "Spree",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -5918,7 +6047,7 @@
   },
   "lg ls775": {
     "deviceName": "LS775",
-    "marketingName": "Stylo 2 (Boost Mobile)",
+    "marketingName": "Stylo 2",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -5962,6 +6091,41 @@
     "platform": "android",
     "variants": []
   },
+  "lg vs835": {
+    "deviceName": "VS835",
+    "marketingName": "Stylo 2 V",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 2,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [
+      "GPRS",
+      "EDGE",
+      "GSM",
+      "HSUPA",
+      "HSDPA",
+      "HSPA+",
+      "CDMA",
+      "TD-SCDMA",
+      "TD-HSDPA",
+      "LTE",
+      "Wi-Fi"
+    ],
+    "platform": "android",
+    "variants": []
+  },
   "lg ls777": {
     "deviceName": "LS777",
     "marketingName": "Stylo 3",
@@ -5995,6 +6159,29 @@
       "HSPA",
       "Wi-Fi"
     ],
+    "platform": "android",
+    "variants": []
+  },
+  "lg tp450": {
+    "deviceName": "TP450",
+    "marketingName": "Stylo 3 Plus",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -6279,6 +6466,75 @@
     "platform": "android",
     "variants": []
   },
+  "lg h960ar": {
+    "deviceName": "H960AR",
+    "marketingName": "V10",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg h960tr": {
+    "deviceName": "H960TR",
+    "marketingName": "V10",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg h960yk": {
+    "deviceName": "H960YK",
+    "marketingName": "V10",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "lg h961n": {
     "deviceName": "H961N",
     "marketingName": "V10",
@@ -6297,6 +6553,29 @@
       "regions": [
         "Hong Kong"
       ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg h961s": {
+    "deviceName": "H961S",
+    "marketingName": "V10",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
       "countries": [],
       "vendors": []
     },
@@ -6382,98 +6661,6 @@
     "connections": [
       "CDMA"
     ],
-    "platform": "android",
-    "variants": []
-  },
-  "lg h960ar": {
-    "deviceName": "H960AR",
-    "marketingName": "V10 (Argentina)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg h960yk": {
-    "deviceName": "H960YK",
-    "marketingName": "V10 (Israel)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg h961s": {
-    "deviceName": "H961S",
-    "marketingName": "V10 (Russia, Kazakhstan)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg h960tr": {
-    "deviceName": "H960TR",
-    "marketingName": "V10 (Turkey)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
     "platform": "android",
     "variants": []
   },
@@ -6875,7 +7062,7 @@
   },
   "lg 730": {
     "deviceName": "730",
-    "marketingName": "Venice (Boost Mobile)",
+    "marketingName": "Venice",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -6921,7 +7108,7 @@
   },
   "lg ls751": {
     "deviceName": "LS751",
-    "marketingName": "Volt 2 (Boost Mobile)",
+    "marketingName": "Volt 2",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -7013,6 +7200,77 @@
     "platform": "android",
     "variants": []
   },
+  "lg k220ds": {
+    "deviceName": "K220DS",
+    "marketingName": "X Power",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [
+        "Europe"
+      ],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg k450": {
+    "deviceName": "K450",
+    "marketingName": "X Power",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
+  "lg ls755": {
+    "deviceName": "LS755",
+    "marketingName": "X Power",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "dualOrientation": true,
+    "type": "smartphone",
+    "simCount": 1,
+    "market": {
+      "regions": [],
+      "countries": [],
+      "vendors": []
+    },
+    "connections": [],
+    "platform": "android",
+    "variants": []
+  },
   "lg us610": {
     "deviceName": "US610",
     "marketingName": "X Power",
@@ -7040,9 +7298,9 @@
     "platform": "android",
     "variants": []
   },
-  "lg ls755": {
-    "deviceName": "LS755",
-    "marketingName": "X Power (Boost Mobile)",
+  "lg k500ds": {
+    "deviceName": "K500DS",
+    "marketingName": "X screen",
     "manufacturer": "Lg",
     "brand": "Lg",
     "display": {
@@ -7056,54 +7314,6 @@
     "simCount": 1,
     "market": {
       "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg k450": {
-    "deviceName": "K450",
-    "marketingName": "X Power (Cricket)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg k220ds": {
-    "deviceName": "K220DS",
-    "marketingName": "X Power (Russia, Middle East, Africa)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [
-        "Europe"
-      ],
       "countries": [],
       "vendors": []
     },
@@ -7129,29 +7339,6 @@
       "regions": [
         "Europe"
       ],
-      "countries": [],
-      "vendors": []
-    },
-    "connections": [],
-    "platform": "android",
-    "variants": []
-  },
-  "lg k500ds": {
-    "deviceName": "K500DS",
-    "marketingName": "X screen (Russia)",
-    "manufacturer": "Lg",
-    "brand": "Lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "dualOrientation": true,
-    "type": "smartphone",
-    "simCount": 1,
-    "market": {
-      "regions": [],
       "countries": [],
       "vendors": []
     },
