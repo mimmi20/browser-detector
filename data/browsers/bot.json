@@ -1,4 +1,18 @@
 {
+  "plus5bot": {
+    "name": "+5Bot",
+    "manufacturer": "Plus5Files",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "\\+5Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
   ".net framework clr": {
     "name": ".NET Framework CLR",
     "manufacturer": "Microsoft",
@@ -1337,20 +1351,6 @@
     },
     "engine": "unknown"
   },
-  "centil-schweiz webbot": {
-    "name": "Webbot",
-    "manufacturer": "CENTIL-Schweiz",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Webbot Vers\\."
-      ]
-    },
-    "engine": "unknown"
-  },
   "charlotte": {
     "name": "Charlotte",
     "manufacturer": "Searchme",
@@ -2094,6 +2094,20 @@
       "class": "VersionFactory",
       "search": [
         "DotBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "masscan": {
+    "name": "Download Accelerator",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "masscan"
       ]
     },
     "engine": "unknown"
@@ -3070,6 +3084,37 @@
     },
     "engine": null
   },
+  "googlebot": {
+    "name": "Google Bot",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot",
+        "Googlebot v",
+        "Googlebot\\-News",
+        "Google"
+      ]
+    },
+    "engine": null
+  },
+  "googlebot-mobile": {
+    "name": "Google Bot Mobile",
+    "manufacturer": "Google",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot\\-Mobile"
+      ]
+    },
+    "engine": "unknown"
+  },
   "google assess": {
     "name": "Google DMCA Takedown Tool Bot",
     "manufacturer": "Google",
@@ -3244,37 +3289,6 @@
       "class": "VersionFactory",
       "search": [
         "Google\\-Site\\-Verification"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "googlebot": {
-    "name": "Google Bot",
-    "manufacturer": "Google",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Googlebot",
-        "Googlebot v",
-        "Googlebot\\-News",
-        "Google"
-      ]
-    },
-    "engine": null
-  },
-  "googlebot-mobile": {
-    "name": "Google Bot Mobile",
-    "manufacturer": "Google",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Googlebot\\-Mobile"
       ]
     },
     "engine": "unknown"
@@ -4853,20 +4867,6 @@
     },
     "engine": "unknown"
   },
-  "masscan": {
-    "name": "Download Accelerator",
-    "manufacturer": "Unknown",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "masscan"
-      ]
-    },
-    "engine": "unknown"
-  },
   "mbot": {
     "name": "mbot",
     "manufacturer": "Unknown",
@@ -6316,20 +6316,6 @@
       "class": "VersionFactory",
       "search": [
         "Plukkie"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "plus5bot": {
-    "name": "+5Bot",
-    "manufacturer": "Plus5Files",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "\\+5Bot"
       ]
     },
     "engine": "unknown"
@@ -8358,6 +8344,18 @@
     },
     "engine": "unknown"
   },
+  "thumbnail.ws bot": {
+    "name": "thumbnail.ws Bot",
+    "manufacturer": "thumbnail.ws",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "thumbnailagent": {
     "name": "ThumbnailAgent",
     "manufacturer": "Unknown",
@@ -8369,18 +8367,6 @@
       "search": [
         "ThumbnailAgent"
       ]
-    },
-    "engine": "unknown"
-  },
-  "thumbnail.ws bot": {
-    "name": "thumbnail.ws Bot",
-    "manufacturer": "thumbnail.ws",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -9420,6 +9406,20 @@
     },
     "engine": "unknown"
   },
+  "centil-schweiz webbot": {
+    "name": "Webbot",
+    "manufacturer": "CENTIL-Schweiz",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Webbot Vers\\."
+      ]
+    },
+    "engine": "unknown"
+  },
   "webbotru": {
     "name": "Webbotru",
     "manufacturer": "Unknown",
@@ -10421,20 +10421,6 @@
     },
     "engine": "unknown"
   },
-  "yandexbot": {
-    "name": "YandexBot",
-    "manufacturer": "Yandex",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "YandexBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "yandeximages": {
     "name": "Yandex Image Search",
     "manufacturer": "Yandex",
@@ -10445,6 +10431,20 @@
       "class": "VersionFactory",
       "search": [
         "YandexImages"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandexbot": {
+    "name": "YandexBot",
+    "manufacturer": "Yandex",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexBot"
       ]
     },
     "engine": "unknown"

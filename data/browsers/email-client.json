@@ -168,20 +168,6 @@
     },
     "engine": "unknown"
   },
-  "outlook-express": {
-    "name": "Windows Live Mail",
-    "manufacturer": "Microsoft",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "email-client",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Outlook-Express"
-      ]
-    },
-    "engine": "trident"
-  },
   "postbox": {
     "name": "Postbox",
     "manufacturer": "Postbox",
@@ -224,5 +210,19 @@
       ]
     },
     "engine": "webkit"
+  },
+  "outlook-express": {
+    "name": "Windows Live Mail",
+    "manufacturer": "Microsoft",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "email-client",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Outlook-Express"
+      ]
+    },
+    "engine": "trident"
   }
 }
