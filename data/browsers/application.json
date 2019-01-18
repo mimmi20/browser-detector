@@ -125,32 +125,6 @@
     },
     "engine": "webkit"
   },
-  "apple mobilenotes": {
-    "name": "MobileNotes",
-    "manufacturer": "Apple",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
-  "apple notes app": {
-    "name": "Notes App",
-    "manufacturer": "Apple",
-    "pdfSupport": false,
-    "rssSupport": false,
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "com\\.apple\\.Notes\\.SharingExtension"
-      ]
-    },
-    "engine": "webkit"
-  },
   "atbat": {
     "name": "AtBat",
     "manufacturer": "MLB",
@@ -843,6 +817,32 @@
     },
     "engine": "gecko"
   },
+  "apple mobilenotes": {
+    "name": "MobileNotes",
+    "manufacturer": "Apple",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "opera news": {
+    "name": "News",
+    "manufacturer": "Opera",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "News"
+      ]
+    },
+    "engine": null
+  },
   "newsfire": {
     "name": "NewsFire",
     "manufacturer": "DavidWatanabe",
@@ -870,6 +870,20 @@
       ]
     },
     "engine": null
+  },
+  "apple notes app": {
+    "name": "Notes App",
+    "manufacturer": "Apple",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "com\\.apple\\.Notes\\.SharingExtension"
+      ]
+    },
+    "engine": "webkit"
   },
   "office": {
     "name": "Office",
@@ -957,20 +971,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "opera news": {
-    "name": "News",
-    "manufacturer": "Opera",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "News"
-      ]
-    },
-    "engine": null
   },
   "perfect browser": {
     "name": "Perfect Browser",

@@ -1,18 +1,4 @@
 {
-  "alexamediaplayer": {
-    "name": "Alexa MediaPlayer",
-    "manufacturer": "Unknown",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "multimedia-player",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "AlexaMediaPlayer"
-      ]
-    },
-    "engine": "unknown"
-  },
   "acast podcast app": {
     "name": "Acast Podcast App",
     "manufacturer": "Acast",
@@ -26,6 +12,20 @@
       ]
     },
     "engine": "blink"
+  },
+  "alexamediaplayer": {
+    "name": "Alexa MediaPlayer",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AlexaMediaPlayer"
+      ]
+    },
+    "engine": "unknown"
   },
   "coremedia": {
     "name": "CoreMedia",

@@ -27,20 +27,6 @@
     },
     "engine": "blink"
   },
-  "2345 explorer": {
-    "name": "2345 Explorer",
-    "manufacturer": "Unknown",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "2345Explorer"
-      ]
-    },
-    "engine": "blink"
-  },
   "2345 chrome": {
     "name": "2345 Chrome",
     "manufacturer": "Unknown",
@@ -52,6 +38,20 @@
       "search": [
         "2345chrome v",
         "2345chrome"
+      ]
+    },
+    "engine": "blink"
+  },
+  "2345 explorer": {
+    "name": "2345 Explorer",
+    "manufacturer": "Unknown",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "2345Explorer"
       ]
     },
     "engine": "blink"
@@ -412,18 +412,6 @@
       "search": null
     },
     "engine": "unknown"
-  },
-  "bitdefender safepay": {
-    "name": "Safepay",
-    "manufacturer": "Bitdefender",
-    "pdfSupport": false,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "blink"
   },
   "blackberry": {
     "name": "BlackBerry",
@@ -1162,20 +1150,6 @@
     },
     "engine": "gecko"
   },
-  "firefox for ios": {
-    "name": "Firefox for iOS",
-    "manufacturer": "MozillaFoundation",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "FxiOS"
-      ]
-    },
-    "engine": "webkit"
-  },
   "firefox klar": {
     "name": "Firefox Focus",
     "manufacturer": "MozillaFoundation",
@@ -1190,6 +1164,20 @@
       ]
     },
     "engine": "blink"
+  },
+  "firefox for ios": {
+    "name": "Firefox for iOS",
+    "manufacturer": "MozillaFoundation",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FxiOS"
+      ]
+    },
+    "engine": "webkit"
   },
   "flock": {
     "name": "Flock",
@@ -1678,6 +1666,20 @@
     },
     "engine": null
   },
+  "mobile iron": {
+    "name": "Iron Mobile",
+    "manufacturer": "Srware",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MobileIron"
+      ]
+    },
+    "engine": null
+  },
   "isource+ app": {
     "name": "iSource+ App",
     "manufacturer": "Unknown",
@@ -1858,6 +1860,19 @@
       "class": "VersionFactory",
       "search": [
         "Kuaiso"
+      ]
+    },
+    "engine": "blink"
+  },
+  "lenovo browser": {
+    "name": "Lenovo Browser",
+    "manufacturer": "Lenovo",
+    "bits": 32,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LeBrowser"
       ]
     },
     "engine": "blink"
@@ -2145,20 +2160,6 @@
     },
     "engine": null
   },
-  "mobile iron": {
-    "name": "Iron Mobile",
-    "manufacturer": "Srware",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "MobileIron"
-      ]
-    },
-    "engine": null
-  },
   "mobile safari uiwebview": {
     "name": "Mobile Safari UIWebView",
     "manufacturer": "Apple",
@@ -2296,6 +2297,20 @@
     },
     "engine": "webkit"
   },
+  "netscape navigator": {
+    "name": "Navigator",
+    "manufacturer": "Netscape",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Navigator"
+      ]
+    },
+    "engine": "gecko"
+  },
   "nec": {
     "name": "Nec",
     "manufacturer": "Nec",
@@ -2392,20 +2407,6 @@
       "search": [
         "Netscape6",
         "Netscape"
-      ]
-    },
-    "engine": "gecko"
-  },
-  "netscape navigator": {
-    "name": "Navigator",
-    "manufacturer": "Netscape",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Navigator"
       ]
     },
     "engine": "gecko"
@@ -2617,6 +2618,18 @@
     },
     "engine": null
   },
+  "oppo browser": {
+    "name": "Oppo Browser",
+    "manufacturer": "Oppo",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OppoBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
   "origin": {
     "name": "Origin",
     "manufacturer": "ElectronicArts",
@@ -2820,18 +2833,6 @@
     },
     "engine": "webkit"
   },
-  "qh-browser": {
-    "name": "Quick Heal Browser",
-    "manufacturer": "Quick Heal",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "qqbrowser": {
     "name": "QQ Browser",
     "manufacturer": "Tencent",
@@ -2930,6 +2931,18 @@
       ]
     },
     "engine": "blink"
+  },
+  "qh-browser": {
+    "name": "Quick Heal Browser",
+    "manufacturer": "Quick Heal",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   },
   "quicklook": {
     "name": "QuickLook",
@@ -3056,6 +3069,18 @@
     },
     "engine": "webkit"
   },
+  "bitdefender safepay": {
+    "name": "Safepay",
+    "manufacturer": "Bitdefender",
+    "pdfSupport": false,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "blink"
+  },
   "sailfish browser": {
     "name": "Sailfish Browser",
     "manufacturer": "Jolla",
@@ -3096,6 +3121,21 @@
     },
     "engine": null
   },
+  "samsungbrowser": {
+    "name": "Samsung Browser",
+    "manufacturer": "Samsung",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SamsungBrowser",
+        "Version"
+      ]
+    },
+    "engine": null
+  },
   "samsung mobile browser": {
     "name": "Samsung Mobile Browser",
     "manufacturer": "Samsung",
@@ -3117,21 +3157,6 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Version"
-      ]
-    },
-    "engine": null
-  },
-  "samsungbrowser": {
-    "name": "Samsung Browser",
-    "manufacturer": "Samsung",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "SamsungBrowser",
         "Version"
       ]
     },
@@ -3360,21 +3385,6 @@
     },
     "engine": "webkit"
   },
-  "smartviera": {
-    "name": "Viera Browser",
-    "manufacturer": "Panasonic",
-    "pdfSupport": true,
-    "rssSupport": false,
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Viera",
-        "SMART\\-TV"
-      ]
-    },
-    "engine": null
-  },
   "sogou explorer": {
     "name": "Sogou Explorer",
     "manufacturer": "Sogou",
@@ -3388,6 +3398,19 @@
       ]
     },
     "engine": null
+  },
+  "sogou mobile browser": {
+    "name": "Sogou Mobile Browser",
+    "manufacturer": "Sogou",
+    "bits": 32,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SogouMobileBrowser"
+      ]
+    },
+    "engine": "blink"
   },
   "songbird": {
     "name": "Songbird",
@@ -3688,6 +3711,21 @@
       ]
     },
     "engine": "webkit"
+  },
+  "smartviera": {
+    "name": "Viera Browser",
+    "manufacturer": "Panasonic",
+    "pdfSupport": true,
+    "rssSupport": false,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Viera",
+        "SMART\\-TV"
+      ]
+    },
+    "engine": null
   },
   "vivaldi": {
     "name": "Vivaldi",
