@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/smart run/i": "mtc smart run",
+    "/smart[ _]surf[ _]4g/i": "mtc smart surf 4g",
+    "/smart[ _]run/i": "mtc smart run",
     "/982t/i": "mtc 982t",
     "/982o/i": "mtc 982o",
     "/982/i": "mtc 982",
