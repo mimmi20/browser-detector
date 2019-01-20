@@ -2164,5 +2164,81 @@
       "version": "10.0.0",
       "manufacturer": "Baidu"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; vivo X5M Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36 VivoBrowser/5.2.21"
+    },
+    "device": {
+      "deviceName": "X5m",
+      "marketingName": "X5m",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "VivoBrowser",
+      "modus": null,
+      "version": "5.2.21",
+      "manufacturer": "Vivo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; vivo Y67L Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36 VivoBrowser/5.2.30"
+    },
+    "device": {
+      "deviceName": "Y67L",
+      "marketingName": "Y67L",
+      "manufacturer": "Vivo",
+      "brand": "Vivo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "VivoBrowser",
+      "modus": null,
+      "version": "5.2.30",
+      "manufacturer": "Vivo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]
