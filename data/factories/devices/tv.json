@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia/": "sony",
+    "/kdl\\d{2}|nsz\\-gs7\\/gx70|sonydtv|netbox|bravia/i": "sony",
     "/THOMSON|LF1V/i": "thomson",
     "/philips|avm\\-/i": "philips",
     "/xbox/i": "microsoft",
