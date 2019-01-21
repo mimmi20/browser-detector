@@ -1,7 +1,7 @@
 {
   "general samsung device": {
-    "deviceName": "general Samsung Device",
-    "marketingName": "general Samsung Device",
+    "deviceName": "general Samsung device",
+    "marketingName": "general Samsung device",
     "manufacturer": "Samsung",
     "brand": "Samsung",
     "display": {
@@ -4367,6 +4367,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-j727a": {
+    "deviceName": "SM-J727A",
+    "marketingName": "Galaxy J7 (2017)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-j727u": {
     "deviceName": "SM-J727U",
     "marketingName": "Galaxy J7 (2017)",
@@ -4643,6 +4657,20 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s120vl": {
+    "deviceName": "SM-S120VL",
+    "marketingName": "Galaxy Luna",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"

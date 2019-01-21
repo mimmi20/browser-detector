@@ -2,8 +2,6 @@
   "google feedfetcher": {
     "name": "Google Feedfetcher",
     "manufacturer": "Google",
-    "pdfSupport": true,
-    "rssSupport": false,
     "type": "bot-syndication-reader",
     "version": {
       "class": "VersionFactory",
@@ -17,8 +15,6 @@
   "r6 feedfetcher": {
     "name": "R6 FeedFetcher",
     "manufacturer": "Salesforce",
-    "pdfSupport": true,
-    "rssSupport": false,
     "type": "bot-syndication-reader",
     "version": {
       "class": null,
@@ -29,8 +25,6 @@
   "spinn3r rss aggregator": {
     "name": "Spinn3r RSS Aggregator",
     "manufacturer": "Tailrank",
-    "pdfSupport": true,
-    "rssSupport": false,
     "type": "bot-syndication-reader",
     "version": {
       "class": "VersionFactory",

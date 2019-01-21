@@ -1,7 +1,7 @@
 {
   "general huawei device": {
-    "deviceName": "general Huawei Device",
-    "marketingName": "general Huawei Device",
+    "deviceName": "general Huawei device",
+    "marketingName": "general Huawei device",
     "manufacturer": "Huawei",
     "brand": "Huawei",
     "display": {
@@ -4381,6 +4381,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei eva-tl00": {
+    "deviceName": "EVA-TL00",
+    "marketingName": "P Standard Edition",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei vtr-al00": {
     "deviceName": "VTR-AL00",
     "marketingName": "P10",
@@ -5020,7 +5034,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -5034,7 +5048,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"

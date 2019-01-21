@@ -1,7 +1,7 @@
 {
   "general zte device": {
-    "deviceName": "general ZTE Device",
-    "marketingName": "general ZTE Device",
+    "deviceName": "general ZTE device",
+    "marketingName": "general ZTE device",
     "manufacturer": "Zte",
     "brand": "Zte",
     "display": {
@@ -1479,6 +1479,20 @@
       "height": 1080,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte n9560": {
+    "deviceName": "N9560",
+    "marketingName": "Max XL",
+    "manufacturer": "Zte",
+    "brand": "Zte",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
