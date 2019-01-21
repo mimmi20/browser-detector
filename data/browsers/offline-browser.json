@@ -2,8 +2,6 @@
   "httrack": {
     "name": "HTTrack",
     "manufacturer": "XavierRoche",
-    "pdfSupport": true,
-    "rssSupport": false,
     "type": "offline-browser",
     "version": {
       "class": "VersionFactory",
@@ -16,8 +14,6 @@
   "wget": {
     "name": "wget",
     "manufacturer": "FreeSoftwareFoundation",
-    "pdfSupport": true,
-    "rssSupport": false,
     "type": "offline-browser",
     "version": {
       "class": "VersionFactory",

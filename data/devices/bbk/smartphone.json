@@ -1,7 +1,7 @@
 {
   "general bbk device": {
-    "deviceName": "general BBK Device",
-    "marketingName": "general BBK Device",
+    "deviceName": "general BBK device",
+    "marketingName": "general BBK device",
     "manufacturer": "BBK",
     "brand": "BBK",
     "display": {
@@ -9,6 +9,20 @@
       "height": null,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "bbk vivo x6d": {
+    "deviceName": "Vivo X6D",
+    "marketingName": "Vivo X6D",
+    "manufacturer": "BBK",
+    "brand": "BBK",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
