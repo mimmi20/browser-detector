@@ -3045,7 +3045,7 @@
     },
     "device": {
       "deviceName": "C5502",
-      "marketingName": "Xperia ZR HSPA+",
+      "marketingName": "Xperia ZR",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -12834,6 +12834,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; H8416) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "H8416",
+      "marketingName": "Xperia XZ3",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": 2880,
+        "height": 1440,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
       "manufacturer": "Google",
       "bits": 32
     },
