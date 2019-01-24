@@ -182,6 +182,7 @@ class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Linux; Andr0id 7.0; BRAVIA 4K GB Build/NRD91N.S139) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.59.E9103576.154'],
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/8.0 Chrome/63.0.3239.111 Safari/537.36'],
             ['Mozilla/4.0 (compatible; MSIE 5.01; Windows 98; Linux 3.3.8-3.3) [Netgem; 7.7.01-51; i-Player; netbox; sezmi_totalgem]'],
+            ['WordPress/4.9.5; http://www.smartphone-advertising.com'],
         ];
     }
 }
