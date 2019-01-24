@@ -530,5 +530,43 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.2; en-US; Andromax G36C1H Build/NJH47F) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.4.2.995 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Andromax G36C1H",
+      "marketingName": "Andromax G36C1H",
+      "manufacturer": "Smartfren",
+      "brand": "Smartfren",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.4.2.995",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UcWeb"
+    }
   }
 ]

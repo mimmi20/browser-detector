@@ -36,5 +36,81 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0; zh-CN; lephone T10 Build/079) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.7.8.958 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "T10",
+      "marketingName": "T10",
+      "manufacturer": "Lephone",
+      "brand": "Lephone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.7.8.958",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; lephone T2 Build/KTU84M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.0 lite baiduboxapp/3.1.0.10 (Baidu; P1 4.4.3)"
+    },
+    "device": {
+      "deviceName": "T2",
+      "marketingName": "T2",
+      "manufacturer": "Lephone",
+      "brand": "Lephone",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Baidu Box App Lite",
+      "modus": null,
+      "version": "3.1.0.10",
+      "manufacturer": "Baidu",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "T7",
+      "version": "10.0.0",
+      "manufacturer": "Baidu"
+    }
   }
 ]

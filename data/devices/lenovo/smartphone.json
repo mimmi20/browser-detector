@@ -1,4 +1,18 @@
 {
+  "lenovo a1010a20": {
+    "deviceName": "A1010a20",
+    "marketingName": "A Plus",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lenovo a1000": {
     "deviceName": "A1000",
     "marketingName": "A1000",
@@ -797,6 +811,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lenovo k80": {
+    "deviceName": "K80",
+    "marketingName": "K80",
+    "manufacturer": "Lenovo",
+    "brand": "Lenovo",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lenovo k80m": {
     "deviceName": "K80M",
     "marketingName": "K80M",
@@ -806,7 +834,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"

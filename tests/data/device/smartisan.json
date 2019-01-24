@@ -264,5 +264,43 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; OS105 Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.6 baiduboxapp/10.6.0.11 (Baidu; P1 7.1.1)"
+    },
+    "device": {
+      "deviceName": "OS105",
+      "marketingName": "Nut Pro 2",
+      "manufacturer": "Smartisan",
+      "brand": "Smartisan",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Baidu Box App",
+      "modus": null,
+      "version": "10.6.0.11",
+      "manufacturer": "Baidu",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "T7",
+      "version": "10.6.0",
+      "manufacturer": "Baidu"
+    }
   }
 ]

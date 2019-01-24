@@ -22,7 +22,7 @@ final class MobileDevice implements MobileDeviceInterface
      */
     public function isMobile(string $useragent): bool
     {
-        if (preg_match('/xbox|googletv|eeepc|smart-?tv|sonydtv|hbbtv|gxt_dongle_3188|apple tv|mxl661l32|nettv|crkey|lenovog780|windows iot|netcast|raspbian|bravia|tablet pc 2\.0|automobile|netgem/i', $useragent)) {
+        if (preg_match('/xbox|googletv|eeepc|smart-?tv|sonydtv|hbbtv|gxt_dongle_3188|apple tv|mxl661l32|nettv|crkey|lenovog780|windows iot|netcast|raspbian|bravia|tablet pc 2\.0|automobile|netgem|wordpress/i', $useragent)) {
             return false;
         }
 

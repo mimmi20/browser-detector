@@ -1120,6 +1120,18 @@
     },
     "engine": "webkit"
   },
+  "sogou-search": {
+    "name": "SogouSearch App",
+    "manufacturer": "Sogou",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SogouSearch Android(?:[\\d\\.]+) version"
+      ]
+    },
+    "engine": "blink"
+  },
   "sohunews app": {
     "name": "SohuNews App",
     "manufacturer": "Sohu",
