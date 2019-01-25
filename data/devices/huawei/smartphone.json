@@ -2449,6 +2449,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei dli-al10": {
+    "deviceName": "DLI-AL10",
+    "marketingName": "Honor 6A",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei dli-l22": {
     "deviceName": "DLI-L22",
     "marketingName": "Honor 6A",
@@ -2458,7 +2472,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2701,6 +2715,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei aum-l20": {
+    "deviceName": "AUM-L20",
+    "marketingName": "Honor 7A Pro (2018)",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei aum-l29": {
     "deviceName": "AUM-L29",
     "marketingName": "Honor 7A Pro (2018)",
@@ -2710,7 +2738,7 @@
       "width": 1440,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -3233,6 +3261,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei aum-al00": {
+    "deviceName": "AUM-AL00",
+    "marketingName": "Honor Changwan 7A",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei aum-al20": {
     "deviceName": "AUM-AL20",
     "marketingName": "Honor Changwan 7A",
@@ -3242,7 +3284,21 @@
       "width": 1440,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei aum-al29": {
+    "deviceName": "AUM-AL29",
+    "marketingName": "Honor Changwan 7A",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -3333,6 +3389,20 @@
   },
   "huawei knt-tl10": {
     "deviceName": "KNT-TL10",
+    "marketingName": "Honor V8",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei knt-ul10": {
+    "deviceName": "KNT-UL10",
     "marketingName": "Honor V8",
     "manufacturer": "Huawei",
     "brand": "Huawei",
@@ -3919,6 +3989,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei bll-l23": {
+    "deviceName": "BLL-L23",
+    "marketingName": "Mate 9 Lite",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei lon-l29": {
     "deviceName": "LON-L29",
     "marketingName": "Mate 9 Pro",
@@ -4110,7 +4194,21 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei caz-tl20": {
+    "deviceName": "CAZ-TL20",
+    "marketingName": "Nova",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4195,6 +4293,34 @@
       "height": 1080,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei hwi-al00": {
+    "deviceName": "HWI-AL00",
+    "marketingName": "Nova 2S",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei hwi-tl00": {
+    "deviceName": "HWI-TL00",
+    "marketingName": "Nova 2S",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -5511,6 +5637,34 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei cro-l22": {
+    "deviceName": "CRO-L22",
+    "marketingName": "Y3 (2017)",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei cro-lx2": {
+    "deviceName": "CRO-LX2",
+    "marketingName": "Y3 (2017)",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
