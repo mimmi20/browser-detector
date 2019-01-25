@@ -20304,7 +20304,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.25
       },
       "type": "smartphone"
     },
@@ -20335,14 +20335,14 @@
     },
     "device": {
       "deviceName": "SM-G7202",
-      "marketingName": "Galaxy Grand Max 3G",
+      "marketingName": "Galaxy Grand Max",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.25
       },
       "type": "smartphone"
     },
@@ -20373,14 +20373,14 @@
     },
     "device": {
       "deviceName": "SM-G720D",
-      "marketingName": "Galaxy Grand Max 3G",
+      "marketingName": "Galaxy Grand Max",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.25
       },
       "type": "smartphone"
     },
@@ -44944,6 +44944,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; zh-CN; SM-G7200 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.0.2.982 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G7200",
+      "marketingName": "Galaxy Grand Max",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.25
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.0.2.982",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
       "manufacturer": "Google",
       "bits": 32
     },
