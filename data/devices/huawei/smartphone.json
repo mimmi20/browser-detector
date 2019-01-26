@@ -2183,20 +2183,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei cam-tl00": {
-    "deviceName": "CAM-TL00",
-    "marketingName": "Honor 5A",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei lyo-l21": {
     "deviceName": "LYO-L21",
     "marketingName": "Honor 5A",
@@ -6154,7 +6140,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -6168,7 +6154,35 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei cam-l23": {
+    "deviceName": "CAM-L23",
+    "marketingName": "Y6 II",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei cam-tl00": {
+    "deviceName": "CAM-TL00",
+    "marketingName": "Y6 II",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
