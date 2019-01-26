@@ -2702,8 +2702,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; PMT3101_4G Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.81 Safari/537.36"
     },
     "device": {
-      "deviceName": "PMT3101_",
-      "marketingName": "PMT3101_",
+      "deviceName": "PMT3101_4G",
+      "marketingName": "PMT3101_4G",
       "manufacturer": "Prestigio",
       "brand": "Prestigio",
       "display": {
@@ -2726,6 +2726,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; PSP5506DUO Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "PSP5506DUO",
+      "marketingName": "Grace Q5",
+      "manufacturer": "Prestigio",
+      "brand": "Prestigio",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "59.0.3071.125",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },

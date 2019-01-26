@@ -1455,20 +1455,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei tag-al00": {
-    "deviceName": "TAG-AL00",
-    "marketingName": "Enjoy 5S",
-    "manufacturer": "Huawei",
-    "brand": "Huawei",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei dig-al00": {
     "deviceName": "DIG-AL00",
     "marketingName": "Enjoy 6S",
@@ -1595,16 +1581,16 @@
     "type": "smartphone",
     "platform": null
   },
-  "huawei vns-al00": {
-    "deviceName": "VNS-AL00",
-    "marketingName": "G9 Lite",
+  "huawei tag-al00": {
+    "deviceName": "TAG-AL00",
+    "marketingName": "GR3",
     "manufacturer": "Huawei",
     "brand": "Huawei",
     "display": {
-      "width": 1920,
-      "height": 1080,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1625,6 +1611,20 @@
   },
   "huawei tag-l21": {
     "deviceName": "TAG-L21",
+    "marketingName": "GR3",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei tag-l22": {
+    "deviceName": "TAG-L22",
     "marketingName": "GR3",
     "manufacturer": "Huawei",
     "brand": "Huawei",
@@ -5235,6 +5235,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei vns-al00": {
+    "deviceName": "VNS-AL00",
+    "marketingName": "P9 Lite",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei vns-dl00": {
     "deviceName": "VNS-DL00",
     "marketingName": "P9 Lite",
@@ -5244,7 +5258,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -5258,7 +5272,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -5272,7 +5286,21 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei vns-l23": {
+    "deviceName": "VNS-L23",
+    "marketingName": "P9 Lite",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -5286,7 +5314,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
