@@ -1413,6 +1413,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-g313mu": {
+    "deviceName": "SM-G313MU",
+    "marketingName": "Galaxy Ace 4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-g357fz": {
     "deviceName": "SM-G357FZ",
     "marketingName": "Galaxy Ace 4",
@@ -1422,7 +1436,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -3891,20 +3905,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung sm-j727t1": {
-    "deviceName": "SM-J727T1",
-    "marketingName": "Galaxy J3 V (2017)",
-    "manufacturer": "Samsung",
-    "brand": "Samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "samsung sm-j415fn": {
     "deviceName": "SM-J415FN",
     "marketingName": "Galaxy J4+",
@@ -4439,6 +4439,34 @@
   },
   "samsung sm-j727p": {
     "deviceName": "SM-J727P",
+    "marketingName": "Galaxy J7 (2017)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-j727t": {
+    "deviceName": "SM-J727T",
+    "marketingName": "Galaxy J7 (2017)",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-j727t1": {
+    "deviceName": "SM-J727T1",
     "marketingName": "Galaxy J7 (2017)",
     "manufacturer": "Samsung",
     "brand": "Samsung",
@@ -11923,6 +11951,48 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "tizen"
+  },
+  "samsung sm-z200f": {
+    "deviceName": "SM-Z200F",
+    "marketingName": "Z2",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "tizen"
+  },
+  "samsung sm-z400f": {
+    "deviceName": "SM-Z400F",
+    "marketingName": "Z4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "tizen"
+  },
+  "samsung sm-z400y": {
+    "deviceName": "SM-Z400Y",
+    "marketingName": "Z4",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "tizen"

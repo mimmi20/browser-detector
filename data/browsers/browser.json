@@ -1971,6 +1971,18 @@
     },
     "engine": "webkit"
   },
+  "mz browser": {
+    "name": "Mz Browser",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MZBrowser"
+      ]
+    },
+    "engine": null
+  },
   "netscape navigator": {
     "name": "Navigator",
     "manufacturer": "Netscape",
