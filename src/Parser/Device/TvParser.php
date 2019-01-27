@@ -12,10 +12,9 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 
-final class TvParser implements DeviceParserInterface
+final class TvParser implements TvParserInterface
 {
     /**
      * @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface

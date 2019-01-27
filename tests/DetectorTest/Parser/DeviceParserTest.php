@@ -16,8 +16,11 @@ use BrowserDetector\Helper\MobileDeviceInterface;
 use BrowserDetector\Helper\TvInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
+use BrowserDetector\Parser\Device\DarwinParserInterface;
+use BrowserDetector\Parser\Device\DesktopParserInterface;
+use BrowserDetector\Parser\Device\MobileParserInterface;
+use BrowserDetector\Parser\Device\TvParserInterface;
 use BrowserDetector\Parser\DeviceParser;
-use BrowserDetector\Parser\DeviceParserInterface;
 use PHPUnit\Framework\TestCase;
 
 class DeviceParserTest extends TestCase
@@ -32,28 +35,28 @@ class DeviceParserTest extends TestCase
         $useragent  = '<device-test>';
         $testResult = ['test-result'];
 
-        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $darwinParser = $this->getMockBuilder(DarwinParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $darwinParser
             ->expects(self::never())
             ->method('parse');
 
-        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $mobileParser = $this->getMockBuilder(MobileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mobileParser
             ->expects(self::never())
             ->method('parse');
 
-        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $tvParser = $this->getMockBuilder(TvParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $tvParser
             ->expects(self::never())
             ->method('parse');
 
-        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $desktopParser = $this->getMockBuilder(DesktopParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $desktopParser
@@ -99,10 +102,10 @@ class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
         /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
         /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
@@ -123,28 +126,28 @@ class DeviceParserTest extends TestCase
         $useragent  = 'Mozilla/5.0 (compatible; Zollard; Linux)';
         $testResult = ['test-result'];
 
-        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $darwinParser = $this->getMockBuilder(DarwinParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $darwinParser
             ->expects(self::never())
             ->method('parse');
 
-        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $mobileParser = $this->getMockBuilder(MobileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mobileParser
             ->expects(self::never())
             ->method('parse');
 
-        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $tvParser = $this->getMockBuilder(TvParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $tvParser
             ->expects(self::never())
             ->method('parse');
 
-        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $desktopParser = $this->getMockBuilder(DesktopParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $desktopParser
@@ -190,10 +193,10 @@ class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
         /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
         /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
@@ -212,7 +215,7 @@ class DeviceParserTest extends TestCase
         $useragent  = 'test-darwin';
         $testResult = ['test-result'];
 
-        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $darwinParser = $this->getMockBuilder(DarwinParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $darwinParser
@@ -221,21 +224,21 @@ class DeviceParserTest extends TestCase
             ->with($useragent)
             ->willReturn($testResult);
 
-        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $mobileParser = $this->getMockBuilder(MobileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mobileParser
             ->expects(self::never())
             ->method('parse');
 
-        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $tvParser = $this->getMockBuilder(TvParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $tvParser
             ->expects(self::never())
             ->method('parse');
 
-        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $desktopParser = $this->getMockBuilder(DesktopParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $desktopParser
@@ -277,10 +280,10 @@ class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
         /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
         /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
@@ -299,14 +302,14 @@ class DeviceParserTest extends TestCase
         $useragent  = 'test-device';
         $testResult = ['test-result'];
 
-        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $darwinParser = $this->getMockBuilder(DarwinParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $darwinParser
             ->expects(self::never())
             ->method('parse');
 
-        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $mobileParser = $this->getMockBuilder(MobileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mobileParser
@@ -315,14 +318,14 @@ class DeviceParserTest extends TestCase
             ->with($useragent)
             ->willReturn($testResult);
 
-        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $tvParser = $this->getMockBuilder(TvParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $tvParser
             ->expects(self::never())
             ->method('parse');
 
-        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $desktopParser = $this->getMockBuilder(DesktopParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $desktopParser
@@ -365,10 +368,10 @@ class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
         /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
         /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
@@ -387,21 +390,21 @@ class DeviceParserTest extends TestCase
         $useragent  = 'test-device';
         $testResult = ['test-result'];
 
-        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $darwinParser = $this->getMockBuilder(DarwinParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $darwinParser
             ->expects(self::never())
             ->method('parse');
 
-        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $mobileParser = $this->getMockBuilder(MobileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mobileParser
             ->expects(self::never())
             ->method('parse');
 
-        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $tvParser = $this->getMockBuilder(TvParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $tvParser
@@ -410,7 +413,7 @@ class DeviceParserTest extends TestCase
             ->with($useragent)
             ->willReturn($testResult);
 
-        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $desktopParser = $this->getMockBuilder(DesktopParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $desktopParser
@@ -454,10 +457,10 @@ class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
         /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
         /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
@@ -476,28 +479,28 @@ class DeviceParserTest extends TestCase
         $useragent  = 'test-device';
         $testResult = ['test-result'];
 
-        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $darwinParser = $this->getMockBuilder(DarwinParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $darwinParser
             ->expects(self::never())
             ->method('parse');
 
-        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $mobileParser = $this->getMockBuilder(MobileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mobileParser
             ->expects(self::never())
             ->method('parse');
 
-        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $tvParser = $this->getMockBuilder(TvParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $tvParser
             ->expects(self::never())
             ->method('parse');
 
-        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $desktopParser = $this->getMockBuilder(DesktopParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $desktopParser
@@ -544,10 +547,10 @@ class DeviceParserTest extends TestCase
             ->method('isDesktopDevice')
             ->willReturn(true);
 
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
         /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
         /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
@@ -568,28 +571,28 @@ class DeviceParserTest extends TestCase
         $useragent  = 'test-device';
         $testResult = ['test-result'];
 
-        $darwinParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $darwinParser = $this->getMockBuilder(DarwinParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $darwinParser
             ->expects(self::never())
             ->method('parse');
 
-        $mobileParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $mobileParser = $this->getMockBuilder(MobileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $mobileParser
             ->expects(self::never())
             ->method('parse');
 
-        $tvParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $tvParser = $this->getMockBuilder(TvParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $tvParser
             ->expects(self::never())
             ->method('parse');
 
-        $desktopParser = $this->getMockBuilder(DeviceParserInterface::class)
+        $desktopParser = $this->getMockBuilder(DesktopParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $desktopParser
@@ -638,10 +641,10 @@ class DeviceParserTest extends TestCase
             ->method('isDesktopDevice')
             ->willReturn(false);
 
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\DeviceParserInterface $desktopParser */
+        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
+        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
+        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
+        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
         /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
         /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
         /** @var \BrowserDetector\Helper\TvInterface $tvDevice */

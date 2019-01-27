@@ -12,10 +12,9 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 
-final class DesktopParser implements DeviceParserInterface
+final class DesktopParser implements DesktopParserInterface
 {
     /**
      * @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface

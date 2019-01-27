@@ -15,26 +15,30 @@ use BrowserDetector\Helper\DesktopInterface;
 use BrowserDetector\Helper\MobileDeviceInterface;
 use BrowserDetector\Helper\TvInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
+use BrowserDetector\Parser\Device\DarwinParserInterface;
+use BrowserDetector\Parser\Device\DesktopParserInterface;
+use BrowserDetector\Parser\Device\MobileParserInterface;
+use BrowserDetector\Parser\Device\TvParserInterface;
 
 final class DeviceParser implements DeviceParserInterface
 {
     /**
-     * @var \BrowserDetector\Parser\DeviceParserInterface
+     * @var \BrowserDetector\Parser\Device\DarwinParserInterface
      */
     private $darwinParser;
 
     /**
-     * @var \BrowserDetector\Parser\DeviceParserInterface
+     * @var \BrowserDetector\Parser\Device\MobileParserInterface
      */
     private $mobileParser;
 
     /**
-     * @var \BrowserDetector\Parser\DeviceParserInterface
+     * @var \BrowserDetector\Parser\Device\TvParserInterface
      */
     private $tvParser;
 
     /**
-     * @var \BrowserDetector\Parser\DeviceParserInterface
+     * @var \BrowserDetector\Parser\Device\DesktopParserInterface
      */
     private $desktopParser;
 
@@ -59,20 +63,20 @@ final class DeviceParser implements DeviceParserInterface
     /**
      * DeviceParser constructor.
      *
-     * @param \BrowserDetector\Parser\DeviceParserInterface        $darwinParser
-     * @param \BrowserDetector\Parser\DeviceParserInterface        $mobileParser
-     * @param \BrowserDetector\Parser\DeviceParserInterface        $tvParser
-     * @param \BrowserDetector\Parser\DeviceParserInterface        $desktopParser
-     * @param \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory
-     * @param \BrowserDetector\Helper\MobileDeviceInterface        $mobileDevice
-     * @param \BrowserDetector\Helper\TvInterface                  $tvDevice
-     * @param \BrowserDetector\Helper\DesktopInterface             $desktopDevice
+     * @param \BrowserDetector\Parser\Device\DarwinParserInterface  $darwinParser
+     * @param \BrowserDetector\Parser\Device\MobileParserInterface  $mobileParser
+     * @param \BrowserDetector\Parser\Device\TvParserInterface      $tvParser
+     * @param \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser
+     * @param \BrowserDetector\Loader\DeviceLoaderFactoryInterface  $loaderFactory
+     * @param \BrowserDetector\Helper\MobileDeviceInterface         $mobileDevice
+     * @param \BrowserDetector\Helper\TvInterface                   $tvDevice
+     * @param \BrowserDetector\Helper\DesktopInterface              $desktopDevice
      */
     public function __construct(
-        DeviceParserInterface $darwinParser,
-        DeviceParserInterface $mobileParser,
-        DeviceParserInterface $tvParser,
-        DeviceParserInterface $desktopParser,
+        DarwinParserInterface $darwinParser,
+        MobileParserInterface $mobileParser,
+        TvParserInterface $tvParser,
+        DesktopParserInterface $desktopParser,
         DeviceLoaderFactoryInterface $loaderFactory,
         MobileDeviceInterface $mobileDevice,
         TvInterface $tvDevice,
@@ -106,27 +110,19 @@ final class DeviceParser implements DeviceParserInterface
         if (!preg_match('/freebsd|raspbian/i', $useragent)
             && preg_match('/darwin|cfnetwork/i', $useragent)
         ) {
-            $factory = $this->darwinParser;
-
-            return $factory->parse($useragent);
+            return $this->darwinParser->parse($useragent);
         }
 
         if ($this->mobileDevice->isMobile($useragent)) {
-            $factory = $this->mobileParser;
-
-            return $factory->parse($useragent);
+            return $this->mobileParser->parse($useragent);
         }
 
         if ($this->tvDevice->isTvDevice($useragent)) {
-            $factory = $this->tvParser;
-
-            return $factory->parse($useragent);
+            return $this->tvParser->parse($useragent);
         }
 
         if ($this->desktopDevice->isDesktopDevice($useragent)) {
-            $factory = $this->desktopParser;
-
-            return $factory->parse($useragent);
+            return $this->desktopParser->parse($useragent);
         }
 
         return $this->load('unknown', 'unknown', $useragent);
