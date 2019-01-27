@@ -118,8 +118,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; General Mobile 4G Dual Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": " Dual",
-      "marketingName": " Dual",
+      "deviceName": "4G Dual",
+      "marketingName": "4G Dual",
       "manufacturer": "General Mobile",
       "brand": "General Mobile",
       "display": {
@@ -294,6 +294,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; General Mobile 4G Build/LUZ59K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "4G",
+      "marketingName": "4G",
+      "manufacturer": "General Mobile",
+      "brand": "General Mobile",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },

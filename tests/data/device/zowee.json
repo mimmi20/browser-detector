@@ -1,63 +1,25 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; iQ1055 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; M1092R Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "iQ1055",
-      "marketingName": "iQTalk Color",
-      "manufacturer": "MLS",
-      "brand": "MLS",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; IQ1010 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "iQ1010",
-      "marketingName": "iQTab 10 3G",
-      "manufacturer": "MLS",
-      "brand": "MLS",
+      "deviceName": "M1092R",
+      "marketingName": "M1092R",
+      "manufacturer": "Zowee",
+      "brand": "Zowee",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
-      "type": "fone-pad"
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "69.0.3497.100",
+      "version": "68.0.3440.91",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -65,7 +27,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.2",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },
@@ -77,25 +39,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; iQ1818 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; M1092R-1 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "iQ1818",
-      "marketingName": "iQ1818",
-      "manufacturer": "MLS",
-      "brand": "MLS",
+      "deviceName": "M1092R-1",
+      "marketingName": "M1092R-1",
+      "manufacturer": "Zowee",
+      "brand": "Zowee",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 10
       },
-      "type": "smartphone"
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "67.0.3396.87",
+      "version": "68.0.3440.91",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -103,7 +65,45 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.0",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; M1092R-2 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "M1092R-2",
+      "marketingName": "M1092R-2",
+      "manufacturer": "Zowee",
+      "brand": "Zowee",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },
