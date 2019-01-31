@@ -832,6 +832,19 @@
     },
     "engine": null
   },
+  "onesafe": {
+    "name": "oneSafe",
+    "manufacturer": "Lunabee",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "onesafe%20iOS%20",
+        "onesafe%20iOS"
+      ]
+    },
+    "engine": "webkit"
+  },
   "openoffice": {
     "name": "OpenOffice",
     "manufacturer": "Apache",
