@@ -1,4 +1,13 @@
 {
+  "unknown": {
+    "name": null,
+    "marketingName": null,
+    "manufacturer": "Unknown",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
   "aix": {
     "name": "AIX",
     "marketingName": "AIX",
@@ -281,6 +290,17 @@
       ]
     }
   },
+  "kaios": {
+    "name": "KaiOS",
+    "marketingName": "KaiOS",
+    "manufacturer": "KaiOS",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "KaiOS"
+      ]
+    }
+  },
   "kantonix": {
     "name": "Kantonix",
     "marketingName": "Kantonix",
@@ -299,29 +319,6 @@
       "search": [
         "Kubuntu",
         "kubuntu"
-      ]
-    }
-  },
-  "xubuntu": {
-    "name": "Xubuntu",
-    "marketingName": "Xubuntu",
-    "manufacturer": "Canonical",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Xubuntu",
-        "xubuntu"
-      ]
-    }
-  },
-  "lg webos": {
-    "name": "webOS",
-    "marketingName": "webOS",
-    "manufacturer": "Lg",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Web0S"
       ]
     }
   },
@@ -357,17 +354,6 @@
       ]
     }
   },
-  "linux smartphone os (maemo)": {
-    "name": "Maemo",
-    "marketingName": "Maemo",
-    "manufacturer": "LinuxFoundation",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Maemo"
-      ]
-    }
-  },
   "mac os x": {
     "name": "Mac OS X",
     "marketingName": "Mac OS X",
@@ -385,6 +371,17 @@
       "class": "VersionFactory",
       "search": [
         "Macintosh"
+      ]
+    }
+  },
+  "linux smartphone os (maemo)": {
+    "name": "Maemo",
+    "marketingName": "Maemo",
+    "manufacturer": "LinuxFoundation",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Maemo"
       ]
     }
   },
@@ -768,15 +765,6 @@
       ]
     }
   },
-  "unknown": {
-    "name": null,
-    "marketingName": null,
-    "manufacturer": "Unknown",
-    "version": {
-      "class": null,
-      "search": null
-    }
-  },
   "ventana linux": {
     "name": "Ventana Linux",
     "marketingName": "Ventana Linux",
@@ -796,6 +784,17 @@
     "version": {
       "class": "\\BrowserDetector\\Version\\Ios",
       "search": null
+    }
+  },
+  "lg webos": {
+    "name": "webOS",
+    "marketingName": "webOS",
+    "manufacturer": "Lg",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Web0S"
+      ]
     }
   },
   "webos": {
@@ -1068,29 +1067,9 @@
       "value": 6.2
     }
   },
-  "windows nt 6.2; arm": {
-    "name": "Windows RT 6.2",
-    "marketingName": "Windows RT 8",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 6.2
-    }
-  },
   "windows nt 6.3": {
     "name": "Windows NT 6.3",
     "marketingName": "Windows 8.1",
-    "manufacturer": "Microsoft",
-    "version": {
-      "class": null,
-      "search": null,
-      "value": 6.3
-    }
-  },
-  "windows nt 6.3; arm": {
-    "name": "Windows RT 6.3",
-    "marketingName": "Windows RT 8.1",
     "manufacturer": "Microsoft",
     "version": {
       "class": null,
@@ -1117,6 +1096,26 @@
       "search": null
     }
   },
+  "windows nt 6.2; arm": {
+    "name": "Windows RT 6.2",
+    "marketingName": "Windows RT 8",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 6.2
+    }
+  },
+  "windows nt 6.3; arm": {
+    "name": "Windows RT 6.3",
+    "marketingName": "Windows RT 8.1",
+    "manufacturer": "Microsoft",
+    "version": {
+      "class": null,
+      "search": null,
+      "value": 6.3
+    }
+  },
   "wyderos": {
     "name": "WyderOS",
     "marketingName": "WyderOS",
@@ -1125,6 +1124,18 @@
       "class": "VersionFactory",
       "search": [
         "WyderOS"
+      ]
+    }
+  },
+  "xubuntu": {
+    "name": "Xubuntu",
+    "marketingName": "Xubuntu",
+    "manufacturer": "Canonical",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Xubuntu",
+        "xubuntu"
       ]
     }
   },

@@ -16,7 +16,7 @@
           }
         ]
       },
-      "marketingName": {
+      "brandname": {
         "anyOf": [
           {
             "type": "string"
@@ -25,23 +25,11 @@
             "type": "null"
           }
         ]
-      },
-      "version": {
-        "type": "string"
-      },
-      "manufacturer": {
-        "type": "string"
-      },
-      "bits": {
-        "type": "integer"
       }
     },
     "required": [
       "name",
-      "marketingName",
-      "version",
-      "manufacturer",
-      "bits"
+      "brandname"
     ]
   }
 }
