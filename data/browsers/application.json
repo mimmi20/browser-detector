@@ -762,12 +762,20 @@
     "manufacturer": "Apple",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "com\\.apple\\.Notes\\.SharingExtension"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "webkit"
+  },
+  "notizen": {
+    "name": "Notizen App",
+    "manufacturer": "Unknown",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   },
   "office": {
     "name": "Office",
@@ -1008,6 +1016,16 @@
       "search": [
         "Rocky ChatWork Mobile"
       ]
+    },
+    "engine": "webkit"
+  },
+  "apple safari fetcher daemon": {
+    "name": "Safari Fetcher Daemon",
+    "manufacturer": "Apple",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "webkit"
   },
@@ -1296,6 +1314,16 @@
     },
     "engine": "webkit"
   },
+  "apple webkit service": {
+    "name": "Webkit Service",
+    "manufacturer": "Apple",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
   "webthumb": {
     "name": "WebThumb",
     "manufacturer": "Boutell",
@@ -1475,6 +1503,16 @@
       "search": [
         "YandexSearch"
       ]
+    },
+    "engine": null
+  },
+  "zdownload pro": {
+    "name": "zDownload Pro",
+    "manufacturer": "Unknown",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": null
   }

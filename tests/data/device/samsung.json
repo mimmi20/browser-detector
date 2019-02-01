@@ -19689,7 +19689,7 @@
     },
     "device": {
       "deviceName": "SM-J3109",
-      "marketingName": "Galaxy J3  Duos",
+      "marketingName": "Galaxy J3 Duos",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
@@ -29348,7 +29348,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -30260,7 +30260,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30298,7 +30298,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30336,7 +30336,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30374,7 +30374,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30412,7 +30412,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30450,7 +30450,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30488,7 +30488,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30526,7 +30526,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30564,7 +30564,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30602,7 +30602,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30640,7 +30640,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30678,7 +30678,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -30716,7 +30716,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.2
       },
       "type": "smartphone"
     },
@@ -44579,7 +44579,7 @@
     },
     "device": {
       "deviceName": "SM-J327VPP",
-      "marketingName": "Galaxy J3 V (2017)",
+      "marketingName": "Galaxy J3 (2017)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
@@ -44845,7 +44845,7 @@
     },
     "device": {
       "deviceName": "SM-J327A",
-      "marketingName": "Galaxy J3",
+      "marketingName": "Galaxy J3 (2017)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
@@ -45430,6 +45430,196 @@
       "name": "Chrome",
       "modus": null,
       "version": "71.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J327V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.46 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J327V",
+      "marketingName": "Galaxy J3 (2017)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.46",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G5500 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/9.3 baiduboxapp/9.3.5.11 (Baidu; P1 5.1.1)"
+    },
+    "device": {
+      "deviceName": "SM-G5500",
+      "marketingName": "Galaxy On5",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Baidu Box App",
+      "modus": null,
+      "version": "9.3.5.11",
+      "manufacturer": "Baidu",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "T7",
+      "version": "9.3.0",
+      "manufacturer": "Baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G955N Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G955N",
+      "marketingName": "Galaxy S8 Plus",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.70",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G5520 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G5520",
+      "marketingName": "Galaxy On5 (2016)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-J400F Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J400F",
+      "marketingName": "Galaxy J4 (2018)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "64.0.3282.137",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"

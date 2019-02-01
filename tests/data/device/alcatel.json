@@ -17478,5 +17478,44 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; ALCATEL4044C; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0",
+      "x-wap-profile": "http://www-ccpp.tcl-ta.com/files/4044C.xml"
+    },
+    "device": {
+      "deviceName": "4044C",
+      "marketingName": "Quick Flip",
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Apple",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "KaiOS",
+      "marketingName": "KaiOS",
+      "version": "1.0.0",
+      "manufacturer": "KaiOS",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
