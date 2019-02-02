@@ -650,8 +650,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; M_bot_tab_71 Build/NHG47K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
     },
     "device": {
-      "deviceName": "M bot tab 71",
-      "marketingName": "M bot tab 71",
+      "deviceName": "M Bot Tab 71",
+      "marketingName": "M Bot Tab 71",
       "manufacturer": "Logicom",
       "brand": "Logicom",
       "display": {
@@ -674,6 +674,82 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; M_bot_tab_1150 Build/N9F27F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "M Bot Tab 1150",
+      "marketingName": "M Bot Tab 1150",
+      "manufacturer": "Logicom",
+      "brand": "Logicom",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 11.5
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; M bot 60 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "M Bot 60",
+      "marketingName": "M Bot 60",
+      "manufacturer": "Logicom",
+      "brand": "Logicom",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
       "manufacturer": "Google",
       "bits": 32
     },

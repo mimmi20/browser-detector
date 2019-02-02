@@ -6,19 +6,20 @@
     "/ s1 /i": "qmobile s1",
     "/ e1 /i": "qmobile e1",
     "/ i7 /i": "qmobile i7",
-    "/a300/i": "qmobile a300",
-    "/a290/i": "qmobile a290",
-    "/ a65 /i": "qmobile a65",
+    "/m300[ )]/i": "qmobile m300",
+    "/a300[ )]/i": "qmobile a300",
+    "/a290[ )]/i": "qmobile a290",
+    "/ a65[ )]/i": "qmobile a65",
     "/[_ ]a30 ?/i": "qmobile a30",
     "/a11note/i": "qmobile a11",
-    "/ a10 /i": "qmobile a10",
+    "/ a10[ )]/i": "qmobile a10",
     "/a2_lite/i": "qmobile a2 lite",
     "/q-smart_s12/i": "qmobile q-smart s12",
     "/qtab q400/i": "qmobile qtab q400",
     "/qtab q50/i": "qmobile qtab q50",
-    "/ x900 /i": "qmobile x900",
-    "/ x60 /i": "qmobile x60",
-    "/ x25 /i": "qmobile x25"
+    "/ x900[ )]/i": "qmobile x900",
+    "/ x60[ )]/i": "qmobile x60",
+    "/ x25[ )]/i": "qmobile x25"
   },
   "generic": "general qmobile device"
 }
