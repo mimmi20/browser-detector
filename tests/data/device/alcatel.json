@@ -3394,7 +3394,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -4413,14 +4413,14 @@
     },
     "device": {
       "deviceName": "OT-4013M",
-      "marketingName": "OneTouch Pixi 3 (4)",
+      "marketingName": "OneTouch Pixi 3 4.0",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -6199,14 +6199,14 @@
     },
     "device": {
       "deviceName": "4013D",
-      "marketingName": "OneTouch Pixi 3 (4)",
+      "marketingName": "OneTouch Pixi 3 4.0",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -6472,7 +6472,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -7954,7 +7954,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -7992,7 +7992,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -8030,7 +8030,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -8068,7 +8068,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -13312,7 +13312,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -13350,7 +13350,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -13388,7 +13388,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -13426,7 +13426,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -13464,7 +13464,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -13692,7 +13692,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -13730,7 +13730,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -13768,7 +13768,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -13806,7 +13806,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -13844,7 +13844,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -13882,7 +13882,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -14604,7 +14604,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -17490,18 +17490,18 @@
       "manufacturer": "Alcatel",
       "brand": "Alcatel",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
         "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Mobile Safari UIWebView",
+      "name": "Firefox",
       "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "Apple",
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation",
       "bits": 32,
       "type": "browser"
     },
@@ -17513,9 +17513,275 @@
       "bits": 32
     },
     "engine": {
-      "name": "WebKit",
-      "version": "0.0.0",
-      "manufacturer": "Apple"
+      "name": "Gecko",
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 5017A Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5017A",
+      "marketingName": "OneTouch Pixi 3 4.5",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "43.0.2357.93",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; en-us; 4027X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "4027X",
+      "marketingName": "OneTouch Pixi 3 4.5",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 4003A Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "4003A",
+      "marketingName": "OneTouch Pixi 3 4.0",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.93",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 4013X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "4013X",
+      "marketingName": "OneTouch Pixi 3 4.0",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.93",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; ALCATEL4044V; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0"
+    },
+    "device": {
+      "deviceName": "4044V",
+      "marketingName": "Quick Flip",
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "KaiOS",
+      "marketingName": "KaiOS",
+      "version": "1.0.0",
+      "manufacturer": "KaiOS",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; ALCATEL4044O; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0"
+    },
+    "device": {
+      "deviceName": "4044O",
+      "marketingName": "Cingular Flip 2",
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "KaiOS",
+      "marketingName": "KaiOS",
+      "version": "1.0.0",
+      "manufacturer": "KaiOS",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; ALCATEL4044T; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0"
+    },
+    "device": {
+      "deviceName": "4044T",
+      "marketingName": "Go Flip",
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "KaiOS",
+      "marketingName": "KaiOS",
+      "version": "1.0.0",
+      "manufacturer": "KaiOS",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation"
     }
   }
 ]

@@ -12,7 +12,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -50,7 +50,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -88,7 +88,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
@@ -126,7 +126,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 10
       },
       "type": "fone-pad"
     },
@@ -164,7 +164,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 10
       },
       "type": "fone-pad"
     },
@@ -180,6 +180,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; CAPTIVA PAD 10.1 FHD LTE Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "PAD 10.1 FHD LTE",
+      "marketingName": "PAD 10.1 FHD LTE",
+      "manufacturer": "Captiva",
+      "brand": "Captiva",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },
