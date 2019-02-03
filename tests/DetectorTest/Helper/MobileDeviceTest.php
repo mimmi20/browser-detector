@@ -118,6 +118,7 @@ class MobileDeviceTest extends TestCase
             ['AppleCoreMedia/1.0.0.16R5303d (Apple Watch; U; CPU OS 5_0 like Mac OS X; en_au)'],
             ['AppleCoreMedia/1.0.0.16A303 (HomePod; U; CPU OS 12_0 like Mac OS X; en_us)'],
             ['YUANDA50_12864_11B_HW (MRE\\2.5.00(800) resolution\\320480 chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\reduced) C529AH_JY_539_W1.11B.V2.2 Release/2012.09.26 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/ Q03C1-2.40 fr-FR'],
+            ['Mozilla/5.0 (Linux; Android 7.1.2; H96 Max Build/NHG47K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36'],
         ];
     }
 

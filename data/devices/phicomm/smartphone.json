@@ -69,6 +69,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "phicomm energy": {
+    "deviceName": "Energy",
+    "marketingName": "Energy",
+    "manufacturer": "Phicomm",
+    "brand": "Phicomm",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "phicomm e670": {
     "deviceName": "E670",
     "marketingName": "Energy 2 (2017)",
@@ -78,7 +92,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -92,7 +106,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
