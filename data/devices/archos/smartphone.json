@@ -13,6 +13,20 @@
     "type": "smartphone",
     "platform": "windows phone"
   },
+  "archos 40 neon": {
+    "deviceName": "40 Neon",
+    "marketingName": "40 Neon",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "archos 40 titanium": {
     "deviceName": "40 Titanium",
     "marketingName": "40 Titanium",
@@ -51,6 +65,20 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "archos 40d titanium": {
+    "deviceName": "40d Titanium",
+    "marketingName": "40d Titanium",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -740,5 +768,19 @@
     },
     "type": "smartphone",
     "platform": "windows phone"
+  },
+  "archos sense 50 dc": {
+    "deviceName": "Sense 50 DC",
+    "marketingName": "Sense 50 DC",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }
