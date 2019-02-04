@@ -74,5 +74,81 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; PocketBook SURFpad 3 (7,85\\"
+    },
+    "device": {
+      "deviceName": "SurfPad 3 7.85",
+      "marketingName": "SurfPad 3 7.85",
+      "manufacturer": "PocketBook",
+      "brand": "PocketBook",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "0.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; PocketBook SURFpad 3 (10,1\\"
+    },
+    "device": {
+      "deviceName": "SurfPad 3 10.1",
+      "marketingName": "SurfPad 3 10.1",
+      "manufacturer": "PocketBook",
+      "brand": "PocketBook",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "0.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
   }
 ]

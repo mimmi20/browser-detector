@@ -153,6 +153,34 @@
     "type": "tablet",
     "platform": "android"
   },
+  "archos 101b xenon": {
+    "deviceName": "101b Xenon",
+    "marketingName": "101b Xenon",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "archos 101b xs2": {
+    "deviceName": "101b XS2",
+    "marketingName": "101b XS2",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "archos 101c neon": {
     "deviceName": "101c Neon",
     "marketingName": "101c Neon",
@@ -191,6 +219,20 @@
       "height": 600,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "archos 101e neon": {
+    "deviceName": "101e Neon",
+    "marketingName": "101e Neon",
+    "manufacturer": "Archos",
+    "brand": "Archos",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -777,20 +819,6 @@
     "display": {
       "width": 640,
       "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "archos 101b": {
-    "deviceName": "101B",
-    "marketingName": "Xenon",
-    "manufacturer": "Archos",
-    "brand": "Archos",
-    "display": {
-      "width": 1280,
-      "height": 800,
       "touch": true,
       "size": null
     },

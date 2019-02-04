@@ -160,6 +160,30 @@
     },
     "engine": "webkit"
   },
+  "podcastone": {
+    "name": "PodcastOne",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PodcastOne"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcastrepublic": {
+    "name": "PodcastRepublic",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PodcastRepublic"
+      ]
+    },
+    "engine": "webkit"
+  },
   "quicktime": {
     "name": "Quicktime",
     "manufacturer": "Apple",

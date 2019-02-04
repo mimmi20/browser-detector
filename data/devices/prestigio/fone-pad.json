@@ -71,7 +71,7 @@
   },
   "prestigio pmt7077_3g": {
     "deviceName": "PMT7077_3G",
-    "marketingName": "MultiPad 4 Diamond 7.85, 3G",
+    "marketingName": "MultiPad 4 Diamond 7.85 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
     "display": {
@@ -183,7 +183,7 @@
   },
   "prestigio pmt3287_3g": {
     "deviceName": "PMT3287_3G",
-    "marketingName": "MultiPad Ranger 8.0 3G Wifi",
+    "marketingName": "MultiPad Ranger 8.0 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
     "display": {
@@ -191,6 +191,20 @@
       "height": 768,
       "touch": true,
       "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "prestigio pmt5287_4g": {
+    "deviceName": "PMT5287_4G",
+    "marketingName": "MultiPad Ranger 8.0 4G",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"
@@ -211,7 +225,7 @@
   },
   "prestigio pmt3057_3g": {
     "deviceName": "PMT3057_3G",
-    "marketingName": "Multipad WIZE",
+    "marketingName": "Multipad Wize",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
     "display": {
@@ -237,9 +251,23 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "prestigio pmt3118_3g": {
+    "deviceName": "PMT3118_3G",
+    "marketingName": "MultiPad Wize 3108 3G",
+    "manufacturer": "Prestigio",
+    "brand": "Prestigio",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "prestigio pmt3767_3g": {
     "deviceName": "PMT3767_3G",
-    "marketingName": "MultiPad WIZE 3767 3G",
+    "marketingName": "MultiPad Wize 3767 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
     "display": {
@@ -268,20 +296,6 @@
   "prestigio pmt5001_3g": {
     "deviceName": "PMT5001_3G",
     "marketingName": "PMT5001_3G",
-    "manufacturer": "Prestigio",
-    "brand": "Prestigio",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
-  "prestigio pmt3118_3g": {
-    "deviceName": "PMT3118_3G",
-    "marketingName": "Wize 3108 3G",
     "manufacturer": "Prestigio",
     "brand": "Prestigio",
     "display": {
