@@ -499,7 +499,7 @@
     },
     "device": {
       "deviceName": "PMT7077_3G",
-      "marketingName": "MultiPad 4 Diamond 7.85, 3G",
+      "marketingName": "MultiPad 4 Diamond 7.85 3G",
       "manufacturer": "Prestigio",
       "brand": "Prestigio",
       "display": {
@@ -537,7 +537,7 @@
     },
     "device": {
       "deviceName": "PMT3287_3G",
-      "marketingName": "MultiPad Ranger 8.0 3G Wifi",
+      "marketingName": "MultiPad Ranger 8.0 3G",
       "manufacturer": "Prestigio",
       "brand": "Prestigio",
       "display": {
@@ -1943,7 +1943,7 @@
     },
     "device": {
       "deviceName": "PMT3118_3G",
-      "marketingName": "Wize 3108 3G",
+      "marketingName": "MultiPad Wize 3108 3G",
       "manufacturer": "Prestigio",
       "brand": "Prestigio",
       "display": {
@@ -1981,7 +1981,7 @@
     },
     "device": {
       "deviceName": "PMT3057_3G",
-      "marketingName": "Multipad WIZE",
+      "marketingName": "Multipad Wize",
       "manufacturer": "Prestigio",
       "brand": "Prestigio",
       "display": {
@@ -2019,7 +2019,7 @@
     },
     "device": {
       "deviceName": "PMT3767_3G",
-      "marketingName": "MultiPad WIZE 3767 3G",
+      "marketingName": "MultiPad Wize 3767 3G",
       "manufacturer": "Prestigio",
       "brand": "Prestigio",
       "display": {
@@ -2764,6 +2764,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; PMT5287_4G Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "PMT5287_4G",
+      "marketingName": "MultiPad Ranger 8.0 4G",
+      "manufacturer": "Prestigio",
+      "brand": "Prestigio",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
       "manufacturer": "Google",
       "bits": 32
     },
