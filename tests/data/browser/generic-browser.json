@@ -25762,5 +25762,43 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Podkicker/1.0.3 Android/4.0.4"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Podkicker",
+      "modus": null,
+      "version": "1.0.3",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

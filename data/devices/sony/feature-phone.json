@@ -167,6 +167,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k510c": {
+    "deviceName": "K510c",
+    "marketingName": "K510c",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.6
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k530i": {
+    "deviceName": "K530i",
+    "marketingName": "K530i",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k770i": {
     "deviceName": "K770i",
     "marketingName": "K770i",
@@ -642,6 +670,20 @@
     },
     "type": "feature-phone",
     "platform": "android"
+  },
+  "sonyericsson w800i": {
+    "deviceName": "W800i",
+    "marketingName": "W800i",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "sonyericsson w890c": {
     "deviceName": "W890c",
