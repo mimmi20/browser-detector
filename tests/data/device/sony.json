@@ -6477,12 +6477,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "SEMC-Browser",
       "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "version": "4.0.3",
+      "manufacturer": "SonyEricsson",
       "bits": 32,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -9061,12 +9061,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "SEMC-Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "manufacturer": "SonyEricsson",
       "bits": 32,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Symbian OS",
@@ -9099,12 +9099,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "SEMC-Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "manufacturer": "SonyEricsson",
       "bits": 32,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Symbian OS",
@@ -9137,12 +9137,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "SEMC-Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "manufacturer": "SonyEricsson",
       "bits": 32,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Symbian OS",
@@ -13069,6 +13069,196 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8341 Build/47.1.A.12.179) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36 EdgA/42.0.0.2033"
+    },
+    "device": {
+      "deviceName": "G8341",
+      "marketingName": "Xperia XZ1",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "42.0.0.2033",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonK510c/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "K510c",
+      "marketingName": "K510c",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.3.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonK530i/R6BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "K530i",
+      "marketingName": "K530i",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.3.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonW800i/R1BD001/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "W800i",
+      "marketingName": "W800i",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "SEMC-Browser",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "SonyEricsson",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; ja-jp; SonyEricssonS51SE Build/4.0.2.A.0.74) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 "
+    },
+    "device": {
+      "deviceName": "S51SE",
+      "marketingName": "Mini",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": false,
+        "size": 3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
     }
   }
 ]

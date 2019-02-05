@@ -184,6 +184,18 @@
     },
     "engine": "webkit"
   },
+  "podkicker": {
+    "name": "Podkicker",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Podkicker"
+      ]
+    },
+    "engine": "webkit"
+  },
   "quicktime": {
     "name": "Quicktime",
     "manufacturer": "Apple",

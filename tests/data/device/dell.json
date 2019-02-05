@@ -606,5 +606,43 @@
       "version": "5.0.0",
       "manufacturer": "Microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; xx; Dell V04B Build/GRJ90) AppleWebKit/530.17 (KHTML, like Gecko) FlyFlow/2.3 Version/4.0 Mobile Safari/530.17 baidubrowser/042_1.41.3.2_diordna_069_045/lleD_01_5.3.2_B40V-lleD/1000134f/0146F6A8AB026C4A2705693E9A014A"
+    },
+    "device": {
+      "deviceName": "V04B",
+      "marketingName": "Streak Pro 101DL",
+      "manufacturer": "Dell",
+      "brand": "Dell",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "FlyFlow",
+      "modus": null,
+      "version": "2.3.0",
+      "manufacturer": "Baidu",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.17.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
