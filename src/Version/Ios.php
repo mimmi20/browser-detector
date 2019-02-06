@@ -54,6 +54,8 @@ final class Ios implements VersionDetectorInterface
 
         if (false !== mb_stripos($useragent, 'darwin')) {
             $searches = [
+                '/darwin\/18\.2/i' => '12.2',
+                '/darwin\/18\.1/i' => '12.1',
                 '/darwin\/18/i' => '12.0',
                 '/darwin\/17\.7/i' => '11.4',
                 '/darwin\/17\.6/i' => '11.4',

@@ -103,6 +103,16 @@
     },
     "engine": "webkit"
   },
+  "german radio app": {
+    "name": "German Radio App",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "microsoft-iptv-client": {
     "name": "IPTV-Client",
     "manufacturer": "Microsoft",
@@ -228,16 +238,24 @@
     "manufacturer": "Unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Radio"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
   "radio arabella": {
     "name": "Radio Arabella App",
     "manufacturer": "Radio Arabella",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "radio power app": {
+    "name": "Radio Power App",
+    "manufacturer": "Unknown",
     "type": "multimedia-player",
     "version": {
       "class": null,
