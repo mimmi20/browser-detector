@@ -48,6 +48,8 @@ final class Macosx implements VersionDetectorInterface
 
         if (false !== mb_stripos($useragent, 'darwin')) {
             $searches = [
+                '/darwin\/18\.2/i' => '10.14.2',
+                '/darwin\/18\.1/i' => '10.14.1',
                 '/darwin\/18/i' => '10.14.0',
                 '/darwin\/17\.6/i' => '10.13.6',
                 '/darwin\/17\.5/i' => '10.13.5',
