@@ -1,0 +1,78 @@
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (PlayStation Vita 3.60) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2"
+    },
+    "device": {
+      "deviceName": "PlayStation Vita",
+      "marketingName": "PlayStation Vita",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": 960,
+        "height": 544,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "3.2.0",
+      "manufacturer": "Amazon",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.73.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (PSP (PlayStation Portable); 2.00)"
+    },
+    "device": {
+      "deviceName": "PlayStation Portable",
+      "marketingName": "PlayStation Portable",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": 480,
+        "height": 272,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "0.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
+  }
+]
