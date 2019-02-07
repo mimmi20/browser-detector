@@ -686,6 +686,18 @@
     },
     "engine": "unknown"
   },
+  "baidumobaider": {
+    "name": "BaiduMobaider",
+    "manufacturer": "Baidu",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BaiduMobaider"
+      ]
+    },
+    "engine": "unknown"
+  },
   "baiduspider": {
     "name": "BaiduSpider",
     "manufacturer": "Baidu",
