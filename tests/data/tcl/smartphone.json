@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fr-fr; Smartphone Android by SFR STARADDICT II Build/IceCreamSandwich) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "StarAddict 2",
+      "marketingName": "StarAddict 2",
+      "manufacturer": "Tcl",
+      "brand": "SFR",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.3; STARXTREM II Build/JLS36C)"
+    },
+    "device": {
+      "deviceName": "StarXtrem 2",
+      "marketingName": "StarXtrem 2",
+      "manufacturer": "Tcl",
+      "brand": "SFR",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; 5056X Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5056X",
+      "marketingName": "OneTouch Pop 4 Plus",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.158",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LIAuthLibrary:0.0.2 com.linkedin.android:3.4.2 TCL_ALCATEL ONE TOUCH 4037T:android_4.4.2"
     },
     "device": {
@@ -10797,14 +10911,14 @@
     },
     "device": {
       "deviceName": "5056A",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -10835,14 +10949,14 @@
     },
     "device": {
       "deviceName": "5056E",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -10873,14 +10987,14 @@
     },
     "device": {
       "deviceName": "5056M",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -10911,14 +11025,14 @@
     },
     "device": {
       "deviceName": "5056G",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -10949,14 +11063,14 @@
     },
     "device": {
       "deviceName": "5056U",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -10987,14 +11101,14 @@
     },
     "device": {
       "deviceName": "5056J",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -11025,14 +11139,14 @@
     },
     "device": {
       "deviceName": "5056I",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -11063,14 +11177,14 @@
     },
     "device": {
       "deviceName": "5056W",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -11101,14 +11215,14 @@
     },
     "device": {
       "deviceName": "5056T",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -14977,14 +15091,14 @@
     },
     "device": {
       "deviceName": "5056N",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -15167,14 +15281,14 @@
     },
     "device": {
       "deviceName": "5056D",
-      "marketingName": "Pop 4 Plus",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -15205,14 +15319,14 @@
     },
     "device": {
       "deviceName": "5056O",
-      "marketingName": "Allura",
+      "marketingName": "OneTouch Pop 4 Plus",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
