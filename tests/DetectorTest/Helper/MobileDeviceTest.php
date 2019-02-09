@@ -184,6 +184,9 @@ class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/8.0 Chrome/63.0.3239.111 Safari/537.36'],
             ['Mozilla/4.0 (compatible; MSIE 5.01; Windows 98; Linux 3.3.8-3.3) [Netgem; 7.7.01-51; i-Player; netbox; sezmi_totalgem]'],
             ['WordPress/4.9.5; http://www.smartphone-advertising.com'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MyIE2; Maxthon; SV1; .NET CLR 1.1.4322; Tablet PC 1.7; .NET CLR 1.0.3705)'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SS.CC. Palma)'],
         ];
     }
 }

@@ -1609,20 +1609,6 @@
     "type": "smartphone",
     "platform": null
   },
-  "htc htc6525lvw": {
-    "deviceName": "HTC6525LVW",
-    "marketingName": "One (M8)",
-    "manufacturer": "Htc",
-    "brand": "Htc",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
-  },
   "htc a9s": {
     "deviceName": "A9s",
     "marketingName": "One A9",
@@ -1763,6 +1749,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "htc htc6525lvw": {
+    "deviceName": "HTC6525LVW",
+    "marketingName": "One M8",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "htc m8": {
     "deviceName": "M8",
     "marketingName": "One M8",
@@ -1842,7 +1842,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": null
@@ -1856,7 +1856,21 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "htc htc6535lvw": {
+    "deviceName": "HTC6535LVW",
+    "marketingName": "One M9",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": null
@@ -1870,35 +1884,35 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
   },
   "htc m9u": {
     "deviceName": "M9u",
-    "marketingName": "One M9 Hima",
+    "marketingName": "One M9",
     "manufacturer": "Htc",
     "brand": "Htc",
     "display": {
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
   },
   "htc m9w": {
     "deviceName": "M9w",
-    "marketingName": "One M9 Hima",
+    "marketingName": "One M9",
     "manufacturer": "Htc",
     "brand": "Htc",
     "display": {
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
