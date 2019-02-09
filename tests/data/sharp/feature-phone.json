@@ -74,5 +74,43 @@
       "version": "0.0.0",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "SHARP-TQ-GX20/1.0 UP.Browser/6.2.0.1.185 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "TQ-GX20",
+      "marketingName": "TQ-GX20",
+      "manufacturer": "Sharp",
+      "brand": "Sharp",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0.1.185",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]

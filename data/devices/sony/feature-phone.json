@@ -53,7 +53,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson j10i2": {
     "deviceName": "J10i2",
@@ -81,7 +81,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "symbian"
   },
   "sonyericsson g700c": {
     "deviceName": "G700c",
@@ -95,7 +95,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson j20i": {
     "deviceName": "J20i",
@@ -123,7 +123,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson j300c": {
     "deviceName": "J300c",
@@ -137,7 +137,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson j300i": {
     "deviceName": "J300i",
@@ -151,7 +151,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson f100i": {
     "deviceName": "F100i",
@@ -291,7 +291,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson k810i": {
     "deviceName": "K810i",
@@ -305,7 +305,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson wt13i": {
     "deviceName": "WT13i",
@@ -334,6 +334,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "sonyericsson p900": {
+    "deviceName": "P900",
+    "marketingName": "P900",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 320,
+      "height": 208,
+      "touch": false,
+      "size": 2.9
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   },
   "sonyericsson p910a": {
     "deviceName": "P910a",
@@ -403,7 +417,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson s500i": {
     "deviceName": "S500i",
@@ -417,7 +431,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson u1": {
     "deviceName": "U1",
@@ -445,7 +459,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w100i": {
     "deviceName": "W100i",
@@ -455,6 +469,34 @@
     "display": {
       "width": 320,
       "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson t300": {
+    "deviceName": "T300",
+    "marketingName": "T300",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 101,
+      "height": 80,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson t306": {
+    "deviceName": "T306",
+    "marketingName": "T306",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 101,
+      "height": 80,
       "touch": false,
       "size": null
     },
@@ -501,7 +543,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w200c": {
     "deviceName": "W200c",
@@ -515,7 +557,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w200i": {
     "deviceName": "W200i",
@@ -529,7 +571,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w508a": {
     "deviceName": "W508a",
@@ -585,7 +627,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w595a": {
     "deviceName": "W595a",
@@ -599,7 +641,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w595c": {
     "deviceName": "W595c",
@@ -613,7 +655,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w705a": {
     "deviceName": "W705a",
@@ -641,7 +683,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w760c": {
     "deviceName": "W760c",
@@ -655,7 +697,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w760i": {
     "deviceName": "W760i",
@@ -669,7 +711,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w800i": {
     "deviceName": "W800i",
@@ -697,7 +739,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w890i": {
     "deviceName": "W890i",
@@ -711,7 +753,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w910i": {
     "deviceName": "W910i",
@@ -795,7 +837,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w150a": {
     "deviceName": "W150a",
@@ -809,7 +851,7 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   },
   "sonyericsson w20": {
     "deviceName": "W20",
@@ -837,6 +879,6 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   }
 }

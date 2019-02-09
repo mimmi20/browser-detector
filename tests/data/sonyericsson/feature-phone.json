@@ -405,10 +405,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -443,10 +443,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -481,10 +481,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -519,10 +519,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -557,10 +557,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -595,10 +595,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -633,10 +633,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -671,10 +671,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -709,10 +709,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -747,10 +747,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -785,10 +785,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -823,10 +823,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -861,10 +861,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -975,10 +975,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SymbianFoundation",
       "bits": 32
     },
     "engine": {
@@ -1625,6 +1625,120 @@
       "marketingName": "JavaOS",
       "version": "0.0.0",
       "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonT306/R101 UP.Link/1.1 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "T306",
+      "marketingName": "T306",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 101,
+        "height": 80,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonT300/R101 UP.Link/1.1 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "T300",
+      "marketingName": "T300",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 101,
+        "height": 80,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonP900/ UP.Link/5.1.2.5"
+    },
+    "device": {
+      "deviceName": "P900",
+      "marketingName": "P900",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 320,
+        "height": 208,
+        "touch": false,
+        "size": 2.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
       "bits": 32
     },
     "engine": {
