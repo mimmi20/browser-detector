@@ -264,5 +264,43 @@
       "version": "0.0.0",
       "manufacturer": "Access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 FAKE (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+    },
+    "device": {
+      "deviceName": "SCP-5500",
+      "marketingName": "SCP-5500",
+      "manufacturer": "Sanyo",
+      "brand": "Sanyo",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Bot",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
   }
 ]
