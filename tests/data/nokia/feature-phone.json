@@ -853,12 +853,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Google Bot",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Nokia",
+      "manufacturer": "Google",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": "Symbian OS",
@@ -1531,7 +1531,7 @@
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone"
@@ -2253,7 +2253,7 @@
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone"
@@ -3285,12 +3285,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Google Wap Proxy",
       "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "Nokia",
+      "version": "1.0.0",
+      "manufacturer": "Google",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": "Symbian OS",
@@ -5825,7 +5825,7 @@
       "display": {
         "width": 128,
         "height": 128,
-        "touch": true,
+        "touch": false,
         "size": 1.56
       },
       "type": "feature-phone"
@@ -5887,6 +5887,462 @@
       "name": "Gecko",
       "version": "0.0.0",
       "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Nokia 6600;451) Opera 6.20  [en]"
+    },
+    "device": {
+      "deviceName": "6600",
+      "marketingName": "6600",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.20.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Nokia 7650;424) Opera 6.10  [de]"
+    },
+    "device": {
+      "deviceName": "7650",
+      "marketingName": "7650",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.10.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia7250/1.0 (3.12) Profile/MIDP-1.0 Configuration/CLDC-1.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "7250",
+      "marketingName": "7250",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6800"
+    },
+    "device": {
+      "deviceName": "6800",
+      "marketingName": "6800",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Nokia",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6100/1.0 (05.16) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/mainline (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "6100",
+      "marketingName": "6100",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6010/1.0 (8.18) Profile/MIDP-1.0 Configuration/CLDC-1.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "6010",
+      "marketingName": "6010",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 96,
+        "height": 65,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia3650/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/5.1.2.7 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "3650",
+      "marketingName": "3650",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia3510i/1.0 (04.44) Profile/MIDP-1.0 Configuration/CLDC-1.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "3510i",
+      "marketingName": "3510i",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 96,
+        "height": 65,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia3410"
+    },
+    "device": {
+      "deviceName": "3410",
+      "marketingName": "3410",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 96,
+        "height": 65,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Nokia",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia3315"
+    },
+    "device": {
+      "deviceName": "3315",
+      "marketingName": "3315",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 96,
+        "height": 65,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Nokia",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia3220/2.0 (03.30) Profile/MIDP-2.0 Configuration/CLDC-1.1 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "3220",
+      "marketingName": "3220",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia3200/1.0 () Profile/MIDP-1.0 Configuration/CLDC-1.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "3200",
+      "marketingName": "3200",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.56
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
     }
   }
 ]

@@ -1,10 +1,11 @@
 {
   "rules": {
-    "/scp6780/i": "sanyo scp6780",
-    "/scp6760/i": "sanyo scp6760",
-    "/scp-6750/i": "sanyo scp6750",
-    "/scp588cn/i": "sanyo scp588cn",
-    "/scp3810/i": "sanyo scp3810",
+    "/scp-?6780/i": "sanyo scp-6780",
+    "/scp-?6760/i": "sanyo scp-6760",
+    "/scp-?6750/i": "sanyo scp-6750",
+    "/scp-?5500/i": "sanyo scp-5500",
+    "/scp-?3810/i": "sanyo scp-3810",
+    "/scp-?588cn/i": "sanyo scp-588cn",
     "/e4100/i": "sanyo e4100",
     "/pm-8200/i": "sanyo pm8200"
   },

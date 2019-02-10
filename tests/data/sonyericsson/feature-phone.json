@@ -169,12 +169,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "NetFront",
+      "name": "Google Bot",
       "modus": null,
-      "version": "3.3.0",
-      "manufacturer": "Access",
+      "version": "0.0.0",
+      "manufacturer": "Google",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": "JavaOS",
@@ -1739,6 +1739,82 @@
       "marketingName": "Symbian OS",
       "version": "0.0.0",
       "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonK700i/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.2.3.15.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "K700i",
+      "marketingName": "K700i",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonZ600/R401 Profile/MIDP-1.0 Configuration/CLDC-1.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "Z600",
+      "marketingName": "Z600",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {

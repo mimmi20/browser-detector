@@ -13,7 +13,7 @@
     "type": "feature-phone",
     "platform": "brew"
   },
-  "sanyo scp6760": {
+  "sanyo scp-6760": {
     "deviceName": "SCP-6760",
     "marketingName": "Incognito",
     "manufacturer": "Sanyo",
@@ -27,7 +27,7 @@
     "type": "feature-phone",
     "platform": "brew"
   },
-  "sanyo scp6780": {
+  "sanyo scp-6780": {
     "deviceName": "SCP-6780",
     "marketingName": "Innuendo",
     "manufacturer": "Sanyo",
@@ -41,7 +41,7 @@
     "type": "feature-phone",
     "platform": "brew"
   },
-  "sanyo scp6750": {
+  "sanyo scp-6750": {
     "deviceName": "SCP-6750",
     "marketingName": "Katana Eclipse",
     "manufacturer": "Sanyo",
@@ -69,7 +69,7 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "sanyo scp3810": {
+  "sanyo scp-3810": {
     "deviceName": "SCP-3810",
     "marketingName": "SCP-3810",
     "manufacturer": "Sanyo",
@@ -83,7 +83,21 @@
     "type": "feature-phone",
     "platform": "brew"
   },
-  "sanyo scp588cn": {
+  "sanyo scp-5500": {
+    "deviceName": "SCP-5500",
+    "marketingName": "SCP-5500",
+    "manufacturer": "Sanyo",
+    "brand": "Sanyo",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.1
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sanyo scp-588cn": {
     "deviceName": "SCP-588CN",
     "marketingName": "SCP-588CN",
     "manufacturer": "Sanyo",
