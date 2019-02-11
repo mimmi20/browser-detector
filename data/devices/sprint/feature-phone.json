@@ -1,7 +1,7 @@
 {
   "general sprint device": {
-    "deviceName": "general  device",
-    "marketingName": "general  device",
+    "deviceName": "general Sprint device",
+    "marketingName": "general Sprint device",
     "manufacturer": "Sprint",
     "brand": "Sprint",
     "display": {
@@ -40,5 +40,33 @@
     },
     "type": "feature-phone",
     "platform": "brew"
+  },
+  "sprint ppc6800": {
+    "deviceName": "PPC6800",
+    "marketingName": "PPC6800",
+    "manufacturer": "Htc",
+    "brand": "Sprint",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "sprint t7380": {
+    "deviceName": "T7380",
+    "marketingName": "T7380",
+    "manufacturer": "Htc",
+    "brand": "Sprint",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": false,
+      "size": 3.6
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   }
 }

@@ -545,6 +545,20 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "samsung sgh-i637": {
+    "deviceName": "SGH-I637",
+    "marketingName": "Jack",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "samsung gt-s8000": {
     "deviceName": "GT-S8000",
     "marketingName": "Jet",
@@ -866,6 +880,20 @@
     },
     "type": "feature-phone",
     "platform": "android"
+  },
+  "samsung sch-i920": {
+    "deviceName": "SCH-i920",
+    "marketingName": "Omnia II",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "samsung gt-b7350": {
     "deviceName": "GT-B7350",
@@ -1594,6 +1622,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "samsung sch-m715": {
+    "deviceName": "SCH-M715",
+    "marketingName": "T*OMNIA II",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": false,
+      "size": 3.7
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "samsung sph-m380": {
     "deviceName": "SPH-M380",
