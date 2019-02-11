@@ -1,5 +1,6 @@
 {
   "rules": {
+    "/vr[_ ]?bot[_ ]?552\\+/i": "logicom vr bot 552+",
     "/vr[_ ]?bot[_ ]?552/i": "logicom vr bot 552",
     "/m[_ ]?bot[_ ]?tab[_ ]?1150/i": "logicom m bot tab 1150",
     "/m[_ ]?bot[_ ]?tab[_ ]?103/i": "logicom m bot tab 103",
@@ -10,6 +11,7 @@
     "/m[_ ]?bot[_ ]?551/i": "logicom m bot 551",
     "/m[_ ]?bot[_ ]?54/i": "logicom m bot 54",
     "/m[_ ]?bot[_ ]?51/i": "logicom m bot 51",
+    "/id[_ ]?bot[_ ]?553\\+/i": "logicom id bot 553+",
     "/id[_ ]?bot[_ ]?553/i": "logicom id bot 553",
     "/id[_ ]?bot[_ ]?53/i": "logicom id bot 53",
     "/b[_ ]?bot[_ ]?550/i": "logicom b bot 550",

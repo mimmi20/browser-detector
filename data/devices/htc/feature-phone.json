@@ -111,7 +111,7 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
-  "htc mini t5555": {
+  "htc t5555": {
     "deviceName": "T5555",
     "marketingName": "HD mini",
     "manufacturer": "Htc",
@@ -120,10 +120,52 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "feature-phone",
-    "platform": "windows mobile os"
+    "platform": "windows ce"
+  },
+  "htc t5160": {
+    "deviceName": "T5160",
+    "marketingName": "HD2",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc t8585": {
+    "deviceName": "T8585",
+    "marketingName": "HD2",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc t9193": {
+    "deviceName": "T9193",
+    "marketingName": "HD2",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "htc vpa compact iv": {
     "deviceName": "VPA Compact IV",
@@ -335,6 +377,34 @@
     "type": "feature-phone",
     "platform": "windows mobile os"
   },
+  "htc t8388": {
+    "deviceName": "T8388",
+    "marketingName": "T8388",
+    "manufacturer": "Htc",
+    "brand": "Dopod",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.6
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc st7377": {
+    "deviceName": "ST7377",
+    "marketingName": "Tilt 2",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.6
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "htc x310e": {
     "deviceName": "X310e",
     "marketingName": "Titan",
@@ -363,6 +433,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "htc p3650": {
+    "deviceName": "P3650",
+    "marketingName": "Touch Cruise",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "htc p3700": {
     "deviceName": "P3700",
     "marketingName": "Touch Diamond",
@@ -377,7 +461,7 @@
     "type": "feature-phone",
     "platform": null
   },
-  "htc touch hd t8282": {
+  "htc t8282": {
     "deviceName": "T8282",
     "marketingName": "Touch HD",
     "manufacturer": "Htc",
@@ -390,6 +474,48 @@
     },
     "type": "feature-phone",
     "platform": null
+  },
+  "htc t7379": {
+    "deviceName": "T7379",
+    "marketingName": "Touch Pro2",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.6
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc t2223": {
+    "deviceName": "T2223",
+    "marketingName": "Touch Viva",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc t3333": {
+    "deviceName": "T3333",
+    "marketingName": "Touch2",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "htc t3335": {
     "deviceName": "T3335",
@@ -404,6 +530,20 @@
     },
     "type": "feature-phone",
     "platform": "windows mobile os"
+  },
+  "htc p4550": {
+    "deviceName": "P4550",
+    "marketingName": "TyTN II",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "htc v1510": {
     "deviceName": "v1510",

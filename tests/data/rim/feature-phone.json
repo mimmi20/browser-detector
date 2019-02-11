@@ -1518,5 +1518,43 @@
       "version": "534.11.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry7730/3.7.1 UP.Link/5.1.2.5"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7730",
+      "marketingName": "BlackBerry 7730",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 240,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "3.7.1",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.7.1",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "BlackBerry",
+      "version": "0.0.0",
+      "manufacturer": "Rim"
+    }
   }
 ]
