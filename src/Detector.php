@@ -175,14 +175,12 @@ final class Detector implements DetectorInterface
             $platform = clone $defaultPlatform;
         }
 
-        $browserUa = $request->getBrowserUserAgent();
-
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
             $platformParser = $this->platformParser;
 
             try {
-                $platform = $platformParser->parse($browserUa);
+                $platform = $platformParser->parse($request->getPlatformUserAgent());
             } catch (NotFoundException | InvalidArgumentException $e) {
                 $this->logger->warning($e);
                 $platform = clone $defaultPlatform;
@@ -205,6 +203,8 @@ final class Detector implements DetectorInterface
             new Company('Unknown', null, null),
             new Version('0')
         );
+
+        $browserUa = $request->getBrowserUserAgent();
 
         /* @var \UaResult\Browser\BrowserInterface $browser */
         /* @var \UaResult\Engine\EngineInterface $engine */
