@@ -74,5 +74,47 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31762/35.3312; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)",
+      "x-operamini-features": "httpping, advanced, routing, file_system, download, folding",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)"
+    },
+    "device": {
+      "deviceName": "Discover 135",
+      "marketingName": "Discover 135",
+      "manufacturer": "Lava",
+      "brand": "Lava",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.31762",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "MRE",
+      "marketingName": "MAUI Runtime Environment",
+      "version": "0.0.0",
+      "manufacturer": "MediaTek",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
   }
 ]
