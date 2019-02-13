@@ -644,5 +644,45 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; xx; KYY21) U2/1.0.0 UCBrowser/9.5.1.494 U2/1.0.0 Mobile",
+      "x-ucbrowser-device-ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; KYY21 Build/209.0.1700) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1",
+      "x-ucbrowser-ua": "pf(Linux);la(en-US);re(U2/1.0.0);dv(KYY21);pr(UCBrowser/9.5.1.494);ov(4.2.2);pi(720*1280);ss(720*1280);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);"
+    },
+    "device": {
+      "deviceName": "KYY21",
+      "marketingName": "Urbano L01",
+      "manufacturer": "Kyocera",
+      "brand": "Kyocera",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.1.494",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
   }
 ]

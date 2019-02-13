@@ -4539,12 +4539,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Vision",
       "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "Nokia",
+      "version": "8.0.0",
+      "manufacturer": "Novarra",
       "bits": 32,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
       "name": "Symbian OS",
@@ -6331,6 +6331,86 @@
       "manufacturer": "Google",
       "bits": 32,
       "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; xx; NokiaAsha230DualSIM) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0",
+      "x-ucbrowser-device": "nokia#Asha230DualSIM",
+      "x-ucbrowser-device-ua": "NokiaAsha230DualSIM/2.0 (14.0.4) Profile/MIDP-2.1 Configuration/CLDC-1.1",
+      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(NokiaAsha230DualSIM);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(1);im(0);sr(0);nt(1);"
+    },
+    "device": {
+      "deviceName": "230",
+      "marketingName": "Asha 230",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": "0.0.0",
+      "manufacturer": "Nokia",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7 MG (Novarra-Vision/6.1)",
+      "x-device-user-agent": "Nokia6288/2.0 (05.94) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "6288",
+      "marketingName": "6288",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Vision",
+      "modus": null,
+      "version": "6.1.0",
+      "manufacturer": "Novarra",
+      "bits": 32,
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",

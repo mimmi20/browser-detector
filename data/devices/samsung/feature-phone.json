@@ -433,6 +433,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung gt-s3770k": {
+    "deviceName": "GT-S3770K",
+    "marketingName": "GT-S3770K",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-s7233e": {
     "deviceName": "GT-S7233E",
     "marketingName": "GT-S7233E",
@@ -642,6 +656,20 @@
     },
     "type": "feature-phone",
     "platform": "android"
+  },
+  "samsung m260": {
+    "deviceName": "M260",
+    "marketingName": "M260",
+    "manufacturer": "Samsung",
+    "brand": "Boost",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "samsung gt-e3309t": {
     "deviceName": "GT-E3309T",
@@ -1703,6 +1731,34 @@
       "height": 128,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-s5610": {
+    "deviceName": "GT-S5610",
+    "marketingName": "Utopia",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-s5253": {
+    "deviceName": "GT-S5253",
+    "marketingName": "Wave",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": false,
+      "size": 3.2
     },
     "type": "feature-phone",
     "platform": "java"

@@ -656,44 +656,6 @@
   },
   {
     "headers": {
-      "user-agent": "HTC_ChaCha_A810e/Mozilla/5.0(Linux; U; Android 2.3.5;it-it; Build/GRH78C) AppleWebkit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "A810e",
-      "marketingName": "ChaCha",
-      "manufacturer": "Htc",
-      "brand": "Htc",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.5",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar 4G)"
     },
     "device": {
@@ -870,10 +832,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "Microsoft",
       "bits": 32
     },
     "engine": {
@@ -1946,6 +1908,124 @@
       "name": "Trident",
       "version": "0.0.0",
       "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "dopodT8588/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 Opera/9.7 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1",
+      "x-wap-profile": "http://www.htcmms.com.tw/gen/HTC_HD2_T8585-1.0.xml"
+    },
+    "device": {
+      "deviceName": "T8588",
+      "marketingName": "T8588",
+      "manufacturer": "Htc",
+      "brand": "Dopod",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.7.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile6.0) Sprint T7380",
+      "x-wap-profile": "http://device.sprintpcs.com/HTC/PPCT7380SP/2046514.rdf"
+    },
+    "device": {
+      "deviceName": "T7380",
+      "marketingName": "T7380",
+      "manufacturer": "Htc",
+      "brand": "Sprint",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": 3.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Windows Mobile; Opera Mini/5.1.21594/37.6116; U; xx) Presto/2.12.423 Version/12.16",
+      "x-operamini-phone": "HTC # Touch Pro/T7272/TyTn III",
+      "x-operamini-phone-ua": "HTC_Touch_Pro_T7272"
+    },
+    "device": {
+      "deviceName": "T7272",
+      "marketingName": "TyTn III",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
     }
   }
 ]

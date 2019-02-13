@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "HTC_ChaCha_A810e/Mozilla/5.0(Linux; U; Android 2.3.5;it-it; Build/GRH78C) AppleWebkit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "A810e",
+      "marketingName": "ChaCha",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0 (Windows; U; wds 8.0; xx; HTC; C620e) U2/1.0.0 UCBrowser/3.1.1.343 U2/1.0.0 Mobile",
       "x-ucbrowser-ua": "pf(Windows);la(zh-CN);re(U2/1.0.0);dv(HTC C620e);pr(UCBrowser/3.1.1.343);ov(wds 8.0);pi(720*1280);ss(480*853);er(U);bt(UC);nm(0);im(0);sr(1);nt(2);up(U2/1.0.0);pm(1);"
     },
@@ -33,9 +71,9 @@
       "bits": 32
     },
     "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
     }
   },
   {

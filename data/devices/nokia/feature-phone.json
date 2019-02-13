@@ -601,6 +601,20 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia 6288": {
+    "deviceName": "6288",
+    "marketingName": "6288",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 6300": {
     "deviceName": "6300",
     "marketingName": "6300",
@@ -1003,6 +1017,20 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 230": {
+    "deviceName": "230",
+    "marketingName": "Asha 230",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
     },
     "type": "feature-phone",
     "platform": "nokia os"

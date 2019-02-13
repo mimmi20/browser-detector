@@ -3687,5 +3687,44 @@
       "version": "6.0.0",
       "manufacturer": "Microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Nokia 526)",
+      "baidu-flyflow": "Microsoft Windows NT 8.10.14219.0;4.0.30508.0;NOKIA;RM-997_apac_prc_906;e7477c026c2d2dab09d667a0d502a19faf960316;2.5.0.12"
+    },
+    "device": {
+      "deviceName": "RM-997",
+      "marketingName": "Lumia 526",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.10.14219.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "6.0.0",
+      "manufacturer": "Microsoft"
+    }
   }
 ]
