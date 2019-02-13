@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "YelpWebView/1.5 Android/7.0 YelpApp/9.10.0 (x-screen-scale 1.0;)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux armv7l; Opera Mobi/1; MeeGo) Presto/2.11.355 Version/12.10"
     },
     "device": {

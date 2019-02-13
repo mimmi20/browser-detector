@@ -55,20 +55,6 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
-  "htc a810e": {
-    "deviceName": "A810e",
-    "marketingName": "ChaCha",
-    "manufacturer": "Htc",
-    "brand": "Htc",
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": true,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "android"
-  },
   "htc e600": {
     "deviceName": "S620",
     "marketingName": "E600",
@@ -377,6 +363,20 @@
     "type": "feature-phone",
     "platform": "windows mobile os"
   },
+  "htc t7380": {
+    "deviceName": "T7380",
+    "marketingName": "T7380",
+    "manufacturer": "Htc",
+    "brand": "Sprint",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "htc t8388": {
     "deviceName": "T8388",
     "marketingName": "T8388",
@@ -387,6 +387,20 @@
       "height": 480,
       "touch": true,
       "size": 3.6
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc t8588": {
+    "deviceName": "T8588",
+    "marketingName": "T8588",
+    "manufacturer": "Htc",
+    "brand": "Dopod",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
     },
     "type": "feature-phone",
     "platform": "windows ce"
@@ -545,6 +559,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "htc t7272": {
+    "deviceName": "T7272",
+    "marketingName": "TyTn III",
+    "manufacturer": "Htc",
+    "brand": "Htc",
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": false,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows mobile os"
+  },
   "htc v1510": {
     "deviceName": "v1510",
     "marketingName": "v1510",
@@ -585,6 +613,6 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "windows ce"
   }
 }

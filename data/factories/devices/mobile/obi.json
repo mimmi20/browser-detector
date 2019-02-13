@@ -1,6 +1,18 @@
 {
   "rules": {
+    "/sj2\\.6/i": "obi sj2.6",
+    "/sj1\\.5/i": "obi sj1.5",
     "/s551/i": "obi s551",
+    "/s507/i": "obi s507",
+    "/s503\\+/i": "obi s503+",
+    "/s503/i": "obi s503",
+    "/s502/i": "obi s502",
+    "/s501/i": "obi s501",
+    "/s454/i": "obi s454",
+    "/s453/i": "obi s453",
+    "/s452\\+/i": "obi s452+",
+    "/s451|falcon/i": "obi s451",
+    "/s400/i": "obi s400",
     "/sf1/i": "obi sf1"
   },
   "generic": "general obi device"

@@ -7256,5 +7256,46 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; xx; Opera) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0",
+      "x-ucbrowser-device": "Opera",
+      "x-ucbrowser-device-ua": "ASTRO36_TD/v3 (MRE\\2.3.00(20480) resolution\\320480 chipset\\MT6255 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; en-US) Presto/2.5.28 Version/10.10",
+      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(Opera);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(320*480);ss(320*480);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);"
+    },
+    "device": {
+      "deviceName": "general Sony device",
+      "marketingName": "general Sony device",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
   }
 ]

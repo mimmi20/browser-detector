@@ -685,44 +685,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Mobiistar_Zumbo_J2 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/167.0.0.28.94;]"
-    },
-    "device": {
-      "deviceName": "Zumbo J2",
-      "marketingName": "Zumbo J2",
-      "manufacturer": "Mobiistar",
-      "brand": "Mobiistar",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "167.0.0.28.94",
-      "manufacturer": "Facebook",
-      "bits": 32,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Mobiistar_LAI_Zumbo_J_2017 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.68 Mobile Safari/537.36"
     },
     "device": {
@@ -1027,44 +989,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Mobiistar_LAI_Yuna_C Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/166.0.0.26.91;]"
-    },
-    "device": {
-      "deviceName": "Lai Yuna C",
-      "marketingName": "Lai Yuna C",
-      "manufacturer": "Mobiistar",
-      "brand": "Mobiistar",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "166.0.0.26.91",
-      "manufacturer": "Facebook",
-      "bits": 32,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Mobiistar_LAI_Yuna_X Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/173.0.0.62.99;]"
     },
     "device": {
@@ -1130,6 +1054,82 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Mobiistar_Zumbo_J2 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/167.0.0.28.94;]"
+    },
+    "device": {
+      "deviceName": "Zumbo J2",
+      "marketingName": "Zumbo J2",
+      "manufacturer": "Mobiistar",
+      "brand": "Mobiistar",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "167.0.0.28.94",
+      "manufacturer": "Facebook",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Mobiistar_LAI_Yuna_C Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/166.0.0.26.91;]"
+    },
+    "device": {
+      "deviceName": "Lai Yuna C",
+      "marketingName": "Lai Yuna C",
+      "manufacturer": "Mobiistar",
+      "brand": "Mobiistar",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "166.0.0.26.91",
+      "manufacturer": "Facebook",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
       "manufacturer": "Google",
       "bits": 32
     },

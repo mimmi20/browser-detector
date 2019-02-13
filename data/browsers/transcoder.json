@@ -67,5 +67,17 @@
       ]
     },
     "engine": null
+  },
+  "novarra-vision": {
+    "name": "Vision",
+    "manufacturer": "Novarra",
+    "type": "transcoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Novarra\\-Vision"
+      ]
+    },
+    "engine": "unknown"
   }
 }
