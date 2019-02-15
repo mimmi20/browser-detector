@@ -17036,7 +17036,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -17143,14 +17143,14 @@
     },
     "device": {
       "deviceName": "SM-J510FN",
-      "marketingName": "Galaxy J5  Duos (2016)",
+      "marketingName": "Galaxy J5 (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -25092,7 +25092,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -25130,7 +25130,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -25168,7 +25168,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -25206,7 +25206,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -30678,7 +30678,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -30785,14 +30785,14 @@
     },
     "device": {
       "deviceName": "SM-J510H",
-      "marketingName": "Galaxy J5 3G",
+      "marketingName": "Galaxy J5 (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -31659,14 +31659,14 @@
     },
     "device": {
       "deviceName": "SM-J510GN",
-      "marketingName": "Galaxy J5  Duos (2016)",
+      "marketingName": "Galaxy J5 (2016)",
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -32160,7 +32160,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -35558,6 +35558,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-J510UN Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J510UN",
+      "marketingName": "Galaxy J5 (2016)",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "65.0.3325.109",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
       "manufacturer": "Google",
       "bits": 32
     },
