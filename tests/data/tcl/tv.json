@@ -36,5 +36,43 @@
       "version": "0.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## Percee TV Build/MUE34)"
+    },
+    "device": {
+      "deviceName": "Percee TV",
+      "marketingName": "Percee TV",
+      "manufacturer": "Tcl",
+      "brand": "Tcl",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 49.7
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
