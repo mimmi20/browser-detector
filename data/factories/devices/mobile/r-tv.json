@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/boxmini00/i": "r-tv box mini+"
+    "/boxmini00|box mini\\+/i": "r-tv box mini+"
   },
   "generic": "general r-tv device"
 }
