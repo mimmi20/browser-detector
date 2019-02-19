@@ -530,5 +530,43 @@
       "version": "535.19.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1## TCL Xess P17AA Build/LMY47D)"
+    },
+    "device": {
+      "deviceName": "P17AA",
+      "marketingName": "Xess",
+      "manufacturer": "Tcl",
+      "brand": "Tcl",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 17.3
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
