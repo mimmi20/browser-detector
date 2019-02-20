@@ -55,6 +55,18 @@
     },
     "engine": "webkit"
   },
+  "deezer-jukebox": {
+    "name": "DeezerJukebox",
+    "manufacturer": "Deezer",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DeezerJukebox"
+      ]
+    },
+    "engine": "webkit"
+  },
   "elmedia player": {
     "name": "Elmedia Player",
     "manufacturer": "EltimaSoftware",

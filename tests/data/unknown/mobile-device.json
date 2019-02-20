@@ -2480,5 +2480,43 @@
       "version": "2.12.423",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "DeezerJukebox/6.0.4.71 (Linux;Android 9) ExoPlayerLib/2.8.2"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "DeezerJukebox",
+      "modus": null,
+      "version": "6.0.4.71",
+      "manufacturer": "Deezer",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

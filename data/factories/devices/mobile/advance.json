@@ -1,9 +1,10 @@
 {
   "rules": {
-    "/hl6246/i": "advance hl6246",
-    "/hl5446/i": "advance hl5446",
-    "/tr3845/i": "advance tr3845",
-    "/tr3544/i": "advance tr3544"
+    "/hl ?6246/i": "advance hl6246",
+    "/hl ?5446/i": "advance hl5446",
+    "/hi ?4934/i": "advance hi4934",
+    "/tr ?3845/i": "advance tr3845",
+    "/tr ?3544/i": "advance tr3544"
   },
   "generic": "general advance device"
 }

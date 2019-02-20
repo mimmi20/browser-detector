@@ -5111,6 +5111,18 @@
     },
     "engine": "webkit"
   },
+  "outclicksbot": {
+    "name": "OutclicksBot",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OutclicksBot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "owasp_secret_browser": {
     "name": "OWASP_SECRET_BROWSER",
     "manufacturer": "Unknown",
@@ -6031,6 +6043,18 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "samsung agent": {
+    "name": "Samsung Agent",
+    "manufacturer": "Samsung",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "samsung\\-agent"
+      ]
     },
     "engine": "unknown"
   },
