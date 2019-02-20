@@ -119,6 +119,14 @@ class MobileDeviceTest extends TestCase
             ['AppleCoreMedia/1.0.0.16A303 (HomePod; U; CPU OS 12_0 like Mac OS X; en_us)'],
             ['YUANDA50_12864_11B_HW (MRE\\2.5.00(800) resolution\\320480 chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\reduced) C529AH_JY_539_W1.11B.V2.2 Release/2012.09.26 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/ Q03C1-2.40 fr-FR'],
             ['Mozilla/5.0 (Linux; Android 7.1.2; H96 Max Build/NHG47K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36'],
+            ['W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)'],
+            ['Coursera-Mobile 1.2.1'],
+            ['Microsoft Office Mobile/15.0'],
+            ['CWEB/2.0 (Linux; U; Adr 2.1-update1; en-US; E10i) U2/1.0.0 UC \\x11@0C75@/8.2.0.242 U2/1.0.0 Mobile'],
+            ['Mozilla/5.0 (Linux; U; en-us; EBRD1201; EXT) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'],
+            ['Mozilla/5.0 (Linux; U; en-us; EBRD1101; EXT) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'],
+            ['Mozilla/5.0 (;;; en-us; Huawei-U8651 Build/U8651SV100R001USAC85B843) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'],
+            ['Mozilla/5.0 (Linux; U; Tizen 2.0; en-us) AppleWebKit/537.1 (KHTML, like Gecko) Mobile TizenBrowser/2'],
         ];
     }
 
