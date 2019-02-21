@@ -26,5 +26,33 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "china-tablet rk312x": {
+    "deviceName": "RK312X",
+    "marketingName": "RK312X",
+    "manufacturer": "China Tablet",
+    "brand": "China Tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "china-tablet rk31sdk": {
+    "deviceName": "RK31SDK",
+    "marketingName": "RK31SDK",
+    "manufacturer": "China Tablet",
+    "brand": "China Tablet",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }
