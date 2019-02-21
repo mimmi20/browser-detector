@@ -9,10 +9,48 @@
       "manufacturer": "Novus Tablet",
       "brand": "Novus Tablet",
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1024,
+        "height": 768,
         "touch": true,
-        "size": 10.1
+        "size": 7.85
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux## U## Android 4.2.2## NOVUS_G8 Build/JDQ39)"
+    },
+    "device": {
+      "deviceName": "G8",
+      "marketingName": "G8",
+      "manufacturer": "Novus Tablet",
+      "brand": "Novus Tablet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
       },
       "type": "fone-pad"
     },

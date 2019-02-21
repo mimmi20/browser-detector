@@ -150,5 +150,43 @@
       "version": "5.0.0",
       "manufacturer": "Microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux## U## Android 4.4.2## HP SlateBook 14 PC Build/4.4.2-17r25.1-11-11)"
+    },
+    "device": {
+      "deviceName": "SlateBook 14 PC",
+      "marketingName": "SlateBook 14 PC",
+      "manufacturer": "Hp",
+      "brand": "Hp",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": false,
+        "size": 14
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
