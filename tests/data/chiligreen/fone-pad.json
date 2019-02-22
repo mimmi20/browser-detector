@@ -1,58 +1,20 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; FLOW_5 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; E-Board\\xc2\\xae MX089 Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
     },
     "device": {
-      "deviceName": "Flow 5",
-      "marketingName": "Flow 5",
-      "manufacturer": "Kruger and Matz",
-      "brand": "Kruger and Matz",
+      "deviceName": "E-Board MX089 3G",
+      "marketingName": "E-Board MX089 3G",
+      "manufacturer": "chiliGREEN",
+      "brand": "chiliGREEN",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": 5
+        "size": 10.1
       },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "68.0.3440.91",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Kruger&Matz MOVE 6 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KM0437",
-      "marketingName": "Move 6",
-      "manufacturer": "Kruger and Matz",
-      "brand": "Kruger and Matz",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
+      "type": "fone-pad"
     },
     "browser": {
       "name": "Android WebView",
@@ -65,7 +27,45 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.0",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; E-Board\\xae MX089 Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E-Board MX089 3G",
+      "marketingName": "E-Board MX089 3G",
+      "manufacturer": "chiliGREEN",
+      "brand": "chiliGREEN",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "39.0.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },
