@@ -125,7 +125,7 @@
     "/evercoss|a66a|a74a|a75 max|(adr|android) 7\\..* m50/i": "evercoss",
     "/dino(?!saur)/i": "dino",
     "/shaan|iball|snap 4g2/i": "iball",
-    "/(?<!-)orange(?!b|romania)|spv|funtab|zilo/i": "orange",
+    "/(?<!-)orange[ _)\\-]|spv|funtab|zilo/i": "orange",
     "/(pgn-?[456][012][0-9]|pkt-?301|phs-601)[;\\/\\) ]|ctab[^\\/;]+( build|[;\\/\\)])|plume l1/i": "condor",
     "/beeline/i": "beeline",
     "/malata/i": "malata",
