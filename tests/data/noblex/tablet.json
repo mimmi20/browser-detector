@@ -1,28 +1,28 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; it-it; SD4930UR Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.63 like Chrome/37.0.2026.117 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; NBX-T8A1IE Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Safari/537.36"
     },
     "device": {
-      "deviceName": "SD4930UR",
-      "marketingName": "Fire Phone",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
+      "deviceName": "NBX-T8A1IE",
+      "marketingName": "NBX-T8A1IE",
+      "manufacturer": "Noblex",
+      "brand": "Noblex",
       "display": {
         "width": 1280,
-        "height": 720,
+        "height": 800,
         "touch": true,
-        "size": 4.7
+        "size": 8
       },
-      "type": "smartphone"
+      "type": "tablet"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Chrome",
       "modus": null,
-      "version": "3.63.0",
-      "manufacturer": "Amazon",
+      "version": "36.0.1985.135",
+      "manufacturer": "Google",
       "bits": 32,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -39,25 +39,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Fire Phone Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; NBX-NB1012 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36"
     },
     "device": {
-      "deviceName": "SD4930UR",
-      "marketingName": "Fire Phone",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
+      "deviceName": "NBX-NB1012",
+      "marketingName": "NBX-NB1012",
+      "manufacturer": "Noblex",
+      "brand": "Noblex",
       "display": {
         "width": 1280,
-        "height": 720,
+        "height": 800,
         "touch": true,
-        "size": 4.7
+        "size": 10.1
       },
-      "type": "smartphone"
+      "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "63.0.3239.111",
+      "version": "39.0.2171.93",
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
@@ -65,7 +65,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "4.0.4",
       "manufacturer": "Google",
       "bits": 32
     },
