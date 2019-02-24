@@ -1,33 +1,33 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; it-it; SD4930UR Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.63 like Chrome/37.0.2026.117 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; NOBLEX N451 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SD4930UR",
-      "marketingName": "Fire Phone",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
+      "deviceName": "N451",
+      "marketingName": "Go 2",
+      "manufacturer": "Noblex",
+      "brand": "Noblex",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": 4.7
+        "size": 4.5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Chrome",
       "modus": null,
-      "version": "3.63.0",
-      "manufacturer": "Amazon",
+      "version": "50.0.2661.89",
+      "manufacturer": "Google",
       "bits": 32,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "5.0.0",
       "manufacturer": "Google",
       "bits": 32
     },
@@ -39,18 +39,18 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Fire Phone Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; NOBLEX N401 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SD4930UR",
-      "marketingName": "Fire Phone",
-      "manufacturer": "Amazon",
-      "brand": "Amazon",
+      "deviceName": "N401",
+      "marketingName": "Go 1",
+      "manufacturer": "Noblex",
+      "brand": "Noblex",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": 4.7
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -65,7 +65,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "4.4.2",
       "manufacturer": "Google",
       "bits": 32
     },
