@@ -25,7 +25,7 @@
       "size": null
     },
     "type": "tv",
-    "platform": "linux"
+    "platform": null
   },
   "sony google tv": {
     "deviceName": "Google TV",
@@ -40,6 +40,62 @@
     },
     "type": "tv",
     "platform": "linux"
+  },
+  "sony kd-55x8505b": {
+    "deviceName": "KD-55X8505B",
+    "marketingName": "KD-55X8505B",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 54.6
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-32w653a": {
+    "deviceName": "KDL-32W653A",
+    "marketingName": "KDL-32W653A",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-47w802a": {
+    "deviceName": "KDL-47W802A",
+    "marketingName": "KDL-47W802A",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 47
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55w905a": {
+    "deviceName": "KDL-55W905A",
+    "marketingName": "KDL-55W905A",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
   },
   "sony kdl32hx755": {
     "deviceName": "KDL32HX755",

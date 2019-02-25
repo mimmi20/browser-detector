@@ -980,8 +980,10 @@
         "Minefield",
         "Shiretoko",
         "BonEcho",
+        "GranParadiso",
         "Namoroka",
-        "Fennec"
+        "Fennec",
+        "rv:"
       ]
     },
     "engine": "gecko"
@@ -2954,6 +2956,18 @@
     },
     "engine": null
   },
+  "sonycebrowser": {
+    "name": "SonyCEBrowser",
+    "manufacturer": "Sony",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SonyCEBrowser"
+      ]
+    },
+    "engine": "unknown"
+  },
   "spector": {
     "name": "Spector",
     "manufacturer": "Unknown",
@@ -3097,10 +3111,8 @@
     "manufacturer": "CameronKaiser",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "TenFourFox"
-      ]
+      "class": null,
+      "search": null
     },
     "engine": "gecko"
   },
