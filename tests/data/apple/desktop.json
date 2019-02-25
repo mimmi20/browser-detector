@@ -5128,5 +5128,43 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10.4; rv:38.0) Gecko/20100101 Firefox/38.0 TenFourFox/7400"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "TenFourFox",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "CameronKaiser",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.4.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "38.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
   }
 ]
