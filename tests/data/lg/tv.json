@@ -12,7 +12,7 @@
         "width": null,
         "height": null,
         "touch": false,
-        "size": null
+        "size": 47
       },
       "type": "tv"
     },
@@ -34,6 +34,44 @@
     "engine": {
       "name": "WebKit",
       "version": "534.26.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ PBRM/1.0 ( ;LGE ;32LY760H-ZA ;03.03.03 ;0x00000001)"
+    },
+    "device": {
+      "deviceName": "32LY760H-ZA",
+      "marketingName": "32LY760H-ZA",
+      "manufacturer": "Lg",
+      "brand": "Lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Apple",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.1.0",
       "manufacturer": "Apple"
     }
   }

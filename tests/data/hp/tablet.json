@@ -587,10 +587,10 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Internet Explorer",
+      "name": "Blazer",
       "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "Microsoft",
+      "version": "3.0.0",
+      "manufacturer": "Palm",
       "bits": 32,
       "type": "browser"
     },
@@ -598,6 +598,44 @@
       "name": "Windows 95",
       "marketingName": "Windows 95",
       "version": "95.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D053; Blazer/4.5) 16;320x320 UP.Link/6.3.1.17.0"
+    },
+    "device": {
+      "deviceName": "general HP device",
+      "marketingName": "general HP device",
+      "manufacturer": "Hp",
+      "brand": "Hp",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Blazer",
+      "modus": null,
+      "version": "4.5.0",
+      "manufacturer": "Palm",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows 98",
+      "marketingName": "Windows 98",
+      "version": "98.0.0",
       "manufacturer": "Microsoft",
       "bits": 32
     },

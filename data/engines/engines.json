@@ -1,4 +1,12 @@
 {
+  "unknown": {
+    "name": null,
+    "manufacturer": "Unknown",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
   "blackberry": {
     "name": "BlackBerry",
     "manufacturer": "Rim",
@@ -148,14 +156,6 @@
       "search": [
         "U3"
       ]
-    }
-  },
-  "unknown": {
-    "name": null,
-    "manufacturer": "Unknown",
-    "version": {
-      "class": null,
-      "search": null
     }
   },
   "webkit": {

@@ -229,44 +229,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; GoogleTV 3.2; NSZ-GS7/GX70 Build/MASTER) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.77 Safari/534.24"
-    },
-    "device": {
-      "deviceName": "NSZ-GS7/GX70",
-      "marketingName": "NSZ-GS7/GX70",
-      "manufacturer": "Sony",
-      "brand": "Sony",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "11.0.696.77",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "3.2.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.24.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; U; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL32HX755; CC/DEU; de) Presto/2.10.250 Version/11.60"
     },
     "device": {
@@ -773,6 +735,158 @@
         "height": null,
         "touch": false,
         "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "SonyCEBrowser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Sony",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l; U; xx) Presto/2.10.287 Version/12.00 SonyCEBrowser/1.0 (KDL-42W805A; CTV/PKG3.009EUA; GBR)"
+    },
+    "device": {
+      "deviceName": "KDL-42W805A",
+      "marketingName": "KDL-42W805A",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 42
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "SonyCEBrowser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Sony",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l; U; xx) Presto/2.10.287 Version/12.00 SonyCEBrowser/1.0 (KDL-46W905A; CTV/PKG3.009EUA; GBR)"
+    },
+    "device": {
+      "deviceName": "KDL-46W905A",
+      "marketingName": "KDL-46W905A",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 46
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "SonyCEBrowser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Sony",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36 OPR/19.0.1325.0 OMI/4.1.4.56.ALSAN3.7 SonyCEBrowser/1.0 (BDPlayer; BDP10G_AX; BDP2015/M24.D.0104; XAE;)"
+    },
+    "device": {
+      "deviceName": "general Sony TV",
+      "marketingName": "general Sony TV",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.1.4.56",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l; U; xx) Presto/2.10.287 Version/12.00 SonyCEBrowser/1.0 (KDL-40W905A; CTV/PKG3.009EUA; GBR)"
+    },
+    "device": {
+      "deviceName": "KDL-40W905A",
+      "marketingName": "KDL-40W905A",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 40
       },
       "type": "tv"
     },
