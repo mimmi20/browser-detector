@@ -379,6 +379,18 @@
     },
     "engine": "webkit"
   },
+  "palm blazer": {
+    "name": "Blazer",
+    "manufacturer": "Palm",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Blazer"
+      ]
+    },
+    "engine": null
+  },
   "boardreader": {
     "name": "BoardReader",
     "manufacturer": "BoardReader",
@@ -2258,6 +2270,18 @@
         "Opera ",
         "Opera Mobi",
         "Opera"
+      ]
+    },
+    "engine": null
+  },
+  "opera neon": {
+    "name": "Opera Neon",
+    "manufacturer": "Opera",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MMS"
       ]
     },
     "engine": null
