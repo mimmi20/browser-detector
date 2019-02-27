@@ -18480,7 +18480,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -20988,7 +20988,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -29880,7 +29880,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -35983,6 +35983,120 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; i917)"
+    },
+    "device": {
+      "deviceName": "SGH-I917",
+      "marketingName": "Focus",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-I937)"
+    },
+    "device": {
+      "deviceName": "SGH-I937",
+      "marketingName": "Focus S",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SCH-R860U)"
+    },
+    "device": {
+      "deviceName": "SCH-R860U",
+      "marketingName": "Ativ Odyssey",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "Microsoft"
     }
   }
 ]

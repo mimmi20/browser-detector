@@ -41,6 +41,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sch-r860u": {
+    "deviceName": "SCH-R860U",
+    "marketingName": "Ativ Odyssey",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
   "samsung gt-i8750": {
     "deviceName": "GT-I8750",
     "marketingName": "Ativ S",
@@ -218,7 +232,21 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
+  "samsung sgh-i937": {
+    "deviceName": "SGH-I937",
+    "marketingName": "Focus S",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -10259,7 +10287,7 @@
       "size": 5.7
     },
     "type": "smartphone",
-    "platform": "samsung"
+    "platform": "android"
   },
   "samsung sm-g928t": {
     "deviceName": "SM-G928T",

@@ -13,7 +13,7 @@
     "/kaios/i": "kaios",
     "/yunos|tizen|andr[0o]id|aosp|silk|juc ?\\(linux;|adr |gingerbread|mtk;|ucweb\\/2\\.0 \\(linux;|spreadtrum|vre;|linux; googletv|beyondpod|htc_sensation_z710e|puffin\\/[\\d\\.]+a[tp]/i": "android",
     "/darwin|cfnetwork/i": "darwin",
-    "/linux|debian|raspbian|ubuntu|suse|fedora|mint|red ?hat|slackware|zenwalk gnu|xentos|cros|windows aarch64|moblin|esx|netcast|kantonix|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11/i": "linux",
+    "/linux|debian|raspbian|ubuntu|suse|fedora|mint|red ?hat|slackware|zenwalk gnu|xentos|cros|windows aarch64|moblin|esx|netcast|kantonix|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|qtopia|openpda/i": "linux",
     "/blackberry|bb10|rim tablet/i": "rimos",
     "/^Mozilla\\/5\\.0 \\(.*(Mobile|Tablet);.*rv:(\\d+\\.\\d+).*\\) Gecko\\/(\\d+).* Firefox\\/(\\d+\\.\\d+).*/": "firefoxos",
     "/like mac os x|ip[ao]d|iphone|cpu i?os|ios;|iuc ?\\(|puffin\\/[\\d\\.]+i[pt]|antenna\\/|antennapod|rss_?radio|podcruncher|audioboom|stitcher\\/ios|captivenetwork|dataaccessd/i": "ios",

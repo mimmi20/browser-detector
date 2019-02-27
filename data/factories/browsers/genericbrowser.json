@@ -597,7 +597,7 @@
     "/nokia/i": "nokiabrowser",
     "/netfront|playstation [34]|nf[34]/i": "netfront",
     "/teleca|obigo|au-mic|mic\\//i": "teleca-obigo",
-    "/wap browser|spice qt-75|kkt20\\/midp|browser\\/wap|\\/wap\\d\\./i": "wap browser",
+    "/wap[ \\-]browser|spice qt-75|kkt20\\/midp|browser\\/wap|\\/wap\\d\\./i": "wap browser",
     "/java/i": "java",
     "/fetchstream/i": "fetch-stream",
     "/autoit/i": "autoit",

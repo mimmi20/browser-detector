@@ -1,4 +1,18 @@
 {
+  "videocon v1570": {
+    "deviceName": "V1570",
+    "marketingName": "V1570",
+    "manufacturer": "Videocon",
+    "brand": "Videocon",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "videocon v1675": {
     "deviceName": "V1675",
     "marketingName": "V1675",
@@ -11,6 +25,6 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   }
 }

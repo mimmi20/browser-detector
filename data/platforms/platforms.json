@@ -527,6 +527,15 @@
       ]
     }
   },
+  "openpda": {
+    "name": "OpenPDA",
+    "marketingName": "OpenPDA",
+    "manufacturer": "Unknown",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
   "opensolaris": {
     "name": "OpenSolaris",
     "marketingName": "OpenSolaris",
@@ -569,6 +578,17 @@
       "class": "VersionFactory",
       "search": [
         "PalmOS"
+      ]
+    }
+  },
+  "qtopia": {
+    "name": "Qtopia",
+    "marketingName": "Qtopia",
+    "manufacturer": "Trolltech",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Qtopia"
       ]
     }
   },
