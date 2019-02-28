@@ -867,6 +867,20 @@
     "type": "smartphone",
     "platform": "windows phone"
   },
+  "huawei w1-c00": {
+    "deviceName": "W1-C00",
+    "marketingName": "Ascend W1",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
   "huawei w1-u00": {
     "deviceName": "W1-U00",
     "marketingName": "Ascend W1",
@@ -876,7 +890,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "windows phone"

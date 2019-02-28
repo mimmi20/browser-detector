@@ -36,5 +36,43 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Toshiba/X01T)"
+    },
+    "device": {
+      "deviceName": "X01T",
+      "marketingName": "X01T",
+      "manufacturer": "Toshiba",
+      "brand": "Softbank",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft"
+    }
   }
 ]
