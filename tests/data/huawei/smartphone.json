@@ -1342,7 +1342,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -20707,6 +20707,44 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HUAWEI; W1-C00)"
+    },
+    "device": {
+      "deviceName": "W1-C00",
+      "marketingName": "Ascend W1",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "Microsoft"
     }
   }
 ]

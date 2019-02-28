@@ -1,9 +1,12 @@
 {
   "rules": {
     "/cocoon/i": "o2 cocoon",
-    "/xda_orbit_2/i": "o2 xda orbit ii",
-    "/xda_diamond_2/i": "o2 xda_diamond_2",
-    "/xda comet/i": "o2 xda comet"
+    "/xda[_ ]orbit[_ ]2/i": "o2 xda orbit ii",
+    "/xda[_ ]orbit/i": "o2 xda orbit",
+    "/xda[_ ]nova/i": "o2 xda nova",
+    "/xda[_ ]diamond[_ ]2/i": "o2 xda_diamond_2",
+    "/xda[_ ]comet/i": "o2 xda comet",
+    "/xda[_ ]trion/i": "o2 xda trion"
   },
   "generic": "general o2 device"
 }
