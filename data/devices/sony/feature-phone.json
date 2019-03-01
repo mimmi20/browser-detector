@@ -349,6 +349,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson p1i": {
+    "deviceName": "P1i",
+    "marketingName": "P1i",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.6
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "sonyericsson p900": {
     "deviceName": "P900",
     "marketingName": "P900",
@@ -401,6 +415,20 @@
       "height": 208,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson p990i": {
+    "deviceName": "P990i",
+    "marketingName": "P990i",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.76
     },
     "type": "feature-phone",
     "platform": "symbian"
@@ -866,6 +894,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "sonyericsson w950i": {
+    "deviceName": "W950i",
+    "marketingName": "W950i",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.6
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   },
   "sonyericsson w960": {
     "deviceName": "W960",

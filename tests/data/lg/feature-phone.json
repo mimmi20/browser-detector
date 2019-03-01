@@ -321,12 +321,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": "UC Browser",
       "modus": null,
-      "version": "7.6.0",
-      "manufacturer": "Microsoft",
+      "version": "7.7.1.88",
+      "manufacturer": "UcWeb",
       "bits": 32,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
       "name": "Windows CE",
@@ -1312,12 +1312,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": "UC Browser",
       "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "Microsoft",
+      "version": "7.7.1.88",
+      "manufacturer": "UcWeb",
       "bits": 32,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
       "name": "Windows CE",
@@ -1369,6 +1369,120 @@
       "name": "WebKit",
       "version": "531.0.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-GW825/V10c IEMobile/8.12 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95"
+    },
+    "device": {
+      "deviceName": "GW825",
+      "marketingName": "GW825",
+      "manufacturer": "Lg",
+      "brand": "Lg",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/v10A; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML; like Gecko) Safari/413"
+    },
+    "device": {
+      "deviceName": "KT610",
+      "marketingName": "KT610",
+      "manufacturer": "Lg",
+      "brand": "Lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "Apple",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-LG620G[TF012114009741104000000018032359160] Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "620G",
+      "marketingName": "620G",
+      "manufacturer": "Lg",
+      "brand": "Lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Obigo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
     }
   }
 ]

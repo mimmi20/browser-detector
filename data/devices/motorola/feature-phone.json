@@ -55,6 +55,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "motorola a925": {
+    "deviceName": "A925",
+    "marketingName": "A925",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "motorola e1000": {
     "deviceName": "E1000",
     "marketingName": "E1000",
@@ -194,6 +208,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "motorola rizr z8": {
+    "deviceName": "Rizr Z8",
+    "marketingName": "Rizr Z8",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   },
   "motorola slvr l7": {
     "deviceName": "SLVR L7",

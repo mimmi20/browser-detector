@@ -69,6 +69,20 @@
     "type": "feature-phone",
     "platform": "nokia os"
   },
+  "nokia 225": {
+    "deviceName": "225",
+    "marketingName": "225",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 2320c": {
     "deviceName": "2320 classic",
     "marketingName": "2320 classic",
@@ -895,6 +909,20 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia 9200": {
+    "deviceName": "9200",
+    "marketingName": "9200",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 640,
+      "height": 200,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "nokia 9500": {
     "deviceName": "9500",
     "marketingName": "9500",
@@ -1454,6 +1482,48 @@
     },
     "type": "feature-phone",
     "platform": "symbian"
+  },
+  "nokia 9000": {
+    "deviceName": "9000",
+    "marketingName": "Communicator 9000",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "geos"
+  },
+  "nokia 9000i": {
+    "deviceName": "9000i",
+    "marketingName": "Communicator 9000i",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "geos"
+  },
+  "nokia 9110": {
+    "deviceName": "9110",
+    "marketingName": "Communicator 9110",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "geos"
   },
   "nokia e5-00": {
     "deviceName": "E5-00",

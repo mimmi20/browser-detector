@@ -111,6 +111,20 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "huawei t1201": {
+    "deviceName": "T1201",
+    "marketingName": "T1201",
+    "manufacturer": "Huawei",
+    "brand": "Huawei",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
   "huawei u7510": {
     "deviceName": "U7510",
     "marketingName": "U7510",
@@ -123,6 +137,6 @@
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
   }
 }
