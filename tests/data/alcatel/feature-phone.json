@@ -532,5 +532,81 @@
       "version": "0.0.0",
       "manufacturer": "Obigo"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; ALCATEL4044N; rv:37.0) Gecko/37.0 Firefox/37.0 Kai/1.0"
+    },
+    "device": {
+      "deviceName": "4044N",
+      "marketingName": "Go Flip",
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "KaiOS",
+      "marketingName": "KaiOS",
+      "version": "0.0.0",
+      "manufacturer": "KaiOS",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; ALCATEL4044M; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0"
+    },
+    "device": {
+      "deviceName": "4044M",
+      "marketingName": "Go Flip",
+      "manufacturer": "Alcatel",
+      "brand": "Alcatel",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "KaiOS",
+      "marketingName": "KaiOS",
+      "version": "1.0.0",
+      "manufacturer": "KaiOS",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
   }
 ]

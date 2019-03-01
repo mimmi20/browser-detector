@@ -846,6 +846,18 @@
     },
     "engine": "webkit"
   },
+  "ekioh browser": {
+    "name": "Ekioh Browser",
+    "manufacturer": "Ekioh",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Ekioh"
+      ]
+    },
+    "engine": "webkit"
+  },
   "element browser": {
     "name": "Element Browser",
     "manufacturer": "ElementSoftware",
@@ -1142,6 +1154,16 @@
       ]
     },
     "engine": null
+  },
+  "heliummobilebrowser": {
+    "name": "HeliumMobileBrowser",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
   },
   "hitpad": {
     "name": "Hitpad",
@@ -1747,6 +1769,16 @@
       ]
     },
     "engine": "gecko"
+  },
+  "maui browser": {
+    "name": "MAUI Browser",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   },
   "maven": {
     "name": "Maven",
@@ -3207,7 +3239,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "TizenBrowser"
+        "TizenBrowser",
+        "Tizen Browser"
       ]
     },
     "engine": null

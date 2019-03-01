@@ -74,5 +74,43 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Spice M6800  Opera/9.80 (MTK; Nucleus; U; xx) Presto/2.4.18 Version/10.00"
+    },
+    "device": {
+      "deviceName": "M-6800",
+      "marketingName": "Flo",
+      "manufacturer": "Spice",
+      "brand": "Spice",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 3.14
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "10.00.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.4.18",
+      "manufacturer": "Opera"
+    }
   }
 ]

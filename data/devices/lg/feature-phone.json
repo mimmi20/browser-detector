@@ -13,6 +13,20 @@
     "type": "feature-phone",
     "platform": "android"
   },
+  "lg 620g": {
+    "deviceName": "620G",
+    "marketingName": "620G",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "lg 900g": {
     "deviceName": "900G",
     "marketingName": "900G",
@@ -223,6 +237,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "lg gw825": {
+    "deviceName": "GW825",
+    "marketingName": "GW825",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "lg hb620t": {
     "deviceName": "HB620T",
     "marketingName": "HB620T",
@@ -306,6 +334,20 @@
     },
     "type": "feature-phone",
     "platform": "android"
+  },
+  "lg kt610": {
+    "deviceName": "KT610",
+    "marketingName": "KT610",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   },
   "lg kt615": {
     "deviceName": "KT615",

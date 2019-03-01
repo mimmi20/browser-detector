@@ -18,7 +18,7 @@
     "/^Mozilla\\/5\\.0 \\(.*(Mobile|Tablet);.*rv:(\\d+\\.\\d+).*\\) Gecko\\/(\\d+).* Firefox\\/(\\d+\\.\\d+).*/": "firefoxos",
     "/like mac os x|ip[ao]d|iphone|cpu i?os|ios;|iuc ?\\(|puffin\\/[\\d\\.]+i[pt]|antenna\\/|antennapod|rss_?radio|podcruncher|audioboom|stitcher\\/ios|captivenetwork|dataaccessd/i": "ios",
     "/nokia/i": "symbian",
-    "/\\bprofile\\b|gt\\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\\/1\\.0|netfront|profile\\/midp|j2me\\/|java|nucleus|maui runtime|mre/i": "java",
+    "/\\bprofile\\b|gt\\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\\/1\\.0|netfront|profile\\/midp|j2me\\/|java|nucleus|maui runtime|mre|threadx_os/i": "java",
     "/mac os x|macintosh|os=mac 10|mac_powerpc|ppc|68k|camino|pubsub|integrity/i": "mac",
     "/sunos|solaris/i": "solaris",
     "/palm os|palmsource/i": "palm",

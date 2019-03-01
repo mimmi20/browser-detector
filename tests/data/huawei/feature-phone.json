@@ -177,10 +177,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
@@ -377,6 +377,44 @@
       "name": "Teleca",
       "version": "0.0.0",
       "manufacturer": "Obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HUAWEI T1201_TD/1.0 ThreadX_OS/04.00 SC8800H/S4 Release/6.17.2010 Browser/NetFont-3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "T1201",
+      "marketingName": "T1201",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "ThreadX",
+      "marketingName": "Zenwalk GNU Linux",
+      "version": "0.0.0",
+      "manufacturer": "Express Logic",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
     }
   }
 ]

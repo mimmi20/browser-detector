@@ -201,8 +201,8 @@
     "/zte[ \\-]skate/i": "zte skate",
     "/racerii/i": "zte racer ii",
     "/racer/i": "zte racer",
-    "/openc/i": "zte open c",
-    "/open2/i": "zte open 2",
+    "/open ?c/i": "zte open c",
+    "/open ?2/i": "zte open 2",
     "/zteopen/i": "zte open",
     "/ n600 /i": "zte n600",
     "/leo q2/i": "zte v769m",
@@ -218,7 +218,9 @@
     "/nova/i": "zte nova",
     "/c_n780/i": "zte c n780",
     "/link/i": "zte link",
-    "/momodesign md droid/i": "zte momodesign md droid"
+    "/momodesign md droid/i": "zte momodesign md droid",
+    "/t54/i": "zte t54",
+    "/r54/i": "zte r54"
   },
   "generic": "general zte device"
 }
