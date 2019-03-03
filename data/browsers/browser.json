@@ -639,6 +639,18 @@
     },
     "engine": "blink"
   },
+  "cos browser": {
+    "name": "COS Browser",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "COSBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
   "crazy browser": {
     "name": "Crazy Browser",
     "manufacturer": "CrazyBrowser",

@@ -124,6 +124,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "BREW; U;",
         "BREW"
       ]
     }
@@ -155,6 +156,18 @@
     "version": {
       "class": null,
       "search": null
+    }
+  },
+  "cos": {
+    "name": "Chinese Operating System",
+    "marketingName": "COS",
+    "manufacturer": "Unknown",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "COS like Android",
+        "Chinese Operating System"
+      ]
     }
   },
   "chromeos": {

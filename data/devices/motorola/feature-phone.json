@@ -39,7 +39,35 @@
       "size": 2.4
     },
     "type": "feature-phone",
-    "platform": "java"
+    "platform": "linux"
+  },
+  "motorola a1200r": {
+    "deviceName": "A1200r",
+    "marketingName": "A1200r",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "linux"
+  },
+  "motorola a1600": {
+    "deviceName": "A1600",
+    "marketingName": "A1600",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "linux"
   },
   "motorola a3300c": {
     "deviceName": "A3300c",
@@ -149,6 +177,20 @@
       "height": 120,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "motorola qa1": {
+    "deviceName": "QA1",
+    "marketingName": "Karma",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.5
     },
     "type": "feature-phone",
     "platform": "java"
@@ -273,6 +315,34 @@
     "display": {
       "width": 220,
       "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "motorola v860": {
+    "deviceName": "V860",
+    "marketingName": "V860",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "motorola v9mm": {
+    "deviceName": "V9mm",
+    "marketingName": "V9mm",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 320,
+      "height": 240,
       "touch": false,
       "size": null
     },
