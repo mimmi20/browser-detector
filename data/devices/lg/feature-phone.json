@@ -27,6 +27,20 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "lg 840g": {
+    "deviceName": "840G",
+    "marketingName": "840G",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg 900g": {
     "deviceName": "900G",
     "marketingName": "900G",
@@ -83,6 +97,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg c207": {
+    "deviceName": "C207",
+    "marketingName": "C207",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg ku800": {
     "deviceName": "KU800",
     "marketingName": "Chocolate",
@@ -121,6 +149,34 @@
       "height": 240,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg t375": {
+    "deviceName": "T375",
+    "marketingName": "Cookie Smart",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg t395": {
+    "deviceName": "T395",
+    "marketingName": "Cookie Smart",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 3.2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -166,6 +222,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "lg vx11000": {
+    "deviceName": "VX11000",
+    "marketingName": "Env Touch",
+    "manufacturer": "Lg",
+    "brand": "Lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "brew"
   },
   "lg c330": {
     "deviceName": "C330",
@@ -460,6 +530,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "lg ln272": {
+    "deviceName": "LN272",
+    "marketingName": "Rumor Reflex",
+    "manufacturer": "Lg",
+    "brand": "Sprint",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "brew"
   },
   "lg ln510": {
     "deviceName": "LN510",

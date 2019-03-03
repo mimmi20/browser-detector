@@ -4,7 +4,7 @@
     "/chr[o0]me|crmo/i": "blink",
     "/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
     "/(?<![kK][aA])iOS/": "webkit",
-    "/presto\\/|opera/i": "presto",
+    "/presto\\/|opera(?!ting)/i": "presto",
     "/trident|msie|like gecko/i": "trident",
     "/gecko|firefox|minefield|shiretoko|bonecho|namoroka/i": "gecko"
   },
