@@ -13,6 +13,20 @@
     "type": "feature-phone",
     "platform": null
   },
+  "blackberry 6510": {
+    "deviceName": "BlackBerry 6510",
+    "marketingName": "BlackBerry 6510",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
   "blackberry 7130": {
     "deviceName": "BlackBerry 7130",
     "marketingName": "BlackBerry 7130",
@@ -83,6 +97,20 @@
     "type": "feature-phone",
     "platform": "rim os"
   },
+  "blackberry 8820": {
+    "deviceName": "BlackBerry 8820",
+    "marketingName": "BlackBerry 8820",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.5
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
   "blackberry 8830": {
     "deviceName": "BlackBerry 8830",
     "marketingName": "BlackBerry 8830 World Edition",
@@ -107,6 +135,34 @@
       "height": 320,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 9620": {
+    "deviceName": "BlackBerry 9620",
+    "marketingName": "BlackBerry Bold 9620",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": true,
+      "size": 2.44
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 9650": {
+    "deviceName": "BlackBerry 9650",
+    "marketingName": "BlackBerry Bold 9650",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": true,
+      "size": 2.44
     },
     "type": "feature-phone",
     "platform": "rim os"
@@ -148,7 +204,21 @@
       "width": 480,
       "height": 360,
       "touch": false,
-      "size": null
+      "size": 2.44
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 9788": {
+    "deviceName": "BlackBerry 9788",
+    "marketingName": "BlackBerry Bold 9788",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": true,
+      "size": 2.44
     },
     "type": "feature-phone",
     "platform": "rim os"
@@ -167,7 +237,7 @@
     "type": "feature-phone",
     "platform": "rim os"
   },
-  "blackberry bold touch 9900": {
+  "blackberry 9900": {
     "deviceName": "BlackBerry Bold Touch 9900",
     "marketingName": "BlackBerry Bold Touch 9900",
     "manufacturer": "Rim",
@@ -205,6 +275,34 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 9330": {
+    "deviceName": "BlackBerry 9330",
+    "marketingName": "BlackBerry Curve 3G 9330",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.46
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 8300": {
+    "deviceName": "BlackBerry 8300",
+    "marketingName": "BlackBerry Curve 8300",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.5
     },
     "type": "feature-phone",
     "platform": "rim os"
@@ -321,6 +419,20 @@
     "type": "feature-phone",
     "platform": "rim os"
   },
+  "blackberry 9315": {
+    "deviceName": "BlackBerry 9315",
+    "marketingName": "BlackBerry Curve 9315",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
   "blackberry 9320": {
     "deviceName": "BlackBerry 9320",
     "marketingName": "BlackBerry Curve 9320",
@@ -331,6 +443,20 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 9350": {
+    "deviceName": "BlackBerry 9350",
+    "marketingName": "BlackBerry Curve 9350",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": true,
+      "size": 2.44
     },
     "type": "feature-phone",
     "platform": "rim os"
@@ -349,6 +475,20 @@
     "type": "feature-phone",
     "platform": "rim os"
   },
+  "blackberry 9370": {
+    "deviceName": "BlackBerry 9370",
+    "marketingName": "BlackBerry Curve 9370",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 480,
+      "height": 360,
+      "touch": true,
+      "size": 2.44
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
   "blackberry 9380": {
     "deviceName": "BlackBerry 9380",
     "marketingName": "BlackBerry Curve 9380",
@@ -359,6 +499,20 @@
       "height": 360,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 9100": {
+    "deviceName": "BlackBerry 9100",
+    "marketingName": "BlackBerry Pearl 3G 9100",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 400,
+      "height": 360,
+      "touch": true,
+      "size": 2.25
     },
     "type": "feature-phone",
     "platform": "rim os"
@@ -401,6 +555,20 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 8220": {
+    "deviceName": "BlackBerry 8220",
+    "marketingName": "BlackBerry Pearl Flip 8220",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.6
     },
     "type": "feature-phone",
     "platform": "rim os"
@@ -517,7 +685,21 @@
     "type": "feature-phone",
     "platform": "rim os"
   },
-  "blackberry torch 9860": {
+  "blackberry 9850": {
+    "deviceName": "BlackBerry 9850",
+    "marketingName": "BlackBerry Torch 9850",
+    "manufacturer": "Rim",
+    "brand": "Rim",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 9860": {
     "deviceName": "BlackBerry Torch 9860",
     "marketingName": "BlackBerry Torch 9860",
     "manufacturer": "Rim",
