@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (BREW; U; BREW 3.1.5; xx) AppleWebKit/525.26 (KHTML, like Gecko) Polaris/7.0 Safari/525.26 480X800 LGE VX11000"
+    },
+    "device": {
+      "deviceName": "VX11000",
+      "marketingName": "Env Touch",
+      "manufacturer": "Lg",
+      "brand": "Lg",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Polaris",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "Infraware",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.5",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.26.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LG-GD350/V100 Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {

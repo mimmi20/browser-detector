@@ -36,5 +36,43 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (HS-E316/E464.6.01.03.00;U;REX/3.0;BREW/3.1.5;240*320;CTC/2.0) Ucweb/7.6"
+    },
+    "device": {
+      "deviceName": "HS-E316",
+      "marketingName": "HS-E316",
+      "manufacturer": "Hisense",
+      "brand": "Hisense",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.6.0",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.5",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]

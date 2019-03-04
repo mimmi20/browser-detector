@@ -1,6 +1,614 @@
 [
   {
     "headers": {
+      "user-agent": "BlackBerry6510/3.0"
+    },
+    "device": {
+      "deviceName": "BlackBerry 6510",
+      "marketingName": "BlackBerry 6510",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.0.0",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "BlackBerry",
+      "version": "0.0.0",
+      "manufacturer": "Rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; xx) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1066 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9850",
+      "marketingName": "BlackBerry Torch 9850",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "7.1.0.1066",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.1066",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9788; xx) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.595 Mobile Safari/534.8+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9788",
+      "marketingName": "BlackBerry Bold 9788",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "6.0.0.595",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.595",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.8.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9650; xx) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.280 Mobile Safari/534.1+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9650",
+      "marketingName": "BlackBerry Bold 9650",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "6.0.0.280",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.280",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9620; xx) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1112 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9620",
+      "marketingName": "BlackBerry Bold 9620",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "7.1.0.1112",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.1112",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9370; xx) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.755 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9370",
+      "marketingName": "BlackBerry Curve 9370",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "7.1.0.755",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.755",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9350; xx) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.580 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9350",
+      "marketingName": "BlackBerry Curve 9350",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "7.1.0.580",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.580",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9330; xx) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.524 Mobile Safari/534.8+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9330",
+      "marketingName": "BlackBerry Curve 3G 9330",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.46
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "6.0.0.524",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.524",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.8.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9315; xx) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1098 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9315",
+      "marketingName": "BlackBerry Curve 9315",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "7.1.0.1098",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.1098",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9100; xx) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.534 Mobile Safari/534.8+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9100",
+      "marketingName": "BlackBerry Pearl 3G 9100",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 400,
+        "height": 360,
+        "touch": true,
+        "size": 2.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "6.0.0.534",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.534",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.8.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8820/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8820",
+      "marketingName": "BlackBerry 8820",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "4.5.0.182",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.5.0.182",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "BlackBerry",
+      "version": "0.0.0",
+      "manufacturer": "Rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9100/6.6.0.248 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB8.1.0.104/159/999"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9100",
+      "marketingName": "BlackBerry Pearl 3G 9100",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 400,
+        "height": 360,
+        "touch": true,
+        "size": 2.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.1.0.104",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.6.0.248",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "BlackBerry",
+      "version": "0.0.0",
+      "manufacturer": "Rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9650/4.2.0.494 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB8.1.0.104/159/800"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9650",
+      "marketingName": "BlackBerry Bold 9650",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.1.0.104",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.0.494",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "BlackBerry",
+      "version": "0.0.0",
+      "manufacturer": "Rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8300/4.5.0.108 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/136 UP.Browser/5.0.3.3"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8300",
+      "marketingName": "BlackBerry Curve 8300",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.3",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.5.0.108",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8220/4.6.0.293 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8220",
+      "marketingName": "BlackBerry Pearl Flip 8220",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "4.6.0.293",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.6.0.293",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "BlackBerry",
+      "version": "0.0.0",
+      "manufacturer": "Rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry) AppleWebKit/536.2+ (KHTML, like Gecko) Version/10.0.6.384 Mobile Safari/536.2+"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "Rim",
+      "brand": "Rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BlackBerry",
+      "modus": null,
+      "version": "10.0.6.384",
+      "manufacturer": "Rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.0.6.384",
+      "manufacturer": "Rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.2.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MQQBrowser/for Blackberry2.0.0 (BlackBerry9310/7.1.0.768)",
       "q-ua": "BBQBM20_GA/200016&BBMMTT_3/200016&BB&201518&BlackBerry93107.1.0.&0&6347&V3"
     },
@@ -659,7 +1267,7 @@
         "width": 480,
         "height": 360,
         "touch": false,
-        "size": null
+        "size": 2.44
       },
       "type": "feature-phone"
     },
@@ -1424,12 +2032,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "BlackBerry",
+      "name": "Google Wap Proxy",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Rim",
+      "version": "1.0.0",
+      "manufacturer": "Google",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": "RIM OS",
@@ -1439,9 +2047,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "BlackBerry",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "Rim"
+      "manufacturer": "Unknown"
     }
   },
   {
