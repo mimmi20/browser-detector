@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Nexus 6P Build/NPD90G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Nexus 6P",
+      "marketingName": "Nexus 6P",
+      "manufacturer": "Huawei",
+      "brand": "Google",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "52.0.2743.98",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.5; de-de; Pulse Build/CRB17) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2 (AdMob-ANDROID-20091123)"
+    },
+    "device": {
+      "deviceName": "Pulse",
+      "marketingName": "Pulse",
+      "manufacturer": "Huawei",
+      "brand": "Tmobile",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.0.4",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "1.5.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.10.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; ATH-AL00 Build/HONORATH-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 JsKit/1.0 (Android) SohuNews/5.7.3 BuildCode/113"
     },
     "device": {
@@ -149,44 +225,6 @@
       "name": "T5",
       "version": "2.0.0",
       "manufacturer": "Baidu"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Nexus 6P Build/NPD90G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Nexus 6P",
-      "marketingName": "Nexus 6P",
-      "manufacturer": "Huawei",
-      "brand": "Google",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "52.0.2743.98",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
     }
   },
   {
@@ -7764,7 +7802,7 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.8
       },
       "type": "smartphone"
     },
@@ -18777,7 +18815,7 @@
     },
     "device": {
       "deviceName": "EVA-TL00",
-      "marketingName": "P Standard Edition",
+      "marketingName": "P9",
       "manufacturer": "Huawei",
       "brand": "Huawei",
       "display": {
@@ -19875,44 +19913,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.5; de-de; Pulse Build/CRB17) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2 (AdMob-ANDROID-20091123)"
-    },
-    "device": {
-      "deviceName": "Pulse",
-      "marketingName": "Pulse",
-      "manufacturer": "Huawei",
-      "brand": "Tmobile",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "3.0.4",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "1.5.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "525.10.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; HUAWEI MT7-CL00 Build/HuaweiMT7-CL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/35.0.1916.138 Mobile Safari/537.36 T7/6.4"
     },
     "device": {
@@ -20745,6 +20745,196 @@
       "name": "Trident",
       "version": "5.0.0",
       "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Mate 20 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mate 20 Pro",
+      "marketingName": "Mate 20 Pro",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "72.0.3626.105",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.0; zh-CN; EVA-AL10 Build/HUAWEIEVA-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.5.2.942 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "EVA-AL10",
+      "marketingName": "P9",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.5.2.942",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; ALP-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "ALP-L29",
+      "marketingName": "Mate 10",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (HW-HUAWEI_C8500/C8500V100R001C92B234;U;Android/2.1;240*320;CTC/2.0) AppleWebKit/530.17 Mobile Safari/530.17 parameters/{scr=427_320,cm=1,ql=l,imei=a0000020ccd264,bm=1,eng=adrmini7,mdm=1,mdl=C8500,ps=1} tiantian(securitypay)"
+    },
+    "device": {
+      "deviceName": "C8500",
+      "marketingName": "C8500",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.17.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MQQBrowser/3.0/Mozilla/5.0 (HW-HUAWEI_C8500/C8500V100R001C92B234;U;Android/2.1;240*320;CTC/2.0) AppleWebKit/530.17 Mobile Safari/530.17"
+    },
+    "device": {
+      "deviceName": "C8500",
+      "marketingName": "C8500",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "Tencent",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.17.0",
+      "manufacturer": "Apple"
     }
   }
 ]

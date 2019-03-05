@@ -153,44 +153,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; nl-nl; SonyLT26i Build/6.2.B.1.96) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "LT26i",
-      "marketingName": "Xperia Arc HD",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ja-jp; SO-01E Build/9.0.G.1.108) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
@@ -218,6 +180,424 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SO-02E Build/10.3.1.B.1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YJApp-ANDROID jp.co.yahoo.android.yjtop/2.4.29"
+    },
+    "device": {
+      "deviceName": "SO-02E",
+      "marketingName": "Xperia Z",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Yahoo! App",
+      "modus": null,
+      "version": "2.4.29",
+      "manufacturer": "Yahoo",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; ST17i Build/4.1.B.0.431) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Mobile Safari/537.36 OPR/24.0.1565.82529"
+    },
+    "device": {
+      "deviceName": "ST17i",
+      "marketingName": "Xperia Active",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "24.0.1565.82529",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; ru; SK17i Build/4.0.2.A.0.62) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/9.9.0.543 Mobile"
+    },
+    "device": {
+      "deviceName": "SK17i",
+      "marketingName": "Xperia Mini Pro",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.9.0.543",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; LT28h Build/6.2.B.0.211) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LT28h",
+      "marketingName": "Xperia Ion",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.105",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; WT19i Build/4.0.2.A.0.58) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Flipboard/2.1.2/854,2.1.2.854,2013-12-05 11:59, +0300"
+    },
+    "device": {
+      "deviceName": "WT19i",
+      "marketingName": "Live with Walkman",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Flipboard App",
+      "modus": null,
+      "version": "2.1.2",
+      "manufacturer": "Flipboard",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; LT28at Build/6.1.C.1.111) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
+    },
+    "device": {
+      "deviceName": "LT28at",
+      "marketingName": "Xperia ion",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "18.0.1025.166",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-pa; ST15a Build/4.1.B.0.587) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "ST15a",
+      "marketingName": "Xperia Mini",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.7; el-gr; MT27i Build/6.0.B.3.184) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "MT27i",
+      "marketingName": "Xperia Sola",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.7",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-jm; SK17a Build/4.1.B.0.431) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SK17a",
+      "marketingName": "Xperia Mini Pro",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G3426) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "G3426",
+      "marketingName": "Xperia XA1 Plus",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; nl-nl; SonyLT26i Build/6.2.B.1.96) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "LT26i",
+      "marketingName": "Xperia Arc HD",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
       "manufacturer": "Google",
       "bits": 32
     },
@@ -332,44 +712,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SO-02E Build/10.3.1.B.1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YJApp-ANDROID jp.co.yahoo.android.yjtop/2.4.29"
-    },
-    "device": {
-      "deviceName": "SO-02E",
-      "marketingName": "Xperia Z",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Yahoo! App",
-      "modus": null,
-      "version": "2.4.29",
-      "manufacturer": "Yahoo",
-      "bits": 32,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
       "manufacturer": "Google",
       "bits": 32
     },
@@ -951,44 +1293,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; ST17i Build/4.1.B.0.431) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Mobile Safari/537.36 OPR/24.0.1565.82529"
-    },
-    "device": {
-      "deviceName": "ST17i",
-      "marketingName": "Xperia Active",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "24.0.1565.82529",
-      "manufacturer": "Opera",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; de-de; SonyEricssonST15i Build/4.0.2.A.0.62) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
@@ -1060,44 +1364,6 @@
     "engine": {
       "name": "WebKit",
       "version": "534.30.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; ru; SK17i Build/4.0.2.A.0.62) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/9.9.0.543 Mobile"
-    },
-    "device": {
-      "deviceName": "SK17i",
-      "marketingName": "Xperia Mini Pro",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.9.0.543",
-      "manufacturer": "UcWeb",
-      "bits": 32,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "528.5.0",
       "manufacturer": "Apple"
     }
   },
@@ -1331,44 +1597,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; LT28h Build/6.2.B.0.211) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "LT28h",
-      "marketingName": "Xperia Ion",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; de-de; SonyEricssonE15iv Build/2.1.1.C.0.0) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
@@ -1581,44 +1809,6 @@
       "manufacturer": "Google",
       "bits": 32,
       "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; WT19i Build/4.0.2.A.0.58) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Flipboard/2.1.2/854,2.1.2.854,2013-12-05 11:59, +0300"
-    },
-    "device": {
-      "deviceName": "WT19i",
-      "marketingName": "Live with Walkman",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Flipboard App",
-      "modus": null,
-      "version": "2.1.2",
-      "manufacturer": "Flipboard",
-      "bits": 32,
-      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -1972,44 +2162,6 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; LT28at Build/6.1.C.1.111) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
-    },
-    "device": {
-      "deviceName": "LT28at",
-      "marketingName": "Xperia ion",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
       "manufacturer": "Apple"
     }
   },
@@ -2509,44 +2661,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-pa; ST15a Build/4.1.B.0.587) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "ST15a",
-      "marketingName": "Xperia Mini",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; fr-ca; SonyEricssonSK17a Build/4.0.2.A.0.58) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
@@ -2737,82 +2851,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.7; el-gr; MT27i Build/6.0.B.3.184) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "MT27i",
-      "marketingName": "Xperia Sola",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.7",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-jm; SK17a Build/4.1.B.0.431) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "SK17a",
-      "marketingName": "Xperia Mini Pro",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; iw-il; SonyEricssonE10a Build/2.1.1.A.0.6) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
@@ -2999,44 +3037,6 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G3426) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "G3426",
-      "marketingName": "Xperia XA1 Plus",
-      "manufacturer": "SonyEricsson",
-      "brand": "SonyEricsson",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "71.0.3578.99",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "Google"
     }
   },
   {

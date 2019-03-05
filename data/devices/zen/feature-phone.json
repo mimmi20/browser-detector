@@ -1,4 +1,18 @@
 {
+  "zen m72": {
+    "deviceName": "M72",
+    "marketingName": "M72",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "zen m8": {
     "deviceName": "M8",
     "marketingName": "M8",
@@ -13,6 +27,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "zen p46": {
+    "deviceName": "P46",
+    "marketingName": "P46",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": false,
+      "size": 3.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "zen p9": {
     "deviceName": "P9",
     "marketingName": "P9",
@@ -23,6 +51,20 @@
       "height": null,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "zen x10": {
+    "deviceName": "X10",
+    "marketingName": "X10",
+    "manufacturer": "Zen",
+    "brand": "Zen",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"

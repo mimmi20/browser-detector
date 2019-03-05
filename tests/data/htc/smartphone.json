@@ -1,6 +1,272 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD62) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 %u2013Nexus"
+    },
+    "device": {
+      "deviceName": "Nexus One",
+      "marketingName": "Nexus One",
+      "manufacturer": "Htc",
+      "brand": "Google",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.17.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Xda_Diamond_2 Opera/9.50 (Windows NT 5.1; U; de)"
+    },
+    "device": {
+      "deviceName": "Xda Diamond 2",
+      "marketingName": "Xda Diamond 2",
+      "manufacturer": "Htc",
+      "brand": "O2",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 5.1",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; myTouch4G Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "Panache",
+      "marketingName": "myTouch",
+      "manufacturer": "Htc",
+      "brand": "Tmobile",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.5; de-at; T-Mobile_G2_Touch Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1,gzip(gfe),gzip(gfe)"
+    },
+    "device": {
+      "deviceName": "G2 Touch",
+      "marketingName": "G2 Touch",
+      "manufacturer": "Htc",
+      "brand": "Tmobile",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.1.2",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "1.5.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.6; de-de; T-Mobile G1 Build/DRC92) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
+    },
+    "device": {
+      "deviceName": "Dream",
+      "marketingName": "G1",
+      "manufacturer": "Htc",
+      "brand": "Tmobile",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.1.2",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "1.6.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 640x480; Ameo 16GB/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "Athena",
+      "marketingName": "Ameo",
+      "manufacturer": "Htc",
+      "brand": "Tmobile",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.11.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) T-Mobile_LEO"
+    },
+    "device": {
+      "deviceName": "T8585",
+      "marketingName": "Leo",
+      "manufacturer": "Htc",
+      "brand": "Tmobile",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "HTC_ChaCha_A810e/Mozilla/5.0(Linux; U; Android 2.3.5;it-it; Build/GRH78C) AppleWebkit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
@@ -225,44 +491,6 @@
     "engine": {
       "name": "WebKit",
       "version": "533.16.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD62) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 %u2013Nexus"
-    },
-    "device": {
-      "deviceName": "Nexus One",
-      "marketingName": "Nexus One",
-      "manufacturer": "Htc",
-      "brand": "Google",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.1.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
       "manufacturer": "Apple"
     }
   },
@@ -9422,234 +9650,6 @@
       "name": "WebKit",
       "version": "537.36.0",
       "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Xda_Diamond_2 Opera/9.50 (Windows NT 5.1; U; de)"
-    },
-    "device": {
-      "deviceName": "Xda Diamond 2",
-      "marketingName": "Xda Diamond 2",
-      "manufacturer": "Htc",
-      "brand": "O2",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "Opera",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "Microsoft",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "0.0.0",
-      "manufacturer": "Opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; myTouch4G Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "Panache",
-      "marketingName": "myTouch",
-      "manufacturer": "Htc",
-      "brand": "Tmobile",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.4",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.5; de-at; T-Mobile_G2_Touch Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1,gzip(gfe),gzip(gfe)"
-    },
-    "device": {
-      "deviceName": "G2 Touch",
-      "marketingName": "G2 Touch",
-      "manufacturer": "Htc",
-      "brand": "Tmobile",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "3.1.2",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "1.5.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "528.5.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.6; de-de; T-Mobile G1 Build/DRC92) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
-    },
-    "device": {
-      "deviceName": "Dream",
-      "marketingName": "G1",
-      "manufacturer": "Htc",
-      "brand": "Tmobile",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "3.1.2",
-      "manufacturer": "Google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "1.6.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "528.5.0",
-      "manufacturer": "Apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 640x480; Ameo 16GB/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "Athena",
-      "marketingName": "Ameo",
-      "manufacturer": "Htc",
-      "brand": "Tmobile",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "Microsoft",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "0.0.0",
-      "manufacturer": "Google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "0.0.0",
-      "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) T-Mobile_LEO"
-    },
-    "device": {
-      "deviceName": "T8585",
-      "marketingName": "Leo",
-      "manufacturer": "Htc",
-      "brand": "Tmobile",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "8.12.0",
-      "manufacturer": "Microsoft",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": "0.0.0",
-      "manufacturer": "Microsoft",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "0.0.0",
-      "manufacturer": "Microsoft"
     }
   },
   {
