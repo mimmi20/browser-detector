@@ -1890,6 +1890,18 @@
     },
     "engine": "gecko"
   },
+  "mint browser": {
+    "name": "Mint Browser",
+    "manufacturer": "XiaomiTech",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mint Browser"
+      ]
+    },
+    "engine": null
+  },
   "mitsubishi": {
     "name": "Mitsubishi",
     "manufacturer": "Unknown",
