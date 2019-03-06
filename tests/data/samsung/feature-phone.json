@@ -1038,7 +1038,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "feature-phone"
     },
@@ -5779,6 +5779,44 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT- S8600/1.0; U; Bada/2.0; xx) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile WVGA SMM- MMS/1.2.0 OPN-B"
+    },
+    "device": {
+      "deviceName": "GT-S8600",
+      "marketingName": "Wave 3",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Dolfin",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "MopoTab",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Bada",
+      "marketingName": "Bada",
+      "version": "2.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.20.0",
       "manufacturer": "Apple"
     }
   }

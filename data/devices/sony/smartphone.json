@@ -167,6 +167,48 @@
     "type": "smartphone",
     "platform": "symbian"
   },
+  "sonyericsson e16": {
+    "deviceName": "E16",
+    "marketingName": "W8 Walkman",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "sonyericsson e16i": {
+    "deviceName": "E16i",
+    "marketingName": "W8 Walkman",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "sonyericsson wt18i": {
+    "deviceName": "WT18i",
+    "marketingName": "WT18i",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "sonyericsson x2": {
     "deviceName": "X2",
     "marketingName": "X2",
@@ -194,6 +236,34 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "sony so-04f": {
+    "deviceName": "SO-04F",
+    "marketingName": "Xperia A2",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "sony so-04g": {
+    "deviceName": "SO-04G",
+    "marketingName": "Xperia A4",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "sonyericsson so-02c": {
     "deviceName": "SO-02C",
@@ -1077,6 +1147,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sony d5788": {
+    "deviceName": "D5788",
+    "marketingName": "Xperia J1 Compact",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "sony c2104": {
     "deviceName": "C2104",
     "marketingName": "Xperia L",
@@ -1464,10 +1548,24 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "sony e5643": {
+    "deviceName": "E5643",
+    "marketingName": "Xperia M5 Dual",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "sony e5663": {
     "deviceName": "E5663",
@@ -1478,7 +1576,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1730,7 +1828,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1744,7 +1842,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1758,7 +1856,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1772,7 +1870,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1786,7 +1884,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -2295,6 +2393,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sony lt25c": {
+    "deviceName": "LT25c",
+    "marketingName": "Xperia V",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "sony lt25i": {
     "deviceName": "LT25i",
     "marketingName": "Xperia V",
@@ -2304,7 +2416,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2318,10 +2430,24 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "sony sol21": {
+    "deviceName": "SOL21",
+    "marketingName": "Xperia VL",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "sony f5121": {
     "deviceName": "F5121",
@@ -2421,6 +2547,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sonyericsson x1": {
+    "deviceName": "X1",
+    "marketingName": "Xperia X1",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "sonyericsson x1a": {
     "deviceName": "X1a",
     "marketingName": "Xperia X1",
@@ -2430,7 +2570,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3
     },
     "type": "smartphone",
     "platform": null
@@ -2444,7 +2584,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3
     },
     "type": "smartphone",
     "platform": null
@@ -3737,6 +3877,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sony 401so": {
+    "deviceName": "401SO",
+    "marketingName": "Xperia Z3",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "sony d6603": {
     "deviceName": "D6603",
     "marketingName": "Xperia Z3",
@@ -3746,7 +3900,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3760,7 +3914,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3774,7 +3928,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3788,7 +3942,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3802,10 +3956,24 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "sony d6683": {
+    "deviceName": "D6683",
+    "marketingName": "Xperia Z3",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "sony so-01g": {
     "deviceName": "SO-01G",
@@ -3816,7 +3984,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3904,6 +4072,20 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "sony 402so": {
+    "deviceName": "402SO",
+    "marketingName": "Xperia Z4",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "sony e6603": {
     "deviceName": "E6603",
@@ -4100,6 +4282,20 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "sony sol25": {
+    "deviceName": "SOL25",
+    "marketingName": "Xperia ZL2",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "sony c5502": {
     "deviceName": "C5502",
