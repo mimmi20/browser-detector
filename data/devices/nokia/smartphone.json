@@ -610,7 +610,7 @@
       "width": 640,
       "height": 360,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "symbian"
@@ -1147,6 +1147,20 @@
     "type": "smartphone",
     "platform": "windows phone"
   },
+  "nokia lumia 636": {
+    "deviceName": "Lumia 636",
+    "marketingName": "Lumia 636",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
   "microsoft rm-1010": {
     "deviceName": "RM-1010",
     "marketingName": "Lumia 638",
@@ -1528,6 +1542,20 @@
   "nokia lumia 820": {
     "deviceName": "Lumia 820",
     "marketingName": "Lumia 820",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
+  "nokia lumia 822": {
+    "deviceName": "Lumia 822",
+    "marketingName": "Lumia 822",
     "manufacturer": "Nokia",
     "brand": "Nokia",
     "display": {
