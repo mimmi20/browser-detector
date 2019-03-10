@@ -93,6 +93,16 @@
     },
     "engine": "webkit"
   },
+  "aol desktop": {
+    "name": "AOL Desktop",
+    "manufacturer": "America Online, Inc.",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "trident"
+  },
   "appcent": {
     "name": "Appcent",
     "manufacturer": "Unknown",
@@ -1378,6 +1388,16 @@
     },
     "engine": null
   },
+  "weibo app": {
+    "name": "Weibo App",
+    "manufacturer": "Sina Weibo",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
   "whatsapp": {
     "name": "WhatsApp",
     "manufacturer": "Unknown",
@@ -1533,6 +1553,16 @@
       "search": [
         "YandexSearch"
       ]
+    },
+    "engine": null
+  },
+  "youtube app": {
+    "name": "Youtube App",
+    "manufacturer": "Google",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": null
   },
