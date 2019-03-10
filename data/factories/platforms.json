@@ -1,7 +1,7 @@
 {
   "rules": {
     "/windows (phone|iot|ce)|microsoft windows; ppc|iemobile|xblwp7|zunewp7|windows ?mobile|wpdesktop|mobile version|lumia| wds |wpos:/i": "windowsmobile",
-    "/windows(?! aarch64)|win(10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32)|barca|the bat!|cygwin/i": "windows",
+    "/windows(?! aarch64)|win(10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32|16)|barca|the bat!|cygwin/i": "windows",
     "/commoncrawler|msie or firefox mutant|not on windows server/i": "unknown",
     "/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i": "symbian",
     "/maemo|like android|remix|bada|meego|sailfish|chinese operating system|cos;|android; cos/i": "maemo",

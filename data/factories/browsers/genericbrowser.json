@@ -44,6 +44,9 @@
     "/locubot/i": "locubot",
     "/acapbot/i": "acapbot",
     "/deepcrawl/i": "deepcrawl",
+    "/mediapartners-google/i": "adsense bot",
+    "/com\\.google\\.googlemobile|com\\.google\\.android\\.apps\\.magazines/i": "google mobile app",
+    "/com\\.google\\.android\\.youtube/i": "youtube app",
     "/googlebot-mobile/i": "googlebot-mobile",
     "/google-http-java-client/i": "google http client library for java",
     "/googlebot-image/i": "google image search",
@@ -278,7 +281,7 @@
     "/domaincrawler/i": "domaincrawler",
     "/pagefreezer/i": "pagefreezer",
     "/showyoubot/i": "showyoubot",
-    "/y\\!j-asr|y\\!j-bsc/i": "yahoo! japan",
+    "/y\\!j-[ab]/i": "yahoo! japan",
     "/rogerbot/i": "rogerbot",
     "/commoncrawler node/i": "commoncrawler node",
     "/adcrawler/i": "adcrawler",
@@ -642,6 +645,7 @@
     "/outclicksbot/i": "outclicksbot",
     "/samsung-agent/i": "samsung agent",
     "/tenfourfox/i": "tenfourfox",
+    "/aol/i": "aol desktop",
     "/mozilla/i": "mozilla"
   },
   "generic": "unknown"

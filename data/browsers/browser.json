@@ -1,4 +1,28 @@
 {
+  "114 browser": {
+    "name": "114 Browser",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "114Browser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "115 browser": {
+    "name": "115 Browser",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "115Browser"
+      ]
+    },
+    "engine": "blink"
+  },
   "1stbrowser": {
     "name": "1st Browser",
     "manufacturer": "Unknown",
@@ -1143,6 +1167,16 @@
     },
     "engine": "webkit"
   },
+  "greenbrowser": {
+    "name": "GreenBrowser",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "trident"
+  },
   "hbbtv": {
     "name": "HbbTV",
     "manufacturer": "Unknown",
@@ -1525,6 +1559,16 @@
     },
     "engine": "unknown"
   },
+  "juzibrowser": {
+    "name": "JuziBrowser",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "trident"
+  },
   "k-meleon": {
     "name": "K-Meleon",
     "manufacturer": "KmeleonBrowserOrg",
@@ -1672,7 +1716,7 @@
     "engine": null
   },
   "liebao": {
-    "name": "liebao",
+    "name": "LibaoBrowser",
     "manufacturer": "Kingsoft",
     "type": "browser",
     "version": {
