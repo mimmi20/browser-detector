@@ -124,5 +124,19 @@
     },
     "type": "feature-phone",
     "platform": "brew"
+  },
+  "sanyo v801sa": {
+    "deviceName": "V801SA",
+    "marketingName": "V801SA",
+    "manufacturer": "Sanyo",
+    "brand": "J-Phone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }

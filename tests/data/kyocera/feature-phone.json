@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "KDDI-W31K UP.Browser/6.2.0.5 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "W31K",
+      "marketingName": "K II",
+      "manufacturer": "Kyocera",
+      "brand": "Kddi",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0.5",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "KDDI-KC31 UP.Browser/6.2.0.5 (GUI) MMP/2.0"
     },
     "device": {
@@ -219,6 +257,82 @@
       "marketingName": "Brew",
       "version": "0.0.0",
       "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (MobilePhone; NMCS/3.4; like Gecko/20060901;KYOCERA/WX340K/2;3.0.3.11.000000/1) NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "WX340K",
+      "marketingName": "WX340K",
+      "manufacturer": "Kyocera",
+      "brand": "Kyocera",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 2.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "0.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/3.0(WILLCOM;KYOCERA/WX02K/2;1.0.0.7.000000/1/C256) NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "WX02K",
+      "marketingName": "Sweetia",
+      "manufacturer": "Kyocera",
+      "brand": "Willcom",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {

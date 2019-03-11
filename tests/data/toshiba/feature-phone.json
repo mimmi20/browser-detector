@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "KDDI-W54T UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "W54T",
+      "marketingName": "W54T",
+      "manufacturer": "Toshiba",
+      "brand": "Kddi",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0.7.3",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "VM4050/132.037 UP.Browser/6.2.2.4.e.1.100 (GUI) MMP/2.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
     },
     "device": {
@@ -73,6 +111,82 @@
       "name": "Trident",
       "version": "0.0.0",
       "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/3.0(WILLCOM;TOSHIBA/WS023T/2;0001;4/1/C128) NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "WS023T",
+      "marketingName": "WS023T",
+      "manufacturer": "Toshiba",
+      "brand": "Willcom",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SoftBank/1.0/910T/TJ001/SN Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "910T",
+      "marketingName": "910T",
+      "manufacturer": "Toshiba",
+      "brand": "Softbank",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.3.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
     }
   }
 ]

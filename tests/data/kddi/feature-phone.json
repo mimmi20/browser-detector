@@ -226,5 +226,81 @@
       "version": "2.4.18",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-CA23 UP.Browser/5.2.0.1.126 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "CA23",
+      "marketingName": "CA23",
+      "manufacturer": "Kddi",
+      "brand": "Kddi",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.2.0.1.126",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-SN3K UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SN3K",
+      "marketingName": "SN3K",
+      "manufacturer": "Kddi",
+      "brand": "Kddi",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0.7.3",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]
