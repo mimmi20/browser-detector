@@ -1,6 +1,196 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; rv:37.0) Servo/1.0 Firefox/37.0"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "37.0.0",
+      "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "J-PHONE/2.0/J-P03"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "J-PHONE/3.0/V301T"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "J-PHONE/4.1/J-SA51_a/SNJSAA1000513 SA/0001JP Profile/MIDP-1.0 Configuration/CLDC-1.0 Ext-Profile/JSCL-1.1.1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "J-PHONE/3.0/J-SH10"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; xx; LDK-ICK v1.4 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {

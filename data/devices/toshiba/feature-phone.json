@@ -1,4 +1,18 @@
 {
+  "toshiba 910t": {
+    "deviceName": "910T",
+    "marketingName": "910T",
+    "manufacturer": "Toshiba",
+    "brand": "Softbank",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "toshiba vm4050": {
     "deviceName": "VM4050",
     "marketingName": "VM4050",
@@ -9,6 +23,20 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "toshiba ws023t": {
+    "deviceName": "WS023T",
+    "marketingName": "WS023T",
+    "manufacturer": "Toshiba",
+    "brand": "Willcom",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"

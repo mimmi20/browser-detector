@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "KDDI-W41SA UP.Browser/6.2.0.7.3.129"
+    },
+    "device": {
+      "deviceName": "W41SA",
+      "marketingName": "W41SA",
+      "manufacturer": "Sanyo",
+      "brand": "Kddi",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0.7.3",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; KDDI-TS01; Windows Phone 6.5.3.5)"
     },
     "device": {
@@ -339,6 +377,44 @@
       "name": "NetFront",
       "version": "0.0.0",
       "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "J-PHONE/5.0/V801SA/SN123456789012345 SA/0001JP Profile/MIDP-1.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "deviceName": "V801SA",
+      "marketingName": "V801SA",
+      "manufacturer": "Sanyo",
+      "brand": "J-Phone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
     }
   }
 ]
