@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MAUI WAP Browser; MT6228)"
+    },
+    "device": {
+      "deviceName": "general Sony device",
+      "marketingName": "general Sony device",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; D5803 Build/23.4.A.1.232) U2/1.0.0 UCBrowser/10.7.0.636 Mobile"
     },
     "device": {
