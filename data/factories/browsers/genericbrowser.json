@@ -226,7 +226,7 @@
     "/domainappender/i": "domainappender bot",
     "/gidbot/i": "gidbot",
     "/maui-browser/i": "maui browser",
-    "/wap browser\\/maui/i": "maui wap browser",
+    "/wap browser\\/maui|maui wap browser/i": "maui wap browser",
     "/discovered/i": "discovered",
     "/gosquared-thumbnailer/i": "gosquared-thumbnailer",
     "/pycurl/i": "pycurl",

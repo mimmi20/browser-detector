@@ -7,11 +7,11 @@
     "display": {
       "width": null,
       "height": null,
-      "touch": true,
+      "touch": false,
       "size": null
     },
-    "type": "smartphone",
-    "platform": "android"
+    "type": "feature-phone",
+    "platform": "java"
   },
   "e-tel v50": {
     "deviceName": "V50",
@@ -21,10 +21,24 @@
     "display": {
       "width": 480,
       "height": 272,
-      "touch": true,
+      "touch": false,
       "size": 4
     },
-    "type": "smartphone",
-    "platform": "android"
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "e-tel v85": {
+    "deviceName": "V85",
+    "marketingName": "V85",
+    "manufacturer": "E-tel",
+    "brand": "E-tel",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }

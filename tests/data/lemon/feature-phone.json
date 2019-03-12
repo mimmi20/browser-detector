@@ -5,14 +5,14 @@
     },
     "device": {
       "deviceName": "B556",
-      "marketingName": "B556",
+      "marketingName": "Agni 3",
       "manufacturer": "Lemon",
       "brand": "Lemon",
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
-        "size": null
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
@@ -23,6 +23,82 @@
       "manufacturer": "Unknown",
       "bits": 32,
       "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Lemon B369_Maui Wap Browser"
+    },
+    "device": {
+      "deviceName": "B369",
+      "marketingName": "B369",
+      "manufacturer": "Lemon",
+      "brand": "Lemon",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Lemon B479_Wap Browser"
+    },
+    "device": {
+      "deviceName": "B479",
+      "marketingName": "B479",
+      "manufacturer": "Lemon",
+      "brand": "Lemon",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "wap-browser"
     },
     "os": {
       "name": "JavaOS",

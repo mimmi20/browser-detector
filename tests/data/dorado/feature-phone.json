@@ -1,20 +1,20 @@
 [
   {
     "headers": {
-      "user-agent": "E-tel V50 WAP-Browser/1.0.0/powerplay/2"
+      "user-agent": "Dorado P36_WAP-Browser/1.0.0"
     },
     "device": {
-      "deviceName": "V50",
-      "marketingName": "V50",
-      "manufacturer": "E-tel",
-      "brand": "E-tel",
+      "deviceName": "P36",
+      "marketingName": "P36",
+      "manufacturer": "Dorado",
+      "brand": "Dorado",
       "display": {
-        "width": 480,
-        "height": 272,
-        "touch": true,
-        "size": 4
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
       },
-      "type": "smartphone"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "WAP Browser",
@@ -25,10 +25,10 @@
       "type": "wap-browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": "0.0.0",
-      "manufacturer": "Google",
+      "manufacturer": "SunMicrosystems",
       "bits": 32
     },
     "engine": {
