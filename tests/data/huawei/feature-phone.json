@@ -530,5 +530,43 @@
       "version": "0.0.0",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/H11HW/B000 Browser/Obigo-Browser/Q04A"
+    },
+    "device": {
+      "deviceName": "H11HW",
+      "marketingName": "H11HW",
+      "manufacturer": "Huawei",
+      "brand": "Emobile",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "04.0.0",
+      "manufacturer": "Obigo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": "0.0.0",
+      "manufacturer": "Obigo"
+    }
   }
 ]

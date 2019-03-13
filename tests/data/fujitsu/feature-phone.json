@@ -1,63 +1,25 @@
 [
   {
     "headers": {
-      "user-agent": "KDDI-W54T UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0"
+      "user-agent": "DoCoMo/2.0 F900i(c100;TB;W22H12),gzip(gfe) (via translate.google.com)"
     },
     "device": {
-      "deviceName": "W54T",
-      "marketingName": "W54T",
-      "manufacturer": "Toshiba",
-      "brand": "Kddi",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": false,
-        "size": 3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.0.7.3",
-      "manufacturer": "Myriad",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": "0.0.0",
-      "manufacturer": "SunMicrosystems",
-      "bits": 32
-    },
-    "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "Unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "VM4050/132.037 UP.Browser/6.2.2.4.e.1.100 (GUI) MMP/2.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-    },
-    "device": {
-      "deviceName": "VM4050",
-      "marketingName": "VM4050",
-      "manufacturer": "Toshiba",
-      "brand": "Toshiba",
+      "deviceName": "F900i",
+      "marketingName": "F900i",
+      "manufacturer": "Fujitsu",
+      "brand": "DoCoMo",
       "display": {
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.2
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Google Bot",
+      "name": "Google Translate",
       "modus": null,
-      "version": "2.1.0",
+      "version": "0.0.0",
       "manufacturer": "Google",
       "bits": 32,
       "type": "bot"
@@ -77,66 +39,28 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Toshiba/X01T)"
+      "user-agent": "DoCoMo/2.0 F2051(c100;TD)"
     },
     "device": {
-      "deviceName": "X01T",
-      "marketingName": "X01T",
-      "manufacturer": "Toshiba",
-      "brand": "Softbank",
+      "deviceName": "F2051",
+      "marketingName": "F2051",
+      "manufacturer": "Fujitsu",
+      "brand": "DoCoMo",
       "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "Microsoft",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": "0.0.0",
-      "manufacturer": "Microsoft",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "0.0.0",
-      "manufacturer": "Microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/3.0(WILLCOM;TOSHIBA/WS023T/2;0001;4/1/C128) NetFront/3.4"
-    },
-    "device": {
-      "deviceName": "WS023T",
-      "marketingName": "WS023T",
-      "manufacturer": "Toshiba",
-      "brand": "Willcom",
-      "display": {
-        "width": 320,
-        "height": 240,
+        "width": 220,
+        "height": 176,
         "touch": false,
-        "size": 2.4
+        "size": 2.2
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "NetFront",
+      "name": null,
       "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "Access",
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
       "bits": 32,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -146,20 +70,58 @@
       "bits": 32
     },
     "engine": {
-      "name": "NetFront",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "Access"
+      "manufacturer": "Unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "SoftBank/1.0/910T/TJ001/SN Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "DoCoMo/2.0 F09C(c500;TB;W24H16)"
     },
     "device": {
-      "deviceName": "910T",
-      "marketingName": "910T",
-      "manufacturer": "Toshiba",
-      "brand": "Softbank",
+      "deviceName": "F09C",
+      "marketingName": "F09C",
+      "manufacturer": "Fujitsu",
+      "brand": "DoCoMo",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": false,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 F04A(c100;TB;W24H17;ser353709020370762; icc8981100020732495171f)(c100;TB;W24H12)"
+    },
+    "device": {
+      "deviceName": "F04A",
+      "marketingName": "F04A",
+      "manufacturer": "Fujitsu",
+      "brand": "DoCoMo",
       "display": {
         "width": null,
         "height": null,
@@ -169,12 +131,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "NetFront",
+      "name": null,
       "modus": null,
-      "version": "3.3.0",
-      "manufacturer": "Access",
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
       "bits": 32,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -184,25 +146,63 @@
       "bits": 32
     },
     "engine": {
-      "name": "NetFront",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "Access"
+      "manufacturer": "Unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "emobile/1.0.0 (H11T; Profile/MIDP-2.0 Configuration/CLDC-1.1 Local/ja UNTRUSTED/1.0)"
+      "user-agent": "DoCoMo/2.0 F03B(c500;TB;W24H16)"
     },
     "device": {
-      "deviceName": "H11T",
-      "marketingName": "H11T",
-      "manufacturer": "Toshiba",
-      "brand": "Emobile",
+      "deviceName": "F03B",
+      "marketingName": "F03B",
+      "manufacturer": "Fujitsu",
+      "brand": "DoCoMo",
       "display": {
-        "width": 400,
-        "height": 240,
+        "width": 854,
+        "height": 480,
         "touch": false,
-        "size": 2.8
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/1.0/F671is/c1"
+    },
+    "device": {
+      "deviceName": "F671is",
+      "marketingName": "F671is",
+      "manufacturer": "Fujitsu",
+      "brand": "DoCoMo",
+      "display": {
+        "width": 160,
+        "height": 120,
+        "touch": false,
+        "size": null
       },
       "type": "feature-phone"
     },
