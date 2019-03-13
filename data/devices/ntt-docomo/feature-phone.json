@@ -13,10 +13,38 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "docomo f2051": {
-    "deviceName": "F2051",
-    "marketingName": "F2051",
+  "docomo d505i": {
+    "deviceName": "D505i",
+    "marketingName": "D505i",
     "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 96,
+      "height": 72,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo f03b": {
+    "deviceName": "F03B",
+    "marketingName": "F03B",
+    "manufacturer": "Fujitsu",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo f04a": {
+    "deviceName": "F04A",
+    "marketingName": "F04A",
+    "manufacturer": "Fujitsu",
     "brand": "DoCoMo",
     "display": {
       "width": null,
@@ -27,16 +55,128 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "docomo f09c": {
+    "deviceName": "F09C",
+    "marketingName": "F09C",
+    "manufacturer": "Fujitsu",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": 3.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo f2051": {
+    "deviceName": "F2051",
+    "marketingName": "F2051",
+    "manufacturer": "Fujitsu",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo f671is": {
+    "deviceName": "F671is",
+    "marketingName": "F671is",
+    "manufacturer": "Fujitsu",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "docomo f900i": {
     "deviceName": "F900i",
     "marketingName": "F900i",
-    "manufacturer": "DoCoMo",
+    "manufacturer": "Fujitsu",
     "brand": "DoCoMo",
     "display": {
       "width": 320,
       "height": 240,
       "touch": false,
       "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo n02c": {
+    "deviceName": "N02C",
+    "marketingName": "N02C",
+    "manufacturer": "Nec",
+    "brand": "DoCoMo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo n04a": {
+    "deviceName": "N04A",
+    "marketingName": "N04A",
+    "manufacturer": "Nec",
+    "brand": "DoCoMo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo n09a3": {
+    "deviceName": "N09A3",
+    "marketingName": "N09A3",
+    "manufacturer": "Nec",
+    "brand": "DoCoMo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo n2002": {
+    "deviceName": "N2002",
+    "marketingName": "N2002",
+    "manufacturer": "Nec",
+    "brand": "DoCoMo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo n903i": {
+    "deviceName": "N903i",
+    "marketingName": "N903i",
+    "manufacturer": "Nec",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 690,
+      "height": 480,
+      "touch": false,
+      "size": 2.5
     },
     "type": "feature-phone",
     "platform": "java"
@@ -55,6 +195,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "docomo p2002": {
+    "deviceName": "P2002",
+    "marketingName": "P2002",
+    "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 130,
+      "height": 120,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo p2101v": {
+    "deviceName": "P2101V",
+    "marketingName": "P2101V",
+    "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 176,
+      "height": 164,
+      "touch": false,
+      "size": 1
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "docomo p900i": {
     "deviceName": "P900i",
     "marketingName": "P900i",
@@ -69,6 +237,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "docomo p901i": {
+    "deviceName": "P901i",
+    "marketingName": "P901i",
+    "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "docomo p905i": {
     "deviceName": "P905i",
     "marketingName": "P905i",
@@ -77,6 +259,90 @@
     "display": {
       "width": 854,
       "height": 480,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo r209i": {
+    "deviceName": "R209i",
+    "marketingName": "R209i",
+    "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 96,
+      "height": 72,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo sh06b": {
+    "deviceName": "SH06B",
+    "marketingName": "SH06B",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo sh2101v": {
+    "deviceName": "SH2101V",
+    "marketingName": "SH2101V",
+    "manufacturer": "Sharp",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo so502i": {
+    "deviceName": "SO502i",
+    "marketingName": "SO502i",
+    "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 120,
+      "height": 72,
+      "touch": false,
+      "size": 1.3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo t2101v": {
+    "deviceName": "T2101V",
+    "marketingName": "T2101V",
+    "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "display": {
+      "width": 176,
+      "height": 144,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo x503i": {
+    "deviceName": "X503i",
+    "marketingName": "X503i",
+    "manufacturer": "DoCoMo",
+    "brand": "DoCoMo",
+    "display": {
+      "width": null,
+      "height": null,
       "touch": false,
       "size": null
     },
