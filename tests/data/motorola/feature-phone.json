@@ -912,5 +912,43 @@
       "version": "0.0.0",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.7231/hifi/tmobile/at; Motorola V3; de; U; ssr)"
+    },
+    "device": {
+      "deviceName": "V3",
+      "marketingName": "Razr V3",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "1.1.7231",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
   }
 ]

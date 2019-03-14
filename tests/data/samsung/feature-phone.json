@@ -237,10 +237,10 @@
       "manufacturer": "Samsung",
       "brand": "Samsung",
       "display": {
-        "width": 220,
-        "height": 176,
+        "width": 160,
+        "height": 128,
         "touch": false,
-        "size": null
+        "size": 2
       },
       "type": "feature-phone"
     },
@@ -5856,6 +5856,386 @@
       "name": "NetFront",
       "version": "0.0.0",
       "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SCH-W279/ POLARIS/6.2 (GUI; compatible; UP.Browser)"
+    },
+    "device": {
+      "deviceName": "SCH-W279",
+      "marketingName": "SCH-W279",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Polaris",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "Infraware",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SCH-S239/ POLARIS/6.15 (GUI; compatible; UP.Browser)"
+    },
+    "device": {
+      "deviceName": "SCH-S239",
+      "marketingName": "SCH-S239",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Polaris",
+      "modus": null,
+      "version": "6.15.0",
+      "manufacturer": "Infraware",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GT-E3309 Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.29644/37.8773; U; es) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "GT-E3309",
+      "marketingName": "Manhattan",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.29644",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GT-E3300 Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.29644/37.8773; U; es) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "GT-E3300",
+      "marketingName": "Manhattan",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.29644",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GT-E3300L Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.29644/37.8773; U; es) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "GT-E3300L",
+      "marketingName": "Manhattan",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.29644",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GT-E3300 Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.29644/35.6822; U; xx) Presto/2.8.119 Version/11.10"
+    },
+    "device": {
+      "deviceName": "GT-E3300",
+      "marketingName": "Manhattan",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.29644",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GT-C3595 Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.33398/34.2003; U; xx) Presto/2.8.119 Version/11.10"
+    },
+    "device": {
+      "deviceName": "GT-C3595",
+      "marketingName": "GT-C3595",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.1.33398",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GT-C3592 Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.33398/34.2003; U; xx) Presto/2.8.119 Version/11.10"
+    },
+    "device": {
+      "deviceName": "GT-C3592",
+      "marketingName": "GT-C3592",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.1.33398",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GT-C3590 Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.33398/34.2003; U; xx) Presto/2.8.119 Version/11.10"
+    },
+    "device": {
+      "deviceName": "GT-C3590",
+      "marketingName": "GT-C3590",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.1.33398",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J700/J700XAHA6 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-J700",
+      "marketingName": "SGH-J700",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
     }
   }
 ]

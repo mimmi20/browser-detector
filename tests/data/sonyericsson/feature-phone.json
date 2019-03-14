@@ -2240,5 +2240,43 @@
       "version": "413.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.4948/hifi/tmobile/at; SonyEricsson K550i; de; U; ssr)"
+    },
+    "device": {
+      "deviceName": "K550i",
+      "marketingName": "K550i",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "1.1.4948",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
   }
 ]

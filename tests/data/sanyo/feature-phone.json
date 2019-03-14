@@ -416,5 +416,43 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Sanyo-SCP5000/1.1b UP.Browser/4.1.23a"
+    },
+    "device": {
+      "deviceName": "SCP-5000",
+      "marketingName": "SCP-5000",
+      "manufacturer": "Sanyo",
+      "brand": "J-Phone",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.23-alpha",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]
