@@ -651,6 +651,18 @@
     },
     "engine": null
   },
+  "cornowser": {
+    "name": "Cornowser",
+    "manufacturer": "Simao Gomes Viana",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cornowser"
+      ]
+    },
+    "engine": "blink"
+  },
   "corom browser": {
     "name": "CoRom Browser",
     "manufacturer": "Unknown",

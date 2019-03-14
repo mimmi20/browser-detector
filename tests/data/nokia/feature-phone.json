@@ -6955,5 +6955,119 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; xx; Nokia6233) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "6233",
+      "marketingName": "6233",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.5005/hifi/tmobile/at; Nokia 5300; de; U; ssr)"
+    },
+    "device": {
+      "deviceName": "5300",
+      "marketingName": "5300",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "1.1.5005",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.7144/hifi/tmobile/at; Nokia 6085; de; U; ssr)"
+    },
+    "device": {
+      "deviceName": "6085",
+      "marketingName": "6085",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "1.1.7144",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
   }
 ]

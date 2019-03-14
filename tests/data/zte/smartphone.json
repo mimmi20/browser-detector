@@ -8966,5 +8966,81 @@
       "version": "5.0.0",
       "manufacturer": "Microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ZTE 975 Build/JDQ39) AppleWebKit/537.36  (KHTML, like Gecko) Chrome/32.0.1700.14 Mobile Crosswalk/3.32.53.0  Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "V975",
+      "marketingName": "Geek",
+      "manufacturer": "Zte",
+      "brand": "Zte",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Crosswalk App",
+      "modus": null,
+      "version": "3.32.53.0",
+      "manufacturer": "Intel Corporation",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Adr 2.3.6; xx; ZTE U788) U2/1.0.0 UCBrowser/8.8.1.258 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "U788",
+      "marketingName": "U788",
+      "manufacturer": "Zte",
+      "brand": "Zte",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.1.258",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
   }
 ]

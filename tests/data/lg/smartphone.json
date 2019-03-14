@@ -571,44 +571,6 @@
   },
   {
     "headers": {
-      "user-agent": "LG-GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "Lg",
-      "brand": "Lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "7.1.0",
-      "manufacturer": "Obigo",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": "0.0.0",
-      "manufacturer": "SunMicrosystems",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": "0.0.0",
-      "manufacturer": "Obigo"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "LG-U8290 MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
     },
     "device": {
@@ -18199,6 +18161,44 @@
       "name": "Blink",
       "version": "0.0.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG_TB200_CMCC A2000pH/2.32.00 Release/9.14.2009 Browser/Teleca/Q7.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general LG device",
+      "marketingName": "general LG device",
+      "manufacturer": "Lg",
+      "brand": "Lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "7.1.0",
+      "manufacturer": "Obigo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": "0.0.0",
+      "manufacturer": "Obigo"
     }
   }
 ]

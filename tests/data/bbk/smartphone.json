@@ -240,7 +240,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -8471,6 +8471,44 @@
       "name": "Gecko",
       "version": "0.0.0",
       "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; OnePlus2) AppleWebKit/601.1.46 (KHTML, like Gecko) Cornowser/1.0.1.0 Chrome/49.0.2593.0 Mobile Safari/601.1"
+    },
+    "device": {
+      "deviceName": "A2001",
+      "marketingName": "2",
+      "manufacturer": "BBK",
+      "brand": "Oneplus",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Cornowser",
+      "modus": null,
+      "version": "1.0.1.0",
+      "manufacturer": "Simao Gomes Viana",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "601.1.46",
+      "manufacturer": "Google"
     }
   }
 ]
