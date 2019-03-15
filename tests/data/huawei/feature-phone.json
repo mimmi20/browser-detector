@@ -406,9 +406,9 @@
     },
     "os": {
       "name": "ThreadX",
-      "marketingName": "Zenwalk GNU Linux",
+      "marketingName": "ThreadX",
       "version": "0.0.0",
-      "manufacturer": "Express Logic",
+      "manufacturer": "Unknown",
       "bits": 32
     },
     "engine": {
@@ -643,6 +643,82 @@
       "name": "Teleca",
       "version": "0.0.0",
       "manufacturer": "Obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HUAWEI-M570/001.00 WAP/OBIGO/Q05A"
+    },
+    "device": {
+      "deviceName": "M570",
+      "marketingName": "M570",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "05.0.0",
+      "manufacturer": "Obigo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": "0.0.0",
+      "manufacturer": "Obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HuaweiU9130/B047 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3"
+    },
+    "device": {
+      "deviceName": "U9130",
+      "marketingName": "Compass",
+      "manufacturer": "Huawei",
+      "brand": "Huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
     }
   }
 ]

@@ -96,5 +96,19 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "pantech p6020": {
+    "deviceName": "P6020",
+    "marketingName": "Swift",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }

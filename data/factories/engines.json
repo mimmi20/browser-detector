@@ -15,7 +15,7 @@
     "/opera/i": "presto",
     "/msie|outlook|kkman/i": "trident",
     "/clecko/i": "clecko",
-    "/gecko|firefox/i": "gecko",
+    "/(?<!like )gecko|firefox/i": "gecko",
     "/netfront\\/|nf\\/|netfrontlifebrowserinterface|nf3|nintendo 3ds/i": "netfront",
     "/blackberry/i": "blackberry",
     "/teleca|obigo/i": "teleca"

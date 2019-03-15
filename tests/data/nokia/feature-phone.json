@@ -734,7 +734,7 @@
         "width": 640,
         "height": 360,
         "touch": true,
-        "size": null
+        "size": 3.2
       },
       "type": "feature-phone"
     },
@@ -7068,6 +7068,44 @@
       "name": "Presto",
       "version": "0.0.0",
       "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; U; 500; xx) AppleWebKit/534.3 (KHTML, like Gecko) MiniBrowserMobile/4.0 Mobile Safari/534.3"
+    },
+    "device": {
+      "deviceName": "500",
+      "marketingName": "500",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "MiniBrowser Mobile",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "DMKHO",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.3.0",
+      "manufacturer": "Apple"
     }
   }
 ]
