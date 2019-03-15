@@ -802,6 +802,7 @@
         "Dolphin HD",
         "Dolphin\\/INT\\-",
         "Dolphin\\/INT",
+        "DolphinHDCN",
         "Dolfin",
         "Dolphin"
       ]
@@ -1930,6 +1931,18 @@
       "search": [
         "Midori",
         "Midori\\-"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "minibrowsermobile": {
+    "name": "MiniBrowser Mobile",
+    "manufacturer": "DMKHO",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MiniBrowserMobile"
       ]
     },
     "engine": "webkit"

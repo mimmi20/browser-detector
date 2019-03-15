@@ -13,6 +13,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "alcatel a383g": {
+    "deviceName": "A383G",
+    "marketingName": "A383G",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "alcatel a392g": {
     "deviceName": "A392G",
     "marketingName": "A392G",
@@ -107,6 +121,20 @@
       "height": 128,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel ot-2067x": {
+    "deviceName": "OT-2067X",
+    "marketingName": "OneTouch 2067",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"
@@ -306,5 +334,19 @@
     },
     "type": "feature-phone",
     "platform": "kaios"
+  },
+  "alcatel ot-802": {
+    "deviceName": "OT-802",
+    "marketingName": "Wave",
+    "manufacturer": "Alcatel",
+    "brand": "Alcatel",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }
