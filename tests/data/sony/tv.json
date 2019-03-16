@@ -910,5 +910,43 @@
       "version": "0.0.0",
       "manufacturer": "Unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (PS4; Leanback Shell) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.70 LeanbackShell/2.3D Gold build cf8a43c-2016329 Safari/537.22 Sony Playstation4/ (PS4,, en, US)"
+    },
+    "device": {
+      "deviceName": "Playstation 4",
+      "marketingName": "Playstation 4",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "25.0.1364.70",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "CellOS",
+      "marketingName": "CellOS",
+      "version": "0.0.0",
+      "manufacturer": "Sony",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.22.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

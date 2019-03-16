@@ -2269,6 +2269,18 @@
     },
     "engine": "webkit"
   },
+  "nintendobrowser": {
+    "name": "NintendoBrowser",
+    "manufacturer": "Nintendo",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NintendoBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
   "nokiabrowser": {
     "name": "Nokia Browser",
     "manufacturer": "Nokia",

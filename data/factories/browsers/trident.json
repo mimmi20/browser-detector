@@ -45,7 +45,7 @@
     "/bidubrowser/i": "baidu browser",
     "/netgem/i": "netgem set top box",
     "/via translate\\.google\\.com/i": "google translate",
-    "/netfront/i": "netfront",
+    "/netfront|playstation [34]|nf\\/?[34]/i": "netfront",
     "/greenbrowser/i": "greenbrowser",
     "/juzibrowser/i": "juzibrowser",
     "/lbbrowser/i": "liebao",
