@@ -40,5 +40,19 @@
     },
     "type": "mobile-console",
     "platform": null
+  },
+  "nintendo switch": {
+    "deviceName": "Switch",
+    "marketingName": "Switch",
+    "manufacturer": "Nintendo",
+    "brand": "Nintendo",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "mobile-console",
+    "platform": "nintendo switch os"
   }
 }

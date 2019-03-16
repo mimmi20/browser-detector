@@ -1,8 +1,8 @@
 {
   "rules": {
     "/shield ?tablet ?k1/i": "nvidia shield tablet k1",
-    "/shield ?tablet/i": "nvidia shield tablet",
-    "/shield ?android ?tv/i": "nvidia shield android tv"
+    "/shield ?android ?tv/i": "nvidia shield android tv",
+    "/shield/i": "nvidia shield tablet"
   },
   "generic": "general nvidia device"
 }

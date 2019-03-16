@@ -74,5 +74,157 @@
       "version": "531.22.8",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (PS2; PlayStation BB Navigator 1.0) NetFront/3.0"
+    },
+    "device": {
+      "deviceName": "Playstation 2",
+      "marketingName": "Playstation 2",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "CellOS",
+      "marketingName": "CellOS",
+      "version": "0.0.0",
+      "manufacturer": "Sony",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 [ja] (compatible; MSIE 6.0; Linux 2.6.11-1.1369_FC4; Playstation2)"
+    },
+    "device": {
+      "deviceName": "Playstation 2",
+      "marketingName": "Playstation 2",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "CellOS",
+      "marketingName": "CellOS",
+      "version": "0.0.0",
+      "manufacturer": "Sony",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 [ja] (Playstation2; Linux 2.4.20 MIPS; ja-JP; rv:1.8a2) Gecko/20040630"
+    },
+    "device": {
+      "deviceName": "Playstation 2",
+      "marketingName": "Playstation 2",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "MozillaFoundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "CellOS",
+      "marketingName": "CellOS",
+      "version": "0.0.0",
+      "manufacturer": "Sony",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.0-alpha+2",
+      "manufacturer": "MozillaFoundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Sony Playstation2 (Utility Disc Ver.2.03c/for PS-modem)[jp]"
+    },
+    "device": {
+      "deviceName": "Playstation 2",
+      "marketingName": "Playstation 2",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "CellOS",
+      "marketingName": "CellOS",
+      "version": "0.0.0",
+      "manufacturer": "Sony",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]
