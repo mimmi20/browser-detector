@@ -3342,5 +3342,43 @@
       "version": "525.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Adr 2.1-update1; xx; E15a) U2/1.0.0 UCBrowser/9.3.1.344 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "E15a",
+      "marketingName": "Xperia X8",
+      "manufacturer": "SonyEricsson",
+      "brand": "SonyEricsson",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.3.1.344",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
   }
 ]

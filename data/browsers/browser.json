@@ -464,6 +464,18 @@
     },
     "engine": null
   },
+  "browse": {
+    "name": "Browse",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Browse"
+      ]
+    },
+    "engine": "blink"
+  },
   "bsnbrowserlite": {
     "name": "BSNBrowserLite",
     "manufacturer": "Unknown",

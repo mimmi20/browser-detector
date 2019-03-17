@@ -150,5 +150,81 @@
       "version": "535.19.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Tizen 1.0; xx; Samsung NX300) AppleWebKit/534.16 (KHTML, like Gecko) Version/1.0 Mobile Android compatible"
+    },
+    "device": {
+      "deviceName": "NX300",
+      "marketingName": "NX300",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 3.31
+      },
+      "type": "digital-camera"
+    },
+    "browser": {
+      "name": "Samsung WebView",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "Samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "1.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.16.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; ko-kr; SAMSUNG; NX30) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
+    },
+    "device": {
+      "deviceName": "NX30",
+      "marketingName": "NX30",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 3
+      },
+      "type": "digital-camera"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "18.0.1025.166",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
