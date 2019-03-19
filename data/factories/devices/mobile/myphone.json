@@ -1,7 +1,8 @@
 {
   "rules": {
     "/hammer active/i": "myphone hammer active",
-    "/infinity[ _]ii[ _]lte/i": "myphone infinity 2 lte",
+    "/infinity[ _](ii|2)[ _]lte/i": "myphone infinity 2 lte",
+    "/infinity[ _](ii|2)[ _]lite/i": "myphone infinity 2 lite",
     "/axe[ _]m[ _]lte/i": "myphone hammer axe m lte",
     "/axe[ _]lte/i": "myphone axe lte",
     "/axe[ _]3g/i": "myphone axe 3g",

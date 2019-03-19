@@ -1,4 +1,18 @@
 {
+  "vodafone smart 4": {
+    "deviceName": "Smart 4",
+    "marketingName": "Smart 4",
+    "manufacturer": "Vodafone",
+    "brand": "Vodafone",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "vodafone smart 4 max": {
     "deviceName": "Smart 4 Max",
     "marketingName": "Smart 4 Max",
@@ -51,6 +65,20 @@
       "height": 320,
       "touch": true,
       "size": 2.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vodafone vf695": {
+    "deviceName": "VF695",
+    "marketingName": "Smart First 6",
+    "manufacturer": "Vodafone",
+    "brand": "Vodafone",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
