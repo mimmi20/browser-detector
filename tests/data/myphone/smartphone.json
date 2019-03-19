@@ -232,8 +232,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; myPhone_INFINITY_II_LTE Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Infinity 2",
-      "marketingName": "Infinity 2",
+      "deviceName": "Infinity 2 LTE",
+      "marketingName": "Infinity 2 LTE",
       "manufacturer": "myPhone",
       "brand": "myPhone",
       "display": {
@@ -332,6 +332,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; MyPhone Infinity 2 Lite Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Infinity 2 Lite",
+      "marketingName": "Infinity 2 Lite",
+      "manufacturer": "myPhone",
+      "brand": "myPhone",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.91",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
       "manufacturer": "Google",
       "bits": 32
     },
