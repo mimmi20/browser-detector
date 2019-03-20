@@ -153,6 +153,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "qmobile i9": {
+    "deviceName": "i9",
+    "marketingName": "Noir i9",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "qmobile m300": {
     "deviceName": "M300",
     "marketingName": "Noir M300",
@@ -261,6 +275,34 @@
       "height": 720,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile z4": {
+    "deviceName": "Z4",
+    "marketingName": "Noir Z4",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile z6": {
+    "deviceName": "Z6",
+    "marketingName": "Noir Z6",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
