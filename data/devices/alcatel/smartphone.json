@@ -1399,16 +1399,30 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "alcatel 4037t": {
-    "deviceName": "OT-4037T",
-    "marketingName": "OneTouch Evolve II",
+  "alcatel 4037n": {
+    "deviceName": "4037N",
+    "marketingName": "OneTouch Evolve 2",
     "manufacturer": "Tcl",
     "brand": "Alcatel",
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "alcatel 4037t": {
+    "deviceName": "OT-4037T",
+    "marketingName": "OneTouch Evolve 2",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
