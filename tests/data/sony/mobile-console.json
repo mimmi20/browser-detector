@@ -17,12 +17,12 @@
       "type": "mobile-console"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Playstation Browser",
       "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "Amazon",
+      "version": "0.0.0",
+      "manufacturer": "Sony",
       "bits": 32,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -55,10 +55,10 @@
       "type": "mobile-console"
     },
     "browser": {
-      "name": "Mozilla",
+      "name": "Playstation Browser",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "MozillaFoundation",
+      "version": "0.0.0",
+      "manufacturer": "Sony",
       "bits": 32,
       "type": "browser"
     },
@@ -70,9 +70,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Gecko",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "MozillaFoundation"
+      "manufacturer": "Unknown"
     }
   }
 ]

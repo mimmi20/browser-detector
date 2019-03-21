@@ -753,6 +753,18 @@
     },
     "engine": null
   },
+  "newsarticle app": {
+    "name": "NewsArticle App",
+    "manufacturer": "Unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NewsArticle"
+      ]
+    },
+    "engine": null
+  },
   "newsfire": {
     "name": "NewsFire",
     "manufacturer": "DavidWatanabe",
