@@ -2221,12 +2221,12 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "UC Browser",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "Google",
+      "version": "0.0.0",
+      "manufacturer": "UcWeb",
       "bits": 32,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
       "name": "Android",
@@ -4779,12 +4779,12 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Mobile Safari UIWebView",
+      "name": "Stitcher",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Apple",
+      "manufacturer": "Deezer",
       "bits": 32,
-      "type": "browser"
+      "type": "multimedia-player"
     },
     "os": {
       "name": "iOS",
@@ -6033,10 +6033,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Samsung WebView",
+      "name": "Tizen Browser",
       "modus": null,
       "version": "2.2.0",
-      "manufacturer": "Samsung",
+      "manufacturer": "LinuxFoundation",
       "bits": 32,
       "type": "browser"
     },
@@ -6109,12 +6109,12 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "UC Browser",
+      "name": "Squid",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "UcWeb",
+      "manufacturer": "Unknown",
       "bits": 32,
-      "type": "transcoder"
+      "type": "bot"
     },
     "os": {
       "name": "Brew",
@@ -7515,10 +7515,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Samsung WebView",
+      "name": "Tizen Browser",
       "modus": null,
       "version": "2.0.0",
-      "manufacturer": "Samsung",
+      "manufacturer": "LinuxFoundation",
       "bits": 32,
       "type": "browser"
     },
@@ -7553,10 +7553,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Samsung WebView",
+      "name": "Tizen Browser",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "Samsung",
+      "manufacturer": "LinuxFoundation",
       "bits": 32,
       "type": "browser"
     },
@@ -7591,10 +7591,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Samsung WebView",
+      "name": "Tizen Browser",
       "modus": null,
       "version": "2.3.0",
-      "manufacturer": "Samsung",
+      "manufacturer": "LinuxFoundation",
       "bits": 32,
       "type": "browser"
     },
@@ -7629,10 +7629,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Samsung WebView",
+      "name": "Tizen Browser",
       "modus": null,
       "version": "2.2.0",
-      "manufacturer": "Samsung",
+      "manufacturer": "LinuxFoundation",
       "bits": 32,
       "type": "browser"
     },
@@ -7667,10 +7667,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Samsung WebView",
+      "name": "Tizen Browser",
       "modus": null,
       "version": "2.2.0",
-      "manufacturer": "Samsung",
+      "manufacturer": "LinuxFoundation",
       "bits": 32,
       "type": "browser"
     },
@@ -7705,10 +7705,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Samsung WebView",
+      "name": "Tizen Browser",
       "modus": null,
       "version": "2.1.0",
-      "manufacturer": "Samsung",
+      "manufacturer": "LinuxFoundation",
       "bits": 32,
       "type": "browser"
     },
@@ -7857,12 +7857,12 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "UC Browser",
+      "name": "Squid",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "UcWeb",
+      "manufacturer": "Unknown",
       "bits": 32,
-      "type": "transcoder"
+      "type": "bot"
     },
     "os": {
       "name": "Brew",
@@ -10535,6 +10535,158 @@
       "name": "WebKit",
       "version": "533.1.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "mobmail android 6.0.0.22977 com.my.mail"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0.22977",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "W3C-mobileOK/DDC-1.0"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "W3C MobileOK Checker",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "W3c",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AdsBot-Google-Mobile-Apps"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Google Bot",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UP.Browser/6.1.0.6.1.d.1 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.1.0.6.1",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
     }
   }
 ]

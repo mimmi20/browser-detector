@@ -121,6 +121,19 @@
     },
     "engine": null
   },
+  "airwatch browser": {
+    "name": "AirWatch Browser",
+    "manufacturer": "VMware",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AirWatch Browser v",
+        "AirWatch Browser"
+      ]
+    },
+    "engine": "blink"
+  },
   "alcatel": {
     "name": "Alcatel",
     "manufacturer": "Alcatel",
@@ -509,6 +522,16 @@
       ]
     },
     "engine": "blink"
+  },
+  "charon": {
+    "name": "Charon",
+    "manufacturer": "Vita Nuova",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   },
   "chedot": {
     "name": "Chedot",
@@ -1042,18 +1065,6 @@
     },
     "engine": "gecko"
   },
-  "firebird": {
-    "name": "Firebird",
-    "manufacturer": "MozillaFoundation",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Firebird"
-      ]
-    },
-    "engine": "gecko"
-  },
   "firefox": {
     "name": "Firefox",
     "manufacturer": "MozillaFoundation",
@@ -1068,6 +1079,7 @@
         "GranParadiso",
         "Namoroka",
         "Fennec",
+        "Firebird",
         "rv:"
       ]
     },
@@ -1135,6 +1147,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "ant fresco": {
+    "name": "Fresco",
+    "manufacturer": "Ant",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ANTFresco"
+      ]
+    },
+    "engine": "unknown"
   },
   "galeon": {
     "name": "Galeon",
@@ -1304,7 +1328,7 @@
         "iBrowser"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "ibrowser mini": {
     "name": "iBrowser Mini",
@@ -2000,7 +2024,9 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "MiuiBrowser"
+        "MiuiBrowser",
+        "MIUI\\/V",
+        "MIUI"
       ]
     },
     "engine": null
@@ -2448,6 +2474,18 @@
     },
     "engine": "blink"
   },
+  "oregano": {
+    "name": "Oregano",
+    "manufacturer": "Oregan",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Oregano"
+      ]
+    },
+    "engine": "unknown"
+  },
   "origin": {
     "name": "Origin",
     "manufacturer": "ElectronicArts",
@@ -2890,18 +2928,6 @@
     },
     "engine": null
   },
-  "samsung webview": {
-    "name": "Samsung WebView",
-    "manufacturer": "Samsung",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Version"
-      ]
-    },
-    "engine": null
-  },
   "sanyo": {
     "name": "Sanyo",
     "manufacturer": "Sanyo",
@@ -2921,6 +2947,19 @@
       "search": [
         "SeaMonkey",
         "Seamonkey"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "hp secure web browser": {
+    "name": "Secure Web Browser",
+    "manufacturer": "Hp",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SWB\\/V",
+        "SWB"
       ]
     },
     "engine": "gecko"
@@ -3346,6 +3385,18 @@
       "class": "VersionFactory",
       "search": [
         "TinyBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "tizen browser": {
+    "name": "Tizen Browser",
+    "manufacturer": "LinuxFoundation",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version"
       ]
     },
     "engine": null

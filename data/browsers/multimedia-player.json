@@ -23,6 +23,18 @@
     },
     "engine": "unknown"
   },
+  "amarok": {
+    "name": "Amarok",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "amarok"
+      ]
+    },
+    "engine": "unknown"
+  },
   "arabicradio app": {
     "name": "ArabicRadio",
     "manufacturer": "Unknown",
@@ -332,6 +344,16 @@
   "simple radio": {
     "name": "Simple Radio App",
     "manufacturer": "Streema",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "stitcher": {
+    "name": "Stitcher",
+    "manufacturer": "Deezer",
     "type": "multimedia-player",
     "version": {
       "class": null,
