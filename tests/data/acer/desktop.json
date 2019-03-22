@@ -226,5 +226,43 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0.16299.98; osmeta 10.3.3308) AppleWebKit/602.1.1 (KHTML, like Gecko) Version/9.0 Safari/602.1.1 osmeta/10.3.3308 Build/3308 [FBAN/FBW;FBAV/140.0.0.232.179;FBBV/83145113;FBDV/WindowsDevice;FBMD/Predator G9-793;FBSN/Windows;FBSV/10.0.16299.125;FBSS/1;FBCR/;FBID/desktop;FBLC/de_DE;FBOP/45;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "Predator G9-793",
+      "marketingName": "Predator G9-793",
+      "manufacturer": "Acer",
+      "brand": "Acer",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 17.3
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "140.0.0.232.179",
+      "manufacturer": "Facebook",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.1",
+      "manufacturer": "Apple"
+    }
   }
 ]

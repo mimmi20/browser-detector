@@ -568,5 +568,43 @@
       "version": "0.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; POV_TAB-P1026_V1.0 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Tab P1026 V1.0",
+      "marketingName": "Tab P1026 V1.0",
+      "manufacturer": "PointOfView",
+      "brand": "PointOfView",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
   }
 ]
