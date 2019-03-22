@@ -102,7 +102,7 @@
     "/(?:like android|windows ce|symbos).*safari/i": "safari",
     "/samsungbrowser/i": "samsungbrowser",
     "/google web preview/i": "google web preview",
-    "/linux; android.*version|android[\\/ ][\\d\\.]+ release|(?:android|mtk|maui|samsung|gingerbread|z710e).*safari/i": "android webkit",
+    "/linux; android.*version|android[\\/ ][\\d\\.]+ release|(?:android|mtk|maui|samsung|gingerbread|z710e|ebrd1101|folio_and_a|velocitymicro).*safari/i": "android webkit",
     "/webos|wosbrowser|wossystem/i": "webkit/webos",
     "/omniweb/i": "omniweb",
     "/nokia/i": "nokiabrowser",
