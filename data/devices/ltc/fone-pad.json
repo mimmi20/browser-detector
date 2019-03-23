@@ -1,0 +1,30 @@
+{
+  "general ltc device": {
+    "deviceName": "general LTC device",
+    "marketingName": "general LTC device",
+    "manufacturer": "LTC",
+    "brand": "LTC",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "ltc lm700": {
+    "deviceName": "LM700",
+    "marketingName": "LM700",
+    "manufacturer": "LTC",
+    "brand": "LTC",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  }
+}

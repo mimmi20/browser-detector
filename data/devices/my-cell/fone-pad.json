@@ -1,0 +1,30 @@
+{
+  "general my-cell device": {
+    "deviceName": "general MyCell device",
+    "marketingName": "general MyCell device",
+    "manufacturer": "MyCell",
+    "brand": "MyCell",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "my-cell p8+": {
+    "deviceName": "P8+",
+    "marketingName": "P8+",
+    "manufacturer": "MyCell",
+    "brand": "MyCell",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  }
+}
