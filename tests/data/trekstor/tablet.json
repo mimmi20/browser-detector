@@ -536,8 +536,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SurfTab breeze 7.0 quad Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SurfTab breeze 7.0 quad",
-      "marketingName": "SurfTab breeze 7.0 quad",
+      "deviceName": "SurfTab Breeze 7.0 quad",
+      "marketingName": "SurfTab Breeze 7.0 quad",
       "manufacturer": "TrekStor",
       "brand": "TrekStor",
       "display": {
@@ -574,8 +574,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; TrekStor SurfTab theatre 13.3 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Safari/537.36"
     },
     "device": {
-      "deviceName": "SurfTab theatre 13.3",
-      "marketingName": "SurfTab theatre 13.3",
+      "deviceName": "SurfTab Theatre 13.3",
+      "marketingName": "SurfTab Theatre 13.3",
       "manufacturer": "TrekStor",
       "brand": "TrekStor",
       "display": {
@@ -940,6 +940,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; TrekStor SurfTab breeze 9.6 quad Build/LMY49F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SurfTab Breeze 9.6 quad",
+      "marketingName": "SurfTab Breeze 9.6 quad",
+      "manufacturer": "TrekStor",
+      "brand": "TrekStor",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 9.6
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "Google",
       "bits": 32
     },

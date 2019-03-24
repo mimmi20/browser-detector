@@ -119,7 +119,7 @@
     },
     "device": {
       "deviceName": "K01H",
-      "marketingName": "Memo Pad 8 ME581CL",
+      "marketingName": "MeMO Pad 8 ME581CL",
       "manufacturer": "Asus",
       "brand": "Asus",
       "display": {
@@ -271,7 +271,7 @@
     },
     "device": {
       "deviceName": "K015",
-      "marketingName": "Memo Pad 8 ME581CL",
+      "marketingName": "MeMO Pad 8 ME581CL",
       "manufacturer": "Asus",
       "brand": "Asus",
       "display": {
@@ -833,6 +833,44 @@
       "name": "WebKit",
       "version": "0.0.0",
       "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.1; en-US; MeMOPAD 10FHD LTE Build/NMF26O) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "MeMO Pad 10 FHD LTE",
+      "marketingName": "MeMO Pad 10 FHD LTE",
+      "manufacturer": "Asus",
+      "brand": "Asus",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 9.4
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.2.0.915",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UcWeb"
     }
   }
 ]
