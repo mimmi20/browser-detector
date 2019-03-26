@@ -1,4 +1,18 @@
 {
+  "alcatel 3020d": {
+    "deviceName": "3020D",
+    "marketingName": "3020D",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "alcatel a205g-b": {
     "deviceName": "A205G-B",
     "marketingName": "A205G-B",
@@ -163,6 +177,20 @@
       "height": 176,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel 3041d": {
+    "deviceName": "3041D",
+    "marketingName": "OneTouch Tribe",
+    "manufacturer": "Tcl",
+    "brand": "Alcatel",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
     },
     "type": "feature-phone",
     "platform": "java"

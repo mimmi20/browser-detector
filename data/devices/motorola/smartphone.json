@@ -540,7 +540,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -554,7 +554,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -568,7 +568,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1035,6 +1035,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "motorola me722": {
+    "deviceName": "ME722",
+    "marketingName": "Milestone 2",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "motorola me863": {
     "deviceName": "ME863",
     "marketingName": "Milestone 3",
@@ -1062,6 +1076,20 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "motorola a853": {
+    "deviceName": "A853",
+    "marketingName": "Milestone A853",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "motorola milestone x": {
     "deviceName": "Milestone X",
@@ -1399,6 +1427,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "motorola xt1008": {
+    "deviceName": "XT1008",
+    "marketingName": "Moto G",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "motorola xt1028": {
     "deviceName": "XT1028",
     "marketingName": "Moto G",
@@ -1408,7 +1450,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1422,7 +1464,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1436,7 +1478,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1450,7 +1492,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1464,10 +1506,24 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "motorola xt1035": {
+    "deviceName": "XT1035",
+    "marketingName": "Moto G",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "motorola xt1039": {
     "deviceName": "XT1039",
@@ -1478,7 +1534,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": null
@@ -1492,7 +1548,63 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "motorola xt1042": {
+    "deviceName": "XT1042",
+    "marketingName": "Moto G",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "motorola xt1045": {
+    "deviceName": "XT1045",
+    "marketingName": "Moto G",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "motorola xt937c": {
+    "deviceName": "XT937C",
+    "marketingName": "Moto G",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "motorola xt939g": {
+    "deviceName": "XT939G",
+    "marketingName": "Moto G",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": null
@@ -3159,6 +3271,20 @@
       "height": 540,
       "touch": true,
       "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola xt908": {
+    "deviceName": "XT908",
+    "marketingName": "XT908",
+    "manufacturer": "Motorola",
+    "brand": "Motorola",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"
