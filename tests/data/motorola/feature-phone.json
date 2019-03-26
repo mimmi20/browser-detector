@@ -950,5 +950,43 @@
       "version": "0.0.0",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-W510/08.11.05R MIB/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/1.0 UP.Link/6.3.0.0.0"
+    },
+    "device": {
+      "deviceName": "W510",
+      "marketingName": "W510",
+      "manufacturer": "Motorola",
+      "brand": "Motorola",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "2.2.0",
+      "manufacturer": "Motorola",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]

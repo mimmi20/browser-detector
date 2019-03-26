@@ -1296,7 +1296,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 5036D Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-5036D",
+      "deviceName": "5036D",
       "marketingName": "OneTouch Pop C5",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
@@ -1304,7 +1304,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1942,7 +1942,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 6012D Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-6012D",
+      "deviceName": "6012D",
       "marketingName": "OneTouch Idol Mini",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
@@ -1950,7 +1950,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -2664,7 +2664,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 5036X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-5036X",
+      "deviceName": "5036X",
       "marketingName": "OneTouch Pop C5",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
@@ -2672,7 +2672,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3280,7 +3280,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -3424,7 +3424,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 6012E Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-6012E",
+      "deviceName": "6012E",
       "marketingName": "OneTouch Idol Mini",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
@@ -3432,7 +3432,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -3462,7 +3462,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 6012A Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-6012A",
+      "deviceName": "6012A",
       "marketingName": "OneTouch Idol Mini",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
@@ -3470,7 +3470,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -3500,7 +3500,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 6012W Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-6012W",
+      "deviceName": "6012W",
       "marketingName": "OneTouch Idol Mini",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
@@ -3508,7 +3508,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -4412,7 +4412,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 8020D Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-8020D",
+      "deviceName": "8020D",
       "marketingName": "OneTouch Hero",
       "manufacturer": "Tcl",
       "brand": "Alcatel",
@@ -4420,7 +4420,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -19225,6 +19225,310 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; ALCATEL ONE TOUCH 8020X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "8020X",
+      "marketingName": "OneTouch Hero",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; ALCATEL ONE TOUCH 8020E Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "8020E",
+      "marketingName": "OneTouch Hero",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; ALCATEL ONE TOUCH 8020A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "8020A",
+      "marketingName": "OneTouch Hero",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; ALCATEL ONE TOUCH 6012X_orange Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "6012X",
+      "marketingName": "OneTouch Idol Mini",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 5037X Build/JDQ39) AppleWebKit/537.36 (KHTML like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5037X",
+      "marketingName": "OneTouch Pop C5",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "31.0.1650.59",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 5037A Build/JDQ39) AppleWebKit/537.36 (KHTML like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5037A",
+      "marketingName": "OneTouch Pop C5",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "31.0.1650.59",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 5036A Build/JDQ39) AppleWebKit/537.36 (KHTML like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5036A",
+      "marketingName": "OneTouch Pop C5",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "31.0.1650.59",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; ALCATEL ONE TOUCH 8020Y Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "8020Y",
+      "marketingName": "OneTouch Hero",
+      "manufacturer": "Tcl",
+      "brand": "Alcatel",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
     }
   }
 ]

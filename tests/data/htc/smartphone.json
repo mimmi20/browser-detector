@@ -3699,7 +3699,7 @@
         "width": 480,
         "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.6
       },
       "type": "smartphone"
     },
@@ -4269,7 +4269,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -5212,14 +5212,14 @@
     },
     "device": {
       "deviceName": "A9192",
-      "marketingName": "Inspire",
+      "marketingName": "Inspire 4G",
       "manufacturer": "Htc",
       "brand": "Htc",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -5250,14 +5250,14 @@
     },
     "device": {
       "deviceName": "A9192",
-      "marketingName": "Inspire",
+      "marketingName": "Inspire 4G",
       "manufacturer": "Htc",
       "brand": "Htc",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -7081,7 +7081,7 @@
         "width": 480,
         "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.6
       },
       "type": "smartphone"
     },
@@ -10562,6 +10562,272 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "Google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; zh-cn; HTC_A320e Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "general HTC device",
+      "marketingName": "general HTC device",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0; xx-xx; HTC_GOF_U/1.05.161.1 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "general HTC device",
+      "marketingName": "general HTC device",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; Inspire 4G Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "A9192",
+      "marketingName": "Inspire 4G",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; xx-xx; HTCA8180/1.0 Android/2.2 release/06.23.2010 Browser/WAP 2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "A8180",
+      "marketingName": "A8180",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; xx-xx; 001HT Build/FRF91) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+    },
+    "device": {
+      "deviceName": "001HT",
+      "marketingName": "Desire HD",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.0.4",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.10.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.5; en-us; ADR6200 Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
+    },
+    "device": {
+      "deviceName": "ADR6200",
+      "marketingName": "Bravo C",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.1.2",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "1.5.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.5; en-us; ADR6275 Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
+    },
+    "device": {
+      "deviceName": "ADR6275",
+      "marketingName": "Bravo C",
+      "manufacturer": "Htc",
+      "brand": "Htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.1.2",
+      "manufacturer": "Google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "1.5.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "Apple"
     }
   }
 ]

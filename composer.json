@@ -31,7 +31,7 @@
     "mimmi20/json-class": "~2.0.2",
     "mimmi20/ua-browser-type": "~7.0.2",
     "mimmi20/ua-device-type": "~7.0.5",
-    "mimmi20/ua-display-size": "~1.0.14",
+    "mimmi20/ua-display-size": "~1.0.15",
     "mimmi20/ua-generic-request": "~4.1.2",
     "mimmi20/ua-result": "~7.0.0",
     "peterkahl/apple-ios-build-version": "^59.17",
@@ -73,7 +73,7 @@
       "UserAgentsTest\\": "tests/UserAgentsTest/"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "support": {
     "issues": "https://github.com/mimmi20/BrowserDetector/issues",
