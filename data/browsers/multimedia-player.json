@@ -1,4 +1,14 @@
 {
+  "77 wabc": {
+    "name": "77 WABC",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
   "acast podcast app": {
     "name": "Acast Podcast App",
     "manufacturer": "Acast",
@@ -35,6 +45,16 @@
     },
     "engine": "unknown"
   },
+  "antennapod": {
+    "name": "AntennaPod",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
   "arabicradio app": {
     "name": "ArabicRadio",
     "manufacturer": "Unknown",
@@ -45,12 +65,44 @@
     },
     "engine": "unknown"
   },
+  "audioboom": {
+    "name": "AudioBoom",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "beyondpod": {
+    "name": "BeyondPod",
+    "manufacturer": "BeyondPod Team",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BeyondPod"
+      ]
+    },
+    "engine": "webkit"
+  },
   "coremedia": {
     "name": "CoreMedia",
     "manufacturer": "Apple",
     "type": "multimedia-player",
     "version": {
       "class": "\\BrowserDetector\\Version\\CoreMedia",
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "custom": {
+    "name": "Custom",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
       "search": null
     },
     "engine": "webkit"
@@ -79,6 +131,28 @@
     },
     "engine": "webkit"
   },
+  "doggcatcher": {
+    "name": "DoggCatcher",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "downcast": {
+    "name": "Downcast",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Downcast"
+      ]
+    },
+    "engine": "webkit"
+  },
   "elmedia player": {
     "name": "Elmedia Player",
     "manufacturer": "EltimaSoftware",
@@ -90,6 +164,19 @@
       ]
     },
     "engine": "unknown"
+  },
+  "espn radio": {
+    "name": "ESPN Radio",
+    "manufacturer": "ESPN Internet Ventures.",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ESPN%20Radio",
+        "ESPN Radio"
+      ]
+    },
+    "engine": null
   },
   "exoplayerdemo": {
     "name": "ExoPlayerDemo",
@@ -127,6 +214,30 @@
     },
     "engine": "webkit"
   },
+  "fancymusic": {
+    "name": "FancyMusic",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FancyMusic"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "free-podcasts": {
+    "name": "Free-Podcasts",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Free-Podcasts"
+      ]
+    },
+    "engine": "webkit"
+  },
   "german radio app": {
     "name": "German Radio App",
     "manufacturer": "Unknown",
@@ -137,6 +248,18 @@
     },
     "engine": "unknown"
   },
+  "ipodder": {
+    "name": "iPodder",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iPodder"
+      ]
+    },
+    "engine": "webkit"
+  },
   "microsoft-iptv-client": {
     "name": "IPTV-Client",
     "manufacturer": "Microsoft",
@@ -146,6 +269,16 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "knbr 680": {
+    "name": "KNBR 680",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
   },
   "lg player": {
     "name": "LG Player",
@@ -159,6 +292,16 @@
     },
     "engine": "blink"
   },
+  "mark levin show": {
+    "name": "Mark Levin Show",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
   "mathplayer": {
     "name": "MathPlayer",
     "manufacturer": "Unknown",
@@ -171,6 +314,30 @@
     },
     "engine": "unknown"
   },
+  "musicdownloader": {
+    "name": "MusicDownloader",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MusicDownloader"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "musicdownloaderlite": {
+    "name": "MusicDownloader Lite",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MusicDownloaderLite"
+      ]
+    },
+    "engine": "webkit"
+  },
   "netgem set top box": {
     "name": "Netgem Set Top Box",
     "manufacturer": "Unknown",
@@ -180,6 +347,36 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "overcast": {
+    "name": "Overcast",
+    "manufacturer": "Overcast Radio, LLC",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "player fm": {
+    "name": "Player FM",
+    "manufacturer": "Nuvomondo Ltd",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "pocket casts": {
+    "name": "Pocket Casts",
+    "manufacturer": "Shifty Jelly",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
   },
   "podcastaddict": {
     "name": "PodcastAddict",
@@ -218,6 +415,18 @@
     },
     "engine": "webkit"
   },
+  "podcruncher": {
+    "name": "PodCruncher",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PodCruncher"
+      ]
+    },
+    "engine": "webkit"
+  },
   "podkicker": {
     "name": "Podkicker",
     "manufacturer": "Unknown",
@@ -226,6 +435,42 @@
       "class": "VersionFactory",
       "search": [
         "Podkicker"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podkicker classic": {
+    "name": "Podkicker Classic",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Podkicker Classic"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podkicker pro": {
+    "name": "Podkicker Pro",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Podkicker Pro"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podwrangler": {
+    "name": "PodWrangler",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PodWrangler"
       ]
     },
     "engine": "webkit"
@@ -351,6 +596,16 @@
     },
     "engine": "unknown"
   },
+  "sports talk 1050": {
+    "name": "Sports Talk 1050",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
   "stitcher": {
     "name": "Stitcher",
     "manufacturer": "Deezer",
@@ -361,6 +616,38 @@
     },
     "engine": "unknown"
   },
+  "streaming player": {
+    "name": "Streaming Player",
+    "manufacturer": "Htc",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "the dan patrick show": {
+    "name": "The Dan Patrick Show",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "toppodcasts": {
+    "name": "TopPodcasts",
+    "manufacturer": "Unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TopPodcasts"
+      ]
+    },
+    "engine": "webkit"
+  },
   "vlc media player": {
     "name": "VLC Media Player",
     "manufacturer": "VideoLan",
@@ -368,6 +655,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "VLC for iOS",
         "VLC"
       ]
     },
@@ -394,6 +682,18 @@
       "search": [
         "Windows\\-Media\\-Player",
         "NSPlayer"
+      ]
+    },
+    "engine": "trident"
+  },
+  "zune": {
+    "name": "Zune",
+    "manufacturer": "Microsoft",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Zune"
       ]
     },
     "engine": "trident"

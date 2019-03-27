@@ -509,6 +509,18 @@
     },
     "engine": "unknown"
   },
+  "goodreader": {
+    "name": "GoodReader",
+    "manufacturer": "Unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GoodReader"
+      ]
+    },
+    "engine": "webkit"
+  },
   "google app": {
     "name": "Google App",
     "manufacturer": "Google",
