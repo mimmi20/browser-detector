@@ -188,5 +188,43 @@
       "version": "537.36.0",
       "manufacturer": "Google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;Samsung;SmartTV2012;;;) WebKit"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "SmartTV",
+      "modus": null,
+      "version": "2012.0.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

@@ -1,4 +1,28 @@
 {
+  "digg feed fetcher": {
+    "name": "Digg Feed Fetcher",
+    "manufacturer": "NewsMe",
+    "type": "bot-syndication-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Digg Feed Fetcher"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "feedlybot": {
+    "name": "FeedlyBot",
+    "manufacturer": "FeedlyCom",
+    "type": "bot-syndication-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FeedlyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "google feedfetcher": {
     "name": "Google Feedfetcher",
     "manufacturer": "Google",

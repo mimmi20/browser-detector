@@ -1594,5 +1594,43 @@
       "version": "0.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "AppleCoreMedia/1.0.0.9A405 (iPad; U; CPU OS 5_0_1 like Mac OS X; zh_cn), Player FM"
+    },
+    "device": {
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Player FM",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Nuvomondo Ltd",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "5.0.1",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

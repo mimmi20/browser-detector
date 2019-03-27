@@ -1714,6 +1714,18 @@
     },
     "engine": "trident"
   },
+  "kmlite": {
+    "name": "KMLite",
+    "manufacturer": "Ashrising Phoenixes",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "KMLite"
+      ]
+    },
+    "engine": "gecko"
+  },
   "konqueror": {
     "name": "Konqueror",
     "manufacturer": "Kde",
@@ -1969,7 +1981,7 @@
         "Midori\\-"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "minibrowsermobile": {
     "name": "MiniBrowser Mobile",
@@ -2590,6 +2602,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "phoenix": {
+    "name": "Phoenix",
+    "manufacturer": "MozillaFoundation",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Phoenix"
+      ]
+    },
+    "engine": "gecko"
   },
   "playstation": {
     "name": "Playstation",
@@ -3498,6 +3522,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "vonkeror": {
+    "name": "Vonkeror",
+    "manufacturer": "zzo38",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Vonkeror"
+      ]
+    },
+    "engine": "gecko"
   },
   "vonnacom": {
     "name": "Vonnacom",

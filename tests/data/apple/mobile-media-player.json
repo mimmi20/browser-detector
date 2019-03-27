@@ -454,5 +454,43 @@
       "version": "0.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "FancyMusic 1.5.0 build 5 (iPod touch; iPhone OS 9.2.1; en_US)"
+    },
+    "device": {
+      "deviceName": "iPod Touch",
+      "marketingName": "iPod Touch",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-media-player"
+    },
+    "browser": {
+      "name": "FancyMusic",
+      "modus": null,
+      "version": "1.5.0",
+      "manufacturer": "Unknown",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.2.1",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]

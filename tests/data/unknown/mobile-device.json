@@ -13500,5 +13500,81 @@
       "version": "0.0.0",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "iTunes/10.5.2 (PodCruncher 2.2)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "iTunes",
+      "modus": null,
+      "version": "10.5.2",
+      "manufacturer": "Apple",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "0.0.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; en-us; BeyondPod 4)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "Unknown",
+      "brand": "Unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "BeyondPod",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "BeyondPod Team",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "Google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "Apple"
+    }
   }
 ]
