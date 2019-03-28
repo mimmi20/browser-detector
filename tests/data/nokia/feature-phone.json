@@ -7107,5 +7107,81 @@
       "version": "534.3.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6681/1.0 (2.30.0) Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; baiduspider; +http://www.baidu.com/search/spider.html)"
+    },
+    "device": {
+      "deviceName": "6681",
+      "marketingName": "6681",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "BaiduSpider",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Baidu",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6682/2.0 (3.01.1) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 configuration/CLDC-1.1 UP.Link/6.3.0.0.0 (compatible;YahooSeeker/M1A1-R2D2; http://help.yahoo.com/help/us/ysearch/crawling/crawling-01.html)"
+    },
+    "device": {
+      "deviceName": "6682",
+      "marketingName": "6682",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Nokia",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]
