@@ -435,12 +435,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "Samsung Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "manufacturer": "Samsung",
       "bits": 32,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Symbian OS",
@@ -1537,12 +1537,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "Samsung Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "manufacturer": "Samsung",
       "bits": 32,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -3095,12 +3095,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "Samsung Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "manufacturer": "Samsung",
       "bits": 32,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -5230,12 +5230,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "Samsung Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Unknown",
+      "manufacturer": "Samsung",
       "bits": 32,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -6981,6 +6981,82 @@
       "name": "NetFront",
       "modus": null,
       "version": "3.4.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-C3050/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "C3050",
+      "marketingName": "C3050",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "Myriad",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-S5350/S535MBOJE1 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-N"
+    },
+    "device": {
+      "deviceName": "GT-S5350",
+      "marketingName": "Shark",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
       "manufacturer": "Access",
       "bits": 32,
       "type": "browser"

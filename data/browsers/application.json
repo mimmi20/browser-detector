@@ -35,6 +35,18 @@
     },
     "engine": "unknown"
   },
+  "access web datasheet": {
+    "name": "Access Web Datasheet",
+    "manufacturer": "Microsoft",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Access Web Datasheet"
+      ]
+    },
+    "engine": "unknown"
+  },
   "adobe air": {
     "name": "Adobe AIR",
     "manufacturer": "Adobe",
@@ -186,6 +198,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "beonex communicator": {
+    "name": "Beonex Communicator",
+    "manufacturer": "Beonex Business Services",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Beonex"
+      ]
+    },
+    "engine": null
   },
   "billigfluegefinal app": {
     "name": "billigFluegeFinal App",
@@ -435,6 +459,19 @@
     },
     "engine": null
   },
+  "facebook groups": {
+    "name": "Facebook Groups App",
+    "manufacturer": "Facebook",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Facebook",
+        "FBAV"
+      ]
+    },
+    "engine": null
+  },
   "facebook messenger app": {
     "name": "Facebook Messenger App",
     "manufacturer": "Facebook",
@@ -443,8 +480,7 @@
       "class": "VersionFactory",
       "search": [
         "Facebook",
-        "FBAV",
-        "facebookexternalhit"
+        "FBAV"
       ]
     },
     "engine": null
@@ -658,6 +694,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "kioclient": {
+    "name": "kioclient",
+    "manufacturer": "Kde",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "kioclient"
+      ]
+    },
+    "engine": null
   },
   "libreoffice": {
     "name": "LibreOffice",

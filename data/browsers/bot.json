@@ -1,16 +1,4 @@
 {
-  "plus5bot": {
-    "name": "+5Bot",
-    "manufacturer": "Plus5Files",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "\\+5Bot"
-      ]
-    },
-    "engine": "unknown"
-  },
   ".net framework clr": {
     "name": ".NET Framework CLR",
     "manufacturer": "Microsoft",
@@ -383,6 +371,16 @@
     },
     "engine": "unknown"
   },
+  "alyze bot": {
+    "name": "alyze Bot",
+    "manufacturer": "Alexandre Tourette",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "amazon cloudfront": {
     "name": "Amazon CloudFront",
     "manufacturer": "Amazon",
@@ -392,6 +390,16 @@
       "search": [
         "Amazon CloudFront"
       ]
+    },
+    "engine": "unknown"
+  },
+  "anonymizied": {
+    "name": "Anonymizied",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -1085,6 +1093,16 @@
     },
     "engine": "unknown"
   },
+  "cakephp": {
+    "name": "CakePHP",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "camcrawler": {
     "name": "Camcrawler",
     "manufacturer": "Unknown",
@@ -1600,6 +1618,16 @@
       "search": [
         "DCPbot"
       ]
+    },
+    "engine": "unknown"
+  },
+  "dead link checker": {
+    "name": "dead link checker",
+    "manufacturer": "Traffic Names Ltd",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -2485,6 +2513,16 @@
     },
     "engine": "webkit"
   },
+  "getlinkinfo bot": {
+    "name": "GetLinkInfo Bot",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "getphotos": {
     "name": "GetPhotos",
     "manufacturer": "Unknown",
@@ -2554,6 +2592,16 @@
       "search": [
         "GLBot"
       ]
+    },
+    "engine": "unknown"
+  },
+  "globel bot": {
+    "name": "Globel Bot",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -2751,6 +2799,16 @@
     },
     "engine": "unknown"
   },
+  "google images relinker": {
+    "name": "google images relinker",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "google keyword suggestion": {
     "name": "Google Keyword Suggestion",
     "manufacturer": "Google",
@@ -2786,6 +2844,16 @@
       ]
     },
     "engine": null
+  },
+  "google publisher wordpress plugin": {
+    "name": "Google Publisher Wordpress Plugin",
+    "manufacturer": "Google",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   },
   "google sitemaps": {
     "name": "Google Sitemaps",
@@ -2966,7 +3034,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "GuzzleHttp"
+        "GuzzleHttp",
+        "Guzzle"
       ]
     },
     "engine": "unknown"
@@ -5278,6 +5347,16 @@
     },
     "engine": "unknown"
   },
+  "pcore::http::ua": {
+    "name": "Pcore::HTTP::UA",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "pdrlabs bot": {
     "name": "pdrlabs Bot",
     "manufacturer": "Pdrlabs",
@@ -5470,6 +5549,18 @@
     },
     "engine": "unknown"
   },
+  "plus5bot": {
+    "name": "Plus5Bot",
+    "manufacturer": "Plus5Files",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "\\+5Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "pmoz.info odp link checker": {
     "name": "pmoz.info ODP link checker",
     "manufacturer": "PlantRob",
@@ -5550,6 +5641,18 @@
       "class": "VersionFactory",
       "search": [
         "profiller"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "prospectb2b bot": {
+    "name": "ProspectB2B Bot",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ProspectB2B"
       ]
     },
     "engine": "unknown"
@@ -7454,6 +7557,18 @@
     },
     "engine": "webkit"
   },
+  "turlvalidator": {
+    "name": "TURLValidator",
+    "manufacturer": "Unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TURLValidator"
+      ]
+    },
+    "engine": "unknown"
+  },
   "turnitinbot": {
     "name": "TurnitinBot",
     "manufacturer": "Iparadigms",
@@ -7820,6 +7935,16 @@
     },
     "engine": "unknown"
   },
+  "vbulletin bot": {
+    "name": "vBulletin Bot",
+    "manufacturer": "Vbseo",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "vbulletin seo bot": {
     "name": "vBulletin SEO Bot",
     "manufacturer": "Vbseo",
@@ -7828,6 +7953,18 @@
       "class": "VersionFactory",
       "search": [
         "vBSEO"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "veooz bot": {
+    "name": "Veooz Bot",
+    "manufacturer": "Veooz Labs",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Veooz"
       ]
     },
     "engine": "unknown"

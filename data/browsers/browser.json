@@ -121,6 +121,16 @@
     },
     "engine": null
   },
+  "acoo browser": {
+    "name": "Acoo Browser",
+    "manufacturer": "www.acoobrowser.com",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "trident"
+  },
   "airwatch browser": {
     "name": "AirWatch Browser",
     "manufacturer": "VMware",
@@ -477,6 +487,18 @@
     },
     "engine": null
   },
+  "brave": {
+    "name": "Brave",
+    "manufacturer": "Brave Software Inc.",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Brave"
+      ]
+    },
+    "engine": null
+  },
   "browse": {
     "name": "Browse",
     "manufacturer": "Unknown",
@@ -488,6 +510,18 @@
       ]
     },
     "engine": "blink"
+  },
+  "browzar": {
+    "name": "Browzar",
+    "manufacturer": "browzar.com",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Browzar"
+      ]
+    },
+    "engine": null
   },
   "bsnbrowserlite": {
     "name": "BSNBrowserLite",
@@ -544,6 +578,30 @@
       ]
     },
     "engine": null
+  },
+  "cheshire": {
+    "name": "Cheshire",
+    "manufacturer": "America Online, Inc.",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cheshire"
+      ]
+    },
+    "engine": null
+  },
+  "chimera": {
+    "name": "Chimera",
+    "manufacturer": "MozillaFoundation",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Chimera"
+      ]
+    },
+    "engine": "gecko"
   },
   "choosy": {
     "name": "Choosy",
@@ -602,7 +660,7 @@
       "class": null,
       "search": null
     },
-    "engine": "clecko"
+    "engine": null
   },
   "clipish": {
     "name": "Clipish",
@@ -658,6 +716,18 @@
       "class": "VersionFactory",
       "search": [
         "CometBird"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "conkeror": {
+    "name": "Conkeror",
+    "manufacturer": "Unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Conkeror"
       ]
     },
     "engine": "gecko"
@@ -2329,7 +2399,7 @@
         "NintendoBrowser"
       ]
     },
-    "engine": "webkit"
+    "engine": null
   },
   "nokiabrowser": {
     "name": "Nokia Browser",
@@ -2611,6 +2681,18 @@
       "class": "VersionFactory",
       "search": [
         "Phoenix"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "pirate browser": {
+    "name": "Pirate Browser",
+    "manufacturer": "Pirate Bay",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PB"
       ]
     },
     "engine": "gecko"

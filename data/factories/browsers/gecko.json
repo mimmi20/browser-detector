@@ -42,7 +42,7 @@
     "/k-meleon/i": "k-meleon",
     "/k-ninja/i": "k-ninja",
     "/ruby/i": "generic ruby crawler",
-    "/googleimageproxy/i": "google image proxy",
+    "/googleimageproxy|ggpht/i": "google mail",
     "/lolifox/i": "lolifox",
     "/cyberfox/i": "cyberfox",
     "/to-browser|tob/i": "t-online browser",
@@ -58,6 +58,9 @@
     "/novarra-vision/i": "novarra-vision",
     "/tenfourfox/i": "tenfourfox",
     "/mozilla\\/5\\.0 \\(windows; rv:.*\\) gecko\\/.* firefox\\/.*/i": "thumbnail.ws bot",
+    "/classilla/i": "classilla",
+    "/^pb[0-9]+/i": "pirate browser",
+    "/avant/i": "avant",
     "/firefox|minefield|shiretoko|bonecho|namoroka|granparadiso|firebird/i": "firefox",
     "/xml sitemaps generator/i": "xml sitemaps generator",
     "/webthumb/i": "webthumb",
@@ -75,6 +78,9 @@
     "/kmlite/i": "kmlite",
     "/prism/i": "prism",
     "/phoenix/i": "phoenix",
+    "/beonex/i": "beonex communicator",
+    "/chimera/i": "chimera",
+    "/conkeror/i": "conkeror",
     "/mozilla/i": "mozilla"
   },
   "generic": "firefox"
