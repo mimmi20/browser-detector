@@ -1287,6 +1287,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "samsung gt-b7300": {
+    "deviceName": "GT-B7300",
+    "marketingName": "Omnia Lite",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "samsung gt-b7350": {
     "deviceName": "GT-B7350",
     "marketingName": "Omnia Pro 4",
@@ -2543,6 +2557,20 @@
       "height": 120,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung s7350": {
+    "deviceName": "S7350",
+    "marketingName": "Xplorer",
+    "manufacturer": "Samsung",
+    "brand": "Samsung",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": false,
+      "size": 2.6
     },
     "type": "feature-phone",
     "platform": "java"

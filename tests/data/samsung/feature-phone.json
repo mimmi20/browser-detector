@@ -7073,5 +7073,81 @@
       "version": "0.0.0",
       "manufacturer": "Access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-S7350/S7350XXIC4 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "S7350",
+      "marketingName": "Xplorer",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "Access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "SunMicrosystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "Access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-B7300/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5"
+    },
+    "device": {
+      "deviceName": "GT-B7300",
+      "marketingName": "Omnia Lite",
+      "manufacturer": "Samsung",
+      "brand": "Samsung",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
   }
 ]
