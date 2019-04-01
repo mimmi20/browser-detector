@@ -280,6 +280,18 @@
     },
     "engine": "webkit"
   },
+  "kodi media center": {
+    "name": "Kodi Media Center",
+    "manufacturer": "XBMC Foundation",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kodi"
+      ]
+    },
+    "engine": "unknown"
+  },
   "lg player": {
     "name": "LG Player",
     "manufacturer": "Lg",
@@ -685,6 +697,18 @@
       ]
     },
     "engine": "trident"
+  },
+  "xbmc media center": {
+    "name": "XBMC Media Center",
+    "manufacturer": "XBMC Foundation",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kodi"
+      ]
+    },
+    "engine": "unknown"
   },
   "zune": {
     "name": "Zune",
