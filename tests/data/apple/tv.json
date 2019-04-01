@@ -36,5 +36,43 @@
       "version": "0.0.0",
       "manufacturer": "Apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "XBMC/PRE-11.0 Git:20110623-62171b3 (iOS; 11.0.0 AppleTV2,1; http://www.xbmc.org)"
+    },
+    "device": {
+      "deviceName": "AppleTV2,1",
+      "marketingName": "Apple TV (2nd Gen.)",
+      "manufacturer": "Apple",
+      "brand": "Apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "XBMC Media Center",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "XBMC Foundation",
+      "bits": 32,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "ATV OS X",
+      "marketingName": "ATV OS X",
+      "version": "0.0.0",
+      "manufacturer": "Apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "Unknown"
+    }
   }
 ]

@@ -96,7 +96,12 @@
     "/iph(?:one)?2[c,_]1/i": "apple iphone 2,1",
     "/iph(?:one)?1[c,_]2/i": "apple iphone 1,2",
     "/iph(?:one)?1[c,_]1/i": "apple iphone 1,1",
-    "/iph|puffin\\/[\\d\\.]+ip/i": "apple iphone"
+    "/iph|puffin\\/[\\d\\.]+ip/i": "apple iphone",
+    "/appletv6,2/i": "apple appletv6,2",
+    "/appletv5,3/i": "apple appletv5,3",
+    "/appletv3,2/i": "apple appletv3,2",
+    "/appletv3,1/i": "apple appletv3,1",
+    "/appletv2,1/i": "apple appletv2,1"
   },
   "generic": "general apple device"
 }
