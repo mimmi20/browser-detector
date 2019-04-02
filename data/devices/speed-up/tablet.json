@@ -2,8 +2,8 @@
   "general speed-up device": {
     "deviceName": "general SpeedUp device",
     "marketingName": "general SpeedUp device",
-    "manufacturer": "SpeedUp",
-    "brand": "SpeedUp",
+    "manufacturer": "speed-up",
+    "brand": "speed-up",
     "display": {
       "width": null,
       "height": null,
@@ -16,11 +16,25 @@
   "speed-up tb-713": {
     "deviceName": "TB-713",
     "marketingName": "Pad Fun",
-    "manufacturer": "SpeedUp",
-    "brand": "SpeedUp",
+    "manufacturer": "speed-up",
+    "brand": "speed-up",
     "display": {
       "width": 1024,
       "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "speed-up s3": {
+    "deviceName": "S3",
+    "marketingName": "Pad Pro S3",
+    "manufacturer": "speed-up",
+    "brand": "speed-up",
+    "display": {
+      "width": null,
+      "height": null,
       "touch": true,
       "size": 7
     },

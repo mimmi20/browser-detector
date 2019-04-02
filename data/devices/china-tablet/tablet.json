@@ -2,8 +2,8 @@
   "general china-tablet device": {
     "deviceName": "general China Tablet device",
     "marketingName": "general China Tablet device",
-    "manufacturer": "China Tablet",
-    "brand": "China Tablet",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
     "display": {
       "width": null,
       "height": null,
@@ -13,11 +13,25 @@
     "type": "tablet",
     "platform": "android"
   },
+  "china-tablet a13-mid": {
+    "deviceName": "A13-MID",
+    "marketingName": "A13-MID",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "china-tablet i101mtk": {
     "deviceName": "I101MTK",
     "marketingName": "I101MTK",
-    "manufacturer": "China Tablet",
-    "brand": "China Tablet",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
     "display": {
       "width": 800,
       "height": 480,
@@ -27,11 +41,39 @@
     "type": "tablet",
     "platform": "android"
   },
+  "china-tablet j-q8d": {
+    "deviceName": "J-Q8D",
+    "marketingName": "J-Q8D",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "china-tablet m006-q": {
+    "deviceName": "M006-Q",
+    "marketingName": "M006-Q",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "china-tablet rk312x": {
     "deviceName": "RK312X",
     "marketingName": "RK312X",
-    "manufacturer": "China Tablet",
-    "brand": "China Tablet",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
     "display": {
       "width": 800,
       "height": 480,
@@ -44,11 +86,25 @@
   "china-tablet rk31sdk": {
     "deviceName": "RK31SDK",
     "marketingName": "RK31SDK",
-    "manufacturer": "China Tablet",
-    "brand": "China Tablet",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
     "display": {
       "width": 1280,
       "height": 720,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "china-tablet twd mid": {
+    "deviceName": "TWD MID",
+    "marketingName": "TWD MID",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
+    "display": {
+      "width": 800,
+      "height": 480,
       "touch": true,
       "size": 7
     },
