@@ -33,7 +33,7 @@ trait CompanyFactoryTrait
     private function getCompany(LoggerInterface $logger, array $data, string $useragent, string $field): CompanyInterface
     {
         $companyLoader = $this->companyLoader;
-        $manufacturer  = $companyLoader->load('Unknown', $useragent);
+        $manufacturer  = $companyLoader->load('unknown', $useragent);
 
         if (!array_key_exists($field, $data)) {
             return $manufacturer;

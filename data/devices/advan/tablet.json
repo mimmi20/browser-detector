@@ -2,8 +2,8 @@
   "general advan device": {
     "deviceName": "general Advan device",
     "marketingName": "general Advan device",
-    "manufacturer": "Advan",
-    "brand": "Advan",
+    "manufacturer": "advan",
+    "brand": "advan",
     "display": {
       "width": null,
       "height": null,
@@ -16,13 +16,27 @@
   "advan t1l": {
     "deviceName": "T1L",
     "marketingName": "T1L",
-    "manufacturer": "Advan",
-    "brand": "Advan",
+    "manufacturer": "advan",
+    "brand": "advan",
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "advan t3i": {
+    "deviceName": "T3i",
+    "marketingName": "Vandroid T3I",
+    "manufacturer": "advan",
+    "brand": "advan",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 9.7
     },
     "type": "tablet",
     "platform": "android"

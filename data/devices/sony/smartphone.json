@@ -351,7 +351,7 @@
   },
   "sonyericsson so-02c": {
     "deviceName": "SO-02C",
-    "marketingName": "Xperia acro",
+    "marketingName": "Xperia Acro",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
     "display": {
@@ -365,7 +365,7 @@
   },
   "sony so-03d": {
     "deviceName": "SO-03D",
-    "marketingName": "Xperia acro",
+    "marketingName": "Xperia Acro",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -373,6 +373,20 @@
       "height": 720,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony is12s": {
+    "deviceName": "IS12S",
+    "marketingName": "Xperia Acro HD",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
