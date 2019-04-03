@@ -129,7 +129,7 @@
   },
   "apple appstore app": {
     "name": "AppStore App",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -250,7 +250,7 @@
   },
   "cfnetwork": {
     "name": "CFNetwork",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -284,7 +284,7 @@
   },
   "cobalt": {
     "name": "Cobalt Application Container",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -308,7 +308,7 @@
   },
   "crosswalk": {
     "name": "Crosswalk App",
-    "manufacturer": "Intel Corporation",
+    "manufacturer": "intel",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -356,7 +356,7 @@
   },
   "dalvik": {
     "name": "Dalvik",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -559,7 +559,7 @@
   },
   "google app": {
     "name": "Google App",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -571,7 +571,7 @@
   },
   "google mobile app": {
     "name": "Google Mobile App",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -583,7 +583,7 @@
   },
   "google+ app": {
     "name": "Google+ App",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "application",
     "version": {
       "class": null,
@@ -603,7 +603,7 @@
   },
   "ibooks author": {
     "name": "iBooks Author",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -638,7 +638,7 @@
   },
   "ios dataaccessd": {
     "name": "iOS dataaccessd",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -650,7 +650,7 @@
   },
   "itunes": {
     "name": "iTunes",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -665,7 +665,7 @@
   },
   "iweb": {
     "name": "iWeb",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -757,7 +757,7 @@
   },
   "macappstore": {
     "name": "Mac AppStore App",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -793,7 +793,7 @@
   },
   "apple mobilenotes": {
     "name": "MobileNotes",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -851,7 +851,7 @@
   },
   "apple notes app": {
     "name": "Notes App",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -1113,7 +1113,7 @@
   },
   "apple safari fetcher daemon": {
     "name": "Safari Fetcher Daemon",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -1145,7 +1145,7 @@
   },
   "samsung crossapp": {
     "name": "Samsung CrossApp",
-    "manufacturer": "Samsung",
+    "manufacturer": "samsung",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -1217,7 +1217,7 @@
   },
   "siriviewservice": {
     "name": "SiriViewService",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": "VersionFactory",
@@ -1428,7 +1428,7 @@
   },
   "apple webkit service": {
     "name": "Webkit Service",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -1628,9 +1628,21 @@
     },
     "engine": null
   },
+  "yellowpages mobile app": {
+    "name": "YellowPages Mobile App",
+    "manufacturer": "yp",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YPmobile"
+      ]
+    },
+    "engine": null
+  },
   "youtube app": {
     "name": "Youtube App",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "application",
     "version": {
       "class": null,
