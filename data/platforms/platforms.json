@@ -33,7 +33,7 @@
   "android": {
     "name": "Android",
     "marketingName": "Android",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "version": {
       "class": "\\BrowserDetector\\Version\\AndroidOs",
       "search": null
@@ -71,7 +71,7 @@
   "atv os x": {
     "name": "ATV OS X",
     "marketingName": "ATV OS X",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "version": {
       "class": "\\BrowserDetector\\Version\\Ios",
       "search": null
@@ -80,7 +80,7 @@
   "audio os": {
     "name": "audioOS",
     "marketingName": "audioOS",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "version": {
       "class": "\\BrowserDetector\\Version\\Ios",
       "search": null
@@ -98,7 +98,7 @@
   "bada": {
     "name": "Bada",
     "marketingName": "Bada",
-    "manufacturer": "Samsung",
+    "manufacturer": "samsung",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -173,7 +173,7 @@
   "chromeos": {
     "name": "ChromeOS",
     "marketingName": "ChromeOS",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "version": {
       "class": "\\BrowserDetector\\Version\\ChromeOs",
       "search": null
@@ -209,7 +209,7 @@
   "darwin": {
     "name": "Darwin",
     "marketingName": "Darwin",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -315,7 +315,7 @@
   "ios": {
     "name": "iOS",
     "marketingName": "iOS",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "version": {
       "class": "\\BrowserDetector\\Version\\Ios",
       "search": null
@@ -333,7 +333,7 @@
   "java": {
     "name": "JavaOS",
     "marketingName": "JavaOS",
-    "manufacturer": "SunMicrosystems",
+    "manufacturer": "sun-microsystems",
     "version": {
       "class": null,
       "search": null
@@ -417,7 +417,7 @@
   "mac os x": {
     "name": "Mac OS X",
     "marketingName": "Mac OS X",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "version": {
       "class": "\\BrowserDetector\\Version\\Macosx",
       "search": null
@@ -426,7 +426,7 @@
   "macintosh": {
     "name": "Macintosh",
     "marketingName": "Macintosh",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -512,7 +512,7 @@
   "netcast": {
     "name": "NetCast",
     "marketingName": "NetCast",
-    "manufacturer": "Lg",
+    "manufacturer": "lg",
     "version": {
       "class": null,
       "search": null
@@ -878,7 +878,7 @@
   "watch os": {
     "name": "watchOS",
     "marketingName": "watchOS",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "version": {
       "class": "\\BrowserDetector\\Version\\Ios",
       "search": null
@@ -887,7 +887,7 @@
   "lg webos": {
     "name": "webOS",
     "marketingName": "webOS",
-    "manufacturer": "Lg",
+    "manufacturer": "lg",
     "version": {
       "class": "VersionFactory",
       "search": [

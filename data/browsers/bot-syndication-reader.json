@@ -1,4 +1,16 @@
 {
+  "becomebot": {
+    "name": "BecomeBot",
+    "manufacturer": "become",
+    "type": "bot-syndication-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BecomeBot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "digg feed fetcher": {
     "name": "Digg Feed Fetcher",
     "manufacturer": "NewsMe",
@@ -7,6 +19,18 @@
       "class": "VersionFactory",
       "search": [
         "Digg Feed Fetcher"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "feed wrangler": {
+    "name": "Feed Wrangler",
+    "manufacturer": "unknown",
+    "type": "bot-syndication-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Feed Wrangler"
       ]
     },
     "engine": "unknown"
@@ -23,9 +47,19 @@
     },
     "engine": "unknown"
   },
+  "feedraider": {
+    "name": "feedraider",
+    "manufacturer": "unknown",
+    "type": "bot-syndication-reader",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "google feedfetcher": {
     "name": "Google Feedfetcher",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "bot-syndication-reader",
     "version": {
       "class": "VersionFactory",

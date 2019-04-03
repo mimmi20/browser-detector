@@ -2,8 +2,8 @@
   "general cyrus device": {
     "deviceName": "general Cyrus device",
     "marketingName": "general Cyrus device",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": null,
       "height": null,
@@ -16,8 +16,8 @@
   "cyrus cs22": {
     "deviceName": "CS22",
     "marketingName": "CS22",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": 1280,
       "height": 720,
@@ -30,8 +30,8 @@
   "cyrus cs23": {
     "deviceName": "CS23",
     "marketingName": "CS23",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": 533,
       "height": 320,
@@ -44,8 +44,8 @@
   "cyrus cs24": {
     "deviceName": "CS24",
     "marketingName": "CS24",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": 1280,
       "height": 720,
@@ -58,8 +58,8 @@
   "cyrus cs25": {
     "deviceName": "CS25",
     "marketingName": "CS25",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": 1280,
       "height": 720,
@@ -72,8 +72,8 @@
   "cyrus cs28": {
     "deviceName": "CS28",
     "marketingName": "CS28",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": 1280,
       "height": 720,
@@ -86,8 +86,8 @@
   "cyrus cs30": {
     "deviceName": "CS30",
     "marketingName": "CS30",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": 1280,
       "height": 720,
@@ -100,8 +100,8 @@
   "cyrus cs35": {
     "deviceName": "CS35",
     "marketingName": "CS35",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": 1280,
       "height": 720,
@@ -114,13 +114,27 @@
   "cyrus cs40": {
     "deviceName": "CS40",
     "marketingName": "CS40",
-    "manufacturer": "Cyrus",
-    "brand": "Cyrus",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "cyrus tvpad slim k3409": {
+    "deviceName": "TVPad Slim K3409",
+    "marketingName": "TVPad Slim K3409",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"

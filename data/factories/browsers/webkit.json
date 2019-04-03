@@ -234,6 +234,7 @@
     "/stitcher/i": "stitcher",
     "/kodi/i": "kodi media center",
     "/xbmc/i": "xbmc media center",
+    "/easouspider/i": "easouspider",
     "/^Mozilla\\/5\\.0.*\\((iPhone|iPad|iPod).*\\).*AppleWebKit\\/.*\\(.*KHTML, like Gecko.*\\).*Mobile.*/i": "mobile safari uiwebview",
     "/dalvik/i": "dalvik",
     "/bb_work_connect/i": "bb work connect",
@@ -299,7 +300,8 @@
     "/podcastone/i": "podcastone",
     "/onesafe%20ios/i": "onesafe",
     "/airsuite-ui/i": "airsuite-ui",
-    "/share/i": "share-app"
+    "/share/i": "share-app",
+    "/cfnetwork/i": "cfnetwork"
   },
   "generic": "safari"
 }

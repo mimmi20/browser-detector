@@ -180,7 +180,7 @@
   },
   "android webkit": {
     "name": "Android Webkit",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": "\\BrowserDetector\\Version\\AndroidWebkit",
@@ -190,7 +190,7 @@
   },
   "android webview": {
     "name": "Android WebView",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -202,7 +202,7 @@
   },
   "antgalio": {
     "name": "ANTGalio",
-    "manufacturer": "Ant",
+    "manufacturer": "ant",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -214,7 +214,7 @@
   },
   "apusbrowser": {
     "name": "APUSBrowser",
-    "manufacturer": "ApusGroup",
+    "manufacturer": "apus-group",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -275,7 +275,7 @@
   },
   "avant": {
     "name": "Avant",
-    "manufacturer": "AvantForce",
+    "manufacturer": "avant-force",
     "type": "browser",
     "version": {
       "class": null,
@@ -285,7 +285,7 @@
   },
   "avast safezone": {
     "name": "Avast SafeZone",
-    "manufacturer": "AvastSoftware",
+    "manufacturer": "avast-software",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -309,7 +309,7 @@
   },
   "avira scout": {
     "name": "Avira Scout",
-    "manufacturer": "AviraOperations",
+    "manufacturer": "avira-operations",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -401,7 +401,7 @@
     "engine": "unknown"
   },
   "blackberry": {
-    "name": "BlackBerry",
+    "name": "black-berry",
     "manufacturer": "Rim",
     "type": "browser",
     "version": {
@@ -617,7 +617,7 @@
   },
   "chrome": {
     "name": "Chrome",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -630,7 +630,7 @@
   },
   "chrome for ios": {
     "name": "Chrome for iOS",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -642,7 +642,7 @@
   },
   "chromium": {
     "name": "Chromium",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -1211,7 +1211,7 @@
   },
   "ant fresco": {
     "name": "Fresco",
-    "manufacturer": "Ant",
+    "manufacturer": "ant",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -1235,7 +1235,7 @@
   },
   "google": {
     "name": "Google",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": null,
@@ -1245,7 +1245,7 @@
   },
   "google desktop": {
     "name": "Google Desktop",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -1257,7 +1257,7 @@
   },
   "google earth": {
     "name": "Google Earth",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -1269,7 +1269,7 @@
   },
   "googletv": {
     "name": "GoogleTV",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": null,
@@ -1301,7 +1301,7 @@
   },
   "headless-chrome": {
     "name": "Headless Chrome",
-    "manufacturer": "Google",
+    "manufacturer": "google",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -1344,6 +1344,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "hotjava": {
+    "name": "HotJava",
+    "manufacturer": "sun-microsystems",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HotJava"
+      ]
+    },
+    "engine": "unknown"
   },
   "iball": {
     "name": "iBall",
@@ -1777,7 +1789,7 @@
   },
   "kmlite": {
     "name": "KMLite",
-    "manufacturer": "Ashrising Phoenixes",
+    "manufacturer": "ashrising-phoenixes",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -1814,7 +1826,7 @@
   },
   "lenovo browser": {
     "name": "Lenovo Browser",
-    "manufacturer": "Lenovo",
+    "manufacturer": "lenovo",
     "bits": 32,
     "type": "browser",
     "version": {
@@ -1827,7 +1839,7 @@
   },
   "lg browser": {
     "name": "LG Browser",
-    "manufacturer": "Lg",
+    "manufacturer": "lg",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -2106,7 +2118,7 @@
   },
   "mobile safari uiwebview": {
     "name": "Mobile Safari UIWebView",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "browser",
     "version": {
       "class": null,
@@ -2641,7 +2653,7 @@
   },
   "phantom browser": {
     "name": "Phantom Browser",
-    "manufacturer": "Lg",
+    "manufacturer": "lg",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -2863,7 +2875,7 @@
   },
   "quicklook": {
     "name": "QuickLook",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -2960,7 +2972,7 @@
   },
   "safari": {
     "name": "Safari",
-    "manufacturer": "Apple",
+    "manufacturer": "apple",
     "type": "browser",
     "version": {
       "class": "\\BrowserDetector\\Version\\Safari",
@@ -3003,8 +3015,8 @@
     "engine": "blink"
   },
   "samsung": {
-    "name": "Samsung",
-    "manufacturer": "Samsung",
+    "name": "samsung",
+    "manufacturer": "samsung",
     "type": "browser",
     "version": {
       "class": null,
@@ -3014,7 +3026,7 @@
   },
   "samsungbrowser": {
     "name": "Samsung Browser",
-    "manufacturer": "Samsung",
+    "manufacturer": "samsung",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -3027,7 +3039,7 @@
   },
   "samsung mobile browser": {
     "name": "Samsung Mobile Browser",
-    "manufacturer": "Samsung",
+    "manufacturer": "samsung",
     "type": "browser",
     "version": {
       "class": null,
