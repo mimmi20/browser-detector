@@ -2,8 +2,8 @@
   "general haipai device": {
     "deviceName": "general Haipai device",
     "marketingName": "general Haipai device",
-    "manufacturer": "Haipai",
-    "brand": "Haipai",
+    "manufacturer": "haipai",
+    "brand": "haipai",
     "display": {
       "width": null,
       "height": null,
@@ -16,13 +16,27 @@
   "haipai i9220": {
     "deviceName": "I9220",
     "marketingName": "Noble",
-    "manufacturer": "Haipai",
-    "brand": "Haipai",
+    "manufacturer": "haipai",
+    "brand": "haipai",
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 5.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "haipai x710d": {
+    "deviceName": "X710d",
+    "marketingName": "X710d",
+    "manufacturer": "haipai",
+    "brand": "haipai",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 5.3
     },
     "type": "smartphone",
     "platform": "android"
