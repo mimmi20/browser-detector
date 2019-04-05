@@ -139,6 +139,34 @@
     "type": "smartphone",
     "platform": "symbian"
   },
+  "sonyericsson st18i": {
+    "deviceName": "ST18i",
+    "marketingName": "Urushi",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson st18iv": {
+    "deviceName": "ST18iv",
+    "marketingName": "Urushi",
+    "manufacturer": "SonyEricsson",
+    "brand": "SonyEricsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sonyericsson u5": {
     "deviceName": "U5",
     "marketingName": "Vivaz",
@@ -603,7 +631,7 @@
   },
   "sonyericsson so-01e": {
     "deviceName": "SO-01E",
-    "marketingName": "Xperia AX",
+    "marketingName": "Xperia AX (NTT DoCoMo)",
     "manufacturer": "SonyEricsson",
     "brand": "SonyEricsson",
     "display": {
@@ -769,8 +797,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony e5533": {
-    "deviceName": "E5533",
+  "sony e5563": {
+    "deviceName": "E5563",
     "marketingName": "Xperia C5 Ultra Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
@@ -783,9 +811,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony e5563": {
-    "deviceName": "E5563",
-    "marketingName": "Xperia C5 Ultra Dual",
+  "sony e5533": {
+    "deviceName": "E5533",
+    "marketingName": "Xperia C5 Ultra Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -1401,7 +1429,7 @@
   },
   "sony c2005": {
     "deviceName": "C2005",
-    "marketingName": "Xperia M Dual",
+    "marketingName": "Xperia M Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -2085,34 +2113,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sonyericsson st18i": {
-    "deviceName": "ST18i",
-    "marketingName": "Xperia ray",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "sonyericsson st18iv": {
-    "deviceName": "ST18iv",
-    "marketingName": "Xperia ray",
-    "manufacturer": "SonyEricsson",
-    "brand": "SonyEricsson",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "sony xperia s": {
     "deviceName": "Xperia S",
     "marketingName": "Xperia S",
@@ -2151,20 +2151,6 @@
       "height": 480,
       "touch": true,
       "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "sony c5303": {
-    "deviceName": "C5303",
-    "marketingName": "Xperia SP",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 4.6
     },
     "type": "smartphone",
     "platform": "android"
@@ -2239,6 +2225,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sony c5303": {
+    "deviceName": "C5303",
+    "marketingName": "Xperia SP LTE",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sony so-05d": {
     "deviceName": "SO-05D",
     "marketingName": "Xperia SX",
@@ -2270,20 +2270,6 @@
   "sony lt30p": {
     "deviceName": "LT30p",
     "marketingName": "Xperia T",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "sony d5303": {
-    "deviceName": "D5303",
-    "marketingName": "Xperia T2 Ultra",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -2340,6 +2326,20 @@
   "sony xm50h": {
     "deviceName": "XM50h",
     "marketingName": "Xperia T2 Ultra Dual",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony d5303": {
+    "deviceName": "D5303",
+    "marketingName": "Xperia T2 Ultra LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -2603,20 +2603,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony f5122": {
-    "deviceName": "F5122",
-    "marketingName": "Xperia X",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "sony f5321": {
     "deviceName": "F5321",
     "marketingName": "Xperia X Compact",
@@ -2625,6 +2611,20 @@
     "display": {
       "width": 1280,
       "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony f5122": {
+    "deviceName": "F5122",
+    "marketingName": "Xperia X Dual",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": null
     },
@@ -2981,8 +2981,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony f3112": {
-    "deviceName": "F3112",
+  "sony f3116": {
+    "deviceName": "F3116",
     "marketingName": "Xperia XA Dual",
     "manufacturer": "Sony",
     "brand": "Sony",
@@ -2995,9 +2995,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony f3116": {
-    "deviceName": "F3116",
-    "marketingName": "Xperia XA Dual",
+  "sony f3112": {
+    "deviceName": "F3112",
+    "marketingName": "Xperia XA Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -3163,20 +3163,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony g3416": {
-    "deviceName": "G3416",
-    "marketingName": "Xperia XA1 Plus",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "sony g3421": {
     "deviceName": "G3421",
     "marketingName": "Xperia XA1 Plus",
@@ -3215,6 +3201,20 @@
       "height": 1080,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony g3416": {
+    "deviceName": "G3416",
+    "marketingName": "Xperia XA1 Plus Dual SIM",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"
@@ -3417,7 +3417,7 @@
   },
   "sony f8332": {
     "deviceName": "F8332",
-    "marketingName": "Xperia XZ",
+    "marketingName": "Xperia XZ Dual SIM",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -3681,20 +3681,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony c6606": {
-    "deviceName": "C6606",
-    "marketingName": "Xperia Z",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "sony c6616": {
     "deviceName": "C6616",
     "marketingName": "Xperia Z",
@@ -3737,9 +3723,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony c6806": {
-    "deviceName": "C6806",
-    "marketingName": "Xperia Z Ultra",
+  "sony c6606": {
+    "deviceName": "C6606",
+    "marketingName": "Xperia Z 4G LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -3751,8 +3737,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony c6833": {
-    "deviceName": "C6833",
+  "sony c6806": {
+    "deviceName": "C6806",
     "marketingName": "Xperia Z Ultra",
     "manufacturer": "Sony",
     "brand": "Sony",
@@ -3796,6 +3782,20 @@
   "sony xl39h": {
     "deviceName": "XL39h",
     "marketingName": "Xperia Z Ultra HSPA+",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony c6833": {
+    "deviceName": "C6833",
+    "marketingName": "Xperia Z Ultra LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -3989,20 +3989,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony d6503": {
-    "deviceName": "D6503",
-    "marketingName": "Xperia Z2",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "sony d6543": {
     "deviceName": "D6543",
     "marketingName": "Xperia Z2",
@@ -4031,8 +4017,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony l50u": {
-    "deviceName": "L50u",
+  "sony so-03f": {
+    "deviceName": "SO-03F",
     "marketingName": "Xperia Z2",
     "manufacturer": "Sony",
     "brand": "Sony",
@@ -4045,9 +4031,23 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony so-03f": {
-    "deviceName": "SO-03F",
-    "marketingName": "Xperia Z2",
+  "sony d6503": {
+    "deviceName": "D6503",
+    "marketingName": "Xperia Z2 LTE",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony l50u": {
+    "deviceName": "L50u",
+    "marketingName": "Xperia Z2 LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -4089,20 +4089,6 @@
   },
   "sony d6616": {
     "deviceName": "D6616",
-    "marketingName": "Xperia Z3",
-    "manufacturer": "Sony",
-    "brand": "Sony",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": 5.2
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "sony d6633": {
-    "deviceName": "D6633",
     "marketingName": "Xperia Z3",
     "manufacturer": "Sony",
     "brand": "Sony",
@@ -4185,8 +4171,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony d5833": {
-    "deviceName": "D5833",
+  "sony so-02g": {
+    "deviceName": "SO-02G",
     "marketingName": "Xperia Z3 Compact",
     "manufacturer": "Sony",
     "brand": "Sony",
@@ -4199,9 +4185,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony so-02g": {
-    "deviceName": "SO-02G",
-    "marketingName": "Xperia Z3 Compact",
+  "sony d5833": {
+    "deviceName": "D5833",
+    "marketingName": "Xperia Z3 Compact (Asia)",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {
@@ -4209,6 +4195,20 @@
       "height": 720,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony d6633": {
+    "deviceName": "D6633",
+    "marketingName": "Xperia Z3 Dual SIM",
+    "manufacturer": "Sony",
+    "brand": "Sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -4313,7 +4313,7 @@
   },
   "sony e5823": {
     "deviceName": "E5823",
-    "marketingName": "Xperia Z5 Compact",
+    "marketingName": "Xperia Z5 Compact LTE",
     "manufacturer": "Sony",
     "brand": "Sony",
     "display": {

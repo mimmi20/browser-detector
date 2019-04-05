@@ -41,20 +41,6 @@
     "type": "tablet",
     "platform": "android"
   },
-  "onda mid": {
-    "deviceName": "MID",
-    "marketingName": "MID",
-    "manufacturer": "Onda",
-    "brand": "Onda",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "onda v812 core4": {
     "deviceName": "V812 Core4",
     "marketingName": "V812 Core4",
@@ -121,6 +107,20 @@
       "height": 480,
       "touch": true,
       "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "onda mid": {
+    "deviceName": "MID",
+    "marketingName": "VI10 Elite",
+    "manufacturer": "Onda",
+    "brand": "Onda",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": null
     },
     "type": "tablet",
     "platform": "android"

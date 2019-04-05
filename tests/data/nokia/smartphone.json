@@ -1487,7 +1487,7 @@
     },
     "device": {
       "deviceName": "RM-1040",
-      "marketingName": "Lumia 730",
+      "marketingName": "Lumia 730 Dual SIM",
       "manufacturer": "Nokia",
       "brand": "Nokia",
       "display": {
@@ -2133,7 +2133,7 @@
     },
     "device": {
       "deviceName": "C7-00",
-      "marketingName": "C7",
+      "marketingName": "Astound",
       "manufacturer": "Nokia",
       "brand": "Nokia",
       "display": {
@@ -3577,8 +3577,8 @@
       "baidu-flyflow": "Microsoft Windows NT 8.0.10521.0;4.0.50829.0;NOKIA;RM-821_apac_hong_kong_234;03988de8b2eab0b1cadee6ec115612692262e40d;2.5.0.12"
     },
     "device": {
-      "deviceName": "Lumia 920",
-      "marketingName": "RM-821",
+      "deviceName": "RM-821",
+      "marketingName": "Lumia 920",
       "manufacturer": "Nokia",
       "brand": "Nokia",
       "display": {
@@ -3616,8 +3616,8 @@
       "baidu-flyflow": "Microsoft Windows NT 8.0.10521.0;4.0.50829.0;NOKIA;RM-820_apac_hong_kong_234;03988de8b2eab0b1cadee6ec115612692262e40d;2.5.0.12"
     },
     "device": {
-      "deviceName": "Lumia 920",
-      "marketingName": "RM-820",
+      "deviceName": "RM-820",
+      "marketingName": "Lumia 920",
       "manufacturer": "Nokia",
       "brand": "Nokia",
       "display": {
@@ -3655,8 +3655,8 @@
       "baidu-flyflow": "Microsoft Windows NT 8.0.10512.0;4.0.50829.0;NOKIA;RM-822_apac_prc_204;ca23bc5b9a1777612837b43014640b3cce62fc50;2.5.0.12"
     },
     "device": {
-      "deviceName": "Lumia 920",
-      "marketingName": "RM-822",
+      "deviceName": "RM-822",
+      "marketingName": "Lumia 920",
       "manufacturer": "Nokia",
       "brand": "Nokia",
       "display": {
@@ -4493,7 +4493,7 @@
     },
     "device": {
       "deviceName": "C7-00",
-      "marketingName": "C7",
+      "marketingName": "Astound",
       "manufacturer": "Nokia",
       "brand": "Nokia",
       "display": {
@@ -4827,6 +4827,44 @@
       "name": "Trident",
       "version": "5.0.0",
       "manufacturer": "Microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NOKIALumia900; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.8.0.50.5"
+    },
+    "device": {
+      "deviceName": "RM-823",
+      "marketingName": "Lumia 900",
+      "manufacturer": "Nokia",
+      "brand": "Nokia",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "1.8.0.50.5",
+      "manufacturer": "Nokia",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "0.0.0",
+      "manufacturer": "Microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "0.0.0",
+      "manufacturer": "MozillaFoundation"
     }
   }
 ]

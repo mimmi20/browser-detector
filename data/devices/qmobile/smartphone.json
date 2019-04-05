@@ -41,20 +41,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "qmobile e1": {
-    "deviceName": "E1",
-    "marketingName": "E1",
-    "manufacturer": "Qmobile",
-    "brand": "Qmobile",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "qmobile l15": {
     "deviceName": "L15",
     "marketingName": "LinQ L15",
@@ -133,6 +119,20 @@
     "display": {
       "width": 800,
       "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile e1": {
+    "deviceName": "E1",
+    "marketingName": "Noir E1",
+    "manufacturer": "Qmobile",
+    "brand": "Qmobile",
+    "display": {
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },

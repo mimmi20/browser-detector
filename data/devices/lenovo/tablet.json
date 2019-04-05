@@ -15,7 +15,7 @@
   },
   "lenovo a7600-f": {
     "deviceName": "A7600-F",
-    "marketingName": "A10-70 A7600",
+    "marketingName": "A10-70 A7600 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
@@ -40,20 +40,6 @@
     },
     "type": "tablet",
     "platform": null
-  },
-  "lenovo a3500-f": {
-    "deviceName": "A3500-F",
-    "marketingName": "A7-50",
-    "manufacturer": "lenovo",
-    "brand": "lenovo",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
   },
   "lenovo e1041x": {
     "deviceName": "E1041X",
@@ -195,6 +181,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "lenovo a3500-f": {
+    "deviceName": "A3500-F",
+    "marketingName": "IdeaTab A7-50",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "lenovo a5500-f": {
     "deviceName": "A5500-F",
     "marketingName": "Ideatab A8-50 WI-FI",
@@ -281,7 +281,7 @@
   },
   "lenovo s6000l-f": {
     "deviceName": "S6000L-F",
-    "marketingName": "IdeaTab S6000-F",
+    "marketingName": "IdeaTab S6000-F Wi-Fi, 16GB",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
@@ -391,14 +391,14 @@
     "type": "tablet",
     "platform": "android"
   },
-  "lenovo a10-70f": {
-    "deviceName": "A10-70F",
-    "marketingName": "Tab 2",
+  "lenovo tb-x103f": {
+    "deviceName": "TB-X103F",
+    "marketingName": "Tab 10",
     "manufacturer": "lenovo",
-    "brand": "lenovo",
+    "brand": "Medion",
     "display": {
-      "width": 1920,
-      "height": 1200,
+      "width": 1280,
+      "height": 800,
       "touch": true,
       "size": null
     },
@@ -475,6 +475,20 @@
     "type": "tablet",
     "platform": null
   },
+  "lenovo a10-70f": {
+    "deviceName": "A10-70F",
+    "marketingName": "Tab 2 Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "lenovo tb-8703f": {
     "deviceName": "TB-8703F",
     "marketingName": "Tab 3 8.0 Plus",
@@ -485,20 +499,6 @@
       "height": 1200,
       "touch": true,
       "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "lenovo tb-8504f": {
-    "deviceName": "TB-8504F",
-    "marketingName": "Tab 4 10",
-    "manufacturer": "lenovo",
-    "brand": "lenovo",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -527,6 +527,20 @@
       "height": 1200,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-8504f": {
+    "deviceName": "TB-8504F",
+    "marketingName": "Tab 4 8",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -561,7 +575,7 @@
   },
   "lenovo a3300-gv": {
     "deviceName": "A3300-GV",
-    "marketingName": "TAB A7-30",
+    "marketingName": "TAB A7-30 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
@@ -629,20 +643,6 @@
     "type": "tablet",
     "platform": null
   },
-  "lenovo tb-x103f": {
-    "deviceName": "TB-X103F",
-    "marketingName": "TB-X103F",
-    "manufacturer": "lenovo",
-    "brand": "Medion",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "lenovo tb3-730f": {
     "deviceName": "TB3-730F",
     "marketingName": "TB3-730F",
@@ -701,7 +701,7 @@
   },
   "lenovo b6000-h": {
     "deviceName": "B6000-H",
-    "marketingName": "Yoga 8",
+    "marketingName": "Yoga 8 3G",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
@@ -735,20 +735,6 @@
     "display": {
       "width": 1920,
       "height": 1200,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "lenovo yt3-850f": {
-    "deviceName": "YT3-850F",
-    "marketingName": "Yoga Tab 3 (8)",
-    "manufacturer": "lenovo",
-    "brand": "Medion",
-    "display": {
-      "width": 1280,
-      "height": 800,
       "touch": true,
       "size": null
     },
@@ -799,12 +785,26 @@
   },
   "lenovo tb3-x70f": {
     "deviceName": "TB3-X70F",
-    "marketingName": "Yoga Tab 3 10 Plus",
+    "marketingName": "Yoga Tab 3 10 Plus Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
       "width": 1920,
       "height": 1200,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo yt3-850f": {
+    "deviceName": "YT3-850F",
+    "marketingName": "Yoga Tab 3 8 Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "Medion",
+    "display": {
+      "width": 1280,
+      "height": 800,
       "touch": true,
       "size": null
     },

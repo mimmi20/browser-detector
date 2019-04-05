@@ -99,7 +99,7 @@
   },
   "nokia 2322c": {
     "deviceName": "2322c",
-    "marketingName": "2322c",
+    "marketingName": "2322 Classic",
     "manufacturer": "Nokia",
     "brand": "Nokia",
     "display": {
@@ -351,7 +351,7 @@
   },
   "nokia 3710": {
     "deviceName": "3710",
-    "marketingName": "3710",
+    "marketingName": "3710 Fold",
     "manufacturer": "Nokia",
     "brand": "Nokia",
     "display": {
@@ -362,34 +362,6 @@
     },
     "type": "feature-phone",
     "platform": "asha"
-  },
-  "nokia 500": {
-    "deviceName": "500",
-    "marketingName": "500",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 640,
-      "height": 360,
-      "touch": true,
-      "size": 3.2
-    },
-    "type": "feature-phone",
-    "platform": "symbian"
-  },
-  "nokia 502": {
-    "deviceName": "502",
-    "marketingName": "502",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": true,
-      "size": 3
-    },
-    "type": "feature-phone",
-    "platform": "symbian"
   },
   "nokia 5130": {
     "deviceName": "5130 XpressMusic",
@@ -477,7 +449,7 @@
   },
   "nokia 5300": {
     "deviceName": "5300",
-    "marketingName": "5300",
+    "marketingName": "5300 XpressMusic",
     "manufacturer": "Nokia",
     "brand": "Nokia",
     "display": {
@@ -505,7 +477,7 @@
   },
   "nokia 5320d": {
     "deviceName": "5320d",
-    "marketingName": "5320d",
+    "marketingName": "5320 XpressMusic",
     "manufacturer": "Nokia",
     "brand": "Nokia",
     "display": {
@@ -547,7 +519,7 @@
   },
   "nokia 5630": {
     "deviceName": "5630",
-    "marketingName": "5630",
+    "marketingName": "5630 XpressMusic",
     "manufacturer": "Nokia",
     "brand": "Nokia",
     "display": {
@@ -707,20 +679,6 @@
     "display": {
       "width": 320,
       "height": 240,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "symbian"
-  },
-  "nokia 6210": {
-    "deviceName": "6210",
-    "marketingName": "6210",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 96,
-      "height": 60,
       "touch": false,
       "size": null
     },
@@ -1413,6 +1371,20 @@
     "type": "feature-phone",
     "platform": "nokia os"
   },
+  "nokia 500": {
+    "deviceName": "500",
+    "marketingName": "Asha 500",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "nokia asha 500": {
     "deviceName": "RM-750",
     "marketingName": "Asha 500",
@@ -1440,6 +1412,20 @@
     },
     "type": "feature-phone",
     "platform": "nokia os"
+  },
+  "nokia 502": {
+    "deviceName": "502",
+    "marketingName": "Asha 502",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   },
   "nokia 503": {
     "deviceName": "503",
@@ -2164,6 +2150,20 @@
       "width": 640,
       "height": 360,
       "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 6210": {
+    "deviceName": "6210",
+    "marketingName": "Navigator",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 96,
+      "height": 60,
+      "touch": false,
       "size": null
     },
     "type": "feature-phone",

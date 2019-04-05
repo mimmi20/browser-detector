@@ -1,7 +1,7 @@
 {
   "samsung sm-p600": {
     "deviceName": "SM-P600",
-    "marketingName": "Galaxy Note 10.1 2014 Edition",
+    "marketingName": "Galaxy Note 10.1 2014 Edition Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -15,7 +15,7 @@
   },
   "samsung gt-n8010": {
     "deviceName": "GT-N8010",
-    "marketingName": "Galaxy Note 10.1 WiFi",
+    "marketingName": "Galaxy Note 10.1 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -29,7 +29,7 @@
   },
   "samsung gt-n8013": {
     "deviceName": "GT-N8013",
-    "marketingName": "Galaxy Note 10.1 WiFi",
+    "marketingName": "Galaxy Note 10.1 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -43,7 +43,7 @@
   },
   "samsung shw-m480w": {
     "deviceName": "SHW-M480W",
-    "marketingName": "Galaxy Note 10.1 WiFi",
+    "marketingName": "Galaxy Note 10.1 Wi-Fi (Anycall)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -57,7 +57,7 @@
   },
   "samsung gt-n5110": {
     "deviceName": "GT-N5110",
-    "marketingName": "Galaxy Note 8.0 WiFi",
+    "marketingName": "Galaxy Note 8.0 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -71,7 +71,7 @@
   },
   "samsung sm-p900": {
     "deviceName": "SM-P900",
-    "marketingName": "Galaxy Note Pro 12.2",
+    "marketingName": "Galaxy Note Pro 12.2 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -125,20 +125,6 @@
     "type": "tablet",
     "platform": "android"
   },
-  "samsung sgh-t859": {
-    "deviceName": "SGH-T859",
-    "marketingName": "Galaxy Tab 10.1",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "samsung shw-m380s": {
     "deviceName": "SHW-M380S",
     "marketingName": "Galaxy Tab 10.1",
@@ -156,6 +142,20 @@
   "samsung shw-m380w": {
     "deviceName": "SHW-M380W",
     "marketingName": "Galaxy Tab 10.1",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "samsung sgh-t859": {
+    "deviceName": "SGH-T859",
+    "marketingName": "Galaxy Tab 10.1 (T-Mobile)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -211,7 +211,7 @@
   },
   "samsung gt-p5110": {
     "deviceName": "GT-P5110",
-    "marketingName": "Galaxy Tab 2 10.1 WiFi",
+    "marketingName": "Galaxy Tab 2 10.1 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -225,7 +225,7 @@
   },
   "samsung gt-p5113": {
     "deviceName": "GT-P5113",
-    "marketingName": "Galaxy Tab 2 10.1 WiFi",
+    "marketingName": "Galaxy Tab 2 10.1 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -237,8 +237,8 @@
     "type": "tablet",
     "platform": "android"
   },
-  "samsung gt-p3110": {
-    "deviceName": "GT-P3110",
+  "samsung gt-p3113": {
+    "deviceName": "GT-P3113",
     "marketingName": "Galaxy Tab 2 7.0",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -251,9 +251,9 @@
     "type": "tablet",
     "platform": "android"
   },
-  "samsung gt-p3113": {
-    "deviceName": "GT-P3113",
-    "marketingName": "Galaxy Tab 2 7.0",
+  "samsung gt-p3110": {
+    "deviceName": "GT-P3110",
+    "marketingName": "Galaxy Tab 2 7.0 3G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -407,7 +407,7 @@
   },
   "samsung sm-t230nu": {
     "deviceName": "SM-T230NU",
-    "marketingName": "Galaxy Tab 4 7.0",
+    "marketingName": "Galaxy Tab 4 7.0 (Wi-Fi) 8GB",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -449,7 +449,7 @@
   },
   "samsung sm-t330nu": {
     "deviceName": "SM-T330NU",
-    "marketingName": "Galaxy Tab 4 8.0",
+    "marketingName": "Galaxy Tab 4 8.0 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -617,7 +617,7 @@
   },
   "samsung sm-t590": {
     "deviceName": "SM-T590",
-    "marketingName": "Galaxy Tab A (10.5)",
+    "marketingName": "Galaxy Tab A (10.5, Wi-Fi)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -631,7 +631,7 @@
   },
   "samsung sm-t580": {
     "deviceName": "SM-T580",
-    "marketingName": "Galaxy Tab A (2016, 10.1)",
+    "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -645,7 +645,7 @@
   },
   "samsung sm-t280": {
     "deviceName": "SM-T280",
-    "marketingName": "Galaxy Tab A (7.0, 2016)",
+    "marketingName": "Galaxy Tab A (7.0, Wi-Fi, 2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -685,23 +685,9 @@
     "type": "tablet",
     "platform": "android"
   },
-  "samsung sm-t380": {
-    "deviceName": "SM-T380",
-    "marketingName": "Galaxy Tab A 8.0 (2017)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 8
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "samsung sm-p350": {
     "deviceName": "SM-P350",
-    "marketingName": "Galaxy Tab A 8.0 WiFi",
+    "marketingName": "Galaxy Tab A 8.0 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -713,9 +699,23 @@
     "type": "tablet",
     "platform": "android"
   },
+  "samsung sm-t380": {
+    "deviceName": "SM-T380",
+    "marketingName": "Galaxy Tab A 8.0 Wi-Fi (2017)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "samsung sm-t550": {
     "deviceName": "SM-T550",
-    "marketingName": "Galaxy Tab A 9.7 Wifi",
+    "marketingName": "Galaxy Tab A 9.7 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -729,7 +729,7 @@
   },
   "samsung sm-t550x": {
     "deviceName": "SM-T550X",
-    "marketingName": "Galaxy Tab A 9.7 Wifi",
+    "marketingName": "Galaxy Tab A 9.7 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -743,7 +743,7 @@
   },
   "samsung sm-p550": {
     "deviceName": "SM-P550",
-    "marketingName": "Galaxy Tab A 9.7 WiFi with S Pen",
+    "marketingName": "Galaxy Tab A 9.7 Wi-Fi with S Pen",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -757,7 +757,7 @@
   },
   "samsung sm-t360": {
     "deviceName": "SM-T360",
-    "marketingName": "Galaxy Tab Active",
+    "marketingName": "Galaxy Tab Active 8.0 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -771,7 +771,7 @@
   },
   "samsung sm-t560": {
     "deviceName": "SM-T560",
-    "marketingName": "Galaxy Tab E 9.6",
+    "marketingName": "Galaxy Tab E 9.6 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -785,7 +785,7 @@
   },
   "samsung sm-t520": {
     "deviceName": "SM-T520",
-    "marketingName": "Galaxy Tab Pro 10.1 WiFi",
+    "marketingName": "Galaxy Tab Pro 10.1 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -813,7 +813,7 @@
   },
   "samsung sm-t320": {
     "deviceName": "SM-T320",
-    "marketingName": "Galaxy Tab Pro 8.4",
+    "marketingName": "Galaxy Tab Pro 8.4 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -841,26 +841,12 @@
   },
   "samsung sm-t700": {
     "deviceName": "SM-T700",
-    "marketingName": "Galaxy Tab S 8.4",
+    "marketingName": "Galaxy Tab S 8.4 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
       "width": 1280,
       "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "samsung sm-t810": {
-    "deviceName": "SM-T810",
-    "marketingName": "Galaxy Tab S2 (9.7, 2015)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 2048,
-      "height": 1536,
       "touch": true,
       "size": null
     },
@@ -881,9 +867,23 @@
     "type": "tablet",
     "platform": "android"
   },
+  "samsung sm-t810": {
+    "deviceName": "SM-T810",
+    "marketingName": "Galaxy Tab S2 (9.7, 2015,  Wi-Fi)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "samsung sm-t813": {
     "deviceName": "SM-T813",
-    "marketingName": "Galaxy Tab S2 (9.7, 2016)",
+    "marketingName": "Galaxy Tab S2 (9.7, 2016,  Wi-Fi)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -911,7 +911,7 @@
   },
   "samsung sm-t713": {
     "deviceName": "SM-T713",
-    "marketingName": "Galaxy Tab S2 8.0",
+    "marketingName": "Galaxy Tab S2 8.0 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -965,23 +965,9 @@
     "type": "tablet",
     "platform": "android"
   },
-  "samsung sm-t365": {
-    "deviceName": "SM-T365",
-    "marketingName": "SM-T365",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": null
-  },
   "samsung sm-t670": {
     "deviceName": "SM-T670",
-    "marketingName": "SM-T670",
+    "marketingName": "Galaxy View 18.4",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -992,5 +978,19 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "samsung sm-t365": {
+    "deviceName": "SM-T365",
+    "marketingName": "Tab Active 8.0 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": null
   }
 }

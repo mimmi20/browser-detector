@@ -69,19 +69,19 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "samsung c3050": {
-    "deviceName": "C3050",
-    "marketingName": "C3050",
+  "samsung sch-u380": {
+    "deviceName": "SCH-U380",
+    "marketingName": "Brightside",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
-      "width": 160,
-      "height": 128,
+      "width": 320,
+      "height": 240,
       "touch": false,
-      "size": 2
+      "size": 3.1
     },
     "type": "feature-phone",
-    "platform": "java"
+    "platform": "brew"
   },
   "samsung gt-s3332": {
     "deviceName": "GT-S3332",
@@ -265,6 +265,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung sch-r270": {
+    "deviceName": "SCH-R270",
+    "marketingName": "Chrono 2",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung sch-u660": {
     "deviceName": "SCH-U660",
     "marketingName": "Convoy 2",
@@ -275,6 +289,20 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sch-u680": {
+    "deviceName": "SCH-U680",
+    "marketingName": "Convoy 3",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "brew"
@@ -393,7 +421,7 @@
   },
   "samsung sph-m550": {
     "deviceName": "SPH-M550",
-    "marketingName": "Exclaim",
+    "marketingName": "Exclaim (Sprint)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -415,6 +443,20 @@
       "height": 240,
       "touch": false,
       "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sch-r380": {
+    "deviceName": "SCH-R380",
+    "marketingName": "Freeform III",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -955,7 +997,7 @@
     "deviceName": "M260",
     "marketingName": "M260",
     "manufacturer": "samsung",
-    "brand": "Boost",
+    "brand": "boost",
     "display": {
       "width": 160,
       "height": 128,
@@ -1315,6 +1357,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "samsung sch-r580": {
+    "deviceName": "SCH-R580",
+    "marketingName": "Profile",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung sgh-i627": {
     "deviceName": "SGH-I627",
     "marketingName": "Propel Pro",
@@ -1345,7 +1401,7 @@
   },
   "samsung sph-m560": {
     "deviceName": "SPH-M560",
-    "marketingName": "Reclaim",
+    "marketingName": "Reclaim (Sprint)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -1496,48 +1552,6 @@
     },
     "type": "feature-phone",
     "platform": "nucleus os"
-  },
-  "samsung sch-r270": {
-    "deviceName": "SCH-R270",
-    "marketingName": "SCH-R270",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "samsung sch-r380": {
-    "deviceName": "SCH-R380",
-    "marketingName": "SCH-R380",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "samsung sch-r580": {
-    "deviceName": "SCH-R580",
-    "marketingName": "SCH-R580",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.4
-    },
-    "type": "feature-phone",
-    "platform": "java"
   },
   "samsung sch-s239": {
     "deviceName": "SCH-S239",
@@ -2211,6 +2225,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung gt-s5222": {
+    "deviceName": "GT-S5222",
+    "marketingName": "Star 3 Duos",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-s5292": {
     "deviceName": "GT-S5292",
     "marketingName": "Star Deluxe Duos",
@@ -2281,20 +2309,6 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "samsung gt-s5222": {
-    "deviceName": "GT-S5222",
-    "marketingName": "Star III Duos",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": true,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "samsung gt-s5233t": {
     "deviceName": "GT-S5233T",
     "marketingName": "Star TV",
@@ -2305,6 +2319,20 @@
       "height": 240,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung c3050": {
+    "deviceName": "C3050",
+    "marketingName": "Stratus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -2325,7 +2353,7 @@
   },
   "samsung sph-m380": {
     "deviceName": "SPH-M380",
-    "marketingName": "Trender",
+    "marketingName": "Trender (Sprint)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -2407,20 +2435,6 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "samsung gt-s5253": {
-    "deviceName": "GT-S5253",
-    "marketingName": "Wave",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 400,
-      "height": 240,
-      "touch": false,
-      "size": 3.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "samsung gt-s8600": {
     "deviceName": "GT-S8600",
     "marketingName": "Wave 3",
@@ -2434,6 +2448,20 @@
     },
     "type": "feature-phone",
     "platform": "bada"
+  },
+  "samsung gt-s5253": {
+    "deviceName": "GT-S5253",
+    "marketingName": "Wave 525",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": false,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "samsung gt-s5330": {
     "deviceName": "GT-S5330",

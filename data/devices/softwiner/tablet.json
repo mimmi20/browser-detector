@@ -13,20 +13,6 @@
     "type": "tablet",
     "platform": "android"
   },
-  "softwiner f900": {
-    "deviceName": "F900",
-    "marketingName": "F900",
-    "manufacturer": "softwiner",
-    "brand": "softwiner",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": 9
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "softwiner evb": {
     "deviceName": "Evb",
     "marketingName": "Evb",
@@ -37,6 +23,20 @@
       "height": 600,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "softwiner f900": {
+    "deviceName": "F900",
+    "marketingName": "F900",
+    "manufacturer": "softwiner",
+    "brand": "softwiner",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 9
     },
     "type": "tablet",
     "platform": "android"
