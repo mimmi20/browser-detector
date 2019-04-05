@@ -279,20 +279,6 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
-  "htc p3600": {
-    "deviceName": "P3600",
-    "marketingName": "P3600",
-    "manufacturer": "htc",
-    "brand": "Softbank",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": true,
-      "size": 2.8
-    },
-    "type": "feature-phone",
-    "platform": "windows ce"
-  },
   "htc p6300": {
     "deviceName": "P6300",
     "marketingName": "P6300",
@@ -643,6 +629,20 @@
     "type": "feature-phone",
     "platform": "windows mobile os"
   },
+  "htc p3600": {
+    "deviceName": "P3600",
+    "marketingName": "Trinity",
+    "manufacturer": "htc",
+    "brand": "Softbank",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "htc p4550": {
     "deviceName": "P4550",
     "marketingName": "TyTN II",
@@ -685,11 +685,11 @@
     "type": "feature-phone",
     "platform": "windows mobile os"
   },
-  "htc v1510": {
-    "deviceName": "v1510",
-    "marketingName": "v1510",
+  "htc v3600": {
+    "deviceName": "v3600",
+    "marketingName": "v3600",
     "manufacturer": "htc",
-    "brand": "vodafone",
+    "brand": "htc",
     "display": {
       "width": 320,
       "height": 240,
@@ -699,11 +699,11 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
-  "htc v3600": {
-    "deviceName": "v3600",
-    "marketingName": "v3600",
+  "htc v1510": {
+    "deviceName": "v1510",
+    "marketingName": "VPA Compact GPS",
     "manufacturer": "htc",
-    "brand": "htc",
+    "brand": "vodafone",
     "display": {
       "width": 320,
       "height": 240,

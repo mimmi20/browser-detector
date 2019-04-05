@@ -237,8 +237,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc 919d": {
-    "deviceName": "919d",
+  "htc s901s": {
+    "deviceName": "S901s",
     "marketingName": "Butterfly S",
     "manufacturer": "htc",
     "brand": "htc",
@@ -251,9 +251,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc s901s": {
-    "deviceName": "S901s",
-    "marketingName": "Butterfly S",
+  "htc 919d": {
+    "deviceName": "919d",
+    "marketingName": "Butterfly S CDMA",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
@@ -519,7 +519,7 @@
   },
   "htc d100lvwpp": {
     "deviceName": "D100LVWPP",
-    "marketingName": "Desire 526",
+    "marketingName": "Desire 526 Prepaid",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
@@ -559,20 +559,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc d160lvwpp": {
-    "deviceName": "D160LVWPP",
-    "marketingName": "Desire 530",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
-  },
   "htc desire 530": {
     "deviceName": "Desire 530",
     "marketingName": "Desire 530",
@@ -586,6 +572,20 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "htc d160lvwpp": {
+    "deviceName": "D160LVWPP",
+    "marketingName": "Desire 530 Prepaid",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "htc desire 600": {
     "deviceName": "Desire 600",
@@ -743,7 +743,7 @@
   },
   "htc 0pm92": {
     "deviceName": "0PM92",
-    "marketingName": "Desire 626S",
+    "marketingName": "Desire 626s",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
@@ -1371,34 +1371,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc 9292": {
-    "deviceName": "9292",
-    "marketingName": "EVO",
-    "manufacturer": "htc",
-    "brand": "sprint",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "htc pc36100": {
-    "deviceName": "PC36100",
-    "marketingName": "EVO",
-    "manufacturer": "htc",
-    "brand": "sprint",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "htc x515e": {
     "deviceName": "X515e",
     "marketingName": "EVO",
@@ -1493,6 +1465,34 @@
       "height": 540,
       "touch": true,
       "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc 9292": {
+    "deviceName": "9292",
+    "marketingName": "EVO 4G",
+    "manufacturer": "htc",
+    "brand": "sprint",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc pc36100": {
+    "deviceName": "PC36100",
+    "marketingName": "EVO 4G",
+    "manufacturer": "htc",
+    "brand": "sprint",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"
@@ -1594,6 +1594,20 @@
     },
     "type": "smartphone",
     "platform": null
+  },
+  "htc hd3": {
+    "deviceName": "HD3",
+    "marketingName": "HD3",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
   },
   "htc t9292": {
     "deviceName": "T9292",
@@ -1777,48 +1791,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc 802t": {
-    "deviceName": "802T",
-    "marketingName": "One",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "htc m7": {
-    "deviceName": "M7",
-    "marketingName": "One",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "htc m7 (htc6500lvw)": {
-    "deviceName": "M7 (HTC6500LVW)",
-    "marketingName": "One",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "htc pn071": {
     "deviceName": "PN071",
     "marketingName": "One",
@@ -1846,6 +1818,20 @@
     },
     "type": "smartphone",
     "platform": null
+  },
+  "htc 802t": {
+    "deviceName": "802T",
+    "marketingName": "One 802T",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
   },
   "htc a9s": {
     "deviceName": "A9s",
@@ -1945,8 +1931,8 @@
     "type": "smartphone",
     "platform": null
   },
-  "htc 802d": {
-    "deviceName": "802d",
+  "htc 802w": {
+    "deviceName": "802W",
     "marketingName": "One M7",
     "manufacturer": "htc",
     "brand": "htc",
@@ -1959,9 +1945,37 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc 802w": {
-    "deviceName": "802W",
+  "htc m7": {
+    "deviceName": "M7",
     "marketingName": "One M7",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc m7 (htc6500lvw)": {
+    "deviceName": "M7 (HTC6500LVW)",
+    "marketingName": "One M7 (Verizon)",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc 802d": {
+    "deviceName": "802d",
+    "marketingName": "One M7 Dual SIM",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
@@ -2213,7 +2227,7 @@
   },
   "htc 809d": {
     "deviceName": "809D",
-    "marketingName": "One Max +",
+    "marketingName": "One Max CDMA+GSM",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
@@ -3023,8 +3037,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc adr6230": {
-    "deviceName": "ADR6230",
+  "htc wildfire s ls": {
+    "deviceName": "Wildfire S",
     "marketingName": "Wildfire S",
     "manufacturer": "htc",
     "brand": "htc",
@@ -3037,9 +3051,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc wildfire s ls": {
-    "deviceName": "Wildfire S",
-    "marketingName": "Wildfire S",
+  "htc adr6230": {
+    "deviceName": "ADR6230",
+    "marketingName": "Wildfire S (CDMA)",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {

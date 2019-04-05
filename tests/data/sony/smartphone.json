@@ -195,7 +195,7 @@
     },
     "device": {
       "deviceName": "C5303",
-      "marketingName": "Xperia SP",
+      "marketingName": "Xperia SP LTE",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -385,7 +385,7 @@
     },
     "device": {
       "deviceName": "D6503",
-      "marketingName": "Xperia Z2",
+      "marketingName": "Xperia Z2 LTE",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -461,7 +461,7 @@
     },
     "device": {
       "deviceName": "E5823",
-      "marketingName": "Xperia Z5 Compact",
+      "marketingName": "Xperia Z5 Compact LTE",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -689,7 +689,7 @@
     },
     "device": {
       "deviceName": "C6606",
-      "marketingName": "Xperia Z",
+      "marketingName": "Xperia Z 4G LTE",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -955,7 +955,7 @@
     },
     "device": {
       "deviceName": "D6633",
-      "marketingName": "Xperia Z3",
+      "marketingName": "Xperia Z3 Dual SIM",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -993,7 +993,7 @@
     },
     "device": {
       "deviceName": "C2005",
-      "marketingName": "Xperia M Dual",
+      "marketingName": "Xperia M Dual SIM",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -1031,7 +1031,7 @@
     },
     "device": {
       "deviceName": "C6833",
-      "marketingName": "Xperia Z Ultra",
+      "marketingName": "Xperia Z Ultra LTE",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -1563,7 +1563,7 @@
     },
     "device": {
       "deviceName": "D5303",
-      "marketingName": "Xperia T2 Ultra",
+      "marketingName": "Xperia T2 Ultra LTE",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -1692,7 +1692,7 @@
       "name": "CM Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "CheetahMobile",
+      "manufacturer": "cheetah-mobile",
       "bits": 32,
       "type": "browser"
     },
@@ -1753,7 +1753,7 @@
     },
     "device": {
       "deviceName": "D5833",
-      "marketingName": "Xperia Z3 Compact",
+      "marketingName": "Xperia Z3 Compact (Asia)",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -2589,7 +2589,7 @@
     },
     "device": {
       "deviceName": "F8332",
-      "marketingName": "Xperia XZ",
+      "marketingName": "Xperia XZ Dual SIM",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -3007,7 +3007,7 @@
     },
     "device": {
       "deviceName": "F5122",
-      "marketingName": "Xperia X",
+      "marketingName": "Xperia X Dual",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -4048,7 +4048,7 @@
       "name": "Baidu Box App",
       "modus": null,
       "version": "6.4.0",
-      "manufacturer": "Baidu",
+      "manufacturer": "baidu",
       "bits": 32,
       "type": "application"
     },
@@ -4062,7 +4062,7 @@
     "engine": {
       "name": "T5",
       "version": "2.0.0",
-      "manufacturer": "Baidu"
+      "manufacturer": "baidu"
     }
   },
   {
@@ -4086,7 +4086,7 @@
       "name": "Baidu Box App",
       "modus": null,
       "version": "5.0.0",
-      "manufacturer": "Baidu",
+      "manufacturer": "baidu",
       "bits": 32,
       "type": "application"
     },
@@ -4337,7 +4337,7 @@
     },
     "device": {
       "deviceName": "E5533",
-      "marketingName": "Xperia C5 Ultra Dual",
+      "marketingName": "Xperia C5 Ultra Dual SIM",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -5173,7 +5173,7 @@
     },
     "device": {
       "deviceName": "G3416",
-      "marketingName": "Xperia XA1 Plus",
+      "marketingName": "Xperia XA1 Plus Dual SIM",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -5553,7 +5553,7 @@
     },
     "device": {
       "deviceName": "L50u",
-      "marketingName": "Xperia Z2",
+      "marketingName": "Xperia Z2 LTE",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -5568,7 +5568,7 @@
       "name": "Tieba",
       "modus": null,
       "version": "7.8.0",
-      "manufacturer": "Baidu",
+      "manufacturer": "baidu",
       "bits": 32,
       "type": "browser"
     },
@@ -5971,7 +5971,7 @@
     },
     "device": {
       "deviceName": "C6833",
-      "marketingName": "Xperia Z Ultra",
+      "marketingName": "Xperia Z Ultra LTE",
       "manufacturer": "Sony",
       "brand": "Sony",
       "display": {
@@ -8318,6 +8318,44 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; I9220 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "general Sony device",
+      "marketingName": "general Sony device",
+      "manufacturer": "Sony",
+      "brand": "Sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
       "manufacturer": "apple"
     }
   }

@@ -1753,7 +1753,7 @@
     },
     "device": {
       "deviceName": "GT-S5222",
-      "marketingName": "Star III Duos",
+      "marketingName": "Star 3 Duos",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -3159,7 +3159,7 @@
     },
     "device": {
       "deviceName": "SPH-M560",
-      "marketingName": "Reclaim",
+      "marketingName": "Reclaim (Sprint)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -3197,7 +3197,7 @@
     },
     "device": {
       "deviceName": "SPH-M550",
-      "marketingName": "Exclaim",
+      "marketingName": "Exclaim (Sprint)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -3235,7 +3235,7 @@
     },
     "device": {
       "deviceName": "SPH-M380",
-      "marketingName": "Trender",
+      "marketingName": "Trender (Sprint)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -5142,7 +5142,7 @@
     },
     "device": {
       "deviceName": "GT-S5253",
-      "marketingName": "Wave",
+      "marketingName": "Wave 525",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -6700,7 +6700,7 @@
     },
     "device": {
       "deviceName": "SCH-R580",
-      "marketingName": "SCH-R580",
+      "marketingName": "Profile",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -6776,7 +6776,7 @@
     },
     "device": {
       "deviceName": "SCH-R380",
-      "marketingName": "SCH-R380",
+      "marketingName": "Freeform III",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -6814,7 +6814,7 @@
     },
     "device": {
       "deviceName": "SCH-R270",
-      "marketingName": "SCH-R270",
+      "marketingName": "Chrono 2",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -7004,7 +7004,7 @@
     },
     "device": {
       "deviceName": "C3050",
-      "marketingName": "C3050",
+      "marketingName": "Stratus",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -7147,6 +7147,82 @@
     "engine": {
       "name": "Presto",
       "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BREW; Opera Mini/5.0/27.2354; U; xx) Presto/2.8.119 320X240 Samsung SCH-U380"
+    },
+    "device": {
+      "deviceName": "SCH-U380",
+      "marketingName": "Brightside",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 3.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BREW; Opera Mini/6.0.3/27.2354; U; xx) Presto/2.8.119 240X320 Samsung SCH-U680"
+    },
+    "device": {
+      "deviceName": "SCH-U680",
+      "marketingName": "Convoy 3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "6.0.3",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
       "manufacturer": "Opera"
     }
   }

@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "Neffos C5L",
       "marketingName": "Neffos C5L",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 854,
         "height": 480,
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "Neffos C5 Max",
       "marketingName": "Neffos C5 Max",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 1920,
         "height": 1080,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "Neffos C5",
       "marketingName": "Neffos C5",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 1280,
         "height": 720,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "Neffos Y5L",
       "marketingName": "Neffos Y5L",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 854,
         "height": 480,
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "Neffos X1 Lite",
       "marketingName": "Neffos X1 Lite",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 1280,
         "height": 720,
@@ -196,8 +196,8 @@
     "device": {
       "deviceName": "Neffos X1",
       "marketingName": "Neffos X1",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": null,
         "height": null,
@@ -234,8 +234,8 @@
     "device": {
       "deviceName": "Neffos X1 Max",
       "marketingName": "Neffos X1 Max",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 1920,
         "height": 1080,
@@ -272,8 +272,8 @@
     "device": {
       "deviceName": "Neffos C7",
       "marketingName": "Neffos C7",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 1280,
         "height": 720,
@@ -310,8 +310,8 @@
     "device": {
       "deviceName": "Neffos C9A",
       "marketingName": "Neffos C9A",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 1440,
         "height": 720,
@@ -348,8 +348,8 @@
     "device": {
       "deviceName": "Neffos Y5",
       "marketingName": "Neffos Y5",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 1280,
         "height": 720,
@@ -386,8 +386,8 @@
     "device": {
       "deviceName": "Neffos N1",
       "marketingName": "Neffos N1",
-      "manufacturer": "TP-LINK",
-      "brand": "TP-LINK",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
       "display": {
         "width": 1920,
         "height": 1080,
@@ -415,6 +415,44 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; th-th; TP710 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "general TP-Link device",
+      "marketingName": "general TP-Link device",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]

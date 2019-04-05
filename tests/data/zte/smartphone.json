@@ -1608,7 +1608,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -2021,7 +2021,7 @@
       "deviceName": "Lutea 3",
       "marketingName": "Lutea 3",
       "manufacturer": "zte",
-      "brand": "Base",
+      "brand": "base",
       "display": {
         "width": 800,
         "height": 480,
@@ -2059,7 +2059,7 @@
       "deviceName": "Lutea 2",
       "marketingName": "Lutea 2",
       "manufacturer": "zte",
-      "brand": "Base",
+      "brand": "base",
       "display": {
         "width": 800,
         "height": 480,
@@ -2287,7 +2287,7 @@
       "deviceName": "BS 451",
       "marketingName": "BS 451",
       "manufacturer": "zte",
-      "brand": "Bouygues Telecom",
+      "brand": "bouygues-telecom",
       "display": {
         "width": 960,
         "height": 540,
@@ -5150,7 +5150,7 @@
       "name": "Baidu Browser",
       "modus": null,
       "version": "4.0.7.10",
-      "manufacturer": "Baidu",
+      "manufacturer": "baidu",
       "bits": 32,
       "type": "browser"
     },
@@ -5226,7 +5226,7 @@
       "name": "Baidu Box App",
       "modus": null,
       "version": "5.1.0",
-      "manufacturer": "Baidu",
+      "manufacturer": "baidu",
       "bits": 32,
       "type": "application"
     },
@@ -5240,7 +5240,7 @@
     "engine": {
       "name": "T5",
       "version": "2.0.0",
-      "manufacturer": "Baidu"
+      "manufacturer": "baidu"
     }
   },
   {
@@ -5302,7 +5302,7 @@
       "name": "Baidu Box App",
       "modus": null,
       "version": "6.3.0",
-      "manufacturer": "Baidu",
+      "manufacturer": "baidu",
       "bits": 32,
       "type": "application"
     },
@@ -5316,7 +5316,7 @@
     "engine": {
       "name": "T5",
       "version": "2.0.0",
-      "manufacturer": "Baidu"
+      "manufacturer": "baidu"
     }
   },
   {
@@ -5553,7 +5553,7 @@
     },
     "device": {
       "deviceName": "N9510",
-      "marketingName": "Warp",
+      "marketingName": "Warp 4G LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -8631,7 +8631,7 @@
     },
     "device": {
       "deviceName": "Z716BL",
-      "marketingName": "Citrine",
+      "marketingName": "Citrine LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -9497,6 +9497,44 @@
       "name": "U3",
       "version": "0.8.0",
       "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; Skate Build/IML74K; CyanogenMod-9) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Skate",
+      "marketingName": "Skate",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]

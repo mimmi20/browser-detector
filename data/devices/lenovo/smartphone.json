@@ -69,20 +69,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "lenovo a288t": {
-    "deviceName": "A288t",
-    "marketingName": "A288t",
-    "manufacturer": "lenovo",
-    "brand": "lenovo",
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "lenovo a308t": {
     "deviceName": "A308t",
     "marketingName": "A308t",
@@ -699,20 +685,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "lenovo a936": {
-    "deviceName": "A936",
-    "marketingName": "A936",
-    "manufacturer": "lenovo",
-    "brand": "lenovo",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "lenovo b5032": {
     "deviceName": "B5032",
     "marketingName": "B5032",
@@ -743,7 +715,7 @@
   },
   "lenovo k10a40": {
     "deviceName": "K10a40",
-    "marketingName": "C2",
+    "marketingName": "C2 Power",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
@@ -883,7 +855,7 @@
   },
   "lenovo k53a48": {
     "deviceName": "K53a48",
-    "marketingName": "K6 Note",
+    "marketingName": "K6 Note Dual SIM",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
@@ -979,6 +951,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lenovo a288t": {
+    "deviceName": "A288t",
+    "marketingName": "LePhone A288t",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lenovo a60": {
     "deviceName": "A60",
     "marketingName": "Lephone A60",
@@ -998,6 +984,20 @@
     "marketingName": "Life S5504",
     "manufacturer": "lenovo",
     "brand": "Medion",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lenovo a936": {
+    "deviceName": "A936",
+    "marketingName": "Note 8",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
     "display": {
       "width": 1280,
       "height": 720,
@@ -1415,7 +1415,7 @@
   },
   "lenovo a6020a46": {
     "deviceName": "A6020a46",
-    "marketingName": "Vibe K5 Plus",
+    "marketingName": "Vibe K5 Plus Dual SIM",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
@@ -1555,7 +1555,7 @@
   },
   "lenovo k910l": {
     "deviceName": "K910L",
-    "marketingName": "Vibe Z",
+    "marketingName": "Vibe Z LTE",
     "manufacturer": "lenovo",
     "brand": "vodafone",
     "display": {

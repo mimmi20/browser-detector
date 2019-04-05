@@ -969,7 +969,7 @@
     "deviceName": "BS 451",
     "marketingName": "BS 451",
     "manufacturer": "zte",
-    "brand": "Bouygues Telecom",
+    "brand": "bouygues-telecom",
     "display": {
       "width": 960,
       "height": 540,
@@ -1007,20 +1007,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "zte z716bl": {
-    "deviceName": "Z716BL",
-    "marketingName": "Citrine",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": 4
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "zte z717bl": {
     "deviceName": "Z717BL",
     "marketingName": "Citrine",
@@ -1045,6 +1031,20 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte z716bl": {
+    "deviceName": "Z716BL",
+    "marketingName": "Citrine LTE",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1445,7 +1445,7 @@
     "deviceName": "Lutea 2",
     "marketingName": "Lutea 2",
     "manufacturer": "zte",
-    "brand": "Base",
+    "brand": "base",
     "display": {
       "width": 800,
       "height": 480,
@@ -1459,7 +1459,7 @@
     "deviceName": "Lutea 3",
     "marketingName": "Lutea 3",
     "manufacturer": "zte",
-    "brand": "Base",
+    "brand": "base",
     "display": {
       "width": 800,
       "height": 480,
@@ -2416,7 +2416,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2815,7 +2815,7 @@
   },
   "zte n9510": {
     "deviceName": "N9510",
-    "marketingName": "Warp",
+    "marketingName": "Warp 4G LTE",
     "manufacturer": "zte",
     "brand": "zte",
     "display": {

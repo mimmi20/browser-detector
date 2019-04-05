@@ -29,7 +29,7 @@
   },
   "huawei m860": {
     "deviceName": "M860",
-    "marketingName": "Ascend",
+    "marketingName": "Ascend (Metro PCS)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -1847,8 +1847,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei tag-l21": {
-    "deviceName": "TAG-L21",
+  "huawei tag-l22": {
+    "deviceName": "TAG-L22",
     "marketingName": "GR3",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -1861,9 +1861,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei tag-l22": {
-    "deviceName": "TAG-L22",
-    "marketingName": "GR3",
+  "huawei tag-l21": {
+    "deviceName": "TAG-L21",
+    "marketingName": "GR3 Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -2521,35 +2521,7 @@
   },
   "huawei kiw-l21": {
     "deviceName": "KIW-L21",
-    "marketingName": "Honor 5X",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei kiw-ul00": {
-    "deviceName": "KIW-UL00",
-    "marketingName": "Honor 5X",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei kiw-tl00": {
-    "deviceName": "KIW-TL00",
-    "marketingName": "Honor 5X TD-",
+    "marketingName": "Honor 5x",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -2564,6 +2536,34 @@
   "huawei kiw-tl00h": {
     "deviceName": "KIW-TL00H",
     "marketingName": "Honor 5X TD-",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei kiw-tl00": {
+    "deviceName": "KIW-TL00",
+    "marketingName": "Honor 5X TD-LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei kiw-ul00": {
+    "deviceName": "KIW-UL00",
+    "marketingName": "Honor 5x TD-LTE",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -2827,23 +2827,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei bln-l22": {
-    "deviceName": "BLN-L22",
-    "marketingName": "Honor 6X",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": 5.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei bln-l24": {
     "deviceName": "BLN-L24",
-    "marketingName": "Honor 6X",
+    "marketingName": "Honor 6x",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -2897,9 +2883,23 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei bln-l22": {
+    "deviceName": "BLN-L22",
+    "marketingName": "Honor 6x Dual SIM",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei bln-al20": {
     "deviceName": "BLN-AL20",
-    "marketingName": "Honor 6X Premium Edition",
+    "marketingName": "Honor 6X Premium Edition Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -2997,7 +2997,7 @@
   },
   "huawei nem-l21": {
     "deviceName": "NEM-L21",
-    "marketingName": "Honor 7 Lite",
+    "marketingName": "Honor 7 Lite (2016)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -3275,8 +3275,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei frd-l19": {
-    "deviceName": "FRD-L19",
+  "huawei frd-tl00": {
+    "deviceName": "FRD-TL00",
     "marketingName": "Honor 8",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -3289,9 +3289,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei frd-tl00": {
-    "deviceName": "FRD-TL00",
-    "marketingName": "Honor 8",
+  "huawei frd-l19": {
+    "deviceName": "FRD-L19",
+    "marketingName": "Honor 8 Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -3597,8 +3597,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei aum-al20": {
-    "deviceName": "AUM-AL20",
+  "huawei aum-al29": {
+    "deviceName": "AUM-AL29",
     "marketingName": "Honor Changwan 7A",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -3611,9 +3611,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei aum-al29": {
-    "deviceName": "AUM-AL29",
-    "marketingName": "Honor Changwan 7A",
+  "huawei aum-al20": {
+    "deviceName": "AUM-AL20",
+    "marketingName": "Honor Changwan 7A Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -3641,7 +3641,7 @@
   },
   "huawei edi-al10": {
     "deviceName": "EDI-AL10",
-    "marketingName": "Honor Note 8",
+    "marketingName": "Honor Note 8 Premium Edition Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -4073,37 +4073,23 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei rne-l21": {
-    "deviceName": "RNE-L21",
-    "marketingName": "Mate 10 Lite",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 2160,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei rne-l22": {
-    "deviceName": "RNE-L22",
-    "marketingName": "Mate 10 Lite",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 2160,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei rne-l23": {
     "deviceName": "RNE-L23",
     "marketingName": "Mate 10 Lite",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei rne-l21": {
+    "deviceName": "RNE-L21",
+    "marketingName": "Mate 10 Lite Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -4423,8 +4409,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei mha-l29": {
-    "deviceName": "MHA-L29",
+  "huawei mha-tl00": {
+    "deviceName": "MHA-TL00",
     "marketingName": "Mate 9",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -4437,9 +4423,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei mha-tl00": {
-    "deviceName": "MHA-TL00",
-    "marketingName": "Mate 9",
+  "huawei mha-l29": {
+    "deviceName": "MHA-L29",
+    "marketingName": "Mate 9 Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -4691,7 +4677,7 @@
   },
   "huawei ldn-lx2": {
     "deviceName": "LDN-LX2",
-    "marketingName": "Nova 2 Lite",
+    "marketingName": "Nova 2 Lite Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -4731,8 +4717,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei bac-l21": {
-    "deviceName": "BAC-L21",
+  "huawei bac-l23": {
+    "deviceName": "BAC-L23",
     "marketingName": "Nova 2 Plus",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -4745,9 +4731,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei bac-l23": {
-    "deviceName": "BAC-L23",
-    "marketingName": "Nova 2 Plus",
+  "huawei bac-l21": {
+    "deviceName": "BAC-L21",
+    "marketingName": "Nova 2 Plus Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -4766,6 +4752,20 @@
     "brand": "huawei",
     "display": {
       "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei rne-l22": {
+    "deviceName": "RNE-L22",
+    "marketingName": "Nova 2i Dual SIM",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 2160,
       "height": 1080,
       "touch": true,
       "size": null
@@ -5055,7 +5055,7 @@
   },
   "huawei ine-lx1": {
     "deviceName": "INE-LX1",
-    "marketingName": "P Smart+",
+    "marketingName": "P Smart+ Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -5095,8 +5095,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei vtr-l29": {
-    "deviceName": "VTR-L29",
+  "huawei vtr-tl00": {
+    "deviceName": "VTR-TL00",
     "marketingName": "P10",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -5109,9 +5109,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei vtr-tl00": {
-    "deviceName": "VTR-TL00",
-    "marketingName": "P10",
+  "huawei vtr-l29": {
+    "deviceName": "VTR-L29",
+    "marketingName": "P10 Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -5165,20 +5165,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei was-lx2": {
-    "deviceName": "WAS-LX2",
-    "marketingName": "P10 Lite",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei was-lx2j": {
     "deviceName": "WAS-LX2J",
     "marketingName": "P10 Lite",
@@ -5210,6 +5196,20 @@
   "huawei was-tl10": {
     "deviceName": "WAS-TL10",
     "marketingName": "P10 Lite",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei was-lx2": {
+    "deviceName": "WAS-LX2",
+    "marketingName": "P10 Lite LTE",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -5293,7 +5293,7 @@
   },
   "huawei eml-l29": {
     "deviceName": "EML-L29",
-    "marketingName": "P20",
+    "marketingName": "P20 Dual SIM",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -5571,20 +5571,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei ale-cl00": {
-    "deviceName": "ALE-CL00",
-    "marketingName": "P8 Lite",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei ale-l02": {
     "deviceName": "ALE-L02",
     "marketingName": "P8 Lite",
@@ -5601,20 +5587,6 @@
   },
   "huawei ale-l04": {
     "deviceName": "ALE-L04",
-    "marketingName": "P8 Lite",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei ale-l21": {
-    "deviceName": "ALE-L21",
     "marketingName": "P8 Lite",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -5683,6 +5655,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei ale-l21": {
+    "deviceName": "ALE-L21",
+    "marketingName": "P8 Lite (2016)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei pra-la1": {
     "deviceName": "PRA-LA1",
     "marketingName": "P8 Lite (2017)",
@@ -5707,6 +5693,20 @@
       "height": 1080,
       "touch": true,
       "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei ale-cl00": {
+    "deviceName": "ALE-CL00",
+    "marketingName": "P8 Lite Dual SIM",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"
@@ -5979,7 +5979,7 @@
   },
   "huawei s41hw": {
     "deviceName": "S41HW",
-    "marketingName": "Pocket WiFi S II for emobile",
+    "marketingName": "Pocket Wi-Fi S II for emobile",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -6057,6 +6057,20 @@
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei u8110": {
+    "deviceName": "U8110",
+    "marketingName": "RBM3",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"
@@ -6173,20 +6187,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei u8110": {
-    "deviceName": "U8110",
-    "marketingName": "U8110",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei u8230": {
     "deviceName": "U8230",
     "marketingName": "U8230",
@@ -6209,6 +6209,20 @@
     "display": {
       "width": 480,
       "height": 320,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei y538": {
+    "deviceName": "Y538",
+    "marketingName": "Union",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": null
     },
@@ -6453,6 +6467,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei mya-l22": {
+    "deviceName": "MYA-L22",
+    "marketingName": "Y5 Dual SIM (2017)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei cun-l01": {
     "deviceName": "CUN-L01",
     "marketingName": "Y5 II",
@@ -6553,7 +6581,7 @@
   },
   "huawei dra-lx2": {
     "deviceName": "DRA-LX2",
-    "marketingName": "Y5 Prime (2018)",
+    "marketingName": "Y5 Prime Dual SIM (2018)",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -6561,20 +6589,6 @@
       "height": 720,
       "touch": true,
       "size": 5.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei y538": {
-    "deviceName": "Y538",
-    "marketingName": "Y538",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "size": null
     },
     "type": "smartphone",
     "platform": "android"
@@ -6677,20 +6691,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei mya-l22": {
-    "deviceName": "MYA-L22",
-    "marketingName": "Y6 (2017)",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei mya-l23": {
     "deviceName": "MYA-L23",
     "marketingName": "Y6 (2017)",
@@ -6729,6 +6729,34 @@
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei atu-l22": {
+    "deviceName": "ATU-L22",
+    "marketingName": "Y6 (2018)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei atu-l21": {
+    "deviceName": "ATU-L21",
+    "marketingName": "Y6 Dual SIM (2018)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"
@@ -6819,34 +6847,6 @@
   },
   "huawei atu-l11": {
     "deviceName": "ATU-L11",
-    "marketingName": "Y6 Prime (2018)",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1440,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei atu-l21": {
-    "deviceName": "ATU-L21",
-    "marketingName": "Y6 Prime (2018)",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1440,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei atu-l22": {
-    "deviceName": "ATU-L22",
     "marketingName": "Y6 Prime (2018)",
     "manufacturer": "huawei",
     "brand": "huawei",

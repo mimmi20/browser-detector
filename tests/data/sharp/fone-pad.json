@@ -6,7 +6,7 @@
     "device": {
       "deviceName": "SH-08E",
       "marketingName": "Aquos Pad SH-08E",
-      "manufacturer": "Sharp",
+      "manufacturer": "sharp",
       "brand": "ntt-docomo",
       "display": {
         "width": 1920,
@@ -28,6 +28,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ja-jp; SHT21 Build/SC170) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SHT21",
+      "marketingName": "Aquos Pad SHT21",
+      "manufacturer": "sharp",
+      "brand": "kddi",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
       "manufacturer": "google",
       "bits": 32
     },

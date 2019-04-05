@@ -13,6 +13,34 @@
     "type": "feature-phone",
     "platform": "android"
   },
+  "pantech cdm8992": {
+    "deviceName": "CDM8992",
+    "marketingName": "CDM8992",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "pantech cdm8999": {
+    "deviceName": "CDM8999",
+    "marketingName": "CDM8999",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
   "pantech p2020": {
     "deviceName": "P2020",
     "marketingName": "Ease",
@@ -110,5 +138,19 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "pantech txt8045": {
+    "deviceName": "TXT8045",
+    "marketingName": "TXT8045",
+    "manufacturer": "Pantech",
+    "brand": "Pantech",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
   }
 }

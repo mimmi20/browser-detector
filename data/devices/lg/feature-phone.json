@@ -223,20 +223,6 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "lg an160": {
-    "deviceName": "AN160",
-    "marketingName": "AN160",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": false,
-      "size": 2.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "lg km900": {
     "deviceName": "KM900",
     "marketingName": "Arena",
@@ -475,6 +461,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg un170": {
+    "deviceName": "UN170",
+    "marketingName": "Envoy III",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg c330": {
     "deviceName": "C330",
     "marketingName": "Etna",
@@ -489,9 +489,23 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg an160": {
+    "deviceName": "AN160",
+    "marketingName": "Fluid",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg an170": {
     "deviceName": "AN170",
-    "marketingName": "Fluid",
+    "marketingName": "Fluid II",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -932,20 +946,6 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg un170": {
-    "deviceName": "UN170",
-    "marketingName": "UN170",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
       "size": null
     },
     "type": "feature-phone",

@@ -27,20 +27,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "huawei bah-l09": {
-    "deviceName": "BAH-L09",
-    "marketingName": "M3 Lite",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "huawei mediapad 7 classic": {
     "deviceName": "MediaPad 7 Classic",
     "marketingName": "MediaPad 7 Classic",
@@ -91,6 +77,20 @@
     "display": {
       "width": 2560,
       "height": 1600,
+      "touch": true,
+      "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei bah-l09": {
+    "deviceName": "BAH-L09",
+    "marketingName": "MediaPad M3 Lite 10",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1920,
+      "height": 1200,
       "touch": true,
       "size": null
     },
@@ -169,7 +169,7 @@
   },
   "huawei t1-a21l": {
     "deviceName": "T1-A21L",
-    "marketingName": "MediaPad T1 10.0",
+    "marketingName": "MediaPad T1 10.0 Pro",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -183,7 +183,7 @@
   },
   "huawei t1-a21w": {
     "deviceName": "T1-A21W",
-    "marketingName": "MediaPad T1 10.0 WiFi",
+    "marketingName": "MediaPad T1 10.0 Wi-Fi",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -379,7 +379,7 @@
   },
   "huawei kob-l09": {
     "deviceName": "KOB-L09",
-    "marketingName": "MediaPad T3 8",
+    "marketingName": "MediaPad T3 8.0 LTE",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {

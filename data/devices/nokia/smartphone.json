@@ -615,6 +615,20 @@
     "type": "smartphone",
     "platform": "symbian"
   },
+  "nokia c7-00": {
+    "deviceName": "C7-00",
+    "marketingName": "Astound",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "symbian"
+  },
   "nokia c6": {
     "deviceName": "C6",
     "marketingName": "C6",
@@ -659,20 +673,6 @@
   },
   "nokia c7": {
     "deviceName": "C7",
-    "marketingName": "C7",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 640,
-      "height": 360,
-      "touch": true,
-      "size": 3.5
-    },
-    "type": "smartphone",
-    "platform": "symbian"
-  },
-  "nokia c7-00": {
-    "deviceName": "C7-00",
     "marketingName": "C7",
     "manufacturer": "Nokia",
     "brand": "Nokia",
@@ -1541,7 +1541,7 @@
   },
   "nokia lumia 730": {
     "deviceName": "RM-1040",
-    "marketingName": "Lumia 730",
+    "marketingName": "Lumia 730 Dual SIM",
     "manufacturer": "Nokia",
     "brand": "Nokia",
     "display": {
@@ -1721,6 +1721,48 @@
     "type": "smartphone",
     "platform": "windows phone"
   },
+  "nokia rm-820": {
+    "deviceName": "RM-820",
+    "marketingName": "Lumia 920",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
+  "nokia rm-821": {
+    "deviceName": "RM-821",
+    "marketingName": "Lumia 920",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
+  "nokia rm-822": {
+    "deviceName": "RM-822",
+    "marketingName": "Lumia 920",
+    "manufacturer": "Nokia",
+    "brand": "Nokia",
+    "display": {
+      "width": 1280,
+      "height": 768,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
   "nokia lumia 925": {
     "deviceName": "RM-892",
     "marketingName": "Lumia 925",
@@ -1874,48 +1916,6 @@
     },
     "type": "smartphone",
     "platform": "linux smartphone os (maemo)"
-  },
-  "nokia rm-820": {
-    "deviceName": "Lumia 920",
-    "marketingName": "RM-820",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 1280,
-      "height": 768,
-      "touch": true,
-      "size": 4.5
-    },
-    "type": "smartphone",
-    "platform": "windows phone"
-  },
-  "nokia rm-821": {
-    "deviceName": "Lumia 920",
-    "marketingName": "RM-821",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 1280,
-      "height": 768,
-      "touch": true,
-      "size": 4.5
-    },
-    "type": "smartphone",
-    "platform": "windows phone"
-  },
-  "nokia rm-822": {
-    "deviceName": "Lumia 920",
-    "marketingName": "RM-822",
-    "manufacturer": "Nokia",
-    "brand": "Nokia",
-    "display": {
-      "width": 1280,
-      "height": 768,
-      "touch": true,
-      "size": 4.5
-    },
-    "type": "smartphone",
-    "platform": "windows phone"
   },
   "nokia surface phone": {
     "deviceName": "Surface Phone",

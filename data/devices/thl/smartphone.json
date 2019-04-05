@@ -55,20 +55,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "thl w8": {
-    "deviceName": "W8",
-    "marketingName": "Beyond",
-    "manufacturer": "Thl",
-    "brand": "Thl",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "thl t100s": {
     "deviceName": "T100s",
     "marketingName": "Ironman",
@@ -197,7 +183,7 @@
   },
   "thl t9": {
     "deviceName": "T9",
-    "marketingName": "T9",
+    "marketingName": "T9 Pro",
     "manufacturer": "Thl",
     "brand": "Thl",
     "display": {
@@ -245,6 +231,20 @@
     "display": {
       "width": 1280,
       "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "thl w8": {
+    "deviceName": "W8",
+    "marketingName": "W8 Beyond",
+    "manufacturer": "Thl",
+    "brand": "Thl",
+    "display": {
+      "width": 1920,
+      "height": 1080,
       "touch": true,
       "size": null
     },
