@@ -27,6 +27,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "docomo f02b": {
+    "deviceName": "F02B",
+    "marketingName": "F02B",
+    "manufacturer": "fujitsu",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "docomo f03b": {
     "deviceName": "F03B",
     "marketingName": "F03B",
@@ -114,7 +128,7 @@
   "docomo n02c": {
     "deviceName": "N02C",
     "marketingName": "N02C",
-    "manufacturer": "Nec",
+    "manufacturer": "nec",
     "brand": "ntt-docomo",
     "display": {
       "width": null,
@@ -128,7 +142,21 @@
   "docomo n04a": {
     "deviceName": "N04A",
     "marketingName": "N04A",
-    "manufacturer": "Nec",
+    "manufacturer": "nec",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo n07b": {
+    "deviceName": "N07B",
+    "marketingName": "N07B",
+    "manufacturer": "nec",
     "brand": "ntt-docomo",
     "display": {
       "width": null,
@@ -142,7 +170,7 @@
   "docomo n09a3": {
     "deviceName": "N09A3",
     "marketingName": "N09A3",
-    "manufacturer": "Nec",
+    "manufacturer": "nec",
     "brand": "ntt-docomo",
     "display": {
       "width": null,
@@ -156,7 +184,7 @@
   "docomo n2002": {
     "deviceName": "N2002",
     "marketingName": "N2002",
-    "manufacturer": "Nec",
+    "manufacturer": "nec",
     "brand": "ntt-docomo",
     "display": {
       "width": null,
@@ -167,10 +195,24 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "docomo n505i": {
+    "deviceName": "N505i",
+    "marketingName": "N505i",
+    "manufacturer": "nec",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "docomo n903i": {
     "deviceName": "N903i",
     "marketingName": "N903i",
-    "manufacturer": "Nec",
+    "manufacturer": "nec",
     "brand": "ntt-docomo",
     "display": {
       "width": 690,
@@ -275,6 +317,20 @@
       "height": 72,
       "touch": false,
       "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "docomo sh01a": {
+    "deviceName": "SH01A",
+    "marketingName": "SH01A",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"

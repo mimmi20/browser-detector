@@ -226,5 +226,43 @@
       "version": "0.0.0",
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (F02B;FOMA;like Gecko)"
+    },
+    "device": {
+      "deviceName": "F02B",
+      "marketingName": "F02B",
+      "manufacturer": "fujitsu",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "sharp",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "sharp",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
   }
 ]

@@ -6,7 +6,7 @@
     "device": {
       "deviceName": "W41SA",
       "marketingName": "W41SA",
-      "manufacturer": "Sanyo",
+      "manufacturer": "sanyo",
       "brand": "kddi",
       "display": {
         "width": 320,
@@ -20,7 +20,7 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "6.2.0.7.3",
-      "manufacturer": "Myriad",
+      "manufacturer": "myriad",
       "bits": 32,
       "type": "browser"
     },
@@ -44,7 +44,7 @@
     "device": {
       "deviceName": "TS01",
       "marketingName": "TS01",
-      "manufacturer": "Sanyo",
+      "manufacturer": "sanyo",
       "brand": "kddi",
       "display": {
         "width": null,
@@ -58,7 +58,7 @@
       "name": "Internet Explorer",
       "modus": null,
       "version": "6.0.0",
-      "manufacturer": "Microsoft",
+      "manufacturer": "microsoft",
       "bits": 32,
       "type": "browser"
     },
@@ -66,13 +66,13 @@
       "name": "Windows Mobile OS",
       "marketingName": "Windows Mobile OS",
       "version": "6.5.3.5",
-      "manufacturer": "Microsoft",
+      "manufacturer": "microsoft",
       "bits": 32
     },
     "engine": {
       "name": "Trident",
       "version": "0.0.0",
-      "manufacturer": "Microsoft"
+      "manufacturer": "microsoft"
     }
   },
   {
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "PM-8200",
       "marketingName": "PM-8200",
-      "manufacturer": "Sanyo",
-      "brand": "Sanyo",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
       "display": {
         "width": 160,
         "height": 132,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "SCP-588CN",
       "marketingName": "SCP-588CN",
-      "manufacturer": "Sanyo",
-      "brand": "Sanyo",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
       "display": {
         "width": 176,
         "height": 136,
@@ -134,7 +134,7 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "6.2.2.6",
-      "manufacturer": "Myriad",
+      "manufacturer": "myriad",
       "bits": 32,
       "type": "browser"
     },
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "SCP-3810",
       "marketingName": "SCP-3810",
-      "manufacturer": "Sanyo",
-      "brand": "Sanyo",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
       "display": {
         "width": 320,
         "height": 240,
@@ -196,8 +196,8 @@
     "device": {
       "deviceName": "E4100",
       "marketingName": "Taho",
-      "manufacturer": "Sanyo",
-      "brand": "Sanyo",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
       "display": {
         "width": 320,
         "height": 240,
@@ -234,8 +234,8 @@
     "device": {
       "deviceName": "SCP-6760",
       "marketingName": "Incognito",
-      "manufacturer": "Sanyo",
-      "brand": "Sanyo",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
       "display": {
         "width": 320,
         "height": 240,
@@ -272,8 +272,8 @@
     "device": {
       "deviceName": "SCP-6780",
       "marketingName": "Innuendo",
-      "manufacturer": "Sanyo",
-      "brand": "Sanyo",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
       "display": {
         "width": 400,
         "height": 280,
@@ -310,8 +310,8 @@
     "device": {
       "deviceName": "SCP-6750",
       "marketingName": "Katana Eclipse",
-      "manufacturer": "Sanyo",
-      "brand": "Sanyo",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
       "display": {
         "width": 220,
         "height": 176,
@@ -348,8 +348,8 @@
     "device": {
       "deviceName": "SCP-5500",
       "marketingName": "SCP-5500",
-      "manufacturer": "Sanyo",
-      "brand": "Sanyo",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
       "display": {
         "width": 220,
         "height": 176,
@@ -386,8 +386,8 @@
     "device": {
       "deviceName": "V801SA",
       "marketingName": "V801SA",
-      "manufacturer": "Sanyo",
-      "brand": "J-Phone",
+      "manufacturer": "sanyo",
+      "brand": "j-phone",
       "display": {
         "width": 320,
         "height": 240,
@@ -424,8 +424,8 @@
     "device": {
       "deviceName": "SCP-5000",
       "marketingName": "SCP-5000",
-      "manufacturer": "Sanyo",
-      "brand": "J-Phone",
+      "manufacturer": "sanyo",
+      "brand": "j-phone",
       "display": {
         "width": 160,
         "height": 128,
@@ -438,7 +438,7 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "4.1.23-alpha",
-      "manufacturer": "Myriad",
+      "manufacturer": "myriad",
       "bits": 32,
       "type": "browser"
     },
@@ -462,8 +462,8 @@
     "device": {
       "deviceName": "SCP-6600",
       "marketingName": "SCP-6600",
-      "manufacturer": "Sanyo",
-      "brand": "J-Phone",
+      "manufacturer": "sanyo",
+      "brand": "j-phone",
       "display": {
         "width": 320,
         "height": 240,
@@ -476,6 +476,44 @@
       "name": "NetFront",
       "modus": null,
       "version": "3.1.0",
+      "manufacturer": "access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/3.0(WILLCOM;SANYO/WX310SA/2;1/1/C128) NetFront/3.3"
+    },
+    "device": {
+      "deviceName": "WX310SA",
+      "marketingName": "WX310SA",
+      "manufacturer": "sanyo",
+      "brand": "willcom",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.3.0",
       "manufacturer": "access",
       "bits": 32,
       "type": "browser"
