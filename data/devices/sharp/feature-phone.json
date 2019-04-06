@@ -3,7 +3,7 @@
     "deviceName": "004SH",
     "marketingName": "004SH",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": null,
       "height": null,
@@ -17,7 +17,7 @@
     "deviceName": "202SHe",
     "marketingName": "202SHe",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": null,
       "height": null,
@@ -31,7 +31,7 @@
     "deviceName": "811SH",
     "marketingName": "811SH",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": 640,
       "height": 480,
@@ -45,7 +45,7 @@
     "deviceName": "812SHs",
     "marketingName": "812SHs",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": 320,
       "height": 240,
@@ -59,7 +59,7 @@
     "deviceName": "813SHe",
     "marketingName": "813SHe",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": 320,
       "height": 240,
@@ -73,7 +73,7 @@
     "deviceName": "815SH",
     "marketingName": "815SH",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": 640,
       "height": 480,
@@ -87,7 +87,7 @@
     "deviceName": "830SHp",
     "marketingName": "830SHp",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": null,
       "height": null,
@@ -101,7 +101,7 @@
     "deviceName": "831SHs",
     "marketingName": "831SHs",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": 400,
       "height": 240,
@@ -115,7 +115,7 @@
     "deviceName": "841SH",
     "marketingName": "841SH",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": null,
       "height": null,
@@ -129,7 +129,7 @@
     "deviceName": "911SH",
     "marketingName": "911SH",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": 400,
       "height": 240,
@@ -143,7 +143,7 @@
     "deviceName": "932SH",
     "marketingName": "932SH",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": 854,
       "height": 480,
@@ -153,11 +153,25 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sharp 944sh": {
+    "deviceName": "944SH",
+    "marketingName": "944SH",
+    "manufacturer": "sharp",
+    "brand": "softbank",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sharp 945sh": {
     "deviceName": "945SH",
     "marketingName": "945SH",
     "manufacturer": "sharp",
-    "brand": "Softbank",
+    "brand": "softbank",
     "display": {
       "width": 854,
       "height": 480,
@@ -199,7 +213,7 @@
     "deviceName": "J-SH05",
     "marketingName": "J-SH05",
     "manufacturer": "sharp",
-    "brand": "J-Phone",
+    "brand": "j-phone",
     "display": {
       "width": null,
       "height": null,
@@ -297,7 +311,7 @@
     "deviceName": "V601SH",
     "marketingName": "V601SH",
     "manufacturer": "sharp",
-    "brand": "J-Phone",
+    "brand": "j-phone",
     "display": {
       "width": null,
       "height": null,
@@ -311,7 +325,7 @@
     "deviceName": "V603SH",
     "marketingName": "V603SH",
     "manufacturer": "sharp",
-    "brand": "J-Phone",
+    "brand": "j-phone",
     "display": {
       "width": 320,
       "height": 240,
@@ -325,7 +339,7 @@
     "deviceName": "V604SH",
     "marketingName": "V604SH",
     "manufacturer": "sharp",
-    "brand": "J-Phone",
+    "brand": "j-phone",
     "display": {
       "width": 320,
       "height": 240,
@@ -353,7 +367,7 @@
     "deviceName": "V801SH",
     "marketingName": "V801SH",
     "manufacturer": "sharp",
-    "brand": "J-Phone",
+    "brand": "j-phone",
     "display": {
       "width": 320,
       "height": 240,
@@ -377,6 +391,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sharp v804sh": {
+    "deviceName": "V804SH",
+    "marketingName": "V804SH",
+    "manufacturer": "sharp",
+    "brand": "vodafone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sharp v903sh": {
     "deviceName": "V903SH",
     "marketingName": "V903SH",
@@ -385,6 +413,20 @@
     "display": {
       "width": 320,
       "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp v905sh": {
+    "deviceName": "V905SH",
+    "marketingName": "V905SH",
+    "manufacturer": "sharp",
+    "brand": "vodafone",
+    "display": {
+      "width": null,
+      "height": null,
       "touch": false,
       "size": null
     },

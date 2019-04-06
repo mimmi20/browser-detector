@@ -1,7 +1,7 @@
 {
   ".net framework clr": {
     "name": ".NET Framework CLR",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -159,7 +159,7 @@
   },
   "acoonbot": {
     "name": "AcoonBot",
-    "manufacturer": "MichaelSchoebel",
+    "manufacturer": "michael-schoebel",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -232,7 +232,7 @@
   },
   "adidxbot": {
     "name": "adidxbot",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -812,7 +812,7 @@
   },
   "bing preview": {
     "name": "Bing Preview",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -824,7 +824,7 @@
   },
   "bing product search": {
     "name": "Bing Product Search",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -836,7 +836,7 @@
   },
   "bingbot": {
     "name": "BingBot",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -1721,7 +1721,7 @@
   },
   "digg bot": {
     "name": "Digg Bot",
-    "manufacturer": "NewsMe",
+    "manufacturer": "news.me",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -1758,7 +1758,7 @@
   },
   "discovery bot": {
     "name": "Discovery Bot",
-    "manufacturer": "DiscoveryEngine",
+    "manufacturer": "discovery-engine",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -1855,7 +1855,7 @@
   },
   "domainsigmacrawler": {
     "name": "DomainSigmaCrawler",
-    "manufacturer": "DomainSigma",
+    "manufacturer": "domain-sigma",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -1904,7 +1904,7 @@
   },
   "duckduck bot": {
     "name": "DuckDuck Bot",
-    "manufacturer": "DuckDuckGo",
+    "manufacturer": "duck-duck-go",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -1916,7 +1916,7 @@
   },
   "duckduck favicons bot": {
     "name": "DuckDuck Favicons Bot",
-    "manufacturer": "DuckDuckGo",
+    "manufacturer": "duck-duck-go",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -1928,7 +1928,7 @@
   },
   "duedil crawler": {
     "name": "DueDil Crawler",
-    "manufacturer": "DueDil",
+    "manufacturer": "duedil",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -1952,7 +1952,7 @@
   },
   "easouspider": {
     "name": "EasouSpider",
-    "manufacturer": "Easou",
+    "manufacturer": "easou",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -2178,7 +2178,7 @@
   },
   "exchange activesync": {
     "name": "Exchange ActiveSync",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": null,
@@ -3427,7 +3427,7 @@
   },
   "icc-crawler": {
     "name": "ICC-Crawler",
-    "manufacturer": "Niict",
+    "manufacturer": "niict",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -3826,7 +3826,7 @@
   },
   "itsscan": {
     "name": "itsscan",
-    "manufacturer": "MuensterUniversityOfAppliedSciences",
+    "manufacturer": "muenster-university-of-applied-sciences",
     "type": "bot",
     "version": {
       "class": null,
@@ -3966,7 +3966,7 @@
   },
   "jupdate": {
     "name": "Jupdate",
-    "manufacturer": "DmSolutions",
+    "manufacturer": "dm-solutions",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4062,7 +4062,7 @@
   },
   "kulturarw3": {
     "name": "kulturarw3",
-    "manufacturer": "NationalLibraryOfSweden",
+    "manufacturer": "national-library-of-sweden",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4350,12 +4350,24 @@
   },
   "livedoor": {
     "name": "Livedoor",
-    "manufacturer": "unknown",
+    "manufacturer": "nhn-corporation",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
       "search": [
         "livedoor FeedFetcher"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "livedoor-mobile-gateway": {
+    "name": "livedoor-Mobile-Gateway",
+    "manufacturer": "nhn-corporation",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "livedoor-Mobile-Gateway"
       ]
     },
     "engine": "unknown"
@@ -4422,7 +4434,7 @@
   },
   "ltx71 bot": {
     "name": "ltx71 Bot",
-    "manufacturer": "Ltx71",
+    "manufacturer": "ltx71",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4434,7 +4446,7 @@
   },
   "lucidworks bot": {
     "name": "Lucidworks Bot",
-    "manufacturer": "Lucidworks",
+    "manufacturer": "lucidworks",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4470,7 +4482,7 @@
   },
   "mail.ru": {
     "name": "Mail.Ru",
-    "manufacturer": "MailRu",
+    "manufacturer": "mail.ru",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4508,7 +4520,7 @@
   },
   "marketwirebot": {
     "name": "MarketwireBot",
-    "manufacturer": "Marketwire",
+    "manufacturer": "marketwire",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4533,7 +4545,7 @@
   },
   "meanpathbot": {
     "name": "meanpathbot",
-    "manufacturer": "Meanpath",
+    "manufacturer": "meanpath",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4557,7 +4569,7 @@
   },
   "megaindex bot": {
     "name": "MegaIndex Bot",
-    "manufacturer": "MegaIndex",
+    "manufacturer": "mega-index",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4639,7 +4651,7 @@
   },
   "metaheadersbot": {
     "name": "MetaHeadersBot",
-    "manufacturer": "Metaheaders",
+    "manufacturer": "meta-headers",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4663,7 +4675,7 @@
   },
   "metajobbot": {
     "name": "MetaJobBot",
-    "manufacturer": "ManfredSchauer",
+    "manufacturer": "manfred-schauer",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4675,7 +4687,7 @@
   },
   "metauri bot": {
     "name": "MetaURI Bot",
-    "manufacturer": "Metauri",
+    "manufacturer": "metauri",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4687,7 +4699,7 @@
   },
   "microsoft cryptoapi": {
     "name": "Microsoft CryptoAPI",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4700,7 +4712,7 @@
   },
   "microsoft data access internet publishing provider dav": {
     "name": "Microsoft Data Access Internet Publishing Provider DAV",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4712,7 +4724,7 @@
   },
   "microsoft url control": {
     "name": "Microsoft URL Control",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4736,7 +4748,7 @@
   },
   "microsoft-webdav": {
     "name": "Microsoft-WebDAV",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4786,7 +4798,7 @@
   },
   "mj12bot": {
     "name": "MJ12bot",
-    "manufacturer": "Majestic12",
+    "manufacturer": "majestic-12",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4835,7 +4847,7 @@
   },
   "mojeekbot": {
     "name": "MojeekBot",
-    "manufacturer": "Mojeek",
+    "manufacturer": "mojeek",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4847,7 +4859,7 @@
   },
   "monobot": {
     "name": "MonoBot",
-    "manufacturer": "Mono",
+    "manufacturer": "mono",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4871,7 +4883,7 @@
   },
   "moreover": {
     "name": "Moreover",
-    "manufacturer": "MoreoverTechnologies",
+    "manufacturer": "moreover-technologies",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4933,7 +4945,7 @@
   },
   "ms opd": {
     "name": "MS OPD",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4945,7 +4957,7 @@
   },
   "ms search": {
     "name": "MS Search",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4969,7 +4981,7 @@
   },
   "msnbot-media": {
     "name": "msnbot-media",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -4995,7 +5007,7 @@
   },
   "nagios": {
     "name": "Nagios",
-    "manufacturer": "NagiosEnterprises",
+    "manufacturer": "nagios-enterprises",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -5008,7 +5020,7 @@
   },
   "naverbot": {
     "name": "NaverBot",
-    "manufacturer": "NhnCorporation",
+    "manufacturer": "nhn-corporation",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -5033,7 +5045,7 @@
   },
   "nerdybot": {
     "name": "NerdyBot",
-    "manufacturer": "NerdyData",
+    "manufacturer": "nerdy-data",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -5045,7 +5057,7 @@
   },
   "netestate ne crawler": {
     "name": "netEstate NE Crawler",
-    "manufacturer": "NetEstate",
+    "manufacturer": "net-estate",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -5079,7 +5091,7 @@
   },
   "netseer crawler": {
     "name": "NetSeer Crawler",
-    "manufacturer": "NetSeer",
+    "manufacturer": "net-seer",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -5103,7 +5115,7 @@
   },
   "nett.io bot": {
     "name": "Nett.io bot",
-    "manufacturer": "Nettio",
+    "manufacturer": "nett.io",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -5125,7 +5137,7 @@
   },
   "netzcheckbot": {
     "name": "NetzCheckBot",
-    "manufacturer": "NetzCheck",
+    "manufacturer": "netz-check",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -5150,7 +5162,7 @@
   },
   "newsme": {
     "name": "newsme",
-    "manufacturer": "NewsMe",
+    "manufacturer": "news.me",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -5438,7 +5450,7 @@
   },
   "ossproxy": {
     "name": "OSSProxy",
-    "manufacturer": "Marketscore",
+    "manufacturer": "marketscore",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -6257,7 +6269,7 @@
   },
   "restify": {
     "name": "restify",
-    "manufacturer": "MarkCavage",
+    "manufacturer": "mark-cavage",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -6926,7 +6938,7 @@
   },
   "skypeuripreview": {
     "name": "SkypeUriPreview",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -7458,7 +7470,7 @@
   },
   "surveybot": {
     "name": "SurveyBot",
-    "manufacturer": "DomainTools",
+    "manufacturer": "domain-tools",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -8861,7 +8873,7 @@
   },
   "werbefreie deutsche suchmaschine": {
     "name": "Werbefreie Deutsche Suchmaschine",
-    "manufacturer": "MichaelSchoebel",
+    "manufacturer": "michael-schoebel",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -8933,7 +8945,7 @@
   },
   "windows phone ad client": {
     "name": "Windows Phone Ad Client",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -8945,7 +8957,7 @@
   },
   "windows phone search": {
     "name": "Windows Phone Search",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": null,
@@ -8955,7 +8967,7 @@
   },
   "windows-update-agent": {
     "name": "Windows-Update-Agent",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -8967,7 +8979,7 @@
   },
   "winhttp": {
     "name": "WinHttp",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "bot",
     "version": {
       "class": "VersionFactory",

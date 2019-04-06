@@ -87,12 +87,26 @@
     "deviceName": "H11HW",
     "marketingName": "H11HW",
     "manufacturer": "huawei",
-    "brand": "Emobile",
+    "brand": "emobile",
     "display": {
       "width": 220,
       "height": 176,
       "touch": false,
       "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "huawei h12hw": {
+    "deviceName": "H12HW",
+    "marketingName": "H12HW",
+    "manufacturer": "huawei",
+    "brand": "y!mobile",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.2
     },
     "type": "feature-phone",
     "platform": "java"

@@ -6,7 +6,7 @@
     "device": {
       "deviceName": "W54T",
       "marketingName": "W54T",
-      "manufacturer": "Toshiba",
+      "manufacturer": "toshiba",
       "brand": "kddi",
       "display": {
         "width": 800,
@@ -20,7 +20,7 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "6.2.0.7.3",
-      "manufacturer": "Myriad",
+      "manufacturer": "myriad",
       "bits": 32,
       "type": "browser"
     },
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "VM4050",
       "marketingName": "VM4050",
-      "manufacturer": "Toshiba",
-      "brand": "Toshiba",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
       "display": {
         "width": 320,
         "height": 240,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "X01T",
       "marketingName": "X01T",
-      "manufacturer": "Toshiba",
-      "brand": "Softbank",
+      "manufacturer": "toshiba",
+      "brand": "softbank",
       "display": {
         "width": 320,
         "height": 240,
@@ -96,7 +96,7 @@
       "name": "Internet Explorer",
       "modus": null,
       "version": "6.0.0",
-      "manufacturer": "Microsoft",
+      "manufacturer": "microsoft",
       "bits": 32,
       "type": "browser"
     },
@@ -104,13 +104,13 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": "0.0.0",
-      "manufacturer": "Microsoft",
+      "manufacturer": "microsoft",
       "bits": 32
     },
     "engine": {
       "name": "Trident",
       "version": "0.0.0",
-      "manufacturer": "Microsoft"
+      "manufacturer": "microsoft"
     }
   },
   {
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "WS023T",
       "marketingName": "WS023T",
-      "manufacturer": "Toshiba",
-      "brand": "Willcom",
+      "manufacturer": "toshiba",
+      "brand": "willcom",
       "display": {
         "width": 320,
         "height": 240,
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "910T",
       "marketingName": "910T",
-      "manufacturer": "Toshiba",
-      "brand": "Softbank",
+      "manufacturer": "toshiba",
+      "brand": "softbank",
       "display": {
         "width": null,
         "height": null,
@@ -196,8 +196,8 @@
     "device": {
       "deviceName": "H11T",
       "marketingName": "H11T",
-      "manufacturer": "Toshiba",
-      "brand": "Emobile",
+      "manufacturer": "toshiba",
+      "brand": "emobile",
       "display": {
         "width": 400,
         "height": 240,
@@ -225,6 +225,44 @@
       "name": null,
       "version": "0.0.0",
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/3.0(WILLCOM;TOSHIBA/WX320T/2;1/1/C128) NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "WX320T",
+      "marketingName": "WX320T",
+      "manufacturer": "toshiba",
+      "brand": "willcom",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "access"
     }
   }
 ]

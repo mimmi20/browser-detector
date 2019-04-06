@@ -40,7 +40,7 @@
   },
   "edge": {
     "name": "Edge",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -50,7 +50,7 @@
   },
   "gecko": {
     "name": "Gecko",
-    "manufacturer": "MozillaFoundation",
+    "manufacturer": "mozilla-foundation",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -60,7 +60,7 @@
   },
   "goanna": {
     "name": "Goanna",
-    "manufacturer": "MoonchildProductions",
+    "manufacturer": "moonchild-productions",
     "version": {
       "class": "\\BrowserDetector\\Version\\Goanna",
       "search": null
@@ -132,7 +132,7 @@
   },
   "trident": {
     "name": "Trident",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "version": {
       "class": "\\BrowserDetector\\Version\\Trident",
       "search": null

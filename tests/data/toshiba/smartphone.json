@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "TG01",
       "marketingName": "TG01",
-      "manufacturer": "Toshiba",
-      "brand": "Toshiba",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
       "display": {
         "width": 800,
         "height": 480,
@@ -20,7 +20,7 @@
       "name": "IEMobile",
       "modus": null,
       "version": "8.12.0",
-      "manufacturer": "Microsoft",
+      "manufacturer": "microsoft",
       "bits": 32,
       "type": "browser"
     },
@@ -28,13 +28,13 @@
       "name": "Windows CE",
       "marketingName": "Windows CE",
       "version": "0.0.0",
-      "manufacturer": "Microsoft",
+      "manufacturer": "microsoft",
       "bits": 32
     },
     "engine": {
       "name": "Trident",
       "version": "0.0.0",
-      "manufacturer": "Microsoft"
+      "manufacturer": "microsoft"
     }
   },
   {
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "T-01D",
       "marketingName": "Regza T-01D",
-      "manufacturer": "Toshiba",
-      "brand": "Toshiba",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
       "display": {
         "width": 1280,
         "height": 720,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "T-02D",
       "marketingName": "Regza T-02D",
-      "manufacturer": "Toshiba",
-      "brand": "Toshiba",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
       "display": {
         "width": 960,
         "height": 540,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "T-01C",
       "marketingName": "Regza T-01C",
-      "manufacturer": "Toshiba",
-      "brand": "Toshiba",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
       "display": {
         "width": 854,
         "height": 480,
@@ -149,6 +149,44 @@
       "name": "WebKit",
       "version": "533.1.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; FujitsuToshibaMobileCommun; IS12T; KDDI)"
+    },
+    "device": {
+      "deviceName": "IS12T",
+      "marketingName": "IS12T",
+      "manufacturer": "toshiba",
+      "brand": "kddi",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "3.1.0",
+      "manufacturer": "microsoft"
     }
   }
 ]

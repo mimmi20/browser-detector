@@ -117,7 +117,7 @@
   },
   "mailbar": {
     "name": "MailBar",
-    "manufacturer": "MailBar",
+    "manufacturer": "mailbar",
     "type": "email-client",
     "version": {
       "class": "VersionFactory",
@@ -129,7 +129,7 @@
   },
   "outlook": {
     "name": "Outlook",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "email-client",
     "version": {
       "class": "VersionFactory",
@@ -142,7 +142,7 @@
   },
   "outlook social connector": {
     "name": "Outlook Social Connector",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "email-client",
     "version": {
       "class": "VersionFactory",
@@ -168,7 +168,7 @@
   },
   "thunderbird": {
     "name": "Thunderbird",
-    "manufacturer": "MozillaFoundation",
+    "manufacturer": "mozilla-foundation",
     "type": "email-client",
     "version": {
       "class": "VersionFactory",
@@ -193,7 +193,7 @@
   },
   "outlook-express": {
     "name": "Windows Live Mail",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "email-client",
     "version": {
       "class": "VersionFactory",

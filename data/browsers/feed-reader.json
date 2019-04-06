@@ -23,6 +23,18 @@
     },
     "engine": "webkit"
   },
+  "livedoor news": {
+    "name": "livedoor news",
+    "manufacturer": "line",
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LDNReader"
+      ]
+    },
+    "engine": "unknown"
+  },
   "magpierss": {
     "name": "MagpieRSS",
     "manufacturer": "unknown",
@@ -91,7 +103,7 @@
   },
   "windows-rss-platform": {
     "name": "Windows-RSS-Platform",
-    "manufacturer": "Microsoft",
+    "manufacturer": "microsoft",
     "type": "feed-reader",
     "version": {
       "class": "VersionFactory",
