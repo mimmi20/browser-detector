@@ -205,7 +205,7 @@ class EngineLoaderTest extends TestCase
 
         $engineData = (object) [
             'version' => (object) ['class' => null],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'name' => null,
         ];
 
@@ -224,7 +224,7 @@ class EngineLoaderTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -283,7 +283,7 @@ class EngineLoaderTest extends TestCase
 
         $engineData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'name' => null,
         ];
 
@@ -302,7 +302,7 @@ class EngineLoaderTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -362,7 +362,7 @@ class EngineLoaderTest extends TestCase
 
         $engineData = (object) [
             'version' => (object) ['class' => Test::class],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'name' => null,
         ];
 
@@ -381,7 +381,7 @@ class EngineLoaderTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         /** @var \Psr\Log\LoggerInterface $logger */

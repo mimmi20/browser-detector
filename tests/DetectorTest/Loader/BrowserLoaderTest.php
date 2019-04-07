@@ -209,7 +209,7 @@ class BrowserLoaderTest extends TestCase
 
         $browserData = (object) [
             'version' => (object) ['class' => null],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => null,
             'name' => null,
@@ -294,7 +294,7 @@ class BrowserLoaderTest extends TestCase
 
         $browserData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => 'unknown',
             'name' => null,
@@ -383,7 +383,7 @@ class BrowserLoaderTest extends TestCase
         $engineKey   = 'unknown';
         $browserData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => $engineKey,
             'name' => null,
@@ -470,7 +470,7 @@ class BrowserLoaderTest extends TestCase
 
         $browserData = (object) [
             'version' => (object) ['class' => Test::class],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => 'unknown',
             'name' => 'test-browser',

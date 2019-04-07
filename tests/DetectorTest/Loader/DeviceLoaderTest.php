@@ -209,7 +209,7 @@ class DeviceLoaderTest extends TestCase
 
         $deviceData = (object) [
             'version' => (object) ['class' => null],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'type' => 'unknown',
             'name' => null,
             'platform' => null,
@@ -294,7 +294,7 @@ class DeviceLoaderTest extends TestCase
 
         $deviceData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'type' => 'unknown',
             'name' => null,
             'platform' => 'test-platform',
@@ -380,7 +380,7 @@ class DeviceLoaderTest extends TestCase
 
         $deviceData = (object) [
             'version' => (object) ['class' => Test::class],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'type' => 'unknown',
             'deviceName' => 'test-device',
             'platform' => 'test-platform',
