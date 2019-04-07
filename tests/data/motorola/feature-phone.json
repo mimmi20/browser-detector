@@ -988,5 +988,119 @@
       "version": "0.0.0",
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-EX116 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "EX116",
+      "marketingName": "EX116",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Obigo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Motorola_ES405B_312"
+    },
+    "device": {
+      "deviceName": "ES405B",
+      "marketingName": "ES405B",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Motorola_MC659B_44000"
+    },
+    "device": {
+      "deviceName": "MC659B",
+      "marketingName": "MC659B",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": false,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]

@@ -150,5 +150,119 @@
       "version": "0.0.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.30 (Nintendo Wii; U; ; 3642; en)"
+    },
+    "device": {
+      "deviceName": "Wii",
+      "marketingName": "Wii",
+      "manufacturer": "Nintendo",
+      "brand": "Nintendo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Nintendo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo OS",
+      "marketingName": "Nintendo OS",
+      "version": "0.0.0",
+      "manufacturer": "Nintendo",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.21 NintendoBrowser/1.0.0.7494.US"
+    },
+    "device": {
+      "deviceName": "WiiU",
+      "marketingName": "WiiU",
+      "manufacturer": "Nintendo",
+      "brand": "Nintendo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "1.0.0.7494",
+      "manufacturer": "Nintendo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo OS",
+      "marketingName": "Nintendo OS",
+      "version": "0.0.0",
+      "manufacturer": "Nintendo",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.52.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.30 (Nintendo Wii; U; ; 3642; ja)"
+    },
+    "device": {
+      "deviceName": "Wii",
+      "marketingName": "Wii",
+      "manufacturer": "Nintendo",
+      "brand": "Nintendo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Nintendo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo OS",
+      "marketingName": "Nintendo OS",
+      "version": "0.0.0",
+      "manufacturer": "Nintendo",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "Opera"
+    }
   }
 ]

@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "Rio R1",
       "marketingName": "GSmart Rio R1",
-      "manufacturer": "Gigabyte",
-      "brand": "Gigabyte",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
       "display": {
         "width": 800,
         "height": 480,
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "GSmart T4",
       "marketingName": "GSmart T4",
-      "manufacturer": "Gigabyte",
-      "brand": "Gigabyte",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
       "display": {
         "width": 800,
         "height": 480,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "GSmart",
       "marketingName": "GSmart",
-      "manufacturer": "Gigabyte",
-      "brand": "Gigabyte",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
       "display": {
         "width": 480,
         "height": 320,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "GSmart T4",
       "marketingName": "GSmart T4",
-      "manufacturer": "Gigabyte",
-      "brand": "Gigabyte",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
       "display": {
         "width": 800,
         "height": 480,
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "GSmart Aku A1",
       "marketingName": "GSmart Aku A1",
-      "manufacturer": "Gigabyte",
-      "brand": "Gigabyte",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
       "display": {
         "width": 854,
         "height": 480,
@@ -196,8 +196,8 @@
     "device": {
       "deviceName": "GSmart G1310",
       "marketingName": "GSmart G1310",
-      "manufacturer": "Gigabyte",
-      "brand": "Gigabyte",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
       "display": {
         "width": 480,
         "height": 320,
@@ -234,8 +234,8 @@
     "device": {
       "deviceName": "GSmart Maya M1 v2",
       "marketingName": "GSmart Maya M1 v2",
-      "manufacturer": "Gigabyte",
-      "brand": "Gigabyte",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
       "display": {
         "width": 960,
         "height": 540,
@@ -272,8 +272,8 @@
     "device": {
       "deviceName": "GSmart Arty A3",
       "marketingName": "GSmart Arty A3",
-      "manufacturer": "Gigabyte",
-      "brand": "Gigabyte",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
       "display": {
         "width": 854,
         "height": 480,
@@ -301,6 +301,120 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; GSmart Aku A1 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GSmart Aku A1",
+      "marketingName": "GSmart Aku A1",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "31.0.1650.59",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; GSmart Maya M1 v2 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Mobile Safari/537.36 OPR/21.0.1437.74904"
+    },
+    "device": {
+      "deviceName": "GSmart Maya M1 v2",
+      "marketingName": "GSmart Maya M1 v2",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "21.0.1437.74904",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; sk-sk; GSmart Roma R2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "GSmart Roma R2",
+      "marketingName": "GSmart Roma R2",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]

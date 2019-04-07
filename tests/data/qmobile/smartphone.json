@@ -704,7 +704,7 @@
       "name": "Instagram App",
       "modus": null,
       "version": "27.0.0.11.97",
-      "manufacturer": "Facebook",
+      "manufacturer": "facebook",
       "bits": 32,
       "type": "application"
     },
@@ -833,6 +833,44 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Adr 4.2.2; en-US; QMobile A30) U2/1.0.0 UCBrowser/9.3.1.344 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "A30",
+      "marketingName": "Noir A30",
+      "manufacturer": "Qmobile",
+      "brand": "Qmobile",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.3.1.344",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
     }
   }
 ]

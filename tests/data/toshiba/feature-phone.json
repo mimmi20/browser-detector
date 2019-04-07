@@ -264,5 +264,43 @@
       "version": "0.0.0",
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "emobile/1.0.0 (H11T; like Gecko; Wireless) NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "H11T",
+      "marketingName": "H11T",
+      "manufacturer": "toshiba",
+      "brand": "emobile",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "access"
+    }
   }
 ]

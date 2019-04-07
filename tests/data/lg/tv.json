@@ -74,5 +74,43 @@
       "version": "537.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (DirectFB; U; Linux mips; en) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ LG Browser/4.0.10(+SCREEN+TUNER; LGE; 42LE5500-SA; 04.02.02; 0x00000001;); LG NetCast.TV-2010"
+    },
+    "device": {
+      "deviceName": "general LG TV",
+      "marketingName": "general LG TV",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "4.0.10",
+      "manufacturer": "lg",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "NetCast",
+      "marketingName": "NetCast",
+      "version": "0.0.0",
+      "manufacturer": "lg",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.2.0",
+      "manufacturer": "apple"
+    }
   }
 ]
