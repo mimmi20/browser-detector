@@ -204,7 +204,7 @@ final class PlatformLoaderTest extends TestCase
 
         $platformData = (object) [
             'version' => (object) ['class' => null],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'name' => null,
             'marketingName' => null,
         ];
@@ -224,7 +224,7 @@ final class PlatformLoaderTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -283,7 +283,7 @@ final class PlatformLoaderTest extends TestCase
 
         $platformData = (object) [
             'version' => (object) ['class' => null, 'value' => '1.0'],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'name' => null,
             'marketingName' => null,
         ];
@@ -303,7 +303,7 @@ final class PlatformLoaderTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -362,7 +362,7 @@ final class PlatformLoaderTest extends TestCase
 
         $platformData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'name' => 'Mac OS X',
             'marketingName' => null,
         ];
@@ -382,7 +382,7 @@ final class PlatformLoaderTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -443,7 +443,7 @@ final class PlatformLoaderTest extends TestCase
 
         $platformData = (object) [
             'version' => (object) ['class' => Test::class],
-            'manufacturer' => 'Unknown',
+            'manufacturer' => 'unknown',
             'name' => null,
             'marketingName' => null,
         ];
@@ -463,7 +463,7 @@ final class PlatformLoaderTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         /** @var \Psr\Log\LoggerInterface $logger */

@@ -37,7 +37,7 @@ class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::once())
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         $version = $this->getMockBuilder(VersionInterface::class)
@@ -109,7 +109,7 @@ class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::once())
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         $version1 = $this->getMockBuilder(VersionInterface::class)
@@ -185,7 +185,7 @@ class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::once())
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         $version1 = $this->getMockBuilder(VersionInterface::class)
@@ -258,7 +258,7 @@ class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::once())
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         $version1 = $this->getMockBuilder(VersionInterface::class)
@@ -336,7 +336,7 @@ class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::once())
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         $version1 = $this->getMockBuilder(VersionInterface::class)
@@ -414,7 +414,7 @@ class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::once())
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         $version1 = $this->getMockBuilder(VersionInterface::class)
@@ -489,7 +489,7 @@ class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::once())
             ->method('load')
-            ->with('Unknown')
+            ->with('unknown')
             ->willReturn($company);
 
         $version1 = $this->getMockBuilder(VersionInterface::class)
@@ -579,9 +579,9 @@ class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->withConsecutive(['Unknown', $useragent], [$companyName, $useragent])
+            ->withConsecutive(['unknown', $useragent], [$companyName, $useragent])
             ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $exception) {
-                if ('Unknown' === $key) {
+                if ('unknown' === $key) {
                     return $company;
                 }
                 throw $exception;

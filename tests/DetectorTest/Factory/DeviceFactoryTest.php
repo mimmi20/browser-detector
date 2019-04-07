@@ -41,7 +41,7 @@ class DeviceFactoryTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown', $useragent)
+            ->with('unknown', $useragent)
             ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -122,7 +122,7 @@ class DeviceFactoryTest extends TestCase
         $companyLoader
             ->expects(self::exactly(2))
             ->method('load')
-            ->with('Unknown', $useragent)
+            ->with('unknown', $useragent)
             ->willReturn($company);
 
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -217,7 +217,7 @@ class DeviceFactoryTest extends TestCase
         $companyLoader
             ->expects(self::exactly(4))
             ->method('load')
-            ->withConsecutive(['Unknown', $useragent], [$manufacturerParam, $useragent], ['Unknown', $useragent], [$brandParam, $useragent])
+            ->withConsecutive(['unknown', $useragent], [$manufacturerParam, $useragent], ['unknown', $useragent], [$brandParam, $useragent])
             ->willReturnOnConsecutiveCalls($company, $manufacturer, $company, $brand);
 
         $typeParam = 1;
@@ -340,9 +340,9 @@ class DeviceFactoryTest extends TestCase
         $companyLoader
             ->expects(self::exactly(4))
             ->method('load')
-            ->withConsecutive(['Unknown', $useragent], [$manufacturerParam, $useragent], ['Unknown', $useragent], [$brandParam, $useragent])
+            ->withConsecutive(['unknown', $useragent], [$manufacturerParam, $useragent], ['unknown', $useragent], [$brandParam, $useragent])
             ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $companyException, $manufacturerParam, $manufacturer) {
-                if ('Unknown' === $key) {
+                if ('unknown' === $key) {
                     return $company;
                 }
                 if ($manufacturerParam === $key) {
