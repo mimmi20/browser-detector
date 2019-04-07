@@ -210,7 +210,7 @@
       "name": "Kiwi",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Geometry",
+      "manufacturer": "geometry",
       "bits": 32,
       "type": "browser"
     },
@@ -339,6 +339,44 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Cyrus_CS30 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "CS30",
+      "marketingName": "CS30",
+      "manufacturer": "cyrus",
+      "brand": "cyrus",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "59.0.3071.125",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
     }
   }
 ]

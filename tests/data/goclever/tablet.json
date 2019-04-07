@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "Orion 7o",
       "marketingName": "Orion 7o",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 1024,
         "height": 600,
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "A93.2",
       "marketingName": "A93.2",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 800,
         "height": 480,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "Quantum 700m",
       "marketingName": "Quantum 700m",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 1024,
         "height": 600,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "TQ700",
       "marketingName": "QUANTUM 700",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 800,
         "height": 480,
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "A1021",
       "marketingName": "TERRA 101",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 1024,
         "height": 600,
@@ -196,8 +196,8 @@
     "device": {
       "deviceName": "Insignia 785 Pro",
       "marketingName": "Insignia 785 Pro",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 1024,
         "height": 768,
@@ -234,8 +234,8 @@
     "device": {
       "deviceName": "Aries 785",
       "marketingName": "Aries 785",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 1024,
         "height": 768,
@@ -272,8 +272,8 @@
     "device": {
       "deviceName": "Aries 101",
       "marketingName": "Aries 101",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 1280,
         "height": 800,
@@ -310,8 +310,8 @@
     "device": {
       "deviceName": "Elipso 71",
       "marketingName": "Elipso 71",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": null,
         "height": null,
@@ -348,8 +348,8 @@
     "device": {
       "deviceName": "Orion 102",
       "marketingName": "Orion 102",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 1280,
         "height": 800,
@@ -386,8 +386,8 @@
     "device": {
       "deviceName": "Tab R106",
       "marketingName": "Tab R106",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 1280,
         "height": 800,
@@ -424,8 +424,8 @@
     "device": {
       "deviceName": "Tab R70",
       "marketingName": "Tab R70",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 800,
         "height": 480,
@@ -462,8 +462,8 @@
     "device": {
       "deviceName": "Tab T76",
       "marketingName": "Tab T76",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 800,
         "height": 480,
@@ -500,8 +500,8 @@
     "device": {
       "deviceName": "Libra 97",
       "marketingName": "Libra 97",
-      "manufacturer": "GoClever",
-      "brand": "GoClever",
+      "manufacturer": "goclever",
+      "brand": "goclever",
       "display": {
         "width": 2048,
         "height": 1536,
@@ -522,6 +522,158 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; it-it; ARIES_785 Build/GOCLEVER) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16"
+    },
+    "device": {
+      "deviceName": "Aries 785",
+      "marketingName": "Aries 785",
+      "manufacturer": "goclever",
+      "brand": "goclever",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.16.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; INSIGNIA_785_PRO Build/GOCLEVER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Insignia 785 Pro",
+      "marketingName": "Insignia 785 Pro",
+      "manufacturer": "goclever",
+      "brand": "goclever",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "52.0.2743.98",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; TQ700N Build/GOCLEVER) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TQ700",
+      "marketingName": "QUANTUM 700",
+      "manufacturer": "goclever",
+      "brand": "goclever",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; QUANTUM_900 Build/GOCLEVER) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Quantum 900",
+      "marketingName": "Quantum 900",
+      "manufacturer": "goclever",
+      "brand": "goclever",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": 32
     },

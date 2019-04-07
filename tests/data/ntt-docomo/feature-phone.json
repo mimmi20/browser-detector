@@ -20,7 +20,7 @@
       "name": "Ichiro Mobile Bot",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Ichiro",
+      "manufacturer": "ichiro",
       "bits": 32,
       "type": "bot"
     },
@@ -415,6 +415,82 @@
       "name": null,
       "version": "0.0.0",
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 P900i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://search.goo.ne.jp/option/use/sub4/sub4-1/)"
+    },
+    "device": {
+      "deviceName": "P900i",
+      "marketingName": "P900i",
+      "manufacturer": "ntt-docomo",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Ichiro Mobile Bot",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "ichiro",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; DoCoMo/1.0/D505i/c20/TB/W20H10; http://www.rcdtokyo.com/pc2m/)"
+    },
+    "device": {
+      "deviceName": "D505i",
+      "marketingName": "D505i",
+      "manufacturer": "ntt-docomo",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 96,
+        "height": 72,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "0.0.0",
+      "manufacturer": "mozilla-foundation"
     }
   }
 ]

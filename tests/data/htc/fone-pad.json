@@ -150,5 +150,81 @@
       "version": "534.13.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; HTC Flyer P512 Build/JRO03C; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "P512",
+      "marketingName": "Flyer",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; HTC_Flyer_P512; pl-gb) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16"
+    },
+    "device": {
+      "deviceName": "P512",
+      "marketingName": "Flyer",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "apple",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.16.0",
+      "manufacturer": "apple"
+    }
   }
 ]

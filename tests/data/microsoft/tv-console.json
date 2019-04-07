@@ -74,5 +74,81 @@
       "version": "5.0.0",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; Xbox; Xbox One)"
+    },
+    "device": {
+      "deviceName": "Xbox One",
+      "marketingName": "Xbox One",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 6.2",
+      "marketingName": "Windows 8",
+      "version": "6.2.0",
+      "manufacturer": "microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; Xbox; Xbox One)"
+    },
+    "device": {
+      "deviceName": "Xbox One",
+      "marketingName": "Xbox One",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]

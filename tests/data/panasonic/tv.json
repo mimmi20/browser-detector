@@ -28,7 +28,7 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "0.0.0",
-      "manufacturer": "FreeBsdFoundation",
+      "manufacturer": "free-bsd-foundation",
       "bits": 32
     },
     "engine": {
@@ -66,13 +66,203 @@
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
       "version": "0.0.0",
-      "manufacturer": "FreeBsdFoundation",
+      "manufacturer": "free-bsd-foundation",
       "bits": 32
     },
     "engine": {
       "name": "WebKit",
       "version": "537.11.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (FreeBSD; U; Viera; fr-FR) AppleWebKit/535.1 (KHTML, like Gecko) Viera/1.5.2 Chrome/14.0.835.202 Safari/535.1"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "Panasonic",
+      "brand": "Panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Viera Browser",
+      "modus": null,
+      "version": "1.5.2",
+      "manufacturer": "Panasonic",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "0.0.0",
+      "manufacturer": "free-bsd-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; FreeBSD; U; Viera; de-DE) AppleWebKit/537.11 (KHTML, like Gecko) Viera/3.10.0 Chrome/23.0.1271.97 Safari/537.11"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "Panasonic",
+      "brand": "Panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Viera Browser",
+      "modus": null,
+      "version": "3.10.0",
+      "manufacturer": "Panasonic",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "0.0.0",
+      "manufacturer": "free-bsd-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.11.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;Panasonic;VIERA 2011;1.805;0071-7702 2000-0000;)"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "Panasonic",
+      "brand": "Panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;Panasonic;VIERA 2012;1.210;0071-3403 2000-0000;)"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "Panasonic",
+      "brand": "Panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (;Panasonic;VIERA 2013;3.838;1101-0003 0004-0000;)"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "Panasonic",
+      "brand": "Panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
     }
   }
 ]

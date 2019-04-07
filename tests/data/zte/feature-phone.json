@@ -340,5 +340,43 @@
       "version": "2.8.119",
       "manufacturer": "Opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BREW; Opera Mini/5.1/27.2354; U; xx) Presto/2.8.119 320X240 ZTE F-450"
+    },
+    "device": {
+      "deviceName": "F-450",
+      "marketingName": "F-450",
+      "manufacturer": "zte",
+      "brand": "at-t",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "5.1.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "Opera"
+    }
   }
 ]

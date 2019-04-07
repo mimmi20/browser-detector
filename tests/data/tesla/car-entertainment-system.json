@@ -74,5 +74,43 @@
       "version": "601.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; u; Linux; C) AppleWebKit /533.3 (Khtml, like Gheko) QtCarBrowser Safari/533.3"
+    },
+    "device": {
+      "deviceName": "Model S",
+      "marketingName": "Model S",
+      "manufacturer": "TeslaMotors",
+      "brand": "Tesla",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "car-entertainment-system"
+    },
+    "browser": {
+      "name": "Model S Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "TeslaMotors",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "apple"
+    }
   }
 ]

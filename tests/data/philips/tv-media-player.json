@@ -758,5 +758,81 @@
       "version": "4.2.5",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "WebKit/3.7.6, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.19 (Philips, BDP5600, wired)"
+    },
+    "device": {
+      "deviceName": "BDP5600",
+      "marketingName": "BDP5600",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "Philips",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.7.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80(Linux armv7l; U; CE-HTML/1.0 NETTV/3.0.1; PHILIPS-AVM-2012; xx) Presto/2.10.250 Version/11.6"
+    },
+    "device": {
+      "deviceName": "Blueray Player",
+      "marketingName": "Blueray Player",
+      "manufacturer": "Philips",
+      "brand": "Philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.6.0",
+      "manufacturer": "Opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "LinuxFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.250",
+      "manufacturer": "Opera"
+    }
   }
 ]

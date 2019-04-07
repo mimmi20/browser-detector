@@ -302,5 +302,43 @@
       "version": "7.0.0",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; TrekStor SurfTab breeze 9.6 quad 3G Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SurfTab breeze 9.6 Quad 3G",
+      "marketingName": "SurfTab breeze 9.6 Quad 3G",
+      "manufacturer": "TrekStor",
+      "brand": "TrekStor",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": null
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "43.0.2357.93",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]

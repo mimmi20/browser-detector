@@ -113,5 +113,43 @@
       "version": "0.0.0",
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "K-Touch_W366_CUCC/1.0 WindowsMobileOS/6.5 Release/30.10.2009 Browser/MSIE-6.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)"
+    },
+    "device": {
+      "deviceName": "W366",
+      "marketingName": "W366",
+      "manufacturer": "Ktouch",
+      "brand": "Ktouch",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "0.0.0",
+      "manufacturer": "microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]

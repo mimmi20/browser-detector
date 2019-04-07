@@ -36,5 +36,43 @@
       "version": "0.0.0",
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (;MTK;MT5396;;;) ANTGalio/3.3.0.26.02.devel"
+    },
+    "device": {
+      "deviceName": "MT5396",
+      "marketingName": "MT5396",
+      "manufacturer": "mediatek",
+      "brand": "mediatek",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "ANTGalio",
+      "modus": null,
+      "version": "3.3.0.26.02",
+      "manufacturer": "ant",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
   }
 ]

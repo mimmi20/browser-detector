@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "S10",
       "marketingName": "S10",
-      "manufacturer": "EBEST",
-      "brand": "EBEST",
+      "manufacturer": "ebest",
+      "brand": "ebest",
       "display": {
         "width": 960,
         "height": 540,
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "T3482",
       "marketingName": "T3482",
-      "manufacturer": "EBEST",
-      "brand": "EBEST",
+      "manufacturer": "ebest",
+      "brand": "ebest",
       "display": {
         "width": null,
         "height": null,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "T7",
       "marketingName": "T7",
-      "manufacturer": "EBEST",
-      "brand": "EBEST",
+      "manufacturer": "ebest",
+      "brand": "ebest",
       "display": {
         "width": 960,
         "height": 540,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "U1",
       "marketingName": "U1",
-      "manufacturer": "EBEST",
-      "brand": "EBEST",
+      "manufacturer": "ebest",
+      "brand": "ebest",
       "display": {
         "width": 1280,
         "height": 720,
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "W70",
       "marketingName": "W70",
-      "manufacturer": "EBEST",
-      "brand": "EBEST",
+      "manufacturer": "ebest",
+      "brand": "ebest",
       "display": {
         "width": 480,
         "height": 320,
@@ -180,6 +180,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.6",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; EBEST_U1 Build/EBEST_U1EBEST_U1) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025440 Mobile Safari/533.1 MicroMessenger/6.2.2.54_rec1912d.581 NetType/WIFI Language/zh_CN"
+    },
+    "device": {
+      "deviceName": "U1",
+      "marketingName": "U1",
+      "manufacturer": "ebest",
+      "brand": "ebest",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "6.2.2.54",
+      "manufacturer": "Tencent",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": 32
     },

@@ -96,7 +96,7 @@
       "name": "Facebook App",
       "modus": null,
       "version": "28.0.0.20.16",
-      "manufacturer": "Facebook",
+      "manufacturer": "facebook",
       "bits": 32,
       "type": "application"
     },
@@ -676,6 +676,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; xx; KYY21) U2/1.0.0 UCBrowser/9.5.1.494 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "KYY21",
+      "marketingName": "Urbano L01",
+      "manufacturer": "kyocera",
+      "brand": "kyocera",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.1.494",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": 32
     },
