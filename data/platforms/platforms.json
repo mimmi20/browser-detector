@@ -11,7 +11,7 @@
   "aix": {
     "name": "AIX",
     "marketingName": "AIX",
-    "manufacturer": "Ibm",
+    "manufacturer": "ibm",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -62,7 +62,7 @@
   "asha": {
     "name": "Asha",
     "marketingName": "Asha",
-    "manufacturer": "Nokia",
+    "manufacturer": "nokia",
     "version": {
       "class": null,
       "search": null
@@ -297,7 +297,7 @@
   "hp-ux": {
     "name": "HP-UX",
     "marketingName": "HP-UX",
-    "manufacturer": "Hp",
+    "manufacturer": "hp",
     "version": {
       "class": null,
       "search": null
@@ -351,13 +351,13 @@
     }
   },
   "kaios": {
-    "name": "KaiOS",
-    "marketingName": "KaiOS",
-    "manufacturer": "KaiOS",
+    "name": "kaios",
+    "marketingName": "kaios",
+    "manufacturer": "kaios",
     "version": {
       "class": "VersionFactory",
       "search": [
-        "KaiOS"
+        "kaios"
       ]
     }
   },
@@ -396,7 +396,7 @@
   "linux": {
     "name": "Linux",
     "marketingName": "Linux",
-    "manufacturer": "LinuxFoundation",
+    "manufacturer": "linux-foundation",
     "version": {
       "class": null,
       "search": null
@@ -437,7 +437,7 @@
   "linux smartphone os (maemo)": {
     "name": "Maemo",
     "marketingName": "Maemo",
-    "manufacturer": "LinuxFoundation",
+    "manufacturer": "linux-foundation",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -457,7 +457,7 @@
   "meego": {
     "name": "MeeGo",
     "marketingName": "MeeGo",
-    "manufacturer": "LinuxFoundation",
+    "manufacturer": "linux-foundation",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -521,7 +521,7 @@
   "nintendo os": {
     "name": "Nintendo OS",
     "marketingName": "Nintendo OS",
-    "manufacturer": "Nintendo",
+    "manufacturer": "nintendo",
     "version": {
       "class": null,
       "search": null
@@ -530,7 +530,7 @@
   "nintendo switch os": {
     "name": "Nintendo Switch OS",
     "marketingName": "Nintendo Switch OS",
-    "manufacturer": "Nintendo",
+    "manufacturer": "nintendo",
     "version": {
       "class": null,
       "search": null
@@ -539,7 +539,7 @@
   "nokia os": {
     "name": "Nokia OS",
     "marketingName": "Nokia OS",
-    "manufacturer": "Nokia",
+    "manufacturer": "nokia",
     "version": {
       "class": null,
       "search": null
@@ -579,7 +579,7 @@
   "opensolaris": {
     "name": "OpenSolaris",
     "marketingName": "OpenSolaris",
-    "manufacturer": "Oracle",
+    "manufacturer": "oracle",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -590,7 +590,7 @@
   "openvms": {
     "name": "OpenVMS",
     "marketingName": "OpenVMS",
-    "manufacturer": "Hp",
+    "manufacturer": "hp",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -601,7 +601,7 @@
   "os/2": {
     "name": "OS/2",
     "marketingName": "OS/2",
-    "manufacturer": "Ibm",
+    "manufacturer": "ibm",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -653,7 +653,7 @@
   "remixos": {
     "name": "Remix OS",
     "marketingName": "Remix OS",
-    "manufacturer": "Jide",
+    "manufacturer": "jide",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -704,7 +704,7 @@
   "sailfishos": {
     "name": "SailfishOS",
     "marketingName": "SailfishOS",
-    "manufacturer": "Jolla",
+    "manufacturer": "jolla",
     "version": {
       "class": null,
       "search": null
@@ -713,7 +713,7 @@
   "series30": {
     "name": "Series 30",
     "marketingName": "Series 30",
-    "manufacturer": "Nokia",
+    "manufacturer": "nokia",
     "version": {
       "class": null,
       "search": null
@@ -722,7 +722,7 @@
   "series40": {
     "name": "Series 40",
     "marketingName": "Series 40",
-    "manufacturer": "Nokia",
+    "manufacturer": "nokia",
     "version": {
       "class": null,
       "search": null
@@ -731,7 +731,7 @@
   "series60": {
     "name": "Series 60",
     "marketingName": "Series 60",
-    "manufacturer": "Nokia",
+    "manufacturer": "nokia",
     "version": {
       "class": null,
       "search": null
@@ -751,7 +751,7 @@
   "solaris": {
     "name": "Solaris",
     "marketingName": "Solaris",
-    "manufacturer": "Oracle",
+    "manufacturer": "oracle",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -773,7 +773,7 @@
   "sunos": {
     "name": "SunOS",
     "marketingName": "SunOS",
-    "manufacturer": "Oracle",
+    "manufacturer": "oracle",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -820,7 +820,7 @@
   "tizen": {
     "name": "Tizen",
     "marketingName": "Tizen",
-    "manufacturer": "LinuxFoundation",
+    "manufacturer": "linux-foundation",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -831,7 +831,7 @@
   "tru64 unix": {
     "name": "Tru64 UNIX",
     "marketingName": "Tru64 UNIX",
-    "manufacturer": "Hp",
+    "manufacturer": "hp",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -898,7 +898,7 @@
   "webos": {
     "name": "webOS",
     "marketingName": "webOS",
-    "manufacturer": "Hp",
+    "manufacturer": "hp",
     "version": {
       "class": "VersionFactory",
       "search": [
