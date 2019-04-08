@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "Pacific 800",
       "marketingName": "Pacific 800",
-      "manufacturer": "Oysters",
-      "brand": "Oysters",
+      "manufacturer": "oysters",
+      "brand": "oysters",
       "display": {
         "width": 1280,
         "height": 720,
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "Pacific 800i",
       "marketingName": "Pacific 800i",
-      "manufacturer": "Oysters",
-      "brand": "Oysters",
+      "manufacturer": "oysters",
+      "brand": "oysters",
       "display": {
         "width": 854,
         "height": 480,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "Pacific 800",
       "marketingName": "Pacific 800",
-      "manufacturer": "Oysters",
-      "brand": "Oysters",
+      "manufacturer": "oysters",
+      "brand": "oysters",
       "display": {
         "width": 1280,
         "height": 720,
@@ -104,6 +104,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Pacific800i Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Pacific 800i",
+      "marketingName": "Pacific 800i",
+      "manufacturer": "oysters",
+      "brand": "oysters",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "37.0.2062.117",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": 32
     },
