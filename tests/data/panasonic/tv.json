@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "Viera TV",
       "marketingName": "Viera TV",
-      "manufacturer": "Panasonic",
-      "brand": "Panasonic",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
       "display": {
         "width": null,
         "height": null,
@@ -20,7 +20,7 @@
       "name": "Viera Browser",
       "modus": null,
       "version": "1.5.1",
-      "manufacturer": "Panasonic",
+      "manufacturer": "panasonic",
       "bits": 32,
       "type": "browser"
     },
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "Viera TV",
       "marketingName": "Viera TV",
-      "manufacturer": "Panasonic",
-      "brand": "Panasonic",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
       "display": {
         "width": null,
         "height": null,
@@ -58,7 +58,7 @@
       "name": "Viera Browser",
       "modus": null,
       "version": "3.4.10",
-      "manufacturer": "Panasonic",
+      "manufacturer": "panasonic",
       "bits": 32,
       "type": "browser"
     },
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "Viera TV",
       "marketingName": "Viera TV",
-      "manufacturer": "Panasonic",
-      "brand": "Panasonic",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
       "display": {
         "width": null,
         "height": null,
@@ -96,7 +96,7 @@
       "name": "Viera Browser",
       "modus": null,
       "version": "1.5.2",
-      "manufacturer": "Panasonic",
+      "manufacturer": "panasonic",
       "bits": 32,
       "type": "browser"
     },
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "Viera TV",
       "marketingName": "Viera TV",
-      "manufacturer": "Panasonic",
-      "brand": "Panasonic",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
       "display": {
         "width": null,
         "height": null,
@@ -134,7 +134,7 @@
       "name": "Viera Browser",
       "modus": null,
       "version": "3.10.0",
-      "manufacturer": "Panasonic",
+      "manufacturer": "panasonic",
       "bits": 32,
       "type": "browser"
     },
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "Viera TV",
       "marketingName": "Viera TV",
-      "manufacturer": "Panasonic",
-      "brand": "Panasonic",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
       "display": {
         "width": null,
         "height": null,
@@ -196,8 +196,8 @@
     "device": {
       "deviceName": "Viera TV",
       "marketingName": "Viera TV",
-      "manufacturer": "Panasonic",
-      "brand": "Panasonic",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
       "display": {
         "width": null,
         "height": null,
@@ -234,8 +234,8 @@
     "device": {
       "deviceName": "Viera TV",
       "marketingName": "Viera TV",
-      "manufacturer": "Panasonic",
-      "brand": "Panasonic",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
       "display": {
         "width": null,
         "height": null,
@@ -263,6 +263,120 @@
       "name": null,
       "version": "0.0.0",
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (FreeBSD; U; Viera; de-DE) AppleWebKit/535.1 (KHTML, like Gecko) Viera/1.5.2 Chrome/14.0.835.202 Safari/535.1"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Viera Browser",
+      "modus": null,
+      "version": "1.5.2",
+      "manufacturer": "panasonic",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "0.0.0",
+      "manufacturer": "free-bsd-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; FreeBSD; U; Viera; de-DE) AppleWebKit/537.11 (KHTML, like Gecko) Viera/3.3.2 Chrome/23.0.1271.97 Safari/537.11"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Viera Browser",
+      "modus": null,
+      "version": "3.3.2",
+      "manufacturer": "panasonic",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "0.0.0",
+      "manufacturer": "free-bsd-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.11.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; FreeBSD; U; Viera; en-US) AppleWebKit/537.11 (KHTML, like Gecko) Viera/3.3.2 Chrome/23.0.1271.97 Safari/537.11"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Viera Browser",
+      "modus": null,
+      "version": "3.3.2",
+      "manufacturer": "panasonic",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "0.0.0",
+      "manufacturer": "free-bsd-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.11.0",
+      "manufacturer": "apple"
     }
   }
 ]

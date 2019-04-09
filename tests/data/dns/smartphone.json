@@ -340,5 +340,43 @@
       "version": "537.36.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; s4502M Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.0.2.523 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "S4502M",
+      "marketingName": "S4502M",
+      "manufacturer": "dns",
+      "brand": "dns",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.0.2.523",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "UcWeb"
+    }
   }
 ]

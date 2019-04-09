@@ -780,7 +780,7 @@
       "name": "Radio Arabella App",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Radio Arabella",
+      "manufacturer": "radio-arabella",
       "bits": 32,
       "type": "multimedia-player"
     },
@@ -894,7 +894,7 @@
       "name": "Slack App",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Slack",
+      "manufacturer": "slack",
       "bits": 32,
       "type": "application"
     },
@@ -1312,7 +1312,7 @@
       "name": "Atomic Browser",
       "modus": null,
       "version": "7.0.1",
-      "manufacturer": "RichardTrautvetter",
+      "manufacturer": "richard-trautvetter",
       "bits": 32,
       "type": "browser"
     },
@@ -1350,7 +1350,7 @@
       "name": "Atomic Browser",
       "modus": null,
       "version": "7.0.1",
-      "manufacturer": "RichardTrautvetter",
+      "manufacturer": "richard-trautvetter",
       "bits": 32,
       "type": "browser"
     },
@@ -1426,7 +1426,7 @@
       "name": "Atomic Browser",
       "modus": null,
       "version": "6.0.1",
-      "manufacturer": "RichardTrautvetter",
+      "manufacturer": "richard-trautvetter",
       "bits": 32,
       "type": "browser"
     },
@@ -1464,7 +1464,7 @@
       "name": "Atomic Browser",
       "modus": null,
       "version": "5.8.0",
-      "manufacturer": "RichardTrautvetter",
+      "manufacturer": "richard-trautvetter",
       "bits": 32,
       "type": "browser"
     },
@@ -1616,7 +1616,7 @@
       "name": "Atomic Browser",
       "modus": null,
       "version": "3.7.1",
-      "manufacturer": "RichardTrautvetter",
+      "manufacturer": "richard-trautvetter",
       "bits": 32,
       "type": "browser"
     },
@@ -2148,7 +2148,7 @@
       "name": "Viber",
       "modus": null,
       "version": "9.7.5.3",
-      "manufacturer": "Rakuten",
+      "manufacturer": "rakuten",
       "bits": 32,
       "type": "application"
     },
@@ -2186,7 +2186,7 @@
       "name": "Viber",
       "modus": null,
       "version": "9.6.0.1",
-      "manufacturer": "Rakuten",
+      "manufacturer": "rakuten",
       "bits": 32,
       "type": "application"
     },
@@ -2376,7 +2376,7 @@
       "name": "Atomic Browser Lite",
       "modus": null,
       "version": "7.0.1",
-      "manufacturer": "RichardTrautvetter",
+      "manufacturer": "richard-trautvetter",
       "bits": 32,
       "type": "browser"
     },
@@ -4708,6 +4708,82 @@
     "engine": {
       "name": "WebKit",
       "version": "548.0.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mercury/894 CFNetwork/711.1.16 Darwin/14.0.0"
+    },
+    "device": {
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Mercury",
+      "modus": null,
+      "version": "894.0.0",
+      "manufacturer": "ilegendsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.1.0",
+      "manufacturer": "apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "711.1.16",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera%20Coast/4.00.86810 CFNetwork/711.1.16 Darwin/14.0.0"
+    },
+    "device": {
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Coast",
+      "modus": null,
+      "version": "4.00.86810",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.1.0",
+      "manufacturer": "apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "711.1.16",
       "manufacturer": "apple"
     }
   }

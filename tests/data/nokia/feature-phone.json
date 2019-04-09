@@ -8057,5 +8057,81 @@
       "version": "0.0.0",
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaX7-00/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba"
+    },
+    "device": {
+      "deviceName": "X7-00",
+      "marketingName": "X7",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "8.3.1.4",
+      "manufacturer": "nokia",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/51.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "deviceName": "5230",
+      "marketingName": "Nuron",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.33",
+      "manufacturer": "nokia",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "0.0.0",
+      "manufacturer": "SymbianFoundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "apple"
+    }
   }
 ]

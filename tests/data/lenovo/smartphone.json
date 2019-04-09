@@ -4884,7 +4884,7 @@
       "name": "360 Browser",
       "modus": null,
       "version": "4.7.2",
-      "manufacturer": "Qihoo",
+      "manufacturer": "qihoo",
       "bits": 32,
       "type": "browser"
     },
@@ -4922,7 +4922,7 @@
       "name": "360 Browser",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Qihoo",
+      "manufacturer": "qihoo",
       "bits": 32,
       "type": "browser"
     },
@@ -4960,7 +4960,7 @@
       "name": "360 Browser",
       "modus": null,
       "version": "1.0.0",
-      "manufacturer": "Qihoo",
+      "manufacturer": "qihoo",
       "bits": 32,
       "type": "browser"
     },
@@ -5880,6 +5880,310 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0(Linux/3.4.5; U; Android 4.4.2; zh-cn; Lenovo A536 Build/KOT49H)AppleWebKit/534.30 (KHTML, like Gecko) Version/4.4.2 Mobile Safari/534.30 Release/01.17.2014"
+    },
+    "device": {
+      "deviceName": "A536",
+      "marketingName": "A536",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Lenovo-A850/S105 Linux/3.4.0 Android/4.2 Release/06.12.2013 Browser/AppleWebKit534.30 Profile/ Configuration/ Safari/534.30"
+    },
+    "device": {
+      "deviceName": "A850",
+      "marketingName": "A850",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Lenovo-A820/S100 Linux/3.4.0 Android/4.1 Release/11.14.2012 Browser/AppleWebKit534.30 Profile/ Configuration/ Safari/534.30"
+    },
+    "device": {
+      "deviceName": "A820",
+      "marketingName": "A820",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Lenovo A789/S210 Linux/3.0.13 Android/4.0 Release/05.11.2012 Browser/AppleWebKit533.1 Profile/ Configuration/"
+    },
+    "device": {
+      "deviceName": "A789",
+      "marketingName": "A789",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; Lenovo A390_ROW Build/IMM76I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.170 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A390",
+      "marketingName": "A390",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "33.0.1750.170",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; Lenovo S920_ROW Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "S920",
+      "marketingName": "S920",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "33.0.1750.136",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Lenovo A850+ Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A850+",
+      "marketingName": "A850+",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "38.0.2125.102",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; Lenovo S920_ROW Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "S920",
+      "marketingName": "S920",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.1",
       "manufacturer": "google",
       "bits": 32
     },
