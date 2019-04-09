@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "F11",
       "marketingName": "F11",
-      "manufacturer": "Pulid",
-      "brand": "Pulid",
+      "manufacturer": "pulid",
+      "brand": "pulid",
       "display": {
         "width": 1280,
         "height": 720,
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "F15",
       "marketingName": "F15",
-      "manufacturer": "Pulid",
-      "brand": "Pulid",
+      "manufacturer": "pulid",
+      "brand": "pulid",
       "display": {
         "width": 1280,
         "height": 720,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "F13",
       "marketingName": "F13",
-      "manufacturer": "Pulid",
-      "brand": "Pulid",
+      "manufacturer": "pulid",
+      "brand": "pulid",
       "display": {
         "width": 1920,
         "height": 1080,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "F6",
       "marketingName": "F6",
-      "manufacturer": "Pulid",
-      "brand": "Pulid",
+      "manufacturer": "pulid",
+      "brand": "pulid",
       "display": {
         "width": 960,
         "height": 540,
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "F7",
       "marketingName": "F7",
-      "manufacturer": "Pulid",
-      "brand": "Pulid",
+      "manufacturer": "pulid",
+      "brand": "pulid",
       "display": {
         "width": 480,
         "height": 320,
@@ -196,8 +196,8 @@
     "device": {
       "deviceName": "T3",
       "marketingName": "T3",
-      "manufacturer": "Pulid",
-      "brand": "Pulid",
+      "manufacturer": "pulid",
+      "brand": "pulid",
       "display": {
         "width": 960,
         "height": 540,
@@ -234,8 +234,8 @@
     "device": {
       "deviceName": "F11",
       "marketingName": "F11",
-      "manufacturer": "Pulid",
-      "brand": "Pulid",
+      "manufacturer": "pulid",
+      "brand": "pulid",
       "display": {
         "width": 1280,
         "height": 720,
@@ -272,8 +272,8 @@
     "device": {
       "deviceName": "F15",
       "marketingName": "F15",
-      "manufacturer": "Pulid",
-      "brand": "Pulid",
+      "manufacturer": "pulid",
+      "brand": "pulid",
       "display": {
         "width": 1280,
         "height": 720,
@@ -301,6 +301,44 @@
       "name": "U3",
       "version": "0.8.0",
       "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; PULID F15 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F15",
+      "marketingName": "F15",
+      "manufacturer": "pulid",
+      "brand": "pulid",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.93",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
     }
   }
 ]

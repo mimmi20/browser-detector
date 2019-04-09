@@ -264,5 +264,81 @@
       "version": "0.0.0",
       "manufacturer": "opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.28 (KHTML, like Gecko) NX/3.0.3.12.14 NintendoBrowser/4.1.0.9584.EU"
+    },
+    "device": {
+      "deviceName": "WiiU",
+      "marketingName": "WiiU",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "4.1.0.9584",
+      "manufacturer": "nintendo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo OS",
+      "marketingName": "Nintendo OS",
+      "version": "0.0.0",
+      "manufacturer": "nintendo",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.28.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.28 (KHTML, like Gecko) NX/3.0.3.12.15 NintendoBrowser/4.1.1.9601.EU"
+    },
+    "device": {
+      "deviceName": "WiiU",
+      "marketingName": "WiiU",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "4.1.1.9601",
+      "manufacturer": "nintendo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo OS",
+      "marketingName": "Nintendo OS",
+      "version": "0.0.0",
+      "manufacturer": "nintendo",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.28.0",
+      "manufacturer": "apple"
+    }
   }
 ]

@@ -20,7 +20,7 @@
       "name": "black-berry",
       "modus": null,
       "version": "10.2.2.1609",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32,
       "type": "browser"
     },
@@ -28,7 +28,7 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.2.2.1609",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32
     },
     "engine": {
@@ -58,7 +58,7 @@
       "name": "black-berry",
       "modus": null,
       "version": "10.3.1.2243",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32,
       "type": "browser"
     },
@@ -66,7 +66,7 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.3.1.2243",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32
     },
     "engine": {
@@ -96,7 +96,7 @@
       "name": "black-berry",
       "modus": null,
       "version": "10.1.0.2354",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32,
       "type": "browser"
     },
@@ -104,7 +104,7 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.1.0.2354",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32
     },
     "engine": {
@@ -134,7 +134,7 @@
       "name": "black-berry",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32,
       "type": "browser"
     },
@@ -142,7 +142,7 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.0.0",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32
     },
     "engine": {
@@ -210,7 +210,7 @@
       "name": "black-berry",
       "modus": null,
       "version": "10.1.0.4651",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32,
       "type": "browser"
     },
@@ -218,7 +218,7 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.1.0.4651",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32
     },
     "engine": {
@@ -248,7 +248,7 @@
       "name": "black-berry",
       "modus": null,
       "version": "10.1.0.4633",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32,
       "type": "browser"
     },
@@ -256,7 +256,7 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.1.0.4633",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32
     },
     "engine": {
@@ -286,7 +286,7 @@
       "name": "black-berry",
       "modus": null,
       "version": "10.3.1.2243",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32,
       "type": "browser"
     },
@@ -294,7 +294,7 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.3.1.2243",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32
     },
     "engine": {
@@ -324,7 +324,7 @@
       "name": "black-berry",
       "modus": null,
       "version": "10.2.1.2141",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
       "bits": 32,
       "type": "browser"
     },
@@ -332,7 +332,83 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.2.1.2141",
-      "manufacturer": "Rim",
+      "manufacturer": "rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.35.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.2.1.2141 Mobile Safari/537.35+"
+    },
+    "device": {
+      "deviceName": "KBD",
+      "marketingName": "KBD",
+      "manufacturer": "black-berry",
+      "brand": "black-berry",
+      "display": {
+        "width": 720,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.2.1.2141",
+      "manufacturer": "rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.2.1.2141",
+      "manufacturer": "rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.35.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.1.1154 Mobile Safari/537.35+"
+    },
+    "device": {
+      "deviceName": "KBD",
+      "marketingName": "KBD",
+      "manufacturer": "black-berry",
+      "brand": "black-berry",
+      "display": {
+        "width": 720,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.3.1.1154",
+      "manufacturer": "rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.3.1.1154",
+      "manufacturer": "rim",
       "bits": 32
     },
     "engine": {
