@@ -401,7 +401,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "14.2.1700.12599",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -20807,7 +20807,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "13.10.1500.9323",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -23198,10 +23198,10 @@
       "type": "desktop"
     },
     "browser": {
-      "name": "Safari",
+      "name": "Aliyun Browser",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
+      "version": "0.0.0",
+      "manufacturer": "unknown",
       "bits": 32,
       "type": "browser"
     },
@@ -28673,7 +28673,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "14.7.1916.15705",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -31234,6 +31234,44 @@
       "name": "Gecko",
       "version": "0.0.0",
       "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Netcraft SSL Server Survey - contact info@netcraft.com)"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Netcraft SSL Server Survey",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "netcraft",
+      "bits": 32,
+      "type": "bot"
+    },
+    "os": {
+      "name": "Windows NT 5.1",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
     }
   }
 ]

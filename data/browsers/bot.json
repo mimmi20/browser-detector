@@ -2841,7 +2841,6 @@
       "search": [
         "Googlebot",
         "Googlebot v",
-        "Googlebot\\-News",
         "Google"
       ]
     },
@@ -3052,6 +3051,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "googlebot-news": {
+    "name": "Googlebot-News",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot\\-News"
+      ]
+    },
+    "engine": null
   },
   "googlebot-video": {
     "name": "Googlebot-Video",
@@ -4355,6 +4366,18 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "livedoor"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "livedoor-feed-fetcher": {
+    "name": "Livedoor FeedFetcher",
+    "manufacturer": "nhn-corporation",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
         "livedoor FeedFetcher"
       ]
     },
@@ -5055,6 +5078,26 @@
     },
     "engine": "unknown"
   },
+  "netcraft ssl server survey": {
+    "name": "Netcraft SSL Server Survey",
+    "manufacturer": "netcraft",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "netcraft webserver survey": {
+    "name": "Netcraft Webserver Survey",
+    "manufacturer": "netcraft",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "netestate ne crawler": {
     "name": "netEstate NE Crawler",
     "manufacturer": "net-estate",
@@ -5460,6 +5503,16 @@
     },
     "engine": "webkit"
   },
+  "outbrain": {
+    "name": "outbrain",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "outclicksbot": {
     "name": "OutclicksBot",
     "manufacturer": "unknown",
@@ -5682,6 +5735,18 @@
       "class": "VersionFactory",
       "search": [
         "Pearltrees"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pecl http client": {
+    "name": "PECL::HTTP",
+    "manufacturer": "PhpGroup",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PECL::HTTP"
       ]
     },
     "engine": "unknown"
@@ -6226,6 +6291,18 @@
       "class": "VersionFactory",
       "search": [
         "RED"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "reddit bot": {
+    "name": "reddit bot",
+    "manufacturer": "reddit",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "redditbot"
       ]
     },
     "engine": "unknown"
@@ -7602,18 +7679,6 @@
     },
     "engine": "unknown"
   },
-  "the bat download manager": {
-    "name": "The Bat Download Manager",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "thebat"
-      ]
-    },
-    "engine": "unknown"
-  },
   "the old reader": {
     "name": "The Old Reader",
     "manufacturer": "TheOldReader",
@@ -7881,7 +7946,7 @@
         "TurnitinBot"
       ]
     },
-    "engine": "webkit"
+    "engine": "unknown"
   },
   "tweetbot": {
     "name": "Tweetbot",
@@ -8503,6 +8568,16 @@
       "search": [
         "Wada\\.vn"
       ]
+    },
+    "engine": "unknown"
+  },
+  "wappalyzer": {
+    "name": "Wappalyzer",
+    "manufacturer": "elbert-alias",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   },
@@ -9504,7 +9579,7 @@
   },
   "yandeximages": {
     "name": "Yandex Image Search",
-    "manufacturer": "Yandex",
+    "manufacturer": "yandex",
     "type": "bot",
     "version": {
       "class": "VersionFactory",
@@ -9514,9 +9589,19 @@
     },
     "engine": "unknown"
   },
+  "yandex-news-links": {
+    "name": "Yandex News Links",
+    "manufacturer": "yandex",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "yandexbot": {
     "name": "YandexBot",
-    "manufacturer": "Yandex",
+    "manufacturer": "yandex",
     "type": "bot",
     "version": {
       "class": "VersionFactory",

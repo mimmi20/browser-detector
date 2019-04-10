@@ -20,7 +20,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "15.6.2311.6088.01",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -58,7 +58,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "14.10.2062.12160.01",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -96,7 +96,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "17.3.2.414.01",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -172,7 +172,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "15.6.2311.6088.01",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -301,6 +301,44 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; Oysters_T72HRi_3G) U2/1.0.0 UCBrowser/9.5.1.494 Mobile"
+    },
+    "device": {
+      "deviceName": "T72HRi 3G",
+      "marketingName": "T72HRi 3G",
+      "manufacturer": "oysters",
+      "brand": "oysters",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.1.494",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "UcWeb"
     }
   }
 ]

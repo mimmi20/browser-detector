@@ -207,10 +207,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "SmartTV",
+      "name": "SmartTV WebBrowser",
       "modus": null,
       "version": "2012.0.0",
-      "manufacturer": "unknown",
+      "manufacturer": "samsung",
       "bits": 32,
       "type": "browser"
     },
@@ -625,10 +625,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Safari",
+      "name": "Opera",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "apple",
+      "manufacturer": "opera",
       "bits": 32,
       "type": "browser"
     },
@@ -640,9 +640,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
+      "name": "Presto",
+      "version": "2.9.167",
+      "manufacturer": "opera"
     }
   },
   {
@@ -701,9 +701,9 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Qt",
+      "name": "QtWebkit",
       "modus": null,
-      "version": "0.0.0",
+      "version": "2.2.0",
       "manufacturer": "unknown",
       "bits": 32,
       "type": "browser"
@@ -1499,10 +1499,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "SmartTV",
+      "name": "SmartTV WebBrowser",
       "modus": null,
       "version": "2013.0.0",
-      "manufacturer": "unknown",
+      "manufacturer": "samsung",
       "bits": 32,
       "type": "browser"
     },
@@ -1537,10 +1537,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "SmartTV",
+      "name": "SmartTV WebBrowser",
       "modus": null,
       "version": "2014.0.0",
-      "manufacturer": "unknown",
+      "manufacturer": "samsung",
       "bits": 32,
       "type": "browser"
     },
@@ -1783,44 +1783,6 @@
       "name": "Presto",
       "version": "2.9.167",
       "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HbbTV/1.1.1 (+PVR;Sky_worth;HC7620;2.07.12;1.0;)CE-HTML/1.0 Skykid/5.1.6.2.04"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "unknown",
-      "bits": 32,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": "0.0.0",
-      "manufacturer": "linux-foundation",
-      "bits": 32
-    },
-    "engine": {
-      "name": null,
-      "version": "0.0.0",
-      "manufacturer": "unknown"
     }
   },
   {

@@ -88,7 +88,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -126,7 +126,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -164,7 +164,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -400,7 +400,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "14.12.2125.9740.01",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -544,7 +544,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -1662,6 +1662,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GEM-701L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GEM-701L",
+      "marketingName": "MediaPad X2 Premium Dual-SIM",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "73.0.3683.90",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.1",
       "manufacturer": "google",
       "bits": 32
     },

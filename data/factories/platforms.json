@@ -17,12 +17,13 @@
     "/linux|debian|raspbian|ubuntu|suse|fedora|mint|red ?hat|slackware|zenwalk gnu|xentos|cros|windows aarch64|moblin|esx|netcast|kantonix|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|qtopia|openpda/i": "linux",
     "/blackberry|bb10|rim tablet/i": "rimos",
     "/^Mozilla\\/5\\.0 \\(.*(Mobile|Tablet);.*rv:(\\d+\\.\\d+).*\\) Gecko\\/(\\d+).* Firefox\\/(\\d+\\.\\d+).*/": "firefoxos",
+    "/amigaos/i": "amigaos",
     "/like mac os x|ip[ao]d|iphone|cpu i?os|ios;|iuc ?\\(|puffin\\/[\\d\\.]+i[pt]|antenna\\/|antennapod|rss_?radio|podcruncher|audioboom|stitcher\\/ios|captivenetwork|dataaccessd/i": "ios",
     "/nokia/i": "symbian",
     "/\\bprofile\\b|gt\\-c3312r|kkt20|lemon b556|spark284|obigo|jasmine\\/1\\.0|netfront|profile\\/midp|j2me\\/|java|nucleus|maui runtime|mre|threadx/i": "java",
     "/mac os x|macintosh|os=mac 10|mac_powerpc|ppc|68k|camino|pubsub|integrity/i": "mac",
     "/palm os|palmsource/i": "palm",
-    "/amigaos|brew|beos|risc|os\\/2|warp|cp\\/m|nintendo (wii|3ds)|wyderos|liberate|inferno|syllable/i": "genericplatform"
+    "/brew|beos|risc|os\\/2|warp|cp\\/m|nintendo (wii|3ds)|wyderos|liberate|inferno|syllable/i": "genericplatform"
   },
   "generic": "unknown"
 }

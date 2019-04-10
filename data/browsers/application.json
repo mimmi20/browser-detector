@@ -1322,6 +1322,28 @@
     },
     "engine": "unknown"
   },
+  "tanso download manager": {
+    "name": "Tanso Download Manager",
+    "manufacturer": "web-expansion",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "the bat download manager": {
+    "name": "The Bat Download Manager",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "thebat"
+      ]
+    },
+    "engine": "unknown"
+  },
   "tubetv": {
     "name": "TubeTV",
     "manufacturer": "chimoosoft",
@@ -1618,7 +1640,7 @@
   },
   "yandexsearch": {
     "name": "Yandex Search App",
-    "manufacturer": "Yandex",
+    "manufacturer": "yandex",
     "type": "application",
     "version": {
       "class": "VersionFactory",
