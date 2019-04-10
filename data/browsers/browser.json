@@ -154,6 +154,16 @@
     },
     "engine": "unknown"
   },
+  "aliyun-browser": {
+    "name": "Aliyun Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
   "aloha-browser": {
     "name": "Aloha Browser",
     "manufacturer": "aloha-mobile",
@@ -2851,6 +2861,18 @@
     },
     "engine": null
   },
+  "qtwebkit": {
+    "name": "QtWebkit",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QtWebkit"
+      ]
+    },
+    "engine": "webkit"
+  },
   "quick browser": {
     "name": "Quick Browser",
     "manufacturer": "carlrogers",
@@ -3225,27 +3247,15 @@
     },
     "engine": "blink"
   },
-  "smarttv": {
-    "name": "SmartTV",
-    "manufacturer": "unknown",
+  "smarttv webbrowser": {
+    "name": "SmartTV WebBrowser",
+    "manufacturer": "samsung",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
       "search": [
         "SmartTV",
         "SMART\\-TV",
-        "WebBrowser"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "smarttv webbrowser": {
-    "name": "SmartTV WebBrowser",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
         "WebBrowser"
       ]
     },
@@ -3779,7 +3789,7 @@
   },
   "yabrowser": {
     "name": "Yandex Browser",
-    "manufacturer": "Yandex",
+    "manufacturer": "yandex",
     "type": "browser",
     "version": {
       "class": "VersionFactory",

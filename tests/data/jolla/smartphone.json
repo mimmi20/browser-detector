@@ -150,5 +150,43 @@
       "version": "538.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Sailfish 3.0; Mobile; rv:45.0) Gecko/45.0 Firefox/45.0 SailfishBrowser/1.2.3"
+    },
+    "device": {
+      "deviceName": "general Jolla device",
+      "marketingName": "general Jolla device",
+      "manufacturer": "jolla",
+      "brand": "jolla",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Sailfish Browser",
+      "modus": null,
+      "version": "1.2.3",
+      "manufacturer": "jolla",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "SailfishOS",
+      "marketingName": "SailfishOS",
+      "version": "0.0.0",
+      "manufacturer": "jolla",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "45.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

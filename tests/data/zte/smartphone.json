@@ -1084,7 +1084,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "14.12.2125.9740.00",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -1312,7 +1312,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "14.2.1700.12535.00",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -1562,8 +1562,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; Vodafone Smart 4G Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 SWV/090.37DE"
     },
     "device": {
-      "deviceName": "Smart",
-      "marketingName": "Smart",
+      "deviceName": "Smart 4G",
+      "marketingName": "Smart 4G",
       "manufacturer": "zte",
       "brand": "vodafone",
       "display": {
@@ -2322,15 +2322,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Orange Hi 4G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Hi",
-      "marketingName": "Hi",
+      "deviceName": "Hi 4G",
+      "marketingName": "Hi 4G",
       "manufacturer": "zte",
       "brand": "orange",
       "display": {
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3364,7 +3364,7 @@
       "name": "Yandex Browser",
       "modus": null,
       "version": "16.6.0.9655.00",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "browser"
     },
@@ -4159,12 +4159,12 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "Tanso Download Manager",
       "modus": null,
-      "version": "4.1.0",
-      "manufacturer": "google",
+      "version": "0.0.0",
+      "manufacturer": "web-expansion",
       "bits": 32,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -4174,9 +4174,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
     }
   },
   {
@@ -7149,14 +7149,14 @@
     },
     "device": {
       "deviceName": "Z799VL",
-      "marketingName": "Majesty Pro",
+      "marketingName": "Majesty Pro LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -7187,14 +7187,14 @@
     },
     "device": {
       "deviceName": "Z798BL",
-      "marketingName": "Majesty Pro",
+      "marketingName": "Majesty Pro LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -7225,14 +7225,14 @@
     },
     "device": {
       "deviceName": "Z899VL",
-      "marketingName": "Majesty Pro Plus",
+      "marketingName": "Majesty Pro Plus LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -7339,14 +7339,14 @@
     },
     "device": {
       "deviceName": "Z828TL",
-      "marketingName": "Midnight Pro",
+      "marketingName": "Midnight Pro LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -7491,14 +7491,14 @@
     },
     "device": {
       "deviceName": "Z836BL",
-      "marketingName": "Z836BL",
+      "marketingName": "ZFive 2 LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -7529,14 +7529,14 @@
     },
     "device": {
       "deviceName": "Z558VL",
-      "marketingName": "ZFive G",
+      "marketingName": "ZFive C LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -7567,14 +7567,14 @@
     },
     "device": {
       "deviceName": "Z861BL",
-      "marketingName": "ZFive L",
+      "marketingName": "ZFive L LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -7605,14 +7605,14 @@
     },
     "device": {
       "deviceName": "Z862VL",
-      "marketingName": "ZFive L",
+      "marketingName": "ZFive L LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -7719,14 +7719,14 @@
     },
     "device": {
       "deviceName": "Z917VL",
-      "marketingName": "ZMax Champ",
+      "marketingName": "ZMax Champ LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -7757,14 +7757,14 @@
     },
     "device": {
       "deviceName": "Z916BL",
-      "marketingName": "ZMax Grand",
+      "marketingName": "ZMax Grand LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -8403,7 +8403,7 @@
     },
     "device": {
       "deviceName": "Z837VL",
-      "marketingName": "Zfive 2",
+      "marketingName": "Zfive 2 LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -8517,7 +8517,7 @@
     },
     "device": {
       "deviceName": "Z557BL",
-      "marketingName": "ZFive G",
+      "marketingName": "ZFive G LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -9542,15 +9542,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Orange Hi 4G Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Hi",
-      "marketingName": "Hi",
+      "deviceName": "Hi 4G",
+      "marketingName": "Hi 4G",
       "manufacturer": "zte",
       "brand": "orange",
       "display": {
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -9618,8 +9618,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Vodafone Smart 4G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.92 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Smart",
-      "marketingName": "Smart",
+      "deviceName": "Smart 4G",
+      "marketingName": "Smart 4G",
       "manufacturer": "zte",
       "brand": "vodafone",
       "display": {

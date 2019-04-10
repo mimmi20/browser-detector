@@ -5796,7 +5796,7 @@
       "name": "YandexBot",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "bot"
     },
@@ -19362,7 +19362,7 @@
       "name": "Yandex Image Search",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "Yandex",
+      "manufacturer": "yandex",
       "bits": 32,
       "type": "bot"
     },
@@ -24147,10 +24147,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Crawler",
+      "name": "Internet Archive Bot",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "linkfluence",
+      "manufacturer": "ArchiveOrg",
       "bits": 32,
       "type": "bot"
     },
@@ -24337,9 +24337,9 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "BingBot",
+      "name": "msnbot-media",
       "modus": null,
-      "version": "0.0.0",
+      "version": "1.1.0",
       "manufacturer": "microsoft",
       "bits": 32,
       "type": "bot"
@@ -25021,10 +25021,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Generic Ruby Crawler",
+      "name": "Googlebot-News",
       "modus": null,
-      "version": "1.9.3",
-      "manufacturer": "unknown",
+      "version": "0.0.0",
+      "manufacturer": "google",
       "bits": 32,
       "type": "bot"
     },
@@ -25781,12 +25781,12 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Mozilla",
+      "name": "Netcraft Webserver Survey",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "0.0.0",
+      "manufacturer": "netcraft",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -25796,9 +25796,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Gecko",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "mozilla-foundation"
+      "manufacturer": "unknown"
     }
   },
   {
@@ -26123,10 +26123,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Java Standard Library",
+      "name": "outbrain",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "oracle",
+      "manufacturer": "unknown",
       "bits": 32,
       "type": "bot"
     },
@@ -26275,10 +26275,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "redbot",
+      "name": "reddit bot",
       "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "redbot",
+      "version": "1.0.0",
+      "manufacturer": "reddit",
       "bits": 32,
       "type": "bot"
     },
@@ -26921,10 +26921,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "nbot",
+      "name": "TurnitinBot",
       "modus": null,
       "version": "3.0.0",
-      "manufacturer": "unknown",
+      "manufacturer": "iparadigms",
       "bits": 32,
       "type": "bot"
     },
@@ -27149,10 +27149,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "alyze Bot",
+      "name": "Wappalyzer",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "alexandre-tourette",
+      "manufacturer": "elbert-alias",
       "bits": 32,
       "type": "bot"
     },
@@ -27225,12 +27225,12 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Firefox",
+      "name": "Slurp",
       "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "0.0.0",
+      "manufacturer": "Yahoo",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -27240,9 +27240,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Gecko",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "mozilla-foundation"
+      "manufacturer": "unknown"
     }
   },
   {
@@ -27301,12 +27301,12 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Links",
+      "name": "Yandex News Links",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "mikulas-patocka",
+      "manufacturer": "yandex",
       "bits": 32,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -27567,10 +27567,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Google App Engine",
+      "name": "AhrefsBot",
       "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "google",
+      "version": "5.0.0",
+      "manufacturer": "ahrefs",
       "bits": 32,
       "type": "bot"
     },
@@ -27727,10 +27727,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": "0.0.0",
-      "manufacturer": "apple",
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "3.9.0",
+      "manufacturer": "unknown",
       "bits": 32
     },
     "engine": {
@@ -28137,10 +28137,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Internet Explorer",
+      "name": "WebTV/MSNTV",
       "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "microsoft",
+      "version": "1.2.0",
+      "manufacturer": "unknown",
       "bits": 32,
       "type": "browser"
     },
@@ -28152,9 +28152,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": "0.0.0",
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
@@ -28593,7 +28593,7 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Livedoor",
+      "name": "Livedoor FeedFetcher",
       "modus": null,
       "version": "0.01.0",
       "manufacturer": "nhn-corporation",
@@ -28935,10 +28935,10 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "httpclient",
+      "name": "Apache-HttpClient",
       "modus": null,
       "version": "0.0.0",
-      "manufacturer": "unknown",
+      "manufacturer": "Apache",
       "bits": 32,
       "type": "bot"
     },
@@ -29087,7 +29087,7 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Mechanize",
+      "name": "WWW-Mechanize",
       "modus": null,
       "version": "1.64.0",
       "manufacturer": "unknown",
@@ -29201,9 +29201,9 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "PHP",
+      "name": "PECL::HTTP",
       "modus": null,
-      "version": "5.4.4",
+      "version": "1.7.4",
       "manufacturer": "PhpGroup",
       "bits": 32,
       "type": "bot"
