@@ -2,7 +2,7 @@
   "rules": {
     "/baidu yi/i": "yi",
     "/yunos/i": "yun os",
-    "/MIUI/": "miui os",
+    "/MIUI(?! X)/": "miui os",
     "/aosp/i": "aosp"
   },
   "generic": "android"
