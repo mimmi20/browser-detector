@@ -232,15 +232,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; iDxD8 3G Build/JB) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Safari/537.36"
     },
     "device": {
-      "deviceName": "iDxD8",
-      "marketingName": "iDxD8",
+      "deviceName": "iDxD8 3G",
+      "marketingName": "D-Plane 2 8",
       "manufacturer": "digma",
       "brand": "digma",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -1250,6 +1250,44 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
+      "manufacturer": "UcWeb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.0.4; ru; iDxD8_3G) U2/1.0.0 UCBrowser/9.4.0.460 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "iDxD8 3G",
+      "marketingName": "D-Plane 2 8",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.0.460",
+      "manufacturer": "UcWeb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
       "manufacturer": "UcWeb"
     }
   }

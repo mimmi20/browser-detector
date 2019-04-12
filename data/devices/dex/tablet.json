@@ -2,8 +2,8 @@
   "general dex device": {
     "deviceName": "general DEX device",
     "marketingName": "general DEX device",
-    "manufacturer": "Dex",
-    "brand": "Dex",
+    "manufacturer": "dex",
+    "brand": "dex",
     "display": {
       "width": null,
       "height": null,
@@ -16,13 +16,27 @@
   "dex ip1020": {
     "deviceName": "iP1020",
     "marketingName": "iP1020",
-    "manufacturer": "Dex",
-    "brand": "Dex",
+    "manufacturer": "dex",
+    "brand": "dex",
     "display": {
       "width": 1024,
       "height": 600,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "dex ip977": {
+    "deviceName": "iP977",
+    "marketingName": "iP977",
+    "manufacturer": "dex",
+    "brand": "dex",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
     },
     "type": "tablet",
     "platform": "android"
