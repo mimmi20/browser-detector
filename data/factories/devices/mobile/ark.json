@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/benefit m3s/i": "ark benefit m3s"
+    "/benefit[ _]m4/i": "ark benefit m4",
+    "/benefit[ _]m3s/i": "ark benefit m3s"
   },
   "generic": "general ark device"
 }
