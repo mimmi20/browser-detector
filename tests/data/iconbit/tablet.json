@@ -340,5 +340,43 @@
       "version": "537.22.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; TOUCAN Stick 3D mk2 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.36 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Toucan Stick 3D Mk2",
+      "marketingName": "Toucan Stick 3D Mk2",
+      "manufacturer": "iconbit",
+      "brand": "iconbit",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 9.17
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "36.0.1985.36",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]
