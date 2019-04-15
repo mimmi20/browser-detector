@@ -132,7 +132,7 @@
   "bsd": {
     "name": "BSD",
     "marketingName": "BSD",
-    "manufacturer": "BerkleyUniversity",
+    "manufacturer": "berkley-university",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -143,7 +143,7 @@
   "cellos": {
     "name": "CellOS",
     "marketingName": "CellOS",
-    "manufacturer": "Sony",
+    "manufacturer": "sony",
     "version": {
       "class": null,
       "search": null
@@ -220,7 +220,7 @@
   "debian": {
     "name": "Debian",
     "marketingName": "Debian",
-    "manufacturer": "SoftwareInThePublicInterest",
+    "manufacturer": "software-in-the-public-interest",
     "version": {
       "class": "\\BrowserDetector\\Version\\Debian",
       "search": null
@@ -229,7 +229,7 @@
   "debian with freebsd kernel": {
     "name": "Debian with FreeBSD Kernel",
     "marketingName": "Debian with FreeBSD Kernel",
-    "manufacturer": "SoftwareInThePublicInterest",
+    "manufacturer": "software-in-the-public-interest",
     "version": {
       "class": "\\BrowserDetector\\Version\\Debian",
       "search": null
@@ -306,7 +306,7 @@
   "inferno os": {
     "name": "Inferno OS",
     "marketingName": "Inferno OS",
-    "manufacturer": "Vita Nuova",
+    "manufacturer": "vita-nuova",
     "version": {
       "class": null,
       "search": null
@@ -468,7 +468,7 @@
   "miui os": {
     "name": "Miui OS",
     "marketingName": "Miui OS",
-    "manufacturer": "XiaomiTech",
+    "manufacturer": "xiaomi",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -624,7 +624,7 @@
   "qtopia": {
     "name": "Qtopia",
     "marketingName": "Qtopia",
-    "manufacturer": "Trolltech",
+    "manufacturer": "trolltech",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -635,7 +635,7 @@
   "raspbian": {
     "name": "Raspbian",
     "marketingName": "Raspbian",
-    "manufacturer": "SoftwareInThePublicInterest",
+    "manufacturer": "software-in-the-public-interest",
     "version": {
       "class": "\\BrowserDetector\\Version\\Raspbian",
       "search": null
@@ -762,7 +762,7 @@
   "startos": {
     "name": "StartOS",
     "marketingName": "StartOS",
-    "manufacturer": "YLMF",
+    "manufacturer": "ylmf",
     "version": {
       "class": "VersionFactory",
       "search": [
@@ -784,7 +784,7 @@
   "suse linux": {
     "name": "Suse Linux",
     "marketingName": "Suse Linux",
-    "manufacturer": "Suse",
+    "manufacturer": "suse",
     "version": {
       "class": null,
       "search": null
@@ -793,7 +793,7 @@
   "syllable": {
     "name": "Syllable",
     "marketingName": "Syllable",
-    "manufacturer": "Syllable",
+    "manufacturer": "syllable",
     "version": {
       "class": null,
       "search": null
@@ -802,7 +802,7 @@
   "symbian": {
     "name": "Symbian OS",
     "marketingName": "Symbian OS",
-    "manufacturer": "SymbianFoundation",
+    "manufacturer": "symbian-foundation",
     "version": {
       "class": null,
       "search": null
@@ -866,7 +866,7 @@
   "ventana linux": {
     "name": "Ventana Linux",
     "marketingName": "Ventana Linux",
-    "manufacturer": "Ventana",
+    "manufacturer": "ventana",
     "version": {
       "class": "VersionFactory",
       "search": [
