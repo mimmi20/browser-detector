@@ -1290,5 +1290,43 @@
       "version": "1.0.0",
       "manufacturer": "ucweb"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Plane 10.5 3G PS1005MG Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 YaBrowser/15.4.2272.3842.01 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "PS1005MG",
+      "marketingName": "Plane 10.5 3G",
+      "manufacturer": "digma",
+      "brand": "digma",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "15.4.2272.3842.01",
+      "manufacturer": "yandex",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]
