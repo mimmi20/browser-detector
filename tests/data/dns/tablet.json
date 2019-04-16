@@ -5,7 +5,7 @@
     },
     "device": {
       "deviceName": "M83w",
-      "marketingName": "Airtab M83w",
+      "marketingName": "AirTab M83w",
       "manufacturer": "dns",
       "brand": "dns",
       "display": {
@@ -43,7 +43,7 @@
     },
     "device": {
       "deviceName": "M104G",
-      "marketingName": "Airtab M104G",
+      "marketingName": "AirTab M104G",
       "manufacturer": "dns",
       "brand": "dns",
       "display": {
@@ -73,6 +73,44 @@
       "name": "U3",
       "version": "0.8.0",
       "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ES9701 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.81 Safari/537.36 OPR/28.0.1764.90386"
+    },
+    "device": {
+      "deviceName": "ES9701",
+      "marketingName": "AirTab ES9701",
+      "manufacturer": "dns",
+      "brand": "dns",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "28.0.1764.90386",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
     }
   }
 ]
