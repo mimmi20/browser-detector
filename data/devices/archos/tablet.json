@@ -92,7 +92,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -246,7 +246,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -484,7 +484,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 7.85
     },
     "type": "tablet",
     "platform": "android"
@@ -651,6 +651,20 @@
     "display": {
       "width": 800,
       "height": 480,
+      "touch": true,
+      "size": 9
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "archos 90b neon": {
+    "deviceName": "90b Neon",
+    "marketingName": "90b Neon",
+    "manufacturer": "archos",
+    "brand": "archos",
+    "display": {
+      "width": 1024,
+      "height": 600,
       "touch": true,
       "size": 9
     },
@@ -877,20 +891,6 @@
       "height": 480,
       "touch": true,
       "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "archos 90b neon": {
-    "deviceName": "90b Neon",
-    "marketingName": "90b Neon",
-    "manufacturer": "archos",
-    "brand": "archos",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": 9.0
     },
     "type": "tablet",
     "platform": "android"
