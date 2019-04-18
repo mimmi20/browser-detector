@@ -1,0 +1,30 @@
+{
+  "general svp device": {
+    "deviceName": "general SVP device",
+    "marketingName": "general SVP device",
+    "manufacturer": "svp",
+    "brand": "svp",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "svp tpc-1050": {
+    "deviceName": "TPC-1050",
+    "marketingName": "TPC-1050",
+    "manufacturer": "svp",
+    "brand": "svp",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  }
+}
