@@ -335,6 +335,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "xiaomitech mi 4": {
+    "deviceName": "Mi 4",
+    "marketingName": "Mi 4",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "xiaomitech mi 4 lte": {
     "deviceName": "Mi 4 LTE",
     "marketingName": "Mi 4 LTE",
@@ -344,7 +358,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": 5.0
+      "size": 5
     },
     "type": "smartphone",
     "platform": null
@@ -358,7 +372,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": 5.0
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -372,7 +386,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": 5.0
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -386,7 +400,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": 5.0
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -400,7 +414,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": 5.0
+      "size": 5
     },
     "type": "smartphone",
     "platform": null
@@ -918,7 +932,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": 5.0
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1230,19 +1244,5 @@
     },
     "type": "smartphone",
     "platform": "android"
-  },
-  "xiaomitech mi 4": {
-    "deviceName": "Mi 4",
-    "marketingName": "Mi 4",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": 5.0
-    },
-    "type": "smartphone",
-    "platform": null
   }
 }
