@@ -188,5 +188,43 @@
       "version": "0.8.0",
       "manufacturer": "ucweb"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; ru; S5A4) U2/1.0.0 UCBrowser/8.9.2.373 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "S5A4",
+      "marketingName": "Argon",
+      "manufacturer": "lexand",
+      "brand": "lexand",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.2.373",
+      "manufacturer": "ucweb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
   }
 ]

@@ -416,5 +416,43 @@
       "version": "0.0.0",
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "WAP Browser Karbonn K52*/1.0.0"
+    },
+    "device": {
+      "deviceName": "K52 Star",
+      "marketingName": "K52 Star",
+      "manufacturer": "karbonn",
+      "brand": "karbonn",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
   }
 ]

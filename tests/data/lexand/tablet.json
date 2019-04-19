@@ -112,5 +112,43 @@
       "version": "533.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; zh-CN; A811) U2/1.0.0 UCBrowser/3.4.3.532  U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "A811",
+      "marketingName": "A811",
+      "manufacturer": "lexand",
+      "brand": "lexand",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "3.4.3.532",
+      "manufacturer": "ucweb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
   }
 ]

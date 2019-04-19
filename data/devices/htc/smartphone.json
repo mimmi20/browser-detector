@@ -414,7 +414,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -442,7 +442,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -456,7 +456,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -596,7 +596,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -624,7 +624,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -848,7 +848,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": null
@@ -862,7 +862,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": null
@@ -1044,7 +1044,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1058,7 +1058,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1072,7 +1072,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1086,7 +1086,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1100,7 +1100,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1142,7 +1142,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": null
@@ -1349,10 +1349,10 @@
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": null
@@ -1702,7 +1702,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -1806,7 +1806,7 @@
     "platform": "android"
   },
   "htc one m8 eye": {
-    "deviceName": "M8 Eye",
+    "deviceName": "One M8 Eye",
     "marketingName": "One (M8 Eye)",
     "manufacturer": "htc",
     "brand": "htc",
@@ -1814,7 +1814,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": null
@@ -1833,34 +1833,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc a9s": {
-    "deviceName": "A9s",
-    "marketingName": "One A9",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
-  },
-  "htc a9u": {
-    "deviceName": "A9u",
-    "marketingName": "One A9",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
-  },
   "htc one a9": {
     "deviceName": "One A9",
     "marketingName": "One A9",
@@ -1870,10 +1842,38 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "htc a9s": {
+    "deviceName": "A9s",
+    "marketingName": "One A9s",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "htc a9u": {
+    "deviceName": "A9u",
+    "marketingName": "One A9u",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "htc m8sw": {
     "deviceName": "M8SW",
@@ -1940,7 +1940,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1954,7 +1954,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1968,7 +1968,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1982,7 +1982,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1996,7 +1996,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -2010,7 +2010,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2024,7 +2024,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": null
@@ -2038,7 +2038,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2052,7 +2052,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -2066,7 +2066,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2080,7 +2080,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2220,7 +2220,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.9
     },
     "type": "smartphone",
     "platform": "android"
@@ -2234,7 +2234,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.9
     },
     "type": "smartphone",
     "platform": "android"
@@ -2262,7 +2262,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2276,7 +2276,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2290,7 +2290,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2346,7 +2346,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2430,7 +2430,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -2570,7 +2570,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -3060,7 +3060,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"

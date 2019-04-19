@@ -340,5 +340,43 @@
       "version": "536.28.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.4.2.12 NintendoBrowser/4.3.1.11264.US"
+    },
+    "device": {
+      "deviceName": "WiiU",
+      "marketingName": "WiiU",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "4.3.1.11264",
+      "manufacturer": "nintendo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo OS",
+      "marketingName": "Nintendo OS",
+      "version": "0.0.0",
+      "manufacturer": "nintendo",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.30.0",
+      "manufacturer": "apple"
+    }
   }
 ]

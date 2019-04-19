@@ -452,6 +452,7 @@
     "/cat ?(stargate|tablet|helix)|nova/i": "catsound",
     "/amoi|n820|a862w/i": "amoi",
     "/vivax|fly4|tpc-7001/i": "vivax",
+    "/tpc-1050/i": "svp",
     "/jay-tech|tpcy?-[a-z0-9]+|pa7807-8/i": "jay-tech",
     "/mastone| g9 /i": "mastone",
     "/epad|p7901a|zt180|a704j/i": "zenithink",
@@ -722,7 +723,6 @@
     "/v10s/i": "protruly",
     "/ideal ?tab 10/i": "hometech",
     "/bb8252/i": "bigben",
-    "/tpc-1050/i": "svp",
     "/I5/": "sop",
     "/i5/": "vsun",
     "/KIN\\.(One|Two)|ZuneHD|Windows NT 6\\.(2|3).*ARM;/": "microsoft"

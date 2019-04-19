@@ -986,5 +986,43 @@
       "version": "534.30.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/1.22 (compatible; MSIE 5.01; PalmOS 3.0) EudoraWeb 2"
+    },
+    "device": {
+      "deviceName": "general HP device",
+      "marketingName": "general HP device",
+      "manufacturer": "hp",
+      "brand": "hp",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "5.01.0",
+      "manufacturer": "microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "0.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]
