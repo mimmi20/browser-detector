@@ -195,7 +195,7 @@
     },
     "device": {
       "deviceName": "Mi-516",
-      "marketingName": "Stellar",
+      "marketingName": "Stellar 516",
       "manufacturer": "spice",
       "brand": "spice",
       "display": {
@@ -262,6 +262,44 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; Mi-440 Build/KOT49H) AppleWebKit/528.5 (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/9.4.0.460 Mobile"
+    },
+    "device": {
+      "deviceName": "Mi-440",
+      "marketingName": "Stellar 440",
+      "manufacturer": "spice",
+      "brand": "spice",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.0.460",
+      "manufacturer": "ucweb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
       "manufacturer": "apple"
     }
   }

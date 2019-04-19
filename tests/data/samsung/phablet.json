@@ -12,7 +12,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.4
       },
       "type": "phablet"
     },
@@ -50,7 +50,7 @@
         "width": 2960,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.4
       },
       "type": "phablet"
     },
@@ -66,6 +66,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-N960W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-N960W",
+      "marketingName": "Galaxy Note 9",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "73.0.3683.90",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
       "manufacturer": "google",
       "bits": 32
     },

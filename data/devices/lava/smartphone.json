@@ -335,6 +335,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lava atom 2": {
+    "deviceName": "Iris Atom 2",
+    "marketingName": "Iris Atom 2",
+    "manufacturer": "lava",
+    "brand": "lava",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lava iris fuel60": {
     "deviceName": "Iris Fuel 60",
     "marketingName": "Iris Fuel 60",
@@ -400,7 +414,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -639,20 +653,6 @@
       "height": 720,
       "touch": true,
       "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lava atom 2": {
-    "deviceName": "Iris Atom 2",
-    "marketingName": "Iris Atom 2",
-    "manufacturer": "lava",
-    "brand": "lava",
-    "display": {
-      "width": 480,
-      "height": 854,
-      "touch": true,
-      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
