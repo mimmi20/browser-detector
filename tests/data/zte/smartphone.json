@@ -1,6 +1,158 @@
 [
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0.1; VFD 600 Build/MMB29M)"
+    },
+    "device": {
+      "deviceName": "VFD 600",
+      "marketingName": "Smart Prime 7",
+      "manufacturer": "zte",
+      "brand": "vodafone",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; VFD 513 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "VFD 513",
+      "marketingName": "Smart E8",
+      "manufacturer": "zte",
+      "brand": "vodafone",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; VFD 510 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "VFD 510",
+      "marketingName": "Smart E8",
+      "manufacturer": "zte",
+      "brand": "vodafone",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "60.0.3112.116",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; VFD 600 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "VFD 600",
+      "marketingName": "Smart Prime 7",
+      "manufacturer": "zte",
+      "brand": "vodafone",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Mobile; Open C; rv:28.0) Gecko/28.0 Firefox/28.0"
     },
     "device": {
@@ -4109,7 +4261,7 @@
     },
     "device": {
       "deviceName": "U9815",
-      "marketingName": "Grand Memo",
+      "marketingName": "Grand Memo LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -4147,7 +4299,7 @@
     },
     "device": {
       "deviceName": "U9815",
-      "marketingName": "Grand Memo",
+      "marketingName": "Grand Memo LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -6085,7 +6237,7 @@
     },
     "device": {
       "deviceName": "Z986DL",
-      "marketingName": "Max Blue",
+      "marketingName": "Max Blue LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -6769,7 +6921,7 @@
     },
     "device": {
       "deviceName": "Z717VL",
-      "marketingName": "Citrine",
+      "marketingName": "Citrine LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -6807,7 +6959,7 @@
     },
     "device": {
       "deviceName": "Z717BL",
-      "marketingName": "Citrine",
+      "marketingName": "Citrine LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -6845,7 +6997,7 @@
     },
     "device": {
       "deviceName": "Z233V",
-      "marketingName": "Cymbal",
+      "marketingName": "Cymbal LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -6883,7 +7035,7 @@
     },
     "device": {
       "deviceName": "Z233VL",
-      "marketingName": "Cymbal-C",
+      "marketingName": "Cymbal-C LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -6921,7 +7073,7 @@
     },
     "device": {
       "deviceName": "Z232TL",
-      "marketingName": "Cymbal-G",
+      "marketingName": "Cymbal-G LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -6959,7 +7111,7 @@
     },
     "device": {
       "deviceName": "Z353VL",
-      "marketingName": "Cymbal-T",
+      "marketingName": "Cymbal-T LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -7111,7 +7263,7 @@
     },
     "device": {
       "deviceName": "Z718TL",
-      "marketingName": "Jasper",
+      "marketingName": "Jasper LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -8061,7 +8213,7 @@
     },
     "device": {
       "deviceName": "Z970",
-      "marketingName": "ZMax",
+      "marketingName": "ZMax Z970",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
