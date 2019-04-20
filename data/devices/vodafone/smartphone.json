@@ -1,4 +1,18 @@
 {
+  "vodafone 975": {
+    "deviceName": "975",
+    "marketingName": "Smart 3",
+    "manufacturer": "vodafone",
+    "brand": "vodafone",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "vodafone smart 4": {
     "deviceName": "Smart 4",
     "marketingName": "Smart 4",
@@ -22,7 +36,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -36,7 +50,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -50,7 +64,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -69,6 +83,34 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "vodafone vfd 510": {
+    "deviceName": "VFD 510",
+    "marketingName": "Smart E8",
+    "manufacturer": "zte",
+    "brand": "vodafone",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vodafone vfd 513": {
+    "deviceName": "VFD 513",
+    "marketingName": "Smart E8",
+    "manufacturer": "zte",
+    "brand": "vodafone",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "vodafone vf695": {
     "deviceName": "VF695",
     "marketingName": "Smart First 6",
@@ -83,16 +125,58 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "vodafone 975": {
-    "deviceName": "975",
-    "marketingName": "Smart III",
+  "vodafone vfd 200": {
+    "deviceName": "VFD 200",
+    "marketingName": "Smart First 7",
     "manufacturer": "vodafone",
+    "brand": "vodafone",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vodafone vfd 100": {
+    "deviceName": "VFD 100",
+    "marketingName": "Smart Mini",
+    "manufacturer": "vodafone",
+    "brand": "vodafone",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vodafone vfd 300": {
+    "deviceName": "VFD 300",
+    "marketingName": "Smart Mini 7",
+    "manufacturer": "tcl",
     "brand": "vodafone",
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vodafone vfd 610": {
+    "deviceName": "VFD 610",
+    "marketingName": "Smart N8",
+    "manufacturer": "tcl",
+    "brand": "vodafone",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -111,16 +195,30 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "vodafone vfd 900": {
+    "deviceName": "VFD 900",
+    "marketingName": "Smart Platinum 7",
+    "manufacturer": "tcl",
+    "brand": "vodafone",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "vodafone vfd 600": {
     "deviceName": "VFD 600",
     "marketingName": "Smart Prime 7",
-    "manufacturer": "vodafone",
+    "manufacturer": "zte",
     "brand": "vodafone",
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -128,7 +226,7 @@
   "vodafone vfd 500": {
     "deviceName": "VFD 500",
     "marketingName": "Smart Turbo 7",
-    "manufacturer": "vodafone",
+    "manufacturer": "tcl",
     "brand": "vodafone",
     "display": {
       "width": 854,
@@ -142,63 +240,21 @@
   "vodafone vfd 501": {
     "deviceName": "VFD 501",
     "marketingName": "Smart Turbo 7",
-    "manufacturer": "vodafone",
+    "manufacturer": "tcl",
     "brand": "vodafone",
     "display": {
       "width": 854,
       "height": 480,
       "touch": true,
       "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "vodafone vfd 100": {
-    "deviceName": "VFD 100",
-    "marketingName": "VFD 100",
-    "manufacturer": "vodafone",
-    "brand": "vodafone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "vodafone vfd 200": {
-    "deviceName": "VFD 200",
-    "marketingName": "VFD 200",
-    "manufacturer": "vodafone",
-    "brand": "vodafone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "vodafone vfd 300": {
-    "deviceName": "VFD 300",
-    "marketingName": "VFD 300",
-    "manufacturer": "vodafone",
-    "brand": "vodafone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
     },
     "type": "smartphone",
     "platform": "android"
   },
   "vodafone vfd 502": {
     "deviceName": "VFD 502",
-    "marketingName": "VFD 502",
-    "manufacturer": "vodafone",
+    "marketingName": "Smart Turbo 7",
+    "manufacturer": "tcl",
     "brand": "vodafone",
     "display": {
       "width": 854,
@@ -209,72 +265,16 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "vodafone vfd 510": {
-    "deviceName": "VFD 510",
-    "marketingName": "VFD 510",
-    "manufacturer": "vodafone",
-    "brand": "vodafone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "vodafone vfd 513": {
-    "deviceName": "VFD 513",
-    "marketingName": "VFD 513",
-    "manufacturer": "vodafone",
-    "brand": "vodafone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "vodafone vfd 610": {
-    "deviceName": "VFD 610",
-    "marketingName": "VFD 610",
-    "manufacturer": "vodafone",
-    "brand": "vodafone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "vodafone vfd 700": {
     "deviceName": "VFD 700",
-    "marketingName": "VFD 700",
-    "manufacturer": "vodafone",
+    "marketingName": "Smart Ultra 7",
+    "manufacturer": "tcl",
     "brand": "vodafone",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "vodafone vfd 900": {
-    "deviceName": "VFD 900",
-    "marketingName": "VFD 900",
-    "manufacturer": "vodafone",
-    "brand": "vodafone",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"

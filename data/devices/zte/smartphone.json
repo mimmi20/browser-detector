@@ -1021,34 +1021,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "zte z717bl": {
-    "deviceName": "Z717BL",
-    "marketingName": "Citrine",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "zte z717vl": {
-    "deviceName": "Z717VL",
-    "marketingName": "Citrine",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "zte z716bl": {
     "deviceName": "Z716BL",
     "marketingName": "Citrine LTE",
@@ -1063,9 +1035,37 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zte z717bl": {
+    "deviceName": "Z717BL",
+    "marketingName": "Citrine LTE",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte z717vl": {
+    "deviceName": "Z717VL",
+    "marketingName": "Citrine LTE",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zte z233v": {
     "deviceName": "Z233V",
-    "marketingName": "Cymbal",
+    "marketingName": "Cymbal LTE",
     "manufacturer": "zte",
     "brand": "zte",
     "display": {
@@ -1079,7 +1079,7 @@
   },
   "zte z233vl": {
     "deviceName": "Z233VL",
-    "marketingName": "Cymbal-C",
+    "marketingName": "Cymbal-C LTE",
     "manufacturer": "zte",
     "brand": "zte",
     "display": {
@@ -1093,7 +1093,7 @@
   },
   "zte z232tl": {
     "deviceName": "Z232TL",
-    "marketingName": "Cymbal-G",
+    "marketingName": "Cymbal-G LTE",
     "manufacturer": "zte",
     "brand": "zte",
     "display": {
@@ -1107,7 +1107,7 @@
   },
   "zte z353vl": {
     "deviceName": "Z353VL",
-    "marketingName": "Cymbal-T",
+    "marketingName": "Cymbal-T LTE",
     "manufacturer": "zte",
     "brand": "zte",
     "display": {
@@ -1205,7 +1205,7 @@
   },
   "zte u9815": {
     "deviceName": "U9815",
-    "marketingName": "Grand Memo",
+    "marketingName": "Grand Memo LTE",
     "manufacturer": "zte",
     "brand": "zte",
     "display": {
@@ -1373,7 +1373,7 @@
   },
   "zte z718tl": {
     "deviceName": "Z718TL",
-    "marketingName": "Jasper",
+    "marketingName": "Jasper LTE",
     "manufacturer": "zte",
     "brand": "zte",
     "display": {
@@ -1639,7 +1639,7 @@
   },
   "zte z986dl": {
     "deviceName": "Z986DL",
-    "marketingName": "Max Blue",
+    "marketingName": "Max Blue LTE",
     "manufacturer": "zte",
     "brand": "zte",
     "display": {
@@ -3023,20 +3023,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "zte z970": {
-    "deviceName": "Z970",
-    "marketingName": "ZMax",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "zte z955a": {
     "deviceName": "Z955A",
     "marketingName": "ZMax 2",
@@ -3101,6 +3087,20 @@
     "display": {
       "width": 1920,
       "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte z970": {
+    "deviceName": "Z970",
+    "marketingName": "ZMax Z970",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
