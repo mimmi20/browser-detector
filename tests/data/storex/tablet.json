@@ -88,7 +88,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 10
       },
       "type": "tablet"
     },
@@ -1077,6 +1077,44 @@
         "height": 768,
         "touch": true,
         "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; TAB1004 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "eZee Tab1004",
+      "marketingName": "eZee Tab1004",
+      "manufacturer": "storex",
+      "brand": "storex",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10
       },
       "type": "tablet"
     },
