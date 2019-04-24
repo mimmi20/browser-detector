@@ -150,5 +150,43 @@
       "version": "534.30.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 7.0; TM-MID1020A Build/NRD90M AppleWebKit/537.36 KHTML, like Gecko Chrome/61.0.3163.98 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TM-MID1020A",
+      "marketingName": "TM-MID1020A",
+      "manufacturer": "touchmate",
+      "brand": "touchmate",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]

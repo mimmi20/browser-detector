@@ -1,163 +1,11 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; Z99 Dual Core Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; ZYNC Dual 7i Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30/4.05d.1002.m7"
     },
     "device": {
-      "deviceName": "Z99 Dual Core",
-      "marketingName": "Z99 Dual Core",
-      "manufacturer": "zync",
-      "brand": "zync",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; en-US; Z99_3G) U2/1.0.0 UCBrowser/10.7.5.785 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "Z99 3G",
-      "marketingName": "Z99 3G",
-      "manufacturer": "zync",
-      "brand": "zync",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.7.5.785",
-      "manufacturer": "ucweb",
-      "bits": 32,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; Z99 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "Z99 2G",
-      "marketingName": "Z99 2G",
-      "manufacturer": "zync",
-      "brand": "zync",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ZYNC Z81 Build/V800HM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Z81",
-      "marketingName": "Z81",
-      "manufacturer": "zync",
-      "brand": "zync",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "40.0.2214.109",
-      "manufacturer": "google",
-      "bits": 32,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": 32
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Zync Z7i 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.114 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Z7i 3G",
-      "marketingName": "Z7i 3G",
+      "deviceName": "Dual 7i",
+      "marketingName": "Dual 7i",
       "manufacturer": "zync",
       "brand": "zync",
       "display": {
@@ -169,9 +17,9 @@
       "type": "fone-pad"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Android Webkit",
       "modus": null,
-      "version": "38.0.2125.114",
+      "version": "4.0.0",
       "manufacturer": "google",
       "bits": 32,
       "type": "browser"
@@ -184,9 +32,9 @@
       "bits": 32
     },
     "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   },
   {
@@ -267,16 +115,92 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; ZYNC Dual 7i Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30/4.05d.1002.m7"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Zync Z7i 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.114 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Dual 7i",
-      "marketingName": "Dual 7i",
+      "deviceName": "Z7i 3G",
+      "marketingName": "Z7i 3G",
       "manufacturer": "zync",
       "brand": "zync",
       "display": {
         "width": 800,
         "height": 480,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "38.0.2125.114",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ZYNC Z81 Build/V800HM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Z81",
+      "marketingName": "Z81",
+      "manufacturer": "zync",
+      "brand": "zync",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "40.0.2214.109",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; Z99 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Z99 2G",
+      "marketingName": "Z99 2G",
+      "manufacturer": "zync",
+      "brand": "zync",
+      "display": {
+        "width": 1024,
+        "height": 600,
         "touch": true,
         "size": 7
       },
@@ -293,7 +217,83 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.2.2",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; en-US; Z99_3G) U2/1.0.0 UCBrowser/10.7.5.785 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "Z99 3G",
+      "marketingName": "Z99 3G",
+      "manufacturer": "zync",
+      "brand": "zync",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.5.785",
+      "manufacturer": "ucweb",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; Z99 Dual Core Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Z99 Dual Core",
+      "marketingName": "Z99 Dual Core",
+      "manufacturer": "zync",
+      "brand": "zync",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
       "manufacturer": "google",
       "bits": 32
     },

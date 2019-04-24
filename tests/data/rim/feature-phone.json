@@ -3191,5 +3191,43 @@
       "version": "2.12.423",
       "manufacturer": "opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9000/4.6.0.167 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 ips-agent"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9000",
+      "marketingName": "BlackBerry Bold 9000",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.6.0.167",
+      "manufacturer": "rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.6.0.167",
+      "manufacturer": "rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": "0.0.0",
+      "manufacturer": "rim"
+    }
   }
 ]

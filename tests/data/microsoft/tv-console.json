@@ -150,5 +150,119 @@
       "version": "6.0.0",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox), or Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Xbox)"
+    },
+    "device": {
+      "deviceName": "Xbox 360",
+      "marketingName": "Xbox 360",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134"
+    },
+    "device": {
+      "deviceName": "Xbox One",
+      "marketingName": "Xbox One",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "Edge",
+      "modus": null,
+      "version": "17.17134.0",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "17.17134.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763"
+    },
+    "device": {
+      "deviceName": "Xbox One",
+      "marketingName": "Xbox One",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "Edge",
+      "modus": null,
+      "version": "18.17763.0",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "18.17763.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]

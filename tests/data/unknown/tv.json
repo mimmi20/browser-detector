@@ -2392,5 +2392,461 @@
       "version": "0.0.0",
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.79 Safari/537.4 SmartTV/4.6"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "22.0.1229.79",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "NetCast",
+      "marketingName": "NetCast",
+      "version": "0.0.0",
+      "manufacturer": "lg",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.4.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; QM152E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.13 "
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.6.1.13",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 7.1.2; QM163E Build/N2G48H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.142.Racer.70"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.8.0.142",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/53.0.2785.34 Safari/537.31 SmartTV/6.0"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.34",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "NetCast",
+      "marketingName": "NetCast",
+      "version": "0.0.0",
+      "manufacturer": "lg",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.31.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/61.0.3163.128 Safari/534.24 XiaoMi/MiuiBrowser/9.7.3"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "9.7.3",
+      "manufacturer": "xiaomi",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "534.24.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/53.0.2785.146 Safari/534.24 XiaoMi/MiuiBrowser/9.5.6"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "9.5.6",
+      "manufacturer": "xiaomi",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "534.24.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0     (Linux; U) AppleWebKit/537.36 (KHTML, like Gecko)     Version/4.0 Mobile Safari/537.36 SmartTV/7.0 (NetCast) (Android)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "SmartTV WebBrowser",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "samsung",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/61.0.3163.128 Safari/534.24 XiaoMi/MiuiBrowser/9.6.0-Beta"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "9.6.0-beta",
+      "manufacturer": "xiaomi",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "534.24.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;tv2n;ABox42-M20;0.0.0;1.0;) TV2PLAYER/0.0.0.1"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "38.0.2125.122",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "webOS",
+      "marketingName": "webOS",
+      "version": "0.0.0",
+      "manufacturer": "lg",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.34 Safari/5"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.34",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "webOS",
+      "marketingName": "webOS",
+      "version": "0.0.0",
+      "manufacturer": "lg",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/61.0.3163.128 Safari/534.24 XiaoMi/MiuiBrowser/10.4.3-g"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "10.4.3",
+      "manufacturer": "xiaomi",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "534.24.0",
+      "manufacturer": "google"
+    }
   }
 ]
