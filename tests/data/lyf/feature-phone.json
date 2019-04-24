@@ -340,5 +340,43 @@
       "version": "48.0.0",
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; LYF/LF-2403N/LYF-LF2403N-000-01-3D-120318;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.0"
+    },
+    "device": {
+      "deviceName": "LF2403N",
+      "marketingName": "Jio LF2403n",
+      "manufacturer": "lyf",
+      "brand": "lyf",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "48.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "kaios",
+      "marketingName": "kaios",
+      "version": "2.0.0",
+      "manufacturer": "kaios",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "48.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

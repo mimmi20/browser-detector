@@ -606,5 +606,157 @@
       "version": "537.22.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; AFTN Build/NS6253) AppleWebKit/537.36 (KHTML, like Gecko) Silk/69.4.1 like Chrome/69.0.3497.100 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "AFTN",
+      "marketingName": "Fire TV (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "69.4.1",
+      "manufacturer": "amazon",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; AFTN) AppleWebKit/537.36 (KHTML, like Gecko) Silk/70.1.91 like Chrome/70.0.3538.64 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "AFTN",
+      "marketingName": "Fire TV (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "70.1.91",
+      "manufacturer": "amazon",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; AFTT) AppleWebKit/537.36 (KHTML, like Gecko) Silk/70.4.26 like Chrome/70.0.3538.80 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "AFTT",
+      "marketingName": "Fire TV Stick (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "70.4.26",
+      "manufacturer": "amazon",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; AFTT Build/LVY48F)"
+    },
+    "device": {
+      "deviceName": "AFTT",
+      "marketingName": "Fire TV Stick (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "apple"
+    }
   }
 ]

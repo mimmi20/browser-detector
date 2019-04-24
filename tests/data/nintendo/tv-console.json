@@ -378,5 +378,43 @@
       "version": "536.30.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.30 (Nintendo Wii; U; ; 2071; Wii Shop Channel/1.0; en)"
+    },
+    "device": {
+      "deviceName": "Wii",
+      "marketingName": "Wii",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "nintendo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo OS",
+      "marketingName": "Nintendo OS",
+      "version": "0.0.0",
+      "manufacturer": "nintendo",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "opera"
+    }
   }
 ]
