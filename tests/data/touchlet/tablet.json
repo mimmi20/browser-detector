@@ -5,9 +5,9 @@
     },
     "device": {
       "deviceName": "X10+",
-      "marketingName": "Touchlet X10.Dual+",
-      "manufacturer": "pearl",
-      "brand": "pearl",
+      "marketingName": "X10.Dual+",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
       "display": {
         "width": 1024,
         "height": 768,
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "Touchlet X10",
       "marketingName": "Touchlet X10",
-      "manufacturer": "pearl",
-      "brand": "pearl",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
       "display": {
         "width": 1024,
         "height": 768,
@@ -80,10 +80,10 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; de-de; X7G Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "Touchlet X7G",
-      "marketingName": "Touchlet X7G",
-      "manufacturer": "pearl",
-      "brand": "pearl",
+      "deviceName": "X7G",
+      "marketingName": "X7G",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
       "display": {
         "width": 800,
         "height": 480,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "X10.quad.FM",
       "marketingName": "X10.quad.FM",
-      "manufacturer": "pearl",
-      "brand": "pearl",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
       "display": {
         "width": 1024,
         "height": 768,
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "PX8841",
       "marketingName": "Touchlet 7.85 Tablet-PC X8 Quad Pro",
-      "manufacturer": "pearl",
-      "brand": "pearl",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
       "display": {
         "width": 1024,
         "height": 768,
@@ -186,6 +186,44 @@
     "engine": {
       "name": "WebKit",
       "version": "0.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; X8quad.pro Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "X8 Quad.Pro",
+      "marketingName": "X8 Quad.Pro",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
       "manufacturer": "apple"
     }
   }

@@ -4,10 +4,10 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; XA100 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
     },
     "device": {
-      "deviceName": "Touchlet XA100",
-      "marketingName": "Touchlet XA100",
-      "manufacturer": "pearl",
-      "brand": "pearl",
+      "deviceName": "XA100",
+      "marketingName": "XA100",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
       "display": {
         "width": 1024,
         "height": 600,
@@ -42,10 +42,10 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; XA100 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
-      "deviceName": "Touchlet XA100",
-      "marketingName": "Touchlet XA100",
-      "manufacturer": "pearl",
-      "brand": "pearl",
+      "deviceName": "XA100",
+      "marketingName": "XA100",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
       "display": {
         "width": 1024,
         "height": 600,
@@ -80,10 +80,10 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; XA100 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "Touchlet XA100",
-      "marketingName": "Touchlet XA100",
-      "manufacturer": "pearl",
-      "brand": "pearl",
+      "deviceName": "XA100",
+      "marketingName": "XA100",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
       "display": {
         "width": 1024,
         "height": 600,
@@ -104,6 +104,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SX7.mini Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SX7.mini",
+      "marketingName": "SX7.mini",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": 32
     },

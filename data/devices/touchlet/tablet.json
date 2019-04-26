@@ -1,9 +1,9 @@
 {
-  "general pearl device": {
-    "deviceName": "general Pearl device",
-    "marketingName": "general Pearl device",
-    "manufacturer": "pearl",
-    "brand": "pearl",
+  "general touchlet device": {
+    "deviceName": "general Touchlet device",
+    "marketingName": "general Touchlet device",
+    "manufacturer": "touchlet",
+    "brand": "touchlet",
     "display": {
       "width": null,
       "height": null,
@@ -13,11 +13,11 @@
     "type": "tablet",
     "platform": "android"
   },
-  "pearl px8841": {
+  "touchlet px8841": {
     "deviceName": "PX8841",
     "marketingName": "Touchlet 7.85 Tablet-PC X8 Quad Pro",
-    "manufacturer": "pearl",
-    "brand": "pearl",
+    "manufacturer": "touchlet",
+    "brand": "touchlet",
     "display": {
       "width": 1024,
       "height": 768,
@@ -27,11 +27,11 @@
     "type": "tablet",
     "platform": "android"
   },
-  "pearl x10": {
+  "touchlet x10": {
     "deviceName": "Touchlet X10",
     "marketingName": "Touchlet X10",
-    "manufacturer": "pearl",
-    "brand": "pearl",
+    "manufacturer": "touchlet",
+    "brand": "touchlet",
     "display": {
       "width": 1024,
       "height": 768,
@@ -41,11 +41,11 @@
     "type": "tablet",
     "platform": "android"
   },
-  "pearl x10+": {
+  "touchlet x10+": {
     "deviceName": "X10+",
-    "marketingName": "Touchlet X10.Dual+",
-    "manufacturer": "pearl",
-    "brand": "pearl",
+    "marketingName": "X10.Dual+",
+    "manufacturer": "touchlet",
+    "brand": "touchlet",
     "display": {
       "width": 1024,
       "height": 768,
@@ -55,11 +55,25 @@
     "type": "tablet",
     "platform": "android"
   },
-  "pearl touchlet x7g": {
-    "deviceName": "Touchlet X7G",
-    "marketingName": "Touchlet X7G",
-    "manufacturer": "pearl",
-    "brand": "pearl",
+  "touchlet x10.quad.fm": {
+    "deviceName": "X10.quad.FM",
+    "marketingName": "X10.quad.FM",
+    "manufacturer": "touchlet",
+    "brand": "touchlet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "touchlet x7g": {
+    "deviceName": "X7G",
+    "marketingName": "X7G",
+    "manufacturer": "touchlet",
+    "brand": "touchlet",
     "display": {
       "width": 800,
       "height": 480,
@@ -69,16 +83,16 @@
     "type": "tablet",
     "platform": "android"
   },
-  "pearl x10.quad.fm": {
-    "deviceName": "X10.quad.FM",
-    "marketingName": "X10.quad.FM",
-    "manufacturer": "pearl",
-    "brand": "pearl",
+  "touchlet x8 quad.pro": {
+    "deviceName": "X8 Quad.Pro",
+    "marketingName": "X8 Quad.Pro",
+    "manufacturer": "touchlet",
+    "brand": "touchlet",
     "display": {
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 7.85
     },
     "type": "tablet",
     "platform": "android"
