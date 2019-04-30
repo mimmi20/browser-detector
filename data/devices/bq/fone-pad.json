@@ -1,4 +1,18 @@
 {
+  "bq aquaris e10": {
+    "deviceName": "Aquaris E10",
+    "marketingName": "Aquaris E10",
+    "manufacturer": "bq",
+    "brand": "bq",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "bq edison 3g": {
     "deviceName": "Edison 3G",
     "marketingName": "Edison 3G",
@@ -8,7 +22,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "fone-pad",
     "platform": "android"
