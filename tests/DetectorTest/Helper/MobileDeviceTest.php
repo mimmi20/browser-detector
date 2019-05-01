@@ -195,6 +195,7 @@ class MobileDeviceTest extends TestCase
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MyIE2; Maxthon; SV1; .NET CLR 1.1.4322; Tablet PC 1.7; .NET CLR 1.0.3705)'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SS.CC. Palma)'],
+            ['Mozilla/5.0 (Windows NT 10.0.17134.590; osmeta 10.3.31799) AppleWebKit/602.1.1 (KHTML, like Gecko) Version/9.0 Safari/602.1.1 osmeta/10.3.31799 Build/31799 [FBAN/FBW;FBMD/80QB;FBSN/Windows;FBSV/10.0.17134.706;FBSS/1;FBCR/;FBID/desktop;FBLC/de_DE;FBOP/45]'],
         ];
     }
 }
