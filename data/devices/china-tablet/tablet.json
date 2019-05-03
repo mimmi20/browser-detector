@@ -97,6 +97,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "china-tablet m94": {
+    "deviceName": "M94",
+    "marketingName": "M94",
+    "manufacturer": "china-tablet",
+    "brand": "china-tablet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "china-tablet rk312x": {
     "deviceName": "RK312X",
     "marketingName": "RK312X",
@@ -161,20 +175,6 @@
     "display": {
       "width": 800,
       "height": 480,
-      "touch": true,
-      "size": 7
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "china-tablet m94": {
-    "deviceName": "M94",
-    "marketingName": "M94",
-    "manufacturer": "china-tablet",
-    "brand": "china-tablet",
-    "display": {
-      "width": 1024,
-      "height": 600,
       "touch": true,
       "size": 7
     },

@@ -153,6 +153,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "asus pegasus": {
+    "deviceName": "Pegasus",
+    "marketingName": "Pegasus",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "asus x003": {
     "deviceName": "X003",
     "marketingName": "Pegasus",
@@ -1157,20 +1171,6 @@
       "height": 1080,
       "touch": true,
       "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "asus pegasus": {
-    "deviceName": "Pegasus",
-    "marketingName": "Pegasus",
-    "manufacturer": "asus",
-    "brand": "asus",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": 5.0
     },
     "type": "smartphone",
     "platform": "android"
