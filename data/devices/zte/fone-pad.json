@@ -1,4 +1,18 @@
 {
+  "zte e8q": {
+    "deviceName": "E8Q",
+    "marketingName": "E-Learning Pad E8Q",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 7.9
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "zte e8q+": {
     "deviceName": "E8Q+",
     "marketingName": "E8Q+",
@@ -37,20 +51,6 @@
       "height": 480,
       "touch": true,
       "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
-  "zte e8q": {
-    "deviceName": "E8Q",
-    "marketingName": "E-Learning Pad E8Q",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "size": 7.9
     },
     "type": "fone-pad",
     "platform": "android"
