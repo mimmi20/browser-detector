@@ -22,7 +22,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -36,7 +36,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 7.85
     },
     "type": "tablet",
     "platform": "android"
@@ -50,7 +50,7 @@
       "width": 800,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -64,7 +64,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -78,7 +78,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -92,7 +92,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -106,7 +106,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 9.7
     },
     "type": "tablet",
     "platform": "android"
@@ -117,10 +117,38 @@
     "manufacturer": "nextbook",
     "brand": "nextbook",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 800,
+      "height": 480,
       "touch": true,
-      "size": null
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "nextbook nx007hd8g": {
+    "deviceName": "NX007HD8G",
+    "marketingName": "Premium 7 HD",
+    "manufacturer": "nextbook",
+    "brand": "nextbook",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "nextbook m803hc": {
+    "deviceName": "M803HC",
+    "marketingName": "Premium 8",
+    "manufacturer": "nextbook",
+    "brand": "nextbook",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -134,7 +162,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -148,7 +176,7 @@
       "width": 800,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -162,7 +190,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 9
     },
     "type": "tablet",
     "platform": "android"
@@ -176,21 +204,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "nextbook m803hc": {
-    "deviceName": "M803HC",
-    "marketingName": "Premium8",
-    "manufacturer": "nextbook",
-    "brand": "nextbook",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
+      "size": 9
     },
     "type": "tablet",
     "platform": "android"

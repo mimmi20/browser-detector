@@ -1,7 +1,8 @@
 {
   "rules": {
-    "/megapad3204v2/i": "xoro megapad 3204 v2",
-    "/megapad2704v2/i": "xoro megapad 2704 v2",
+    "/megapad ?3204v2/i": "xoro megapad 3204 v2",
+    "/megapad ?2704v2/i": "xoro megapad 2704 v2",
+    "/megapad ?1562/i": "xoro megapad 1562",
     "/telepad ?96a3/i": "xoro telepad 96a3",
     "/telepad ?9a1/i": "xoro xor400250",
     "/telepad ?830/i": "xoro telepad 830",
@@ -9,6 +10,7 @@
     "/telepad ?7a3/i": "xoro telepad 7a3",
     "/telepad ?735q/i": "xoro telepad 735q",
     "/telepad ?731/i": "xoro telepad 731",
+    "/pad ?9720qr/i": "xoro pad 9720qr",
     "/pad ?1851/i": "xoro pad 1851",
     "/pad ?9a2/i": "xoro pad 9a2",
     "/pad ?900/i": "xoro pad 900",

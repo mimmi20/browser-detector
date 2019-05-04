@@ -80,8 +80,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; XORO PAD1851 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36"
     },
     "device": {
-      "deviceName": "PAD 1851",
-      "marketingName": "PAD 1851",
+      "deviceName": "Pad 1851",
+      "marketingName": "Pad 1851",
       "manufacturer": "xoro",
       "brand": "xoro",
       "display": {
@@ -194,8 +194,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; XORO PAD720 Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"
     },
     "device": {
-      "deviceName": "PAD 720",
-      "marketingName": "PAD 720",
+      "deviceName": "Pad 720",
+      "marketingName": "Pad 720",
       "manufacturer": "xoro",
       "brand": "xoro",
       "display": {
@@ -232,8 +232,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; PAD900 Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"
     },
     "device": {
-      "deviceName": "PAD 900",
-      "marketingName": "PAD 900",
+      "deviceName": "Pad 900",
+      "marketingName": "Pad 900",
       "manufacturer": "xoro",
       "brand": "xoro",
       "display": {
@@ -270,8 +270,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; PAD9A2 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
     },
     "device": {
-      "deviceName": "PAD9A2",
-      "marketingName": "PAD9A2",
+      "deviceName": "Pad 9A2",
+      "marketingName": "Pad 9A2",
       "manufacturer": "xoro",
       "brand": "xoro",
       "display": {
@@ -332,6 +332,82 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; MegaPAD1562 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "MegaPAD 1562",
+      "marketingName": "MegaPAD 1562",
+      "manufacturer": "xoro",
+      "brand": "xoro",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 15.6
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; PAD 9720QR Build/PAD 9719QR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Pad 9720QR",
+      "marketingName": "Pad 9720QR",
+      "manufacturer": "xoro",
+      "brand": "xoro",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.105",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": 32
     },
