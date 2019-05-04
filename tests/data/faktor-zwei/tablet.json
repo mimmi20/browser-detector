@@ -5,14 +5,14 @@
     },
     "device": {
       "deviceName": "812223",
-      "marketingName": "FX2 PAD10",
+      "marketingName": "FX2 Pad10",
       "manufacturer": "faktor-zwei",
       "brand": "faktor-zwei",
       "display": {
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
@@ -35,6 +35,44 @@
       "name": "WebKit",
       "version": "533.1.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; FX2 PAD10 RK3168 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "812223",
+      "marketingName": "FX2 Pad10",
+      "manufacturer": "faktor-zwei",
+      "brand": "faktor-zwei",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.105",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
     }
   }
 ]

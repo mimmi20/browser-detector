@@ -1,7 +1,8 @@
 {
   "rules": {
-    "/element p501/i": "sencor element p501",
-    "/element10 1/i": "sencor element 10.1",
+    "/element[ _]?p501/i": "sencor element p501",
+    "/element[ _]?p350/i": "sencor element p350",
+    "/element[ _]?10[ _]?1/i": "sencor element 10.1",
     "/element[ _]?9\\.7[ _]?v3/i": "sencor element 9.7 v3",
     "/element[ _]?8[ _]?v3/i": "sencor element 8 v3",
     "/element[ _]?8[ _]?v2/i": "sencor element 8 v2",
