@@ -50,7 +50,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 24
     },
     "type": "tablet",
     "platform": "android"
@@ -92,7 +92,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -106,7 +106,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -120,7 +120,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": null
@@ -134,24 +134,10 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": null
-  },
-  "acer b1-a71": {
-    "deviceName": "B1-A71",
-    "marketingName": "Iconia B1-A71",
-    "manufacturer": "acer",
-    "brand": "acer",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
   },
   "acer b3-a10": {
     "deviceName": "B3-A10",
@@ -232,7 +218,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -271,10 +257,10 @@
     "manufacturer": "acer",
     "brand": "acer",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -400,7 +386,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -414,7 +400,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -428,7 +414,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -442,7 +428,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -456,7 +442,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -470,7 +456,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -484,7 +470,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -559,14 +545,28 @@
     "type": "tablet",
     "platform": "android"
   },
+  "acer b1-a71": {
+    "deviceName": "B1-A71",
+    "marketingName": "Iconia Tab B1-A71",
+    "manufacturer": "acer",
+    "brand": "acer",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "acer a1-724": {
     "deviceName": "A1-724",
     "marketingName": "Iconia Talk S",
     "manufacturer": "acer",
     "brand": "acer",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": 7
     },
@@ -582,7 +582,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -596,7 +596,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -610,7 +610,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -624,7 +624,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -638,7 +638,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -666,7 +666,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -680,7 +680,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
