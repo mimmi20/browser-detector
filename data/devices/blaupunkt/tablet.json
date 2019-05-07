@@ -125,16 +125,30 @@
     "type": "tablet",
     "platform": "android"
   },
+  "blaupunkt endeavour 1001": {
+    "deviceName": "Endeavour 1001",
+    "marketingName": "Endeavour 1001",
+    "manufacturer": "blaupunkt",
+    "brand": "blaupunkt",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "blaupunkt endeavour 1001 dvb-t": {
     "deviceName": "Endeavour 1001 DVB-T",
     "marketingName": "Endeavour 1001 DVB-T",
     "manufacturer": "blaupunkt",
     "brand": "blaupunkt",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1024,
+      "height": 600,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"

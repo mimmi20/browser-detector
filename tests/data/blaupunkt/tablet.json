@@ -313,10 +313,10 @@
       "manufacturer": "blaupunkt",
       "brand": "blaupunkt",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -1206,6 +1206,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Endeavour_1001 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Endeavour 1001",
+      "marketingName": "Endeavour 1001",
+      "manufacturer": "blaupunkt",
+      "brand": "blaupunkt",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.91",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": 32
     },

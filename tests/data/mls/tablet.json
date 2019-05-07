@@ -4,8 +4,8 @@
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0; iQ9013_4 Build/MRA58K)"
     },
     "device": {
-      "deviceName": "IQ9013 4",
-      "marketingName": "IQ9013 4",
+      "deviceName": "iQ9013 4",
+      "marketingName": "iQ9013 4",
       "manufacturer": "mls",
       "brand": "mls",
       "display": {
@@ -35,6 +35,44 @@
       "name": "WebKit",
       "version": "0.0.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; iQ8123C Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "iQ8123C",
+      "marketingName": "Paok Fan Tab",
+      "manufacturer": "mls",
+      "brand": "mls",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
     }
   }
 ]
