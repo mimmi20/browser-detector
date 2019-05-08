@@ -2,8 +2,8 @@
   "general mobi-wire device": {
     "deviceName": "general MobiWire device",
     "marketingName": "general MobiWire device",
-    "manufacturer": "mobiwire",
-    "brand": "mobiwire",
+    "manufacturer": "mobi-wire",
+    "brand": "mobi-wire",
     "display": {
       "width": null,
       "height": null,
@@ -16,13 +16,27 @@
   "mobi-wire ahiga": {
     "deviceName": "Ahiga",
     "marketingName": "Ahiga",
-    "manufacturer": "mobiwire",
-    "brand": "mobiwire",
+    "manufacturer": "mobi-wire",
+    "brand": "mobi-wire",
     "display": {
       "width": 960,
       "height": 540,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mobi-wire taima": {
+    "deviceName": "Taima",
+    "marketingName": "Taima",
+    "manufacturer": "mobi-wire",
+    "brand": "mobi-wire",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"

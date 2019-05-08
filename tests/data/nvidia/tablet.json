@@ -42,15 +42,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
     },
     "device": {
-      "deviceName": "Shield",
-      "marketingName": "Shield",
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
       "manufacturer": "nvidia",
       "brand": "nvidia",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet"
     },
@@ -80,15 +80,15 @@
       "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## shieldtablet Build/LMY48Y)"
     },
     "device": {
-      "deviceName": "Shield",
-      "marketingName": "Shield",
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
       "manufacturer": "nvidia",
       "brand": "nvidia",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet"
     },
@@ -118,15 +118,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.3; SHIELD Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Shield",
-      "marketingName": "Shield",
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
       "manufacturer": "nvidia",
       "brand": "nvidia",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet"
     },
@@ -308,15 +308,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SHIELD Tablet Build/LMY48C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36"
     },
     "device": {
-      "deviceName": "Shield",
-      "marketingName": "Shield",
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
       "manufacturer": "nvidia",
       "brand": "nvidia",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet"
     },
@@ -346,15 +346,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "Shield",
-      "marketingName": "Shield",
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
       "manufacturer": "nvidia",
       "brand": "nvidia",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet"
     },
@@ -460,15 +460,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; SHIELD Tablet Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Safari/537.36"
     },
     "device": {
-      "deviceName": "Shield",
-      "marketingName": "Shield",
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
       "manufacturer": "nvidia",
       "brand": "nvidia",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet"
     },
@@ -498,15 +498,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; SHIELD Tablet Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36"
     },
     "device": {
-      "deviceName": "Shield",
-      "marketingName": "Shield",
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
       "manufacturer": "nvidia",
       "brand": "nvidia",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet"
     },
@@ -522,6 +522,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; wx_na_wf Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "WX NA WF",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": 32
     },

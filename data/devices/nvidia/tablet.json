@@ -13,9 +13,9 @@
     "type": "tablet",
     "platform": "android"
   },
-  "nvidia shield tablet": {
-    "deviceName": "Shield",
-    "marketingName": "Shield",
+  "nvidia shield tablet k1": {
+    "deviceName": "Shield K1",
+    "marketingName": "Shield K1",
     "manufacturer": "nvidia",
     "brand": "nvidia",
     "display": {
@@ -27,16 +27,30 @@
     "type": "tablet",
     "platform": "android"
   },
-  "nvidia shield tablet k1": {
-    "deviceName": "Shield K1",
-    "marketingName": "Shield K1",
+  "nvidia shield tablet": {
+    "deviceName": "Shield Tablet",
+    "marketingName": "Shield Tablet",
     "manufacturer": "nvidia",
     "brand": "nvidia",
     "display": {
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "nvidia wx na wf": {
+    "deviceName": "WX NA WF",
+    "marketingName": "Shield Tablet",
+    "manufacturer": "nvidia",
+    "brand": "nvidia",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
