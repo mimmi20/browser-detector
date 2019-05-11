@@ -3305,5 +3305,81 @@
       "version": "2.12.423",
       "manufacturer": "opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9700; de) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.570 Mobile Safari/534.8+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9700",
+      "marketingName": "BlackBerry Bold 9700",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "6.0.0.570",
+      "manufacturer": "rim",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.570",
+      "manufacturer": "rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.8.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/37.7936; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.6.40234",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
   }
 ]
