@@ -80,7 +80,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -99,7 +99,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, $engine]));
+            ->willReturn([$browser, $engine]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -190,7 +190,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -209,7 +209,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, $engine]));
+            ->willReturn([$browser, $engine]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -507,7 +507,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -526,7 +526,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, $engine]));
+            ->willReturn([$browser, $engine]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -617,7 +617,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -636,7 +636,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, $engine]));
+            ->willReturn([$browser, $engine]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -730,7 +730,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -749,7 +749,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, $engine]));
+            ->willReturn([$browser, $engine]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -862,7 +862,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, $engine]));
+            ->willReturn([$browser, $engine]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -973,7 +973,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, $engine]));
+            ->willReturn([$browser, $engine]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -1073,7 +1073,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1095,7 +1095,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, null]));
+            ->willReturn([$browser, null]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -1104,7 +1104,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue($engine));
+            ->willReturn($engine);
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -1197,7 +1197,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1215,7 +1215,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, null]));
+            ->willReturn([$browser, null]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -1321,7 +1321,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1339,7 +1339,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, null]));
+            ->willReturn([$browser, null]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -1356,7 +1356,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('webkit', $useragent)
-            ->will(self::returnValue($engine));
+            ->willReturn($engine);
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
@@ -1450,7 +1450,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1468,7 +1468,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, null]));
+            ->willReturn([$browser, null]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -1574,7 +1574,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1592,7 +1592,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, null]));
+            ->willReturn([$browser, null]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -1698,7 +1698,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, $os]));
+            ->willReturn([$device, $os]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1732,7 +1732,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('webkit', $useragent)
-            ->will(self::returnValue($engine2));
+            ->willReturn($engine2);
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
@@ -1823,7 +1823,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, null]));
+            ->willReturn([$device, null]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1832,7 +1832,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue($os));
+            ->willReturn($os);
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
@@ -1847,7 +1847,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, null]));
+            ->willReturn([$browser, null]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -1856,7 +1856,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue($engine));
+            ->willReturn($engine);
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -1948,7 +1948,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$device, null]));
+            ->willReturn([$device, null]);
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1972,7 +1972,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue([$browser, null]));
+            ->willReturn([$browser, null]);
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
@@ -1981,7 +1981,7 @@ class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($useragent)
-            ->will(self::returnValue($engine));
+            ->willReturn($engine);
         $engineParser
             ->expects(self::never())
             ->method('load');

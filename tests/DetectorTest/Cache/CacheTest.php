@@ -45,15 +45,15 @@ final class CacheTest extends TestCase
             ->expects(self::once())
             ->method('has')
             ->with('version')
-            ->will(self::returnValue(false));
+            ->willReturn(false);
         $adapter
             ->expects(self::once())
             ->method('set')
-            ->will(self::returnValue(false));
+            ->willReturn(false);
         $adapter
             ->expects(self::never())
             ->method('get')
-            ->will(self::returnValue(null));
+            ->willReturn(null);
 
         /** @var ArrayCache $adapter */
         $cache = new Cache($adapter);
@@ -76,16 +76,16 @@ final class CacheTest extends TestCase
             ->expects(self::once())
             ->method('has')
             ->with('version')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
         $adapter
             ->expects(self::once())
             ->method('set')
-            ->will(self::returnValue(false));
+            ->willReturn(false);
         $adapter
             ->expects(self::once())
             ->method('get')
             ->with('version')
-            ->will(self::returnValue(null));
+            ->willReturn(null);
 
         /** @var ArrayCache $adapter */
         $cache = new Cache($adapter);
@@ -108,15 +108,15 @@ final class CacheTest extends TestCase
             ->expects(self::once())
             ->method('has')
             ->with('version')
-            ->will(self::returnValue(false));
+            ->willReturn(false);
         $adapter
             ->expects(self::never())
             ->method('set')
-            ->will(self::returnValue(false));
+            ->willReturn(false);
         $adapter
             ->expects(self::never())
             ->method('get')
-            ->will(self::returnValue(null));
+            ->willReturn(null);
 
         /** @var ArrayCache $adapter */
         $cache = new Cache($adapter);

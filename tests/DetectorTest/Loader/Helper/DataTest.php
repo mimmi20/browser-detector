@@ -58,23 +58,21 @@ class DataTest extends TestCase
         $iterator
             ->expects(self::once())
             ->method('current')
-            ->will(self::returnValue($file));
+            ->willReturn($file);
         $iterator
             ->expects(self::once())
             ->method('valid')
-            ->will(
-                self::returnCallback(
-                    static function () {
-                        static $i = 0;
-                        $return = false;
-                        if (0 === $i) {
-                            $return = true;
-                        }
-                        ++$i;
-
-                        return $return;
+            ->willReturnCallback(
+                static function () {
+                    static $i = 0;
+                    $return = false;
+                    if (0 === $i) {
+                        $return = true;
                     }
-                )
+                    ++$i;
+
+                    return $return;
+                }
             );
 
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
