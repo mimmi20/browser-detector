@@ -62,7 +62,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(false));
+            ->willReturn(false);
 
         $initData
             ->expects(self::never())
@@ -131,13 +131,13 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $initData
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue(null));
+            ->willReturn(null);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -200,7 +200,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $platformData = (object) [
             'version' => (object) ['class' => null],
@@ -213,7 +213,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue($platformData));
+            ->willReturn($platformData);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -279,7 +279,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $platformData = (object) [
             'version' => (object) ['class' => null, 'value' => '1.0'],
@@ -292,7 +292,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue($platformData));
+            ->willReturn($platformData);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -358,7 +358,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $platformData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
@@ -371,7 +371,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue($platformData));
+            ->willReturn($platformData);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -439,7 +439,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $platformData = (object) [
             'version' => (object) ['class' => Test::class],
@@ -452,7 +452,7 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue($platformData));
+            ->willReturn($platformData);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()

@@ -69,7 +69,7 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::never())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue(false));
+            ->willReturn(false);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -134,13 +134,13 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $initData
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue(null));
+            ->willReturn(null);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -205,7 +205,7 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $deviceData = (object) [
             'version' => (object) ['class' => null],
@@ -219,7 +219,7 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue($deviceData));
+            ->willReturn($deviceData);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -290,7 +290,7 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $deviceData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
@@ -304,7 +304,7 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue($deviceData));
+            ->willReturn($deviceData);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -376,7 +376,7 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
-            ->will(self::returnValue(true));
+            ->willReturn(true);
 
         $deviceData = (object) [
             'version' => (object) ['class' => Test::class],
@@ -390,7 +390,7 @@ class DeviceLoaderTest extends TestCase
             ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::returnValue($deviceData));
+            ->willReturn($deviceData);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
