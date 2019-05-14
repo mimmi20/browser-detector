@@ -69,6 +69,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "samsung shw-m500w": {
+    "deviceName": "SHW-M500W",
+    "marketingName": "Galaxy Note 8.0 Wi-Fi",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "samsung sm-p900": {
     "deviceName": "SM-P900",
     "marketingName": "Galaxy Note Pro 12.2 Wi-Fi",
@@ -979,16 +993,16 @@
     "type": "tablet",
     "platform": "android"
   },
-  "samsung sm-t365": {
-    "deviceName": "SM-T365",
-    "marketingName": "Tab Active 8.0 LTE",
+  "samsung sm-t510": {
+    "deviceName": "SM-T510",
+    "marketingName": "Tab A 10.1 Wi-Fi (2019)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
-      "width": 2560,
-      "height": 1600,
+      "width": 1920,
+      "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": null

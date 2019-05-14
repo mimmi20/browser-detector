@@ -270,8 +270,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; PO10730TAQ-10172MK3 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Safari/537.36"
     },
     "device": {
-      "deviceName": "TAQ-10172MK3",
-      "marketingName": "TAQ-10172MK3",
+      "deviceName": "TAQ-10172 MK3",
+      "marketingName": "TAQ-10172 MK3",
       "manufacturer": "denver",
       "brand": "denver",
       "display": {
@@ -612,8 +612,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; PO11142TAQ-10243MK2 Build/MXC89K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "TAQ-10243MK2",
-      "marketingName": "TAQ-10243MK2",
+      "deviceName": "TAQ-10243 MK2",
+      "marketingName": "TAQ-10243 MK2",
       "manufacturer": "denver",
       "brand": "denver",
       "display": {
@@ -650,8 +650,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; PO10317TAQ-70242MK3 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.81 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "TAQ-70242MK3",
-      "marketingName": "TAQ-70242MK3",
+      "deviceName": "TAQ-70242 MK3",
+      "marketingName": "TAQ-70242 MK3",
       "manufacturer": "denver",
       "brand": "denver",
       "display": {
@@ -688,8 +688,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; PO10974TAQ-10172MK4 Build/MXC89K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Safari/537.36"
     },
     "device": {
-      "deviceName": "TAQ-10172MK4",
-      "marketingName": "TAQ-10172MK4",
+      "deviceName": "TAQ-10172 MK4",
+      "marketingName": "TAQ-10172 MK4",
       "manufacturer": "denver",
       "brand": "denver",
       "display": {
@@ -1334,8 +1334,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; PO10731TAQ-10172MK3 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Safari/537.36"
     },
     "device": {
-      "deviceName": "TAQ-10172MK3",
-      "marketingName": "TAQ-10172MK3",
+      "deviceName": "TAQ-10172 MK3",
+      "marketingName": "TAQ-10172 MK3",
       "manufacturer": "denver",
       "brand": "denver",
       "display": {
@@ -2360,8 +2360,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; TAQ-70012MK2 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
     },
     "device": {
-      "deviceName": "TAQ-70012MK2",
-      "marketingName": "TAQ-70012MK2",
+      "deviceName": "TAQ-70012 MK2",
+      "marketingName": "TAQ-70012 MK2",
       "manufacturer": "denver",
       "brand": "denver",
       "display": {
@@ -2816,8 +2816,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; TAQ-70012 MK2 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
     },
     "device": {
-      "deviceName": "TAQ-70012MK2",
-      "marketingName": "TAQ-70012MK2",
+      "deviceName": "TAQ-70012 MK2",
+      "marketingName": "TAQ-70012 MK2",
       "manufacturer": "denver",
       "brand": "denver",
       "display": {
@@ -2885,6 +2885,44 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; it-it; TAC-10031 MK2 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "TAC-10031 MK2",
+      "marketingName": "TAC-10031 MK2",
+      "manufacturer": "denver",
+      "brand": "denver",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]
