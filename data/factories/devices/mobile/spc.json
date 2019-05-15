@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/dark glee 10\\.1/i": "spc dark glee 10.1"
+    "/dark[ _]glow[ _]10\\.1[ _]3g[ _]1\\.1/i": "spc dark glow 10.1 3g 1.1",
+    "/dark[ _]glee[ _]10\\.1/i": "spc dark glee 10.1"
   },
   "generic": "general spc device"
 }

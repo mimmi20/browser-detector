@@ -3118,5 +3118,43 @@
       "version": "0.0.0",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-C320/V100 Obigo/Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 Google"
+    },
+    "device": {
+      "deviceName": "C320",
+      "marketingName": "C320",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "7.3.0",
+      "manufacturer": "obigo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": "0.0.0",
+      "manufacturer": "obigo"
+    }
   }
 ]
