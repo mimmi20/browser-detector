@@ -209,9 +209,23 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-p902": {
+    "deviceName": "SM-P902",
+    "marketingName": "Galaxy Note Pro 12.2 3G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.2
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-p901": {
     "deviceName": "SM-P901",
-    "marketingName": "Galaxy Note Pro 12.2 3G Wi-Fi",
+    "marketingName": "Galaxy Note Pro 12.2 3G+Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -1303,6 +1317,20 @@
   },
   "samsung sm-t807j": {
     "deviceName": "SM-T807J",
+    "marketingName": "Galaxy Tab S 10.5",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung t805s": {
+    "deviceName": "T805s",
     "marketingName": "Galaxy Tab S 10.5",
     "manufacturer": "samsung",
     "brand": "samsung",
