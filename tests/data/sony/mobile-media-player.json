@@ -150,5 +150,43 @@
       "version": "0.0.0",
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (LocationFreeTV; Airboard/LF-X5) NetFront/3.0"
+    },
+    "device": {
+      "deviceName": "LF-X5",
+      "marketingName": "LF-X5",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 7
+      },
+      "type": "mobile-media-player"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": "0.0.0",
+      "manufacturer": "sun-microsystems",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "access"
+    }
   }
 ]

@@ -644,5 +644,119 @@
       "version": "0.0.0",
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux sh4; HbbTV/1.2.1 (+PVR; Loewe; SL210; LOH/10.2.3.25;;) CE-HTML/1.0 Config(L:spa,CC:ESP) NETRANGEMMH) Presto/2.12.362 Version/12.10"
+    },
+    "device": {
+      "deviceName": "SL121",
+      "marketingName": "SL121",
+      "manufacturer": "loewe",
+      "brand": "loewe",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.10.0",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.362",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/10.60 (Linux sh4 ; U; HbbTV/1.1.1 (+PVR; Loewe; SL121; LOH/3.10;;) CE-HTML/1.0 Config(L:deu,CC:DEU); xx) Presto/2.6.33 Version/10.60"
+    },
+    "device": {
+      "deviceName": "SL121",
+      "marketingName": "SL121",
+      "manufacturer": "loewe",
+      "brand": "loewe",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "10.60.0",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.6.33",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.1.1 (; LOEWE; SL32x; LOH/0.3.5.0;;) CE-HTML/1.0 Config(L:ger,CC:DE) NETRANGEMMH) Presto/2.12.407 Version/12.50"
+    },
+    "device": {
+      "deviceName": "SL32x",
+      "marketingName": "SL32x",
+      "manufacturer": "loewe",
+      "brand": "loewe",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.50.0",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
   }
 ]

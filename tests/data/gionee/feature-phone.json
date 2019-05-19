@@ -112,5 +112,47 @@
       "version": "0.0.0",
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31989/30.3793; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "OperaMini(Gionee_1305;Opera Mini/4.4.31989;en)",
+      "x-operamini-features": "advanced, download, file_system, folding, routing",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "OperaMini(Gionee_1305;Opera Mini/4.4.31989;en)"
+    },
+    "device": {
+      "deviceName": "1305",
+      "marketingName": "1305",
+      "manufacturer": "gionee",
+      "brand": "gionee",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.31989",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "MRE",
+      "marketingName": "MAUI Runtime Environment",
+      "version": "0.0.0",
+      "manufacturer": "mediatek",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "0.0.0",
+      "manufacturer": "opera"
+    }
   }
 ]

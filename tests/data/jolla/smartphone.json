@@ -226,5 +226,119 @@
       "version": "45.0.0",
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Jolla; Sailfish; Android 4.4; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.23 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Phone",
+      "marketingName": "Phone",
+      "manufacturer": "jolla",
+      "brand": "jolla",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "45.0.2454.23",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "SailfishOS",
+      "marketingName": "SailfishOS",
+      "version": "0.0.0",
+      "manufacturer": "jolla",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Jolla; Sailfish; Mobile; rv:20.0) Gecko/20.0 Firefox/20.0 Sailfish Browser/1.0 Mobile"
+    },
+    "device": {
+      "deviceName": "Phone",
+      "marketingName": "Phone",
+      "manufacturer": "jolla",
+      "brand": "jolla",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "20.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "SailfishOS",
+      "marketingName": "SailfishOS",
+      "version": "0.0.0",
+      "manufacturer": "jolla",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "20.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Jolla; Sailfish; Mobile; rv:20.0) Gecko/20.0 Firefox/20.0 Sailfish Browser/1.0 like Safari/535.19"
+    },
+    "device": {
+      "deviceName": "Phone",
+      "marketingName": "Phone",
+      "manufacturer": "jolla",
+      "brand": "jolla",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Sailfish Browser",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "jolla",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "SailfishOS",
+      "marketingName": "SailfishOS",
+      "version": "0.0.0",
+      "manufacturer": "jolla",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "apple"
+    }
   }
 ]
