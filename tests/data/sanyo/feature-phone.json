@@ -530,5 +530,47 @@
       "version": "0.0.0",
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.32052/34.1853; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6760",
+      "x-operamini-features": "advanced, httpping, routing, file_system, folding, camera",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6760"
+    },
+    "device": {
+      "deviceName": "SCP-6760",
+      "marketingName": "Incognito",
+      "manufacturer": "sanyo",
+      "brand": "sanyo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.1",
+      "manufacturer": "access",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.5",
+      "manufacturer": "unknown",
+      "bits": 32
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": "0.0.0",
+      "manufacturer": "access"
+    }
   }
 ]

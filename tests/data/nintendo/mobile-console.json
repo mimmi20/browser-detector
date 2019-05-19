@@ -454,5 +454,43 @@
       "version": "536.30.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.19 Mobile NintendoBrowser/1.6.10147.EU"
+    },
+    "device": {
+      "deviceName": "3DS",
+      "marketingName": "3DS",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": 320,
+        "height": 200,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "1.6.10147",
+      "manufacturer": "nintendo",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "0.0.0",
+      "manufacturer": "apple",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.30.0",
+      "manufacturer": "apple"
+    }
   }
 ]

@@ -74,5 +74,43 @@
       "version": "533.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "WM2003/1 (Windows CE 3.0; U) [en]"
+    },
+    "device": {
+      "deviceName": "general WonderMedia device",
+      "marketingName": "general WonderMedia device",
+      "manufacturer": "wondermedia",
+      "brand": "wondermedia",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown",
+      "bits": 32,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "0.0.0",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": null,
+      "version": "0.0.0",
+      "manufacturer": "unknown"
+    }
   }
 ]

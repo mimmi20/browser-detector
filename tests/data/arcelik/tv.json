@@ -74,5 +74,81 @@
       "version": "534.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv9; U; xx) AppleWebKit/537.17 (KHTML, like Gecko) HbbTV/1.1.1 (;Mstar;MWB;Arcelik;KY;)"
+    },
+    "device": {
+      "deviceName": "J5",
+      "marketingName": "J5",
+      "manufacturer": "arcelik",
+      "brand": "arcelik",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "apple",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.17.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; xx) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 (;Mstar;OWB;Arcelik;J5;)"
+    },
+    "device": {
+      "deviceName": "J5",
+      "marketingName": "J5",
+      "manufacturer": "arcelik",
+      "brand": "arcelik",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "apple",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "0.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.1.0",
+      "manufacturer": "apple"
+    }
   }
 ]

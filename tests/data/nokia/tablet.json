@@ -112,5 +112,43 @@
       "version": "537.36.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.0.2## N1 Build/A5WU51C)"
+    },
+    "device": {
+      "deviceName": "N1",
+      "marketingName": "N1",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": 32
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "apple"
+    }
   }
 ]
