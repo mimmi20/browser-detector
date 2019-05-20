@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/n3 plus/i": "kingzone n3 plus",
+    "/n3[ _]plus/i": "kingzone n3 plus",
+    "/n3[ _]lte/i": "kingzone n3 lte",
     "/k1[ _]turbo/i": "kingzone kz-168",
     "/ s20/i": "kingzone s20"
   },
