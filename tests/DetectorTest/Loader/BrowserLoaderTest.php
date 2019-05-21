@@ -71,6 +71,10 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn(false);
 
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -141,6 +145,10 @@ class BrowserLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn(null);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -220,6 +228,10 @@ class BrowserLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($browserData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -305,6 +317,10 @@ class BrowserLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($browserData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -395,6 +411,10 @@ class BrowserLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn($browserData);
 
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -481,6 +501,10 @@ class BrowserLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($browserData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()

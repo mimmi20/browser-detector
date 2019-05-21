@@ -70,6 +70,10 @@ final class PlatformLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::throwException(new InvalidArgumentException('fail')));
 
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -138,6 +142,10 @@ final class PlatformLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn(null);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -214,6 +222,10 @@ final class PlatformLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($platformData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -294,6 +306,10 @@ final class PlatformLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn($platformData);
 
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -372,6 +388,10 @@ final class PlatformLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($platformData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -453,6 +473,10 @@ final class PlatformLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($platformData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()

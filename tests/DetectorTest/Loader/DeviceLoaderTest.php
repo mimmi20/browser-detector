@@ -71,6 +71,10 @@ class DeviceLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn(false);
 
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -141,6 +145,10 @@ class DeviceLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn(null);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -220,6 +228,10 @@ class DeviceLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($deviceData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -306,6 +318,10 @@ class DeviceLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn($deviceData);
 
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -391,6 +407,10 @@ class DeviceLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($deviceData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()

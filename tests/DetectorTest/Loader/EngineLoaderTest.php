@@ -71,6 +71,10 @@ class EngineLoaderTest extends TestCase
             ->with('test-key')
             ->will(self::throwException(new InvalidArgumentException('fail')));
 
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -139,6 +143,10 @@ class EngineLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn(null);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -214,6 +222,10 @@ class EngineLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($engineData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -293,6 +305,10 @@ class EngineLoaderTest extends TestCase
             ->with('test-key')
             ->willReturn($engineData);
 
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -371,6 +387,10 @@ class EngineLoaderTest extends TestCase
             ->method('getItem')
             ->with('test-key')
             ->willReturn($engineData);
+
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
