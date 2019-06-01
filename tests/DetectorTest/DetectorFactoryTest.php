@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Cache\Simple\FilesystemCache;
 
-class DetectorFactoryTest extends TestCase
+final class DetectorFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -28,25 +28,25 @@ class DetectorFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         $cache = new FilesystemCache('', 0, 'cache/');
@@ -55,11 +55,11 @@ class DetectorFactoryTest extends TestCase
         $factory = new DetectorFactory($cache, $logger);
         $object  = $factory();
 
-        self::assertInstanceOf(Detector::class, $object);
+        static::assertInstanceOf(Detector::class, $object);
 
         $objectTwo = $factory();
 
-        self::assertInstanceOf(Detector::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+        static::assertInstanceOf(Detector::class, $objectTwo);
+        static::assertSame($objectTwo, $object);
     }
 }

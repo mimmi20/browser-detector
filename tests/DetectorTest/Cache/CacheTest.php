@@ -28,7 +28,7 @@ final class CacheTest extends TestCase
         $cache   = new Cache($adapter);
 
         $cache->setItem('version', 6012);
-        self::assertEquals(6012, $cache->getItem('version'));
+        static::assertSame(6012, $cache->getItem('version'));
     }
 
     /**
@@ -42,24 +42,24 @@ final class CacheTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('has')
             ->with('version')
             ->willReturn(false);
         $adapter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('set')
             ->willReturn(false);
         $adapter
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('get')
             ->willReturn(null);
 
         /** @var ArrayCache $adapter */
         $cache = new Cache($adapter);
 
-        self::assertFalse($cache->setItem('version', 6012));
-        self::assertNull($cache->getItem('version'));
+        static::assertFalse($cache->setItem('version', 6012));
+        static::assertNull($cache->getItem('version'));
     }
 
     /**
@@ -73,16 +73,16 @@ final class CacheTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('has')
             ->with('version')
             ->willReturn(true);
         $adapter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('set')
             ->willReturn(false);
         $adapter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('get')
             ->with('version')
             ->willReturn(null);
@@ -90,8 +90,8 @@ final class CacheTest extends TestCase
         /** @var ArrayCache $adapter */
         $cache = new Cache($adapter);
 
-        self::assertFalse($cache->setItem('version', 6012));
-        self::assertNull($cache->getItem('version'));
+        static::assertFalse($cache->setItem('version', 6012));
+        static::assertNull($cache->getItem('version'));
     }
 
     /**
@@ -105,22 +105,22 @@ final class CacheTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('has')
             ->with('version')
             ->willReturn(false);
         $adapter
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('set')
             ->willReturn(false);
         $adapter
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('get')
             ->willReturn(null);
 
         /** @var ArrayCache $adapter */
         $cache = new Cache($adapter);
 
-        self::assertFalse($cache->hasItem('version'));
+        static::assertFalse($cache->hasItem('version'));
     }
 }

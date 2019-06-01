@@ -18,7 +18,7 @@ use BrowserDetector\Parser\PlatformParser;
 use PHPUnit\Framework\TestCase;
 use UaResult\Os\OsInterface;
 
-class PlatformParserTest extends TestCase
+final class PlatformParserTest extends TestCase
 {
     /**
      * @return void
@@ -34,7 +34,7 @@ class PlatformParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with($key, $useragent)
             ->willReturn($result);
@@ -43,7 +43,7 @@ class PlatformParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loaderFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('__invoke')
             ->willReturn($loader);
 
@@ -51,7 +51,7 @@ class PlatformParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileParser
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls($mode, $key);
 
@@ -60,6 +60,6 @@ class PlatformParserTest extends TestCase
         $parser       = new PlatformParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 
-        self::assertSame($result, $parserResult);
+        static::assertSame($result, $parserResult);
     }
 }

@@ -15,7 +15,7 @@ use BrowserDetector\Version\VersionInterface;
 use BrowserDetector\Version\WindowsPhoneOs;
 use PHPUnit\Framework\TestCase;
 
-class WindowsPhoneOsTest extends TestCase
+final class WindowsPhoneOsTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\WindowsPhoneOs
@@ -42,8 +42,8 @@ class WindowsPhoneOsTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

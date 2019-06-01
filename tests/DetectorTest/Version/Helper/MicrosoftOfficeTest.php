@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Version\Helper;
 use BrowserDetector\Version\Helper\MicrosoftOffice;
 use PHPUnit\Framework\TestCase;
 
-class MicrosoftOfficeTest extends TestCase
+final class MicrosoftOfficeTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Helper\MicrosoftOffice
@@ -39,7 +39,7 @@ class MicrosoftOfficeTest extends TestCase
      */
     public function testMapOfficeVersion(string $version, string $expectedVersion): void
     {
-        self::assertSame($expectedVersion, $this->object->mapOfficeVersion($version));
+        static::assertSame($expectedVersion, $this->object->mapOfficeVersion($version));
     }
 
     /**

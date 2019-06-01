@@ -15,7 +15,7 @@ use BrowserDetector\Version\ChromeOs;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class ChromeOsTest extends TestCase
+final class ChromeOsTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\ChromeOs
@@ -42,8 +42,8 @@ class ChromeOsTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

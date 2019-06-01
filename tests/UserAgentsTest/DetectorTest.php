@@ -34,7 +34,7 @@ use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 
-class DetectorTest extends TestCase
+final class DetectorTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Detector
@@ -54,25 +54,25 @@ class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         $cache      = new Cache(new NullCache());
@@ -112,7 +112,7 @@ class DetectorTest extends TestCase
     {
         $object = $this->object;
 
-        /* @var Result $result */
+        /** @var Result $result */
         $result = $object($headers);
 
         try {
@@ -174,7 +174,7 @@ class DetectorTest extends TestCase
             )
         );
 
-        self::assertEquals(
+        static::assertSame(
             $expectedResult,
             $result,
             sprintf(

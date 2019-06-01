@@ -15,7 +15,7 @@ use BrowserDetector\Version\ScreamingFrog;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class ScreamingFrogTest extends TestCase
+final class ScreamingFrogTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\ScreamingFrog
@@ -42,8 +42,8 @@ class ScreamingFrogTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

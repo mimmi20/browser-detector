@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Helper;
 use BrowserDetector\Helper\Tv;
 use PHPUnit\Framework\TestCase;
 
-class TvTest extends TestCase
+final class TvTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Helper\Tv
@@ -38,7 +38,7 @@ class TvTest extends TestCase
      */
     public function testIsTv(string $agent): void
     {
-        self::assertTrue($this->object->isTvDevice($agent));
+        static::assertTrue($this->object->isTvDevice($agent));
     }
 
     /**
@@ -80,7 +80,7 @@ class TvTest extends TestCase
      */
     public function testIsNotTv(string $agent): void
     {
-        self::assertFalse($this->object->isTvDevice($agent));
+        static::assertFalse($this->object->isTvDevice($agent));
     }
 
     /**

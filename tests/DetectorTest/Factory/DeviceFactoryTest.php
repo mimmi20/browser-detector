@@ -24,7 +24,7 @@ use UaResult\Company\CompanyInterface;
 use UaResult\Device\Device;
 use UaResult\Device\DisplayInterface;
 
-class DeviceFactoryTest extends TestCase
+final class DeviceFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -39,7 +39,7 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown', $useragent)
             ->willReturn($company);
@@ -48,63 +48,63 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('load');
 
         $displayFactory = $this->getMockBuilder(DisplayFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('fromArray');
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \UaDeviceType\TypeLoaderInterface $typeLoader */
-        /* @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \UaDeviceType\TypeLoaderInterface $typeLoader */
+        /** @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
         $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, [], $useragent);
 
-        self::assertInstanceOf(Device::class, $result);
-        self::assertNull($result->getDeviceName());
-        self::assertNull($result->getMarketingName());
+        static::assertInstanceOf(Device::class, $result);
+        static::assertNull($result->getDeviceName());
+        static::assertNull($result->getMarketingName());
 
-        self::assertInstanceOf(TypeInterface::class, $result->getType());
-        self::assertInstanceOf(Unknown::class, $result->getType());
-        self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
-        self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
-        self::assertSame($company, $result->getBrand());
+        static::assertInstanceOf(TypeInterface::class, $result->getType());
+        static::assertInstanceOf(Unknown::class, $result->getType());
+        static::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(CompanyInterface::class, $result->getBrand());
+        static::assertSame($company, $result->getBrand());
     }
 
     /**
@@ -120,7 +120,7 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown', $useragent)
             ->willReturn($company);
@@ -129,63 +129,63 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('load');
 
         $displayFactory = $this->getMockBuilder(DisplayFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('fromArray');
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \UaDeviceType\TypeLoaderInterface $typeLoader */
-        /* @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \UaDeviceType\TypeLoaderInterface $typeLoader */
+        /** @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
         $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['deviceName' => '', 'marketingName' => '', 'dualOrientation' => 0, 'simCount' => 'a', 'connections' => new \stdClass()], $useragent);
 
-        self::assertInstanceOf(Device::class, $result);
-        self::assertNull($result->getDeviceName());
-        self::assertNull($result->getMarketingName());
+        static::assertInstanceOf(Device::class, $result);
+        static::assertNull($result->getDeviceName());
+        static::assertNull($result->getMarketingName());
 
-        self::assertInstanceOf(TypeInterface::class, $result->getType());
-        self::assertInstanceOf(Unknown::class, $result->getType());
-        self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
-        self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
-        self::assertSame($company, $result->getBrand());
+        static::assertInstanceOf(TypeInterface::class, $result->getType());
+        static::assertInstanceOf(Unknown::class, $result->getType());
+        static::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(CompanyInterface::class, $result->getBrand());
+        static::assertSame($company, $result->getBrand());
     }
 
     /**
@@ -215,7 +215,7 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::exactly(4))
+            ->expects(static::exactly(4))
             ->method('load')
             ->withConsecutive(['unknown', $useragent], [$manufacturerParam, $useragent], ['unknown', $useragent], [$brandParam, $useragent])
             ->willReturnOnConsecutiveCalls($company, $manufacturer, $company, $brand);
@@ -228,7 +228,7 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('1')
             ->willReturn($type);
@@ -237,28 +237,28 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         $displayParam = [];
@@ -269,14 +269,14 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('fromArray')
             ->with($logger, $displayParam)
             ->willReturn($display);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \UaDeviceType\TypeLoaderInterface $typeLoader */
-        /* @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \UaDeviceType\TypeLoaderInterface $typeLoader */
+        /** @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
         $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $data = [
@@ -295,20 +295,20 @@ class DeviceFactoryTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, $data, $useragent);
 
-        self::assertInstanceOf(Device::class, $result);
-        self::assertIsString($result->getDeviceName());
-        self::assertSame($deviceName, $result->getDeviceName());
-        self::assertIsString($result->getMarketingName());
-        self::assertSame($marketingName, $result->getMarketingName());
+        static::assertInstanceOf(Device::class, $result);
+        static::assertIsString($result->getDeviceName());
+        static::assertSame($deviceName, $result->getDeviceName());
+        static::assertIsString($result->getMarketingName());
+        static::assertSame($marketingName, $result->getMarketingName());
 
-        self::assertInstanceOf(TypeInterface::class, $result->getType());
-        self::assertSame($type, $result->getType());
-        self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        self::assertSame($display, $result->getDisplay());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($manufacturer, $result->getManufacturer());
-        self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
-        self::assertSame($brand, $result->getBrand());
+        static::assertInstanceOf(TypeInterface::class, $result->getType());
+        static::assertSame($type, $result->getType());
+        static::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
+        static::assertSame($display, $result->getDisplay());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($manufacturer, $result->getManufacturer());
+        static::assertInstanceOf(CompanyInterface::class, $result->getBrand());
+        static::assertSame($brand, $result->getBrand());
     }
 
     /**
@@ -338,7 +338,7 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::exactly(4))
+            ->expects(static::exactly(4))
             ->method('load')
             ->withConsecutive(['unknown', $useragent], [$manufacturerParam, $useragent], ['unknown', $useragent], [$brandParam, $useragent])
             ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $companyException, $manufacturerParam, $manufacturer) {
@@ -356,7 +356,7 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('1')
             ->willThrowException($typeException);
@@ -365,29 +365,29 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::exactly(3))
+            ->expects(static::exactly(3))
             ->method('info')
             ->withConsecutive($typeException, $companyException, $displayException);
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         $displayParam   = [];
@@ -395,14 +395,14 @@ class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('fromArray')
             ->with($logger, $displayParam)
             ->willThrowException($displayException);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \UaDeviceType\TypeLoaderInterface $typeLoader */
-        /* @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \UaDeviceType\TypeLoaderInterface $typeLoader */
+        /** @var \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory */
         $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $data = [
@@ -421,18 +421,18 @@ class DeviceFactoryTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, $data, $useragent);
 
-        self::assertInstanceOf(Device::class, $result);
-        self::assertIsString($result->getDeviceName());
-        self::assertSame($deviceName, $result->getDeviceName());
-        self::assertIsString($result->getMarketingName());
-        self::assertSame($marketingName, $result->getMarketingName());
+        static::assertInstanceOf(Device::class, $result);
+        static::assertIsString($result->getDeviceName());
+        static::assertSame($deviceName, $result->getDeviceName());
+        static::assertIsString($result->getMarketingName());
+        static::assertSame($marketingName, $result->getMarketingName());
 
-        self::assertInstanceOf(TypeInterface::class, $result->getType());
-        self::assertInstanceOf(Unknown::class, $result->getType());
-        self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($manufacturer, $result->getManufacturer());
-        self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
-        self::assertSame($company, $result->getBrand());
+        static::assertInstanceOf(TypeInterface::class, $result->getType());
+        static::assertInstanceOf(Unknown::class, $result->getType());
+        static::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($manufacturer, $result->getManufacturer());
+        static::assertInstanceOf(CompanyInterface::class, $result->getBrand());
+        static::assertSame($company, $result->getBrand());
     }
 }

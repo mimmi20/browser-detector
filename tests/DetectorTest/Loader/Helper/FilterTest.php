@@ -15,7 +15,7 @@ use BrowserDetector\Loader\Helper\Filter;
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
 
-class FilterTest extends TestCase
+final class FilterTest extends TestCase
 {
     private const DATA_PATH = 'root';
 
@@ -49,15 +49,15 @@ class FilterTest extends TestCase
 
         $result = $object(vfsStream::url(self::DATA_PATH), 'json');
 
-        self::assertInstanceOf(\Iterator::class, $result);
+        static::assertInstanceOf(\Iterator::class, $result);
 
         $counter = 0;
 
         foreach ($result as $file) {
-            self::assertInstanceOf(\SplFileInfo::class, $file);
+            static::assertInstanceOf(\SplFileInfo::class, $file);
             ++$counter;
         }
 
-        self::assertSame(2, $counter);
+        static::assertSame(2, $counter);
     }
 }

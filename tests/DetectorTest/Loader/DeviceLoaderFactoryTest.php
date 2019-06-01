@@ -20,7 +20,7 @@ use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
-class DeviceLoaderFactoryTest extends TestCase
+final class DeviceLoaderFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -34,7 +34,7 @@ class DeviceLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(self::any())
+            ->expects(static::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -51,7 +51,7 @@ class DeviceLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('__invoke')
             ->with(DeviceLoaderFactory::DATA_PATH . $company, 'json')
             ->willReturn($iterator);
@@ -64,11 +64,11 @@ class DeviceLoaderFactoryTest extends TestCase
         $factory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser, $filter);
         $object  = $factory($company);
 
-        self::assertInstanceOf(DeviceLoaderInterface::class, $object);
+        static::assertInstanceOf(DeviceLoaderInterface::class, $object);
 
         $objectTwo = $factory($company);
 
-        self::assertInstanceOf(DeviceLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+        static::assertInstanceOf(DeviceLoaderInterface::class, $objectTwo);
+        static::assertSame($objectTwo, $object);
     }
 }

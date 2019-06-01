@@ -18,7 +18,7 @@ use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\TestCase;
 use UaResult\Engine\EngineInterface;
 
-class EngineParserTest extends TestCase
+final class EngineParserTest extends TestCase
 {
     /**
      * @return void
@@ -33,7 +33,7 @@ class EngineParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with($mode, $useragent)
             ->willReturn($result);
@@ -42,7 +42,7 @@ class EngineParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loaderFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('__invoke')
             ->willReturn($loader);
 
@@ -50,7 +50,7 @@ class EngineParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileParser
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('parseFile')
             ->willReturn($mode);
 
@@ -59,6 +59,6 @@ class EngineParserTest extends TestCase
         $parser       = new EngineParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 
-        self::assertSame($result, $parserResult);
+        static::assertSame($result, $parserResult);
     }
 }

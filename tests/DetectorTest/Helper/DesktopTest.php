@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Helper;
 use BrowserDetector\Helper\Desktop;
 use PHPUnit\Framework\TestCase;
 
-class DesktopTest extends TestCase
+final class DesktopTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Helper\Desktop
@@ -38,7 +38,7 @@ class DesktopTest extends TestCase
      */
     public function testIsDesktop(string $agent): void
     {
-        self::assertTrue($this->object->isDesktopDevice($agent));
+        static::assertTrue($this->object->isDesktopDevice($agent));
     }
 
     /**
@@ -106,7 +106,7 @@ class DesktopTest extends TestCase
      */
     public function testIsNoDesktop(string $agent): void
     {
-        self::assertFalse($this->object->isDesktopDevice($agent));
+        static::assertFalse($this->object->isDesktopDevice($agent));
     }
 
     /**

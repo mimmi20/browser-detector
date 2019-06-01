@@ -21,7 +21,7 @@ use Psr\Log\LoggerInterface;
 use UaResult\Company\CompanyInterface;
 use UaResult\Engine\EngineInterface;
 
-class EngineFactoryTest extends TestCase
+final class EngineFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -35,7 +35,7 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -47,52 +47,52 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('set')
             ->with('0')
             ->willReturn($version);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, [], 'this is a test');
 
-        self::assertInstanceOf(EngineInterface::class, $result);
-        self::assertNull($result->getName());
-        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        self::assertSame($version, $result->getVersion());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertSame($version, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -107,7 +107,7 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -123,52 +123,52 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('set')
             ->withConsecutive(['0'], [$v])
             ->willReturnOnConsecutiveCalls($version1, $version2);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
 
-        self::assertInstanceOf(EngineInterface::class, $result);
-        self::assertNull($result->getName());
-        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        self::assertSame($version2, $result->getVersion());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertSame($version2, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -183,7 +183,7 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -196,52 +196,52 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('set')
             ->with('0')
             ->willReturn($version1);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
 
-        self::assertInstanceOf(EngineInterface::class, $result);
-        self::assertNull($result->getName());
-        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        self::assertSame($version1, $result->getVersion());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertSame($version1, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -256,7 +256,7 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -274,52 +274,52 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('set')
             ->withConsecutive(['0'], [$v2])
             ->willReturnOnConsecutiveCalls($version1, $version2);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
 
-        self::assertInstanceOf(EngineInterface::class, $result);
-        self::assertNull($result->getName());
-        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        self::assertSame($version2, $result->getVersion());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertSame($version2, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -334,7 +334,7 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -352,52 +352,52 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('set')
             ->with('0')
             ->willReturn($version1);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
 
-        self::assertInstanceOf(EngineInterface::class, $result);
-        self::assertNull($result->getName());
-        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        self::assertNotSame($version2, $result->getVersion());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertNotSame($version2, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -412,7 +412,7 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -427,52 +427,52 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('set')
             ->with('0')
             ->willReturn($version1);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
 
-        self::assertInstanceOf(EngineInterface::class, $result);
-        self::assertNull($result->getName());
-        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        self::assertSame($version1, $result->getVersion());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertSame($version1, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -487,7 +487,7 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -509,57 +509,57 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('set')
             ->with('0')
             ->willReturn($version1);
         $versionFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('detectVersion')
             ->with($useragent, $search)
             ->willReturn($version2);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['version' => $v], $useragent);
 
-        self::assertInstanceOf(EngineInterface::class, $result);
-        self::assertNull($result->getName());
-        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        self::assertSame($version2, $result->getVersion());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertSame($version2, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -577,7 +577,7 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('load')
             ->withConsecutive(['unknown', $useragent], [$companyName, $useragent])
             ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $exception) {
@@ -594,52 +594,52 @@ class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('set')
             ->with('0')
             ->willReturn($version);
 
-        /* @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /* @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['manufacturer' => $companyName], $useragent);
 
-        self::assertInstanceOf(EngineInterface::class, $result);
-        self::assertNull($result->getName());
-        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        self::assertSame($version, $result->getVersion());
-        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        self::assertSame($company, $result->getManufacturer());
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertSame($version, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
     }
 }

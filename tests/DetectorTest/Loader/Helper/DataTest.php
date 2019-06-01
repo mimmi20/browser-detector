@@ -17,7 +17,7 @@ use JsonClass\JsonInterface;
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
 
-class DataTest extends TestCase
+final class DataTest extends TestCase
 {
     private const DATA_PATH = 'root';
 
@@ -48,7 +48,7 @@ class DataTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $file
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('getPathname')
             ->willReturnOnConsecutiveCalls(vfsStream::url(self::DATA_PATH . '/bot.json'), vfsStream::url(self::DATA_PATH . '/tool.json'));
 
@@ -56,11 +56,11 @@ class DataTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $iterator
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('current')
             ->willReturn($file);
         $iterator
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('valid')
             ->willReturnCallback(
                 static function () {
@@ -80,10 +80,10 @@ class DataTest extends TestCase
             ->getMock();
 
         $jsonParser
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('decode')
             ->with('{"key": "value"}', false, 512, 0)
-            ->will(self::throwException(new DecodeErrorException(0, 'error', '')));
+            ->will(static::throwException(new DecodeErrorException(0, 'error', '')));
 
         /** @var \Iterator $iterator */
         /** @var \JsonClass\Json $jsonParser */
@@ -104,7 +104,7 @@ class DataTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $file
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('getPathname')
             ->willReturnOnConsecutiveCalls(vfsStream::url(self::DATA_PATH . '/bot.json'), vfsStream::url(self::DATA_PATH . '/tool.json'));
 
@@ -112,11 +112,11 @@ class DataTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $iterator
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('current')
             ->willReturn($file);
         $iterator
-            ->expects(self::exactly(3))
+            ->expects(static::exactly(3))
             ->method('valid')
             ->willReturnCallback(
                 static function () {
@@ -139,7 +139,7 @@ class DataTest extends TestCase
         $value = 'abc';
 
         $jsonParser
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('decode')
             ->withConsecutive(['{"key": "value"}', false, 512, 0], ['{"key2": "value2"}', false, 512, 0])
             ->willReturnOnConsecutiveCalls([$key => $value, 'generic' => 'test', 'generic2' => 'test2'], ['generic' => 'test', 'generic2' => 'test2', 'new' => 'newValue']);
@@ -150,13 +150,13 @@ class DataTest extends TestCase
 
         $object();
 
-        self::assertTrue($object->isInitialized());
+        static::assertTrue($object->isInitialized());
 
         $object();
 
-        self::assertTrue($object->isInitialized());
-        self::assertTrue($object->hasItem($key));
-        self::assertSame($value, $object->getItem($key));
-        self::assertCount(4, $object);
+        static::assertTrue($object->isInitialized());
+        static::assertTrue($object->hasItem($key));
+        static::assertSame($value, $object->getItem($key));
+        static::assertCount(4, $object);
     }
 }

@@ -31,13 +31,17 @@ return PhpCsFixer\Config::create()
     ->setRules(
         [
             '@PSR2' => true,
+            '@PhpCsFixer' => true,
+            '@PhpCsFixer:risky' => true,
             '@Symfony' => true,
             '@Symfony:risky' => true,
             '@PHP70Migration' => true,
             '@PHP70Migration:risky' => true,
             '@PHP71Migration' => true,
             '@PHP71Migration:risky' => true,
+            '@PHP73Migration' => true,
             '@PHPUnit60Migration:risky' => true,
+            '@PHPUnit75Migration:risky' => true,
 
             // @PSR2 rules configured different from default
             'blank_line_after_namespace' => true,
@@ -52,6 +56,12 @@ return PhpCsFixer\Config::create()
             ],
             'no_break_comment' => false,
             'visibility_required' => ['elements' => ['property', 'method', 'const']],
+
+            // @PhpCsFixer rules configured different from default
+            'align_multiline_comment' => ['comment_type' => 'all_multiline'],
+            'array_syntax' => ['syntax' => 'short'],
+            'binary_operator_spaces' => ['default' => 'single_space', 'operators' => ['=' => 'align_single_space_minimal']],
+            'php_unit_internal_class' => false,
 
             // @Symfony rules configured different from default
             'binary_operator_spaces' => ['default' => 'single_space', 'operators' => ['=' => 'align_single_space_minimal']],
@@ -96,24 +106,24 @@ return PhpCsFixer\Config::create()
             ],
             'explicit_indirect_variable' => true,
             'explicit_string_variable' => true,
+            'final_class' => true,
             'final_internal_class' => [
                 'annotation-black-list' => ['@final', '@Entity', '@ORM'],
                 'annotation-white-list' => ['@internal'],
             ],
+            'fully_qualified_strict_types' => true,
             'general_phpdoc_annotation_remove' => [
                 'expectedExceptionMessageRegExp',
                 'expectedException',
                 'expectedExceptionMessage',
                 'author',
             ],
-            'hash_to_slash_comment' => true,
             'header_comment' => [
                 'header' => $header,
                 'commentType' => 'PHPDoc',
                 'location' => 'after_open',
                 'separate' => 'bottom',
             ],
-            'heredoc_to_nowdoc' => true,
             'linebreak_after_opening_tag' => true,
             'list_syntax' => ['syntax' => 'short'],
             'mb_str_functions' => true,

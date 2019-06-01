@@ -20,7 +20,7 @@ use UaDisplaySize\TypeLoader;
 use UaDisplaySize\TypeLoaderInterface;
 use UaResult\Device\DisplayInterface;
 
-class DisplayFactoryTest extends TestCase
+final class DisplayFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -31,42 +31,42 @@ class DisplayFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         $type = $this->getMockBuilder(DisplayTypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $type
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('getType');
 
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('loadByDiemsions')
             ->with(null, null)
             ->willReturn($type);
@@ -77,22 +77,22 @@ class DisplayFactoryTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, []);
 
-        self::assertInstanceOf(DisplayInterface::class, $result);
-        self::assertNull($result->hasTouch());
-        self::assertNull($result->getSize());
-        self::assertInstanceOf(DisplayTypeInterface::class, $result->getType());
-        self::assertSame($type, $result->getType());
+        static::assertInstanceOf(DisplayInterface::class, $result);
+        static::assertNull($result->hasTouch());
+        static::assertNull($result->getSize());
+        static::assertInstanceOf(DisplayTypeInterface::class, $result->getType());
+        static::assertSame($type, $result->getType());
 
-        self::assertIsArray($result->toArray());
-        self::assertArrayHasKey('width', $result->toArray());
-        self::assertArrayHasKey('height', $result->toArray());
-        self::assertArrayHasKey('touch', $result->toArray());
-        self::assertArrayHasKey('size', $result->toArray());
+        static::assertIsArray($result->toArray());
+        static::assertArrayHasKey('width', $result->toArray());
+        static::assertArrayHasKey('height', $result->toArray());
+        static::assertArrayHasKey('touch', $result->toArray());
+        static::assertArrayHasKey('size', $result->toArray());
 
-        self::assertNull($result->toArray()['width']);
-        self::assertNull($result->toArray()['height']);
-        self::assertNull($result->toArray()['touch']);
-        self::assertNull($result->toArray()['size']);
+        static::assertNull($result->toArray()['width']);
+        static::assertNull($result->toArray()['height']);
+        static::assertNull($result->toArray()['touch']);
+        static::assertNull($result->toArray()['size']);
     }
 
     /**
@@ -104,28 +104,28 @@ class DisplayFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         $width  = 1280;
@@ -135,14 +135,14 @@ class DisplayFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $type
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('getType');
         $type
-            ->expects(self::exactly(10))
+            ->expects(static::exactly(10))
             ->method('getHeight')
             ->willReturn($height);
         $type
-            ->expects(self::exactly(10))
+            ->expects(static::exactly(10))
             ->method('getWidth')
             ->willReturn($width);
 
@@ -150,7 +150,7 @@ class DisplayFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('loadByDiemsions')
             ->with($height, $width)
             ->willReturn($type);
@@ -164,27 +164,27 @@ class DisplayFactoryTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size]);
 
-        self::assertInstanceOf(DisplayInterface::class, $result);
-        self::assertSame($width, $result->getType()->getWidth());
-        self::assertSame($height, $result->getType()->getHeight());
-        self::assertTrue($result->hasTouch());
-        self::assertSame($size, $result->getSize());
+        static::assertInstanceOf(DisplayInterface::class, $result);
+        static::assertSame($width, $result->getType()->getWidth());
+        static::assertSame($height, $result->getType()->getHeight());
+        static::assertTrue($result->hasTouch());
+        static::assertSame($size, $result->getSize());
 
         $resultType = $result->getType();
 
-        self::assertInstanceOf(DisplayTypeInterface::class, $resultType);
-        self::assertSame($type, $resultType);
+        static::assertInstanceOf(DisplayTypeInterface::class, $resultType);
+        static::assertSame($type, $resultType);
 
-        self::assertIsArray($result->toArray());
-        self::assertArrayHasKey('width', $result->toArray());
-        self::assertArrayHasKey('height', $result->toArray());
-        self::assertArrayHasKey('touch', $result->toArray());
-        self::assertArrayHasKey('size', $result->toArray());
+        static::assertIsArray($result->toArray());
+        static::assertArrayHasKey('width', $result->toArray());
+        static::assertArrayHasKey('height', $result->toArray());
+        static::assertArrayHasKey('touch', $result->toArray());
+        static::assertArrayHasKey('size', $result->toArray());
 
-        self::assertSame($width, $result->toArray()['width']);
-        self::assertSame($height, $result->toArray()['height']);
-        self::assertTrue($result->toArray()['touch']);
-        self::assertSame($size, $result->toArray()['size']);
+        static::assertSame($width, $result->toArray()['width']);
+        static::assertSame($height, $result->toArray()['height']);
+        static::assertTrue($result->toArray()['touch']);
+        static::assertSame($size, $result->toArray()['size']);
     }
 
     /**
@@ -197,29 +197,29 @@ class DisplayFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         $width  = 1280;
@@ -229,20 +229,20 @@ class DisplayFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $type
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('getType');
         $type
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('getHeight');
         $type
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('getWidth');
 
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('loadByDiemsions')
             ->with($height, $width)
             ->willThrowException($exception);
@@ -256,26 +256,26 @@ class DisplayFactoryTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size]);
 
-        self::assertInstanceOf(DisplayInterface::class, $result);
-        self::assertNull($result->getType()->getWidth());
-        self::assertNull($result->getType()->getHeight());
-        self::assertTrue($result->hasTouch());
-        self::assertSame($size, $result->getSize());
+        static::assertInstanceOf(DisplayInterface::class, $result);
+        static::assertNull($result->getType()->getWidth());
+        static::assertNull($result->getType()->getHeight());
+        static::assertTrue($result->hasTouch());
+        static::assertSame($size, $result->getSize());
 
         $resultType = $result->getType();
 
-        self::assertInstanceOf(DisplayTypeInterface::class, $resultType);
-        self::assertNotSame($type, $resultType);
+        static::assertInstanceOf(DisplayTypeInterface::class, $resultType);
+        static::assertNotSame($type, $resultType);
 
-        self::assertIsArray($result->toArray());
-        self::assertArrayHasKey('width', $result->toArray());
-        self::assertArrayHasKey('height', $result->toArray());
-        self::assertArrayHasKey('touch', $result->toArray());
-        self::assertArrayHasKey('size', $result->toArray());
+        static::assertIsArray($result->toArray());
+        static::assertArrayHasKey('width', $result->toArray());
+        static::assertArrayHasKey('height', $result->toArray());
+        static::assertArrayHasKey('touch', $result->toArray());
+        static::assertArrayHasKey('size', $result->toArray());
 
-        self::assertNull($result->toArray()['width']);
-        self::assertNull($result->toArray()['height']);
-        self::assertTrue($result->toArray()['touch']);
-        self::assertSame($size, $result->toArray()['size']);
+        static::assertNull($result->toArray()['width']);
+        static::assertNull($result->toArray()['height']);
+        static::assertTrue($result->toArray()['touch']);
+        static::assertSame($size, $result->toArray()['size']);
     }
 }

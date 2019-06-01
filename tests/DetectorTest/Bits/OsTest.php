@@ -40,11 +40,11 @@ final class OsTest extends TestCase
     public function testGetBits(string $useragent, int $expected): void
     {
         $result = $this->object->getBits($useragent);
-        self::assertSame($expected, $result);
+        static::assertSame($expected, $result);
 
         $secondResult = $this->object->getBits($useragent);
-        self::assertSame($expected, $secondResult);
-        self::assertSame($result, $secondResult);
+        static::assertSame($expected, $secondResult);
+        static::assertSame($result, $secondResult);
     }
 
     /**

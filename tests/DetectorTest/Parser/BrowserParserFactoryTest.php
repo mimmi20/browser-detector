@@ -26,7 +26,7 @@ use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
-class BrowserParserFactoryTest extends TestCase
+final class BrowserParserFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -46,7 +46,7 @@ class BrowserParserFactoryTest extends TestCase
 
         $parser = $factory();
 
-        self::assertInstanceOf(BrowserParserInterface::class, $parser);
-        self::assertInstanceOf(BrowserParser::class, $parser);
+        static::assertInstanceOf(BrowserParserInterface::class, $parser);
+        static::assertInstanceOf(BrowserParser::class, $parser);
     }
 }

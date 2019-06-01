@@ -15,7 +15,7 @@ use BrowserDetector\Version\Macosx;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class MacosxTest extends TestCase
+final class MacosxTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Macosx
@@ -44,8 +44,8 @@ class MacosxTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

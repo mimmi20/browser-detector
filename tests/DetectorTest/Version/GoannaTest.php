@@ -15,7 +15,7 @@ use BrowserDetector\Version\Goanna;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class GoannaTest extends TestCase
+final class GoannaTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Goanna
@@ -42,8 +42,8 @@ class GoannaTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**
