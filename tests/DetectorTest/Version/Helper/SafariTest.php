@@ -14,7 +14,7 @@ namespace BrowserDetectorTest\Version\Helper;
 use BrowserDetector\Version\Helper\Safari;
 use PHPUnit\Framework\TestCase;
 
-class SafariTest extends TestCase
+final class SafariTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Helper\Safari
@@ -39,7 +39,7 @@ class SafariTest extends TestCase
      */
     public function testMapSafariVersion(string $version, string $expectedVersion): void
     {
-        self::assertSame($expectedVersion, $this->object->mapSafariVersion($version));
+        static::assertSame($expectedVersion, $this->object->mapSafariVersion($version));
     }
 
     /**

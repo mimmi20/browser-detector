@@ -15,7 +15,7 @@ use BrowserDetector\Version\Raspbian;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class RaspbianTest extends TestCase
+final class RaspbianTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Raspbian
@@ -42,8 +42,8 @@ class RaspbianTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

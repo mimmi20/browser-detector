@@ -15,7 +15,7 @@ use BrowserDetector\Version\Puffin;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class PuffinTest extends TestCase
+final class PuffinTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Puffin
@@ -42,8 +42,8 @@ class PuffinTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

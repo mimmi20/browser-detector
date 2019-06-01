@@ -111,7 +111,7 @@ final class Ios implements VersionDetectorInterface
         $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/([\d\.]+)$/i', $useragent, $matches);
 
         if ($doMatch) {
-            // @see https://justworks.ca/blog/ios-and
+            /** @see https://justworks.ca/blog/ios-and */
             $map = [
                 '508.11' => '2.2.1',
                 '701.341' => '3.0',

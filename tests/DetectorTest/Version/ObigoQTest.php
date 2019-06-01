@@ -15,7 +15,7 @@ use BrowserDetector\Version\ObigoQ;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class ObigoQTest extends TestCase
+final class ObigoQTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\ObigoQ
@@ -42,8 +42,8 @@ class ObigoQTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

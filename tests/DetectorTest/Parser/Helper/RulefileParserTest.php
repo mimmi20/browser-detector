@@ -17,7 +17,7 @@ use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
-class RulefileParserTest extends TestCase
+final class RulefileParserTest extends TestCase
 {
     private const DATA_PATH = 'root';
 
@@ -50,7 +50,7 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('getPathname')
             ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
 
@@ -58,7 +58,7 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('decode')
             ->with($content, true)
             ->willReturn([]);
@@ -69,28 +69,28 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \JsonClass\JsonInterface $jsonParser */
@@ -100,7 +100,7 @@ class RulefileParserTest extends TestCase
         /** @var \SplFileInfo $fileInfo */
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
-        self::assertSame($fallback, $result);
+        static::assertSame($fallback, $result);
     }
 
     /**
@@ -116,7 +116,7 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('getPathname')
             ->willThrowException($exception);
 
@@ -124,7 +124,7 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('decode')
             ->with($content, true)
             ->willReturn([]);
@@ -135,29 +135,29 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('error')
             ->with($exception);
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \JsonClass\JsonInterface $jsonParser */
@@ -167,7 +167,7 @@ class RulefileParserTest extends TestCase
         /** @var \SplFileInfo $fileInfo */
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
-        self::assertSame($fallback, $result);
+        static::assertSame($fallback, $result);
     }
 
     /**
@@ -186,7 +186,7 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('getPathname')
             ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
 
@@ -194,7 +194,7 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('decode')
             ->with($content, true)
             ->willReturn(['generic' => $generic, 'rules' => $rules]);
@@ -205,28 +205,28 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \JsonClass\JsonInterface $jsonParser */
@@ -236,7 +236,7 @@ class RulefileParserTest extends TestCase
         /** @var \SplFileInfo $fileInfo */
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
-        self::assertSame($mode, $result);
+        static::assertSame($mode, $result);
     }
 
     /**
@@ -255,7 +255,7 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('getPathname')
             ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
 
@@ -263,7 +263,7 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('decode')
             ->with($content, true)
             ->willReturn(['generic' => $generic, 'rules' => $rules]);
@@ -274,28 +274,28 @@ class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('info');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('warning');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('error');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('critical');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('alert');
         $logger
-            ->expects(self::never())
+            ->expects(static::never())
             ->method('emergency');
 
         /** @var \JsonClass\JsonInterface $jsonParser */
@@ -305,6 +305,6 @@ class RulefileParserTest extends TestCase
         /** @var \SplFileInfo $fileInfo */
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
-        self::assertSame($generic, $result);
+        static::assertSame($generic, $result);
     }
 }

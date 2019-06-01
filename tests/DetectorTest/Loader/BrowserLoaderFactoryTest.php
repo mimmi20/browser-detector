@@ -20,7 +20,7 @@ use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
-class BrowserLoaderFactoryTest extends TestCase
+final class BrowserLoaderFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -32,7 +32,7 @@ class BrowserLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(self::any())
+            ->expects(static::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -49,7 +49,7 @@ class BrowserLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('__invoke')
             ->with(BrowserLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
@@ -62,11 +62,11 @@ class BrowserLoaderFactoryTest extends TestCase
         $factory = new BrowserLoaderFactory($logger, $jsonParser, $companyLoader, $engineParser, $filter);
         $object  = $factory();
 
-        self::assertInstanceOf(BrowserLoaderInterface::class, $object);
+        static::assertInstanceOf(BrowserLoaderInterface::class, $object);
 
         $objectTwo = $factory();
 
-        self::assertInstanceOf(BrowserLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+        static::assertInstanceOf(BrowserLoaderInterface::class, $objectTwo);
+        static::assertSame($objectTwo, $object);
     }
 }

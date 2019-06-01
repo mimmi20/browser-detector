@@ -15,7 +15,7 @@ use BrowserDetector\Version\Maxthon;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class MaxthonTest extends TestCase
+final class MaxthonTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Maxthon
@@ -42,8 +42,8 @@ class MaxthonTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

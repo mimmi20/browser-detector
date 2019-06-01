@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Test class for \BrowserDetector\Loader\CompanyLoader
  */
-class CompanyLoaderTest extends TestCase
+final class CompanyLoaderTest extends TestCase
 {
     /**
      * @return void
@@ -38,17 +38,17 @@ class CompanyLoaderTest extends TestCase
         $data = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $data->expects(self::once())
+        $data->expects(static::once())
             ->method('hasItem')
             ->willReturn(false);
-        $data->expects(self::never())
+        $data->expects(static::never())
             ->method('getItem')
             ->with($companyKey)
             ->willReturn($result);
-        $data->expects(self::once())
+        $data->expects(static::once())
             ->method('__invoke');
 
-        /* @var Data $data */
+        /** @var Data $data */
         $object = new CompanyLoader($data);
 
         $this->expectException(NotFoundException::class);
@@ -73,17 +73,17 @@ class CompanyLoaderTest extends TestCase
         $data = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $data->expects(self::once())
+        $data->expects(static::once())
             ->method('hasItem')
             ->willReturn(true);
-        $data->expects(self::once())
+        $data->expects(static::once())
             ->method('getItem')
             ->with($companyKey)
             ->willReturn(null);
-        $data->expects(self::once())
+        $data->expects(static::once())
             ->method('__invoke');
 
-        /* @var Data $data */
+        /** @var Data $data */
         $object = new CompanyLoader($data);
 
         $this->expectException(NotFoundException::class);
@@ -108,30 +108,30 @@ class CompanyLoaderTest extends TestCase
         $data = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $data->expects(self::once())
+        $data->expects(static::once())
             ->method('hasItem')
             ->willReturn(true);
-        $data->expects(self::once())
+        $data->expects(static::once())
             ->method('getItem')
             ->with($companyKey)
             ->willReturn($result);
-        $data->expects(self::once())
+        $data->expects(static::once())
             ->method('__invoke');
 
-        /* @var Data $data */
+        /** @var Data $data */
         $object = new CompanyLoader($data);
 
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $object->load($companyKey);
 
-        self::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
+        static::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
 
-        self::assertSame(
+        static::assertSame(
             $companyName,
             $result->getName(),
             'Expected Company name to be "' . $companyName . '" (was "' . $result->getName() . '")'
         );
-        self::assertSame(
+        static::assertSame(
             $brand,
             $result->getBrandName(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")'

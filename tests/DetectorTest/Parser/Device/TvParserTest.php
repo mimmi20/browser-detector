@@ -17,7 +17,7 @@ use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\TestCase;
 
-class TvParserTest extends TestCase
+final class TvParserTest extends TestCase
 {
     /**
      * @return void
@@ -33,7 +33,7 @@ class TvParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoader
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('load')
             ->with($expectedMode, $useragent)
             ->willReturn($expectedResult);
@@ -42,7 +42,7 @@ class TvParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoaderFactory
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('__invoke')
             ->with($genericMode)
             ->willReturn($mockLoader);
@@ -51,14 +51,14 @@ class TvParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileParser
-            ->expects(self::exactly(2))
+            ->expects(static::exactly(2))
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls($genericMode, $expectedMode);
 
-        /* @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
-        /* @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
+        /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
+        /** @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
         $object = new TvParser($fileParser, $mockLoaderFactory);
 
-        self::assertSame($expectedResult, $object->parse($useragent));
+        static::assertSame($expectedResult, $object->parse($useragent));
     }
 }

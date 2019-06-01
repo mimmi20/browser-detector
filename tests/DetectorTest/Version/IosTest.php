@@ -15,7 +15,7 @@ use BrowserDetector\Version\Ios;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class IosTest extends TestCase
+final class IosTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Ios
@@ -44,8 +44,8 @@ class IosTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

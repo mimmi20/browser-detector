@@ -15,7 +15,7 @@ use BrowserDetector\Version\RimOs;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class RimOsTest extends TestCase
+final class RimOsTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\RimOs
@@ -42,8 +42,8 @@ class RimOsTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

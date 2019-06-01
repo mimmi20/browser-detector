@@ -19,7 +19,7 @@ use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
-class EngineLoaderFactoryTest extends TestCase
+final class EngineLoaderFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -31,7 +31,7 @@ class EngineLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(self::any())
+            ->expects(static::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -44,7 +44,7 @@ class EngineLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(self::once())
+            ->expects(static::once())
             ->method('__invoke')
             ->with(EngineLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
@@ -56,11 +56,11 @@ class EngineLoaderFactoryTest extends TestCase
         $factory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader, $filter);
         $object  = $factory();
 
-        self::assertInstanceOf(EngineLoaderInterface::class, $object);
+        static::assertInstanceOf(EngineLoaderInterface::class, $object);
 
         $objectTwo = $factory();
 
-        self::assertInstanceOf(EngineLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+        static::assertInstanceOf(EngineLoaderInterface::class, $objectTwo);
+        static::assertSame($objectTwo, $object);
     }
 }

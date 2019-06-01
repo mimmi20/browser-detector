@@ -15,7 +15,7 @@ use BrowserDetector\Version\Friendica;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class FriendicaTest extends TestCase
+final class FriendicaTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Friendica
@@ -42,8 +42,8 @@ class FriendicaTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

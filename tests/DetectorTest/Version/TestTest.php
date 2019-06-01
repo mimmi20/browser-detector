@@ -15,7 +15,7 @@ use BrowserDetector\Version\Test;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 
-class TestTest extends TestCase
+final class TestTest extends TestCase
 {
     /**
      * @var \BrowserDetector\Version\Test
@@ -42,8 +42,8 @@ class TestTest extends TestCase
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertSame($expectedVersion, $detectedVersion->getVersion());
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

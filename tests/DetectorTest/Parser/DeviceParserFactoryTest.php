@@ -26,7 +26,7 @@ use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
-class DeviceParserFactoryTest extends TestCase
+final class DeviceParserFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -46,7 +46,7 @@ class DeviceParserFactoryTest extends TestCase
 
         $parser = $factory();
 
-        self::assertInstanceOf(DeviceParserInterface::class, $parser);
-        self::assertInstanceOf(DeviceParser::class, $parser);
+        static::assertInstanceOf(DeviceParserInterface::class, $parser);
+        static::assertInstanceOf(DeviceParser::class, $parser);
     }
 }

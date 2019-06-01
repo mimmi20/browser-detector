@@ -17,7 +17,7 @@ use BrowserDetector\Loader\Helper\FilterInterface;
 use JsonClass\JsonInterface;
 use PHPUnit\Framework\TestCase;
 
-class CompanyLoaderFactoryTest extends TestCase
+final class CompanyLoaderFactoryTest extends TestCase
 {
     /**
      * @return void
@@ -28,7 +28,7 @@ class CompanyLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(self::any())
+            ->expects(static::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -37,7 +37,7 @@ class CompanyLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(self::any())
+            ->expects(static::any())
             ->method('__invoke')
             ->with(CompanyLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
@@ -47,11 +47,11 @@ class CompanyLoaderFactoryTest extends TestCase
         $factory = new CompanyLoaderFactory($jsonParser, $filter);
         $object  = $factory();
 
-        self::assertInstanceOf(CompanyLoaderInterface::class, $object);
+        static::assertInstanceOf(CompanyLoaderInterface::class, $object);
 
         $objectTwo = $factory();
 
-        self::assertInstanceOf(CompanyLoaderInterface::class, $objectTwo);
-        self::assertSame($objectTwo, $object);
+        static::assertInstanceOf(CompanyLoaderInterface::class, $objectTwo);
+        static::assertSame($objectTwo, $object);
     }
 }
