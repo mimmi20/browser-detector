@@ -174,7 +174,7 @@ final class DetectorTest extends TestCase
             )
         );
 
-        static::assertSame(
+        static::assertEquals(
             $expectedResult,
             $result,
             sprintf(
