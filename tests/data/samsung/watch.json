@@ -188,5 +188,43 @@
       "version": "538.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R760) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-R760",
+      "marketingName": "Gear S3 Frontier",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 360,
+        "height": 360,
+        "touch": true,
+        "size": 1.3
+      },
+      "type": "watch"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.0",
+      "manufacturer": "google",
+      "bits": 32,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "4.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]

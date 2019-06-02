@@ -3540,14 +3540,14 @@
       "x-operamini-phone": "RIM # BlackBerry 8520"
     },
     "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
+      "deviceName": "BlackBerry 8520",
+      "marketingName": "BlackBerry Curve 8520",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 320,
+        "height": 240,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone"
@@ -3966,6 +3966,45 @@
     "engine": {
       "name": "Presto",
       "version": "2.5.25",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/8.0.35659/35.6497; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone": "RIM # BlackBerry 8520"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8520",
+      "marketingName": "BlackBerry Curve 8520",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.35659",
+      "manufacturer": "opera",
+      "bits": 32,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": 32
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
       "manufacturer": "opera"
     }
   }
