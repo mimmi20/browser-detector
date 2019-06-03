@@ -40,6 +40,6 @@ final class Browser implements BitsInterface
             return 8;
         }
 
-        return 32;
+        return null;
     }
 }
