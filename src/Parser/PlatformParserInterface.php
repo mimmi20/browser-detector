@@ -20,8 +20,6 @@ interface PlatformParserInterface
      *
      * @param string $useragent
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return \UaResult\Os\OsInterface
      */
     public function parse(string $useragent);

@@ -22,11 +22,11 @@ final class Raspbian implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (preg_match('/raspbian\/([\d\.]+)/i', $useragent, $matches)) {
+        if ((bool) preg_match('/raspbian\/([\d\.]+)/i', $useragent, $matches)) {
             return (new VersionFactory())->set($matches[1]);
         }
 
-        if (preg_match('/debian\/([\d\.]+).*rpi/i', $useragent, $matches)) {
+        if ((bool) preg_match('/debian\/([\d\.]+).*rpi/i', $useragent, $matches)) {
             return (new VersionFactory())->set($matches[1]);
         }
 

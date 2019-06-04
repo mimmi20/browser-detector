@@ -49,7 +49,7 @@ final class Safari
             12.0,
         ];
 
-        if (in_array($detectedVersion, $regularVersions)) {
+        if (in_array($detectedVersion, $regularVersions, true)) {
             return $detectedVersion;
         }
 

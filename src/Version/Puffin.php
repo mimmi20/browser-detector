@@ -22,7 +22,7 @@ final class Puffin implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (preg_match('/(?:Puffin%20Free|Puffin)\/([\d\.]+)/', $useragent, $matches)) {
+        if ((bool) preg_match('/(?:Puffin%20Free|Puffin)\/([\d\.]+)/', $useragent, $matches)) {
             return (new VersionFactory())->set($matches[1]);
         }
 

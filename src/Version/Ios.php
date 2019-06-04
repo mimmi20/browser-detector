@@ -20,32 +20,38 @@ final class Ios implements VersionDetectorInterface
      *
      * @param string $useragent
      *
-     * @throws \Exception
-     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/CPU like Mac OS X/', $useragent);
+        $doMatch = (bool) preg_match('/CPU like Mac OS X/', $useragent);
 
         if ($doMatch) {
             return (new VersionFactory())->set('1.0');
         }
 
-        $doMatch = preg_match('/mobile\/(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/mobile\/(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
         if ($doMatch) {
-            $buildVersion = iOSbuild::getVersion($matches[1]);
+            try {
+                $buildVersion = iOSbuild::getVersion($matches[1]);
+            } catch (\Exception $e) {
+                return (new VersionFactory())->set('0');
+            }
 
             if (false !== $buildVersion) {
                 return (new VersionFactory())->set($buildVersion);
             }
         }
 
-        $doMatch = preg_match('/applecoremedia\/\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/applecoremedia\/\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
         if ($doMatch) {
-            $buildVersion = iOSbuild::getVersion($matches[1]);
+            try {
+                $buildVersion = iOSbuild::getVersion($matches[1]);
+            } catch (\Exception $e) {
+                return (new VersionFactory())->set('0');
+            }
 
             if (false !== $buildVersion) {
                 return (new VersionFactory())->set($buildVersion);
@@ -102,13 +108,13 @@ final class Ios implements VersionDetectorInterface
             ];
 
             foreach ($searches as $rule => $version) {
-                if (preg_match($rule, $useragent)) {
+                if ((bool) preg_match($rule, $useragent)) {
                     return (new VersionFactory())->set($version);
                 }
             }
         }
 
-        $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/([\d\.]+)$/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/([\d\.]+)$/i', $useragent, $matches);
 
         if ($doMatch) {
             /** @see https://justworks.ca/blog/ios-and */
@@ -228,7 +234,7 @@ final class Ios implements VersionDetectorInterface
                 '1603.50' => '12.1.1',
             ];
 
-            if (isset($map[$matches[1]])) {
+            if (array_key_exists($matches[1], $map)) {
                 return (new VersionFactory())->set($map[$matches[1]]);
             }
         }

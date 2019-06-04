@@ -38,7 +38,7 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
             }
         }
 
-        $doMatch = preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
+        $doMatch = (bool) preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return (new VersionFactory())->set($matches[1]);

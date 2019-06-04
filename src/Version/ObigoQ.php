@@ -22,19 +22,19 @@ final class ObigoQ implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/ObigoInternetBrowser\/QO?([\d.]+)/', $useragent, $matches);
+        $doMatch = (bool) preg_match('/ObigoInternetBrowser\/QO?([\d.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return (new VersionFactory())->set($matches[1]);
         }
 
-        $doMatch = preg_match('/obigo\-browser\/q([\d.]+)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/obigo\-browser\/q([\d.]+)/i', $useragent, $matches);
 
         if ($doMatch) {
             return (new VersionFactory())->set($matches[1]);
         }
 
-        $doMatch = preg_match('/(?:teleca|obigo)[\-\/]q([\d.]+)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/(?:teleca|obigo)[\-\/]q([\d.]+)/i', $useragent, $matches);
 
         if ($doMatch) {
             return (new VersionFactory())->set($matches[1]);

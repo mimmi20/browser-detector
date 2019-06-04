@@ -49,8 +49,6 @@ final class PlatformParser implements PlatformParserInterface
      *
      * @param string $useragent
      *
-     * @throws \ExceptionalJSON\DecodeErrorException
-     *
      * @return OsInterface
      */
     public function parse(string $useragent): OsInterface

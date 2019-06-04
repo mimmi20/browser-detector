@@ -48,8 +48,6 @@ final class EngineParser implements EngineParserInterface
      *
      * @param string $useragent
      *
-     * @throws \ExceptionalJSON\DecodeErrorException
-     *
      * @return \UaResult\Engine\EngineInterface
      */
     public function parse(string $useragent): EngineInterface

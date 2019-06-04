@@ -48,8 +48,6 @@ final class BrowserParser implements BrowserParserInterface
      *
      * @param string $useragent
      *
-     * @throws \ExceptionalJSON\DecodeErrorException
-     *
      * @return array
      */
     public function parse(string $useragent): array

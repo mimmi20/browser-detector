@@ -62,7 +62,7 @@ final class RulefileParser implements RulefileParserInterface
         }
 
         foreach (array_keys($rules) as $rule) {
-            if (preg_match($rule, $useragent)) {
+            if ((bool) preg_match($rule, $useragent)) {
                 $mode = $rules[$rule];
                 break;
             }

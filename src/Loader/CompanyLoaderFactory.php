@@ -44,7 +44,7 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
      */
     public function __invoke(): CompanyLoaderInterface
     {
-        /** @var CompanyLoader $loader */
+        /** @var CompanyLoader|null $loader */
         static $loader = null;
 
         if (null !== $loader) {

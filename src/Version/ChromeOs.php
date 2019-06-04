@@ -22,11 +22,11 @@ final class ChromeOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (preg_match('/(?:CrOS [a-z0-9_]+|Windows aarch64|CrOS aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(\d+[\d\.]+)/', $useragent, $firstMatches)) {
+        if ((bool) preg_match('/(?:CrOS [a-z0-9_]+|Windows aarch64|CrOS aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(\d+[\d\.]+)/', $useragent, $firstMatches)) {
             return (new VersionFactory())->set($firstMatches[1]);
         }
 
-        if (preg_match('/CrOS [a-z0-9_]+ (\d+[\d\.]+)/', $useragent, $secondMatches)) {
+        if ((bool) preg_match('/CrOS [a-z0-9_]+ (\d+[\d\.]+)/', $useragent, $secondMatches)) {
             return (new VersionFactory())->set($secondMatches[1]);
         }
 

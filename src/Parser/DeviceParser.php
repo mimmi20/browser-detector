@@ -97,18 +97,16 @@ final class DeviceParser implements DeviceParserInterface
      *
      * @param string $useragent
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
      * @return array
      */
     public function parse(string $useragent): array
     {
-        if (preg_match('/new-sogou-spider|zollard|socialradarbot|microsoft office protocol discovery|powermarks|archivebot|marketwirebot|microsoft-cryptoapi|pad-bot|james bot|winhttp|jobboerse|<|>|online-versicherungsportal\.info|versicherungssuchmaschine\.net|microsearch|microsoft data access|microsoft url control|infegyatlas|msie or firefox mutant|semantic-visions\.com crawler|labs\.topsy\.com\/butterfly|dolphin http client|google wireless transcoder|commoncrawler|ipodder|tripadvisor|nokia wap gateway|outclicksbot/i', $useragent)) {
+        if ((bool) preg_match('/new-sogou-spider|zollard|socialradarbot|microsoft office protocol discovery|powermarks|archivebot|marketwirebot|microsoft-cryptoapi|pad-bot|james bot|winhttp|jobboerse|<|>|online-versicherungsportal\.info|versicherungssuchmaschine\.net|microsearch|microsoft data access|microsoft url control|infegyatlas|msie or firefox mutant|semantic-visions\.com crawler|labs\.topsy\.com\/butterfly|dolphin http client|google wireless transcoder|commoncrawler|ipodder|tripadvisor|nokia wap gateway|outclicksbot/i', $useragent)) {
             return $this->load('unknown', 'unknown', $useragent);
         }
 
-        if (!preg_match('/freebsd|raspbian/i', $useragent)
-            && preg_match('/darwin|cfnetwork/i', $useragent)
+        if (!(bool) preg_match('/freebsd|raspbian/i', $useragent)
+            && (bool) preg_match('/darwin|cfnetwork/i', $useragent)
         ) {
             return $this->darwinParser->parse($useragent);
         }

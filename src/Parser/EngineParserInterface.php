@@ -20,8 +20,6 @@ interface EngineParserInterface
      *
      * @param string $useragent
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return \UaResult\Engine\EngineInterface
      */
     public function parse(string $useragent): EngineInterface;

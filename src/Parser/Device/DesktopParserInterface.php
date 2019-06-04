@@ -20,8 +20,6 @@ interface DesktopParserInterface extends DeviceParserInterface
      *
      * @param string $useragent
      *
-     * @throws \ExceptionalJSON\DecodeErrorException
-     *
      * @return array
      */
     public function parse(string $useragent): array;

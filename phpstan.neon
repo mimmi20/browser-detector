@@ -7,21 +7,28 @@ parameters:
     - %currentWorkingDirectory%/vendor/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
-  includes:
-    - vendor/phpstan/phpstan-strict-rules/rules.neon
-    - vendor/phpstan/phpstan-phpunit/extension.neon
-    - vendor/phpstan/phpstan-phpunit/rules.neon
-    - vendor/pepakriz/phpstan-exception-rules/extension.neon
-    - vendor/phpstan/phpstan-deprecation-rules/rules.neon
-    - vendor/phpstan/phpstan-beberlei-assert/extension.neon
-    - vendor/localheinz/phpstan-rules/rules.neon
-  parameters:
-    exceptionRules:
-      reportUnusedCatchesOfUncheckedExceptions: true
-      uncheckedExceptions: []
+  exceptionRules:
+    reportUnusedCatchesOfUncheckedExceptions: true
+    uncheckedExceptions: []
   excludes_analyse:
     - */tests/*/data/*
   ignoreErrors:
     - '~MockObject~'
     - '~Parameter #1 $headers of callable BrowserDetector\Detector expects array|Psr\Http\Message\MessageInterface|string|UaRequest\GenericRequest, stdClass given~'
     - '~is not subtype of Throwable~'
+    - '~Call to static method PHPUnit~'
+    - '~has a nullable return type declaration~'
+    - '~Construct empty\(\) is not allowed\. Use more strict comparison~'
+    - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
+#    - '~Useless \@throws~'
+    - '~Missing \@throws~'
+    - '~Unused \@throws~'
+    - '~is never thrown in the corresponding try block~'
+includes:
+  - vendor/phpstan/phpstan-strict-rules/rules.neon
+  - vendor/phpstan/phpstan-phpunit/extension.neon
+  - vendor/phpstan/phpstan-phpunit/rules.neon
+  - vendor/pepakriz/phpstan-exception-rules/extension.neon
+  - vendor/phpstan/phpstan-deprecation-rules/rules.neon
+  - vendor/phpstan/phpstan-beberlei-assert/extension.neon
+  - vendor/localheinz/phpstan-rules/rules.neon

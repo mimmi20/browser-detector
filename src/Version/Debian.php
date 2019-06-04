@@ -22,7 +22,7 @@ final class Debian implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (preg_match('/squeeze/i', $useragent)) {
+        if ((bool) preg_match('/squeeze/i', $useragent)) {
             return (new VersionFactory())->set('6.0');
         }
 

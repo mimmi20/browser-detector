@@ -24,7 +24,7 @@ final class MicrosoftOffice
     {
         $intVersion = (int) $version;
 
-        if (in_array($intVersion, [2007, 2010, 2013, 2016])) {
+        if (in_array($intVersion, [2007, 2010, 2013, 2016], true)) {
             return (string) $intVersion;
         }
 

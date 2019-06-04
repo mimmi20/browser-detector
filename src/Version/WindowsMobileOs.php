@@ -22,7 +22,7 @@ final class WindowsMobileOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (false !== mb_stripos($useragent, 'windows nt 5.1') && !preg_match('/windows mobile|windows phone/i', $useragent)) {
+        if (false !== mb_stripos($useragent, 'windows nt 5.1') && !(bool) preg_match('/windows mobile|windows phone/i', $useragent)) {
             return (new VersionFactory())->set('6.0');
         }
 
