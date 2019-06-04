@@ -25,7 +25,8 @@ use JsonClass\Json;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Simple\NullCache;
+use Symfony\Component\Cache\Adapter\NullAdapter;
+use Symfony\Component\Cache\Psr16Cache;
 use Symfony\Component\Finder\Finder;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Device\DeviceInterface;
@@ -75,7 +76,7 @@ final class DetectorTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
-        $cache      = new Cache(new NullCache());
+        $cache      = new Cache(new Psr16Cache(new NullAdapter()));
         $jsonParser = new Json();
 
         /** @var \Psr\Log\LoggerInterface $logger */

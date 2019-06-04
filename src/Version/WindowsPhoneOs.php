@@ -22,20 +22,20 @@ final class WindowsPhoneOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (preg_match('/xblwp7|zunewp7/i', $useragent)) {
+        if ((bool) preg_match('/xblwp7|zunewp7/i', $useragent)) {
             return (new VersionFactory())->set('7.5.0');
         }
 
-        if (preg_match('/wds ([\d.]+)/i', $useragent, $matches)) {
+        if ((bool) preg_match('/wds ([\d.]+)/i', $useragent, $matches)) {
             return (new VersionFactory())->set($matches[1]);
         }
 
-        if (preg_match('/wpdesktop/i', $useragent)) {
-            if (preg_match('/windows nt 6\.3/i', $useragent)) {
+        if ((bool) preg_match('/wpdesktop/i', $useragent)) {
+            if ((bool) preg_match('/windows nt 6\.3/i', $useragent)) {
                 return (new VersionFactory())->set('8.1.0');
             }
 
-            if (preg_match('/windows nt 6\.2/i', $useragent)) {
+            if ((bool) preg_match('/windows nt 6\.2/i', $useragent)) {
                 return (new VersionFactory())->set('8.0.0');
             }
 

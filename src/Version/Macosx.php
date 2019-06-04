@@ -20,26 +20,32 @@ final class Macosx implements VersionDetectorInterface
      *
      * @param string $useragent
      *
-     * @throws \Exception
-     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/\((?:build )?(\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/\((?:build )?(\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
 
         if ($doMatch) {
-            $buildVersion = OSXbuild::getVersion($matches[1]);
+            try {
+                $buildVersion = OSXbuild::getVersion($matches[1]);
+            } catch (\Exception $e) {
+                return (new VersionFactory())->set('0');
+            }
 
             if (false !== $buildVersion) {
                 return (new VersionFactory())->set($buildVersion);
             }
         }
 
-        $doMatch = preg_match('/coremedia v\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/coremedia v\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
         if ($doMatch) {
-            $buildVersion = OSXbuild::getVersion($matches[1]);
+            try {
+                $buildVersion = OSXbuild::getVersion($matches[1]);
+            } catch (\Exception $e) {
+                return (new VersionFactory())->set('0');
+            }
 
             if (false !== $buildVersion) {
                 return (new VersionFactory())->set($buildVersion);
@@ -155,7 +161,7 @@ final class Macosx implements VersionDetectorInterface
             ];
 
             foreach ($searches as $rule => $version) {
-                if (preg_match($rule, $useragent)) {
+                if ((bool) preg_match($rule, $useragent)) {
                     return (new VersionFactory())->set($version);
                 }
             }
@@ -165,10 +171,10 @@ final class Macosx implements VersionDetectorInterface
 
         $detectedVersion = (new VersionFactory())->detectVersion($useragent, $searches);
 
-        if (preg_match('/(\d{2})(\d)(\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
+        if ((bool) preg_match('/(\d{2})(\d)(\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
             $version = $versions[1] . '.' . $versions[2];
 
-            if (isset($versions[3])) {
+            if (array_key_exists(3, $versions)) {
                 $version .= '.' . $versions[3];
             }
 

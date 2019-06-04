@@ -22,7 +22,7 @@ final class Trident implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/Trident\/([\d\.]+)/', $useragent, $matches);
+        $doMatch = (bool) preg_match('/Trident\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return (new VersionFactory())->set($matches[1]);

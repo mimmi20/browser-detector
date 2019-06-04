@@ -22,7 +22,7 @@ final class CoreMedia implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/(?:CoreMedia v|AppleCoreMedia\/)(\d+)\.(\d+)\.(\d+)/', $useragent, $matchesFirst);
+        $doMatch = (bool) preg_match('/(?:CoreMedia v|AppleCoreMedia\/)(\d+)\.(\d+)\.(\d+)/', $useragent, $matchesFirst);
 
         if ($doMatch) {
             return (new VersionFactory())->set($matchesFirst[1] . '.' . $matchesFirst[2] . '.' . $matchesFirst[3]);

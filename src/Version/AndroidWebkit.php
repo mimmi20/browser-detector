@@ -26,7 +26,7 @@ final class AndroidWebkit implements VersionDetectorInterface
     {
         $safariHelper = new SafariHelper();
 
-        $doMatch = preg_match('/(?:Version|Safari)\/([\d\.]+)/', $useragent, $matches);
+        $doMatch = (bool) preg_match('/(?:Version|Safari)\/([\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));

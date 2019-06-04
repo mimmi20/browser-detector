@@ -13,7 +13,8 @@ namespace BrowserDetectorTest\Cache;
 
 use BrowserDetector\Cache\Cache;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Cache\Simple\ArrayCache;
+use Symfony\Component\Cache\Adapter\ArrayAdapter;
+use Symfony\Component\Cache\Psr16Cache;
 
 final class CacheTest extends TestCase
 {
@@ -24,7 +25,7 @@ final class CacheTest extends TestCase
      */
     public function testVersion(): void
     {
-        $adapter = new ArrayCache();
+        $adapter = new Psr16Cache(new ArrayAdapter());
         $cache   = new Cache($adapter);
 
         $cache->setItem('version', 6012);
@@ -38,7 +39,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem(): void
     {
-        $adapter = $this->getMockBuilder(ArrayCache::class)
+        $adapter = $this->getMockBuilder(Psr16Cache::class)
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
@@ -55,7 +56,7 @@ final class CacheTest extends TestCase
             ->method('get')
             ->willReturn(null);
 
-        /** @var ArrayCache $adapter */
+        /** @var Psr16Cache $adapter */
         $cache = new Cache($adapter);
 
         static::assertFalse($cache->setItem('version', 6012));
@@ -69,7 +70,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem2(): void
     {
-        $adapter = $this->getMockBuilder(ArrayCache::class)
+        $adapter = $this->getMockBuilder(Psr16Cache::class)
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
@@ -87,7 +88,7 @@ final class CacheTest extends TestCase
             ->with('version')
             ->willReturn(null);
 
-        /** @var ArrayCache $adapter */
+        /** @var Psr16Cache $adapter */
         $cache = new Cache($adapter);
 
         static::assertFalse($cache->setItem('version', 6012));
@@ -101,7 +102,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem3(): void
     {
-        $adapter = $this->getMockBuilder(ArrayCache::class)
+        $adapter = $this->getMockBuilder(Psr16Cache::class)
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
@@ -118,7 +119,7 @@ final class CacheTest extends TestCase
             ->method('get')
             ->willReturn(null);
 
-        /** @var ArrayCache $adapter */
+        /** @var Psr16Cache $adapter */
         $cache = new Cache($adapter);
 
         static::assertFalse($cache->hasItem('version'));

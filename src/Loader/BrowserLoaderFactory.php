@@ -72,7 +72,7 @@ final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
      */
     public function __invoke(): BrowserLoaderInterface
     {
-        /** @var BrowserLoader $loader */
+        /** @var BrowserLoader|null $loader */
         static $loader = null;
 
         if (null !== $loader) {

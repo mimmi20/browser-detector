@@ -22,10 +22,7 @@ final class ScreamingFrog implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match(
-            '/Screaming Frog SEO Spider\/\d+,\d/',
-            $useragent
-        );
+        $doMatch = (bool) preg_match('/Screaming Frog SEO Spider\/\d+,\d/', $useragent);
 
         if ($doMatch) {
             $useragent = str_replace(',', '.', $useragent);

@@ -63,7 +63,7 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
      */
     public function __invoke(): PlatformLoaderInterface
     {
-        /** @var \BrowserDetector\Loader\PlatformLoaderInterface $loader */
+        /** @var \BrowserDetector\Loader\PlatformLoaderInterface|null $loader */
         static $loader = null;
 
         if (null !== $loader) {

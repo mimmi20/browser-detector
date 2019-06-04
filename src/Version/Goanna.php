@@ -23,14 +23,14 @@ final class Goanna implements VersionDetectorInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         // lastest version: version on "Goanna" token
-        $doMatch = preg_match('/Goanna\/(\d{1,3}\.[\d\.]*)/', $useragent, $matchesFirst);
+        $doMatch = (bool) preg_match('/Goanna\/(\d{1,3}\.[\d\.]*)/', $useragent, $matchesFirst);
 
         if ($doMatch) {
             return (new VersionFactory())->set($matchesFirst[1]);
         }
 
         // second version: version on "rv:" token
-        $doMatch = preg_match('/rv\:(\d\.[\d\.]*)/', $useragent, $matchesSecond);
+        $doMatch = (bool) preg_match('/rv\:(\d\.[\d\.]*)/', $useragent, $matchesSecond);
 
         if ($doMatch && false !== mb_stripos($useragent, 'goanna')) {
             return (new VersionFactory())->set($matchesSecond[1]);

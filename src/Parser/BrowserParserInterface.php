@@ -18,8 +18,6 @@ interface BrowserParserInterface
      *
      * @param string $useragent
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return array
      */
     public function parse(string $useragent);

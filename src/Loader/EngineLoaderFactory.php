@@ -63,7 +63,7 @@ final class EngineLoaderFactory implements EngineLoaderFactoryInterface
      */
     public function __invoke(): EngineLoaderInterface
     {
-        /** @var EngineLoaderInterface $loader */
+        /** @var EngineLoaderInterface|null $loader */
         static $loader = null;
 
         if (null !== $loader) {

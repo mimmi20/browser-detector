@@ -47,7 +47,7 @@ final class AndroidOs implements VersionDetectorInterface
             return $detectedVersion;
         }
 
-        if (preg_match('/Linux; (\d+[\d\.]+)/', $useragent, $matches)) {
+        if ((bool) preg_match('/Linux; (\d+[\d\.]+)/', $useragent, $matches)) {
             return (new VersionFactory())->set($matches[1]);
         }
 

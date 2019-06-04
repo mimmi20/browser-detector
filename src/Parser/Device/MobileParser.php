@@ -44,8 +44,6 @@ final class MobileParser implements MobileParserInterface
      *
      * @param string $useragent
      *
-     * @throws \ExceptionalJSON\DecodeErrorException
-     *
      * @return array
      */
     public function parse(string $useragent): array

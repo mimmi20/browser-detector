@@ -217,7 +217,7 @@ final class Detector implements DetectorInterface
             $engine  = clone $defaultEngine;
         }
 
-        if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'])) {
+        if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {
                 $engine = $this->engineParser->load('webkit', $browserUa);
             } catch (DecodeErrorException $e) {
