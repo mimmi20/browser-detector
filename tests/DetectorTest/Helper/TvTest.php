@@ -34,6 +34,9 @@ final class TvTest extends TestCase
      *
      * @param string $agent
      *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
      * @return void
      */
     public function testIsTv(string $agent): void
@@ -75,6 +78,9 @@ final class TvTest extends TestCase
      * @dataProvider providerIsNotTv
      *
      * @param string $agent
+     *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      *
      * @return void
      */

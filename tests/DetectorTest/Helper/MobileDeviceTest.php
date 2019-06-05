@@ -34,6 +34,9 @@ final class MobileDeviceTest extends TestCase
      *
      * @param string $agent
      *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
      * @return void
      */
     public function testIsMobile(string $agent): void
@@ -135,6 +138,9 @@ final class MobileDeviceTest extends TestCase
      * @dataProvider providerIsNotMobile
      *
      * @param string $agent
+     *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      *
      * @return void
      */

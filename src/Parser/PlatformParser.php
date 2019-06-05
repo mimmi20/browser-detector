@@ -49,6 +49,9 @@ final class PlatformParser implements PlatformParserInterface
      *
      * @param string $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return OsInterface
      */
     public function parse(string $useragent): OsInterface
@@ -73,6 +76,7 @@ final class PlatformParser implements PlatformParserInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return OsInterface
      */

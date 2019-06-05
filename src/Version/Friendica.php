@@ -18,16 +18,19 @@ final class Friendica implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = (bool) preg_match('/Friendica \'[^\']*\' (\d+[\d\.\_\-\+abcdehlprstv]*).*/', $useragent, $matches);
+        $matches = [];
+        $doMatch = (bool) preg_match('/Friendica \'[^\']*\' (?P<version>\d+[\d\.\_\-\+abcdehlprstv]*).*/', $useragent, $matches);
 
         if (!$doMatch) {
             return new Version('0');
         }
 
-        return (new VersionFactory())->set($matches[1]);
+        return (new VersionFactory())->set($matches['version']);
     }
 }

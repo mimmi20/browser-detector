@@ -18,16 +18,18 @@ final class ChromeOs implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if ((bool) preg_match('/(?:CrOS [a-z0-9_]+|Windows aarch64|CrOS aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(\d+[\d\.]+)/', $useragent, $firstMatches)) {
-            return (new VersionFactory())->set($firstMatches[1]);
+        if ((bool) preg_match('/(?:CrOS [a-z0-9_]+|Windows aarch64|CrOS aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(?P<version>\d+[\d\.]+)/', $useragent, $firstMatches)) {
+            return (new VersionFactory())->set($firstMatches['version']);
         }
 
-        if ((bool) preg_match('/CrOS [a-z0-9_]+ (\d+[\d\.]+)/', $useragent, $secondMatches)) {
-            return (new VersionFactory())->set($secondMatches[1]);
+        if ((bool) preg_match('/CrOS [a-z0-9_]+ (?P<version>\d+[\d\.]+)/', $useragent, $secondMatches)) {
+            return (new VersionFactory())->set($secondMatches['version']);
         }
 
         return new Version('0');

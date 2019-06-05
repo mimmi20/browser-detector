@@ -18,6 +18,7 @@ interface BrowserLoaderInterface extends SpecificLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return array
      */

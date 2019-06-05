@@ -23,6 +23,12 @@ use PHPUnit\Framework\TestCase;
 final class CompanyLoaderTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     *
      * @return void
      */
     public function testLoadFailHasNot(): void
@@ -58,6 +64,12 @@ final class CompanyLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     *
      * @return void
      */
     public function testLoadFailNullReturned(): void
@@ -93,6 +105,12 @@ final class CompanyLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     *
      * @return void
      */
     public function testLoadAvailable(): void

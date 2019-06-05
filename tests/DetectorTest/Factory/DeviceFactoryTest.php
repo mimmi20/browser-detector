@@ -27,6 +27,10 @@ use UaResult\Device\DisplayInterface;
 final class DeviceFactoryTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromEmptyArray(): void
@@ -108,6 +112,10 @@ final class DeviceFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithoutData(): void
@@ -189,6 +197,10 @@ final class DeviceFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithData(): void
@@ -312,6 +324,10 @@ final class DeviceFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
      * @return void
      */
     public function testFromArrayWithDataFailure(): void

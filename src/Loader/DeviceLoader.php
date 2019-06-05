@@ -65,6 +65,7 @@ final class DeviceLoader implements DeviceLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return array
      */
@@ -86,7 +87,7 @@ final class DeviceLoader implements DeviceLoaderInterface
         if (null !== $platformKey) {
             try {
                 $platform = $this->platformParser->load($platformKey, $useragent);
-            } catch (NotFoundException $e) {
+            } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->warning($e);
             }
         }

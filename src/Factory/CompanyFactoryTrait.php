@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Loader\NotFoundException;
-use Psr\Log\LoggerInterface;
 use UaResult\Company\CompanyInterface;
 
 trait CompanyFactoryTrait
@@ -23,14 +21,15 @@ trait CompanyFactoryTrait
     private $companyLoader;
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     * @param string                   $useragent
-     * @param string                   $field
+     * @param array  $data
+     * @param string $useragent
+     * @param string $field
+     *
+     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return \UaResult\Company\CompanyInterface
      */
-    private function getCompany(LoggerInterface $logger, array $data, string $useragent, string $field): CompanyInterface
+    private function getCompany(array $data, string $useragent, string $field): CompanyInterface
     {
         $companyLoader = $this->companyLoader;
         $manufacturer  = $companyLoader->load('unknown', $useragent);
@@ -39,12 +38,6 @@ trait CompanyFactoryTrait
             return $manufacturer;
         }
 
-        try {
-            $manufacturer = $companyLoader->load($data[$field], $useragent);
-        } catch (NotFoundException $e) {
-            $logger->info($e);
-        }
-
-        return $manufacturer;
+        return $companyLoader->load($data[$field], $useragent);
     }
 }

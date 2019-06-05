@@ -21,6 +21,7 @@ interface DetectorInterface
      * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $headers
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return \UaResult\Result\ResultInterface
      */

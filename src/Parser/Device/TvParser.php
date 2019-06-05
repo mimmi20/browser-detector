@@ -44,6 +44,9 @@ final class TvParser implements TvParserInterface
      *
      * @param string $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return array
      */
     public function parse(string $useragent): array
@@ -67,6 +70,9 @@ final class TvParser implements TvParserInterface
      * @param string $company
      * @param string $key
      * @param string $useragent
+     *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return array
      */

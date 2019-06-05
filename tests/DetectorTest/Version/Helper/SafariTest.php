@@ -35,6 +35,10 @@ final class SafariTest extends TestCase
      * @param string $version
      * @param string $expectedVersion
      *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testMapSafariVersion(string $version, string $expectedVersion): void

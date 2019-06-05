@@ -20,16 +20,20 @@ final class Safari implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $safariHelper = new SafariHelper();
+        $matches = [];
 
-        $doMatch = (bool) preg_match('/(?:Version|Safari)\/([\d\.]+)/', $useragent, $matches);
+        preg_match('/(?:Version|Safari)\/(?P<version>[\d\.]+)/', $useragent, $matches);
 
-        if ($doMatch) {
-            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches[1]));
+        if (array_key_exists('version', $matches)) {
+            $safariHelper = new SafariHelper();
+
+            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches['version']));
         }
 
         return new Version('0');

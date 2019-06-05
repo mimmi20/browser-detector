@@ -18,11 +18,13 @@ final class FirefoxOs implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (!(bool) preg_match('/rv:(\d+\.\d+)/', $useragent, $matches)) {
+        if (!(bool) preg_match('/rv:(?P<version>\d+\.\d+)/', $useragent, $matches)) {
             return new Version('0');
         }
 
@@ -39,7 +41,7 @@ final class FirefoxOs implements VersionDetectorInterface
         ];
 
         foreach ($versions as $engineVersion => $osVersion) {
-            if (version_compare($matches[1], $engineVersion, '>=')) {
+            if (version_compare($matches['version'], $engineVersion, '>=')) {
                 return (new VersionFactory())->set($osVersion);
             }
         }

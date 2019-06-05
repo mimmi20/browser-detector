@@ -14,6 +14,8 @@ namespace BrowserDetector\Loader\Helper;
 interface DataInterface extends \Countable
 {
     /**
+     * @throws \RuntimeException
+     *
      * @return void
      */
     public function __invoke(): void;

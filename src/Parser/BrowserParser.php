@@ -48,6 +48,9 @@ final class BrowserParser implements BrowserParserInterface
      *
      * @param string $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return array
      */
     public function parse(string $useragent): array
@@ -72,6 +75,7 @@ final class BrowserParser implements BrowserParserInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return array
      */

@@ -23,6 +23,9 @@ use UaResult\Device\DisplayInterface;
 final class DisplayFactoryTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
      * @return void
      */
     public function testFromEmptyArray(): void
@@ -96,6 +99,9 @@ final class DisplayFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
      * @return void
      */
     public function testFromArray(): void
@@ -188,6 +194,9 @@ final class DisplayFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
      * @return void
      */
     public function testFromArrayWithTypeFailed(): void

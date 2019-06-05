@@ -18,6 +18,9 @@ interface BrowserParserInterface
      *
      * @param string $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return array
      */
     public function parse(string $useragent);
@@ -27,6 +30,7 @@ interface BrowserParserInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return array
      */

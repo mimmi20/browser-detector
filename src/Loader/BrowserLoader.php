@@ -66,6 +66,7 @@ final class BrowserLoader implements BrowserLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return array
      */
@@ -87,7 +88,7 @@ final class BrowserLoader implements BrowserLoaderInterface
         if (null !== $engineKey) {
             try {
                 $engine = $this->engineParser->load($engineKey, $useragent);
-            } catch (NotFoundException $e) {
+            } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->warning($e);
             }
         }

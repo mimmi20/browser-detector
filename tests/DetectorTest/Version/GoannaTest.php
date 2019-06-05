@@ -36,6 +36,10 @@ final class GoannaTest extends TestCase
      * @param string $useragent
      * @param string $expectedVersion
      *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testTestdetectVersion(string $useragent, string $expectedVersion): void

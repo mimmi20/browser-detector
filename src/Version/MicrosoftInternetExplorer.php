@@ -18,6 +18,8 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
@@ -38,10 +40,10 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
             }
         }
 
-        $doMatch = (bool) preg_match('/MSIE ([\d\.]+)/', $useragent, $matches);
+        $doMatch = (bool) preg_match('/MSIE (?P<version>[\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return (new VersionFactory())->set($matches[1]);
+            return (new VersionFactory())->set($matches['version']);
         }
 
         return (new VersionFactory())->set('0');

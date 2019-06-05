@@ -27,6 +27,10 @@ use UaResult\Company\CompanyInterface;
 final class BrowserFactoryTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromEmptyArray(): void
@@ -97,8 +101,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertInstanceOf(Unknown::class, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -108,6 +111,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithUnknownType(): void
@@ -188,8 +195,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertInstanceOf(Unknown::class, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -199,6 +205,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFoundType(): void
@@ -279,8 +289,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -290,6 +299,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFoundTypeAndVersionString(): void
@@ -374,8 +387,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -385,6 +397,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFoundTypeAndInvalidVersion(): void
@@ -466,8 +482,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -477,6 +492,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObject(): void
@@ -563,8 +582,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -574,6 +592,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFoundTypeAndVersionDetectionClass(): void
@@ -660,8 +682,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -671,6 +692,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndNoSearch(): void
@@ -754,8 +779,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -765,6 +789,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndSearch(): void
@@ -860,8 +888,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
@@ -871,6 +898,11 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromEmptyArrayWithCompanyError(): void
@@ -950,8 +982,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(Browser::class, $result);
         static::assertNull($result->getName());
         static::assertNull($result->getModus());
-        // self::assertNull($result->getBits());
-        static::assertSame(32, $result->getBits());
+        static::assertNull($result->getBits());
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertInstanceOf(Unknown::class, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());

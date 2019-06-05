@@ -20,15 +20,17 @@ final class Macosx implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = (bool) preg_match('/\((?:build )?(\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/\((?:build )?(?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
 
         if ($doMatch) {
             try {
-                $buildVersion = OSXbuild::getVersion($matches[1]);
+                $buildVersion = OSXbuild::getVersion($matches['build']);
             } catch (\Exception $e) {
                 return (new VersionFactory())->set('0');
             }
@@ -38,11 +40,11 @@ final class Macosx implements VersionDetectorInterface
             }
         }
 
-        $doMatch = (bool) preg_match('/coremedia v\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/coremedia v\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
         if ($doMatch) {
             try {
-                $buildVersion = OSXbuild::getVersion($matches[1]);
+                $buildVersion = OSXbuild::getVersion($matches['build']);
             } catch (\Exception $e) {
                 return (new VersionFactory())->set('0');
             }
@@ -171,11 +173,11 @@ final class Macosx implements VersionDetectorInterface
 
         $detectedVersion = (new VersionFactory())->detectVersion($useragent, $searches);
 
-        if ((bool) preg_match('/(\d{2})(\d)(\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
-            $version = $versions[1] . '.' . $versions[2];
+        if ((bool) preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
+            $version = $versions['major'] . '.' . $versions['minor'];
 
-            if (array_key_exists(3, $versions)) {
-                $version .= '.' . $versions[3];
+            if (array_key_exists('micro', $versions)) {
+                $version .= '.' . $versions['micro'];
             }
 
             return (new VersionFactory())->set($version);

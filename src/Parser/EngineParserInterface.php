@@ -20,6 +20,9 @@ interface EngineParserInterface
      *
      * @param string $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return \UaResult\Engine\EngineInterface
      */
     public function parse(string $useragent): EngineInterface;
@@ -29,6 +32,7 @@ interface EngineParserInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return \UaResult\Engine\EngineInterface
      */
