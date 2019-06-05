@@ -49,6 +49,9 @@ final class BrowserFactory
      * @param array                    $data
      * @param string                   $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return \UaResult\Browser\BrowserInterface
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): BrowserInterface
@@ -67,7 +70,7 @@ final class BrowserFactory
         }
 
         $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
+        $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
 
         return new Browser($name, $manufacturer, $version, $type, $bits, $modus);
     }

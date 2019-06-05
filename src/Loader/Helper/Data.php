@@ -75,6 +75,8 @@ final class Data implements DataInterface
     }
 
     /**
+     * @throws \RuntimeException
+     *
      * @return void
      */
     public function __invoke(): void

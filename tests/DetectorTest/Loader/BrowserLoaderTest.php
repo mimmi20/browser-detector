@@ -26,6 +26,13 @@ use UaResult\Engine\EngineInterface;
 final class BrowserLoaderTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeNotInCache(): void
@@ -97,6 +104,13 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeNullInCache(): void
@@ -168,6 +182,13 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeNoVersion(): void
@@ -250,6 +271,13 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeGenericVersionAndEngineException(): void
@@ -335,6 +363,13 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeGenericVersionAndEngineInvalidException(): void
@@ -429,6 +464,13 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeVersionAndEngine(): void

@@ -57,6 +57,7 @@ final class EngineLoader implements EngineLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return \UaResult\Engine\EngineInterface
      */

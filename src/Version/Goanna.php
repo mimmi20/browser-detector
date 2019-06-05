@@ -18,22 +18,24 @@ final class Goanna implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
         // lastest version: version on "Goanna" token
-        $doMatch = (bool) preg_match('/Goanna\/(\d{1,3}\.[\d\.]*)/', $useragent, $matchesFirst);
+        $doMatch = (bool) preg_match('/Goanna\/(?P<version>\d{1,3}\.[\d\.]*)/', $useragent, $matchesFirst);
 
         if ($doMatch) {
-            return (new VersionFactory())->set($matchesFirst[1]);
+            return (new VersionFactory())->set($matchesFirst['version']);
         }
 
         // second version: version on "rv:" token
-        $doMatch = (bool) preg_match('/rv\:(\d\.[\d\.]*)/', $useragent, $matchesSecond);
+        $doMatch = (bool) preg_match('/rv\:(?P<version>\d\.[\d\.]*)/', $useragent, $matchesSecond);
 
         if ($doMatch && false !== mb_stripos($useragent, 'goanna')) {
-            return (new VersionFactory())->set($matchesSecond[1]);
+            return (new VersionFactory())->set($matchesSecond['version']);
         }
 
         // first version: uses gecko version

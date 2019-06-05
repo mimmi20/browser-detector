@@ -21,6 +21,9 @@ use Symfony\Component\Cache\Psr16Cache;
 final class DetectorFactoryTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
      * @return void
      */
     public function testInvoke(): void

@@ -20,6 +20,9 @@ interface PlatformParserInterface
      *
      * @param string $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return \UaResult\Os\OsInterface
      */
     public function parse(string $useragent);
@@ -29,6 +32,7 @@ interface PlatformParserInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return \UaResult\Os\OsInterface
      */

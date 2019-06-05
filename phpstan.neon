@@ -18,10 +18,10 @@ parameters:
     - '~is not subtype of Throwable~'
     - '~Call to static method PHPUnit~'
     - '~has a nullable return type declaration~'
+    - '~has parameter \$.* with a nullable type declaration~'
     - '~Construct empty\(\) is not allowed\. Use more strict comparison~'
     - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
-#    - '~Useless \@throws~'
-    - '~Missing \@throws~'
+    - '~Useless \@throws~'
     - '~Unused \@throws~'
     - '~is never thrown in the corresponding try block~'
 includes:

@@ -20,6 +20,7 @@ interface EngineLoaderInterface extends SpecificLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return \UaResult\Engine\EngineInterface
      */

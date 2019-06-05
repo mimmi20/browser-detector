@@ -105,6 +105,9 @@ final class DetectorTest extends TestCase
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
      *
      * @return void
      * @coversNothing

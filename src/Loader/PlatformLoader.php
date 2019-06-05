@@ -57,6 +57,7 @@ final class PlatformLoader implements PlatformLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return \UaResult\Os\OsInterface
      */

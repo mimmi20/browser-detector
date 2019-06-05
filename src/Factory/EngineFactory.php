@@ -37,6 +37,9 @@ final class EngineFactory
      * @param array                    $data
      * @param string                   $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return \UaResult\Engine\EngineInterface
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): EngineInterface
@@ -44,7 +47,7 @@ final class EngineFactory
         $name = array_key_exists('name', $data) ? $data['name'] : null;
 
         $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
+        $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
 
         return new Engine($name, $manufacturer, $version);
     }

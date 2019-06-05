@@ -48,6 +48,9 @@ final class EngineParser implements EngineParserInterface
      *
      * @param string $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return \UaResult\Engine\EngineInterface
      */
     public function parse(string $useragent): EngineInterface
@@ -66,6 +69,7 @@ final class EngineParser implements EngineParserInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return EngineInterface
      */

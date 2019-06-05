@@ -38,6 +38,9 @@ final class PlatformFactory
      * @param array                    $data
      * @param string                   $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return \UaResult\Os\OsInterface
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): OsInterface
@@ -47,7 +50,7 @@ final class PlatformFactory
         $bits          = (new \BrowserDetector\Bits\Os())->getBits($useragent);
 
         $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
+        $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
 
         if ('Mac OS X' === $name
             && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')

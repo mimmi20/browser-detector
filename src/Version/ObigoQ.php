@@ -18,26 +18,28 @@ final class ObigoQ implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = (bool) preg_match('/ObigoInternetBrowser\/QO?([\d.]+)/', $useragent, $matches);
+        $doMatch = (bool) preg_match('/ObigoInternetBrowser\/QO?(?P<version>[\d.]+)/', $useragent, $matches);
 
         if ($doMatch) {
-            return (new VersionFactory())->set($matches[1]);
+            return (new VersionFactory())->set($matches['version']);
         }
 
-        $doMatch = (bool) preg_match('/obigo\-browser\/q([\d.]+)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/obigo\-browser\/q(?P<version>[\d.]+)/i', $useragent, $matches);
 
         if ($doMatch) {
-            return (new VersionFactory())->set($matches[1]);
+            return (new VersionFactory())->set($matches['version']);
         }
 
-        $doMatch = (bool) preg_match('/(?:teleca|obigo)[\-\/]q([\d.]+)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/(?:teleca|obigo)[\-\/]q(?P<version>[\d.]+)/i', $useragent, $matches);
 
         if ($doMatch) {
-            return (new VersionFactory())->set($matches[1]);
+            return (new VersionFactory())->set($matches['version']);
         }
 
         return (new VersionFactory())->set('0');

@@ -20,6 +20,8 @@ final class Ios implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
@@ -30,11 +32,11 @@ final class Ios implements VersionDetectorInterface
             return (new VersionFactory())->set('1.0');
         }
 
-        $doMatch = (bool) preg_match('/mobile\/(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/mobile\/(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
         if ($doMatch) {
             try {
-                $buildVersion = iOSbuild::getVersion($matches[1]);
+                $buildVersion = iOSbuild::getVersion($matches['build']);
             } catch (\Exception $e) {
                 return (new VersionFactory())->set('0');
             }
@@ -44,11 +46,11 @@ final class Ios implements VersionDetectorInterface
             }
         }
 
-        $doMatch = (bool) preg_match('/applecoremedia\/\d+\.\d+\.\d+\.(\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
         if ($doMatch) {
             try {
-                $buildVersion = iOSbuild::getVersion($matches[1]);
+                $buildVersion = iOSbuild::getVersion($matches['build']);
             } catch (\Exception $e) {
                 return (new VersionFactory())->set('0');
             }
@@ -114,7 +116,7 @@ final class Ios implements VersionDetectorInterface
             }
         }
 
-        $doMatch = (bool) preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/([\d\.]+)$/i', $useragent, $matches);
+        $doMatch = (bool) preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/(?P<build>[\d\.]+)$/i', $useragent, $matches);
 
         if ($doMatch) {
             /** @see https://justworks.ca/blog/ios-and */
@@ -234,8 +236,8 @@ final class Ios implements VersionDetectorInterface
                 '1603.50' => '12.1.1',
             ];
 
-            if (array_key_exists($matches[1], $map)) {
-                return (new VersionFactory())->set($map[$matches[1]]);
+            if (array_key_exists($matches['build'], $map)) {
+                return (new VersionFactory())->set($map[$matches['build']]);
             }
         }
 

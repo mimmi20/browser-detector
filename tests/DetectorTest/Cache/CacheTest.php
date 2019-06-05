@@ -20,6 +20,8 @@ final class CacheTest extends TestCase
 {
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      *
      * @return void
      */
@@ -34,6 +36,8 @@ final class CacheTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      *
      * @return void
      */
@@ -65,6 +69,8 @@ final class CacheTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      *
      * @return void
      */
@@ -97,6 +103,8 @@ final class CacheTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      *
      * @return void
      */

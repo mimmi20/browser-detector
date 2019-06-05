@@ -21,7 +21,6 @@ use BrowserDetector\Version\Version;
 use ExceptionalJSON\DecodeErrorException;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\Unknown;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
@@ -101,6 +100,7 @@ final class Detector implements DetectorInterface
      * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $headers
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return \UaResult\Result\ResultInterface
      *
@@ -117,6 +117,7 @@ final class Detector implements DetectorInterface
      * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $headers
      *
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return \UaResult\Result\ResultInterface
      */
@@ -168,7 +169,7 @@ final class Detector implements DetectorInterface
         /* @var \UaResult\Os\OsInterface $platform */
         try {
             [$device, $platform] = $deviceParser->parse($deviceUa);
-        } catch (NotFoundException $e) {
+        } catch (NotFoundException | \UnexpectedValueException $e) {
             $this->logger->warning($e);
 
             $device   = clone $defaultDevice;
@@ -181,7 +182,7 @@ final class Detector implements DetectorInterface
 
             try {
                 $platform = $platformParser->parse($request->getPlatformUserAgent());
-            } catch (NotFoundException | InvalidArgumentException $e) {
+            } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->warning($e);
                 $platform = clone $defaultPlatform;
             }
@@ -210,7 +211,7 @@ final class Detector implements DetectorInterface
         /* @var \UaResult\Engine\EngineInterface $engine */
         try {
             [$browser, $engine] = $browserParser->parse($browserUa);
-        } catch (DecodeErrorException | InvalidArgumentException $e) {
+        } catch (NotFoundException | \UnexpectedValueException $e) {
             $this->logger->error($e);
 
             $browser = clone $defaultBrowser;
@@ -224,7 +225,7 @@ final class Detector implements DetectorInterface
                 $this->logger->error($e);
 
                 $engine = clone $defaultEngine;
-            } catch (NotFoundException $e) {
+            } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->warning($e);
 
                 $engine = clone $defaultEngine;
@@ -237,7 +238,7 @@ final class Detector implements DetectorInterface
 
             try {
                 $engine = $engineParser->parse($browserUa);
-            } catch (InvalidArgumentException $e) {
+            } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->error($e);
             }
         }

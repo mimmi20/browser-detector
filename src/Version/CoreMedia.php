@@ -18,14 +18,16 @@ final class CoreMedia implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = (bool) preg_match('/(?:CoreMedia v|AppleCoreMedia\/)(\d+)\.(\d+)\.(\d+)/', $useragent, $matchesFirst);
+        $doMatch = (bool) preg_match('/(?:CoreMedia v|AppleCoreMedia\/)(?P<major>\d+)\.(?P<minor>\d+)\.(?P<micro>\d+)/', $useragent, $matchesFirst);
 
         if ($doMatch) {
-            return (new VersionFactory())->set($matchesFirst[1] . '.' . $matchesFirst[2] . '.' . $matchesFirst[3]);
+            return (new VersionFactory())->set($matchesFirst['major'] . '.' . $matchesFirst['minor'] . '.' . $matchesFirst['micro']);
         }
 
         return (new VersionFactory())->set('0');

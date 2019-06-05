@@ -37,6 +37,9 @@ final class IosTest extends TestCase
      * @param string $expectedVersion
      *
      * @throws \Exception
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */

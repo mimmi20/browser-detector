@@ -23,6 +23,12 @@ use Psr\Log\LoggerInterface;
 final class DeviceLoaderFactoryTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     *
      * @return void
      */
     public function testInvoke(): void

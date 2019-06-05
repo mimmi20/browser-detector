@@ -57,6 +57,8 @@ final class DeviceFactory
      * @param array                    $data
      * @param string                   $useragent
      *
+     * @throws \BrowserDetector\Loader\NotFoundException
+     *
      * @return \UaResult\Device\DeviceInterface
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
@@ -73,8 +75,8 @@ final class DeviceFactory
             }
         }
 
-        $manufacturer = $this->getCompany($logger, $data, $useragent, 'manufacturer');
-        $brand        = $this->getCompany($logger, $data, $useragent, 'brand');
+        $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+        $brand        = $this->getCompany($data, $useragent, 'brand');
 
         $display = new Display(null, new \UaDisplaySize\Unknown(), null);
         if (array_key_exists('display', $data)) {

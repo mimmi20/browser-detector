@@ -24,6 +24,10 @@ use UaResult\Engine\EngineInterface;
 final class EngineFactoryTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromEmptyArray(): void
@@ -96,6 +100,10 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithVersionString(): void
@@ -172,6 +180,10 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithInvalidVersion(): void
@@ -245,6 +257,10 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFixedVersionObject(): void
@@ -323,6 +339,10 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithVersionDetectionClass(): void
@@ -401,6 +421,10 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFixedVersionObjectAndNoSearch(): void
@@ -476,6 +500,10 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromArrayWithFixedVersionObjectAndSearch(): void
@@ -563,6 +591,11 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testFromEmptyArrayWithCompanyError(): void

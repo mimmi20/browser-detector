@@ -36,6 +36,11 @@ final class DetectorTest extends TestCase
 {
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -146,6 +151,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -260,6 +269,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -368,6 +381,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -463,6 +480,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -573,6 +594,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -683,6 +708,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -802,6 +831,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -913,6 +946,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -1026,6 +1063,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -1150,6 +1191,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -1270,6 +1315,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -1400,6 +1449,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -1524,6 +1577,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -1648,6 +1705,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -1776,6 +1837,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -1902,6 +1967,10 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \InvalidArgumentException
      *
      * @return void
      */

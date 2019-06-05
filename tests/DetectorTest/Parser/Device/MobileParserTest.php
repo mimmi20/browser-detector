@@ -20,6 +20,10 @@ use PHPUnit\Framework\TestCase;
 final class MobileParserTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvoke(): void

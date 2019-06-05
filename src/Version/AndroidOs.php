@@ -18,6 +18,8 @@ final class AndroidOs implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
@@ -47,8 +49,8 @@ final class AndroidOs implements VersionDetectorInterface
             return $detectedVersion;
         }
 
-        if ((bool) preg_match('/Linux; (\d+[\d\.]+)/', $useragent, $matches)) {
-            return (new VersionFactory())->set($matches[1]);
+        if ((bool) preg_match('/Linux; (?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
+            return (new VersionFactory())->set($matches['version']);
         }
 
         if (false !== mb_stripos($useragent, 'gingerbread')) {

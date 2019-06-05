@@ -18,6 +18,7 @@ interface SpecificLoaderInterface
      * @param string $useragent
      *
      * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \UnexpectedValueException
      *
      * @return mixed
      */

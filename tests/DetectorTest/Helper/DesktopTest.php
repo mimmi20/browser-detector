@@ -34,6 +34,9 @@ final class DesktopTest extends TestCase
      *
      * @param string $agent
      *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
      * @return void
      */
     public function testIsDesktop(string $agent): void
@@ -101,6 +104,9 @@ final class DesktopTest extends TestCase
      * @dataProvider providerIsNoDesktop
      *
      * @param string $agent
+     *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      *
      * @return void
      */

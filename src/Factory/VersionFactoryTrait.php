@@ -24,6 +24,8 @@ trait VersionFactoryTrait
      * @param array  $data
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     private function getVersion(array $data, string $useragent): VersionInterface

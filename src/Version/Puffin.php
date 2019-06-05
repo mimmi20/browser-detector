@@ -18,12 +18,14 @@ final class Puffin implements VersionDetectorInterface
      *
      * @param string $useragent
      *
+     * @throws \UnexpectedValueException
+     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if ((bool) preg_match('/(?:Puffin%20Free|Puffin)\/([\d\.]+)/', $useragent, $matches)) {
-            return (new VersionFactory())->set($matches[1]);
+        if ((bool) preg_match('/(?:Puffin%20Free|Puffin)\/(?P<version>[\d\.]+)/', $useragent, $matches)) {
+            return (new VersionFactory())->set($matches['version']);
         }
 
         return (new VersionFactory())->set('0');

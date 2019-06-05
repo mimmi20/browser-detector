@@ -25,6 +25,13 @@ use UaResult\Os\OsInterface;
 final class PlatformLoaderTest extends TestCase
 {
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeNotInCache(): void
@@ -94,6 +101,13 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeNullInCache(): void
@@ -163,6 +177,13 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeNoVersion(): void
@@ -242,6 +263,13 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeVersionSet(): void
@@ -321,6 +349,13 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeGenericVersion(): void
@@ -402,6 +437,13 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \PHPUnit\Framework\Exception
+     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
     public function testInvokeVersion(): void
