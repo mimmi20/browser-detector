@@ -16,6 +16,7 @@ use BrowserDetector\Loader\NotFoundException;
 use Psr\Log\LoggerInterface;
 use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
+use UaResult\Company\Company;
 use UaResult\Device\Device;
 use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
@@ -75,8 +76,29 @@ final class DeviceFactory
             }
         }
 
-        $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
-        $brand        = $this->getCompany($data, $useragent, 'brand');
+        try {
+            $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+        } catch (NotFoundException $e) {
+            $logger->info($e);
+
+            $manufacturer = new Company(
+                'unknown',
+                null,
+                null
+            );
+        }
+
+        try {
+            $brand = $this->getCompany($data, $useragent, 'brand');
+        } catch (NotFoundException $e) {
+            $logger->info($e);
+
+            $brand = new Company(
+                'unknown',
+                null,
+                null
+            );
+        }
 
         $display = new Display(null, new \UaDisplaySize\Unknown(), null);
         if (array_key_exists('display', $data)) {

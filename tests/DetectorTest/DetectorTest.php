@@ -1269,7 +1269,7 @@ final class DetectorTest extends TestCase
             ->expects(static::once())
             ->method('parse')
             ->with($useragent)
-            ->will(static::throwException(new InvalidArgumentException('test')));
+            ->will(static::throwException(new NotFoundException('test')));
         $engineParser
             ->expects(static::never())
             ->method('load');
@@ -1776,7 +1776,7 @@ final class DetectorTest extends TestCase
             ->expects(static::once())
             ->method('parse')
             ->with($useragent)
-            ->willThrowException(new DecodeErrorException(0, 'parsing failed', ''));
+            ->willThrowException(new NotFoundException('parsing failed'));
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
