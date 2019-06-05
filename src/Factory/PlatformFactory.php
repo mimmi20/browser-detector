@@ -13,9 +13,11 @@ namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
+use UaResult\Company\Company;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 
@@ -49,8 +51,19 @@ final class PlatformFactory
         $marketingName = array_key_exists('marketingName', $data) ? $data['marketingName'] : null;
         $bits          = (new \BrowserDetector\Bits\Os())->getBits($useragent);
 
-        $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+        $version = $this->getVersion($data, $useragent);
+
+        try {
+            $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+        } catch (NotFoundException $e) {
+            $logger->info($e);
+
+            $manufacturer = new Company(
+                'unknown',
+                null,
+                null
+            );
+        }
 
         if ('Mac OS X' === $name
             && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')

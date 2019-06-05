@@ -13,8 +13,10 @@ namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\VersionFactoryInterface;
 use Psr\Log\LoggerInterface;
+use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
 
@@ -46,8 +48,19 @@ final class EngineFactory
     {
         $name = array_key_exists('name', $data) ? $data['name'] : null;
 
-        $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+        $version = $this->getVersion($data, $useragent);
+
+        try {
+            $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+        } catch (NotFoundException $e) {
+            $logger->info($e);
+
+            $manufacturer = new Company(
+                'unknown',
+                null,
+                null
+            );
+        }
 
         return new Engine($name, $manufacturer, $version);
     }

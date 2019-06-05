@@ -19,6 +19,7 @@ use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Browser\BrowserInterface;
+use UaResult\Company\Company;
 
 final class BrowserFactory
 {
@@ -69,8 +70,19 @@ final class BrowserFactory
             }
         }
 
-        $version      = $this->getVersion($data, $useragent);
-        $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+        $version = $this->getVersion($data, $useragent);
+
+        try {
+            $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+        } catch (NotFoundException $e) {
+            $logger->info($e);
+
+            $manufacturer = new Company(
+                'unknown',
+                null,
+                null
+            );
+        }
 
         return new Browser($name, $manufacturer, $version, $type, $bits, $modus);
     }
