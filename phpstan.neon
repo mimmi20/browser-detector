@@ -23,7 +23,6 @@ parameters:
     - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
     - '~Useless \@throws~'
     - '~Unused \@throws~'
-    - '~is never thrown in the corresponding try block~'
 includes:
   - vendor/phpstan/phpstan-strict-rules/rules.neon
   - vendor/phpstan/phpstan-phpunit/extension.neon
