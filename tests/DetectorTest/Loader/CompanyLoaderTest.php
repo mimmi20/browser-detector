@@ -23,11 +23,7 @@ use PHPUnit\Framework\TestCase;
 final class CompanyLoaderTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \InvalidArgumentException
      *
      * @return void
      */
@@ -64,11 +60,7 @@ final class CompanyLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \InvalidArgumentException
      *
      * @return void
      */

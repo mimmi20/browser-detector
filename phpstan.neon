@@ -22,7 +22,6 @@ parameters:
     - '~Construct empty\(\) is not allowed\. Use more strict comparison~'
     - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
     - '~Useless \@throws~'
-    - '~Unused \@throws~'
 includes:
   - vendor/phpstan/phpstan-strict-rules/rules.neon
   - vendor/phpstan/phpstan-phpunit/extension.neon

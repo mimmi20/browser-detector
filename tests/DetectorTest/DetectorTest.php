@@ -153,6 +153,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -256,7 +257,7 @@ final class DetectorTest extends TestCase
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
         /** @var Result $result */
-        $result = $object($request);
+        $result = $object->__invoke($request);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -271,6 +272,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -372,17 +374,14 @@ final class DetectorTest extends TestCase
         static::assertSame($mockResult, $result);
 
         /** @var Result $result2 */
-        $result2 = $object($message);
+        $result2 = $object->__invoke($message);
 
         static::assertSame($result, $result2);
     }
 
     /**
      * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -473,7 +472,7 @@ final class DetectorTest extends TestCase
         $this->expectException(\UnexpectedValueException::class);
         $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');
 
-        $object(new \stdClass());
+        $object->__invoke(new \stdClass());
     }
 
     /**
@@ -482,6 +481,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -581,7 +581,7 @@ final class DetectorTest extends TestCase
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         /** @var \UaResult\Result\Result $result */
-        $result = $object($useragent);
+        $result = $object->__invoke($useragent);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -596,6 +596,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -695,7 +696,7 @@ final class DetectorTest extends TestCase
         $object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
 
         /** @var Result $result */
-        $result = $object([Constants::HEADER_HTTP_USERAGENT => $useragent]);
+        $result = $object->__invoke([Constants::HEADER_HTTP_USERAGENT => $useragent]);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -710,6 +711,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -815,7 +817,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -833,6 +835,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -931,7 +934,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($browser, $result->getBrowser());
@@ -948,6 +951,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -1046,7 +1050,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         //self::assertSame($device, $result->getDevice());
@@ -1065,6 +1069,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -1174,7 +1179,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -1193,6 +1198,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -1298,7 +1304,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -1317,6 +1323,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -1431,7 +1438,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -1451,6 +1458,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -1559,7 +1567,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -1579,6 +1587,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -1687,7 +1696,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -1707,6 +1716,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -1819,7 +1829,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -1839,6 +1849,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -1950,7 +1961,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());
@@ -1969,6 +1980,7 @@ final class DetectorTest extends TestCase
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
      * @throws \InvalidArgumentException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -2079,7 +2091,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         /** @var Result $result */
-        $result = $object($message);
+        $result = $object->__invoke($message);
 
         static::assertInstanceOf(ResultInterface::class, $result);
         static::assertSame($device, $result->getDevice());

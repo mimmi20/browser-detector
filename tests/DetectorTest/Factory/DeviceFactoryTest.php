@@ -29,7 +29,6 @@ final class DeviceFactoryTest extends TestCase
     /**
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -114,7 +113,6 @@ final class DeviceFactoryTest extends TestCase
     /**
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
      *
      * @return void
      */
@@ -199,7 +197,6 @@ final class DeviceFactoryTest extends TestCase
     /**
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
      *
      * @return void
      */

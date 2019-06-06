@@ -58,8 +58,6 @@ final class DeviceFactory
      * @param array                    $data
      * @param string                   $useragent
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
      * @return \UaResult\Device\DeviceInterface
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
