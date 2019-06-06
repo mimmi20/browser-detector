@@ -18,7 +18,6 @@ use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use BrowserDetector\Version\Version;
-use ExceptionalJSON\DecodeErrorException;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use UaDeviceType\Unknown;
@@ -221,10 +220,6 @@ final class Detector implements DetectorInterface
         if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {
                 $engine = $this->engineParser->load('webkit', $browserUa);
-            } catch (DecodeErrorException $e) {
-                $this->logger->error($e);
-
-                $engine = clone $defaultEngine;
             } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->warning($e);
 

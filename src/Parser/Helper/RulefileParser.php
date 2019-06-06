@@ -54,7 +54,7 @@ final class RulefileParser implements RulefileParserInterface
 
             $mode  = $factories['generic'] ?? $fallback;
             $rules = $factories['rules'] ?? [];
-        } catch (DecodeErrorException | \RuntimeException $e) {
+        } catch (DecodeErrorException $e) {
             $this->logger->error($e);
 
             $mode  = $fallback;

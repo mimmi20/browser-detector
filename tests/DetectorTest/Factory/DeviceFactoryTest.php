@@ -341,7 +341,6 @@ final class DeviceFactoryTest extends TestCase
         $manufacturerParam = 'test-manufacturer';
         $brandParam        = 'test-brand';
         $companyException  = new NotFoundException('company failed');
-        $displayException  = new NotFoundException('display failed');
         $typeException     = new NotFoundException('type failed');
 
         $company = $this->getMockBuilder(CompanyInterface::class)
@@ -384,9 +383,9 @@ final class DeviceFactoryTest extends TestCase
             ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(static::exactly(3))
+            ->expects(static::exactly(2))
             ->method('info')
-            ->withConsecutive($typeException, $companyException, $displayException);
+            ->withConsecutive($typeException, $companyException);
         $logger
             ->expects(static::never())
             ->method('notice');
@@ -406,6 +405,9 @@ final class DeviceFactoryTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
+        $display = $this->getMockBuilder(DisplayInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
         $displayParam   = [];
         $displayFactory = $this->getMockBuilder(DisplayFactoryInterface::class)
             ->disableOriginalConstructor()
@@ -414,7 +416,7 @@ final class DeviceFactoryTest extends TestCase
             ->expects(static::once())
             ->method('fromArray')
             ->with($logger, $displayParam)
-            ->willThrowException($displayException);
+            ->willReturn($display);
 
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \UaDeviceType\TypeLoaderInterface $typeLoader */

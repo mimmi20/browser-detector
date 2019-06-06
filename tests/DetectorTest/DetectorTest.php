@@ -18,10 +18,8 @@ use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
-use ExceptionalJSON\DecodeErrorException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Cache\Exception\InvalidArgumentException;
 use UaRequest\Constants;
 use UaRequest\GenericRequestFactory;
 use UaResult\Browser\BrowserInterface;
@@ -1472,10 +1470,10 @@ final class DetectorTest extends TestCase
             ->expects(static::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(static::once())
             ->method('warning');
         $logger
-            ->expects(static::once())
+            ->expects(static::never())
             ->method('error');
         $logger
             ->expects(static::never())
@@ -1533,7 +1531,7 @@ final class DetectorTest extends TestCase
             ->expects(static::once())
             ->method('load')
             ->with('webkit', $useragent)
-            ->will(static::throwException(new DecodeErrorException(0, 'parsing failed', '')));
+            ->will(static::throwException(new \UnexpectedValueException('parsing failed')));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()

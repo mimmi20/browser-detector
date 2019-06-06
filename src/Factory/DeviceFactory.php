@@ -102,11 +102,7 @@ final class DeviceFactory
 
         $display = new Display(null, new \UaDisplaySize\Unknown(), null);
         if (array_key_exists('display', $data)) {
-            try {
-                $display = $this->displayFactory->fromArray($logger, (array) $data['display']);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
+            $display = $this->displayFactory->fromArray($logger, (array) $data['display']);
         }
 
         return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display);
