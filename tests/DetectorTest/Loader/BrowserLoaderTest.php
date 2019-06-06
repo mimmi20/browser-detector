@@ -26,11 +26,7 @@ use UaResult\Engine\EngineInterface;
 final class BrowserLoaderTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \InvalidArgumentException
      * @throws \UnexpectedValueException
      *
      * @return void
@@ -104,11 +100,7 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
      * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \InvalidArgumentException
      * @throws \UnexpectedValueException
      *
      * @return void

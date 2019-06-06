@@ -114,10 +114,8 @@ final class DetectorTest extends TestCase
      */
     public function testGetBrowser(array $headers, Result $expectedResult): void
     {
-        $object = $this->object;
-
         /** @var Result $result */
-        $result = $object($headers);
+        $result = $this->object->__invoke($headers);
 
         try {
             $encodedHeaders = (new Json())->encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);

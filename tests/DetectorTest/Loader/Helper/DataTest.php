@@ -40,12 +40,6 @@ final class DataTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \InvalidArgumentException
-     *
      * @return void
      */
     public function testInvokeFail(): void
@@ -105,7 +99,6 @@ final class DataTest extends TestCase
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
      * @throws \InvalidArgumentException
      *
      * @return void
