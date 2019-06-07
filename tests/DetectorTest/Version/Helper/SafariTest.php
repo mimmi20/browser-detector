@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version\Helper;
 
 use BrowserDetector\Version\Helper\Safari;
+use BrowserDetector\Version\VersionFactory;
 use PHPUnit\Framework\TestCase;
 
 final class SafariTest extends TestCase
@@ -37,12 +38,14 @@ final class SafariTest extends TestCase
      *
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
      *
      * @return void
      */
     public function testMapSafariVersion(string $version, string $expectedVersion): void
     {
-        static::assertSame($expectedVersion, $this->object->mapSafariVersion($version));
+        $versionObj = (new VersionFactory())->set($version);
+        static::assertSame($expectedVersion, $this->object->mapSafariVersion($versionObj));
     }
 
     /**
@@ -51,29 +54,29 @@ final class SafariTest extends TestCase
     public function providerVersion(): array
     {
         return [
-            ['3.0', '3.0'],
-            ['3.1', '3.1'],
-            ['3.2', '3.2'],
-            ['4.0', '4.0'],
-            ['4.1', '4.1'],
-            ['4.2', '4.2'],
-            ['4.3', '4.3'],
-            ['4.4', '4.4'],
-            ['5.0', '5.0'],
-            ['5.1', '5.1'],
-            ['5.2', '5.2'],
-            ['6.0', '6.0'],
-            ['6.1', '6.1'],
-            ['6.2', '6.2'],
-            ['7.0', '7.0'],
-            ['7.1', '7.1'],
-            ['8.0', '8.0'],
-            ['8.1', '8.1'],
-            ['9.0', '9.0'],
-            ['9.1', '9.1'],
-            ['10.0', '10.0'],
-            ['10.1', '10.1'],
-            ['11.0', '11.0'],
+            ['3.0', '3.0.0'],
+            ['3.1', '3.1.0'],
+            ['3.2', '3.2.0'],
+            ['4.0', '4.0.0'],
+            ['4.1', '4.1.0'],
+            ['4.2', '4.2.0'],
+            ['4.3', '4.3.0'],
+            ['4.4', '4.4.0'],
+            ['5.0', '5.0.0'],
+            ['5.1', '5.1.0'],
+            ['5.2', '5.2.0'],
+            ['6.0', '6.0.0'],
+            ['6.1', '6.1.0'],
+            ['6.2', '6.2.0'],
+            ['7.0', '7.0.0'],
+            ['7.1', '7.1.0'],
+            ['8.0', '8.0.0'],
+            ['8.1', '8.1.0'],
+            ['9.0', '9.0.0'],
+            ['9.1', '9.1.0'],
+            ['10.0', '10.0.0'],
+            ['10.1', '10.1.0'],
+            ['11.0', '11.0.0'],
             ['14600', '12.0'],
             ['14599', '11.0'],
             ['13600', '11.0'],

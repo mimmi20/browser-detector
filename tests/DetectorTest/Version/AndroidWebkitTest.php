@@ -68,6 +68,10 @@ final class AndroidWebkitTest extends TestCase
                 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
                 '0.0.0',
             ],
+            [
+                'Mozilla/5.0 (Linux; U; Android 1.6; de-de; generic Build/Donut) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1',
+                '3.1.2',
+            ],
         ];
     }
 }

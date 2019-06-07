@@ -11,16 +11,20 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version\Helper;
 
+use BrowserDetector\Version\VersionInterface;
+
 final class Safari
 {
     /**
      * maps different Safari Versions to a normalized format
      *
-     * @param string $detectedVersion
+     * @param VersionInterface $detectedVersion
+     *
+     * @throws \UnexpectedValueException
      *
      * @return string
      */
-    public function mapSafariVersion(string $detectedVersion): string
+    public function mapSafariVersion(VersionInterface $detectedVersion): string
     {
         $regularVersions = [
             '3.0',
@@ -50,8 +54,8 @@ final class Safari
             '13.0',
         ];
 
-        if (in_array($detectedVersion, $regularVersions, true)) {
-            return $detectedVersion;
+        if (in_array($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO), $regularVersions, true)) {
+            return $detectedVersion->getVersion();
         }
 
         $versions = [
@@ -71,7 +75,7 @@ final class Safari
         ];
 
         foreach ($versions as $engineVersion => $osVersion) {
-            if (version_compare($detectedVersion, (string) $engineVersion, '>=')) {
+            if (version_compare($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO), (string) $engineVersion, '>=')) {
                 return $osVersion;
             }
         }

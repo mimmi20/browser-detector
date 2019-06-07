@@ -62,8 +62,8 @@ final class DeviceFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
     {
-        $deviceName    = array_key_exists('deviceName', $data) && !empty($data['deviceName']) ? $data['deviceName'] : null;
-        $marketingName = array_key_exists('marketingName', $data) && !empty($data['marketingName']) ? $data['marketingName'] : null;
+        $deviceName    = array_key_exists('deviceName', $data) && null !== $data['deviceName'] && '' !== $data['deviceName'] ? $data['deviceName'] : null;
+        $marketingName = array_key_exists('marketingName', $data) && null !== $data['marketingName'] && '' !== $data['marketingName'] ? $data['marketingName'] : null;
 
         $type = new Unknown();
         if (array_key_exists('type', $data)) {

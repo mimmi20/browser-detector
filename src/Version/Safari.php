@@ -32,10 +32,11 @@ final class Safari implements VersionDetectorInterface
 
         if (array_key_exists('version', $matches)) {
             $safariHelper = new SafariHelper();
+            $version      = (new VersionFactory())->set($matches['version']);
 
-            return (new VersionFactory())->set($safariHelper->mapSafariVersion($matches['version']));
+            return (new VersionFactory())->set($safariHelper->mapSafariVersion($version));
         }
 
-        return new Version('0');
+        return (new VersionFactory())->set('0');
     }
 }
