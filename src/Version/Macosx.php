@@ -31,12 +31,12 @@ final class Macosx implements VersionDetectorInterface
         if ($doMatch) {
             try {
                 $buildVersion = OSXbuild::getVersion($matches['build']);
-            } catch (\Exception $e) {
-                return (new VersionFactory())->set('0');
+            } catch (\Throwable $e) {
+                $buildVersion = false;
             }
 
             if (false !== $buildVersion) {
-                return (new VersionFactory())->set($buildVersion);
+                return (new VersionFactory())->set((string) $buildVersion);
             }
         }
 
@@ -45,12 +45,12 @@ final class Macosx implements VersionDetectorInterface
         if ($doMatch) {
             try {
                 $buildVersion = OSXbuild::getVersion($matches['build']);
-            } catch (\Exception $e) {
-                return (new VersionFactory())->set('0');
+            } catch (\Throwable $e) {
+                $buildVersion = false;
             }
 
             if (false !== $buildVersion) {
-                return (new VersionFactory())->set($buildVersion);
+                return (new VersionFactory())->set((string) $buildVersion);
             }
         }
 
