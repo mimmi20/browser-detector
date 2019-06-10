@@ -11,14 +11,9 @@
 declare(strict_types = 1);
 namespace UserAgentsTest;
 
-use BrowserDetector\Cache\Cache;
-use BrowserDetector\Detector;
+use BrowserDetector\DetectorFactory;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\Helper\Filter;
-use BrowserDetector\Parser\BrowserParserFactory;
-use BrowserDetector\Parser\DeviceParserFactory;
-use BrowserDetector\Parser\EngineParserFactory;
-use BrowserDetector\Parser\PlatformParserFactory;
 use ExceptionalJSON\DecodeErrorException;
 use ExceptionalJSON\EncodeErrorException;
 use JsonClass\Json;
@@ -76,25 +71,11 @@ final class DetectorTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
-        $cache      = new Cache(new Psr16Cache(new NullAdapter()));
-        $jsonParser = new Json();
+        $cache = new Psr16Cache(new NullAdapter());
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
-
-        /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
-        $companyLoader = $companyLoaderFactory();
-
-        $platformParserFactory = new PlatformParserFactory($logger, $jsonParser, $companyLoader);
-        $platformParser        = $platformParserFactory();
-        $deviceParserFactory   = new DeviceParserFactory($logger, $jsonParser, $companyLoader, $platformParser);
-        $deviceParser          = $deviceParserFactory();
-        $engineParserFactory   = new EngineParserFactory($logger, $jsonParser, $companyLoader);
-        $engineParser          = $engineParserFactory();
-        $browserParserFactory  = new BrowserParserFactory($logger, $jsonParser, $companyLoader, $engineParser);
-        $browserParser         = $browserParserFactory();
-
-        $this->object = new Detector($logger, $cache, $deviceParser, $platformParser, $browserParser, $engineParser);
+        /** @var NullLogger $logger */
+        $factory      = new DetectorFactory($cache, $logger);
+        $this->object = $factory();
     }
 
     /**
