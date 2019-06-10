@@ -58,15 +58,15 @@ final class ResultFactory
      * @throws \BrowserDetector\Loader\NotFoundException
      * @throws \UnexpectedValueException
      *
-     * @return \UaResult\Result\Result
+     * @return \UaResult\Result\Result|null
      */
-    public function fromArray(LoggerInterface $logger, array $data): Result
+    public function fromArray(LoggerInterface $logger, array $data): ?Result
     {
-        $headers = [];
-        if (array_key_exists('headers', $data)) {
-            $headers = (array) $data['headers'];
+        if (!array_key_exists('headers', $data)) {
+            return null;
         }
 
+        $headers        = (array) $data['headers'];
         $request        = $this->buildRequest($headers);
         $versionFactory = new VersionFactory();
 
@@ -109,7 +109,7 @@ final class ResultFactory
             null
         );
         if (array_key_exists('os', $data)) {
-            $os = (new PlatformFactory($this->companyLoader, $versionFactory))->fromArray($logger, (array) $data['os'], $browserUa);
+            $os = (new PlatformFactory($this->companyLoader, $versionFactory))->fromArray($logger, (array) $data['os'], $request->getPlatformUserAgent());
         }
 
         $engine = new Engine(

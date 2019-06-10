@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\VersionFactoryInterface;
@@ -49,9 +48,8 @@ final class PlatformFactory
     {
         $name          = array_key_exists('name', $data) ? $data['name'] : null;
         $marketingName = array_key_exists('marketingName', $data) ? $data['marketingName'] : null;
-        $bits          = (new \BrowserDetector\Bits\Os())->getBits($useragent);
-
-        $version = $this->getVersion($data, $useragent);
+        $bits          = array_key_exists('bits', $data) ? $data['bits'] : null;
+        $version       = $this->getVersion($data, $useragent);
 
         try {
             $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');

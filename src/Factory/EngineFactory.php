@@ -46,8 +46,7 @@ final class EngineFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): EngineInterface
     {
-        $name = array_key_exists('name', $data) ? $data['name'] : null;
-
+        $name    = array_key_exists('name', $data) ? $data['name'] : null;
         $version = $this->getVersion($data, $useragent);
 
         try {
