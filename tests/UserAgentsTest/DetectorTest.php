@@ -206,7 +206,12 @@ final class DetectorTest extends TestCase
 
             foreach ($tests as $i => $test) {
                 $expectedResult = $resultFactory->fromArray($logger, $test);
-                $index          = sprintf('file:%s test:%d', $file->getRelativePathname(), $i);
+
+                if (null === $expectedResult) {
+                    continue;
+                }
+
+                $index = sprintf('file:%s test:%d', $file->getRelativePathname(), $i);
 
                 $data[$index] = [
                     'headers' => $expectedResult->getHeaders(),
