@@ -353,12 +353,9 @@ final class DeviceFactoryTest extends TestCase
             ->expects(static::exactly(4))
             ->method('load')
             ->withConsecutive(['unknown', $useragent], [$manufacturerParam, $useragent], ['unknown', $useragent], [$brandParam, $useragent])
-            ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $companyException, $manufacturerParam, $manufacturer) {
+            ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $companyException) {
                 if ('unknown' === $key) {
                     return $company;
-                }
-                if ($manufacturerParam === $key) {
-                    return $manufacturer;
                 }
                 throw $companyException;
             });
@@ -380,9 +377,9 @@ final class DeviceFactoryTest extends TestCase
             ->expects(static::never())
             ->method('debug');
         $logger
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('info')
-            ->withConsecutive($typeException, $companyException);
+            ->withConsecutive($typeException, $companyException, $companyException);
         $logger
             ->expects(static::never())
             ->method('notice');
@@ -446,7 +443,6 @@ final class DeviceFactoryTest extends TestCase
         static::assertInstanceOf(Unknown::class, $result->getType());
         static::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
         static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($manufacturer, $result->getManufacturer());
         static::assertInstanceOf(CompanyInterface::class, $result->getBrand());
         //static::assertEquals($company, $result->getBrand());
     }
