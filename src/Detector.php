@@ -18,11 +18,9 @@ use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use BrowserDetector\Version\Version;
-use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use UaDeviceType\Unknown;
 use UaRequest\GenericRequest;
-use UaRequest\GenericRequestFactory;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
@@ -31,7 +29,6 @@ use UaResult\Engine\Engine;
 use UaResult\Os\Os;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
-use UnexpectedValueException;
 
 final class Detector implements DetectorInterface
 {
@@ -122,7 +119,7 @@ final class Detector implements DetectorInterface
      */
     public function __invoke($headers): ResultInterface
     {
-        $request = $this->buildRequest($headers);
+        $request = (new RequestBuilder())->buildRequest($this->logger, $headers);
 
         $key = sha1(serialize($request->getFilteredHeaders()));
 
@@ -244,46 +241,6 @@ final class Detector implements DetectorInterface
             $platform,
             $browser,
             $engine
-        );
-    }
-
-    /**
-     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $request
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaRequest\GenericRequest
-     */
-    private function buildRequest($request): GenericRequest
-    {
-        if ($request instanceof GenericRequest) {
-            $this->logger->debug('request object used as is');
-
-            return $request;
-        }
-
-        $requestFactory = new GenericRequestFactory();
-
-        if ($request instanceof MessageInterface) {
-            $this->logger->debug('request object created from PSR-7 http message');
-
-            return $requestFactory->createRequestFromPsr7Message($request);
-        }
-
-        if (is_array($request)) {
-            $this->logger->debug('request object created from array');
-
-            return $requestFactory->createRequestFromArray($request);
-        }
-
-        if (is_string($request)) {
-            $this->logger->debug('request object created from string');
-
-            return $requestFactory->createRequestFromString($request);
-        }
-
-        throw new UnexpectedValueException(
-            'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface'
         );
     }
 }

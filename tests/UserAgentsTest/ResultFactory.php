@@ -17,14 +17,13 @@ use BrowserDetector\Factory\DisplayFactory;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\RequestBuilder;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
-use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 use UaBrowserType\TypeLoader;
 use UaDeviceType\Unknown;
-use UaRequest\GenericRequest;
-use UaRequest\GenericRequestFactory;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
@@ -32,7 +31,6 @@ use UaResult\Device\Display;
 use UaResult\Engine\Engine;
 use UaResult\Os\Os;
 use UaResult\Result\Result;
-use UnexpectedValueException;
 
 final class ResultFactory
 {
@@ -67,7 +65,7 @@ final class ResultFactory
         }
 
         $headers        = (array) $data['headers'];
-        $request        = $this->buildRequest($headers);
+        $request        = (new RequestBuilder())->buildRequest(new NullLogger(), $headers);
         $versionFactory = new VersionFactory();
 
         $device = new Device(
@@ -122,37 +120,5 @@ final class ResultFactory
         }
 
         return new Result($headers, $device, $os, $browser, $engine);
-    }
-
-    /**
-     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $request
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaRequest\GenericRequest
-     */
-    private function buildRequest($request): GenericRequest
-    {
-        if ($request instanceof GenericRequest) {
-            return $request;
-        }
-
-        $requestFactory = new GenericRequestFactory();
-
-        if ($request instanceof MessageInterface) {
-            return $requestFactory->createRequestFromPsr7Message($request);
-        }
-
-        if (is_array($request)) {
-            return $requestFactory->createRequestFromArray($request);
-        }
-
-        if (is_string($request)) {
-            return $requestFactory->createRequestFromString($request);
-        }
-
-        throw new UnexpectedValueException(
-            'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface'
-        );
     }
 }
