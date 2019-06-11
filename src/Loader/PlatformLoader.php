@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Bits\Os;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionFactory;
@@ -72,6 +73,8 @@ final class PlatformLoader implements PlatformLoaderInterface
         if (null === $platformData) {
             throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
+
+        $platformData->bits = property_exists($platformData, 'bits') ? $platformData->bits : (new Os())->getBits($useragent);
 
         return (new PlatformFactory($this->companyLoader, new VersionFactory()))->fromArray($this->logger, (array) $platformData, $useragent);
     }

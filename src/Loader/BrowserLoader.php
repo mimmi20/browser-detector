@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
+use BrowserDetector\Bits\Browser;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Parser\EngineParserInterface;
@@ -81,6 +82,8 @@ final class BrowserLoader implements BrowserLoaderInterface
         if (null === $browserData) {
             throw new NotFoundException('the browser with key "' . $key . '" was not found');
         }
+
+        $browserData->bits = property_exists($browserData, 'bits') ? $browserData->bits : (new Browser())->getBits($useragent);
 
         $engineKey = $browserData->engine;
         $engine    = null;
