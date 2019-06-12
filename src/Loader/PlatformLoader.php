@@ -74,7 +74,7 @@ final class PlatformLoader implements PlatformLoaderInterface
             throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
 
-        $platformData->bits = property_exists($platformData, 'bits') ? $platformData->bits : (new Os())->getBits($useragent);
+        $platformData->bits = (new Os())->getBits($useragent);
 
         return (new PlatformFactory($this->companyLoader, new VersionFactory()))->fromArray($this->logger, (array) $platformData, $useragent);
     }

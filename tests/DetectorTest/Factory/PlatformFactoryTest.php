@@ -24,37 +24,25 @@ use UaResult\Os\OsInterface;
 final class PlatformFactoryTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
      * @throws \UnexpectedValueException
      *
      * @return void
      */
     public function testFromEmptyArray(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
-            ->method('load')
-            ->with('unknown')
-            ->willReturn($company);
+            ->expects(static::never())
+            ->method('load');
 
-        $version = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
-            ->method('set')
-            ->with('0')
-            ->willReturn($version);
+            ->expects(static::never())
+            ->method('set');
 
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
@@ -88,16 +76,11 @@ final class PlatformFactoryTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, [], 'this is a test');
+        $this->expectException(\AssertionError::class);
+        $this->expectExceptionMessage('"name" property is required');
 
-        static::assertInstanceOf(OsInterface::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getMarketingName());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertSame($version, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        /* @var \Psr\Log\LoggerInterface $logger */
+        $object->fromArray($logger, [], 'this is a test');
     }
 
     /**
@@ -116,7 +99,7 @@ final class PlatformFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -170,7 +153,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
+            'this is a test'
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertNull($result->getName());
@@ -179,6 +166,7 @@ final class PlatformFactoryTest extends TestCase
         static::assertSame($version2, $result->getVersion());
         static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         static::assertSame($company, $result->getManufacturer());
+        static::assertNull($result->getBits());
     }
 
     /**
@@ -197,7 +185,7 @@ final class PlatformFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -248,7 +236,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
+            'this is a test'
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertNull($result->getName());
@@ -275,7 +267,7 @@ final class PlatformFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -331,7 +323,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
+            'this is a test'
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertNull($result->getName());
@@ -358,7 +354,7 @@ final class PlatformFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -414,7 +410,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
+            'this is a test'
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertNull($result->getName());
@@ -441,7 +441,7 @@ final class PlatformFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -497,7 +497,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
+            'this is a test'
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertNull($result->getName());
@@ -524,7 +528,7 @@ final class PlatformFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -577,7 +581,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['version' => $v], 'this is a test');
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
+            'this is a test'
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertNull($result->getName());
@@ -604,7 +612,7 @@ final class PlatformFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -669,7 +677,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['version' => $v], $useragent);
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
+            $useragent
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertNull($result->getName());
@@ -717,7 +729,7 @@ final class PlatformFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('set')
             ->with('0')
             ->willReturn($version);
@@ -756,7 +768,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['manufacturer' => $companyName], $useragent);
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => '0', 'bits' => null],
+            $useragent
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertNull($result->getName());
@@ -764,7 +780,6 @@ final class PlatformFactoryTest extends TestCase
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
         static::assertSame($version, $result->getVersion());
         static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        //static::assertEquals($company, $result->getManufacturer());
     }
 
     /**
@@ -845,7 +860,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+        $result = $object->fromArray(
+            $logger,
+            ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
+            $useragent
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertIsString($result->getName());
@@ -936,7 +955,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+        $result = $object->fromArray(
+            $logger,
+            ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
+            $useragent
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertIsString($result->getName());
@@ -1026,7 +1049,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+        $result = $object->fromArray(
+            $logger,
+            ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
+            $useragent
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertIsString($result->getName());
@@ -1117,7 +1144,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+        $result = $object->fromArray(
+            $logger,
+            ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
+            $useragent
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertIsString($result->getName());
@@ -1207,7 +1238,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+        $result = $object->fromArray(
+            $logger,
+            ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
+            $useragent
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertIsString($result->getName());
@@ -1297,7 +1332,11 @@ final class PlatformFactoryTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, ['manufacturer' => $companyName, 'version' => $v, 'name' => $platformName], $useragent);
+        $result = $object->fromArray(
+            $logger,
+            ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
+            $useragent
+        );
 
         static::assertInstanceOf(OsInterface::class, $result);
         static::assertIsString($result->getName());

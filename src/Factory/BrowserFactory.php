@@ -57,17 +57,22 @@ final class BrowserFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): BrowserInterface
     {
-        $name  = array_key_exists('name', $data) ? $data['name'] : null;
-        $modus = array_key_exists('modus', $data) ? $data['modus'] : null;
-        $bits  = array_key_exists('bits', $data) ? $data['bits'] : null;
+        assert(array_key_exists('name', $data), '"name" property is required');
+        assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
+        assert(array_key_exists('version', $data), '"version" property is required');
+        assert(array_key_exists('type', $data), '"type" property is required');
+        assert(array_key_exists('bits', $data), '"bits" property is required');
+        assert(array_key_exists('modus', $data), '"modus" property is required');
+
+        $name  = $data['name'];
+        $modus = $data['modus'];
+        $bits  = $data['bits'];
 
         $type = new Unknown();
-        if (array_key_exists('type', $data)) {
-            try {
-                $type = $this->typeLoader->load((string) $data['type']);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
+        try {
+            $type = $this->typeLoader->load((string) $data['type']);
+        } catch (NotFoundException $e) {
+            $logger->info($e);
         }
 
         $version = $this->getVersion($data, $useragent);

@@ -19,7 +19,6 @@ use UaDeviceType\Unknown;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
 use UaResult\Device\DeviceInterface;
-use UaResult\Device\Display;
 
 /**
  * Device detection class
@@ -62,16 +61,21 @@ final class DeviceFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
     {
-        $deviceName    = array_key_exists('deviceName', $data) && null !== $data['deviceName'] && '' !== $data['deviceName'] ? $data['deviceName'] : null;
-        $marketingName = array_key_exists('marketingName', $data) && null !== $data['marketingName'] && '' !== $data['marketingName'] ? $data['marketingName'] : null;
+        assert(array_key_exists('deviceName', $data), '"deviceName" property is required');
+        assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
+        assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
+        assert(array_key_exists('brand', $data), '"brand" property is required');
+        assert(array_key_exists('type', $data), '"type" property is required');
+        assert(array_key_exists('display', $data), '"display" property is required');
+
+        $deviceName    = null !== $data['deviceName'] && '' !== $data['deviceName'] ? $data['deviceName'] : null;
+        $marketingName = null !== $data['marketingName'] && '' !== $data['marketingName'] ? $data['marketingName'] : null;
 
         $type = new Unknown();
-        if (array_key_exists('type', $data)) {
-            try {
-                $type = $this->typeLoader->load((string) $data['type']);
-            } catch (NotFoundException $e) {
-                $logger->info($e);
-            }
+        try {
+            $type = $this->typeLoader->load((string) $data['type']);
+        } catch (NotFoundException $e) {
+            $logger->info($e);
         }
 
         try {
@@ -98,10 +102,7 @@ final class DeviceFactory
             );
         }
 
-        $display = new Display(null, new \UaDisplaySize\Unknown(), null);
-        if (array_key_exists('display', $data)) {
-            $display = $this->displayFactory->fromArray($logger, (array) $data['display']);
-        }
+        $display = $this->displayFactory->fromArray($logger, (array) $data['display']);
 
         return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display);
     }

@@ -226,6 +226,7 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => null,
             'name' => null,
+            'modus' => null,
         ];
 
         $initData
@@ -318,6 +319,7 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => 'unknown',
             'name' => null,
+            'modus' => null,
         ];
 
         $initData
@@ -414,6 +416,7 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => $engineKey,
             'name' => null,
+            'modus' => null,
         ];
 
         $initData
@@ -508,6 +511,7 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => 'unknown',
             'name' => 'test-browser',
+            'modus' => null,
         ];
 
         $initData

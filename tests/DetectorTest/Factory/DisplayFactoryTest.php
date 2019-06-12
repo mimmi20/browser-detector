@@ -23,9 +23,6 @@ use UaResult\Device\DisplayInterface;
 final class DisplayFactoryTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
      * @return void
      */
     public function testFromEmptyArray(): void
@@ -58,44 +55,21 @@ final class DisplayFactoryTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
-        $type = $this->getMockBuilder(DisplayTypeInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $type
-            ->expects(static::never())
-            ->method('getType');
-
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
-            ->method('loadByDiemsions')
-            ->with(null, null)
-            ->willReturn($type);
+            ->expects(static::never())
+            ->method('loadByDiemsions');
 
         /** @var TypeLoader $typeLoader */
         $object = new DisplayFactory($typeLoader);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        $result = $object->fromArray($logger, []);
+        $this->expectException(\AssertionError::class);
+        $this->expectExceptionMessage('"width" property is required');
 
-        static::assertInstanceOf(DisplayInterface::class, $result);
-        static::assertNull($result->hasTouch());
-        static::assertNull($result->getSize());
-        static::assertInstanceOf(DisplayTypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-
-        static::assertIsArray($result->toArray());
-        static::assertArrayHasKey('width', $result->toArray());
-        static::assertArrayHasKey('height', $result->toArray());
-        static::assertArrayHasKey('touch', $result->toArray());
-        static::assertArrayHasKey('size', $result->toArray());
-
-        static::assertNull($result->toArray()['width']);
-        static::assertNull($result->toArray()['height']);
-        static::assertNull($result->toArray()['touch']);
-        static::assertNull($result->toArray()['size']);
+        /* @var \Psr\Log\LoggerInterface $logger */
+        $object->fromArray($logger, []);
     }
 
     /**
