@@ -223,9 +223,12 @@ final class DeviceLoaderTest extends TestCase
         $deviceData = (object) [
             'version' => (object) ['class' => null],
             'manufacturer' => 'unknown',
+            'brand' => 'unknown',
             'type' => 'unknown',
-            'name' => null,
+            'deviceName' => null,
+            'marketingName' => null,
             'platform' => null,
+            'display' => ['width' => null, 'height' => null, 'touch' => null, 'size' => null],
         ];
 
         $initData
@@ -315,9 +318,12 @@ final class DeviceLoaderTest extends TestCase
         $deviceData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
             'manufacturer' => 'unknown',
+            'brand' => 'unknown',
             'type' => 'unknown',
-            'name' => null,
+            'deviceName' => null,
+            'marketingName' => null,
             'platform' => 'test-platform',
+            'display' => ['width' => null, 'height' => null, 'touch' => null, 'size' => null],
         ];
 
         $initData
@@ -408,9 +414,12 @@ final class DeviceLoaderTest extends TestCase
         $deviceData = (object) [
             'version' => (object) ['class' => Test::class],
             'manufacturer' => 'unknown',
+            'brand' => 'unknown',
             'type' => 'unknown',
             'deviceName' => 'test-device',
+            'marketingName' => null,
             'platform' => 'test-platform',
+            'display' => ['width' => null, 'height' => null, 'touch' => null, 'size' => null],
         ];
 
         $initData

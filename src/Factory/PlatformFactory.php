@@ -46,9 +46,15 @@ final class PlatformFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): OsInterface
     {
-        $name          = array_key_exists('name', $data) ? $data['name'] : null;
-        $marketingName = array_key_exists('marketingName', $data) ? $data['marketingName'] : null;
-        $bits          = array_key_exists('bits', $data) ? $data['bits'] : null;
+        assert(array_key_exists('name', $data), '"name" property is required');
+        assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
+        assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
+        assert(array_key_exists('version', $data), '"version" property is required');
+        assert(array_key_exists('bits', $data), '"bits" property is required');
+
+        $name          = $data['name'];
+        $marketingName = $data['marketingName'];
+        $bits          = $data['bits'];
         $version       = $this->getVersion($data, $useragent);
 
         try {

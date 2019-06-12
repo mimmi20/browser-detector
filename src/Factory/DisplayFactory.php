@@ -43,10 +43,15 @@ final class DisplayFactory implements DisplayFactoryInterface
      */
     public function fromArray(LoggerInterface $logger, array $data): DisplayInterface
     {
-        $width  = array_key_exists('width', $data) ? $data['width'] : null;
-        $height = array_key_exists('height', $data) ? $data['height'] : null;
-        $touch  = array_key_exists('touch', $data) ? $data['touch'] : null;
-        $size   = array_key_exists('size', $data) ? $data['size'] : null;
+        assert(array_key_exists('width', $data), '"width" property is required');
+        assert(array_key_exists('height', $data), '"height" property is required');
+        assert(array_key_exists('touch', $data), '"touch" property is required');
+        assert(array_key_exists('size', $data), '"size" property is required');
+
+        $width  = $data['width'];
+        $height = $data['height'];
+        $touch  = $data['touch'];
+        $size   = $data['size'];
 
         try {
             $type = $this->typeLoader->loadByDiemsions($height, $width);

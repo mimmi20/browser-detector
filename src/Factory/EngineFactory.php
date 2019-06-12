@@ -46,7 +46,11 @@ final class EngineFactory
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): EngineInterface
     {
-        $name    = array_key_exists('name', $data) ? $data['name'] : null;
+        assert(array_key_exists('name', $data), '"name" property is required');
+        assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
+        assert(array_key_exists('version', $data), '"version" property is required');
+
+        $name    = $data['name'];
         $version = $this->getVersion($data, $useragent);
 
         try {
