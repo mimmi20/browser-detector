@@ -83,7 +83,8 @@ final class BrowserLoader implements BrowserLoaderInterface
             throw new NotFoundException('the browser with key "' . $key . '" was not found');
         }
 
-        $browserData->bits = (new Browser())->getBits($useragent);
+        $browserData->bits  = (new Browser())->getBits($useragent);
+        $browserData->modus = null;
 
         $engineKey = $browserData->engine;
         $engine    = null;
