@@ -22,8 +22,6 @@
         <ini name="error_reporting" value="-1"/>
         <ini name="memory_limit" value="-1"/>
         <ini name="date.timezone" value="UTC"/>
-        <ini name="zend.assertions" value="1" />
-        <ini name="assert.exception" value="On" />
     </php>
 
     <testsuite name="BrowserDetector Test Suite">

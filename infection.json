@@ -12,5 +12,11 @@
   "logs": {
     "text": "infection-log.log",
     "debug": "infection-debug.log"
+  },
+  "mutators": {
+    "@default": true,
+    "CastBool": false,
+    "CastString": false,
+    "MBString": false
   }
 }
