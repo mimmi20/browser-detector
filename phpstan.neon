@@ -21,6 +21,7 @@ parameters:
     - '~has parameter \$.* with a nullable type declaration~'
     - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
     - '~Useless \@throws~'
+    - '~Missing \@throws~'
 includes:
   - vendor/phpstan/phpstan-strict-rules/rules.neon
   - vendor/phpstan/phpstan-phpunit/extension.neon

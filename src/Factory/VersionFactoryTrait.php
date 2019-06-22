@@ -32,10 +32,6 @@ trait VersionFactoryTrait
     {
         $version = $this->versionFactory->set('0');
 
-        if (!array_key_exists('version', $data)) {
-            return $version;
-        }
-
         if (is_string($data['version'])) {
             return $this->versionFactory->set($data['version']);
         }
