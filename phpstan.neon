@@ -19,6 +19,7 @@ parameters:
     - '~Call to static method PHPUnit~'
     - '~has a nullable return type declaration~'
     - '~has parameter \$.* with a nullable type declaration~'
+#    - '~with null as default value~'
     - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
     - '~Useless \@throws~'
     - '~Missing \@throws~'

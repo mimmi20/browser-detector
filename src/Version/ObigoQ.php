@@ -11,37 +11,71 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
+use Psr\Log\LoggerInterface;
+
 final class ObigoQ implements VersionDetectorInterface
 {
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var VersionFactory
+     */
+    private $versionFactory;
+
+    /**
+     * ChromeOs constructor.
+     *
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     */
+    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory)
+    {
+        $this->logger         = $logger;
+        $this->versionFactory = $versionFactory;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
      * @param string $useragent
      *
-     * @throws \UnexpectedValueException
-     *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = (bool) preg_match('/ObigoInternetBrowser\/QO?(?P<version>[\d.]+)/', $useragent, $matches);
+        $doMatch = preg_match('/ObigoInternetBrowser\/QO?(?P<version>[\d.]+)/', $useragent, $matches);
 
-        if ($doMatch) {
-            return (new VersionFactory())->set($matches['version']);
+        if (0 < $doMatch) {
+            try {
+                return $this->versionFactory->set($matches['version']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+            }
         }
 
-        $doMatch = (bool) preg_match('/obigo\-browser\/q(?P<version>[\d.]+)/i', $useragent, $matches);
+        $doMatch = preg_match('/obigo\-browser\/q(?P<version>[\d.]+)/i', $useragent, $matches);
 
-        if ($doMatch) {
-            return (new VersionFactory())->set($matches['version']);
+        if (0 < $doMatch) {
+            try {
+                return $this->versionFactory->set($matches['version']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+            }
         }
 
-        $doMatch = (bool) preg_match('/(?:teleca|obigo)[\-\/]q(?P<version>[\d.]+)/i', $useragent, $matches);
+        $doMatch = preg_match('/(?:teleca|obigo)[\-\/]q(?P<version>[\d.]+)/i', $useragent, $matches);
 
-        if ($doMatch) {
-            return (new VersionFactory())->set($matches['version']);
+        if (0 < $doMatch) {
+            try {
+                return $this->versionFactory->set($matches['version']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+            }
         }
 
-        return (new VersionFactory())->set('0');
+        return new NullVersion();
     }
 }

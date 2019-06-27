@@ -2512,7 +2512,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Friendica",
+      "factory": "\\BrowserDetector\\Version\\FriendicaFactory",
       "search": null
     },
     "engine": "unknown"
@@ -6644,7 +6644,7 @@
     "manufacturer": "screaming-frog",
     "type": "bot",
     "version": {
-      "class": "\\BrowserDetector\\Version\\ScreamingFrog",
+      "factory": "\\BrowserDetector\\Version\\ScreamingFrogFactory",
       "search": null
     },
     "engine": "unknown"

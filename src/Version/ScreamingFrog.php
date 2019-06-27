@@ -11,8 +11,32 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
+use Psr\Log\LoggerInterface;
+
 final class ScreamingFrog implements VersionDetectorInterface
 {
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var VersionFactory
+     */
+    private $versionFactory;
+
+    /**
+     * ChromeOs constructor.
+     *
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     */
+    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory)
+    {
+        $this->logger         = $logger;
+        $this->versionFactory = $versionFactory;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
@@ -22,12 +46,18 @@ final class ScreamingFrog implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = (bool) preg_match('/Screaming Frog SEO Spider\/\d+,\d/', $useragent);
+        $doMatch = preg_match('/Screaming Frog SEO Spider\/\d+,\d/', $useragent);
 
-        if ($doMatch) {
+        if (0 < $doMatch) {
             $useragent = str_replace(',', '.', $useragent);
         }
 
-        return (new VersionFactory())->detectVersion($useragent, ['Screaming Frog SEO Spider']);
+        try {
+            return $this->versionFactory->detectVersion($useragent, ['Screaming Frog SEO Spider']);
+        } catch (NotNumericException $e) {
+            $this->logger->info($e);
+        }
+
+        return new NullVersion();
     }
 }

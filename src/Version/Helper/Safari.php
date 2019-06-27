@@ -15,6 +15,50 @@ use BrowserDetector\Version\VersionInterface;
 
 final class Safari
 {
+    private const REGULAR_VERSIONS = [
+        '3.0',
+        '3.1',
+        '3.2',
+        '4.0',
+        '4.1',
+        '4.2',
+        '4.3',
+        '4.4',
+        '5.0',
+        '5.1',
+        '5.2',
+        '6.0',
+        '6.1',
+        '6.2',
+        '7.0',
+        '7.1',
+        '8.0',
+        '8.1',
+        '9.0',
+        '9.1',
+        '10.0',
+        '10.1',
+        '11.0',
+        '12.0',
+        '13.0',
+    ];
+
+    private const MAP_VERSIONS = [
+        '14600' => '12.0',
+        '13600' => '11.0',
+        '12600' => '10.0',
+        '11600' => '9.1',
+        '10500' => '8.0',
+        '9500' => '7.0',
+        '8500' => '6.0',
+        '7500' => '5.1',
+        '6500' => '5.0',
+        '4500' => '4.0',
+        '600' => '5.0',
+        '500' => '4.0',
+        '400' => '3.0',
+    ];
+
     /**
      * maps different Safari Versions to a normalized format
      *
@@ -22,64 +66,20 @@ final class Safari
      *
      * @throws \UnexpectedValueException
      *
-     * @return string
+     * @return string|null
      */
-    public function mapSafariVersion(VersionInterface $detectedVersion): string
+    public function mapSafariVersion(VersionInterface $detectedVersion): ?string
     {
-        $regularVersions = [
-            '3.0',
-            '3.1',
-            '3.2',
-            '4.0',
-            '4.1',
-            '4.2',
-            '4.3',
-            '4.4',
-            '5.0',
-            '5.1',
-            '5.2',
-            '6.0',
-            '6.1',
-            '6.2',
-            '7.0',
-            '7.1',
-            '8.0',
-            '8.1',
-            '9.0',
-            '9.1',
-            '10.0',
-            '10.1',
-            '11.0',
-            '12.0',
-            '13.0',
-        ];
-
-        if (in_array($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO), $regularVersions, true)) {
+        if (in_array($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO), self::REGULAR_VERSIONS, true)) {
             return $detectedVersion->getVersion();
         }
 
-        $versions = [
-            '14600' => '12.0',
-            '13600' => '11.0',
-            '12600' => '10.0',
-            '11600' => '9.1',
-            '10500' => '8.0',
-            '9500' => '7.0',
-            '8500' => '6.0',
-            '7500' => '5.1',
-            '6500' => '5.0',
-            '4500' => '4.0',
-            '600' => '5.0',
-            '500' => '4.0',
-            '400' => '3.0',
-        ];
-
-        foreach ($versions as $engineVersion => $osVersion) {
-            if (version_compare($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO), (string) $engineVersion, '>=')) {
+        foreach (self::MAP_VERSIONS as $engineVersion => $osVersion) {
+            if (version_compare((string) $detectedVersion->getVersion(VersionInterface::IGNORE_MICRO), (string) $engineVersion, '>=')) {
                 return $osVersion;
             }
         }
 
-        return '0';
+        return null;
     }
 }

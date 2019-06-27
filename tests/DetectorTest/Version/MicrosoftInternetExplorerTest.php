@@ -12,8 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\MicrosoftInternetExplorer;
+use BrowserDetector\Version\Trident;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 
 final class MicrosoftInternetExplorerTest extends TestCase
 {
@@ -27,14 +30,43 @@ final class MicrosoftInternetExplorerTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new MicrosoftInternetExplorer();
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::never())
+            ->method('info');
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        /* @var LoggerInterface $logger */
+        $this->object = new MicrosoftInternetExplorer($logger, new VersionFactory(), new Trident($logger, new VersionFactory()));
     }
 
     /**
      * @dataProvider providerVersion
      *
-     * @param string $useragent
-     * @param string $expectedVersion
+     * @param string      $useragent
+     * @param string|null $expectedVersion
      *
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
@@ -42,7 +74,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
      *
      * @return void
      */
-    public function testTestdetectVersion(string $useragent, string $expectedVersion): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
@@ -82,7 +114,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ],
             [
                 'Mozilla/4.0 (compatible; MSIE x.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; DELL; Venue Pro)',
-                '0.0.0',
+                null,
             ],
         ];
     }

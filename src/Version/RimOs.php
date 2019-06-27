@@ -11,21 +11,47 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
+use Psr\Log\LoggerInterface;
+
 final class RimOs implements VersionDetectorInterface
 {
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var VersionFactory
+     */
+    private $versionFactory;
+
+    /**
+     * ChromeOs constructor.
+     *
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     */
+    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory)
+    {
+        $this->logger         = $logger;
+        $this->versionFactory = $versionFactory;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
      * @param string $useragent
-     *
-     * @throws \UnexpectedValueException
      *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
         if (false !== mb_stripos($useragent, 'bb10') && false === mb_stripos($useragent, 'version')) {
-            return (new VersionFactory())->set('10.0.0');
+            try {
+                return $this->versionFactory->set('10.0.0');
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+            }
         }
 
         $searches = ['BlackBerry[0-9a-z]+', 'BlackBerry; [0-9a-z]+\/', 'BlackBerrySimulator'];
@@ -34,6 +60,12 @@ final class RimOs implements VersionDetectorInterface
             array_unshift($searches, 'Version');
         }
 
-        return (new VersionFactory())->detectVersion($useragent, $searches);
+        try {
+            return $this->versionFactory->detectVersion($useragent, $searches);
+        } catch (NotNumericException $e) {
+            $this->logger->info($e);
+        }
+
+        return new NullVersion();
     }
 }

@@ -12,8 +12,11 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Ios;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
+use IosBuild\IosBuild;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 
 final class IosTest extends TestCase
 {
@@ -27,14 +30,43 @@ final class IosTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new Ios();
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::never())
+            ->method('info');
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        /* @var LoggerInterface $logger */
+        $this->object = new Ios($logger, new VersionFactory(), new IosBuild());
     }
 
     /**
      * @dataProvider providerVersion
      *
-     * @param string $useragent
-     * @param string $expectedVersion
+     * @param string      $useragent
+     * @param string|null $expectedVersion
      *
      * @throws \Exception
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
@@ -43,7 +75,7 @@ final class IosTest extends TestCase
      *
      * @return void
      */
-    public function testTestdetectVersion(string $useragent, string $expectedVersion): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
@@ -79,7 +111,7 @@ final class IosTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
-                '0.0.0',
+                null,
             ],
             [
                 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',

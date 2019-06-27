@@ -12,9 +12,32 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Helper\Safari as SafariHelper;
+use Psr\Log\LoggerInterface;
 
 final class Safari implements VersionDetectorInterface
 {
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var VersionFactory
+     */
+    private $versionFactory;
+
+    /**
+     * ChromeOs constructor.
+     *
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     */
+    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory)
+    {
+        $this->logger         = $logger;
+        $this->versionFactory = $versionFactory;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
@@ -31,12 +54,28 @@ final class Safari implements VersionDetectorInterface
         preg_match('/(?:Version|Safari)\/(?P<version>[\d\.]+)/', $useragent, $matches);
 
         if (array_key_exists('version', $matches)) {
-            $safariHelper = new SafariHelper();
-            $version      = (new VersionFactory())->set($matches['version']);
+            try {
+                $version = $this->versionFactory->set($matches['version']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
 
-            return (new VersionFactory())->set($safariHelper->mapSafariVersion($version));
+                return new NullVersion();
+            }
+
+            $safariHelper  = new SafariHelper();
+            $mappedVersion = $safariHelper->mapSafariVersion($version);
+
+            if (null === $mappedVersion) {
+                return new NullVersion();
+            }
+
+            try {
+                return $this->versionFactory->set($mappedVersion);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+            }
         }
 
-        return (new VersionFactory())->set('0');
+        return new NullVersion();
     }
 }

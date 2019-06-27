@@ -11,10 +11,42 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use peterkahl\OSXbuild\OSXbuild;
+use MacosBuild\BuildException;
+use MacosBuild\MacosBuild;
+use MacosBuild\NotFoundException;
+use Psr\Log\LoggerInterface;
 
-final class Macosx implements VersionDetectorInterface
+final class Macos implements VersionDetectorInterface
 {
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var VersionFactory
+     */
+    private $versionFactory;
+
+    /**
+     * @var \MacosBuild\MacosBuild
+     */
+    private $macosBuild;
+
+    /**
+     * ChromeOs constructor.
+     *
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     * @param \MacosBuild\MacosBuild $macosBuild
+     */
+    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory, MacosBuild $macosBuild)
+    {
+        $this->logger         = $logger;
+        $this->versionFactory = $versionFactory;
+        $this->macosBuild     = $macosBuild;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
@@ -26,31 +58,31 @@ final class Macosx implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = (bool) preg_match('/\((?:build )?(?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
+        $doMatch = preg_match('/\((?:build )?(?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
 
-        if ($doMatch) {
+        if (0 < $doMatch) {
             try {
-                $buildVersion = OSXbuild::getVersion($matches['build']);
-            } catch (\Throwable $e) {
+                $buildVersion = $this->macosBuild->getVersion($matches['build']);
+            } catch (BuildException | NotFoundException $e) {
                 $buildVersion = false;
             }
 
             if (false !== $buildVersion) {
-                return (new VersionFactory())->set((string) $buildVersion);
+                return $this->versionFactory->set((string) $buildVersion);
             }
         }
 
-        $doMatch = (bool) preg_match('/coremedia v\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = preg_match('/coremedia v\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
-        if ($doMatch) {
+        if (0 < $doMatch) {
             try {
-                $buildVersion = OSXbuild::getVersion($matches['build']);
-            } catch (\Throwable $e) {
+                $buildVersion = $this->macosBuild->getVersion($matches['build']);
+            } catch (BuildException | NotFoundException $e) {
                 $buildVersion = false;
             }
 
             if (false !== $buildVersion) {
-                return (new VersionFactory())->set((string) $buildVersion);
+                return $this->versionFactory->set((string) $buildVersion);
             }
         }
 
@@ -164,14 +196,14 @@ final class Macosx implements VersionDetectorInterface
 
             foreach ($searches as $rule => $version) {
                 if ((bool) preg_match($rule, $useragent)) {
-                    return (new VersionFactory())->set($version);
+                    return $this->versionFactory->set($version);
                 }
             }
         }
 
         $searches = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
-        $detectedVersion = (new VersionFactory())->detectVersion($useragent, $searches);
+        $detectedVersion = $this->versionFactory->detectVersion($useragent, $searches);
 
         if ((bool) preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
             $version = $versions['major'] . '.' . $versions['minor'];
@@ -180,7 +212,7 @@ final class Macosx implements VersionDetectorInterface
                 $version .= '.' . $versions['micro'];
             }
 
-            return (new VersionFactory())->set($version);
+            return $this->versionFactory->set($version);
         }
 
         return $detectedVersion;

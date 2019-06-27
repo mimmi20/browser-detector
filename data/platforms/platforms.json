@@ -35,7 +35,7 @@
     "marketingName": "Android",
     "manufacturer": "google",
     "version": {
-      "class": "\\BrowserDetector\\Version\\AndroidOs",
+      "factory": "\\BrowserDetector\\Version\\AndroidOsFactory",
       "search": null
     }
   },
@@ -73,7 +73,7 @@
     "marketingName": "ATV OS X",
     "manufacturer": "apple",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Ios",
+      "factory": "\\BrowserDetector\\Version\\IosFactory",
       "search": null
     }
   },
@@ -82,7 +82,7 @@
     "marketingName": "audioOS",
     "manufacturer": "apple",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Ios",
+      "factory": "\\BrowserDetector\\Version\\IosFactory",
       "search": null
     }
   },
@@ -175,7 +175,7 @@
     "marketingName": "ChromeOS",
     "manufacturer": "google",
     "version": {
-      "class": "\\BrowserDetector\\Version\\ChromeOs",
+      "factory": "\\BrowserDetector\\Version\\ChromeOsFactory",
       "search": null
     }
   },
@@ -222,7 +222,7 @@
     "marketingName": "Debian",
     "manufacturer": "software-in-the-public-interest",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Debian",
+      "factory": "\\BrowserDetector\\Version\\DebianFactory",
       "search": null
     }
   },
@@ -231,7 +231,7 @@
     "marketingName": "Debian with FreeBSD Kernel",
     "manufacturer": "software-in-the-public-interest",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Debian",
+      "factory": "\\BrowserDetector\\Version\\DebianFactory",
       "search": null
     }
   },
@@ -260,7 +260,7 @@
     "marketingName": "Firefox OS",
     "manufacturer": "mozilla-foundation",
     "version": {
-      "class": "\\BrowserDetector\\Version\\FirefoxOs",
+      "factory": "\\BrowserDetector\\Version\\FirefoxOsFactory",
       "search": null
     }
   },
@@ -317,7 +317,7 @@
     "marketingName": "iOS",
     "manufacturer": "apple",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Ios",
+      "factory": "\\BrowserDetector\\Version\\IosFactory",
       "search": null
     }
   },
@@ -419,7 +419,7 @@
     "marketingName": "Mac OS X",
     "manufacturer": "apple",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Macosx",
+      "factory": "\\BrowserDetector\\Version\\MacosFactory",
       "search": null
     }
   },
@@ -637,7 +637,7 @@
     "marketingName": "Raspbian",
     "manufacturer": "software-in-the-public-interest",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Raspbian",
+      "factory": "\\BrowserDetector\\Version\\RaspbianFactory",
       "search": null
     }
   },
@@ -666,7 +666,7 @@
     "marketingName": "RIM OS",
     "manufacturer": "rim",
     "version": {
-      "class": "\\BrowserDetector\\Version\\RimOs",
+      "factory": "\\BrowserDetector\\Version\\RimOsFactory",
       "search": null
     }
   },
@@ -880,7 +880,7 @@
     "marketingName": "watchOS",
     "manufacturer": "apple",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Ios",
+      "factory": "\\BrowserDetector\\Version\\IosFactory",
       "search": null
     }
   },
@@ -1002,7 +1002,7 @@
     "marketingName": "Windows Mobile OS",
     "manufacturer": "microsoft",
     "version": {
-      "class": "\\BrowserDetector\\Version\\WindowsMobileOs",
+      "factory": "\\BrowserDetector\\Version\\WindowsMobileOsFactory",
       "search": null
     }
   },
@@ -1190,7 +1190,7 @@
     "marketingName": "Windows Phone OS",
     "manufacturer": "microsoft",
     "version": {
-      "class": "\\BrowserDetector\\Version\\WindowsPhoneOs",
+      "factory": "\\BrowserDetector\\Version\\WindowsPhoneOsFactory",
       "search": null
     }
   },
