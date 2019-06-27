@@ -11,14 +11,17 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
-use BrowserDetector\Version\Macosx;
+use BrowserDetector\Version\Macos;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
+use MacosBuild\MacosBuild;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 
-final class MacosxTest extends TestCase
+final class MacosTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Version\Macosx
+     * @var \BrowserDetector\Version\Macos
      */
     private $object;
 
@@ -27,14 +30,43 @@ final class MacosxTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new Macosx();
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::never())
+            ->method('info');
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        /* @var LoggerInterface $logger */
+        $this->object = new Macos($logger, new VersionFactory(), new MacosBuild());
     }
 
     /**
      * @dataProvider providerVersion
      *
-     * @param string $useragent
-     * @param string $expectedVersion
+     * @param string      $useragent
+     * @param string|null $expectedVersion
      *
      * @throws \Exception
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
@@ -43,7 +75,7 @@ final class MacosxTest extends TestCase
      *
      * @return void
      */
-    public function testTestdetectVersion(string $useragent, string $expectedVersion): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 

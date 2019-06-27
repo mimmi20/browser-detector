@@ -31,6 +31,11 @@ final class DeviceFactory
     private $typeLoader;
 
     /**
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
+     */
+    private $companyLoader;
+
+    /**
      * @var \BrowserDetector\Factory\DisplayFactoryInterface
      */
     private $displayFactory;
@@ -79,7 +84,7 @@ final class DeviceFactory
         }
 
         try {
-            $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+            $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
         } catch (NotFoundException $e) {
             $logger->info($e);
 
@@ -91,7 +96,7 @@ final class DeviceFactory
         }
 
         try {
-            $brand = $this->getCompany($data, $useragent, 'brand');
+            $brand = $this->companyLoader->load($data['brand'], $useragent);
         } catch (NotFoundException $e) {
             $logger->info($e);
 
@@ -106,6 +111,4 @@ final class DeviceFactory
 
         return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display);
     }
-
-    use CompanyFactoryTrait;
 }

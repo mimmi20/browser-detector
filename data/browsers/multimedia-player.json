@@ -92,7 +92,7 @@
     "manufacturer": "apple",
     "type": "multimedia-player",
     "version": {
-      "class": "\\BrowserDetector\\Version\\CoreMedia",
+      "factory": "\\BrowserDetector\\Version\\CoreMediaFactory",
       "search": null
     },
     "engine": "webkit"

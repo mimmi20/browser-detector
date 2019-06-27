@@ -193,7 +193,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "\\BrowserDetector\\Version\\AndroidWebkit",
+      "factory": "\\BrowserDetector\\Version\\AndroidWebkitFactory",
       "search": null
     },
     "engine": "webkit"
@@ -1578,7 +1578,7 @@
     "manufacturer": "microsoft",
     "type": "browser",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftInternetExplorer",
+      "factory": "\\BrowserDetector\\Version\\MicrosoftInternetExplorerFactory",
       "search": null
     },
     "engine": "trident"
@@ -1588,7 +1588,7 @@
     "manufacturer": "microsoft",
     "type": "browser",
     "version": {
-      "class": "\\BrowserDetector\\Version\\MicrosoftInternetExplorer",
+      "factory": "\\BrowserDetector\\Version\\MicrosoftInternetExplorerFactory",
       "search": null
     },
     "engine": "webkit"
@@ -2009,7 +2009,7 @@
     "manufacturer": "maxthon",
     "type": "browser",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Maxthon",
+      "factory": "\\BrowserDetector\\Version\\MaxthonFactory",
       "search": null
     },
     "engine": null
@@ -2443,7 +2443,7 @@
     "manufacturer": "obigo",
     "type": "browser",
     "version": {
-      "class": "\\BrowserDetector\\Version\\ObigoQ",
+      "factory": "\\BrowserDetector\\Version\\ObigoQFactory",
       "search": null
     },
     "engine": null
@@ -2783,7 +2783,7 @@
     "manufacturer": "cloud-mosa",
     "type": "browser",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Puffin",
+      "factory": "\\BrowserDetector\\Version\\PuffinFactory",
       "search": null
     },
     "engine": "webkit"
@@ -3009,7 +3009,7 @@
     "manufacturer": "apple",
     "type": "browser",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Safari",
+      "factory": "\\BrowserDetector\\Version\\SafariFactory",
       "search": null
     },
     "engine": "webkit"

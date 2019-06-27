@@ -29,6 +29,11 @@ final class BrowserFactory
     private $typeLoader;
 
     /**
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
+     */
+    private $companyLoader;
+
+    /**
      * BrowserFactory constructor.
      *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
@@ -75,10 +80,10 @@ final class BrowserFactory
             $logger->info($e);
         }
 
-        $version = $this->getVersion($data, $useragent);
+        $version = $this->getVersion($data, $useragent, $logger);
 
         try {
-            $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+            $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
         } catch (NotFoundException $e) {
             $logger->info($e);
 
@@ -93,5 +98,4 @@ final class BrowserFactory
     }
 
     use VersionFactoryTrait;
-    use CompanyFactoryTrait;
 }

@@ -12,8 +12,10 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Friendica;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 
 final class FriendicaTest extends TestCase
 {
@@ -27,14 +29,43 @@ final class FriendicaTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new Friendica();
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::never())
+            ->method('info');
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        /* @var LoggerInterface $logger */
+        $this->object = new Friendica($logger, new VersionFactory());
     }
 
     /**
      * @dataProvider providerVersion
      *
-     * @param string $useragent
-     * @param string $expectedVersion
+     * @param string      $useragent
+     * @param string|null $expectedVersion
      *
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
@@ -42,7 +73,7 @@ final class FriendicaTest extends TestCase
      *
      * @return void
      */
-    public function testTestdetectVersion(string $useragent, string $expectedVersion): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
@@ -66,7 +97,7 @@ final class FriendicaTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (Linux; U; Android Eclair; md-us Build/pandigitalopc1/sourceidDL00000009) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17',
-                '0.0.0',
+                null,
             ],
         ];
     }

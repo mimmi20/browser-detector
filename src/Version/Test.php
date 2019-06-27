@@ -22,6 +22,6 @@ final class Test implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        return new Version('0');
+        return new NullVersion();
     }
 }

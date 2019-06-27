@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
-use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\VersionFactoryInterface;
@@ -22,6 +21,11 @@ use UaResult\Engine\EngineInterface;
 
 final class EngineFactory
 {
+    /**
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
+     */
+    private $companyLoader;
+
     /**
      * BrowserFactory constructor.
      *
@@ -51,10 +55,10 @@ final class EngineFactory
         assert(array_key_exists('version', $data), '"version" property is required');
 
         $name    = $data['name'];
-        $version = $this->getVersion($data, $useragent);
+        $version = $this->getVersion($data, $useragent, $logger);
 
         try {
-            $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+            $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
         } catch (NotFoundException $e) {
             $logger->info($e);
 
@@ -69,5 +73,4 @@ final class EngineFactory
     }
 
     use VersionFactoryTrait;
-    use CompanyFactoryTrait;
 }

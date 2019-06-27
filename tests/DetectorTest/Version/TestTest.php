@@ -33,8 +33,8 @@ final class TestTest extends TestCase
     /**
      * @dataProvider providerVersion
      *
-     * @param string $useragent
-     * @param string $expectedVersion
+     * @param string      $useragent
+     * @param string|null $expectedVersion
      *
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
@@ -42,7 +42,7 @@ final class TestTest extends TestCase
      *
      * @return void
      */
-    public function testTestdetectVersion(string $useragent, string $expectedVersion): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
@@ -58,7 +58,7 @@ final class TestTest extends TestCase
         return [
             [
                 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
-                '0.0.0',
+                null,
             ],
         ];
     }

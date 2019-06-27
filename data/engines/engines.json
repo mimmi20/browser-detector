@@ -62,7 +62,7 @@
     "name": "Goanna",
     "manufacturer": "moonchild-productions",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Goanna",
+      "factory": "\\BrowserDetector\\Version\\GoannaFactory",
       "search": null
     }
   },
@@ -134,7 +134,7 @@
     "name": "Trident",
     "manufacturer": "microsoft",
     "version": {
-      "class": "\\BrowserDetector\\Version\\Trident",
+      "factory": "\\BrowserDetector\\Version\\TridentFactory",
       "search": null
     }
   },

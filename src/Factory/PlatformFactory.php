@@ -23,6 +23,11 @@ use UaResult\Os\OsInterface;
 final class PlatformFactory
 {
     /**
+     * @var \BrowserDetector\Loader\CompanyLoaderInterface
+     */
+    private $companyLoader;
+
+    /**
      * BrowserFactory constructor.
      *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
@@ -55,10 +60,10 @@ final class PlatformFactory
         $name          = $data['name'];
         $marketingName = $data['marketingName'];
         $bits          = $data['bits'];
-        $version       = $this->getVersion($data, $useragent);
+        $version       = $this->getVersion($data, $useragent, $logger);
 
         try {
-            $manufacturer = $this->getCompany($data, $useragent, 'manufacturer');
+            $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
         } catch (NotFoundException $e) {
             $logger->info($e);
 
@@ -86,5 +91,4 @@ final class PlatformFactory
     }
 
     use VersionFactoryTrait;
-    use CompanyFactoryTrait;
 }

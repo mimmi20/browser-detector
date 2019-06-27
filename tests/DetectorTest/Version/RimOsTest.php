@@ -12,8 +12,10 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\RimOs;
+use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 
 final class RimOsTest extends TestCase
 {
@@ -27,14 +29,43 @@ final class RimOsTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->object = new RimOs();
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::never())
+            ->method('info');
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        /* @var LoggerInterface $logger */
+        $this->object = new RimOs($logger, new VersionFactory());
     }
 
     /**
      * @dataProvider providerVersion
      *
-     * @param string $useragent
-     * @param string $expectedVersion
+     * @param string      $useragent
+     * @param string|null $expectedVersion
      *
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
@@ -42,7 +73,7 @@ final class RimOsTest extends TestCase
      *
      * @return void
      */
-    public function testTestdetectVersion(string $useragent, string $expectedVersion): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $detectedVersion = $this->object->detectVersion($useragent);
 
@@ -74,7 +105,7 @@ final class RimOsTest extends TestCase
             ],
             [
                 'Opera/9.80 (BlackBerry; Opera Mini/8.0.35667/35.7561; U; en) Presto/2.8.119 Version/11.10',
-                '0.0.0',
+                null,
             ],
         ];
     }

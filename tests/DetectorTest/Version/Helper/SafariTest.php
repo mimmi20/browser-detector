@@ -33,8 +33,8 @@ final class SafariTest extends TestCase
     /**
      * @dataProvider providerVersion
      *
-     * @param string $version
-     * @param string $expectedVersion
+     * @param string      $version
+     * @param string|null $expectedVersion
      *
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
@@ -42,7 +42,7 @@ final class SafariTest extends TestCase
      *
      * @return void
      */
-    public function testMapSafariVersion(string $version, string $expectedVersion): void
+    public function testMapSafariVersion(string $version, ?string $expectedVersion): void
     {
         $versionObj = (new VersionFactory())->set($version);
         static::assertSame($expectedVersion, $this->object->mapSafariVersion($versionObj));
@@ -101,8 +101,8 @@ final class SafariTest extends TestCase
             ['500', '4.0'],
             ['499', '3.0'],
             ['400', '3.0'],
-            ['399', '0'],
-            ['x', '0'],
+            ['399', null],
+            ['x', null],
         ];
     }
 }

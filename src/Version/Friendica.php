@@ -11,26 +11,52 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
+use Psr\Log\LoggerInterface;
+
 final class Friendica implements VersionDetectorInterface
 {
+    /**
+     * @var \Psr\Log\LoggerInterface
+     */
+    private $logger;
+
+    /**
+     * @var VersionFactory
+     */
+    private $versionFactory;
+
+    /**
+     * ChromeOs constructor.
+     *
+     * @param \Psr\Log\LoggerInterface                $logger
+     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     */
+    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory)
+    {
+        $this->logger         = $logger;
+        $this->versionFactory = $versionFactory;
+    }
+
     /**
      * returns the version of the operating system/platform
      *
      * @param string $useragent
-     *
-     * @throws \UnexpectedValueException
      *
      * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
         $matches = [];
-        $doMatch = (bool) preg_match('/Friendica \'[^\']*\' (?P<version>\d+[\d\.\_\-\+abcdehlprstv]*).*/', $useragent, $matches);
+        $doMatch = preg_match('/Friendica \'[^\']*\' (?P<version>\d+[\d\.\_\-\+abcdehlprstv]*).*/', $useragent, $matches);
 
-        if (!$doMatch) {
-            return new Version('0');
+        if (0 < $doMatch) {
+            try {
+                return $this->versionFactory->set($matches['version']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+            }
         }
 
-        return (new VersionFactory())->set($matches['version']);
+        return new NullVersion();
     }
 }

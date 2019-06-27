@@ -11,7 +11,9 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
+use Psr\Log\LoggerInterface;
 
 trait VersionFactoryTrait
 {
@@ -21,16 +23,17 @@ trait VersionFactoryTrait
     private $versionFactory;
 
     /**
-     * @param array  $data
-     * @param string $useragent
+     * @param array                    $data
+     * @param string                   $useragent
+     * @param \Psr\Log\LoggerInterface $logger
      *
      * @throws \UnexpectedValueException
      *
      * @return \BrowserDetector\Version\VersionInterface
      */
-    private function getVersion(array $data, string $useragent): VersionInterface
+    private function getVersion(array $data, string $useragent, LoggerInterface $logger): VersionInterface
     {
-        $version = $this->versionFactory->set('0');
+        $version = new NullVersion();
 
         if (is_string($data['version'])) {
             return $this->versionFactory->set($data['version']);
@@ -46,10 +49,20 @@ trait VersionFactoryTrait
             return $this->versionFactory->set((string) $value);
         }
 
-        $className = $data['version']->class ?? null;
+        $className   = $data['version']->class ?? null;
+        $factoryName = $data['version']->factory ?? null;
 
-        if (!is_string($className)) {
+        if (!is_string($className) && !is_string($factoryName)) {
             return $version;
+        }
+
+        if (is_string($factoryName)) {
+            $factory = new $factoryName();
+
+            /** @var \BrowserDetector\Version\VersionDetectorInterface $versionDetector */
+            $versionDetector = $factory($logger);
+
+            return $versionDetector->detectVersion($useragent);
         }
 
         if ('VersionFactory' !== $className) {
