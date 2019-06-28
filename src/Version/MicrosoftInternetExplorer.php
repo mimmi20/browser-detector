@@ -64,7 +64,7 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
         $version = $this->trident->detectVersion($useragent);
 
         foreach (self::VERSIONS as $engineVersion => $ieVersion) {
-            if (version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
+            if (null !== $version->getMajor() && version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
                 try {
                     return $this->versionFactory->set($ieVersion);
                 } catch (NotNumericException $e) {
