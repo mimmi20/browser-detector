@@ -31,6 +31,9 @@ final class MicrosoftInternetExplorerFactoryTest extends TestCase
         $this->object = new MicrosoftInternetExplorerFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var MicrosoftInternetExplorerFactory $object */

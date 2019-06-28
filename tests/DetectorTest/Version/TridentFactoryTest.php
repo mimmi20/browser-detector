@@ -31,6 +31,9 @@ final class TridentFactoryTest extends TestCase
         $this->object = new TridentFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var TridentFactory $object */

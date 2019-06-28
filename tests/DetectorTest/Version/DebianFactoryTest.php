@@ -31,6 +31,9 @@ final class DebianFactoryTest extends TestCase
         $this->object = new DebianFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var DebianFactory $object */

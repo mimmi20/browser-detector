@@ -31,6 +31,9 @@ final class MaxthonFactoryTest extends TestCase
         $this->object = new MaxthonFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var MaxthonFactory $object */

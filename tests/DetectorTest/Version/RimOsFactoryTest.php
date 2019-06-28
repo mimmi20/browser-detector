@@ -31,6 +31,9 @@ final class RimOsFactoryTest extends TestCase
         $this->object = new RimOsFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var RimOsFactory $object */

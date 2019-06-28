@@ -31,6 +31,9 @@ final class IosFactoryTest extends TestCase
         $this->object = new IosFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var IosFactory $object */

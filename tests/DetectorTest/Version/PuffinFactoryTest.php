@@ -31,6 +31,9 @@ final class PuffinFactoryTest extends TestCase
         $this->object = new PuffinFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var PuffinFactory $object */

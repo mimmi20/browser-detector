@@ -31,6 +31,9 @@ final class CoreMediaFactoryTest extends TestCase
         $this->object = new CoreMediaFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var CoreMediaFactory $object */
