@@ -31,6 +31,9 @@ final class AndroidOsFactoryTest extends TestCase
         $this->object = new AndroidOsFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var AndroidOsFactory $object */

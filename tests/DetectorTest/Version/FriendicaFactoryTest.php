@@ -31,6 +31,9 @@ final class FriendicaFactoryTest extends TestCase
         $this->object = new FriendicaFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var FriendicaFactory $object */

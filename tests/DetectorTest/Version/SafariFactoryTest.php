@@ -31,6 +31,9 @@ final class SafariFactoryTest extends TestCase
         $this->object = new SafariFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var SafariFactory $object */

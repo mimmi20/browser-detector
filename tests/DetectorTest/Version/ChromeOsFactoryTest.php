@@ -31,6 +31,9 @@ final class ChromeOsFactoryTest extends TestCase
         $this->object = new ChromeOsFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var ChromeOsFactory $object */

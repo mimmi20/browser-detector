@@ -31,6 +31,9 @@ final class MacosFactoryTest extends TestCase
         $this->object = new MacosFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var MacosFactory $object */

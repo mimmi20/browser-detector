@@ -31,6 +31,9 @@ final class RaspbianFactoryTest extends TestCase
         $this->object = new RaspbianFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var RaspbianFactory $object */

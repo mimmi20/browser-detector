@@ -145,7 +145,7 @@ final class Macos implements VersionDetectorInterface
      *
      * @param \Psr\Log\LoggerInterface                $logger
      * @param \BrowserDetector\Version\VersionFactory $versionFactory
-     * @param \MacosBuild\MacosBuild $macosBuild
+     * @param \MacosBuild\MacosBuild                  $macosBuild
      */
     public function __construct(LoggerInterface $logger, VersionFactory $versionFactory, MacosBuild $macosBuild)
     {

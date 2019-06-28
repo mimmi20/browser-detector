@@ -218,7 +218,7 @@ final class Ios implements VersionDetectorInterface
      *
      * @param \Psr\Log\LoggerInterface                $logger
      * @param \BrowserDetector\Version\VersionFactory $versionFactory
-     * @param \IosBuild\IosBuild $iosBuild
+     * @param \IosBuild\IosBuild                      $iosBuild
      */
     public function __construct(LoggerInterface $logger, VersionFactory $versionFactory, IosBuild $iosBuild)
     {

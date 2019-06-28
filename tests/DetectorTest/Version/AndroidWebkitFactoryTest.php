@@ -31,6 +31,9 @@ final class AndroidWebkitFactoryTest extends TestCase
         $this->object = new AndroidWebkitFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var AndroidWebkitFactory $object */

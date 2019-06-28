@@ -31,6 +31,9 @@ final class WindowsPhoneOsFactoryTest extends TestCase
         $this->object = new WindowsPhoneOsFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var WindowsPhoneOsFactory $object */

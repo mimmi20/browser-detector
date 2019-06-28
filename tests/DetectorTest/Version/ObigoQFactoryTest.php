@@ -31,6 +31,9 @@ final class ObigoQFactoryTest extends TestCase
         $this->object = new ObigoQFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var ObigoQFactory $object */

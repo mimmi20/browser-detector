@@ -31,6 +31,9 @@ final class ScreamingFrogFactoryTest extends TestCase
         $this->object = new ScreamingFrogFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var ScreamingFrogFactory $object */

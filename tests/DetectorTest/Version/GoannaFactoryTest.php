@@ -31,6 +31,9 @@ final class GoannaFactoryTest extends TestCase
         $this->object = new GoannaFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var GoannaFactory $object */

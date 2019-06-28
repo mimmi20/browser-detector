@@ -31,6 +31,9 @@ final class FirefoxOsFactoryTest extends TestCase
         $this->object = new FirefoxOsFactory();
     }
 
+    /**
+     * @return void
+     */
     public function testInvoke(): void
     {
         /** @var FirefoxOsFactory $object */
