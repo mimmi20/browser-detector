@@ -134,7 +134,14 @@
             ]
           },
           "version": {
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "manufacturer": {
             "type": "string"
@@ -186,7 +193,14 @@
             ]
           },
           "version": {
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "manufacturer": {
             "type": "string"
@@ -224,7 +238,14 @@
             ]
           },
           "version": {
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "manufacturer": {
             "type": "string"

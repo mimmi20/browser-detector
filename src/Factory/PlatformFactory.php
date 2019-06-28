@@ -74,17 +74,19 @@ final class PlatformFactory
             );
         }
 
-        if ('Mac OS X' === $name
-            && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
-        ) {
-            $name          = 'macOS';
-            $marketingName = 'macOS';
-        } elseif ('iOS' === $name
-            && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '4.0', '<')
-            && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '0.0', '>')
-        ) {
-            $name          = 'iPhone OS';
-            $marketingName = 'iPhone OS';
+        if (null !== $version->getVersion(VersionInterface::IGNORE_MICRO)) {
+            if ('Mac OS X' === $name
+                && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
+            ) {
+                $name          = 'macOS';
+                $marketingName = 'macOS';
+            } elseif ('iOS' === $name
+                && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '4.0', '<')
+                && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '0.0', '>')
+            ) {
+                $name          = 'iPhone OS';
+                $marketingName = 'iPhone OS';
+            }
         }
 
         return new Os($name, $marketingName, $manufacturer, $version, $bits);
