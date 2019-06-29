@@ -11,8 +11,11 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
+use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\ScreamingFrog;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -20,14 +23,18 @@ use Psr\Log\LoggerInterface;
 final class ScreamingFrogTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Version\ScreamingFrog
-     */
-    private $object;
-
-    /**
+     * @dataProvider providerVersion
+     *
+     * @param string      $useragent
+     * @param string|null $expectedVersion
+     *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
-    protected function setUp(): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -57,25 +64,10 @@ final class ScreamingFrogTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
-        /* @var LoggerInterface $logger */
-        $this->object = new ScreamingFrog($logger, new VersionFactory());
-    }
+        /** @var LoggerInterface $logger */
+        $object = new ScreamingFrog($logger, new VersionFactory());
 
-    /**
-     * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
-     */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
-    {
-        $detectedVersion = $this->object->detectVersion($useragent);
+        $detectedVersion = $object->detectVersion($useragent);
 
         static::assertInstanceOf(VersionInterface::class, $detectedVersion);
         static::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -92,5 +84,60 @@ final class ScreamingFrogTest extends TestCase
                 '2.22.0',
             ],
         ];
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFail(): void
+    {
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('detectVersion')
+            ->with('Screaming Frog SEO Spider/2.22', ['Screaming Frog SEO Spider'])
+            ->willThrowException($exception);
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new ScreamingFrog($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion('Screaming Frog SEO Spider/2,22');
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
     }
 }

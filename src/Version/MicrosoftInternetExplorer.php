@@ -29,23 +29,23 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
     private $logger;
 
     /**
-     * @var VersionFactory
+     * @var \BrowserDetector\Version\VersionFactoryInterface
      */
     private $versionFactory;
 
     /**
-     * @var \BrowserDetector\Version\Trident
+     * @var \BrowserDetector\Version\VersionDetectorInterface
      */
     private $trident;
 
     /**
      * ChromeOs constructor.
      *
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Version\VersionFactory $versionFactory
-     * @param Trident                                 $trident
+     * @param \Psr\Log\LoggerInterface                          $logger
+     * @param \BrowserDetector\Version\VersionFactoryInterface  $versionFactory
+     * @param \BrowserDetector\Version\VersionDetectorInterface $trident
      */
-    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory, Trident $trident)
+    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, VersionDetectorInterface $trident)
     {
         $this->logger         = $logger;
         $this->versionFactory = $versionFactory;
@@ -63,12 +63,14 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
     {
         $version = $this->trident->detectVersion($useragent);
 
-        foreach (self::VERSIONS as $engineVersion => $ieVersion) {
-            if (null !== $version->getMajor() && version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
-                try {
-                    return $this->versionFactory->set($ieVersion);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
+        if (null !== $version->getMajor()) {
+            foreach (self::VERSIONS as $engineVersion => $ieVersion) {
+                if (version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
+                    try {
+                        return $this->versionFactory->set($ieVersion);
+                    } catch (NotNumericException $e) {
+                        $this->logger->info($e);
+                    }
                 }
             }
         }

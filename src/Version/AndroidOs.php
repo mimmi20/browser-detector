@@ -36,17 +36,17 @@ final class AndroidOs implements VersionDetectorInterface
     private $logger;
 
     /**
-     * @var VersionFactory
+     * @var VersionFactoryInterface
      */
     private $versionFactory;
 
     /**
      * ChromeOs constructor.
      *
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     * @param \Psr\Log\LoggerInterface                         $logger
+     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */
-    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory)
+    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
     {
         $this->logger         = $logger;
         $this->versionFactory = $versionFactory;

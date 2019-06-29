@@ -21,17 +21,17 @@ final class Raspbian implements VersionDetectorInterface
     private $logger;
 
     /**
-     * @var VersionFactory
+     * @var \BrowserDetector\Version\VersionFactoryInterface
      */
     private $versionFactory;
 
     /**
      * ChromeOs constructor.
      *
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     * @param \Psr\Log\LoggerInterface                         $logger
+     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */
-    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory)
+    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
     {
         $this->logger         = $logger;
         $this->versionFactory = $versionFactory;
@@ -46,15 +46,7 @@ final class Raspbian implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if ((bool) preg_match('/raspbian\/(?P<version>[\d\.]+)/i', $useragent, $matches)) {
-            try {
-                return $this->versionFactory->set($matches['version']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
-            }
-        }
-
-        if ((bool) preg_match('/debian\/(?P<version>[\d\.]+).*rpi/i', $useragent, $matches)) {
+        if ((bool) preg_match('/(?:raspbian|debian)\/(?P<version>[\d\.]+)/i', $useragent, $matches)) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {

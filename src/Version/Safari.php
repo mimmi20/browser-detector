@@ -11,7 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use BrowserDetector\Version\Helper\Safari as SafariHelper;
+use BrowserDetector\Version\Helper\SafariInterface;
 use Psr\Log\LoggerInterface;
 
 final class Safari implements VersionDetectorInterface
@@ -22,20 +22,27 @@ final class Safari implements VersionDetectorInterface
     private $logger;
 
     /**
-     * @var VersionFactory
+     * @var \BrowserDetector\Version\VersionFactoryInterface
      */
     private $versionFactory;
 
     /**
+     * @var \BrowserDetector\Version\Helper\SafariInterface
+     */
+    private $safariHelper;
+
+    /**
      * ChromeOs constructor.
      *
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Version\VersionFactory $versionFactory
+     * @param \Psr\Log\LoggerInterface                         $logger
+     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
+     * @param \BrowserDetector\Version\Helper\SafariInterface  $safariHelper
      */
-    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory)
+    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, SafariInterface $safariHelper)
     {
         $this->logger         = $logger;
         $this->versionFactory = $versionFactory;
+        $this->safariHelper   = $safariHelper;
     }
 
     /**
@@ -51,9 +58,9 @@ final class Safari implements VersionDetectorInterface
     {
         $matches = [];
 
-        preg_match('/(?:Version|Safari)\/(?P<version>[\d\.]+)/', $useragent, $matches);
+        $doMatch = preg_match('/(?:Version|Safari)\/(?P<version>[\d\.]+)/', $useragent, $matches);
 
-        if (array_key_exists('version', $matches)) {
+        if (0 < $doMatch) {
             try {
                 $version = $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {
@@ -62,8 +69,7 @@ final class Safari implements VersionDetectorInterface
                 return new NullVersion();
             }
 
-            $safariHelper  = new SafariHelper();
-            $mappedVersion = $safariHelper->mapSafariVersion($version);
+            $mappedVersion = $this->safariHelper->mapSafariVersion($version);
 
             if (null === $mappedVersion) {
                 return new NullVersion();
