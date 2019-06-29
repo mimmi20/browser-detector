@@ -12,7 +12,10 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\CoreMedia;
+use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -20,14 +23,18 @@ use Psr\Log\LoggerInterface;
 final class CoreMediaTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Version\CoreMedia
-     */
-    private $object;
-
-    /**
+     * @dataProvider providerVersion
+     *
+     * @param string      $useragent
+     * @param string|null $expectedVersion
+     *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
-    protected function setUp(): void
+    public function testDetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -57,25 +64,10 @@ final class CoreMediaTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
-        /* @var LoggerInterface $logger */
-        $this->object = new CoreMedia($logger, new VersionFactory());
-    }
+        /** @var LoggerInterface $logger */
+        $object = new CoreMedia($logger, new VersionFactory());
 
-    /**
-     * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
-     */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
-    {
-        $detectedVersion = $this->object->detectVersion($useragent);
+        $detectedVersion = $object->detectVersion($useragent);
 
         static::assertInstanceOf(VersionInterface::class, $detectedVersion);
         static::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -100,5 +92,60 @@ final class CoreMediaTest extends TestCase
                 null,
             ],
         ];
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFail(): void
+    {
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('set')
+            ->with('1.0.2')
+            ->willThrowException($exception);
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new CoreMedia($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion('AppleCoreMedia/1.0.2.12D508 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)');
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
     }
 }

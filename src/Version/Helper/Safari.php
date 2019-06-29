@@ -13,7 +13,7 @@ namespace BrowserDetector\Version\Helper;
 
 use BrowserDetector\Version\VersionInterface;
 
-final class Safari
+final class Safari implements SafariInterface
 {
     private const REGULAR_VERSIONS = [
         '3.0',

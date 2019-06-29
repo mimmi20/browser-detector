@@ -12,7 +12,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use IosBuild\BuildException;
-use IosBuild\IosBuild;
+use IosBuild\IosBuildInterface;
 use IosBuild\NotFoundException;
 use Psr\Log\LoggerInterface;
 
@@ -204,23 +204,23 @@ final class Ios implements VersionDetectorInterface
     private $logger;
 
     /**
-     * @var VersionFactory
+     * @var \BrowserDetector\Version\VersionFactoryInterface
      */
     private $versionFactory;
 
     /**
-     * @var \IosBuild\IosBuild
+     * @var \IosBuild\IosBuildInterface
      */
     private $iosBuild;
 
     /**
      * ChromeOs constructor.
      *
-     * @param \Psr\Log\LoggerInterface                $logger
-     * @param \BrowserDetector\Version\VersionFactory $versionFactory
-     * @param \IosBuild\IosBuild                      $iosBuild
+     * @param \Psr\Log\LoggerInterface                         $logger
+     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
+     * @param \IosBuild\IosBuildInterface                      $iosBuild
      */
-    public function __construct(LoggerInterface $logger, VersionFactory $versionFactory, IosBuild $iosBuild)
+    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, IosBuildInterface $iosBuild)
     {
         $this->logger         = $logger;
         $this->versionFactory = $versionFactory;

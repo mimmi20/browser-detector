@@ -11,8 +11,11 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
+use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Raspbian;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -20,14 +23,18 @@ use Psr\Log\LoggerInterface;
 final class RaspbianTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Version\Raspbian
-     */
-    private $object;
-
-    /**
+     * @dataProvider providerVersion
+     *
+     * @param string      $useragent
+     * @param string|null $expectedVersion
+     *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
-    protected function setUp(): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -57,25 +64,10 @@ final class RaspbianTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
-        /* @var LoggerInterface $logger */
-        $this->object = new Raspbian($logger, new VersionFactory());
-    }
+        /** @var LoggerInterface $logger */
+        $object = new Raspbian($logger, new VersionFactory());
 
-    /**
-     * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
-     */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
-    {
-        $detectedVersion = $this->object->detectVersion($useragent);
+        $detectedVersion = $object->detectVersion($useragent);
 
         static::assertInstanceOf(VersionInterface::class, $detectedVersion);
         static::assertSame($expectedVersion, $detectedVersion->getVersion());
@@ -100,5 +92,60 @@ final class RaspbianTest extends TestCase
                 null,
             ],
         ];
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFail(): void
+    {
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('set')
+            ->with('8.0')
+            ->willThrowException($exception);
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new Raspbian($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion('Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Raspbian/8.0 (1:3.8.2.0-0rpi27rpi1g) Epiphany/3.8.2');
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
     }
 }

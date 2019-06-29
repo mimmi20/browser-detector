@@ -20,14 +20,18 @@ use Psr\Log\LoggerInterface;
 final class ChromeOsTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Version\ChromeOs
-     */
-    private $object;
-
-    /**
+     * @dataProvider providerVersion
+     *
+     * @param string      $useragent
+     * @param string|null $expectedVersion
+     *
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
      * @return void
      */
-    protected function setUp(): void
+    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -57,25 +61,10 @@ final class ChromeOsTest extends TestCase
             ->expects(static::never())
             ->method('emergency');
 
-        /* @var LoggerInterface $logger */
-        $this->object = new ChromeOs($logger, new VersionFactory());
-    }
+        /** @var LoggerInterface $logger */
+        $object = new ChromeOs($logger, new VersionFactory());
 
-    /**
-     * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
-     */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
-    {
-        $detectedVersion = $this->object->detectVersion($useragent);
+        $detectedVersion = $object->detectVersion($useragent);
 
         static::assertInstanceOf(VersionInterface::class, $detectedVersion);
         static::assertSame($expectedVersion, $detectedVersion->getVersion());

@@ -11,6 +11,7 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
+use BrowserDetector\Version\Helper\Safari as SafariHelper;
 use Psr\Log\LoggerInterface;
 
 final class SafariFactory implements SafariFactoryInterface
@@ -24,7 +25,8 @@ final class SafariFactory implements SafariFactoryInterface
     {
         return new Safari(
             $logger,
-            new VersionFactory()
+            new VersionFactory(),
+            new SafariHelper()
         );
     }
 }

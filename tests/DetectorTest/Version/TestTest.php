@@ -18,19 +18,6 @@ use PHPUnit\Framework\TestCase;
 final class TestTest extends TestCase
 {
     /**
-     * @var \BrowserDetector\Version\Test
-     */
-    private $object;
-
-    /**
-     * @return void
-     */
-    protected function setUp(): void
-    {
-        $this->object = new Test();
-    }
-
-    /**
      * @dataProvider providerVersion
      *
      * @param string      $useragent
@@ -44,7 +31,9 @@ final class TestTest extends TestCase
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
-        $detectedVersion = $this->object->detectVersion($useragent);
+        $object = new Test();
+
+        $detectedVersion = $object->detectVersion($useragent);
 
         static::assertInstanceOf(VersionInterface::class, $detectedVersion);
         static::assertSame($expectedVersion, $detectedVersion->getVersion());
