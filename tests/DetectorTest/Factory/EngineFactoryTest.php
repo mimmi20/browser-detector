@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Factory;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
@@ -92,7 +93,6 @@ final class EngineFactoryTest extends TestCase
      */
     public function testFromArrayWithVersionString(): void
     {
-        static::markTestSkipped('need to rewrite');
         $company = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -100,14 +100,11 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
 
-        $version1 = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $v        = '11.2.1';
         $version2 = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
@@ -116,10 +113,10 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('set')
-            ->withConsecutive(['0'], [$v])
-            ->willReturnOnConsecutiveCalls($version1, $version2);
+            ->with($v)
+            ->willReturn($version2);
 
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
@@ -175,9 +172,8 @@ final class EngineFactoryTest extends TestCase
      *
      * @return void
      */
-    public function testFromArrayWithInvalidVersion(): void
+    public function testFromArrayWithFoundTypeAndNullObjectVersion(): void
     {
-        static::markTestSkipped('need to rewrite');
         $company = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -185,23 +181,19 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
 
-        $version1 = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $v              = [];
+        $v              = new \stdClass();
+        $v->value       = null;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
-            ->method('set')
-            ->with('0')
-            ->willReturn($version1);
+            ->expects(static::never())
+            ->method('set');
 
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
@@ -245,7 +237,7 @@ final class EngineFactoryTest extends TestCase
         static::assertInstanceOf(EngineInterface::class, $result);
         static::assertNull($result->getName());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertSame($version1, $result->getVersion());
+        static::assertInstanceOf(NullVersion::class, $result->getVersion());
         static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         static::assertSame($company, $result->getManufacturer());
     }
@@ -259,7 +251,6 @@ final class EngineFactoryTest extends TestCase
      */
     public function testFromArrayWithFixedVersionObject(): void
     {
-        static::markTestSkipped('need to rewrite');
         $company = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -267,14 +258,11 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
 
-        $version1 = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $v2       = '11.2.1';
         $v        = new \stdClass();
         $v->value = $v2;
@@ -285,10 +273,10 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('set')
-            ->withConsecutive(['0'], [$v2])
-            ->willReturnOnConsecutiveCalls($version1, $version2);
+            ->with($v2)
+            ->willReturn($version2);
 
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
@@ -346,7 +334,6 @@ final class EngineFactoryTest extends TestCase
      */
     public function testFromArrayWithVersionDetectionClass(): void
     {
-        static::markTestSkipped('need to rewrite');
         $company = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -354,14 +341,10 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
-
-        $version1 = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
 
         $v        = new \stdClass();
         $v->class = '\BrowserDetector\Version\Test';
@@ -372,10 +355,88 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
+            ->expects(static::never())
+            ->method('set');
+
+        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        $object = new EngineFactory($companyLoader, $versionFactory);
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::never())
+            ->method('info');
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $result = $object->fromArray(
+            $logger,
+            ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
+            'this is a test'
+        );
+
+        static::assertInstanceOf(EngineInterface::class, $result);
+        static::assertNull($result->getName());
+        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        static::assertNotSame($version2, $result->getVersion());
+        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        static::assertSame($company, $result->getManufacturer());
+    }
+
+    /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     * @throws \UnexpectedValueException
+     *
+     * @return void
+     */
+    public function testFromArrayWithVersionDetectionFactory(): void
+    {
+        $company = $this->getMockBuilder(CompanyInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $companyLoader
             ->expects(static::once())
-            ->method('set')
-            ->with('0')
-            ->willReturn($version1);
+            ->method('load')
+            ->with('unknown')
+            ->willReturn($company);
+
+        $v          = new \stdClass();
+        $v->factory = '\BrowserDetector\Version\TestFactory';
+        $version2   = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::never())
+            ->method('set');
 
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
@@ -433,7 +494,6 @@ final class EngineFactoryTest extends TestCase
      */
     public function testFromArrayWithFixedVersionObjectAndNoSearch(): void
     {
-        static::markTestSkipped('need to rewrite');
         $company = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -441,7 +501,7 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -456,10 +516,8 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
-            ->method('set')
-            ->with('0')
-            ->willReturn($version1);
+            ->expects(static::never())
+            ->method('set');
 
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
         /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
@@ -503,7 +561,7 @@ final class EngineFactoryTest extends TestCase
         static::assertInstanceOf(EngineInterface::class, $result);
         static::assertNull($result->getName());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertSame($version1, $result->getVersion());
+        static::assertInstanceOf(NullVersion::class, $result->getVersion());
         static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         static::assertSame($company, $result->getManufacturer());
     }
@@ -517,7 +575,6 @@ final class EngineFactoryTest extends TestCase
      */
     public function testFromArrayWithFixedVersionObjectAndSearch(): void
     {
-        static::markTestSkipped('need to rewrite');
         $company = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -525,14 +582,10 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
-
-        $version1 = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
 
         $version2 = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
@@ -547,10 +600,8 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
-            ->method('set')
-            ->with('0')
-            ->willReturn($version1);
+            ->expects(static::never())
+            ->method('set');
         $versionFactory
             ->expects(static::once())
             ->method('detectVersion')
@@ -614,7 +665,6 @@ final class EngineFactoryTest extends TestCase
      */
     public function testFromEmptyArrayWithCompanyError(): void
     {
-        static::markTestSkipped('need to rewrite');
         $companyName = 'test-company';
         $useragent   = 'this is a test';
         $exception   = new NotFoundException('failed');
@@ -625,15 +675,10 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
-            ->withConsecutive(['unknown', $useragent], [$companyName, $useragent])
-            ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $exception) {
-                if ('unknown' === $key) {
-                    return $company;
-                }
-                throw $exception;
-            });
+            ->with($companyName, $useragent)
+            ->willThrowException($exception);
 
         $version = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
@@ -642,7 +687,7 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('set')
             ->with('0')
             ->willReturn($version);

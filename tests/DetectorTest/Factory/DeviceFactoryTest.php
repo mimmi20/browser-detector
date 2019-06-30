@@ -101,7 +101,6 @@ final class DeviceFactoryTest extends TestCase
      */
     public function testFromArrayWithoutData(): void
     {
-        static::markTestSkipped('need to rewrite');
         $useragent = 'this is a test';
         $company   = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
@@ -110,7 +109,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(4))
+            ->expects(static::exactly(2))
             ->method('load')
             ->with('unknown', $useragent)
             ->willReturn($company);
@@ -202,7 +201,6 @@ final class DeviceFactoryTest extends TestCase
      */
     public function testFromArrayWithData(): void
     {
-        static::markTestSkipped('need to rewrite');
         $useragent     = 'this is a test';
         $deviceName    = 'deviceName';
         $marketingName = 'marketingName';
@@ -225,10 +223,10 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(4))
+            ->expects(static::exactly(2))
             ->method('load')
-            ->withConsecutive(['unknown', $useragent], [$manufacturerParam, $useragent], ['unknown', $useragent], [$brandParam, $useragent])
-            ->willReturnOnConsecutiveCalls($company, $manufacturer, $company, $brand);
+            ->withConsecutive([$manufacturerParam, $useragent], [$brandParam, $useragent])
+            ->willReturnOnConsecutiveCalls($manufacturer, $brand);
 
         $typeParam = 1;
         $type      = $this->getMockBuilder(TypeInterface::class)
@@ -324,13 +322,11 @@ final class DeviceFactoryTest extends TestCase
     /**
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \BrowserDetector\Loader\NotFoundException
      *
      * @return void
      */
     public function testFromArrayWithDataFailure(): void
     {
-        static::markTestSkipped('need to rewrite');
         $useragent     = 'this is a test';
         $deviceName    = 'deviceName';
         $marketingName = 'marketingName';
@@ -342,22 +338,14 @@ final class DeviceFactoryTest extends TestCase
         $companyException  = new NotFoundException('company failed');
         $typeException     = new NotFoundException('type failed');
 
-        $company = $this->getMockBuilder(CompanyInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(4))
+            ->expects(static::exactly(2))
             ->method('load')
-            ->withConsecutive(['unknown', $useragent], [$manufacturerParam, $useragent], ['unknown', $useragent], [$brandParam, $useragent])
-            ->willReturnCallback(static function (string $key, string $useragent = '') use ($company, $companyException) {
-                if ('unknown' === $key) {
-                    return $company;
-                }
-                throw $companyException;
-            });
+            ->withConsecutive([$manufacturerParam, $useragent], [$brandParam, $useragent])
+            ->willThrowException($companyException);
 
         $typeParam  = 1;
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
