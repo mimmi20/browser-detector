@@ -32,7 +32,6 @@ final class BrowserFactoryTest extends TestCase
      */
     public function testFromEmptyArray(): void
     {
-        static::markTestSkipped('need to rewrite');
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();

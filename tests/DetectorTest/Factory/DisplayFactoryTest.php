@@ -27,7 +27,6 @@ final class DisplayFactoryTest extends TestCase
      */
     public function testFromEmptyArray(): void
     {
-        static::markTestSkipped('need to rewrite');
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();

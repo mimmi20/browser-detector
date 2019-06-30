@@ -31,7 +31,6 @@ final class DeviceFactoryTest extends TestCase
      */
     public function testFromEmptyArray(): void
     {
-        static::markTestSkipped('need to rewrite');
         $useragent     = 'this is a test';
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
