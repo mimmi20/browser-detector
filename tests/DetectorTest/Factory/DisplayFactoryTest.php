@@ -80,7 +80,6 @@ final class DisplayFactoryTest extends TestCase
      */
     public function testFromArray(): void
     {
-        static::markTestSkipped('need to rewrite');
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -176,7 +175,6 @@ final class DisplayFactoryTest extends TestCase
      */
     public function testFromArrayWithTypeFailed(): void
     {
-        static::markTestSkipped('need to rewrite');
         $exception = new NotFoundException('fail');
         $logger    = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()

@@ -106,7 +106,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -118,7 +118,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('set')
             ->with('0')
             ->willReturn($version);
@@ -197,7 +197,6 @@ final class BrowserFactoryTest extends TestCase
      */
     public function testFromArrayWithFoundTypeAndVersionString(): void
     {
-        static::markTestSkipped('need to rewrite');
         $company = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -205,7 +204,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -214,17 +213,14 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $v        = '11.2.1';
-        $version2 = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('set')
-            ->withConsecutive(['0'], [$v])
-            ->willReturnOnConsecutiveCalls($version1, $version2);
+            ->with($v)
+            ->willReturn($version1);
 
         $typeName = 'unknown-type';
         $type     = $this->getMockBuilder(TypeInterface::class)
@@ -286,7 +282,7 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertSame($version2, $result->getVersion());
+        static::assertSame($version1, $result->getVersion());
         static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         static::assertSame($company, $result->getManufacturer());
     }
