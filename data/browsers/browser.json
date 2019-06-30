@@ -193,7 +193,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "factory": "\\BrowserDetector\\Version\\AndroidWebkitFactory",
+      "factory": "\\BrowserDetector\\Version\\SafariFactory",
       "search": null
     },
     "engine": "webkit"

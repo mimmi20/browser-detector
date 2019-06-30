@@ -12,7 +12,10 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\AndroidOs;
+use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -105,5 +108,232 @@ final class AndroidOsTest extends TestCase
                 '8.1.0',
             ],
         ];
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFail(): void
+    {
+        $useragent = 'Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-I9100G Build/GINGERBREAD)';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('detectVersion')
+            ->with($useragent, AndroidOs::SEARCHES)
+            ->willThrowException($exception);
+        $versionFactory
+            ->expects(static::never())
+            ->method('set');
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new AndroidOs($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFailSecond(): void
+    {
+        $useragent = 'Mozilla/5.0 (Linux; 4.4.4; Nexus 7 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 Obigo/W20A.42';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('set')
+            ->with('4.4.4')
+            ->willThrowException($exception);
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new AndroidOs($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFailThird(): void
+    {
+        $useragent = 'Mozilla/5.0 (Linux; U; de-de; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('set')
+            ->with('2.3.0')
+            ->willThrowException($exception);
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new AndroidOs($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFailForth(): void
+    {
+        $useragent = 'Mozilla/5.0 (Linux; U; Android Eclair; md-us Build/pandigitalopc1/sourceidDL00000009) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('set')
+            ->with('2.1.0')
+            ->willThrowException($exception);
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new AndroidOs($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
     }
 }

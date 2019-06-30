@@ -15,7 +15,7 @@ use Psr\Log\LoggerInterface;
 
 final class WindowsPhoneOs implements VersionDetectorInterface
 {
-    private const SEARCHES = ['Windows Phone OS', 'Windows Phone', 'Windows Mobile', 'Windows NT', 'WPOS\:'];
+    public const SEARCHES = ['Windows Phone OS', 'Windows Phone', 'Windows Mobile', 'Windows NT', 'WPOS\:'];
 
     /**
      * @var \Psr\Log\LoggerInterface
@@ -48,24 +48,28 @@ final class WindowsPhoneOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if ((bool) preg_match('/xblwp7|zunewp7/i', $useragent)) {
+        if (0 < preg_match('/xblwp7|zunewp7/i', $useragent)) {
             try {
                 return $this->versionFactory->set('7.5.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
-        if ((bool) preg_match('/wds (?P<version>[\d.]+)/i', $useragent, $matches)) {
+        if (0 < preg_match('/wds (?P<version>[\d.]+)/i', $useragent, $matches)) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
-        if ((bool) preg_match('/wpdesktop/i', $useragent)) {
-            if ((bool) preg_match('/windows nt 6\.3/i', $useragent)) {
+        if (0 < preg_match('/wpdesktop/i', $useragent)) {
+            if (0 < preg_match('/windows nt 6\.3/i', $useragent)) {
                 try {
                     return $this->versionFactory->set('8.1.0');
                 } catch (NotNumericException $e) {
@@ -73,7 +77,7 @@ final class WindowsPhoneOs implements VersionDetectorInterface
                 }
             }
 
-            if ((bool) preg_match('/windows nt 6\.2/i', $useragent)) {
+            if (0 < preg_match('/windows nt 6\.2/i', $useragent)) {
                 try {
                     return $this->versionFactory->set('8.0.0');
                 } catch (NotNumericException $e) {

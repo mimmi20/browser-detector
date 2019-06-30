@@ -12,7 +12,10 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Debian;
+use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -89,5 +92,120 @@ final class DebianTest extends TestCase
                 '8.0.0',
             ],
         ];
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFail(): void
+    {
+        $useragent = 'Mozilla/5.0 (X11; U; Linux i686; de-de@euro) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/squeeze (2.30.6-1) Epiphany/2.30.6';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('set')
+            ->with('6.0')
+            ->willThrowException($exception);
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new Debian($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
+    }
+
+    /**
+     * @return void
+     */
+    public function testDetectVersionFailSecond(): void
+    {
+        $useragent = 'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/8.0 (1:3.8.2.0-0) Epiphany/3.8.2';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::never())
+            ->method('error');
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(static::once())
+            ->method('detectVersion')
+            ->with($useragent, Debian::SEARCHES)
+            ->willThrowException($exception);
+        $versionFactory
+            ->expects(static::never())
+            ->method('set');
+
+        /** @var LoggerInterface $logger */
+        /** @var VersionFactoryInterface $versionFactory */
+        $object = new Debian($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        static::assertInstanceOf(NullVersion::class, $detectedVersion);
+        static::assertNull($detectedVersion->getVersion());
     }
 }
