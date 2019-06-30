@@ -52,6 +52,8 @@ final class RimOs implements VersionDetectorInterface
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
         $searches = ['BlackBerry[0-9a-z]+', 'BlackBerry; [0-9a-z]+\/', 'BlackBerrySimulator'];

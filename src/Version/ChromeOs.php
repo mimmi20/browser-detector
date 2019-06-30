@@ -46,15 +46,17 @@ final class ChromeOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if ((bool) preg_match('/(?:CrOS [a-z0-9_]+|Windows aarch64|CrOS aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(?P<version>\d+[\d\.]+)/', $useragent, $firstMatches)) {
+        if (0 < preg_match('/(?:CrOS [a-z0-9_]+|Windows aarch64) \d{4,5}\.\d+\.\d+\) .* Chrome\/(?P<version>\d+[\d\.]+)/', $useragent, $firstMatches)) {
             try {
                 return $this->versionFactory->set($firstMatches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
-        if ((bool) preg_match('/CrOS [a-z0-9_]+ (?P<version>\d+[\d\.]+)/', $useragent, $secondMatches)) {
+        if (0 < preg_match('/CrOS [a-z0-9_]+ (?P<version>\d+[\d\.]+)/', $useragent, $secondMatches)) {
             try {
                 return $this->versionFactory->set($secondMatches['version']);
             } catch (NotNumericException $e) {

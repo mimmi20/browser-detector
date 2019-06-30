@@ -15,6 +15,8 @@ use Psr\Log\LoggerInterface;
 
 final class Debian implements VersionDetectorInterface
 {
+    public const SEARCHES = ['kFreeBSD', 'Debian'];
+
     /**
      * @var \Psr\Log\LoggerInterface
      */
@@ -52,10 +54,12 @@ final class Debian implements VersionDetectorInterface
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
         try {
-            return $this->versionFactory->detectVersion($useragent, ['kFreeBSD', 'Debian']);
+            return $this->versionFactory->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
         }

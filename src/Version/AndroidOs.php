@@ -15,7 +15,7 @@ use Psr\Log\LoggerInterface;
 
 final class AndroidOs implements VersionDetectorInterface
 {
-    private const SEARCHES = [
+    public const SEARCHES = [
         'android android',
         'android androidhouse team',
         'android wildpuzzlerom v8 froyo',
@@ -69,20 +69,24 @@ final class AndroidOs implements VersionDetectorInterface
 
         try {
             $detectedVersion = $this->versionFactory->detectVersion($useragent, self::SEARCHES);
-
-            if (null !== $detectedVersion->getVersion()) {
-                return $detectedVersion;
-            }
         } catch (NotNumericException $e) {
             $this->logger->info($e);
+
+            return new NullVersion();
         }
 
-        if ((bool) preg_match('/Linux; (?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
+        if (null !== $detectedVersion->getVersion()) {
+            return $detectedVersion;
+        }
+
+        if (0 < preg_match('/Linux; (?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
         if (false !== mb_stripos($useragent, 'gingerbread')) {
@@ -91,6 +95,8 @@ final class AndroidOs implements VersionDetectorInterface
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
         if (false !== mb_stripos($useragent, 'android eclair')) {

@@ -15,6 +15,8 @@ use Psr\Log\LoggerInterface;
 
 final class WindowsMobileOs implements VersionDetectorInterface
 {
+    public const SEARCHES = ['Windows Mobile', 'Windows Phone'];
+
     /**
      * @var \Psr\Log\LoggerInterface
      */
@@ -52,10 +54,12 @@ final class WindowsMobileOs implements VersionDetectorInterface
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
         try {
-            return $this->versionFactory->detectVersion($useragent, ['Windows Mobile', 'Windows Phone']);
+            return $this->versionFactory->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
         }

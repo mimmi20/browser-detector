@@ -47,7 +47,7 @@ final class Goanna implements VersionDetectorInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         // lastest version: version on "Goanna" token
-        $doMatch = preg_match('/Goanna\/(?P<version>\d{1,3}\.[\d\.]*)/', $useragent, $matchesFirst);
+        $doMatch = preg_match('/Goanna\/(?P<version>\d\.[\d\.]*)/', $useragent, $matchesFirst);
 
         if (0 < $doMatch) {
             try {
@@ -55,6 +55,8 @@ final class Goanna implements VersionDetectorInterface
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
         // second version: version on "rv:" token
@@ -66,13 +68,17 @@ final class Goanna implements VersionDetectorInterface
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
+
+            return new NullVersion();
         }
 
         try {
             // first version: uses gecko version
             return $this->versionFactory->set('1.0');
         } catch (NotNumericException $e) {
-            return new NullVersion();
+            $this->logger->info($e);
         }
+
+        return new NullVersion();
     }
 }
