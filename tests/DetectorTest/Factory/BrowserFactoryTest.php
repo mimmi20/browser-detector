@@ -212,7 +212,7 @@ final class BrowserFactoryTest extends TestCase
         $version1 = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $v        = '11.2.1';
+        $v              = '11.2.1';
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();

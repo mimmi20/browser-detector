@@ -33,13 +33,15 @@ trait VersionFactoryTrait
      */
     private function getVersion(array $data, string $useragent, LoggerInterface $logger): VersionInterface
     {
-        $version = new NullVersion();
+        assert(is_string($data['version']) || $data['version'] instanceof \stdClass || null === $data['version']);
 
         if (is_string($data['version'])) {
             return $this->versionFactory->set($data['version']);
         }
 
-        if (!$data['version'] instanceof \stdClass) {
+        $version = new NullVersion();
+
+        if (null === $data['version']) {
             return $version;
         }
 
