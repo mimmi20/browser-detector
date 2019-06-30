@@ -61,13 +61,14 @@ final class DeviceLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(false);
-
         $initData
             ->expects(static::never())
             ->method('getItem')
@@ -135,13 +136,14 @@ final class DeviceLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
-
         $initData
             ->expects(static::once())
             ->method('getItem')
@@ -213,7 +215,9 @@ final class DeviceLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
@@ -308,7 +312,9 @@ final class DeviceLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
@@ -404,7 +410,9 @@ final class DeviceLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')

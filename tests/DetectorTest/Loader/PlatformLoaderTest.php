@@ -32,7 +32,6 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNotInCache(): void
     {
-        static::markTestSkipped('need to rewrite');
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -61,13 +60,14 @@ final class PlatformLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(false);
-
         $initData
             ->expects(static::never())
             ->method('getItem')
@@ -105,7 +105,6 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNullInCache(): void
     {
-        static::markTestSkipped('need to rewrite');
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -134,13 +133,14 @@ final class PlatformLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
-
         $initData
             ->expects(static::once())
             ->method('getItem')
@@ -182,7 +182,6 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeNoVersion(): void
     {
-        static::markTestSkipped('need to rewrite');
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -211,7 +210,9 @@ final class PlatformLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
@@ -238,7 +239,7 @@ final class PlatformLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -269,7 +270,6 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeVersionSet(): void
     {
-        static::markTestSkipped('need to rewrite');
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -298,7 +298,9 @@ final class PlatformLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
@@ -325,7 +327,7 @@ final class PlatformLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -356,7 +358,6 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeGenericVersion(): void
     {
-        static::markTestSkipped('need to rewrite');
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -385,7 +386,9 @@ final class PlatformLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
@@ -412,7 +415,7 @@ final class PlatformLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -445,7 +448,6 @@ final class PlatformLoaderTest extends TestCase
      */
     public function testInvokeVersion(): void
     {
-        static::markTestSkipped('need to rewrite');
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -474,7 +476,9 @@ final class PlatformLoaderTest extends TestCase
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
+        $initData
+            ->expects(static::once())
+            ->method('__invoke');
         $initData
             ->expects(static::once())
             ->method('hasItem')
@@ -501,7 +505,7 @@ final class PlatformLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(static::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
