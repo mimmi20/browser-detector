@@ -195,7 +195,7 @@ final class Macos implements VersionDetectorInterface
 
         if (false !== mb_stripos($useragent, 'darwin')) {
             foreach (self::DARWIN_MAP as $rule => $version) {
-                if ((bool) preg_match($rule, $useragent)) {
+                if (0 < preg_match($rule, $useragent)) {
                     return $this->versionFactory->set($version);
                 }
             }
@@ -205,7 +205,7 @@ final class Macos implements VersionDetectorInterface
 
         $detectedVersion = $this->versionFactory->detectVersion($useragent, $searches);
 
-        if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && (bool) preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
+        if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && 0 < preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
             $version = $versions['major'] . '.' . $versions['minor'];
 
             if (array_key_exists('micro', $versions)) {

@@ -260,7 +260,6 @@ final class SafariTest extends TestCase
             ->method('emergency');
 
         $mappedVersionOne = new Version('2');
-        $mappedVersionTwo = new Version('4');
         $versionFactory   = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();

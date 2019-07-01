@@ -47,7 +47,7 @@ final class TestTest extends TestCase
         return [
             [
                 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
-                null,
+                '1.11.111.1111.11111',
             ],
         ];
     }

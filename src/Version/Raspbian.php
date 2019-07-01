@@ -46,7 +46,7 @@ final class Raspbian implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if ((bool) preg_match('/(?:raspbian|debian)\/(?P<version>[\d\.]+)/i', $useragent, $matches)) {
+        if (0 < preg_match('/(?:raspbian|debian)\/(?P<version>[\d\.]+)/i', $useragent, $matches)) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {

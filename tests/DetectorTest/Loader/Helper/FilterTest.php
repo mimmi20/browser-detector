@@ -31,6 +31,8 @@ final class FilterTest extends TestCase
     {
         $structure = [
             'dir' => [
+                '.gitkeep' => '',
+                '.json' => '{}',
                 'bot.txt' => 'some text',
                 'bot.json' => '{"key": "value"}',
                 'tool.json' => '{"key2": "value2"}',
