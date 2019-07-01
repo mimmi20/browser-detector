@@ -274,7 +274,7 @@ final class Ios implements VersionDetectorInterface
 
         if (false !== mb_stripos($useragent, 'darwin')) {
             foreach (self::DARWIN_MAP as $rule => $version) {
-                if ((bool) preg_match($rule, $useragent)) {
+                if (0 < preg_match($rule, $useragent)) {
                     return $this->versionFactory->set($version);
                 }
             }

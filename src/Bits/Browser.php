@@ -21,22 +21,22 @@ final class Browser implements BitsInterface
     public function getBits(string $useragent): ?int
     {
         // 32 bits on 64 bit system
-        if ((bool) preg_match('/i686 on x86_64|i686 \(x86_64\)/i', $useragent)) {
+        if (0 < preg_match('/i686 on x86_64|i686 \(x86_64\)/i', $useragent)) {
             return 32;
         }
 
         // 64 bits
-        if ((bool) preg_match('/x64|win64|x86_64|amd64|ppc64|sparc64|osf1/i', $useragent)) {
+        if (0 < preg_match('/x64|win64|x86_64|amd64|ppc64|sparc64|osf1/i', $useragent)) {
             return 64;
         }
 
         // old deprecated 16 bit windows systems
-        if ((bool) preg_match('/win3\.1|windows 3\.1/i', $useragent)) {
+        if (0 < preg_match('/win3\.1|windows 3\.1/i', $useragent)) {
             return 16;
         }
 
         // old deprecated 8 bit systems
-        if ((bool) preg_match('/cp\/m|8-bit/i', $useragent)) {
+        if (0 < preg_match('/cp\/m|8-bit/i', $useragent)) {
             return 8;
         }
 

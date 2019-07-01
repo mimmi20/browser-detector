@@ -15,6 +15,7 @@ use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
@@ -670,7 +671,8 @@ final class BrowserFactoryTest extends TestCase
         static::assertInstanceOf(TypeInterface::class, $result->getType());
         static::assertSame($type, $result->getType());
         static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertNotSame($version2, $result->getVersion());
+        static::assertInstanceOf(Version::class, $result->getVersion());
+        static::assertSame('1.11.111.1111.11111', $result->getVersion()->getVersion());
         static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
         static::assertSame($company, $result->getManufacturer());
     }
