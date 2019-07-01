@@ -17,6 +17,8 @@ final class Maxthon implements VersionDetectorInterface
 {
     public const SEARCHES   = ['MxBrowser\\-iPhone', 'Maxthon', 'MxBrowser', 'Version'];
     public const SEARCH_OLD = ['MyIE'];
+    public const REGEX      = '/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i';
+
     /**
      * @var \Psr\Log\LoggerInterface
      */
@@ -53,21 +55,21 @@ final class Maxthon implements VersionDetectorInterface
                 return $this->versionFactory->set('2.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
-
-                return new NullVersion();
             }
+
+            return new NullVersion();
         }
 
         if (false !== mb_strpos($useragent, 'MyIE')) {
-            $versionFactory = new VersionFactory('/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i');
+            $this->versionFactory->setRegex(self::REGEX);
 
             try {
-                return $versionFactory->detectVersion($useragent, self::SEARCH_OLD);
+                return $this->versionFactory->detectVersion($useragent, self::SEARCH_OLD);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
-
-                return new NullVersion();
             }
+
+            return new NullVersion();
         }
 
         try {

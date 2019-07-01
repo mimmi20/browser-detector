@@ -155,8 +155,6 @@ final class MaxthonTest extends TestCase
      */
     public function testDetectVersionFailSecond(): void
     {
-        static::markTestIncomplete();
-
         $useragent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MyIE 2.0 Beta 4; User-agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; http://bsalsa.com) )';
         $exception = new NotNumericException('set failed');
         $logger    = $this->getMockBuilder(LoggerInterface::class)
@@ -199,6 +197,10 @@ final class MaxthonTest extends TestCase
         $versionFactory
             ->expects(static::never())
             ->method('set');
+        $versionFactory
+            ->expects(static::once())
+            ->method('setRegex')
+            ->with(Maxthon::REGEX);
 
         /** @var LoggerInterface $logger */
         /** @var VersionFactoryInterface $versionFactory */
