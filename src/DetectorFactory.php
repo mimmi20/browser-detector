@@ -22,6 +22,7 @@ use BrowserDetector\Parser\PlatformParserFactory;
 use JsonClass\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
+use UaNormalizer\NormalizerFactory;
 
 final class DetectorFactory
 {
@@ -67,8 +68,17 @@ final class DetectorFactory
             $engineParser          = $engineParserFactory();
             $browserParserFactory  = new BrowserParserFactory($this->logger, $jsonParser, $companyLoader, $engineParser);
             $browserParser         = $browserParserFactory();
+            $normalizer            = (new NormalizerFactory())->build();
 
-            $detector = new Detector($this->logger, new Cache($this->cache), $deviceParser, $platformParser, $browserParser, $engineParser);
+            $detector = new Detector(
+                $this->logger,
+                new Cache($this->cache),
+                $deviceParser,
+                $platformParser,
+                $browserParser,
+                $engineParser,
+                $normalizer
+            );
         }
 
         return $detector;

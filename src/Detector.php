@@ -20,6 +20,7 @@ use BrowserDetector\Parser\PlatformParserInterface;
 use BrowserDetector\Version\Version;
 use Psr\Log\LoggerInterface;
 use UaDeviceType\Unknown;
+use UaNormalizer\Normalizer\NormalizerInterface;
 use UaRequest\GenericRequest;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
@@ -65,6 +66,11 @@ final class Detector implements DetectorInterface
     private $engineParser;
 
     /**
+     * @var \UaNormalizer\Normalizer\NormalizerInterface
+     */
+    private $normalizer;
+
+    /**
      * sets the cache used to make the detection faster
      *
      * @param \Psr\Log\LoggerInterface                        $logger
@@ -73,6 +79,7 @@ final class Detector implements DetectorInterface
      * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
      * @param \BrowserDetector\Parser\BrowserParserInterface  $browserParser
      * @param \BrowserDetector\Parser\EngineParserInterface   $engineParser
+     * @param \UaNormalizer\Normalizer\NormalizerInterface    $normalizer
      */
     public function __construct(
         LoggerInterface $logger,
@@ -80,7 +87,8 @@ final class Detector implements DetectorInterface
         DeviceParserInterface $deviceParser,
         PlatformParserInterface $platformParser,
         BrowserParserInterface $browserParser,
-        EngineParserInterface $engineParser
+        EngineParserInterface $engineParser,
+        NormalizerInterface $normalizer
     ) {
         $this->logger         = $logger;
         $this->cache          = $cache;
@@ -88,6 +96,7 @@ final class Detector implements DetectorInterface
         $this->platformParser = $platformParser;
         $this->browserParser  = $browserParser;
         $this->engineParser   = $engineParser;
+        $this->normalizer     = $normalizer;
     }
 
     /**
@@ -141,7 +150,7 @@ final class Detector implements DetectorInterface
      */
     private function parse(GenericRequest $request)
     {
-        $deviceUa     = $request->getDeviceUserAgent();
+        $deviceUa     = $this->normalizer->normalize($request->getDeviceUserAgent());
         $deviceParser = $this->deviceParser;
 
         $defaultDevice = new Device(
@@ -177,7 +186,7 @@ final class Detector implements DetectorInterface
             $platformParser = $this->platformParser;
 
             try {
-                $platform = $platformParser->parse($request->getPlatformUserAgent());
+                $platform = $platformParser->parse($this->normalizer->normalize($request->getPlatformUserAgent()));
             } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->warning($e);
                 $platform = clone $defaultPlatform;
@@ -201,7 +210,7 @@ final class Detector implements DetectorInterface
             new Version('0')
         );
 
-        $browserUa = $request->getBrowserUserAgent();
+        $browserUa = $this->normalizer->normalize($request->getBrowserUserAgent());
 
         /* @var \UaResult\Browser\BrowserInterface $browser */
         /* @var \UaResult\Engine\EngineInterface $engine */

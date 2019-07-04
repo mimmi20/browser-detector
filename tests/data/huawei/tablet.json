@@ -430,7 +430,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -696,7 +696,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -734,7 +734,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -810,7 +810,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -1836,7 +1836,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -1874,7 +1874,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -2292,7 +2292,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -2596,7 +2596,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -3432,7 +3432,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -4116,7 +4116,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -4192,7 +4192,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -4496,7 +4496,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -4686,7 +4686,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -4762,7 +4762,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -5294,7 +5294,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -5446,7 +5446,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -5522,7 +5522,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -7726,7 +7726,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -7954,7 +7954,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -8562,7 +8562,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -8790,7 +8790,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 8.4
       },
       "type": "tablet"
     },
@@ -8806,6 +8806,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; BAH2-W19 Build/HUAWEIBAH2-W19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 (Ecosia android@69.0.3497.128)"
+    },
+    "device": {
+      "deviceName": "BAH2-W19",
+      "marketingName": "MediaPad M5 Lite 10",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "69.0.3497.128",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
     },

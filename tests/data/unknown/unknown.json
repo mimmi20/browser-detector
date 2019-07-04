@@ -47699,5 +47699,81 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/67.0.4 (x86 de); anonymized by Abelssoft 1090635357"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "67.0.4",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Java/12.0.1"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Java Standard Library",
+      "modus": null,
+      "version": "12.0.1",
+      "manufacturer": "oracle",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]
