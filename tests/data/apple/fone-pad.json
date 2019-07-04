@@ -582,7 +582,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -1000,7 +1000,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -1114,7 +1114,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -1342,7 +1342,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -1380,7 +1380,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -1456,17 +1456,17 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
     "browser": {
-      "name": "Mobile Safari UIWebView",
+      "name": "Facebook App",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "iOS",
@@ -1499,12 +1499,12 @@
       "type": "fone-pad"
     },
     "browser": {
-      "name": "Mobile Safari UIWebView",
+      "name": "Facebook App",
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "iOS",
@@ -1760,7 +1760,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -2216,7 +2216,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -2368,7 +2368,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -2444,7 +2444,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -2824,7 +2824,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -2900,7 +2900,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -3014,7 +3014,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -3242,7 +3242,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -3280,7 +3280,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -3288,6 +3288,44 @@
       "name": "Facebook App",
       "modus": null,
       "version": "168.0.0.57.90",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad5,4;FBMD/iPad;FBSN/iOS;FBSV/12.3.1;FBSS/2;FBCR/;FBID/tablet;FBLC/de_DE;FBOP/5]"
+    },
+    "device": {
+      "deviceName": "iPad Air 2",
+      "marketingName": "iPad Air 2",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"

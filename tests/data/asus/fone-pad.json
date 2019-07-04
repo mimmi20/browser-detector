@@ -164,7 +164,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -1076,7 +1076,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -1228,7 +1228,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -1532,7 +1532,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -1608,7 +1608,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -1760,7 +1760,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -1798,7 +1798,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -1950,7 +1950,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -2482,7 +2482,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -2558,7 +2558,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -2672,7 +2672,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -2824,7 +2824,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -3166,7 +3166,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -4990,7 +4990,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -5370,7 +5370,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -5576,6 +5576,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; P024) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P024",
+      "marketingName": "Zenpad 8.0 Z380KL",
+      "manufacturer": "asus",
+      "brand": "asus",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
