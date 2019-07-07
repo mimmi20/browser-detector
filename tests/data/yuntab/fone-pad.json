@@ -12,7 +12,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -88,7 +88,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -126,7 +126,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -164,7 +164,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -202,7 +202,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -240,7 +240,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -278,7 +278,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -316,7 +316,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -392,7 +392,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -430,7 +430,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -468,7 +468,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -506,7 +506,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -514,6 +514,44 @@
       "name": "Chrome",
       "modus": null,
       "version": "66.0.3359.126",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; K107 Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "K107",
+      "marketingName": "K107",
+      "manufacturer": "yuntab",
+      "brand": "yuntab",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "74.0.3729.157",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
