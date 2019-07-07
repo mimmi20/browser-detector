@@ -134,7 +134,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"
@@ -512,7 +512,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"
@@ -526,7 +526,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"
@@ -1548,7 +1548,7 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "size": null
+      "size": 9.7
     },
     "type": "fone-pad",
     "platform": "android"
@@ -1633,6 +1633,20 @@
       "height": 600,
       "touch": true,
       "size": 7.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t515": {
+    "deviceName": "SM-T515",
+    "marketingName": "Tab A 10.1 LTE (2019)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
     },
     "type": "fone-pad",
     "platform": "android"
