@@ -50,7 +50,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -736,7 +736,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -774,7 +774,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -812,7 +812,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1344,7 +1344,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1382,7 +1382,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1420,7 +1420,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1496,7 +1496,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1534,7 +1534,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1572,7 +1572,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1610,7 +1610,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1618,6 +1618,44 @@
       "name": "Chrome",
       "modus": null,
       "version": "65.0.3325.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; KC-S701) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KC-S701",
+      "marketingName": "Torque",
+      "manufacturer": "kyocera",
+      "brand": "kyocera",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"

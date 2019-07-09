@@ -979,16 +979,30 @@
     "type": "tablet",
     "platform": "android"
   },
+  "samsung sm-t720": {
+    "deviceName": "SM-T720",
+    "marketingName": "Galaxy Tab S5e",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "tablet",
+    "platform": null
+  },
   "samsung sm-t725": {
     "deviceName": "SM-T725",
     "marketingName": "Galaxy Tab S5e",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
-      "width": 1920,
-      "height": 1200,
+      "width": 2560,
+      "height": 1600,
       "touch": true,
-      "size": 10.1
+      "size": 10.5
     },
     "type": "tablet",
     "platform": null
