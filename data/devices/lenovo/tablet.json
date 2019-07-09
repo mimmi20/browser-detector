@@ -69,20 +69,6 @@
     "type": "tablet",
     "platform": "android"
   },
-  "lenovo e1060x": {
-    "deviceName": "E1060X",
-    "marketingName": "E1060X",
-    "manufacturer": "lenovo",
-    "brand": "medion",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "lenovo ideapad a1": {
     "deviceName": "IdeaPad A1",
     "marketingName": "IdeaPad A1",
@@ -307,6 +293,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "lenovo e1060x": {
+    "deviceName": "E1060X",
+    "marketingName": "LifeTab E1060X",
+    "manufacturer": "lenovo",
+    "brand": "medion",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "lenovo n308": {
     "deviceName": "N308",
     "marketingName": "N308",
@@ -330,7 +330,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -442,7 +442,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -484,7 +484,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -568,7 +568,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -625,6 +625,20 @@
       "height": 600,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-x104f": {
+    "deviceName": "TB-X104F",
+    "marketingName": "Tab E10 WiFi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -736,7 +750,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 9.4
     },
     "type": "tablet",
     "platform": "android"
@@ -848,7 +862,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10
     },
     "type": "tablet",
     "platform": "android"
@@ -890,7 +904,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10
     },
     "type": "tablet",
     "platform": "android"
@@ -946,7 +960,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
