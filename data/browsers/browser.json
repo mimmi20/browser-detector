@@ -259,6 +259,16 @@
     },
     "engine": "webkit"
   },
+  "asus browser": {
+    "name": "Asus Browser",
+    "manufacturer": "asus",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
   "atomic browser": {
     "name": "Atomic Browser",
     "manufacturer": "richard-trautvetter",
@@ -2027,6 +2037,16 @@
     },
     "engine": null
   },
+  "me browser": {
+    "name": "Me Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
   "mercury": {
     "name": "Mercury",
     "manufacturer": "ilegendsoft",
@@ -2615,6 +2635,30 @@
       ]
     },
     "engine": "blink"
+  },
+  "oupeng browser": {
+    "name": "Oupeng Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Oupeng"
+      ]
+    },
+    "engine": null
+  },
+  "oupeng hd browser": {
+    "name": "Oupeng HD Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OupengHD"
+      ]
+    },
+    "engine": null
   },
   "palemoon": {
     "name": "PaleMoon",

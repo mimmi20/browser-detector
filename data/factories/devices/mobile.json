@@ -322,7 +322,7 @@
     "/plt([^;\\/]+)( build|[;\\/\\)])/i": "proscan",
     "/digma[_ ][^;\\/]+( build|[;\\/\\)])|hit ht707[10]mg|citi 1902 3g|citi [a-z0-9]+ 3g c[st]500[67]pg|idjd7|idrq10[ _]3g|idxd8[ _]3g|idnd7|hit 4g ht7074ml|idx5|idx10|idx7|mvm900h(wz|c)|mvm908hcz|idxd10 3g|idxd[45]|idxq5|idxd7[_ ]3g|ps604m|pt452e|linx a400 3g lt4001pg|linx c500 3g lt5001pg|linx ps474s|ns6902ql|ns9797mg|(optima|platina|plane)[ _][em]?([0-9\\.st]+|prime)([ _][43]g)?|tt7026mw|vox[ _][0-9\\.a-z]+[_ ][43]g|tt702m/i": "digma",
     "/ mt791 /i": "keen-high",
-    "/A5000|(?<!REVVLPLUS) [CDEFGIJ][0-9]{4}( Build|[;\\/\\)])|SGP[0-9]{3}|X[ML][0-9]{2}[th]|[SLWM]T[0-9]{2}|[SM]K[0-9]{2}|SO-[0-9]{2}[BCDEFGH]|[ (]PS[234]/": "sony",
+    "/A5000|(?<!REVVLPLUS) [CDEFGIJ][0-9]{4}( Build|[;\\/\\)])|SGP[0-9]{3}|X[ML][0-9]{2}[th]|(?<!\\\\)[SLWM]T[0-9]{2}|[SM]K[0-9]{2}|SO-[0-9]{2}[BCDEFGH]|[ (]PS[234]/": "sony",
     "/sphs_on_hsdroid|pure [23]|power1/i": "m-horse",
     "/wexler|tab a742|tab7id|tab 10q|(?<!ti)zen [0-9]|tab-700/i": "wexler",
     "/lexand|a1002|a811|s[45]a[0-9]|sc7 pro hd/i": "lexand",

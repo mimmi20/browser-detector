@@ -5,7 +5,7 @@
     "/mozilla crawl/i": "mozilla crawler",
     "/squid/i": "squid",
     "/ucmini/i": "ucbrowser mini",
-    "/uc ?browser|ucweb/i": "ucbrowser",
+    "/uc ?browser|ucweb|com\\.ucmobile\\.lab/i": "ucbrowser",
     "/ic opengraph crawler/i": "ibm connections",
     "/icab/i": "icab",
     "/hggh phantomjs screenshoter/i": "hggh screenshot system with phantomjs",
@@ -18,7 +18,7 @@
     "/lg player/i": "lg player",
     "/stagefright/i": "stagefright",
     "/seznambot/i": "seznambot",
-    "/maxthon/i": "maxthon",
+    "/maxthon|com\\.mx\\.browser/i": "maxthon",
     "/qqbrowser\\/mini/i": "qqbrowser mini",
     "/qqbrowser/i": "qqbrowser",
     "/pinterestbot/i": "pinterest bot",
@@ -739,7 +739,15 @@
     "/netcraft web server survey/i": "netcraft webserver survey",
     "/netcraft ssl server survey/i": "netcraft ssl server survey",
     "/simplepie/i": "simplepie",
-    "/mozilla/i": "mozilla"
+    "/mozilla/i": "mozilla",
+    "/com\\.aliyun\\.mobile\\.browser/i": "aliyun-browser",
+    "/com\\.tencent\\.mm/i": "wechat app",
+    "/oupenghd/i": "oupeng hd browser",
+    "/oupeng|com\\.oupeng\\.browser/i": "oupeng browser",
+    "/chrome.*version|version.*chrome|com\\.android\\.browser/i": "android webview",
+    "/me\\.android\\.browser/i": "me browser",
+    "/lebrowser|com\\.lenovo\\.browser/i": "lenovo browser",
+    "/com\\.asus\\.browser/i": "asus browser"
   },
   "generic": "unknown"
 }
