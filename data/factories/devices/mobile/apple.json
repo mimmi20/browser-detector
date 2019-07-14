@@ -93,7 +93,7 @@
     "/iph(?:one)?3[c,_]3|1c2%253enohpi/i": "apple iphone 3,3",
     "/iph(?:one)?3[c,_]2/i": "apple iphone 3,2",
     "/iph(?:one)?3[c,_]1/i": "apple iphone 3,1",
-    "/iph(?:one)?2[c,_]1/i": "apple iphone 2,1",
+    "/iph(?:one)?2[c,_]1|iphone 3gs/i": "apple iphone 2,1",
     "/iph(?:one)?1[c,_]2/i": "apple iphone 1,2",
     "/iph(?:one)?1[c,_]1/i": "apple iphone 1,1",
     "/iph|puffin\\/[\\d\\.]+ip/i": "apple iphone",
