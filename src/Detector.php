@@ -211,6 +211,7 @@ final class Detector implements DetectorInterface
         );
 
         $browserUa = $this->normalizer->normalize($request->getBrowserUserAgent());
+        $engineUa  = $this->normalizer->normalize($request->getEngineUserAgent());
 
         /* @var \UaResult\Browser\BrowserInterface $browser */
         /* @var \UaResult\Engine\EngineInterface $engine */
@@ -225,7 +226,7 @@ final class Detector implements DetectorInterface
 
         if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {
-                $engine = $this->engineParser->load('webkit', $browserUa);
+                $engine = $this->engineParser->load('webkit', $engineUa);
             } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->warning($e);
 
@@ -238,7 +239,7 @@ final class Detector implements DetectorInterface
             $engineParser = $this->engineParser;
 
             try {
-                $engine = $engineParser->parse($browserUa);
+                $engine = $engineParser->parse($engineUa);
             } catch (NotFoundException | \UnexpectedValueException $e) {
                 $this->logger->error($e);
             }
