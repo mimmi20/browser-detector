@@ -14,15 +14,15 @@
     "platform": "android"
   },
   "allwinner a10": {
-    "deviceName": "A10",
+    "deviceName": "A8003T",
     "marketingName": "A10",
     "manufacturer": "allwinner",
     "brand": "allwinner",
     "display": {
       "width": 800,
-      "height": 480,
+      "height": 600,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -36,7 +36,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -47,10 +47,10 @@
     "manufacturer": "allwinner",
     "brand": "allwinner",
     "display": {
-      "width": 800,
-      "height": 480,
+      "width": 1024,
+      "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"

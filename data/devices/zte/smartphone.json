@@ -419,6 +419,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zte blade a530": {
+    "deviceName": "Blade A530",
+    "marketingName": "Blade A530",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zte blade a612": {
     "deviceName": "Blade A612",
     "marketingName": "Blade A612",
@@ -624,7 +638,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -793,6 +807,20 @@
       "height": null,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade v1000": {
+    "deviceName": "Blade V1000",
+    "marketingName": "Blade V1000",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 2280,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1861,20 +1889,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "zte nx541j": {
-    "deviceName": "NX541J",
-    "marketingName": "Nubia",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "zte nx551j": {
     "deviceName": "NX551J",
     "marketingName": "Nubia M2",
@@ -1884,7 +1898,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1931,6 +1945,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zte nx541j": {
+    "deviceName": "NX541J",
+    "marketingName": "Nubia N1",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zte nx597j": {
     "deviceName": "NX597J",
     "marketingName": "Nubia N1 Lite",
@@ -1954,7 +1982,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"

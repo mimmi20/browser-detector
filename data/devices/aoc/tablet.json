@@ -13,6 +13,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "aoc mw0922": {
+    "deviceName": "MW0922",
+    "marketingName": "Breeze Tab 9",
+    "manufacturer": "aoc",
+    "brand": "aoc",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 9
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "aoc mg97dr": {
     "deviceName": "MG97DR",
     "marketingName": "MG97DR",
@@ -22,21 +36,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "aoc mw0922": {
-    "deviceName": "MW0922",
-    "marketingName": "MW0922",
-    "manufacturer": "aoc",
-    "brand": "aoc",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 9
+      "size": 9.7
     },
     "type": "tablet",
     "platform": "android"
@@ -50,7 +50,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
