@@ -1,162 +1,10 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P310X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P310X",
-      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "31.0.1650.59",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P320X",
-      "marketingName": "OneTouch POP 8 3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "31.0.1650.59",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONETOUCH P310A Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P310A",
-      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; ALCATEL ONE TOUCH P321 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "OT-P321",
-      "marketingName": "OneTouch POP 8",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 9022X Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Safari/537.36 AppEngine-Google; (+http://code.google.com/appengine; appid: s~cgiproxy0-hrd)"
     },
     "device": {
-      "deviceName": "OT-9022X",
+      "deviceName": "9022X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -194,7 +42,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 9005X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.412.01 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9005X",
+      "deviceName": "9005X",
       "marketingName": "OneTouch Pixi 3 8 3G",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -232,7 +80,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 9010X Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9010X",
+      "deviceName": "9010X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -533,44 +381,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; P350X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "P350X",
-      "marketingName": "POP 8S LTE",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "70.0.3538.110",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; VF-1497 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Safari/537.36"
     },
     "device": {
@@ -647,48 +457,10 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; P330X Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "P330X",
-      "marketingName": "OneTouch Pop 7S",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "48.0.2564.95",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.3.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 9005X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9005X",
+      "deviceName": "9005X",
       "marketingName": "OneTouch Pixi 3 8 3G",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -719,234 +491,6 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P310X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P310X",
-      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "52.0.2743.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P320X",
-      "marketingName": "OneTouch POP 8 3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "52.0.2743.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P320X",
-      "marketingName": "OneTouch POP 8 3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "38.0.2125.102",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P320X",
-      "marketingName": "OneTouch POP 8 3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "34.0.1847.114",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P310X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P310X",
-      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "38.0.2125.102",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; cs-cz; ALCATEL ONE TOUCH P310X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "OT-P310X",
-      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
     }
   },
   {
@@ -1106,7 +650,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 9005X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9005X",
+      "deviceName": "9005X",
       "marketingName": "OneTouch Pixi 3 8 3G",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -1144,7 +688,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 9010X Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9010X",
+      "deviceName": "9010X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -1182,7 +726,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 9010X Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9010X",
+      "deviceName": "9010X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -1220,7 +764,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 9005X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9005X",
+      "deviceName": "9005X",
       "marketingName": "OneTouch Pixi 3 8 3G",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -1334,7 +878,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 9010X Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9010X",
+      "deviceName": "9010X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -1407,44 +951,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P321 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P321",
-      "marketingName": "OneTouch POP 8",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "65.0.3325.109",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; VF-1497) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Safari/537.36"
     },
     "device": {
@@ -1486,7 +992,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 9010X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9010X",
+      "deviceName": "9010X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -1673,44 +1179,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-at; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "OT-P320X",
-      "marketingName": "OneTouch POP 8 3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 9002X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Safari/537.36"
     },
     "device": {
@@ -1738,44 +1206,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; P350X Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "P350X",
-      "marketingName": "POP 8S LTE",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "33.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
       "manufacturer": "google",
       "bits": null
     },
@@ -1977,44 +1407,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P321 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "OT-P321",
-      "marketingName": "OneTouch POP 8",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "47.0.2526.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; VF-1497 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Safari/537.36"
     },
     "device": {
@@ -2056,7 +1448,7 @@
       "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1## 9010X Build/LMY47I)"
     },
     "device": {
-      "deviceName": "OT-9010X",
+      "deviceName": "9010X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -2094,7 +1486,7 @@
       "user-agent": "Mozilla/5.0 (Linux## U## Android 4.4.2## fi-fi## 9005X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9005X",
+      "deviceName": "9005X",
       "marketingName": "OneTouch Pixi 3 8 3G",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -2170,7 +1562,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 9010X Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9010X",
+      "deviceName": "9010X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -2284,7 +1676,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 9022X Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9022X",
+      "deviceName": "9022X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -2322,7 +1714,7 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; de-de; 9010X Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36"
     },
     "device": {
-      "deviceName": "OT-9010X",
+      "deviceName": "9010X",
       "marketingName": "OneTouch Pixi 3",
       "manufacturer": "tcl",
       "brand": "alcatel",
@@ -2460,6 +1852,842 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 9007X Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "9007X",
+      "marketingName": "OneTouch Pixi 3 (7) 4G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 9007A Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "9007A",
+      "marketingName": "OneTouch Pixi 3 (7) 4G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 9007T Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "9007T",
+      "marketingName": "OneTouch Pixi 3 (7) 4G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 9007A Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "9007A",
+      "marketingName": "OneTouch Pixi 3 (7) 4G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 9007T Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "9007T",
+      "marketingName": "OneTouch Pixi 3 (7) 4G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P310X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P310X",
+      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "31.0.1650.59",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P320X",
+      "marketingName": "OneTouch POP 8 3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "31.0.1650.59",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONETOUCH P310A Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P310A",
+      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; ALCATEL ONE TOUCH P321 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "P321",
+      "marketingName": "OneTouch POP 8",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; P350X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P350X",
+      "marketingName": "POP 8S LTE",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.110",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; P330X Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P330X",
+      "marketingName": "OneTouch Pop 7S",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P310X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P310X",
+      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "52.0.2743.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P320X",
+      "marketingName": "OneTouch POP 8 3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "52.0.2743.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P320X",
+      "marketingName": "OneTouch POP 8 3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "38.0.2125.102",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P320X",
+      "marketingName": "OneTouch POP 8 3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "34.0.1847.114",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P310X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P310X",
+      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "38.0.2125.102",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; cs-cz; ALCATEL ONE TOUCH P310X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "P310X",
+      "marketingName": "OneTouch Pop 7 Wi-Fi+3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P321 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P321",
+      "marketingName": "OneTouch POP 8",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "65.0.3325.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-at; ALCATEL ONE TOUCH P320X Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.2 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "P320X",
+      "marketingName": "OneTouch POP 8 3G",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; P350X Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P350X",
+      "marketingName": "POP 8S LTE",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "33.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH P321 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P321",
+      "marketingName": "OneTouch POP 8",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "47.0.2526.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 9010X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "9010X",
+      "marketingName": "OneTouch Pixi 3",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
       "manufacturer": "google",
       "bits": null
     },

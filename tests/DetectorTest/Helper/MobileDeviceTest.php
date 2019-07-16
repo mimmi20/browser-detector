@@ -133,6 +133,7 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Linux; Android 4.4.2; N9106 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36'],
             ['dv(iPh4,1);pr(UCBrowser/10.2.0.517);ov(7_1_2);ss(320x416);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);'],
             ['pf(44);la(zh-CN);dv(iPd5,1);pr(UCBrowser);ov(7_0_2);pi(640x1136);ss(320x416);er(U);bt(UM);up();re(AppleWebKit/537.51.1 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(2);'],
+            ['pf(Linux);la(en-US);re(U2/1.0.0);dv(TECNO_S3);pr(UCBrowser/8.8.1.359);ov(4.2.2);pi(320*480);ss(320*480);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);'],
         ];
     }
 

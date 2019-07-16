@@ -1,6 +1,174 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (MTK; Opera Mini/2.1198/34.1445; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "NativeOperaMini(MTK;Native Opera Mini/4.2.1198;fr)",
+      "x-operamini-features": "httpping, advanced, routing, folding, file_system, download",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "NativeOperaMini(MTK;Native Opera Mini/4.2.1198;fr)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.2.1198",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nucleus OS",
+      "marketingName": "Nucleus",
+      "version": null,
+      "manufacturer": "accelerated-technology",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (MTK; Opera Mini/5.1.3119/34.1153; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "NativeOperaMini(MTK;Opera Mini/5.1.3119;es)",
+      "x-operamini-features": "httpping, advanced, routing, file_system, download",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "NativeOperaMini(MTK;Opera Mini/5.1.3119;es)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "5.1.3119",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nucleus OS",
+      "marketingName": "Nucleus",
+      "version": null,
+      "manufacturer": "accelerated-technology",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (MTK; Opera Mini/7.0.32977/34.1576; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "NativeOperaMini(MTK/Unknown;Opera Mini/7.0.32977;en-US)",
+      "x-operamini-features": "httpping, advanced, routing, folding, file_system, download",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "NativeOperaMini(MTK/Unknown;Opera Mini/7.0.32977;en-US)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.0.32977",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (SpreadTrum; Opera Mini/4.4.29625/34.1970; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "NativeOperaMini(Spreadtrum/Unknown;Native Opera Mini/4.4.29625;pt)",
+      "x-operamini-features": "httpping, advanced, routing, folding, file_system, download",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "NativeOperaMini(Spreadtrum/Unknown;Native Opera Mini/4.4.29625;pt)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.29625",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (SpreadTrum; Opera Mini/4.4.31227/34.1088; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "NativeOperaMini(Spreadtrum/HW Version:        SC6531_OPENPHONE;Native Opera Mini/4.4.31227;en)",
       "x-operamini-features": "advanced, httpping, routing, file_system, download, folding",
@@ -3638,158 +3806,6 @@
       "name": "Opera Mini",
       "modus": null,
       "version": "4.2.14912",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.14912/23.333; U; en) Presto/2.5.25 Version/10.54"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.2.14912",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.14912/22.394; U; en) Presto/2.5.25 Version/10.54"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.2.14912",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.14885/20.2485; U; zh) Presto/2.5.25"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.2.14885",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.14881Mod.by.Handler/24.743; U; en) Presto/2.5.25 Version/10.54"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.2.14881",
       "manufacturer": "opera",
       "bits": null,
       "type": "transcoder"

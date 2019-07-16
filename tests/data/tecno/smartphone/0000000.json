@@ -2164,5 +2164,45 @@
       "version": "537.36.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; xx; TECNO_S3) U2/1.0.0 UCBrowser/8.8.1.359 U2/1.0.0 Mobile",
+      "x-ucbrowser-device-ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; TECNO S3 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+      "x-ucbrowser-ua": "pf(Linux);la(en-US);re(U2/1.0.0);dv(TECNO_S3);pr(UCBrowser/8.8.1.359);ov(4.2.2);pi(320*480);ss(320*480);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);"
+    },
+    "device": {
+      "deviceName": "S3",
+      "marketingName": "S3",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.1.359",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
   }
 ]

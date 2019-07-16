@@ -1190,7 +1190,7 @@
         "width": 3120,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.1
       },
       "type": "smartphone"
     },
@@ -1760,7 +1760,7 @@
         "width": 3120,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.1
       },
       "type": "smartphone"
     },
@@ -2596,7 +2596,7 @@
         "width": 3120,
         "height": 1440,
         "touch": true,
-        "size": null
+        "size": 6.1
       },
       "type": "smartphone"
     },
@@ -3715,6 +3715,82 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; LM-Q617.FGN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LM-Q617.FGN",
+      "marketingName": "Q617",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; LM-X510.FG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LM-X510.FG",
+      "marketingName": "X5",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
     },

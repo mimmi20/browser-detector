@@ -8,7 +8,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 10
     },
     "type": "tablet",
     "platform": "android"
@@ -51,6 +51,20 @@
       "height": 1080,
       "touch": true,
       "size": 24
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "acer da220hql": {
+    "deviceName": "DA220HQL",
+    "marketingName": "DA220HQL",
+    "manufacturer": "acer",
+    "brand": "acer",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 21.5
     },
     "type": "tablet",
     "platform": "android"

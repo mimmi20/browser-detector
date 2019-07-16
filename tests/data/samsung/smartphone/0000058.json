@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; GT-N7100 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-N7100",
-      "marketingName": "Galaxy Note II",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "48.0.2564.95",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.3.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G800F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36 bdbrowser/6.2.0.2"
-    },
-    "device": {
-      "deviceName": "SM-G800F",
-      "marketingName": "Galaxy S5 Mini (Europe)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Baidu Browser",
-      "modus": null,
-      "version": "6.2.0.2",
-      "manufacturer": "baidu",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.2 Chrome/38.0.2125.102 Mobile Safari/537.36"
     },
     "device": {
@@ -620,7 +544,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -658,7 +582,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -1000,7 +924,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -1266,7 +1190,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1608,7 +1532,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2064,7 +1988,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -2178,7 +2102,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2330,7 +2254,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -2406,7 +2330,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -2520,7 +2444,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3318,7 +3242,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -3736,7 +3660,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3774,7 +3698,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3790,6 +3714,82 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-I9192 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-I9192",
+      "marketingName": "Galaxy S4 Mini Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-G901F Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G901F",
+      "marketingName": "Galaxy S5 Plus",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "48.0.2564.106",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
       "manufacturer": "google",
       "bits": null
     },

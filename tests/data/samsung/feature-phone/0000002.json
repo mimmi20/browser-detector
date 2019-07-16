@@ -126,7 +126,7 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.8
       },
       "type": "feature-phone"
     },
@@ -1260,6 +1260,47 @@
       "name": "Presto",
       "version": "2.8.119",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-C3312/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0",
+      "x-ucbrowser-device": "samsung#-GT-C3312",
+      "x-ucbrowser-device-ua": "SAMSUNG-GT-C3312/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1",
+      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(SAMSUNG-GT-C3312);pr(UCBrowser/9.5.0.449);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);"
+    },
+    "device": {
+      "deviceName": "GT-C3312",
+      "marketingName": "Champ Deluxe Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
     }
   }
 ]

@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; B3-A50FHD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "B3-A50FHD",
+      "marketingName": "Iconia One 10",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "72.0.3626.121",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; A3-A50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
     },
     "device": {
@@ -3752,44 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; DA241HL Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "DA241HL",
-      "marketingName": "DA 241HL",
-      "manufacturer": "acer",
-      "brand": "acer",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 24
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "48.0.2564.95",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.1",
       "manufacturer": "google",
       "bits": null
     },

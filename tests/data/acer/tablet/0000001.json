@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; A1-840FHD Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A1-840FHD",
+      "marketingName": "Iconia Tab 8",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; de-US; A3-A10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Safari/537.36"
     },
     "device": {
@@ -3752,44 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; B3-A50FHD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "B3-A50FHD",
-      "marketingName": "Iconia One 10",
-      "manufacturer": "acer",
-      "brand": "acer",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "72.0.3626.121",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
     },

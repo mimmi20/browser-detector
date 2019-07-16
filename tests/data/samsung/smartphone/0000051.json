@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-G531F Build/LMY48B)"
-    },
-    "device": {
-      "deviceName": "SM-G531F",
-      "marketingName": "Galaxy Grand Prime Value Edition",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-I9192 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I9192",
-      "marketingName": "Galaxy S4 Mini Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9506 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36"
     },
     "device": {
@@ -88,7 +12,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -164,7 +88,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -544,7 +468,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -962,7 +886,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1076,7 +1000,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -1532,7 +1456,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1760,7 +1684,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2064,7 +1988,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2292,7 +2216,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3166,7 +3090,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3470,7 +3394,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -3782,6 +3706,82 @@
       "name": "Chrome",
       "modus": null,
       "version": "43.0.2357.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 MxBrowser/4.5.8.2000"
+    },
+    "device": {
+      "deviceName": "SM-G925F",
+      "marketingName": "Galaxy S6 Edge (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "4.5.8.2000",
+      "manufacturer": "maxthon",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J500FN Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J500FN",
+      "marketingName": "Galaxy J5",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "46.0.2490.76",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"

@@ -233,14 +233,14 @@
     },
     "device": {
       "deviceName": "E691X",
-      "marketingName": "E691X",
+      "marketingName": "LifeTab E691X",
       "manufacturer": "medion",
       "brand": "medion",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 6.95
       },
       "type": "tablet"
     },
@@ -499,14 +499,14 @@
     },
     "device": {
       "deviceName": "E691X",
-      "marketingName": "E691X",
+      "marketingName": "LifeTab E691X",
       "manufacturer": "medion",
       "brand": "medion",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 6.95
       },
       "type": "tablet"
     },
@@ -1373,14 +1373,14 @@
     },
     "device": {
       "deviceName": "E691X",
-      "marketingName": "E691X",
+      "marketingName": "LifeTab E691X",
       "manufacturer": "medion",
       "brand": "medion",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 6.95
       },
       "type": "tablet"
     },
@@ -1943,14 +1943,14 @@
     },
     "device": {
       "deviceName": "E691X",
-      "marketingName": "E691X",
+      "marketingName": "LifeTab E691X",
       "manufacturer": "medion",
       "brand": "medion",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 6.95
       },
       "type": "tablet"
     },
@@ -2893,14 +2893,14 @@
     },
     "device": {
       "deviceName": "X1031X",
-      "marketingName": "X1031X",
+      "marketingName": "LifeTab X1031X",
       "manufacturer": "medion",
       "brand": "medion",
       "display": {
-        "width": 1280,
-        "height": 800,
+        "width": 1920,
+        "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -3220,6 +3220,348 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; LIFETAB_P970X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LifeTab P970X",
+      "marketingName": "LifeTab P970X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; LIFETAB_P970X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LifeTab P970X",
+      "marketingName": "LifeTab P970X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; X1031X Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "X1031X",
+      "marketingName": "LifeTab X1031X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "64.0.3282.137",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E691X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E691X",
+      "marketingName": "LifeTab E691X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 6.95
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; P852X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LifeTab P852X",
+      "marketingName": "LifeTab P852X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; P1050X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LifeTab P1050X",
+      "marketingName": "LifeTab P1050X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; LIFETAB_P891X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LifeTab P891X",
+      "marketingName": "LifeTab P891X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "74.0.3729.157",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; P1050X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LifeTab P1050X",
+      "marketingName": "LifeTab P1050X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; P1035X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LifeTab P1035X",
+      "marketingName": "LifeTab P1035X",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
       "manufacturer": "google",
       "bits": null
     },
