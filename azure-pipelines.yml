@@ -1,0 +1,353 @@
+# PHP
+# Test and package your PHP project.
+# Add steps that run tests, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/php
+
+stages:
+  - stage: validate
+    displayName: 'Validate composer.json and Check composer normalisation'
+    jobs:
+      - job: ComposerValidate
+        displayName: 'Validate composer.json'
+        variables:
+          phpVersion: 7.1
+        pool:
+          vmImage: 'ubuntu-16.04' # ubuntu-latest
+        steps:
+          - script: |
+              sudo rm /etc/php/$(phpVersion)/cli/conf.d/20-xdebug.ini
+              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+              php -version
+            displayName: 'Use PHP version $(phpVersion)'
+          - script: composer self-update
+            displayName: 'composer self-update'
+          - script: composer validate
+            displayName: 'composer validate'
+      - job: ComposerNormalize
+        variables:
+          phpVersion: 7.1
+        pool:
+          vmImage: 'ubuntu-16.04' # ubuntu-latest
+        steps:
+          - script: |
+              sudo rm /etc/php/$(phpVersion)/cli/conf.d/20-xdebug.ini
+              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+              php -version
+            displayName: 'Use PHP version $(phpVersion)'
+          - script: composer self-update
+            displayName: 'composer self-update'
+          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+            displayName: 'composer update'
+          - script: composer normalize --dry-run
+            displayName: 'composer normalize'
+
+  - stage: install
+    displayName: 'Install/Update with composer on multiple platforms and php versions'
+    dependsOn: validate
+    jobs:
+      - job: install
+        displayName: 'Install/Update with composer'
+        strategy:
+          matrix:
+            linux_1604_php71:
+              imageName: "ubuntu-16.04" # ubuntu-latest
+              php_version: "7.1"
+            #mac_php71:
+            #  imageName: "macOS-10.14" # macOS-latest
+            #  php_version: "7.1"
+            #windows_2016_php71:
+            #  imageName: "vs2017-win2016"
+            #  php_version: "7.1"
+            #windows_2019_php71:
+            #  imageName: "windows-2019" # windows-latest
+            #  php_version: "7.1"
+            linux_1604_php72:
+              imageName: "ubuntu-16.04" # ubuntu-latest
+              php_version: "7.2"
+            #mac_php72:
+            #  imageName: "macOS-10.14" # macOS-latest
+            #  php_version: "7.2"
+            #windows_2016_php72:
+            #  imageName: "vs2017-win2016"
+            #  php_version: "7.2"
+            #windows_2019_php72:
+            #  imageName: "windows-2019" # windows-latest
+            #  php_version: "7.2"
+            linux_1604_php73:
+              imageName: "ubuntu-16.04" # ubuntu-latest
+              php_version: "7.3"
+            #mac_php73:
+            #  imageName: "macOS-10.14" # macOS-latest
+            #  php_version: "7.3"
+            #windows_2016_php73:
+            #  imageName: "vs2017-win2016"
+            #  php_version: "7.3"
+            #windows_2019_php73:
+            #  imageName: "windows-2019" # windows-latest
+            #  php_version: "7.3"
+          maxParallel: 15
+        variables:
+          phpVersion: $(php_version)
+        pool:
+          vmImage: $(imageName)
+        steps:
+          - script: |
+              sudo rm /etc/php/$(phpVersion)/cli/conf.d/20-xdebug.ini
+              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+              php -version
+            displayName: 'Use PHP version $(phpVersion)'
+          - script: composer self-update
+            displayName: 'composer self-update'
+          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+            displayName: 'composer update'
+
+  - stage: coding_standards
+    displayName: 'check Coding Standards'
+    dependsOn: install
+    jobs:
+      - job: phpcs
+        displayName: 'Run squizlabs/php_codesniffer'
+        variables:
+          phpVersion: 7.1
+        pool:
+          vmImage: 'ubuntu-16.04' # ubuntu-latest
+        steps:
+          - script: |
+              sudo rm /etc/php/$(phpVersion)/cli/conf.d/20-xdebug.ini
+              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+              php -version
+            displayName: 'Use PHP version $(phpVersion)'
+          - script: composer self-update
+            displayName: 'composer self-update'
+          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+            displayName: 'composer update'
+          - script: vendor/bin/phpcs --colors
+            displayName: 'phpcs'
+
+      - job: phpCsFixer
+        displayName: 'Run friendsofphp/php-cs-fixer'
+        variables:
+          phpVersion: 7.1
+        pool:
+          vmImage: 'ubuntu-16.04' # ubuntu-latest
+        steps:
+          - script: |
+              sudo rm /etc/php/$(phpVersion)/cli/conf.d/20-xdebug.ini
+              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+              php -version
+            displayName: 'Use PHP version $(phpVersion)'
+          - script: composer self-update
+            displayName: 'composer self-update'
+          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+            displayName: 'composer update'
+          - script: vendor/bin/php-cs-fixer fix --dry-run -vv
+            displayName: 'php-cs-fixer'
+
+  - stage: static_code_analysis
+    displayName: 'Static Code Analysis'
+    dependsOn: install
+    jobs:
+      - job: phpstan
+        displayName: 'Run phpstan/phpstan'
+        variables:
+          phpVersion: 7.1
+        pool:
+          vmImage: 'ubuntu-16.04' # ubuntu-latest
+        steps:
+          - script: |
+              sudo rm /etc/php/$(phpVersion)/cli/conf.d/20-xdebug.ini
+              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+              php -version
+            displayName: 'Use PHP version $(phpVersion)'
+          - script: composer self-update
+            displayName: 'composer self-update'
+          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+            displayName: 'composer update'
+          - script: vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress
+            displayName: 'phpstan'
+
+#  - stage: tests
+#    displayName: 'UnitTests'
+#    dependsOn:
+#      - static_code_analysis
+#      - coding_standards
+#    jobs:
+#      - job: tests
+#        displayName: 'Run UnitTests'
+#        strategy:
+#          matrix:
+#            linux_1604_php71:
+#              imageName: "ubuntu-16.04" # ubuntu-latest
+#              php_version: "7.1"
+#            #mac_php71:
+#            #  imageName: "macOS-10.14" # macOS-latest
+#            #  php_version: "7.1"
+#            #windows_2016_php71:
+#            #  imageName: "vs2017-win2016"
+#            #  php_version: "7.1"
+#            #windows_2019_php71:
+#            #  imageName: "windows-2019" # windows-latest
+#            #  php_version: "7.1"
+#            linux_1604_php72:
+#              imageName: "ubuntu-16.04" # ubuntu-latest
+#              php_version: "7.2"
+#            #mac_php72:
+#            #  imageName: "macOS-10.14" # macOS-latest
+#            #  php_version: "7.2"
+#            #windows_2016_php72:
+#            #  imageName: "vs2017-win2016"
+#            #  php_version: "7.2"
+#            #windows_2019_php72:
+#            #  imageName: "windows-2019" # windows-latest
+#            #  php_version: "7.2"
+#            linux_1604_php73:
+#              imageName: "ubuntu-16.04" # ubuntu-latest
+#              php_version: "7.3"
+#            #mac_php73:
+#            #  imageName: "macOS-10.14" # macOS-latest
+#            #  php_version: "7.3"
+#            #windows_2016_php73:
+#            #  imageName: "vs2017-win2016"
+#            #  php_version: "7.3"
+#            #windows_2019_php73:
+#            #  imageName: "windows-2019" # windows-latest
+#            #  php_version: "7.3"
+#          maxParallel: 15
+#        variables:
+#          phpVersion: $(php_version)
+#        pool:
+#          vmImage: $(imageName)
+#        steps:
+#          - script: |
+#              sudo echo 'opcache.enable=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'opcache.enable_cli=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'zend.assertions=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'assert.exception=On' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo rm /etc/php/$(phpVersion)/cli/conf.d/20-xdebug.ini
+#              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+#              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+#              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+#              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+#              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+#              php -version
+#            displayName: 'Use PHP version $(phpVersion)'
+#          - script: composer self-update
+#            displayName: 'composer self-update'
+#          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+#            displayName: 'composer update'
+#          - script: vendor/bin/phpunit -c phpunit.xml --colors --no-coverage
+#            displayName: 'phpunit'
+#
+#  - stage: code_coverage
+#    displayName: 'Code Coverage'
+#    dependsOn: tests
+#    jobs:
+#      - job: codecoverage
+#        displayName: 'Code Coverage'
+#        variables:
+#          phpVersion: 7.1
+#        pool:
+#          vmImage: 'ubuntu-16.04' # ubuntu-latest
+#        steps:
+#          - script: |
+#              sudo echo 'opcache.enable=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'opcache.enable_cli=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'zend.assertions=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'assert.exception=On' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+#              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+#              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+#              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+#              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+#              php -version
+#            displayName: 'Use PHP version $(phpVersion)'
+#          - script: composer self-update
+#            displayName: 'composer self-update'
+#          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+#            displayName: 'composer update'
+#          - script: vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=clover.xml --coverage-text
+#            displayName: 'run phpunit'
+
+  - stage: integration_tests
+    displayName: 'Integration Tests'
+    dependsOn:
+#      - tests
+      - static_code_analysis
+      - coding_standards
+    jobs:
+      - job: integration_tests
+        displayName: 'Integration Tests'
+        variables:
+          phpVersion: 7.1
+        pool:
+          vmImage: 'ubuntu-16.04' # ubuntu-latest
+        steps:
+          - script: |
+              sudo rm /etc/php/$(phpVersion)/cli/conf.d/20-xdebug.ini
+              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+              php -version
+            displayName: 'Use PHP version $(phpVersion)'
+          - script: composer self-update
+            displayName: 'composer self-update'
+          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+            displayName: 'composer update'
+          - script: vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --verbose
+            displayName: 'run phpunit'
+
+#  - stage: mutation_tests
+#    displayName: 'Mutation Tests'
+#    dependsOn: tests
+#    jobs:
+#      - job: mutation_tests
+#        displayName: 'Mutation Tests'
+#        variables:
+#          phpVersion: 7.1
+#        pool:
+#          vmImage: 'ubuntu-16.04' # ubuntu-latest
+#        steps:
+#          - script: |
+#              sudo echo 'opcache.enable=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'opcache.enable_cli=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'zend.assertions=1' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo echo 'assert.exception=On' >> /etc/php/$(phpVersion)/cli/php.ini
+#              sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+#              sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
+#              sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
+#              sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
+#              sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
+#              php -version
+#            displayName: 'Use PHP version $(phpVersion)'
+#          - script: composer self-update
+#            displayName: 'composer self-update'
+#          - script: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+#            displayName: 'composer update'
+#          - script: vendor/bin/infection --min-covered-msi=95 --min-msi=95
+#            displayName: 'run infection'
