@@ -19,7 +19,7 @@ jobs:
       - name: Install PHP
         uses: shivammathur/setup-php@1.3.9
         with:
-          php-version: 7.3
+          php-version: 7.1
           extension-csv: mbstring, dom, xmlwriter #optional
           ini-values-csv: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: none #optional
@@ -36,10 +36,7 @@ jobs:
   install:
     name: Install/Update with composer
 
-    needs:
-      - validate
-      - coding-standards
-      - static-code-analysis
+    needs: validate
 
     runs-on: ${{ matrix.operating-system }}
 
@@ -82,7 +79,7 @@ jobs:
   coding-standards:
     name: "Coding Standards"
 
-    needs: validate
+    needs: install
 
     runs-on: ubuntu-latest
 
@@ -110,7 +107,7 @@ jobs:
   static-code-analysis:
     name: Static Code Analysis
 
-    needs: validate
+    needs: install
 
     runs-on: ubuntu-latest
 
@@ -136,7 +133,6 @@ jobs:
     name: UnitTests
 
     needs:
-      - validate
       - coding-standards
       - static-code-analysis
 
@@ -203,11 +199,8 @@ jobs:
       - name: Update dependencies with composer
         run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
-      - name: Dump Xdebug filter with phpunit/phpunit
-        run: vendor/bin/phpunit -c phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
-
       - name: Collect code coverage with Xdebug and phpunit/phpunit
-        run: vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=clover.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
+        run: vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=clover.xml --coverage-text
 
       - name: Download php-coveralls.phar
         run: wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
@@ -275,4 +268,4 @@ jobs:
         run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Run mutation tests with infection/infection
-        run: php vendor/bin/infection --min-covered-msi=95 --min-msi=95
+        run: vendor/bin/infection --min-covered-msi=95 --min-msi=95
