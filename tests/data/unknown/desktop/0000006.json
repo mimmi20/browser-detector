@@ -169,12 +169,12 @@
       "type": "desktop"
     },
     "browser": {
-      "name": "Safari",
+      "name": "Liferea",
       "modus": null,
-      "version": null,
-      "manufacturer": "apple",
+      "version": "1.10.6",
+      "manufacturer": "lars windolf",
       "bits": null,
-      "type": "browser"
+      "type": "feed-reader"
     },
     "os": {
       "name": "Linux",
@@ -207,12 +207,12 @@
       "type": "desktop"
     },
     "browser": {
-      "name": "cURL",
+      "name": "newsbeuter RSS Aggregator",
       "modus": null,
-      "version": "7.22.0",
-      "manufacturer": "unknown",
+      "version": "2.4.0",
+      "manufacturer": "andreas krennmair",
       "bits": null,
-      "type": "bot"
+      "type": "feed-reader"
     },
     "os": {
       "name": "Linux",
@@ -222,9 +222,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "apple"
     }
   },
   {
@@ -245,10 +245,10 @@
       "type": "desktop"
     },
     "browser": {
-      "name": "Mozilla",
+      "name": "Songbird App",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "1.12.1",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -587,7 +587,7 @@
       "type": "desktop"
     },
     "browser": {
-      "name": "iBrowser",
+      "name": "AltiBrowser",
       "modus": null,
       "version": "3.0.4",
       "manufacturer": "unknown",
@@ -1081,9 +1081,9 @@
       "type": "desktop"
     },
     "browser": {
-      "name": "PHP",
+      "name": "PEAR HTTP_Request2",
       "modus": null,
-      "version": "5.3.10.1",
+      "version": "2.1.1",
       "manufacturer": "php-group",
       "bits": null,
       "type": "bot"

@@ -107,6 +107,10 @@ final class AndroidOsTest extends TestCase
                 'Booking.com Android App 16.0.0.5723278 (OS: 8.1.0; Type: tablet; AppStore: google; Brand: samsung; Model: SM-T590;)',
                 '8.1.0',
             ],
+            [
+                'Mozilla/5.0 (Android M; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0',
+                '6.0.0',
+            ],
         ];
     }
 

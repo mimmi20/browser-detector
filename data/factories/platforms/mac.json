@@ -1,6 +1,7 @@
 {
   "rules": {
     "/mac os x|os\\=mac 10/i": "mac os x",
+    "/morphos/i": "morph-os",
     "/mac_powerpc|ppc|68k/i": "macintosh"
   },
   "generic": "mac os x"

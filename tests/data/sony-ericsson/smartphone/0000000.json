@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; ST25i Build/6.1.1.B.1.10;compatible iPhone) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
+    },
+    "device": {
+      "deviceName": "ST25i",
+      "marketingName": "Xperia U",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "18.0.1025.166",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android; es_mx; WT19a Build/) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 NetFrontLifeBrowser/2.3 Mobile (Dragonfruit)"
     },
     "device": {
@@ -126,7 +164,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.3
       },
       "type": "smartphone"
     },
@@ -202,7 +240,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -924,7 +962,7 @@
         "width": 480,
         "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -1038,7 +1076,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.3
       },
       "type": "smartphone"
     },
@@ -1076,7 +1114,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.3
       },
       "type": "smartphone"
     },
@@ -1114,7 +1152,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -1152,7 +1190,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -1190,7 +1228,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -1221,14 +1259,14 @@
     },
     "device": {
       "deviceName": "U20iv",
-      "marketingName": "Xperia X10 Mini pro",
+      "marketingName": "Xperia X10 Mini Pro",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
       "display": {
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": 2.5
+        "size": 2.55
       },
       "type": "smartphone"
     },
@@ -1259,14 +1297,14 @@
     },
     "device": {
       "deviceName": "U20i",
-      "marketingName": "Xperia X10 Mini pro",
+      "marketingName": "Xperia X10 Mini Pro",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
       "display": {
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": 2.5
+        "size": 2.55
       },
       "type": "smartphone"
     },
@@ -1570,7 +1608,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -1684,7 +1722,7 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.55
       },
       "type": "smartphone"
     },
@@ -1722,7 +1760,7 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.55
       },
       "type": "smartphone"
     },
@@ -1988,7 +2026,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -2019,14 +2057,14 @@
     },
     "device": {
       "deviceName": "U20a",
-      "marketingName": "Xperia X10 Mini pro",
+      "marketingName": "Xperia X10 Mini Pro",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
       "display": {
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.55
       },
       "type": "smartphone"
     },
@@ -2064,7 +2102,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -2140,7 +2178,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -2368,7 +2406,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -2444,7 +2482,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -2824,7 +2862,7 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.55
       },
       "type": "smartphone"
     },
@@ -2862,7 +2900,7 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.55
       },
       "type": "smartphone"
     },
@@ -3425,14 +3463,14 @@
     },
     "device": {
       "deviceName": "U20i",
-      "marketingName": "Xperia X10 Mini pro",
+      "marketingName": "Xperia X10 Mini Pro",
       "manufacturer": "sony-ericsson",
       "brand": "sony-ericsson",
       "display": {
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": 2.5
+        "size": 2.55
       },
       "type": "smartphone"
     },
@@ -3752,44 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; fr-fr; SonyEricssonSO-01C Build/4.0.1.C.1.21) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "SO-01C",
-      "marketingName": "Xperia Arc",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.4",
       "manufacturer": "google",
       "bits": null
     },

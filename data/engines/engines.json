@@ -94,6 +94,16 @@
       ]
     }
   },
+  "servo": {
+    "name": "Servo",
+    "manufacturer": "mozilla-foundation",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Servo"
+      ]
+    }
+  },
   "t5": {
     "name": "T5",
     "manufacturer": "baidu",
@@ -128,6 +138,16 @@
     "version": {
       "class": null,
       "search": null
+    }
+  },
+  "treco": {
+    "name": "Treco",
+    "manufacturer": "arsslensoft",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "rv:"
+      ]
     }
   },
   "trident": {

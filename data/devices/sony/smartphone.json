@@ -134,7 +134,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -148,7 +148,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -442,7 +442,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -456,7 +456,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -708,7 +708,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -722,7 +722,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -848,21 +848,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "sony e5563": {
-    "deviceName": "E5563",
-    "marketingName": "Xperia C5 Ultra Dual",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -876,7 +862,21 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony e5563": {
+    "deviceName": "E5563",
+    "marketingName": "Xperia C5 Ultra Dual SIM",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -909,72 +909,30 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sony e2003": {
-    "deviceName": "E2003",
-    "marketingName": "Xperia E",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "sony e2006": {
-    "deviceName": "E2006",
-    "marketingName": "Xperia E",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "sony e2053": {
-    "deviceName": "E2053",
-    "marketingName": "Xperia E",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "sony c1604": {
     "deviceName": "C1604",
-    "marketingName": "Xperia E dual",
+    "marketingName": "Xperia E Dual",
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
   },
   "sony c1605": {
     "deviceName": "C1605",
-    "marketingName": "Xperia E dual",
+    "marketingName": "Xperia E Dual",
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1128,7 +1086,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1142,7 +1100,21 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony e2114": {
+    "deviceName": "E2114",
+    "marketingName": "Xperia E4 Dual",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1156,7 +1128,49 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony e2003": {
+    "deviceName": "E2003",
+    "marketingName": "Xperia E4g",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony e2006": {
+    "deviceName": "E2006",
+    "marketingName": "Xperia E4g",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony e2053": {
+    "deviceName": "E2053",
+    "marketingName": "Xperia E4g",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1170,7 +1184,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1184,7 +1198,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1212,7 +1226,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1226,7 +1240,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2052,7 +2066,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2178,7 +2192,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -2192,7 +2206,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -2402,7 +2416,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -2416,7 +2430,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -2430,7 +2444,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -2444,7 +2458,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -2458,7 +2472,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -2514,7 +2528,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -2528,7 +2542,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -2542,7 +2556,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -2556,7 +2570,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -2570,7 +2584,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -2640,7 +2654,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2850,7 +2864,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -2864,7 +2878,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -2878,7 +2892,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -2892,7 +2906,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -2906,7 +2920,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -2920,7 +2934,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.55
     },
     "type": "smartphone",
     "platform": "android"
@@ -2934,7 +2948,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.55
     },
     "type": "smartphone",
     "platform": "android"
@@ -2948,49 +2962,49 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.55
     },
     "type": "smartphone",
     "platform": "android"
   },
   "sonyericsson u20a": {
     "deviceName": "U20a",
-    "marketingName": "Xperia X10 Mini pro",
+    "marketingName": "Xperia X10 Mini Pro",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
     "display": {
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.55
     },
     "type": "smartphone",
     "platform": null
   },
   "sonyericsson u20i": {
     "deviceName": "U20i",
-    "marketingName": "Xperia X10 Mini pro",
+    "marketingName": "Xperia X10 Mini Pro",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
     "display": {
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": 2.5
+      "size": 2.55
     },
     "type": "smartphone",
     "platform": null
   },
   "sonyericsson u20iv": {
     "deviceName": "U20iv",
-    "marketingName": "Xperia X10 Mini pro",
+    "marketingName": "Xperia X10 Mini Pro",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
     "display": {
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": 2.5
+      "size": 2.55
     },
     "type": "smartphone",
     "platform": null
@@ -3788,7 +3802,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3802,7 +3816,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3816,7 +3830,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3830,7 +3844,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3844,7 +3858,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3914,7 +3928,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"
@@ -3928,7 +3942,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"
@@ -3942,7 +3956,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"
@@ -4110,7 +4124,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -4124,7 +4138,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4432,7 +4446,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -4446,7 +4460,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -4516,7 +4530,7 @@
       "width": 3840,
       "height": 2160,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4530,7 +4544,7 @@
       "width": 3840,
       "height": 2160,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4544,7 +4558,7 @@
       "width": 3840,
       "height": 2160,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4558,7 +4572,7 @@
       "width": 3840,
       "height": 2160,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4572,7 +4586,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"

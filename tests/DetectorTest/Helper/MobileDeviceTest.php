@@ -41,7 +41,10 @@ final class MobileDeviceTest extends TestCase
      */
     public function testIsMobile(string $agent): void
     {
-        static::assertTrue($this->object->isMobile($agent));
+        static::assertTrue(
+            $this->object->isMobile($agent),
+            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
+        );
     }
 
     /**
@@ -134,6 +137,10 @@ final class MobileDeviceTest extends TestCase
             ['dv(iPh4,1);pr(UCBrowser/10.2.0.517);ov(7_1_2);ss(320x416);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);'],
             ['pf(44);la(zh-CN);dv(iPd5,1);pr(UCBrowser);ov(7_0_2);pi(640x1136);ss(320x416);er(U);bt(UM);up();re(AppleWebKit/537.51.1 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(2);'],
             ['pf(Linux);la(en-US);re(U2/1.0.0);dv(TECNO_S3);pr(UCBrowser/8.8.1.359);ov(4.2.2);pi(320*480);ss(320*480);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);'],
+            ['iBrowser/Mini2.5 (LG-T375)'],
+            ['Mozilla/5.0 (SonyEricssonU5i)UC AppleWebkit(like Gecko) Safari/530'],
+            ['Mozilla/5.0 (COS 998;COS 998; COS 998 Build/12345) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19'],
+            ['Cricket-A415/1.0 Polaris/v6.17'],
         ];
     }
 
@@ -149,7 +156,10 @@ final class MobileDeviceTest extends TestCase
      */
     public function testIsNotMobile(string $agent): void
     {
-        static::assertFalse($this->object->isMobile($agent));
+        static::assertFalse(
+            $this->object->isMobile($agent),
+            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
+        );
     }
 
     /**
@@ -206,6 +216,7 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SS.CC. Palma)'],
             ['Mozilla/5.0 (Windows NT 10.0.17134.590; osmeta 10.3.31799) AppleWebKit/602.1.1 (KHTML, like Gecko) Version/9.0 Safari/602.1.1 osmeta/10.3.31799 Build/31799 [FBAN/FBW;FBMD/80QB;FBSN/Windows;FBSV/10.0.17134.706;FBSS/1;FBCR/;FBID/desktop;FBLC/de_DE;FBOP/45]'],
+            ['Mozilla/3.01-C-MACOS8 (Macintosh; I; PPC)'],
         ];
     }
 }

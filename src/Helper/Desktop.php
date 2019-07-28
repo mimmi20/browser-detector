@@ -41,7 +41,7 @@ final class Desktop implements DesktopInterface
             return true;
         }
 
-        if (0 < preg_match('/freebsd|openbsd|netbsd|bsd four|os\/2|warp|sunos|hp-?ux|beos|irix|solaris|openvms|aix|esx|unix|w3m|google desktop|eeepc|dillo|konqueror|eudora|masking-agent|safersurf|integrity|davclnt|cybeye|google pp default|microsoft office|nsplayer|ms ?frontpage|revolt|akregator|installatron|lynx|camino|osf1|barca|the bat!|libvlc|openvas|gvfs/i', $useragent)) {
+        if (0 < preg_match('/freebsd|openbsd|netbsd|bsd four|os\/2|warp|sunos|hp-?ux|beos|haiku|irix|solaris|openvms|aix|esx|unix|w3m|google desktop|eeepc|dillo|konqueror|eudora|masking-agent|safersurf|integrity|davclnt|cybeye|google pp default|microsoft office|nsplayer|ms ?frontpage|revolt|akregator|installatron|lynx|camino|osf1|barca|the bat!|libvlc|openvas|gvfs/i', $useragent)) {
             return true;
         }
 

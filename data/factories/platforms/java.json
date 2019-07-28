@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/mtk;|nucleus/i": "nucleus os",
+    "/mtk[; 0-9]|nucleus/i": "nucleus os",
     "/mre|maui runtime/i": "mre",
     "/threadx/i": "threadx"
   },

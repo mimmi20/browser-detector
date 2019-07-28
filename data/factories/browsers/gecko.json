@@ -31,7 +31,7 @@
     "/tweetmemebot/i": "tweetmeme bot",
     "/butterfly/i": "butterfly robot",
     "/james bot/i": "jamesbot",
-    "/msie or firefox mutant; not on Windows server/i": "daumoa",
+    "/daumoa|msie or firefox mutant/i": "daumoa",
     "/sailfishbrowser/i": "sailfish browser",
     "/kazehakase/i": "kazehakase",
     "/cometbird/i": "cometbird",
@@ -83,6 +83,8 @@
     "/beonex/i": "beonex communicator",
     "/chimera/i": "chimera",
     "/conkeror/i": "conkeror",
+    "/songbird/i": "songbird",
+    "/fireweb navigator/i": "fireweb navigator",
     "/mozilla/i": "mozilla"
   },
   "generic": "firefox"

@@ -41,7 +41,10 @@ final class DesktopTest extends TestCase
      */
     public function testIsDesktop(string $agent): void
     {
-        static::assertTrue($this->object->isDesktopDevice($agent));
+        static::assertTrue(
+            $this->object->isDesktopDevice($agent),
+            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
+        );
     }
 
     /**
@@ -97,6 +100,7 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (X11; Windows aarch64 10718.88.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.118 Safari/537.36 CitrixChromeApp'],
             ['Mozilla/5.0 (X11; CrOS aarch64 11021.19.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.22 Safari/537.36'],
             ['Mozilla/5.0 (BeOS; U; BeOS BePC; en-US; rv:1.9a1) Gecko/20051002 Firefox/52.4.0'],
+            ['Mozilla/5.0 (compatible; U; Webpositive/533.4; Haiku) AppleWebkit/533.4 (KHTML, like gecko) Chrome/5.0.375.55 Safari/533.4'],
         ];
     }
 
@@ -112,7 +116,10 @@ final class DesktopTest extends TestCase
      */
     public function testIsNoDesktop(string $agent): void
     {
-        static::assertFalse($this->object->isDesktopDevice($agent));
+        static::assertFalse(
+            $this->object->isDesktopDevice($agent),
+            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
+        );
     }
 
     /**
