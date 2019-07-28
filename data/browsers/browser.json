@@ -176,6 +176,30 @@
     },
     "engine": "blink"
   },
+  "altibrowser": {
+    "name": "AltiBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AltiBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "amigavoyager": {
+    "name": "AmigaVoyager",
+    "manufacturer": "vaporware",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AmigaVoyager"
+      ]
+    },
+    "engine": "webkit"
+  },
   "amigo": {
     "name": "Amigo",
     "manufacturer": "unknown",
@@ -1165,7 +1189,7 @@
         "rv:"
       ]
     },
-    "engine": "gecko"
+    "engine": null
   },
   "firefox klar": {
     "name": "Firefox Focus",
@@ -1191,6 +1215,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "fireweb navigator": {
+    "name": "Fireweb Navigator",
+    "manufacturer": "arsslensoft",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Fireweb Navigator"
+      ]
+    },
+    "engine": "treco"
   },
   "flock": {
     "name": "Flock",
@@ -2418,7 +2454,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Ninesky\\-android\\-mobile"
+        "Ninesky\\-android\\-mobile",
+        "Ninesky"
       ]
     },
     "engine": "webkit"
@@ -3344,7 +3381,7 @@
     "engine": "blink"
   },
   "songbird": {
-    "name": "Songbird",
+    "name": "Songbird App",
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
@@ -3772,6 +3809,16 @@
       ]
     },
     "engine": "gecko"
+  },
+  "webpositive": {
+    "name": "Webpositive",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
   },
   "webtv/msntv": {
     "name": "WebTV/MSNTV",

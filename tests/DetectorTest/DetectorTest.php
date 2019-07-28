@@ -135,7 +135,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -269,7 +269,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -648,7 +648,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -782,7 +782,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -920,7 +920,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1056,7 +1056,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1191,7 +1191,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1339,7 +1339,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1483,7 +1483,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1636,7 +1636,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1784,7 +1784,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1932,7 +1932,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -2084,7 +2084,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(2))
+            ->expects(static::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -2235,7 +2235,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(static::exactly(4))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -2384,7 +2384,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(static::exactly(4))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);

@@ -650,8 +650,8 @@
       "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.0## MI PAD 3 MIUI/V8.2.8.0.0.NCICNEB)"
     },
     "device": {
-      "deviceName": "Mi Pad",
-      "marketingName": "Mi Pad",
+      "deviceName": "Mi Pad 3",
+      "marketingName": "Mi Pad 3",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
@@ -675,6 +675,44 @@
       "marketingName": "Miui OS",
       "version": "8.2.8.0.0",
       "manufacturer": "xiaomi",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0.1; Xiaomi MI Pad 3 Build/KC0J6G"
+    },
+    "device": {
+      "deviceName": "Mi Pad 3",
+      "marketingName": "Mi Pad 3",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {

@@ -294,6 +294,15 @@
       "search": null
     }
   },
+  "haiku": {
+    "name": "Haiku",
+    "marketingName": "Haiku",
+    "manufacturer": "haiku",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
   "hp-ux": {
     "name": "HP-UX",
     "marketingName": "HP-UX",
@@ -480,6 +489,15 @@
   "moblin": {
     "name": "Moblin",
     "marketingName": "Moblin",
+    "manufacturer": "unknown",
+    "version": {
+      "class": null,
+      "search": null
+    }
+  },
+  "morph-os": {
+    "name": "MorphOS",
+    "marketingName": "MorphOS",
     "manufacturer": "unknown",
     "version": {
       "class": null,
@@ -1192,6 +1210,56 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\WindowsPhoneOsFactory",
       "search": null
+    }
+  },
+  "windows phone 10.0": {
+    "name": "Windows Phone OS 10.0",
+    "marketingName": "Windows Phone OS 10.0",
+    "manufacturer": "microsoft",
+    "version": {
+      "factory": null,
+      "search": null,
+      "value": 10
+    }
+  },
+  "windows phone 6.5": {
+    "name": "Windows Phone OS 6.5",
+    "marketingName": "Windows Phone OS 6.5",
+    "manufacturer": "microsoft",
+    "version": {
+      "factory": null,
+      "search": null,
+      "value": 6.5
+    }
+  },
+  "windows phone 7.5": {
+    "name": "Windows Phone OS 7.5",
+    "marketingName": "Windows Phone OS 7.5",
+    "manufacturer": "microsoft",
+    "version": {
+      "factory": null,
+      "search": null,
+      "value": 7.5
+    }
+  },
+  "windows phone 8.0": {
+    "name": "Windows Phone OS 8.0",
+    "marketingName": "Windows Phone OS 8.0",
+    "manufacturer": "microsoft",
+    "version": {
+      "factory": null,
+      "search": null,
+      "value": 8
+    }
+  },
+  "windows phone 8.1": {
+    "name": "Windows Phone OS 8.1",
+    "marketingName": "Windows Phone OS 8.1",
+    "manufacturer": "microsoft",
+    "version": {
+      "factory": null,
+      "search": null,
+      "value": 8.1
     }
   },
   "windows nt 6.2; arm": {

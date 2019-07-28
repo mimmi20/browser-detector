@@ -67,6 +67,10 @@ final class AndroidOs implements VersionDetectorInterface
             return $this->versionFactory->set('2.1.1');
         }
 
+        if (false !== mb_stripos($useragent, 'android m;')) {
+            return $this->versionFactory->set('6.0');
+        }
+
         try {
             $detectedVersion = $this->versionFactory->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {

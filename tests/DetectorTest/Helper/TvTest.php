@@ -41,7 +41,10 @@ final class TvTest extends TestCase
      */
     public function testIsTv(string $agent): void
     {
-        static::assertTrue($this->object->isTvDevice($agent));
+        static::assertTrue(
+            $this->object->isTvDevice($agent),
+            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
+        );
     }
 
     /**
@@ -86,7 +89,10 @@ final class TvTest extends TestCase
      */
     public function testIsNotTv(string $agent): void
     {
-        static::assertFalse($this->object->isTvDevice($agent));
+        static::assertFalse(
+            $this->object->isTvDevice($agent),
+            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
+        );
     }
 
     /**
@@ -119,6 +125,7 @@ final class TvTest extends TestCase
             ['Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.1) Gecko/20090725 Moblin/3.5.1-2.5.14.moblin2 Shiretoko/3.5.1'],
             ['QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)'],
             ['WAP Browser-Karbonn K84/1.0.0'],
+            ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/61.0.3163.128 Safari/534.24 XiaoMi/MiuiBrowser/9.4.1-Beta'],
         ];
     }
 }

@@ -454,5 +454,43 @@
       "version": null,
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N905i(c100;TB;W24H16;ser28028f0a26884cc;icc123428028f0a26884cc1)"
+    },
+    "device": {
+      "deviceName": "N905i",
+      "marketingName": "N905i",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

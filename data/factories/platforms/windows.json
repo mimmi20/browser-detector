@@ -1,6 +1,5 @@
 {
   "rules": {
-    "/cygwin/i": "cygwin",
     "/windows iot 10|windows nt 10|windows 10/i": "windows nt 10.0",
     "/windows nt 6\\.4|windows 6\\.4/i": "windows nt 6.4",
     "/windows nt 6\\.3; arm/i": "windows nt 6.3; arm",
@@ -13,9 +12,9 @@
     "/windows nt 5\\.3|windows 5\\.3/i": "windows nt 5.3",
     "/windows nt 5\\.2|windows 5\\.2/i": "windows nt 5.2",
     "/win9x\\/nt 4\\.90|win 9x ?4\\.90|windows me/i": "windows me",
-    "/windows nt 5\\.1|windows 5\\.1|windows xp/i": "windows nt 5.1",
+    "/windows nt 5\\.1|windows 5\\.1|windows xp|cygwin_nt-5\\.1/i": "windows nt 5.1",
     "/windows nt 5\\.01|windows 5\\.01/i": "windows nt 5.01",
-    "/windows nt ?5\\.0|windows 5\\.0|windows 2000/i": "windows nt 5.0",
+    "/windows nt ?5\\.0|windows 5\\.0|windows 2000|cygwin_nt-5\\.0/i": "windows nt 5.0",
     "/win98|windows 98/i": "windows 98",
     "/win95|windows 95/i": "windows 95",
     "/windows nt 4\\.10|windows 4\\.10/i": "windows nt 4.10",
@@ -26,7 +25,8 @@
     "/windows nt 3\\.1/i": "windows nt 3.1",
     "/windows nt|winnt/i": "windows nt",
     "/windows 3\\.11/i": "windows 3.11",
-    "/win16|windows 3\\.1/i": "windows 3.1"
+    "/win16|windows 3\\.1/i": "windows 3.1",
+    "/cygwin/i": "cygwin"
   },
   "generic": "windows"
 }

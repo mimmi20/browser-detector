@@ -23,6 +23,18 @@
     },
     "engine": "webkit"
   },
+  "liferea": {
+    "name": "Liferea",
+    "manufacturer": "lars windolf",
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Liferea"
+      ]
+    },
+    "engine": "webkit"
+  },
   "livedoor news": {
     "name": "livedoor news",
     "manufacturer": "line",
@@ -46,6 +58,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "newsbeuter": {
+    "name": "newsbeuter RSS Aggregator",
+    "manufacturer": "andreas krennmair",
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "newsbeuter"
+      ]
+    },
+    "engine": "webkit"
   },
   "newsblur feed fetcher": {
     "name": "NewsBlur Feed Fetcher",

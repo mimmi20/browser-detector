@@ -1043,12 +1043,12 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "Voyager Bot",
+      "name": "AmigaVoyager",
       "modus": null,
       "version": "3.2.0",
-      "manufacturer": "cosmix",
+      "manufacturer": "vaporware",
       "bits": null,
-      "type": "bot"
+      "type": "browser"
     },
     "os": {
       "name": "Amiga OS",
@@ -1058,9 +1058,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "apple"
     }
   },
   {
@@ -1217,44 +1217,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; U; Webpositive/533.4; Haiku) AppleWebkit/533.4 (KHTML, like gecko) Chrome/5.0.375.55 Safari/533.4"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "5.0.375.55",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.4.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Wget/1.11.4 Red Hat modified"
     },
     "device": {
@@ -1271,12 +1233,12 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "redbot",
+      "name": "wget",
       "modus": null,
-      "version": null,
-      "manufacturer": "redbot",
+      "version": "1.11.4",
+      "manufacturer": "free-software-foundation",
       "bits": null,
-      "type": "bot"
+      "type": "offline-browser"
     },
     "os": {
       "name": "Redhat Linux",
@@ -1423,12 +1385,12 @@
       "type": "unknown"
     },
     "browser": {
-      "name": "iTunes",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -1438,9 +1400,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": null,
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "unknown"
     }
   },
   {
@@ -3797,6 +3759,44 @@
       "name": "Presto",
       "version": null,
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; DeuSu/5.0.2; +https://deusu.de/robot.html)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Werbefreie Deutsche Suchmaschine",
+      "modus": null,
+      "version": "5.0.2",
+      "manufacturer": "michael-schoebel",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]
