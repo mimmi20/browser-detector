@@ -924,7 +924,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 10.5
       },
       "type": "fone-pad"
     },
@@ -962,7 +962,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 10.5
       },
       "type": "fone-pad"
     },
@@ -1038,7 +1038,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 10.5
       },
       "type": "fone-pad"
     },
@@ -1586,6 +1586,120 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-T387V) AppleWebKit 537.36 (KHTML, like Gecko) SamsungBrowser/8.0 Chrome/74.0.3729.157 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T387V",
+      "marketingName": "Galaxy Tab A 8.0 (2018, Verizon)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-T387W) AppleWebKit 537.36 (KHTML, like Gecko) SamsungBrowser/8.0 Chrome/74.0.3729.157 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T387W",
+      "marketingName": "Galaxy Tab A 8.0 (2018, Canada)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SAMSUNG SM-T837V Build/M1AJQ) AppleWebKit 537.36 (KHTML, like Gecko) SamsungBrowser/9.2 Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T837V",
+      "marketingName": "Galaxy Tab S4 (10.5, Verizon)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
     },
