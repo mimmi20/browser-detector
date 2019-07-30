@@ -1021,6 +1021,34 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-t387w": {
+    "deviceName": "SM-T387W",
+    "marketingName": "Galaxy Tab A 8.0 (2018, Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t387v": {
+    "deviceName": "SM-T387V",
+    "marketingName": "Galaxy Tab A 8.0 (2018, Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-t355": {
     "deviceName": "SM-T355",
     "marketingName": "Galaxy Tab A 8.0 3G",
@@ -1576,7 +1604,21 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "size": null
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t837v": {
+    "deviceName": "SM-T837V",
+    "marketingName": "Galaxy Tab S4 (10.5, Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
     },
     "type": "fone-pad",
     "platform": "android"
