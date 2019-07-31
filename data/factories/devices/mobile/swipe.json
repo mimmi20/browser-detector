@@ -1,7 +1,9 @@
 {
   "rules": {
-    "/konnect 5\\.1/i": "swipe konnect 5.1",
-    "/elitedual/i": "swipe elite dual"
+    "/elite[ _]?note/i": "swipe elite note",
+    "/elite[ _]?dual/i": "swipe elite dual",
+    "/konnect[ _]star/i": "swipe konnect star",
+    "/konnect[ _]5\\.1/i": "swipe konnect 5.1"
   },
   "generic": "general swipe device"
 }
