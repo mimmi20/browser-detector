@@ -1,10 +1,11 @@
 {
   "rules": {
-    "/yu5530/i": "yu yu5530",
-    "/ao5510|yu5510/i": "yu yu5510",
-    "/yu5011/i": "yu yu5011",
-    "/yu5010/i": "yu yu5010",
-    "/yu4711/i": "yu yu4711"
+    "/yu ?6000/i": "yu yu6000",
+    "/yu ?5530/i": "yu yu5530",
+    "/ao ?5510|yu ?5510/i": "yu yu5510",
+    "/yu ?5011/i": "yu yu5011",
+    "/yu ?5010/i": "yu yu5010",
+    "/yu ?4711/i": "yu yu4711"
   },
   "generic": "general yu device"
 }

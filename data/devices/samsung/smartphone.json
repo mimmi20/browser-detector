@@ -4215,7 +4215,7 @@
   },
   "samsung sm-j105b": {
     "deviceName": "SM-J105B",
-    "marketingName": "Galaxy J1 Mini",
+    "marketingName": "Galaxy J1 Mini (2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -4229,7 +4229,21 @@
   },
   "samsung sm-j105f": {
     "deviceName": "SM-J105F",
-    "marketingName": "Galaxy J1 Mini",
+    "marketingName": "Galaxy J1 Mini (2016)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-j105y": {
+    "deviceName": "SM-J105Y",
+    "marketingName": "Galaxy J1 Mini (2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -11395,6 +11409,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-s906l": {
+    "deviceName": "SM-S906L",
+    "marketingName": "Galaxy S6 (Tracfone)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-g920v": {
     "deviceName": "SM-G920V",
     "marketingName": "Galaxy S6 (Verizon)",
@@ -12833,6 +12861,20 @@
       "height": 320,
       "touch": true,
       "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-s320vl": {
+    "deviceName": "SM-S320VL",
+    "marketingName": "Galaxy Sky (Tracfone)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
