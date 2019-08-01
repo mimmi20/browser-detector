@@ -1,7 +1,7 @@
 {
   "rules": {
     "/omega[ _]5\\.5/i": "xolo omega 5.5",
-    "/omega 5\\.0/i": "xolo omega 5.0",
+    "/omega[ _]5\\.0/i": "xolo omega 5.0",
     "/x1000/i": "xolo x1000",
     "/q2000/i": "xolo q2000",
     "/q1010i/i": "xolo q1010i",
@@ -14,10 +14,13 @@
     "/q600/i": "xolo q600",
     "/win q1000/i": "xolo win q1000",
     "/one/i": "xolo one",
-    "/era 2x/i": "xolo era 2x",
-    "/era 2/i": "xolo era 2",
+    "/era[ _]?x/i": "xolo era x",
+    "/era[ _]?3x/i": "xolo era 3x",
+    "/era[ _]?2x/i": "xolo era 2x",
+    "/era[ _]?2/i": "xolo era 2",
     "/a1000s/i": "xolo a1000s",
     "/a600/i": "xolo a600",
+    "/a550s[ _]ips/i": "xolo a550s ips",
     "/a500s/i": "xolo a500s"
   },
   "generic": "general xolo device"
