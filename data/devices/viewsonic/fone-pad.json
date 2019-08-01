@@ -1,18 +1,4 @@
 {
-  "viewsonic viewpad 7q": {
-    "deviceName": "ViewPad 7Q",
-    "marketingName": "ViewPad 7Q",
-    "manufacturer": "viewsonic",
-    "brand": "viewsonic",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "viewsonic viewpad 7": {
     "deviceName": "ViewPad 7",
     "marketingName": "ViewPad 7",
@@ -21,6 +7,20 @@
     "display": {
       "width": 800,
       "height": 400,
+      "touch": true,
+      "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "viewsonic viewpad 7q": {
+    "deviceName": "ViewPad 7Q",
+    "marketingName": "ViewPad 7Q",
+    "manufacturer": "viewsonic",
+    "brand": "viewsonic",
+    "display": {
+      "width": 1280,
+      "height": 800,
       "touch": true,
       "size": null
     },
