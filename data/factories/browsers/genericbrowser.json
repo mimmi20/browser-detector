@@ -256,7 +256,7 @@
     "/curl/i": "curl",
     "/htdig/i": "ht://dig",
     "/redditbot/i": "reddit bot",
-    "/(?<!u|wi)red(?![\\.\\)]| hat)/i": "redbot",
+    "/(?<!u|wi)red(?![\\.\\)]| hat|mi)/i": "redbot",
     "/dbot/i": "dbot",
     "/pwbot/i": "pwbot",
     "/\\+5bot/i": "plus5bot",
