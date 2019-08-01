@@ -13,9 +13,9 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "viewsonic viewpad7": {
-    "deviceName": "ViewPad7",
-    "marketingName": "ViewPad7",
+  "viewsonic viewpad 7": {
+    "deviceName": "ViewPad 7",
+    "marketingName": "ViewPad 7",
     "manufacturer": "viewsonic",
     "brand": "viewsonic",
     "display": {
@@ -23,6 +23,20 @@
       "height": 400,
       "touch": true,
       "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "viewsonic viewpad 7x": {
+    "deviceName": "ViewPad 7x",
+    "marketingName": "ViewPad 7x",
+    "manufacturer": "viewsonic",
+    "brand": "viewsonic",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
     },
     "type": "fone-pad",
     "platform": "android"
