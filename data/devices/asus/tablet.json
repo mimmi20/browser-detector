@@ -15,14 +15,14 @@
   },
   "asus sl101": {
     "deviceName": "SL101",
-    "marketingName": "Eee Pad SL101 Slider",
+    "marketingName": "Eee Pad Slider",
     "manufacturer": "asus",
     "brand": "asus",
     "display": {
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -50,7 +50,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -64,7 +64,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -92,7 +92,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -106,7 +106,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 14.2
     },
     "type": "tablet",
     "platform": "android"
@@ -120,7 +120,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -134,7 +134,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -162,7 +162,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -176,7 +176,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -190,7 +190,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": 7.1
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -204,7 +204,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -218,7 +218,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": null
@@ -260,7 +260,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -274,7 +274,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": null
@@ -288,7 +288,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -309,14 +309,14 @@
   },
   "asus p1801-t": {
     "deviceName": "P1801-T",
-    "marketingName": "Tablet AiO",
+    "marketingName": "Portable AiO",
     "manufacturer": "asus",
     "brand": "asus",
     "display": {
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 18.4
     },
     "type": "tablet",
     "platform": "android"
@@ -330,10 +330,38 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 11.6
     },
     "type": "tablet",
     "platform": null
+  },
+  "asus tf300tg": {
+    "deviceName": "TF300TG",
+    "marketingName": "Transformer Pad 300 3G",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "asus tf300tl": {
+    "deviceName": "TF300TL",
+    "marketingName": "Transformer Pad 300 4G LTE",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
   },
   "asus k010": {
     "deviceName": "K010",
@@ -358,49 +386,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "asus tf300tg": {
-    "deviceName": "TF300TG",
-    "marketingName": "Transformer Pad TF300TG",
-    "manufacturer": "asus",
-    "brand": "asus",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "asus tf300tl": {
-    "deviceName": "TF300TL",
-    "marketingName": "Transformer Pad TF300TL",
-    "manufacturer": "asus",
-    "brand": "asus",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "asus tf700t": {
-    "deviceName": "TF700T",
-    "marketingName": "Transformer Pad TF700T",
-    "manufacturer": "asus",
-    "brand": "asus",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -414,13 +400,13 @@
       "width": 2560,
       "height": 1600,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
   },
   "asus eee pad tf201": {
-    "deviceName": "Eee Pad TF201",
+    "deviceName": "TF201",
     "marketingName": "Transformer Prime",
     "manufacturer": "asus",
     "brand": "asus",
@@ -428,7 +414,21 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "asus tf700t": {
+    "deviceName": "TF700T",
+    "marketingName": "Transformer Prime",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -442,7 +442,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -456,7 +456,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -470,7 +470,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": null
@@ -484,7 +484,7 @@
       "width": 2048,
       "height": 1536,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -512,7 +512,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -526,7 +526,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": null

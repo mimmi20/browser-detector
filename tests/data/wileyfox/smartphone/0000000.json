@@ -726,15 +726,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Swift 2 X Build/N2G48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Swift 2",
-      "marketingName": "Swift 2",
+      "deviceName": "Swift 2 X",
+      "marketingName": "Swift 2 X",
       "manufacturer": "wileyfox",
       "brand": "wileyfox",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -864,6 +864,310 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Wileyfox Spark + Build/NBD92G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.73 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Spark +",
+      "marketingName": "Spark +",
+      "manufacturer": "wileyfox",
+      "brand": "wileyfox",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.73",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Swift 2 Build/N2G48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [Pinterest/Android]"
+    },
+    "device": {
+      "deviceName": "Swift 2",
+      "marketingName": "Swift 2",
+      "manufacturer": "wileyfox",
+      "brand": "wileyfox",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Pinterest App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "pinterest",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Wileyfox Swift Build/N2G48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Swift",
+      "marketingName": "Swift",
+      "manufacturer": "wileyfox",
+      "brand": "wileyfox",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Wileyfox Storm Build/N2G48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Storm",
+      "marketingName": "Storm",
+      "manufacturer": "wileyfox",
+      "brand": "wileyfox",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "63.0.3239.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Wileyfox Storm Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Storm",
+      "marketingName": "Storm",
+      "manufacturer": "wileyfox",
+      "brand": "wileyfox",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Wileyfox Swift Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Swift",
+      "marketingName": "Swift",
+      "manufacturer": "wileyfox",
+      "brand": "wileyfox",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Wileyfox Swift Build/LMY48Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Swift",
+      "marketingName": "Swift",
+      "manufacturer": "wileyfox",
+      "brand": "wileyfox",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Wileyfox Swift Build/MMB29U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Swift",
+      "marketingName": "Swift",
+      "manufacturer": "wileyfox",
+      "brand": "wileyfox",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },

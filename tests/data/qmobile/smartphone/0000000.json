@@ -872,5 +872,81 @@
       "version": "1.0.0",
       "manufacturer": "ucweb"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; QMobile A300 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A300",
+      "marketingName": "Noir A300",
+      "manufacturer": "qmobile",
+      "brand": "qmobile",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; QMobile A300 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.7.5.658 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "A300",
+      "marketingName": "Noir A300",
+      "manufacturer": "qmobile",
+      "brand": "qmobile",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.5.658",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
   }
 ]

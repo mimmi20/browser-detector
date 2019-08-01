@@ -1366,5 +1366,43 @@
       "version": "1.6.0",
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64, x64; Touch) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 Edge/12.0 (Touch; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; HPNTDFJS; H9P; InfoPath"
+    },
+    "device": {
+      "deviceName": "PC",
+      "marketingName": "PC",
+      "manufacturer": "hp",
+      "brand": "hp",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Edge",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 6.3",
+      "marketingName": "Windows 8.1",
+      "version": "6.3.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "12.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]

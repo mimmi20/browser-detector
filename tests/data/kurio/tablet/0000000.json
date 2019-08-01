@@ -150,5 +150,43 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; C15100m Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "C15100M",
+      "marketingName": "Tab 2",
+      "manufacturer": "kurio",
+      "brand": "kurio",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -644,5 +644,43 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Z1 Build/LMY49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Z1",
+      "marketingName": "U9 Z1",
+      "manufacturer": "ninetology",
+      "brand": "ninetology",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]

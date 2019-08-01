@@ -293,20 +293,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "wiko highway pure": {
-    "deviceName": "Highway Pure",
-    "marketingName": "Highway Pure",
-    "manufacturer": "wiko",
-    "brand": "wiko",
-    "display": {
-      "width": 720,
-      "height": 1280,
-      "touch": true,
-      "size": 4.8
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "wiko highway 4g": {
     "deviceName": "Highway 4G",
     "marketingName": "Highway 4G",
@@ -317,6 +303,20 @@
       "height": 1080,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "wiko highway pure": {
+    "deviceName": "Highway Pure",
+    "marketingName": "Highway Pure",
+    "manufacturer": "wiko",
+    "brand": "wiko",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -909,34 +909,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "wiko wk600": {
-    "deviceName": "WK600",
-    "marketingName": "Tommy 3",
-    "manufacturer": "wiko",
-    "brand": "wiko",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "wiko w-v600": {
-    "deviceName": "W-V600",
-    "marketingName": "Tommy 3 Plus",
-    "manufacturer": "wiko",
-    "brand": "wiko",
-    "display": {
-      "width": 1440,
-      "height": 720,
-      "touch": true,
-      "size": 5.45
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "wiko tommy2": {
     "deviceName": "Tommy 2",
     "marketingName": "Tommy 2",
@@ -961,6 +933,34 @@
       "height": 720,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "wiko wk600": {
+    "deviceName": "WK600",
+    "marketingName": "Tommy 3",
+    "manufacturer": "wiko",
+    "brand": "wiko",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "wiko w-v600": {
+    "deviceName": "W-V600",
+    "marketingName": "Tommy 3 Plus",
+    "manufacturer": "wiko",
+    "brand": "wiko",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.45
     },
     "type": "smartphone",
     "platform": "android"

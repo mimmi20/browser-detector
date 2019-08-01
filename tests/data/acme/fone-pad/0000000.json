@@ -226,5 +226,43 @@
       "version": "537.36.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; TB1016 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TB1016",
+      "marketingName": "TB1016",
+      "manufacturer": "acme",
+      "brand": "acme",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]

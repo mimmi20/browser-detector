@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; NX406E Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "NX406E",
+      "marketingName": "Nubia Z5s mini",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; NX597J Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
     },
     "device": {
@@ -47,10 +85,10 @@
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1031,14 +1069,14 @@
     },
     "device": {
       "deviceName": "NX40X",
-      "marketingName": "Nubia Z5",
+      "marketingName": "Nubia Z5 Mini",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -2095,7 +2133,7 @@
     },
     "device": {
       "deviceName": "Z981",
-      "marketingName": "Zmax Pro",
+      "marketingName": "Blade Zmax Pro",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -3752,44 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Z851 Build/NMF26V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Z851",
-      "marketingName": "Prelude Plus",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "68.0.3440.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
       "manufacturer": "google",
       "bits": null
     },

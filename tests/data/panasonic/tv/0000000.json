@@ -2240,5 +2240,43 @@
       "version": "537.11.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; FreeBSD; U; Viera; en-IE) AppleWebKit/537.11 (KHTML, like Gecko) Viera/3.10.7 Chrome/23.0.1271.97 Safari/537.11"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Viera Browser",
+      "modus": null,
+      "version": "3.10.7",
+      "manufacturer": "panasonic",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": null,
+      "manufacturer": "free-bsd-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.11.0",
+      "manufacturer": "apple"
+    }
   }
 ]
