@@ -1,10 +1,11 @@
 {
   "rules": {
-    "/viewpad 10s/i": "viewsonic viewpad 10s",
-    "/viewpad 10e/i": "viewsonic viewpad 10e",
-    "/viewpad 7q/i": "viewsonic viewpad 7q",
-    "/viewpad7e/i": "viewsonic viewpad 7e",
-    "/viewpad-?7/i": "viewsonic viewpad7",
+    "/viewpad[- ]?10s/i": "viewsonic viewpad 10s",
+    "/viewpad[- ]?10e/i": "viewsonic viewpad 10e",
+    "/viewpad[- ]?7x/i": "viewsonic viewpad 7x",
+    "/viewpad[- ]?7q/i": "viewsonic viewpad 7q",
+    "/viewpad[- ]?7e/i": "viewsonic viewpad 7e",
+    "/viewpad[- ]?7/i": "viewsonic viewpad 7",
     "/v500/i": "viewsonic v500",
     "/viewsonic-v350/i": "viewsonic v350",
     "/viewphone3/i": "viewsonic viewphone3",
