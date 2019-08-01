@@ -223,6 +223,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "xiaomi mi 3c": {
+    "deviceName": "Mi 3C",
+    "marketingName": "Mi 3C",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "xiaomi leo w": {
     "deviceName": "LEO W",
     "marketingName": "Mi 3S",
@@ -246,7 +260,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -260,7 +274,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -989,20 +1003,6 @@
       "height": 720,
       "touch": true,
       "size": 5.45
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "xiaomi redmi note 7": {
-    "deviceName": "Redmi Note 7",
-    "marketingName": "Redmi Note 7",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "display": {
-      "width": 2340,
-      "height": 1080,
-      "touch": true,
-      "size": 6.3
     },
     "type": "smartphone",
     "platform": "android"
