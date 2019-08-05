@@ -4,7 +4,7 @@
     "/windows(?! aarch64)|win(10|9|8|7|vista|xp|2000|me|9x|98|95|nt|31|32|16)|barca|the bat!|cygwin/i": "windows",
     "/commoncrawler|msie or firefox mutant|not on windows server/i": "unknown",
     "/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i": "symbian",
-    "/maemo|tizen|like android|remix|bada|meego|sailfish|chinese operating system|cos;|android; cos/i": "maemo",
+    "/maemo|tizen|like android|remix|bada|meego|sailfish|chinese operating system|cos;|\\(cos [0-9]|android; cos/i": "maemo",
     "/bsd|dragonfly/i": "bsd",
     "/web[o0]s|hpwos/i": "webos",
     "/hp-?ux|irix|aix|unix|osf1|openvms/i": "unix",
