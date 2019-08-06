@@ -2585,18 +2585,6 @@
     },
     "engine": null
   },
-  "opera touch": {
-    "name": "Opera Touch",
-    "manufacturer": "opera",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "OPT"
-      ]
-    },
-    "engine": null
-  },
   "opera devices": {
     "name": "Opera Devices",
     "manufacturer": "opera",
@@ -2633,6 +2621,18 @@
       "class": "VersionFactory",
       "search": [
         "MMS"
+      ]
+    },
+    "engine": null
+  },
+  "opera touch": {
+    "name": "Opera Touch",
+    "manufacturer": "opera",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OPT"
       ]
     },
     "engine": null
