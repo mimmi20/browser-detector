@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_25_72) AppleWebKit/530.67.14 (KHTML, like Gecko) Chrome/55.1.5520.0258 Safari/532.06"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Dragon",
-      "modus": null,
-      "version": "55.1.5520.0258",
-      "manufacturer": "comodo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.25.72",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "530.67.14",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_24_71) AppleWebKit/531.65.12 (KHTML, like Gecko) Chrome/55.1.5381.0118 Safari/532.05 Edge/36.99308"
     },
     "device": {
@@ -179,7 +141,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -483,7 +445,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -635,7 +597,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.14.0",
+      "version": "10.14.5",
       "manufacturer": "apple",
       "bits": 64
     },
@@ -825,7 +787,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -871,44 +833,6 @@
       "name": "Edge",
       "version": "36.00381.0",
       "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "safarifetcherd/604.1 CFNetwork/978.0.7 Darwin/18.5.0"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Safari Fetcher Daemon",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
-      "version": "18.5.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "978.0.7",
-      "manufacturer": "apple"
     }
   },
   {
@@ -1065,44 +989,6 @@
   },
   {
     "headers": {
-      "user-agent": "MobileSafari/604.1 CFNetwork/978.0.7 Darwin/18.6.0"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
-      "version": "18.6.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "978.0.7",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
     },
     "device": {
@@ -1175,44 +1061,6 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera%20Touch/1 CFNetwork/978.0.7 Darwin/18.5.0"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": null,
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
-      "version": "18.5.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "978.0.7",
-      "manufacturer": "apple"
     }
   },
   {
@@ -3797,6 +3645,158 @@
       "name": "Blink",
       "version": "537.36.0",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.77.4 (KHTML, like Gecko) Version/6.1.5 Safari/537.77.4"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "6.1.5",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.77.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.99 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "45.0.2454.99",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.10.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:35.0) Gecko/20100101 Firefox/35.0"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "35.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "35.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Unibox/366 CFNetwork/760.2.6 Darwin/15.3.0 (x86_64)"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Unibox",
+      "modus": null,
+      "version": "366.0.0",
+      "manufacturer": "eightloops",
+      "bits": 64,
+      "type": "email-client"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.11.3",
+      "manufacturer": "apple",
+      "bits": 64
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "760.2.6",
+      "manufacturer": "apple"
     }
   }
 ]

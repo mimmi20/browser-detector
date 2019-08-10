@@ -19,6 +19,11 @@ use Psr\Log\LoggerInterface;
 final class Macos implements VersionDetectorInterface
 {
     private const DARWIN_MAP = [
+        '/darwin\/19/i' => '10.15.0',
+        '/darwin\/18\.[67]/i' => '10.14.6',
+        '/darwin\/18\.5/i' => '10.14.5',
+        '/darwin\/18\.4/i' => '10.14.4',
+        '/darwin\/18\.3/i' => '10.14.3',
         '/darwin\/18\.2/i' => '10.14.2',
         '/darwin\/18\.1/i' => '10.14.1',
         '/darwin\/18/i' => '10.14.0',
@@ -203,7 +208,7 @@ final class Macos implements VersionDetectorInterface
 
         $searches = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
-        $detectedVersion = $this->versionFactory->detectVersion($useragent, $searches);
+        $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), $searches);
 
         if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && 0 < preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
             $version = $versions['major'] . '.' . $versions['minor'];

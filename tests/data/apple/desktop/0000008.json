@@ -27,7 +27,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -148,44 +148,6 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MobileSafari/604.1 CFNetwork/978.0.4 Darwin/18.5.0"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Darwin",
-      "marketingName": "Darwin",
-      "version": "18.5.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "978.0.4",
       "manufacturer": "apple"
     }
   },
@@ -407,7 +369,7 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.14.0",
+      "version": "10.14.5",
       "manufacturer": "apple",
       "bits": 64
     },
@@ -597,7 +559,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -863,7 +825,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -1015,7 +977,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -1091,7 +1053,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -1129,7 +1091,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -3797,6 +3759,44 @@
       "name": "Edge",
       "version": "38.69076.0",
       "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_25_72) AppleWebKit/530.67.14 (KHTML, like Gecko) Chrome/55.1.5520.0258 Safari/532.06"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Dragon",
+      "modus": null,
+      "version": "55.1.5520.0258",
+      "manufacturer": "comodo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.25.72",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "530.67.14",
+      "manufacturer": "google"
     }
   }
 ]

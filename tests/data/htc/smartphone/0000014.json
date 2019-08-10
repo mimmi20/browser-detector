@@ -3646,5 +3646,81 @@
       "version": "537.36.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; HTC U11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "U11",
+      "marketingName": "U11",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; HTC One_M8 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
+    },
+    "device": {
+      "deviceName": "M8",
+      "marketingName": "One M8",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "69.0.3497.128",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
   }
 ]

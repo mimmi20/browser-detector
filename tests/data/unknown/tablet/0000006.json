@@ -3532,5 +3532,81 @@
       "version": "68.0.0",
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android 5.1.1; Tablet; rv:68.0) Gecko/68.0 Firefox/68.0"
+    },
+    "device": {
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "68.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "68.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android 4.2.2; Tablet; rv:67.0.3) Gecko/67.0.3 Firefox/67.0.3"
+    },
+    "device": {
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "67.0.3",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "67.0.3",
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

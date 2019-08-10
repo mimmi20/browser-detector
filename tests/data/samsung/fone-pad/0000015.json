@@ -810,7 +810,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -1076,7 +1076,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -1608,7 +1608,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -2216,7 +2216,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -2292,7 +2292,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -2330,7 +2330,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -2596,7 +2596,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -2710,7 +2710,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -3242,7 +3242,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -3318,7 +3318,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10.5
       },
       "type": "fone-pad"
     },
@@ -3448,6 +3448,348 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 9; SM-T595 Build/PPR1.180610.011)"
+    },
+    "device": {
+      "deviceName": "SM-T595",
+      "marketingName": "Galaxy Tab A (10.5)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-T819 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T819",
+      "marketingName": "Galaxy Tab S2 Plus (9.7, 2016)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.4.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-T235 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.2 Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T235",
+      "marketingName": "Galaxy Tab 4 7.0 Wi-Fi + LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-N8000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-N8000",
+      "marketingName": "Galaxy Note 10.1 3G & Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T530 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T530",
+      "marketingName": "Galaxy Tab 4 10.1 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.4.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-T815 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T815",
+      "marketingName": "Galaxy Tab S2 (9.7, 2015) LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "9.4.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-T719) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T719",
+      "marketingName": "Galaxy Tab S2 8.0 LTE (2016)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.143",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-T535) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T535",
+      "marketingName": "Galaxy Tab 4 10.1 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; SM-T555) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T555",
+      "marketingName": "Galaxy Tab A 9.7 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
       "manufacturer": "google",
       "bits": null
     },

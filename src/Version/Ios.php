@@ -19,8 +19,11 @@ use Psr\Log\LoggerInterface;
 final class Ios implements VersionDetectorInterface
 {
     private const DARWIN_MAP = [
-        '/darwin\/18\.2/i' => '12.2',
-        '/darwin\/18\.1/i' => '12.1',
+        '/darwin\/19/i' => '13.0',
+        '/darwin\/18\.7/i' => '12.4',
+        '/darwin\/18\.6/i' => '12.3',
+        '/darwin\/18\.5/i' => '12.2',
+        '/darwin\/18\.[12]/i' => '12.1',
         '/darwin\/18/i' => '12.0',
         '/darwin\/17\.7/i' => '11.4',
         '/darwin\/17\.6/i' => '11.4',
@@ -195,7 +198,7 @@ final class Ios implements VersionDetectorInterface
         'iPh OS',
         'iosv',
         'iPad\/',
-        'iOS',
+        '(?<!Outlook-)iOS',
     ];
 
     /**
