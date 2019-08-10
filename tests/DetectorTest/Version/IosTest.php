@@ -122,6 +122,10 @@ final class IosTest extends TestCase
                 'AppleCoreMedia/1.0.0.1X7 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)',
                 '8.2.0',
             ],
+            [
+                'Outlook-iOS/711.2620504.prod.iphone (3.34.0)',
+                null,
+            ],
         ];
     }
 }

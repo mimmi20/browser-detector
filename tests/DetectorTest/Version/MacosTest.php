@@ -114,6 +114,10 @@ final class MacosTest extends TestCase
                 'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 1X7))',
                 '10.11.3',
             ],
+            [
+                'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)',
+                '10.5.7',
+            ],
         ];
     }
 }

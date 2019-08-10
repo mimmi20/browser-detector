@@ -755,6 +755,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zte blade l3 apex": {
+    "deviceName": "Blade L3 Apex",
+    "marketingName": "Blade L3 Apex",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zte blade l3 plus": {
     "deviceName": "Blade L3 Plus",
     "marketingName": "Blade L3 Plus",
@@ -806,7 +820,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -961,6 +975,34 @@
       "height": null,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade v10": {
+    "deviceName": "Blade V10",
+    "marketingName": "Blade V10",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 2280,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade v10 vita": {
+    "deviceName": "Blade V10 Vita",
+    "marketingName": "Blade V10 Vita",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 6.26
     },
     "type": "smartphone",
     "platform": "android"
@@ -1253,6 +1295,20 @@
     "display": {
       "width": 1920,
       "height": 1080,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte n9521": {
+    "deviceName": "N9521",
+    "marketingName": "Boost Max+",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": null
     },
@@ -1997,20 +2053,6 @@
       "height": 1080,
       "touch": true,
       "size": 6
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "zte n9521": {
-    "deviceName": "N9521",
-    "marketingName": "Max+",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
     },
     "type": "smartphone",
     "platform": "android"
