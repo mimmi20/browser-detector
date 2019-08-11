@@ -13,20 +13,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "cyrus cs22": {
-    "deviceName": "CS22",
-    "marketingName": "CS22",
-    "manufacturer": "cyrus",
-    "brand": "cyrus",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "cyrus cs23": {
     "deviceName": "CS23",
     "marketingName": "CS23",
@@ -41,20 +27,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "cyrus cs24": {
-    "deviceName": "CS24",
-    "marketingName": "CS24",
-    "manufacturer": "cyrus",
-    "brand": "cyrus",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "cyrus cs25": {
     "deviceName": "CS25",
     "marketingName": "CS25",
@@ -64,7 +36,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -78,7 +50,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -92,7 +64,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -113,14 +85,14 @@
   },
   "cyrus cs40": {
     "deviceName": "CS40",
-    "marketingName": "CS40",
+    "marketingName": "Freestyle Outdoor",
     "manufacturer": "cyrus",
     "brand": "cyrus",
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -135,6 +107,34 @@
       "height": 600,
       "touch": true,
       "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "cyrus cs24": {
+    "deviceName": "CS24",
+    "marketingName": "Work Outdoor",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "cyrus cs22": {
+    "deviceName": "CS22",
+    "marketingName": "Xcited Outdoor",
+    "manufacturer": "cyrus",
+    "brand": "cyrus",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"

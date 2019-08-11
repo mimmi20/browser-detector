@@ -13,33 +13,33 @@
     "type": "tablet",
     "platform": "android"
   },
-  "cube i15-tfl": {
-    "deviceName": "i15-TFL",
-    "marketingName": "i15-TFL",
-    "manufacturer": "cube",
-    "brand": "cube",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "cube i15-tcl": {
     "deviceName": "i15-TCL",
-    "marketingName": "iWork 10",
+    "marketingName": "iWork 10 Ultimate",
     "manufacturer": "cube",
     "brand": "cube",
     "display": {
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": null
+  },
+  "cube i15-tfl": {
+    "deviceName": "i15-TFL",
+    "marketingName": "iWork 10 Ultimate",
+    "manufacturer": "cube",
+    "brand": "cube",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
   },
   "cube u51gt-w": {
     "deviceName": "U51GT-W",
@@ -50,7 +50,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -78,7 +78,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -92,7 +92,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -106,7 +106,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -120,7 +120,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -134,7 +134,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -148,7 +148,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -162,7 +162,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -173,10 +173,10 @@
     "manufacturer": "cube",
     "brand": "cube",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1280,
+      "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -190,7 +190,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -218,7 +218,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -246,7 +246,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
