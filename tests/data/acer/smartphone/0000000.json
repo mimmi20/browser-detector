@@ -651,7 +651,7 @@
     },
     "device": {
       "deviceName": "T07",
-      "marketingName": "Liquid Zest",
+      "marketingName": "Liquid Zest 4G",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
@@ -689,7 +689,7 @@
     },
     "device": {
       "deviceName": "T06",
-      "marketingName": "Liquid Zest T06",
+      "marketingName": "Liquid Zest",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
@@ -1516,82 +1516,6 @@
     "engine": {
       "name": "WebKit",
       "version": "530.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-gb; A110 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general Acer device",
-      "marketingName": "general Acer device",
-      "manufacturer": "acer",
-      "brand": "acer",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1; en-us; A110 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general Acer device",
-      "marketingName": "general Acer device",
-      "manufacturer": "acer",
-      "brand": "acer",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
       "manufacturer": "apple"
     }
   },
@@ -2779,7 +2703,7 @@
     },
     "device": {
       "deviceName": "T07",
-      "marketingName": "Liquid Zest",
+      "marketingName": "Liquid Zest 4G",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
@@ -3349,7 +3273,7 @@
     },
     "device": {
       "deviceName": "T06",
-      "marketingName": "Liquid Zest T06",
+      "marketingName": "Liquid Zest",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
@@ -3387,7 +3311,7 @@
     },
     "device": {
       "deviceName": "T06",
-      "marketingName": "Liquid Zest T06",
+      "marketingName": "Liquid Zest",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
@@ -3463,7 +3387,7 @@
     },
     "device": {
       "deviceName": "T06",
-      "marketingName": "Liquid Zest T06",
+      "marketingName": "Liquid Zest",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
@@ -3691,7 +3615,7 @@
     },
     "device": {
       "deviceName": "T07",
-      "marketingName": "Liquid Zest",
+      "marketingName": "Liquid Zest 4G",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
@@ -3790,6 +3714,82 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; T03) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "T03",
+      "marketingName": "Liquid Z630",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; S500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "S500",
+      "marketingName": "CloudMobile",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.80",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
       "manufacturer": "google",
       "bits": null
     },
