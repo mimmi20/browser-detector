@@ -12,5 +12,19 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "t-mobile dash": {
+    "deviceName": "Dash",
+    "marketingName": "Dash",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   }
 }

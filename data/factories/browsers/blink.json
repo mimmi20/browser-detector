@@ -100,7 +100,7 @@
     "/google-publisher-plugin/i": "google publisher wordpress plugin",
     "/kodi/i": "kodi media center",
     "/xbmc/i": "xbmc media center",
-    "/chrome.*version|version.*chrome|com\\.android\\.browser/i": "android webview",
+    "/chrome.*(?<!agent)version|(?<!agent)version.*chrome|com\\.android\\.browser/i": "android webview",
     "/theworld/i": "theworld",
     "/ptst/i": "webpagetest",
     "/epiphany/i": "epiphany",
@@ -163,7 +163,7 @@
     "/brave/i": "brave",
     "/dragon\\/|chrome\\/([0-9]{2}|[1-9])\\.[1-9]\\./i": "dragon",
     "/webpositive/i": "webpositive",
-    "/espial/i": "espial tv browser",
+    "/espial|escape/i": "espial tv browser",
     "/chr[o0]me\\//i": "chrome",
     "/chromeframe/i": "internet explorer with chromeframe"
   },

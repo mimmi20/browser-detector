@@ -13,6 +13,34 @@
     "type": "feature-phone",
     "platform": null
   },
+  "kddi ca22": {
+    "deviceName": "CA22",
+    "marketingName": "A5302CA",
+    "manufacturer": "kddi",
+    "brand": "kddi",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "kddi ca23": {
+    "deviceName": "CA23",
+    "marketingName": "A5401CA",
+    "manufacturer": "kddi",
+    "brand": "kddi",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "kddi ca3h": {
     "deviceName": "CA3H",
     "marketingName": "CA005",
@@ -27,51 +55,9 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "kddi ca22": {
-    "deviceName": "CA22",
-    "marketingName": "CA22",
-    "manufacturer": "kddi",
-    "brand": "kddi",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "brew"
-  },
-  "kddi ca23": {
-    "deviceName": "CA23",
-    "marketingName": "CA23",
-    "manufacturer": "kddi",
-    "brand": "kddi",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "kddi ca31": {
-    "deviceName": "CA31",
-    "marketingName": "CA31",
-    "manufacturer": "kddi",
-    "brand": "kddi",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "kddi fj31": {
     "deviceName": "FJ31",
-    "marketingName": "FJ31",
+    "marketingName": "F001",
     "manufacturer": "kddi",
     "brand": "kddi",
     "display": {
@@ -83,19 +69,19 @@
     "type": "feature-phone",
     "platform": "brew"
   },
-  "kddi hi3e": {
-    "deviceName": "HI3E",
-    "marketingName": "HI3E",
+  "kddi sn3k": {
+    "deviceName": "SN3K",
+    "marketingName": "G9",
     "manufacturer": "kddi",
     "brand": "kddi",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 854,
+      "height": 480,
       "touch": false,
       "size": null
     },
     "type": "feature-phone",
-    "platform": "brew"
+    "platform": "java"
   },
   "kddi w31k": {
     "deviceName": "W31K",
@@ -125,37 +111,9 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "kddi sh3f": {
-    "deviceName": "SH3F",
-    "marketingName": "SH3F",
-    "manufacturer": "kddi",
-    "brand": "kddi",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "kddi sn3i": {
     "deviceName": "SN3I",
-    "marketingName": "SN3I",
-    "manufacturer": "kddi",
-    "brand": "kddi",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "kddi sn3k": {
-    "deviceName": "SN3K",
-    "marketingName": "SN3K",
+    "marketingName": "Premier3",
     "manufacturer": "kddi",
     "brand": "kddi",
     "display": {
@@ -167,14 +125,28 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "kddi sn3o": {
-    "deviceName": "SN3O",
-    "marketingName": "SN3O",
+  "kddi ts25": {
+    "deviceName": "TS25",
+    "marketingName": "A1304TII",
     "manufacturer": "kddi",
     "brand": "kddi",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 144,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kddi sn3o": {
+    "deviceName": "SN3O",
+    "marketingName": "S003",
+    "manufacturer": "kddi",
+    "brand": "kddi",
+    "display": {
+      "width": 854,
+      "height": 480,
       "touch": false,
       "size": null
     },
@@ -183,17 +155,31 @@
   },
   "kddi sn3u": {
     "deviceName": "SN3U",
-    "marketingName": "SN3U",
+    "marketingName": "S007",
     "manufacturer": "kddi",
     "brand": "kddi",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 854,
+      "height": 480,
       "touch": false,
       "size": null
     },
     "type": "feature-phone",
     "platform": "brew"
+  },
+  "kddi sh3f": {
+    "deviceName": "SH3F",
+    "marketingName": "SH005",
+    "manufacturer": "kddi",
+    "brand": "kddi",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "kddi ts01": {
     "deviceName": "TS01",
@@ -279,6 +265,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "kddi ca31": {
+    "deviceName": "CA31",
+    "marketingName": "W21CA(II)",
+    "manufacturer": "kddi",
+    "brand": "kddi",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kddi ca32": {
+    "deviceName": "CA32",
+    "marketingName": "W31CA",
+    "manufacturer": "casio",
+    "brand": "kddi",
+    "display": {
+      "width": 240,
+      "height": 400,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "kddi hi32": {
     "deviceName": "HI32",
     "marketingName": "W21H",
@@ -303,6 +317,20 @@
       "height": 240,
       "touch": false,
       "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kddi ca33": {
+    "deviceName": "CA33",
+    "marketingName": "W41CA",
+    "manufacturer": "kddi",
+    "brand": "kddi",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -362,6 +390,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "kddi hi3e": {
+    "deviceName": "HI3E",
+    "marketingName": "W63H",
+    "manufacturer": "kddi",
+    "brand": "kddi",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
   },
   "kddi ts3w": {
     "deviceName": "TS3W",

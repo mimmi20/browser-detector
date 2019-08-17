@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; Slackware/13.0; ar;) AppleWebKit/530  (OpenSSL/0.9.8l; compatible; KHTML/4.3.2; Smart 2x2; Remote 2x2; rv:1.9.0.15) Gecko/20090412 KDDI-CA33 UP.Browser/6.2.0.10.4 MMP/2.0"
+    },
+    "device": {
+      "deviceName": "CA33",
+      "marketingName": "W41CA",
+      "manufacturer": "kddi",
+      "brand": "kddi",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Darwin Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "KDDI-CA3H UP.Browser/6.2_7.2.7.1.K.5.214 (GUI) MMP/2.0"
     },
     "device": {
@@ -195,7 +233,7 @@
     },
     "device": {
       "deviceName": "FJ31",
-      "marketingName": "FJ31",
+      "marketingName": "F001",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
@@ -233,7 +271,7 @@
     },
     "device": {
       "deviceName": "CA23",
-      "marketingName": "CA23",
+      "marketingName": "A5401CA",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
@@ -271,7 +309,7 @@
     },
     "device": {
       "deviceName": "SN3K",
-      "marketingName": "SN3K",
+      "marketingName": "G9",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
@@ -309,12 +347,12 @@
     },
     "device": {
       "deviceName": "SN3I",
-      "marketingName": "SN3I",
+      "marketingName": "Premier3",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": false,
         "size": null
       },
@@ -347,12 +385,12 @@
     },
     "device": {
       "deviceName": "SN3O",
-      "marketingName": "SN3O",
+      "marketingName": "S003",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": false,
         "size": null
       },
@@ -461,12 +499,12 @@
     },
     "device": {
       "deviceName": "SN3U",
-      "marketingName": "SN3U",
+      "marketingName": "S007",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": false,
         "size": null
       },
@@ -499,7 +537,7 @@
     },
     "device": {
       "deviceName": "HI3E",
-      "marketingName": "HI3E",
+      "marketingName": "W63H",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
@@ -537,7 +575,7 @@
     },
     "device": {
       "deviceName": "CA22",
-      "marketingName": "CA22",
+      "marketingName": "A5302CA",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
@@ -575,7 +613,7 @@
     },
     "device": {
       "deviceName": "CA31",
-      "marketingName": "CA31",
+      "marketingName": "W21CA(II)",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
@@ -651,12 +689,12 @@
     },
     "device": {
       "deviceName": "SH3F",
-      "marketingName": "SH3F",
+      "marketingName": "SH005",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": false,
         "size": null
       },
@@ -689,12 +727,12 @@
     },
     "device": {
       "deviceName": "SH3F",
-      "marketingName": "SH3F",
+      "marketingName": "SH005",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": false,
         "size": null
       },
@@ -713,6 +751,82 @@
       "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-TS25 UP.Browser/6.0.8.3 (GUI) MMP/1.1"
+    },
+    "device": {
+      "deviceName": "general KDDI device",
+      "marketingName": "general KDDI device",
+      "manufacturer": "kddi",
+      "brand": "kddi",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.0.8.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-CA32 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0 (compatible; ichiro/mobile goo; +http://help.goo.ne.jp/door/crawler.html)"
+    },
+    "device": {
+      "deviceName": "general KDDI device",
+      "marketingName": "general KDDI device",
+      "manufacturer": "kddi",
+      "brand": "kddi",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Ichiro Mobile Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ichiro",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {

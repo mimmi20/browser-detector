@@ -50,7 +50,7 @@
       "width": 640,
       "height": 480,
       "touch": false,
-      "size": null
+      "size": 5
     },
     "type": "feature-phone",
     "platform": "windows ce"
@@ -106,7 +106,7 @@
       "width": 320,
       "height": 240,
       "touch": false,
-      "size": null
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "windows ce"
@@ -169,14 +169,28 @@
   },
   "htc vpa compact iv": {
     "deviceName": "VPA Compact IV",
-    "marketingName": "Herald/Wing/Atlas",
+    "marketingName": "Herald",
     "manufacturer": "htc",
     "brand": "vodafone",
     "display": {
       "width": 320,
       "height": 240,
       "touch": false,
-      "size": null
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows mobile os"
+  },
+  "htc p4350": {
+    "deviceName": "P4350",
+    "marketingName": "Herald",
+    "manufacturer": "htc",
+    "brand": "vodafone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.8
     },
     "type": "feature-phone",
     "platform": "windows mobile os"
@@ -582,7 +596,21 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.8
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
+  "htc touch hd": {
+    "deviceName": "Touch HD",
+    "marketingName": "Touch HD",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.8
     },
     "type": "feature-phone",
     "platform": null
@@ -765,6 +793,34 @@
       "height": 240,
       "touch": true,
       "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc x7510": {
+    "deviceName": "X7510",
+    "marketingName": "Advantage",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 640,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc touch dual": {
+    "deviceName": "Touch Dual",
+    "marketingName": "Touch Dual",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.6
     },
     "type": "feature-phone",
     "platform": "windows ce"

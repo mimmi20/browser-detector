@@ -1238,7 +1238,7 @@
         "Flock"
       ]
     },
-    "engine": "unknown"
+    "engine": null
   },
   "fluid": {
     "name": "Fluid",
@@ -1319,7 +1319,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Google Earth"
+        "Google ?Earth"
       ]
     },
     "engine": "webkit"
@@ -3026,18 +3026,6 @@
     },
     "engine": "webkit"
   },
-  "qwantbrowser": {
-    "name": "QwantBrowser",
-    "manufacturer": "qwant",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "QwantBrowser"
-      ]
-    },
-    "engine": null
-  },
   "qwant-mobile": {
     "name": "QwantMobile",
     "manufacturer": "qwant",
@@ -3045,7 +3033,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "QwantMobile"
+        "QwantMobile",
+        "Qwant"
       ]
     },
     "engine": null
@@ -3439,6 +3428,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "stainless": {
+    "name": "Stainless",
+    "manufacturer": "mesa",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Stainless"
+      ]
+    },
+    "engine": "webkit"
   },
   "strata": {
     "name": "Strata",

@@ -307,6 +307,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "htc x06ht": {
+    "deviceName": "X06HT",
+    "marketingName": "Desire",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "htc a8181": {
     "deviceName": "A8181",
     "marketingName": "Desire",
@@ -1254,7 +1268,21 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc a7275": {
+    "deviceName": "A7275",
+    "marketingName": "Desire Z",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1268,7 +1296,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1296,7 +1324,21 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc g1": {
+    "deviceName": "Dream",
+    "marketingName": "G1",
+    "manufacturer": "htc",
+    "brand": "t-mobile",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -1666,15 +1708,29 @@
     "platform": null
   },
   "htc hero": {
-    "deviceName": "hero",
-    "marketingName": "hero",
+    "deviceName": "Hero",
+    "marketingName": "Hero",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc t9199": {
+    "deviceName": "T9199",
+    "marketingName": "Oboe",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 480,
+      "height": 800,
+      "touch": true,
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1702,7 +1758,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1786,7 +1842,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -1818,6 +1874,20 @@
     },
     "type": "smartphone",
     "platform": "windows mobile os"
+  },
+  "htc mda touch": {
+    "deviceName": "MDA Touch",
+    "marketingName": "MDA Touch",
+    "manufacturer": "htc",
+    "brand": "t-mobile",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "smartphone",
+    "platform": "windows ce"
   },
   "htc adr6325": {
     "deviceName": "ADR6325",
@@ -2626,7 +2696,21 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc adr6330vw": {
+    "deviceName": "ADR6330VW",
+    "marketingName": "Rhyme",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -2682,7 +2766,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2696,7 +2780,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2710,7 +2794,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2812,6 +2896,34 @@
     },
     "type": "smartphone",
     "platform": null
+  },
+  "htc t4242": {
+    "deviceName": "T4242",
+    "marketingName": "Touch Cruise",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "smartphone",
+    "platform": "windows ce"
+  },
+  "htc p3450": {
+    "deviceName": "P3450",
+    "marketingName": "P3450",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 240,
+      "height": 320,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "smartphone",
+    "platform": "windows ce"
   },
   "htc t7373": {
     "deviceName": "T7373",
@@ -3032,7 +3144,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3046,7 +3158,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3060,7 +3172,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3074,7 +3186,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3088,7 +3200,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3102,7 +3214,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3116,7 +3228,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3130,7 +3242,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
