@@ -3438,7 +3438,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -3564,7 +3564,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.8
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -3620,7 +3620,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -3634,7 +3634,21 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg ku5900": {
+    "deviceName": "KU5900",
+    "marketingName": "Optimus Black",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -4866,7 +4880,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -4922,7 +4936,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -4936,7 +4950,35 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lu3700": {
+    "deviceName": "LU3700",
+    "marketingName": "Optimus One",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg su370": {
+    "deviceName": "SU370",
+    "marketingName": "Optimus One",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -6911,6 +6953,20 @@
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg c800": {
+    "deviceName": "C800",
+    "marketingName": "myTouch Q",
+    "manufacturer": "lg",
+    "brand": "t-mobile",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
