@@ -69,6 +69,20 @@
     "type": "feature-phone",
     "platform": "nokia os"
   },
+  "nokia 2220 slide": {
+    "deviceName": "2220 slide",
+    "marketingName": "2220 slide",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 225": {
     "deviceName": "225",
     "marketingName": "225",
@@ -167,6 +181,20 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia 2680 slide": {
+    "deviceName": "2680 slide",
+    "marketingName": "2680 slide",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 2690": {
     "deviceName": "2690",
     "marketingName": "2690",
@@ -250,6 +278,48 @@
     },
     "type": "feature-phone",
     "platform": "symbian"
+  },
+  "nokia 3100": {
+    "deviceName": "3100",
+    "marketingName": "3100",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3100b": {
+    "deviceName": "3100b",
+    "marketingName": "3100b",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3110 classic": {
+    "deviceName": "3110 classic",
+    "marketingName": "3110 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "nokia 3200": {
     "deviceName": "3200",
@@ -545,9 +615,9 @@
     "type": "feature-phone",
     "platform": "asha"
   },
-  "nokia 5630": {
-    "deviceName": "5630",
-    "marketingName": "5630 XpressMusic",
+  "nokia 5610": {
+    "deviceName": "5610",
+    "marketingName": "5610 XpressMusic",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -559,9 +629,9 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
-  "nokia 5610": {
-    "deviceName": "5610",
-    "marketingName": "5610 XpressMusic",
+  "nokia 5630": {
+    "deviceName": "5630",
+    "marketingName": "5630 XpressMusic",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -741,20 +811,6 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
-  "nokia 6233": {
-    "deviceName": "6233",
-    "marketingName": "6233",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "nokia 6230i": {
     "deviceName": "6230i",
     "marketingName": "6230i",
@@ -765,6 +821,20 @@
       "height": 208,
       "touch": false,
       "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6233": {
+    "deviceName": "6233",
+    "marketingName": "6233",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1175,61 +1245,19 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
-  "nokia 9200": {
-    "deviceName": "9200",
-    "marketingName": "9200",
+  "nokia 8310": {
+    "deviceName": "8310",
+    "marketingName": "8310",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
-      "width": 640,
-      "height": 200,
+      "width": 84,
+      "height": 48,
       "touch": false,
       "size": null
     },
     "type": "feature-phone",
-    "platform": "symbian"
-  },
-  "nokia 9210i": {
-    "deviceName": "9210i",
-    "marketingName": "Communicator",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 640,
-      "height": 200,
-      "touch": false,
-      "size": 4.5
-    },
-    "type": "feature-phone",
-    "platform": "symbian"
-  },
-  "nokia 9210": {
-    "deviceName": "9210",
-    "marketingName": "Communicator",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 640,
-      "height": 200,
-      "touch": false,
-      "size": 4.5
-    },
-    "type": "feature-phone",
-    "platform": "symbian"
-  },
-  "nokia 9500": {
-    "deviceName": "9500",
-    "marketingName": "9500",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 640,
-      "height": 200,
-      "touch": false,
-      "size": 4.5
-    },
-    "type": "feature-phone",
-    "platform": "symbian"
+    "platform": "java"
   },
   "nokia 8390": {
     "deviceName": "8390",
@@ -1245,44 +1273,16 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "nokia 8310": {
-    "deviceName": "8310",
-    "marketingName": "8310",
+  "nokia 8910": {
+    "deviceName": "8910",
+    "marketingName": "8910",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
-      "width": 84,
-      "height": 48,
+      "width": null,
+      "height": null,
       "touch": false,
       "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "nokia 8800e": {
-    "deviceName": "8800e",
-    "marketingName": "Sapphire Arte",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "size": 2
-    },
-    "type": "feature-phone",
-    "platform": "symbian"
-  },
-  "nokia 8800": {
-    "deviceName": "8800",
-    "marketingName": "Sapphire Arte",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 208,
-      "height": 208,
-      "touch": false,
-      "size": 1.7
     },
     "type": "feature-phone",
     "platform": "symbian"
@@ -1301,16 +1301,30 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
-  "nokia 8910": {
-    "deviceName": "8910",
-    "marketingName": "8910",
+  "nokia 9200": {
+    "deviceName": "9200",
+    "marketingName": "9200",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 640,
+      "height": 200,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 9500": {
+    "deviceName": "9500",
+    "marketingName": "9500",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 640,
+      "height": 200,
+      "touch": false,
+      "size": 4.5
     },
     "type": "feature-phone",
     "platform": "symbian"
@@ -1426,34 +1440,6 @@
     },
     "type": "feature-phone",
     "platform": "nokia os"
-  },
-  "nokia 2220 slide": {
-    "deviceName": "2220 slide",
-    "marketingName": "2220 slide",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "size": 1.8
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "nokia 2680 slide": {
-    "deviceName": "2680 slide",
-    "marketingName": "2680 slide",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "size": 1.8
-    },
-    "type": "feature-phone",
-    "platform": "java"
   },
   "nokia 230": {
     "deviceName": "230",
@@ -1608,48 +1594,6 @@
     },
     "type": "feature-phone",
     "platform": "nokia os"
-  },
-  "nokia 3110 classic": {
-    "deviceName": "3110 classic",
-    "marketingName": "3110 classic",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 128,
-      "height": 160,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "nokia 3100b": {
-    "deviceName": "3100b",
-    "marketingName": "3100b",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 128,
-      "height": 128,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "nokia 3100": {
-    "deviceName": "3100",
-    "marketingName": "3100",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 128,
-      "height": 128,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
   },
   "nokia 500": {
     "deviceName": "500",
@@ -1959,6 +1903,34 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia 9210": {
+    "deviceName": "9210",
+    "marketingName": "Communicator",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 640,
+      "height": 200,
+      "touch": false,
+      "size": 4.5
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 9210i": {
+    "deviceName": "9210i",
+    "marketingName": "Communicator",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 640,
+      "height": 200,
+      "touch": false,
+      "size": 4.5
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "nokia 9000": {
     "deviceName": "9000",
     "marketingName": "Communicator 9000",
@@ -2225,9 +2197,9 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
-  "nokia n70": {
-    "deviceName": "N70",
-    "marketingName": "N70",
+  "nokia n-gage": {
+    "deviceName": "N-Gage",
+    "marketingName": "N-Gage",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -2239,9 +2211,23 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
-  "nokia n72": {
-    "deviceName": "N72",
-    "marketingName": "N72",
+  "nokia n-gage qd": {
+    "deviceName": "N-Gage QD",
+    "marketingName": "N-Gage QD",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 208,
+      "height": 176,
+      "touch": false,
+      "size": 2.1
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia n70": {
+    "deviceName": "N70",
+    "marketingName": "N70",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -2259,36 +2245,22 @@
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
-      "width": 240,
-      "height": 320,
+      "width": 320,
+      "height": 240,
       "touch": false,
       "size": 2.4
     },
     "type": "feature-phone",
     "platform": "symbian"
   },
-  "nokia n-gage qd": {
-    "deviceName": "N-Gage QD",
-    "marketingName": "N-Gage QD",
+  "nokia n72": {
+    "deviceName": "N72",
+    "marketingName": "N72",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
-      "width": 176,
-      "height": 208,
-      "touch": false,
-      "size": 2.1
-    },
-    "type": "feature-phone",
-    "platform": "symbian"
-  },
-  "nokia n-gage": {
-    "deviceName": "N-Gage",
-    "marketingName": "N-Gage",
-    "manufacturer": "nokia",
-    "brand": "nokia",
-    "display": {
-      "width": 176,
-      "height": 208,
+      "width": 208,
+      "height": 176,
       "touch": false,
       "size": 2.1
     },
@@ -2529,6 +2501,34 @@
       "height": 360,
       "touch": true,
       "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 8800": {
+    "deviceName": "8800",
+    "marketingName": "Sapphire Arte",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 208,
+      "height": 208,
+      "touch": false,
+      "size": 1.7
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 8800e": {
+    "deviceName": "8800e",
+    "marketingName": "Sapphire Arte",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "symbian"

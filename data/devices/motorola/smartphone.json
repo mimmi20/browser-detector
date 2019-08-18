@@ -223,20 +223,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "motorola mb523": {
-    "deviceName": "MB523",
-    "marketingName": "MB523",
-    "manufacturer": "motorola",
-    "brand": "motorola",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "motorola me525": {
     "deviceName": "ME525",
     "marketingName": "Defy",
@@ -257,8 +243,8 @@
     "manufacturer": "motorola",
     "brand": "motorola",
     "display": {
-      "width": 480,
-      "height": 854,
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": 3.7
     },
@@ -1003,6 +989,20 @@
       "height": 480,
       "touch": true,
       "size": 3.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola mb523": {
+    "deviceName": "MB523",
+    "marketingName": "MB523",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
     },
     "type": "smartphone",
     "platform": "android"

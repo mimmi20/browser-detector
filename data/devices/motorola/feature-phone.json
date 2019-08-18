@@ -83,6 +83,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "motorola a768": {
+    "deviceName": "A768",
+    "marketingName": "A768",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "motorola a925": {
     "deviceName": "A925",
     "marketingName": "A925",
@@ -96,6 +110,20 @@
     },
     "type": "feature-phone",
     "platform": "symbian"
+  },
+  "motorola c650": {
+    "deviceName": "C650",
+    "marketingName": "C650",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "motorola c980": {
     "deviceName": "C980",
@@ -121,6 +149,34 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "motorola e680i": {
+    "deviceName": "E680i",
+    "marketingName": "E680i",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "motorola e770v": {
+    "deviceName": "E770v",
+    "marketingName": "E770v",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
     },
     "type": "feature-phone",
     "platform": "java"
@@ -307,20 +363,6 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "motorola a768": {
-    "deviceName": "A768",
-    "marketingName": "A768",
-    "manufacturer": "motorola",
-    "brand": "motorola",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.5
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "motorola rizr z8": {
     "deviceName": "Rizr Z8",
     "marketingName": "Rizr Z8",
@@ -385,48 +427,6 @@
     "display": {
       "width": 220,
       "height": 176,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "motorola e770v": {
-    "deviceName": "E770v",
-    "marketingName": "E770v",
-    "manufacturer": "motorola",
-    "brand": "motorola",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": false,
-      "size": 1.9
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "motorola e680i": {
-    "deviceName": "E680i",
-    "marketingName": "E680i",
-    "manufacturer": "motorola",
-    "brand": "motorola",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": false,
-      "size": 2.5
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "motorola c650": {
-    "deviceName": "C650",
-    "marketingName": "C650",
-    "manufacturer": "motorola",
-    "brand": "motorola",
-    "display": {
-      "width": 128,
-      "height": 128,
       "touch": false,
       "size": null
     },

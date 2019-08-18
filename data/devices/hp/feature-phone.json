@@ -13,6 +13,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "palm centro": {
+    "deviceName": "Centro",
+    "marketingName": "Centro",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "size": 2.25
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
   "palm ipaq610": {
     "deviceName": "iPAQ 610",
     "marketingName": "iPAQ 610",
@@ -191,20 +205,6 @@
       "height": 320,
       "touch": true,
       "size": null
-    },
-    "type": "feature-phone",
-    "platform": null
-  },
-  "palm centro": {
-    "deviceName": "Centro",
-    "marketingName": "Centro",
-    "manufacturer": "palm",
-    "brand": "palm",
-    "display": {
-      "width": 320,
-      "height": 320,
-      "touch": true,
-      "size": 2.25
     },
     "type": "feature-phone",
     "platform": null

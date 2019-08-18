@@ -1,18 +1,4 @@
 {
-  "t-mobile vairy touch ii": {
-    "deviceName": "Vairy Touch II",
-    "marketingName": "Vairy Touch II",
-    "manufacturer": "t-mobile",
-    "brand": "t-mobile",
-    "display": {
-      "width": 400,
-      "height": 240,
-      "touch": true,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "t-mobile dash": {
     "deviceName": "Dash",
     "marketingName": "Dash",
@@ -26,5 +12,19 @@
     },
     "type": "feature-phone",
     "platform": "windows ce"
+  },
+  "t-mobile vairy touch ii": {
+    "deviceName": "Vairy Touch II",
+    "marketingName": "Vairy Touch II",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }

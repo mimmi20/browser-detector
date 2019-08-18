@@ -237,6 +237,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg c105": {
+    "deviceName": "C105",
+    "marketingName": "C105",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg c195": {
     "deviceName": "C195",
     "marketingName": "C195",
@@ -310,6 +324,20 @@
   "lg an272": {
     "deviceName": "AN272",
     "marketingName": "Converse",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg kp500": {
+    "deviceName": "KP500",
+    "marketingName": "Cookie",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -401,76 +429,6 @@
       "height": 240,
       "touch": true,
       "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg gt500": {
-    "deviceName": "GT500",
-    "marketingName": "GT500",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 400,
-      "height": 240,
-      "touch": true,
-      "size": 3
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg ku990i": {
-    "deviceName": "KU990i",
-    "marketingName": "Viewty",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 400,
-      "height": 240,
-      "touch": true,
-      "size": 3
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg ku990": {
-    "deviceName": "KU990",
-    "marketingName": "Viewty",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 400,
-      "height": 240,
-      "touch": true,
-      "size": 3
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg s310": {
-    "deviceName": "S310",
-    "marketingName": "S310",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 176,
-      "height": 220,
-      "touch": true,
-      "size": 2.3
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg kf700": {
-    "deviceName": "KF700",
-    "marketingName": "KF700",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 240,
-      "height": 480,
-      "touch": true,
-      "size": 3
     },
     "type": "feature-phone",
     "platform": "java"
@@ -643,9 +601,9 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "lg gm750q": {
-    "deviceName": "GM750Q",
-    "marketingName": "GM750Q",
+  "lg gm750": {
+    "deviceName": "GM750",
+    "marketingName": "GM750",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -657,9 +615,9 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
-  "lg gm750": {
-    "deviceName": "GM750",
-    "marketingName": "GM750",
+  "lg gm750q": {
+    "deviceName": "GM750Q",
+    "marketingName": "GM750Q",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -681,6 +639,20 @@
       "height": 240,
       "touch": false,
       "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gt500": {
+    "deviceName": "GT500",
+    "marketingName": "GT500",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
     },
     "type": "feature-phone",
     "platform": "java"
@@ -783,15 +755,29 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
-  "lg kp500": {
-    "deviceName": "KP500",
-    "marketingName": "Cookie",
+  "lg gb230": {
+    "deviceName": "GB230",
+    "marketingName": "Julia",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
-      "width": 400,
-      "height": 240,
+      "width": 220,
+      "height": 176,
       "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg kf700": {
+    "deviceName": "KF700",
+    "marketingName": "KF700",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 480,
+      "height": 240,
+      "touch": true,
       "size": 3
     },
     "type": "feature-phone",
@@ -803,52 +789,10 @@
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
-      "width": 128,
-      "height": 160,
+      "width": 160,
+      "height": 128,
       "touch": false,
       "size": 1
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg c105": {
-    "deviceName": "C105",
-    "marketingName": "C105",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 176,
-      "height": 220,
-      "touch": false,
-      "size": 2.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg gt350": {
-    "deviceName": "GT350",
-    "marketingName": "Town",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": true,
-      "size": 3
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "lg gb230": {
-    "deviceName": "GB230",
-    "marketingName": "Julia",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 176,
-      "height": 220,
-      "touch": false,
-      "size": 2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1077,6 +1021,20 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "lg s310": {
+    "deviceName": "S310",
+    "marketingName": "S310",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": true,
+      "size": 2.3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg 501c": {
     "deviceName": "501C",
     "marketingName": "Saber UN200",
@@ -1115,6 +1073,48 @@
       "height": 240,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gt350": {
+    "deviceName": "GT350",
+    "marketingName": "Town",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg ku990": {
+    "deviceName": "KU990",
+    "marketingName": "Viewty",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg ku990i": {
+    "deviceName": "KU990i",
+    "marketingName": "Viewty",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
     },
     "type": "feature-phone",
     "platform": "java"

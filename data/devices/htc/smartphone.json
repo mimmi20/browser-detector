@@ -307,20 +307,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc x06ht": {
-    "deviceName": "X06HT",
-    "marketingName": "Desire",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": 3.7
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "htc a8181": {
     "deviceName": "A8181",
     "marketingName": "Desire",
@@ -337,6 +323,20 @@
   },
   "htc desire": {
     "deviceName": "Desire",
+    "marketingName": "Desire",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc x06ht": {
+    "deviceName": "X06HT",
     "marketingName": "Desire",
     "manufacturer": "htc",
     "brand": "htc",
@@ -1329,20 +1329,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc g1": {
-    "deviceName": "Dream",
-    "marketingName": "G1",
-    "manufacturer": "htc",
-    "brand": "t-mobile",
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": true,
-      "size": 3.2
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "htc htc6435lvw": {
     "deviceName": "HTC6435LVW",
     "marketingName": "Droid DNA",
@@ -1637,6 +1623,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "htc g1": {
+    "deviceName": "Dream",
+    "marketingName": "G1",
+    "manufacturer": "htc",
+    "brand": "t-mobile",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "htc glacier": {
     "deviceName": "Glacier",
     "marketingName": "Glacier",
@@ -1717,20 +1717,6 @@
       "height": 320,
       "touch": true,
       "size": 3.2
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "htc t9199": {
-    "deviceName": "T9199",
-    "marketingName": "Oboe",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 480,
-      "height": 800,
-      "touch": true,
-      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1861,20 +1847,6 @@
     "type": "smartphone",
     "platform": null
   },
-  "htc mda vario v": {
-    "deviceName": "MDA Vario V",
-    "marketingName": "MDA Vario V",
-    "manufacturer": "htc",
-    "brand": "t-mobile",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "windows mobile os"
-  },
   "htc mda touch": {
     "deviceName": "MDA Touch",
     "marketingName": "MDA Touch",
@@ -1889,6 +1861,20 @@
     "type": "smartphone",
     "platform": "windows ce"
   },
+  "htc mda vario v": {
+    "deviceName": "MDA Vario V",
+    "marketingName": "MDA Vario V",
+    "manufacturer": "htc",
+    "brand": "t-mobile",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "windows mobile os"
+  },
   "htc adr6325": {
     "deviceName": "ADR6325",
     "marketingName": "Merge",
@@ -1899,6 +1885,20 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc t9199": {
+    "deviceName": "T9199",
+    "marketingName": "Oboe",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2645,6 +2645,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "htc p3450": {
+    "deviceName": "P3450",
+    "marketingName": "P3450",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "smartphone",
+    "platform": "windows ce"
+  },
   "htc panache": {
     "deviceName": "Panache",
     "marketingName": "Panache",
@@ -2687,8 +2701,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc s510b": {
-    "deviceName": "S510B",
+  "htc adr6330vw": {
+    "deviceName": "ADR6330VW",
     "marketingName": "Rhyme",
     "manufacturer": "htc",
     "brand": "htc",
@@ -2701,8 +2715,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc adr6330vw": {
-    "deviceName": "ADR6330VW",
+  "htc s510b": {
+    "deviceName": "S510B",
     "marketingName": "Rhyme",
     "manufacturer": "htc",
     "brand": "htc",
@@ -2883,6 +2897,20 @@
     "type": "smartphone",
     "platform": "windows phone"
   },
+  "htc t4242": {
+    "deviceName": "T4242",
+    "marketingName": "Touch Cruise",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "smartphone",
+    "platform": "windows ce"
+  },
   "htc touch diamond 2": {
     "deviceName": "Touch Diamond 2",
     "marketingName": "Touch Diamond 2",
@@ -2896,34 +2924,6 @@
     },
     "type": "smartphone",
     "platform": null
-  },
-  "htc t4242": {
-    "deviceName": "T4242",
-    "marketingName": "Touch Cruise",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "size": 2.8
-    },
-    "type": "smartphone",
-    "platform": "windows ce"
-  },
-  "htc p3450": {
-    "deviceName": "P3450",
-    "marketingName": "P3450",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 240,
-      "height": 320,
-      "touch": true,
-      "size": 2.8
-    },
-    "type": "smartphone",
-    "platform": "windows ce"
   },
   "htc t7373": {
     "deviceName": "T7373",

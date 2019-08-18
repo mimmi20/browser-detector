@@ -13,6 +13,20 @@
     "type": "feature-phone",
     "platform": null
   },
+  "kddi ts25": {
+    "deviceName": "TS25",
+    "marketingName": "A1304TII",
+    "manufacturer": "kddi",
+    "brand": "kddi",
+    "display": {
+      "width": 176,
+      "height": 144,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "kddi ca22": {
     "deviceName": "CA22",
     "marketingName": "A5302CA",
@@ -121,20 +135,6 @@
       "height": 480,
       "touch": false,
       "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "kddi ts25": {
-    "deviceName": "TS25",
-    "marketingName": "A1304TII",
-    "manufacturer": "kddi",
-    "brand": "kddi",
-    "display": {
-      "width": 144,
-      "height": 176,
-      "touch": false,
-      "size": 2.2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -279,20 +279,6 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "kddi ca32": {
-    "deviceName": "CA32",
-    "marketingName": "W31CA",
-    "manufacturer": "casio",
-    "brand": "kddi",
-    "display": {
-      "width": 240,
-      "height": 400,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "kddi hi32": {
     "deviceName": "HI32",
     "marketingName": "W21H",
@@ -301,6 +287,20 @@
     "display": {
       "width": null,
       "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kddi ca32": {
+    "deviceName": "CA32",
+    "marketingName": "W31CA",
+    "manufacturer": "casio",
+    "brand": "kddi",
+    "display": {
+      "width": 400,
+      "height": 240,
       "touch": false,
       "size": null
     },

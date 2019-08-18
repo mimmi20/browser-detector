@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; MotoE2(4G-LTE) Build/LPIS23.29-18.9-6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/141.0.0.31.91;]"
-    },
-    "device": {
-      "deviceName": "XT1528",
-      "marketingName": "Moto E (2nd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "141.0.0.31.91",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; XT1635-02 Build/NPN25.137-15-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1635-02",
-      "marketingName": "Moto Z Play Dual",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "62.0.3202.84",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Moto G (4) Build/NPJS25.93-14-10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FBIA/FB4A;FBAV/154.0.0.4.384;]"
     },
     "device": {
@@ -848,7 +772,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -2596,7 +2520,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -2672,7 +2596,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -2778,8 +2702,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; en-us; MB523 Build/3.4.2-143)"
     },
     "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
+      "deviceName": "MB523",
+      "marketingName": "MB523",
       "manufacturer": "motorola",
       "brand": "motorola",
       "display": {
@@ -2824,7 +2748,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -2862,7 +2786,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -2938,7 +2862,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -3006,15 +2930,15 @@
       "user-agent": "Mozilla/5.0 (X11; U; Linux armv7l; en-US; rv:1.9.2.16) Gecko/20110323 Firefox/3.6.16 MB860/Version.4.4.23.MB860.Vodafone.en.EU"
     },
     "device": {
-      "deviceName": "One",
-      "marketingName": "One",
+      "deviceName": "MB860",
+      "marketingName": "Atrix 4G",
       "manufacturer": "motorola",
       "brand": "motorola",
       "display": {
-        "width": 1520,
-        "height": 720,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": 5.9
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -3041,44 +2965,6 @@
   },
   {
     "headers": {
-      "user-agent": "MOT-VEGAS/00.72 UP.Browser/7.2.6.1.841 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "7.2.6.1.841",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; de_de; MB525 Build/GINGERBREAD) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 NetFrontLifeBrowser/2.2 Mobile (Dragonfruit)"
     },
     "device": {
@@ -3090,7 +2976,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -3117,82 +3003,6 @@
   },
   {
     "headers": {
-      "user-agent": "MOT-A768/A768_G_00.A9.A1R MIB/2.2 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Motorola Internet Browser",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "motorola",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MOT-V3re/0E.41.22R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Motorola Internet Browser",
-      "modus": null,
-      "version": "2.2.1",
-      "manufacturer": "motorola",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/1.1.0 (Linux; U; Android 2.1-update1; MB525 Build/JRDNEM_U3_2.51.1)"
     },
     "device": {
@@ -3204,7 +3014,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -3272,15 +3082,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; de-de; MB525 Build/JRDNEM_U3_2.51.1) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 freenetMail iPhone"
     },
     "device": {
-      "deviceName": "One",
-      "marketingName": "One",
+      "deviceName": "MB525",
+      "marketingName": "Defy",
       "manufacturer": "motorola",
       "brand": "motorola",
       "display": {
-        "width": 1520,
-        "height": 720,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": 5.9
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -3318,7 +3128,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -3356,7 +3166,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -3470,7 +3280,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -3497,44 +3307,6 @@
   },
   {
     "headers": {
-      "user-agent": "MOT-E770v/85.83.E1P MIB/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Motorola Internet Browser",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "motorola",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/1.1.0 (Linux; U; Android 2.1-update1; Milestone Build/SHOLS_U2_02.36.0)"
     },
     "device": {
@@ -3546,7 +3318,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -3584,7 +3356,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -3607,120 +3379,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Motto; U; CPU OS 4_2_1 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.2",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "4.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.17.9",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "TXT8010/T05_0 UP.Browser/6.2.3.2 (GUI) MMP/2.0 Novarra-Vision/8.0"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "TXT8010/T05_0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -3763,40 +3421,78 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.2729/hifi/myopera/int; Motorola E680i; en; U; ssr)"
+      "user-agent": "mozilla/5.0 (linux; u; android 2.1-update1; en-us; milestone build/shols_u2_02.34.0) applewebkit/530.17 (khtml, like gecko) version/4.0 mobile safari/530.17"
     },
     "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
+      "deviceName": "Milestone",
+      "marketingName": "Milestone",
       "manufacturer": "motorola",
       "brand": "motorola",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "Android Webkit",
       "modus": null,
-      "version": "1.1.2729",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "google",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.1",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": "WebKit",
+      "version": "530.17.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "mozilla/5.0 (linux; u; android 2.1-update1; de-de; mb525 build/jrdnem_u3_2.12.0) applewebkit/530.17 (khtml, like gecko) version/4.0 mobile safari/530.17"
+    },
+    "device": {
+      "deviceName": "MB525",
+      "marketingName": "Defy",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.17.0",
+      "manufacturer": "apple"
     }
   }
 ]
