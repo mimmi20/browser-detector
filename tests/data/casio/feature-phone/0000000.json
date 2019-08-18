@@ -74,5 +74,43 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-CA32 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0 (compatible; ichiro/mobile goo; +http://help.goo.ne.jp/door/crawler.html)"
+    },
+    "device": {
+      "deviceName": "CA32",
+      "marketingName": "W31CA",
+      "manufacturer": "casio",
+      "brand": "kddi",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Ichiro Mobile Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ichiro",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

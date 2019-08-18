@@ -1525,6 +1525,20 @@
     "type": "feature-phone",
     "platform": "android"
   },
+  "samsung s400i": {
+    "deviceName": "S400i",
+    "marketingName": "S400i",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung sam336c": {
     "deviceName": "sam336c",
     "marketingName": "sam336c",
@@ -2655,20 +2669,6 @@
       "height": 240,
       "touch": false,
       "size": 2.6
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "samsung s400i": {
-    "deviceName": "S400i",
-    "marketingName": "S400i",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 176,
-      "height": 220,
-      "touch": false,
-      "size": 1.8
     },
     "type": "feature-phone",
     "platform": "java"

@@ -658,7 +658,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 6.1
       },
       "type": "smartphone"
     },
@@ -696,7 +696,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -726,15 +726,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Huawei-U8652 Build/HuaweiU8652B840) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Huawei device",
-      "marketingName": "general Huawei device",
+      "deviceName": "U8652",
+      "marketingName": "Fusion",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -764,15 +764,15 @@
       "user-agent": "Dalvik/1.4.0 (Linux; U; Android 2.3.3; U8510 Build/HuaweiU8510)"
     },
     "device": {
-      "deviceName": "S41HW",
-      "marketingName": "Pocket Wi-Fi S II for emobile",
+      "deviceName": "U8510",
+      "marketingName": "Ideos X3",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
         "width": 480,
         "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.2
       },
       "type": "smartphone"
     },
@@ -802,15 +802,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; M865 Build/HuaweiM865) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Huawei device",
-      "marketingName": "general Huawei device",
+      "deviceName": "M865",
+      "marketingName": "M865",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -840,7 +840,7 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; de-de; U8220/Pulse Build/FRG83) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "Pulse",
+      "deviceName": "U8220",
       "marketingName": "Pulse",
       "manufacturer": "huawei",
       "brand": "t-mobile",
@@ -848,7 +848,7 @@
         "width": 480,
         "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -870,6 +870,44 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; de-de; U8220 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
+    },
+    "device": {
+      "deviceName": "U8220",
+      "marketingName": "Pulse",
+      "manufacturer": "huawei",
+      "brand": "t-mobile",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.17.0",
       "manufacturer": "apple"
     }
   }

@@ -1,18 +1,4 @@
 {
-  "o2 xda_diamond_2": {
-    "deviceName": "Xda Diamond 2",
-    "marketingName": "Xda Diamond 2",
-    "manufacturer": "htc",
-    "brand": "o2",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
-  },
   "o2 xda_diamond": {
     "deviceName": "Xda Diamond",
     "marketingName": "Xda Diamond",
@@ -27,16 +13,16 @@
     "type": "smartphone",
     "platform": null
   },
-  "o2 xda stellar": {
-    "deviceName": "Xda Stellar",
-    "marketingName": "Xda Stellar",
+  "o2 xda_diamond_2": {
+    "deviceName": "Xda Diamond 2",
+    "marketingName": "Xda Diamond 2",
     "manufacturer": "htc",
     "brand": "o2",
     "display": {
-      "width": 240,
-      "height": 320,
+      "width": 800,
+      "height": 480,
       "touch": true,
-      "size": 2.8
+      "size": null
     },
     "type": "smartphone",
     "platform": null
@@ -47,10 +33,24 @@
     "manufacturer": "htc",
     "brand": "o2",
     "display": {
-      "width": 240,
-      "height": 320,
+      "width": 320,
+      "height": 240,
       "touch": true,
       "size": 2.6
+    },
+    "type": "smartphone",
+    "platform": null
+  },
+  "o2 xda stellar": {
+    "deviceName": "Xda Stellar",
+    "marketingName": "Xda Stellar",
+    "manufacturer": "htc",
+    "brand": "o2",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": null

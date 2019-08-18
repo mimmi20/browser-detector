@@ -13,6 +13,20 @@
     "type": "feature-phone",
     "platform": "android"
   },
+  "utstarcom txt8010": {
+    "deviceName": "TXT8010",
+    "marketingName": "Blitz",
+    "manufacturer": "utstarcom",
+    "brand": "utstarcom",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "utstarcom g26": {
     "deviceName": "G26",
     "marketingName": "G26",
@@ -51,20 +65,6 @@
       "height": 176,
       "touch": false,
       "size": null
-    },
-    "type": "feature-phone",
-    "platform": "windows ce"
-  },
-  "utstarcom txt8010": {
-    "deviceName": "TXT8010",
-    "marketingName": "Blitz",
-    "manufacturer": "utstarcom",
-    "brand": "utstarcom",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": false,
-      "size": 2.2
     },
     "type": "feature-phone",
     "platform": "windows ce"
