@@ -92,7 +92,7 @@
     "/vk-/i": "vk-mobile",
     "/vk700|vk6050/i": "vk-world",
     "/(?<![adhor]|gll )lg(?!e| nexus| player)|lg[em](?! nexus|\\/google)|g3mini| g3 |((?<!s)(l[ns]|us|v[kms])[0-9]{3}(pp|u| 4g)?|h87[01]|h870k|h831|p713|p509|c660| k10|gt540| l50)( build|[;\\/\\)])|optimus g|l-0[0-9][cdef]|lm-[gqvx][0-9]{3}|vk810 4g|(adr|android) 6\\.0.* x5( build|[;\\/\\)])|g watch|ku9500|su950|gw620| ally |as740|vortex|ms840|p940|rs988|ti320-du|(adr|android) 5\\.1.* g4s( build|[;\\/\\)])/i": "lg",
-    "/gigaset|gs5[357]-6|gs100|gs18[05]|gs[23]70|qv1030/i": "gigaset",
+    "/gigaset|gs5[357]-6|gs80|gs100|gs18[05]|gs[23]70|qv1030/i": "gigaset",
     "/s-tell/i": "s-tell",
     "/bliss/i": "bliss",
     "/poly ?pad/i": "polypad",
@@ -779,6 +779,7 @@
     "/hi3798cv200/i": "egreat",
     "/dw-ubt3g7x/i": "datawind",
     "/t-hub ?2/i": "telstra",
+    "/imo q2/i": "imo",
     "/I5/": "sop",
     "/i5/": "vsun",
     "/KIN\\.(One|Two)|ZuneHD|Windows NT 6\\.(2|3).*ARM;/": "microsoft"
