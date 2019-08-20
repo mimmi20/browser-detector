@@ -498,15 +498,15 @@
       "user-agent": "HTC_Touch_HD2_T8585 Opera/10.00 (Windows NT 5.1; U; de)"
     },
     "device": {
-      "deviceName": "Touch HD",
-      "marketingName": "Touch HD",
+      "deviceName": "T8585",
+      "marketingName": "HD2",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": 3.8
+        "size": 4.3
       },
       "type": "feature-phone"
     },
@@ -519,9 +519,9 @@
       "type": "browser"
     },
     "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
       "manufacturer": "microsoft",
       "bits": null
     },
@@ -909,6 +909,44 @@
       "name": "Trident",
       "version": null,
       "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; en)"
+    },
+    "device": {
+      "deviceName": "T8585",
+      "marketingName": "HD2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.70.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
     }
   }
 ]
