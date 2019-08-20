@@ -13,20 +13,6 @@
     "type": "smartphone",
     "platform": null
   },
-  "sony h8266": {
-    "deviceName": "H8266",
-    "marketingName": "H8266",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": 2160,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "sonyericsson wt19a": {
     "deviceName": "WT19a",
     "marketingName": "Live with Walkman",
@@ -3298,7 +3284,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3340,7 +3326,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3683,6 +3669,20 @@
   },
   "sony h8216": {
     "deviceName": "H8216",
+    "marketingName": "Xperia XZ2",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony h8266": {
+    "deviceName": "H8266",
     "marketingName": "Xperia XZ2",
     "manufacturer": "sony",
     "brand": "sony",

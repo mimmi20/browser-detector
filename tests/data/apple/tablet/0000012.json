@@ -3760,5 +3760,43 @@
       "version": "533.17.9",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+    },
+    "device": {
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Apple Mail",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "email-client"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.4.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
   }
 ]

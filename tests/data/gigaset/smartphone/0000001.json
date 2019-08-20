@@ -354,7 +354,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -772,7 +772,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1076,7 +1076,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1152,7 +1152,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1342,7 +1342,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1456,7 +1456,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1738,6 +1738,82 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; GS80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GS80",
+      "marketingName": "GS80",
+      "manufacturer": "gigaset",
+      "brand": "gigaset",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Gigaset GS170) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GS170",
+      "marketingName": "GS170",
+      "manufacturer": "gigaset",
+      "brand": "gigaset",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },

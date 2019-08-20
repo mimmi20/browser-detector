@@ -210,6 +210,10 @@ final class Macos implements VersionDetectorInterface
 
         $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), $searches);
 
+        if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && 0 < preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
+            return $this->versionFactory->set($versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro']);
+        }
+
         if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && 0 < preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
             $version = $versions['major'] . '.' . $versions['minor'];
 

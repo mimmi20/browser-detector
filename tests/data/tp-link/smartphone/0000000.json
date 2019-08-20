@@ -199,10 +199,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -278,7 +278,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -655,10 +655,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -921,10 +921,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1339,10 +1339,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1377,10 +1377,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1643,10 +1643,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1871,10 +1871,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2137,10 +2137,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2479,10 +2479,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2669,10 +2669,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3087,10 +3087,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3239,10 +3239,10 @@
       "manufacturer": "tp-link",
       "brand": "tp-link",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3433,6 +3433,82 @@
         "height": 1080,
         "touch": true,
         "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Neffos_C7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36 EdgA/42.0.2.3819"
+    },
+    "device": {
+      "deviceName": "Neffos C7",
+      "marketingName": "Neffos C7",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "42.0.2.3819",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "537.36.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Neffos X1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Neffos X1",
+      "marketingName": "Neffos X1",
+      "manufacturer": "tp-link",
+      "brand": "tp-link",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
       },
       "type": "smartphone"
     },
