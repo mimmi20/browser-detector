@@ -10,8 +10,11 @@
     "/novo ?10 ?hero/i": "ainol novo 10 hero",
     "/novo9-spark/i": "ainol novo 9 spark",
     "/aurora-ii/i": "ainol novo 7 aurora ii",
-    "/novo7 flame/i": "ainol novo 7 flame",
-    "/novo7fire/i": "ainol novo7fire",
+    "/novo7[ _]?flame/i": "ainol novo 7 flame",
+    "/novo7[ _]?fire/i": "ainol novo 7 fire",
+    "/novo7[ _]?aurora/i": "ainol novo 7 aurora",
+    "/novo7[ _]?elf/i": "ainol novo 7 elf",
+    "/novo7[ _]?advanced ?2/i": "ainol novo 7 advanced 2",
     "/ q88/i": "ainol q88"
   },
   "generic": "general ainol device"
