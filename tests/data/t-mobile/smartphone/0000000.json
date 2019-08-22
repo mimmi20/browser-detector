@@ -530,5 +530,119 @@
       "version": null,
       "manufacturer": "opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Googlebot-Mobile"
+    },
+    "device": {
+      "deviceName": "general T-Mobile device",
+      "marketingName": "general T-Mobile device",
+      "manufacturer": "t-mobile",
+      "brand": "t-mobile",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Bot Mobile",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "(compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)"
+    },
+    "device": {
+      "deviceName": "general T-Mobile device",
+      "marketingName": "general T-Mobile device",
+      "manufacturer": "t-mobile",
+      "brand": "t-mobile",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Bot Mobile",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.2; en-US; Vision-T-Mobile-G2 Build/N22T17)"
+    },
+    "device": {
+      "deviceName": "general T-Mobile device",
+      "marketingName": "general T-Mobile device",
+      "manufacturer": "t-mobile",
+      "brand": "t-mobile",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

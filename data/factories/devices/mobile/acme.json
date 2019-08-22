@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/tb717-3g/i": "acme tb717-3g",
+    "/tb717[_\\-]3g/i": "acme tb717-3g",
+    "/tb713[_\\-]3g/i": "acme tb713-3g",
     "/tb1016/i": "acme tb1016",
     "/tb714/i": "acme tb714"
   },

@@ -41,7 +41,7 @@
     "type": "laptop",
     "platform": "android"
   },
-  "eee pc": {
+  "asus eee pc": {
     "deviceName": "eee pc",
     "marketingName": "eee pc",
     "manufacturer": "asus",
@@ -51,6 +51,20 @@
       "height": 480,
       "touch": false,
       "size": 7
+    },
+    "type": "laptop",
+    "platform": null
+  },
+  "asus eee pc 900": {
+    "deviceName": "eee pc 900",
+    "marketingName": "eee pc 900",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": false,
+      "size": 8.9
     },
     "type": "laptop",
     "platform": null

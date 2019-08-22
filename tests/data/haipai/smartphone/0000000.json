@@ -150,5 +150,43 @@
       "version": "40.0.2214.89",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.6; de-de; i9220 Build/IMM76D) UC AppleWebKit/530+ (KHTML, like Gecko) Mobile Safari/530"
+    },
+    "device": {
+      "deviceName": "I9220",
+      "marketingName": "Noble",
+      "manufacturer": "haipai",
+      "brand": "haipai",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.6",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.0.0",
+      "manufacturer": "apple"
+    }
   }
 ]

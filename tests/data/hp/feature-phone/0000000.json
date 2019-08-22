@@ -416,5 +416,81 @@
       "version": "534.6.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (webOS/2.1.2; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160UNA/1.0"
+    },
+    "device": {
+      "deviceName": "P160UNA",
+      "marketingName": "Veer",
+      "manufacturer": "hp",
+      "brand": "hp",
+      "display": {
+        "width": 400,
+        "height": 320,
+        "touch": true,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "webOS Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "hp",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "webOS",
+      "marketingName": "webOS",
+      "version": "2.1.2",
+      "manufacturer": "hp",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "532.2.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HPiPAQhw6900/1.0/Mozilla/4.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240)/UC Browser7.8.0.95"
+    },
+    "device": {
+      "deviceName": "iPAQ 6900",
+      "marketingName": "iPAQ 6900",
+      "manufacturer": "hp",
+      "brand": "hp",
+      "display": {
+        "width": 240,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
   }
 ]
