@@ -2981,12 +2981,12 @@
       "type": "phablet"
     },
     "browser": {
-      "name": null,
+      "name": "Android Webkit",
       "modus": null,
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2996,9 +2996,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "apple"
     }
   },
   {

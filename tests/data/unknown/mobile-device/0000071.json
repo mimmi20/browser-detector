@@ -1651,10 +1651,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Edge",
+      "name": "Android WebView",
       "modus": null,
-      "version": null,
-      "manufacturer": "microsoft",
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
@@ -1993,10 +1993,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Firefox Rocket",
       "modus": null,
-      "version": "61.0.3163.98",
-      "manufacturer": "google",
+      "version": "0.8.1455",
+      "manufacturer": "mozilla-foundation",
       "bits": null,
       "type": "browser"
     },
@@ -3361,10 +3361,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Mozilla",
+      "name": "Android Webkit",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
+      "version": null,
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
@@ -3376,9 +3376,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Gecko",
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "mozilla-foundation"
+      "manufacturer": "apple"
     }
   },
   {

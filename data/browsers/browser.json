@@ -246,6 +246,18 @@
     },
     "engine": null
   },
+  "aol shield": {
+    "name": "AOL Shield",
+    "manufacturer": "aol",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AOLShield"
+      ]
+    },
+    "engine": "gecko"
+  },
   "apusbrowser": {
     "name": "APUSBrowser",
     "manufacturer": "apus-group",
@@ -373,6 +385,18 @@
     },
     "engine": null
   },
+  "awesomium": {
+    "name": "Awesomium",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Awesomium"
+      ]
+    },
+    "engine": null
+  },
   "baidu browser": {
     "name": "Baidu Browser",
     "manufacturer": "baidu",
@@ -382,8 +406,7 @@
       "search": [
         "bdbrowser_i18n",
         "bdbrowser",
-        "baidubrowser",
-        "BIDUBrowser"
+        "baidubrowser"
       ]
     },
     "engine": null
@@ -408,6 +431,18 @@
       "class": "VersionFactory",
       "search": [
         "bdbrowser_mini"
+      ]
+    },
+    "engine": null
+  },
+  "baidu spark": {
+    "name": "Baidu Spark",
+    "manufacturer": "baidu",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BIDUBrowser"
       ]
     },
     "engine": null
@@ -684,6 +719,18 @@
     },
     "engine": "webkit"
   },
+  "chrome plus": {
+    "name": "Chrome Plus",
+    "manufacturer": "maple-studio",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ChromePlus"
+      ]
+    },
+    "engine": null
+  },
   "chromium": {
     "name": "Chromium",
     "manufacturer": "google",
@@ -778,24 +825,12 @@
   },
   "coolnovo": {
     "name": "CoolNovo",
-    "manufacturer": "unknown",
+    "manufacturer": "maple-studio",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
       "search": [
         "CoolNovo"
-      ]
-    },
-    "engine": null
-  },
-  "coolnovo chrome plus": {
-    "name": "CoolNovo Chrome Plus",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "ChromePlus"
       ]
     },
     "engine": null
@@ -944,6 +979,18 @@
         "DolphinHDCN",
         "Dolfin",
         "Dolphin"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "dooble": {
+    "name": "Dooble",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dooble"
       ]
     },
     "engine": "webkit"
@@ -1215,6 +1262,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "firefox rocket": {
+    "name": "Firefox Rocket",
+    "manufacturer": "mozilla-foundation",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Rocket"
+      ]
+    },
+    "engine": "blink"
   },
   "fireweb navigator": {
     "name": "Fireweb Navigator",
@@ -2105,7 +2164,8 @@
       "class": "VersionFactory",
       "search": [
         "MicroB",
-        "Maemo Browser"
+        "Maemo Browser",
+        "Tablet browser"
       ]
     },
     "engine": "gecko"
@@ -2480,9 +2540,20 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "BrowserNG",
         "NokiaBrowser",
         "Version"
+      ]
+    },
+    "engine": null
+  },
+  "nokia oss browser": {
+    "name": "Nokia OSS Browser",
+    "manufacturer": "nokia",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BrowserNG"
       ]
     },
     "engine": null
@@ -3867,6 +3938,18 @@
       ]
     },
     "engine": "blink"
+  },
+  "wikibrowser": {
+    "name": "WikiBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WikiBrowser"
+      ]
+    },
+    "engine": null
   },
   "winwap": {
     "name": "WinWAP",

@@ -1537,10 +1537,10 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Edge",
+      "name": "Android WebView",
       "modus": null,
-      "version": null,
-      "manufacturer": "microsoft",
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
@@ -1879,12 +1879,12 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": null,
+      "name": "Android Webkit",
       "modus": null,
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1894,9 +1894,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "apple"
     }
   },
   {

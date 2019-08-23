@@ -5,7 +5,8 @@
     "/ucweb.*opera mini/i": "ucbrowser",
     "/opera mini/i": "opera mini",
     "/opera mobi|(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr\\/)|(?:opera|opr\\/).*(?:android|mtk|maui|samsung|windows ce|symbos)/i": "opera mobile",
-    "/nintendo wii/i": "nintendobrowser"
+    "/nintendo wii/i": "nintendobrowser",
+    "/microb|maemo ?browser|tablet browser/i": "microb"
   },
   "generic": "opera"
 }
