@@ -2811,6 +2811,16 @@
     },
     "engine": "unknown"
   },
+  "google ads overview": {
+    "name": "Google Ads Overview",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "google adwords displayads webrender": {
     "name": "Google Adwords DisplayAds WebRender",
     "manufacturer": "google",
@@ -2855,6 +2865,18 @@
       "class": "VersionFactory",
       "search": [
         "Googlebot\\-Mobile"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google chtml proxy": {
+    "name": "Google CHTML Proxy",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google CHTML Proxy"
       ]
     },
     "engine": "unknown"
@@ -5606,6 +5628,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "PPBot",
         "PagePeeker"
       ]
     },
@@ -7849,6 +7872,18 @@
       "class": "VersionFactory",
       "search": [
         "Traackr"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "traffic blazer": {
+    "name": "Traffic Blazer",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TrafficBlazer"
       ]
     },
     "engine": "unknown"

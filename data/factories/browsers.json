@@ -1,6 +1,6 @@
 {
   "rules": {
-    "/edge/i": "edge",
+    "/(?<!l)edge\\//i": "edge",
     "/chr[o0]me(?!book)|crmo/i": "blink",
     "/webkit|safari|cfnetwork|dalvik|ipad|ipod|iphone|khtml/i": "webkit",
     "/(?<![kK][aA])iOS/": "webkit",
