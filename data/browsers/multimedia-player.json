@@ -360,6 +360,18 @@
     },
     "engine": "unknown"
   },
+  "nexplayer": {
+    "name": "NexPlayer",
+    "manufacturer": "nexstreaming",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NexPlayer"
+      ]
+    },
+    "engine": null
+  },
   "overcast": {
     "name": "Overcast",
     "manufacturer": "overcast radio",

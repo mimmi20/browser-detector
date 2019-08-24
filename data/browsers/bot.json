@@ -497,6 +497,18 @@
     },
     "engine": "unknown"
   },
+  "apiaryhttpclient": {
+    "name": "ApiaryHttpClient",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ApiaryHttpClient"
+      ]
+    },
+    "engine": "unknown"
+  },
   "apple pubsub": {
     "name": "Apple PubSub",
     "manufacturer": "apple",
@@ -4613,6 +4625,18 @@
     },
     "engine": "webkit"
   },
+  "mediobot": {
+    "name": "Mediobot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mediobot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "megaindex bot": {
     "name": "MegaIndex Bot",
     "manufacturer": "mega-index",
@@ -8614,6 +8638,18 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "wapstart-crawler": {
+    "name": "wapstart-crawler",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "wapstart-crawler"
+      ]
     },
     "engine": "unknown"
   },

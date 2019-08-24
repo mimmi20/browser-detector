@@ -442,7 +442,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "BIDUBrowser"
+        "BIDUBrowser",
+        "Spark"
       ]
     },
     "engine": null
@@ -589,6 +590,19 @@
       ]
     },
     "engine": "blink"
+  },
+  "browsex": {
+    "name": "BrowseX",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BrowseX \\(",
+        "BrowseX"
+      ]
+    },
+    "engine": null
   },
   "browzar": {
     "name": "Browzar",
@@ -1473,6 +1487,18 @@
     },
     "engine": "unknown"
   },
+  "huohoubrowser": {
+    "name": "HuohouBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HuohouBrowser"
+      ]
+    },
+    "engine": null
+  },
   "iball": {
     "name": "iBall",
     "manufacturer": "unknown",
@@ -1665,6 +1691,18 @@
       ]
     },
     "engine": "trident"
+  },
+  "ilunascape": {
+    "name": "iLunascape",
+    "manufacturer": "lunascape",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iLunascape"
+      ]
+    },
+    "engine": null
   },
   "inettvbrowser": {
     "name": "InettvBrowser",
@@ -1965,7 +2003,7 @@
     },
     "engine": null
   },
-  "liebao": {
+  "libao browser": {
     "name": "LibaoBrowser",
     "manufacturer": "kingsoft",
     "type": "browser",
@@ -2045,8 +2083,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Lunascape",
-        "iLunascape"
+        "Lunascape"
       ]
     },
     "engine": null
@@ -2558,6 +2595,18 @@
     },
     "engine": null
   },
+  "ntentbrowser": {
+    "name": "NTENTBrowser",
+    "manufacturer": "ntent",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NTENTBrowser"
+      ]
+    },
+    "engine": "webkit"
+  },
   "docomo": {
     "name": "ntt-docomo",
     "manufacturer": "ntt-docomo",
@@ -2589,6 +2638,18 @@
       ]
     },
     "engine": "blink"
+  },
+  "offbyone": {
+    "name": "Off By One",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OffByOne"
+      ]
+    },
+    "engine": null
   },
   "omniweb": {
     "name": "OmniWeb",
@@ -3428,6 +3489,18 @@
     },
     "engine": "webkit"
   },
+  "snowshoe": {
+    "name": "Snowshoe",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Snowshoe"
+      ]
+    },
+    "engine": "webkit"
+  },
   "sogou explorer": {
     "name": "Sogou Explorer",
     "manufacturer": "sogou",
@@ -3584,6 +3657,18 @@
       ]
     },
     "engine": null
+  },
+  "swiftfox": {
+    "name": "Swiftfox",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Swiftfox"
+      ]
+    },
+    "engine": "gecko"
   },
   "symphonybrowser": {
     "name": "SymphonyBrowser",
@@ -3856,6 +3941,18 @@
       ]
     },
     "engine": "gecko"
+  },
+  "web pro": {
+    "name": "Web Pro",
+    "manufacturer": "palm",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebPro"
+      ]
+    },
+    "engine": "unknown"
   },
   "webianshell": {
     "name": "WebianShell",

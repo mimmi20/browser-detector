@@ -1043,10 +1043,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Samsung Browser",
+      "name": "Mozilla",
       "modus": null,
-      "version": null,
-      "manufacturer": "samsung",
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
       "bits": null,
       "type": "browser"
     },
@@ -1058,9 +1058,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Gecko",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -2449,12 +2449,12 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Dolfin",
+      "name": "NexPlayer",
       "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "mopotab",
+      "version": "3.0.0",
+      "manufacturer": "nexstreaming",
       "bits": null,
-      "type": "browser"
+      "type": "multimedia-player"
     },
     "os": {
       "name": "Bada",

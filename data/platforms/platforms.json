@@ -188,6 +188,17 @@
       "search": null
     }
   },
+  "cyanogenmod": {
+    "name": "CyanogenMod",
+    "marketingName": "CyanogenMod",
+    "manufacturer": "unknown",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CyanogenMod"
+      ]
+    }
+  },
   "cygwin": {
     "name": "Cygwin",
     "marketingName": "Cygwin",
@@ -493,6 +504,17 @@
     "version": {
       "class": null,
       "search": null
+    }
+  },
+  "mocordroid": {
+    "name": "MocorDroid",
+    "marketingName": "MocorDroid",
+    "manufacturer": "unknown",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MocorDroid"
+      ]
     }
   },
   "morph-os": {

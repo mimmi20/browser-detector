@@ -14,6 +14,7 @@
     "/uc ?browser|ucweb/i": "ucbrowser",
     "/bidubrowser/i": "baidu spark",
     "/baidubrowser|bdbrowser/i": "baidu browser",
+    "/qqbrowser/i": "qqbrowser",
     "/iemobile|wpdesktop|zunewp7|xblwp7/i": "iemobile",
     "/bingpreview/i": "bing preview",
     "/haosouspider/i": "haosouspider",
@@ -24,6 +25,7 @@
     "/crazy browser/i": "crazy browser",
     "/deepnet explorer/i": "deepnet explorer",
     "/kkman/i": "kkman",
+    "/ilunascape/i": "ilunascape",
     "/lunascape/i": "lunascape",
     "/sleipnir/i": "sleipnir",
     "/smartsite httpclient/i": "smartsite httpclient",
@@ -44,15 +46,15 @@
     "/wayback save page/i": "wayback archive bot",
     "/savewealth/i": "savewealth",
     "/cobalt/i": "cobalt",
-    "/qqbrowser/i": "qqbrowser",
     "/polarity/i": "polarity",
     "/netgem/i": "netgem set top box",
     "/via translate\\.google\\.com/i": "google translate",
     "/playstation|psp /i": "playstation browser",
+    "/nexplayer/i": "nexplayer",
     "/netfront|nf\\/?[34]/i": "netfront",
     "/greenbrowser/i": "greenbrowser",
     "/juzibrowser/i": "juzibrowser",
-    "/lbbrowser/i": "liebao",
+    "/lbbrowser/i": "libao browser",
     "/aol/i": "aol desktop",
     "/zune/i": "zune",
     "/browzar/i": "browzar",
@@ -68,7 +70,8 @@
     "/netcraft web server survey/i": "netcraft webserver survey",
     "/netcraft ssl server survey/i": "netcraft ssl server survey",
     "/trafficblazer/i": "traffic blazer",
-    "/dillo/i": "dillo"
+    "/dillo/i": "dillo",
+    "/ se (?!build)/i": "sogou explorer"
   },
   "generic": "internet explorer"
 }

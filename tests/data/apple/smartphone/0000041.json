@@ -2335,7 +2335,7 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Lunascape",
+      "name": "iLunascape",
       "modus": null,
       "version": "1332.0.0",
       "manufacturer": "lunascape",
@@ -2601,7 +2601,7 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Lunascape",
+      "name": "iLunascape",
       "modus": null,
       "version": "1332.0.0",
       "manufacturer": "lunascape",
@@ -2867,7 +2867,7 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Lunascape",
+      "name": "iLunascape",
       "modus": null,
       "version": "953.0.0",
       "manufacturer": "lunascape",
@@ -3264,6 +3264,44 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9A405 Safari/7534.48 Instapaper/4.0.2 (+http://www.instapaper.com/iphone)"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "5.1.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "5.0.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.46.0",
       "manufacturer": "apple"
     }
   }

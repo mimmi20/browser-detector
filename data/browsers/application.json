@@ -533,6 +533,18 @@
     },
     "engine": "webkit"
   },
+  "flycast": {
+    "name": "FlyCast",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FlyCast"
+      ]
+    },
+    "engine": null
+  },
   "frontpage": {
     "name": "FrontPage",
     "manufacturer": "microsoft",
@@ -635,6 +647,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "instapaper": {
+    "name": "Instapaper",
+    "manufacturer": "instant paper",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Instapaper"
+      ]
+    },
+    "engine": null
   },
   "ios dataaccessd": {
     "name": "iOS dataaccessd",
@@ -1681,5 +1705,17 @@
       "search": null
     },
     "engine": null
+  },
+  "zillowmap": {
+    "name": "ZillowMap",
+    "manufacturer": "zillow",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ZillowMap"
+      ]
+    },
+    "engine": "webkit"
   }
 }
