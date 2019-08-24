@@ -23,6 +23,18 @@
     },
     "engine": "webkit"
   },
+  "google play newsstand": {
+    "name": "Google Play Newsstand",
+    "manufacturer": "google",
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NS"
+      ]
+    },
+    "engine": null
+  },
   "liferea": {
     "name": "Liferea",
     "manufacturer": "lars windolf",

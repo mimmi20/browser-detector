@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; ja-jp; N-01D Build/A1003601) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ar-eg; mTAB7 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
@@ -405,10 +443,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.9",
-      "manufacturer": "google",
+      "name": "MocorDroid",
+      "marketingName": "MocorDroid",
+      "version": "2.3.5",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -1241,10 +1279,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
+      "name": "CyanogenMod",
+      "marketingName": "CyanogenMod",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {

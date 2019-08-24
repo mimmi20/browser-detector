@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; Microsoft; XDeviceEmulator)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS 8.0",
+      "marketingName": "Windows Phone OS 8.0",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Microsoft; XDeviceEmulator) like Gecko"
     },
     "device": {
@@ -2145,9 +2183,9 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "FlyFlow",
+      "name": "Baidu Browser",
       "modus": null,
-      "version": "2.4.0",
+      "version": "042.9.0.4.2",
       "manufacturer": "baidu",
       "bits": null,
       "type": "browser"
@@ -3753,44 +3791,6 @@
       "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "W3C MobileOK Checker",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {

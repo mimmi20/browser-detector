@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1-1.0.0; de-de; rk2818sdk Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.17.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Android 4.0.3; Linux; Opera Mobi/ADR-1111101157; U; pl) Presto/2.9.201 Version/11.50"
     },
     "device": {
@@ -1659,10 +1697,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.7",
-      "manufacturer": "google",
+      "name": "CyanogenMod",
+      "marketingName": "CyanogenMod",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -1811,10 +1849,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
+      "name": "CyanogenMod",
+      "marketingName": "CyanogenMod",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2495,10 +2533,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
+      "name": "CyanogenMod",
+      "marketingName": "CyanogenMod",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2951,10 +2989,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
+      "name": "CyanogenMod",
+      "marketingName": "CyanogenMod",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -3759,44 +3797,6 @@
       "name": "Presto",
       "version": "2.8.119",
       "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; Mini Build/IMM76L; CyanogenMod-9.0.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
     }
   }
 ]
