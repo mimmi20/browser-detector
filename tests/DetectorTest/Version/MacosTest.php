@@ -118,6 +118,10 @@ final class MacosTest extends TestCase
                 'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)',
                 '10.5.7',
             ],
+            [
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10102) AppleWebKit/640.3.18 (KHTML like Gecko) Version/10.0.2 Safari/640.3.18',
+                '10.10.2',
+            ],
         ];
     }
 }
