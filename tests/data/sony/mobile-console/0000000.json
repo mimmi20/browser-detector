@@ -264,5 +264,43 @@
       "version": "531.3.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (PSP (PlayStation Portable); 2.00) Novarra-Vision/7.3"
+    },
+    "device": {
+      "deviceName": "PlayStation Portable",
+      "marketingName": "PlayStation Portable",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 480,
+        "height": 272,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "Vision",
+      "modus": null,
+      "version": "7.3.0",
+      "manufacturer": "novarra",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

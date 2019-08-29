@@ -672,6 +672,18 @@
     },
     "engine": "webkit"
   },
+  "twonky beam": {
+    "name": "Twonky Beam",
+    "manufacturer": "packet-video",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TwonkyBeamBrowser"
+      ]
+    },
+    "engine": null
+  },
   "vlc media player": {
     "name": "VLC Media Player",
     "manufacturer": "video-lan",

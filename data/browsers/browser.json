@@ -2651,6 +2651,20 @@
     },
     "engine": "blink"
   },
+  "odyssey web browser": {
+    "name": "Odyssey Web Browser",
+    "manufacturer": "fabien coeurjoly",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Origyn Web Browser",
+        "OWB",
+        "rv:"
+      ]
+    },
+    "engine": "webkit"
+  },
   "offbyone": {
     "name": "Off By One",
     "manufacturer": "unknown",
@@ -2817,6 +2831,19 @@
       ]
     },
     "engine": null
+  },
+  "origyn web browser": {
+    "name": "Origyn Web Browser",
+    "manufacturer": "sand-labs",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Origyn Web Browser",
+        "OWB"
+      ]
+    },
+    "engine": "webkit"
   },
   "otter": {
     "name": "Otter",

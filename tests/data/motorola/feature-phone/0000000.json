@@ -9,8 +9,8 @@
       "manufacturer": "motorola",
       "brand": "motorola",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 208,
         "touch": false,
         "size": null
       },
@@ -1782,6 +1782,44 @@
       "marketingName": "Windows CE",
       "version": null,
       "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS) Opera 6.0 [it]./MOT-A925./P243"
+    },
+    "device": {
+      "deviceName": "A925",
+      "marketingName": "A925",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 320,
+        "height": 208,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
       "bits": null
     },
     "engine": {
