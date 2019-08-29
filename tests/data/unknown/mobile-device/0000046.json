@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.13337/24.783; U; de) Presto/2.5.25 Version/10.54"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.2.13337",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.5.25",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Vodafone/1.0/SamsungC6625/BUIF2 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "Presto",
       "version": "2.5.25",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (S60; SymbOS; Opera Mobi/934; U; de) Presto/2.5.28 Version/10.1"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "10.1.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.28",
       "manufacturer": "opera"
     }
   }

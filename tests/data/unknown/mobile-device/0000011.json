@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.26916/26.1424; U; ru) Presto/2.8.119 Version/10.54"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.26916",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Android; Opera Mini/32.0.2254/79.10; U; en) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -3753,44 +3791,6 @@
       "marketingName": "Android",
       "version": "7.0.0",
       "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Kodi/15.2 (X11; Linux armv7l) OpenELEC/6.0 HW_RaspberryPi/1.0 App_Bitness/32 Version/15.2-Git:02e7013"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Kodi Media Center",
-      "modus": null,
-      "version": "15.2.0",
-      "manufacturer": "xbmc-foundation",
-      "bits": null,
-      "type": "multimedia-player"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {

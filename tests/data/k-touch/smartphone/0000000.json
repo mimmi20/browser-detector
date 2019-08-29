@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; K-Touch W719 Build/IMM76I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "W719",
+      "marketingName": "W719",
+      "manufacturer": "k-touch",
+      "brand": "k-touch",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "30.0.1599.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.1599.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; K-Touch T96 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 baiduboxapp/4.2 (Baidu; P1 4.0.4)"
     },
     "device": {
@@ -533,44 +571,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U;AliyunOS 1.5.1.18-RT-20120724.182153; zh-cn; K-Touch W688 Build/AliyunOs-2012;Android 2.3 Compatible) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "W688",
-      "marketingName": "W688",
-      "manufacturer": "k-touch",
-      "brand": "k-touch",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Aliyun Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Yun OS",
-      "marketingName": "Yun OS",
-      "version": "1.5.1.18",
-      "manufacturer": "alibaba",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "K-Touch W98/java_c_5609c Linux/3.4.5+ Android/4.2.2 Release/JDQ39 Browser/AppleWebKit534.30 Profile/ Configuration/ Mobile Safari/534.30"
     },
     "device": {
@@ -902,6 +902,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "1.5.2.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U;AliyunOS 1.5.1.18-RT-20120724.182153; zh-cn; K-Touch W688 Build/AliyunOs-2012;Android 2.3 Compatible) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "W688",
+      "marketingName": "W688",
+      "manufacturer": "k-touch",
+      "brand": "k-touch",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Aliyun Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.0",
       "manufacturer": "google",
       "bits": null
     },

@@ -88,7 +88,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10
       },
       "type": "tablet"
     },
@@ -278,7 +278,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10
       },
       "type": "tablet"
     },
@@ -506,7 +506,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10
       },
       "type": "tablet"
     },
@@ -582,7 +582,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10
       },
       "type": "tablet"
     },
@@ -658,7 +658,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": null
+        "size": 10
       },
       "type": "tablet"
     },
@@ -757,6 +757,120 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; MediaPad 10 FHD Build/HuaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36 OPR/16.0.1212.65857"
+    },
+    "device": {
+      "deviceName": "MediaPad 10 FHD",
+      "marketingName": "MediaPad 10 FHD",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "16.0.1212.65857",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "29.0.1547.72",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; MediaPad 10 LINK Build/HuaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "S7-301w",
+      "marketingName": "MediaPad 10 Link",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "30.0.1599.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.1599.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; CMR-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "CMR-W09",
+      "marketingName": "MediaPad M5 10.8",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.111",
+      "manufacturer": "google"
     }
   }
 ]

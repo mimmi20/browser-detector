@@ -13,20 +13,6 @@
     "type": "tablet",
     "platform": "android"
   },
-  "energy-sistem 8 dual": {
-    "deviceName": "8 Dual",
-    "marketingName": "8 Dual",
-    "manufacturer": "energy-sistem",
-    "brand": "energy-sistem",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "energy-sistem i10 dual": {
     "deviceName": "I10 Dual",
     "marketingName": "I10 Dual",
@@ -41,6 +27,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "energy-sistem i8 dual": {
+    "deviceName": "i8 Dual",
+    "marketingName": "i8 Dual",
+    "manufacturer": "energy-sistem",
+    "brand": "energy-sistem",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "energy-sistem s10 dual": {
     "deviceName": "S10 Dual",
     "marketingName": "S10 Dual",
@@ -50,7 +50,7 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -64,7 +64,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"

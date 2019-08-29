@@ -5,14 +5,14 @@
     },
     "device": {
       "deviceName": "Venue 7 3740",
-      "marketingName": "Venue 7 3740",
+      "marketingName": "Venue 7",
       "manufacturer": "dell",
       "brand": "dell",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -43,14 +43,14 @@
     },
     "device": {
       "deviceName": "Venue 7 3740",
-      "marketingName": "Venue 7 3740",
+      "marketingName": "Venue 7",
       "manufacturer": "dell",
       "brand": "dell",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -81,14 +81,14 @@
     },
     "device": {
       "deviceName": "Venue 7 3740",
-      "marketingName": "Venue 7 3740",
+      "marketingName": "Venue 7",
       "manufacturer": "dell",
       "brand": "dell",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -119,14 +119,14 @@
     },
     "device": {
       "deviceName": "Venue 7 3740",
-      "marketingName": "Venue 7 3740",
+      "marketingName": "Venue 7",
       "manufacturer": "dell",
       "brand": "dell",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -149,6 +149,120 @@
       "name": "Blink",
       "version": "43.0.2357.93",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; Dell Streak Build/FRG83G) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "Streak",
+      "marketingName": "Streak",
+      "manufacturer": "dell",
+      "brand": "dell",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; fr-fr; Dell Streak Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "Streak",
+      "marketingName": "Streak",
+      "manufacturer": "dell",
+      "brand": "dell",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; Dell Streak Build/FRG83G)Maxthon AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "Streak",
+      "marketingName": "Streak",
+      "manufacturer": "dell",
+      "brand": "dell",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "maxthon",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
     }
   }
 ]

@@ -2696,5 +2696,43 @@
       "version": null,
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.00 [en] (compatible; MSIE 5.5; Windows NT 5.0; WebTV; NetTV; RISC OS) Oregano2 2.2"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Oregano",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "oregan",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 5.0",
+      "marketingName": "Windows 2000",
+      "version": "5.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]
