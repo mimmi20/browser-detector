@@ -8,7 +8,7 @@
     "/seamonkey/i": "seamonkey",
     "/jobboerse/i": "jobboerse bot",
     "/netscape/i": "netscape",
-    "/navigator/i": "netscape navigator",
+    "/(?<!like )navigator/i": "netscape navigator",
     "/dt-browser/i": "dt-browser",
     "/360spider/i": "360spider",
     "/gomezagent/i": "gomez site monitor",

@@ -33,6 +33,18 @@
     },
     "engine": "unknown"
   },
+  "alizee ipod": {
+    "name": "Alizee iPod",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Alizee iPod"
+      ]
+    },
+    "engine": null
+  },
   "amarok": {
     "name": "Amarok",
     "manufacturer": "unknown",
@@ -438,6 +450,30 @@
       ]
     },
     "engine": "webkit"
+  },
+  "podcasts": {
+    "name": "Podcasts",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Podcasts"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "podcat": {
+    "name": "Podcat",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Podcat"
+      ]
+    },
+    "engine": null
   },
   "podcruncher": {
     "name": "PodCruncher",

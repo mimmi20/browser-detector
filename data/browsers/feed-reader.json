@@ -11,6 +11,20 @@
     },
     "engine": "webkit"
   },
+  "applenews": {
+    "name": "AppleNews",
+    "manufacturer": "apple",
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Version",
+        "AppleNews",
+        "News\\/"
+      ]
+    },
+    "engine": "webkit"
+  },
   "feeddler rss reader": {
     "name": "Feeddler RSS Reader",
     "manufacturer": "che-bin-liu",
@@ -18,7 +32,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "FeeddlerRSS"
+        "FeeddlerRSS",
+        "FeeddlerPro"
       ]
     },
     "engine": "webkit"
