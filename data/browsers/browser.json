@@ -518,6 +518,18 @@
     },
     "engine": null
   },
+  "bline": {
+    "name": "bline",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "bline"
+      ]
+    },
+    "engine": null
+  },
   "boardreader": {
     "name": "BoardReader",
     "manufacturer": "board-reader",
@@ -1277,8 +1289,20 @@
     },
     "engine": "blink"
   },
+  "firefox focus ios": {
+    "name": "Firefox Focus for iOS",
+    "manufacturer": "mozilla-foundation",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FocusiOS"
+      ]
+    },
+    "engine": "webkit"
+  },
   "firefox for ios": {
-    "name": "Firefox for iOS",
+    "name": "Firefox Mobile for iOS",
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
@@ -1312,6 +1336,18 @@
       ]
     },
     "engine": "treco"
+  },
+  "flamesky": {
+    "name": "FlameSky",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FlameSky"
+      ]
+    },
+    "engine": null
   },
   "flock": {
     "name": "Flock",
@@ -1498,6 +1534,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "huawei-browser": {
+    "name": "HuaweiBrowser",
+    "manufacturer": "huawei",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HuaweiBrowser"
+      ]
+    },
+    "engine": null
   },
   "huohoubrowser": {
     "name": "HuohouBrowser",
@@ -3054,6 +3102,18 @@
     },
     "engine": "webkit"
   },
+  "pulse": {
+    "name": "Pulse",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Pulse"
+      ]
+    },
+    "engine": null
+  },
   "qqbrowser": {
     "name": "QQ Browser",
     "manufacturer": "tencent",
@@ -3103,6 +3163,18 @@
     },
     "engine": "unknown"
   },
+  "qtminibrowser": {
+    "name": "QtMiniBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QtMiniBrowser"
+      ]
+    },
+    "engine": null
+  },
   "qtweb internet browser": {
     "name": "QtWeb Internet Browser",
     "manufacturer": "logicware",
@@ -3138,6 +3210,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "quark": {
+    "name": "Quark",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Quark"
+      ]
+    },
+    "engine": null
   },
   "quick browser": {
     "name": "Quick Browser",
@@ -3204,6 +3288,7 @@
     "version": {
       "class": "VersionFactory",
       "search": [
+        "QwantiOS",
         "QwantMobile",
         "Qwant"
       ]
@@ -3243,6 +3328,18 @@
       "class": "VersionFactory",
       "search": [
         "RockMelt"
+      ]
+    },
+    "engine": null
+  },
+  "ruby-browser": {
+    "name": "RubyBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RubyBrowser"
       ]
     },
     "engine": null
@@ -3660,6 +3757,19 @@
     },
     "engine": null
   },
+  "sunrise": {
+    "name": "Sunrise",
+    "manufacturer": "zetakey-solutions",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SunriseBrowser",
+        "Sunrise"
+      ]
+    },
+    "engine": "webkit"
+  },
   "superbird": {
     "name": "superbird",
     "manufacturer": "superbird",
@@ -3855,6 +3965,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "tulip chain": {
+    "name": "Tulip Chain",
+    "manufacturer": "stephen ostermiller",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TulipChain"
+      ]
+    },
+    "engine": null
   },
   "ur-browser": {
     "name": "UR Browser",

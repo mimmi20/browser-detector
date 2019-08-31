@@ -258,6 +258,18 @@
     },
     "engine": "webkit"
   },
+  "chatlyio app": {
+    "name": "chatlyio App",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "com\\.tinyspeck\\.chatlyio"
+      ]
+    },
+    "engine": null
+  },
   "citrix chrome app": {
     "name": "Citrix Chrome App",
     "manufacturer": "citrix",
@@ -623,6 +635,18 @@
     },
     "engine": "webkit"
   },
+  "icatcher": {
+    "name": "icatcher",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "icatcher"
+      ]
+    },
+    "engine": null
+  },
   "instagram app": {
     "name": "Instagram App",
     "manufacturer": "facebook",
@@ -813,7 +837,7 @@
         "Mobicip"
       ]
     },
-    "engine": "gecko"
+    "engine": null
   },
   "apple mobilenotes": {
     "name": "MobileNotes",
@@ -845,6 +869,18 @@
       "class": "VersionFactory",
       "search": [
         "NewsArticle"
+      ]
+    },
+    "engine": null
+  },
+  "newsblur app": {
+    "name": "NewsBlur App",
+    "manufacturer": "newsblur",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NewsBlur"
       ]
     },
     "engine": null
@@ -1064,6 +1100,18 @@
       "search": null
     },
     "engine": "webkit"
+  },
+  "qq-app": {
+    "name": "QQ-App",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "QQ"
+      ]
+    },
+    "engine": null
   },
   "quora app": {
     "name": "Quora App",
@@ -1346,6 +1394,18 @@
     },
     "engine": "unknown"
   },
+  "substream": {
+    "name": "SubStream",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SubStream"
+      ]
+    },
+    "engine": null
+  },
   "tanso download manager": {
     "name": "Tanso Download Manager",
     "manufacturer": "web-expansion",
@@ -1367,6 +1427,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "the diary": {
+    "name": "The Diary App",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "The Diary"
+      ]
+    },
+    "engine": null
   },
   "tubetv": {
     "name": "TubeTV",
@@ -1717,5 +1789,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "zite": {
+    "name": "Zite App",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Zite"
+      ]
+    },
+    "engine": null
   }
 }

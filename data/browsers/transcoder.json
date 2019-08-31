@@ -18,8 +18,19 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "OPiOS",
         "Opera Mini"
+      ]
+    },
+    "engine": null
+  },
+  "opera mini ios": {
+    "name": "Opera Mini for iOS",
+    "manufacturer": "opera",
+    "type": "transcoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OPiOS"
       ]
     },
     "engine": null
