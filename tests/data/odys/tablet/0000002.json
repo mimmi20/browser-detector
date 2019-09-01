@@ -1,101 +1,25 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.1.1; Xelio 7 pro Build/JRO03H)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; PACE_10_LTE_V2 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36 OPR/51.2.2461.137690"
     },
     "device": {
-      "deviceName": "Xelio 7 Pro",
-      "marketingName": "Xelio 7 Pro",
+      "deviceName": "Pace 10",
+      "marketingName": "Pace 10",
       "manufacturer": "odys",
       "brand": "odys",
       "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; XELIO Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Xelio",
-      "marketingName": "Xelio",
-      "manufacturer": "odys",
-      "brand": "odys",
-      "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1280,
+        "height": 800,
         "touch": true,
         "size": null
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "30.0.1599.92",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.1599.92",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; XELIO7PRO Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Safari/537.36 OPR/16.0.1212.65583"
-    },
-    "device": {
-      "deviceName": "Xelio 7 Pro",
-      "marketingName": "Xelio 7 Pro",
-      "manufacturer": "odys",
-      "brand": "odys",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "16.0.1212.65583",
+      "version": "51.2.2461.137690",
       "manufacturer": "opera",
       "bits": null,
       "type": "browser"
@@ -103,14 +27,52 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.1.1",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "29.0.1547.72",
+      "version": "72.0.3626.121",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; cs-cz; ELEMENT10 1 Build/ICS.g08refem611.20121108) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "general Odys device",
+      "marketingName": "general Odys device",
+      "manufacturer": "odys",
+      "brand": "odys",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]

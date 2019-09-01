@@ -1,4 +1,18 @@
 {
+  "general sony tv": {
+    "deviceName": "general Sony TV",
+    "marketingName": "general Sony TV",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": null
+  },
   "sony bravia 4k gb": {
     "deviceName": "Bravia 4K GB",
     "marketingName": "Bravia 4K GB",
@@ -7,20 +21,6 @@
     "display": {
       "width": 3840,
       "height": 2160,
-      "touch": false,
-      "size": null
-    },
-    "type": "tv",
-    "platform": null
-  },
-  "sony dtv": {
-    "deviceName": "general Sony TV",
-    "marketingName": "general Sony TV",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": null,
-      "height": null,
       "touch": false,
       "size": null
     },
@@ -55,6 +55,48 @@
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
   },
+  "sony kd-55xd8577": {
+    "deviceName": "KD-55XD8577",
+    "marketingName": "KD-55XD8577",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kd-65zd9": {
+    "deviceName": "KD-65ZD9",
+    "marketingName": "KD-65ZD9",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 65
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-32hx755": {
+    "deviceName": "KDL-32HX755",
+    "marketingName": "KDL-32HX755",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": "linux"
+  },
   "sony kdl-32w653a": {
     "deviceName": "KDL-32W653A",
     "marketingName": "KDL-32W653A",
@@ -69,6 +111,48 @@
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
   },
+  "sony kdl-32w655a": {
+    "deviceName": "KDL-32W655A",
+    "marketingName": "KDL-32W655A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-37ex720": {
+    "deviceName": "KDL-37EX720",
+    "marketingName": "KDL-37EX720",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": "linux"
+  },
+  "sony kdl-40ex720": {
+    "deviceName": "KDL-40EX720",
+    "marketingName": "KDL-40EX720",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": "linux"
+  },
   "sony kdl-40w905a": {
     "deviceName": "KDL-40W905A",
     "marketingName": "KDL-40W905A",
@@ -79,6 +163,20 @@
       "height": null,
       "touch": false,
       "size": 40
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-42w655a": {
+    "deviceName": "KDL-42W655A",
+    "marketingName": "KDL-42W655A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
     },
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
@@ -125,6 +223,20 @@
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
   },
+  "sony kdl-50w815b": {
+    "deviceName": "KDL-50W815B",
+    "marketingName": "KDL-50W815B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": null
+  },
   "sony kdl-55w905a": {
     "deviceName": "KDL-55W905A",
     "marketingName": "KDL-55W905A",
@@ -139,89 +251,19 @@
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
   },
-  "sony kdl32hx755": {
-    "deviceName": "KDL32HX755",
-    "marketingName": "KDL32HX755",
+  "sony kdl-65w859c": {
+    "deviceName": "KDL-65W859C",
+    "marketingName": "KDL-65W859C",
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
-      "size": null
-    },
-    "type": "tv",
-    "platform": "linux"
-  },
-  "sony kdl32w655a": {
-    "deviceName": "KDL32W655A",
-    "marketingName": "KDL32W655A",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
+      "size": 65
     },
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
-  },
-  "sony kdl37ex720": {
-    "deviceName": "KDL37EX720",
-    "marketingName": "KDL37EX720",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "tv",
-    "platform": "linux"
-  },
-  "sony kdl40ex720": {
-    "deviceName": "KDL40EX720",
-    "marketingName": "KDL40EX720",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "tv",
-    "platform": "linux"
-  },
-  "sony kdl42w655a": {
-    "deviceName": "KDL42W655A",
-    "marketingName": "KDL42W655A",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "tv",
-    "platform": "linux smartphone os (maemo)"
-  },
-  "sony kdl50w815b": {
-    "deviceName": "KDL50W815B",
-    "marketingName": "KDL50W815B",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "tv",
-    "platform": null
   },
   "sony netbox": {
     "deviceName": "Netbox",
