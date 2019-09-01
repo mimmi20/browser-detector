@@ -126,6 +126,7 @@ final class TvTest extends TestCase
             ['QuickTime\\\\xaa.7.0.4 (qtver=7.0.4;cpu=PPC;os=Mac 10.3.9)'],
             ['WAP Browser-Karbonn K84/1.0.0'],
             ['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/61.0.3163.128 Safari/534.24 XiaoMi/MiuiBrowser/9.4.1-Beta'],
+            ['Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Metzler Offline Explorer; GTB6; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; freenet.de frndial 5.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)'],
         ];
     }
 }

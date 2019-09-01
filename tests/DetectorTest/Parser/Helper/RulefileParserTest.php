@@ -15,6 +15,7 @@ use BrowserDetector\Parser\Helper\RulefileParser;
 use ExceptionalJSON\DecodeErrorException;
 use JsonClass\JsonInterface;
 use org\bovigo\vfs\vfsStream;
+use PHPUnit\Framework\Constraint\IsInstanceOf;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
@@ -115,7 +116,7 @@ final class RulefileParserTest extends TestCase
      */
     public function testParseFileError(): void
     {
-        $content   = 'test-content';
+        $content   = "[]\n";
         $fallback  = 'test-fallback';
         $exception = new DecodeErrorException(0, 'read-error', '');
 
@@ -123,18 +124,18 @@ final class RulefileParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
-            ->expects(static::once())
+            ->expects(static::exactly(2))
             ->method('getPathname')
-            ->willThrowException($exception);
+            ->willReturn('tests/test.json');
 
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(static::never())
+            ->expects(static::once())
             ->method('decode')
             ->with($content, true)
-            ->willReturn([]);
+            ->willThrowException($exception);
 
         $useragent = 'test-useragent';
 
@@ -156,7 +157,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(static::once())
             ->method('error')
-            ->with($exception);
+            ->with(new IsInstanceOf(\Exception::class));
         $logger
             ->expects(static::never())
             ->method('critical');
@@ -319,5 +320,78 @@ final class RulefileParserTest extends TestCase
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         static::assertSame($generic, $result);
+    }
+
+    /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
+     * @return void
+     */
+    public function testParseNotEmptyFile3(): void
+    {
+        $content  = 'test-content';
+        $fallback = 'test-fallback';
+        $mode     = 'test-mode';
+
+        $generic = 'test-generic';
+        $rules   = ['/(?<!test-?)useragent/' => 'test-mode-3', '/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
+
+        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $fileInfo
+            ->expects(static::exactly(2))
+            ->method('getPathname')
+            ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
+
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(static::once())
+            ->method('decode')
+            ->with($content, true)
+            ->willReturn(['generic' => $generic, 'rules' => $rules]);
+
+        $useragent = 'test-useragent';
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::never())
+            ->method('info');
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::once())
+            ->method('error')
+            ->with(new IsInstanceOf(\Exception::class));
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        /** @var \JsonClass\JsonInterface $jsonParser */
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $object = new RulefileParser($jsonParser, $logger);
+
+        /** @var \SplFileInfo $fileInfo */
+        $result = $object->parseFile($fileInfo, $useragent, $fallback);
+
+        static::assertSame($mode, $result);
     }
 }

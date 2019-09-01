@@ -112,5 +112,43 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+DL; SmarD TV; TCL; 1.32.455; 2.002; WOTV/0.1; SmartTvA/3.0.0.0;)"
+    },
+    "device": {
+      "deviceName": "general TCL TV",
+      "marketingName": "general TCL TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

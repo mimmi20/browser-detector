@@ -55,14 +55,23 @@ final class RulefileParser implements RulefileParserInterface
             $mode  = $factories['generic'] ?? $fallback;
             $rules = $factories['rules'] ?? [];
         } catch (DecodeErrorException $e) {
-            $this->logger->error($e);
+            $this->logger->error(
+                new \Exception(sprintf('could not decode content of file %s', $file->getPathname()), 0, $e)
+            );
 
             $mode  = $fallback;
             $rules = [];
         }
 
         foreach (array_keys($rules) as $rule) {
-            if (0 < preg_match($rule, $useragent)) {
+            $match = @preg_match($rule, $useragent);
+
+            if (false === $match) {
+                $error = preg_last_error();
+                $this->logger->error(
+                    new \Exception(sprintf('could not match rule "%s" of file %s: %s', $rule, $file->getPathname(), $error))
+                );
+            } elseif (0 < $match) {
                 $mode = $rules[$rule];
                 break;
             }
