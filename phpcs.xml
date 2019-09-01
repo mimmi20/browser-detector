@@ -57,9 +57,6 @@
     <!-- Rule: In general, readability is more important than cleverness or brevity. -->
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
 
-    <!-- (No) Error Control Operator @. -->
-    <rule ref="Generic.PHP.NoSilencedErrors"/>
-
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.CodeAnalysis.EmptyStatement">
         <exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedCATCH"/><!-- empty catch statements are allowed -->
