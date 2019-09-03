@@ -190,14 +190,14 @@
     },
     "engine": null
   },
-  "exoplayerdemo": {
-    "name": "ExoPlayerDemo",
+  "exoplayer": {
+    "name": "ExoPlayer",
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
       "class": "VersionFactory",
       "search": [
-        "ExoPlayerDemo"
+        "ExoPlayer"
       ]
     },
     "engine": "unknown"
@@ -685,6 +685,18 @@
       "search": null
     },
     "engine": "webkit"
+  },
+  "streamradio": {
+    "name": "streamradio",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "streamradio"
+      ]
+    },
+    "engine": "unknown"
   },
   "the dan patrick show": {
     "name": "The Dan Patrick Show",
