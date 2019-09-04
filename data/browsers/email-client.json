@@ -191,6 +191,18 @@
     },
     "engine": "webkit"
   },
+  "virgilio-mail": {
+    "name": "Virgilio Mail",
+    "manufacturer": "italiaonline",
+    "type": "email-client",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "VirgilioMail"
+      ]
+    },
+    "engine": "webkit"
+  },
   "outlook-express": {
     "name": "Windows Live Mail",
     "manufacturer": "microsoft",

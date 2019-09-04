@@ -307,20 +307,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "lenovo tb-7703x": {
-    "deviceName": "TB-7703X",
-    "marketingName": "Tab 3 Plus",
-    "manufacturer": "lenovo",
-    "brand": "lenovo",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "lenovo tb-x304l": {
     "deviceName": "TB-X304L",
     "marketingName": "Tab 4 10 HD",
@@ -461,9 +447,23 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "lenovo tb-7703x": {
+    "deviceName": "TB-7703X",
+    "marketingName": "Tab3 7 LTE",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "lenovo tb3-710i": {
     "deviceName": "TB3-710I",
-    "marketingName": "Tab3 7 Essential",
+    "marketingName": "Tab3 7 LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "display": {
