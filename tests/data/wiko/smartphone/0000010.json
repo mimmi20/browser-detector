@@ -1,120 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0; de-DE; ROBBY Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 OPR/1.4.7.1003 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Robby",
-      "marketingName": "Robby",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "1.4.7.1003",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; CINK PEAX 2 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Cink Peax 2",
-      "marketingName": "Cink Peax 2",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; SUNNY Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Sunny",
-      "marketingName": "Sunny",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "61.0.3163.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; LENNY2 Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/145.0.0.37.86;]"
     },
     "device": {
@@ -909,6 +795,44 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; U PULSE LITE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "U Pulse Lite",
+      "marketingName": "U Pulse Lite",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.111",
+      "manufacturer": "google"
     }
   }
 ]

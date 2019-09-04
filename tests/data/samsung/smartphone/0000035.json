@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-S920L Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-S920L",
+      "marketingName": "Galaxy Grand Prime (Straight Talk)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-S920L Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-S920L",
+      "marketingName": "Galaxy Grand Prime (Straight Talk)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; SM-G9008W Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/37.0.0.0 MQQBrowser/6.3 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G9008W",
+      "marketingName": "Galaxy S5 Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "6.3.0",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "37.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G9250 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.2 Chrome/38.0.2125.102 Mobile Safari/537.36"
     },
     "device": {
@@ -3682,120 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "70.0.3538.64",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J730F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.64 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J730F",
-      "marketingName": "Galaxy J7 Duos (2017)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "70.0.3538.64",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "70.0.3538.64",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-A520F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.64 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-A520F",
-      "marketingName": "Galaxy A5 (2017)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "70.0.3538.64",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "70.0.3538.64",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 8.0.0; SM-A320FL Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36 OPR/36.3.2254.130741"
-    },
-    "device": {
-      "deviceName": "SM-A320FL",
-      "marketingName": "Galaxy A3 (2017)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "36.3.2254.130741",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.100",
       "manufacturer": "google"
     }
   }

@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G850F Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G850F",
+      "marketingName": "Galaxy Alpha (Europe)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "47.0.2526.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G870F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G870F",
+      "marketingName": "Galaxy S5 Active",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "48.0.2564.95",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-G7105 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G7105",
+      "marketingName": "Galaxy Grand 2 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.25
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "48.0.2564.95",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-N9100 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36"
     },
     "device": {
@@ -3676,120 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "47.0.2526.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G388F Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G388F",
-      "marketingName": "Galaxy Xcover 3 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "47.0.2526.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "47.0.2526.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G925F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/47.0.2526.99 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G925F",
-      "marketingName": "Galaxy S6 Edge (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "47.0.2526.99",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "47.0.2526.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-S7275R Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-S7275R",
-      "marketingName": "Galaxy Ace 3",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "47.0.2526.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
     },

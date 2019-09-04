@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-G800F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G800F",
+      "marketingName": "Galaxy S5 Mini (Europe)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "75.0.3770.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G955F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36 EdgA/42.0.2.3773"
+    },
+    "device": {
+      "deviceName": "SM-G955F",
+      "marketingName": "Galaxy S8 Plus",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "42.0.2.3773",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "73.0.3683.90",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36 GSA/8.55.6.21.arm64"
+    },
+    "device": {
+      "deviceName": "SM-G960F",
+      "marketingName": "Galaxy S9",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "8.55.6.21",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "74.0.3729.157",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-A505FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36"
     },
     "device": {
@@ -3682,120 +3796,6 @@
     "engine": {
       "name": "WebKit",
       "version": "528.5.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; xx; GT-S8500 Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "GT-S8500",
-      "marketingName": "Wave 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Bada",
-      "marketingName": "Bada",
-      "version": null,
-      "manufacturer": "samsung",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "3G Explorer/3.1.0.1085 (Linux;Android 4.3,SM-N9005) AppleWebKit/533.1 (357507050070039,01)"
-    },
-    "device": {
-      "deviceName": "SM-N9005",
-      "marketingName": "Galaxy Note 3 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.3.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-GT-S5380E/1.0 Bada/2.0 Dolfin/2.0 SMM-MMS/1.2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "GT-S5380",
-      "marketingName": "Wave Y",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dolfin",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "mopotab",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Bada",
-      "marketingName": "Bada",
-      "version": "2.0.0",
-      "manufacturer": "samsung",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
       "manufacturer": "apple"
     }
   }

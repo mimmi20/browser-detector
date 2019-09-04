@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A510F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-A510F",
+      "marketingName": "Galaxy A5 LTE (2016, Europe)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-J700H Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.2 Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J700H",
+      "marketingName": "Galaxy J7 3G Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G955F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G955F",
+      "marketingName": "Galaxy S8 Plus",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.14 Mobile Safari/537.36"
     },
     "device": {
@@ -1183,14 +1297,14 @@
     },
     "device": {
       "deviceName": "SM-A605FN",
-      "marketingName": "Galaxy A6+",
+      "marketingName": "Galaxy A6+ (2018)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -3235,14 +3349,14 @@
     },
     "device": {
       "deviceName": "SM-A605FN",
-      "marketingName": "Galaxy A6+",
+      "marketingName": "Galaxy A6+ (2018)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -3682,120 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "66.0.3359.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J330F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J330F",
-      "marketingName": "Galaxy J3 (2017)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "68.0.3440.70",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "68.0.3440.70",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G925F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G925F",
-      "marketingName": "Galaxy S6 Edge (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "68.0.3440.70",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "68.0.3440.70",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; SM-J510F Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J510F",
-      "marketingName": "Galaxy J5 4G Duos (2016, Europe)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "68.0.3440.70",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "68.0.3440.70",
       "manufacturer": "google"
     }
   }

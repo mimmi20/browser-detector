@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Galaxy Nexus Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Galaxy Nexus",
+      "marketingName": "Galaxy Nexus",
+      "manufacturer": "samsung",
+      "brand": "google",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.65
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; SM-G900F Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.0.2.523 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.0.2.523",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SCH-I545 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/31.0.0.19.13;]"
+    },
+    "device": {
+      "deviceName": "SCH-I545",
+      "marketingName": "Galaxy S4 LTE (Verizon), White Frost 16GB",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "31.0.0.19.13",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "dv(GT-S6102);pr(UCBrowser/9.8.5.442);ov(Android 2.3.6);ss(240*301);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(2);"
     },
     "device": {
@@ -3676,120 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G903F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G903F",
-      "marketingName": "Galaxy S5 Neo",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 ACHEETAHI/2100502044"
-    },
-    "device": {
-      "deviceName": "SM-G900F",
-      "marketingName": "Galaxy S5 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "CM Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "cheetah-mobile",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-G901F Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G901F",
-      "marketingName": "Galaxy S5 Plus",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
       "manufacturer": "google",
       "bits": null
     },

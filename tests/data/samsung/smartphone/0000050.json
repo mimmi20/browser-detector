@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9295 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-I9295",
+      "marketingName": "Galaxy S4 Active",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G928F",
+      "marketingName": "Galaxy S6 Edge Plus LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-N910F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/47.0.2526.100 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-N910F",
+      "marketingName": "Galaxy Note 4 LTE (Europe)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "47.0.2526.100",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.100",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-A510F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
     },
     "device": {
@@ -3676,120 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "43.0.2357.121",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-G531F Build/LMY48B)"
-    },
-    "device": {
-      "deviceName": "SM-G531F",
-      "marketingName": "Galaxy Grand Prime Value Edition",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-I9192 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I9192",
-      "marketingName": "Galaxy S4 Mini Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9506 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I9506",
-      "marketingName": "Galaxy S4 LTE+",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "43.0.2357.121",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.1",
       "manufacturer": "google",
       "bits": null
     },

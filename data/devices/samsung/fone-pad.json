@@ -979,9 +979,37 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-p585": {
+    "deviceName": "SM-P585",
+    "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi+LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-p585y": {
+    "deviceName": "SM-P585Y",
+    "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi+LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-t585": {
     "deviceName": "SM-T585",
-    "marketingName": "Galaxy Tab A (2016, 10.1, Wi-Fi)",
+    "marketingName": "Galaxy Tab A (2016, 10.1, Wi-Fi+LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -1001,20 +1029,6 @@
     "display": {
       "width": 1280,
       "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
-  "samsung sm-p585": {
-    "deviceName": "SM-P585",
-    "marketingName": "Galaxy Tab A 10.1 (2017)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1920,
-      "height": 1200,
       "touch": true,
       "size": null
     },

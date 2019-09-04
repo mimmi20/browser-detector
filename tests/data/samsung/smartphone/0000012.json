@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; SCH-I535 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SCH-I535",
+      "marketingName": "Galaxy S3 4G CDMA",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; fr-fr; GT-I9300-ORANGE/I9300XXEMF1 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "GT-I9300",
+      "marketingName": "Galaxy S3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; SCH-I535 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.72 Mobile Safari/537.36 OPR/19.0.1340.69721"
+    },
+    "device": {
+      "deviceName": "SCH-I535",
+      "marketingName": "Galaxy S3 4G CDMA",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "19.0.1340.69721",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "32.0.1700.72",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SCH-I535 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36"
     },
     "device": {
@@ -3682,120 +3796,6 @@
     "engine": {
       "name": "WebKit",
       "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; ru-ru; SHV-E250K Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "SHV-E250K",
-      "marketingName": "Galaxy Note 2 LTE (Korea KTF)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; ko-kr; SHV-E250K/KKUEMK8 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "SHV-E250K",
-      "marketingName": "Galaxy Note 2 LTE (Korea KTF)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.3.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; vi-vn; SHW-M110S Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "SHW-M110S",
-      "marketingName": "Galaxy S (South Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.6",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
       "manufacturer": "apple"
     }
   }

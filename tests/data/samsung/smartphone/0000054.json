@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; GT-I9505 Build/MHC19J; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-I9505",
+      "marketingName": "Galaxy S4",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "44.0.2403.119",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G935F Build/MMB29K)"
+    },
+    "device": {
+      "deviceName": "SM-G935F",
+      "marketingName": "Galaxy S7 Edge (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920P Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G920P",
+      "marketingName": "Galaxy S6 CDMA (Sprint)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-I8530 Build/GINGERBREAD)"
     },
     "device": {
@@ -3682,120 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "30.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "AndroidDownloadManager/5.1.1 (Linux; U; Android 5.1.1; SM-N910F Build/LMY47X)"
-    },
-    "device": {
-      "deviceName": "SM-N910F",
-      "marketingName": "Galaxy Note 4 LTE (Europe)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Download Manager",
-      "modus": null,
-      "version": "5.1.1",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J700H Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J700H",
-      "marketingName": "Galaxy J7 3G Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G80\\x9cF\\x90\\x16uild/LMY47X; wv) A\\xb80\\x0c\\x02vDbKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
       "manufacturer": "google"
     }
   }

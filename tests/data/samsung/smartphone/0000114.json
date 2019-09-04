@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.1.2; en-US; GT-I8190) U2/1.0.0 UCBrowser/9.4.0.460 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "GT-I8190",
+      "marketingName": "Galaxy S3 Mini",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.0.460",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-S6312 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-S6312",
+      "marketingName": "Galaxy Young Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "43.0.2357.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-G925F Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36 OPR/30.0.1856.93524"
+    },
+    "device": {
+      "deviceName": "SM-G925F",
+      "marketingName": "Galaxy S6 Edge (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "30.0.1856.93524",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.78",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A500FU Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36"
     },
     "device": {
@@ -3682,120 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "44.0.2403.90",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9500 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I9500",
-      "marketingName": "Galaxy S4",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "43.0.2357.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "43.0.2357.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; GT-I8190 Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I8190",
-      "marketingName": "Galaxy S3 Mini",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "37.0.2062.117",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2062.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-S6810P Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-S6810P",
-      "marketingName": "Galaxy Fame (NFC)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "43.0.2357.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "43.0.2357.93",
       "manufacturer": "google"
     }
   }

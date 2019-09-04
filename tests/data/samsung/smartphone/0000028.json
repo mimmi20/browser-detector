@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J530F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J530F",
+      "marketingName": "Galaxy J5 Pro (2017)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "69.0.3497.86",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.230 Mobile Safari/537.36 (Ecosia android@65.0.3325.230)"
+    },
+    "device": {
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "65.0.3325.230",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3325.230",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-J500FN Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.4 Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J500FN",
+      "marketingName": "Galaxy J5",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.4.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; GT-I9192 Build/NJH47F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"
     },
     "device": {
@@ -3653,14 +3767,14 @@
     },
     "device": {
       "deviceName": "SM-A605FN",
-      "marketingName": "Galaxy A6+",
+      "marketingName": "Galaxy A6+ (2018)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -3682,120 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "66.0.3359.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-J330F Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.156 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J330F",
-      "marketingName": "Galaxy J3 (2017)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "64.0.3282.156",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.156",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-G355H Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G355H",
-      "marketingName": "Galaxy Core II Dual SIM",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "69.0.3497.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.100",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; GT-N7100 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-N7100",
-      "marketingName": "Galaxy Note II",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "69.0.3497.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.3.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.100",
       "manufacturer": "google"
     }
   }

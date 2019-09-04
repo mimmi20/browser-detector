@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G925I Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G925I",
+      "marketingName": "Galaxy S6 Edge (LATAM, Singapore, India, Australia)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J700F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36 [FBIA/FB4A;FBAV/154.0.0.33.385;]"
+    },
+    "device": {
+      "deviceName": "SM-J700F",
+      "marketingName": "Galaxy J7 (India, Thailand)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "154.0.0.33.385",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "46.0.2490.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J3110 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/66.0.0.8.122;]"
+    },
+    "device": {
+      "deviceName": "SM-J3110",
+      "marketingName": "Galaxy J3 Pro",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "66.0.0.8.122",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "46.0.2490.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G900I Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/131.0.0.32.69;]"
     },
     "device": {
@@ -2399,14 +2513,14 @@
     },
     "device": {
       "deviceName": "SM-A605FN",
-      "marketingName": "Galaxy A6+",
+      "marketingName": "Galaxy A6+ (2018)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -3007,14 +3121,14 @@
     },
     "device": {
       "deviceName": "SM-A605F",
-      "marketingName": "Galaxy A6+",
+      "marketingName": "Galaxy A6+ (2018)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -3052,7 +3166,7 @@
         "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -3090,7 +3204,7 @@
         "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6
       },
       "type": "smartphone"
     },
@@ -3676,120 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "67.0.3396.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-A605FN Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-A605FN",
-      "marketingName": "Galaxy A6+",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2220,
-        "height": 1080,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "9.4.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "67.0.3396.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SAMSUNG SM-A750FN Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-A750FN",
-      "marketingName": "Galaxy A7 (2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2220,
-        "height": 1080,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "9.4.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "67.0.3396.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-J415FN Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J415FN",
-      "marketingName": "Galaxy J4+",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1480,
-        "height": 720,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "9.4.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
     },
