@@ -335,6 +335,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "htc p6500": {
+    "deviceName": "P6500",
+    "marketingName": "P6500",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "htc 8500": {
     "deviceName": "8500",
     "marketingName": "Qtek 8500",
@@ -386,7 +400,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.8
     },
     "type": "feature-phone",
     "platform": "windows phone"
@@ -418,6 +432,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "htc s710": {
+    "deviceName": "S710",
+    "marketingName": "S710",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "htc s740": {
     "deviceName": "S740",

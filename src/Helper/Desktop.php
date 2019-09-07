@@ -22,7 +22,7 @@ final class Desktop implements DesktopInterface
      */
     public function isDesktopDevice(string $useragent): bool
     {
-        if (0 < preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem/i', $useragent)) {
+        if (0 < preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem|xoom/i', $useragent)) {
             return false;
         }
 

@@ -430,7 +430,7 @@
         "width": 1920,
         "height": 1152,
         "touch": true,
-        "size": null
+        "size": 5.36
       },
       "type": "smartphone"
     },
@@ -544,7 +544,7 @@
         "width": 2560,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -658,7 +658,7 @@
         "width": 2560,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -696,7 +696,7 @@
         "width": 2560,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -772,7 +772,7 @@
         "width": 2560,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -924,7 +924,7 @@
         "width": 1920,
         "height": 1152,
         "touch": true,
-        "size": null
+        "size": 5.36
       },
       "type": "smartphone"
     },
@@ -1000,7 +1000,7 @@
         "width": 1920,
         "height": 1152,
         "touch": true,
-        "size": null
+        "size": 5.36
       },
       "type": "smartphone"
     },
@@ -1038,7 +1038,7 @@
         "width": 1920,
         "height": 1152,
         "touch": true,
-        "size": null
+        "size": 5.36
       },
       "type": "smartphone"
     },
@@ -1478,6 +1478,44 @@
     "engine": {
       "name": "Blink",
       "version": "70.0.3538.80",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; MX4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.128 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MX4",
+      "marketingName": "MX4",
+      "manufacturer": "meizu",
+      "brand": "meizu",
+      "display": {
+        "width": 1920,
+        "height": 1152,
+        "touch": true,
+        "size": 5.36
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "44.0.2403.128",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.128",
       "manufacturer": "google"
     }
   }

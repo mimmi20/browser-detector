@@ -1,56 +1,18 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; tr-tr; HLV-T702 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android; en-us; HLV-TN75 Build/FRF91) AppleWebKit/533.1"
     },
     "device": {
-      "deviceName": "HLV-T702",
-      "marketingName": "HLV-T702",
+      "deviceName": "HLV-TN75",
+      "marketingName": "HLV-TN75",
       "manufacturer": "hi-level",
       "brand": "hi-level",
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": null
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Android 4.0.4;AppleWebKit/537.22;Build/HLV-T704.7201.SML.2-2-2-HL.20130314;HLV-T704 Build/HLV-T704.7201.SML.2-2-2-HL.20130314"
-    },
-    "device": {
-      "deviceName": "HLV-T704",
-      "marketingName": "HLV-T704",
-      "manufacturer": "hi-level",
-      "brand": "hi-level",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -65,13 +27,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.0.4",
+      "version": null,
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "537.22.0",
+      "version": "533.1.0",
       "manufacturer": "apple"
     }
   }

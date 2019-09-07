@@ -27,6 +27,20 @@
     "type": "smartphone",
     "platform": null
   },
+  "acer e210": {
+    "deviceName": "E210",
+    "marketingName": "beTouch",
+    "manufacturer": "acer",
+    "brand": "acer",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "acer e140": {
     "deviceName": "E140",
     "marketingName": "beTouch E140",
@@ -541,6 +555,20 @@
       "height": 720,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "acer p300": {
+    "deviceName": "P300",
+    "marketingName": "neoTouch",
+    "manufacturer": "acer",
+    "brand": "acer",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"

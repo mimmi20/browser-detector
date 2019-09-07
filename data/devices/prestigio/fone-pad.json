@@ -8,7 +8,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"
@@ -237,6 +237,20 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "prestigio pmt5001_3g": {
+    "deviceName": "PMT5001_3G",
+    "marketingName": "MultiPad Muze 5001 3G",
+    "manufacturer": "prestigio",
+    "brand": "prestigio",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "prestigio pmt3177_3g": {
     "deviceName": "PMT3177 3G",
     "marketingName": "MultiPad PMT3177 3G",
@@ -274,7 +288,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"
@@ -408,20 +422,6 @@
   "prestigio pmt3101_4g": {
     "deviceName": "PMT3101_4G",
     "marketingName": "PMT3101_4G",
-    "manufacturer": "prestigio",
-    "brand": "prestigio",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
-  "prestigio pmt5001_3g": {
-    "deviceName": "PMT5001_3G",
-    "marketingName": "PMT5001_3G",
     "manufacturer": "prestigio",
     "brand": "prestigio",
     "display": {
