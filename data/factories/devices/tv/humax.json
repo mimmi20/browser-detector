@@ -1,4 +1,22 @@
 {
-  "rules": [],
+  "rules": {
+    "/irhd-?5100s/i": "humax irhd-5100s",
+    "/ir-?2000hd/i": "humax ir-2000hd",
+    "/icord mini/i": "humax icord mini",
+    "/icord hd\\+/i": "humax icord hd+",
+    "/icord cable/i": "humax icord cable",
+    "/hms-?1000s ?ph2/i": "humax hms-1000s ph2",
+    "/hms-?1000s/i": "humax hms-1000s",
+    "/hm-?9504hd/i": "humax hm-9504hd",
+    "/hgs-?1000s/i": "humax hgs-1000s",
+    "/hdr-?5100s/i": "humax hdr-5100s",
+    "/hdr-?4000t/i": "humax hdr-4000t",
+    "/hdr-?1000s/i": "humax hdr-1000s",
+    "/hd nano/i": "humax hd nano",
+    "/hd fox\\+/i": "humax hd-fox+",
+    "/hd-fox-c/i": "humax hd-fox-c",
+    "/hd 7000i/i": "humax hd 7000i",
+    "/cxhd-5100c/i": "humax cxhd-5100c"
+  },
   "generic": "general humax tv"
 }
