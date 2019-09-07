@@ -55,6 +55,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "vivo e1": {
+    "deviceName": "E1",
+    "marketingName": "E1",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "vivo 1805": {
     "deviceName": "1805",
     "marketingName": "Nex S",
@@ -775,10 +789,10 @@
     "manufacturer": "bbk",
     "brand": "vivo",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 960,
+      "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"

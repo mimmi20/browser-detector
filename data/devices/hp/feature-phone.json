@@ -13,6 +13,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "palm arz1": {
+    "deviceName": "Arz1",
+    "marketingName": "Arz1",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "palm centro": {
     "deviceName": "Centro",
     "marketingName": "Centro",
@@ -26,6 +40,20 @@
     },
     "type": "feature-phone",
     "platform": null
+  },
+  "palm ipaq510": {
+    "deviceName": "iPAQ 510",
+    "marketingName": "iPAQ 510",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "palm ipaq610": {
     "deviceName": "iPAQ 610",
@@ -54,6 +82,34 @@
     },
     "type": "feature-phone",
     "platform": "android"
+  },
+  "palm mt64": {
+    "deviceName": "MT64",
+    "marketingName": "MT64",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
+  "palm pilot": {
+    "deviceName": "Pilot",
+    "marketingName": "Pilot",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "display": {
+      "width": 160,
+      "height": 160,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": null
   },
   "palm pixi": {
     "deviceName": "Pixi",
@@ -96,6 +152,48 @@
     },
     "type": "feature-phone",
     "platform": "webos"
+  },
+  "palm 680": {
+    "deviceName": "680",
+    "marketingName": "Treo 680",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "size": 2.5
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
+  "palm d053": {
+    "deviceName": "D053",
+    "marketingName": "Treo 680",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "size": 2.5
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
+  "palm 850": {
+    "deviceName": "850",
+    "marketingName": "Treo Pro",
+    "manufacturer": "palm",
+    "brand": "palm",
+    "display": {
+      "width": 320,
+      "height": 320,
+      "touch": true,
+      "size": 2.5
+    },
+    "type": "feature-phone",
+    "platform": null
   },
   "palm treo850e": {
     "deviceName": "Treo850e",

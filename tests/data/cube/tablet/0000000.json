@@ -723,56 +723,18 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; U27GT-C8P Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.76 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general Cube device",
-      "marketingName": "general Cube device",
-      "manufacturer": "cube",
-      "brand": "cube",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "47.0.2526.76",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "47.0.2526.76",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; U39GT Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 MxBrowser/4.4.6.2000"
     },
     "device": {
-      "deviceName": "general Cube device",
-      "marketingName": "general Cube device",
+      "deviceName": "U39GT",
+      "marketingName": "U39GT",
       "manufacturer": "cube",
       "brand": "cube",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1280,
         "touch": true,
-        "size": null
+        "size": 9
       },
       "type": "tablet"
     },
@@ -840,15 +802,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; U23GT Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 GSA/2.0.0.392829"
     },
     "device": {
-      "deviceName": "general Cube device",
-      "marketingName": "general Cube device",
+      "deviceName": "U23GT",
+      "marketingName": "U23GT",
       "manufacturer": "cube",
       "brand": "cube",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 768,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet"
     },
@@ -878,15 +840,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; U19GT-W Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
     },
     "device": {
-      "deviceName": "general Cube device",
-      "marketingName": "general Cube device",
+      "deviceName": "U19GT-W",
+      "marketingName": "U19GT-W",
       "manufacturer": "cube",
       "brand": "cube",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
