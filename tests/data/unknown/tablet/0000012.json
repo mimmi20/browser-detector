@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Android 8.0; Tablet; rv:60.0) Gecko/60.0 Firefox/60.0"
-    },
-    "device": {
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Android 8.0; Tablet; rv:50.0) Gecko/50.0 Firefox/50.0"
     },
     "device": {
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "Gecko",
       "version": "64.0.1",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android 6.0.1; Tablet; rv:64.0) Gecko/64.0 Firefox/64.0"
+    },
+    "device": {
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "64.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "64.0.0",
       "manufacturer": "mozilla-foundation"
     }
   }

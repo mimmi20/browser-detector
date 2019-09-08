@@ -1179,44 +1179,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; 10BPE0 Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "42.0.2311.111",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "42.0.2311.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; S82 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Safari/537.36"
     },
     "device": {
@@ -3790,6 +3752,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.11.355",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Android 2.3.3; Linux; Opera Tablet/ADR-1210091050) Presto/2.11.355 Version/12.10"
+    },
+    "device": {
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "12.10.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.3",
       "manufacturer": "google",
       "bits": null
     },
