@@ -802,14 +802,14 @@
       "user-agent": "KDDI-CA3A UP.Browser/6.2.0.13.2 (GUI) MMP/2.0"
     },
     "device": {
-      "deviceName": "general KDDI device",
-      "marketingName": "general KDDI device",
+      "deviceName": "CA3A",
+      "marketingName": "CA3A",
       "manufacturer": "kddi",
       "brand": "kddi",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 400,
+        "height": 240,
+        "touch": false,
         "size": null
       },
       "type": "feature-phone"
@@ -823,10 +823,10 @@
       "type": "browser"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
