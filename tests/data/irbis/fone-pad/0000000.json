@@ -50,7 +50,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -88,7 +88,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -126,7 +126,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -164,7 +164,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -202,7 +202,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -240,7 +240,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "fone-pad"
     },
@@ -301,6 +301,44 @@
       "name": "Blink",
       "version": "40.0.2214.69",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; TX82 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "TX82",
+      "marketingName": "TX82",
+      "manufacturer": "irbis",
+      "brand": "irbis",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]
