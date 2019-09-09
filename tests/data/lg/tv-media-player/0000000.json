@@ -1,11 +1,11 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ PBRM/1.0 ( ;LGE ;STB-3000 ;00.00.00 ;0x00000001)"
+      "user-agent": "Mozilla/5.0 (DirectFB; U; Linux 7630; en) AppleWebKit/531.2  (KHTML, like Gecko) Safari/531.2  LG Browser/4.1.4( 3D BDP NO_NUM; LGE; Media/ST600; LG NetCast.Media-2011"
     },
     "device": {
-      "deviceName": "STB-3000",
-      "marketingName": "STB-3000",
+      "deviceName": "ST600",
+      "marketingName": "ST600",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
@@ -17,10 +17,86 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "Safari",
+      "name": "LG Browser",
       "modus": null,
+      "version": "4.1.4",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "NetCast",
+      "marketingName": "NetCast",
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "lg",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.2.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (DirectFB; U; Linux 7631; en) AppleWebKit/531.2  (KHTML, like Gecko) Safari/531.2  LG Browser/4.1.4( NO_NUM; LGE; Media/SP520; ST.3.97.409.F; 0x00000001;); LG NetCast.Media-2011"
+    },
+    "device": {
+      "deviceName": "SP520",
+      "marketingName": "SP520",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "4.1.4",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "NetCast",
+      "marketingName": "NetCast",
+      "version": null,
+      "manufacturer": "lg",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.2.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (DirectFB; U; Linux armv6l; en) AppleWebKit/531.2  (KHTML, like Gecko) Safari/531.2  LG Browser/4.1.4( BDP; LGE; Media/BD660; 6970; abc;); LG NetCast.Media-2011"
+    },
+    "device": {
+      "deviceName": "BD660",
+      "marketingName": "BD660",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "4.1.4",
+      "manufacturer": "lg",
       "bits": null,
       "type": "browser"
     },
@@ -33,7 +109,7 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "537.1.0",
+      "version": "531.2.0",
       "manufacturer": "apple"
     }
   }
