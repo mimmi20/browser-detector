@@ -217,6 +217,9 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SS.CC. Palma)'],
             ['Mozilla/5.0 (Windows NT 10.0.17134.590; osmeta 10.3.31799) AppleWebKit/602.1.1 (KHTML, like Gecko) Version/9.0 Safari/602.1.1 osmeta/10.3.31799 Build/31799 [FBAN/FBW;FBMD/80QB;FBSN/Windows;FBSV/10.0.17134.706;FBSS/1;FBCR/;FBID/desktop;FBLC/de_DE;FBOP/45]'],
             ['Mozilla/3.01-C-MACOS8 (Macintosh; I; PPC)'],
+            ['LG Browser/7.00.00(LGE; WEBOS1; 00.00.00) webOS.TV-2015)'],
+            ['Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ Hybridcast/1.0(;00E091;LGwebOSTV;1;0;)0'],
+            ['Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ OHTV/1.0 ( ;LGE ;GLOBAL-PLAT4 ;02.22.01 ;0x00000001'],
         ];
     }
 }
