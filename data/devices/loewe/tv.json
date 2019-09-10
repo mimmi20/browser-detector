@@ -13,6 +13,20 @@
     "type": "tv",
     "platform": "linux"
   },
+  "loewe sl420": {
+    "deviceName": "SL420",
+    "marketingName": "Connect 55 UHD",
+    "manufacturer": "loewe",
+    "brand": "loewe",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
   "loewe sl121": {
     "deviceName": "SL121",
     "marketingName": "SL121",
@@ -40,6 +54,20 @@
     },
     "type": "tv",
     "platform": "linux"
+  },
+  "loewe sl210": {
+    "deviceName": "SL210",
+    "marketingName": "SL210",
+    "manufacturer": "loewe",
+    "brand": "loewe",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": null
   },
   "loewe sl220": {
     "deviceName": "SL220",
