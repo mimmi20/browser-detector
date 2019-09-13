@@ -587,6 +587,34 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "htc elf": {
+    "deviceName": "Elf",
+    "marketingName": "Elf",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc touch pro": {
+    "deviceName": "Touch Pro",
+    "marketingName": "Touch Pro",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 480,
+      "height": 640,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "htc p3650": {
     "deviceName": "P3650",
     "marketingName": "Touch Cruise",
@@ -610,10 +638,24 @@
       "width": 640,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "feature-phone",
     "platform": null
+  },
+  "htc mercury": {
+    "deviceName": "Mercury",
+    "marketingName": "Mercury",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "android"
   },
   "htc t5388": {
     "deviceName": "T5388",
@@ -758,6 +800,20 @@
   "htc tytn ii": {
     "deviceName": "TyTN II",
     "marketingName": "TyTN II",
+    "manufacturer": "htc",
+    "brand": "softbank",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "htc kaiser": {
+    "deviceName": "Kaiser",
+    "marketingName": "Kaiser",
     "manufacturer": "htc",
     "brand": "softbank",
     "display": {
