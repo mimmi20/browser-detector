@@ -80,6 +80,10 @@ final class OsTest extends TestCase
                 'ua' => 'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.9.2.19) Gecko WebThumb/1.0',
                 'expected' => 64,
             ],
+            [
+                'ua' => 'Mozilla/5.0 (Linux; arm_64; Android 9; I4213) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 YaBrowser/19.7.5.90.00 Mobile Safari/537.36',
+                'expected' => 64,
+            ],
         ];
     }
 }

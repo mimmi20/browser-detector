@@ -1,7 +1,8 @@
 {
   "rules": {
-    "/omega[ _]2/i": "primux omega 2",
-    "/delta6/i": "primux delta 6"
+    "/omega[ _]?2/i": "primux omega 2",
+    "/delta[ _]?6/i": "primux delta 6",
+    "/alpha[ _]?4/i": "primux alpha 4"
   },
   "generic": "general primux device"
 }

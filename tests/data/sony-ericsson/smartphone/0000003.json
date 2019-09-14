@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-US; u20i Build/6LQ4UQ)"
+    },
+    "device": {
+      "deviceName": "U20i",
+      "marketingName": "Xperia X10 Mini Pro",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.55
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "OneBrowser/4.2.0/Adr(Linux; U; Android 4.1.2; de-de; LT26i Build/6.2.B.0.200) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Safari/533.1"
     },
     "device": {
@@ -2353,6 +2391,82 @@
       "name": "WebKit",
       "version": "533.1.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; LT26i Build/6.1.A.0.452) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16 Chrome/33.0.0.0"
+    },
+    "device": {
+      "deviceName": "LT26i",
+      "marketingName": "Xperia Arc HD",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "33.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; LT28h Build/6.2.B.0.211) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.92 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LT28h",
+      "marketingName": "Xperia Ion",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "43.0.2357.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.92",
+      "manufacturer": "google"
     }
   }
 ]

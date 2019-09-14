@@ -1,6 +1,7 @@
 {
   "rules": {
-    "/ g7/i": "utime g7"
+    "/[ _]i15/i": "utime i15",
+    "/[ _]g7/i": "utime g7"
   },
   "generic": "general utime device"
 }

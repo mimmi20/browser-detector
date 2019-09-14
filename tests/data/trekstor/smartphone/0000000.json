@@ -12,7 +12,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -28,6 +28,44 @@
       "name": "Windows Phone OS",
       "marketingName": "Windows Phone OS",
       "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; TREKSTOR; WP 4.7; TrekStor) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537"
+    },
+    "device": {
+      "deviceName": "WinPhone 4.7 HD",
+      "marketingName": "WinPhone 4.7 HD",
+      "manufacturer": "trekstor",
+      "brand": "trekstor",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.1.0",
       "manufacturer": "microsoft",
       "bits": null
     },

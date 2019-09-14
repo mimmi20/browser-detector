@@ -240,7 +240,7 @@
         "width": 260,
         "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.2
       },
       "type": "feature-phone"
     },
@@ -392,7 +392,7 @@
         "width": 640,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.2
       },
       "type": "feature-phone"
     },
@@ -2368,7 +2368,7 @@
         "width": 260,
         "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.2
       },
       "type": "feature-phone"
     },
@@ -3204,7 +3204,7 @@
         "width": 400,
         "height": 360,
         "touch": false,
-        "size": null
+        "size": 2.25
       },
       "type": "feature-phone"
     },
@@ -3455,6 +3455,82 @@
       "name": "Presto",
       "version": "2.12.423",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35659/37.6522; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.35659",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9720; es) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1121 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9720",
+      "marketingName": "BlackBerry Bold 9720",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.1121",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.1121",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
     }
   }
 ]
