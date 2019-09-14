@@ -26,7 +26,7 @@ final class Browser implements BitsInterface
         }
 
         // 64 bits
-        if (0 < preg_match('/x64|win64|x86_64|amd64|ppc64|sparc64|osf1/i', $useragent)) {
+        if (0 < preg_match('/x64|win64|x86_64|amd64|ppc64|sparc64|osf1|arm_64/i', $useragent)) {
             return 64;
         }
 

@@ -1,4 +1,18 @@
 {
+  "hp 7": {
+    "deviceName": "7",
+    "marketingName": "7",
+    "manufacturer": "hp",
+    "brand": "hp",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 6.95
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
   "hp pro slate 8": {
     "deviceName": "Pro Slate 8",
     "marketingName": "Pro Slate 8",
@@ -54,19 +68,5 @@
     },
     "type": "fone-pad",
     "platform": "android"
-  },
-  "hp 7": {
-    "deviceName": "7",
-    "marketingName": "7",
-    "manufacturer": "hp",
-    "brand": "hp",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": 6.95
-    },
-    "type": "fone-pad",
-    "platform": null
   }
 }

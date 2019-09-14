@@ -55,6 +55,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "umi c1": {
+    "deviceName": "C1",
+    "marketingName": "C1",
+    "manufacturer": "umi",
+    "brand": "umi",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "umi crystal": {
     "deviceName": "Crystal",
     "marketingName": "Crystal",
@@ -106,7 +120,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -400,7 +414,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
