@@ -986,12 +986,9 @@ final class BrowserFactoryTest extends TestCase
      */
     public function testFromEmptyArrayWithTypeError(): void
     {
-        $companyName = 'test-company';
-        $useragent   = 'this is a test';
-        $exception   = new NotFoundException('failed');
-        $company     = $this->getMockBuilder(CompanyInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $companyName   = 'test-company';
+        $useragent     = 'this is a test';
+        $exception     = new NotFoundException('failed');
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -1010,10 +1007,7 @@ final class BrowserFactoryTest extends TestCase
 
         $typeName     = 'unknown-type';
         $exceptionTwo = new NotFoundException('type not found');
-        $type         = $this->getMockBuilder(TypeInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
+        $typeLoader   = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
@@ -1036,7 +1030,7 @@ final class BrowserFactoryTest extends TestCase
         $logger
             ->expects(static::exactly(2))
             ->method('info')
-            ->withConsecutive($exception, $exceptionTwo);
+            ->withConsecutive([$exceptionTwo], [$exception]);
         $logger
             ->expects(static::never())
             ->method('notice');
