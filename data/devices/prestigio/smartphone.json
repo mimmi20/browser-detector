@@ -190,7 +190,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -204,7 +204,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -254,6 +254,20 @@
   "prestigio pap5300duo": {
     "deviceName": "PAP5300DUO",
     "marketingName": "MultiPhone 5300 DUO",
+    "manufacturer": "prestigio",
+    "brand": "prestigio",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "prestigio psp5307duo": {
+    "deviceName": "PSP5307DUO",
+    "marketingName": "MultiPhone 5300 Duo",
     "manufacturer": "prestigio",
     "brand": "prestigio",
     "display": {

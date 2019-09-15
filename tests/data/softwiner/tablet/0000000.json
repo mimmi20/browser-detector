@@ -9,10 +9,10 @@
       "manufacturer": "softwiner",
       "brand": "softwiner",
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 9
       },
       "type": "tablet"
     },
@@ -85,10 +85,10 @@
       "manufacturer": "softwiner",
       "brand": "softwiner",
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 9
       },
       "type": "tablet"
     },
@@ -123,10 +123,10 @@
       "manufacturer": "softwiner",
       "brand": "softwiner",
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 9
       },
       "type": "tablet"
     },
@@ -161,10 +161,10 @@
       "manufacturer": "softwiner",
       "brand": "softwiner",
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 9
       },
       "type": "tablet"
     },
@@ -186,6 +186,44 @@
     "engine": {
       "name": "WebKit",
       "version": "535.19.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ru-be; SoftwinerEvb Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Evb",
+      "marketingName": "Evb",
+      "manufacturer": "softwiner",
+      "brand": "softwiner",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
       "manufacturer": "apple"
     }
   }

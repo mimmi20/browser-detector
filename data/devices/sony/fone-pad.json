@@ -125,20 +125,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "sony sgp641": {
-    "deviceName": "SGP641",
-    "marketingName": "Xperia Z3 Tablet Compact",
-    "manufacturer": "sony",
-    "brand": "sony",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "sony sgp621": {
     "deviceName": "SGP621",
     "marketingName": "Xperia Z3 Tablet Compact LTE",
@@ -148,7 +134,21 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "sony sgp641": {
+    "deviceName": "SGP641",
+    "marketingName": "Xperia Z3 Tablet Compact LTE",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"
