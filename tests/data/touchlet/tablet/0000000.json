@@ -126,7 +126,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
@@ -240,7 +240,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
@@ -354,7 +354,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
@@ -620,7 +620,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
@@ -1023,6 +1023,120 @@
       "name": "Blink",
       "version": "30.0.1599.92",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; X8quad.pro Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "X8 Quad.Pro",
+      "marketingName": "X8 Quad.Pro",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "43.0.2357.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.1.1; X10.Dual+ Build/JRO03C)"
+    },
+    "device": {
+      "deviceName": "X10+",
+      "marketingName": "X10.Dual+",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-; X10.quad.FM Build/JDQ39) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 bdbrowser_i18n/4.1.0.3"
+    },
+    "device": {
+      "deviceName": "X10.quad.FM",
+      "marketingName": "X10.quad.FM",
+      "manufacturer": "touchlet",
+      "brand": "touchlet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Baidu Browser",
+      "modus": null,
+      "version": "4.1.0.3",
+      "manufacturer": "baidu",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "T5",
+      "version": "2.0.0",
+      "manufacturer": "baidu"
     }
   }
 ]

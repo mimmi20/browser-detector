@@ -14,15 +14,15 @@
     "platform": "android"
   },
   "zopo 9xxquad": {
-    "deviceName": "9xxQuad",
-    "marketingName": "9xxQuad",
+    "deviceName": "9xx Quad",
+    "marketingName": "9xx Quad",
     "manufacturer": "zopo",
     "brand": "zopo",
     "display": {
-      "width": 1280,
-      "height": 720,
+      "width": 1920,
+      "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -55,6 +55,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zopo zp990": {
+    "deviceName": "ZP990",
+    "marketingName": "Captain S",
+    "manufacturer": "zopo",
+    "brand": "zopo",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zopo zp330": {
     "deviceName": "ZP330",
     "marketingName": "Color C",
@@ -65,6 +79,20 @@
       "height": 480,
       "touch": true,
       "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zopo zp700": {
+    "deviceName": "ZP700",
+    "marketingName": "Cuppy",
+    "manufacturer": "zopo",
+    "brand": "zopo",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -134,7 +162,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -288,7 +316,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -349,6 +377,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zopo zp520": {
+    "deviceName": "ZP520",
+    "marketingName": "ZP520",
+    "manufacturer": "zopo",
+    "brand": "zopo",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zopo zp590": {
     "deviceName": "ZP590",
     "marketingName": "ZP590",
@@ -359,20 +401,6 @@
       "height": 540,
       "touch": true,
       "size": 4.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "zopo zp700": {
-    "deviceName": "ZP700",
-    "marketingName": "ZP700",
-    "manufacturer": "zopo",
-    "brand": "zopo",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
     },
     "type": "smartphone",
     "platform": "android"
@@ -391,20 +419,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "zopo zp990": {
-    "deviceName": "ZP990",
-    "marketingName": "ZP990",
-    "manufacturer": "zopo",
-    "brand": "zopo",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "zopo zp990+": {
     "deviceName": "ZP990+",
     "marketingName": "ZP990+",
@@ -414,7 +428,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.95
     },
     "type": "smartphone",
     "platform": "android"
