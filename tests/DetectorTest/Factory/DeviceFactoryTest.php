@@ -366,7 +366,7 @@ final class DeviceFactoryTest extends TestCase
         $logger
             ->expects(static::exactly(3))
             ->method('info')
-            ->withConsecutive($typeException, $companyException, $companyException);
+            ->withConsecutive([$typeException], [$companyException], [$companyException]);
         $logger
             ->expects(static::never())
             ->method('notice');
