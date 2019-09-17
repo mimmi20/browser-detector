@@ -125,7 +125,7 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "asus padfone t004": {
+  "asus t004": {
     "deviceName": "T004",
     "marketingName": "PadFone Infinity 2 A86",
     "manufacturer": "asus",
@@ -139,9 +139,23 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "asus padfone t00c": {
+  "asus t00c": {
     "deviceName": "T00C",
-    "marketingName": "PadFone mini",
+    "marketingName": "PadFone Mini",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "asus t00t": {
+    "deviceName": "T00T",
+    "marketingName": "PadFone Mini",
     "manufacturer": "asus",
     "brand": "asus",
     "display": {

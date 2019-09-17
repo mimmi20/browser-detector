@@ -1328,5 +1328,43 @@
       "version": "533.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; INSIGNIA_700_PRO Build/GOCLEVER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.109 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Insignia 700 Pro",
+      "marketingName": "Insignia 700 Pro",
+      "manufacturer": "goclever",
+      "brand": "goclever",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "42.0.2311.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.109",
+      "manufacturer": "google"
+    }
   }
 ]

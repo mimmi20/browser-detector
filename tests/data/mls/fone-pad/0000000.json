@@ -50,7 +50,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -72,6 +72,44 @@
     "engine": {
       "name": "Blink",
       "version": "69.0.3497.100",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; IQ1010 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "iQ1010",
+      "marketingName": "iQTab 10 3G",
+      "manufacturer": "mls",
+      "brand": "mls",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "42.0.2311.108",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.108",
       "manufacturer": "google"
     }
   }

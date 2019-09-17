@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; LG-D805 Build/JDQ39B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D805",
-      "marketingName": "G2",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "44.0.2403.133",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; LG-H955 Build/LRX21Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
     },
     "device": {
@@ -453,44 +415,6 @@
       "name": "Blink",
       "version": "49.0.2623.105",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB91/3.3.8.n (TELEFUNKEN, Si2156LG32, wireless)"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.51.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
     }
   },
   {
@@ -1570,7 +1494,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": null
+        "size": 5.5
       },
       "type": "smartphone"
     },
@@ -1988,7 +1912,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2254,7 +2178,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2482,7 +2406,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3698,7 +3622,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3797,6 +3721,82 @@
       "name": "Blink",
       "version": "48.0.2564.106",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; LG-D405 Build/LRX22G.A1427784514; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D405",
+      "marketingName": "Optimus L90",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "48.0.2564.106",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "48.0.2564.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; LG-D722 Build/KOT49I.A1405316235) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "D722",
+      "marketingName": "G3 S",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]

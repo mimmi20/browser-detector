@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; tagi k10 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 bdbrowser_i18n/4.2.0.4"
+    },
+    "device": {
+      "deviceName": "K10",
+      "marketingName": "K10",
+      "manufacturer": "tagi",
+      "brand": "tagi",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Baidu Browser",
+      "modus": null,
+      "version": "4.2.0.4",
+      "manufacturer": "baidu",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Tagi K10 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "K10",
+      "marketingName": "K10",
+      "manufacturer": "tagi",
+      "brand": "tagi",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Tagi  K10 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "K10",
+      "marketingName": "K10",
+      "manufacturer": "tagi",
+      "brand": "tagi",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Tagi Tablet X12 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36"
     },
     "device": {
@@ -156,15 +270,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; TAGI T44 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Safari/537.36"
     },
     "device": {
-      "deviceName": "general Tagi device",
-      "marketingName": "general Tagi device",
+      "deviceName": "T44",
+      "marketingName": "T44",
       "manufacturer": "tagi",
       "brand": "tagi",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -186,6 +300,82 @@
     "engine": {
       "name": "Blink",
       "version": "43.0.2357.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Tagi Tablet X12 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "X12",
+      "marketingName": "X12",
+      "manufacturer": "tagi",
+      "brand": "tagi",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "41.0.2272.96",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "41.0.2272.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Tagi S10 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 GSA/3.1.24.941712.arm"
+    },
+    "device": {
+      "deviceName": "S10",
+      "marketingName": "S10",
+      "manufacturer": "tagi",
+      "brand": "tagi",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "3.1.24.941712",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
       "manufacturer": "google"
     }
   }

@@ -1860,5 +1860,43 @@
       "version": "42.0.2311.109",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; FP1U Build/JDQ39) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16"
+    },
+    "device": {
+      "deviceName": "FP1U",
+      "marketingName": "FP1U",
+      "manufacturer": "fairphone",
+      "brand": "fairphone",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.16.0",
+      "manufacturer": "apple"
+    }
   }
 ]

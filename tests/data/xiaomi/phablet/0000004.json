@@ -2620,5 +2620,43 @@
       "version": "43.0.2357.93",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; HM NOTE 1W Build/JDQ39) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16"
+    },
+    "device": {
+      "deviceName": "HM NOTE 1W",
+      "marketingName": "Redmi Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.16.0",
+      "manufacturer": "apple"
+    }
   }
 ]

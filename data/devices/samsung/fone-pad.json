@@ -127,7 +127,7 @@
   },
   "samsung gt-n5100": {
     "deviceName": "GT-N5100",
-    "marketingName": "Galaxy Note 8.0",
+    "marketingName": "Galaxy Note 8.0 3G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -139,9 +139,9 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "samsung sgh-i467": {
-    "deviceName": "SGH-I467",
-    "marketingName": "Galaxy Note 8.0 (AT&T)",
+  "samsung gt-n5105": {
+    "deviceName": "GT-N5105",
+    "marketingName": "Galaxy Note 8.0 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -156,6 +156,20 @@
   "samsung gt-n5120": {
     "deviceName": "GT-N5120",
     "marketingName": "Galaxy Note 8.0 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sgh-i467": {
+    "deviceName": "SGH-I467",
+    "marketingName": "Galaxy Note 8.0 4G (AT&T)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -736,7 +750,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"
@@ -750,7 +764,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "fone-pad",
     "platform": "android"

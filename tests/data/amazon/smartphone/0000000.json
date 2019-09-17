@@ -1670,5 +1670,43 @@
       "version": "42.0.2311.111",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; SD4930UR Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.45 like Chrome/37.0.2026.117 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SD4930UR",
+      "marketingName": "Fire Phone",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "3.45.0",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "37.0.2026.117",
+      "manufacturer": "google"
+    }
   }
 ]

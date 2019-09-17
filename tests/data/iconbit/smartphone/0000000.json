@@ -112,5 +112,43 @@
       "version": "0.8.0",
       "manufacturer": "ucweb"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; NT-3503M/NT-3504M Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "NT-3503M/NT-3504M",
+      "marketingName": "NetTAB Mercury XL",
+      "manufacturer": "iconbit",
+      "brand": "iconbit",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "42.0.2311.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.109",
+      "manufacturer": "google"
+    }
   }
 ]
