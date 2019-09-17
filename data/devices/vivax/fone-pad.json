@@ -1,7 +1,21 @@
 {
-  "vivax tpc 802 3g": {
-    "deviceName": "TPC 802 3G",
-    "marketingName": "TPC 802 3G",
+  "vivax tpc-7125 3g": {
+    "deviceName": "TPC-7125 3G",
+    "marketingName": "TPC-7125 3G",
+    "manufacturer": "vivax",
+    "brand": "vivax",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "vivax tpc-802 3g": {
+    "deviceName": "TPC-802 3G",
+    "marketingName": "TPC-802 3G",
     "manufacturer": "vivax",
     "brand": "vivax",
     "display": {

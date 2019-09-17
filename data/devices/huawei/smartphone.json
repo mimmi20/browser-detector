@@ -246,7 +246,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -260,7 +260,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -792,7 +792,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -1276,6 +1276,20 @@
   "huawei y321-u051": {
     "deviceName": "Y321-U051",
     "marketingName": "Ascend Y321",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei y325-t00": {
+    "deviceName": "Y325-T00",
+    "marketingName": "Ascend Y325",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {

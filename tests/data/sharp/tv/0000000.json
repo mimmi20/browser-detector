@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB90/3.3.8.e (SHARP, Si2156LG32, wired) HbbTV/1.1.1 (; CUS:SHARP; MB90; 3.3.8.e; 1.0;) CE-HTML/1.0 NETRANGEMMH iplayerV3"
+    },
+    "device": {
+      "deviceName": "Aquos TV",
+      "marketingName": "Aquos TV",
+      "manufacturer": "sharp",
+      "brand": "sharp",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.15 AQUOSBrowser/2.0 (US01DTV;V;0001;0001)"
     },
     "device": {

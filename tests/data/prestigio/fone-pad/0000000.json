@@ -88,7 +88,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 7.85
       },
       "type": "fone-pad"
     },
@@ -164,7 +164,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -924,7 +924,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -1114,7 +1114,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 7.85
       },
       "type": "fone-pad"
     },
@@ -1342,7 +1342,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 7.85
       },
       "type": "fone-pad"
     },
@@ -1380,7 +1380,7 @@
         "width": 1024,
         "height": 768,
         "touch": true,
-        "size": null
+        "size": 7.85
       },
       "type": "fone-pad"
     },
@@ -2444,7 +2444,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "fone-pad"
     },
@@ -3492,6 +3492,120 @@
     "engine": {
       "name": "Blink",
       "version": "43.0.2357.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; PMT7077_3G Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "PMT7077_3G",
+      "marketingName": "MultiPad 4 Diamond 7.85 3G",
+      "manufacturer": "prestigio",
+      "brand": "prestigio",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; PMT3277_3G Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "PMT3277_3G",
+      "marketingName": "MultiPad Ranger 7.0 3G",
+      "manufacturer": "prestigio",
+      "brand": "prestigio",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "42.0.2311.108",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; PMT3287_3G Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.108 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "PMT3287_3G",
+      "marketingName": "MultiPad Ranger 8.0 3G Wi-Fi",
+      "manufacturer": "prestigio",
+      "brand": "prestigio",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "42.0.2311.108",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.108",
       "manufacturer": "google"
     }
   }
