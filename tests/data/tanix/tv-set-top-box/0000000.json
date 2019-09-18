@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## TX3 Pro Build/NHG47L)"
+    },
+    "device": {
+      "deviceName": "TX3 Pro",
+      "marketingName": "TX3 Pro",
+      "manufacturer": "tanix",
+      "brand": "tanix",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## TX3 Mini Build/NHG47L)"
     },
     "device": {
@@ -14,7 +52,7 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
+      "type": "tv-set-top-box"
     },
     "browser": {
       "name": "Dalvik",
@@ -52,7 +90,7 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
+      "type": "tv-set-top-box"
     },
     "browser": {
       "name": "Dalvik",

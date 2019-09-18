@@ -10,7 +10,7 @@
       "touch": false,
       "size": null
     },
-    "type": "tv-media-player",
+    "type": "tv-set-top-box",
     "platform": "android"
   },
   "tanix tx2": {
@@ -24,7 +24,7 @@
       "touch": false,
       "size": null
     },
-    "type": "tv-media-player",
+    "type": "tv-set-top-box",
     "platform": "android"
   },
   "tanix tx3 mini": {
@@ -38,7 +38,21 @@
       "touch": false,
       "size": null
     },
-    "type": "tv-media-player",
+    "type": "tv-set-top-box",
+    "platform": "android"
+  },
+  "tanix tx3 pro": {
+    "deviceName": "TX3 Pro",
+    "marketingName": "TX3 Pro",
+    "manufacturer": "tanix",
+    "brand": "tanix",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv-set-top-box",
     "platform": "android"
   }
 }
