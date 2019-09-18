@@ -7,7 +7,7 @@
     "/(myphone|mypad|mytab)[ _][^;\\/]+( build|[;\\/\\)])|cube_lte|mytab10ii|hammer active|axe[ _]m[ _]lte/i": "myphone",
     "/cube|(u[0-9]+gt|k8gt)|i1-3gd|i15-t[cf]l|t8-plus/i": "cube",
     "/tcl[ \\-][a-z0-9]+|tcl[_ \\-][^;\\/]+( build|[;\\/\\)])|tclgalag60|vf-1497|vf685|tcl#-c616|play 2|percee tv/i": "tcl",
-    "/touchpad\\/\\d+\\.\\d+|hp-tablet|hp ?ipaq|p160u|(?<!tran)slate(?!droid)|hp ?10 ?plus|hp ?[78]|compaq [7|8]|hp; [^;\\/)]+|pre\\/|pixi|palm(?! ?os|source|e)|cm_tenderloin|hp estation/i": "hp",
+    "/touchpad\\/\\d+\\.\\d+|hp-tablet|hp ?ipaq|p160u|(?<!tran)slate(?!droid)|hp ?10 ?plus|(?<!c)hp ?[78]|compaq [7|8]|hp; [^;\\/)]+|pre\\/|pixi|palm(?! ?os|source|e)|cm_tenderloin|hp estation/i": "hp",
     "/hisense[ _][^);\\/]+|hs-(g|u|eg?|i|l|t|x)[0-9]+[a-z0-9\\-]*|e270bsa|m470bs[ae]|e2281|e2371|eg680|f5281|u972|e621t|w2003/i": "hisense",
     "/CCE /": "cce",
     "/blaupunkt|atlantis[_ ](1001a|1010a|a10\\.g40[23])|discovery[_ ](102c|108c|111c|1000c|1001a?)|endeavour[_ ](700|785|800|101[glm]|1000|1001|101[03]|1100)|polaris[_ ]80[38]|end_101g-test|4kids|10bpe0h?/i": "blaupunkt",
@@ -16,7 +16,7 @@
     "/trekstor|surftab|vt10416|breeze 10\\.1 quad|xintroni10\\.1|st70408_4|[sv]t[0-9]{5}/i": "trekstor",
     "/ct(10[0123]0|7[12]0|820)(w|fr)?( build|[;\\/\\)])/i": "carrefour",
     "/minix|neo-z64|neo-x[578]|neo-u[19]/i": "minix",
-    "/(hw-)?(huawei|mate 20|ideos|honor[ _]?)|(ags2?|al[ep]|amn|ane|are|atu|aum|bah2?|bg[2o]|bkl|bl[aln]|bnd|btv|ca[mz]|che[12]|ch[cem]|clt|cmr|co[lr]|cr[or]|dig|dli|dra|du[abk]|edi|ele|eml|ev[ar]|fdr|fig|fla|frd|g7|g526|g620s?|g621|g730|(?<!sa)gem|gra|h[36]0|hma|hol|hry|hwi|(?<!eng)ine|jat|jkm|jmm|jsn|ki[iw]|knt|kob|ks[ae]|ldn|lld|lnd|lon|lua|ly[ao]|mar|mha|mrd|mya|ne[mo]|nmo| p[267e]|par|pct|pic|(?<!ap)pl[ek]|pot|pra|(?<!-)rio|rne|(?<![jv])scl|sht|skr|sla|sne|st[fk]|t1|tag|tit|trt|vie|vky|vog|vtr|was|y22[01]|y32[01]|y330|yal)-|u(8100|8110|8160|8220|8230|8500|8661|8665|8667|8800|8818|8860|9200|9508)( build|[;\\/\\)])|bucare y330-u05|h1611|hi6210sft|vodafone[ _]858|vodafone 845|ascend| m86[05] | p6 |enjoy 7 plus|g6600|p7mini|p8_max|t1-701u|t1 7\\.0|mediapad|speedsurfer|c8650|c8600|c8500|hi6250| 8950/i": "huawei",
+    "/(hw-)?(huawei|mate 20|ideos|honor[ _]?)|(ags2?|al[ep]|amn|ane|are|atu|aum|bah2?|bg[2o]|bkl|bl[aln]|bnd|btv|ca[mz]|che[12]|ch[cem]|clt|cmr|co[lr]|cr[or]|dig|dli|dra|du[abk]|edi|ele|eml|ev[ar]|fdr|fig|fla|frd|g7|g526|g620s?|g621|g730|(?<!sa)gem|gra|h[36]0|hma|hol|hry|hwi|(?<!eng)ine|jat|jkm|jmm|jsn|ki[iw]|knt|kob|ks[ae]|ldn|lld|lnd|lon|lua|ly[ao]|mar|mha|mrd|mya|ne[mo]|nmo| p[267e]|par|pct|pic|(?<!ap)pl[ek]|pot|pra|(?<!-)rio|rne|rvl|(?<![jv])scl|sht|skr|sla|sne|st[fk]|t1|tag|tit|trt|vie|vky|vog|vtr|was|y22[01]|y32[01]|y330|yal)-|u(8100|8110|8160|8220|8230|8500|8661|8665|8667|8800|8818|8860|9200|9508)( build|[;\\/\\)])|bucare y330-u05|h1611|hi6210sft|vodafone[ _]858|vodafone 845|ascend| m86[05] | p6 |enjoy 7 plus|g6600|p7mini|p8_max|t1-701u|t1 7\\.0|mediapad|speedsurfer|c8650|c8600|c8500|hi6250| 8950/i": "huawei",
     "/rkm mk68/i": "rikomagic",
     "/cx-919|mk908/i": "tronsmart",
     "/ilium|(adr|android) 4\\.[234].* x110(?![\\/\\-]3g)/i": "lanix",
@@ -85,7 +85,7 @@
     "/allcall[ _]|(?<!m|o2 xda )atom/i": "allcall",
     "/evolveo|strongphoneq4/i": "evolveo",
     "/evo air/i": "elite",
-    "/(?<!lec)htc|sprint (apa|atp)|adr(?!910l)[a-z0-9]+|nexushd2|amaze[ _]4g( build|[;\\/\\)])|(desire|sensation|evo ?3d|incredibles|wildfire|butterfly)[ _]?([^;\\/]+)( build|[;\\/\\)])|(amaze[ _]4g|(?<!gi|iph)one ?[xelsv\\+]+)( build|[;\\/\\)])|spv e6[05]0|one mini|one m8|x525a|pg86100|pc36100|xv6975|pj83100( build|[;\\/\\)])|0pcv1|0pm92|2pyb2|0pja10|0pja2|t-mobile_espresso|mda[ _]|vpa_touch|(831c|a315c|(adr|android) 6\\..* x9|(?<!xolo|nexus|cubot|blu life) one|dream|s12ht|(adr|android) [567]\\..* m9)( build|[;\\/\\)])|eris 2\\.1|t8388|t858[58]|t5555|t5388| 909d|m7cdtu|dlxu| 9088|endeavoru|s11ht|s22ht|isw12ht|htl21|inspire 4g|001ht|adr6200|adr6275| hd3|(adr|android) 4\\.0.* zeta/i": "htc",
+    "/(?<!lec)htc|sprint (apa|atp)|adr(?!910l)[a-z0-9]+|nexushd2|amaze[ _]4g( build|[;\\/\\)])|(desire|sensation|evo ?3d|incredibles|wildfire|butterfly)[ _]?([^;\\/]+)( build|[;\\/\\)])|(amaze[ _]4g|(?<!gi|iph|xbox )one ?[xelsv\\+]+)( build|[;\\/\\)])|spv e6[05]0|one mini|one m8|x525a|pg86100|pc36100|xv6975|pj83100( build|[;\\/\\)])|0pcv1|0pm92|2pyb2|0pja10|0pja2|t-mobile_espresso|mda[ _]|vpa_touch|(831c|a315c|(adr|android) 6\\..* x9|(?<!xolo|nexus|cubot|blu life) one|dream|s12ht|(adr|android) [567]\\..* m9)( build|[;\\/\\)])|eris 2\\.1|t8388|t858[58]|t5555|t5388| 909d|m7cdtu|dlxu| 9088|endeavoru|s11ht|s22ht|isw12ht|htl21|inspire 4g|001ht|adr6200|adr6275| hd3|(adr|android) 4\\.0.* zeta/i": "htc",
     "/ac0731b|ac0732c|ac1024c|ac7803c|bc9710am|el72b|er71b|lc0720c|lc0723b|lc0725b|lc0804b|lc0808b|lc0809b|lc0810c|lc0816c|lc0901d|lc1016c|mt0724b|mt0729b|mt0729d|mt0739d|mt0811b|mt0812e|mt7801c|oc1020a|qs9719d|qs9718c|qs9715f|qs1023h|qs0815c|qs0730c|qs0728c|qs0717d|qs0716d|qs0715c|rc0709b|rc0710b|rc0718c|rc0719h|rc0721b|rc0722c|rc0726b|rc0734h|rc0743h|rc0813c|rc0817c|rc1018c|rc1019g|rc1025f|rc1301c|rc7802f|rc9711b|rc9712c|rc9716b|rc9717b|rc9724c|rc9726c|rc9727f|rc9730c|rc9731c|ts0807b|ts1013b|ts9708b|vm0711a|vm1017a/i": "3q",
     "/uniscope|(?<!%)u2013/i": "uniscope",
     "/aquaris|bq [^\\/;]+( build|[;\\/\\)])|bqs-400[157]|bqs-4501|bqs-5000| m10 |edison 3/i": "bq",
@@ -140,7 +140,7 @@
     "/meeg(?!o)/i": "meeg",
     "/kazam|trooper|tornado|thunder/i": "kazam",
     "/dg[0-9]{3,4}|x[679] ?pro|x5max_pro|bl[57]000|(adr|android) 6\\..* (x10|t6 ?pro)( build|[;\\/\\)])| x[23]0( build|[;\\/\\)])|f3_pro|y100_plus|y6_piano|y6 max| t6 |(adr|android) 8\\.1.* s70( build|[;\\/\\)])|s60 lite| y6c|(adr|android) 5\\.1.*(?<!vivo) x5s?( build|[;\\/\\)])|mix lite|bl12000 pro|shoot_1|y100x|valencia2|x9 ?mini| x20l| (x5[05]|y8)( build|[;\\/\\)])|turbo_mini_f1/i": "doogee",
-    "/(?<!fbcr\\/)vivo|x[0-9] ?(plus|max|pro)| x21( build|[;\\/\\)])|(adr|android) 7\\..* x11( build|[;\\/\\)])|v1814[at]/i": "vivo",
+    "/(?<!fbcr\\/)vivo|(?<!t)x[0-9] ?(plus|max|pro)| x21( build|[;\\/\\)])|(adr|android) 7\\..* x11( build|[;\\/\\)])|v1814[at]/i": "vivo",
     "/haipai|(adr|android) 4\\.0.* i9220( build|[;\\/\\)])|x710d|i9377/i": "haipai",
     "/megafon/i": "megafon",
     "/yuanda/i": "yuanda",
@@ -644,7 +644,7 @@
     "/x101a/i": "t-bao",
     "/novus/i": "novus-tablet",
     "/sh6b7ce/i": "strong",
-    "/tx3 mini|tx2/i": "tanix",
+    "/tx3 (mini|pro)|tx2/i": "tanix",
     "/(adr|android) 4\\.2.* p002/i": "xltel",
     "/waltter|neo 10\\.1/i": "waltter",
     "/mx089/i": "chili-green",
@@ -787,7 +787,7 @@
     "/ms457/i": "maxcom",
     "/I5/": "sop",
     "/i5/": "vsun",
-    "/KIN\\.(One|Two)|ZuneHD|Windows NT 6\\.(2|3).*ARM;/": "microsoft"
+    "/kin\\.(one|two)|zunehd|windows nt 6\\.(2|3).*arm;|xbox/i": "microsoft"
   },
   "generic": "unknown"
 }
