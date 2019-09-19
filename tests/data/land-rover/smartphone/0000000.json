@@ -12,7 +12,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -50,7 +50,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -88,7 +88,7 @@
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -111,6 +111,44 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Land Rover Explore Build/NMF26O) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
+    },
+    "device": {
+      "deviceName": "Explore",
+      "marketingName": "Explore",
+      "manufacturer": "land-rover",
+      "brand": "land-rover",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "69.0.3497.128",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.128",
+      "manufacturer": "google"
     }
   }
 ]

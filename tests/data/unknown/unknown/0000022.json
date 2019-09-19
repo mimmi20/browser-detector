@@ -2012,5 +2012,43 @@
       "version": null,
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "AHC/2.1"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Asynchronous HTTP Client",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

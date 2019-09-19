@@ -492,5 +492,81 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "NetFront/3.5.1 (BREW 5.0.1.2; U; xx; LG; NetFront/3.5.1/AMB) Sprint LN510 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "LN510",
+      "marketingName": "Rumor Touch",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.1",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "5.0.1.2",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetFront/4.2 (BMP 1.0.4; U; xx; LG; NetFront/4.2/AMB) Boost LG272 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "272",
+      "marketingName": "Rumor Reflex",
+      "manufacturer": "lg",
+      "brand": "boost",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
   }
 ]

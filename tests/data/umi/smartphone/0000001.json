@@ -1822,5 +1822,43 @@
       "version": "30.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Lenovo TAB 2 A10-70F Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.81 Iron Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Iron",
+      "marketingName": "Iron",
+      "manufacturer": "umi",
+      "brand": "umi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Iron",
+      "modus": null,
+      "version": "61.0.3163.81",
+      "manufacturer": "srware",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.81",
+      "manufacturer": "google"
+    }
   }
 ]
