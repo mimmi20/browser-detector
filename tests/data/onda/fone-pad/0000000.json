@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; V116w DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "V116w Dual OS",
+      "marketingName": "V116w Dual OS",
+      "manufacturer": "onda",
+      "brand": "onda",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 11.6
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "44.0.2403.133",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.133",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; V919 3G Air DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
     },
     "device": {
@@ -12,7 +50,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },
@@ -42,15 +80,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; V10 4G Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 YaBrowser/17.11.1.628.01 Safari/537.36"
     },
     "device": {
-      "deviceName": "V10",
-      "marketingName": "V10",
+      "deviceName": "V10 4G",
+      "marketingName": "V10 4G",
       "manufacturer": "onda",
       "brand": "onda",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -80,15 +118,15 @@
       "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.0## V10 4G Build/NRD90M)"
     },
     "device": {
-      "deviceName": "V10",
-      "marketingName": "V10",
+      "deviceName": "V10 4G",
+      "marketingName": "V10 4G",
       "manufacturer": "onda",
       "brand": "onda",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -126,7 +164,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "fone-pad"
     },

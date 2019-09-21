@@ -596,7 +596,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -610,7 +610,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -2001,20 +2001,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc pn071": {
-    "deviceName": "PN071",
-    "marketingName": "One",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "htc one m8 eye": {
     "deviceName": "One M8 Eye",
     "marketingName": "One (M8 Eye)",
@@ -2197,8 +2183,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "htc pn071": {
+    "deviceName": "PN071",
+    "marketingName": "One M7",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "htc m7 (htc6500lvw)": {
-    "deviceName": "M7 (HTC6500LVW)",
+    "deviceName": "HTC6500LVW",
     "marketingName": "One M7 (Verizon)",
     "manufacturer": "htc",
     "brand": "htc",
@@ -2491,9 +2491,23 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "htc po582": {
+    "deviceName": "PO582",
+    "marketingName": "One Mini",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "htc po58220": {
     "deviceName": "PO58220",
-    "marketingName": "One mini",
+    "marketingName": "One Mini",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
@@ -2507,7 +2521,7 @@
   },
   "htc m8minx": {
     "deviceName": "M8MINx",
-    "marketingName": "One mini 2",
+    "marketingName": "One Mini 2",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
