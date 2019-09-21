@@ -20,9 +20,9 @@
     "brand": "trekstor",
     "display": {
       "width": 800,
-      "height": 600,
+      "height": 480,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -75,10 +75,10 @@
     "manufacturer": "trekstor",
     "brand": "trekstor",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1280,
+      "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -106,7 +106,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -120,7 +120,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -134,7 +134,7 @@
       "width": 800,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -190,7 +190,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": null
@@ -307,6 +307,20 @@
     "type": "tablet",
     "platform": null
   },
+  "trekstor st80208-2": {
+    "deviceName": "ST80208-2",
+    "marketingName": "SurfTab Ventos 8.0",
+    "manufacturer": "trekstor",
+    "brand": "trekstor",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": null
+  },
   "trekstor st80216": {
     "deviceName": "ST80216",
     "marketingName": "SurfTab Ventos 8.0",
@@ -358,7 +372,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"

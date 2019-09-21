@@ -74,5 +74,43 @@
       "version": null,
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Danger hiptop 2.0; U; AvantGo 3.2)"
+    },
+    "device": {
+      "deviceName": "Hiptop 2",
+      "marketingName": "Hiptop 2",
+      "manufacturer": "danger",
+      "brand": "danger",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Danger OS",
+      "marketingName": "Danger OS",
+      "version": null,
+      "manufacturer": "danger",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

@@ -5,10 +5,24 @@
     "manufacturer": "vivax",
     "brand": "vivax",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1024,
+      "height": 600,
       "touch": true,
       "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "vivax tpc-8140": {
+    "deviceName": "TPC-8140",
+    "marketingName": "TPC-8140",
+    "manufacturer": "vivax",
+    "brand": "vivax",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"

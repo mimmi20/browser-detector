@@ -1,7 +1,8 @@
 {
   "rules": {
-    "/beauty 2 hd quad/i": "estar beauty 2 hd quad",
-    "/grand hd/i": "estar grand hd"
+    "/beauty[ _]2[ _]hd[ _]quad/i": "estar beauty 2 hd quad",
+    "/grand[ _]hd[ _]quad/i": "estar grand hd quad",
+    "/grand[ _]hd/i": "estar grand hd"
   },
   "generic": "general estar device"
 }
