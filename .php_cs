@@ -67,7 +67,6 @@ return PhpCsFixer\Config::create()
             'php_unit_strict' => ['assertions' => ['assertAttributeEquals', 'assertAttributeNotEquals', 'assertNotEquals']],
 
             // @Symfony rules configured different from default
-            'binary_operator_spaces' => ['default' => 'single_space', 'operators' => ['=' => 'align_single_space_minimal']],
             'concat_space' => ['spacing' => 'one'],
             'declare_equal_normalize' => ['space' => 'single'],
             'no_blank_lines_after_phpdoc' => false,
