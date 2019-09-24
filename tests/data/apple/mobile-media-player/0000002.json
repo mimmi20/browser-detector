@@ -682,5 +682,119 @@
       "version": "528.18.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPod; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) GSA/4.2.2.38484 Mobile/12H321 Safari/9537.53"
+    },
+    "device": {
+      "deviceName": "iPod Touch",
+      "marketingName": "iPod Touch",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-media-player"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "4.2.2.38484",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.4.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.51.2",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPod touch; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H321"
+    },
+    "device": {
+      "deviceName": "iPod Touch",
+      "marketingName": "iPod Touch",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-media-player"
+    },
+    "browser": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.4.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPod; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/44.0.2403.67 Mobile/12H321 Safari/600.1.4"
+    },
+    "device": {
+      "deviceName": "iPod Touch",
+      "marketingName": "iPod Touch",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-media-player"
+    },
+    "browser": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "44.0.2403.67",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.4.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.4",
+      "manufacturer": "apple"
+    }
   }
 ]

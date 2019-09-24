@@ -3608,5 +3608,43 @@
       "version": "2.12.423",
       "manufacturer": "opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9360; de) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.336 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9360",
+      "marketingName": "BlackBerry Curve 9360",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.336",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.336",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
+    }
   }
 ]

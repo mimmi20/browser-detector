@@ -1,4 +1,18 @@
 {
+  "lenovo 3gc101": {
+    "deviceName": "3GC101",
+    "marketingName": "3GC101",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.61
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lenovo 3gw100": {
     "deviceName": "3GW100",
     "marketingName": "3GW100",
@@ -1352,7 +1366,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1367,6 +1381,20 @@
       "height": null,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lenovo p90": {
+    "deviceName": "P90",
+    "marketingName": "P90",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
