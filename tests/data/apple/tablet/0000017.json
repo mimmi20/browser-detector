@@ -3228,5 +3228,81 @@
       "version": "600.1.4",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/82.1.267240167 Mobile/16G102 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "82.1.267240167",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.4.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) (Ecosia ios@4.0.5.793)"
+    },
+    "device": {
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "4.0.5.793",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.4.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
   }
 ]
