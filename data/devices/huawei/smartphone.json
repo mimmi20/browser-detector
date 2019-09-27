@@ -405,6 +405,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "huawei g610-u30": {
+    "deviceName": "G610-U30",
+    "marketingName": "Ascend G610",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "huawei g620-l72": {
     "deviceName": "G620-L72",
     "marketingName": "Ascend G620",
@@ -582,7 +596,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": 4.6
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -596,7 +610,21 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": 4.6
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei g730-u251": {
+    "deviceName": "G730-U251",
+    "marketingName": "Ascend G730",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -610,7 +638,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": 4.6
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1370,6 +1398,20 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "huawei y340-u081": {
+    "deviceName": "Y340-U081",
+    "marketingName": "Ascend Y340",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "huawei y360-u31": {
     "deviceName": "Y360-U31",
@@ -7334,20 +7376,6 @@
     },
     "type": "smartphone",
     "platform": "android"
-  },
-  "huawei y340-u081": {
-    "deviceName": "Y340-U081",
-    "marketingName": "Y340-U081",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
   },
   "huawei dra-l01": {
     "deviceName": "DRA-L01",

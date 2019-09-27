@@ -1,5 +1,6 @@
 {
   "rules": {
+    "/[ _]u100/i": "utime u100",
     "/[ _]i15/i": "utime i15",
     "/[ _]g7/i": "utime g7"
   },
