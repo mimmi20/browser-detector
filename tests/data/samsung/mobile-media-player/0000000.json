@@ -81,14 +81,14 @@
     },
     "device": {
       "deviceName": "YP-G70",
-      "marketingName": "Galaxy Player 5",
+      "marketingName": "Galaxy Player 5.0",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "mobile-media-player"
     },
@@ -195,14 +195,14 @@
     },
     "device": {
       "deviceName": "YP-G70",
-      "marketingName": "Galaxy Player 5",
+      "marketingName": "Galaxy Player 5.0",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "mobile-media-player"
     },
@@ -241,6 +241,44 @@
         "height": 480,
         "touch": true,
         "size": null
+      },
+      "type": "mobile-media-player"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; de-de; YP-G70 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "YP-G70",
+      "marketingName": "Galaxy Player 5.0",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 5
       },
       "type": "mobile-media-player"
     },

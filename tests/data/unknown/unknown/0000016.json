@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "The Incutio XML-RPC PHP Library -- WordPress/7084"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "WordPress",
+      "modus": null,
+      "version": "7084.0.0",
+      "manufacturer": "wordpress",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "The Incutio XML-RPC PHP Library -- WordPress/5591"
     },
     "device": {
@@ -3745,44 +3783,6 @@
       "modus": null,
       "version": "6.01.0",
       "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "The Incutio XML-RPC PHP Library -- WordPress/3376"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "WordPress",
-      "modus": null,
-      "version": "3376.0.0",
-      "manufacturer": "wordpress",
       "bits": null,
       "type": "bot"
     },

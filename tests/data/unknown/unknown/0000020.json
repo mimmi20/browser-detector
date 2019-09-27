@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; SemrushBot/0.95; +http://www.semrush.com/bot.html)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "SemrushBot",
+      "modus": null,
+      "version": "0.95.0",
+      "manufacturer": "semrush",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (du kommst hier ned rein; rv:19.0) Gecko/20100101 Firefox/19.0"
     },
     "device": {
@@ -3745,44 +3783,6 @@
       "modus": null,
       "version": "5.826.0",
       "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "KrOWLer/0.0.1, matentzn at cs dot man dot ac dot uk"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Owler Bot",
-      "modus": null,
-      "version": "0.0.1",
-      "manufacturer": "owler",
       "bits": null,
       "type": "bot"
     },

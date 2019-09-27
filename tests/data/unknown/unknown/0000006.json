@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Googlebot-Video/1.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Googlebot-Video",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; Infohelfer/1.2.0; +http://www.infohelfer.de/crawler.php)"
     },
     "device": {
@@ -3744,44 +3782,6 @@
       "name": "SeznamBot",
       "modus": null,
       "version": "3.1.0",
-      "manufacturer": "seznam",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; SeznamBot/3.2-test1; +http://fulltext.sblog.cz/)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "SeznamBot",
-      "modus": null,
-      "version": "3.2.0",
       "manufacturer": "seznam",
       "bits": null,
       "type": "bot"

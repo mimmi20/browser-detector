@@ -1,7 +1,8 @@
 {
   "rules": {
     "/cirrus 4\\.5/i": "lark cirrus 4.5",
-    "/evolution 10/i": "lark evolution 10"
+    "/evolution 10/i": "lark evolution 10",
+    "/ultimate 7i|ulitmate 7i/i": "lark ultimate 7i"
   },
   "generic": "general lark device"
 }

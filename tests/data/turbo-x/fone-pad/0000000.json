@@ -50,7 +50,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad"
     },
@@ -149,6 +149,44 @@
       "name": "Blink",
       "version": "49.0.2623.91",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; el-gr; HIVE IV 3G Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Hive IV 3G",
+      "marketingName": "Hive IV 3G",
+      "manufacturer": "turbo-x",
+      "brand": "turbo-x",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]
