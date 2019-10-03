@@ -111,6 +111,10 @@ final class AndroidOsTest extends TestCase
                 'Mozilla/5.0 (Android M; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0',
                 '6.0.0',
             ],
+            [
+                '{version:6.1937.3-arm64-v8a,platform:server_android,osversion:8.0.0}',
+                '8.0.0',
+            ],
         ];
     }
 

@@ -4,15 +4,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; Obi_S520 Build/KOT49H) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/10.3.0.622 Mobile"
     },
     "device": {
-      "deviceName": "general Obi Worldphone device",
-      "marketingName": "general Obi Worldphone device",
+      "deviceName": "S520",
+      "marketingName": "Octopus",
       "manufacturer": "obi",
       "brand": "obi",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -35,44 +35,6 @@
       "name": "WebKit",
       "version": "528.5.0",
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; VOX S502 3G VS5003MG Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "S502",
-      "marketingName": "Leopard",
-      "manufacturer": "obi",
-      "brand": "obi",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "58.0.3029.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.83",
-      "manufacturer": "google"
     }
   },
   {
@@ -110,44 +72,6 @@
     "engine": {
       "name": "Blink",
       "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; DNS_S4008 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.39 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "S400",
-      "marketingName": "S400",
-      "manufacturer": "obi",
-      "brand": "obi",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "37.0.2062.39",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2062.39",
       "manufacturer": "google"
     }
   },
@@ -271,7 +195,7 @@
     },
     "device": {
       "deviceName": "S400",
-      "marketingName": "S400",
+      "marketingName": "Skipper",
       "manufacturer": "obi",
       "brand": "obi",
       "display": {
@@ -385,7 +309,7 @@
     },
     "device": {
       "deviceName": "S452+",
-      "marketingName": "S452+",
+      "marketingName": "Python",
       "manufacturer": "obi",
       "brand": "obi",
       "display": {
@@ -423,7 +347,7 @@
     },
     "device": {
       "deviceName": "S507",
-      "marketingName": "S507",
+      "marketingName": "Pelican",
       "manufacturer": "obi",
       "brand": "obi",
       "display": {
@@ -613,7 +537,7 @@
     },
     "device": {
       "deviceName": "S503+",
-      "marketingName": "Boa",
+      "marketingName": "Boa Plus",
       "manufacturer": "obi",
       "brand": "obi",
       "display": {
@@ -765,7 +689,7 @@
     },
     "device": {
       "deviceName": "S400",
-      "marketingName": "S400",
+      "marketingName": "Skipper",
       "manufacturer": "obi",
       "brand": "obi",
       "display": {
@@ -803,7 +727,7 @@
     },
     "device": {
       "deviceName": "S400",
-      "marketingName": "S400",
+      "marketingName": "Skipper",
       "manufacturer": "obi",
       "brand": "obi",
       "display": {
@@ -870,82 +794,6 @@
     "engine": {
       "name": "Blink",
       "version": "47.0.2526.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; verykools5019 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "S501",
-      "marketingName": "Wolverine",
-      "manufacturer": "obi",
-      "brand": "obi",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "56.0.2924.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; verykool Wave Pro s5021 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "S502",
-      "marketingName": "Leopard",
-      "manufacturer": "obi",
-      "brand": "obi",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "56.0.2924.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
       "manufacturer": "google"
     }
   },

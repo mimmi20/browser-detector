@@ -28,6 +28,7 @@ final class AndroidOs implements VersionDetectorInterface
         'andr[0o]id',
         'adr ',
         '\(os: ',
+        'platform:server_android,osversion:',
     ];
 
     /**

@@ -22,7 +22,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "symbian"
@@ -33,10 +33,10 @@
     "manufacturer": "nomi",
     "brand": "nomi",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -50,10 +50,24 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "nomi i5011": {
+    "deviceName": "i5011",
+    "marketingName": "Evo M1",
+    "manufacturer": "nomi",
+    "brand": "nomi",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "symbian"
   },
   "nomi l003": {
     "deviceName": "L003",
@@ -78,7 +92,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "symbian"

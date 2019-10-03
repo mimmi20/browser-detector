@@ -44,6 +44,7 @@ final class Safari implements SafariInterface
     ];
 
     private const MAP_VERSIONS = [
+        '15600' => '13.0',
         '14600' => '12.0',
         '13600' => '11.0',
         '12600' => '10.0',

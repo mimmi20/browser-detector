@@ -43,7 +43,7 @@
   },
   "obi s503+": {
     "deviceName": "S503+",
-    "marketingName": "Boa",
+    "marketingName": "Boa Plus",
     "manufacturer": "obi",
     "brand": "obi",
     "display": {
@@ -111,37 +111,23 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "obi s400": {
-    "deviceName": "S400",
-    "marketingName": "S400",
+  "obi s520": {
+    "deviceName": "S520",
+    "marketingName": "Octopus",
     "manufacturer": "obi",
     "brand": "obi",
     "display": {
-      "width": 800,
-      "height": 480,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": 4
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "obi s452+": {
-    "deviceName": "S452+",
-    "marketingName": "S452+",
-    "manufacturer": "obi",
-    "brand": "obi",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "size": 4.5
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
   },
   "obi s507": {
     "deviceName": "S507",
-    "marketingName": "S507",
+    "marketingName": "Pelican",
     "manufacturer": "obi",
     "brand": "obi",
     "display": {
@@ -149,6 +135,20 @@
       "height": 1080,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "obi s452+": {
+    "deviceName": "S452+",
+    "marketingName": "Python",
+    "manufacturer": "obi",
+    "brand": "obi",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -191,6 +191,20 @@
       "height": 540,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "obi s400": {
+    "deviceName": "S400",
+    "marketingName": "Skipper",
+    "manufacturer": "obi",
+    "brand": "obi",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
