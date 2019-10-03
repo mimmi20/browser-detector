@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "DoCoMo/2.0/P04A (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)(c100;TB;W24H12)"
+    },
+    "device": {
+      "deviceName": "P04A",
+      "marketingName": "P04A",
+      "manufacturer": "panasonic",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 427,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NaverBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nhn-corporation",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Panasonic-A210/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0 UP.Link/1.1"
     },
     "device": {

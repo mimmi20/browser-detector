@@ -3120,15 +3120,15 @@
       "user-agent": "NOKIA-RM-11/V H102V0500.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
     },
     "device": {
-      "deviceName": "500",
-      "marketingName": "Asha 500",
+      "deviceName": "RM-11",
+      "marketingName": "3205",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.2
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.56
       },
       "type": "feature-phone"
     },
@@ -3141,10 +3141,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -3303,6 +3303,500 @@
       "name": "Gecko",
       "version": null,
       "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia7360/2.0 (s05w07_05w) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "7360",
+      "marketingName": "7360",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia7360/2.0 (03.21) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "7360",
+      "marketingName": "7360",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia7360/2.0 (03.20) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "7360",
+      "marketingName": "7360",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RM-11/V H190V0700.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RM-11",
+      "marketingName": "3205",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.56
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RM-11/V H125V1003.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RM-11",
+      "marketingName": "3205",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.56
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RM-11/V H102V0200.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0 UP.Link/6.3.0.0.0"
+    },
+    "device": {
+      "deviceName": "RM-11",
+      "marketingName": "3205",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.56
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RM-11/V H102V0200.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RM-11",
+      "marketingName": "3205",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.56
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RM-11/V H100V2400.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RM-11",
+      "marketingName": "3205",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.56
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RM-11/V H100V1900.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RM-11",
+      "marketingName": "3205",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.56
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RH-48/V J190V0600.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RH-48",
+      "marketingName": "3105",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RH-48/V J190V0100.nep.0 UP.Browser/6.2.2.1.c.1.100 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RH-48",
+      "marketingName": "3105",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RH-48/V J100V1800.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RH-48",
+      "marketingName": "3105",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-RH-48/V J100V1600.nep.0 UP.Browser/6.2.2.1.c.1.102 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "RH-48",
+      "marketingName": "3105",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

@@ -12,7 +12,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.6
       },
       "type": "feature-phone"
     },
@@ -50,7 +50,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "feature-phone"
     },
@@ -88,7 +88,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "feature-phone"
     },
@@ -430,7 +430,7 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.8
       },
       "type": "feature-phone"
     },
@@ -1000,7 +1000,7 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.8
       },
       "type": "feature-phone"
     },
@@ -1190,7 +1190,7 @@
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.8
       },
       "type": "feature-phone"
     },
@@ -1304,7 +1304,7 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.8
       },
       "type": "feature-phone"
     },
@@ -1342,7 +1342,7 @@
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.8
       },
       "type": "feature-phone"
     },
@@ -2049,6 +2049,44 @@
       "name": "Presto",
       "version": null,
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Xda terra; 240x320"
+    },
+    "device": {
+      "deviceName": "Xda Terra",
+      "marketingName": "Xda Terra",
+      "manufacturer": "htc",
+      "brand": "o2",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
     }
   }
 ]

@@ -14,7 +14,7 @@
     "platform": "ios"
   },
   "apple ipad 1,1": {
-    "deviceName": "iPad",
+    "deviceName": "iPad 1,1",
     "marketingName": "iPad (1st Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -28,7 +28,7 @@
     "platform": "ios"
   },
   "apple ipad 2,1": {
-    "deviceName": "iPad",
+    "deviceName": "iPad 2,1",
     "marketingName": "iPad (2nd Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -42,7 +42,7 @@
     "platform": "ios"
   },
   "apple ipad 2,4": {
-    "deviceName": "iPad",
+    "deviceName": "iPad 2,4",
     "marketingName": "iPad (2nd Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -56,8 +56,8 @@
     "platform": "ios"
   },
   "apple ipad 6,12": {
-    "deviceName": "iPad",
-    "marketingName": "iPad (9,7, 2017)",
+    "deviceName": "iPad 6,12",
+    "marketingName": "iPad (9.7, 2017)",
     "manufacturer": "apple",
     "brand": "apple",
     "display": {
@@ -70,7 +70,7 @@
     "platform": "ios"
   },
   "apple ipad 3,1": {
-    "deviceName": "iPad 3",
+    "deviceName": "iPad 3,1",
     "marketingName": "iPad 3",
     "manufacturer": "apple",
     "brand": "apple",
@@ -84,7 +84,7 @@
     "platform": "ios"
   },
   "apple ipad 3,4": {
-    "deviceName": "iPad 4",
+    "deviceName": "iPad 3,4",
     "marketingName": "iPad 4",
     "manufacturer": "apple",
     "brand": "apple",
@@ -98,7 +98,7 @@
     "platform": "ios"
   },
   "apple ipad 7,5": {
-    "deviceName": "iPad7,5",
+    "deviceName": "iPad 7,5",
     "marketingName": "iPad 6 (9.7)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -112,7 +112,7 @@
     "platform": "ios"
   },
   "apple ipad 4,1": {
-    "deviceName": "iPad Air",
+    "deviceName": "iPad 4,1",
     "marketingName": "iPad Air",
     "manufacturer": "apple",
     "brand": "apple",
@@ -126,7 +126,7 @@
     "platform": "ios"
   },
   "apple ipad 5,3": {
-    "deviceName": "iPad Air 2",
+    "deviceName": "iPad 5,3",
     "marketingName": "iPad Air 2",
     "manufacturer": "apple",
     "brand": "apple",
@@ -140,7 +140,7 @@
     "platform": "ios"
   },
   "apple ipad 2,5": {
-    "deviceName": "iPad mini",
+    "deviceName": "iPad 2,5",
     "marketingName": "iPad mini",
     "manufacturer": "apple",
     "brand": "apple",
@@ -154,7 +154,7 @@
     "platform": "ios"
   },
   "apple ipad 4,4": {
-    "deviceName": "iPad mini 2",
+    "deviceName": "iPad 4,4",
     "marketingName": "iPad mini 2",
     "manufacturer": "apple",
     "brand": "apple",
@@ -168,7 +168,7 @@
     "platform": "ios"
   },
   "apple ipad 4,7": {
-    "deviceName": "iPad mini 3",
+    "deviceName": "iPad 4,7",
     "marketingName": "iPad mini 3",
     "manufacturer": "apple",
     "brand": "apple",
@@ -182,7 +182,7 @@
     "platform": "ios"
   },
   "apple ipad 5,1": {
-    "deviceName": "iPad mini 4",
+    "deviceName": "iPad 5,1",
     "marketingName": "iPad mini 4",
     "manufacturer": "apple",
     "brand": "apple",
@@ -196,7 +196,7 @@
     "platform": "ios"
   },
   "apple ipad 7,3": {
-    "deviceName": "iPad7,3",
+    "deviceName": "iPad 7,3",
     "marketingName": "iPad Pro (10.5)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -210,7 +210,7 @@
     "platform": "ios"
   },
   "apple ipad 6,7": {
-    "deviceName": "iPad Pro",
+    "deviceName": "iPad 6,7",
     "marketingName": "iPad Pro (12.9)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -224,7 +224,7 @@
     "platform": "ios"
   },
   "apple ipad 7,1": {
-    "deviceName": "iPad7,1",
+    "deviceName": "iPad 7,1",
     "marketingName": "iPad Pro (12.9, 2nd Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -237,8 +237,36 @@
     "type": "tablet",
     "platform": "ios"
   },
+  "apple ipad 8,5": {
+    "deviceName": "iPad 8,5",
+    "marketingName": "iPad Pro (12.9, 3rd Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "display": {
+      "width": 2732,
+      "height": 2048,
+      "touch": true,
+      "size": 12.9
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
+  "apple ipad 8,6": {
+    "deviceName": "iPad 8,6",
+    "marketingName": "iPad Pro (12.9, 3rd Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "display": {
+      "width": 2732,
+      "height": 2048,
+      "touch": true,
+      "size": 12.9
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
   "apple ipad 6,3": {
-    "deviceName": "iPad Pro 9.7",
+    "deviceName": "iPad 6,3",
     "marketingName": "iPad Pro (9.7)",
     "manufacturer": "apple",
     "brand": "apple",

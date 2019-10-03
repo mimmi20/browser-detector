@@ -1,6 +1,6 @@
 {
   "apple ipad 2,2": {
-    "deviceName": "iPad",
+    "deviceName": "iPad 2,2",
     "marketingName": "iPad (2nd Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -14,7 +14,7 @@
     "platform": "ios"
   },
   "apple ipad 2,3": {
-    "deviceName": "iPad",
+    "deviceName": "iPad 2,3",
     "marketingName": "iPad (2nd Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -28,7 +28,7 @@
     "platform": "ios"
   },
   "apple ipad 3,2": {
-    "deviceName": "iPad 3",
+    "deviceName": "iPad 3,2",
     "marketingName": "iPad 3",
     "manufacturer": "apple",
     "brand": "apple",
@@ -42,7 +42,7 @@
     "platform": "ios"
   },
   "apple ipad 3,3": {
-    "deviceName": "iPad 3",
+    "deviceName": "iPad 3,3",
     "marketingName": "iPad 3",
     "manufacturer": "apple",
     "brand": "apple",
@@ -56,7 +56,7 @@
     "platform": "ios"
   },
   "apple ipad 3,5": {
-    "deviceName": "iPad 4",
+    "deviceName": "iPad 3,5",
     "marketingName": "iPad 4",
     "manufacturer": "apple",
     "brand": "apple",
@@ -70,7 +70,7 @@
     "platform": "ios"
   },
   "apple ipad 3,6": {
-    "deviceName": "iPad 4",
+    "deviceName": "iPad 3,6",
     "marketingName": "iPad 4",
     "manufacturer": "apple",
     "brand": "apple",
@@ -98,7 +98,7 @@
     "platform": "ios"
   },
   "apple ipad 4,2": {
-    "deviceName": "iPad Air",
+    "deviceName": "iPad 4,2",
     "marketingName": "iPad Air",
     "manufacturer": "apple",
     "brand": "apple",
@@ -112,7 +112,7 @@
     "platform": "ios"
   },
   "apple ipad 4,3": {
-    "deviceName": "iPad Air",
+    "deviceName": "iPad 4,3",
     "marketingName": "iPad Air",
     "manufacturer": "apple",
     "brand": "apple",
@@ -126,7 +126,7 @@
     "platform": "ios"
   },
   "apple ipad 5,4": {
-    "deviceName": "iPad Air 2",
+    "deviceName": "iPad 5,4",
     "marketingName": "iPad Air 2",
     "manufacturer": "apple",
     "brand": "apple",
@@ -140,7 +140,7 @@
     "platform": "ios"
   },
   "apple ipad 2,6": {
-    "deviceName": "iPad mini",
+    "deviceName": "iPad 2,6",
     "marketingName": "iPad mini",
     "manufacturer": "apple",
     "brand": "apple",
@@ -154,7 +154,7 @@
     "platform": "ios"
   },
   "apple ipad 2,7": {
-    "deviceName": "iPad mini",
+    "deviceName": "iPad 2,7",
     "marketingName": "iPad mini",
     "manufacturer": "apple",
     "brand": "apple",
@@ -168,7 +168,7 @@
     "platform": "ios"
   },
   "apple ipad 4,5": {
-    "deviceName": "iPad mini 2",
+    "deviceName": "iPad 4,5",
     "marketingName": "iPad mini 2",
     "manufacturer": "apple",
     "brand": "apple",
@@ -182,7 +182,7 @@
     "platform": "ios"
   },
   "apple ipad 4,6": {
-    "deviceName": "iPad mini 2",
+    "deviceName": "iPad 4,6",
     "marketingName": "iPad mini 2",
     "manufacturer": "apple",
     "brand": "apple",
@@ -196,7 +196,7 @@
     "platform": "ios"
   },
   "apple ipad 4,8": {
-    "deviceName": "iPad mini 3",
+    "deviceName": "iPad 4,8",
     "marketingName": "iPad mini 3",
     "manufacturer": "apple",
     "brand": "apple",
@@ -210,7 +210,7 @@
     "platform": "ios"
   },
   "apple ipad 4,9": {
-    "deviceName": "iPad mini 3",
+    "deviceName": "iPad 4,9",
     "marketingName": "iPad mini 3",
     "manufacturer": "apple",
     "brand": "apple",
@@ -224,7 +224,7 @@
     "platform": "ios"
   },
   "apple ipad 5,2": {
-    "deviceName": "iPad mini 4",
+    "deviceName": "iPad 5,2",
     "marketingName": "iPad mini 4",
     "manufacturer": "apple",
     "brand": "apple",
@@ -238,7 +238,7 @@
     "platform": "ios"
   },
   "apple ipad 7,4": {
-    "deviceName": "iPad7,4",
+    "deviceName": "iPad 7,4",
     "marketingName": "iPad Pro (10.5, 2nd Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -252,7 +252,7 @@
     "platform": "ios"
   },
   "apple ipad 6,8": {
-    "deviceName": "iPad Pro",
+    "deviceName": "iPad 6,8",
     "marketingName": "iPad Pro (12.9)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -266,7 +266,7 @@
     "platform": "ios"
   },
   "apple ipad 7,2": {
-    "deviceName": "iPad7,2",
+    "deviceName": "iPad 7,2",
     "marketingName": "iPad Pro (12.9, 2nd Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
@@ -279,8 +279,36 @@
     "type": "fone-pad",
     "platform": "ios"
   },
+  "apple ipad 8,7": {
+    "deviceName": "iPad 8,7",
+    "marketingName": "iPad Pro (12.9, 3rd Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "display": {
+      "width": 2732,
+      "height": 2048,
+      "touch": true,
+      "size": 12.9
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
+  "apple ipad 8,8": {
+    "deviceName": "iPad 8,8",
+    "marketingName": "iPad Pro (12.9, 3rd Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "display": {
+      "width": 2732,
+      "height": 2048,
+      "touch": true,
+      "size": 12.9
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
   "apple ipad 6,4": {
-    "deviceName": "iPad Pro 9.7",
+    "deviceName": "iPad 6,4",
     "marketingName": "iPad Pro (9.7)",
     "manufacturer": "apple",
     "brand": "apple",

@@ -103,6 +103,8 @@ final class SafariTest extends TestCase
             ['400', '3.0'],
             ['399', null],
             ['x', null],
+            ['15600', '13.0'],
+            ['15599', '12.0'],
         ];
     }
 }

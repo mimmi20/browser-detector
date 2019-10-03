@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "KrOWLer/0.0.1, matentzn at cs dot man dot ac dot uk"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Owler Bot",
-      "modus": null,
-      "version": "0.0.1",
-      "manufacturer": "owler",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (X11;) AppleWebKit/533.3 (KHTML, like Gecko) kded/4.8.5 Safari/533.3"
     },
     "device": {
@@ -3785,6 +3747,44 @@
       "manufacturer": "unknown",
       "bits": null,
       "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 WebTV/2.8.2 (compatible; MSIE 4.0)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "WebTV/MSNTV",
+      "modus": null,
+      "version": "2.8.2",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
     },
     "os": {
       "name": null,
