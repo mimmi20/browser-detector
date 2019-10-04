@@ -1,0 +1,156 @@
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+on:
+  - pull_request
+  - push
+
+name: "Continuous Integration"
+
+jobs:
+  validate:
+    name: "Validate"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+
+      - name: "Validate composer.json and composer.lock"
+        run: php7.2 $(which composer) validate --strict
+
+      - name: "Install dependencies with composer"
+        run: php7.2 $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+
+      - name: "Run localheinz/composer-normalize"
+        run: php7.2 $(which composer) normalize --dry-run
+
+  coding-standards:
+    name: "Coding Standards"
+
+    needs: validate
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+
+      - name: "Install dependencies with composer"
+        run: php7.2 $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+
+      - name: "Run friendsofphp/php-cs-fixer"
+        run: php7.2 vendor/bin/php-cs-fixer fix --dry-run -vv
+
+      - name: "Run squizlabs/php_codesniffer"
+        run: php7.2 vendor/bin/phpcs --colors
+
+  static-code-analysis:
+    name: "Static Code Analysis"
+
+    needs: validate
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+
+      - name: "Install dependencies with composer"
+        run: php7.3 $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+
+      - name: "Run phpstan/phpstan"
+        run: php7.3 vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress
+
+  tests:
+    name: "Tests"
+
+    needs:
+      - validate
+      - coding-standards
+      - static-code-analysis
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-binary:
+          - php7.1
+          - php7.2
+          - php7.3
+
+        dependencies:
+          - "--prefer-lowest"
+          - ""
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+
+      - name: "Install dependencies with composer"
+        run: ${{ matrix.php-binary }} $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv ${{ matrix.dependencies }}
+
+      - name: "Run unit tests with phpunit/phpunit"
+        run: ${{ matrix.php-binary }} vendor/bin/phpunit -c phpunit.xml --colors --no-coverage
+
+  code-coverage:
+    name: "Code Coverage"
+
+    needs: tests
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+
+      - name: "Install dependencies with composer"
+        run: php7.3 $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+
+      - name: "Dump Xdebug filter with phpunit/phpunit"
+        run: php7.3 vendor/bin/phpunit -c phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
+
+      - name: "Collect code coverage with Xdebug and phpunit/phpunit"
+        run: php7.3 vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=clover.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
+
+      #- name: "Download code coverage uploader for Codecov.io"
+      #  run: curl -s https://codecov.io/bash -o codecov
+
+      #- name: "Send code coverage report to Codecov.io"
+      #  run: bash codecov -t ${{ secrets.CODECOV_TOKEN }}
+
+  integration-tests:
+    name: "Integration Tests"
+
+    needs: tests
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+
+      - name: "Install dependencies with composer"
+        run: php7.3 $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+
+      - name: "Run integration tests with phpunit/phpunit"
+        run: php7.3 vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --verbose
+
+  mutation-tests:
+    name: "Mutation Tests"
+
+    needs:
+      - tests
+      - code-coverage
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
+
+      - name: "Install dependencies with composer"
+        run: php7.3 $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+
+      - name: "Run mutation tests with infection/infection"
+        run: php7.3 vendor/bin/infection --min-covered-msi=95 --min-msi=95
