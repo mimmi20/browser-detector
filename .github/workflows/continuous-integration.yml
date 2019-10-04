@@ -208,8 +208,12 @@ jobs:
       - name: "Send code coverage report to Coveralls"
         run: wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar && php -n php-coveralls.phar --verbose --coverage_clover=clover.xml
 
-      - name: "Send code coverage report to Codecov.io"
-        run: bash <(curl -s https://codecov.io/bash) -f clover.xml -F phpunit
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1.0.2
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
+          file: clover.xml
+          flags: phpunit
 
   integration-tests:
     name: Integration Tests

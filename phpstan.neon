@@ -23,6 +23,7 @@ parameters:
     - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
     - '~Useless \@throws~'
     - '~Missing \@throws~'
+    - '~Error suppression via "@" should not be used~'
 includes:
   - vendor/phpstan/phpstan-strict-rules/rules.neon
   - vendor/phpstan/phpstan-phpunit/extension.neon
