@@ -209,8 +209,11 @@ jobs:
       - name: Collect code coverage with Xdebug and phpunit/phpunit
         run: php vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=clover.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
 
-      - name: "Send code coverage report to Coveralls"
-        run: wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar && php -n php-coveralls.phar --verbose --coverage_clover=clover.xml
+      - name: Download php-coveralls.phar
+        run: wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
+
+      - name: Upload coverage to Coveralls
+        run: php php-coveralls.phar --verbose --coverage_clover=clover.xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1.0.2
