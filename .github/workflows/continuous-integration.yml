@@ -102,10 +102,10 @@ jobs:
         run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Run friendsofphp/php-cs-fixer
-        run: php vendor/bin/php-cs-fixer fix --dry-run -vv
+        run: vendor/bin/php-cs-fixer fix --dry-run -vv
 
       - name: Run squizlabs/php_codesniffer
-        run: php vendor/bin/phpcs --colors
+        run: vendor/bin/phpcs --colors
 
   static-code-analysis:
     name: Static Code Analysis
@@ -130,7 +130,7 @@ jobs:
         run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Run phpstan/phpstan
-        run: php vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress
+        run: vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress
 
   tests:
     name: UnitTests
@@ -179,7 +179,7 @@ jobs:
         run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv ${{ matrix.dependencies }}
 
       - name: Run unit tests with phpunit/phpunit
-        run: php vendor/bin/phpunit -c phpunit.xml --colors --no-coverage
+        run: vendor/bin/phpunit -c phpunit.xml --colors --no-coverage
 
   code-coverage:
     name: Code Coverage
@@ -204,10 +204,10 @@ jobs:
         run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Dump Xdebug filter with phpunit/phpunit
-        run: php vendor/bin/phpunit -c phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
+        run: vendor/bin/phpunit -c phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
 
       - name: Collect code coverage with Xdebug and phpunit/phpunit
-        run: php vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=clover.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
+        run: vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=clover.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
 
       - name: Download php-coveralls.phar
         run: wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar
@@ -245,7 +245,7 @@ jobs:
         run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Run integration tests with phpunit/phpunit
-        run: php vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --verbose
+        run: vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --verbose
 
   mutation-tests:
     name: Mutation Tests
