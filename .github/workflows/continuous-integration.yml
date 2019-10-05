@@ -25,13 +25,13 @@ jobs:
           #coverage: xdebug #optional
 
       - name: Validate composer.json
-        run: php $(which composer) validate
+        run: composer validate
 
       - name: Update dependencies with composer
-        run: php $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+        run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
-      - name: "Run localheinz/composer-normalize"
-        run: php $(which composer) normalize --dry-run
+      - name: Run localheinz/composer-normalize
+        run: composer normalize --dry-run
 
   install:
     name: Install/Update with composer
@@ -44,6 +44,8 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
 
     strategy:
+      fail-fast: false
+      max-parallel: 15
       matrix:
         php-versions:
           - 7.1
@@ -75,7 +77,7 @@ jobs:
           #coverage: xdebug #optional
 
       - name: Update dependencies with composer
-        run: php $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv ${{ matrix.dependencies }}
+        run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv ${{ matrix.dependencies }}
 
   coding-standards:
     name: "Coding Standards"
@@ -97,7 +99,7 @@ jobs:
           #coverage: xdebug #optional
 
       - name: Update dependencies with composer
-        run: php $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+        run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Run friendsofphp/php-cs-fixer
         run: php vendor/bin/php-cs-fixer fix --dry-run -vv
@@ -125,7 +127,7 @@ jobs:
           #coverage: xdebug #optional
 
       - name: Update dependencies with composer
-        run: php $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+        run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Run phpstan/phpstan
         run: php vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress
@@ -141,6 +143,8 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
 
     strategy:
+      fail-fast: false
+      max-parallel: 15
       matrix:
         php-versions:
           - 7.1
@@ -172,7 +176,7 @@ jobs:
           #coverage: xdebug #optional
 
       - name: Update dependencies with composer
-        run: php $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv ${{ matrix.dependencies }}
+        run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv ${{ matrix.dependencies }}
 
       - name: Run unit tests with phpunit/phpunit
         run: php vendor/bin/phpunit -c phpunit.xml --colors --no-coverage
@@ -197,7 +201,7 @@ jobs:
           coverage: xdebug #optional
 
       - name: Update dependencies with composer
-        run: php $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+        run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Dump Xdebug filter with phpunit/phpunit
         run: php vendor/bin/phpunit -c phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
@@ -235,7 +239,7 @@ jobs:
           #coverage: xdebug #optional
 
       - name: Update dependencies with composer
-        run: php $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+        run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Run integration tests with phpunit/phpunit
         run: php vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --verbose
@@ -262,7 +266,7 @@ jobs:
           coverage: xdebug #optional
 
       - name: Update dependencies with composer
-        run: php $(which composer) update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
+        run: composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv
 
       - name: Run mutation tests with infection/infection
         run: php vendor/bin/infection --min-covered-msi=95 --min-msi=95
