@@ -11,3 +11,6 @@ update_configs:
     package_manager: "php:composer"
     update_schedule: "live"
     version_requirement_updates: "increase_versions"
+    commit_message:
+      prefix: "Build"
+      include_scope: true
