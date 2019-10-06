@@ -140,15 +140,15 @@
     "platform": "android"
   },
   "htc amaze 4g": {
-    "deviceName": "Amaze",
-    "marketingName": "Amaze",
+    "deviceName": "Amaze 4G",
+    "marketingName": "Amaze 4G",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -162,7 +162,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -302,21 +302,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "htc d820u": {
-    "deviceName": "D820u",
-    "marketingName": "D820u",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
+      "size": 2.6
     },
     "type": "smartphone",
     "platform": "android"
@@ -400,7 +386,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -442,7 +428,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -456,7 +442,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -484,7 +470,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -540,7 +526,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -554,7 +540,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -694,7 +680,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -722,7 +708,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -736,7 +722,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -848,7 +834,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": null
@@ -890,7 +876,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -918,7 +904,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -932,7 +918,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1002,7 +988,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1016,7 +1002,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1034,6 +1020,20 @@
     },
     "type": "smartphone",
     "platform": null
+  },
+  "htc d820u": {
+    "deviceName": "D820u",
+    "marketingName": "Desire 820 Dual SIM",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
   },
   "htc desire 820s": {
     "deviceName": "Desire 820s",
@@ -1058,7 +1058,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": null
@@ -1121,7 +1121,7 @@
   },
   "htc 0pfh11": {
     "deviceName": "0PFH11",
-    "marketingName": "Desire EYE",
+    "marketingName": "Desire Eye",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
@@ -1254,7 +1254,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1268,7 +1268,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1296,7 +1296,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1385,20 +1385,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc dlxu": {
-    "deviceName": "DLXU",
-    "marketingName": "DLXU",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
-  },
   "htc dream": {
     "deviceName": "Dream",
     "marketingName": "Dream",
@@ -1422,7 +1408,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1436,7 +1422,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -1492,7 +1478,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1534,7 +1520,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1545,10 +1531,10 @@
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
-      "width": 800,
-      "height": 480,
+      "width": 960,
+      "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1646,7 +1632,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1660,21 +1646,21 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
   },
   "htc c715c": {
     "deviceName": "C715C",
-    "marketingName": "EVO Design",
+    "marketingName": "EVO Design 4G",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -1702,7 +1688,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.6
     },
     "type": "smartphone",
     "platform": "android"
@@ -1716,7 +1702,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -1758,7 +1744,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -1772,7 +1758,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -1797,10 +1783,10 @@
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 800,
+      "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1814,7 +1800,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": null
@@ -1842,7 +1828,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -1874,6 +1860,20 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "htc dlxu": {
+    "deviceName": "DLXU",
+    "marketingName": "J Butterfly",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "htc htl21": {
     "deviceName": "HTL21",
@@ -1917,20 +1917,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "htc m7cdtu": {
-    "deviceName": "M7CDTU",
-    "marketingName": "M7CDTU",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
-  },
   "htc magic": {
     "deviceName": "Magic",
     "marketingName": "Magic",
@@ -1954,7 +1940,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": null
@@ -1982,7 +1968,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.6
     },
     "type": "smartphone",
     "platform": "windows mobile os"
@@ -1996,7 +1982,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -2028,20 +2014,6 @@
     },
     "type": "smartphone",
     "platform": null
-  },
-  "htc 802t": {
-    "deviceName": "802T",
-    "marketingName": "One 802T",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
   },
   "htc one a9": {
     "deviceName": "One A9",
@@ -2164,10 +2136,24 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": null
+  },
+  "htc 802t": {
+    "deviceName": "802T",
+    "marketingName": "One M7",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
   },
   "htc 802w": {
     "deviceName": "802W",
@@ -2196,6 +2182,20 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "htc m7cdtu": {
+    "deviceName": "M7CDTU",
+    "marketingName": "One M7",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "htc pn071": {
     "deviceName": "PN071",
@@ -2360,7 +2360,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2500,7 +2500,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -2640,7 +2640,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2668,7 +2668,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2780,7 +2780,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": null
@@ -2836,7 +2836,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -2850,7 +2850,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": null
@@ -2864,7 +2864,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -2920,21 +2920,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "htc sensation 4g": {
-    "deviceName": "Sensation",
-    "marketingName": "Sensation",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
+      "size": 3.4
     },
     "type": "smartphone",
     "platform": "android"
@@ -2956,6 +2942,20 @@
   "htc z710e": {
     "deviceName": "Z710e",
     "marketingName": "Sensation",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc sensation 4g": {
+    "deviceName": "Sensation 4G",
+    "marketingName": "Sensation 4G",
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
@@ -3018,7 +3018,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 2.6
     },
     "type": "smartphone",
     "platform": "android"
@@ -3046,7 +3046,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -3060,7 +3060,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -3102,7 +3102,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": null
@@ -3130,7 +3130,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -3155,10 +3155,10 @@
     "manufacturer": "htc",
     "brand": "htc",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 2560,
+      "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.99
     },
     "type": "smartphone",
     "platform": "android"
@@ -3214,7 +3214,7 @@
       "width": 2880,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -3270,21 +3270,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "htc velocity 4g": {
-    "deviceName": "Velocity",
-    "marketingName": "Velocity",
-    "manufacturer": "htc",
-    "brand": "htc",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3298,7 +3284,21 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "htc velocity 4g": {
+    "deviceName": "Velocity 4G",
+    "marketingName": "Velocity 4G",
+    "manufacturer": "htc",
+    "brand": "htc",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3312,7 +3312,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"

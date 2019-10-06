@@ -22,7 +22,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -36,7 +36,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -50,7 +50,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -64,7 +64,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.6
     },
     "type": "smartphone",
     "platform": "android"
@@ -78,7 +78,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -92,7 +92,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -134,7 +134,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -148,7 +148,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -243,10 +243,10 @@
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
-      "width": 960,
-      "height": 540,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -295,6 +295,20 @@
   },
   "huawei u8950": {
     "deviceName": "U8950",
+    "marketingName": "Ascend G600",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei u8950-1": {
+    "deviceName": "U8950-1",
     "marketingName": "Ascend G600",
     "manufacturer": "huawei",
     "brand": "huawei",
@@ -358,7 +372,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -568,7 +582,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -680,7 +694,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6.1
     },
     "type": "smartphone",
     "platform": "android"
@@ -694,7 +708,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6.1
     },
     "type": "smartphone",
     "platform": "android"
@@ -876,7 +890,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -988,7 +1002,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1002,7 +1016,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -1044,7 +1058,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.3
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -1100,7 +1114,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1114,7 +1128,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1128,7 +1142,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1184,7 +1198,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1198,7 +1212,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1212,7 +1226,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1234,6 +1248,20 @@
   "huawei y300": {
     "deviceName": "Y300",
     "marketingName": "Ascend Y300",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei y310-t10": {
+    "deviceName": "Y310-T10",
+    "marketingName": "Ascend Y310",
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
@@ -1450,7 +1478,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1464,7 +1492,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1520,7 +1548,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1576,7 +1604,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1590,7 +1618,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1702,7 +1730,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1716,7 +1744,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1744,7 +1772,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.6
     },
     "type": "smartphone",
     "platform": "android"
@@ -1755,10 +1783,10 @@
     "manufacturer": "huawei",
     "brand": "huawei",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1828,7 +1856,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -1842,7 +1870,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1856,7 +1884,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1870,7 +1898,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1898,7 +1926,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1912,7 +1940,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1926,7 +1954,7 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1940,7 +1968,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -1996,7 +2024,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2080,7 +2108,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": null
@@ -2151,6 +2179,20 @@
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei kii-l21": {
+    "deviceName": "KII-L21",
+    "marketingName": "GR5",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2402,7 +2444,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -2584,7 +2626,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2598,7 +2640,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2612,7 +2654,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2626,7 +2668,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2640,7 +2682,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2654,7 +2696,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2668,7 +2710,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2682,7 +2724,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2696,7 +2738,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -2710,7 +2752,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -3844,7 +3886,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -4110,7 +4152,7 @@
       "width": 2280,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.9
     },
     "type": "smartphone",
     "platform": "android"
@@ -4124,7 +4166,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4311,20 +4353,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "huawei u8950-1": {
-    "deviceName": "U8950-1",
-    "marketingName": "Honor Pro",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "huawei knt-al10": {
     "deviceName": "KNT-AL10",
     "marketingName": "Honor V8",
@@ -4488,7 +4516,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -4502,7 +4530,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -4516,7 +4544,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -4544,7 +4572,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -4558,21 +4586,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei kii-l21": {
-    "deviceName": "KII-L21",
-    "marketingName": "KII-L21",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4614,7 +4628,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.9
     },
     "type": "smartphone",
     "platform": "android"
@@ -4628,7 +4642,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.9
     },
     "type": "smartphone",
     "platform": "android"
@@ -4642,7 +4656,7 @@
       "width": 2560,
       "height": 1440,
       "touch": true,
-      "size": null
+      "size": 5.9
     },
     "type": "smartphone",
     "platform": "android"
@@ -5202,7 +5216,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -5356,7 +5370,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -5370,7 +5384,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -5384,7 +5398,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -5398,7 +5412,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -5482,7 +5496,7 @@
       "width": 2340,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 6.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -5552,7 +5566,7 @@
       "width": 2340,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 6.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -6476,7 +6490,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -6490,7 +6504,7 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -6924,7 +6938,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -6966,7 +6980,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -7008,7 +7022,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -7036,7 +7050,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -7078,7 +7092,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -7092,7 +7106,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -7106,7 +7120,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -7120,7 +7134,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -7162,7 +7176,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.6
     },
     "type": "smartphone",
     "platform": "android"
@@ -7176,7 +7190,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -7190,7 +7204,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -7204,7 +7218,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -7218,7 +7232,7 @@
       "width": 320,
       "height": 240,
       "touch": true,
-      "size": null
+      "size": 2.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -7232,7 +7246,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -7274,7 +7288,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -7288,7 +7302,7 @@
       "width": 854,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -7359,20 +7373,6 @@
       "height": 480,
       "touch": true,
       "size": 4.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "huawei y310-t10": {
-    "deviceName": "Y310-T10",
-    "marketingName": "Y310-T10",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": null
     },
     "type": "smartphone",
     "platform": "android"
@@ -7596,7 +7596,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
