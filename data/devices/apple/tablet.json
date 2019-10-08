@@ -13,6 +13,20 @@
     "type": "tablet",
     "platform": "ios"
   },
+  "apple ipad 7,11": {
+    "deviceName": "iPad 7,11",
+    "marketingName": "iPad (10.2, 7th Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "display": {
+      "width": 2160,
+      "height": 1620,
+      "touch": true,
+      "size": 10.2
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
   "apple ipad 1,1": {
     "deviceName": "iPad 1,1",
     "marketingName": "iPad (1st Gen.)",
@@ -55,9 +69,9 @@
     "type": "tablet",
     "platform": "ios"
   },
-  "apple ipad 6,12": {
-    "deviceName": "iPad 6,12",
-    "marketingName": "iPad (9.7, 2017)",
+  "apple ipad 6,11": {
+    "deviceName": "iPad 6,11",
+    "marketingName": "iPad (9.7, 5th Gen.)",
     "manufacturer": "apple",
     "brand": "apple",
     "display": {
@@ -121,6 +135,20 @@
       "height": 1536,
       "touch": true,
       "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
+  "apple ipad 11,3": {
+    "deviceName": "iPad 11,3",
+    "marketingName": "iPad Air (10.5, 3rd Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "display": {
+      "width": 2224,
+      "height": 1668,
+      "touch": true,
+      "size": 10.5
     },
     "type": "tablet",
     "platform": "ios"
@@ -205,6 +233,34 @@
       "height": 1668,
       "touch": true,
       "size": 10.5
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
+  "apple ipad 8,1": {
+    "deviceName": "iPad 8,1",
+    "marketingName": "iPad Pro (11.0, 3rd Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "display": {
+      "width": 2388,
+      "height": 1668,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "ios"
+  },
+  "apple ipad 8,2": {
+    "deviceName": "iPad 8,2",
+    "marketingName": "iPad Pro (11.0, 3rd Gen.)",
+    "manufacturer": "apple",
+    "brand": "apple",
+    "display": {
+      "width": 2388,
+      "height": 1668,
+      "touch": true,
+      "size": 12.9
     },
     "type": "tablet",
     "platform": "ios"
