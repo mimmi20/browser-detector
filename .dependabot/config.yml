@@ -14,10 +14,6 @@ update_configs:
     commit_message:
       prefix: "Build"
       include_scope: true
-    automerged_updates:
-      - match:
-          dependency_type: "all"
-          update_type: "semver:patch"
     ignored_updates:
       - match:
           dependency_name: "phpunit/phpunit"
