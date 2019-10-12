@@ -1,6 +1,11 @@
 {
   "rules": {
-    "/cdm-8915/i": "audiovox cdm-8915"
+    "/smt-?5600/i": "audiovox smt-5600",
+    "/cdm-?8915/i": "audiovox cdm-8915",
+    "/cdm-?8912/i": "audiovox cdm-8912",
+    "/cdm-?8910/i": "audiovox cdm-8910",
+    "/cdm-?8615/i": "audiovox cdm-8615",
+    "/cdm-?8450/i": "audiovox cdm-8450"
   },
   "generic": "general audiovox device"
 }

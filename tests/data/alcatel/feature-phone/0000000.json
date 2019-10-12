@@ -271,7 +271,7 @@
     },
     "device": {
       "deviceName": "OT-585",
-      "marketingName": "OT-585",
+      "marketingName": "OneTouch 585",
       "manufacturer": "alcatel",
       "brand": "alcatel",
       "display": {
@@ -615,7 +615,7 @@
     },
     "device": {
       "deviceName": "OT-813",
-      "marketingName": "OT-813",
+      "marketingName": "OneTouch 813",
       "manufacturer": "alcatel",
       "brand": "alcatel",
       "display": {
@@ -653,7 +653,7 @@
     },
     "device": {
       "deviceName": "OT-813D",
-      "marketingName": "OT-813D",
+      "marketingName": "OneTouch 813D",
       "manufacturer": "alcatel",
       "brand": "alcatel",
       "display": {
@@ -691,7 +691,7 @@
     },
     "device": {
       "deviceName": "OT-838",
-      "marketingName": "OT-838",
+      "marketingName": "OneTouch 838",
       "manufacturer": "alcatel",
       "brand": "alcatel",
       "display": {
@@ -881,7 +881,7 @@
     },
     "device": {
       "deviceName": "OT-2067X",
-      "marketingName": "OneTouch 2067",
+      "marketingName": "OneTouch 2067X",
       "manufacturer": "alcatel",
       "brand": "alcatel",
       "display": {
@@ -1101,6 +1101,804 @@
       "name": "Teleca",
       "version": null,
       "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-TH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/1.1"
+    },
+    "device": {
+      "deviceName": "TH4",
+      "marketingName": "TH4",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-TH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0"
+    },
+    "device": {
+      "deviceName": "TH4",
+      "marketingName": "TH4",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-TH3/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/mainline"
+    },
+    "device": {
+      "deviceName": "TH3",
+      "marketingName": "TH3",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-TH3/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/6.3.0.0.0"
+    },
+    "device": {
+      "deviceName": "TH3",
+      "marketingName": "TH3",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-TH3/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/6.2.3.15.0"
+    },
+    "device": {
+      "deviceName": "TH3",
+      "marketingName": "TH3",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-TH3/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/1.1"
+    },
+    "device": {
+      "deviceName": "TH3",
+      "marketingName": "TH3",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-OT-C552a/1.0 UP.Browser/7.1 (GUI) MMP/2.0 UP.Link/1.1"
+    },
+    "device": {
+      "deviceName": "OT-C552a",
+      "marketingName": "OT-C552a",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "7.1.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "OT-C552",
+      "marketingName": "OT-C552",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "7.1.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-OT-C550/1.0 ObigoInternetBrowser/Q03C"
+    },
+    "device": {
+      "deviceName": "OT-C550",
+      "marketingName": "OT-C550",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BH4R/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/6.3.0.0.0"
+    },
+    "device": {
+      "deviceName": "BH4R",
+      "marketingName": "OneTouch 735i",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/6.2.3.14"
+    },
+    "device": {
+      "deviceName": "BH4",
+      "marketingName": "OneTouch 735",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/5.1.2.5"
+    },
+    "device": {
+      "deviceName": "BH4",
+      "marketingName": "OneTouch 735",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/1.1"
+    },
+    "device": {
+      "deviceName": "BH4",
+      "marketingName": "OneTouch 735",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "BH4",
+      "marketingName": "OneTouch 735",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0"
+    },
+    "device": {
+      "deviceName": "BH4",
+      "marketingName": "OneTouch 735",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BG3/1.0 UP.Browser/5.0.3.3.11 UP.Link/1.1"
+    },
+    "device": {
+      "deviceName": "BG3",
+      "marketingName": "BG3",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.3.11",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BG3/1.0 UP.Browser/5.0.3.3.11"
+    },
+    "device": {
+      "deviceName": "BG3",
+      "marketingName": "BG3",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.3.11",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BG3-color/1.0 UP.Browser/5.0.3.3.11 UP.Link/1.1"
+    },
+    "device": {
+      "deviceName": "BG3",
+      "marketingName": "BG3",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.3.11",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BG3-color/1.0 UP.Browser/5.0.3.3.11"
+    },
+    "device": {
+      "deviceName": "BG3",
+      "marketingName": "BG3",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.3.11",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BF5/1.0 UP.Browser/5.0.3.1.2"
+    },
+    "device": {
+      "deviceName": "BF5",
+      "marketingName": "BF5",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.1.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Alcatel-BF5/1.0 UP.Browser/5.0.3.1"
+    },
+    "device": {
+      "deviceName": "BF5",
+      "marketingName": "BF5",
+      "manufacturer": "alcatel",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

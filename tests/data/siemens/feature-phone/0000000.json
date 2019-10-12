@@ -3041,44 +3041,6 @@
   },
   {
     "headers": {
-      "user-agent": "SIE-SK65/34 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general Siemens device",
-      "marketingName": "general Siemens device",
-      "manufacturer": "siemens",
-      "brand": "siemens",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "7.0.0.1",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SIE-SF65 ObigoInternetBrowser/2.0 UP.Link/1.1"
     },
     "device": {
@@ -3782,6 +3744,44 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "7.1.0",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SIE-S57C/11 UP.Browser/6.1.0.5.c.2 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "S57",
+      "marketingName": "S57",
+      "manufacturer": "siemens",
+      "brand": "siemens",
+      "display": {
+        "width": 101,
+        "height": 80,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.1.0.5",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
