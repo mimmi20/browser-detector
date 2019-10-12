@@ -3272,15 +3272,15 @@
       "user-agent": "Mozilla/4.8 [en] (Windows NT 5.0; U) BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103"
     },
     "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
+      "deviceName": "BlackBerry 7100",
+      "marketingName": "BlackBerry 7100",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
@@ -3293,10 +3293,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Windows NT 5.0",
-      "marketingName": "Windows 2000",
-      "version": "5.0.0",
-      "manufacturer": "microsoft",
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.1.0",
+      "manufacturer": "rim",
       "bits": null
     },
     "engine": {
@@ -3683,6 +3683,120 @@
       "name": "WebKit",
       "version": "534.11.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerrySimulator/3.6.0"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "3.6.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.6.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9530/5.0.0.419 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/126"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9530",
+      "marketingName": "BlackBerry Storm 9530",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 3.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "5.0.0.419",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.419",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9530/4.7.0.83 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9530",
+      "marketingName": "BlackBerry Storm 9530",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 3.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.7.0.83",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.7.0.83",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
     }
   }
 ]

@@ -55,6 +55,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "alcatel bf5": {
+    "deviceName": "BF5",
+    "marketingName": "BF5",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel bg3": {
+    "deviceName": "BG3",
+    "marketingName": "BG3",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "alcatel a383g": {
     "deviceName": "A383G",
     "marketingName": "Big Easy Plus",
@@ -139,6 +167,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "alcatel oh1c": {
+    "deviceName": "OH1C",
+    "marketingName": "OH1C",
+    "manufacturer": "tcl",
+    "brand": "alcatel",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "alcatel oh5": {
     "deviceName": "OH5",
     "marketingName": "OH5",
@@ -155,7 +197,7 @@
   },
   "alcatel ot-2067x": {
     "deviceName": "OT-2067X",
-    "marketingName": "OneTouch 2067",
+    "marketingName": "OneTouch 2067X",
     "manufacturer": "alcatel",
     "brand": "alcatel",
     "display": {
@@ -163,6 +205,76 @@
       "height": 128,
       "touch": false,
       "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel ot-585": {
+    "deviceName": "OT-585",
+    "marketingName": "OneTouch 585",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel bh4": {
+    "deviceName": "BH4",
+    "marketingName": "OneTouch 735",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel bh4r": {
+    "deviceName": "BH4R",
+    "marketingName": "OneTouch 735i",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel ot-813": {
+    "deviceName": "OT-813",
+    "marketingName": "OneTouch 813",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel ot-813d": {
+    "deviceName": "OT-813D",
+    "marketingName": "OneTouch 813D",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"
@@ -177,6 +289,20 @@
       "height": 240,
       "touch": true,
       "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel ot-838": {
+    "deviceName": "OT-838",
+    "marketingName": "OneTouch 838",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"
@@ -251,20 +377,6 @@
     "type": "feature-phone",
     "platform": "nucleus os"
   },
-  "alcatel ot-585": {
-    "deviceName": "OT-585",
-    "marketingName": "OT-585",
-    "manufacturer": "alcatel",
-    "brand": "alcatel",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": false,
-      "size": 2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "alcatel ot-710d": {
     "deviceName": "OT-710D",
     "marketingName": "OT-710D",
@@ -293,44 +405,44 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "alcatel ot-813": {
-    "deviceName": "OT-813",
-    "marketingName": "OT-813",
+  "alcatel ot-c550": {
+    "deviceName": "OT-C550",
+    "marketingName": "OT-C550",
     "manufacturer": "alcatel",
     "brand": "alcatel",
     "display": {
-      "width": 320,
-      "height": 240,
+      "width": 160,
+      "height": 128,
       "touch": false,
-      "size": 2.4
+      "size": 1.8
     },
     "type": "feature-phone",
     "platform": "java"
   },
-  "alcatel ot-813d": {
-    "deviceName": "OT-813D",
-    "marketingName": "OT-813D",
+  "alcatel ot-c552": {
+    "deviceName": "OT-C552",
+    "marketingName": "OT-C552",
     "manufacturer": "alcatel",
     "brand": "alcatel",
     "display": {
-      "width": 320,
-      "height": 240,
+      "width": 160,
+      "height": 128,
       "touch": false,
-      "size": 2.4
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
   },
-  "alcatel ot-838": {
-    "deviceName": "OT-838",
-    "marketingName": "OT-838",
+  "alcatel ot-c552a": {
+    "deviceName": "OT-C552a",
+    "marketingName": "OT-C552a",
     "manufacturer": "alcatel",
     "brand": "alcatel",
     "display": {
-      "width": 320,
-      "height": 240,
+      "width": 160,
+      "height": 128,
       "touch": false,
-      "size": 2.4
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -362,6 +474,34 @@
     },
     "type": "feature-phone",
     "platform": "kaios"
+  },
+  "alcatel th3": {
+    "deviceName": "TH3",
+    "marketingName": "TH3",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "alcatel th4": {
+    "deviceName": "TH4",
+    "marketingName": "TH4",
+    "manufacturer": "alcatel",
+    "brand": "alcatel",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "alcatel ot-802": {
     "deviceName": "OT-802",

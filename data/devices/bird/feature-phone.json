@@ -1,4 +1,60 @@
 {
+  "bird d660": {
+    "deviceName": "D660",
+    "marketingName": "D660",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "bird d670": {
+    "deviceName": "D670",
+    "marketingName": "D670",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": 96,
+      "height": 96,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "bird d716": {
+    "deviceName": "D716",
+    "marketingName": "D716",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "bird sf10": {
+    "deviceName": "SF10",
+    "marketingName": "SF10",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "bird t810": {
     "deviceName": "T810",
     "marketingName": "T810",
@@ -12,5 +68,19 @@
     },
     "type": "feature-phone",
     "platform": "threadx"
+  },
+  "bird x8": {
+    "deviceName": "X8",
+    "marketingName": "X8",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }

@@ -1,4 +1,18 @@
 {
+  "asus 1210": {
+    "deviceName": "1210",
+    "marketingName": "1210",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "asus galaxy 2": {
     "deviceName": "Galaxy 2",
     "marketingName": "Galaxy 2",
@@ -13,6 +27,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "asus j101": {
+    "deviceName": "J101",
+    "marketingName": "J101",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "asus p750": {
     "deviceName": "P750",
     "marketingName": "P750",
@@ -26,5 +54,19 @@
     },
     "type": "feature-phone",
     "platform": "windows ce"
+  },
+  "asus v66": {
+    "deviceName": "V66",
+    "marketingName": "V66",
+    "manufacturer": "asus",
+    "brand": "asus",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }
