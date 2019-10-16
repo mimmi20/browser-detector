@@ -1898,5 +1898,43 @@
       "version": "535.19.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; MID8065 Build/ICS.MID8065.20121222) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MID8065",
+      "marketingName": "Kyros MID8065",
+      "manufacturer": "coby",
+      "brand": "coby",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "34.0.1847.114",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "34.0.1847.114",
+      "manufacturer": "google"
+    }
   }
 ]

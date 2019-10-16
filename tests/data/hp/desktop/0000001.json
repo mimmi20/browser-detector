@@ -226,5 +226,43 @@
       "version": "1.7.3",
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; Win64; x64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; HPNTDFJS; H9P; McAfee; Tablet PC 2.0; Microsoft Outlook 16.0.6366; ms-office; MSOffice 16)"
+    },
+    "device": {
+      "deviceName": "PC",
+      "marketingName": "PC",
+      "manufacturer": "hp",
+      "brand": "hp",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "16.0.6366",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "email-client"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "8.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]
