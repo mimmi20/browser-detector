@@ -1,0 +1,30 @@
+{
+  "general ice-phone device": {
+    "deviceName": "general Ice-Phone device",
+    "marketingName": "general Ice-Phone device",
+    "manufacturer": "ice-phone",
+    "brand": "ice-phone",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "ice-phone mini": {
+    "deviceName": "Mini",
+    "marketingName": "Mini",
+    "manufacturer": "ice-phone",
+    "brand": "ice-phone",
+    "display": {
+      "width": 320,
+      "height": 480,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  }
+}
