@@ -112,5 +112,43 @@
       "version": "531.2.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86) AppleWebKit/537.30 (KHTML, like Gecko) Safari/537.30 HbbTV/1.1.1 (;Metz;MMS;;;) CE-HTML/1.0 FXM-U2FsdGVkX18neAmdnGcyxiBZXabg8BFQ2pBfcaQC3maYE1RI+IMwV837Ztd6F8RU-END"
+    },
+    "device": {
+      "deviceName": "general Metz TV",
+      "marketingName": "general Metz TV",
+      "manufacturer": "metz",
+      "brand": "metz",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.30.0",
+      "manufacturer": "apple"
+    }
   }
 ]
