@@ -27,20 +27,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "konrow cool-k": {
-    "deviceName": "Cool-K",
-    "marketingName": "Cool-K",
-    "manufacturer": "konrow",
-    "brand": "konrow",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "konrow coolfive": {
     "deviceName": "Cool Five",
     "marketingName": "Cool Five",
@@ -49,6 +35,20 @@
     "display": {
       "width": 960,
       "height": 540,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "konrow cool-k": {
+    "deviceName": "Cool-K",
+    "marketingName": "Cool-K",
+    "manufacturer": "konrow",
+    "brand": "konrow",
+    "display": {
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": 5
     },
