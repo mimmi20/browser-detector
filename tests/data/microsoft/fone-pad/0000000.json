@@ -10,9 +10,9 @@
       "brand": "microsoft",
       "display": {
         "width": 1920,
-        "height": 1200,
+        "height": 1280,
         "touch": true,
-        "size": null
+        "size": 10.8
       },
       "type": "fone-pad"
     },
@@ -48,9 +48,9 @@
       "brand": "microsoft",
       "display": {
         "width": 1920,
-        "height": 1200,
+        "height": 1280,
         "touch": true,
-        "size": null
+        "size": 10.8
       },
       "type": "fone-pad"
     },
@@ -86,9 +86,9 @@
       "brand": "microsoft",
       "display": {
         "width": 1920,
-        "height": 1200,
+        "height": 1280,
         "touch": true,
-        "size": null
+        "size": 10.8
       },
       "type": "fone-pad"
     },
@@ -124,9 +124,9 @@
       "brand": "microsoft",
       "display": {
         "width": 1920,
-        "height": 1200,
+        "height": 1280,
         "touch": true,
-        "size": null
+        "size": 10.8
       },
       "type": "fone-pad"
     },
@@ -162,9 +162,9 @@
       "brand": "microsoft",
       "display": {
         "width": 1920,
-        "height": 1200,
+        "height": 1280,
         "touch": true,
-        "size": null
+        "size": 10.8
       },
       "type": "fone-pad"
     },
@@ -200,9 +200,9 @@
       "brand": "microsoft",
       "display": {
         "width": 1920,
-        "height": 1200,
+        "height": 1280,
         "touch": true,
-        "size": null
+        "size": 10.8
       },
       "type": "fone-pad"
     },
@@ -238,9 +238,9 @@
       "brand": "microsoft",
       "display": {
         "width": 1920,
-        "height": 1200,
+        "height": 1280,
         "touch": true,
-        "size": null
+        "size": 10.8
       },
       "type": "fone-pad"
     },
@@ -251,6 +251,44 @@
       "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 6.2",
+      "marketingName": "Windows 8",
+      "version": "6.2.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "8.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/8.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; HRTS; McAfee; H9P; Microsoft Outlook 14.0.6117; ms-office; MSOffice 14)"
+    },
+    "device": {
+      "deviceName": "H9P",
+      "marketingName": "Surface 3",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": 1920,
+        "height": 1280,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "14.0.6117",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client"
     },
     "os": {
       "name": "Windows NT 6.2",
