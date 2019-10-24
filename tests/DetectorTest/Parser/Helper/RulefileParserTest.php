@@ -394,4 +394,70 @@ final class RulefileParserTest extends TestCase
 
         static::assertSame($mode, $result);
     }
+
+    /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
+     * @return void
+     */
+    public function testParseNotExistingFile(): void
+    {
+        $fallback = 'test-fallback';
+
+        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $fileInfo
+            ->expects(static::exactly(2))
+            ->method('getPathname')
+            ->willReturn(vfsStream::url(self::DATA_PATH . '/this-file-does-exist.json'));
+
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(static::never())
+            ->method('decode');
+
+        $useragent = 'test-useragent';
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(static::never())
+            ->method('debug');
+        $logger
+            ->expects(static::never())
+            ->method('info');
+        $logger
+            ->expects(static::never())
+            ->method('notice');
+        $logger
+            ->expects(static::never())
+            ->method('warning');
+        $logger
+            ->expects(static::once())
+            ->method('error')
+            ->with(new IsInstanceOf(\Exception::class));
+        $logger
+            ->expects(static::never())
+            ->method('critical');
+        $logger
+            ->expects(static::never())
+            ->method('alert');
+        $logger
+            ->expects(static::never())
+            ->method('emergency');
+
+        /** @var \JsonClass\JsonInterface $jsonParser */
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $object = new RulefileParser($jsonParser, $logger);
+
+        /** @var \SplFileInfo $fileInfo */
+        $result = $object->parseFile($fileInfo, $useragent, $fallback);
+
+        static::assertSame($fallback, $result);
+    }
 }

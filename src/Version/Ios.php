@@ -198,6 +198,7 @@ final class Ios implements VersionDetectorInterface
         'iPh OS',
         'iosv',
         'iPad\/',
+        'iPhone\/',
         '(?<!Outlook-)iOS',
     ];
 

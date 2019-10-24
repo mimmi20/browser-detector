@@ -46,21 +46,32 @@ final class RulefileParser implements RulefileParserInterface
      */
     public function parseFile(\SplFileInfo $file, string $useragent, string $fallback): string
     {
-        try {
-            $factories = $this->jsonParser->decode(
-                file_get_contents($file->getPathname()),
-                true
-            );
+        $content = @file_get_contents($file->getPathname());
 
-            $mode  = $factories['generic'] ?? $fallback;
-            $rules = $factories['rules'] ?? [];
-        } catch (DecodeErrorException $e) {
+        if (false === $content) {
             $this->logger->error(
-                new \Exception(sprintf('could not decode content of file %s', $file->getPathname()), 0, $e)
+                new \Exception(sprintf('could not load file %s', $file->getPathname()))
             );
 
             $mode  = $fallback;
             $rules = [];
+        } else {
+            try {
+                $factories = $this->jsonParser->decode(
+                    $content,
+                    true
+                );
+
+                $mode  = $factories['generic'] ?? $fallback;
+                $rules = $factories['rules'] ?? [];
+            } catch (DecodeErrorException $e) {
+                $this->logger->error(
+                    new \Exception(sprintf('could not decode content of file %s', $file->getPathname()), 0, $e)
+                );
+
+                $mode  = $fallback;
+                $rules = [];
+            }
         }
 
         foreach (array_keys($rules) as $rule) {

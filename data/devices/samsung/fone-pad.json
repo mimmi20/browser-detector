@@ -1072,7 +1072,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 7
     },
     "type": "fone-pad",
     "platform": "android"
@@ -1668,6 +1668,20 @@
   "samsung sm-t837v": {
     "deviceName": "SM-T837V",
     "marketingName": "Galaxy Tab S4 (10.5, Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t865": {
+    "deviceName": "SM-T865",
+    "marketingName": "Galaxy Tab S6 (LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {

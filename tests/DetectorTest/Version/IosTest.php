@@ -126,6 +126,10 @@ final class IosTest extends TestCase
                 'Outlook-iOS/711.2620504.prod.iphone (3.34.0)',
                 null,
             ],
+            [
+                'com.google.GoogleMobile/46.0.0 iPhone/12.4 hw/iPhone10_4',
+                '12.4.0',
+            ],
         ];
     }
 }

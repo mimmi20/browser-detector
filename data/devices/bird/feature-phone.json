@@ -1,4 +1,18 @@
 {
+  "bird d610": {
+    "deviceName": "D610",
+    "marketingName": "D610",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "bird d660": {
     "deviceName": "D660",
     "marketingName": "D660",
@@ -27,6 +41,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "bird d700": {
+    "deviceName": "D700",
+    "marketingName": "D700",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "bird d716": {
     "deviceName": "D716",
     "marketingName": "D716",
@@ -37,6 +65,62 @@
       "height": 176,
       "touch": false,
       "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "bird g118": {
+    "deviceName": "G118",
+    "marketingName": "G118",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "bird s689": {
+    "deviceName": "S689",
+    "marketingName": "S689",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "bird s789+": {
+    "deviceName": "S789+",
+    "marketingName": "S789+",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "bird sc17c": {
+    "deviceName": "SC17c",
+    "marketingName": "SC17c",
+    "manufacturer": "bird",
+    "brand": "bird",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"

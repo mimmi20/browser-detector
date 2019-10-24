@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Samsung-SPHA740 AU-MIC-A740/2.0 MMP/2.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Samsung-SPHA680 AU-MIC/2.0 MMP/2.0"
     },
     "device": {
@@ -3759,44 +3797,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-T809/T809UVEJ9 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

@@ -2022,44 +2022,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT- S8600/1.0; U; Bada/2.0; xx) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile WVGA SMM- MMS/1.2.0 OPN-B"
-    },
-    "device": {
-      "deviceName": "GT-S8600",
-      "marketingName": "Wave 3",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Dolfin",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "mopotab",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Bada",
-      "marketingName": "Bada",
-      "version": "2.0.0",
-      "manufacturer": "samsung",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.20.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SoftBank/1.0/708SC/SCJ001/SN543210987654321 Browser/NetFront/3.3"
     },
     "device": {
@@ -3803,6 +3765,44 @@
     "engine": {
       "name": "WebKit",
       "version": "534.20.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5330/S5330XXJJ1; U; Bada/1.0; it-it) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B"
+    },
+    "device": {
+      "deviceName": "GT-S5330",
+      "marketingName": "Wave 533",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Dolfin",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "mopotab",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Bada",
+      "marketingName": "Bada",
+      "version": "1.0.0",
+      "manufacturer": "samsung",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
       "manufacturer": "apple"
     }
   }

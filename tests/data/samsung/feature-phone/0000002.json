@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5330/S5330XXJJ1; U; Bada/1.0; it-it) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B"
-    },
-    "device": {
-      "deviceName": "GT-S5330",
-      "marketingName": "Wave 533",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Dolfin",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "mopotab",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Bada",
-      "marketingName": "Bada",
-      "version": "1.0.0",
-      "manufacturer": "samsung",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5780/S5780NAKH3; U; Bada/1.1; fr-fr) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B"
     },
     "device": {
@@ -3808,6 +3770,44 @@
     "engine": {
       "name": "Presto",
       "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GT-C3595 Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.33398/37.7663; U; de) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "GT-C3595",
+      "marketingName": "GT-C3595",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.1.33398",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
       "manufacturer": "opera"
     }
   }

@@ -1822,5 +1822,43 @@
       "version": "30.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; HSG1360) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "HSG1360",
+      "marketingName": "SN12TP1",
+      "manufacturer": "hannspree",
+      "brand": "hannspree",
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": true,
+        "size": 11.6
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "77.0.3865.116",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.116",
+      "manufacturer": "google"
+    }
   }
 ]

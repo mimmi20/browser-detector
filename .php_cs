@@ -62,11 +62,20 @@ return PhpCsFixer\Config::create()
             'array_syntax' => ['syntax' => 'short'],
             'binary_operator_spaces' => ['default' => 'single_space', 'operators' => ['=' => 'align_single_space_minimal']],
             'php_unit_internal_class' => false,
+            'no_superfluous_phpdoc_tags' => false,
+            'multiline_whitespace_before_semicolons' => [
+                'strategy' => 'no_multi_line',
+            ],
+            'phpdoc_trim' => true,
+            'no_extra_blank_lines' => [
+                'tokens' => ['break', 'case', 'continue', 'curly_brace_block', 'default', 'extra', 'parenthesis_brace_block', 'return', 'square_brace_block', 'switch', 'throw', 'use', 'useTrait', 'use_trait'],
+            ],
 
             // @PhpCsFixer:risky rules configured different from default
             'php_unit_strict' => ['assertions' => ['assertAttributeEquals', 'assertAttributeNotEquals', 'assertNotEquals']],
 
             // @Symfony rules configured different from default
+            'binary_operator_spaces' => ['default' => 'single_space', 'operators' => ['=' => 'align_single_space_minimal']],
             'concat_space' => ['spacing' => 'one'],
             'declare_equal_normalize' => ['space' => 'single'],
             'no_blank_lines_after_phpdoc' => false,
@@ -80,6 +89,7 @@ return PhpCsFixer\Config::create()
                 'identical' => true,
                 'less_and_greater' => true,
             ],
+            'single_line_throw' => false,
 
             // @Symfony:risky rules configured different from default
             'non_printable_character' => ['use_escape_sequences_in_strings' => true],
@@ -133,7 +143,6 @@ return PhpCsFixer\Config::create()
             'method_separation' => true,
             'native_function_invocation' => false,
             'no_blank_lines_before_namespace' => true,
-            'no_multiline_whitespace_before_semicolons' => true,
             'no_null_property_initialization' => true,
             'no_php4_constructor' => true,
             'no_short_echo_tag' => true,
