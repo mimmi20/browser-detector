@@ -1936,5 +1936,43 @@
       "version": "600.1.4",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Snapchat/10.67.5.73 (iPad4,2; iOS 12.2; gzip)"
+    },
+    "device": {
+      "deviceName": "iPad 4,2",
+      "marketingName": "iPad Air",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "10.67.5.73",
+      "manufacturer": "snap",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.2.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
   }
 ]

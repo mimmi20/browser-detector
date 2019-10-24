@@ -209,6 +209,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "medion p1040x": {
+    "deviceName": "P1040X",
+    "marketingName": "LifeTab P1040X",
+    "manufacturer": "medion",
+    "brand": "medion",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "medion p1050x": {
     "deviceName": "LifeTab P1050X",
     "marketingName": "LifeTab P1050X",
@@ -274,7 +288,7 @@
       "width": 1920,
       "height": 1200,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -464,20 +478,6 @@
   "medion x1031x": {
     "deviceName": "X1031X",
     "marketingName": "LifeTab X1031X",
-    "manufacturer": "medion",
-    "brand": "medion",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": 10.1
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "medion p1040x": {
-    "deviceName": "P1040X",
-    "marketingName": "P1040X",
     "manufacturer": "medion",
     "brand": "medion",
     "display": {
