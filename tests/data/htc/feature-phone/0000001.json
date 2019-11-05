@@ -2510,5 +2510,81 @@
       "version": null,
       "manufacturer": "opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mozart)"
+    },
+    "device": {
+      "deviceName": "T8698",
+      "marketingName": "7 Mozart",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e)"
+    },
+    "device": {
+      "deviceName": "X310e",
+      "marketingName": "Titan",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]
