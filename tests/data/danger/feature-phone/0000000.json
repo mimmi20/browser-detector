@@ -112,5 +112,81 @@
       "version": null,
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Danger hiptop 3.3; U; rv:1.7.12) Gecko/20050920"
+    },
+    "device": {
+      "deviceName": "Hiptop",
+      "marketingName": "Hiptop",
+      "manufacturer": "danger",
+      "brand": "danger",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Danger OS",
+      "marketingName": "Danger OS",
+      "version": null,
+      "manufacturer": "danger",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.7.12",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; AvantGo 3.2; ProxiNet; Danger hiptop 1.0)"
+    },
+    "device": {
+      "deviceName": "Hiptop",
+      "marketingName": "Hiptop",
+      "manufacturer": "danger",
+      "brand": "danger",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Danger OS",
+      "marketingName": "Danger OS",
+      "version": null,
+      "manufacturer": "danger",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

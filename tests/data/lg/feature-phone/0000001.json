@@ -606,5 +606,43 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-LG100C[TF268435458412808928000000017322795713] UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "100",
+      "marketingName": "100",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.8",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

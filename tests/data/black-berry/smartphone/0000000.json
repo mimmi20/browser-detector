@@ -416,5 +416,43 @@
       "version": "537.35.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.0.10.261 Mobile Safari/537.10+"
+    },
+    "device": {
+      "deviceName": "Z10",
+      "marketingName": "Z10",
+      "manufacturer": "black-berry",
+      "brand": "black-berry",
+      "display": {
+        "width": 1280,
+        "height": 768,
+        "touch": true,
+        "size": 4.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.0.10.261",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.0.10.261",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.10.0",
+      "manufacturer": "apple"
+    }
   }
 ]
