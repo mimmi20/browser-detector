@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; eSTAR GRAND HD Quad core 4G Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Grand HD Quad",
-      "marketingName": "Grand HD Quad",
-      "manufacturer": "estar",
-      "brand": "estar",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "58.0.3029.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; eSTAR_Grand_HD_Quad Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
@@ -77,40 +39,78 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## eSTAR BEAUTY 2 HD Quad core Build/695)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; eSTAR GRAND HD Quad core 4G Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
     },
     "device": {
-      "deviceName": "Beauty 2 HD Quad",
-      "marketingName": "Beauty 2 HD Quad",
+      "deviceName": "Grand HD Quad",
+      "marketingName": "Grand HD Quad",
       "manufacturer": "estar",
       "brand": "estar",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 10.1
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Dalvik",
+      "name": "Chrome",
       "modus": null,
-      "version": "2.1.0",
+      "version": "48.0.2564.95",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.1.2",
+      "version": "5.1.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "48.0.2564.95",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; eSTAR GRAND HD Quad core 4G Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Grand HD Quad",
+      "marketingName": "Grand HD Quad",
+      "manufacturer": "estar",
+      "brand": "estar",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
     }
   },
   {
@@ -153,40 +153,40 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; eSTAR GRAND HD Quad core 4G Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## eSTAR BEAUTY 2 HD Quad core Build/695)"
     },
     "device": {
-      "deviceName": "Grand HD Quad",
-      "marketingName": "Grand HD Quad",
+      "deviceName": "Beauty 2 HD Quad",
+      "marketingName": "Beauty 2 HD Quad",
       "manufacturer": "estar",
       "brand": "estar",
       "display": {
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 10.1
+        "size": 7
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Dalvik",
       "modus": null,
-      "version": "48.0.2564.95",
+      "version": "2.1.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.0",
+      "version": "7.1.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "48.0.2564.95",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   }
 ]

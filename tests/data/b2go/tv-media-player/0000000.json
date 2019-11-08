@@ -1,13 +1,13 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## H96 PRO+ Build/MHC19J)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; MXQ Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
     },
     "device": {
-      "deviceName": "H96 Pro+",
-      "marketingName": "H96 Pro+",
+      "deviceName": "MXQ",
+      "marketingName": "MXQ",
       "manufacturer": "b2go",
-      "brand": "alfawise",
+      "brand": "bomix",
       "display": {
         "width": null,
         "height": null,
@@ -17,35 +17,35 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "Dalvik",
+      "name": "Android WebView",
       "modus": null,
-      "version": "2.1.0",
+      "version": "30.0.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.1",
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## H96 PRO Build/NHG47L)"
+      "user-agent": "Kodi/14.1 (Linux; Android 4.4.2; MXQ Build/KOT49H) Android/4.4.2 Sys_CPU/armv7l App_Bitness/32 Version/14.1-Git:2015-01-30-38e4046-dirty"
     },
     "device": {
-      "deviceName": "H96 Pro",
-      "marketingName": "H96 Pro",
+      "deviceName": "MXQ",
+      "marketingName": "MXQ",
       "manufacturer": "b2go",
-      "brand": "alfawise",
+      "brand": "bomix",
       "display": {
         "width": null,
         "height": null,
@@ -55,62 +55,24 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "Dalvik",
+      "name": "Kodi Media Center",
       "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
+      "version": "14.1.0",
+      "manufacturer": "xbmc-foundation",
       "bits": null,
-      "type": "application"
+      "type": "multimedia-player"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.1.2",
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": null,
       "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## A95X-R1 Build/A95X_R1)"
-    },
-    "device": {
-      "deviceName": "A95X R1",
-      "marketingName": "A95X R1",
-      "manufacturer": "b2go",
-      "brand": "alfawise",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "unknown"
     }
   },
   {
@@ -142,6 +104,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## MXQPRO Build/MXC89L)"
+    },
+    "device": {
+      "deviceName": "MXQ Pro",
+      "marketingName": "MXQ Pro",
+      "manufacturer": "b2go",
+      "brand": "bomix",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
@@ -191,11 +191,125 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.1## H96 PRO+ Build/NMF26Q)"
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## X96mini Build/NHG47L)"
     },
     "device": {
-      "deviceName": "H96 Pro+",
-      "marketingName": "H96 Pro+",
+      "deviceName": "X96 Mini",
+      "marketingName": "X96 Mini",
+      "manufacturer": "b2go",
+      "brand": "edal",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## MXQPRO Build/NHG47K)"
+    },
+    "device": {
+      "deviceName": "MXQ Pro",
+      "marketingName": "MXQ Pro",
+      "manufacturer": "b2go",
+      "brand": "bomix",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux## U## Android 4.4.2## MXQ Build/MXQ.SSV6051Q)"
+    },
+    "device": {
+      "deviceName": "MXQ",
+      "marketingName": "MXQ",
+      "manufacturer": "b2go",
+      "brand": "bomix",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## A95X-R1 Build/A95X_R1)"
+    },
+    "device": {
+      "deviceName": "A95X R1",
+      "marketingName": "A95X R1",
       "manufacturer": "b2go",
       "brand": "alfawise",
       "display": {
@@ -217,7 +331,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.1.1",
+      "version": "7.1.2",
       "manufacturer": "google",
       "bits": null
     },
@@ -267,13 +381,13 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; X96mini Build/NHG47L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## MXQpro Build/LMY47V)"
     },
     "device": {
-      "deviceName": "X96 Mini",
-      "marketingName": "X96 Mini",
+      "deviceName": "MXQ Pro",
+      "marketingName": "MXQ Pro",
       "manufacturer": "b2go",
-      "brand": "edal",
+      "brand": "bomix",
       "display": {
         "width": null,
         "height": null,
@@ -283,35 +397,35 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Dalvik",
       "modus": null,
-      "version": "56.0.2924.87",
+      "version": "2.1.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.1.2",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## X96mini Build/NHG47L)"
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## H96 PRO Build/NHG47L)"
     },
     "device": {
-      "deviceName": "X96 Mini",
-      "marketingName": "X96 Mini",
+      "deviceName": "H96 Pro",
+      "marketingName": "H96 Pro",
       "manufacturer": "b2go",
-      "brand": "edal",
+      "brand": "alfawise",
       "display": {
         "width": null,
         "height": null,
@@ -332,6 +446,82 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## H96 PRO+ Build/MHC19J)"
+    },
+    "device": {
+      "deviceName": "H96 Pro+",
+      "marketingName": "H96 Pro+",
+      "manufacturer": "b2go",
+      "brand": "alfawise",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## MXQ Pro Build/LMY49F)"
+    },
+    "device": {
+      "deviceName": "MXQ",
+      "marketingName": "MXQ",
+      "manufacturer": "b2go",
+      "brand": "bomix",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
@@ -419,44 +609,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; H96 Max Build/NHG47K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "H96 Max",
-      "marketingName": "H96 Max",
-      "manufacturer": "b2go",
-      "brand": "xinways",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "63.0.3239.111",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## H96 max Build/NHG47K)"
     },
     "device": {
@@ -495,6 +647,82 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; H96 Max Build/NHG47K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "H96 Max",
+      "marketingName": "H96 Max",
+      "manufacturer": "b2go",
+      "brand": "xinways",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; X96mini Build/NHG47L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "X96 Mini",
+      "marketingName": "X96 Mini",
+      "manufacturer": "b2go",
+      "brand": "edal",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; MXQPRO Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36"
     },
     "device": {
@@ -528,272 +756,6 @@
     "engine": {
       "name": "Blink",
       "version": "39.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux## U## Android 4.4.2## MXQ Build/MXQ.SSV6051Q)"
-    },
-    "device": {
-      "deviceName": "MXQ",
-      "marketingName": "MXQ",
-      "manufacturer": "b2go",
-      "brand": "bomix",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## MXQPRO Build/MXC89L)"
-    },
-    "device": {
-      "deviceName": "MXQ Pro",
-      "marketingName": "MXQ Pro",
-      "manufacturer": "b2go",
-      "brand": "bomix",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## MXQPRO Build/NHG47K)"
-    },
-    "device": {
-      "deviceName": "MXQ Pro",
-      "marketingName": "MXQ Pro",
-      "manufacturer": "b2go",
-      "brand": "bomix",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## MXQpro Build/LMY47V)"
-    },
-    "device": {
-      "deviceName": "MXQ Pro",
-      "marketingName": "MXQ Pro",
-      "manufacturer": "b2go",
-      "brand": "bomix",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## MXQ Pro Build/LMY49F)"
-    },
-    "device": {
-      "deviceName": "MXQ",
-      "marketingName": "MXQ",
-      "manufacturer": "b2go",
-      "brand": "bomix",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux## U## Android 4.4.2## MXQ Build/KOT49H)"
-    },
-    "device": {
-      "deviceName": "MXQ",
-      "marketingName": "MXQ",
-      "manufacturer": "b2go",
-      "brand": "bomix",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; MXQ Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "MXQ",
-      "marketingName": "MXQ",
-      "manufacturer": "b2go",
-      "brand": "bomix",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
       "manufacturer": "google"
     }
   },

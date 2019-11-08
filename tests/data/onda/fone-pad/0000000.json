@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; V116w DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "V116w Dual OS",
-      "marketingName": "V116w Dual OS",
-      "manufacturer": "onda",
-      "brand": "onda",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 11.6
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "44.0.2403.133",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; V919 3G Air DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
     },
     "device": {
@@ -77,39 +39,77 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; V10 4G Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 YaBrowser/17.11.1.628.01 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; V919 3G Air DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36"
     },
     "device": {
-      "deviceName": "V10 4G",
-      "marketingName": "V10 4G",
+      "deviceName": "V919",
+      "marketingName": "Air 3G",
       "manufacturer": "onda",
       "brand": "onda",
       "display": {
-        "width": 1280,
-        "height": 800,
+        "width": 2048,
+        "height": 1536,
         "touch": true,
-        "size": 10.1
+        "size": 9.7
       },
       "type": "fone-pad"
     },
     "browser": {
-      "name": "Yandex Browser",
+      "name": "Chrome",
       "modus": null,
-      "version": "17.11.1.628.01",
-      "manufacturer": "yandex",
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.0.0",
+      "version": "4.4.4",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "62.0.3202.94",
+      "version": "46.0.2490.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; V116w DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "V116w Dual OS",
+      "marketingName": "V116w Dual OS",
+      "manufacturer": "onda",
+      "brand": "onda",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 11.6
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "44.0.2403.133",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.133",
       "manufacturer": "google"
     }
   },
@@ -153,39 +153,39 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; V919 3G Air DualOS Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; V10 4G Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 YaBrowser/17.11.1.628.01 Safari/537.36"
     },
     "device": {
-      "deviceName": "V919",
-      "marketingName": "Air 3G",
+      "deviceName": "V10 4G",
+      "marketingName": "V10 4G",
       "manufacturer": "onda",
       "brand": "onda",
       "display": {
-        "width": 2048,
-        "height": 1536,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": 9.7
+        "size": 10.1
       },
       "type": "fone-pad"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Yandex Browser",
       "modus": null,
-      "version": "46.0.2490.76",
-      "manufacturer": "google",
+      "version": "17.11.1.628.01",
+      "manufacturer": "yandex",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "46.0.2490.76",
+      "version": "62.0.3202.94",
       "manufacturer": "google"
     }
   }

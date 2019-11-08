@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Boxee/1.0.1 bxapi/7.1"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Boxee",
-      "modus": null,
-      "version": "1.0.1",
-      "manufacturer": "boxee",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.4.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (;;;) AppleWebKit/534.6 HbbTV/1.1.1 (+DL+PVR; inverto; IDL-6651N Volksbox Web Edition; 1.0; 1.0;)  CE-HTML/1.0"
-    },
-    "device": {
-      "deviceName": "IDL-6651N",
-      "marketingName": "IDL-6651N",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.6.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (DTV) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.0.4"
     },
     "device": {
@@ -1217,7 +1141,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; QM152E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.13 "
+      "user-agent": "Mozilla/5.0 (Linux; Linux mips) AppleWebKit/537.36; (KHTML, like Gecko) Chromium/30.0.1599.114 Safari/537.36) SRAF/3.0 HbbTV/1.1.1 (+TRICKMODE; NEXUS; Nexus_AN01; sw-01; hw-01); CE-HTML/1.0 FXM-U2FsdGVkX19KzkbV2AlV9wD4Wll3i/WqDABHHofC6fx7E1pN31bVBZxXdu6yy0MQ-END"
     },
     "device": {
       "deviceName": "general TV device",
@@ -1233,10 +1157,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera Devices",
+      "name": "Chromium",
       "modus": null,
-      "version": "4.6.1.13",
-      "manufacturer": "opera",
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
@@ -1248,14 +1172,52 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.125",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "HbbTV/1.1.1 (;tv2n;ABox42-M20;0.0.0;1.0;) TV2PLAYER/0.0.0.1"
+      "user-agent": "Mozilla/3.01 (compatible; Netgem/3.6.7; Set Top Box; Linux 2.2)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "3.01.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (; iWedia; Development; 0.1; 0.1;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -1293,7 +1255,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (DirectFB; U; Linux mips; xx) AppleWebKit/525.1+ (KHTML, like Gecko, Safari/525.1); Espial Browser/sig3.11.0 (Tesco; Technika Media Streamer; TCMSAW11)"
+      "user-agent": "HbbTV/1.1.1 (;;;;) Maple_2011"
     },
     "device": {
       "deviceName": "general TV device",
@@ -1309,67 +1271,29 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Espial TV Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "espial-group",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "525.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "lacleTV/0.1.0 Espial/6.5.2"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Espial TV Browser",
-      "modus": null,
-      "version": "6.5.2",
-      "manufacturer": "espial-group",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
       "name": null,
-      "marketingName": null,
+      "modus": null,
       "version": null,
       "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
+      "name": null,
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Linux i686; xx) AppleWebKit/531.2  (KHTML, like Gecko) EspialTVBrowser/1.1.15  Safari/531.2  (avui/dtp; avrt/html4; avvp/flash; avkb/pc)"
+      "user-agent": "HbbTV/1.1.1 (;;;;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -1385,10 +1309,238 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Espial TV Browser",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "espial-group",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;;;;;) firetv-firefox-plugin 1.3.18"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;;;;;) firetv-firefox-plugin 1.3.19"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;;;;;) firetv-firefox-plugin 1.3.19.1-signed"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;;;;;) firetv-firefox-plugin 1.3.19.1-signed.1-signed"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;;;;;) firetv-firefox-plugin 1.3.20"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (;;;;;) Mozilla/5.0 AppleWebKit/535.20+ (KHTML, like Gecko) Version/5.0 Safari/535.20+"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -1401,13 +1553,13 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "531.2.0",
+      "version": "535.20.0",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; xx) AppleWebKit/531.2+ (KHTML, like Gecko) Espial/6.1.2 Version/4.0 Safari/531.2+ InettvBrowser/2.2B (0003D5;SSTV-PROTO;01;00)"
+      "user-agent": "HbbTV/1.1.1 (;;;;;) WebKit"
     },
     "device": {
       "deviceName": "general TV device",
@@ -1423,10 +1575,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Espial TV Browser",
+      "name": "Safari",
       "modus": null,
-      "version": "6.1.2",
-      "manufacturer": "espial-group",
+      "version": null,
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -1439,127 +1591,13 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "531.2.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Linux; xx; DTV; TSBNetTV/T3701B6.0203.6DD) AppleWebKit/536(KHTML, like Gecko) NX/3.0"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "NetFront NX",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.0.0",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Linux; xx; DTV; TSBNetTV/T3501B0.0203.0DD) AppleWebKit/536(KHTML, like Gecko) NX/3.0 (DTV; HTML; R1.0;) DTVNetBrowser/2.2 (000039;T3501B0;0203;0DD) InettvBrowser/2.2 (000039;T3501B0;0203;0DD)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "NetFront NX",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; xx;) AppleWebKit/534(KHTML, like Gecko) NX/2.0 (DTV; HTML; R1.0;)  InettvBrowser/2.2 (00E064;UA46FS7000;0001;0001) TvpsExtInfo/A31002 (6A31AA40155FBC8EDC1468E7309DB736;22;T)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "NetFront NX",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HbbTV/1.1.1 (;Access;NetFront NX 3;;;)"
+      "user-agent": "HbbTV/1.1.1 (;Access;NetFront NX 3;;;) Netfont webkit"
     },
     "device": {
       "deviceName": "general TV device",
@@ -1590,310 +1628,6 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OPR/17.0.1251.0 OMI/4.0.2.23, KreaTV/0.0.0.0 (ARRIS, VMS1100, wired)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OPR/19.0.1325.0 OMI/4.1.4.54, KreaTV/0.19090.0.0 (ARRIS, VMS1100, wired)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.84 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.0.Gangnam.62 HbbTV/1.3.1 (+DL+PVR;Opera Software;HbbTV add-on;;;)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.6.1.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OPR/19.0.1325.0 OMI/4.1.4.54, KreaTV/0.16197.0.0 (ARRIS, VMS1100, wired)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OPR/19.0.1325.0 OMI/4.1.4.54, KreaTV/0.923.0.0 (ARRIS, VMS1100, wired)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG Browser/5.0.0 InettvBrowser/2.2 (00E091;LGE3D2012M;01;00)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (DirectFB; Linux i686) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ LG Browser/5.00.00(+ TV set capa; (+ TV set capa; sw version, model name ; sw version; hw version); LG NetCast.TV-2013"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "LG Browser",
-      "modus": null,
-      "version": "5.00.00",
-      "manufacturer": "lg",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "NetCast",
-      "marketingName": "NetCast",
-      "version": null,
-      "manufacturer": "lg",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.26.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l), Safari/537.1+, LG NetCast.TV-2013/01.15.01 (LG, 47LM760T-ZB, wired)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
@@ -1901,235 +1635,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Linux 2.6.32; xx;) AppleWebKit/534(KHTML, like Gecko) NX/2.1 (DTV; HTML; R1.0;) InettvBrowser/2.2 (38E08E;0014GAIAV3;001;000) Hybridcast/1.0 (;38E08E;0014GAIAV3;001;000;)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "NetFront NX",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 6.0; SHIELD Andr0id TV Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.23 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.17.release"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.8.0.17",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.23",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 5.0 compatible; Device Mosaic 5.0; OpenTV) InettvBrowser/1.0 (008045;DCH505;3.15;00000)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 5.0 compatible; Device Mosaic 5.0; OpenTV) InettvBrowser/1.0 (008045;MHD500;1.09;00000)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0 compatible; Device Mosaic 5.2.2; OpenTV) InettvBrowser/2.2 (008045;PANATV1115;2.21;10000) TvpsExtInfo/A05B15 (7A050002020000BDF19E;22;F)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HbbTV/1.1.1 (;HyperPanel;dtr7105 02-AA-55-AA-58-3B;9.23.04;4.4.6;;) NetFront/4.1 CE-HTML Opera"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": null,
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HbbTV/1.2.1 (OITF_HD_UIPROF+PVR+DL; UEC; PVR9600; 1.0.6053; 1.0)"
+      "user-agent": "HbbTV/1.1.1 (;IP4TV;DXD5505;1.0;1.0;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2167,11 +1673,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (;;;) AppleWebKit/538.8 HbbTV/1.1.1 (+DL+PVR; inverto; IDL-6651N Volksbox Web Edition; 1.0; 1.0;) CE-HTML/1.0"
+      "user-agent": "HbbTV/1.1.1 (;iWedia;Teatro;3.5;;)"
     },
     "device": {
-      "deviceName": "IDL-6651N",
-      "marketingName": "IDL-6651N",
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
       "manufacturer": "unknown",
       "brand": "unknown",
       "display": {
@@ -2183,12 +1689,12 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Safari",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Linux",
@@ -2198,14 +1704,52 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "538.8.0",
-      "manufacturer": "apple"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (;;;) AppleWebKit/538.8 HbbTV/1.1.1 (+DL+PVR; selevision; Selevision EMC1000i; 1.0; 1.0;) CE-HTML/1.0"
+      "user-agent": "HbbTV/1.1.1 (+PVR; Ocean Blue Software; ; 0.1; ;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8156;3.200;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2237,241 +1781,13 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "538.8.0",
+      "version": null,
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (DirectFB; Linux sh4) AppleWebKit/537.6+ (KHTML, like Gecko) Chromium/17.0.963.56 Chrome/17.0.963.56 Safari/537.6+HbbTV/1.1.1 (;iWedia;Teatro;3.0;;)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "17.0.963.56",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.6.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (DirectFB; Linux sh4) AppleWebKit/537.6+ (KHTML, like Gecko) Safari/537.6+HbbTV/1.1.1 (;iWedia;Teatro;3.0;;)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.6.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (DirectFB; U; Linux mips; c) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ (Winbox Evo2) CE-HTML/1.0 HbbTV/1.1.1 (;;;;)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "531.2.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux i686; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.114 Safari/537.36 SRAF/3.0 HbbTV/1.1.1 (+DRM+TRICKMODE; SERAPHIC; TV101; sw-v1.0; hw-v1.0) CE-HTML/1.0 FXM-U2FsdGVkX1+tH+IvjK4AyJIfuJUAyORg8ptl86EQiyLy7LytAiEgU3mKjwgF90uz-END"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "30.0.1599.114",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.1599.114",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux mips; U;HbbTV/1.1.1 (+RTSP;DMM;Dreambox;0.1a;1.0;) CE-HTML/1.0; xx) AppleWebKit/535.19 no/Volksbox QtWebkit/2.2"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "QtWebkit",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Unknown; Linux mips) AppleWebKit/534.16+ (KHTML, like Gecko) Version/5.0 Safari/534.16+ IrisBrowser/4.0.17.1 HbbTV/1.2.1 (;Digisoft.tv;Iris;4.0.17.1;;)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.16.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux) AppleWebKit/538.8  HbbTV/1.1.1 (+DL+PVR; selevision; Selevision EMC1000i; 1.0; 1.0;) CE-HTML/1.0"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8156;3.300;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2503,13 +1819,13 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "538.8.0",
+      "version": null,
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; xx) AppleWebKit/533.4 (KHTML, like Gecko) Boxee/1.0.1 bxapi/7.1"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8156;3.330;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2525,10 +1841,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Boxee",
+      "name": "Safari",
       "modus": null,
-      "version": "1.0.1",
-      "manufacturer": "boxee",
+      "version": null,
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -2541,13 +1857,13 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "533.4.0",
+      "version": null,
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; U; HbbTV/1.1.1 (; INTEK; VANTAGE-ibox; 1.0; 1.0;) CE-HTML/1.0; FXM-U2FsdGVkX1+SeQgKwMxDHwbkH5VtZb8Wpivfvs2Rqd0yf/FVDeLDABtbH9UngCaD-END; xx) Presto/2.9.167 Version/11.50"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8156;3.360;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2563,86 +1879,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "Safari",
       "modus": null,
-      "version": "11.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
       "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.9.167",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; U; HbbTV/1.1.1 (;tv2n;videoweb;1.0.0;1.0;); xx) Presto/2.8.115 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.10.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.115",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 HbbTV/1.1.1 (; Vestel; S7720; 1.0; 1.0;)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.51.0",
-      "manufacturer": "opera",
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -2654,14 +1894,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; HbbTV/1.2.1 (; Freesat/1.0; hdr1000s; 1.0.0; 1.0.0; wired); ce-html/1.0) Presto/2.12.407 Version/12.50"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8156;3.400;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2677,10 +1917,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "Safari",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -2692,14 +1932,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; HbbTV/1.2.1 (PVR; jcom; WA-7000; 1.0.0; 1.0.0; ); ce-html/1.0) Presto/2.12.407 Version/12.50"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8158;3.050;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2715,10 +1955,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "Safari",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -2730,14 +1970,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; ; xx) Presto/2.10.287 Version/12.00 HbbTV/1.1.1 (; Vestel; MB95; 1.0; 1.0;)"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8158;3.300;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2753,10 +1993,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "Safari",
       "modus": null,
-      "version": "12.00.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -2768,14 +2008,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.10.287",
-      "manufacturer": "opera"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Sraf/3.0 (Linux i686 ; U; HbbTV/1.1.1 (+PVR+DL;NEXUS; TV44; sw1.0) CE-HTML/1.0 Config(L:eng,CC:DEU); en/de)"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8158;3.330;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2791,12 +2031,12 @@
       "type": "tv"
     },
     "browser": {
-      "name": null,
+      "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "apple",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Linux",
@@ -2806,14 +2046,14 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "HbbTV/1.1.1 (+PVR; ADB; undefined-model-name; undefined-software-version; undefined-hardware-version; )"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8158;3.360;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2829,12 +2069,12 @@
       "type": "tv"
     },
     "browser": {
-      "name": null,
+      "name": "Safari",
       "modus": null,
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "apple",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Linux",
@@ -2844,14 +2084,812 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "HbbTV/1.1.1 ( PVR RTSP;vendorName;modelName;3.2.0.25.05.devel;hw_v_1_1_1;) ANTGalio/3.2.0.25.05.devel.50029"
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8158;3.400;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8166;3.050;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8166;3.200;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8166;3.360;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8166;3.400;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8168;3.030;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8168;3.300;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8168;3.360;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8168;3.400;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8656;3.300;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8656;3.360;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8656;3.370;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8656;3.400;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8658;3.360;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8658;3.370;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8658;3.400;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8666;3.360;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8666;3.400;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8668;3.200;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8668;3.360;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Panasonic;DIGA WebKit M8668;3.400;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR+RTSP;HANDAN;ST7108HBB;;;) ANTGalio/3.2.1.25.09"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2869,7 +2907,7 @@
     "browser": {
       "name": "ANTGalio",
       "modus": null,
-      "version": "3.2.0.25.05",
+      "version": "3.2.1.25.09",
       "manufacturer": "ant",
       "bits": null,
       "type": "browser"
@@ -2889,7 +2927,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (avdn/onyx.stb.2010; avui/tv; avvp/ssl; avrt/cehtml; avkb/pc,B:1572866; avst/off; Onyx Windows; U; Windows NT 5.1; xx; rv:1.8.1.13) CE-HTML/1.0 OreganMediaBrowser/4.25.2"
+      "user-agent": "HbbTV/1.1.1 (+PVR+RTSP;HANDAN;ST7108HBB;;;) ANTGalio/3.3.0.26.05.devel"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2905,18 +2943,18 @@
       "type": "tv"
     },
     "browser": {
-      "name": "ABrowse",
+      "name": "ANTGalio",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "version": "3.3.0.26.05",
+      "manufacturer": "ant",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {
@@ -2927,7 +2965,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Unknown; Linux mips) AppleWebkit/536.7 (KHTML, like Gecko) WebShell/1.0.0.0 Safari/536.7 (avvp/ssl; avui/tv; avkb/pc; avrt/html5; avst/off) CE-HTML/1.0 OreganMediaBrowser"
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; de)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -2943,485 +2981,29 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.7.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (N; Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) AwoX Browser CE-HTML/1.0 ()/AwoX-Software:W37-2011 Safari/534.34"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.34.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (N; Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) AwoX/1.0 Browser CE-HTML (HD_UIPROF MP3 MPEG_TS_SD_NA_T) - FLA Safari/534.34"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.34.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; N; Windows NT 6.1; xx) AppleWebKit/533.3 (KHTML, like Gecko) AwoX Browser CE-HTML/1.0 ()/AwoX-Software:W37-2011 Safari/533.3"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.3.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; N; Windows NT 6.1; xx) AppleWebKit/533.3 (KHTML, like Gecko) AwoX/1.0 Browser CE-HTML (HD_UIPROF MP3 MPEG_TS_SD_NA_T) - FLA Safari/533.3"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.3.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; ; xx) Presto/2.10.287 Version/12.00 UID(00:1C:A8:A0:2D:46/IP7600/OEM/3)+CE-HTML;MEM:LOW"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.00.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.287",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; ; xx) Presto/2.10.287 Version/12.00 UID(00:0a:2d:71:5b:b6/T7670/VESTEL/1.0)+CE-HTML"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.00.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.287",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; ; xx) Presto/2.10.287 Version/12.00 UID(00:09:DF:2B:67:C2/MB95/HOTEL/8.1.9.b)+CE-HTML;MEM:HIGH"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.00.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.287",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 Presto/2.12.407 Version/12.51 UID(00:09:df:33:55:78/S7830/VESTEL/332.8)+CE-HTML;MEM:HIGH"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.51.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UID(00:09:df:01:c0:c1/MB70/TECHWOOD/0.11.14)+CE-HTML"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": null,
+      "name": "Android Webkit",
       "modus": null,
       "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "InettvBrowser/1.0 (00A0B0;VIP1200J;001;000) TvpsExtInfo/A07F91 (6A07000000000001;10) (compatible; MSIE 6.0; Win32)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.08(DTV;NetTV/1.0) NetFront/3.1 InettvBrowser/1.0(000024;JC-4000;000;000)"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.1.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 4.4.2; BHX-UH200 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 OPR/32.0.2070.0 OMI/4.7.0.34.release"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.7.0.34",
-      "manufacturer": "opera",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.2",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "48.0.2564.82",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0 compatible; Device Mosaic 5.2.1;OpenTV) InettvBrowser/2.3 (008045;V750;1.01;10000) TvpsExtInfo/A05001 (7A050002020100004D1B;23;FP)"
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; de;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -3437,10 +3019,352 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Internet Explorer",
+      "name": "Android Webkit",
       "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; en)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; en;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; en-us)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; en-us;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; fr)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; fr;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; it)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; it;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6346;3.010;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -3452,14 +3376,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0 compatible; Device Mosaic 5.2.2; OpenTV) InettvBrowser/2.3 (008045;PANATV0934;1.32;10000)"
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6346;3.020;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -3475,10 +3399,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Internet Explorer",
+      "name": "Safari",
       "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -3490,14 +3414,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.70 (Linux armv6l ; U; CE-HTML/1.0 NETTV/2.0.2; xx) Presto/2.2.1"
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6348;2.090;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -3513,238 +3437,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "Safari",
       "modus": null,
-      "version": "9.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
       "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.2.1",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv6l ; U; CE-HTML/1.0 NETTV/3.0.1;; xx) Presto/2.6.33 Version/10.60"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv6l ; U; HbbTV/1.1.1 (; ; ; ; ; ) CE-HTML/1.0 NETTV/3.2.3; xx) Presto/2.6.33 Version/10.60"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l ; U; CE-HTML/1.0 NETTV/3.2.2; xx) Presto/2.6.33 Version/10.60"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l ; U; CE-HTML/1.0 NETTV/4.1.1; xx) Presto/2.6.33 Version/10.60"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; U;  CE-HTML/1.0 NETTV/4.1.1; xx) Presto/2.10.287 Version/12.00"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.00.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.287",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; QM152E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.13"
-    },
-    "device": {
-      "deviceName": "general TV device",
-      "marketingName": "general TV device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.6.1.13",
-      "manufacturer": "opera",
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -3756,14 +3452,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.125",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.08 (Standard; NF32SW/2.0) NetFront/3.2 InettvBrowser/1.0(00E036;BD-V3;02;00)"
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6348;3.010;;)"
     },
     "device": {
       "deviceName": "general TV device",
@@ -3779,10 +3475,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "NetFront",
+      "name": "Safari",
       "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "access",
+      "version": null,
+      "manufacturer": "apple",
       "bits": null,
       "type": "browser"
     },
@@ -3794,9 +3490,313 @@
       "bits": null
     },
     "engine": {
-      "name": "NetFront",
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "access"
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6348;3.020;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6356;2.130;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6356;3.010;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6356;3.020;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6358;3.010;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6358;3.020;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6366;1.293;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (+PVR;Panasonic;DIGA WebKit M6366;2.012;;)"
+    },
+    "device": {
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   }
 ]

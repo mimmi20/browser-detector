@@ -1,11 +1,49 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.1## Acer Chromebook R11 (CB5-132T / C738T) Build/R63-10032.86.0)"
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0.16299.98; osmeta 10.3.3308) AppleWebKit/602.1.1 (KHTML, like Gecko) Version/9.0 Safari/602.1.1 osmeta/10.3.3308 Build/3308 [FBAN/FBW;FBAV/140.0.0.232.179;FBBV/83145113;FBDV/WindowsDevice;FBMD/Predator G9-793;FBSN/Windows;FBSV/10.0.16299.125;FBSS/1;FBCR/;FBID/desktop;FBLC/de_DE;FBOP/45;FBRV/0]"
     },
     "device": {
-      "deviceName": "Chromebook R11",
-      "marketingName": "Chromebook R11",
+      "deviceName": "Predator G9-793",
+      "marketingName": "Predator G9-793",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 17.3
+      },
+      "type": "laptop"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "140.0.0.232.179",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Aspire V5-121 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Aspire V5-121",
+      "marketingName": "Aspire V5-121",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
@@ -13,6 +51,44 @@
         "height": 768,
         "touch": false,
         "size": 11.6
+      },
+      "type": "laptop"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "40.0.2214.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "40.0.2214.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.1## Chromebook 14 (CB3-431) Build/R63-10032.86.0)"
+    },
+    "device": {
+      "deviceName": "Chromebook 14",
+      "marketingName": "Chromebook 14",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 14
       },
       "type": "laptop"
     },
@@ -77,18 +153,18 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.1## Chromebook 14 (CB3-431) Build/R63-10032.86.0)"
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.1## Acer Chromebook R11 (CB5-132T / C738T) Build/R63-10032.86.0)"
     },
     "device": {
-      "deviceName": "Chromebook 14",
-      "marketingName": "Chromebook 14",
+      "deviceName": "Chromebook R11",
+      "marketingName": "Chromebook R11",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 1366,
+        "height": 768,
         "touch": false,
-        "size": 14
+        "size": 11.6
       },
       "type": "laptop"
     },
@@ -110,82 +186,6 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Aspire V5-121 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Aspire V5-121",
-      "marketingName": "Aspire V5-121",
-      "manufacturer": "acer",
-      "brand": "acer",
-      "display": {
-        "width": 1366,
-        "height": 768,
-        "touch": false,
-        "size": 11.6
-      },
-      "type": "laptop"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "40.0.2214.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "40.0.2214.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0.16299.98; osmeta 10.3.3308) AppleWebKit/602.1.1 (KHTML, like Gecko) Version/9.0 Safari/602.1.1 osmeta/10.3.3308 Build/3308 [FBAN/FBW;FBAV/140.0.0.232.179;FBBV/83145113;FBDV/WindowsDevice;FBMD/Predator G9-793;FBSN/Windows;FBSV/10.0.16299.125;FBSS/1;FBCR/;FBID/desktop;FBLC/de_DE;FBOP/45;FBRV/0]"
-    },
-    "device": {
-      "deviceName": "Predator G9-793",
-      "marketingName": "Predator G9-793",
-      "manufacturer": "acer",
-      "brand": "acer",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": false,
-        "size": 17.3
-      },
-      "type": "laptop"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "140.0.0.232.179",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 10.0",
-      "marketingName": "Windows 10",
-      "version": "10.0.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.1",
       "manufacturer": "apple"
     }
   }

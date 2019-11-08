@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "NEC-N8202/(2006.01.18)SW01.50 UP.Browser/6.2.3.9 (GUI) MMP/2.0 Profile/MIDP-1.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "N8202",
-      "marketingName": "N8202",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.9",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-N820/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0"
-    },
-    "device": {
-      "deviceName": "N820",
-      "marketingName": "N820",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.2.6",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)"
     },
     "device": {
@@ -105,310 +29,6 @@
       "marketingName": "Maemo",
       "version": null,
       "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N705i(c100;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "N705i",
-      "marketingName": "N705i",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 427,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (N04A;FOMA;like Gecko)"
-    },
-    "device": {
-      "deviceName": "N04A",
-      "marketingName": "N04A",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "sharp",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sharp",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0/N2002/"
-    },
-    "device": {
-      "deviceName": "N2002",
-      "marketingName": "N2002",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N2002(c100)"
-    },
-    "device": {
-      "deviceName": "N2002",
-      "marketingName": "N2002",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/3.0 N903i"
-    },
-    "device": {
-      "deviceName": "N903i",
-      "marketingName": "N903i",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": 690,
-        "height": 480,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N09A3(c500;TB;W30H20)"
-    },
-    "device": {
-      "deviceName": "N09A3",
-      "marketingName": "N09A3",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N02C(c500;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "N02C",
-      "marketingName": "N02C",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-DB7000/1.0 UP.Browser/4.1.23c"
-    },
-    "device": {
-      "deviceName": "DB7000",
-      "marketingName": "DB7000",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 160,
-        "height": 120,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "4.1.23",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -533,7 +153,463 @@
   },
   {
     "headers": {
-      "user-agent": "DoCoMo/2.0 N905i(c100;TB;W24H16;ser28028f0a26884cc;icc123428028f0a26884cc1)"
+      "user-agent": "DoCoMo/2.0 N02A"
+    },
+    "device": {
+      "deviceName": "N02A",
+      "marketingName": "N02A",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N02C(c500;TB;W20H13)"
+    },
+    "device": {
+      "deviceName": "N02C",
+      "marketingName": "N02C",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N04A"
+    },
+    "device": {
+      "deviceName": "N04A",
+      "marketingName": "N04A",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N09A3(c500;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N09A3",
+      "marketingName": "N09A3",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N705i(c100;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N705i",
+      "marketingName": "N705i",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": 427,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N705imyu(c100;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N705i",
+      "marketingName": "N705i",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": 427,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N900iS(c100;TB;W24H12)"
+    },
+    "device": {
+      "deviceName": "N900iS",
+      "marketingName": "N900iS",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 269,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N902i(c100;TB;W20H10)"
+    },
+    "device": {
+      "deviceName": "N902i",
+      "marketingName": "N902i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N902iS(c100;TB;W24H12)"
+    },
+    "device": {
+      "deviceName": "N902i",
+      "marketingName": "N902i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N902iX(c100;TB;W24H12)"
+    },
+    "device": {
+      "deviceName": "N902i",
+      "marketingName": "N902i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N903i(c100;TB;W30H15)"
+    },
+    "device": {
+      "deviceName": "N903i",
+      "marketingName": "N903i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 690,
+        "height": 480,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N904i"
+    },
+    "device": {
+      "deviceName": "N904i",
+      "marketingName": "N904i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N905i(c100;TB;W16H10)"
     },
     "device": {
       "deviceName": "N905i",
@@ -561,6 +637,690 @@
       "marketingName": "Maemo",
       "version": null,
       "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N905imyu(c100;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N905i",
+      "marketingName": "N905i",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N906i(c100;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N906i",
+      "marketingName": "N906i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N906imyu(c100;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N906i",
+      "marketingName": "N906i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.08 (N902i;FOMA;c300;TB;W24H12)"
+    },
+    "device": {
+      "deviceName": "N902i",
+      "marketingName": "N902i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.08.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; En-us; NEC-101S Build/112551140101) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "general NEC device",
+      "marketingName": "general NEC device",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 2.3.5; NEC-101T Build/112550120101) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31 OPR/14.0.1074.57768"
+    },
+    "device": {
+      "deviceName": "general NEC device",
+      "marketingName": "general NEC device",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "14.0.1074.57768",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; zh-tw; NEC-101TH Build/112550400000) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "general NEC device",
+      "marketingName": "general NEC device",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N902iS(c100;TB;W24H12)(compatible; moba-crawler; http://crawler.dena.jp/)"
+    },
+    "device": {
+      "deviceName": "N902i",
+      "marketingName": "N902i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "linkfluence",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NEC-525/1.0 up.Browser/6.1.0.6.1 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "525",
+      "marketingName": "525",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": 216,
+        "height": 162,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.1.0.6.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N906i(c100;TB;W30H20)"
+    },
+    "device": {
+      "deviceName": "N906i",
+      "marketingName": "N906i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N905i(c100;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N905i",
+      "marketingName": "N905i",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N904i(c100;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N904i",
+      "marketingName": "N904i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N902i(c100;TB;W24H12)"
+    },
+    "device": {
+      "deviceName": "N902i",
+      "marketingName": "N902i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N900iS(c100;TB;W30H15)"
+    },
+    "device": {
+      "deviceName": "N900iS",
+      "marketingName": "N900iS",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 269,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/2.0 N02A(c100;TB;W24H16)"
+    },
+    "device": {
+      "deviceName": "N02A",
+      "marketingName": "N02A",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/1.0/N505i/c20/TB/W20H10 (compatible; Googlebot-Mobile/2.1;  http://www.google.com/bot.html)"
+    },
+    "device": {
+      "deviceName": "N505i",
+      "marketingName": "N505i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Bot Mobile",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/1.0/N505i/c20/TB/W20H10"
+    },
+    "device": {
+      "deviceName": "N505i",
+      "marketingName": "N505i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DoCoMo/1.0/N504i/c10/TB"
+    },
+    "device": {
+      "deviceName": "N504i",
+      "marketingName": "N504i",
+      "manufacturer": "nec",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 198,
+        "height": 160,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1407,44 +2167,6 @@
   },
   {
     "headers": {
-      "user-agent": "NEC-N8605/7.7.2006 Browser/WAP2.0 Release/CMS1.5.64 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "N8605",
-      "marketingName": "N8605",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "NEC-N850/(2005.04.25)FJCC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.108 (GUI) MMP/2.0"
     },
     "device": {
@@ -1521,11 +2243,11 @@
   },
   {
     "headers": {
-      "user-agent": "NEC-N840/(2004.12.20)DJCC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.108 (GUI) MMP/2.0"
+      "user-agent": "NEC-N830/1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0"
     },
     "device": {
-      "deviceName": "N840",
-      "marketingName": "N840",
+      "deviceName": "N830",
+      "marketingName": "N830",
       "manufacturer": "nec",
       "brand": "nec",
       "display": {
@@ -1539,7 +2261,7 @@
     "browser": {
       "name": "Openwave Mobile Browser",
       "modus": null,
-      "version": "6.2.3.2",
+      "version": "6.2.2.6",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
@@ -1559,11 +2281,49 @@
   },
   {
     "headers": {
-      "user-agent": "NEC-N830/1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0"
+      "user-agent": "NEC-N8202/(2006.01.18)SW01.50 UP.Browser/6.2.3.9 (GUI) MMP/2.0 Profile/MIDP-1.0 Configuration/CLDC-1.1"
     },
     "device": {
-      "deviceName": "N830",
-      "marketingName": "N830",
+      "deviceName": "N8202",
+      "marketingName": "N8202",
+      "manufacturer": "nec",
+      "brand": "nec",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.9",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NEC-N820/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "N820",
+      "marketingName": "N820",
       "manufacturer": "nec",
       "brand": "nec",
       "display": {
@@ -1749,83 +2509,7 @@
   },
   {
     "headers": {
-      "user-agent": "NEC-N750/(2005.01.14)DJCC/WAP2.0 Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "N750",
-      "marketingName": "N750",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "NEC-N728/2004AJCC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.106 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "N728",
-      "marketingName": "N728",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-N728/2004AJCC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.103 (GUI) MMP/2.0"
     },
     "device": {
       "deviceName": "N728",
@@ -1901,82 +2585,6 @@
   },
   {
     "headers": {
-      "user-agent": "NEC-N720/2004AJCC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.104 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "N720",
-      "marketingName": "N720",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-N720/2004AJCC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.103 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "N720",
-      "marketingName": "N720",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "NEC-N718/1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0"
     },
     "device": {
@@ -1996,44 +2604,6 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "6.2.2.6",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-N718/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "N718",
-      "marketingName": "N718",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
@@ -2623,44 +3193,6 @@
   },
   {
     "headers": {
-      "user-agent": "NEC-N3303/WAP2.0 Release/8.31.2005 Browser/TelcaQ3C Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "N3303",
-      "marketingName": "N3303",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "NEC-N3303+/WAP2.0 Release/2.15.2006 Browser/TelcaQ3C Profile/MIDP-1.0 Configuration/CLDC-1.0"
     },
     "device": {
@@ -2700,44 +3232,6 @@
   {
     "headers": {
       "user-agent": "NEC-N3301/(2005.04.11)1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "N3301",
-      "marketingName": "N3301",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-N3301/(2005.04.07)1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
       "deviceName": "N3301",
@@ -3193,121 +3687,7 @@
   },
   {
     "headers": {
-      "user-agent": "NEC-E232/1.0 UP.Browser/6.2.3.2.g.1.103 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "e232",
-      "marketingName": "e232",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-E232/1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "e232",
-      "marketingName": "e232",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.2.6",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "NEC-e101/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "e101",
-      "marketingName": "e101",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.7.8",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-e101/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0"
     },
     "device": {
       "deviceName": "e101",
@@ -3405,386 +3785,6 @@
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-525/1.0 up.Browser/6.1.0.6.1 (GUI) MMP/1.0 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "525",
-      "marketingName": "525",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 216,
-        "height": 162,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.6.1",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NEC-1001/001.00 ACS-NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Qtv/1.0"
-    },
-    "device": {
-      "deviceName": "1001",
-      "marketingName": "1001",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N905i(c100;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "N905i",
-      "marketingName": "N905i",
-      "manufacturer": "nec",
-      "brand": "nec",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/1.0/N505i/c20/TB/W20H10 (compatible; Googlebot-Mobile/2.1;  http://www.google.com/bot.html)"
-    },
-    "device": {
-      "deviceName": "N505i",
-      "marketingName": "N505i",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Google Bot Mobile",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/1.0/N505i/c20/TB/W20H10"
-    },
-    "device": {
-      "deviceName": "N505i",
-      "marketingName": "N505i",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N906i(c100;TB;W30H20)"
-    },
-    "device": {
-      "deviceName": "N906i",
-      "marketingName": "N906i",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N904i(c100;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "N904i",
-      "marketingName": "N904i",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N902i(c100;TB;W24H12)"
-    },
-    "device": {
-      "deviceName": "N902i",
-      "marketingName": "N902i",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N900iS(c100;TB;W30H15)"
-    },
-    "device": {
-      "deviceName": "N900iS",
-      "marketingName": "N900iS",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": 269,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 N02A(c100;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "N02A",
-      "marketingName": "N02A",
-      "manufacturer": "nec",
-      "brand": "ntt-docomo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",

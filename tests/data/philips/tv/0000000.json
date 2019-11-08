@@ -1,45 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux mips ; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/3.1.0; en) Presto/2.6.33 Version/10.70"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/6.0.2 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) en) Presto/2.12.407 Version/12.50"
+      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 28HFL5009D12; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/004.001.163.001 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
     },
     "device": {
       "deviceName": "general Philips TV",
@@ -73,234 +35,6 @@
       "name": "Presto",
       "version": "2.12.407",
       "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## QV151E Build/LMY48N)"
-    },
-    "device": {
-      "deviceName": "QV151E",
-      "marketingName": "QV151E",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": false,
-        "size": 55
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## QM151E Build/NZH54D)"
-    },
-    "device": {
-      "deviceName": "QM151E",
-      "marketingName": "QM151E",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": false,
-        "size": 49
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## QM152E Build/LMY48N)"
-    },
-    "device": {
-      "deviceName": "QM152E",
-      "marketingName": "QM152E",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": false,
-        "size": 49
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1## QM164E Build/LMY47D)"
-    },
-    "device": {
-      "deviceName": "QM164E",
-      "marketingName": "QM164E",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": false,
-        "size": 32
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## QM163E Build/M4B30X)"
-    },
-    "device": {
-      "deviceName": "QM163E",
-      "marketingName": "QM163E",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": false,
-        "size": 49
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## TPM171E Build/MUE34)"
-    },
-    "device": {
-      "deviceName": "TPM171E",
-      "marketingName": "TPM171E",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": false,
-        "size": 48.3
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
     }
   },
   {
@@ -381,82 +115,6 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 28HFL5009D12; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/004.001.163.001 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 55PUS780912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/014.002.026.129 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "HbbTV/1.2.1 (;Philips;MT5580;;;) ANTGalio/3.3.0.26.04"
     },
     "device": {
@@ -533,120 +191,6 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; PHILIPSTV; )  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/010.001.072.040 (PhilipsTV, 3.1.1,)en) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "CE-HTML/1.0 NETTV/6.0.2 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) enMozilla/5.0 (Linux; QM151E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.13 "
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.6.1.13",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "CE-HTML/1.0 NETTV/6.0.0 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) enMozilla/5.0 (Linux; QM152E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.61 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.4 "
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.6.1.13",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.3.3 SIGNON/1.0 PHILIPSTV/1.1.1 Firmware/173.67.0 (PhilipsTV, 1.1.1,) en) Presto/2.12.362 Version/12.11"
     },
     "device": {
@@ -681,6 +225,234 @@
       "name": "Presto",
       "version": "2.12.362",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QM152E Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "QM152E",
+      "marketingName": "QM152E",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "46.0.2490.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 (; Philips; ; ; PhilipsTV; ) CE-HTML/1.0 NETTV/4.3.1 PhilipsTV/2.1.1 Firmware/003.012.000.001 (PhilipsTV, 2.1.1,) en) Presto/2.12.362 Version/12.11"
+    },
+    "device": {
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.11.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.362",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips ; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/3.1.0; en) Presto/2.6.33 Version/10.70"
+    },
+    "device": {
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "10.70.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.6.33",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (;Philips;MT5580;PhilipsTV, 4.1.1;;) ANTGalio/3.4.0.27.00.devel"
+    },
+    "device": {
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "ANTGalio",
+      "modus": null,
+      "version": "3.4.0.27.00",
+      "manufacturer": "ant",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l; U;  CE-HTML/1.0 NETTV/4.1.1 PHILIPSTV/2.1.1; en) Presto/2.10.287 Version/12.00"
+    },
+    "device": {
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.287",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 7.1.2; QM163E Build/NZH54D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.142.Racer.49"
+    },
+    "device": {
+      "deviceName": "QM163E",
+      "marketingName": "QM163E",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.8.0.142",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.112",
+      "manufacturer": "google"
     }
   },
   {
@@ -723,272 +495,6 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 (; Philips; ; ; PHILIPSTV; ) CE-HTML/1.0 NETTV/4.3.1 PHILIPSTV/2.1.1 Firmware/001.229.052.000 (PhilipsTV, 2.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 (; Philips; ; ; PHILIPSTV; ) CE-HTML/1.0 NETTV/4.3.1 PHILIPSTV/2.1.1 Firmware/002.016.000.001 (PhilipsTV, 2.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 (; Philips; ; ; PHILIPSTV; ) CE-HTML/1.0 NETTV/4.3.1 PHILIPSTV/2.1.1 Firmware/003.009.000.001 (PhilipsTV, 2.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 (; Philips; ; ; PHILIPSTV; ) CE-HTML/1.0 NETTV/4.3.1 PHILIPSTV/2.1.2 Firmware/002.028.000.001 (PhilipsTV, 2.1.2,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 CE-HTML/1.0 NETTV/4.3.1 PHILIPSTV/2.1.2 Firmware/002.026.000.001 (PhilipsTV, 2.1.2,)) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; ; ; ; ; ) HbbTV/1.1.1 CE-HTML/1.0 NETTV/4.1.1 PHILIPSTV/2.1.1 Firmware/012.000.092.001 (PhilipsTV, 2.1.1,)) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; ; ; ; ; ) HbbTV/1.1.1 CE-HTML/1.0 NETTV/4.1.1 PHILIPSTV/2.1.1 Firmware/014.000.006.000 (PhilipsTV, 2.1.1,)) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 32PFG550978"
     },
     "device": {
@@ -1022,386 +528,6 @@
     "engine": {
       "name": "Presto",
       "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 40PFS671912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.002.016.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 42PFK750912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.003.002.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 47PFS710912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.002.016.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 55PFS710912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.002.016.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/5.0.0 PHILIPSTV/1.1.1150.14.20 (PhilipsTV, 1.1.1,) en) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; PHILIPSTV; )  CE-HTML/1.0 NETTV/4.1.1 SmartTvA/3.0.0 Firmware/026.001.020.003 (PhilipsTV, 4.1.1,)en) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; PHILIPSTV; )  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/010.001.062.019 (PhilipsTV, 3.1.1,)en) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; PHILIPSTV; )  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.001.062.019 (PhilipsTV, 3.1.1,)en) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (NETTV/4.2.0 PHILIPSTV/1.1.1; ; ; ; ; ) CE-HTML/1.0) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; U;  CE-HTML/1.0 NETTV/4.1.1 PHILIPSTV/2.1.1; xx) Presto/2.10.287 Version/12.00"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.00.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.287",
       "manufacturer": "opera"
     }
   },
@@ -1483,158 +609,6 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux mips ; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/3.1.0; xx) Presto/2.6.33 Version/10.70"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips ; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/3.2.4; xx) Presto/2.6.33 Version/10.70"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.0.2; xx) Presto/2.10.250 Version/11.60"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.250",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.1.3 PHILIPSTV/1.1.1; xx) Presto/2.10.250 Version/11.60"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.250",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QV151E Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36"
     },
     "device": {
@@ -1673,44 +647,6 @@
   },
   {
     "headers": {
-      "user-agent": "CE-HTML/1.0 NETTV/6.0.2 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) enMozilla/5.0 (Linux; QM151E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.13"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.6.1.13",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QM152E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
     },
     "device": {
@@ -1744,6 +680,44 @@
     "engine": {
       "name": "Blink",
       "version": "47.0.2526.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 5.1; QM163E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.35.Sprinter.7"
+    },
+    "device": {
+      "deviceName": "QM163E",
+      "marketingName": "QM163E",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.8.0.35",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.87",
       "manufacturer": "google"
     }
   },
@@ -2015,6 +989,44 @@
   },
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## TPM171E Build/MUE34)"
+    },
+    "device": {
+      "deviceName": "TPM171E",
+      "marketingName": "TPM171E",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 48.3
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1## QM152E Build/LMY47D)"
     },
     "device": {
@@ -2053,125 +1065,11 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux mips ; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/3.0.1; en) Presto/2.6.33 Version/10.70"
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## QM151E Build/NZH54D)"
     },
     "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.2.0 PHILIPSTV/1.1.1 Firmware/171.51.0 (PhilipsTV, 1.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.0.1; en) Presto/2.10.250 Version/11.60"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.250",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 7.1.2; QM163E Build/N2G48H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.142.Racer.70"
-    },
-    "device": {
-      "deviceName": "QM163E",
-      "marketingName": "QM163E",
+      "deviceName": "QM151E",
+      "marketingName": "QM151E",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
@@ -2183,12 +1081,12 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera Devices",
+      "name": "Dalvik",
       "modus": null,
-      "version": "4.8.0.142",
-      "manufacturer": "opera",
+      "version": "2.1.0",
+      "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -2198,807 +1096,47 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.112",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 5.1; QM163E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.35.Sprinter.7"
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## QV151E Build/LMY48N)"
     },
     "device": {
-      "deviceName": "QM163E",
-      "marketingName": "QM163E",
+      "deviceName": "QV151E",
+      "marketingName": "QV151E",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
         "width": 3840,
         "height": 2160,
         "touch": false,
-        "size": 49
+        "size": 55
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera Devices",
+      "name": "Dalvik",
       "modus": null,
-      "version": "4.8.0.35",
-      "manufacturer": "opera",
+      "version": "2.1.0",
+      "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.0",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Andr0id 7.1.2; QM163E Build/NZH54D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.142.Racer.49"
-    },
-    "device": {
-      "deviceName": "QM163E",
-      "marketingName": "QM163E",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": false,
-        "size": 49
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.8.0.142",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.112",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 40PFK450912; ; PhilipsTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/010.003.038.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QM152E Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "QM152E",
-      "marketingName": "QM152E",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": false,
-        "size": 49
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "46.0.2490.76",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.76",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 40PUS680912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.003.010.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.3.3 PHILIPSTV/1.1.1 Firmware/173.64.0 (PhilipsTV, 1.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 65PFS665912; ; PhilipsTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.003.038.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 42PFK718912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.003.010.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 40PFK695912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.003.010.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 (; Philips; ; ; PhilipsTV; ) CE-HTML/1.0 NETTV/4.3.1 PhilipsTV/2.1.1 Firmware/003.012.000.001 (PhilipsTV, 2.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.0.2; en) Presto/2.10.250 Version/11.60"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.250",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 50PFK450912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/010.002.036.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l;  HbbTV/1.1.1 (; Philips; ; ; PHILIPSTV; ) CE-HTML/1.0 NETTV/4.3.1 PHILIPSTV/2.1.1 Firmware/003.011.000.001 (PhilipsTV, 2.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 32PFK650912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.003.010.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 48PFK640912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.002.028.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.3.3 PHILIPSTV/1.1.1 Firmware/173.51.0 (PhilipsTV, 1.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 42PFK718912; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.003.006.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/4.3.3 PHILIPSTV/1.1.1 Firmware/173.60.0 (PhilipsTV, 1.1.1,) en) Presto/2.12.362 Version/12.11"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.362",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips ; U; HbbTV/1.1.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/3.2.4; en) Presto/2.6.33 Version/10.70"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.6.33",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 48PFK640912; ; PhilipsTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/012.003.062.128 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; ; ; ; ) CE-HTML/1.0 NETTV/5.2.0 SmartTvA/3.0.0 (PhilipsTV, 5.1.1,) en Firmware/0.5.38.68 Firmware/0.5.38.68 Firmware/0.5.38.68) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
+      "manufacturer": "apple"
     }
   }
 ]

@@ -77,7 +77,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; hu-hu; POV_TV-HDMI-200BT Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; POV_TV-HDMI-200BT Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36 OPR/18.0.1290.67495"
     },
     "device": {
       "deviceName": "TV-HDMI-200BT",
@@ -93,10 +93,10 @@
       "type": "tv-stick"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "Opera Mobile",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
+      "version": "18.0.1290.67495",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -108,9 +108,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "31.0.1650.57",
+      "manufacturer": "google"
     }
   }
 ]

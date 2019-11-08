@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "GIONEE50_12864_11B_HW (MRE\\2.5.00(3072) resolution\\240320 chipset\\MT6250 touch\\1 tpannel\\0 camera\\1 gsensor\\0 keyboard\\normal) 1307SY_0201_V1045 Release/2013.06.28 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US"
-    },
-    "device": {
-      "deviceName": "50",
-      "marketingName": "50",
-      "manufacturer": "gionee",
-      "brand": "gionee",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "GIONEE S80/Q03C MAUI-browser/MIDP2.0/CLDC1.1/Screen-240X320"
     },
     "device": {
@@ -67,6 +29,44 @@
       "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GIONEE50_12864_11B_HW (MRE\\3.0.00(3072) resolution\\240320 chipset\\MT6250 touch\\1 tpannel\\0 camera\\1 gsensor\\0 keyboard\\normal) 1305QM_0201_V1999 Release/2013.06.07 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US"
+    },
+    "device": {
+      "deviceName": "50",
+      "marketingName": "50",
+      "manufacturer": "gionee",
+      "brand": "gionee",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {

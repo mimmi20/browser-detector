@@ -1,28 +1,28 @@
 [
   {
     "headers": {
-      "user-agent": "ZEN P9 /Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1"
+      "user-agent": "ZEN M72_MAUI WAP Browser"
     },
     "device": {
-      "deviceName": "P9",
-      "marketingName": "P9",
+      "deviceName": "M72",
+      "marketingName": "M72",
       "manufacturer": "zen",
       "brand": "zen",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "MAUI Browser",
+      "name": "MAUI Wap Browser",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "wap-browser"
     },
     "os": {
       "name": "JavaOS",
@@ -77,11 +77,49 @@
   },
   {
     "headers": {
-      "user-agent": "ZEN X10-MAUI WAP Browser"
+      "user-agent": "ZEN P9 /Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1"
     },
     "device": {
-      "deviceName": "X10",
-      "marketingName": "X10",
+      "deviceName": "P9",
+      "marketingName": "P9",
+      "manufacturer": "zen",
+      "brand": "zen",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "MAUI Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ZEN M72* Wap Browser"
+    },
+    "device": {
+      "deviceName": "M72",
+      "marketingName": "M72",
       "manufacturer": "zen",
       "brand": "zen",
       "display": {
@@ -93,7 +131,7 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "MAUI Wap Browser",
+      "name": "WAP Browser",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
@@ -153,11 +191,11 @@
   },
   {
     "headers": {
-      "user-agent": "ZEN M72* Wap Browser"
+      "user-agent": "ZEN X10-MAUI WAP Browser"
     },
     "device": {
-      "deviceName": "M72",
-      "marketingName": "M72",
+      "deviceName": "X10",
+      "marketingName": "X10",
       "manufacturer": "zen",
       "brand": "zen",
       "display": {
@@ -169,7 +207,7 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "WAP Browser",
+      "name": "MAUI Wap Browser",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",

@@ -1,196 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.2.2.1609 Mobile Safari/537.35+"
-    },
-    "device": {
-      "deviceName": "Z10",
-      "marketingName": "Z10",
-      "manufacturer": "black-berry",
-      "brand": "black-berry",
-      "display": {
-        "width": 1280,
-        "height": 768,
-        "touch": true,
-        "size": 4.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "10.2.2.1609",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "10.2.2.1609",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.35.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.35  (KHTML, like Gecko) Version/10.3.1.2243 Mobile Safari/537.35"
-    },
-    "device": {
-      "deviceName": "Z10",
-      "marketingName": "Z10",
-      "manufacturer": "black-berry",
-      "brand": "black-berry",
-      "display": {
-        "width": 1280,
-        "height": 768,
-        "touch": true,
-        "size": 4.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "10.3.1.2243",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "10.3.1.2243",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.35.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.1.0.2354 Mobile Safari/537.10+"
-    },
-    "device": {
-      "deviceName": "Z10",
-      "marketingName": "Z10",
-      "manufacturer": "black-berry",
-      "brand": "black-berry",
-      "display": {
-        "width": 1280,
-        "height": 768,
-        "touch": true,
-        "size": 4.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "10.1.0.2354",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "10.1.0.2354",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.10.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko)"
-    },
-    "device": {
-      "deviceName": "KBD",
-      "marketingName": "KBD",
-      "manufacturer": "black-berry",
-      "brand": "black-berry",
-      "display": {
-        "width": 720,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "10.0.0",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.35.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-gb; BB Q5 Build/10.2.0.131) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "Q5",
-      "marketingName": "Q5",
-      "manufacturer": "black-berry",
-      "brand": "black-berry",
-      "display": {
-        "width": 720,
-        "height": 720,
-        "touch": true,
-        "size": 3.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.1.0.4651 Mobile Safari/537.10+"
     },
     "device": {
@@ -294,6 +104,44 @@
       "name": "RIM OS",
       "marketingName": "RIM OS",
       "version": "10.3.1.2243",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.35.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko)"
+    },
+    "device": {
+      "deviceName": "KBD",
+      "marketingName": "KBD",
+      "manufacturer": "black-berry",
+      "brand": "black-berry",
+      "display": {
+        "width": 720,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.0.0",
       "manufacturer": "rim",
       "bits": null
     },
@@ -452,6 +300,158 @@
     "engine": {
       "name": "WebKit",
       "version": "537.10.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.3+ (KHTML, like Gecko) Version/10.0.9.388 Mobile Safari/537.3+"
+    },
+    "device": {
+      "deviceName": "Z10",
+      "marketingName": "Z10",
+      "manufacturer": "black-berry",
+      "brand": "black-berry",
+      "display": {
+        "width": 1280,
+        "height": 768,
+        "touch": true,
+        "size": 4.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.0.9.388",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.0.9.388",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.3.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; BB Q5 Build/10.2.0.131) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Q5",
+      "marketingName": "Q5",
+      "manufacturer": "black-berry",
+      "brand": "black-berry",
+      "display": {
+        "width": 720,
+        "height": 720,
+        "touch": true,
+        "size": 3.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BB10; Touch) /537.10+ (KHTML, like Gecko) Version/10.0.9.2372 Mobile Safari/537.10+"
+    },
+    "device": {
+      "deviceName": "Z10",
+      "marketingName": "Z10",
+      "manufacturer": "black-berry",
+      "brand": "black-berry",
+      "display": {
+        "width": 1280,
+        "height": 768,
+        "touch": true,
+        "size": 4.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.0.9.2372",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.0.9.2372",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.1+ (KHTML, like Gecko) Version/10.0.0.1337 Mobile Safari/537.1+"
+    },
+    "device": {
+      "deviceName": "Z10",
+      "marketingName": "Z10",
+      "manufacturer": "black-berry",
+      "brand": "black-berry",
+      "display": {
+        "width": 1280,
+        "height": 768,
+        "touch": true,
+        "size": 4.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.0.0.1337",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "10.0.0.1337",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.1.0",
       "manufacturer": "apple"
     }
   }

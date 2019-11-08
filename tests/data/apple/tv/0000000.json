@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "AppleCoreMedia/1.0.0.12F69 (Apple TV; U; CPU OS 8_3 like Mac OS X; en_us)"
-    },
-    "device": {
-      "deviceName": "AppleTV",
-      "marketingName": "Apple TV",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "CoreMedia",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "multimedia-player"
-    },
-    "os": {
-      "name": "ATV OS X",
-      "marketingName": "ATV OS X",
-      "version": "8.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "XBMC/PRE-11.0 Git:20110623-62171b3 (iOS; 11.0.0 AppleTV2,1; http://www.xbmc.org)"
     },
     "device": {
@@ -73,6 +35,44 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AppleCoreMedia/1.0.0.12F69 (Apple TV; U; CPU OS 8_3 like Mac OS X; en_us)"
+    },
+    "device": {
+      "deviceName": "AppleTV",
+      "marketingName": "Apple TV",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "CoreMedia",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "ATV OS X",
+      "marketingName": "ATV OS X",
+      "version": "8.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
@@ -116,44 +116,6 @@
   {
     "headers": {
       "user-agent": "AppleCoreMedia/1.0.0.12H606 (Apple TV; U; CPU OS 8_4_2 like Mac OS X; en_us)"
-    },
-    "device": {
-      "deviceName": "AppleTV",
-      "marketingName": "Apple TV",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "CoreMedia",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "multimedia-player"
-    },
-    "os": {
-      "name": "ATV OS X",
-      "marketingName": "ATV OS X",
-      "version": "8.4.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "AppleCoreMedia/1.0.0.12H606 (Apple TV; U; CPU OS 8_4_2 like Mac OS X; de_de)"
     },
     "device": {
       "deviceName": "AppleTV",

@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "KDDI-W11H UP.Browser/6.2.0.5 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "W11H",
-      "marketingName": "W11H",
-      "manufacturer": "hitachi",
-      "brand": "kddi",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.0.5",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "DoCoMo/1.0/KO210i"
     },
     "device": {
@@ -61,6 +23,44 @@
       "manufacturer": "unknown",
       "bits": null,
       "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-W11H UP.Browser/6.2.0.5 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "W11H",
+      "marketingName": "W11H",
+      "manufacturer": "hitachi",
+      "brand": "kddi",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0.5",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",

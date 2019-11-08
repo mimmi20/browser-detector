@@ -1,11 +1,11 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## T95KPRO Build/MHC19J)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; T95ZPLUS Build/MHC19J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Safari/537.36"
     },
     "device": {
-      "deviceName": "T95K Pro",
-      "marketingName": "T95K Pro",
+      "deviceName": "T95Z Plus",
+      "marketingName": "T95Z Plus",
       "manufacturer": "sunvell",
       "brand": "sunvell",
       "display": {
@@ -17,12 +17,12 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "Dalvik",
+      "name": "Chrome",
       "modus": null,
-      "version": "2.1.0",
+      "version": "61.0.3163.98",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -32,47 +32,9 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.1## T95KPRO Build/NMF26Q)"
-    },
-    "device": {
-      "deviceName": "T95K Pro",
-      "marketingName": "T95K Pro",
-      "manufacturer": "sunvell",
-      "brand": "sunvell",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
     }
   },
   {
@@ -153,11 +115,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; T95ZPLUS Build/MHC19J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Safari/537.36"
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.1## T95KPRO Build/NMF26Q)"
     },
     "device": {
-      "deviceName": "T95Z Plus",
-      "marketingName": "T95Z Plus",
+      "deviceName": "T95K Pro",
+      "marketingName": "T95K Pro",
       "manufacturer": "sunvell",
       "brand": "sunvell",
       "display": {
@@ -169,12 +131,50 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Dalvik",
       "modus": null,
-      "version": "61.0.3163.98",
+      "version": "2.1.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## T95KPRO Build/MHC19J)"
+    },
+    "device": {
+      "deviceName": "T95K Pro",
+      "marketingName": "T95K Pro",
+      "manufacturer": "sunvell",
+      "brand": "sunvell",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -184,9 +184,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   }
 ]

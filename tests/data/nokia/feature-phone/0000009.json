@@ -1,968 +1,208 @@
 [
   {
     "headers": {
-      "user-agent": "Nokia6510/1.0 (04.06)"
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia502) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "6510",
-      "marketingName": "6510",
+      "deviceName": "502",
+      "marketingName": "Asha 502",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": 96,
-        "height": 60,
-        "touch": false,
-        "size": null
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "UC Browser",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "symbian-foundation",
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6510/1.0 (04.05)"
-    },
-    "device": {
-      "deviceName": "6510",
-      "marketingName": "6510",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 60,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6510/1.0 (04.00) UP.Link/4.2.2.1"
-    },
-    "device": {
-      "deviceName": "6510",
-      "marketingName": "6510",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 60,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6510/1.0 (04.00)"
-    },
-    "device": {
-      "deviceName": "6510",
-      "marketingName": "6510",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 60,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6510/1.0 (03.35)"
-    },
-    "device": {
-      "deviceName": "6510",
-      "marketingName": "6510",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 60,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (7.00) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.52) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.1.12.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.52) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.51) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.51) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.50) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.1.13.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.50) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.50) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/5.1.1.5"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.50) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.42) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.22) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.1.13.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.22) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.22) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/5.1.2.5"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.22) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.10) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (5.10) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (4.96) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (4.91) Profile/MIDP-1.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (4.80) Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Link/6.3.1.12.0"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310i/1.0 (4.80) Profile/MIDP-1.0 Configuration/CLDC-1.0 (Google WAP Proxy/1.0)"
-    },
-    "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Google Wap Proxy",
-      "modus": null,
+      "name": "U2",
       "version": "1.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "ucweb"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6310i/1.0 (4.80) Profile/MIDP-1.0 Configuration/CLDC-1.0"
+      "user-agent": "Nokia210/2.0 (04.12) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokia210) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/84/352/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
+      "deviceName": "210",
+      "marketingName": "Asha 210",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": 2.5
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V3; en-US; NOKIAN79) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "N79",
+      "marketingName": "N79",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.336",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; NokiaC5-03) U2/1.0.0 UCBrowser/9.1.0.319 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "C5-03",
+      "marketingName": "C5",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.1.0.319",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V3; en-US; NOKIAN82) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "N82",
+      "marketingName": "N82",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.336",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia3230/2.0 (5.0614.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0Configuration/CLDC-1.0"
+    },
+    "device": {
+      "deviceName": "3230",
+      "marketingName": "3230",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
       },
       "type": "feature-phone"
     },
@@ -975,10 +215,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "symbian-foundation",
       "bits": null
     },
     "engine": {
@@ -989,87 +229,353 @@
   },
   {
     "headers": {
-      "user-agent": "Nokia6310i/1.0 (4.62) Profile/MIDP-1.0 Configuration/CLDC-1.0"
+      "user-agent": "Nokia303/5.0 (14.87) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia303) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
+      "deviceName": "303",
+      "marketingName": "Asha 303",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": null
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "UC Browser",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "nokia",
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6310i/1.0 (4.07) Profile/MIDP-1.0 Configuration/CLDC-1.0"
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; NokiaE6-00) U2/1.0.0 UCBrowser/9.0.1.317 U2/1.0.0 Mobile"
     },
     "device": {
-      "deviceName": "6310i",
-      "marketingName": "6310i",
+      "deviceName": "E6-00",
+      "marketingName": "E6",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": 2.5
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.46
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "UC Browser",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "9.0.1.317",
+      "manufacturer": "ucweb",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "symbian-foundation",
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6310/1.0 (05.01) UP.Link/6.2.3.12"
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaC5-00.2) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0 3gpp-gba"
     },
     "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
+      "deviceName": "C5-00",
+      "marketingName": "C5",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6303classic/2.0 (10.12) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia6303classic) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "6303 classic",
+      "marketingName": "6303 classic",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaX2-05/08.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.5.0.34.15"
+    },
+    "device": {
+      "deviceName": "X2-05",
+      "marketingName": "X2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "1.5.0.34.15",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia5800d-1) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0 3gpp-gba"
+    },
+    "device": {
+      "deviceName": "5800 XpressMusic",
+      "marketingName": "5800 XpressMusic",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OneBrowser/3.0,Nokia6681/2.0"
+    },
+    "device": {
+      "deviceName": "6681",
+      "marketingName": "6681",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "OneBrowser",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian3; U; en-US;NokiaE63) AppleWebKit/530.13(KHTML, like Gecko) UCBrowser/9.2.0.336/51/352/UCWEB Mobile"
+    },
+    "device": {
+      "deviceName": "E63",
+      "marketingName": "E63",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.36
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.336",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; Nokia500) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "500",
+      "marketingName": "Asha 500",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.336",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FunWebProducts; Nokia7110/1.0 (03.01; r3g.de))"
+    },
+    "device": {
+      "deviceName": "7110",
+      "marketingName": "7110",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
@@ -1081,10 +587,10 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Web Pro",
       "modus": null,
       "version": null,
-      "manufacturer": "nokia",
+      "manufacturer": "palm",
       "bits": null,
       "type": "browser"
     },
@@ -1103,1683 +609,11 @@
   },
   {
     "headers": {
-      "user-agent": "Nokia6310/1.0 (05.01) UP.Link/1.1"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Opera 8.50; Nokia N70/2.0539.1.2; 7111) Opera 8.50 [en]"
     },
     "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 (05.01)"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 (04.54)"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 (04.31)"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 (04.27)"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 (04.20)"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 (04.15)"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 (04.10) UP.Link/4.2.2.8"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 (04.10)"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6310/1.0 ()"
-    },
-    "device": {
-      "deviceName": "6310",
-      "marketingName": "6310",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 96,
-        "height": 65,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6301/2.0 (05.93) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6301",
-      "marketingName": "6301",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (pwp_05w33_) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (p03.20.d) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (p) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (05.72) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (04.13) Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Mozilla/4.0; YGoJ/1.0) Novarra-Vision/8.0"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (04.13) Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Mozilla/4.0; YGoJ/1.0) Novarra-Vision/7.3"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (04.08) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.81) Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.1.13.0"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.81) Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.81) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.70) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.65) Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.2.3.15.0"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.65) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.60) Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.52) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.41) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (03.36) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (p03.20) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (p03.16) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.90) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.69) Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.69) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.66) Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.1.14.0"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.66) Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.66) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.65) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.53) Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.53) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.52) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6270/2.0 (03.50) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6270",
-      "marketingName": "6270",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6267/2.0 (03.25) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6267",
-      "marketingName": "6267",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6265/2.0 (HL100V0401_viv.nep) UP.Browser/6.2.3.8 MMP/2.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6265",
-      "marketingName": "6265",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.8",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6265/2.0 (HL100V0400.nep) UP.Browser/6.2.3.8 MMP/2.0"
-    },
-    "device": {
-      "deviceName": "6265",
-      "marketingName": "6265",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.8",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (5.0536.0ch) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
+      "deviceName": "N70",
+      "marketingName": "N70",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
@@ -2791,10 +625,10 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Opera",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "8.50.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -2806,18 +640,18 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6260/2.0 (5.0536.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.1.12.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia N70/5.0737.3.0.1; 9414) Opera 8.65 [en] UP.Link/6.5.0.0.06.5.0.0.06.5.0.0.0"
     },
     "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
+      "deviceName": "N70",
+      "marketingName": "N70",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
@@ -2829,10 +663,10 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Opera",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "8.65.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -2844,18 +678,18 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6260/2.0 (5.0536.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia N70/3.0546.2.3; 6367) Opera 8.00 [ru]"
     },
     "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
+      "deviceName": "N70",
+      "marketingName": "N70",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
@@ -2867,10 +701,10 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Opera",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "8.00.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -2882,18 +716,18 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0515.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.1.12.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia N70/3.0546.2.3; 6366) Opera 8.01 [en]"
     },
     "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
+      "deviceName": "N70",
+      "marketingName": "N70",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
@@ -2905,10 +739,10 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Opera",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "8.01.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -2920,18 +754,18 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0515.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6682/4.65.0; 9399) Opera 8.65 [en-US] UP.Link/6.3.0.0.0"
     },
     "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
+      "deviceName": "6682",
+      "marketingName": "6682",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
@@ -2943,10 +777,10 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Opera",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "8.65.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -2958,18 +792,18 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0515.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6681/4.00.15; 7032) Opera 8.51 [th]"
     },
     "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
+      "deviceName": "6681",
+      "marketingName": "6681",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
@@ -2981,10 +815,10 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "Opera",
       "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
+      "version": "8.51.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -2996,622 +830,14 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0508.0ch) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0452.0ch) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0452.0ch) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0448.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.1.12.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0448.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0448.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0443.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0436.5ch) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0436.5ch) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0436.0ch) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0436.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.1.13.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (3.0436.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6260/2.0 (2.0432.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "6260",
-      "marketingName": "6260",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia7310/2.0 (09.40) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "7310",
-      "marketingName": "Supernova",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6280/2.0 (06.10) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6280",
-      "marketingName": "6280",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia7310/2.0 (08.20) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "7310",
-      "marketingName": "Supernova",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.1 (compatible; MSIE 6.0; Symbian OS; Nokia 6680; 857) Opera 7.60 [en-GB]"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6680/4.04.07; 6011) Opera 7.60 [en]"
     },
     "device": {
       "deviceName": "6680",
@@ -3649,129 +875,1383 @@
   },
   {
     "headers": {
-      "user-agent": "Nokia6255/1.0 (N190V0700.nep) UP.Browser/6.2.3.2.h.1.104 (GUI) MMP/2.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6680/4.04.07; 1657) Opera 8.60 [en]"
     },
     "device": {
-      "deviceName": "6255",
-      "marketingName": "6255",
+      "deviceName": "6680",
+      "marketingName": "6680",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": 160,
-        "height": 128,
+        "width": 208,
+        "height": 176,
         "touch": false,
-        "size": 1.4
+        "size": 2.1
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Openwave Mobile Browser",
+      "name": "Opera",
       "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
+      "version": "8.60.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "symbian-foundation",
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6255/1.0 (N100V1600.nep) UP.Browser/6.2.3.2.h.1.104 (GUI) MMP/2.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6680/3.04.37; 7032) Opera 8.51 [ru]"
     },
     "device": {
-      "deviceName": "6255",
-      "marketingName": "6255",
+      "deviceName": "6680",
+      "marketingName": "6680",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": 160,
-        "height": 128,
+        "width": 208,
+        "height": 176,
         "touch": false,
-        "size": 1.4
+        "size": 2.1
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Openwave Mobile Browser",
+      "name": "Opera",
       "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
+      "version": "8.51.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "symbian-foundation",
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6255/1.0 (N100V1300.nep) UP.Browser/6.2.3.2.h.1.104 (GUI) MMP/2.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6680/3.04.37; 6936) Opera 8.50 [en]"
     },
     "device": {
-      "deviceName": "6255",
-      "marketingName": "6255",
+      "deviceName": "6680",
+      "marketingName": "6680",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": 160,
-        "height": 128,
+        "width": 208,
+        "height": 176,
         "touch": false,
-        "size": 1.4
+        "size": 2.1
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Openwave Mobile Browser",
+      "name": "Opera",
       "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
+      "version": "8.50.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "symbian-foundation",
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Nokia6235/1.0 (S190V0300.nep) UP.Browser/6.2.3.2 MMP/2.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6680/3.04.12; 6329) Opera 8.00 [en]"
     },
     "device": {
-      "deviceName": "6235",
-      "marketingName": "6235",
+      "deviceName": "6680",
+      "marketingName": "6680",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6670/6.0522.0; 6936) Opera 8.50 [en]"
+    },
+    "device": {
+      "deviceName": "6670",
+      "marketingName": "6670",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6670/5.0509.0; 6329) Opera 8.00 [en]"
+    },
+    "device": {
+      "deviceName": "6670",
+      "marketingName": "6670",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6670/5.0509.0; 1657) Opera 8.60 [en]"
+    },
+    "device": {
+      "deviceName": "6670",
+      "marketingName": "6670",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6670/4.0437.4; 7032) Opera 8.51 [en]"
+    },
+    "device": {
+      "deviceName": "6670",
+      "marketingName": "6670",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.51.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6630/5.03.08; 9399) Opera 8.65 [en]"
+    },
+    "device": {
+      "deviceName": "6630",
+      "marketingName": "6630",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.65.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6630/5.03.08; 7032) Opera 8.51 [en]"
+    },
+    "device": {
+      "deviceName": "6630",
+      "marketingName": "6630",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.51.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6630/5.03.08; 1657) Opera 8.60 [en]"
+    },
+    "device": {
+      "deviceName": "6630",
+      "marketingName": "6630",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6630/4.03.38; 6937) Opera 8.50 [es]"
+    },
+    "device": {
+      "deviceName": "6630",
+      "marketingName": "6630",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6630/3.45.113; 6329) Opera 8.00 [ru]"
+    },
+    "device": {
+      "deviceName": "6630",
+      "marketingName": "6630",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6600/5.53.0; 9399) Opera 8.65 [en]"
+    },
+    "device": {
+      "deviceName": "6600",
+      "marketingName": "6600",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.65.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6600/5.53.0; 6982) Opera 8.50 [en]"
+    },
+    "device": {
+      "deviceName": "6600",
+      "marketingName": "6600",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6600/5.53.0; 6329) Opera 8.00 [en]"
+    },
+    "device": {
+      "deviceName": "6600",
+      "marketingName": "6600",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6600/5.53.0; 1665) Opera 8.60 [en]"
+    },
+    "device": {
+      "deviceName": "6600",
+      "marketingName": "6600",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 6600/5.27.0; 7032) Opera 8.51 [en]"
+    },
+    "device": {
+      "deviceName": "6600",
+      "marketingName": "6600",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.51.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 3250/3.23; 7408) Opera 8.60 [en]"
+    },
+    "device": {
+      "deviceName": "3250",
+      "marketingName": "3250",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 3230/5.0604.0ch; 9399) Opera 8.65 [en] FirePHP/0.2.4"
+    },
+    "device": {
+      "deviceName": "3230",
+      "marketingName": "3230",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.65.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 3230/4.0537.0ch; 7032) Opera 8.51 [en]"
+    },
+    "device": {
+      "deviceName": "3230",
+      "marketingName": "3230",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.51.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 3230/4.0526.2; 6329) Opera 8.00 [en]"
+    },
+    "device": {
+      "deviceName": "3230",
+      "marketingName": "3230",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Nokia 3230/3.0505.2; 6936) Opera 8.50 [ru]"
+    },
+    "device": {
+      "deviceName": "3230",
+      "marketingName": "3230",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "\"Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Googlebot-Mobile/2.1;  http://www.google.com/bot.html)\""
+    },
+    "device": {
+      "deviceName": "6820",
+      "marketingName": "6820",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
         "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Bot Mobile",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaE75-1"
+    },
+    "device": {
+      "deviceName": "E75",
+      "marketingName": "E75",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6720c/012.008 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "deviceName": "6720 classic",
+      "marketingName": "6720 classic",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5630d-1/012.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "deviceName": "5630d",
+      "marketingName": "5630d",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6110Navigator/4.22; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.5.0.0.0"
+    },
+    "device": {
+      "deviceName": "6110 Navigator",
+      "marketingName": "6110 Navigator",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2; U; [en]; Series60/3.1 Nokia3250/1.00 ) Profile/MIDP-2.0 Configuration/CLDC-1.1; AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+    },
+    "device": {
+      "deviceName": "3250",
+      "marketingName": "3250",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "413.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian OS; U) Opera 6.20 [Nokia 7610]"
+    },
+    "device": {
+      "deviceName": "7610",
+      "marketingName": "7610",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.20.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian OS; U) Opera 6.20 [Nokia 6600]"
+    },
+    "device": {
+      "deviceName": "6600",
+      "marketingName": "6600",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.20.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Symbian OS; U) Opera 6.10 [Nokia 6600]"
+    },
+    "device": {
+      "deviceName": "6600",
+      "marketingName": "6600",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.10.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Nokia 3650;452) Opera 6.20 [en]"
+    },
+    "device": {
+      "deviceName": "3650",
+      "marketingName": "3650",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.20.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia303/13.47; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.7.0.0.11"
+    },
+    "device": {
+      "deviceName": "303",
+      "marketingName": "Asha 303",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "3.7.0.0.11",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaC2-02/07.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.7.0.0.11"
+    },
+    "device": {
+      "deviceName": "C2-02",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "3.7.0.0.11",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia205/04.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.55"
+    },
+    "device": {
+      "deviceName": "205",
+      "marketingName": "Asha 205",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.55",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia110/03.26; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.7.0.0.11"
+    },
+    "device": {
+      "deviceName": "110",
+      "marketingName": "110",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 160,
         "height": 128,
         "touch": false,
         "size": null
@@ -3779,12 +2259,1418 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Openwave Mobile Browser",
+      "name": "Nokia Proxy Browser",
       "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
+      "version": "3.7.0.0.11",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia206/2.0 (03.58) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia206) U2/1.0.0 UCBrowser/9.3.0.326 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "206",
+      "marketingName": "Asha 206",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.3.0.326",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia306/03.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.2.0.0.33"
+    },
+    "device": {
+      "deviceName": "306",
+      "marketingName": "Asha 306",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.2.0.0.33",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(Symbian; U; S60 V5; en-US; NokiaN97 mini) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "N97 Mini",
+      "marketingName": "N97 Mini",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.1.252",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaC2-05/08.79; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.48"
+    },
+    "device": {
+      "deviceName": "C2-05",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.48",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia5800 XpressMusic/UC Browser7.9.0.102/50/355/UCWEB"
+    },
+    "device": {
+      "deviceName": "5800 XpressMusic",
+      "marketingName": "5800 XpressMusic",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.102",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5228/21.1.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba"
+    },
+    "device": {
+      "deviceName": "5228",
+      "marketingName": "5228",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "7.2.5.2",
+      "manufacturer": "nokia",
       "bits": null,
       "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia305/2.0 (05.92) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0(Java; U; MIDP-2.0; en-us; nokia305) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "305",
+      "marketingName": "Asha 305",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.1.234",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaC2-02/2.0 (06.52) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; nokiac2-02) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "C2-02",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.251",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaX2-02/11.57; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.49"
+    },
+    "device": {
+      "deviceName": "X2-02",
+      "marketingName": "X2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.49",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia302/14.26; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.48"
+    },
+    "device": {
+      "deviceName": "302",
+      "marketingName": "Asha 302",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.48",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6730c-1/023.010; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424"
+    },
+    "device": {
+      "deviceName": "6730 classic",
+      "marketingName": "6730 classic",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "7.1.19424",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia200/11.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.49"
+    },
+    "device": {
+      "deviceName": "200",
+      "marketingName": "Asha 200",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.49",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia306/03.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.48"
+    },
+    "device": {
+      "deviceName": "306",
+      "marketingName": "Asha 306",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.48",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia300/07.57; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.48"
+    },
+    "device": {
+      "deviceName": "300",
+      "marketingName": "Asha 300",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.48",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Asha",
+      "marketingName": "Asha",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia113/03.09; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.2.0.0.6"
+    },
+    "device": {
+      "deviceName": "113",
+      "marketingName": "113",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "3.2.0.0.6",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia201/11.21; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.2.0.0.6"
+    },
+    "device": {
+      "deviceName": "201",
+      "marketingName": "Asha 201",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "3.2.0.0.6",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaX2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/null"
+    },
+    "device": {
+      "deviceName": "X2-05",
+      "marketingName": "X2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaC2-05/08.69; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.2.0.0.33"
+    },
+    "device": {
+      "deviceName": "C2-05",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.2.0.0.33",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaC2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.11"
+    },
+    "device": {
+      "deviceName": "C2-05",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "1.0.2.26.11",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaC2-02/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.48"
+    },
+    "device": {
+      "deviceName": "C2-02",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.48",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia201/11.21; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.48"
+    },
+    "device": {
+      "deviceName": "201",
+      "marketingName": "Asha 201",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.48",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6303classic/2.0 (09.10) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; nokia6303classic) U2/1.0.0 UCBrowser/9.0.0.295 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "6303 classic",
+      "marketingName": "6303 classic",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.0.0.295",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (S60V3; U; ru; NokiaE52-1) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/28/444/UCWEB Mobile"
+    },
+    "device": {
+      "deviceName": "E52",
+      "marketingName": "E52",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia300/07.57; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.7.0.0.11"
+    },
+    "device": {
+      "deviceName": "300",
+      "marketingName": "Asha 300",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "3.7.0.0.11",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Asha",
+      "marketingName": "Asha",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaC2-03/07.64; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.49"
+    },
+    "device": {
+      "deviceName": "C2-03",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.49",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE55-1/033.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.5"
+    },
+    "device": {
+      "deviceName": "E55",
+      "marketingName": "E55",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "7.1.5",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaC2-06/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.2.0.0.33"
+    },
+    "device": {
+      "deviceName": "C2-06",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.2.0.0.33",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia2760/2.0 (07.60) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "2760",
+      "marketingName": "2760",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaC2-06/07.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.49"
+    },
+    "device": {
+      "deviceName": "C2-06",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.49",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia7500/2.0 (04.62) Profile/MIDP-2.1 Configuration/CLDC-1.1 nokia7500/UC Browser8.0.3.107/69/444 UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "500",
+      "marketingName": "Asha 500",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.0.3.107",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6710s/021.013; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.13841"
+    },
+    "device": {
+      "deviceName": "6710 slide",
+      "marketingName": "6710 Navigator",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "7.1.13841",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia302/14.78; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.2.0.0.6"
+    },
+    "device": {
+      "deviceName": "302",
+      "marketingName": "Asha 302",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "3.2.0.0.6",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaX2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.2.0.0.33"
+    },
+    "device": {
+      "deviceName": "X2-05",
+      "marketingName": "X2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.2.0.0.33",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia110/03.26; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.48"
+    },
+    "device": {
+      "deviceName": "110",
+      "marketingName": "110",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.48",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(Symbian; U; S60 V5; en-US; Nokia5230) U2/1.0.0 UCBrowser/8.8.0.245 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "5230",
+      "marketingName": "Nuron",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.0.245",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaC2-01/5.0 (11.10) Profile/MIDP-2.1 Configuration/CLDC-1.1 nokiac2-01/UC Browser8.0.3.107/70/352"
+    },
+    "device": {
+      "deviceName": "C2-01",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.0.3.107",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; NokiaX3-02/07.16; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.3.0.0.48"
+    },
+    "device": {
+      "deviceName": "X3-02",
+      "marketingName": "X3",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.3.0.0.48",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -3794,9 +3680,123 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Gecko",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (S60V5; U; en-us; Nokia5800 XpressMusic) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.7.1.234/50/405/UCWEB Mobile"
+    },
+    "device": {
+      "deviceName": "5800 XpressMusic",
+      "marketingName": "5800 XpressMusic",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.1.234",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(Symbian; U; S60 V5; en-US; Nokia5800 XpressMusic) U2/1.0.0 UCBrowser/8.8.0.245 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "5800 XpressMusic",
+      "marketingName": "5800 XpressMusic",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.0.245",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaX2-02/2.0 (11.79) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; nokiax2-02) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "X2-02",
+      "marketingName": "X2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.251",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
     }
   }
 ]

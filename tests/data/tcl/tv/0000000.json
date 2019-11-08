@@ -1,6 +1,234 @@
 [
   {
     "headers": {
+      "user-agent": "HbbTV/1.1.1 (;TCL;MT5651;;;) ANTGalio/3.3.0.26.04"
+    },
+    "device": {
+      "deviceName": "general TCL TV",
+      "marketingName": "general TCL TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "ANTGalio",
+      "modus": null,
+      "version": "3.3.0.26.04",
+      "manufacturer": "ant",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (; TCL; 2016FHD;;;)"
+    },
+    "device": {
+      "deviceName": "general TCL TV",
+      "marketingName": "general TCL TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.2.1 (;TCL;2016FHD; ; ;)"
+    },
+    "device": {
+      "deviceName": "general TCL TV",
+      "marketingName": "general TCL TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/537.6+ (KHTML, like Gecko) Safari/537.6+ HbbTV/1.2.1 (;TCL; ; ; ;)"
+    },
+    "device": {
+      "deviceName": "general TCL TV",
+      "marketingName": "general TCL TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.6.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/537.6+ (KHTML, like Gecko) Safari/537.6+HbbTV/1.2.1 (;TCL; ; ; ;)"
+    },
+    "device": {
+      "deviceName": "general TCL TV",
+      "marketingName": "general TCL TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.6.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/537.6+ (KHTML, like Gecko) Safari/537.6+Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/537.6+ (KHTML, like Gecko) Safari/537.6+ HbbTV/1.2.1 (;TCL; ; ; ;)"
+    },
+    "device": {
+      "deviceName": "general TCL TV",
+      "marketingName": "general TCL TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.6.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11;Linux x86_64;NETRANGEMMH)(KHTML, like Gecko)Safari/534.24 HbbTV/1.2.1 (;TCL; ; ; ;)"
     },
     "device": {
@@ -30,82 +258,6 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## Percee TV Build/MUE34)"
-    },
-    "device": {
-      "deviceName": "Percee TV",
-      "marketingName": "Percee TV",
-      "manufacturer": "tcl",
-      "brand": "tcl",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": false,
-        "size": 49.7
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.0## Percee TV Build/NTG46)"
-    },
-    "device": {
-      "deviceName": "Percee TV",
-      "marketingName": "Percee TV",
-      "manufacturer": "tcl",
-      "brand": "tcl",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": false,
-        "size": 49.7
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
     },
     "engine": {
       "name": "WebKit",
@@ -149,6 +301,82 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.0## Percee TV Build/NTG46)"
+    },
+    "device": {
+      "deviceName": "Percee TV",
+      "marketingName": "Percee TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 49.7
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## Percee TV Build/MUE34)"
+    },
+    "device": {
+      "deviceName": "Percee TV",
+      "marketingName": "Percee TV",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 49.7
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   }
 ]

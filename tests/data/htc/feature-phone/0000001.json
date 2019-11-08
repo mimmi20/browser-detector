@@ -1,239 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "dopodT8588/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 Opera/9.7 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.2.0.116/31/800"
-    },
-    "device": {
-      "deviceName": "T8588",
-      "marketingName": "T8588",
-      "manufacturer": "htc",
-      "brand": "dopod",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.7.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vodafone/1.0/HTC_VPACompactIV/1.9.162.1/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)"
-    },
-    "device": {
-      "deviceName": "VPA Compact IV",
-      "marketingName": "Herald",
-      "manufacturer": "htc",
-      "brand": "vodafone",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows Mobile OS",
-      "marketingName": "Windows Mobile OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M3100; OpVer 14.123.1.614)"
-    },
-    "device": {
-      "deviceName": "M3100",
-      "marketingName": "M3100",
-      "manufacturer": "htc",
-      "brand": "spv",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M700; OpVer 19.123.2.733)"
-    },
-    "device": {
-      "deviceName": "M700",
-      "marketingName": "M700",
-      "manufacturer": "htc",
-      "brand": "spv",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; MDA Vario/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)"
-    },
-    "device": {
-      "deviceName": "MDA Vario",
-      "marketingName": "MDA Vario",
-      "manufacturer": "htc",
-      "brand": "t-mobile",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Sprint:PPC-6700) [en]"
-    },
-    "device": {
-      "deviceName": "Apache",
-      "marketingName": "6700",
-      "manufacturer": "htc",
-      "brand": "sprint",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Windows Mobile; Opera Mini/5.1.21595/34.1606; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)",
-      "x-operamini-features": "httpping, advanced, routing, file_system, download",
-      "x-operamini-phone": "HTC # HD2",
-      "x-operamini-phone-ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)"
+      "user-agent": "HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/7.6.1.82/31/400"
     },
     "device": {
       "deviceName": "T8585",
@@ -249,12 +17,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "Internet Explorer",
       "modus": null,
-      "version": "5.1.21595",
-      "manufacturer": "opera",
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Windows CE",
@@ -264,25 +32,25 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
     }
   },
   {
     "headers": {
-      "user-agent": "HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)"
+      "user-agent": "HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)"
     },
     "device": {
-      "deviceName": "P3700",
-      "marketingName": "Touch Diamond",
+      "deviceName": "T9193",
+      "marketingName": "HD2",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
-        "width": 640,
+        "width": 800,
         "height": 480,
         "touch": true,
-        "size": 2.8
+        "size": 4.3
       },
       "type": "feature-phone"
     },
@@ -309,142 +77,28 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Pro T7576)"
+      "user-agent": "HTC KAISER PROFILE"
     },
     "device": {
-      "deviceName": "T7576",
-      "marketingName": "7 Pro",
+      "deviceName": "Kaiser",
+      "marketingName": "Kaiser",
       "manufacturer": "htc",
-      "brand": "htc",
+      "brand": "softbank",
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 320,
+        "height": 240,
         "touch": true,
-        "size": 3.6
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": "7.5.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "3.1.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8107)"
-    },
-    "device": {
-      "deviceName": "X310e",
-      "marketingName": "Titan",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Windows Phone Search",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": "7.10.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;8107)"
-    },
-    "device": {
-      "deviceName": "T8698",
-      "marketingName": "7 Mozart",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 3.7
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Windows Phone Search",
-      "modus": null,
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": "7.10.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTC_X7500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
-    },
-    "device": {
-      "deviceName": "X7500",
-      "marketingName": "Advantage",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": false,
-        "size": 5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "6.12.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -454,18 +108,18 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.5.723 Opera/9.50 (Microsoft Windows 6.5; U;de)"
+      "user-agent": "HTC-MERCURY"
     },
     "device": {
-      "deviceName": "T3333",
-      "marketingName": "Touch2",
+      "deviceName": "Mercury",
+      "marketingName": "Mercury",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
@@ -477,33 +131,33 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera",
+      "name": null,
       "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
+      "name": "Android",
+      "marketingName": "Android",
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "HTC_Touch_HD_T8282 Opera/10.00 (Windows NT 5.1; U; en)"
+      "user-agent": "HTC-mwp6985/UCWEB2.0.0.149/47/32079"
     },
     "device": {
-      "deviceName": "T8282",
-      "marketingName": "Touch HD",
+      "deviceName": "Spark",
+      "marketingName": "7 Trophy",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
@@ -515,39 +169,39 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera",
+      "name": "UC Browser",
       "modus": null,
-      "version": "10.00.0",
-      "manufacturer": "opera",
+      "version": "2.0.0.149",
+      "manufacturer": "ucweb",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
       "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda Orbit; 240x320)"
+      "user-agent": "HTC P3300/1.35.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
     },
     "device": {
-      "deviceName": "Xda Orbit",
-      "marketingName": "Xda Orbit",
+      "deviceName": "P3300",
+      "marketingName": "P3300",
       "manufacturer": "htc",
-      "brand": "o2",
+      "brand": "htc",
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone"
@@ -575,7 +229,45 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "HTC P3350"
+    },
+    "device": {
+      "deviceName": "P3350",
+      "marketingName": "Love",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC P3600"
     },
     "device": {
       "deviceName": "P3600",
@@ -591,12 +283,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": null,
       "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -606,20 +298,20 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "PPC; 240x320; Xda Orbit/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; Xda Orbit/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "HTC P3600i"
     },
     "device": {
-      "deviceName": "Xda Orbit",
-      "marketingName": "Xda Orbit",
+      "deviceName": "P3600",
+      "marketingName": "Trinity",
       "manufacturer": "htc",
-      "brand": "o2",
+      "brand": "softbank",
       "display": {
         "width": 320,
         "height": 240,
@@ -629,12 +321,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": null,
       "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -644,52 +336,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.7 (Windows Mobile; Sprint:PPC-6700; Opera Mobi/35166; U; en) Presto/2.2.1"
-    },
-    "device": {
-      "deviceName": "Apache",
-      "marketingName": "6700",
-      "manufacturer": "htc",
-      "brand": "sprint",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "35166.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows Mobile OS",
-      "marketingName": "Windows Mobile OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.2.1",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.5 (Microsoft Windows; PPC; 240x320; HTC_P3650; Opera Mobi/2392; U; en)"
+      "user-agent": "HTC P3650"
     },
     "device": {
       "deviceName": "P3650",
@@ -705,12 +359,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mobile",
+      "name": null,
       "modus": null,
-      "version": "2392.0.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -720,18 +374,18 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.4.1.61/31/800"
+      "user-agent": "HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
     },
     "device": {
-      "deviceName": "T3335",
-      "marketingName": "Touch2",
+      "deviceName": "P3650",
+      "marketingName": "Touch Cruise",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
@@ -743,12 +397,164 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "UC Browser",
+      "name": "IEMobile",
       "modus": null,
-      "version": "7.4.1.61",
-      "manufacturer": "ucweb",
+      "version": "7.11.0",
+      "manufacturer": "microsoft",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC P3700; PPC; 480x640; OpVer 30.211.10.701 Opera/9.50(Microsoft Windows 6.1; U; en)"
+    },
+    "device": {
+      "deviceName": "P3700",
+      "marketingName": "Touch Diamond",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "opera",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 6.1",
+      "marketingName": "Windows 7",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "htc_p3700/2.0 (03.92) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "P3700",
+      "marketingName": "Touch Diamond",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en)"
+    },
+    "device": {
+      "deviceName": "P3700",
+      "marketingName": "Touch Diamond",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 5.1",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTCP4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)"
+    },
+    "device": {
+      "deviceName": "P4350",
+      "marketingName": "Herald",
+      "manufacturer": "htc",
+      "brand": "vodafone",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
     },
     "os": {
       "name": "Windows Mobile OS",
@@ -765,25 +571,405 @@
   },
   {
     "headers": {
-      "user-agent": "mozilla/5.0 (linux; u; android 2.2; de-de; htc hd2 build/frg33) applewebkit/533.1 (khtml, like gecko) version/4.0 mobile safari/533.1"
+      "user-agent": "HTC-P4550"
     },
     "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
+      "deviceName": "P4550",
+      "marketingName": "TyTN II",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC-P4550-orange/PPC; 240x320; OpVer 24.103.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
+    },
+    "device": {
+      "deviceName": "P4550",
+      "marketingName": "TyTN II",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+    },
+    "device": {
+      "deviceName": "P4550",
+      "marketingName": "TyTN II",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.6.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC P6300"
+    },
+    "device": {
+      "deviceName": "P6300",
+      "marketingName": "P6300",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC-P6500"
+    },
+    "device": {
+      "deviceName": "P6500",
+      "marketingName": "P6500",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC-Radar/UCWEB2.2.0.157/47/32079"
+    },
+    "device": {
+      "deviceName": "Radar",
+      "marketingName": "Radar",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": 4.3
+        "size": 3.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "2.2.0.157",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC-Radar 4G/UCWEB2.4.0.188/47/999"
+    },
+    "device": {
+      "deviceName": "Radar 4G",
+      "marketingName": "Radar 4G",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "2.4.0.188",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC-Radar C110e/UCWEB2.2.0.157/47/355"
+    },
+    "device": {
+      "deviceName": "Radar C110e",
+      "marketingName": "Radar C110e",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "2.2.0.157",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC S620/5.2.968/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 (compatible; MSIE 6.0; Windows CE; Smartphone)"
+    },
+    "device": {
+      "deviceName": "S620",
+      "marketingName": "Excalibur",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC S710"
+    },
+    "device": {
+      "deviceName": "S710",
+      "marketingName": "S710",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; zh-cn; HTC-S710d/1.08.1401.0) AndroidWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "S710",
+      "marketingName": "S710",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
       "name": "Android Webkit",
       "modus": null,
-      "version": null,
+      "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -803,28 +989,28 @@
   },
   {
     "headers": {
-      "user-agent": "HTC_Touch_HD2_T8585 Opera/10.00 (Windows NT 5.1; U; de)"
+      "user-agent": "HTC S740 PROFILE"
     },
     "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
+      "deviceName": "S740",
+      "marketingName": "S740",
       "manufacturer": "htc",
-      "brand": "htc",
+      "brand": "softbank",
       "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera",
+      "name": null,
       "modus": null,
-      "version": "10.00.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -834,18 +1020,208 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
+      "user-agent": "htc s740 UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "S620",
-      "marketingName": "Excalibur",
+      "deviceName": "S740",
+      "marketingName": "S740",
+      "manufacturer": "htc",
+      "brand": "softbank",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_SMART_F3188 MOZILLA"
+    },
+    "device": {
+      "deviceName": "F3188",
+      "marketingName": "Smart",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Smart_F3188"
+    },
+    "device": {
+      "deviceName": "F3188",
+      "marketingName": "Smart",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Smart_F3188 Mozilla/5.0 (like Gecko) Obigo/Q7"
+    },
+    "device": {
+      "deviceName": "F3188",
+      "marketingName": "Smart",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Smart_F3188+UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "F3188",
+      "marketingName": "Smart",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Snap_S521"
+    },
+    "device": {
+      "deviceName": "S510",
+      "marketingName": "Snap",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
@@ -857,342 +1233,152 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": null,
       "modus": null,
-      "version": "6.12.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [de]"
+      "user-agent": "HTC_Snap_S523"
     },
     "device": {
-      "deviceName": "P3650",
-      "marketingName": "Touch Cruise",
+      "deviceName": "S510",
+      "marketingName": "Snap",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 320,
         "height": 240,
-        "touch": true,
-        "size": 2.8
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mobile",
+      "name": null,
       "modus": null,
-      "version": "8.65.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Xda_orbit_2/240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+      "user-agent": "HTC-ST7377"
     },
     "device": {
-      "deviceName": "Xda Orbit II",
-      "marketingName": "Xda Orbit II",
-      "manufacturer": "htc",
-      "brand": "o2",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.6.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Xda orbit; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
-    },
-    "device": {
-      "deviceName": "Xda Orbit",
-      "marketingName": "Xda Orbit",
-      "manufacturer": "htc",
-      "brand": "o2",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "6.12.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTC_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)"
-    },
-    "device": {
-      "deviceName": "T8282",
-      "marketingName": "Touch HD",
+      "deviceName": "ST7377",
+      "marketingName": "Tilt 2",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": 3.8
+        "size": 3.6
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera",
+      "name": null,
       "modus": null,
-      "version": "9.7.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
       "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.5 (Microsoft Windows; PPC; 640x480; HTC_X7510/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobile/405; U; en)"
+      "user-agent": "HTC-T5555"
     },
     "device": {
-      "deviceName": "X7510",
-      "marketingName": "Advantage",
+      "deviceName": "T5555",
+      "marketingName": "HD mini",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)"
+    },
+    "device": {
+      "deviceName": "T7272",
+      "marketingName": "TyTn III",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 640,
         "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.5.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.5 (Microsoft Windows; PPC; 640x480; HTC_X7510/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/1114; U; nl)"
-    },
-    "device": {
-      "deviceName": "X7510",
-      "marketingName": "Advantage",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "1114.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
-    },
-    "device": {
-      "deviceName": "Touch Dual",
-      "marketingName": "Touch Dual",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.6
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.6.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTC_Touch_HD Opera/9.50 (Windows NT 5.1; U; de)"
-    },
-    "device": {
-      "deviceName": "Touch HD",
-      "marketingName": "Touch HD",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 3.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
-    },
-    "device": {
-      "deviceName": "P4350",
-      "marketingName": "Herald",
-      "manufacturer": "htc",
-      "brand": "vodafone",
-      "display": {
-        "width": 320,
-        "height": 240,
         "touch": false,
         "size": 2.8
       },
@@ -1201,7 +1387,7 @@
     "browser": {
       "name": "IEMobile",
       "modus": null,
-      "version": "6.12.0",
+      "version": "8.12.0",
       "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
@@ -1221,89 +1407,13 @@
   },
   {
     "headers": {
-      "user-agent": "HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; en)"
+      "user-agent": "HTC-T7380"
     },
     "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
+      "deviceName": "T7380",
+      "marketingName": "T7380",
       "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.7 (Windows NT 5.1; HTC_HD2/1.0; U; de)"
-    },
-    "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.7.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; MDA Vario/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "TyTN",
-      "marketingName": "MDA Vario II",
-      "manufacturer": "htc",
-      "brand": "t-mobile",
+      "brand": "sprint",
       "display": {
         "width": 320,
         "height": 240,
@@ -1313,50 +1423,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": null,
       "modus": null,
-      "version": "7.6.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows Mobile OS",
-      "marketingName": "Windows Mobile OS",
       "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [de]"
-    },
-    "device": {
-      "deviceName": "X7500",
-      "marketingName": "Advantage",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": false,
-        "size": 5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "8.65.0",
-      "manufacturer": "opera",
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -1366,52 +1438,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5)"
-    },
-    "device": {
-      "deviceName": "T8282",
-      "marketingName": "Touch HD",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 3.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows Phone OS 6.5",
-      "marketingName": "Windows Phone OS 6.5",
-      "version": "6.5.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 2.3.7; HTC HD2 Build/GRI40) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31 OPR/14.0.1074.57768"
+      "user-agent": "HTC-T8585"
     },
     "device": {
       "deviceName": "T8585",
@@ -1427,12 +1461,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mobile",
+      "name": null,
       "modus": null,
-      "version": "14.0.1074.57768",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -1442,146 +1476,450 @@
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "apple"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; MDA_compact_IV/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "HTC-TITAN X310e/UCWEB2.1.0.155/47/32079"
     },
     "device": {
-      "deviceName": "Magician",
-      "marketingName": "MDA Compact",
-      "manufacturer": "htc",
-      "brand": "t-mobile",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.50 (Windows NT 5.1; MDA_Vario_IV/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; U; de)"
-    },
-    "device": {
-      "deviceName": "MDA Vario",
-      "marketingName": "MDA Vario",
-      "manufacturer": "htc",
-      "brand": "t-mobile",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; HTC HD2 Build/IMM76I) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
-    },
-    "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
+      "deviceName": "X310e",
+      "marketingName": "Titan",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": 4.3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95/31/352"
-    },
-    "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
+        "size": 4.7
       },
       "type": "feature-phone"
     },
     "browser": {
       "name": "UC Browser",
       "modus": null,
-      "version": "7.8.0.95",
+      "version": "2.1.0.155",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC TOUCH 3G T3232 PROFILE/MIDP-20 CONFIGURATION/CLDC-11 UNTRUSTED/10"
+    },
+    "device": {
+      "deviceName": "T3232",
+      "marketingName": "Touch 3G",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "htc touch 3g t3232/UC Browser7.9.0.102/69/352 UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "T3232",
+      "marketingName": "Touch 3G",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.102",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC Touch Diamond P3700 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "P3700",
+      "marketingName": "Touch Diamond",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "htc touch diamond p3700 UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "P3700",
+      "marketingName": "Touch Diamond",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC Touch HD T8282 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "T8282",
+      "marketingName": "Touch HD",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC Touch Pro T7272 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "T7272",
+      "marketingName": "TyTn III",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC TOUCH VIVA T2223 PROFILE"
+    },
+    "device": {
+      "deviceName": "T2223",
+      "marketingName": "Touch Viva",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC Touch Viva T2223 / YouTube-3.0"
+    },
+    "device": {
+      "deviceName": "T2223",
+      "marketingName": "Touch Viva",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "htc touch viva t2223 UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "T2223",
+      "marketingName": "Touch Viva",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch_3G_T3232"
+    },
+    "device": {
+      "deviceName": "T3232",
+      "marketingName": "Touch 3G",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82"
+    },
+    "device": {
+      "deviceName": "T3232",
+      "marketingName": "Touch 3G",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.6.1.82",
       "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"
@@ -1601,89 +1939,13 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; MDA Vario/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; nl)"
     },
     "device": {
-      "deviceName": "TyTN II",
-      "marketingName": "MDA Vario III",
+      "deviceName": "T3232",
+      "marketingName": "Touch 3G",
       "manufacturer": "htc",
-      "brand": "t-mobile",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows Mobile OS",
-      "marketingName": "Windows Mobile OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; MDA compact/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "MDA Compact III",
-      "marketingName": "MDA Compact III",
-      "manufacturer": "htc",
-      "brand": "t-mobile",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.6.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.50 (Windows NT 5.1; MDA_compact_IV/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; U; de)"
-    },
-    "device": {
-      "deviceName": "Magician",
-      "marketingName": "MDA Compact",
-      "manufacturer": "htc",
-      "brand": "t-mobile",
+      "brand": "htc",
       "display": {
         "width": 320,
         "height": 240,
@@ -1715,87 +1977,11 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/1.4.0 (Linux; U; Android 2.3.7; HTC HD2 Build/GRI40)"
+      "user-agent": "HTC_Touch_HD_T8282"
     },
     "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.4.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x320; VZW; UTStar-XV6800; Window Mobile 6.1 Professional;"
-    },
-    "device": {
-      "deviceName": "XV6800",
-      "marketingName": "XV6800",
-      "manufacturer": "htc",
-      "brand": "utstarcom",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8107)"
-    },
-    "device": {
-      "deviceName": "Radar C110e",
-      "marketingName": "Radar C110e",
+      "deviceName": "T8282",
+      "marketingName": "Touch HD",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
@@ -1807,48 +1993,162 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Windows Phone Search",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "microsoft",
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": "7.10.0",
-      "manufacturer": "microsoft",
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "HTC_Touch_Pro"
     },
     "device": {
-      "deviceName": "S710",
-      "marketingName": "S710",
+      "deviceName": "Touch Pro",
+      "marketingName": "Touch Pro",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch_Pro_T7272"
+    },
+    "device": {
+      "deviceName": "T7272",
+      "marketingName": "TyTn III",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch_Viva_T2223"
+    },
+    "device": {
+      "deviceName": "T2223",
+      "marketingName": "Touch Viva",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 320,
         "height": 240,
-        "touch": false,
-        "size": 2.4
+        "touch": true,
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": null,
       "modus": null,
-      "version": "6.12.0",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
       "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; en)"
+    },
+    "device": {
+      "deviceName": "T2223",
+      "marketingName": "Touch Viva",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -1860,6 +2160,196 @@
       "bits": null
     },
     "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch2"
+    },
+    "device": {
+      "deviceName": "T3335",
+      "marketingName": "Touch2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch2_T3320"
+    },
+    "device": {
+      "deviceName": "T3335",
+      "marketingName": "Touch2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_TOUCH2_T3333 PROFILE"
+    },
+    "device": {
+      "deviceName": "T3335",
+      "marketingName": "Touch2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch2_T3333"
+    },
+    "device": {
+      "deviceName": "T3335",
+      "marketingName": "Touch2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/8.0.4.121/50/400"
+    },
+    "device": {
+      "deviceName": "T3335",
+      "marketingName": "Touch2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
       "name": "Trident",
       "version": null,
       "manufacturer": "microsoft"
@@ -1867,18 +2357,94 @@
   },
   {
     "headers": {
-      "user-agent": "HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+      "user-agent": "HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; en)"
     },
     "device": {
-      "deviceName": "P6500",
-      "marketingName": "P6500",
+      "deviceName": "T3335",
+      "marketingName": "Touch2",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": 3.5
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_Touch2_T3335"
+    },
+    "device": {
+      "deviceName": "T3335",
+      "marketingName": "Touch2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+    },
+    "device": {
+      "deviceName": "Touch Dual",
+      "marketingName": "Touch Dual",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.6
       },
       "type": "feature-phone"
     },
@@ -1905,11 +2471,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.04.162.1"
+      "user-agent": "HTC TyTN || P4550"
     },
     "device": {
-      "deviceName": "Mercury",
-      "marketingName": "Mercury",
+      "deviceName": "P4550",
+      "marketingName": "TyTN II",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
@@ -1921,33 +2487,33 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": null,
       "modus": null,
-      "version": "6.8.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.162.5"
+      "user-agent": "HTC_TYTN_II"
     },
     "device": {
-      "deviceName": "Kaiser",
-      "marketingName": "Kaiser",
+      "deviceName": "TyTN II",
+      "marketingName": "TyTN II",
       "manufacturer": "htc",
       "brand": "softbank",
       "display": {
@@ -1959,12 +2525,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": null,
       "modus": null,
-      "version": "7.6.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -1974,14 +2540,204 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_Elf/1.15.162.1"
+      "user-agent": "HTC_TyTN_II"
+    },
+    "device": {
+      "deviceName": "TyTN II",
+      "marketingName": "TyTN II",
+      "manufacturer": "htc",
+      "brand": "softbank",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC-X7500"
+    },
+    "device": {
+      "deviceName": "X7500",
+      "marketingName": "Advantage",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": false,
+        "size": 5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC-X7510"
+    },
+    "device": {
+      "deviceName": "X7510",
+      "marketingName": "Advantage",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WindowsMobile7.http.HTC-7 Mozart-2250.09.12505.111-0004"
+    },
+    "device": {
+      "deviceName": "T8698",
+      "marketingName": "7 Mozart",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows Mobile 6.1; U; de)[b][/b]"
+    },
+    "device": {
+      "deviceName": "P3700",
+      "marketingName": "Touch Diamond",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_Elf/1.11.164.2"
     },
     "device": {
       "deviceName": "Elf",
@@ -2019,28 +2775,28 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.11.162.1"
+      "user-agent": "/VODAFONE/HTC_HD_MINI/081162MASD (78815) UNTRUSTED/10"
     },
     "device": {
-      "deviceName": "Touch Pro",
-      "marketingName": "Touch Pro",
+      "deviceName": "T5555",
+      "marketingName": "HD mini",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
-        "width": 640,
-        "height": 480,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": 2.8
+        "size": 3.2
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": null,
       "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows CE",
@@ -2050,35 +2806,35 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/2.09.162.1"
+      "user-agent": "WhatsApp/2.11.92 Android/4.0.4 Device/HTC-HTC_HD2"
     },
     "device": {
-      "deviceName": "P3700",
-      "marketingName": "Touch Diamond",
+      "deviceName": "T8585",
+      "marketingName": "HD2",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
-        "width": 640,
+        "width": 800,
         "height": 480,
         "touch": true,
-        "size": 2.8
+        "size": 4.3
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": "WhatsApp",
       "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
+      "version": "2.11.92",
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Windows CE",
@@ -2088,166 +2844,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Trident",
+      "name": null,
       "version": null,
-      "manufacturer": "microsoft"
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Vodafone/1.0/HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; nl)"
-    },
-    "device": {
-      "deviceName": "Touch Pro",
-      "marketingName": "Touch Pro",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vodafone/1.0/HTC_Mercury/1.23.163.3/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)"
-    },
-    "device": {
-      "deviceName": "Mercury",
-      "marketingName": "Mercury",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; nl)"
-    },
-    "device": {
-      "deviceName": "P3700",
-      "marketingName": "Touch Diamond",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; fr)"
-    },
-    "device": {
-      "deviceName": "P3700",
-      "marketingName": "Touch Diamond",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.162.2"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.161.1"
     },
     "device": {
       "deviceName": "Kaiser",
@@ -2285,7 +2889,539 @@
   },
   {
     "headers": {
-      "user-agent": "Vodafone/1.0/HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; de)"
+      "user-agent": "JBED PROFILE/MIDP-20 CONFIGURATION/CLDC-11 UNTRUSTED/10/VODAFONE/HTC_KAISER/3081610"
+    },
+    "device": {
+      "deviceName": "Kaiser",
+      "marketingName": "Kaiser",
+      "manufacturer": "htc",
+      "brand": "softbank",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MobileKeeper/BASIC/1033/ms_wm6professional/01.06.2718.0001 WindowsMobile6/Windows Mobile 6 Professional/HTC/HTC Kaiser Touch/5.2.23519.3"
+    },
+    "device": {
+      "deviceName": "Kaiser",
+      "marketingName": "Kaiser",
+      "manufacturer": "htc",
+      "brand": "softbank",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_Mercury/3.54.162.2"
+    },
+    "device": {
+      "deviceName": "Mercury",
+      "marketingName": "Mercury",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "P3600",
+      "marketingName": "Trinity",
+      "manufacturer": "htc",
+      "brand": "softbank",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.8.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650)"
+    },
+    "device": {
+      "deviceName": "P3650",
+      "marketingName": "Touch Cruise",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS710;Smartphone;240x320"
+    },
+    "device": {
+      "deviceName": "S710",
+      "marketingName": "S710",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.6.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UNTRUSTED10 HTC-ST7377"
+    },
+    "device": {
+      "deviceName": "ST7377",
+      "marketingName": "Tilt 2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UNTRUSTED/1.0 HTC Touch 3G T3232 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "T3232",
+      "marketingName": "Touch 3G",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MQQBrowser/Mini2.4 (HTC Touch Diamond P3700)"
+    },
+    "device": {
+      "deviceName": "P3700",
+      "marketingName": "Touch Diamond",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "QQbrowser Mini",
+      "modus": null,
+      "version": "2.4.0",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Vodafone/1.0/HTC Touch HD T8282/1.14.163.2 (28253) Opera/9.50 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)"
+    },
+    "device": {
+      "deviceName": "T8282",
+      "marketingName": "Touch HD",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC Touch Pro"
+    },
+    "device": {
+      "deviceName": "Touch Pro",
+      "marketingName": "Touch Pro",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.11.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MobileKeeper/BASIC/1033/ms_wm6professional/01.06.2718.0001 WindowsMobile6/Windows Mobile 6 Professional/HTC/HTC Touch Pro T7272/5.2.23569.3"
+    },
+    "device": {
+      "deviceName": "T7272",
+      "marketingName": "TyTn III",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.14.166.4 (50207)"
+    },
+    "device": {
+      "deviceName": "Touch Pro",
+      "marketingName": "Touch Pro",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MQQBrowser/Mini2.8 (HTC Touch Viva T2223)"
+    },
+    "device": {
+      "deviceName": "T2223",
+      "marketingName": "Touch Viva",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "QQbrowser Mini",
+      "modus": null,
+      "version": "2.8.0",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Vodafone/1.0/HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; en)"
     },
     "device": {
       "deviceName": "Touch Pro",
@@ -2323,56 +3459,94 @@
   },
   {
     "headers": {
-      "user-agent": "Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; de)"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_VPACompactIV/4.14.162.2"
     },
     "device": {
-      "deviceName": "P3700",
-      "marketingName": "Touch Diamond",
+      "deviceName": "VPA Compact IV",
+      "marketingName": "Herald",
       "manufacturer": "htc",
-      "brand": "htc",
+      "brand": "vodafone",
       "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
+        "width": 320,
+        "height": 240,
+        "touch": false,
         "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera",
+      "name": "IEMobile",
       "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
       "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": "Trident",
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "microsoft"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Xda terra; 240x320"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; Sprint:PPC-6700; PPC; 240x320)"
     },
     "device": {
-      "deviceName": "Xda Terra",
-      "marketingName": "Xda Terra",
+      "deviceName": "Apache",
+      "marketingName": "6700",
       "manufacturer": "htc",
-      "brand": "o2",
+      "brand": "sprint",
       "display": {
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": 2.7
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Sprint:PPC6800"
+    },
+    "device": {
+      "deviceName": "PPC6800",
+      "marketingName": "PPC6800",
+      "manufacturer": "htc",
+      "brand": "sprint",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
       },
       "type": "feature-phone"
     },
@@ -2399,51 +3573,13 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/1.2.0 (Linux; U; Android 2.2.1; HTC HD2 Build/FRF91)"
+      "user-agent": "HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
     },
     "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
+      "deviceName": "TyTN II",
+      "marketingName": "TyTN II",
       "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Xda orbit; 240x320; PPC)"
-    },
-    "device": {
-      "deviceName": "Xda Orbit",
-      "marketingName": "Xda Orbit",
-      "manufacturer": "htc",
-      "brand": "o2",
+      "brand": "softbank",
       "display": {
         "width": 320,
         "height": 240,
@@ -2453,9 +3589,9 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Internet Explorer",
+      "name": "IEMobile",
       "modus": null,
-      "version": "6.0.0",
+      "version": "7.6.0",
       "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
@@ -2475,25 +3611,25 @@
   },
   {
     "headers": {
-      "user-agent": "HTC_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; de)"
+      "user-agent": "HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; de)"
     },
     "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
+      "deviceName": "T5555",
+      "marketingName": "HD mini",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": 4.3
+        "size": 3.2
       },
       "type": "feature-phone"
     },
     "browser": {
       "name": "Opera",
       "modus": null,
-      "version": "9.70.0",
+      "version": "9.7.0",
       "manufacturer": "opera",
       "bits": null,
       "type": "browser"
@@ -2513,78 +3649,154 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mozart)"
+      "user-agent": "mozilla/4.0 (compatible; msie 6.0; windows nt 5.1; windows phone 6.5 htc_touch2/1.0)"
     },
     "device": {
-      "deviceName": "T8698",
-      "marketingName": "7 Mozart",
+      "deviceName": "T3335",
+      "marketingName": "Touch2",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 320,
+        "height": 240,
         "touch": true,
-        "size": 3.7
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": "Internet Explorer",
       "modus": null,
-      "version": "9.0.0",
+      "version": null,
       "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": "7.5.0",
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": "6.5.0",
       "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
       "name": "Trident",
-      "version": "5.0.0",
+      "version": null,
       "manufacturer": "microsoft"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e)"
+      "user-agent": "HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65"
     },
     "device": {
-      "deviceName": "X310e",
-      "marketingName": "Titan",
+      "deviceName": "T8585",
+      "marketingName": "HD2",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": 4.7
+        "size": 4.3
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": "UC Browser",
       "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "microsoft",
+      "version": "7.4.0.65",
+      "manufacturer": "ucweb",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": "7.5.0",
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
       "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
       "name": "Trident",
-      "version": "5.0.0",
+      "version": null,
       "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTC-ST7377/1.59.502.3 (67150) Opera/9.50 (Windows NT 5.1; U; en) UP.Link/6.3.1.17.0"
+    },
+    "device": {
+      "deviceName": "ST7377",
+      "marketingName": "Tilt 2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) Alltel HTC Touch Pro"
+    },
+    "device": {
+      "deviceName": "Touch Pro",
+      "marketingName": "Touch Pro",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
     }
   }
 ]

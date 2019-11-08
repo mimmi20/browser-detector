@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "PhilipsX331 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U; xx) Presto/2.5.28 Version/10.10"
-    },
-    "device": {
-      "deviceName": "X331",
-      "marketingName": "X331",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "10.10.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.28",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "PhilipsW715/Qualcomm Brew MP 1.0.3/WAP-2.0/MIDP-2.0/CLDC-1.1"
     },
     "device": {
@@ -73,6 +35,44 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PhilipsX331 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U; xx) Presto/2.5.28 Version/10.10"
+    },
+    "device": {
+      "deviceName": "X331",
+      "marketingName": "X331",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "10.10.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.5.28",
+      "manufacturer": "opera"
     }
   }
 ]

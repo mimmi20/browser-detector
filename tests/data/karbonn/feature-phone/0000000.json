@@ -115,11 +115,11 @@
   },
   {
     "headers": {
-      "user-agent": "WAP_Browser_Karbonn_Kphone1 (MRE/3.1.00(1536);MAUI/NN_KPHONE1_NWKPD_MT6260_V006_20130928_1729;BDATE/2013/11/20 16:28;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/WAP_Browser_Karbonn_Kphone1;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/"
+      "user-agent": "WAP Browser Karbonn K52*/1.0.0"
     },
     "device": {
-      "deviceName": "Kphone 1",
-      "marketingName": "Kphone 1",
+      "deviceName": "K52 Star",
+      "marketingName": "K52 Star",
       "manufacturer": "karbonn",
       "brand": "karbonn",
       "display": {
@@ -127,82 +127,6 @@
         "height": 240,
         "touch": true,
         "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WAP_Browser_Karbonn_K725 (MRE/3.1.00(1536);MAUI/nn_K725_V006;BDATE/2014/05/08 15:46;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/WAP_Browser_Karbonn_K725;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/00"
-    },
-    "device": {
-      "deviceName": "K725",
-      "marketingName": "K725",
-      "manufacturer": "karbonn",
-      "brand": "karbonn",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WAP Browser Karbonn K80/1.0.0"
-    },
-    "device": {
-      "deviceName": "K80",
-      "marketingName": "K80",
-      "manufacturer": "karbonn",
-      "brand": "karbonn",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
       },
       "type": "feature-phone"
     },
@@ -229,18 +153,94 @@
   },
   {
     "headers": {
-      "user-agent": "WAP Browser Karbonn K58/1.0.0"
+      "user-agent": "Maui_Browser_Karbonn_K9 (MRE/3.1.00(1536);MAUI/nn_K9NEWMJ_V0020;BDATE/2014/05/15 09:41;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/Maui_Browser_Karbonn_K9;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;M) Karbonn_K9NEWMJ_V0020 Release/2014.05.15 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US"
     },
     "device": {
-      "deviceName": "K58",
-      "marketingName": "K58",
+      "deviceName": "K9",
+      "marketingName": "K9",
       "manufacturer": "karbonn",
       "brand": "karbonn",
       "display": {
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": 2.8
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Karbonn K123 WAP Browser/1.0.0"
+    },
+    "device": {
+      "deviceName": "K123",
+      "marketingName": "K123",
+      "manufacturer": "karbonn",
+      "brand": "karbonn",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Karbonn K180/WAP Browser"
+    },
+    "device": {
+      "deviceName": "K180",
+      "marketingName": "K180",
+      "manufacturer": "karbonn",
+      "brand": "karbonn",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
       },
       "type": "feature-phone"
     },
@@ -305,94 +305,94 @@
   },
   {
     "headers": {
-      "user-agent": "Karbonn K180/WAP Browser"
+      "user-agent": "WAP Browser Karbonn K58/1.0.0"
     },
     "device": {
-      "deviceName": "K180",
-      "marketingName": "K180",
-      "manufacturer": "karbonn",
-      "brand": "karbonn",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Karbonn K123 WAP Browser/1.0.0"
-    },
-    "device": {
-      "deviceName": "K123",
-      "marketingName": "K123",
-      "manufacturer": "karbonn",
-      "brand": "karbonn",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Maui_Browser_Karbonn_K9 (MRE/3.1.00(1536);MAUI/nn_K9NEWM_V0013;BDATE/2013/11/22 13:54;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/Maui_Browser_Karbonn_K9;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SP"
-    },
-    "device": {
-      "deviceName": "K9",
-      "marketingName": "K9",
+      "deviceName": "K58",
+      "marketingName": "K58",
       "manufacturer": "karbonn",
       "brand": "karbonn",
       "display": {
         "width": 320,
         "height": 240,
         "touch": true,
-        "size": 2.6
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WAP Browser Karbonn K80/1.0.0"
+    },
+    "device": {
+      "deviceName": "K80",
+      "marketingName": "K80",
+      "manufacturer": "karbonn",
+      "brand": "karbonn",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WAP_Browser_Karbonn_K725 (MRE/3.1.00(1536);MAUI/nn_K725_V006;BDATE/2014/05/08 15:46;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/WAP_Browser_Karbonn_K725;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/00"
+    },
+    "device": {
+      "deviceName": "K725",
+      "marketingName": "K725",
+      "manufacturer": "karbonn",
+      "brand": "karbonn",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
       },
       "type": "feature-phone"
     },
@@ -419,11 +419,11 @@
   },
   {
     "headers": {
-      "user-agent": "WAP Browser Karbonn K52*/1.0.0"
+      "user-agent": "WAP_Browser_Karbonn_Kphone1 (MRE/3.1.00(1536);MAUI/NN_KPHONE1_NWKPD_MT6260_V006_20130928_1729;BDATE/2013/11/20 16:28;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/WAP_Browser_Karbonn_Kphone1;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/"
     },
     "device": {
-      "deviceName": "K52 Star",
-      "marketingName": "K52 Star",
+      "deviceName": "Kphone 1",
+      "marketingName": "Kphone 1",
       "manufacturer": "karbonn",
       "brand": "karbonn",
       "display": {
@@ -435,7 +435,7 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "WAP Browser",
+      "name": "MAUI Wap Browser",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",

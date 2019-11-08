@@ -1,26 +1,26 @@
 [
   {
     "headers": {
-      "user-agent": "TXT8010/T05_0 UP.Browser/6.2.3.2 (GUI) MMP/2.0 Novarra-Vision/8.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 320x240; VZW; UTStar-XV6175; Window Mobile 6.1 Standard;"
     },
     "device": {
-      "deviceName": "TXT8010",
-      "marketingName": "Blitz",
+      "deviceName": "XV6175",
+      "marketingName": "XV6175",
       "manufacturer": "utstarcom",
       "brand": "utstarcom",
       "display": {
         "width": 220,
         "height": 176,
         "touch": false,
-        "size": 2.2
+        "size": null
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Openwave Mobile Browser",
+      "name": "IEMobile",
       "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
+      "version": "8.12.0",
+      "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
     },
@@ -32,47 +32,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "Trident",
       "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "TXT8010/T05_0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "TXT8010",
-      "marketingName": "Blitz",
-      "manufacturer": "utstarcom",
-      "brand": "utstarcom",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "microsoft"
     }
   },
   {
@@ -115,82 +77,6 @@
   },
   {
     "headers": {
-      "user-agent": "UTStarcom-G26/1.0 UP.Browser/6.2.2.7.c.1.103 (GUI) MMP/1.0"
-    },
-    "device": {
-      "deviceName": "G26",
-      "marketingName": "G26",
-      "manufacturer": "utstarcom",
-      "brand": "utstarcom",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.2.7",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 320x240; VZW; UTStar-XV6175; Window Mobile 6.1 Standard;"
-    },
-    "device": {
-      "deviceName": "XV6175",
-      "marketingName": "XV6175",
-      "manufacturer": "utstarcom",
-      "brand": "utstarcom",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "8.12.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "utstargz1s/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
     },
     "device": {
@@ -210,6 +96,44 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UTStarcom-G26/1.0 UP.Browser/6.2.2.7.c.1.103 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "G26",
+      "marketingName": "G26",
+      "manufacturer": "utstarcom",
+      "brand": "utstarcom",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.7",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
@@ -257,6 +181,44 @@
       "marketingName": "Android",
       "version": null,
       "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TXT8010/T05_0 UP.Browser/6.2.3.2 (GUI) MMP/2.0 Novarra-Vision/8.0"
+    },
+    "device": {
+      "deviceName": "TXT8010",
+      "marketingName": "Blitz",
+      "manufacturer": "utstarcom",
+      "brand": "utstarcom",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {

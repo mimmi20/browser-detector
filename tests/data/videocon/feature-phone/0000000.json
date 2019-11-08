@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Videocon_S351_Wap Browser"
+    },
+    "device": {
+      "deviceName": "S351",
+      "marketingName": "S351",
+      "manufacturer": "videocon",
+      "brand": "videocon",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Videocon_V1675_Wap) U2/1.0.0 UCBrowser/9.4.0.342 U2/1.0.0 Mobile UNTRUSTED/1.0"
     },
     "device": {
@@ -39,87 +77,11 @@
   },
   {
     "headers": {
-      "user-agent": "Videocon_V1570_Maui Wap Browser/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "Videocon_V1388N_Wap Browser"
     },
     "device": {
-      "deviceName": "V1570",
-      "marketingName": "V1570",
-      "manufacturer": "videocon",
-      "brand": "videocon",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Videocon_V1514_Wap Browser"
-    },
-    "device": {
-      "deviceName": "V1514",
-      "marketingName": "V1514",
-      "manufacturer": "videocon",
-      "brand": "videocon",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Videocon_V1390W_Wap Browser"
-    },
-    "device": {
-      "deviceName": "V1390W",
-      "marketingName": "V1390W",
+      "deviceName": "V1388N",
+      "marketingName": "V1388N",
       "manufacturer": "videocon",
       "brand": "videocon",
       "display": {
@@ -191,11 +153,11 @@
   },
   {
     "headers": {
-      "user-agent": "Videocon_V1388N_Wap Browser"
+      "user-agent": "Videocon_V1390W_Wap Browser"
     },
     "device": {
-      "deviceName": "V1388N",
-      "marketingName": "V1388N",
+      "deviceName": "V1390W",
+      "marketingName": "V1390W",
       "manufacturer": "videocon",
       "brand": "videocon",
       "display": {
@@ -229,23 +191,61 @@
   },
   {
     "headers": {
-      "user-agent": "Videocon_S351_Wap Browser"
+      "user-agent": "Videocon_V1514_Wap Browser"
     },
     "device": {
-      "deviceName": "S351",
-      "marketingName": "S351",
+      "deviceName": "V1514",
+      "marketingName": "V1514",
       "manufacturer": "videocon",
       "brand": "videocon",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
       "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Videocon_V1570_Maui Wap Browser/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "V1570",
+      "marketingName": "V1570",
+      "manufacturer": "videocon",
+      "brand": "videocon",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "MAUI Wap Browser",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
