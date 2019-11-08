@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.40.Dominik2.193 VSTVB MB100 HbbTV/1.2.1 (; ALDINORD; "
-    },
-    "device": {
-      "deviceName": "general Aldi-Nord TV",
-      "marketingName": "general Aldi-Nord TV",
-      "manufacturer": "aldi-nord",
-      "brand": "aldi-nord",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.6.1.40",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.130",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.40.Dominik2.193 VSTVB MB100 HbbTV/1.2.1 (; ALDINORD; MB120; 2.40.9.1; ;) SmartTvA/3.0.0 CE-HTML/1.0 FXM-U2FsdGVkX1+oZew0140/QNxKXuu32h+r21+34s8L+MjqqqQi/PMpJIi/ttX1gk36-END"
-    },
-    "device": {
-      "deviceName": "MB120",
-      "marketingName": "MB120",
-      "manufacturer": "aldi-nord",
-      "brand": "aldi-nord",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.6.1.40",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.130",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.0.39.10 (ALDINORD, Mxl661L32, wireless) VSTVB_MB97"
     },
     "device": {
@@ -149,6 +73,44 @@
       "name": "Presto",
       "version": "2.12.407",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.40.Dominik2.193 VSTVB MB100 HbbTV/1.2.1 (; ALDINORD; MB120; 2.40.9.0; ;) SmartTvA/3.0.0 CE-HTML/1.0 FXM-U2FsdGVkX1+oZew0140/QAK4pcpAPp+4OQnnMXVcn9tRDiF+uaePFDucpWez6C/Y-END"
+    },
+    "device": {
+      "deviceName": "MB120",
+      "marketingName": "MB120",
+      "manufacturer": "aldi-nord",
+      "brand": "aldi-nord",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.6.1.40",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.130",
+      "manufacturer": "google"
     }
   }
 ]

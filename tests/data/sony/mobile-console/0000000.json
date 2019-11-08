@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (PlayStation Vita 3.60) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2"
-    },
-    "device": {
-      "deviceName": "PlayStation Vita",
-      "marketingName": "PlayStation Vita",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 960,
-        "height": 544,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sony",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.73.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (PSP (PlayStation Portable); 2.00)"
-    },
-    "device": {
-      "deviceName": "PlayStation Portable",
-      "marketingName": "PlayStation Portable",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 480,
-        "height": 272,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sony",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/4.0 (PlayStation Portable); 2.00)"
     },
     "device": {
@@ -229,44 +153,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (PlayStation VITA) AppleWebKit/531.3 (KHTML, like Gecko) SCEE/1.0 Nuanti/2.0"
-    },
-    "device": {
-      "deviceName": "PlayStation Vita",
-      "marketingName": "PlayStation Vita",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 960,
-        "height": 544,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sony",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "531.3.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/4.0 (PSP (PlayStation Portable); 2.00) Novarra-Vision/7.3"
     },
     "device": {
@@ -301,6 +187,44 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (PlayStation VITA) AppleWebKit/531.3 (KHTML, like Gecko) SCEE/1.0 Nuanti/2.0"
+    },
+    "device": {
+      "deviceName": "PlayStation Vita",
+      "marketingName": "PlayStation Vita",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 960,
+        "height": 544,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.3.0",
+      "manufacturer": "apple"
     }
   }
 ]

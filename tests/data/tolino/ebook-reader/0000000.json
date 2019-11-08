@@ -9,8 +9,8 @@
       "manufacturer": "tolino",
       "brand": "tolino",
       "display": {
-        "width": 1024,
-        "height": 758,
+        "width": null,
+        "height": null,
         "touch": true,
         "size": 6
       },
@@ -39,7 +39,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-; tolino vision/1.7.3) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 BROWSER OS_BUILD/1098"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-; tolino vision/1.6.2) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 BROWSER OS_BUILD/759"
     },
     "device": {
       "deviceName": "Vision",
@@ -49,6 +49,44 @@
       "display": {
         "width": 1024,
         "height": 768,
+        "touch": true,
+        "size": 6
+      },
+      "type": "ebook-reader"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-; tolino vision 4 HD/1.9.4) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 BROWSER OS_BUILD/1599"
+    },
+    "device": {
+      "deviceName": "Vision 4",
+      "marketingName": "Vision 4",
+      "manufacturer": "tolino",
+      "brand": "tolino",
+      "display": {
+        "width": 1448,
+        "height": 1072,
         "touch": true,
         "size": 6
       },
@@ -111,44 +149,6 @@
       "name": "Blink",
       "version": "30.0.0.0",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-; tolino vision/1.6.2) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 BROWSER OS_BUILD/759"
-    },
-    "device": {
-      "deviceName": "Vision",
-      "marketingName": "Vision",
-      "manufacturer": "tolino",
-      "brand": "tolino",
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 6
-      },
-      "type": "ebook-reader"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
     }
   }
 ]

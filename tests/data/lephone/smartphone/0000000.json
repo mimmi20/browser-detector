@@ -1,78 +1,40 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; lephone T6+V Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 lite baiduboxapp/2.5.0.10 (Baidu; P1 5.1)"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; en-US; LePhone Build/H4602L)"
     },
     "device": {
-      "deviceName": "T6+V",
-      "marketingName": "T6+V",
+      "deviceName": "general Lephone device",
+      "marketingName": "general Lephone device",
       "manufacturer": "lephone",
       "brand": "lephone",
       "display": {
-        "width": 854,
-        "height": 480,
+        "width": null,
+        "height": null,
         "touch": true,
-        "size": 5
+        "size": null
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Baidu Box App Lite",
+      "name": "Android Webkit",
       "modus": null,
-      "version": "2.5.0.10",
-      "manufacturer": "baidu",
+      "version": null,
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.0",
+      "version": "2.2.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "39.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; lephone T2 Build/KTU84M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.0 lite baiduboxapp/3.1.0.10 (Baidu; P1 4.4.3)"
-    },
-    "device": {
-      "deviceName": "T2",
-      "marketingName": "T2",
-      "manufacturer": "lephone",
-      "brand": "lephone",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Baidu Box App Lite",
-      "modus": null,
-      "version": "3.1.0.10",
-      "manufacturer": "baidu",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "T7",
-      "version": "10.0.0",
-      "manufacturer": "baidu"
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {
@@ -115,6 +77,82 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; lephone T2 Build/KTU84M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.0 lite baiduboxapp/3.1.0.10 (Baidu; P1 4.4.3)"
+    },
+    "device": {
+      "deviceName": "T2",
+      "marketingName": "T2",
+      "manufacturer": "lephone",
+      "brand": "lephone",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Baidu Box App Lite",
+      "modus": null,
+      "version": "3.1.0.10",
+      "manufacturer": "baidu",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "T7",
+      "version": "10.0.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; lephone T6+V Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 lite baiduboxapp/2.5.0.10 (Baidu; P1 5.1)"
+    },
+    "device": {
+      "deviceName": "T6+V",
+      "marketingName": "T6+V",
+      "manufacturer": "lephone",
+      "brand": "lephone",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Baidu Box App Lite",
+      "modus": null,
+      "version": "2.5.0.10",
+      "manufacturer": "baidu",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; lephone_W11 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
     },
     "device": {
@@ -149,44 +187,6 @@
       "name": "Blink",
       "version": "63.0.3239.111",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; en-US; LePhone Build/H4602L)"
-    },
-    "device": {
-      "deviceName": "general Lephone device",
-      "marketingName": "general Lephone device",
-      "manufacturer": "lephone",
-      "brand": "lephone",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
     }
   }
 ]

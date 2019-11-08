@@ -115,25 +115,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_E100"
+      "user-agent": "acer_S200 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5)"
     },
     "device": {
-      "deviceName": "E100",
-      "marketingName": "beTouch E100",
+      "deviceName": "S200",
+      "marketingName": "neoTouch S200",
       "manufacturer": "acer",
       "brand": "acer",
       "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 3.2
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "IEMobile",
+      "name": "Internet Explorer",
       "modus": null,
-      "version": "8.12.0",
+      "version": "6.0.0",
       "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
@@ -187,6 +187,44 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_E100"
+    },
+    "device": {
+      "deviceName": "E100",
+      "marketingName": "beTouch E100",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
     }
   }
 ]

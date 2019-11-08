@@ -1,25 +1,25 @@
 [
   {
     "headers": {
-      "user-agent": "ASUS-GalaxyII/1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; ASUS-GalaxyII)"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) ASUS1210/MR2_V3.5.0A"
     },
     "device": {
-      "deviceName": "Galaxy 2",
-      "marketingName": "Galaxy 2",
+      "deviceName": "1210",
+      "marketingName": "1210",
       "manufacturer": "asus",
       "brand": "asus",
       "display": {
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.2
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Internet Explorer",
+      "name": "IEMobile",
       "modus": null,
-      "version": "4.01.0",
+      "version": "6.12.0",
       "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
@@ -39,7 +39,83 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) ASUSP750/1.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) ASUS-GalaxyII/1.0"
+    },
+    "device": {
+      "deviceName": "Galaxy 2",
+      "marketingName": "Galaxy 2",
+      "manufacturer": "asus",
+      "brand": "asus",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOZILLA/40 (COMPATIBLE MSIE 60 WINDOWS CE PPC) ASUS-GALAXYII/10"
+    },
+    "device": {
+      "deviceName": "Galaxy 2",
+      "marketingName": "Galaxy 2",
+      "manufacturer": "asus",
+      "brand": "asus",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "60.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) ASUSP750/1.0"
     },
     "device": {
       "deviceName": "P750",
@@ -57,7 +133,7 @@
     "browser": {
       "name": "IEMobile",
       "modus": null,
-      "version": "8.12.0",
+      "version": "7.11.0",
       "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
@@ -73,6 +149,44 @@
       "name": "Trident",
       "version": null,
       "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ASUS-V66/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "deviceName": "V66",
+      "marketingName": "V66",
+      "manufacturer": "asus",
+      "brand": "asus",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -225,6 +339,82 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) ASUSP750/1.0"
+    },
+    "device": {
+      "deviceName": "P750",
+      "marketingName": "P750",
+      "manufacturer": "asus",
+      "brand": "asus",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "8.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ASUS-GalaxyII/1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; ASUS-GalaxyII)"
+    },
+    "device": {
+      "deviceName": "Galaxy 2",
+      "marketingName": "Galaxy 2",
+      "manufacturer": "asus",
+      "brand": "asus",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
     }
   }
 ]

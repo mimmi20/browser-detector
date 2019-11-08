@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "SendoS600/04 UP.Link/mainline"
+      "user-agent": "SendoS600/04 UP.Link/6.3.0.0.0"
     },
     "device": {
       "deviceName": "S600",
@@ -67,6 +67,44 @@
       "marketingName": "Symbian OS",
       "version": null,
       "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SendoS600/04 UP.Link/mainline"
+    },
+    "device": {
+      "deviceName": "S600",
+      "marketingName": "S600",
+      "manufacturer": "sendo",
+      "brand": "sendo",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {

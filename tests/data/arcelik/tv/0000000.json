@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv9; U; de;) AppleWebKit/537.17 (Grundig;G7;01.020.02;) CE-HTML/1.0 NETRANGEMMH HbbTV/1.2.1 (MWB;Arcelik_Gen3;RC_V2;Arcelik;G7;G7GRMR.-.-.-.-.V01.020.02;de-AT;Wireless;prod;)"
+    },
+    "device": {
+      "deviceName": "J5",
+      "marketingName": "J5",
+      "manufacturer": "arcelik",
+      "brand": "arcelik",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.17.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (QtEmbedded; Linux) AppleWebKit/537.4 (KHTML, like Gecko) MWB/1.0 Safari/537.4 HbbTV/1.2.1 (+DRM; Arcelik; MWB;;;)"
+    },
+    "device": {
+      "deviceName": "J5",
+      "marketingName": "J5",
+      "manufacturer": "arcelik",
+      "brand": "arcelik",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.4.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; Linux i686; tr) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 (;Mstar;OWB;Arcelik;BK;)"
     },
     "device": {
@@ -40,82 +116,6 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; Linux i686; tr) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 (;Mstar;OWB;Arcelik;J5;)"
-    },
-    "device": {
-      "deviceName": "J5",
-      "marketingName": "J5",
-      "manufacturer": "arcelik",
-      "brand": "arcelik",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv9; U; xx) AppleWebKit/537.17 (KHTML, like Gecko) HbbTV/1.1.1 (;Mstar;MWB;Arcelik;KY;)"
-    },
-    "device": {
-      "deviceName": "J5",
-      "marketingName": "J5",
-      "manufacturer": "arcelik",
-      "brand": "arcelik",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; xx) AppleWebKit/534.1 (KHTML, like Gecko) HbbTV/1.1.1 (;Mstar;OWB;Arcelik;J5;)"
     },
     "device": {
       "deviceName": "J5",

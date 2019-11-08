@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Linux 7335b0-smp; U; HbbTV/1.1.1 (; Humax; iCord MINI; 1.00.33; 1.0;  hdplusSmartTV/1.0 (NETRANGEMMH; )); ce-html/1.0; xx) Presto/2.10.250 Version/11.60"
-    },
-    "device": {
-      "deviceName": "iCord Mini",
-      "marketingName": "iCord Mini",
-      "manufacturer": "humax",
-      "brand": "humax",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-set-top-box"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.250",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (+PVR; Humax; hgs1000s; DESNAG 0.90.10; 1.0.0; wired; UX-PRISM--OP-SES;  hdplusSmartTV/1.0 (NETRANGEMMH; )); ce-html/1.0) Presto/2.12.407 Version/12.50"
-    },
-    "device": {
-      "deviceName": "HGS-1000S",
-      "marketingName": "HGS-1000S",
-      "manufacturer": "humax",
-      "brand": "humax",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-set-top-box"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Linux 7405b0-smp; U; HbbTV/1.1.1 (; Humax; CXHD-5100C; 1.00.23; 1.0; ); ce-html/1.0; en) Presto/2.9.167 Version/11.50"
     },
     "device": {
@@ -495,6 +419,158 @@
   },
   {
     "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Humax;HD FOX+;1.00.17;1.0;)CE-HTML/1.0 ANTGalio/3.3.0.26.03"
+    },
+    "device": {
+      "deviceName": "HD-FOX+",
+      "marketingName": "HD-FOX+",
+      "manufacturer": "humax",
+      "brand": "humax",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box"
+    },
+    "browser": {
+      "name": "ANTGalio",
+      "modus": null,
+      "version": "3.3.0.26.03",
+      "manufacturer": "ant",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (+PVR;Humax;iCord Cable;1.01.15;1.0;)CE-HTML/1.0 ANTGalio/3.3.0.26.03"
+    },
+    "device": {
+      "deviceName": "iCord Cable",
+      "marketingName": "iCord Cable",
+      "manufacturer": "humax",
+      "brand": "humax",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box"
+    },
+    "browser": {
+      "name": "ANTGalio",
+      "modus": null,
+      "version": "3.3.0.26.03",
+      "manufacturer": "ant",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux 7325b0; U; HbbTV/1.1.1 (; Humax; HD NANO; 1.00.28; 1.0;  hdplusSmartTV/1.0 (NETRANGEMMH; )); ce-html/1.0; en) Presto/2.10.250 Version/11.60"
+    },
+    "device": {
+      "deviceName": "HD Nano",
+      "marketingName": "HD Nano",
+      "manufacturer": "humax",
+      "brand": "humax",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.250",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux 7405b0-smp; U; HbbTV/1.1.1 (; Humax; HD-FOX C; 1.00.01; 1.0; ); ce-html/1.0; en) Presto/2.9.167 Version/11.50"
+    },
+    "device": {
+      "deviceName": "general Humax TV",
+      "marketingName": "general Humax TV",
+      "manufacturer": "humax",
+      "brand": "humax",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.9.167",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; U; HbbTV/1.1.1 (; Humax; HDR-5100S; 1.0.0; 1.0.0; ); ce-html/1.0; xx) Presto/2.9.167 Version/11.50"
     },
     "device": {
@@ -711,6 +787,44 @@
     "os": {
       "name": "Linux",
       "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (+PVR; Humax; hgs1000s; DESNAG 0.90.10; 1.0.0; wired; UX-PRISM--OP-SES;  hdplusSmartTV/1.0 (NETRANGEMMH; )); ce-html/1.0) Presto/2.12.407 Version/12.50"
+    },
+    "device": {
+      "deviceName": "HGS-1000S",
+      "marketingName": "HGS-1000S",
+      "manufacturer": "humax",
+      "brand": "humax",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-set-top-box"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null

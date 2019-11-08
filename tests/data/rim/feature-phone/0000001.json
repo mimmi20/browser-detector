@@ -1,7 +1,83 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/5.1.22303/22.387; U; en) Presto/2.5.25 Version/10.54"
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9360; ar) AppleWebKit/534.11 +(KHTML"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9360",
+      "marketingName": "BlackBerry Curve 9360",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9370; en) AppleWebKit/534.11 (KHTML, like Gecko) Version/7.1.0.580 Mobile Safari/534.11"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9370",
+      "marketingName": "BlackBerry Curve 9370",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.580",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.580",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9570; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.148 Mobile Safari/534.1+"
     },
     "device": {
       "deviceName": "general BlackBerry device",
@@ -17,12 +93,240 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "black-berry",
       "modus": null,
-      "version": "5.1.22303",
-      "manufacturer": "opera",
+      "version": "6.0.0.148",
+      "manufacturer": "rim",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.148",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9620; es) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.807 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9620",
+      "marketingName": "BlackBerry Bold 9620",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.807",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.807",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9650; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.280 Mobile Safari/534.1+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9650",
+      "marketingName": "BlackBerry Bold 9650",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "6.0.0.280",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.280",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en) AppleWebKit/534.1 (KHTML, like Gecko) Version/6.0.0.248 Mobile Safari/534.1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9670",
+      "marketingName": "BlackBerry Style 9670",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 400,
+        "height": 360,
+        "touch": false,
+        "size": 2.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "6.0.0.248",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.248",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9788; en) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.595 Mobile Safari/534.8+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9788",
+      "marketingName": "BlackBerry Bold 9788",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "6.0.0.595",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.595",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.8.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; de) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.580 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9850",
+      "marketingName": "BlackBerry Torch 9850",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.580",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.580",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; ar) AppleWebKit/534.11 +(KHTML"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9900",
+      "marketingName": "BlackBerry Bold Touch 9900",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
@@ -32,133 +336,94 @@
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/5.1.22296; BlackBerry9800; U; AppleWebKit/23.370; U; en) Presto/2.5.25 Version/10.54"
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; ar) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.374 Mobile Safari/534.11+"
     },
     "device": {
-      "deviceName": "BlackBerry 9800",
-      "marketingName": "BlackBerry Torch 9800",
+      "deviceName": "BlackBerry 9930",
+      "marketingName": "BlackBerry Bold Touch 9930",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": 480,
-        "height": 360,
-        "touch": false,
-        "size": 3.2
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "black-berry",
       "modus": null,
-      "version": "5.1.22296",
-      "manufacturer": "opera",
+      "version": "7.0.0.374",
+      "manufacturer": "rim",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": "0.0.0",
+      "version": "7.0.0.374",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/5.0 (BlackBerry; U; BlackBerry9800; en-GB) AppleWebKit/24.783; U; en) Presto/2.5.25 Version/10.54"
+      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9981; ar) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.579 Mobile Safari/534.11+"
     },
     "device": {
-      "deviceName": "BlackBerry 9800",
-      "marketingName": "BlackBerry Torch 9800",
+      "deviceName": "BlackBerry 9981",
+      "marketingName": "BlackBerry Porsche Design P9981",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": 480,
-        "height": 360,
-        "touch": false,
-        "size": 3.2
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "black-berry",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "opera",
+      "version": "7.0.0.579",
+      "manufacturer": "rim",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": "0.0.0",
+      "version": "7.0.0.579",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.0 (BlackBerry; U; BlackBerry 9800; en) AppleWebKit/24.705; U; en) Presto/2.5.25 Version/10.54"
+      "user-agent": "iBrowser/for Blackberry2.0.0 (BlackBerry9300/6.0.0.668)"
     },
     "device": {
-      "deviceName": "BlackBerry 9800",
-      "marketingName": "BlackBerry Torch 9800",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 480,
-        "height": 360,
-        "touch": false,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/8.0.35659/35.6497; U; xx) Presto/2.8.119 Version/11.10",
-      "x-operamini-phone": "RIM # BlackBerry 8520"
-    },
-    "device": {
-      "deviceName": "BlackBerry 8520",
-      "marketingName": "BlackBerry Curve 8520",
+      "deviceName": "BlackBerry 9300",
+      "marketingName": "BlackBerry Curve 3G 9300",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
@@ -170,69 +435,2461 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "iBrowser",
       "modus": null,
-      "version": "8.0.35659",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": null,
+      "version": "6.0.0.668",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/5.0 (BlackBerry; U; BlackBerry 9800) AppleWebKit/24.783; U; es) Presto/2.5.25 Version/10.54"
+      "user-agent": "OneBrowser/for Blackberry3.0.0 (BlackBerry9700/5.0.0.979)"
     },
     "device": {
-      "deviceName": "BlackBerry 9800",
-      "marketingName": "BlackBerry Torch 9800",
+      "deviceName": "BlackBerry 9700",
+      "marketingName": "BlackBerry Bold 9700",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
         "width": 480,
         "height": 360,
         "touch": false,
-        "size": 3.2
+        "size": 2.44
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "OneBrowser",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.979",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry5790/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry5810"
+    },
+    "device": {
+      "deviceName": "BlackBerry 5810",
+      "marketingName": "BlackBerry 5810",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 160,
+        "height": 160,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry5820"
+    },
+    "device": {
+      "deviceName": "BlackBerry 5820",
+      "marketingName": "BlackBerry 5820",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 160,
+        "height": 160,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry6210/3.7.1"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "3.7.1",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.7.1",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry6220/3.6.0"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "3.6.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.6.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry6230/4.0.0"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry6720/3.6.0"
+    },
+    "device": {
+      "deviceName": "BlackBerry 6720",
+      "marketingName": "BlackBerry 6720",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 160,
+        "height": 160,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "3.6.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.6.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry6750/4.0.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/5.0.3.3"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry7100/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7100",
+      "marketingName": "BlackBerry 7100",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry7130/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7130",
+      "marketingName": "BlackBerry 7130",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.1",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry7210/"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7210",
+      "marketingName": "BlackBerry 7210",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry7230/3.7.0"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7230",
+      "marketingName": "BlackBerry 7230",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "3.7.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.7.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry7250/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7250",
+      "marketingName": "BlackBerry 7250",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry7280/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7280",
+      "marketingName": "BlackBerry 7280",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry7290/3.8.0"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7290",
+      "marketingName": "BlackBerry 7290",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.8.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry7510"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry7520"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7520",
+      "marketingName": "BlackBerry 7520",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 240,
+        "height": 160,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry 7730: BlackBerry7730/3.7.0 UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7730",
+      "marketingName": "BlackBerry 7730",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 240,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "3.7.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "3.7.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry7750"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "User Agent String BlackBerry7780/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8100/4.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8100",
+      "marketingName": "BlackBerry Pearl 8100",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8110",
+      "marketingName": "BlackBerry Pearl 8110",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.3.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.3.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8120/2.6.0.64 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8120",
+      "marketingName": "BlackBerry Pearl 8120",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": null,
+      "version": "2.6.0.64",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.5.25",
-      "manufacturer": "opera"
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; xx) AppleWebKit/534.1+ (KHTML, Like Gecko) Version/6.0.0.141 Mobile Safari/534.1+",
-      "x-ucbrowser-phone": "sunmicro",
-      "x-ucbrowser-phone-ua": "sunmicro"
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8130/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8130",
+      "marketingName": "BlackBerry Pearl 8130",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.3.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8220/4.1.0.98 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB7.6.0.75/159/800"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8220",
+      "marketingName": "BlackBerry Pearl Flip 8220",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.6.0.75",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.1.0.98",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8230/4.6.1.160 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8230",
+      "marketingName": "BlackBerry Pearl Flip 8230",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.6.1.160",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.6.1.160",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8300",
+      "marketingName": "BlackBerry Curve 8300",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.2",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8310/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8310",
+      "marketingName": "BlackBerry Curve 8310",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.2.1",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.1",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8320/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8320",
+      "marketingName": "BlackBerry Curve 8320",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.2.2",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.2",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry (4.3)\"  User-Agent: BlackBerry8330/4.3.0 Profile/MIDP-2.0Configuration/CLDC-1.1 VendorID/105 protocol: HTTP/1.1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8330",
+      "marketingName": "BlackBerry Curve 8330",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.3.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.3.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8350/4.6.1.46 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.6.1.46",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.6.1.46",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8500/*"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8530/5.0.0.1000 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/109"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8530",
+      "marketingName": "BlackBerry Curve 8530",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.46
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "5.0.0.1000",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.1000",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Link/6.3.0.0.0"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8700",
+      "marketingName": "BlackBerry 8700",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.1.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8703e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8703e",
+      "marketingName": "BlackBerry 8703e",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.1",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8705g/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.2.1",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.1",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8707/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/175"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8800",
+      "marketingName": "BlackBerry 8800",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.1",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/149"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8820",
+      "marketingName": "BlackBerry 8820",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.2",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8830",
+      "marketingName": "BlackBerry 8830 World Edition",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "3.02.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.2",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8900/4.6.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/111"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8900",
+      "marketingName": "BlackBerry Curve 8900",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.6.1.101",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.6.1.101",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8910"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry8980/5.0.0.742 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 8980",
+      "marketingName": "BlackBerry Curve 8980",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "5.0.0.742",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.742",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9100/4.6.0.59 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9100",
+      "marketingName": "BlackBerry Pearl 3G 9100",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 400,
+        "height": 360,
+        "touch": true,
+        "size": 2.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.6.0.59",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.6.0.59",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9105/5.0.0.604 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9105",
+      "marketingName": "BlackBerry Pearl 3G 9105",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 400,
+        "height": 360,
+        "touch": false,
+        "size": 2.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "5.0.0.604",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.604",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9220/7.1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/603"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9220",
+      "marketingName": "BlackBerry Curve 9220",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9310/7.1.0.477 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/389"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9310",
+      "marketingName": "BlackBerry Curve 9310",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.477",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.477",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9315/7.1.0.912 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9315",
+      "marketingName": "BlackBerry Curve 9315",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.912",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.912",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9320/7.1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/129"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9320",
+      "marketingName": "BlackBerry Curve 9320",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9330/4.4.0.434 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/444"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9330",
+      "marketingName": "BlackBerry Curve 3G 9330",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.46
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.4.0.434",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9350/7.0.0.261 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/104"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9350",
+      "marketingName": "BlackBerry Curve 9350",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.0.0.261",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.0.0.261",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9360/7.1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/124"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9360",
+      "marketingName": "BlackBerry Curve 9360",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9370"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9370",
+      "marketingName": "BlackBerry Curve 9370",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9380/7.0.0.482 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/331"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9380",
+      "marketingName": "BlackBerry Curve 9380",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.0.0.482",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.0.0.482",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9500/4.7.0.108 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9500",
+      "marketingName": "BlackBerry Storm 9500",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 3.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "4.7.0.108",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.7.0.108",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9530/4.0.0.181 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/161/444"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9530",
+      "marketingName": "BlackBerry Storm 9530",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 3.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.0.0.181",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9550/4.2.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/161/352"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9550",
+      "marketingName": "BlackBerry Storm2 9550",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 3.25
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.2.0.124",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9630,gzip(gfe),gzip(gfe),gzip(gfe)"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9630",
+      "marketingName": "BlackBerry Tour 9630",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9650/5.0.0.1006 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9650",
+      "marketingName": "BlackBerry Bold 9650",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "5.0.0.1006",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.1006",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9670/4.4.0.315 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/351"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9670",
+      "marketingName": "BlackBerry Style 9670",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 400,
+        "height": 360,
+        "touch": false,
+        "size": 2.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "4.4.0.315",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9780/6.0.0.359 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9780",
+      "marketingName": "BlackBerry Bold 9780",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "6.0.0.359",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.359",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9788/1.0.0.104 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9788",
+      "marketingName": "BlackBerry Bold 9788",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.44
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "1.0.0.104",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "1.0.0.104",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9790/7.0.0.557 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/168"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9790",
+      "marketingName": "BlackBerry Bold 9790",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": true,
+        "size": 2.45
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.0.0.557",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.0.0.557",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9800/6.0.0.668 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/124"
     },
     "device": {
       "deviceName": "BlackBerry 9800",
@@ -250,7 +2907,7 @@
     "browser": {
       "name": "black-berry",
       "modus": null,
-      "version": "6.0.0.141",
+      "version": "6.0.0.668",
       "manufacturer": "rim",
       "bits": null,
       "type": "browser"
@@ -258,71 +2915,448 @@
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": "6.0.0.141",
+      "version": "6.0.0.668",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "534.1.0",
-      "manufacturer": "apple"
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (X11; Linux zvav; U; xx) Presto/2.8.119 Version/11.10",
-      "x-operamini-features": "httpping, advanced, routing, folding, touch, camera, file_system",
-      "x-operamini-phone": "RIM # BlackBerry 8520",
-      "x-operamini-phone-ua": "BlackBerry8520/5.0.0.1036 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/613"
+      "user-agent": "BlackBerry9810/7.0.0.585 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/124"
     },
     "device": {
-      "deviceName": "BlackBerry 8520",
-      "marketingName": "BlackBerry Curve 8520",
+      "deviceName": "BlackBerry 9810",
+      "marketingName": "BlackBerry Torch 9810",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.46
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 3.2
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera",
+      "name": "black-berry",
       "modus": null,
-      "version": "11.10.0",
-      "manufacturer": "opera",
+      "version": "7.0.0.585",
+      "manufacturer": "rim",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": "5.0.0.1036",
+      "version": "7.0.0.585",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9850/7.0.0.254 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9850",
+      "marketingName": "BlackBerry Torch 9850",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.0.0.254",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.0.0.254",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9860/7.0.0.261 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/146"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9860",
+      "marketingName": "BlackBerry Torch 9860",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.0.0.261",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.0.0.261",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9900/7.1.0.714 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/604"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9900",
+      "marketingName": "BlackBerry Bold Touch 9900",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.714",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.714",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BlackBerry9930/7.1.0.163 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/104"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9930",
+      "marketingName": "BlackBerry Bold Touch 9930",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "7.1.0.163",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.163",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/59.297; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.6.40234",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
       "name": "Presto",
-      "version": "2.8.119",
+      "version": "2.12.423",
       "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "UCWEB/2.0(BlackBerry; U; 4.2.0.397; xx; 9330/4.2.0.397) U2/1.0.0 UCBrowser/8.1.0.216 U2/1.0.0 Mobile"
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/59.309; U; en) Presto/2.12.423 Version/12.16"
     },
     "device": {
-      "deviceName": "BlackBerry 9330",
-      "marketingName": "BlackBerry Curve 3G 9330",
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": 320,
-        "height": 240,
+        "width": null,
+        "height": null,
         "touch": true,
-        "size": 2.46
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.6.40234",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/60.271; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.6.40234",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/60.313; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.6.40234",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/61.485; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.6.40234",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/62.178; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.6.40234",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(BlackBerry; U; 2.3.0.77; en-us; 7130/2.3.0.77) U2/1.0.0 UCBrowser/8.1.0.216 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "BlackBerry 7130",
+      "marketingName": "BlackBerry 7130",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
@@ -349,2973 +3383,9 @@
   },
   {
     "headers": {
-      "user-agent": "BlackBerry9000/5.2.0.89 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/62.223; U; en) Presto/2.12.423 Version/12.16"
     },
     "device": {
-      "deviceName": "BlackBerry 9000",
-      "marketingName": "BlackBerry Bold 9000",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": false,
-        "size": 2.6
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "5.2.0.89",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "5.2.0.89",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9000/5.2.0.89 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB8.1.0.104/159/999"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9000",
-      "marketingName": "BlackBerry Bold 9000",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": false,
-        "size": 2.6
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.1.0.104",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "5.2.0.89",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9520/4.2.0.423 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9520",
-      "marketingName": "BlackBerry Storm2 9520",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 480,
-        "height": 360,
-        "touch": true,
-        "size": 3.25
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "4.2.0.423",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "4.2.0.423",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9670/4.4.0.560 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9670",
-      "marketingName": "BlackBerry Style 9670",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 400,
-        "height": 360,
-        "touch": false,
-        "size": 2.7
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "4.4.0.560",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "4.4.0.560",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9700/6.6.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB8.1.0.104/159/800"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9700",
-      "marketingName": "BlackBerry Bold 9700",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 480,
-        "height": 360,
-        "touch": false,
-        "size": 2.44
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.1.0.104",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "6.6.0.124",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9780/6.6.0.252 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB8.1.0.104/159/999"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9780",
-      "marketingName": "BlackBerry Bold 9780",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 480,
-        "height": 360,
-        "touch": false,
-        "size": 2.44
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.1.0.104",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "6.6.0.252",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9800/6.4.0.210 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB8.1.0.104/161/800"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9800",
-      "marketingName": "BlackBerry Torch 9800",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 480,
-        "height": 360,
-        "touch": false,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.1.0.104",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "6.4.0.210",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9800/6.6.0.207 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB8.1.0.104/161/999"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9800",
-      "marketingName": "BlackBerry Torch 9800",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 480,
-        "height": 360,
-        "touch": false,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.1.0.104",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "6.6.0.207",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9810/5.1.0.230 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/160/352"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9810",
-      "marketingName": "BlackBerry Torch 9810",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.8.0.95",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "5.1.0.230",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9860/5.1.0.276 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9860",
-      "marketingName": "BlackBerry Torch 9860",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 3.7
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "5.1.0.276",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "5.1.0.276",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9900/5.1.0.692 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9900",
-      "marketingName": "BlackBerry Bold Touch 9900",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "5.1.0.692",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "5.1.0.692",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BlackBerry9930/5.1.0.678 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "BlackBerry 9930",
-      "marketingName": "BlackBerry Bold Touch 9930",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "5.1.0.678",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": "5.1.0.678",
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "TenFourFox/5.9 (BlackBerry 5.5; fi_FI;)"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "black-berry",
-      "modus": null,
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "black-berry",
-      "version": null,
-      "manufacturer": "rim"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/4.4.31892/31.1448; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.4.31892",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/4.5.33868/34.1244; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.5.33868",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/4.5.33868/34.1267; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.5.33868",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.0.29990/29.3709; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.0.29990",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.0.29990/31.1325; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.0.29990",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.0.29990/31.1448; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.0.29990",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.0.31437/30.3389; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.0.31437",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32256/35.6172; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32256",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32543/30.3158; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32543",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32543/30.3389; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32543",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32543/31.1350; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32543",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32543/32.1214; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32543",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32543/32.981; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32543",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32543/34.1153; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32543",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32543/34.1322; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32543",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32543/35.3226; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32543",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32723/28.3692; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32723",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32723/28.4150; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32723",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32723/28.4200; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32723",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32723/29.3530; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32723",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32723/30.3442; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32723",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32723/34.818; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32723",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.32723/35.6172; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32723",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33396/34.818; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33396",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33551/34.1903; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33551",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33551/34.926; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33551",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33551/35.5504; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33551",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33551/35.7382; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33551",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33551/35.7518; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33551",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33551/35.7598; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33551",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/30.3214; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/30.3341; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/30.3442; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/30.3697; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/31.1448; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/31.1475; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/31.1526; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/32.1024; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/32.1125; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/32.1151; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/32.1382; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/32.820; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/32.855; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/32.952; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/32.981; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.1000; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.1088; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.1153; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.1425; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.1526; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.1903; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.1970; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.2089; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.2220; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/34.926; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.3312; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.4851; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.5504; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.6050; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.6172; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.6497; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.6680; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.6822; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.7598; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/35.7827; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/37.7936; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
       "deviceName": "general BlackBerry device",
       "marketingName": "general BlackBerry device",
       "manufacturer": "rim",
@@ -3331,7 +3401,7 @@
     "browser": {
       "name": "Opera Mini",
       "modus": null,
-      "version": "7.1.33553",
+      "version": "7.6.40234",
       "manufacturer": "opera",
       "bits": null,
       "type": "transcoder"
@@ -3351,7 +3421,7 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/37.8069; U; en) Presto/2.12.423 Version/12.16"
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.6.40234/63.203; U; en) Presto/2.12.423 Version/12.16"
     },
     "device": {
       "deviceName": "general BlackBerry device",
@@ -3369,7 +3439,7 @@
     "browser": {
       "name": "Opera Mini",
       "modus": null,
-      "version": "7.1.33553",
+      "version": "7.6.40234",
       "manufacturer": "opera",
       "bits": null,
       "type": "transcoder"
@@ -3389,7 +3459,7 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33553/37.8104; U; en) Presto/2.12.423 Version/12.16"
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/5.0.18633/34.1499; U; en) Presto/2.8.119 Version/11.10"
     },
     "device": {
       "deviceName": "general BlackBerry device",
@@ -3407,45 +3477,7 @@
     "browser": {
       "name": "Opera Mini",
       "modus": null,
-      "version": "7.1.33553",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.1.33555/34.818; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.33555",
+      "version": "5.0.18633",
       "manufacturer": "opera",
       "bits": null,
       "type": "transcoder"
@@ -3465,7 +3497,83 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35157/35.5858; U; en) Presto/2.8.119 Version/11.10"
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/6.0.24209/31.1350; U; en) Presto/2.8.119 Version/11.10"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "6.0.24209",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/7.0.28871/32.855; U; id) Presto/2.8.119 Version/11.10"
+    },
+    "device": {
+      "deviceName": "general BlackBerry device",
+      "marketingName": "general BlackBerry device",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.0.28871",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35157/34.1499; U; en) Presto/2.8.119 Version/11.10"
     },
     "device": {
       "deviceName": "general BlackBerry device",
@@ -3503,306 +3611,192 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35157/35.6172; U; en) Presto/2.8.119 Version/11.10"
+      "user-agent": "BlackBerry7100/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
+      "deviceName": "BlackBerry 7100",
+      "marketingName": "BlackBerry 7100",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "black-berry",
       "modus": null,
-      "version": "8.0.35157",
-      "manufacturer": "opera",
+      "version": "4.0.0",
+      "manufacturer": "rim",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": null,
+      "version": "4.0.0",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35189/34.1654; U; en) Presto/2.8.119 Version/11.10"
+      "user-agent": "BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102"
     },
     "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
+      "deviceName": "BlackBerry 7100",
+      "marketingName": "BlackBerry 7100",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "black-berry",
       "modus": null,
-      "version": "8.0.35189",
-      "manufacturer": "opera",
+      "version": "4.1.0",
+      "manufacturer": "rim",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": null,
+      "version": "4.1.0",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35189/34.2089; U; en) Presto/2.8.119 Version/11.10"
+      "user-agent": "BlackBerry7130/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102"
     },
     "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
+      "deviceName": "BlackBerry 7130",
+      "marketingName": "BlackBerry 7130",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "black-berry",
       "modus": null,
-      "version": "8.0.35189",
-      "manufacturer": "opera",
+      "version": "4.1.0",
+      "manufacturer": "rim",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": null,
+      "version": "4.1.0",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35189/35.3114; U; en) Presto/2.8.119 Version/11.10"
+      "user-agent": "BlackBerry7130/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102"
     },
     "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
+      "deviceName": "BlackBerry 7130",
+      "marketingName": "BlackBerry 7130",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "black-berry",
       "modus": null,
-      "version": "8.0.35189",
-      "manufacturer": "opera",
+      "version": "4.2.1",
+      "manufacturer": "rim",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": null,
+      "version": "4.2.1",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35189/35.4530; U; en) Presto/2.8.119 Version/11.10"
+      "user-agent": "BlackBerry7130e/5.0.0.351Profile/MIDP-2.1Configuration/"
     },
     "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
+      "deviceName": "BlackBerry 7130",
+      "marketingName": "BlackBerry 7130",
       "manufacturer": "rim",
       "brand": "rim",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 260,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
+      "name": "black-berry",
       "modus": null,
-      "version": "8.0.35189",
-      "manufacturer": "opera",
+      "version": "5.0.0.351-patch",
+      "manufacturer": "rim",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "RIM OS",
       "marketingName": "RIM OS",
-      "version": null,
+      "version": "5.0.0.351-patch",
       "manufacturer": "rim",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35189/35.6244; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "8.0.35189",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
+      "name": "black-berry",
       "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35659/37.7936; U; af) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "8.0.35659",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35659/37.7936; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general BlackBerry device",
-      "marketingName": "general BlackBerry device",
-      "manufacturer": "rim",
-      "brand": "rim",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "8.0.35659",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "RIM OS",
-      "marketingName": "RIM OS",
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
+      "manufacturer": "rim"
     }
   }
 ]

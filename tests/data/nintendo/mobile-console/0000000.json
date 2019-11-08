@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7567.EU"
+      "user-agent": "Mozilla/5.0 (Nintendo 3DS; U; ; en) Version/1.7498.EU"
     },
     "device": {
       "deviceName": "3DS",
@@ -35,82 +35,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Nintendo 3DS; U; ; de) Version/1.7610.EU"
-    },
-    "device": {
-      "deviceName": "3DS",
-      "marketingName": "3DS",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 320,
-        "height": 200,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Nintendo OS",
-      "marketingName": "Nintendo OS",
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.50 (Nintendo DSi; Opera/507; U; de)"
-    },
-    "device": {
-      "deviceName": "DSi",
-      "marketingName": "DSi",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 256,
-        "height": 192,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
     }
   },
   {
@@ -153,234 +77,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Nintendo Switch; WebApplet) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.6.9 NintendoBrowser/5.1.0.14935"
-    },
-    "device": {
-      "deviceName": "Switch",
-      "marketingName": "Switch",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "5.1.0.14935",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Nintendo Switch OS",
-      "marketingName": "Nintendo Switch OS",
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.6.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Nintendo Switch; WebApplet) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.5.2 NintendoBrowser/5.1.0.12653"
-    },
-    "device": {
-      "deviceName": "Switch",
-      "marketingName": "Switch",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "5.1.0.12653",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Nintendo Switch OS",
-      "marketingName": "Nintendo Switch OS",
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.6.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Nintendo Switch; ShopN) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.5.10 NintendoBrowser/5.1.0.13343"
-    },
-    "device": {
-      "deviceName": "Switch",
-      "marketingName": "Switch",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "5.1.0.13343",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Nintendo Switch OS",
-      "marketingName": "Nintendo Switch OS",
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.6.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Nintendo Switch; ShareApplet) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.5.10 NintendoBrowser/5.1.0.13343"
-    },
-    "device": {
-      "deviceName": "Switch",
-      "marketingName": "Switch",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "5.1.0.13343",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Nintendo Switch OS",
-      "marketingName": "Nintendo Switch OS",
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.6.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Nintendo Switch; LoginApplet) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.5.9 NintendoBrowser/5.1.0.13341"
-    },
-    "device": {
-      "deviceName": "Switch",
-      "marketingName": "Switch",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "5.1.0.13341",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Nintendo Switch OS",
-      "marketingName": "Nintendo Switch OS",
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.6.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Nintendo 3DS; U; ; en) Version/1.7498.EU"
-    },
-    "device": {
-      "deviceName": "3DS",
-      "marketingName": "3DS",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 320,
-        "height": 200,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Nintendo OS",
-      "marketingName": "Nintendo OS",
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.50 (Nintendo DSi; Opera/507; U; ja)"
     },
     "device": {
@@ -419,44 +115,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.8 Mobile NintendoBrowser/1.0.9934.JP"
-    },
-    "device": {
-      "deviceName": "New 3DS",
-      "marketingName": "New 3DS",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 800,
-        "height": 240,
-        "touch": false,
-        "size": 4.88
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "1.0.9934",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.19 Mobile NintendoBrowser/1.6.10147.EU"
     },
     "device": {
@@ -476,6 +134,196 @@
       "name": "NintendoBrowser",
       "modus": null,
       "version": "1.6.10147",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.17 Mobile NintendoBrowser/1.4.10138.EU"
+    },
+    "device": {
+      "deviceName": "New 3DS",
+      "marketingName": "New 3DS",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": 800,
+        "height": 240,
+        "touch": false,
+        "size": 4.88
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "1.4.10138",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.15 Mobile NintendoBrowser/1.3.10126.EU"
+    },
+    "device": {
+      "deviceName": "New 3DS",
+      "marketingName": "New 3DS",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": 800,
+        "height": 240,
+        "touch": false,
+        "size": 4.88
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "1.3.10126",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.20 Mobile NintendoBrowser/1.8.10156.EU"
+    },
+    "device": {
+      "deviceName": "New 3DS",
+      "marketingName": "New 3DS",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": 800,
+        "height": 240,
+        "touch": false,
+        "size": 4.88
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "1.8.10156",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Nintendo Switch; ShareApplet) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.5.9 NintendoBrowser/5.1.0.13341"
+    },
+    "device": {
+      "deviceName": "Switch",
+      "marketingName": "Switch",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "5.1.0.13341",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo Switch OS",
+      "marketingName": "Nintendo Switch OS",
+      "version": null,
+      "manufacturer": "nintendo",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.6.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.10 Mobile NintendoBrowser/1.1.9996.JP"
+    },
+    "device": {
+      "deviceName": "New 3DS",
+      "marketingName": "New 3DS",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": 800,
+        "height": 240,
+        "touch": false,
+        "size": 4.88
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "1.1.9996",
       "manufacturer": "nintendo",
       "bits": null,
       "type": "browser"
@@ -571,7 +419,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.17 Mobile NintendoBrowser/1.4.10138.EU"
+      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.8 Mobile NintendoBrowser/1.0.9934.JP"
     },
     "device": {
       "deviceName": "New 3DS",
@@ -589,45 +437,7 @@
     "browser": {
       "name": "NintendoBrowser",
       "modus": null,
-      "version": "1.4.10138",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.15 Mobile NintendoBrowser/1.3.10126.EU"
-    },
-    "device": {
-      "deviceName": "New 3DS",
-      "marketingName": "New 3DS",
-      "manufacturer": "nintendo",
-      "brand": "nintendo",
-      "display": {
-        "width": 800,
-        "height": 240,
-        "touch": false,
-        "size": 4.88
-      },
-      "type": "mobile-console"
-    },
-    "browser": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "1.3.10126",
+      "version": "1.0.9934",
       "manufacturer": "nintendo",
       "bits": null,
       "type": "browser"

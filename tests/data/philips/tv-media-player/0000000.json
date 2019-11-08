@@ -1,11 +1,11 @@
 [
   {
     "headers": {
-      "user-agent": "WebKit/4.2.9, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.28 (Philips, HTB5260G, wireless)"
+      "user-agent": "WebKit/3.7.6, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.19 (Philips, BDP5600, wired)"
     },
     "device": {
-      "deviceName": "HTB5260G",
-      "marketingName": "HTB5260G",
+      "deviceName": "BDP5600",
+      "marketingName": "BDP5600",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
@@ -33,7 +33,7 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "4.2.9",
+      "version": "3.7.6",
       "manufacturer": "apple"
     }
   },
@@ -77,11 +77,11 @@
   },
   {
     "headers": {
-      "user-agent": "WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB4150B, wired)"
+      "user-agent": "Opera/9.80(Linux armv7l; U; CE-HTML/1.0 NETTV/3.0.1; PHILIPS-AVM-2012; xx) Presto/2.10.250 Version/11.6"
     },
     "device": {
-      "deviceName": "HTB4150B",
-      "marketingName": "HTB4150B",
+      "deviceName": "Blueray Player",
+      "marketingName": "Blueray Player",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
@@ -93,24 +93,24 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "NewB",
+      "name": "Opera",
       "modus": null,
-      "version": null,
-      "manufacturer": "philips",
+      "version": "11.6.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Maemo",
+      "marketingName": "Maemo",
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "3.8.5",
-      "manufacturer": "apple"
+      "name": "Presto",
+      "version": "2.10.250",
+      "manufacturer": "opera"
     }
   },
   {
@@ -267,11 +267,87 @@
   },
   {
     "headers": {
+      "user-agent": "WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB4150B, wired)"
+    },
+    "device": {
+      "deviceName": "HTB4150B",
+      "marketingName": "HTB4150B",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": null,
+      "manufacturer": "philips",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.8.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB5540D, wired)"
     },
     "device": {
       "deviceName": "HTB5540D",
       "marketingName": "HTB5540D",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": null,
+      "manufacturer": "philips",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.8.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB5570D, wireless)"
+    },
+    "device": {
+      "deviceName": "HTB5570D",
+      "marketingName": "HTB5570D",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
@@ -381,11 +457,125 @@
   },
   {
     "headers": {
+      "user-agent": "WebKit/3.9.11, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.36 (Philips, BDP3490, wired)"
+    },
+    "device": {
+      "deviceName": "BDP3490",
+      "marketingName": "BDP3490",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": null,
+      "manufacturer": "philips",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.9.11",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "WebKit/3.9.11, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.36 (Philips, BDP3490M, wired)"
     },
     "device": {
       "deviceName": "BDP3490M",
       "marketingName": "BDP3490M",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": null,
+      "manufacturer": "philips",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.9.11",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebKit/3.9.11, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB3570, wireless)"
+    },
+    "device": {
+      "deviceName": "HTB3570",
+      "marketingName": "HTB3570",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": null,
+      "manufacturer": "philips",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.9.11",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebKit/3.9.11, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB4150B, wired)"
+    },
+    "device": {
+      "deviceName": "HTB4150B",
+      "marketingName": "HTB4150B",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
@@ -452,6 +642,82 @@
     "engine": {
       "name": "WebKit",
       "version": "3.9.11",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebKit/3.9.11, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB6251D, wired)"
+    },
+    "device": {
+      "deviceName": "HTB6251D",
+      "marketingName": "HTB6251D",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": null,
+      "manufacturer": "philips",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.9.11",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebKit/3.9.4, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.24 (Philips, BDP5600, wireless)"
+    },
+    "device": {
+      "deviceName": "BDP5600",
+      "marketingName": "BDP5600",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": null,
+      "manufacturer": "philips",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.9.4",
       "manufacturer": "apple"
     }
   },
@@ -761,11 +1027,11 @@
   },
   {
     "headers": {
-      "user-agent": "WebKit/3.7.6, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.19 (Philips, BDP5600, wired)"
+      "user-agent": "WebKit/4.2.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.35 (Philips, BDP5700, wireless)"
     },
     "device": {
-      "deviceName": "BDP5600",
-      "marketingName": "BDP5600",
+      "deviceName": "BDP5700",
+      "marketingName": "BDP5700",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
@@ -793,17 +1059,17 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "3.7.6",
+      "version": "4.2.5",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80(Linux armv7l; U; CE-HTML/1.0 NETTV/3.0.1; PHILIPS-AVM-2012; xx) Presto/2.10.250 Version/11.6"
+      "user-agent": "WebKit/4.2.9, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.28 (Philips, HTB5260G, wired)"
     },
     "device": {
-      "deviceName": "Blueray Player",
-      "marketingName": "Blueray Player",
+      "deviceName": "HTB5260G",
+      "marketingName": "HTB5260G",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
@@ -815,24 +1081,62 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "Opera",
+      "name": "NewB",
       "modus": null,
-      "version": "11.6.0",
-      "manufacturer": "opera",
+      "version": null,
+      "manufacturer": "philips",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
-      "version": "2.10.250",
-      "manufacturer": "opera"
+      "name": "WebKit",
+      "version": "4.2.9",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebKit/3.8.51, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.26 (Philips, BDP7750, wired)"
+    },
+    "device": {
+      "deviceName": "BDP7750",
+      "marketingName": "BDP7750",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "NewB",
+      "modus": null,
+      "version": null,
+      "manufacturer": "philips",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3.8.51",
+      "manufacturer": "apple"
     }
   },
   {
@@ -871,120 +1175,6 @@
       "name": "Presto",
       "version": "2.10.250",
       "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; U; CE-HTML/1.0 NETTV/3.3.0; PHILIPS-AVM-2012; xx) Presto/2.9.167 Version/11.50"
-    },
-    "device": {
-      "deviceName": "Blueray Player",
-      "marketingName": "Blueray Player",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.9.167",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux mips; U; CE-HTML/1.0 NETTV/3.0.1; PHILIPS-AVM-2012; en) Presto/2.9.167 Version/11.50"
-    },
-    "device": {
-      "deviceName": "Blueray Player",
-      "marketingName": "Blueray Player",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.9.167",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WebKit/3.7.6, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.19 (Philips, BDP5600, wireless)"
-    },
-    "device": {
-      "deviceName": "BDP5600",
-      "marketingName": "BDP5600",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player"
-    },
-    "browser": {
-      "name": "NewB",
-      "modus": null,
-      "version": null,
-      "manufacturer": "philips",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "3.7.6",
-      "manufacturer": "apple"
     }
   },
   {

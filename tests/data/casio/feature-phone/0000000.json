@@ -1,54 +1,16 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/4.08 (830CA;SoftBank;SN353718020756383) NetFront/3.4"
+      "user-agent": "KDDI-CA32 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0"
     },
     "device": {
-      "deviceName": "830CA",
-      "marketingName": "830CA",
-      "manufacturer": "casio",
-      "brand": "softbank",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "KDDI-W61CA UP.Browser/6.2.0.5 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "W61CA",
-      "marketingName": "W61CA",
+      "deviceName": "CA32",
+      "marketingName": "W31CA",
       "manufacturer": "casio",
       "brand": "kddi",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 400,
+        "height": 240,
         "touch": false,
         "size": null
       },
@@ -57,7 +19,7 @@
     "browser": {
       "name": "Openwave Mobile Browser",
       "modus": null,
-      "version": "6.2.0.5",
+      "version": "6.2.0.7.3",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
@@ -111,6 +73,82 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-W61CA UP.Browser/6.2.0.5 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "W61CA",
+      "marketingName": "W61CA",
+      "manufacturer": "casio",
+      "brand": "kddi",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0.5",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.08 (830CA;SoftBank;SN353718020756383) NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "830CA",
+      "marketingName": "830CA",
+      "manufacturer": "casio",
+      "brand": "softbank",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
     }
   }
 ]

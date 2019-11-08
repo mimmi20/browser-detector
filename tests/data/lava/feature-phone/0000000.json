@@ -39,6 +39,44 @@
   },
   {
     "headers": {
+      "user-agent": "LAVA.KKT22S/Dorado WAP-Browser/1.0.0"
+    },
+    "device": {
+      "deviceName": "KKT22S",
+      "marketingName": "KKT22S",
+      "manufacturer": "lava",
+      "brand": "lava",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LAVA Spark284/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320"
     },
     "device": {
@@ -77,11 +115,7 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31762/35.3312; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)",
-      "x-operamini-features": "httpping, advanced, routing, file_system, download, folding",
-      "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)"
+      "user-agent": "FARSIGHTED60A_12864_COSMOS_BU1_11B_HW (MRE/3.1.00(1536);MAUI/DISCOVER135_S324_20131018;BDATE/2013/10/18 17:47;LCD/320480;CHIP/MT6260;KEY/Reduced;TOUCH/1;CAMERA/0;SENSOR/0;DEV/FARSIGHTED60A_12864_COSMOS_BU1_11B_HW;WAP Browser/MAUI (HTTP PGDL);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/) LAVA_DISCOVER135_S324_20131018 Release/2013.10.18 WAP Browser/MAUI (HTTP PGDL) Profile/  Q03C1-2.40 en-US"
     },
     "device": {
       "deviceName": "Discover 135",
@@ -97,94 +131,18 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.4.31762",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "MRE",
-      "marketingName": "MAUI Runtime Environment",
-      "version": null,
-      "manufacturer": "mediatek",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LAVA Spark i7/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320  Dorado WAP-Browser"
-    },
-    "device": {
-      "deviceName": "Spark i7",
-      "marketingName": "Spark i7",
-      "manufacturer": "lava",
-      "brand": "lava",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LAVA KKT Pearl/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320"
-    },
-    "device": {
-      "deviceName": "KKT Pearl",
-      "marketingName": "KKT Pearl",
-      "manufacturer": "lava",
-      "brand": "lava",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
+      "name": "MAUI Wap Browser",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
       "bits": null,
-      "type": "unknown"
+      "type": "wap-browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "MRE",
+      "marketingName": "MAUI Runtime Environment",
+      "version": "3.1.00",
+      "manufacturer": "mediatek",
       "bits": null
     },
     "engine": {
@@ -207,82 +165,6 @@
         "height": 240,
         "touch": false,
         "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LAVA.ARC28. Dorado WAP-Browser/1.0.0"
-    },
-    "device": {
-      "deviceName": "Arc 28",
-      "marketingName": "Arc 28",
-      "manufacturer": "lava",
-      "brand": "lava",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LAVA.KKT22S/Dorado WAP-Browser/1.0.0"
-    },
-    "device": {
-      "deviceName": "KKT22S",
-      "marketingName": "KKT22S",
-      "manufacturer": "lava",
-      "brand": "lava",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
       },
       "type": "feature-phone"
     },
@@ -343,6 +225,124 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LAVA KKT Pearl/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320"
+    },
+    "device": {
+      "deviceName": "KKT Pearl",
+      "marketingName": "KKT Pearl",
+      "manufacturer": "lava",
+      "brand": "lava",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LAVA Spark i7/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320  Dorado WAP-Browser"
+    },
+    "device": {
+      "deviceName": "Spark i7",
+      "marketingName": "Spark i7",
+      "manufacturer": "lava",
+      "brand": "lava",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31762/35.3312; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)",
+      "x-operamini-features": "httpping, advanced, routing, file_system, download, folding",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)"
+    },
+    "device": {
+      "deviceName": "Discover 135",
+      "marketingName": "Discover 135",
+      "manufacturer": "lava",
+      "brand": "lava",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.31762",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "MRE",
+      "marketingName": "MAUI Runtime Environment",
+      "version": null,
+      "manufacturer": "mediatek",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
     }
   }
 ]

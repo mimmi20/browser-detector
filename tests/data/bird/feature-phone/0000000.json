@@ -1,34 +1,34 @@
 [
   {
     "headers": {
-      "user-agent": "BIRD_T810_TD/T810_10A_V1.00 Threadx/4.0 Mocor/W11 Release/12.01.2011 Browser/NF4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0"
+      "user-agent": "BIRD.D700 UP.Browser/5.0.1.1.102 (GUI)"
     },
     "device": {
-      "deviceName": "T810",
-      "marketingName": "T810",
+      "deviceName": "D700",
+      "marketingName": "D700",
       "manufacturer": "bird",
       "brand": "bird",
       "display": {
-        "width": 320,
-        "height": 240,
+        "width": null,
+        "height": null,
         "touch": false,
         "size": null
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "NetFront",
+      "name": "Openwave Mobile Browser",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "access",
+      "version": "5.0.1.1.102",
+      "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "ThreadX",
-      "marketingName": "ThreadX",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -153,44 +153,6 @@
   },
   {
     "headers": {
-      "user-agent": "Bird-X8/K23,PN/WAP2.0/MIDP-2.0/CLDC-1.0 UP.Browser/6.2.3.3.g.1 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "X8",
-      "marketingName": "X8",
-      "manufacturer": "bird",
-      "brand": "bird",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Bird.SF10/KU3,UB/WAP2.0/MIDP-2.0/CLDC-1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.5.100 (GUI) MMP/1.0"
     },
     "device": {
@@ -230,44 +192,6 @@
   {
     "headers": {
       "user-agent": "Bird.SC17C/KS3,UB/WAP2.0/MIDP-2.0/CLDC-1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.5.100 (GUI) MMP/1.0"
-    },
-    "device": {
-      "deviceName": "SC17c",
-      "marketingName": "SC17c",
-      "manufacturer": "bird",
-      "brand": "bird",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.2.6",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Bird.SC17C/KN,U04/WAP2.0/MIDP-2.0/CLDC-1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.5.100 (GUI) MMP/1.0"
     },
     "device": {
       "deviceName": "SC17c",
@@ -381,44 +305,6 @@
   },
   {
     "headers": {
-      "user-agent": "Bird.S689/K03,MI/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.3.100 (GUI) MMP/1.0"
-    },
-    "device": {
-      "deviceName": "S689",
-      "marketingName": "S689",
-      "manufacturer": "bird",
-      "brand": "bird",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.2.6",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "BIRD.G118 MO130m-128x160/1.1 UP.Browser/6.1.0.6.1.c.4 (GUI) MMP/1.0"
     },
     "device": {
@@ -438,44 +324,6 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "6.1.0.6.1",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BIRD.D700 UP.Browser/5.0.1.1.102 (GUI) UP.Link/4.2.1.8"
-    },
-    "device": {
-      "deviceName": "D700",
-      "marketingName": "D700",
-      "manufacturer": "bird",
-      "brand": "bird",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "5.0.1.1.102",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
@@ -523,6 +371,82 @@
       "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Bird-X8/K23,PN/WAP2.0/MIDP-2.0/CLDC-1.0 UP.Browser/6.2.3.3.g.1 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "X8",
+      "marketingName": "X8",
+      "manufacturer": "bird",
+      "brand": "bird",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BIRD_T810_TD/T810_10A_V1.00 Threadx/4.0 Mocor/W11 Release/12.01.2011 Browser/NF4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "T810",
+      "marketingName": "T810",
+      "manufacturer": "bird",
+      "brand": "bird",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "ThreadX",
+      "marketingName": "ThreadX",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {

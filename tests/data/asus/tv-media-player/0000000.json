@@ -39,13 +39,13 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 8.0.0## Nexus Player Build/OPR2.170623.027)"
+      "user-agent": "Mozilla/5.0 (Linux GoogleTV 3.2 asus_google_cube Build/MASTER) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.77 Safari/534.24"
     },
     "device": {
-      "deviceName": "Nexus Player",
-      "marketingName": "Nexus Player",
+      "deviceName": "Cube",
+      "marketingName": "Cube",
       "manufacturer": "asus",
-      "brand": "google",
+      "brand": "asus",
       "display": {
         "width": null,
         "height": null,
@@ -55,23 +55,23 @@
       "type": "tv-media-player"
     },
     "browser": {
-      "name": "Dalvik",
+      "name": "Chrome",
       "modus": null,
-      "version": "2.1.0",
+      "version": "11.0.696.77",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.0.0",
+      "version": null,
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": null,
+      "version": "534.24.0",
       "manufacturer": "apple"
     }
   },
@@ -110,6 +110,44 @@
     "engine": {
       "name": "WebKit",
       "version": "534.24.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 8.0.0## Nexus Player Build/OPR2.170623.027)"
+    },
+    "device": {
+      "deviceName": "Nexus Player",
+      "marketingName": "Nexus Player",
+      "manufacturer": "asus",
+      "brand": "google",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
       "manufacturer": "apple"
     }
   }

@@ -1,13 +1,13 @@
 [
   {
     "headers": {
-      "user-agent": "KDDI-W31K UP.Browser/6.2.0.5 (GUI) MMP/2.0"
+      "user-agent": "Mozilla/4.0 (Brew MP 1.0.4; U; en-us; Kyocera; NetFront/4.1/AMB) Sprint S2151-BST"
     },
     "device": {
-      "deviceName": "W31K",
-      "marketingName": "K II",
+      "deviceName": "S2151",
+      "marketingName": "Coast",
       "manufacturer": "kyocera",
-      "brand": "kddi",
+      "brand": "sprint",
       "display": {
         "width": 320,
         "height": 240,
@@ -17,24 +17,24 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Openwave Mobile Browser",
+      "name": "NetFront",
       "modus": null,
-      "version": "6.2.0.5",
-      "manufacturer": "myriad",
+      "version": "4.1.0",
+      "manufacturer": "access",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Brew",
+      "marketingName": "Brew",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "NetFront",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "access"
     }
   },
   {
@@ -77,121 +77,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/3.0(WILLCOM;KYOCERA/402KC/2;3.1.2.24.000000/1/C256) NetFront/3.4"
-    },
-    "device": {
-      "deviceName": "402KC",
-      "marketingName": "402KC",
-      "manufacturer": "kyocera",
-      "brand": "kyocera",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Brew MP 1.0.4; U; en-us; Kyocera; NetFront/4.1/AMB) Sprint S2151-BST"
-    },
-    "device": {
-      "deviceName": "S2151",
-      "marketingName": "Coast",
-      "manufacturer": "kyocera",
-      "brand": "sprint",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "4.1.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "QC2135 UP.Browser/4.1.22b UP.Link/4.2.1.8 (Google WAP Proxy/1.0)"
-    },
-    "device": {
-      "deviceName": "QC-2135",
-      "marketingName": "QC-2135",
-      "manufacturer": "kyocera",
-      "brand": "kyocera",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Google Wap Proxy",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "KWC-K612/1.0.04 UP.Browser/6.2.3.9.g.1.103 (GUI) MMP/2.0 UP.Link/6.3.0.0.0"
+      "user-agent": "KWC-K612/1.0.02 UP.Browser/6.2.3.9.g.1.103 (GUI) MMP/2.0"
     },
     "device": {
       "deviceName": "KWC-K612",
@@ -229,7 +115,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (Brew MP 1.0.2; U; xx; Kyocera; NetFront/4.1/AMB) Sprint E4255"
+      "user-agent": "Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Kyocera; NetFront/4.1/AMB) Sprint E4255"
     },
     "device": {
       "deviceName": "E4255",
@@ -263,6 +149,44 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-W31K UP.Browser/6.2.0.5 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "W31K",
+      "marketingName": "K II",
+      "manufacturer": "kyocera",
+      "brand": "kddi",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.0.5",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -381,6 +305,82 @@
       "name": "Presto",
       "version": "2.8.119",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "QC2135 UP.Browser/4.1.22b UP.Link/4.2.1.8 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "QC-2135",
+      "marketingName": "QC-2135",
+      "manufacturer": "kyocera",
+      "brand": "kyocera",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/3.0(WILLCOM;KYOCERA/402KC/2;3.1.2.24.000000/1/C256) NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "402KC",
+      "marketingName": "402KC",
+      "manufacturer": "kyocera",
+      "brand": "kyocera",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
     }
   }
 ]
