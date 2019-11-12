@@ -40,7 +40,7 @@ final class PlatformParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($key, $useragent)
             ->willReturn($result);
@@ -49,7 +49,7 @@ final class PlatformParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loaderFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke')
             ->willReturn($loader);
 
@@ -57,7 +57,7 @@ final class PlatformParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileParser
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls($mode, $key);
 
@@ -66,6 +66,6 @@ final class PlatformParserTest extends TestCase
         $parser       = new PlatformParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 
-        static::assertSame($result, $parserResult);
+        self::assertSame($result, $parserResult);
     }
 }

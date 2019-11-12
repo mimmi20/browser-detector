@@ -39,6 +39,6 @@ final class DebianFactoryTest extends TestCase
         /** @var DebianFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Debian::class, $result);
+        self::assertInstanceOf(Debian::class, $result);
     }
 }

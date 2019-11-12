@@ -39,6 +39,6 @@ final class SafariFactoryTest extends TestCase
         /** @var SafariFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Safari::class, $result);
+        self::assertInstanceOf(Safari::class, $result);
     }
 }

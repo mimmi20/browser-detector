@@ -39,7 +39,7 @@ final class DeviceLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(static::any())
+            ->expects(self::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -56,7 +56,7 @@ final class DeviceLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke')
             ->with(DeviceLoaderFactory::DATA_PATH . $company, 'json')
             ->willReturn($iterator);
@@ -69,11 +69,11 @@ final class DeviceLoaderFactoryTest extends TestCase
         $factory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser, $filter);
         $object  = $factory($company);
 
-        static::assertInstanceOf(DeviceLoaderInterface::class, $object);
+        self::assertInstanceOf(DeviceLoaderInterface::class, $object);
 
         $objectTwo = $factory($company);
 
-        static::assertInstanceOf(DeviceLoaderInterface::class, $objectTwo);
-        static::assertSame($objectTwo, $object);
+        self::assertInstanceOf(DeviceLoaderInterface::class, $objectTwo);
+        self::assertSame($objectTwo, $object);
     }
 }

@@ -51,7 +51,7 @@ final class DeviceParserFactoryTest extends TestCase
 
         $parser = $factory();
 
-        static::assertInstanceOf(DeviceParserInterface::class, $parser);
-        static::assertInstanceOf(DeviceParser::class, $parser);
+        self::assertInstanceOf(DeviceParserInterface::class, $parser);
+        self::assertInstanceOf(DeviceParser::class, $parser);
     }
 }

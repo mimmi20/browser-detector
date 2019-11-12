@@ -39,6 +39,6 @@ final class RaspbianFactoryTest extends TestCase
         /** @var RaspbianFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Raspbian::class, $result);
+        self::assertInstanceOf(Raspbian::class, $result);
     }
 }

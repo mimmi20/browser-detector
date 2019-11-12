@@ -50,25 +50,25 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $cache = new Psr16Cache(new NullAdapter());
@@ -104,7 +104,7 @@ final class DetectorTest extends TestCase
             $encodedHeaders = '< failed to encode headers >';
         }
 
-        static::assertInstanceOf(
+        self::assertInstanceOf(
             ResultInterface::class,
             $result,
             sprintf(
@@ -115,7 +115,7 @@ final class DetectorTest extends TestCase
 
         $foundBrowser = $result->getBrowser();
 
-        static::assertInstanceOf(
+        self::assertInstanceOf(
             BrowserInterface::class,
             $foundBrowser,
             sprintf(
@@ -126,7 +126,7 @@ final class DetectorTest extends TestCase
 
         $foundEngine = $result->getEngine();
 
-        static::assertInstanceOf(
+        self::assertInstanceOf(
             EngineInterface::class,
             $foundEngine,
             sprintf(
@@ -137,7 +137,7 @@ final class DetectorTest extends TestCase
 
         $foundPlatform = $result->getOs();
 
-        static::assertInstanceOf(
+        self::assertInstanceOf(
             OsInterface::class,
             $foundPlatform,
             sprintf(
@@ -148,7 +148,7 @@ final class DetectorTest extends TestCase
 
         $foundDevice = $result->getDevice();
 
-        static::assertInstanceOf(
+        self::assertInstanceOf(
             DeviceInterface::class,
             $foundDevice,
             sprintf(
@@ -157,7 +157,7 @@ final class DetectorTest extends TestCase
             )
         );
 
-        static::assertEquals(
+        self::assertEquals(
             $expectedResult,
             $result,
             sprintf(

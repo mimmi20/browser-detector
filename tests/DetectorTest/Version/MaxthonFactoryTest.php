@@ -39,6 +39,6 @@ final class MaxthonFactoryTest extends TestCase
         /** @var MaxthonFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Maxthon::class, $result);
+        self::assertInstanceOf(Maxthon::class, $result);
     }
 }

@@ -36,7 +36,7 @@ final class DarwinParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($expectedMode, $useragent)
             ->willReturn($expectedResult);
@@ -45,7 +45,7 @@ final class DarwinParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $mockLoaderFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke')
             ->with('apple')
             ->willReturn($mockLoader);
@@ -54,7 +54,7 @@ final class DarwinParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileParser
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls('genericMode', $expectedMode);
 
@@ -62,6 +62,6 @@ final class DarwinParserTest extends TestCase
         /** @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
         $object = new DarwinParser($fileParser, $mockLoaderFactory);
 
-        static::assertSame($expectedResult, $object->parse($useragent));
+        self::assertSame($expectedResult, $object->parse($useragent));
     }
 }

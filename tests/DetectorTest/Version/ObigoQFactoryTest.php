@@ -39,6 +39,6 @@ final class ObigoQFactoryTest extends TestCase
         /** @var ObigoQFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(ObigoQ::class, $result);
+        self::assertInstanceOf(ObigoQ::class, $result);
     }
 }

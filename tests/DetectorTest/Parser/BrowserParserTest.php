@@ -37,7 +37,7 @@ final class BrowserParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($key, $useragent)
             ->willReturn($result);
@@ -46,7 +46,7 @@ final class BrowserParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loaderFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke')
             ->willReturn($loader);
 
@@ -54,7 +54,7 @@ final class BrowserParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileParser
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls($mode, $key);
 
@@ -63,6 +63,6 @@ final class BrowserParserTest extends TestCase
         $parser       = new BrowserParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 
-        static::assertSame($result, $parserResult);
+        self::assertSame($result, $parserResult);
     }
 }

@@ -37,40 +37,40 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(false);
         $initData
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem')
             ->with('test-key')
             ->willReturn(false);
@@ -112,40 +112,40 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn(null);
@@ -191,35 +191,35 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -234,7 +234,7 @@ final class BrowserLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($browserData);
@@ -260,11 +260,11 @@ final class BrowserLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey(0, $result);
-        static::assertInstanceOf(BrowserInterface::class, $result[0]);
-        static::assertArrayHasKey(1, $result);
-        static::assertNull($result[1]);
+        self::assertIsArray($result);
+        self::assertArrayHasKey(0, $result);
+        self::assertInstanceOf(BrowserInterface::class, $result[0]);
+        self::assertArrayHasKey(1, $result);
+        self::assertNull($result[1]);
     }
 
     /**
@@ -283,38 +283,38 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -329,7 +329,7 @@ final class BrowserLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($browserData);
@@ -355,11 +355,11 @@ final class BrowserLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test/1.0');
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey(0, $result);
-        static::assertInstanceOf(BrowserInterface::class, $result[0]);
-        static::assertArrayHasKey(1, $result);
-        static::assertInstanceOf(EngineInterface::class, $result[1]);
+        self::assertIsArray($result);
+        self::assertArrayHasKey(0, $result);
+        self::assertInstanceOf(BrowserInterface::class, $result[0]);
+        self::assertArrayHasKey(1, $result);
+        self::assertInstanceOf(EngineInterface::class, $result[1]);
     }
 
     /**
@@ -379,39 +379,39 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('warning')
             ->with($exception);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -428,7 +428,7 @@ final class BrowserLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($browserData);
@@ -441,7 +441,7 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($engineKey, $useragent)
             ->willThrowException($exception);
@@ -459,11 +459,11 @@ final class BrowserLoaderTest extends TestCase
 
         $result = $object->load('test-key', $useragent);
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey(0, $result);
-        static::assertInstanceOf(BrowserInterface::class, $result[0]);
-        static::assertArrayHasKey(1, $result);
-        static::assertNull($result[1]);
+        self::assertIsArray($result);
+        self::assertArrayHasKey(0, $result);
+        self::assertInstanceOf(BrowserInterface::class, $result[0]);
+        self::assertArrayHasKey(1, $result);
+        self::assertNull($result[1]);
     }
 
     /**
@@ -482,35 +482,35 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -525,7 +525,7 @@ final class BrowserLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($browserData);
@@ -551,16 +551,16 @@ final class BrowserLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test/1.0');
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey(0, $result);
+        self::assertIsArray($result);
+        self::assertArrayHasKey(0, $result);
         /** @var BrowserInterface $browserResult */
         $browserResult = $result[0];
-        static::assertInstanceOf(BrowserInterface::class, $browserResult);
-        static::assertArrayHasKey(1, $result);
+        self::assertInstanceOf(BrowserInterface::class, $browserResult);
+        self::assertArrayHasKey(1, $result);
         /** @var EngineInterface $engineResult */
         $engineResult = $result[1];
-        static::assertInstanceOf(EngineInterface::class, $engineResult);
+        self::assertInstanceOf(EngineInterface::class, $engineResult);
 
-        static::assertSame('test-browser', $browserResult->getName());
+        self::assertSame('test-browser', $browserResult->getName());
     }
 }

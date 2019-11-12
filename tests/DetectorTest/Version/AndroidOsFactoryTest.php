@@ -39,6 +39,6 @@ final class AndroidOsFactoryTest extends TestCase
         /** @var AndroidOsFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(AndroidOs::class, $result);
+        self::assertInstanceOf(AndroidOs::class, $result);
     }
 }

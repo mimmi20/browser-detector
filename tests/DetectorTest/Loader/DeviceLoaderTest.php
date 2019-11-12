@@ -37,40 +37,40 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(false);
         $initData
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem')
             ->with('test-key')
             ->willReturn(false);
@@ -112,40 +112,40 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn(null);
@@ -191,35 +191,35 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -236,7 +236,7 @@ final class DeviceLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($deviceData);
@@ -262,11 +262,11 @@ final class DeviceLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey(0, $result);
-        static::assertInstanceOf(DeviceInterface::class, $result[0]);
-        static::assertArrayHasKey(1, $result);
-        static::assertNull($result[1]);
+        self::assertIsArray($result);
+        self::assertArrayHasKey(0, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result[0]);
+        self::assertArrayHasKey(1, $result);
+        self::assertNull($result[1]);
     }
 
     /**
@@ -285,38 +285,38 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -333,7 +333,7 @@ final class DeviceLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($deviceData);
@@ -345,7 +345,7 @@ final class DeviceLoaderTest extends TestCase
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $platformParser->expects(static::once())
+        $platformParser->expects(self::once())
             ->method('load')
             ->with('test-platform')
             ->willThrowException(new NotFoundException());
@@ -363,11 +363,11 @@ final class DeviceLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test/1.0');
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey(0, $result);
-        static::assertInstanceOf(DeviceInterface::class, $result[0]);
-        static::assertArrayHasKey(1, $result);
-        static::assertNull($result[1]);
+        self::assertIsArray($result);
+        self::assertArrayHasKey(0, $result);
+        self::assertInstanceOf(DeviceInterface::class, $result[0]);
+        self::assertArrayHasKey(1, $result);
+        self::assertNull($result[1]);
     }
 
     /**
@@ -386,35 +386,35 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -431,7 +431,7 @@ final class DeviceLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($deviceData);
@@ -446,7 +446,7 @@ final class DeviceLoaderTest extends TestCase
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $platformParser->expects(static::once())
+        $platformParser->expects(self::once())
             ->method('load')
             ->with('test-platform')
             ->willReturn($platform);
@@ -464,18 +464,18 @@ final class DeviceLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test/1.0');
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey(0, $result);
+        self::assertIsArray($result);
+        self::assertArrayHasKey(0, $result);
         /** @var DeviceInterface $deviceResult */
         $deviceResult = $result[0];
-        static::assertInstanceOf(DeviceInterface::class, $deviceResult);
+        self::assertInstanceOf(DeviceInterface::class, $deviceResult);
 
-        static::assertArrayHasKey(1, $result);
+        self::assertArrayHasKey(1, $result);
         /** @var OsInterface $platformResult */
         $platformResult = $result[1];
-        static::assertInstanceOf(OsInterface::class, $platformResult);
-        static::assertSame($platform, $platformResult);
+        self::assertInstanceOf(OsInterface::class, $platformResult);
+        self::assertSame($platform, $platformResult);
 
-        static::assertSame('test-device', $deviceResult->getDeviceName());
+        self::assertSame('test-device', $deviceResult->getDeviceName());
     }
 }

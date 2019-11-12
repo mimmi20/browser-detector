@@ -39,6 +39,6 @@ final class ScreamingFrogFactoryTest extends TestCase
         /** @var ScreamingFrogFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(ScreamingFrog::class, $result);
+        self::assertInstanceOf(ScreamingFrog::class, $result);
     }
 }

@@ -41,7 +41,7 @@ final class MobileDeviceTest extends TestCase
      */
     public function testIsMobile(string $agent): void
     {
-        static::assertTrue(
+        self::assertTrue(
             $this->object->isMobile($agent),
             sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
         );
@@ -161,7 +161,7 @@ final class MobileDeviceTest extends TestCase
      */
     public function testIsNotMobile(string $agent): void
     {
-        static::assertFalse(
+        self::assertFalse(
             $this->object->isMobile($agent),
             sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
         );

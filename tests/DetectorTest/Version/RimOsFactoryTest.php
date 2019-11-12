@@ -39,6 +39,6 @@ final class RimOsFactoryTest extends TestCase
         /** @var RimOsFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(RimOs::class, $result);
+        self::assertInstanceOf(RimOs::class, $result);
     }
 }

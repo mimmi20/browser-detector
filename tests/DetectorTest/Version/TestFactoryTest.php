@@ -39,6 +39,6 @@ final class TestFactoryTest extends TestCase
         /** @var TestFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Test::class, $result);
+        self::assertInstanceOf(Test::class, $result);
     }
 }

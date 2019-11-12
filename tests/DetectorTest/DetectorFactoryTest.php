@@ -32,25 +32,25 @@ final class DetectorFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $cache = new FilesystemAdapter('', 0, 'cache/');
@@ -59,11 +59,11 @@ final class DetectorFactoryTest extends TestCase
         $factory = new DetectorFactory(new Psr16Cache($cache), $logger);
         $object  = $factory();
 
-        static::assertInstanceOf(Detector::class, $object);
+        self::assertInstanceOf(Detector::class, $object);
 
         $objectTwo = $factory();
 
-        static::assertInstanceOf(Detector::class, $objectTwo);
-        static::assertSame($objectTwo, $object);
+        self::assertInstanceOf(Detector::class, $objectTwo);
+        self::assertSame($objectTwo, $object);
     }
 }

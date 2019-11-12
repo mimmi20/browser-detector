@@ -33,7 +33,7 @@ final class CompanyLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(static::any())
+            ->expects(self::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -42,7 +42,7 @@ final class CompanyLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(static::any())
+            ->expects(self::any())
             ->method('__invoke')
             ->with(CompanyLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
@@ -52,11 +52,11 @@ final class CompanyLoaderFactoryTest extends TestCase
         $factory = new CompanyLoaderFactory($jsonParser, $filter);
         $object  = $factory();
 
-        static::assertInstanceOf(CompanyLoaderInterface::class, $object);
+        self::assertInstanceOf(CompanyLoaderInterface::class, $object);
 
         $objectTwo = $factory();
 
-        static::assertInstanceOf(CompanyLoaderInterface::class, $objectTwo);
-        static::assertSame($objectTwo, $object);
+        self::assertInstanceOf(CompanyLoaderInterface::class, $objectTwo);
+        self::assertSame($objectTwo, $object);
     }
 }

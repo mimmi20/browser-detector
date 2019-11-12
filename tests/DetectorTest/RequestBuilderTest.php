@@ -51,35 +51,35 @@ final class RequestBuilderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
         /** @var \UaResult\Result\Result $result */
         $result = $this->object->buildRequest($logger, $useragent);
 
-        static::assertInstanceOf(GenericRequest::class, $result);
+        self::assertInstanceOf(GenericRequest::class, $result);
     }
 
     /**
@@ -98,28 +98,28 @@ final class RequestBuilderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -131,7 +131,7 @@ final class RequestBuilderTest extends TestCase
         /** @var Result $result */
         $result = $this->object->buildRequest($logger, $request);
 
-        static::assertInstanceOf(GenericRequest::class, $result);
+        self::assertInstanceOf(GenericRequest::class, $result);
     }
 
     /**
@@ -150,28 +150,28 @@ final class RequestBuilderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -183,7 +183,7 @@ final class RequestBuilderTest extends TestCase
         /** @var Result $result */
         $result = $this->object->buildRequest($logger, $request);
 
-        static::assertInstanceOf(GenericRequest::class, $result);
+        self::assertInstanceOf(GenericRequest::class, $result);
     }
 
     /**
@@ -197,28 +197,28 @@ final class RequestBuilderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /* @var \Psr\Log\LoggerInterface $logger */

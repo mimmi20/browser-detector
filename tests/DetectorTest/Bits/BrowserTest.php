@@ -43,11 +43,11 @@ final class BrowserTest extends TestCase
     public function testGetBits(string $useragent, ?int $expected): void
     {
         $result = $this->object->getBits($useragent);
-        static::assertSame($expected, $result);
+        self::assertSame($expected, $result);
 
         $secondResult = $this->object->getBits($useragent);
-        static::assertSame($expected, $secondResult);
-        static::assertSame($result, $secondResult);
+        self::assertSame($expected, $secondResult);
+        self::assertSame($result, $secondResult);
     }
 
     /**

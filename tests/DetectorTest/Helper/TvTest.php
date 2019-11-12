@@ -41,7 +41,7 @@ final class TvTest extends TestCase
      */
     public function testIsTv(string $agent): void
     {
-        static::assertTrue(
+        self::assertTrue(
             $this->object->isTvDevice($agent),
             sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
         );
@@ -92,7 +92,7 @@ final class TvTest extends TestCase
      */
     public function testIsNotTv(string $agent): void
     {
-        static::assertFalse(
+        self::assertFalse(
             $this->object->isTvDevice($agent),
             sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
         );

@@ -40,14 +40,14 @@ final class CompanyLoaderTest extends TestCase
         $data = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $data->expects(static::once())
+        $data->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
-        $data->expects(static::never())
+        $data->expects(self::never())
             ->method('getItem')
             ->with($companyKey)
             ->willReturn($result);
-        $data->expects(static::once())
+        $data->expects(self::once())
             ->method('__invoke');
 
         /** @var Data $data */
@@ -77,14 +77,14 @@ final class CompanyLoaderTest extends TestCase
         $data = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $data->expects(static::once())
+        $data->expects(self::once())
             ->method('hasItem')
             ->willReturn(true);
-        $data->expects(static::once())
+        $data->expects(self::once())
             ->method('getItem')
             ->with($companyKey)
             ->willReturn(null);
-        $data->expects(static::once())
+        $data->expects(self::once())
             ->method('__invoke');
 
         /** @var Data $data */
@@ -118,14 +118,14 @@ final class CompanyLoaderTest extends TestCase
         $data = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $data->expects(static::once())
+        $data->expects(self::once())
             ->method('hasItem')
             ->willReturn(true);
-        $data->expects(static::once())
+        $data->expects(self::once())
             ->method('getItem')
             ->with($companyKey)
             ->willReturn($result);
-        $data->expects(static::once())
+        $data->expects(self::once())
             ->method('__invoke');
 
         /** @var Data $data */
@@ -134,14 +134,14 @@ final class CompanyLoaderTest extends TestCase
         /** @var \UaResult\Company\CompanyInterface $result */
         $result = $object->load($companyKey);
 
-        static::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
+        self::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
 
-        static::assertSame(
+        self::assertSame(
             $companyName,
             $result->getName(),
             'Expected Company name to be "' . $companyName . '" (was "' . $result->getName() . '")'
         );
-        static::assertSame(
+        self::assertSame(
             $brand,
             $result->getBrandName(),
             'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")'
