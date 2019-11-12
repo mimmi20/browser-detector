@@ -39,6 +39,6 @@ final class PuffinFactoryTest extends TestCase
         /** @var PuffinFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Puffin::class, $result);
+        self::assertInstanceOf(Puffin::class, $result);
     }
 }

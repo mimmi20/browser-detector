@@ -39,6 +39,6 @@ final class TridentFactoryTest extends TestCase
         /** @var TridentFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Trident::class, $result);
+        self::assertInstanceOf(Trident::class, $result);
     }
 }

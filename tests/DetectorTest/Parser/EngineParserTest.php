@@ -39,7 +39,7 @@ final class EngineParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($mode, $useragent)
             ->willReturn($result);
@@ -48,7 +48,7 @@ final class EngineParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $loaderFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke')
             ->willReturn($loader);
 
@@ -56,7 +56,7 @@ final class EngineParserTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $fileParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parseFile')
             ->willReturn($mode);
 
@@ -65,6 +65,6 @@ final class EngineParserTest extends TestCase
         $parser       = new EngineParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 
-        static::assertSame($result, $parserResult);
+        self::assertSame($result, $parserResult);
     }
 }

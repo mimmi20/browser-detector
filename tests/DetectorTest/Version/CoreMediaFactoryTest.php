@@ -39,6 +39,6 @@ final class CoreMediaFactoryTest extends TestCase
         /** @var CoreMediaFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(CoreMedia::class, $result);
+        self::assertInstanceOf(CoreMedia::class, $result);
     }
 }

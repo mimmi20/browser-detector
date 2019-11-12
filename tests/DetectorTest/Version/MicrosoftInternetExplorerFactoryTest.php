@@ -39,6 +39,6 @@ final class MicrosoftInternetExplorerFactoryTest extends TestCase
         /** @var MicrosoftInternetExplorerFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(MicrosoftInternetExplorer::class, $result);
+        self::assertInstanceOf(MicrosoftInternetExplorer::class, $result);
     }
 }

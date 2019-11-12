@@ -40,28 +40,28 @@ final class MaxthonTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var LoggerInterface $logger */
@@ -69,8 +69,8 @@ final class MaxthonTest extends TestCase
 
         $detectedVersion = $object->detectVersion($useragent);
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertSame($expectedVersion, $detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**
@@ -105,36 +105,36 @@ final class MaxthonTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('set')
             ->with('2.0')
             ->willThrowException($exception);
@@ -145,9 +145,9 @@ final class MaxthonTest extends TestCase
 
         $detectedVersion = $object->detectVersion($useragent);
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertInstanceOf(NullVersion::class, $detectedVersion);
-        static::assertNull($detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
     }
 
     /**
@@ -161,44 +161,44 @@ final class MaxthonTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Maxthon::SEARCH_OLD)
             ->willThrowException($exception);
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setRegex')
             ->with(Maxthon::REGEX);
 
@@ -208,9 +208,9 @@ final class MaxthonTest extends TestCase
 
         $detectedVersion = $object->detectVersion($useragent);
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertInstanceOf(NullVersion::class, $detectedVersion);
-        static::assertNull($detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
     }
 
     /**
@@ -224,41 +224,41 @@ final class MaxthonTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Maxthon::SEARCHES)
             ->willThrowException($exception);
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
 
         /** @var LoggerInterface $logger */
@@ -267,8 +267,8 @@ final class MaxthonTest extends TestCase
 
         $detectedVersion = $object->detectVersion($useragent);
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertInstanceOf(NullVersion::class, $detectedVersion);
-        static::assertNull($detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
     }
 }

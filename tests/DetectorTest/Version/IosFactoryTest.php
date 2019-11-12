@@ -39,6 +39,6 @@ final class IosFactoryTest extends TestCase
         /** @var IosFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Ios::class, $result);
+        self::assertInstanceOf(Ios::class, $result);
     }
 }

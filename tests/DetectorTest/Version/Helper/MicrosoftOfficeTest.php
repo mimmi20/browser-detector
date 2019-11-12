@@ -42,7 +42,7 @@ final class MicrosoftOfficeTest extends TestCase
      */
     public function testMapOfficeVersion(string $version, string $expectedVersion): void
     {
-        static::assertSame($expectedVersion, $this->object->mapOfficeVersion($version));
+        self::assertSame($expectedVersion, $this->object->mapOfficeVersion($version));
     }
 
     /**

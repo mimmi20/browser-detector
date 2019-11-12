@@ -43,28 +43,28 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var LoggerInterface $logger */
@@ -72,8 +72,8 @@ final class SafariTest extends TestCase
 
         $detectedVersion = $object->detectVersion($useragent);
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertSame($expectedVersion, $detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**
@@ -107,36 +107,36 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('set')
             ->with('4.0')
             ->willThrowException($exception);
@@ -145,7 +145,7 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $safariHelper
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('mapSafariVersion');
 
         /** @var LoggerInterface $logger */
@@ -155,9 +155,9 @@ final class SafariTest extends TestCase
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertInstanceOf(NullVersion::class, $detectedVersion);
-        static::assertNull($detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
     }
 
     /**
@@ -169,28 +169,28 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $mappedVersion  = new Version('2');
@@ -198,7 +198,7 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('set')
             ->with('4.0')
             ->willReturn($mappedVersion);
@@ -207,7 +207,7 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $safariHelper
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('mapSafariVersion')
             ->with($mappedVersion)
             ->willReturn(null);
@@ -219,9 +219,9 @@ final class SafariTest extends TestCase
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertInstanceOf(NullVersion::class, $detectedVersion);
-        static::assertNull($detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
     }
 
     /**
@@ -234,29 +234,29 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $mappedVersionOne = new Version('2');
@@ -264,7 +264,7 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('set')
             ->withConsecutive(['4.0'], ['1.0'])
             ->willReturnCallback(static function () use ($mappedVersionOne, $exception) {
@@ -282,7 +282,7 @@ final class SafariTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $safariHelper
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('mapSafariVersion')
             ->with($mappedVersionOne)
             ->willReturn('1.0');
@@ -294,8 +294,8 @@ final class SafariTest extends TestCase
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertInstanceOf(NullVersion::class, $detectedVersion);
-        static::assertNull($detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
     }
 }

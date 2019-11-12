@@ -36,21 +36,21 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $displayFactory = $this->getMockBuilder(DisplayFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('fromArray');
 
         /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
@@ -62,28 +62,28 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $this->expectException(\AssertionError::class);
@@ -109,7 +109,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('load')
             ->with('unknown', $useragent)
             ->willReturn($company);
@@ -121,7 +121,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('')
             ->willReturn($type);
@@ -130,28 +130,28 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $displayParam = [];
@@ -162,7 +162,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('fromArray')
             ->with($logger, $displayParam)
             ->willReturn($display);
@@ -179,18 +179,18 @@ final class DeviceFactoryTest extends TestCase
             $useragent
         );
 
-        static::assertInstanceOf(Device::class, $result);
-        static::assertNull($result->getDeviceName());
-        static::assertNull($result->getMarketingName());
+        self::assertInstanceOf(Device::class, $result);
+        self::assertNull($result->getDeviceName());
+        self::assertNull($result->getMarketingName());
 
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        static::assertSame($display, $result->getDisplay());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
-        static::assertInstanceOf(CompanyInterface::class, $result->getBrand());
-        static::assertSame($company, $result->getBrand());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
+        self::assertSame($display, $result->getDisplay());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
+        self::assertSame($company, $result->getBrand());
     }
 
     /**
@@ -223,7 +223,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('load')
             ->withConsecutive([$manufacturerParam, $useragent], [$brandParam, $useragent])
             ->willReturnOnConsecutiveCalls($manufacturer, $brand);
@@ -236,7 +236,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('1')
             ->willReturn($type);
@@ -245,28 +245,28 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $displayParam = [];
@@ -277,7 +277,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('fromArray')
             ->with($logger, $displayParam)
             ->willReturn($display);
@@ -303,20 +303,20 @@ final class DeviceFactoryTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, $data, $useragent);
 
-        static::assertInstanceOf(Device::class, $result);
-        static::assertIsString($result->getDeviceName());
-        static::assertSame($deviceName, $result->getDeviceName());
-        static::assertIsString($result->getMarketingName());
-        static::assertSame($marketingName, $result->getMarketingName());
+        self::assertInstanceOf(Device::class, $result);
+        self::assertIsString($result->getDeviceName());
+        self::assertSame($deviceName, $result->getDeviceName());
+        self::assertIsString($result->getMarketingName());
+        self::assertSame($marketingName, $result->getMarketingName());
 
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        static::assertSame($display, $result->getDisplay());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($manufacturer, $result->getManufacturer());
-        static::assertInstanceOf(CompanyInterface::class, $result->getBrand());
-        static::assertSame($brand, $result->getBrand());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
+        self::assertSame($display, $result->getDisplay());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($manufacturer, $result->getManufacturer());
+        self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
+        self::assertSame($brand, $result->getBrand());
     }
 
     /**
@@ -342,7 +342,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('load')
             ->withConsecutive([$manufacturerParam, $useragent], [$brandParam, $useragent])
             ->willThrowException($companyException);
@@ -352,7 +352,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('1')
             ->willThrowException($typeException);
@@ -361,29 +361,29 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('info')
             ->withConsecutive([$typeException], [$companyException], [$companyException]);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $display = $this->getMockBuilder(DisplayInterface::class)
@@ -394,7 +394,7 @@ final class DeviceFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('fromArray')
             ->with($logger, $displayParam)
             ->willReturn($display);
@@ -420,16 +420,16 @@ final class DeviceFactoryTest extends TestCase
         /** @var \Psr\Log\LoggerInterface $logger */
         $result = $object->fromArray($logger, $data, $useragent);
 
-        static::assertInstanceOf(Device::class, $result);
-        static::assertIsString($result->getDeviceName());
-        static::assertSame($deviceName, $result->getDeviceName());
-        static::assertIsString($result->getMarketingName());
-        static::assertSame($marketingName, $result->getMarketingName());
+        self::assertInstanceOf(Device::class, $result);
+        self::assertIsString($result->getDeviceName());
+        self::assertSame($deviceName, $result->getDeviceName());
+        self::assertIsString($result->getMarketingName());
+        self::assertSame($marketingName, $result->getMarketingName());
 
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertInstanceOf(Unknown::class, $result->getType());
-        static::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertInstanceOf(CompanyInterface::class, $result->getBrand());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertInstanceOf(Unknown::class, $result->getType());
+        self::assertInstanceOf(DisplayInterface::class, $result->getDisplay());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertInstanceOf(CompanyInterface::class, $result->getBrand());
     }
 }

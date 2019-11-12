@@ -39,14 +39,14 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -61,28 +61,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $this->expectException(\AssertionError::class);
@@ -108,7 +108,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -117,7 +117,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
 
         $typeName = 1;
@@ -128,7 +128,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('1')
             ->willReturn($type);
@@ -142,28 +142,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -173,16 +173,16 @@ final class BrowserFactoryTest extends TestCase
             'this is a test'
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertInstanceOf(NullVersion::class, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertInstanceOf(NullVersion::class, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -201,7 +201,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -214,7 +214,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('set')
             ->with($v)
             ->willReturn($version1);
@@ -227,7 +227,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
@@ -241,28 +241,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -272,16 +272,16 @@ final class BrowserFactoryTest extends TestCase
             'this is a test'
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertSame($version1, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertSame($version1, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -300,7 +300,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -311,7 +311,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
 
         $typeName = 'unknown-type';
@@ -322,7 +322,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
@@ -336,28 +336,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -367,16 +367,16 @@ final class BrowserFactoryTest extends TestCase
             'this is a test'
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertInstanceOf(NullVersion::class, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertInstanceOf(NullVersion::class, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -395,7 +395,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -410,7 +410,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('set')
             ->with($v2)
             ->willReturn($version1);
@@ -423,7 +423,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
@@ -437,28 +437,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -468,16 +468,16 @@ final class BrowserFactoryTest extends TestCase
             'this is a test'
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertSame($version1, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertSame($version1, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -496,7 +496,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -510,7 +510,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
 
         $typeName = 'unknown-type';
@@ -521,7 +521,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
@@ -535,28 +535,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -566,16 +566,16 @@ final class BrowserFactoryTest extends TestCase
             'this is a test'
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertNotSame($version2, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertNotSame($version2, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -594,7 +594,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -608,7 +608,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
 
         $typeName = 'unknown-type';
@@ -619,7 +619,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
@@ -633,28 +633,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -664,17 +664,17 @@ final class BrowserFactoryTest extends TestCase
             'this is a test'
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertInstanceOf(Version::class, $result->getVersion());
-        static::assertSame('1.11.111.1111.11111', $result->getVersion()->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertInstanceOf(Version::class, $result->getVersion());
+        self::assertSame('1.11.111.1111.11111', $result->getVersion()->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -693,7 +693,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -704,7 +704,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
 
         $typeName = 'unknown-type';
@@ -715,7 +715,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
@@ -729,28 +729,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -760,16 +760,16 @@ final class BrowserFactoryTest extends TestCase
             'this is a test'
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertInstanceOf(NullVersion::class, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertInstanceOf(NullVersion::class, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -788,7 +788,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -806,10 +806,10 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, $search)
             ->willReturn($version2);
@@ -822,7 +822,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
@@ -836,28 +836,28 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -867,16 +867,16 @@ final class BrowserFactoryTest extends TestCase
             $useragent
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertSame($version2, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        static::assertSame($company, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertSame($version2, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertSame($company, $result->getManufacturer());
     }
 
     /**
@@ -899,7 +899,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($companyName, $useragent)
             ->willThrowException($exception);
@@ -908,7 +908,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
 
         $typeName = 'unknown-type';
@@ -919,7 +919,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
@@ -933,29 +933,29 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -965,15 +965,15 @@ final class BrowserFactoryTest extends TestCase
             $useragent
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertSame($type, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertInstanceOf(NullVersion::class, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertSame($type, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertInstanceOf(NullVersion::class, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
     }
 
     /**
@@ -993,7 +993,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($companyName, $useragent)
             ->willThrowException($exception);
@@ -1002,7 +1002,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('set');
 
         $typeName     = 'unknown-type';
@@ -1011,7 +1011,7 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with($typeName)
             ->willThrowException($exceptionTwo);
@@ -1025,29 +1025,29 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('info')
             ->withConsecutive([$exceptionTwo], [$exception]);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -1057,14 +1057,14 @@ final class BrowserFactoryTest extends TestCase
             $useragent
         );
 
-        static::assertInstanceOf(Browser::class, $result);
-        static::assertNull($result->getName());
-        static::assertNull($result->getModus());
-        static::assertNull($result->getBits());
-        static::assertInstanceOf(TypeInterface::class, $result->getType());
-        static::assertInstanceOf(Unknown::class, $result->getType());
-        static::assertInstanceOf(VersionInterface::class, $result->getVersion());
-        static::assertInstanceOf(NullVersion::class, $result->getVersion());
-        static::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
+        self::assertInstanceOf(Browser::class, $result);
+        self::assertNull($result->getName());
+        self::assertNull($result->getModus());
+        self::assertNull($result->getBits());
+        self::assertInstanceOf(TypeInterface::class, $result->getType());
+        self::assertInstanceOf(Unknown::class, $result->getType());
+        self::assertInstanceOf(VersionInterface::class, $result->getVersion());
+        self::assertInstanceOf(NullVersion::class, $result->getVersion());
+        self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
     }
 }

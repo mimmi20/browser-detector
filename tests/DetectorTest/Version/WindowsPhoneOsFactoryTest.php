@@ -39,6 +39,6 @@ final class WindowsPhoneOsFactoryTest extends TestCase
         /** @var WindowsPhoneOsFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(WindowsPhoneOs::class, $result);
+        self::assertInstanceOf(WindowsPhoneOs::class, $result);
     }
 }

@@ -39,6 +39,6 @@ final class MacosFactoryTest extends TestCase
         /** @var MacosFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Macos::class, $result);
+        self::assertInstanceOf(Macos::class, $result);
     }
 }

@@ -36,50 +36,50 @@ final class PlatformLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(false);
         $initData
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem')
             ->with('test-key')
-            ->will(static::throwException(new InvalidArgumentException('fail')));
+            ->will(self::throwException(new InvalidArgumentException('fail')));
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
 
         $companyLoader
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -109,40 +109,40 @@ final class PlatformLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn(null);
@@ -152,7 +152,7 @@ final class PlatformLoaderTest extends TestCase
             ->getMock();
 
         $companyLoader
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -186,35 +186,35 @@ final class PlatformLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -227,7 +227,7 @@ final class PlatformLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($platformData);
@@ -239,7 +239,7 @@ final class PlatformLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -255,7 +255,7 @@ final class PlatformLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        static::assertInstanceOf(OsInterface::class, $result);
+        self::assertInstanceOf(OsInterface::class, $result);
     }
 
     /**
@@ -274,35 +274,35 @@ final class PlatformLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -315,7 +315,7 @@ final class PlatformLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($platformData);
@@ -327,7 +327,7 @@ final class PlatformLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -343,7 +343,7 @@ final class PlatformLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        static::assertInstanceOf(OsInterface::class, $result);
+        self::assertInstanceOf(OsInterface::class, $result);
     }
 
     /**
@@ -362,35 +362,35 @@ final class PlatformLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -403,7 +403,7 @@ final class PlatformLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($platformData);
@@ -415,7 +415,7 @@ final class PlatformLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -431,9 +431,9 @@ final class PlatformLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test/10.12');
 
-        static::assertInstanceOf(OsInterface::class, $result);
+        self::assertInstanceOf(OsInterface::class, $result);
 
-        static::assertSame('macOS', $result->getName());
+        self::assertSame('macOS', $result->getName());
     }
 
     /**
@@ -452,35 +452,35 @@ final class PlatformLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -493,7 +493,7 @@ final class PlatformLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($platformData);
@@ -505,7 +505,7 @@ final class PlatformLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -521,6 +521,6 @@ final class PlatformLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test/12.0');
 
-        static::assertInstanceOf(OsInterface::class, $result);
+        self::assertInstanceOf(OsInterface::class, $result);
     }
 }

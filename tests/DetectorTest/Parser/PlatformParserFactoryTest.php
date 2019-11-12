@@ -48,7 +48,7 @@ final class PlatformParserFactoryTest extends TestCase
 
         $parser = $factory();
 
-        static::assertInstanceOf(PlatformParserInterface::class, $parser);
-        static::assertInstanceOf(PlatformParser::class, $parser);
+        self::assertInstanceOf(PlatformParserInterface::class, $parser);
+        self::assertInstanceOf(PlatformParser::class, $parser);
     }
 }

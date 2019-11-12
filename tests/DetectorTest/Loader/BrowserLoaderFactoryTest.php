@@ -37,7 +37,7 @@ final class BrowserLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(static::any())
+            ->expects(self::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -54,7 +54,7 @@ final class BrowserLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke')
             ->with(BrowserLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
@@ -67,11 +67,11 @@ final class BrowserLoaderFactoryTest extends TestCase
         $factory = new BrowserLoaderFactory($logger, $jsonParser, $companyLoader, $engineParser, $filter);
         $object  = $factory();
 
-        static::assertInstanceOf(BrowserLoaderInterface::class, $object);
+        self::assertInstanceOf(BrowserLoaderInterface::class, $object);
 
         $objectTwo = $factory();
 
-        static::assertInstanceOf(BrowserLoaderInterface::class, $objectTwo);
-        static::assertSame($objectTwo, $object);
+        self::assertInstanceOf(BrowserLoaderInterface::class, $objectTwo);
+        self::assertSame($objectTwo, $object);
     }
 }

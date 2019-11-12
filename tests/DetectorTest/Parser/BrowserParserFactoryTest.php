@@ -51,7 +51,7 @@ final class BrowserParserFactoryTest extends TestCase
 
         $parser = $factory();
 
-        static::assertInstanceOf(BrowserParserInterface::class, $parser);
-        static::assertInstanceOf(BrowserParser::class, $parser);
+        self::assertInstanceOf(BrowserParserInterface::class, $parser);
+        self::assertInstanceOf(BrowserParser::class, $parser);
     }
 }

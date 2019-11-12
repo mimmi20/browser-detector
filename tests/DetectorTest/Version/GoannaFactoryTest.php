@@ -39,6 +39,6 @@ final class GoannaFactoryTest extends TestCase
         /** @var GoannaFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Goanna::class, $result);
+        self::assertInstanceOf(Goanna::class, $result);
     }
 }

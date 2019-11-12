@@ -39,6 +39,6 @@ final class FriendicaFactoryTest extends TestCase
         /** @var FriendicaFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(Friendica::class, $result);
+        self::assertInstanceOf(Friendica::class, $result);
     }
 }

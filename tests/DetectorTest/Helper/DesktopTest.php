@@ -41,7 +41,7 @@ final class DesktopTest extends TestCase
      */
     public function testIsDesktop(string $agent): void
     {
-        static::assertTrue(
+        self::assertTrue(
             $this->object->isDesktopDevice($agent),
             sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
         );
@@ -116,7 +116,7 @@ final class DesktopTest extends TestCase
      */
     public function testIsNoDesktop(string $agent): void
     {
-        static::assertFalse(
+        self::assertFalse(
             $this->object->isDesktopDevice($agent),
             sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
         );

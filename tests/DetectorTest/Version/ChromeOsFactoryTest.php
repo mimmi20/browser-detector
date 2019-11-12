@@ -39,6 +39,6 @@ final class ChromeOsFactoryTest extends TestCase
         /** @var ChromeOsFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(ChromeOs::class, $result);
+        self::assertInstanceOf(ChromeOs::class, $result);
     }
 }

@@ -51,28 +51,28 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->createMock(DeviceInterface::class);
@@ -82,7 +82,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -91,7 +91,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -101,7 +101,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, $engine]);
@@ -110,24 +110,24 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -135,7 +135,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -160,11 +160,11 @@ final class DetectorTest extends TestCase
         /** @var \UaResult\Result\Result $result */
         $result = $object->getBrowser($useragent);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
     }
 
     /**
@@ -185,28 +185,28 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->createMock(DeviceInterface::class);
@@ -216,7 +216,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -225,7 +225,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -235,7 +235,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, $engine]);
@@ -244,24 +244,24 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -269,7 +269,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -298,11 +298,11 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($request);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
     }
 
     /**
@@ -322,59 +322,59 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $mockResult = $this->createMock(ResultInterface::class);
@@ -383,22 +383,22 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('hasItem')
             ->willReturn(true);
         $cache
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('getItem')
             ->willReturn($mockResult);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('setItem');
 
         $normalizer = $this->getMockBuilder(NormalizerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('normalize');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -425,13 +425,13 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object($request);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($mockResult, $result);
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($mockResult, $result);
 
         /** @var Result $result2 */
         $result2 = $object->__invoke($message);
 
-        static::assertSame($result, $result2);
+        self::assertSame($result, $result2);
     }
 
     /**
@@ -446,73 +446,73 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $engineParser = $this->getMockBuilder(EngineParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('setItem')
             ->willReturn(false);
 
@@ -520,7 +520,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('normalize');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -564,28 +564,28 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->createMock(DeviceInterface::class);
@@ -595,7 +595,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -604,7 +604,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -614,7 +614,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, $engine]);
@@ -623,24 +623,24 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -648,7 +648,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -673,11 +673,11 @@ final class DetectorTest extends TestCase
         /** @var \UaResult\Result\Result $result */
         $result = $object->__invoke($useragent);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
     }
 
     /**
@@ -698,28 +698,28 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->createMock(DeviceInterface::class);
@@ -729,7 +729,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -738,7 +738,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -748,7 +748,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, $engine]);
@@ -757,24 +757,24 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -782,7 +782,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -807,11 +807,11 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke([Constants::HEADER_HTTP_USERAGENT => $useragent]);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
     }
 
     /**
@@ -832,32 +832,32 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::once())
+        $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->createMock(OsInterface::class);
@@ -866,7 +866,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -875,7 +875,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -885,7 +885,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, $engine]);
@@ -895,24 +895,24 @@ final class DetectorTest extends TestCase
 
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -920,7 +920,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -947,14 +947,14 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
     }
 
     /**
@@ -975,44 +975,44 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
-            ->will(static::throwException(new NotFoundException('test')));
+            ->will(self::throwException(new NotFoundException('test')));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1022,7 +1022,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, $engine]);
@@ -1031,24 +1031,24 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -1056,7 +1056,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1083,13 +1083,13 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertNull($result->getDevice()->getDeviceName());
-        static::assertNull($result->getOs()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertNull($result->getDevice()->getDeviceName());
+        self::assertNull($result->getOs()->getName());
     }
 
     /**
@@ -1110,44 +1110,44 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
-            ->will(static::throwException(new NotFoundException('test')));
+            ->will(self::throwException(new NotFoundException('test')));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1157,7 +1157,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, $engine]);
@@ -1166,24 +1166,24 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -1191,7 +1191,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1218,15 +1218,15 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
+        self::assertInstanceOf(ResultInterface::class, $result);
         //self::assertSame($device, $result->getDevice());
         //self::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertNull($result->getDevice()->getDeviceName());
-        static::assertNull($result->getOs()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertNull($result->getDevice()->getDeviceName());
+        self::assertNull($result->getOs()->getName());
     }
 
     /**
@@ -1247,32 +1247,32 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::once())
+        $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->createMock(OsInterface::class);
@@ -1281,7 +1281,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -1290,12 +1290,12 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
-        $engine->expects(static::once())
+        $engine->expects(self::once())
             ->method('getName')
             ->willReturn('test-engine');
 
@@ -1303,7 +1303,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, null]);
@@ -1312,26 +1312,26 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn($engine);
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -1339,7 +1339,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1366,15 +1366,15 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertSame('testDevice', $result->getDevice()->getDeviceName());
-        static::assertSame('test-engine', $result->getEngine()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertSame('test-engine', $result->getEngine()->getName());
     }
 
     /**
@@ -1395,32 +1395,32 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::exactly(2))
+            ->expects(self::exactly(2))
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::once())
+        $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->createMock(OsInterface::class);
@@ -1429,7 +1429,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -1438,7 +1438,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1447,7 +1447,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, null]);
@@ -1456,26 +1456,26 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
-            ->will(static::throwException(new NotFoundException('test')));
+            ->will(self::throwException(new NotFoundException('test')));
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -1483,7 +1483,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1510,15 +1510,15 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
         //self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertSame('testDevice', $result->getDevice()->getDeviceName());
-        static::assertNull($result->getEngine()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertNull($result->getEngine()->getName());
     }
 
     /**
@@ -1539,37 +1539,37 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::once())
+        $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
 
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(static::exactly(2))
+        $os->expects(self::exactly(2))
             ->method('getName')
             ->willReturn('iOS');
 
@@ -1577,7 +1577,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -1586,7 +1586,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1595,7 +1595,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, null]);
@@ -1604,15 +1604,15 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $engine = $this->getMockBuilder(EngineInterface::class)->getMock();
-        $engine->expects(static::once())
+        $engine->expects(self::once())
             ->method('getName')
             ->willReturn('webkit-test');
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('webkit', $normalizedUseragent)
             ->willReturn($engine);
@@ -1621,14 +1621,14 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -1636,7 +1636,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1663,16 +1663,16 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertSame('testDevice', $result->getDevice()->getDeviceName());
-        static::assertSame('webkit-test', $result->getEngine()->getName());
-        static::assertSame('iOS', $result->getOs()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertSame('webkit-test', $result->getEngine()->getName());
+        self::assertSame('iOS', $result->getOs()->getName());
     }
 
     /**
@@ -1693,36 +1693,36 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::once())
+        $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(static::exactly(2))
+        $os->expects(self::exactly(2))
             ->method('getName')
             ->willReturn('iOS');
 
@@ -1730,7 +1730,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -1739,7 +1739,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1748,7 +1748,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, null]);
@@ -1757,26 +1757,26 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('webkit', $normalizedUseragent)
-            ->will(static::throwException(new \UnexpectedValueException('parsing failed')));
+            ->will(self::throwException(new \UnexpectedValueException('parsing failed')));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -1784,7 +1784,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1811,16 +1811,16 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
         //self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertSame('testDevice', $result->getDevice()->getDeviceName());
-        static::assertNull($result->getEngine()->getName());
-        static::assertSame('iOS', $result->getOs()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertNull($result->getEngine()->getName());
+        self::assertSame('iOS', $result->getOs()->getName());
     }
 
     /**
@@ -1841,36 +1841,36 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::once())
+        $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(static::exactly(2))
+        $os->expects(self::exactly(2))
             ->method('getName')
             ->willReturn('iOS');
 
@@ -1878,7 +1878,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -1887,7 +1887,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browser = $this->createMock(BrowserInterface::class);
@@ -1896,7 +1896,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, null]);
@@ -1905,26 +1905,26 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('webkit', $normalizedUseragent)
-            ->will(static::throwException(new NotFoundException('something not found')));
+            ->will(self::throwException(new NotFoundException('something not found')));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -1932,7 +1932,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -1959,16 +1959,16 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
         //self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertSame('testDevice', $result->getDevice()->getDeviceName());
-        static::assertNull($result->getEngine()->getName());
-        static::assertSame('iOS', $result->getOs()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertNull($result->getEngine()->getName());
+        self::assertSame('iOS', $result->getOs()->getName());
     }
 
     /**
@@ -1989,36 +1989,36 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::never())
+        $device->expects(self::never())
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->getMockBuilder(OsInterface::class)->getMock();
-        $os->expects(static::once())
+        $os->expects(self::once())
             ->method('getName')
             ->willReturn('iOS');
 
@@ -2026,7 +2026,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, $os]);
@@ -2036,14 +2036,14 @@ final class DetectorTest extends TestCase
 
             ->getMock();
         $platformParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willThrowException(new NotFoundException('parsing failed'));
@@ -2052,15 +2052,15 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('parse');
 
         $engine2 = $this->getMockBuilder(EngineInterface::class)->getMock();
-        $engine2->expects(static::never())
+        $engine2->expects(self::never())
             ->method('getName');
 
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('webkit', $normalizedUseragent)
             ->willReturn($engine2);
@@ -2069,14 +2069,14 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -2084,7 +2084,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -2111,16 +2111,16 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
         //self::assertSame($browser, $result->getBrowser());
         //self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertInstanceOf(BrowserInterface::class, $result->getBrowser());
-        static::assertNull($result->getBrowser()->getName());
-        static::assertNull($result->getBrowser()->getBits());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertInstanceOf(BrowserInterface::class, $result->getBrowser());
+        self::assertNull($result->getBrowser()->getName());
+        self::assertNull($result->getBrowser()->getBits());
     }
 
     /**
@@ -2141,32 +2141,32 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::once())
+        $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
         $os = $this->createMock(OsInterface::class);
@@ -2175,7 +2175,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, null]);
@@ -2184,14 +2184,14 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn($os);
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
-        $engine->expects(static::once())
+        $engine->expects(self::once())
             ->method('getName')
             ->willReturn('test-engine');
 
@@ -2199,7 +2199,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, null]);
@@ -2208,26 +2208,26 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn($engine);
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -2235,7 +2235,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(4))
+            ->expects(self::exactly(4))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -2262,15 +2262,15 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
-        static::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertSame('testDevice', $result->getDevice()->getDeviceName());
-        static::assertSame('test-engine', $result->getEngine()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertSame('test-engine', $result->getEngine()->getName());
     }
 
     /**
@@ -2291,32 +2291,32 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::exactly(3))
+            ->expects(self::exactly(3))
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
-        $device->expects(static::once())
+        $device->expects(self::once())
             ->method('getDeviceName')
             ->willReturn('testDevice');
 
@@ -2324,7 +2324,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $deviceParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$device, null]);
@@ -2333,14 +2333,14 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $platformParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willThrowException(new NotFoundException('platform not found'));
 
         $browser = $this->createMock(BrowserInterface::class);
         $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
-        $engine->expects(static::once())
+        $engine->expects(self::once())
             ->method('getName')
             ->willReturn('test-engine');
 
@@ -2348,7 +2348,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $browserParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn([$browser, null]);
@@ -2357,26 +2357,26 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $engineParser
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
             ->willReturn($engine);
         $engineParser
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->willReturn(false);
         $cache
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem');
         $cache
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('setItem')
             ->willReturn(false);
 
@@ -2384,7 +2384,7 @@ final class DetectorTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $normalizer
-            ->expects(static::exactly(4))
+            ->expects(self::exactly(4))
             ->method('normalize')
             ->with($useragent)
             ->willReturn($normalizedUseragent);
@@ -2411,18 +2411,18 @@ final class DetectorTest extends TestCase
         /** @var Result $result */
         $result = $object->__invoke($message);
 
-        static::assertInstanceOf(ResultInterface::class, $result);
-        static::assertSame($device, $result->getDevice());
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
         //self::assertSame($os, $result->getOs());
-        static::assertSame($browser, $result->getBrowser());
-        static::assertSame($engine, $result->getEngine());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
 
-        static::assertInstanceOf(DeviceInterface::class, $result->getDevice());
-        static::assertSame('testDevice', $result->getDevice()->getDeviceName());
-        static::assertSame('test-engine', $result->getEngine()->getName());
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertSame('test-engine', $result->getEngine()->getName());
 
-        static::assertNull($result->getOs()->getName());
-        static::assertNull($result->getOs()->getMarketingName());
-        static::assertNull($result->getOs()->getBits());
+        self::assertNull($result->getOs()->getName());
+        self::assertNull($result->getOs()->getMarketingName());
+        self::assertNull($result->getOs()->getBits());
     }
 }

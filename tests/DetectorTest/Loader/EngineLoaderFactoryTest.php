@@ -36,7 +36,7 @@ final class EngineLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(static::any())
+            ->expects(self::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -49,7 +49,7 @@ final class EngineLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke')
             ->with(EngineLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
@@ -61,11 +61,11 @@ final class EngineLoaderFactoryTest extends TestCase
         $factory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader, $filter);
         $object  = $factory();
 
-        static::assertInstanceOf(EngineLoaderInterface::class, $object);
+        self::assertInstanceOf(EngineLoaderInterface::class, $object);
 
         $objectTwo = $factory();
 
-        static::assertInstanceOf(EngineLoaderInterface::class, $objectTwo);
-        static::assertSame($objectTwo, $object);
+        self::assertInstanceOf(EngineLoaderInterface::class, $objectTwo);
+        self::assertSame($objectTwo, $object);
     }
 }

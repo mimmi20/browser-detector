@@ -36,7 +36,7 @@ final class PlatformLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $jsonParser
-            ->expects(static::any())
+            ->expects(self::any())
             ->method('decode')
             ->willReturn([]);
 
@@ -49,7 +49,7 @@ final class PlatformLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $filter
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke')
             ->with(PlatformLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
@@ -61,11 +61,11 @@ final class PlatformLoaderFactoryTest extends TestCase
         $factory = new PlatformLoaderFactory($logger, $jsonParser, $companyLoader, $filter);
         $object  = $factory();
 
-        static::assertInstanceOf(PlatformLoaderInterface::class, $object);
+        self::assertInstanceOf(PlatformLoaderInterface::class, $object);
 
         $objectTwo = $factory();
 
-        static::assertInstanceOf(PlatformLoaderInterface::class, $objectTwo);
-        static::assertSame($objectTwo, $object);
+        self::assertInstanceOf(PlatformLoaderInterface::class, $objectTwo);
+        self::assertSame($objectTwo, $object);
     }
 }

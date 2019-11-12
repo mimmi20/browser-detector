@@ -35,8 +35,8 @@ final class TestTest extends TestCase
 
         $detectedVersion = $object->detectVersion($useragent);
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertSame($expectedVersion, $detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**

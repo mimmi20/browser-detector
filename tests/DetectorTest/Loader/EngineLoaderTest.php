@@ -37,50 +37,50 @@ final class EngineLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(false);
         $initData
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('getItem')
             ->with('test-key')
-            ->will(static::throwException(new InvalidArgumentException('fail')));
+            ->will(self::throwException(new InvalidArgumentException('fail')));
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
 
         $companyLoader
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -110,40 +110,40 @@ final class EngineLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn(null);
@@ -153,7 +153,7 @@ final class EngineLoaderTest extends TestCase
             ->getMock();
 
         $companyLoader
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('load');
 
         /** @var \Psr\Log\LoggerInterface $logger */
@@ -187,35 +187,35 @@ final class EngineLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -227,7 +227,7 @@ final class EngineLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($engineData);
@@ -239,7 +239,7 @@ final class EngineLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -255,7 +255,7 @@ final class EngineLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        static::assertInstanceOf(EngineInterface::class, $result);
+        self::assertInstanceOf(EngineInterface::class, $result);
     }
 
     /**
@@ -274,35 +274,35 @@ final class EngineLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -314,7 +314,7 @@ final class EngineLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($engineData);
@@ -326,7 +326,7 @@ final class EngineLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -342,7 +342,7 @@ final class EngineLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        static::assertInstanceOf(EngineInterface::class, $result);
+        self::assertInstanceOf(EngineInterface::class, $result);
     }
 
     /**
@@ -362,35 +362,35 @@ final class EngineLoaderTest extends TestCase
 
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $initData = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('__invoke');
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
@@ -402,7 +402,7 @@ final class EngineLoaderTest extends TestCase
         ];
 
         $initData
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('getItem')
             ->with('test-key')
             ->willReturn($engineData);
@@ -414,7 +414,7 @@ final class EngineLoaderTest extends TestCase
         $company = $this->createMock(CompanyInterface::class);
 
         $companyLoader
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
@@ -430,6 +430,6 @@ final class EngineLoaderTest extends TestCase
 
         $result = $object->load('test-key', 'test-ua');
 
-        static::assertInstanceOf(EngineInterface::class, $result);
+        self::assertInstanceOf(EngineInterface::class, $result);
     }
 }

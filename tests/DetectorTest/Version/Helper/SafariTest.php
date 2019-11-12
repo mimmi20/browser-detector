@@ -45,7 +45,7 @@ final class SafariTest extends TestCase
     public function testMapSafariVersion(string $version, ?string $expectedVersion): void
     {
         $versionObj = (new VersionFactory())->set($version);
-        static::assertSame($expectedVersion, $this->object->mapSafariVersion($versionObj));
+        self::assertSame($expectedVersion, $this->object->mapSafariVersion($versionObj));
     }
 
     /**

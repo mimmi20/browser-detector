@@ -40,28 +40,28 @@ final class ScreamingFrogTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('info');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         /** @var LoggerInterface $logger */
@@ -69,8 +69,8 @@ final class ScreamingFrogTest extends TestCase
 
         $detectedVersion = $object->detectVersion($useragent);
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertSame($expectedVersion, $detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertSame($expectedVersion, $detectedVersion->getVersion());
     }
 
     /**
@@ -96,36 +96,36 @@ final class ScreamingFrogTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('debug');
         $logger
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('info')
             ->with($exception);
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('notice');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('warning');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('error');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('critical');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('alert');
         $logger
-            ->expects(static::never())
+            ->expects(self::never())
             ->method('emergency');
 
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
-            ->expects(static::once())
+            ->expects(self::once())
             ->method('detectVersion')
             ->with('Screaming Frog SEO Spider/2.22', ['Screaming Frog SEO Spider'])
             ->willThrowException($exception);
@@ -136,8 +136,8 @@ final class ScreamingFrogTest extends TestCase
 
         $detectedVersion = $object->detectVersion('Screaming Frog SEO Spider/2,22');
 
-        static::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        static::assertInstanceOf(NullVersion::class, $detectedVersion);
-        static::assertNull($detectedVersion->getVersion());
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
     }
 }

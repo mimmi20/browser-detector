@@ -39,6 +39,6 @@ final class FirefoxOsFactoryTest extends TestCase
         /** @var FirefoxOsFactory $object */
         $object = $this->object;
         $result = $object(new NullLogger());
-        static::assertInstanceOf(FirefoxOs::class, $result);
+        self::assertInstanceOf(FirefoxOs::class, $result);
     }
 }

@@ -48,7 +48,7 @@ final class EngineParserFactoryTest extends TestCase
 
         $parser = $factory();
 
-        static::assertInstanceOf(EngineParserInterface::class, $parser);
-        static::assertInstanceOf(EngineParser::class, $parser);
+        self::assertInstanceOf(EngineParserInterface::class, $parser);
+        self::assertInstanceOf(EngineParser::class, $parser);
     }
 }
